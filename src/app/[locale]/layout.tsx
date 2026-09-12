@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { CookieConsentBanner } from '@/components/CookieConsentBanner'
+import { Providers } from '@/components/Providers'
 import '../globals.css'
 
 export function generateStaticParams() {
@@ -29,10 +30,12 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          {children}
-          <Footer />
-          <CookieConsentBanner />
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+            <CookieConsentBanner />
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

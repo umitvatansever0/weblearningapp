@@ -12,5 +12,14 @@
     "message": "Deneyiminizi geliştirmek ve ilgili reklamları göstermek için çerezler kullanıyoruz.",
     "accept": "Kabul Et",
     "decline": "Reddet"
+  },
+  "auth": {
+    "emailLabel": "E-posta",
+    "passwordLabel": "Şifre",
+    "nameLabel": "Ad",
+    "registerSubmit": "Hesap oluştur",
+    "loginSubmit": "Giriş yap",
+    "registerError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+    "loginError": "Geçersiz e-posta veya şifre."
   }
 }

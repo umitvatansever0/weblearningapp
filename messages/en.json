@@ -12,5 +12,14 @@
     "message": "We use cookies to improve your experience and show relevant ads.",
     "accept": "Accept",
     "decline": "Decline"
+  },
+  "auth": {
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "nameLabel": "Name",
+    "registerSubmit": "Create account",
+    "loginSubmit": "Log in",
+    "registerError": "Something went wrong. Please try again.",
+    "loginError": "Invalid email or password."
   }
 }

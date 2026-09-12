@@ -12,5 +12,14 @@
     "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und relevante Werbung anzuzeigen.",
     "accept": "Akzeptieren",
     "decline": "Ablehnen"
+  },
+  "auth": {
+    "emailLabel": "E-Mail",
+    "passwordLabel": "Passwort",
+    "nameLabel": "Name",
+    "registerSubmit": "Konto erstellen",
+    "loginSubmit": "Anmelden",
+    "registerError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "loginError": "Ungültige E-Mail oder ungültiges Passwort."
   }
 }
