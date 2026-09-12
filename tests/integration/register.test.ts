@@ -57,4 +57,18 @@ describe('POST /api/register', () => {
 
     expect(res.status).toBe(409)
   })
+
+  it('rejects a malformed JSON body with 400', async () => {
+    const res = await POST(
+      new Request('http://localhost/api/register', {
+        method: 'POST',
+        body: '{not valid json',
+        headers: { 'Content-Type': 'application/json' },
+      })
+    )
+
+    expect(res.status).toBe(400)
+    const json = await res.json()
+    expect(json.error).toBe('Invalid JSON body')
+  })
 })

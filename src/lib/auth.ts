@@ -3,6 +3,10 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 import { prisma } from '@/lib/prisma'
 import { verifyPassword } from '@/lib/password'
 
+if (!process.env.NEXTAUTH_SECRET) {
+  throw new Error('NEXTAUTH_SECRET environment variable is required')
+}
+
 export async function authorizeUser(email: string, password: string) {
   const user = await prisma.user.findUnique({ where: { email: email.toLowerCase() } })
   if (!user) return null
