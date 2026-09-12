@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { CookieConsentBanner } from '@/components/CookieConsentBanner'
 import '../globals.css'
 
 export function generateStaticParams() {
@@ -31,6 +32,7 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <Footer />
+          <CookieConsentBanner />
         </NextIntlClientProvider>
       </body>
     </html>
