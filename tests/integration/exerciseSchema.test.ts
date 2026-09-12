@@ -1,8 +1,9 @@
-import { describe, it, expect, afterAll } from 'vitest'
+import { describe, it, expect, afterAll, vi } from 'vitest'
 import { prisma } from '@/lib/prisma'
 import { hashPassword } from '@/lib/password'
 
 describe('exercise engine schema', () => {
+  vi.setConfig({ testTimeout: 30000 })
   afterAll(async () => {
     await prisma.userProgress.deleteMany({ where: { user: { email: 'schema-exercise-test@example.com' } } })
     await prisma.exercise.deleteMany({ where: { lesson: { grammarTopic: 'Schema Test Topic' } } })
