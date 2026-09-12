@@ -2,7 +2,8 @@
   "nav": {
     "home": "Home",
     "login": "Log in",
-    "register": "Sign up"
+    "register": "Sign up",
+    "languageSwitcherLabel": "Language"
   },
   "footer": {
     "rights": "All rights reserved."

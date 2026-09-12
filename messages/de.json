@@ -2,7 +2,8 @@
   "nav": {
     "home": "Startseite",
     "login": "Anmelden",
-    "register": "Registrieren"
+    "register": "Registrieren",
+    "languageSwitcherLabel": "Sprache"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."

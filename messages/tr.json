@@ -2,7 +2,8 @@
   "nav": {
     "home": "Ana Sayfa",
     "login": "Giriş Yap",
-    "register": "Kayıt Ol"
+    "register": "Kayıt Ol",
+    "languageSwitcherLabel": "Dil"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır."
