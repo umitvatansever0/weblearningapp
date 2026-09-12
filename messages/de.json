@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "login": "Anmelden",
+    "register": "Registrieren"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "cookieConsent": {
+    "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und relevante Werbung anzuzeigen.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
+  }
+}

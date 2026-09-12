@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Home",
+    "login": "Log in",
+    "register": "Sign up"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "cookieConsent": {
+    "message": "We use cookies to improve your experience and show relevant ads.",
+    "accept": "Accept",
+    "decline": "Decline"
+  }
+}

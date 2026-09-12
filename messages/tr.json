@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  },
+  "cookieConsent": {
+    "message": "Deneyiminizi geliştirmek ve ilgili reklamları göstermek için çerezler kullanıyoruz.",
+    "accept": "Kabul Et",
+    "decline": "Reddet"
+  }
+}
