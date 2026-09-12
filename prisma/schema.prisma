@@ -27,4 +27,77 @@ model User {
   uiLanguage   UiLanguage @default(EN)
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
+  progress     UserProgress[]
+}
+
+enum LevelCode {
+  A1
+  A2
+  B1
+  B2
+  C1
+  C2
+}
+
+enum ExerciseType {
+  MULTIPLE_CHOICE
+  FILL_IN_BLANK
+  MATCHING
+  SENTENCE_ORDER
+  SHORT_ANSWER
+}
+
+model Level {
+  id    String    @id @default(cuid())
+  code  LevelCode @unique
+  order Int
+  units Unit[]
+}
+
+model Unit {
+  id      String @id @default(cuid())
+  levelId String
+  level   Level  @relation(fields: [levelId], references: [id])
+  order   Int
+  titleDe String
+  titleEn String
+  titleTr String
+  lessons Lesson[]
+}
+
+model Lesson {
+  id            String @id @default(cuid())
+  unitId        String
+  unit          Unit   @relation(fields: [unitId], references: [id])
+  order         Int
+  grammarTopic  String
+  explanationDe String
+  explanationEn String
+  explanationTr String
+  exercises     Exercise[]
+  progress      UserProgress[]
+}
+
+model Exercise {
+  id            String       @id @default(cuid())
+  lessonId      String
+  lesson        Lesson       @relation(fields: [lessonId], references: [id])
+  order         Int
+  type          ExerciseType
+  data          Json
+  correctAnswer Json
+  explanation   String
+}
+
+model UserProgress {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id])
+  lessonId      String
+  lesson        Lesson   @relation(fields: [lessonId], references: [id])
+  completed     Boolean  @default(false)
+  score         Int      @default(0)
+  lastAttemptAt DateTime @default(now())
+
+  @@unique([userId, lessonId])
 }
