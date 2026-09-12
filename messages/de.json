@@ -3,6 +3,7 @@
     "home": "Startseite",
     "login": "Anmelden",
     "register": "Registrieren",
+    "logout": "Abmelden",
     "languageSwitcherLabel": "Sprache"
   },
   "footer": {

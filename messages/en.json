@@ -3,6 +3,7 @@
     "home": "Home",
     "login": "Log in",
     "register": "Sign up",
+    "logout": "Log out",
     "languageSwitcherLabel": "Language"
   },
   "footer": {

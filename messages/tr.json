@@ -3,6 +3,7 @@
     "home": "Ana Sayfa",
     "login": "Giriş Yap",
     "register": "Kayıt Ol",
+    "logout": "Çıkış Yap",
     "languageSwitcherLabel": "Dil"
   },
   "footer": {
