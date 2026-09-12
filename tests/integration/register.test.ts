@@ -47,4 +47,14 @@ describe('POST /api/register', () => {
 
     expect(res.status).toBe(400)
   })
+
+  it('rejects a duplicate email that differs only in casing with 409', async () => {
+    const res = await POST(makeRequest({
+      email: 'Register-Test@Example.com',
+      password: 'Sup3rSecret!',
+      name: 'Register Test',
+    }))
+
+    expect(res.status).toBe(409)
+  })
 })

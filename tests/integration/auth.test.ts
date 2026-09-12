@@ -33,4 +33,9 @@ describe('authorizeUser', () => {
     const result = await authorizeUser('nobody@example.com', 'whatever')
     expect(result).toBeNull()
   })
+
+  it('returns the user when the login email casing differs from the stored casing', async () => {
+    const result = await authorizeUser('Auth-Test@Example.com', 'Sup3rSecret!')
+    expect(result?.email).toBe('auth-test@example.com')
+  })
 })

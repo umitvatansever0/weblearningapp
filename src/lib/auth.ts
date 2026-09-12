@@ -4,7 +4,7 @@ import { prisma } from '@/lib/prisma'
 import { verifyPassword } from '@/lib/password'
 
 export async function authorizeUser(email: string, password: string) {
-  const user = await prisma.user.findUnique({ where: { email } })
+  const user = await prisma.user.findUnique({ where: { email: email.toLowerCase() } })
   if (!user) return null
 
   const valid = await verifyPassword(password, user.passwordHash)
