@@ -91,4 +91,19 @@ describe('POST /api/exercises/[exerciseId]/submit', () => {
     })
     expect(res.status).toBe(404)
   })
+
+  it('returns 400 for a malformed JSON body', async () => {
+    vi.mocked(getServerSession).mockResolvedValue({ user: { id: 'someone' } } as never)
+    const req = new Request('http://localhost/api/exercises/test/submit', {
+      method: 'POST',
+      body: '{not valid json',
+      headers: { 'Content-Type': 'application/json' },
+    })
+    const res = await POST(req, {
+      params: Promise.resolve({ exerciseId }),
+    })
+    expect(res.status).toBe(400)
+    const json = await res.json()
+    expect(json.error).toBe('Invalid JSON body')
+  })
 })
