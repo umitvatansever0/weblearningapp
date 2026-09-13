@@ -8,6 +8,10 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./vitest.setup.ts'],
     globals: true,
+    // Integration tests share one Postgres DB and some create/delete rows
+    // under shared fixtures (e.g. the seeded 'A1' Level) — running test
+    // files in parallel causes cross-file races. Serialize files instead.
+    fileParallelism: false,
   },
   resolve: {
     alias: {
