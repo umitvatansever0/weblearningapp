@@ -47,14 +47,15 @@ describe('MatchingExercise', () => {
     const onAnswer = vi.fn()
     render(
       <MatchingExercise
-        data={{ pairs: [{ left: 'ich', right: 'bin' }, { left: 'du', right: 'bist' }] }}
+        data={{ lefts: ['ich', 'du'], rights: ['bist', 'bin'] }}
         submitLabel="Check"
         onAnswer={onAnswer}
       />
     )
-    const selects = screen.getAllByRole('combobox')
-    fireEvent.change(selects[0], { target: { value: 'bin' } })
-    fireEvent.change(selects[1], { target: { value: 'bist' } })
+    // Select via the row's stable data-testid (index-based), not the option value,
+    // since the rights list is shuffled and not positionally tied to lefts.
+    fireEvent.change(screen.getByTestId('matching-select-0'), { target: { value: 'bin' } })
+    fireEvent.change(screen.getByTestId('matching-select-1'), { target: { value: 'bist' } })
     fireEvent.click(screen.getByText('Check'))
     expect(onAnswer).toHaveBeenCalledWith({
       pairs: [
@@ -62,6 +63,11 @@ describe('MatchingExercise', () => {
         { left: 'du', right: 'bist' },
       ],
     })
+  })
+
+  it('does not derive the correct pairing from data shape (no `pairs` key)', () => {
+    const data = { lefts: ['ich', 'du'], rights: ['bist', 'bin'] }
+    expect('pairs' in data).toBe(false)
   })
 })
 
@@ -73,6 +79,28 @@ describe('SentenceOrderExercise', () => {
     fireEvent.click(screen.getByText('zwei'))
     fireEvent.click(screen.getByText('Check'))
     expect(onAnswer).toHaveBeenCalledWith({ order: ['eins', 'zwei'] })
+  })
+
+  it('handles duplicate tokens correctly using index-based tracking (regression for value-keyed bug)', () => {
+    const onAnswer = vi.fn()
+    render(<SentenceOrderExercise data={{ words: ['ich', 'bin', 'ich'] }} submitLabel="Check" onAnswer={onAnswer} />)
+
+    // Query only the "remaining word" pool buttons (excluding the chosen-tray
+    // spans and the submit button), always clicking the first one available —
+    // this exercises index-based (not value-based) selection/removal with a
+    // repeated token ("ich" appears at both index 0 and index 2).
+    const getRemainingWordButtons = () =>
+      screen.getAllByRole('button').filter((button) => button.textContent !== 'Check')
+
+    expect(getRemainingWordButtons().map((b) => b.textContent)).toEqual(['ich', 'bin', 'ich'])
+    fireEvent.click(getRemainingWordButtons()[0]) // picks index 0 ("ich")
+    expect(getRemainingWordButtons().map((b) => b.textContent)).toEqual(['bin', 'ich'])
+    fireEvent.click(getRemainingWordButtons()[0]) // picks index 1 ("bin")
+    expect(getRemainingWordButtons().map((b) => b.textContent)).toEqual(['ich'])
+    fireEvent.click(getRemainingWordButtons()[0]) // picks index 2 ("ich")
+
+    fireEvent.click(screen.getByText('Check'))
+    expect(onAnswer).toHaveBeenCalledWith({ order: ['ich', 'bin', 'ich'] })
   })
 })
 

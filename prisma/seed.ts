@@ -108,11 +108,8 @@ async function main() {
         order: 3,
         type: 'MATCHING',
         data: {
-          pairs: [
-            { left: 'ich', right: 'bin' },
-            { left: 'du', right: 'bist' },
-            { left: 'er/sie/es', right: 'ist' },
-          ],
+          lefts: ['ich', 'du', 'er/sie/es'],
+          rights: ['ist', 'bin', 'bist'],
         },
         correctAnswer: {
           pairs: [

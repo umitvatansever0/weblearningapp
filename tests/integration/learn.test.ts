@@ -35,6 +35,26 @@ describe('getLessonWithExercises', () => {
     const lesson = await getLessonWithExercises('does-not-exist')
     expect(lesson).toBeNull()
   })
+
+  it('does not leak the MATCHING answer key via the `data` payload', async () => {
+    const units = await getUnitsForLevel('A1', 'nonexistent-user-id')
+    // Seeded A1 lesson 2 ("Verb 'sein' im Präsens") contains the single MATCHING exercise.
+    const lessonWithMatching = units[0].lessons[1]
+    const lesson = await getLessonWithExercises(lessonWithMatching.id)
+    expect(lesson).not.toBeNull()
+
+    const matchingExercise = lesson!.exercises.find((exercise) => exercise.type === 'MATCHING')
+    expect(matchingExercise).toBeDefined()
+
+    const data = matchingExercise!.data as Record<string, unknown>
+    // Structural proof the old leak vector is gone: the client-visible `data`
+    // must not carry a `pairs` key (which would encode the correct left→right
+    // mapping). Instead it must be the shuffled `{ lefts, rights }` shape.
+    expect('pairs' in data).toBe(false)
+    expect(Array.isArray(data.lefts)).toBe(true)
+    expect(Array.isArray(data.rights)).toBe(true)
+    expect(JSON.stringify(data)).not.toContain('"pairs"')
+  })
 })
 
 describe('pickByLocale', () => {

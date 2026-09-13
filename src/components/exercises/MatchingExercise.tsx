@@ -12,26 +12,28 @@ export function MatchingExercise({
   submitLabel: string
   onAnswer: (answer: MatchingUserAnswer) => void
 }) {
-  const [selections, setSelections] = useState<Record<string, string>>({})
-  const rightOptions = data.pairs.map((pair) => pair.right)
-  const canSubmit = data.pairs.every((pair) => selections[pair.left])
+  const [selections, setSelections] = useState<Record<number, string>>({})
+  const canSubmit = data.lefts.every((_, index) => selections[index] !== undefined)
 
   return (
     <div className="flex flex-col gap-3">
-      {data.pairs.map((pair) => (
-        <div key={pair.left} className="flex items-center gap-2">
-          <span className="w-24">{pair.left}</span>
+      {data.lefts.map((left, leftIndex) => (
+        <div key={leftIndex} className="flex items-center gap-2">
+          <span className="w-24">{left}</span>
           <select
-            aria-label={pair.left}
-            value={selections[pair.left] ?? ''}
-            onChange={(event) => setSelections((prev) => ({ ...prev, [pair.left]: event.target.value }))}
+            aria-label={left}
+            data-testid={`matching-select-${leftIndex}`}
+            value={selections[leftIndex] ?? ''}
+            onChange={(event) =>
+              setSelections((prev) => ({ ...prev, [leftIndex]: event.target.value }))
+            }
             className="border rounded px-2 py-1"
           >
             <option value="" disabled>
               --
             </option>
-            {rightOptions.map((right) => (
-              <option key={right} value={right}>
+            {data.rights.map((right, rightIndex) => (
+              <option key={rightIndex} value={right}>
                 {right}
               </option>
             ))}
@@ -43,7 +45,7 @@ export function MatchingExercise({
         disabled={!canSubmit}
         onClick={() =>
           onAnswer({
-            pairs: data.pairs.map((pair) => ({ left: pair.left, right: selections[pair.left] })),
+            pairs: data.lefts.map((left, index) => ({ left, right: selections[index] })),
           })
         }
         className="bg-gray-900 text-white rounded px-4 py-2 self-start disabled:opacity-50"

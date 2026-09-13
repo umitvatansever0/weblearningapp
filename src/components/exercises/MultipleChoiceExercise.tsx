@@ -24,7 +24,7 @@ export function MultipleChoiceExercise({
       <div className="flex flex-col gap-2">
         {data.options.map((option, index) => (
           <button
-            key={option}
+            key={index}
             type="button"
             onClick={() => setSelected(index)}
             className={`text-left border rounded px-3 py-2 ${selected === index ? 'border-gray-900 bg-gray-100' : ''}`}

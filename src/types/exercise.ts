@@ -28,7 +28,8 @@ export interface MatchingPair {
   right: string
 }
 export interface MatchingData {
-  pairs: MatchingPair[]
+  lefts: string[]
+  rights: string[] // shuffled — NOT positionally aligned with `lefts`
 }
 export interface MatchingCorrectAnswer {
   pairs: MatchingPair[]
