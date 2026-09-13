@@ -1,11 +1,15 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 
 export function PronounceButton({ text }: { text: string }) {
   const t = useTranslations('learn')
-  const supported =
-    typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window
+  const [supported, setSupported] = useState(false)
+
+  useEffect(() => {
+    setSupported('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window)
+  }, [])
 
   if (!supported) return null
 

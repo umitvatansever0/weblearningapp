@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { NextIntlClientProvider } from 'next-intl'
 import { PronounceButton } from '@/components/exercises/PronounceButton'
 import en from '../../messages/en.json'
@@ -20,12 +20,14 @@ describe('PronounceButton', () => {
     delete window.SpeechSynthesisUtterance
   })
 
-  it('renders nothing when the Web Speech API is unavailable', () => {
+  it('renders nothing when the Web Speech API is unavailable', async () => {
     const { container } = renderWithIntl(<PronounceButton text="Hallo" />)
-    expect(container).toBeEmptyDOMElement()
+    // The supported check runs in a useEffect after mount, so give it a tick
+    // to flush before asserting the DOM stays empty.
+    await waitFor(() => expect(container).toBeEmptyDOMElement())
   })
 
-  it('speaks the given text in German when clicked', () => {
+  it('speaks the given text in German when clicked', async () => {
     const speak = vi.fn()
     // @ts-expect-error test stub for an unimplemented browser API
     window.speechSynthesis = { speak }
@@ -35,7 +37,8 @@ describe('PronounceButton', () => {
     }
 
     renderWithIntl(<PronounceButton text="Hallo" />)
-    fireEvent.click(screen.getByRole('button'))
+    const button = await screen.findByRole('button')
+    fireEvent.click(button)
     expect(speak).toHaveBeenCalledTimes(1)
   })
 })
