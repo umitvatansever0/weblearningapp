@@ -4,8 +4,10 @@ const prisma = new PrismaClient()
 
 async function main() {
   // Delete in FK-safe order so this script is safely re-runnable, even after
-  // a learner has generated UserProgress rows against the seeded lessons.
+  // a learner has generated UserProgress/UserVocabCard rows against the
+  // seeded lessons/words.
   await prisma.userProgress.deleteMany({})
+  await prisma.userVocabCard.deleteMany({})
   await prisma.vocabWord.deleteMany({})
   await prisma.exercise.deleteMany({})
   await prisma.lesson.deleteMany({})
