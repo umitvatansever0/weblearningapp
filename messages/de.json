@@ -36,6 +36,7 @@
     "backToLevels": "Zurück zu den Niveaus",
     "startLesson": "Lektion starten",
     "pronounce": "Aussprechen",
-    "submitError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    "submitError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "retry": "Wiederholen"
   }
 }

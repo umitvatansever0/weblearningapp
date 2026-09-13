@@ -141,6 +141,54 @@ describe('ExerciseRunner', () => {
     })
   })
 
+  it('does not re-expose the answered last exercise when /complete fails, and does not double-count the score on retry', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>)
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ correct: true, correctAnswer: { correctIndex: 1 }, explanation: 'Because B.' }),
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ correct: false, correctAnswer: { accepted: ['x'] }, explanation: 'Because text.' }),
+      })
+      .mockResolvedValueOnce({
+        ok: false,
+        json: async () => ({}),
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ completed: true, score: 1 }),
+      })
+
+    renderRunner(exercises)
+    fireEvent.click(screen.getByText('B'))
+    fireEvent.click(screen.getByText(en.learn.checkAnswer))
+    await waitFor(() => screen.getByText(en.learn.correct))
+    fireEvent.click(screen.getByText(en.learn.nextExercise))
+
+    fireEvent.change(screen.getByRole('textbox'), { target: { value: 'anything' } })
+    fireEvent.click(screen.getByText(en.learn.checkAnswer))
+    await waitFor(() => screen.getByText(en.learn.incorrect))
+    fireEvent.click(screen.getByText(en.learn.nextExercise))
+
+    // /complete fails: error + Retry shown, answered exercise must NOT reappear.
+    await waitFor(() => {
+      expect(screen.getByText(en.learn.submitError)).toBeInTheDocument()
+    })
+    expect(screen.getByText(en.learn.retry)).toBeInTheDocument()
+    expect(screen.queryByText('Question two?')).not.toBeInTheDocument()
+    expect(screen.queryByRole('textbox')).not.toBeInTheDocument()
+    expect(screen.queryByText(en.learn.checkAnswer)).not.toBeInTheDocument()
+
+    fireEvent.click(screen.getByText(en.learn.retry))
+
+    await waitFor(() => {
+      expect(screen.getByText(en.learn.lessonComplete)).toBeInTheDocument()
+    })
+    // Score must reflect only the original successful answer, not double-counted.
+    expect(screen.getByText(`${en.learn.score}: 1 / 2`)).toBeInTheDocument()
+  })
+
   it('shows an error message instead of a false result when the submit request fails', async () => {
     ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
       ok: false,

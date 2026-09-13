@@ -36,6 +36,7 @@
     "backToLevels": "Seviyelere dön",
     "startLesson": "Derse başla",
     "pronounce": "Telaffuz et",
-    "submitError": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+    "submitError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+    "retry": "Tekrar dene"
   }
 }

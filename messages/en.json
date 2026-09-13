@@ -36,6 +36,7 @@
     "backToLevels": "Back to levels",
     "startLesson": "Start lesson",
     "pronounce": "Pronounce",
-    "submitError": "Something went wrong. Please try again."
+    "submitError": "Something went wrong. Please try again.",
+    "retry": "Retry"
   }
 }

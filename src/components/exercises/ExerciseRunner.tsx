@@ -54,14 +54,8 @@ export function ExerciseRunner({
     }
   }
 
-  async function handleNext() {
+  async function completeLesson() {
     setError(null)
-    setResult(null)
-    if (index + 1 < exercises.length) {
-      setIndex(index + 1)
-      return
-    }
-    setCompleting(true)
     try {
       const res = await fetch(`/api/lessons/${lessonId}/complete`, {
         method: 'POST',
@@ -70,14 +64,23 @@ export function ExerciseRunner({
       })
       if (res.ok === false) {
         setError(t('submitError'))
-        setCompleting(false)
         return
       }
       setFinished(true)
     } catch {
       setError(t('submitError'))
-      setCompleting(false)
     }
+  }
+
+  async function handleNext() {
+    setError(null)
+    setResult(null)
+    if (index + 1 < exercises.length) {
+      setIndex(index + 1)
+      return
+    }
+    setCompleting(true)
+    await completeLesson()
   }
 
   if (finished) {
@@ -93,6 +96,21 @@ export function ExerciseRunner({
           className="bg-gray-900 text-white rounded px-4 py-2 self-start"
         >
           {t('backToLevels')}
+        </button>
+      </div>
+    )
+  }
+
+  if (completing && error) {
+    return (
+      <div className="flex flex-col gap-4">
+        <p className="text-red-700 text-sm">{error}</p>
+        <button
+          type="button"
+          onClick={completeLesson}
+          className="bg-gray-900 text-white rounded px-4 py-2 self-start"
+        >
+          {t('retry')}
         </button>
       </div>
     )
