@@ -106,4 +106,14 @@ describe('POST /api/exercises/[exerciseId]/submit', () => {
     const json = await res.json()
     expect(json.error).toBe('Invalid JSON body')
   })
+
+  it('returns 400 when the answer field is missing entirely', async () => {
+    vi.mocked(getServerSession).mockResolvedValue({ user: { id: 'someone' } } as never)
+    const res = await POST(makeRequest({}), {
+      params: Promise.resolve({ exerciseId }),
+    })
+    expect(res.status).toBe(400)
+    const json = await res.json()
+    expect(json.error).toBe('Invalid answer format')
+  })
 })

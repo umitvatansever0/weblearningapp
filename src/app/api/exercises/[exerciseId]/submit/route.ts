@@ -27,7 +27,13 @@ export async function POST(
   }
 
   const answer = (body as { answer?: unknown })?.answer
-  const correct = checkAnswer(exercise.type, exercise.correctAnswer, answer)
+
+  let correct: boolean
+  try {
+    correct = checkAnswer(exercise.type, exercise.correctAnswer, answer)
+  } catch {
+    return NextResponse.json({ error: 'Invalid answer format' }, { status: 400 })
+  }
 
   return NextResponse.json({
     correct,
