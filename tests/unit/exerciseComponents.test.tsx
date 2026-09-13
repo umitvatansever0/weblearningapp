@@ -1,15 +1,25 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
+import { NextIntlClientProvider } from 'next-intl'
 import { MultipleChoiceExercise } from '@/components/exercises/MultipleChoiceExercise'
 import { FillInBlankExercise } from '@/components/exercises/FillInBlankExercise'
 import { MatchingExercise } from '@/components/exercises/MatchingExercise'
 import { SentenceOrderExercise } from '@/components/exercises/SentenceOrderExercise'
 import { ShortAnswerExercise } from '@/components/exercises/ShortAnswerExercise'
+import en from '../../messages/en.json'
+
+function renderWithIntl(ui: React.ReactElement) {
+  return render(
+    <NextIntlClientProvider locale="en" messages={en}>
+      {ui}
+    </NextIntlClientProvider>
+  )
+}
 
 describe('MultipleChoiceExercise', () => {
   it('calls onAnswer with the selected index', () => {
     const onAnswer = vi.fn()
-    render(
+    renderWithIntl(
       <MultipleChoiceExercise
         data={{ prompt: 'Question?', options: ['A', 'B'] }}
         submitLabel="Check"
@@ -25,7 +35,7 @@ describe('MultipleChoiceExercise', () => {
 describe('FillInBlankExercise', () => {
   it('calls onAnswer with the typed text', () => {
     const onAnswer = vi.fn()
-    render(<FillInBlankExercise data={{ sentence: '___ Tag!' }} submitLabel="Check" onAnswer={onAnswer} />)
+    renderWithIntl(<FillInBlankExercise data={{ sentence: '___ Tag!' }} submitLabel="Check" onAnswer={onAnswer} />)
     fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Guten' } })
     fireEvent.click(screen.getByText('Check'))
     expect(onAnswer).toHaveBeenCalledWith({ text: 'Guten' })
@@ -69,7 +79,7 @@ describe('SentenceOrderExercise', () => {
 describe('ShortAnswerExercise', () => {
   it('calls onAnswer with the typed text', () => {
     const onAnswer = vi.fn()
-    render(<ShortAnswerExercise data={{ prompt: 'Question?' }} submitLabel="Check" onAnswer={onAnswer} />)
+    renderWithIntl(<ShortAnswerExercise data={{ prompt: 'Question?' }} submitLabel="Check" onAnswer={onAnswer} />)
     fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Ich heiße Anna' } })
     fireEvent.click(screen.getByText('Check'))
     expect(onAnswer).toHaveBeenCalledWith({ text: 'Ich heiße Anna' })

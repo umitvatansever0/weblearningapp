@@ -1,6 +1,16 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
+import { NextIntlClientProvider } from 'next-intl'
 import { PronounceButton } from '@/components/exercises/PronounceButton'
+import en from '../../messages/en.json'
+
+function renderWithIntl(ui: React.ReactElement) {
+  return render(
+    <NextIntlClientProvider locale="en" messages={en}>
+      {ui}
+    </NextIntlClientProvider>
+  )
+}
 
 describe('PronounceButton', () => {
   afterEach(() => {
@@ -11,7 +21,7 @@ describe('PronounceButton', () => {
   })
 
   it('renders nothing when the Web Speech API is unavailable', () => {
-    const { container } = render(<PronounceButton text="Hallo" />)
+    const { container } = renderWithIntl(<PronounceButton text="Hallo" />)
     expect(container).toBeEmptyDOMElement()
   })
 
@@ -24,7 +34,7 @@ describe('PronounceButton', () => {
       return { text, lang: '' }
     }
 
-    render(<PronounceButton text="Hallo" />)
+    renderWithIntl(<PronounceButton text="Hallo" />)
     fireEvent.click(screen.getByRole('button'))
     expect(speak).toHaveBeenCalledTimes(1)
   })

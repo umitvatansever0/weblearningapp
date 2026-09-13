@@ -1,6 +1,9 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
+
 export function PronounceButton({ text }: { text: string }) {
+  const t = useTranslations('learn')
   const supported =
     typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window
 
@@ -13,7 +16,7 @@ export function PronounceButton({ text }: { text: string }) {
   }
 
   return (
-    <button type="button" onClick={handleClick} aria-label="Pronounce" className="text-lg">
+    <button type="button" onClick={handleClick} aria-label={t('pronounce')} className="text-lg">
       🔊
     </button>
   )
