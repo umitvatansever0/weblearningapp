@@ -42,6 +42,12 @@ describe('applySM2Grade', () => {
     expect(result.easeFactor).toBeCloseTo(2.65)
   })
 
+  it('sets interval to 10 days on second "easy" grade', () => {
+    const result = applySM2Grade({ easeFactor: 2.5, interval: 4, repetitions: 1 }, 'easy')
+    expect(result.repetitions).toBe(2)
+    expect(result.interval).toBe(10)
+  })
+
   it('applies a 1.3x bonus on third+ "easy" grade', () => {
     const result = applySM2Grade({ easeFactor: 2.0, interval: 6, repetitions: 2 }, 'easy')
     expect(result.repetitions).toBe(3)
