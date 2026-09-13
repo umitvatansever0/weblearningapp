@@ -95,4 +95,66 @@ describe('ExerciseRunner', () => {
     })
     expect(screen.getByText(`${en.learn.score}: 1 / 2`)).toBeInTheDocument()
   })
+
+  it('does not re-show the last exercise while the completion request is pending', async () => {
+    let resolveComplete: (value: unknown) => void = () => {}
+    const completePromise = new Promise((resolve) => {
+      resolveComplete = resolve
+    })
+
+    ;(global.fetch as ReturnType<typeof vi.fn>)
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ correct: true, correctAnswer: { correctIndex: 1 }, explanation: 'Because B.' }),
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ correct: false, correctAnswer: { accepted: ['x'] }, explanation: 'Because text.' }),
+      })
+      .mockImplementationOnce(() => completePromise)
+
+    renderRunner(exercises)
+    fireEvent.click(screen.getByText('B'))
+    fireEvent.click(screen.getByText(en.learn.checkAnswer))
+    await waitFor(() => screen.getByText(en.learn.correct))
+    fireEvent.click(screen.getByText(en.learn.nextExercise))
+
+    fireEvent.change(screen.getByRole('textbox'), { target: { value: 'anything' } })
+    fireEvent.click(screen.getByText(en.learn.checkAnswer))
+    await waitFor(() => screen.getByText(en.learn.incorrect))
+    fireEvent.click(screen.getByText(en.learn.nextExercise))
+
+    // While the /complete fetch is still pending, the answered exercise's
+    // input form must not reappear.
+    await waitFor(() => {
+      expect(screen.queryByText(en.learn.incorrect)).not.toBeInTheDocument()
+    })
+    expect(screen.queryByText('Question two?')).not.toBeInTheDocument()
+    expect(screen.queryByRole('textbox')).not.toBeInTheDocument()
+    expect(screen.queryByText(en.learn.checkAnswer)).not.toBeInTheDocument()
+    expect(screen.queryByText(en.learn.lessonComplete)).not.toBeInTheDocument()
+
+    resolveComplete({ ok: true, json: async () => ({ completed: true, score: 1 }) })
+
+    await waitFor(() => {
+      expect(screen.getByText(en.learn.lessonComplete)).toBeInTheDocument()
+    })
+  })
+
+  it('shows an error message instead of a false result when the submit request fails', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
+      ok: false,
+      json: async () => ({}),
+    })
+
+    renderRunner(exercises)
+    fireEvent.click(screen.getByText('B'))
+    fireEvent.click(screen.getByText(en.learn.checkAnswer))
+
+    await waitFor(() => {
+      expect(screen.getByText(en.learn.submitError)).toBeInTheDocument()
+    })
+    expect(screen.queryByText(en.learn.incorrect)).not.toBeInTheDocument()
+    expect(screen.queryByText(en.learn.correct)).not.toBeInTheDocument()
+  })
 })

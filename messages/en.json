@@ -35,6 +35,7 @@
     "score": "Score",
     "backToLevels": "Back to levels",
     "startLesson": "Start lesson",
-    "pronounce": "Pronounce"
+    "pronounce": "Pronounce",
+    "submitError": "Something went wrong. Please try again."
   }
 }

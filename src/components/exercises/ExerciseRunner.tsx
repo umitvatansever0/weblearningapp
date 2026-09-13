@@ -29,32 +29,55 @@ export function ExerciseRunner({
   const [score, setScore] = useState(0)
   const [result, setResult] = useState<SubmitResult | null>(null)
   const [finished, setFinished] = useState(false)
+  const [completing, setCompleting] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const current = exercises[index]
 
   async function handleAnswer(answer: unknown) {
-    const res = await fetch(`/api/exercises/${current.id}/submit`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ answer }),
-    })
-    const data: SubmitResult = await res.json()
-    setResult(data)
-    if (data.correct) setScore((previous) => previous + 1)
+    setError(null)
+    try {
+      const res = await fetch(`/api/exercises/${current.id}/submit`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ answer }),
+      })
+      if (res.ok === false) {
+        setError(t('submitError'))
+        return
+      }
+      const data: SubmitResult = await res.json()
+      setResult(data)
+      if (data.correct) setScore((previous) => previous + 1)
+    } catch {
+      setError(t('submitError'))
+    }
   }
 
   async function handleNext() {
+    setError(null)
     setResult(null)
     if (index + 1 < exercises.length) {
       setIndex(index + 1)
       return
     }
-    await fetch(`/api/lessons/${lessonId}/complete`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ score }),
-    })
-    setFinished(true)
+    setCompleting(true)
+    try {
+      const res = await fetch(`/api/lessons/${lessonId}/complete`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ score }),
+      })
+      if (res.ok === false) {
+        setError(t('submitError'))
+        setCompleting(false)
+        return
+      }
+      setFinished(true)
+    } catch {
+      setError(t('submitError'))
+      setCompleting(false)
+    }
   }
 
   if (finished) {
@@ -77,19 +100,20 @@ export function ExerciseRunner({
 
   return (
     <div className="flex flex-col gap-4">
-      {!result && current.type === 'MULTIPLE_CHOICE' && (
+      {error && <p className="text-red-700 text-sm">{error}</p>}
+      {!result && !completing && current.type === 'MULTIPLE_CHOICE' && (
         <MultipleChoiceExercise data={current.data as never} submitLabel={t('checkAnswer')} onAnswer={handleAnswer} />
       )}
-      {!result && current.type === 'FILL_IN_BLANK' && (
+      {!result && !completing && current.type === 'FILL_IN_BLANK' && (
         <FillInBlankExercise data={current.data as never} submitLabel={t('checkAnswer')} onAnswer={handleAnswer} />
       )}
-      {!result && current.type === 'MATCHING' && (
+      {!result && !completing && current.type === 'MATCHING' && (
         <MatchingExercise data={current.data as never} submitLabel={t('checkAnswer')} onAnswer={handleAnswer} />
       )}
-      {!result && current.type === 'SENTENCE_ORDER' && (
+      {!result && !completing && current.type === 'SENTENCE_ORDER' && (
         <SentenceOrderExercise data={current.data as never} submitLabel={t('checkAnswer')} onAnswer={handleAnswer} />
       )}
-      {!result && current.type === 'SHORT_ANSWER' && (
+      {!result && !completing && current.type === 'SHORT_ANSWER' && (
         <ShortAnswerExercise data={current.data as never} submitLabel={t('checkAnswer')} onAnswer={handleAnswer} />
       )}
       {result && (

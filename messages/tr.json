@@ -35,6 +35,7 @@
     "score": "Puan",
     "backToLevels": "Seviyelere dön",
     "startLesson": "Derse başla",
-    "pronounce": "Telaffuz et"
+    "pronounce": "Telaffuz et",
+    "submitError": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
   }
 }
