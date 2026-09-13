@@ -22,5 +22,18 @@
     "loginSubmit": "Anmelden",
     "registerError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
     "loginError": "Ungültige E-Mail oder ungültiges Passwort."
+  },
+  "learn": {
+    "levelsTitle": "Niveaus",
+    "unitsTitle": "Einheiten",
+    "continue": "Weiter",
+    "checkAnswer": "Antwort prüfen",
+    "correct": "Richtig!",
+    "incorrect": "Falsch",
+    "nextExercise": "Nächste Übung",
+    "lessonComplete": "Lektion abgeschlossen!",
+    "score": "Punktzahl",
+    "backToLevels": "Zurück zu den Niveaus",
+    "startLesson": "Lektion starten"
   }
 }

@@ -22,5 +22,18 @@
     "loginSubmit": "Log in",
     "registerError": "Something went wrong. Please try again.",
     "loginError": "Invalid email or password."
+  },
+  "learn": {
+    "levelsTitle": "Levels",
+    "unitsTitle": "Units",
+    "continue": "Continue",
+    "checkAnswer": "Check answer",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "nextExercise": "Next exercise",
+    "lessonComplete": "Lesson complete!",
+    "score": "Score",
+    "backToLevels": "Back to levels",
+    "startLesson": "Start lesson"
   }
 }

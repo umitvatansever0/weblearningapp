@@ -22,5 +22,18 @@
     "loginSubmit": "Giriş yap",
     "registerError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
     "loginError": "Geçersiz e-posta veya şifre."
+  },
+  "learn": {
+    "levelsTitle": "Seviyeler",
+    "unitsTitle": "Üniteler",
+    "continue": "Devam Et",
+    "checkAnswer": "Cevabı kontrol et",
+    "correct": "Doğru!",
+    "incorrect": "Yanlış",
+    "nextExercise": "Sonraki alıştırma",
+    "lessonComplete": "Ders tamamlandı!",
+    "score": "Puan",
+    "backToLevels": "Seviyelere dön",
+    "startLesson": "Derse başla"
   }
 }
