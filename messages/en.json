@@ -38,5 +38,24 @@
     "pronounce": "Pronounce",
     "submitError": "Something went wrong. Please try again.",
     "retry": "Retry"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "streak": "Day streak",
+    "xp": "XP",
+    "dailyGoal": "Daily goal",
+    "badgesEarned": "Badges earned",
+    "noBadgesYet": "No badges yet — complete a lesson to earn your first one!"
+  },
+  "vocab": {
+    "title": "Vocabulary Review",
+    "reviewDue": "cards due today",
+    "noReviewsToday": "No reviews due today. Come back tomorrow!",
+    "showAnswer": "Show answer",
+    "again": "Again",
+    "hard": "Hard",
+    "good": "Good",
+    "easy": "Easy",
+    "reviewComplete": "Review complete for today!"
   }
 }

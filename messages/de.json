@@ -38,5 +38,24 @@
     "pronounce": "Aussprechen",
     "submitError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
     "retry": "Wiederholen"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "streak": "Tage-Serie",
+    "xp": "XP",
+    "dailyGoal": "Tagesziel",
+    "badgesEarned": "Verdiente Abzeichen",
+    "noBadgesYet": "Noch keine Abzeichen — schließe eine Lektion ab, um dein erstes zu verdienen!"
+  },
+  "vocab": {
+    "title": "Wortschatz-Wiederholung",
+    "reviewDue": "Karten heute fällig",
+    "noReviewsToday": "Heute keine Wiederholungen fällig. Komm morgen wieder!",
+    "showAnswer": "Antwort zeigen",
+    "again": "Nochmal",
+    "hard": "Schwer",
+    "good": "Gut",
+    "easy": "Leicht",
+    "reviewComplete": "Wiederholung für heute abgeschlossen!"
   }
 }
