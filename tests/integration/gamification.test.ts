@@ -47,13 +47,18 @@ describe('applyLessonCompletionRewards', () => {
   })
 
   afterAll(async () => {
-    await prisma.userBadge.deleteMany({ where: { userId } })
-    await prisma.userVocabCard.deleteMany({ where: { userId } })
-    await prisma.userProgress.deleteMany({ where: { userId } })
-    await prisma.vocabWord.deleteMany({ where: { lessonId } })
-    await prisma.lesson.deleteMany({ where: { id: lessonId } })
-    await prisma.unit.deleteMany({ where: { id: unitId } })
-    await prisma.user.deleteMany({ where: { id: userId } })
+    // Guard against beforeAll having thrown before these were assigned —
+    // an unfiltered deleteMany({ where: { userId: undefined } }) would
+    // wipe every row in the table (Prisma drops undefined filter keys).
+    if (userId && lessonId && unitId) {
+      await prisma.userBadge.deleteMany({ where: { userId } })
+      await prisma.userVocabCard.deleteMany({ where: { userId } })
+      await prisma.userProgress.deleteMany({ where: { userId } })
+      await prisma.vocabWord.deleteMany({ where: { lessonId } })
+      await prisma.lesson.deleteMany({ where: { id: lessonId } })
+      await prisma.unit.deleteMany({ where: { id: unitId } })
+      await prisma.user.deleteMany({ where: { id: userId } })
+    }
     await prisma.$disconnect()
   })
 
