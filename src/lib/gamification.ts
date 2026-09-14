@@ -55,7 +55,15 @@ export async function applyLessonCompletionRewards(
   const now = new Date()
 
   const { streak } = computeNextStreak(user.streak, user.lastActivityDate, now)
-  const xpGain = computeXpGain(correctCount)
+
+  // Only award XP the first time this lesson is completed — otherwise a
+  // user could replay POST /api/lessons/[id]/complete indefinitely to
+  // farm unbounded XP and badges (e.g. xp_100) from a single lesson.
+  const existingProgress = await prisma.userProgress.findUnique({
+    where: { userId_lessonId: { userId, lessonId } },
+  })
+  const isFirstCompletion = !existingProgress?.completed
+  const xpGain = isFirstCompletion ? computeXpGain(correctCount) : 0
 
   await prisma.user.update({
     where: { id: userId },

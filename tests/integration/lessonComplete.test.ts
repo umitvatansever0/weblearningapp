@@ -87,12 +87,21 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
     expect(stored?.score).toBe(80)
   })
 
-  it('awards XP and creates vocab cards as a side effect', async () => {
+  it('awards XP as a side effect of the first completion', async () => {
+    const user = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
+    // The previous test ("upserts progress...") already performed the first
+    // completion for this lesson, which is where XP is awarded.
+    expect(user.xp).toBeGreaterThanOrEqual(10)
+  })
+
+  it('does not award additional XP on a repeat completion of the same lesson', async () => {
+    const before = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
+
     vi.mocked(getServerSession).mockResolvedValue({ user: { id: userId } } as never)
     await POST(makeRequest({ score: 1 }), { params: Promise.resolve({ lessonId }) })
 
-    const user = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
-    expect(user.xp).toBeGreaterThanOrEqual(10)
+    const after = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
+    expect(after.xp).toBe(before.xp)
   })
 
   it('returns 400 for malformed JSON body', async () => {

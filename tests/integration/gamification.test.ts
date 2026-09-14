@@ -78,8 +78,11 @@ describe('applyLessonCompletionRewards', () => {
     expect(badges.map((entry) => entry.badge.code)).toContain('first_lesson')
   })
 
-  it('does not create duplicate vocab cards or duplicate badges on a second completion', async () => {
+  it('does not award XP, create duplicate vocab cards, or duplicate badges on a second completion of the same lesson', async () => {
     await applyLessonCompletionRewards(userId, lessonId, 1)
+
+    const user = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
+    expect(user.xp).toBe(20) // unchanged from the first completion — replaying must not farm XP
 
     const cards = await prisma.userVocabCard.findMany({ where: { userId } })
     expect(cards).toHaveLength(1)

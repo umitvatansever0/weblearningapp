@@ -17,15 +17,26 @@ export function VocabReviewSession({ cards }: { cards: ReviewCard[] }) {
   const [index, setIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
   const [done, setDone] = useState(cards.length === 0)
+  const [error, setError] = useState<string | null>(null)
 
   const current = cards[index]
 
   async function handleGrade(grade: Grade) {
-    await fetch(`/api/vocab/${current.id}/review`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ grade }),
-    })
+    setError(null)
+    try {
+      const res = await fetch(`/api/vocab/${current.id}/review`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ grade }),
+      })
+      if (res.ok === false) {
+        setError(t('submitError'))
+        return
+      }
+    } catch {
+      setError(t('submitError'))
+      return
+    }
 
     setRevealed(false)
     if (index + 1 < cards.length) {
@@ -50,6 +61,8 @@ export function VocabReviewSession({ cards }: { cards: ReviewCard[] }) {
           </div>
         )}
       </div>
+
+      {error && <p className="text-red-700 text-sm">{error}</p>}
 
       {!revealed ? (
         <button

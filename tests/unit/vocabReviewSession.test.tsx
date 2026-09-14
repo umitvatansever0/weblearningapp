@@ -54,6 +54,23 @@ describe('VocabReviewSession', () => {
     )
   })
 
+  it('shows an error and does not advance when the review submission fails', async () => {
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
+      ok: false,
+      json: async () => ({ error: 'Server error' }),
+    })
+
+    renderSession(cards)
+    fireEvent.click(screen.getByText(en.vocab.showAnswer))
+    fireEvent.click(screen.getByText(en.vocab.good))
+
+    await waitFor(() => {
+      expect(screen.getByText(en.vocab.submitError)).toBeInTheDocument()
+    })
+    expect(screen.getByText('Hallo')).toBeInTheDocument()
+    expect(screen.queryByText('Danke')).not.toBeInTheDocument()
+  })
+
   it('shows the completion message after grading the last card', async () => {
     ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValue({
       ok: true,
