@@ -43,7 +43,7 @@
     "title": "Dashboard",
     "streak": "Day streak",
     "xp": "XP",
-    "dailyGoal": "Daily goal",
+    "xpProgress": "XP progress",
     "badgesEarned": "Badges earned",
     "noBadgesYet": "No badges yet — complete a lesson to earn your first one!"
   },
@@ -56,6 +56,7 @@
     "hard": "Hard",
     "good": "Good",
     "easy": "Easy",
-    "reviewComplete": "Review complete for today!"
+    "reviewComplete": "Review complete for today!",
+    "submitError": "Something went wrong. Please try again."
   }
 }

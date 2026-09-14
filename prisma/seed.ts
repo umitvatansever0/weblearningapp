@@ -4,8 +4,11 @@ const prisma = new PrismaClient()
 
 async function main() {
   // Delete in FK-safe order so this script is safely re-runnable, even after
-  // a learner has generated UserProgress rows against the seeded lessons.
+  // a learner has generated UserProgress/UserVocabCard rows against the
+  // seeded lessons/words.
   await prisma.userProgress.deleteMany({})
+  await prisma.userVocabCard.deleteMany({})
+  await prisma.vocabWord.deleteMany({})
   await prisma.exercise.deleteMany({})
   await prisma.lesson.deleteMany({})
   await prisma.unit.deleteMany({})
@@ -30,6 +33,28 @@ async function main() {
   const [a1, a2, b1, b2, c1, c2] = await Promise.all(
     levelInputs.map((input) => prisma.level.findUniqueOrThrow({ where: { code: input.code } }))
   )
+
+  const badgeInputs = [
+    { code: 'first_lesson', titleDe: 'Erste Lektion', titleEn: 'First Lesson', titleTr: 'İlk Ders' },
+    { code: 'streak_3', titleDe: '3-Tage-Serie', titleEn: '3-Day Streak', titleTr: '3 Günlük Seri' },
+    { code: 'streak_7', titleDe: '7-Tage-Serie', titleEn: '7-Day Streak', titleTr: '7 Günlük Seri' },
+    {
+      code: 'first_vocab_review',
+      titleDe: 'Erste Wortkarte',
+      titleEn: 'First Vocab Review',
+      titleTr: 'İlk Kelime Tekrarı',
+    },
+    { code: 'a1_complete', titleDe: 'A1 abgeschlossen', titleEn: 'A1 Complete', titleTr: 'A1 Tamamlandı' },
+    { code: 'xp_100', titleDe: '100 XP', titleEn: '100 XP', titleTr: '100 XP' },
+  ]
+
+  for (const input of badgeInputs) {
+    await prisma.badge.upsert({
+      where: { code: input.code },
+      update: { titleDe: input.titleDe, titleEn: input.titleEn, titleTr: input.titleTr },
+      create: input,
+    })
+  }
 
   // --- A1: Begrüßung (3 lessons) ---
   const a1Unit = await prisma.unit.create({
@@ -329,6 +354,123 @@ async function main() {
         data: { sentence: 'Die Kosten sind hoch; ___ lohnt sich die Investition langfristig.' },
         correctAnswer: { accepted: ['dennoch'] },
         explanation: '"Dennoch" verbindet den Gegensatz zwischen hohen Kosten und langfristigem Nutzen.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      {
+        lessonId: a1Lesson1.id,
+        word: 'Guten Morgen',
+        translationEn: 'good morning',
+        translationTr: 'günaydın',
+        exampleSentence: 'Guten Morgen, wie geht es dir?',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        word: 'Hallo',
+        translationEn: 'hello',
+        translationTr: 'merhaba',
+        exampleSentence: 'Hallo, ich bin Anna.',
+      },
+      {
+        lessonId: a1Lesson2.id,
+        word: 'sein',
+        translationEn: 'to be',
+        translationTr: 'olmak',
+        exampleSentence: 'Ich bin müde.',
+      },
+      {
+        lessonId: a1Lesson2.id,
+        word: 'heißen',
+        translationEn: 'to be called',
+        translationTr: 'adında olmak',
+        exampleSentence: 'Ich heiße Anna.',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        word: 'eins',
+        translationEn: 'one',
+        translationTr: 'bir',
+        exampleSentence: 'Ich habe eins.',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        word: 'zehn',
+        translationEn: 'ten',
+        translationTr: 'on',
+        exampleSentence: 'Zehn Finger habe ich.',
+      },
+      {
+        lessonId: a2Lesson.id,
+        word: 'essen',
+        translationEn: 'to eat',
+        translationTr: 'yemek',
+        exampleSentence: 'Ich habe Pizza gegessen.',
+      },
+      {
+        lessonId: a2Lesson.id,
+        word: 'lesen',
+        translationEn: 'to read',
+        translationTr: 'okumak',
+        exampleSentence: 'Er hat ein Buch gelesen.',
+      },
+      {
+        lessonId: b1Lesson.id,
+        word: 'krank',
+        translationEn: 'sick',
+        translationTr: 'hasta',
+        exampleSentence: 'Ich bin krank.',
+      },
+      {
+        lessonId: b1Lesson.id,
+        word: 'weil',
+        translationEn: 'because',
+        translationTr: 'çünkü',
+        exampleSentence: 'Ich bleibe zu Hause, weil ich krank bin.',
+      },
+      {
+        lessonId: b2Lesson.id,
+        word: 'reparieren',
+        translationEn: 'to repair',
+        translationTr: 'tamir etmek',
+        exampleSentence: 'Das Auto wird repariert.',
+      },
+      {
+        lessonId: b2Lesson.id,
+        word: 'öffnen',
+        translationEn: 'to open',
+        translationTr: 'açmak',
+        exampleSentence: 'Die Tür wird geöffnet.',
+      },
+      {
+        lessonId: c1Lesson.id,
+        word: 'müde',
+        translationEn: 'tired',
+        translationTr: 'yorgun',
+        exampleSentence: 'Er sagt, er sei müde.',
+      },
+      {
+        lessonId: c1Lesson.id,
+        word: 'sagen',
+        translationEn: 'to say',
+        translationTr: 'söylemek',
+        exampleSentence: 'Er sagt, er sei müde.',
+      },
+      {
+        lessonId: c2Lesson.id,
+        word: 'dennoch',
+        translationEn: 'nevertheless',
+        translationTr: 'yine de',
+        exampleSentence: 'Er hat hart gearbeitet, dennoch ist er nicht befördert worden.',
+      },
+      {
+        lessonId: c2Lesson.id,
+        word: 'sich lohnen',
+        translationEn: 'to be worth it',
+        translationTr: 'değmek',
+        exampleSentence: 'Die Investition lohnt sich langfristig.',
       },
     ],
   })

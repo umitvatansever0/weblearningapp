@@ -15,6 +15,7 @@ function makeRequest(body: unknown) {
 }
 
 describe('POST /api/lessons/[lessonId]/complete', () => {
+  vi.setConfig({ testTimeout: 30000 })
   let userId: string
   let unitId: string
   let lessonId: string
@@ -48,10 +49,21 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
   })
 
   afterAll(async () => {
-    await prisma.userProgress.deleteMany({ where: { userId } })
-    await prisma.lesson.deleteMany({ where: { id: lessonId } })
-    await prisma.unit.deleteMany({ where: { id: unitId } })
-    await prisma.user.deleteMany({ where: { id: userId } })
+    // applyLessonCompletionRewards (Task 5) may award badges and vocab
+    // cards for this user as a side effect; both have RESTRICT FKs on
+    // userId, so they must be cleared before the user row can be deleted.
+    //
+    // Guard against beforeAll having thrown before these were assigned —
+    // an unfiltered deleteMany({ where: { userId: undefined } }) would
+    // wipe every row in the table (Prisma drops undefined filter keys).
+    if (userId && lessonId && unitId) {
+      await prisma.userBadge.deleteMany({ where: { userId } })
+      await prisma.userVocabCard.deleteMany({ where: { userId } })
+      await prisma.userProgress.deleteMany({ where: { userId } })
+      await prisma.lesson.deleteMany({ where: { id: lessonId } })
+      await prisma.unit.deleteMany({ where: { id: unitId } })
+      await prisma.user.deleteMany({ where: { id: userId } })
+    }
     await prisma.$disconnect()
   })
 
@@ -73,6 +85,23 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
     })
     expect(stored?.completed).toBe(true)
     expect(stored?.score).toBe(80)
+  })
+
+  it('awards XP as a side effect of the first completion', async () => {
+    const user = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
+    // The previous test ("upserts progress...") already performed the first
+    // completion for this lesson, which is where XP is awarded.
+    expect(user.xp).toBeGreaterThanOrEqual(10)
+  })
+
+  it('does not award additional XP on a repeat completion of the same lesson', async () => {
+    const before = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
+
+    vi.mocked(getServerSession).mockResolvedValue({ user: { id: userId } } as never)
+    await POST(makeRequest({ score: 1 }), { params: Promise.resolve({ lessonId }) })
+
+    const after = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
+    expect(after.xp).toBe(before.xp)
   })
 
   it('returns 400 for malformed JSON body', async () => {

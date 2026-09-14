@@ -19,15 +19,20 @@ enum UiLanguage {
 }
 
 model User {
-  id           String     @id @default(cuid())
-  email        String     @unique
-  passwordHash String
-  name         String
-  role         Role       @default(USER)
-  uiLanguage   UiLanguage @default(EN)
-  createdAt    DateTime   @default(now())
-  updatedAt    DateTime   @updatedAt
-  progress     UserProgress[]
+  id               String     @id @default(cuid())
+  email            String     @unique
+  passwordHash     String
+  name             String
+  role             Role       @default(USER)
+  uiLanguage       UiLanguage @default(EN)
+  streak           Int        @default(0)
+  lastActivityDate DateTime?
+  xp               Int        @default(0)
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+  progress         UserProgress[]
+  vocabCards       UserVocabCard[]
+  badges           UserBadge[]
 }
 
 enum LevelCode {
@@ -76,6 +81,7 @@ model Lesson {
   explanationTr String
   exercises     Exercise[]
   progress      UserProgress[]
+  vocabWords    VocabWord[]
 }
 
 model Exercise {
@@ -100,4 +106,50 @@ model UserProgress {
   lastAttemptAt DateTime @default(now())
 
   @@unique([userId, lessonId])
+}
+
+model VocabWord {
+  id              String @id @default(cuid())
+  lessonId        String
+  lesson          Lesson @relation(fields: [lessonId], references: [id])
+  word            String
+  translationEn   String
+  translationTr   String
+  exampleSentence String
+  cards           UserVocabCard[]
+}
+
+model UserVocabCard {
+  id             String    @id @default(cuid())
+  userId         String
+  user           User      @relation(fields: [userId], references: [id])
+  vocabWordId    String
+  vocabWord      VocabWord @relation(fields: [vocabWordId], references: [id])
+  easeFactor     Float     @default(2.5)
+  interval       Int       @default(0)
+  repetitions    Int       @default(0)
+  dueDate        DateTime  @default(now())
+  lastReviewedAt DateTime?
+
+  @@unique([userId, vocabWordId])
+}
+
+model Badge {
+  id      String @id @default(cuid())
+  code    String @unique
+  titleDe String
+  titleEn String
+  titleTr String
+  users   UserBadge[]
+}
+
+model UserBadge {
+  id       String   @id @default(cuid())
+  userId   String
+  user     User     @relation(fields: [userId], references: [id])
+  badgeId  String
+  badge    Badge    @relation(fields: [badgeId], references: [id])
+  earnedAt DateTime @default(now())
+
+  @@unique([userId, badgeId])
 }

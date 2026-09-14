@@ -43,7 +43,7 @@
     "title": "Dashboard",
     "streak": "Tage-Serie",
     "xp": "XP",
-    "dailyGoal": "Tagesziel",
+    "xpProgress": "XP-Fortschritt",
     "badgesEarned": "Verdiente Abzeichen",
     "noBadgesYet": "Noch keine Abzeichen — schließe eine Lektion ab, um dein erstes zu verdienen!"
   },
@@ -56,6 +56,7 @@
     "hard": "Schwer",
     "good": "Gut",
     "easy": "Leicht",
-    "reviewComplete": "Wiederholung für heute abgeschlossen!"
+    "reviewComplete": "Wiederholung für heute abgeschlossen!",
+    "submitError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   }
 }

@@ -49,9 +49,14 @@ describe('POST /api/exercises/[exerciseId]/submit', () => {
   })
 
   afterAll(async () => {
-    await prisma.exercise.deleteMany({ where: { lessonId } })
-    await prisma.lesson.deleteMany({ where: { id: lessonId } })
-    await prisma.unit.deleteMany({ where: { id: unitId } })
+    // Guard against beforeAll having thrown before these were assigned —
+    // an unfiltered deleteMany({ where: { lessonId: undefined } }) would
+    // wipe every row in the table (Prisma drops undefined filter keys).
+    if (unitId && lessonId) {
+      await prisma.exercise.deleteMany({ where: { lessonId } })
+      await prisma.lesson.deleteMany({ where: { id: lessonId } })
+      await prisma.unit.deleteMany({ where: { id: unitId } })
+    }
     await prisma.$disconnect()
   })
 
