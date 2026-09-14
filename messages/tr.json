@@ -7,8 +7,19 @@
     "admin": "Yönetim",
     "languageSwitcherLabel": "Dil"
   },
+  "home": {
+    "heroTitle": "Almancayı akıllıca öğren",
+    "heroSubtitle": "Her seviyeden Almanca öğrenenler için ücretsiz gramer dersleri, alıştırmalar ve aralıklı tekrar yöntemiyle kelime çalışması.",
+    "ctaRegister": "Ücretsiz başla",
+    "ctaLogin": "Giriş yap",
+    "levelsTitle": "Seviyeler",
+    "levelAvailable": "Şimdi kullanılabilir",
+    "levelComingSoon": "Yakında"
+  },
   "footer": {
-    "rights": "Tüm hakları saklıdır."
+    "rights": "Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları"
   },
   "cookieConsent": {
     "message": "Deneyiminizi geliştirmek ve ilgili reklamları göstermek için çerezler kullanıyoruz.",
@@ -104,5 +115,21 @@
     "invalidJson": "Geçersiz JSON",
     "saveError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
     "accessDenied": "Bu sayfaya erişiminiz yok."
+  },
+  "legal": {
+    "privacyTitle": "Gizlilik Politikası",
+    "privacyParagraphs": [
+      "Hesap oluştururken sağladığınız bilgileri (e-posta, ad, şifre) ve DeutschLernen'i kullanırken oluşan öğrenme verilerini —ders ilerlemesi, XP, seri (streak), rozetler ve kelime tekrar geçmişi dahil— topluyoruz. Bu veriler sunucularımızda saklanır ve yalnızca hizmeti sunmak ve geliştirmek için kullanılır.",
+      "Gerekli olmayan çerezleri yüklemeden önce izninizi almak için bir çerez onay banner'ı kullanıyoruz. Kabul ederseniz reklam göstermek için Google AdSense ve site kullanımını anlamak için Google Analytics yükleyebiliriz. Reddederseniz bu üçüncü taraf script'lerinden hiçbiri yüklenmez; yalnızca oturum açma gibi kesinlikle gerekli çerezler kullanılır.",
+      "İletişim sayfamızdaki bilgileri kullanarak bize ulaşıp kişisel verilerinize erişim, düzeltme veya silme talebinde her zaman bulunabilirsiniz. Ayrıca bu site için tarayıcınızın yerel depolamasını temizleyerek çerez onayınızı istediğiniz zaman geri çekebilirsiniz.",
+      "Bu politikayla ilgili sorularınız için lütfen hesap ayarlarınızda veya iletişim sayfamızda belirtilen e-posta adresinden bize ulaşın."
+    ],
+    "termsTitle": "Kullanım Şartları",
+    "termsParagraphs": [
+      "DeutschLernen'de bir hesap oluşturarak hizmeti yalnızca kişisel, ticari olmayan dil öğrenimi amacıyla kullanmayı kabul etmiş olursunuz.",
+      "Hesap bilgilerinizi gizli tutmaktan ve hesabınız altında gerçekleşen tüm etkinliklerden siz sorumlusunuz.",
+      "Bu platformdaki içerikler (gramer açıklamaları, alıştırmalar, kelimeler) eğitim amaçlıdır ve önceden haber verilmeksizin herhangi bir zamanda güncellenebilir veya düzeltilebilir.",
+      "Bu şartları ihlal eden, hizmeti kötüye kullanan veya işleyişini bozmaya çalışan hesapları askıya alabilir veya sonlandırabiliriz. Bu şartları değiştirme hakkımızı saklı tutarız; değişikliklerden sonra hizmeti kullanmaya devam etmek, güncellenmiş şartların kabulü anlamına gelir."
+    ]
   }
 }

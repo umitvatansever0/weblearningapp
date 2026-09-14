@@ -7,8 +7,19 @@
     "admin": "Admin",
     "languageSwitcherLabel": "Sprache"
   },
+  "home": {
+    "heroTitle": "Lerne Deutsch auf die smarte Art",
+    "heroSubtitle": "Kostenlose Grammatiklektionen, Übungen und Vokabeltraining mit Spaced Repetition für Deutschlernende jeder Stufe.",
+    "ctaRegister": "Kostenlos starten",
+    "ctaLogin": "Anmelden",
+    "levelsTitle": "Niveaus",
+    "levelAvailable": "Jetzt verfügbar",
+    "levelComingSoon": "Demnächst"
+  },
   "footer": {
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
   },
   "cookieConsent": {
     "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und relevante Werbung anzuzeigen.",
@@ -104,5 +115,21 @@
     "invalidJson": "Ungültiges JSON",
     "saveError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
     "accessDenied": "Du hast keinen Zugriff auf diese Seite."
+  },
+  "legal": {
+    "privacyTitle": "Datenschutzerklärung",
+    "privacyParagraphs": [
+      "Wir erheben die Informationen, die Sie bei der Kontoerstellung angeben (E-Mail, Name, Passwort), sowie die Lerndaten, die bei der Nutzung von DeutschLernen entstehen, einschließlich Lektionsfortschritt, XP, Serien (Streaks), Abzeichen und Vokabelwiederholungsverlauf. Diese Daten werden auf unseren Servern gespeichert und ausschließlich zur Bereitstellung und Verbesserung des Dienstes verwendet.",
+      "Wir verwenden einen Cookie-Consent-Banner, um vor dem Laden nicht notwendiger Cookies Ihre Zustimmung einzuholen. Bei Zustimmung können wir Google AdSense zur Anzeige von Werbung und Google Analytics zur Nutzungsanalyse laden. Bei Ablehnung werden keine dieser Drittanbieter-Skripte geladen; es werden nur unbedingt notwendige Cookies (z. B. für Ihre Anmeldesitzung) verwendet.",
+      "Sie können jederzeit Auskunft über, Berichtigung oder Löschung Ihrer personenbezogenen Daten verlangen, indem Sie uns über die auf unserer Kontaktseite angegebenen Kontaktdaten kontaktieren. Sie können Ihre Cookie-Zustimmung außerdem jederzeit widerrufen, indem Sie den lokalen Speicher Ihres Browsers für diese Website löschen.",
+      "Bei Fragen zu dieser Richtlinie kontaktieren Sie uns bitte über die E-Mail-Adresse in Ihren Kontoeinstellungen oder auf unserer Kontaktseite."
+    ],
+    "termsTitle": "Nutzungsbedingungen",
+    "termsParagraphs": [
+      "Mit der Erstellung eines Kontos bei DeutschLernen erklären Sie sich damit einverstanden, den Dienst ausschließlich für private, nicht-kommerzielle Sprachlernzwecke zu nutzen.",
+      "Sie sind dafür verantwortlich, Ihre Zugangsdaten vertraulich zu behandeln, sowie für alle Aktivitäten, die unter Ihrem Konto stattfinden.",
+      "Inhalte auf dieser Plattform (Grammatikerklärungen, Übungen, Vokabeln) dienen Bildungszwecken und können jederzeit ohne Vorankündigung aktualisiert oder korrigiert werden.",
+      "Wir können Konten sperren oder löschen, die gegen diese Bedingungen verstoßen, den Dienst missbrauchen oder dessen Betrieb stören. Wir behalten uns das Recht vor, diese Bedingungen zu ändern; die weitere Nutzung des Dienstes nach einer Änderung gilt als Zustimmung zu den aktualisierten Bedingungen."
+    ]
   }
 }

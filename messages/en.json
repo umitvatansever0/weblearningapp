@@ -7,8 +7,19 @@
     "admin": "Admin",
     "languageSwitcherLabel": "Language"
   },
+  "home": {
+    "heroTitle": "Learn German the smart way",
+    "heroSubtitle": "Free grammar lessons, exercises, and spaced-repetition vocabulary practice for German learners at every level.",
+    "ctaRegister": "Get started for free",
+    "ctaLogin": "Log in",
+    "levelsTitle": "Levels",
+    "levelAvailable": "Available now",
+    "levelComingSoon": "Coming soon"
+  },
   "footer": {
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "cookieConsent": {
     "message": "We use cookies to improve your experience and show relevant ads.",
@@ -104,5 +115,21 @@
     "invalidJson": "Invalid JSON",
     "saveError": "Something went wrong. Please try again.",
     "accessDenied": "You don't have access to this page."
+  },
+  "legal": {
+    "privacyTitle": "Privacy Policy",
+    "privacyParagraphs": [
+      "We collect the information you provide when you create an account (email, name, password) and the learning data generated while you use DeutschLernen, including lesson progress, XP, streaks, badges, and vocabulary review history. This data is stored on our servers and used solely to provide and improve the service.",
+      "We use a cookie consent banner to ask for your permission before loading any non-essential cookies. If you accept, we may load Google AdSense to show ads and Google Analytics to understand site usage. If you decline, none of these third-party scripts are loaded, and only strictly necessary cookies (such as your login session) are used.",
+      "You can request access to, correction of, or deletion of your personal data at any time by contacting us using the details on our contact page. You can also withdraw cookie consent at any time by clearing your browser's local storage for this site.",
+      "If you have questions about this policy, please contact us at the email address listed in your account settings or on our contact page."
+    ],
+    "termsTitle": "Terms of Service",
+    "termsParagraphs": [
+      "By creating an account on DeutschLernen you agree to use the service for personal, non-commercial language learning purposes only.",
+      "You are responsible for keeping your account credentials confidential and for all activity that occurs under your account.",
+      "Content on this platform (grammar explanations, exercises, vocabulary) is provided for educational purposes and may be updated or corrected at any time without notice.",
+      "We may suspend or terminate accounts that violate these terms, abuse the service, or attempt to disrupt its operation. We reserve the right to modify these terms; continued use of the service after changes constitutes acceptance of the updated terms."
+    ]
   }
 }
