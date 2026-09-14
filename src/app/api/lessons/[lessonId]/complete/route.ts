@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
+import { applyLessonCompletionRewards } from '@/lib/gamification'
 
 export async function POST(
   request: Request,
@@ -28,6 +29,8 @@ export async function POST(
     update: { completed: true, score, lastAttemptAt: new Date() },
     create: { userId: session.user.id, lessonId, completed: true, score },
   })
+
+  await applyLessonCompletionRewards(session.user.id, lessonId, score)
 
   return NextResponse.json({ completed: progress.completed, score: progress.score })
 }
