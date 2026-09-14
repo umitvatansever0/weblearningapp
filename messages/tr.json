@@ -4,6 +4,7 @@
     "login": "Giriş Yap",
     "register": "Kayıt Ol",
     "logout": "Çıkış Yap",
+    "admin": "Yönetim",
     "languageSwitcherLabel": "Dil"
   },
   "footer": {

@@ -4,6 +4,7 @@
     "login": "Anmelden",
     "register": "Registrieren",
     "logout": "Abmelden",
+    "admin": "Admin",
     "languageSwitcherLabel": "Sprache"
   },
   "footer": {

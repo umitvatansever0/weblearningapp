@@ -45,7 +45,7 @@ describe('Header', () => {
 
   it('renders the user name and a log out control when logged in', () => {
     vi.mocked(useSession).mockReturnValue({
-      data: { user: { name: 'Ada Lovelace', email: 'ada@example.com' } },
+      data: { user: { name: 'Ada Lovelace', email: 'ada@example.com', role: 'USER' } },
       status: 'authenticated',
     } as ReturnType<typeof useSession>)
 
@@ -54,5 +54,16 @@ describe('Header', () => {
     expect(screen.getByText(en.nav.logout)).toBeInTheDocument()
     expect(screen.queryByText(en.nav.login)).not.toBeInTheDocument()
     expect(screen.queryByText(en.nav.register)).not.toBeInTheDocument()
+    expect(screen.queryByText(en.nav.admin)).not.toBeInTheDocument()
+  })
+
+  it('renders an Admin link for admin users', () => {
+    vi.mocked(useSession).mockReturnValue({
+      data: { user: { name: 'Ada Lovelace', email: 'ada@example.com', role: 'ADMIN' } },
+      status: 'authenticated',
+    } as ReturnType<typeof useSession>)
+
+    renderWithIntl(<Header />)
+    expect(screen.getByText(en.nav.admin)).toBeInTheDocument()
   })
 })

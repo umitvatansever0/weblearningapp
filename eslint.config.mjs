@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Git worktrees live under .claude/worktrees/ in this project; without
+    // this, linting from the repo root also walks each worktree's own
+    // .next build output and node_modules.
+    ".claude/**",
   ]),
 ]);
 

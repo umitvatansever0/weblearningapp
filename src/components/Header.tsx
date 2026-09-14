@@ -17,6 +17,7 @@ export function Header() {
       <nav className="flex items-center gap-4">
         {status === 'authenticated' ? (
           <>
+            {session.user?.role === 'ADMIN' && <Link href="/admin">{t('admin')}</Link>}
             <span className="text-sm">{session.user?.name ?? session.user?.email}</span>
             <button type="button" onClick={() => signOut()} className="text-sm underline">
               {t('logout')}
