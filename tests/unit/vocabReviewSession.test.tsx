@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { NextIntlClientProvider } from 'next-intl'
 import { VocabReviewSession } from '@/components/vocab/VocabReviewSession'
@@ -20,6 +20,17 @@ const cards = [
 describe('VocabReviewSession', () => {
   beforeEach(() => {
     global.fetch = vi.fn()
+  })
+
+  beforeEach(() => {
+    window.localStorage.clear()
+    vi.stubEnv('NEXT_PUBLIC_ADSENSE_CLIENT_ID', 'ca-pub-123')
+    vi.stubEnv('NEXT_PUBLIC_ADSENSE_SLOT_ID', 'slot-456')
+  })
+
+  afterEach(() => {
+    vi.unstubAllEnvs()
+    document.querySelectorAll('script[src*="adsbygoogle.js"]').forEach((node) => node.remove())
   })
 
   it('shows the German word first, hides the translation until revealed', () => {
@@ -83,6 +94,22 @@ describe('VocabReviewSession', () => {
 
     await waitFor(() => {
       expect(screen.getByText(en.vocab.reviewComplete)).toBeInTheDocument()
+    })
+  })
+
+  it('renders the vocab-review ad slot after grading the last card when consent is accepted', async () => {
+    window.localStorage.setItem('cookie-consent', 'accepted')
+    ;(global.fetch as ReturnType<typeof vi.fn>).mockResolvedValue({
+      ok: true,
+      json: async () => ({ interval: 1, dueDate: new Date().toISOString() }),
+    })
+
+    renderSession([cards[0]])
+    fireEvent.click(screen.getByText(en.vocab.showAnswer))
+    fireEvent.click(screen.getByText(en.vocab.good))
+
+    await waitFor(() => {
+      expect(screen.getByTestId('ad-slot-vocabReview')).toBeInTheDocument()
     })
   })
 })

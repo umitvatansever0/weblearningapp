@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { AdSlot } from '@/components/AdSlot'
 
 interface ReviewCard {
   id: string
@@ -47,7 +48,12 @@ export function VocabReviewSession({ cards }: { cards: ReviewCard[] }) {
   }
 
   if (done) {
-    return <p className="text-lg font-medium">{t('reviewComplete')}</p>
+    return (
+      <div className="flex flex-col gap-4">
+        <p className="text-lg font-medium">{t('reviewComplete')}</p>
+        <AdSlot placement="vocabReview" />
+      </div>
+    )
   }
 
   return (

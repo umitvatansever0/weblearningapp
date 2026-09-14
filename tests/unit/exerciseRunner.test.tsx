@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { NextIntlClientProvider } from 'next-intl'
 import { ExerciseRunner } from '@/components/exercises/ExerciseRunner'
@@ -42,6 +42,17 @@ describe('ExerciseRunner', () => {
   beforeEach(() => {
     pushMock.mockReset()
     global.fetch = vi.fn()
+  })
+
+  beforeEach(() => {
+    window.localStorage.clear()
+    vi.stubEnv('NEXT_PUBLIC_ADSENSE_CLIENT_ID', 'ca-pub-123')
+    vi.stubEnv('NEXT_PUBLIC_ADSENSE_SLOT_ID', 'slot-456')
+  })
+
+  afterEach(() => {
+    vi.unstubAllEnvs()
+    document.querySelectorAll('script[src*="adsbygoogle.js"]').forEach((node) => node.remove())
   })
 
   it('renders the first exercise using its matching sub-component', () => {
@@ -204,5 +215,37 @@ describe('ExerciseRunner', () => {
     })
     expect(screen.queryByText(en.learn.incorrect)).not.toBeInTheDocument()
     expect(screen.queryByText(en.learn.correct)).not.toBeInTheDocument()
+  })
+
+  it('renders the exercise-result ad slot on the lesson-complete screen when consent is accepted', async () => {
+    window.localStorage.setItem('cookie-consent', 'accepted')
+    ;(global.fetch as ReturnType<typeof vi.fn>)
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ correct: true, correctAnswer: { correctIndex: 1 }, explanation: 'Because B.' }),
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ correct: false, correctAnswer: { accepted: ['x'] }, explanation: 'Because text.' }),
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ completed: true, score: 1 }),
+      })
+
+    renderRunner(exercises)
+    fireEvent.click(screen.getByText('B'))
+    fireEvent.click(screen.getByText(en.learn.checkAnswer))
+    await waitFor(() => screen.getByText(en.learn.correct))
+    fireEvent.click(screen.getByText(en.learn.nextExercise))
+
+    fireEvent.change(screen.getByRole('textbox'), { target: { value: 'anything' } })
+    fireEvent.click(screen.getByText(en.learn.checkAnswer))
+    await waitFor(() => screen.getByText(en.learn.incorrect))
+    fireEvent.click(screen.getByText(en.learn.nextExercise))
+
+    await waitFor(() => {
+      expect(screen.getByTestId('ad-slot-exerciseResult')).toBeInTheDocument()
+    })
   })
 })

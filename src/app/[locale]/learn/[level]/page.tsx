@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server'
 import { authOptions } from '@/lib/auth'
 import { getUnitsForLevel, pickByLocale } from '@/lib/learn'
 import { Link } from '@/i18n/navigation'
+import { AdSlot } from '@/components/AdSlot'
 import type { LevelCode } from '@prisma/client'
 
 const VALID_LEVELS: LevelCode[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
@@ -47,6 +48,7 @@ export default async function LevelUnitsPage({
           </ul>
         </div>
       ))}
+      <AdSlot placement="lessonList" />
     </main>
   )
 }

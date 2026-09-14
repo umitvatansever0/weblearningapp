@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server'
 import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
 import { pickByLocale } from '@/lib/learn'
+import { AdSlot } from '@/components/AdSlot'
 
 const XP_MILESTONE = 50
 
@@ -64,6 +65,8 @@ export default async function DashboardPage({ params }: { params: Promise<{ loca
           </ul>
         )}
       </div>
+
+      <AdSlot placement="sidebar" />
     </main>
   )
 }

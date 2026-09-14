@@ -8,6 +8,7 @@ import { FillInBlankExercise } from './FillInBlankExercise'
 import { MatchingExercise } from './MatchingExercise'
 import { SentenceOrderExercise } from './SentenceOrderExercise'
 import { ShortAnswerExercise } from './ShortAnswerExercise'
+import { AdSlot } from '@/components/AdSlot'
 import type { SanitizedExercise } from '@/types/exercise'
 
 interface SubmitResult {
@@ -97,6 +98,7 @@ export function ExerciseRunner({
         >
           {t('backToLevels')}
         </button>
+        <AdSlot placement="exerciseResult" />
       </div>
     )
   }
