@@ -1,15 +1,23 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useSyncExternalStore } from 'react'
 import { useTranslations } from 'next-intl'
+
+function subscribe() {
+  return () => {}
+}
+
+function getSnapshot() {
+  return 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window
+}
+
+function getServerSnapshot() {
+  return false
+}
 
 export function PronounceButton({ text }: { text: string }) {
   const t = useTranslations('learn')
-  const [supported, setSupported] = useState(false)
-
-  useEffect(() => {
-    setSupported('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window)
-  }, [])
+  const supported = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
   if (!supported) return null
 
