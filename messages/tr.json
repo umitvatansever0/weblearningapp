@@ -38,5 +38,24 @@
     "pronounce": "Telaffuz et",
     "submitError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
     "retry": "Tekrar dene"
+  },
+  "dashboard": {
+    "title": "Panel",
+    "streak": "Günlük seri",
+    "xp": "XP",
+    "dailyGoal": "Günlük hedef",
+    "badgesEarned": "Kazanılan rozetler",
+    "noBadgesYet": "Henüz rozet yok — ilkini kazanmak için bir ders tamamla!"
+  },
+  "vocab": {
+    "title": "Kelime Tekrarı",
+    "reviewDue": "bugün tekrar edilecek kart",
+    "noReviewsToday": "Bugün tekrar edilecek kart yok. Yarın tekrar gel!",
+    "showAnswer": "Cevabı göster",
+    "again": "Tekrar",
+    "hard": "Zor",
+    "good": "İyi",
+    "easy": "Kolay",
+    "reviewComplete": "Bugünkü tekrar tamamlandı!"
   }
 }
