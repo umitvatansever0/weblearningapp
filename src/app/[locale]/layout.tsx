@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { CookieConsentBanner } from '@/components/CookieConsentBanner'
+import { Analytics } from '@/components/Analytics'
 import { Providers } from '@/components/Providers'
 import '../globals.css'
 
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
             {children}
             <Footer />
             <CookieConsentBanner />
+            <Analytics />
           </Providers>
         </NextIntlClientProvider>
       </body>
