@@ -1675,6 +1675,160 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 11: Perfekt (Einführung) (4 lessons) ---
+  const a1Unit11 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 11, titleDe: 'Perfekt (Einführung)', titleEn: 'Perfekt (Introduction)', titleTr: 'Perfekt (Giriş)' },
+  })
+
+  const a1Unit11Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit11.id,
+      order: 1,
+      grammarTopic: 'Perfekt mit "haben"',
+      explanationDe:
+        'Das Perfekt bildet man mit "haben" oder "sein" + Partizip II. Die meisten Verben nehmen "haben": "Ich habe gegessen. Du hast gearbeitet."',
+      explanationEn:
+        'The Perfekt (past tense) is formed with "haben" or "sein" + past participle. Most verbs take "haben": "Ich habe gegessen." (I have eaten.) "Du hast gearbeitet." (You have worked.)',
+      explanationTr:
+        'Perfekt (geçmiş zaman) "haben" ya da "sein" + Partizip II ile kurulur. Çoğu fiil "haben" alır: "Ich habe gegessen." (Yedim.) "Du hast gearbeitet." (Çalıştın.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ Pizza gegessen. (haben)' },
+        correctAnswer: { accepted: ['habe'] },
+        explanation: 'Mit "ich" benutzt man "habe" im Perfekt.',
+      },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Du ___ heute gearbeitet.', options: ['hast', 'habe', 'hat', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "du" benutzt man "hast".',
+      },
+    ],
+  })
+
+  const a1Unit11Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit11.id,
+      order: 2,
+      grammarTopic: 'Perfekt mit "sein"',
+      explanationDe:
+        'Verben der Bewegung oder Zustandsänderung bilden das Perfekt mit "sein": "Ich bin gegangen. Er ist gekommen."',
+      explanationEn:
+        'Verbs of movement or change of state form the Perfekt with "sein": "Ich bin gegangen." (I have gone.) "Er ist gekommen." (He has come.)',
+      explanationTr:
+        'Hareket ya da durum değişikliği bildiren fiiller Perfekt\'i "sein" ile kurar: "Ich bin gegangen." (Gittim.) "Er ist gekommen." (Geldi.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ nach Hause gegangen.', options: ['habe', 'bin', 'hat', 'ist'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Gehen" bildet das Perfekt mit "sein".',
+      },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ spät gekommen. (sein)' },
+        correctAnswer: { accepted: ['ist'] },
+        explanation: 'Mit "er" benutzt man "ist".',
+      },
+    ],
+  })
+
+  const a1Unit11Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit11.id,
+      order: 3,
+      grammarTopic: 'Partizip II (regelmäßig/unregelmäßig)',
+      explanationDe:
+        'Regelmäßige Verben bilden das Partizip II mit ge-...-t: spielen→gespielt. Unregelmäßige Verben oft mit ge-...-en, manchmal mit Vokalwechsel: lesen→gelesen, trinken→getrunken.',
+      explanationEn:
+        'Regular verbs form the past participle with ge-...-t: spielen→gespielt. Irregular verbs often use ge-...-en, sometimes with a vowel change: lesen→gelesen, trinken→getrunken.',
+      explanationTr:
+        'Düzenli fiiller Partizip II\'yi ge-...-t ile kurar: spielen→gespielt. Düzensiz fiiller genellikle ge-...-en kullanır, bazen ünlü değişimiyle: lesen→gelesen, trinken→getrunken.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Partizip II von "spielen" ist ___.', options: ['gespielt', 'gespielen', 'spielt', 'gespielte'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Regelmäßig: ge-...-t → gespielt.',
+      },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er hat ein Glas Wasser ___. (trinken)' },
+        correctAnswer: { accepted: ['getrunken'] },
+        explanation: 'Unregelmäßig: trinken→getrunken.',
+      },
+    ],
+  })
+
+  const a1Unit11Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit11.id,
+      order: 4,
+      grammarTopic: 'Übung (Perfekt Wiederholung)',
+      explanationDe:
+        'Wiederholung: Perfekt mit "haben" und "sein". "Gestern bin ich ins Kino gegangen. Ich habe einen Film gesehen."',
+      explanationEn:
+        'Review: Perfekt with "haben" and "sein". "Gestern bin ich ins Kino gegangen." (Yesterday I went to the cinema.) "Ich habe einen Film gesehen." (I saw a movie.)',
+      explanationTr:
+        'Tekrar: "haben" ve "sein" ile Perfekt. "Gestern bin ich ins Kino gegangen." (Dün sinemaya gittim.) "Ich habe einen Film gesehen." (Bir film izledim.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gegangen', 'ich', 'bin', 'gestern'] },
+        correctAnswer: { order: ['gestern', 'bin', 'ich', 'gegangen'] },
+        explanation: 'Zeitangabe kann am Satzanfang stehen, dann folgt das Verb.',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich habe einen Film ___.', options: ['gesehen', 'sehen', 'sieht', 'gesehene'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip II von "sehen" ist "gesehen".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit11Lesson1.id, word: 'essen', translationEn: 'to eat', translationTr: 'yemek', exampleSentence: 'Ich habe Pizza gegessen.' },
+      { lessonId: a1Unit11Lesson1.id, word: 'kochen', translationEn: 'to cook', translationTr: 'pişirmek', exampleSentence: 'Ich habe Suppe gekocht.' },
+      { lessonId: a1Unit11Lesson2.id, word: 'kommen', translationEn: 'to come', translationTr: 'gelmek', exampleSentence: 'Er ist gekommen.' },
+      { lessonId: a1Unit11Lesson2.id, word: 'nach Hause', translationEn: 'home / homeward', translationTr: 'eve', exampleSentence: 'Ich bin nach Hause gegangen.' },
+      { lessonId: a1Unit11Lesson3.id, word: 'trinken', translationEn: 'to drink', translationTr: 'içmek', exampleSentence: 'Er hat Wasser getrunken.' },
+      { lessonId: a1Unit11Lesson3.id, word: 'das Glas', translationEn: 'the glass', translationTr: 'bardak', exampleSentence: 'Ein Glas Wasser, bitte.' },
+      { lessonId: a1Unit11Lesson4.id, word: 'gestern', translationEn: 'yesterday', translationTr: 'dün', exampleSentence: 'Gestern bin ich ins Kino gegangen.' },
+      { lessonId: a1Unit11Lesson4.id, word: 'der Film', translationEn: 'the movie', translationTr: 'film', exampleSentence: 'Ich habe einen Film gesehen.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },

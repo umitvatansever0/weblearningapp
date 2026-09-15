@@ -14,7 +14,7 @@ describe('seed content', () => {
   it('has the expected number of A1 units, each with four lessons', async () => {
     const a1 = await prisma.level.findUniqueOrThrow({ where: { code: 'A1' } })
     const units = await prisma.unit.findMany({ where: { levelId: a1.id }, include: { lessons: true } })
-    expect(units).toHaveLength(10)
+    expect(units).toHaveLength(11)
     units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
   })
 
