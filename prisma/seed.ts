@@ -876,6 +876,166 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 6: Akkusativ (4 lessons) ---
+  const a1Unit6 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 6, titleDe: 'Akkusativ', titleEn: 'Accusative Case', titleTr: 'Akkusativ (-i Hali)' },
+  })
+
+  const a1Unit6Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit6.id,
+      order: 1,
+      grammarTopic: 'Akkusativ-Artikel',
+      explanationDe:
+        'Im Akkusativ ändert sich nur der maskuline Artikel: der → den. Feminin, neutral und Plural bleiben gleich: Ich sehe den Mann / die Frau / das Kind.',
+      explanationEn:
+        'In the accusative, only the masculine article changes: der → den. Feminine, neuter, and plural stay the same: Ich sehe den Mann (I see the man) / die Frau / das Kind.',
+      explanationTr:
+        'Akkusativde sadece eril tanımlık değişir: der → den. Dişil, nötr ve çoğul aynı kalır: Ich sehe den Mann (Adamı görüyorum) / die Frau / das Kind.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich sehe ___ Mann.', options: ['der', 'den', 'die', 'das'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Maskulin im Akkusativ: den Mann.',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich sehe ___ Frau.' },
+        correctAnswer: { accepted: ['die'] },
+        explanation: 'Feminin bleibt im Akkusativ gleich: die Frau.',
+      },
+    ],
+  })
+
+  const a1Unit6Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit6.id,
+      order: 2,
+      grammarTopic: 'Akkusativ-Pronomen',
+      explanationDe:
+        'Auch die Personalpronomen ändern sich im Akkusativ: ich→mich, du→dich, er→ihn, sie→sie, es→es, wir→uns, ihr→euch, sie/Sie→sie/Sie.',
+      explanationEn:
+        'Personal pronouns also change in the accusative: ich→mich (me), du→dich (you), er→ihn (him), sie→sie (her), es→es (it), wir→uns (us), ihr→euch (you pl.), sie/Sie→sie/Sie (them/you formal).',
+      explanationTr:
+        'Şahıs zamirleri de akkusativde değişir: ich→mich (beni), du→dich (seni), er→ihn (onu), sie→sie (onu), es→es (onu), wir→uns (bizi), ihr→euch (sizi), sie/Sie→sie/Sie (onları/sizi).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich liebe ___. (him)', options: ['er', 'ihn', 'ihm', 'sie'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"er" wird im Akkusativ zu "ihn".',
+      },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'du', 'er'], rights: ['mich', 'dich', 'ihn'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'mich' },
+            { left: 'du', right: 'dich' },
+            { left: 'er', right: 'ihn' },
+          ],
+        },
+        explanation: 'Akkusativpronomen.',
+      },
+    ],
+  })
+
+  const a1Unit6Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit6.id,
+      order: 3,
+      grammarTopic: 'Verben mit Akkusativ',
+      explanationDe:
+        'Viele Verben brauchen ein Akkusativobjekt: haben, brauchen, möchten, kaufen. "Ich brauche einen Stift." "Ich möchte einen Kaffee."',
+      explanationEn:
+        'Many verbs take an accusative object: haben (to have), brauchen (to need), möchten (would like), kaufen (to buy). "Ich brauche einen Stift." (I need a pen.) "Ich möchte einen Kaffee." (I would like a coffee.)',
+      explanationTr:
+        'Birçok fiil akkusativ nesne alır: haben (sahip olmak), brauchen (ihtiyaç duymak), möchten (istemek), kaufen (satın almak). "Ich brauche einen Stift." (Bir kaleme ihtiyacım var.) "Ich möchte einen Kaffee." (Bir kahve istiyorum.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich brauche ___ Stift. (maskulin, Akkusativ)' },
+        correctAnswer: { accepted: ['einen'] },
+        explanation: 'Maskulin im Akkusativ: einen Stift.',
+      },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich möchte ___ Kaffee.', options: ['ein', 'eine', 'einen', 'der'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"Kaffee" ist maskulin: einen Kaffee.',
+      },
+    ],
+  })
+
+  const a1Unit6Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit6.id,
+      order: 4,
+      grammarTopic: 'Verneinung mit "nicht"',
+      explanationDe:
+        '"nicht" verneint Verben, Adjektive oder ganze Sätze (nicht Nomen mit unbestimmtem Artikel, dafür "kein"): "Ich verstehe das nicht." "Das ist nicht richtig."',
+      explanationEn:
+        '"nicht" negates verbs, adjectives, or whole sentences (not nouns with an indefinite article — use "kein" for that): "Ich verstehe das nicht." (I don\'t understand that.) "Das ist nicht richtig." (That\'s not correct.)',
+      explanationTr:
+        '"nicht" fiilleri, sıfatları ya da tüm cümleyi olumsuz yapar (belirsiz tanımlıklı isimler için değil, onun için "kein" kullanılır): "Ich verstehe das nicht." (Bunu anlamıyorum.) "Das ist nicht richtig." (Bu doğru değil.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich verstehe das ___.', options: ['kein', 'keine', 'nicht', 'nichts'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Verben werden mit "nicht" verneint.',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['richtig', 'das', 'nicht', 'ist'] },
+        correctAnswer: { order: ['das', 'ist', 'nicht', 'richtig'] },
+        explanation: 'Reihenfolge: Subjekt, Verb, "nicht", Adjektiv.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit6Lesson1.id, word: 'sehen', translationEn: 'to see', translationTr: 'görmek', exampleSentence: 'Ich sehe den Mann.' },
+      { lessonId: a1Unit6Lesson1.id, word: 'der Apfel', translationEn: 'the apple', translationTr: 'elma', exampleSentence: 'Ich sehe den Apfel.' },
+      { lessonId: a1Unit6Lesson2.id, word: 'lieben', translationEn: 'to love', translationTr: 'sevmek', exampleSentence: 'Ich liebe ihn.' },
+      { lessonId: a1Unit6Lesson2.id, word: 'kennen', translationEn: 'to know', translationTr: 'tanımak', exampleSentence: 'Ich kenne sie.' },
+      { lessonId: a1Unit6Lesson3.id, word: 'der Stift', translationEn: 'the pen', translationTr: 'kalem', exampleSentence: 'Ich brauche einen Stift.' },
+      { lessonId: a1Unit6Lesson3.id, word: 'kaufen', translationEn: 'to buy', translationTr: 'satın almak', exampleSentence: 'Ich kaufe einen Stift.' },
+      { lessonId: a1Unit6Lesson4.id, word: 'verstehen', translationEn: 'to understand', translationTr: 'anlamak', exampleSentence: 'Ich verstehe das nicht.' },
+      { lessonId: a1Unit6Lesson4.id, word: 'richtig', translationEn: 'correct', translationTr: 'doğru', exampleSentence: 'Das ist richtig.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
