@@ -14,7 +14,7 @@ describe('getUnitsForLevel', () => {
   it('returns the A1 unit with three lessons and no progress for a new user', async () => {
     const units = await getUnitsForLevel('A1', 'nonexistent-user-id')
     expect(units).toHaveLength(1)
-    expect(units[0].lessons).toHaveLength(3)
+    expect(units[0].lessons).toHaveLength(4)
     expect(units[0].lessons.every((lesson) => lesson.completed === false)).toBe(true)
   })
 })

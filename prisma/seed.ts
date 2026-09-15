@@ -180,6 +180,60 @@ async function main() {
     ],
   })
 
+  const a1Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit.id,
+      order: 4,
+      grammarTopic: 'Sich vorstellen (Herkunft und Wohnort)',
+      explanationDe:
+        'Um zu sagen, woher man kommt, benutzt man "kommen aus" + Land. Um zu sagen, wo man wohnt, benutzt man "wohnen in" + Stadt. Beispiel: "Ich komme aus Deutschland. Ich wohne in Berlin."',
+      explanationEn:
+        'To say where you\'re from, use "kommen aus" + country. To say where you live, use "wohnen in" + city. Example: "Ich komme aus Deutschland. Ich wohne in Berlin." (I come from Germany. I live in Berlin.)',
+      explanationTr:
+        'Nereli olduğunuzu söylemek için "kommen aus" + ülke kullanılır. Nerede yaşadığınızı söylemek için "wohnen in" + şehir kullanılır. Örnek: "Ich komme aus Deutschland. Ich wohne in Berlin." (Almanya\'dan geliyorum. Berlin\'de yaşıyorum.)',
+    },
+  })
+
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ aus der Türkei.', options: ['komme', 'kommst', 'kommt', 'kommen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "komme".',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich wohne ___ Berlin.' },
+        correctAnswer: { accepted: ['in'] },
+        explanation: '"Wohnen" + "in" + Stadt.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      {
+        lessonId: a1Lesson4.id,
+        word: 'kommen aus',
+        translationEn: 'to come from',
+        translationTr: '-den gelmek',
+        exampleSentence: 'Ich komme aus Deutschland.',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        word: 'wohnen',
+        translationEn: 'to live',
+        translationTr: 'oturmak',
+        exampleSentence: 'Ich wohne in Berlin.',
+      },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },

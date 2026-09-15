@@ -11,11 +11,11 @@ describe('seed content', () => {
     expect(levels.map((level) => level.code)).toEqual(['A1', 'A2', 'B1', 'B2', 'C1', 'C2'])
   })
 
-  it('has one A1 unit with three lessons', async () => {
+  it('has the expected number of A1 units, each with four lessons', async () => {
     const a1 = await prisma.level.findUniqueOrThrow({ where: { code: 'A1' } })
     const units = await prisma.unit.findMany({ where: { levelId: a1.id }, include: { lessons: true } })
     expect(units).toHaveLength(1)
-    expect(units[0].lessons).toHaveLength(3)
+    units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
   })
 
   it('has at least one lesson for every level above A1', async () => {
