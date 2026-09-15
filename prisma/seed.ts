@@ -234,6 +234,166 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 2: Artikel & Nomen (4 lessons) ---
+  const a1Unit2 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 2, titleDe: 'Artikel & Nomen', titleEn: 'Articles & Nouns', titleTr: 'Tanımlıklar ve İsimler' },
+  })
+
+  const a1Unit2Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit2.id,
+      order: 1,
+      grammarTopic: 'Bestimmter Artikel (der/die/das)',
+      explanationDe:
+        'Jedes deutsche Nomen hat ein Genus: maskulin (der), feminin (die) oder neutral (das). Zum Beispiel: der Mann, die Frau, das Kind.',
+      explanationEn:
+        'Every German noun has a gender: masculine (der), feminine (die), or neuter (das). For example: der Mann (the man), die Frau (the woman), das Kind (the child).',
+      explanationTr:
+        'Her Almanca isim bir cinsiyete sahiptir: eril (der), dişil (die) ya da nötr (das). Örneğin: der Mann (adam), die Frau (kadın), das Kind (çocuk).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Mann ist groß.', options: ['Der', 'Die', 'Das', 'Den'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Mann" ist maskulin: der Mann.',
+      },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['Mann', 'Frau', 'Kind'], rights: ['der', 'die', 'das'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Mann', right: 'der' },
+            { left: 'Frau', right: 'die' },
+            { left: 'Kind', right: 'das' },
+          ],
+        },
+        explanation: 'Mann = der, Frau = die, Kind = das.',
+      },
+    ],
+  })
+
+  const a1Unit2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit2.id,
+      order: 2,
+      grammarTopic: 'Unbestimmter Artikel (ein/eine)',
+      explanationDe:
+        'Der unbestimmte Artikel lautet "ein" für maskulin/neutral und "eine" für feminin: ein Mann, eine Frau, ein Kind.',
+      explanationEn:
+        'The indefinite article is "ein" for masculine/neuter and "eine" for feminine: ein Mann (a man), eine Frau (a woman), ein Kind (a child).',
+      explanationTr:
+        'Belirsiz tanımlık eril/nötr için "ein", dişil için "eine" olur: ein Mann (bir adam), eine Frau (bir kadın), ein Kind (bir çocuk).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist ___ Frau.' },
+        correctAnswer: { accepted: ['eine'] },
+        explanation: '"Frau" ist feminin: eine Frau.',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist ___ Buch.', options: ['ein', 'eine', 'der', 'die'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Buch" ist neutral: ein Buch.',
+      },
+    ],
+  })
+
+  const a1Unit2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit2.id,
+      order: 3,
+      grammarTopic: 'Plural',
+      explanationDe:
+        'Deutsche Nomen bilden den Plural unterschiedlich, oft mit -e, -er, -n/-en oder -s: der Tisch → die Tische, das Kind → die Kinder, die Frau → die Frauen. Im Plural benutzt man immer "die".',
+      explanationEn:
+        'German nouns form the plural in different ways, often with -e, -er, -n/-en, or -s: der Tisch → die Tische (tables), das Kind → die Kinder (children), die Frau → die Frauen (women). The plural article is always "die".',
+      explanationTr:
+        'Almanca isimler çoğulu farklı şekillerde yapar, genellikle -e, -er, -n/-en ya da -s ekleriyle: der Tisch → die Tische (masalar), das Kind → die Kinder (çocuklar), die Frau → die Frauen (kadınlar). Çoğulda her zaman "die" kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Plural von "das Kind" ist ___.', options: ['die Kinder', 'die Kinds', 'der Kinder', 'das Kinder'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Kind" wird im Plural zu "Kinder".',
+      },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Frauen', 'die', 'sind', 'hier'] },
+        correctAnswer: { order: ['die', 'Frauen', 'sind', 'hier'] },
+        explanation: 'Reihenfolge: Artikel, Nomen, Verb, Ort.',
+      },
+    ],
+  })
+
+  const a1Unit2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit2.id,
+      order: 4,
+      grammarTopic: 'Verneinung mit "kein"',
+      explanationDe:
+        'Nomen mit unbestimmtem oder ohne Artikel werden mit "kein/keine" verneint: Ich habe kein Buch. Ich habe keine Zeit.',
+      explanationEn:
+        'Nouns with an indefinite or no article are negated with "kein/keine": Ich habe kein Buch (I don\'t have a book). Ich habe keine Zeit (I don\'t have time).',
+      explanationTr:
+        'Belirsiz ya da tanımlıksız isimler "kein/keine" ile olumsuz yapılır: Ich habe kein Buch (Kitabım yok). Ich habe keine Zeit (Vaktim yok).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe ___ Zeit.' },
+        correctAnswer: { accepted: ['keine'] },
+        explanation: '"Zeit" ist feminin: keine Zeit.',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er hat ___ Buch.', options: ['kein', 'keine', 'nicht', 'keinen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Buch" ist neutral: kein Buch.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit2Lesson1.id, word: 'der Mann', translationEn: 'the man', translationTr: 'adam', exampleSentence: 'Der Mann ist groß.' },
+      { lessonId: a1Unit2Lesson1.id, word: 'die Frau', translationEn: 'the woman', translationTr: 'kadın', exampleSentence: 'Die Frau ist nett.' },
+      { lessonId: a1Unit2Lesson2.id, word: 'das Buch', translationEn: 'the book', translationTr: 'kitap', exampleSentence: 'Das ist ein Buch.' },
+      { lessonId: a1Unit2Lesson2.id, word: 'das Kind', translationEn: 'the child', translationTr: 'çocuk', exampleSentence: 'Das Kind spielt.' },
+      { lessonId: a1Unit2Lesson3.id, word: 'der Tisch', translationEn: 'the table', translationTr: 'masa', exampleSentence: 'Der Tisch ist groß.' },
+      { lessonId: a1Unit2Lesson3.id, word: 'die Kinder', translationEn: 'the children', translationTr: 'çocuklar', exampleSentence: 'Die Kinder sind hier.' },
+      { lessonId: a1Unit2Lesson4.id, word: 'die Zeit', translationEn: 'the time', translationTr: 'zaman', exampleSentence: 'Ich habe keine Zeit.' },
+      { lessonId: a1Unit2Lesson4.id, word: 'haben', translationEn: 'to have', translationTr: 'sahip olmak', exampleSentence: 'Ich habe ein Buch.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
