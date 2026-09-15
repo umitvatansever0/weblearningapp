@@ -1345,6 +1345,171 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 9: Dativ & Präpositionen (4 lessons) ---
+  const a1Unit9 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 9, titleDe: 'Dativ & Präpositionen', titleEn: 'Dative Case & Prepositions', titleTr: 'Datif (-e Hali) ve Edatlar' },
+  })
+
+  const a1Unit9Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit9.id,
+      order: 1,
+      grammarTopic: 'Dativ-Artikel',
+      explanationDe:
+        'Im Dativ ändern sich die Artikel: der→dem, die→der, das→dem, die (Plural)→den. Beispiel: "Ich helfe dem Mann."',
+      explanationEn:
+        'In the dative, the articles change: der→dem, die→der, das→dem, die (plural)→den. Example: "Ich helfe dem Mann." (I help the man.)',
+      explanationTr:
+        'Datifte tanımlıklar değişir: der→dem, die→der, das→dem, die (çoğul)→den. Örnek: "Ich helfe dem Mann." (Adama yardım ediyorum.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich helfe ___ Frau.', options: ['die', 'der', 'dem', 'den'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Feminin im Dativ: der Frau.',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich helfe ___ Kind. (neutral, Dativ)' },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'Neutral im Dativ: dem Kind.',
+      },
+    ],
+  })
+
+  const a1Unit9Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit9.id,
+      order: 2,
+      grammarTopic: 'Präpositionen mit Dativ',
+      explanationDe:
+        'Feste Präpositionen mit Dativ: aus, bei, mit, nach, seit, von, zu. "Ich fahre mit dem Bus." "Ich komme aus der Türkei."',
+      explanationEn:
+        'Fixed dative prepositions: aus, bei, mit, nach, seit, von, zu. "Ich fahre mit dem Bus." (I travel by bus.) "Ich komme aus der Türkei." (I come from Turkey.)',
+      explanationTr:
+        'Sabit datif edatları: aus, bei, mit, nach, seit, von, zu. "Ich fahre mit dem Bus." (Otobüsle giderim.) "Ich komme aus der Türkei." (Türkiye\'den geliyorum.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich fahre ___ dem Bus.', options: ['mit', 'für', 'ohne', 'durch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Mit dem Bus" beschreibt ein Verkehrsmittel.',
+      },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['aus', 'mit', 'nach'], rights: ['from', 'with', 'to'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'aus', right: 'from' },
+            { left: 'mit', right: 'with' },
+            { left: 'nach', right: 'to' },
+          ],
+        },
+        explanation: 'Dativpräpositionen und ihre Bedeutung.',
+      },
+    ],
+  })
+
+  const a1Unit9Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit9.id,
+      order: 3,
+      grammarTopic: 'Wechselpräpositionen (Einführung)',
+      explanationDe:
+        'Wechselpräpositionen (in, an, auf...) stehen mit Akkusativ bei Bewegung (wohin?) und mit Dativ bei Ort (wo?): "Ich gehe in die Küche" (Akkusativ) vs. "Ich bin in der Küche" (Dativ).',
+      explanationEn:
+        'Two-way prepositions (in, an, auf...) take accusative for movement (wohin? = where to?) and dative for location (wo? = where?): "Ich gehe in die Küche" (accusative) vs. "Ich bin in der Küche" (dative).',
+      explanationTr:
+        'İki yönlü edatlar (in, an, auf...) hareket için akkusativ (wohin? = nereye?), konum için datif (wo? = nerede?) alır: "Ich gehe in die Küche" (akkusativ) ile "Ich bin in der Küche" (datif) karşılaştırın.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich bin in ___ Küche. (wo? Dativ)', options: ['die', 'der', 'dem', 'den'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Feminin im Dativ: der Küche.',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich gehe in ___ Küche. (wohin? Akkusativ)', options: ['die', 'der', 'dem', 'den'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Feminin im Akkusativ bleibt gleich: die Küche.',
+      },
+    ],
+  })
+
+  const a1Unit9Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit9.id,
+      order: 4,
+      grammarTopic: 'Wohnung/Zimmer',
+      explanationDe: 'Wörter für die Wohnung: das Wohnzimmer, das Schlafzimmer, das Badezimmer, die Küche, der Balkon.',
+      explanationEn:
+        'Words for the apartment: das Wohnzimmer (living room), das Schlafzimmer (bedroom), das Badezimmer (bathroom), die Küche (kitchen), der Balkon (balcony).',
+      explanationTr:
+        'Ev için kelimeler: das Wohnzimmer (oturma odası), das Schlafzimmer (yatak odası), das Badezimmer (banyo), die Küche (mutfak), der Balkon (balkon).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['das Schlafzimmer', 'das Badezimmer', 'der Balkon'], rights: ['bedroom', 'bathroom', 'balcony'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'das Schlafzimmer', right: 'bedroom' },
+            { left: 'das Badezimmer', right: 'bathroom' },
+            { left: 'der Balkon', right: 'balcony' },
+          ],
+        },
+        explanation: 'Wohnungswörter und ihre Bedeutung.',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich schlafe im ___. (bedroom)' },
+        correctAnswer: { accepted: ['schlafzimmer'] },
+        explanation: '"Schlafzimmer" ist das Zimmer zum Schlafen.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit9Lesson1.id, word: 'helfen', translationEn: 'to help', translationTr: 'yardım etmek', exampleSentence: 'Ich helfe dem Mann.' },
+      { lessonId: a1Unit9Lesson1.id, word: 'danken', translationEn: 'to thank', translationTr: 'teşekkür etmek', exampleSentence: 'Ich danke dir.' },
+      { lessonId: a1Unit9Lesson2.id, word: 'der Bus', translationEn: 'the bus', translationTr: 'otobüs', exampleSentence: 'Ich fahre mit dem Bus.' },
+      { lessonId: a1Unit9Lesson2.id, word: 'fahren', translationEn: 'to drive / travel', translationTr: 'gitmek', exampleSentence: 'Ich fahre mit dem Bus.' },
+      { lessonId: a1Unit9Lesson3.id, word: 'die Küche', translationEn: 'the kitchen', translationTr: 'mutfak', exampleSentence: 'Ich bin in der Küche.' },
+      { lessonId: a1Unit9Lesson3.id, word: 'das Zimmer', translationEn: 'the room', translationTr: 'oda', exampleSentence: 'Das Zimmer ist groß.' },
+      { lessonId: a1Unit9Lesson4.id, word: 'das Schlafzimmer', translationEn: 'the bedroom', translationTr: 'yatak odası', exampleSentence: 'Ich schlafe im Schlafzimmer.' },
+      { lessonId: a1Unit9Lesson4.id, word: 'der Balkon', translationEn: 'the balcony', translationTr: 'balkon', exampleSentence: 'Wir sitzen auf dem Balkon.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
