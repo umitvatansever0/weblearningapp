@@ -716,6 +716,166 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 5: Zahlen, Uhrzeit & Alltag (4 lessons) ---
+  const a1Unit5 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 5, titleDe: 'Zahlen, Uhrzeit & Alltag', titleEn: 'Numbers, Time & Daily Life', titleTr: 'Sayılar, Saat ve Günlük Hayat' },
+  })
+
+  const a1Unit5Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit5.id,
+      order: 1,
+      grammarTopic: 'Zahlen 11-100',
+      explanationDe:
+        'Zahlen ab 11: elf, zwölf, dreizehn... zwanzig, dreißig... hundert. Ab 21 sagt man die Einer vor den Zehnern: einundzwanzig (21).',
+      explanationEn:
+        'Numbers from 11: elf (11), zwölf (12), dreizehn (13)... zwanzig (20), dreißig (30)... hundert (100). From 21 on, the units come before the tens: einundzwanzig (21, literally "one-and-twenty").',
+      explanationTr:
+        "11'den itibaren sayılar: elf (11), zwölf (12), dreizehn (13)... zwanzig (20), dreißig (30)... hundert (100). 21'den itibaren birler onlardan önce söylenir: einundzwanzig (21, kelimenin tam anlamıyla 'bir-ve-yirmi').",
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie sagt man "21" auf Deutsch?', options: ['zwanzigeins', 'einundzwanzig', 'zwanzig-eins', 'eins-zwanzig'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '21 = einundzwanzig.',
+      },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: "Nach 'neunzehn' kommt ___." },
+        correctAnswer: { accepted: ['zwanzig'] },
+        explanation: 'Nach 19 kommt 20 (zwanzig).',
+      },
+    ],
+  })
+
+  const a1Unit5Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit5.id,
+      order: 2,
+      grammarTopic: 'Uhrzeit',
+      explanationDe:
+        'Die Uhrzeit fragt man mit "Wie spät ist es?" oder "Wie viel Uhr ist es?". Antwort: "Es ist drei Uhr." / "Es ist halb vier." (3:30)',
+      explanationEn:
+        'You ask the time with "Wie spät ist es?" or "Wie viel Uhr ist es?" (What time is it?). Answer: "Es ist drei Uhr." (It\'s three o\'clock.) / "Es ist halb vier." (It\'s half past three, literally "half four".)',
+      explanationTr:
+        "Saat 'Wie spät ist es?' ya da 'Wie viel Uhr ist es?' diye sorulur. Cevap: 'Es ist drei Uhr.' (Saat üç.) / 'Es ist halb vier.' (Üç buçuk, kelimenin tam anlamıyla 'dördün yarısı'.)",
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie fragt man nach der Uhrzeit?', options: ['Wie spät ist es?', 'Wie alt bist du?', 'Wo bist du?', 'Was machst du?'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wie spät ist es?" fragt nach der Uhrzeit.',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'It is three o'clock'?" },
+        correctAnswer: { accepted: ['es ist drei uhr'] },
+        explanation: '"Es ist drei Uhr" bedeutet "It is three o\'clock".',
+      },
+    ],
+  })
+
+  const a1Unit5Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit5.id,
+      order: 3,
+      grammarTopic: 'Wochentage',
+      explanationDe:
+        'Die Wochentage: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag. "Am Montag" bedeutet "on Monday".',
+      explanationEn:
+        'The days of the week: Montag (Monday), Dienstag (Tuesday), Mittwoch (Wednesday), Donnerstag (Thursday), Freitag (Friday), Samstag (Saturday), Sonntag (Sunday). "Am Montag" means "on Monday".',
+      explanationTr:
+        "Haftanın günleri: Montag (Pazartesi), Dienstag (Salı), Mittwoch (Çarşamba), Donnerstag (Perşembe), Freitag (Cuma), Samstag (Cumartesi), Sonntag (Pazar). 'Am Montag' 'Pazartesi günü' demektir.",
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['Montag', 'Mittwoch', 'Sonntag'], rights: ['Monday', 'Wednesday', 'Sunday'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Montag', right: 'Monday' },
+            { left: 'Mittwoch', right: 'Wednesday' },
+            { left: 'Sonntag', right: 'Sunday' },
+          ],
+        },
+        explanation: 'Wochentage und ihre Bedeutung.',
+      },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ich', 'Montag', 'am', 'arbeite'] },
+        correctAnswer: { order: ['ich', 'arbeite', 'am', 'Montag'] },
+        explanation: 'Reihenfolge: Subjekt, Verb, Zeitangabe.',
+      },
+    ],
+  })
+
+  const a1Unit5Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit5.id,
+      order: 4,
+      grammarTopic: 'Tagesablauf',
+      explanationDe:
+        'Um den Tagesablauf zu beschreiben, benutzt man Zeitangaben mit Verben: "Ich esse um acht Uhr Frühstück. Ich arbeite von neun bis siebzehn Uhr."',
+      explanationEn:
+        'To describe your daily routine, use time expressions with verbs: "Ich esse um acht Uhr Frühstück." (I eat breakfast at eight o\'clock.) "Ich arbeite von neun bis siebzehn Uhr." (I work from nine to five.)',
+      explanationTr:
+        "Günlük rutini anlatmak için zaman ifadeleriyle fiiller kullanılır: 'Ich esse um acht Uhr Frühstück.' (Saat sekizde kahvaltı yaparım.) 'Ich arbeite von neun bis siebzehn Uhr.' (Dokuzdan beşe kadar çalışırım.)",
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich esse ___ acht Uhr Frühstück.' },
+        correctAnswer: { accepted: ['um'] },
+        explanation: 'Uhrzeit mit "um": um acht Uhr.',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich arbeite ___ neun bis siebzehn Uhr.', options: ['von', 'um', 'am', 'bei'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Von...bis" beschreibt einen Zeitraum.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit5Lesson1.id, word: 'zwanzig', translationEn: 'twenty', translationTr: 'yirmi', exampleSentence: 'Ich bin zwanzig Jahre alt.' },
+      { lessonId: a1Unit5Lesson1.id, word: 'hundert', translationEn: 'hundred', translationTr: 'yüz', exampleSentence: 'Das kostet hundert Euro.' },
+      { lessonId: a1Unit5Lesson2.id, word: 'die Uhr', translationEn: 'the clock / o\'clock', translationTr: 'saat', exampleSentence: 'Es ist drei Uhr.' },
+      { lessonId: a1Unit5Lesson2.id, word: 'spät', translationEn: 'late', translationTr: 'geç', exampleSentence: 'Wie spät ist es?' },
+      { lessonId: a1Unit5Lesson3.id, word: 'der Montag', translationEn: 'Monday', translationTr: 'pazartesi', exampleSentence: 'Ich arbeite am Montag.' },
+      { lessonId: a1Unit5Lesson3.id, word: 'der Sonntag', translationEn: 'Sunday', translationTr: 'pazar', exampleSentence: 'Am Sonntag bin ich zu Hause.' },
+      { lessonId: a1Unit5Lesson4.id, word: 'das Frühstück', translationEn: 'breakfast', translationTr: 'kahvaltı', exampleSentence: 'Ich esse um acht Uhr Frühstück.' },
+      { lessonId: a1Unit5Lesson4.id, word: 'arbeiten', translationEn: 'to work', translationTr: 'çalışmak', exampleSentence: 'Ich arbeite von neun bis siebzehn Uhr.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
