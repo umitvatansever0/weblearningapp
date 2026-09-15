@@ -1192,6 +1192,159 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 8: Trennbare Verben & Alltag (4 lessons) ---
+  const a1Unit8 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 8, titleDe: 'Trennbare Verben & Alltag', titleEn: 'Separable Verbs & Daily Life', titleTr: 'Ayrılabilir Fiiller ve Günlük Hayat' },
+  })
+
+  const a1Unit8Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit8.id,
+      order: 1,
+      grammarTopic: 'Trennbare Verben (Einführung)',
+      explanationDe:
+        'Trennbare Verben haben ein Präfix, das im Präsens ans Satzende wandert: "aufstehen" → "Ich stehe früh auf."',
+      explanationEn:
+        'Separable verbs have a prefix that moves to the end of the sentence in the present tense: "aufstehen" (to get up) → "Ich stehe früh auf." (I get up early.)',
+      explanationTr:
+        'Ayrılabilir fiillerin bir ön eki vardır ve şimdiki zamanda cümle sonuna gider: "aufstehen" (kalkmak) → "Ich stehe früh auf." (Erken kalkarım.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['auf', 'ich', 'stehe', 'früh'] },
+        correctAnswer: { order: ['ich', 'stehe', 'früh', 'auf'] },
+        explanation: 'Das Präfix "auf" steht am Satzende.',
+      },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich stehe um sieben Uhr ___.', options: ['auf', 'aufstehen', 'stehe auf', 'aufgestanden'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nur das Präfix steht am Ende: auf.',
+      },
+    ],
+  })
+
+  const a1Unit8Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit8.id,
+      order: 2,
+      grammarTopic: 'Weitere trennbare Verben (einkaufen, fernsehen)',
+      explanationDe:
+        'Weitere trennbare Verben: "einkaufen" (Ich kaufe Gemüse ein), "fernsehen" (Er sieht abends fern), "anrufen" (Sie ruft ihre Mutter an).',
+      explanationEn:
+        'More separable verbs: "einkaufen" (to shop) — Ich kaufe Gemüse ein. "fernsehen" (to watch TV) — Er sieht abends fern. "anrufen" (to call) — Sie ruft ihre Mutter an.',
+      explanationTr:
+        'Diğer ayrılabilir fiiller: "einkaufen" (alışveriş yapmak) — Ich kaufe Gemüse ein. "fernsehen" (televizyon izlemek) — Er sieht abends fern. "anrufen" (aramak) — Sie ruft ihre Mutter an.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er sieht abends ___. (fernsehen)' },
+        correctAnswer: { accepted: ['fern'] },
+        explanation: 'Präfix "fern" steht am Satzende.',
+      },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich kaufe Gemüse ___.', options: ['ein', 'einkaufen', 'kaufe ein', 'eingekauft'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präfix "ein" steht am Ende: ich kaufe ein.',
+      },
+    ],
+  })
+
+  const a1Unit8Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit8.id,
+      order: 3,
+      grammarTopic: 'Satzstellung mit trennbaren Verben und Zeit',
+      explanationDe: 'Zeitangaben stehen meist nach dem konjugierten Verb: "Ich stehe täglich um sieben Uhr auf."',
+      explanationEn:
+        'Time expressions usually come right after the conjugated verb: "Ich stehe täglich um sieben Uhr auf." (I get up at seven o\'clock every day.)',
+      explanationTr:
+        'Zaman ifadeleri genellikle çekimli fiilden hemen sonra gelir: "Ich stehe täglich um sieben Uhr auf." (Her gün saat yedide kalkarım.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['auf', 'täglich', 'ich', 'stehe'] },
+        correctAnswer: { order: ['ich', 'stehe', 'täglich', 'auf'] },
+        explanation: 'Reihenfolge: Subjekt, Verb, Zeitangabe, Präfix.',
+      },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich rufe meine Mutter oft ___.', options: ['an', 'anrufen', 'rief an', 'rufe an'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präfix "an" steht am Satzende.',
+      },
+    ],
+  })
+
+  const a1Unit8Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit8.id,
+      order: 4,
+      grammarTopic: 'Übung (trennbare Verben Wiederholung)',
+      explanationDe:
+        'Wiederholung: trennbare Verben im Alltag. "Wann stehst du auf?" "Ich stehe um acht Uhr auf und kaufe dann Brot ein."',
+      explanationEn:
+        'Review: separable verbs in daily life. "Wann stehst du auf?" (When do you get up?) "Ich stehe um acht Uhr auf und kaufe dann Brot ein." (I get up at eight and then buy bread.)',
+      explanationTr:
+        'Tekrar: günlük hayatta ayrılabilir fiiller. "Wann stehst du auf?" (Ne zaman kalkarsın?) "Ich stehe um acht Uhr auf und kaufe dann Brot ein." (Saat sekizde kalkarım ve sonra ekmek alırım.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann ___ du auf?', options: ['stehst', 'steht', 'stehe', 'stehen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "du" benutzt man "stehst".',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I get up at eight o'clock'?" },
+        correctAnswer: { accepted: ['ich stehe um acht uhr auf'] },
+        explanation: '"Ich stehe um acht Uhr auf" bedeutet "I get up at eight o\'clock".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit8Lesson1.id, word: 'aufstehen', translationEn: 'to get up', translationTr: 'kalkmak', exampleSentence: 'Ich stehe früh auf.' },
+      { lessonId: a1Unit8Lesson1.id, word: 'früh', translationEn: 'early', translationTr: 'erken', exampleSentence: 'Ich stehe früh auf.' },
+      { lessonId: a1Unit8Lesson2.id, word: 'einkaufen', translationEn: 'to shop', translationTr: 'alışveriş yapmak', exampleSentence: 'Ich kaufe Gemüse ein.' },
+      { lessonId: a1Unit8Lesson2.id, word: 'fernsehen', translationEn: 'to watch TV', translationTr: 'televizyon izlemek', exampleSentence: 'Er sieht abends fern.' },
+      { lessonId: a1Unit8Lesson3.id, word: 'täglich', translationEn: 'daily', translationTr: 'her gün', exampleSentence: 'Ich stehe täglich um sieben Uhr auf.' },
+      { lessonId: a1Unit8Lesson3.id, word: 'anrufen', translationEn: 'to call', translationTr: 'aramak', exampleSentence: 'Ich rufe meine Mutter an.' },
+      { lessonId: a1Unit8Lesson4.id, word: 'das Brot', translationEn: 'bread', translationTr: 'ekmek', exampleSentence: 'Ich kaufe Brot ein.' },
+      { lessonId: a1Unit8Lesson4.id, word: 'das Gemüse', translationEn: 'vegetables', translationTr: 'sebze', exampleSentence: 'Ich kaufe Gemüse ein.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
