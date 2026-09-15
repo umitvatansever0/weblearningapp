@@ -394,6 +394,169 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 3: Personalpronomen & Präsens (4 lessons) ---
+  const a1Unit3 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 3, titleDe: 'Personalpronomen & Präsens', titleEn: 'Personal Pronouns & Present Tense', titleTr: 'Şahıs Zamirleri ve Şimdiki Zaman' },
+  })
+
+  const a1Unit3Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit3.id,
+      order: 1,
+      grammarTopic: 'Personalpronomen',
+      explanationDe:
+        'Die Personalpronomen im Deutschen sind: ich, du, er/sie/es, wir, ihr, sie/Sie. "Sie" (groß geschrieben) ist die höfliche Anrede.',
+      explanationEn:
+        'The personal pronouns in German are: ich, du, er/sie/es, wir, ihr, sie/Sie. Capitalized "Sie" is the polite form of address.',
+      explanationTr:
+        'Almancada şahıs zamirleri şunlardır: ich, du, er/sie/es, wir, ihr, sie/Sie. Büyük yazılan "Sie" saygı ifadesidir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'du', 'wir'], rights: ['I', 'you', 'we'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'I' },
+            { left: 'du', right: 'you' },
+            { left: 'wir', right: 'we' },
+          ],
+        },
+        explanation: 'Personalpronomen und ihre Bedeutung.',
+      },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie sagt man höflich "you" auf Deutsch?', options: ['du', 'Sie', 'er', 'ihr'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Sie" ist die höfliche Form.',
+      },
+    ],
+  })
+
+  const a1Unit3Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit3.id,
+      order: 2,
+      grammarTopic: 'Regelmäßige Verben im Präsens',
+      explanationDe:
+        'Regelmäßige Verben im Präsens: Stamm + Endung. "spielen": ich spiele, du spielst, er spielt, wir spielen, ihr spielt, sie spielen.',
+      explanationEn:
+        'Regular verbs in the present tense: stem + ending. "spielen" (to play): ich spiele, du spielst, er spielt, wir spielen, ihr spielt, sie spielen.',
+      explanationTr:
+        'Düzenli fiillerde şimdiki zaman: gövde + ek. "spielen" (oynamak): ich spiele, du spielst, er spielt, wir spielen, ihr spielt, sie spielen.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Du ___ (spielen) Fußball.' },
+        correctAnswer: { accepted: ['spielst'] },
+        explanation: 'Mit "du" benutzt man die Endung -st: spielst.',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir ___ Deutsch.', options: ['lerne', 'lernst', 'lernen', 'lernt'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Mit "wir" benutzt man die Endung -en: lernen.',
+      },
+    ],
+  })
+
+  const a1Unit3Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit3.id,
+      order: 3,
+      grammarTopic: 'Verb "haben"',
+      explanationDe: '"haben" ist unregelmäßig: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben.',
+      explanationEn: '"haben" (to have) is irregular: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben.',
+      explanationTr: '"haben" (sahip olmak) düzensizdir: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'du', 'er'], rights: ['habe', 'hast', 'hat'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'habe' },
+            { left: 'du', right: 'hast' },
+            { left: 'er', right: 'hat' },
+          ],
+        },
+        explanation: 'Das sind die Präsensformen von "haben".',
+      },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie sagt man auf Deutsch: \'I am hungry\' (wörtlich: \'ich habe...\')?' },
+        correctAnswer: { accepted: ['ich habe hunger'] },
+        explanation: '"Ich habe Hunger" bedeutet "I am hungry".',
+      },
+    ],
+  })
+
+  const a1Unit3Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit3.id,
+      order: 4,
+      grammarTopic: 'W-Fragen',
+      explanationDe:
+        'W-Fragen beginnen mit einem Fragewort (wer, was, wo, wann, wie) und haben das Verb an zweiter Stelle: "Wo wohnst du?" "Wie heißt du?"',
+      explanationEn:
+        'W-questions start with a question word (wer=who, was=what, wo=where, wann=when, wie=how) and put the verb second: "Wo wohnst du?" (Where do you live?), "Wie heißt du?" (What\'s your name?)',
+      explanationTr:
+        'W-soruları bir soru kelimesiyle başlar (wer=kim, was=ne, wo=nerede, wann=ne zaman, wie=nasıl) ve fiil ikinci sırada gelir: "Wo wohnst du?" (Nerede oturuyorsun?), "Wie heißt du?" (Adın ne?)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ wohnst du?', options: ['Wo', 'Wer', 'Was', 'Wann'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wo" fragt nach dem Ort.',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['du', 'heißt', 'wie'] },
+        correctAnswer: { order: ['wie', 'heißt', 'du'] },
+        explanation: 'W-Wort zuerst, dann Verb, dann Subjekt.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit3Lesson1.id, word: 'Sie', translationEn: 'formal you', translationTr: 'siz', exampleSentence: 'Wie heißen Sie?' },
+      { lessonId: a1Unit3Lesson1.id, word: 'wir', translationEn: 'we', translationTr: 'biz', exampleSentence: 'Wir lernen Deutsch.' },
+      { lessonId: a1Unit3Lesson2.id, word: 'spielen', translationEn: 'to play', translationTr: 'oynamak', exampleSentence: 'Ich spiele Fußball.' },
+      { lessonId: a1Unit3Lesson2.id, word: 'lernen', translationEn: 'to learn', translationTr: 'öğrenmek', exampleSentence: 'Wir lernen Deutsch.' },
+      { lessonId: a1Unit3Lesson3.id, word: 'der Hunger', translationEn: 'hunger', translationTr: 'açlık', exampleSentence: 'Ich habe Hunger.' },
+      { lessonId: a1Unit3Lesson3.id, word: 'der Durst', translationEn: 'thirst', translationTr: 'susuzluk', exampleSentence: 'Er hat Durst.' },
+      { lessonId: a1Unit3Lesson4.id, word: 'wo', translationEn: 'where', translationTr: 'nerede', exampleSentence: 'Wo wohnst du?' },
+      { lessonId: a1Unit3Lesson4.id, word: 'wie', translationEn: 'how', translationTr: 'nasıl', exampleSentence: 'Wie heißt du?' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
