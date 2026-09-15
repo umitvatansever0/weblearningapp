@@ -1510,6 +1510,171 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 10: Essen & Einkaufen (4 lessons) ---
+  const a1Unit10 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 10, titleDe: 'Essen & Einkaufen', titleEn: 'Food & Shopping', titleTr: 'Yemek ve Alışveriş' },
+  })
+
+  const a1Unit10Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit10.id,
+      order: 1,
+      grammarTopic: 'Lebensmittel',
+      explanationDe: 'Wichtige Lebensmittel: das Brot, der Käse, die Milch, das Obst, das Gemüse, der Reis.',
+      explanationEn:
+        'Important food items: das Brot (bread), der Käse (cheese), die Milch (milk), das Obst (fruit), das Gemüse (vegetables), der Reis (rice).',
+      explanationTr:
+        'Önemli gıda maddeleri: das Brot (ekmek), der Käse (peynir), die Milch (süt), das Obst (meyve), das Gemüse (sebze), der Reis (pirinç).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['der Käse', 'die Milch', 'der Reis'], rights: ['cheese', 'milk', 'rice'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Käse', right: 'cheese' },
+            { left: 'die Milch', right: 'milk' },
+            { left: 'der Reis', right: 'rice' },
+          ],
+        },
+        explanation: 'Lebensmittelwörter.',
+      },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort bedeutet "fruit"?', options: ['das Gemüse', 'das Obst', 'das Brot', 'der Käse'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Obst" bedeutet "fruit".',
+      },
+    ],
+  })
+
+  const a1Unit10Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit10.id,
+      order: 2,
+      grammarTopic: '"Ich hätte gern" / Mengenangaben',
+      explanationDe:
+        'Beim Einkaufen benutzt man Mengenangaben: "ein Kilo Äpfel", "ein Liter Milch", "ein Stück Käse". Höflich bestellt man mit "Ich hätte gern..."',
+      explanationEn:
+        'When shopping, use quantity expressions: "ein Kilo Äpfel" (a kilo of apples), "ein Liter Milch" (a liter of milk), "ein Stück Käse" (a piece of cheese). Order politely with "Ich hätte gern..." (I\'d like...)',
+      explanationTr:
+        'Alışverişte miktar ifadeleri kullanılır: "ein Kilo Äpfel" (bir kilo elma), "ein Liter Milch" (bir litre süt), "ein Stück Käse" (bir parça peynir). Kibarca sipariş için "Ich hätte gern..." (İsterim...) kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich hätte gern ein Kilo ___. (apples)' },
+        correctAnswer: { accepted: ['äpfel'] },
+        explanation: '"Äpfel" ist der Plural von "Apfel".',
+      },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'Wie bestellt man höflich?',
+          options: ['Gib mir Käse!', 'Ich hätte gern ein Stück Käse.', 'Käse!', 'Ich habe Käse.'],
+        },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Ich hätte gern..." ist höflich.',
+      },
+    ],
+  })
+
+  const a1Unit10Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit10.id,
+      order: 3,
+      grammarTopic: 'Im Restaurant',
+      explanationDe:
+        'Im Restaurant fragt der Kellner: "Was möchten Sie?" Man antwortet: "Ich hätte gern die Suppe." Am Ende sagt man: "Die Rechnung, bitte."',
+      explanationEn:
+        'In a restaurant, the waiter asks: "Was möchten Sie?" (What would you like?) You answer: "Ich hätte gern die Suppe." (I\'d like the soup.) At the end you say: "Die Rechnung, bitte." (The bill, please.)',
+      explanationTr:
+        'Restoranda garson sorar: "Was möchten Sie?" (Ne istersiniz?) Cevap: "Ich hätte gern die Suppe." (Çorba istiyorum.) Sonunda "Die Rechnung, bitte." (Hesap lütfen.) denir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'Was sagt man am Ende im Restaurant?',
+          options: ['Guten Appetit!', 'Die Rechnung, bitte.', 'Ich hätte gern...', 'Prost!'],
+        },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Die Rechnung, bitte" bittet um die Rechnung.',
+      },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I would like the soup'?" },
+        correctAnswer: { accepted: ['ich hätte gern die suppe'] },
+        explanation: '"Ich hätte gern die Suppe" bedeutet "I would like the soup".',
+      },
+    ],
+  })
+
+  const a1Unit10Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit10.id,
+      order: 4,
+      grammarTopic: 'Übung (Essen & Einkaufen Wiederholung)',
+      explanationDe:
+        'Wiederholung: Einkaufen und Bestellen. "Ich gehe einkaufen. Ich kaufe Brot, Käse und Milch. Im Café hätte ich gern einen Kaffee."',
+      explanationEn:
+        'Review: shopping and ordering. "Ich gehe einkaufen." (I go shopping.) "Ich kaufe Brot, Käse und Milch." (I buy bread, cheese, and milk.) "Im Café hätte ich gern einen Kaffee." (At the café I\'d like a coffee.)',
+      explanationTr:
+        'Tekrar: alışveriş ve sipariş verme. "Ich gehe einkaufen." (Alışverişe gidiyorum.) "Ich kaufe Brot, Käse und Milch." (Ekmek, peynir ve süt alıyorum.) "Im Café hätte ich gern einen Kaffee." (Kafede bir kahve isterim.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Milch', 'ich', 'kaufe'] },
+        correctAnswer: { order: ['ich', 'kaufe', 'Milch'] },
+        explanation: 'Reihenfolge: Subjekt, Verb, Objekt.',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich gehe ___.', options: ['einkaufen', 'einkauft', 'kaufe ein', 'gekauft'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Einkaufen gehen" bedeutet "to go shopping".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit10Lesson1.id, word: 'der Käse', translationEn: 'cheese', translationTr: 'peynir', exampleSentence: 'Ich esse Käse.' },
+      { lessonId: a1Unit10Lesson1.id, word: 'die Milch', translationEn: 'milk', translationTr: 'süt', exampleSentence: 'Ich trinke Milch.' },
+      { lessonId: a1Unit10Lesson2.id, word: 'das Kilo', translationEn: 'the kilo', translationTr: 'kilo', exampleSentence: 'Ein Kilo Äpfel, bitte.' },
+      { lessonId: a1Unit10Lesson2.id, word: 'das Stück', translationEn: 'the piece', translationTr: 'parça', exampleSentence: 'Ein Stück Käse, bitte.' },
+      { lessonId: a1Unit10Lesson3.id, word: 'die Suppe', translationEn: 'the soup', translationTr: 'çorba', exampleSentence: 'Ich hätte gern die Suppe.' },
+      { lessonId: a1Unit10Lesson3.id, word: 'die Rechnung', translationEn: 'the bill', translationTr: 'hesap', exampleSentence: 'Die Rechnung, bitte.' },
+      { lessonId: a1Unit10Lesson4.id, word: 'der Kaffee', translationEn: 'coffee', translationTr: 'kahve', exampleSentence: 'Ich hätte gern einen Kaffee.' },
+      { lessonId: a1Unit10Lesson4.id, word: 'teuer', translationEn: 'expensive', translationTr: 'pahalı', exampleSentence: 'Das ist teuer.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
