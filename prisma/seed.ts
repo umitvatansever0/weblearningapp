@@ -1829,6 +1829,166 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 12: Imperativ & Wegbeschreibung (4 lessons) ---
+  const a1Unit12 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 12, titleDe: 'Imperativ & Wegbeschreibung', titleEn: 'Imperative & Giving Directions', titleTr: 'Emir Kipi ve Yol Tarifi' },
+  })
+
+  const a1Unit12Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit12.id,
+      order: 1,
+      grammarTopic: 'Imperativ (du)',
+      explanationDe:
+        'Der Imperativ für "du" benutzt den Verbstamm, oft ohne -st: "Komm!" "Geh!" "Iss!" (von "essen", mit Vokalwechsel).',
+      explanationEn:
+        'The imperative for "du" uses the verb stem, usually without -st: "Komm!" (Come!) "Geh!" (Go!) "Iss!" (Eat! — from "essen", with a vowel change).',
+      explanationTr:
+        '"du" için emir kipi fiil gövdesini kullanır, genellikle -st olmadan: "Komm!" (Gel!) "Geh!" (Git!) "Iss!" (Ye! — "essen"den, ünlü değişimiyle).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie sagt man "Come!" zu einem Freund?', options: ['Kommst!', 'Komm!', 'Kommen!', 'Kommt!'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Imperativ "du": Komm!',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___! (Eat! - zu einem Freund)' },
+        correctAnswer: { accepted: ['iss'] },
+        explanation: 'Imperativ von "essen" mit Vokalwechsel: Iss!',
+      },
+    ],
+  })
+
+  const a1Unit12Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit12.id,
+      order: 2,
+      grammarTopic: 'Imperativ (ihr/Sie)',
+      explanationDe:
+        'Für "ihr" benutzt man die Verbform ohne Pronomen: "Kommt!" Für die höfliche Form "Sie" benutzt man Verb + Sie: "Kommen Sie!"',
+      explanationEn:
+        'For "ihr" (plural you), use the verb form without the pronoun: "Kommt!" For the polite "Sie" form, use verb + Sie: "Kommen Sie!"',
+      explanationTr:
+        '"ihr" için fiil zamirsiz kullanılır: "Kommt!" Kibar "Sie" formu için fiil + Sie kullanılır: "Kommen Sie!"',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Höfliche Form: "___ Sie bitte Platz!" (nehmen)', options: ['Nehmen', 'Nimm', 'Nehmt', 'Nehme'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Höflicher Imperativ: Verb + Sie.',
+      },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['du', 'ihr', 'Sie'], rights: ['Komm!', 'Kommt!', 'Kommen Sie!'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'du', right: 'Komm!' },
+            { left: 'ihr', right: 'Kommt!' },
+            { left: 'Sie', right: 'Kommen Sie!' },
+          ],
+        },
+        explanation: 'Imperativformen je nach Person.',
+      },
+    ],
+  })
+
+  const a1Unit12Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit12.id,
+      order: 3,
+      grammarTopic: 'Wegbeschreibung',
+      explanationDe:
+        'Wegbeschreibungen benutzen Imperativ und Richtungswörter: "Gehen Sie geradeaus. Biegen Sie links ab." "links" (left), "rechts" (right), "geradeaus" (straight ahead).',
+      explanationEn:
+        'Directions use the imperative and direction words: "Gehen Sie geradeaus." (Go straight ahead.) "Biegen Sie links ab." (Turn left.) "links" (left), "rechts" (right), "geradeaus" (straight ahead).',
+      explanationTr:
+        'Yol tarifi emir kipi ve yön kelimeleriyle yapılır: "Gehen Sie geradeaus." (Düz gidin.) "Biegen Sie links ab." (Sola dönün.) "links" (sol), "rechts" (sağ), "geradeaus" (düz).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort bedeutet "straight ahead"?', options: ['links', 'rechts', 'geradeaus', 'zurück'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"Geradeaus" bedeutet "straight ahead".',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Biegen Sie ___ ab. (left)' },
+        correctAnswer: { accepted: ['links'] },
+        explanation: '"Links" bedeutet "left".',
+      },
+    ],
+  })
+
+  const a1Unit12Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit12.id,
+      order: 4,
+      grammarTopic: 'Übung (Imperativ & Wegbeschreibung Wiederholung)',
+      explanationDe:
+        'Wiederholung: "Entschuldigung, wo ist der Bahnhof?" "Gehen Sie geradeaus und biegen Sie dann rechts ab."',
+      explanationEn:
+        'Review: "Entschuldigung, wo ist der Bahnhof?" (Excuse me, where is the train station?) "Gehen Sie geradeaus und biegen Sie dann rechts ab." (Go straight ahead and then turn right.)',
+      explanationTr:
+        'Tekrar: "Entschuldigung, wo ist der Bahnhof?" (Affedersiniz, tren istasyonu nerede?) "Gehen Sie geradeaus und biegen Sie dann rechts ab." (Düz gidin ve sonra sağa dönün.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Sie', 'geradeaus', 'gehen'] },
+        correctAnswer: { order: ['gehen', 'Sie', 'geradeaus'] },
+        explanation: 'Imperativ Sie: Verb zuerst, dann Sie, dann Ortsangabe.',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'Excuse me, where is the train station?'?" },
+        correctAnswer: { accepted: ['entschuldigung, wo ist der bahnhof'] },
+        explanation: '"Entschuldigung, wo ist der Bahnhof?" bedeutet "Excuse me, where is the train station?"',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit12Lesson1.id, word: 'warten', translationEn: 'to wait', translationTr: 'beklemek', exampleSentence: 'Warte hier!' },
+      { lessonId: a1Unit12Lesson1.id, word: 'schauen', translationEn: 'to look', translationTr: 'bakmak', exampleSentence: 'Schau mal!' },
+      { lessonId: a1Unit12Lesson2.id, word: 'nehmen', translationEn: 'to take', translationTr: 'almak', exampleSentence: 'Nehmen Sie bitte Platz!' },
+      { lessonId: a1Unit12Lesson2.id, word: 'der Platz', translationEn: 'the seat / place', translationTr: 'yer', exampleSentence: 'Nehmen Sie Platz.' },
+      { lessonId: a1Unit12Lesson3.id, word: 'links', translationEn: 'left', translationTr: 'sol', exampleSentence: 'Biegen Sie links ab.' },
+      { lessonId: a1Unit12Lesson3.id, word: 'rechts', translationEn: 'right', translationTr: 'sağ', exampleSentence: 'Biegen Sie rechts ab.' },
+      { lessonId: a1Unit12Lesson4.id, word: 'der Bahnhof', translationEn: 'the train station', translationTr: 'tren istasyonu', exampleSentence: 'Wo ist der Bahnhof?' },
+      { lessonId: a1Unit12Lesson4.id, word: 'entschuldigung', translationEn: 'excuse me', translationTr: 'affedersiniz', exampleSentence: 'Entschuldigung, wo ist der Bahnhof?' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
