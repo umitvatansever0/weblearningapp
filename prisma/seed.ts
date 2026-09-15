@@ -557,6 +557,165 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 4: Familie & Possessivpronomen (4 lessons) ---
+  const a1Unit4 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 4, titleDe: 'Familie & Possessivpronomen', titleEn: 'Family & Possessives', titleTr: 'Aile ve İyelik Sıfatları' },
+  })
+
+  const a1Unit4Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit4.id,
+      order: 1,
+      grammarTopic: 'Familienmitglieder',
+      explanationDe: 'Wichtige Familienwörter: der Vater, die Mutter, der Bruder, die Schwester, die Eltern, die Geschwister.',
+      explanationEn:
+        'Important family words: der Vater (father), die Mutter (mother), der Bruder (brother), die Schwester (sister), die Eltern (parents), die Geschwister (siblings).',
+      explanationTr:
+        'Önemli aile kelimeleri: der Vater (baba), die Mutter (anne), der Bruder (erkek kardeş), die Schwester (kız kardeş), die Eltern (ebeveynler), die Geschwister (kardeşler).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['der Vater', 'die Mutter', 'die Schwester'], rights: ['father', 'mother', 'sister'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Vater', right: 'father' },
+            { left: 'die Mutter', right: 'mother' },
+            { left: 'die Schwester', right: 'sister' },
+          ],
+        },
+        explanation: 'Familienwörter und ihre Bedeutung.',
+      },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Mein ___ heißt Peter. (father)' },
+        correctAnswer: { accepted: ['vater'] },
+        explanation: '"Vater" bedeutet "father".',
+      },
+    ],
+  })
+
+  const a1Unit4Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit4.id,
+      order: 2,
+      grammarTopic: 'Possessivartikel (mein/dein)',
+      explanationDe:
+        'Possessivartikel zeigen Besitz: mein/meine (my), dein/deine (your). Bei maskulin/neutral: mein Vater, mein Kind. Bei feminin: meine Mutter.',
+      explanationEn:
+        'Possessive articles show ownership: mein/meine (my), dein/deine (your). With masculine/neuter: mein Vater, mein Kind. With feminine: meine Mutter.',
+      explanationTr:
+        'İyelik sıfatları sahipliği gösterir: mein/meine (benim), dein/deine (senin). Eril/nötr ile: mein Vater, mein Kind. Dişil ile: meine Mutter.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Mutter ist nett. (my)', options: ['Mein', 'Meine', 'Dein', 'Deine'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Mutter" ist feminin: meine Mutter.',
+      },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ist das ___ Bruder? (your)' },
+        correctAnswer: { accepted: ['dein'] },
+        explanation: '"Bruder" ist maskulin: dein Bruder.',
+      },
+    ],
+  })
+
+  const a1Unit4Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit4.id,
+      order: 3,
+      grammarTopic: 'Ja/Nein-Fragen',
+      explanationDe:
+        'Ja/Nein-Fragen beginnen mit dem Verb: "Hast du Geschwister?" "Ja, ich habe eine Schwester." / "Nein, ich habe keine Geschwister."',
+      explanationEn:
+        'Yes/no questions start with the verb: "Hast du Geschwister?" (Do you have siblings?) "Ja, ich habe eine Schwester." (Yes, I have a sister.) / "Nein, ich habe keine Geschwister." (No, I don\'t have siblings.)',
+      explanationTr:
+        'Evet/hayır soruları fiille başlar: "Hast du Geschwister?" (Kardeşin var mı?) "Ja, ich habe eine Schwester." (Evet, bir kız kardeşim var.) / "Nein, ich habe keine Geschwister." (Hayır, kardeşim yok.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Geschwister', 'du', 'hast'] },
+        correctAnswer: { order: ['hast', 'du', 'Geschwister'] },
+        explanation: 'Bei Ja/Nein-Fragen steht das Verb zuerst.',
+      },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ du eine Schwester?', options: ['Hast', 'Hat', 'Habe', 'Haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "du" benutzt man "hast".',
+      },
+    ],
+  })
+
+  const a1Unit4Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit4.id,
+      order: 4,
+      grammarTopic: 'Wiederholung (Familie + Artikel + Präsens)',
+      explanationDe:
+        'Wiederholung: Kombiniere Artikel, Possessivpronomen und Präsens, um über deine Familie zu sprechen: "Meine Schwester wohnt in München. Sie spielt gern Fußball."',
+      explanationEn:
+        'Review: combine articles, possessives, and present tense to talk about your family: "Meine Schwester wohnt in München. Sie spielt gern Fußball." (My sister lives in Munich. She likes to play football.)',
+      explanationTr:
+        'Tekrar: aile hakkında konuşmak için tanımlık, iyelik sıfatı ve şimdiki zamanı birleştir: "Meine Schwester wohnt in München. Sie spielt gern Fußball." (Kız kardeşim Münih\'te yaşıyor. Futbol oynamayı seviyor.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Meine Schwester ___ (wohnen) in München.' },
+        correctAnswer: { accepted: ['wohnt'] },
+        explanation: 'Mit "sie" (3. Person) benutzt man die Endung -t: wohnt.',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'My brother plays football'?" },
+        correctAnswer: { accepted: ['mein bruder spielt fußball'] },
+        explanation: '"Mein Bruder spielt Fußball" bedeutet "My brother plays football".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit4Lesson1.id, word: 'der Vater', translationEn: 'father', translationTr: 'baba', exampleSentence: 'Mein Vater heißt Peter.' },
+      { lessonId: a1Unit4Lesson1.id, word: 'die Mutter', translationEn: 'mother', translationTr: 'anne', exampleSentence: 'Meine Mutter ist nett.' },
+      { lessonId: a1Unit4Lesson2.id, word: 'der Bruder', translationEn: 'brother', translationTr: 'erkek kardeş', exampleSentence: 'Mein Bruder spielt Fußball.' },
+      { lessonId: a1Unit4Lesson2.id, word: 'die Schwester', translationEn: 'sister', translationTr: 'kız kardeş', exampleSentence: 'Meine Schwester wohnt in München.' },
+      { lessonId: a1Unit4Lesson3.id, word: 'die Geschwister', translationEn: 'siblings', translationTr: 'kardeşler', exampleSentence: 'Hast du Geschwister?' },
+      { lessonId: a1Unit4Lesson3.id, word: 'die Eltern', translationEn: 'parents', translationTr: 'ebeveynler', exampleSentence: 'Meine Eltern wohnen in Berlin.' },
+      { lessonId: a1Unit4Lesson4.id, word: 'gern', translationEn: 'gladly / like to', translationTr: 'severek', exampleSentence: 'Sie spielt gern Fußball.' },
+      { lessonId: a1Unit4Lesson4.id, word: 'die Stadt', translationEn: 'the city', translationTr: 'şehir', exampleSentence: 'München ist eine Stadt.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
