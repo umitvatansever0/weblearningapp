@@ -1036,6 +1036,162 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 7: Modalverben (4 lessons) ---
+  const a1Unit7 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 7, titleDe: 'Modalverben', titleEn: 'Modal Verbs', titleTr: 'Kip Fiilleri' },
+  })
+
+  const a1Unit7Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit7.id,
+      order: 1,
+      grammarTopic: 'können/müssen',
+      explanationDe:
+        'Modalverben sind unregelmäßig und stehen mit dem Infinitiv am Satzende: "Ich kann schwimmen." "Du musst arbeiten."',
+      explanationEn:
+        'Modal verbs are irregular and pair with an infinitive at the end of the sentence: "Ich kann schwimmen." (I can swim.) "Du musst arbeiten." (You must work.)',
+      explanationTr:
+        'Kip fiilleri düzensizdir ve cümle sonunda mastar ile kullanılır: "Ich kann schwimmen." (Yüzebilirim.) "Du musst arbeiten." (Çalışmak zorundasın.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ (können) gut schwimmen.' },
+        correctAnswer: { accepted: ['kann'] },
+        explanation: 'Mit "ich" benutzt man "kann".',
+      },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Du ___ jetzt arbeiten.', options: ['musst', 'muss', 'müssen', 'müsst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "du" benutzt man "musst".',
+      },
+    ],
+  })
+
+  const a1Unit7Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit7.id,
+      order: 2,
+      grammarTopic: 'wollen/möchten/dürfen',
+      explanationDe:
+        '"wollen" drückt einen starken Wunsch aus, "möchten" ist höflicher: "Ich will Pizza essen." "Ich möchte einen Kaffee." "dürfen" bedeutet Erlaubnis: "Darf ich rauchen?"',
+      explanationEn:
+        '"wollen" expresses a strong want, "möchten" is more polite: "Ich will Pizza essen." (I want to eat pizza.) "Ich möchte einen Kaffee." (I would like a coffee.) "dürfen" means permission: "Darf ich rauchen?" (May I smoke?)',
+      explanationTr:
+        '"wollen" güçlü bir isteği ifade eder, "möchten" daha kibardır: "Ich will Pizza essen." (Pizza yemek istiyorum.) "Ich möchte einen Kaffee." (Bir kahve istiyorum.) "dürfen" izin anlamına gelir: "Darf ich rauchen?" (Sigara içebilir miyim?)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ ich hier rauchen?', options: ['Darf', 'Kann', 'Will', 'Muss'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Dürfen" fragt nach Erlaubnis.',
+      },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man höflich auf Deutsch: 'I would like a coffee'?" },
+        correctAnswer: { accepted: ['ich möchte einen kaffee'] },
+        explanation: '"Ich möchte einen Kaffee" ist die höfliche Form.',
+      },
+    ],
+  })
+
+  const a1Unit7Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit7.id,
+      order: 3,
+      grammarTopic: 'Satzstruktur mit Modalverben',
+      explanationDe: 'Das Modalverb steht an Position 2, der Infinitiv am Satzende: "Ich möchte heute Abend ins Kino gehen."',
+      explanationEn:
+        'The modal verb is in position 2, the infinitive goes at the end: "Ich möchte heute Abend ins Kino gehen." (I would like to go to the cinema tonight.)',
+      explanationTr:
+        'Kip fiili 2. konumda, mastar cümle sonunda yer alır: "Ich möchte heute Abend ins Kino gehen." (Bu akşam sinemaya gitmek istiyorum.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gehen', 'möchte', 'ich', 'schwimmen'] },
+        correctAnswer: { order: ['ich', 'möchte', 'schwimmen', 'gehen'] },
+        explanation: 'Modalverb Position 2, Infinitiv am Ende.',
+      },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich kann gut Deutsch ___.', options: ['spreche', 'sprechen', 'spricht', 'sprichst'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Nach Modalverben steht der Infinitiv.',
+      },
+    ],
+  })
+
+  const a1Unit7Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit7.id,
+      order: 4,
+      grammarTopic: 'Bestellungen ("Ich möchte...")',
+      explanationDe:
+        'Im Restaurant oder Café benutzt man "Ich möchte..." für Bestellungen: "Ich möchte ein Wasser, bitte." "Ich hätte gern einen Kaffee."',
+      explanationEn:
+        'In a restaurant or café, use "Ich möchte..." to order: "Ich möchte ein Wasser, bitte." (I\'d like a water, please.) "Ich hätte gern einen Kaffee." (I\'d like a coffee.)',
+      explanationTr:
+        'Restoranda ya da kafede sipariş vermek için "Ich möchte..." kullanılır: "Ich möchte ein Wasser, bitte." (Bir su istiyorum, lütfen.) "Ich hätte gern einen Kaffee." (Bir kahve rica ederim.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ ein Wasser, bitte.' },
+        correctAnswer: { accepted: ['möchte'] },
+        explanation: '"Ich möchte" ist die höfliche Bestellform.',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'Was sagt man höflich im Café?',
+          options: ['Gib mir Kaffee!', 'Ich möchte einen Kaffee, bitte.', 'Kaffee!', 'Ich habe Kaffee.'],
+        },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Ich möchte..., bitte" ist höflich.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit7Lesson1.id, word: 'können', translationEn: 'can / to be able to', translationTr: '-abilmek', exampleSentence: 'Ich kann schwimmen.' },
+      { lessonId: a1Unit7Lesson1.id, word: 'müssen', translationEn: 'must / to have to', translationTr: 'zorunda olmak', exampleSentence: 'Du musst arbeiten.' },
+      { lessonId: a1Unit7Lesson2.id, word: 'wollen', translationEn: 'to want', translationTr: 'istemek', exampleSentence: 'Ich will Pizza essen.' },
+      { lessonId: a1Unit7Lesson2.id, word: 'dürfen', translationEn: 'may / to be allowed to', translationTr: 'izinli olmak', exampleSentence: 'Darf ich rauchen?' },
+      { lessonId: a1Unit7Lesson3.id, word: 'sprechen', translationEn: 'to speak', translationTr: 'konuşmak', exampleSentence: 'Ich kann gut Deutsch sprechen.' },
+      { lessonId: a1Unit7Lesson3.id, word: 'gehen', translationEn: 'to go', translationTr: 'gitmek', exampleSentence: 'Ich möchte schwimmen gehen.' },
+      { lessonId: a1Unit7Lesson4.id, word: 'das Wasser', translationEn: 'water', translationTr: 'su', exampleSentence: 'Ich möchte ein Wasser, bitte.' },
+      { lessonId: a1Unit7Lesson4.id, word: 'bitte', translationEn: 'please', translationTr: 'lütfen', exampleSentence: 'Ein Wasser, bitte.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
