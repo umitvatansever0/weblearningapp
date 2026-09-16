@@ -2721,6 +2721,177 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 5: Nominalisierung (4 lessons) ---
+  const b2Unit5 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 5, titleDe: 'Nominalisierung', titleEn: 'Nominalization', titleTr: 'İsimleştirme' },
+  })
+
+  const b2Unit5Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit5.id,
+      order: 1,
+      grammarTopic: 'Verben zu Nomen (-ung)',
+      explanationDe:
+        'Viele Verben werden durch das Suffix "-ung" zu femininen Nomen: entwickeln → die Entwicklung, untersuchen → die Untersuchung. Diese Nominalisierung ist typisch für formelle Texte.',
+      explanationEn:
+        'Many verbs become feminine nouns with the suffix "-ung": entwickeln (to develop) → die Entwicklung (the development), untersuchen (to examine) → die Untersuchung (the examination). This nominalization is typical of formal texts.',
+      explanationTr:
+        '"-ung" eki ile birçok fiil dişil isme dönüşür: entwickeln (geliştirmek) → die Entwicklung (gelişim), untersuchen (incelemek) → die Untersuchung (inceleme). Bu isimleştirme resmi metinlerde tipiktir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Nomen von "entwickeln" lautet ___.', options: ['die Entwicklung', 'der Entwickler', 'das Entwickeln', 'die Entwickelung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Entwickeln" + "-ung" = die Entwicklung.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ (untersuchen) dauerte drei Stunden.' },
+        correctAnswer: { accepted: ['Untersuchung'] },
+        explanation: '"Untersuchen" + "-ung" = die Untersuchung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit5Lesson1.id, word: 'entwickeln', translationEn: 'to develop', translationTr: 'geliştirmek', exampleSentence: 'Die Entwicklung dauert lange.' },
+      { lessonId: b2Unit5Lesson1.id, word: 'untersuchen', translationEn: 'to examine', translationTr: 'incelemek', exampleSentence: 'Die Untersuchung dauerte drei Stunden.' },
+    ],
+  })
+
+  const b2Unit5Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit5.id,
+      order: 2,
+      grammarTopic: 'Adjektive zu Nomen (-heit/-keit)',
+      explanationDe:
+        'Adjektive werden mit "-heit" oder "-keit" zu femininen Nomen: frei → die Freiheit, möglich → die Möglichkeit, schön → die Schönheit.',
+      explanationEn:
+        'Adjectives become feminine nouns with "-heit" or "-keit": frei (free) → die Freiheit (freedom), möglich (possible) → die Möglichkeit (possibility), schön (beautiful) → die Schönheit (beauty).',
+      explanationTr:
+        'Sıfatlar "-heit" ya da "-keit" ekiyle dişil isme dönüşür: frei (özgür) → die Freiheit (özgürlük), möglich (mümkün) → die Möglichkeit (olasılık), schön (güzel) → die Schönheit (güzellik).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Nomen von "möglich" lautet ___.', options: ['die Möglichkeit', 'die Möglichheit', 'der Mögliche', 'das Möglichsein'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Möglich" + "-keit" = die Möglichkeit.',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['frei', 'schön', 'möglich'], rights: ['Schönheit', 'Möglichkeit', 'Freiheit'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'frei', right: 'Freiheit' },
+            { left: 'schön', right: 'Schönheit' },
+            { left: 'möglich', right: 'Möglichkeit' },
+          ],
+        },
+        explanation: 'Adjektive + "-heit"/"-keit" = Nomen.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit5Lesson2.id, word: 'frei', translationEn: 'free', translationTr: 'özgür', exampleSentence: 'Die Freiheit ist wichtig.' },
+      { lessonId: b2Unit5Lesson2.id, word: 'möglich', translationEn: 'possible', translationTr: 'mümkün', exampleSentence: 'Das ist eine gute Möglichkeit.' },
+    ],
+  })
+
+  const b2Unit5Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit5.id,
+      order: 3,
+      grammarTopic: 'Infinitiv als Nomen',
+      explanationDe:
+        'Jeder Infinitiv kann als neutrales Nomen benutzt werden, großgeschrieben: rauchen → das Rauchen, lesen → das Lesen. Diese Form beschreibt die Handlung allgemein.',
+      explanationEn:
+        'Any infinitive can be used as a neuter noun, capitalized: rauchen (to smoke) → das Rauchen (smoking), lesen (to read) → das Lesen (reading). This form describes the action in general.',
+      explanationTr:
+        'Her mastar büyük harfle yazılarak nötr isim olarak kullanılabilir: rauchen (sigara içmek) → das Rauchen (sigara içme), lesen (okumak) → das Lesen (okuma). Bu biçim eylemi genel olarak anlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ ist hier verboten. (rauchen, als Nomen)', options: ['Das Rauchen', 'Rauchen', 'Der Raucher', 'Das Geraucht'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Infinitiv als Nomen: das Rauchen (großgeschrieben, mit Artikel "das").',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Nomen aus dem Infinitiv 'schwimmen'." },
+        correctAnswer: { accepted: ['das schwimmen'] },
+        explanation: '"Schwimmen" als Nomen: das Schwimmen.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit5Lesson3.id, word: 'verboten', translationEn: 'forbidden', translationTr: 'yasak', exampleSentence: 'Rauchen ist hier verboten.' },
+      { lessonId: b2Unit5Lesson3.id, word: 'das Schwimmen', translationEn: 'swimming', translationTr: 'yüzme', exampleSentence: 'Das Schwimmen macht Spaß.' },
+    ],
+  })
+
+  const b2Unit5Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit5.id,
+      order: 4,
+      grammarTopic: 'Nominalisierung in formellen Texten',
+      explanationDe:
+        'In formellen Texten (Berichten, Amtsdeutsch) wird oft nominalisiert statt Verben zu benutzen: "Nach Abschluss der Untersuchung..." statt "Nachdem die Untersuchung abgeschlossen wurde...". Das wirkt kompakter und offizieller.',
+      explanationEn:
+        'In formal texts (reports, official German), nominalization is often used instead of verbs: "Nach Abschluss der Untersuchung..." (After completion of the investigation...) instead of "Nachdem die Untersuchung abgeschlossen wurde..." (After the investigation was completed...). This sounds more compact and official.',
+      explanationTr:
+        'Resmi metinlerde (raporlar, resmi dil) fiiller yerine sık sık isimleştirme kullanılır: "Nach Abschluss der Untersuchung..." ("İncelemenin tamamlanmasından sonra...") ifadesi, "Nachdem die Untersuchung abgeschlossen wurde..." ("İnceleme tamamlandıktan sonra...") yerine kullanılır. Bu daha derli toplu ve resmi görünür.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Nach ___ der Arbeit gehen wir nach Hause." (Abschluss/beenden)', options: ['Abschluss', 'Beenden', 'Abschließen', 'Beendung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Abschluss" ist das gebräuchliche Nomen für "beenden" in formellen Texten.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ (entscheiden) fiel schwer.' },
+        correctAnswer: { accepted: ['Entscheidung'] },
+        explanation: '"Entscheiden" + "-ung" = die Entscheidung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit5Lesson4.id, word: 'der Abschluss', translationEn: 'the completion / conclusion', translationTr: 'tamamlama', exampleSentence: 'Nach Abschluss der Arbeit gehen wir nach Hause.' },
+      { lessonId: b2Unit5Lesson4.id, word: 'entscheiden', translationEn: 'to decide', translationTr: 'karar vermek', exampleSentence: 'Die Entscheidung fiel schwer.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
