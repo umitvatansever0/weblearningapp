@@ -2550,6 +2550,177 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 4: Partizipialattribute (4 lessons) ---
+  const b2Unit4 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 4, titleDe: 'Partizipialattribute', titleEn: 'Participial Attributes', titleTr: 'Partisip Sıfatları' },
+  })
+
+  const b2Unit4Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit4.id,
+      order: 1,
+      grammarTopic: 'Partizip I als Adjektiv',
+      explanationDe:
+        'Partizip I (Infinitiv + d) wird wie ein Adjektiv dekliniert und drückt eine gleichzeitige, aktive Handlung aus: "der schlafende Mann" (der Mann, der schläft).',
+      explanationEn:
+        'Partizip I (infinitive + d) is declined like an adjective and expresses a simultaneous, active action: "der schlafende Mann" (the sleeping man = the man who is sleeping).',
+      explanationTr:
+        'Partizip I (mastar + d), sıfat gibi çekimlenir ve eşzamanlı, etken bir eylemi ifade eder: "der schlafende Mann" (uyuyan adam = uyumakta olan adam).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ___ Kind spielt im Garten. (spielen, Partizip I)', options: ['spielende', 'gespielte', 'spielend', 'spielte'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip I: Infinitiv + d + Adjektivendung: spielende.',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der ___ Hund bellt laut. (bellen, Partizip I)' },
+        correctAnswer: { accepted: ['bellende'] },
+        explanation: 'Partizip I von "bellen": bellende.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit4Lesson1.id, word: 'der Garten', translationEn: 'the garden', translationTr: 'bahçe', exampleSentence: 'Das Kind spielt im Garten.' },
+      { lessonId: b2Unit4Lesson1.id, word: 'bellen', translationEn: 'to bark', translationTr: 'havlamak', exampleSentence: 'Der bellende Hund läuft schnell.' },
+    ],
+  })
+
+  const b2Unit4Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit4.id,
+      order: 2,
+      grammarTopic: 'Partizip II als Adjektiv',
+      explanationDe:
+        'Partizip II wird ebenfalls wie ein Adjektiv dekliniert und drückt meist eine abgeschlossene, passive Handlung aus: "der reparierte Wagen" (der Wagen, der repariert wurde).',
+      explanationEn:
+        'Partizip II is also declined like an adjective and usually expresses a completed, passive action: "der reparierte Wagen" (the repaired car = the car that was repaired).',
+      explanationTr:
+        'Partizip II de sıfat gibi çekimlenir ve genellikle tamamlanmış, edilgen bir eylemi ifade eder: "der reparierte Wagen" (tamir edilmiş araba = tamir edilen araba).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die ___ Tür war kaputt. (öffnen, Partizip II)', options: ['geöffnete', 'öffnende', 'offene', 'öffnete'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip II von "öffnen": geöffnete.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['gekocht', 'geschrieben', 'verkauft'], rights: ['written', 'sold', 'cooked'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'gekocht', right: 'cooked' },
+            { left: 'geschrieben', right: 'written' },
+            { left: 'verkauft', right: 'sold' },
+          ],
+        },
+        explanation: 'Partizip-II-Formen und ihre Bedeutung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit4Lesson2.id, word: 'kaputt', translationEn: 'broken', translationTr: 'bozuk', exampleSentence: 'Die geöffnete Tür war kaputt.' },
+      { lessonId: b2Unit4Lesson2.id, word: 'verkaufen', translationEn: 'to sell', translationTr: 'satmak', exampleSentence: 'Das verkaufte Haus war teuer.' },
+    ],
+  })
+
+  const b2Unit4Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit4.id,
+      order: 3,
+      grammarTopic: 'Erweiterte Partizipialattribute',
+      explanationDe:
+        'Erweiterte Partizipialattribute enthalten zusätzliche Informationen vor dem Partizip: "der von vielen Menschen geliebte Sänger" (der Sänger, der von vielen Menschen geliebt wird). Typisch für formelle, schriftliche Texte.',
+      explanationEn:
+        'Extended participial attributes include additional information before the participle: "der von vielen Menschen geliebte Sänger" (the singer loved by many people). Typical of formal, written texts.',
+      explanationTr:
+        'Genişletilmiş partisip sıfatları, partisipten önce ek bilgi içerir: "der von vielen Menschen geliebte Sänger" (birçok insan tarafından sevilen şarkıcı). Resmi, yazılı metinlerde tipiktir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der ___ Bericht wurde veröffentlicht. (gestern geschrieben)', options: ['gestern geschriebene', 'geschriebene gestern', 'schreibende gestern', 'geschrieben gestern'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Erweitertes Partizipialattribut: Zeitangabe + Partizip II + Nomen.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gelesene', 'das', 'Buch', 'viel'] },
+        correctAnswer: { order: ['das', 'viel', 'gelesene', 'Buch'] },
+        explanation: 'Reihenfolge: Artikel, Zusatzinformation, Partizip, Nomen.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit4Lesson3.id, word: 'veröffentlichen', translationEn: 'to publish', translationTr: 'yayınlamak', exampleSentence: 'Der Bericht wurde veröffentlicht.' },
+      { lessonId: b2Unit4Lesson3.id, word: 'beliebt', translationEn: 'popular', translationTr: 'popüler', exampleSentence: 'Das ist ein beliebtes Buch.' },
+    ],
+  })
+
+  const b2Unit4Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit4.id,
+      order: 4,
+      grammarTopic: 'Umwandlung zu Relativsätzen',
+      explanationDe:
+        'Partizipialattribute lassen sich in Relativsätze umwandeln: "der schlafende Mann" → "der Mann, der schläft"; "das reparierte Auto" → "das Auto, das repariert wurde".',
+      explanationEn:
+        'Participial attributes can be converted into relative clauses: "der schlafende Mann" → "der Mann, der schläft" (the man who is sleeping); "das reparierte Auto" → "das Auto, das repariert wurde" (the car that was repaired).',
+      explanationTr:
+        'Partisip sıfatları ilgi cümlelerine dönüştürülebilir: "der schlafende Mann" → "der Mann, der schläft" (uyuyan adam); "das reparierte Auto" → "das Auto, das repariert wurde" (tamir edilen araba).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Der lachende Junge" bedeutet als Relativsatz: "Der Junge, der ___."', options: ['lacht', 'lachte', 'gelacht hat', 'lachen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip I entspricht dem Präsens im Relativsatz: der lacht.',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wandle um: 'das gebaute Haus' → 'das Haus, das ___' (Relativsatz mit Passiv)" },
+        correctAnswer: { accepted: ['gebaut wurde'] },
+        explanation: 'Partizip II entspricht dem Passiv im Relativsatz: das gebaut wurde.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit4Lesson4.id, word: 'lachen', translationEn: 'to laugh', translationTr: 'gülmek', exampleSentence: 'Der lachende Junge spielt draußen.' },
+      { lessonId: b2Unit4Lesson4.id, word: 'bauen', translationEn: 'to build', translationTr: 'inşa etmek', exampleSentence: 'Das gebaute Haus ist neu.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
