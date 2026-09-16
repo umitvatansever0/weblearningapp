@@ -2385,6 +2385,171 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 3: Passiv mit Modalverben (4 lessons) ---
+  const b2Unit3 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 3, titleDe: 'Passiv mit Modalverben', titleEn: 'Passive with Modal Verbs', titleTr: 'Kip Fiilleriyle Edilgen Çatı' },
+  })
+
+  const b2Unit3Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit3.id,
+      order: 1,
+      grammarTopic: 'Passiv mit Modalverben im Präsens',
+      explanationDe:
+        'Im Passiv mit Modalverben steht das Modalverb konjugiert, das Vollverb als Partizip II und "werden" als Infinitiv am Satzende: "Die Arbeit muss gemacht werden." (Präsens)',
+      explanationEn:
+        'In the passive with modal verbs, the modal verb is conjugated, the main verb appears as a past participle, and "werden" stands as an infinitive at the end of the clause: "Die Arbeit muss gemacht werden." (The work must be done.) (present tense)',
+      explanationTr:
+        'Kip fiilleriyle edilgen çatıda kip fiili çekimli, ana fiil Partizip II olarak, "werden" ise mastar halinde cümle sonunda yer alır: "Die Arbeit muss gemacht werden." (İş yapılmalı.) (şimdiki zaman)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Formular ___ ausgefüllt werden.', options: ['muss', 'musste', 'ist', 'wird'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präsens Passiv mit Modalverb: "muss" + Partizip II + "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Fenster ___ geputzt werden. (müssen)' },
+        correctAnswer: { accepted: ['müssen'] },
+        explanation: 'Mit "die Fenster" (Plural) benutzt man "müssen".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit3Lesson1.id, word: 'ausfüllen', translationEn: 'to fill out', translationTr: 'doldurmak', exampleSentence: 'Das Formular muss ausgefüllt werden.' },
+      { lessonId: b2Unit3Lesson1.id, word: 'putzen', translationEn: 'to clean', translationTr: 'temizlemek', exampleSentence: 'Die Fenster müssen geputzt werden.' },
+    ],
+  })
+
+  const b2Unit3Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit3.id,
+      order: 2,
+      grammarTopic: 'Passiv mit Modalverben im Präteritum',
+      explanationDe:
+        'Im Präteritum Passiv mit Modalverben wird das Modalverb im Präteritum konjugiert: "Die Arbeit musste gemacht werden." (Vergangenheit)',
+      explanationEn:
+        'In the simple past passive with modal verbs, the modal verb is conjugated in the Präteritum: "Die Arbeit musste gemacht werden." (The work had to be done.) (past)',
+      explanationTr:
+        'Kip fiilleriyle Präteritum edilgen çatıda kip fiili Präteritum\'da çekimlenir: "Die Arbeit musste gemacht werden." (İş yapılmalıydı.) (geçmiş)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Bericht ___ gestern geschrieben werden.', options: ['musste', 'muss', 'wurde', 'ist'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präteritum Passiv mit Modalverb: "musste" + Partizip II + "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['werden', 'musste', 'repariert', 'das', 'Auto'] },
+        correctAnswer: { order: ['das', 'Auto', 'musste', 'repariert', 'werden'] },
+        explanation: 'Wortstellung: Subjekt, Modalverb (Präteritum), Partizip II, "werden".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit3Lesson2.id, word: 'der Bericht', translationEn: 'the report', translationTr: 'rapor', exampleSentence: 'Der Bericht musste gestern geschrieben werden.' },
+      { lessonId: b2Unit3Lesson2.id, word: 'die Reparatur', translationEn: 'the repair', translationTr: 'tamir', exampleSentence: 'Das Auto musste repariert werden.' },
+    ],
+  })
+
+  const b2Unit3Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit3.id,
+      order: 3,
+      grammarTopic: 'Negation im Passiv mit Modalverben',
+      explanationDe:
+        'Die Negation steht meist vor dem Partizip II oder vor "werden": "Das darf nicht gemacht werden." / "Das Auto darf hier nicht geparkt werden."',
+      explanationEn:
+        'The negation usually stands before the past participle or before "werden": "Das darf nicht gemacht werden." (That must not be done.) / "Das Auto darf hier nicht geparkt werden." (The car may not be parked here.)',
+      explanationTr:
+        'Olumsuzluk genellikle Partizip II\'den ya da "werden"den önce yer alır: "Das darf nicht gemacht werden." (Bu yapılmamalı.) / "Das Auto darf hier nicht geparkt werden." (Araba burada park edilmemeli.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Hier ___ nicht geraucht werden.', options: ['darf', 'muss', 'kann', 'soll'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Darf nicht" drückt ein Verbot aus.',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Auto darf hier nicht ___ werden. (parken)' },
+        correctAnswer: { accepted: ['geparkt'] },
+        explanation: 'Partizip II von "parken": geparkt.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit3Lesson3.id, word: 'rauchen', translationEn: 'to smoke', translationTr: 'sigara içmek', exampleSentence: 'Hier darf nicht geraucht werden.' },
+      { lessonId: b2Unit3Lesson3.id, word: 'parken', translationEn: 'to park', translationTr: 'park etmek', exampleSentence: 'Das Auto darf hier nicht geparkt werden.' },
+    ],
+  })
+
+  const b2Unit3Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit3.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Passiv mit Modalverben',
+      explanationDe:
+        'Wiederholung: Passiv mit Modalverben in Präsens, Präteritum und Negation. Merke: Modalverb konjugiert + Partizip II + "werden" am Satzende.',
+      explanationEn:
+        'Review: passive with modal verbs in present, simple past, and negation. Remember: conjugated modal verb + past participle + "werden" at the end of the clause.',
+      explanationTr:
+        'Tekrar: kip fiilleriyle şimdiki zaman, geçmiş zaman ve olumsuzlukta edilgen çatı. Unutma: çekimli kip fiili + Partizip II + cümle sonunda "werden".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Regeln ___ beachtet werden. (müssen, Präsens)', options: ['müssen', 'mussten', 'muss', 'musste'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "die Regeln" (Plural) benutzt man "müssen".',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'The letter had to be sent'? (Passiv mit Modalverb, Präteritum)" },
+        correctAnswer: { accepted: ['der brief musste geschickt werden'] },
+        explanation: '"Der Brief musste geschickt werden" ist die richtige Übersetzung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit3Lesson4.id, word: 'beachten', translationEn: 'to observe / pay attention to', translationTr: 'dikkat etmek', exampleSentence: 'Die Regeln müssen beachtet werden.' },
+      { lessonId: b2Unit3Lesson4.id, word: 'die Regel', translationEn: 'the rule', translationTr: 'kural', exampleSentence: 'Die Regeln müssen beachtet werden.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
