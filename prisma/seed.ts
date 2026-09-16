@@ -2214,6 +2214,177 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 2: Konjunktiv I (formelle indirekte Rede) (4 lessons) ---
+  const b2Unit2 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 2, titleDe: 'Konjunktiv I', titleEn: 'Subjunctive I', titleTr: 'Konjunktiv I (Dolaylı Anlatım)' },
+  })
+
+  const b2Unit2Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit2.id,
+      order: 1,
+      grammarTopic: 'Konjunktiv-I-Formen (regelmäßige Verben)',
+      explanationDe:
+        'Der Konjunktiv I wird bei regelmäßigen Verben aus dem Verbstamm + Endungen (-e, -est, -e, -en, -et, -en) gebildet, z. B. "er sage" (von "sagen"). Er wird vor allem in der formellen indirekten Rede verwendet.',
+      explanationEn:
+        'For regular verbs, Konjunktiv I is formed from the verb stem + endings (-e, -est, -e, -en, -et, -en), e.g. "er sage" (from "sagen", to say). It is mainly used in formal reported speech.',
+      explanationTr:
+        'Düzenli fiillerde Konjunktiv I, fiil kökü + ekler (-e, -est, -e, -en, -et, -en) ile kurulur, örn. "er sage" ("sagen"den, söylemek). Öncelikle resmi dolaylı anlatımda kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er sagt, er ___ (arbeiten) viel. (Konjunktiv I)', options: ['arbeite', 'arbeitet', 'arbeitete', 'arbeiten'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv I von "arbeiten" für "er": arbeite (Stamm + -e).',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie behauptet, sie ___ (glauben) das nicht.' },
+        correctAnswer: { accepted: ['glaube'] },
+        explanation: 'Konjunktiv I von "glauben" für "sie": glaube.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit2Lesson1.id, word: 'behaupten', translationEn: 'to claim', translationTr: 'iddia etmek', exampleSentence: 'Sie behauptet, sie glaube das nicht.' },
+      { lessonId: b2Unit2Lesson1.id, word: 'glauben', translationEn: 'to believe', translationTr: 'inanmak', exampleSentence: 'Sie glaubt das nicht.' },
+    ],
+  })
+
+  const b2Unit2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit2.id,
+      order: 2,
+      grammarTopic: 'Konjunktiv I von sein/haben/Modalverben',
+      explanationDe:
+        'Die wichtigsten unregelmäßigen Konjunktiv-I-Formen: "sein" → ich sei, du seiest, er sei; "haben" → er habe; Modalverben wie "können" → er könne, "müssen" → er müsse.',
+      explanationEn:
+        'The most important irregular Konjunktiv I forms: "sein" (to be) → ich sei, du seiest, er sei; "haben" (to have) → er habe; modal verbs like "können" → er könne, "müssen" → er müsse.',
+      explanationTr:
+        'En önemli düzensiz Konjunktiv I biçimleri: "sein" (olmak) → ich sei, du seiest, er sei; "haben" (sahip olmak) → er habe; "können" gibi kip fiilleri → er könne, "müssen" → er müsse.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Chef sagt, er ___ heute keine Zeit. (Konjunktiv I von "haben")', options: ['habe', 'hat', 'hätte', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv I von "haben" für "er": habe.',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['ich (sein)', 'er (müssen)', 'wir (haben)'], rights: ['müsse', 'haben', 'sei'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich (sein)', right: 'sei' },
+            { left: 'er (müssen)', right: 'müsse' },
+            { left: 'wir (haben)', right: 'haben' },
+          ],
+        },
+        explanation: 'Konjunktiv-I-Formen: sein → sei, müssen → müsse, haben (wir) → haben.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit2Lesson2.id, word: 'der Chef', translationEn: 'the boss', translationTr: 'patron', exampleSentence: 'Der Chef sagt, er habe heute keine Zeit.' },
+      { lessonId: b2Unit2Lesson2.id, word: 'die Firma', translationEn: 'the company', translationTr: 'şirket', exampleSentence: 'Er arbeitet für eine große Firma.' },
+    ],
+  })
+
+  const b2Unit2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit2.id,
+      order: 3,
+      grammarTopic: 'Ersatzform mit "würde"',
+      explanationDe:
+        'Wenn der Konjunktiv I mit dem Indikativ identisch ist (meist bei "wir" und "sie/Sie"), benutzt man stattdessen die Ersatzform mit "würde" + Infinitiv, z. B. "Sie sagen, sie würden kommen" statt "sie kommen".',
+      explanationEn:
+        'When Konjunktiv I is identical to the indicative (usually with "wir" and "sie/Sie"), the substitute form with "würde" + infinitive is used instead, e.g. "Sie sagen, sie würden kommen" (They say they would come) instead of "sie kommen".',
+      explanationTr:
+        'Konjunktiv I, bildirme kipiyle aynı olduğunda (genellikle "wir" ve "sie/Sie" ile), onun yerine "würde" + mastar ile yapılan yedek biçim kullanılır, örn. "Sie sagen, sie würden kommen" ("sie kommen" yerine).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Kollegen sagen, sie ___ morgen kommen. (Ersatzform)', options: ['würden', 'werden', 'würde', 'sind'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bei "sie" (Plural) benutzt man die Ersatzform: würden + Infinitiv.',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er meint, sie ___ das Projekt unterstützen. (würde-Form)' },
+        correctAnswer: { accepted: ['würden'] },
+        explanation: 'Ersatzform für "sie" (Plural): würden.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit2Lesson3.id, word: 'unterstützen', translationEn: 'to support', translationTr: 'desteklemek', exampleSentence: 'Sie würden das Projekt unterstützen.' },
+      { lessonId: b2Unit2Lesson3.id, word: 'die Kollegen', translationEn: 'the colleagues', translationTr: 'meslektaşlar', exampleSentence: 'Die Kollegen sagen, sie würden morgen kommen.' },
+    ],
+  })
+
+  const b2Unit2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit2.id,
+      order: 4,
+      grammarTopic: 'Indirekte Fragen/Aufforderungen',
+      explanationDe:
+        'In indirekten Fragen steht das Fragewort oder "ob" am Satzanfang, das Verb im Konjunktiv I am Ende: "Er fragt, ob sie Zeit habe." Indirekte Aufforderungen werden mit "sollen" wiedergegeben: "Er sagt, sie solle warten."',
+      explanationEn:
+        'In indirect questions, the question word or "ob" (whether) starts the clause and the verb (in Konjunktiv I) comes at the end: "Er fragt, ob sie Zeit habe." (He asks whether she has time.) Indirect commands are reported with "sollen": "Er sagt, sie solle warten." (He says she should wait.)',
+      explanationTr:
+        'Dolaylı sorularda soru kelimesi ya da "ob" cümle başında yer alır, fiil (Konjunktiv I\'de) sonda gelir: "Er fragt, ob sie Zeit habe." (Vakti olup olmadığını soruyor.) Dolaylı emirler "sollen" ile aktarılır: "Er sagt, sie solle warten." (Beklemesi gerektiğini söylüyor.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ob', 'Zeit', 'habe', 'sie'] },
+        correctAnswer: { order: ['ob', 'sie', 'Zeit', 'habe'] },
+        explanation: 'Im indirekten Fragesatz: "ob" + Subjekt + ... + Verb (Konjunktiv I) am Ende.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie lautet die indirekte Aufforderung für 'Warte!' mit 'Er sagt, sie...'?" },
+        correctAnswer: { accepted: ['sie solle warten'] },
+        explanation: 'Indirekte Aufforderung mit "sollen": sie solle warten.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit2Lesson4.id, word: 'die Aufforderung', translationEn: 'the request / command', translationTr: 'istek / emir', exampleSentence: 'Das ist eine indirekte Aufforderung.' },
+      { lessonId: b2Unit2Lesson4.id, word: 'die Frage', translationEn: 'the question', translationTr: 'soru', exampleSentence: 'Er fragt, ob sie Zeit habe.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
