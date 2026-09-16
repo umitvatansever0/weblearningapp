@@ -61,10 +61,10 @@ describe('getUnitsForLevel (B2)', () => {
   it('returns the B2 units with four lessons each and no progress for a new user', async () => {
     const levels = await getLevels()
     const b2 = levels.find((level) => level.code === 'B2')
-    expect(b2?.unitCount).toBe(5)
+    expect(b2?.unitCount).toBe(6)
 
     const units = await getUnitsForLevel('B2', 'nonexistent-user-id')
-    expect(units).toHaveLength(5)
+    expect(units).toHaveLength(6)
     expect(units[0].lessons).toHaveLength(4)
     expect(units[0].lessons.every((lesson) => lesson.completed === false)).toBe(true)
   })

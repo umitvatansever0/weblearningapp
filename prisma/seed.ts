@@ -2892,6 +2892,171 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 6: Komplexe Konnektoren (4 lessons) ---
+  const b2Unit6 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 6, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
+  })
+
+  const b2Unit6Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit6.id,
+      order: 1,
+      grammarTopic: 'dennoch/trotzdem',
+      explanationDe:
+        '"Dennoch" und "trotzdem" drücken einen Gegensatz aus und stehen meist am Satzanfang mit Verb-Zweit-Stellung: "Es regnete stark. Trotzdem gingen wir spazieren."',
+      explanationEn:
+        '"Dennoch" and "trotzdem" (nevertheless) express a contrast and usually stand at the start of the clause with the verb in second position: "Es regnete stark. Trotzdem gingen wir spazieren." (It rained heavily. Nevertheless, we went for a walk.)',
+      explanationTr:
+        '"Dennoch" ve "trotzdem" (yine de) bir zıtlık ifade eder ve genellikle cümle başında, fiil ikinci sırada olacak şekilde yer alır: "Es regnete stark. Trotzdem gingen wir spazieren." (Şiddetli yağmur yağıyordu. Yine de yürüyüşe çıktık.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er war krank. ___ ging er zur Arbeit.', options: ['Trotzdem', 'Deshalb', 'Weil', 'Obwohl'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Trotzdem" drückt einen Gegensatz zwischen Krankheit und Arbeit aus.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['trotzdem', 'wir', 'spazieren', 'gingen'] },
+        correctAnswer: { order: ['trotzdem', 'gingen', 'wir', 'spazieren'] },
+        explanation: '"Trotzdem" steht an Position 1, danach folgt das Verb.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit6Lesson1.id, word: 'spazieren gehen', translationEn: 'to go for a walk', translationTr: 'yürüyüşe çıkmak', exampleSentence: 'Wir gingen trotzdem spazieren.' },
+      { lessonId: b2Unit6Lesson1.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Es regnete stark.' },
+    ],
+  })
+
+  const b2Unit6Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit6.id,
+      order: 2,
+      grammarTopic: 'gleichwohl',
+      explanationDe:
+        '"Gleichwohl" ist ein formelles Synonym für "dennoch/trotzdem" und wird vor allem in geschriebener, gehobener Sprache verwendet: "Die Lage war schwierig, gleichwohl fand man eine Lösung."',
+      explanationEn:
+        '"Gleichwohl" is a formal synonym for "dennoch/trotzdem" (nevertheless) used mainly in written, elevated language: "Die Lage war schwierig, gleichwohl fand man eine Lösung." (The situation was difficult; nevertheless, a solution was found.)',
+      explanationTr:
+        '"Gleichwohl", "dennoch/trotzdem" için resmi bir eş anlamlıdır ve öncelikle yazılı, seçkin dilde kullanılır: "Die Lage war schwierig, gleichwohl fand man eine Lösung." (Durum zordu, yine de bir çözüm bulundu.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Verhandlungen waren schwierig; ___ einigte man sich. (formell)', options: ['gleichwohl', 'weil', 'damit', 'falls'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Gleichwohl" passt formell für einen Gegensatz.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Plan war riskant, ___ wurde er umgesetzt.' },
+        correctAnswer: { accepted: ['gleichwohl'] },
+        explanation: '"Gleichwohl" verbindet Risiko und Umsetzung als Gegensatz.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit6Lesson2.id, word: 'die Verhandlung', translationEn: 'the negotiation', translationTr: 'müzakere', exampleSentence: 'Die Verhandlungen waren schwierig.' },
+      { lessonId: b2Unit6Lesson2.id, word: 'umsetzen', translationEn: 'to implement', translationTr: 'uygulamak', exampleSentence: 'Der Plan wurde umgesetzt.' },
+    ],
+  })
+
+  const b2Unit6Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit6.id,
+      order: 3,
+      grammarTopic: 'insofern (als)',
+      explanationDe:
+        '"Insofern (als)" leitet einen einschränkenden Nebensatz ein und bedeutet "in dem Maße, wie": "Der Vorschlag ist gut, insofern als er realistisch ist."',
+      explanationEn:
+        '"Insofern (als)" introduces a limiting subordinate clause and means "to the extent that": "Der Vorschlag ist gut, insofern als er realistisch ist." (The proposal is good insofar as it is realistic.)',
+      explanationTr:
+        '"Insofern (als)", sınırlayıcı bir yan cümle başlatır ve "şu ölçüde ki" anlamına gelir: "Der Vorschlag ist gut, insofern als er realistisch ist." (Öneri, gerçekçi olduğu ölçüde iyidir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Idee ist interessant, ___ als sie neu ist.', options: ['insofern', 'obwohl', 'damit', 'falls'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Insofern als" schränkt die Aussage ein.',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'to the extent that / insofar as'?" },
+        correctAnswer: { accepted: ['insofern als', 'insofern'] },
+        explanation: '"Insofern (als)" bedeutet "to the extent that".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit6Lesson3.id, word: 'realistisch', translationEn: 'realistic', translationTr: 'gerçekçi', exampleSentence: 'Der Vorschlag ist realistisch.' },
+      { lessonId: b2Unit6Lesson3.id, word: 'der Vorschlag', translationEn: 'the proposal', translationTr: 'öneri', exampleSentence: 'Die Idee ist interessant.' },
+    ],
+  })
+
+  const b2Unit6Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit6.id,
+      order: 4,
+      grammarTopic: 'zumal',
+      explanationDe:
+        '"Zumal" begründet eine Aussage zusätzlich und bedeutet "besonders weil/da": "Wir bleiben zu Hause, zumal es stark regnet." Es steht am Anfang eines Nebensatzes, das Verb am Ende.',
+      explanationEn:
+        '"Zumal" gives an additional reason and means "especially because/since": "Wir bleiben zu Hause, zumal es stark regnet." (We are staying home, especially since it is raining heavily.) It starts a subordinate clause, with the verb at the end.',
+      explanationTr:
+        '"Zumal" ek bir gerekçe sunar ve "özellikle çünkü/madem ki" anlamına gelir: "Wir bleiben zu Hause, zumal es stark regnet." (Evde kalıyoruz, özellikle şiddetli yağmur yağdığından.) Bir yan cümle başlatır, fiil sonda yer alır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir bleiben zu Hause, ___ es stark regnet.', options: ['zumal', 'obwohl', 'damit', 'bevor'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Zumal" begründet zusätzlich: besonders weil es regnet.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['stark', 'regnet', 'es', 'zumal'] },
+        correctAnswer: { order: ['zumal', 'es', 'stark', 'regnet'] },
+        explanation: 'Nebensatz mit "zumal": Konjunktion + Subjekt + ... + Verb am Ende.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit6Lesson4.id, word: 'zu Hause', translationEn: 'at home', translationTr: 'evde', exampleSentence: 'Wir bleiben zu Hause.' },
+      { lessonId: b2Unit6Lesson4.id, word: 'stark', translationEn: 'strong / heavily', translationTr: 'güçlü / şiddetli', exampleSentence: 'Es regnet stark.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
