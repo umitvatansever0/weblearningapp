@@ -3082,6 +3082,165 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 8: Wechselpräpositionen Vertiefung (4 lessons) ---
+  const a2Unit8 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 8, titleDe: 'Wechselpräpositionen Vertiefung', titleEn: 'Two-Way Prepositions in Depth', titleTr: 'Wechselpräpositionen Derinlemesine' },
+  })
+
+  const a2Unit8Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit8.id,
+      order: 1,
+      grammarTopic: 'Wechselpräpositionen: Wo? = Dativ',
+      explanationDe:
+        'Die neun Wechselpräpositionen sind: in, an, auf, unter, über, vor, hinter, neben, zwischen. Bei der Frage "Wo?" (Position, keine Bewegung) benutzt man den Dativ: "Das Buch liegt auf dem Tisch."',
+      explanationEn:
+        'The nine two-way prepositions are: in, an, auf, unter, über, vor, hinter, neben, zwischen. When answering "Wo?" (location, no movement), use the dative: "Das Buch liegt auf dem Tisch" (The book is lying on the table).',
+      explanationTr:
+        'Dokuz "Wechselpräposition" şunlardır: in, an, auf, unter, über, vor, hinter, neben, zwischen. "Wo?" (konum, hareket yok) sorusuna cevapta Dativ kullanılır: "Das Buch liegt auf dem Tisch" (Kitap masanın üzerinde duruyor).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit8Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Buch liegt auf ___ Tisch. (Dativ, maskulin)', options: ['dem', 'den', 'der', 'das'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Dativ maskulin: dem Tisch.',
+      },
+      {
+        lessonId: a2Unit8Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Lampe hängt über ___ Bett. (Dativ, neutral)' },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'Dativ neutral: dem Bett.',
+      },
+    ],
+  })
+
+  const a2Unit8Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit8.id,
+      order: 2,
+      grammarTopic: 'Wechselpräpositionen: Wohin? = Akkusativ',
+      explanationDe:
+        'Bei der Frage "Wohin?" (Richtung, Bewegung) benutzt man den Akkusativ: "Ich lege das Buch auf den Tisch." Das Verb zeigt oft die Bewegung an (legen, stellen, hängen).',
+      explanationEn:
+        'When answering "Wohin?" (direction, movement), use the accusative: "Ich lege das Buch auf den Tisch" (I put the book onto the table). The verb often signals the movement (legen, stellen, hängen).',
+      explanationTr:
+        '"Wohin?" (yön, hareket) sorusuna cevapta Akkusativ kullanılır: "Ich lege das Buch auf den Tisch" (Kitabı masanın üzerine koyuyorum). Fiil genellikle hareketi belirtir (legen, stellen, hängen).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit8Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich lege das Buch auf ___ Tisch. (Akkusativ, maskulin)', options: ['den', 'dem', 'der', 'das'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Akkusativ maskulin: den Tisch.',
+      },
+      {
+        lessonId: a2Unit8Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Vase', 'die', 'stelle', 'ich', 'den', 'Tisch', 'auf'] },
+        correctAnswer: { order: ['ich', 'stelle', 'die', 'Vase', 'auf', 'den', 'Tisch'] },
+        explanation: 'Position 2 ist das Verb, dann Akkusativobjekt, dann Präposition + Akkusativ (Richtung).',
+      },
+    ],
+  })
+
+  const a2Unit8Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit8.id,
+      order: 3,
+      grammarTopic: 'Wo vs. Wohin: Kontrastübung',
+      explanationDe:
+        'Vergleiche: "Die Vase steht auf dem Tisch." (Wo? = Dativ, Zustand) vs. "Ich stelle die Vase auf den Tisch." (Wohin? = Akkusativ, Bewegung). Das Verb entscheidet oft mit: stehen/liegen/hängen (Zustand) vs. stellen/legen/hängen (Bewegung).',
+      explanationEn:
+        'Compare: "Die Vase steht auf dem Tisch" (Wo? = dative, state) vs. "Ich stelle die Vase auf den Tisch" (Wohin? = accusative, movement). The verb often decides: stehen/liegen/hängen (state) vs. stellen/legen/hängen (movement).',
+      explanationTr:
+        'Karşılaştır: "Die Vase steht auf dem Tisch." (Wo? = Dativ, durum) vs. "Ich stelle die Vase auf den Tisch." (Wohin? = Akkusativ, hareket). Fiil genellikle belirleyicidir: stehen/liegen/hängen (durum) vs. stellen/legen/hängen (hareket).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit8Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Vase steht auf ___ Tisch. (Zustand)', options: ['dem', 'den', 'der', 'die'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Zustand = Dativ: dem Tisch.',
+      },
+      {
+        lessonId: a2Unit8Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['stehen', 'stellen'], rights: ['Akkusativ', 'Dativ'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'stehen', right: 'Dativ' },
+            { left: 'stellen', right: 'Akkusativ' },
+          ],
+        },
+        explanation: '"stehen" beschreibt einen Zustand (Dativ), "stellen" eine Bewegung (Akkusativ).',
+      },
+    ],
+  })
+
+  const a2Unit8Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit8.id,
+      order: 4,
+      grammarTopic: 'Feste Ausdrücke mit Wechselpräpositionen',
+      explanationDe:
+        'Manche Verben werden fest mit einer Präposition kombiniert, unabhängig von "wo/wohin": warten auf (+Akkusativ), sich freuen auf (+Akkusativ), denken an (+Akkusativ). Beispiel: "Ich warte auf den Bus."',
+      explanationEn:
+        'Some verbs are fixed with a particular preposition, regardless of "wo/wohin": warten auf (+accusative, wait for), sich freuen auf (+accusative, look forward to), denken an (+accusative, think of). Example: "Ich warte auf den Bus" (I\'m waiting for the bus).',
+      explanationTr:
+        'Bazı fiiller "wo/wohin"dan bağımsız olarak belirli bir edatla sabit kullanılır: warten auf (+Akkusativ, beklemek), sich freuen auf (+Akkusativ, dört gözle beklemek), denken an (+Akkusativ, düşünmek). Örnek: "Ich warte auf den Bus" (Otobüsü bekliyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit8Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich warte ___ den Bus.' },
+        correctAnswer: { accepted: ['auf'] },
+        explanation: '"Warten auf" + Akkusativ.',
+      },
+      {
+        lessonId: a2Unit8Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich freue mich ___ den Urlaub.', options: ['auf', 'über', 'für', 'mit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sich freuen auf" + Akkusativ (Vorfreude).',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit8Lesson1.id, word: 'liegen', translationEn: 'to lie (be in a lying position)', translationTr: 'yatay durmak', exampleSentence: 'Das Buch liegt auf dem Tisch.' },
+      { lessonId: a2Unit8Lesson1.id, word: 'hängen', translationEn: 'to hang', translationTr: 'asılı olmak', exampleSentence: 'Die Lampe hängt über dem Bett.' },
+      { lessonId: a2Unit8Lesson2.id, word: 'legen', translationEn: 'to lay / put (flat)', translationTr: 'yatay koymak', exampleSentence: 'Ich lege das Buch auf den Tisch.' },
+      { lessonId: a2Unit8Lesson2.id, word: 'stellen', translationEn: 'to put / place (upright)', translationTr: 'dikey koymak', exampleSentence: 'Ich stelle die Vase auf den Tisch.' },
+      { lessonId: a2Unit8Lesson3.id, word: 'stehen', translationEn: 'to stand', translationTr: 'dikey durmak', exampleSentence: 'Die Vase steht auf dem Tisch.' },
+      { lessonId: a2Unit8Lesson3.id, word: 'die Vase', translationEn: 'the vase', translationTr: 'vazo', exampleSentence: 'Die Vase steht auf dem Tisch.' },
+      { lessonId: a2Unit8Lesson4.id, word: 'der Urlaub', translationEn: 'the vacation', translationTr: 'tatil', exampleSentence: 'Ich freue mich auf den Urlaub.' },
+      { lessonId: a2Unit8Lesson4.id, word: 'denken an', translationEn: 'to think of / about', translationTr: 'düşünmek (biri/bir şey hakkında)', exampleSentence: 'Ich denke an dich.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
