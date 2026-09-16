@@ -3393,6 +3393,177 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 9: Konjunktiv II der Vergangenheit (4 lessons) ---
+  const b2Unit9 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 9, titleDe: 'Konjunktiv II der Vergangenheit', titleEn: 'Past Subjunctive II', titleTr: 'Geçmiş Zaman Konjunktiv II' },
+  })
+
+  const b2Unit9Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit9.id,
+      order: 1,
+      grammarTopic: 'Bildung mit "hätte" + Partizip II',
+      explanationDe:
+        'Der Konjunktiv II der Vergangenheit wird mit "hätte" (Konjunktiv II von "haben") + Partizip II gebildet: "Ich hätte das Buch gelesen." Er beschreibt irreale Situationen in der Vergangenheit.',
+      explanationEn:
+        'The past Konjunktiv II is formed with "hätte" (Konjunktiv II of "haben") + past participle: "Ich hätte das Buch gelesen." (I would have read the book.) It describes unreal (hypothetical) situations in the past.',
+      explanationTr:
+        'Geçmiş zaman Konjunktiv II, "hätte" ("haben"in Konjunktiv II biçimi) + Partizip II ile kurulur: "Ich hätte das Buch gelesen." (Kitabı okumuş olurdum.) Geçmişteki gerçek dışı durumları anlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ das Buch gelesen, wenn ich Zeit gehabt hätte.', options: ['hätte', 'habe', 'hatte', 'würde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv II der Vergangenheit: "hätte" + Partizip II.',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie ___ die Prüfung bestanden, wenn sie gelernt hätte. (haben)' },
+        correctAnswer: { accepted: ['hätte'] },
+        explanation: 'Konjunktiv II der Vergangenheit für "sie": hätte.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit9Lesson1.id, word: 'die Gelegenheit', translationEn: 'the opportunity', translationTr: 'fırsat', exampleSentence: 'Ich hätte die Gelegenheit genutzt.' },
+      { lessonId: b2Unit9Lesson1.id, word: 'nutzen', translationEn: 'to use / utilize', translationTr: 'kullanmak', exampleSentence: 'Ich hätte die Gelegenheit genutzt.' },
+    ],
+  })
+
+  const b2Unit9Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit9.id,
+      order: 2,
+      grammarTopic: 'Bildung mit "wäre" + Partizip II',
+      explanationDe:
+        'Bei Verben der Bewegung oder Zustandsänderung (die im Perfekt "sein" benutzen) wird der Konjunktiv II der Vergangenheit mit "wäre" + Partizip II gebildet: "Ich wäre gekommen, wenn ich Zeit gehabt hätte."',
+      explanationEn:
+        'For verbs of motion or change of state (which use "sein" in the perfect tense), the past Konjunktiv II is formed with "wäre" + past participle: "Ich wäre gekommen, wenn ich Zeit gehabt hätte." (I would have come if I had had time.)',
+      explanationTr:
+        'Hareket ya da durum değişikliği bildiren fiillerde (Perfekt\'te "sein" kullananlar), geçmiş zaman Konjunktiv II "wäre" + Partizip II ile kurulur: "Ich wäre gekommen, wenn ich Zeit gehabt hätte." (Vaktim olsaydı gelmiş olurdum.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er ___ früher gegangen, wenn er gewusst hätte, dass es regnet.', options: ['wäre', 'hätte', 'war', 'würde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Gehen" bildet das Perfekt mit "sein": wäre gegangen.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['kommen', 'gehen', 'bleiben'], rights: ['wäre gegangen', 'wäre geblieben', 'wäre gekommen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'kommen', right: 'wäre gekommen' },
+            { left: 'gehen', right: 'wäre gegangen' },
+            { left: 'bleiben', right: 'wäre geblieben' },
+          ],
+        },
+        explanation: 'Bewegungsverben bilden den Konjunktiv II der Vergangenheit mit "wäre" + Partizip II.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit9Lesson2.id, word: 'bleiben', translationEn: 'to stay', translationTr: 'kalmak', exampleSentence: 'Ich wäre geblieben, wenn ich Zeit gehabt hätte.' },
+      { lessonId: b2Unit9Lesson2.id, word: 'wissen', translationEn: 'to know', translationTr: 'bilmek', exampleSentence: 'Er wäre früher gegangen, wenn er es gewusst hätte.' },
+    ],
+  })
+
+  const b2Unit9Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit9.id,
+      order: 3,
+      grammarTopic: 'Irreale Bedingungssätze der Vergangenheit',
+      explanationDe:
+        'Irreale Bedingungssätze der Vergangenheit bestehen aus einem "wenn"-Satz und einem Hauptsatz, beide im Konjunktiv II der Vergangenheit: "Wenn ich Zeit gehabt hätte, wäre ich gekommen."',
+      explanationEn:
+        'Unreal conditional clauses in the past consist of a "wenn" clause and a main clause, both in the past Konjunktiv II: "Wenn ich Zeit gehabt hätte, wäre ich gekommen." (If I had had time, I would have come.)',
+      explanationTr:
+        'Geçmiş zamanın gerçek dışı koşul cümleleri, hem "wenn" cümlesinin hem de ana cümlenin geçmiş zaman Konjunktiv II\'de olduğu bir yapıdan oluşur: "Wenn ich Zeit gehabt hätte, wäre ich gekommen." (Vaktim olsaydı gelmiş olurdum.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn ich das gewusst ___, hätte ich anders reagiert.', options: ['hätte', 'wäre', 'habe', 'war'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wissen" bildet das Perfekt mit "haben": hätte gewusst.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wenn ich Zeit gehabt hätte, ___ ich gekommen.' },
+        correctAnswer: { accepted: ['wäre'] },
+        explanation: 'Der Hauptsatz braucht "wäre" für "kommen".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit9Lesson3.id, word: 'reagieren', translationEn: 'to react', translationTr: 'tepki vermek', exampleSentence: 'Ich hätte anders reagiert.' },
+      { lessonId: b2Unit9Lesson3.id, word: 'die Bedingung', translationEn: 'the condition', translationTr: 'koşul', exampleSentence: 'Das ist ein irrealer Bedingungssatz.' },
+    ],
+  })
+
+  const b2Unit9Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit9.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Konjunktiv II der Vergangenheit',
+      explanationDe:
+        'Wiederholung: Konjunktiv II der Vergangenheit mit "hätte"/"wäre" + Partizip II, benutzt für irreale Bedingungssätze und Vermutungen über die Vergangenheit.',
+      explanationEn:
+        'Review: past Konjunktiv II with "hätte"/"wäre" + past participle, used for unreal conditional sentences and assumptions about the past.',
+      explanationTr:
+        'Tekrar: "hätte"/"wäre" + Partizip II ile geçmiş zaman Konjunktiv II, gerçek dışı koşul cümleleri ve geçmişe dair varsayımlar için kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn wir das gewusst hätten, ___ wir anders geplant.', options: ['hätten', 'wären', 'haben', 'waren'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Planen" bildet das Perfekt mit "haben": hätten geplant.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I would have helped'?" },
+        correctAnswer: { accepted: ['ich hätte geholfen'] },
+        explanation: '"Ich hätte geholfen" ist die richtige Übersetzung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit9Lesson4.id, word: 'planen', translationEn: 'to plan', translationTr: 'planlamak', exampleSentence: 'Wir hätten anders geplant.' },
+      { lessonId: b2Unit9Lesson4.id, word: 'die Vermutung', translationEn: 'the assumption', translationTr: 'varsayım', exampleSentence: 'Das ist nur eine Vermutung über die Vergangenheit.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
