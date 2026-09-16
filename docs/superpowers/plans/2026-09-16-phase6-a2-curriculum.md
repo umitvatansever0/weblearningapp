@@ -25,16 +25,14 @@
 
 ### Task 1: Expand the existing A2 `Vergangenheit` unit to 4 lessons
 
-**Files:** Modify `prisma/seed.ts`, `tests/integration/seedContent.test.ts`, `tests/integration/learn.test.ts`
+**Files:** Modify `prisma/seed.ts`
 
 **Produces:** `a2Lesson2`, `a2Lesson3`, `a2Lesson4` (local variables, inserted directly after the existing `a2Lesson`'s exercises, before the B1 anchor comment). The existing `a2Unit`/`a2Lesson` (order 1) are untouched.
 
 - [ ] **Lesson 2 — Perfekt mit "sein"** (`grammarTopic`): movement/change-of-state verbs form the Perfekt with "sein" instead of "haben" (e.g. "Ich bin gegangen"). 2 exercises (mix types not used back-to-back), 2 vocab words (e.g. gehen/fahren-flavored, not literal duplicates of any A1 "gehen"/"fahren" vocab entry already in the file).
 - [ ] **Lesson 3 — Zeitangaben der Vergangenheit**: time expressions used with past tense (gestern, letzte Woche, vor zwei Tagen). 2 exercises, 2 vocab words.
 - [ ] **Lesson 4 — Wiederholung: Alltag erzählen**: review lesson combining haben/sein Perfekt in everyday narration sentences. 2 exercises, 2 vocab words.
-- [ ] Update `tests/integration/seedContent.test.ts`: add a new, separate `it('has 12 A2 units with four lessons each', ...)` block (do not edit the existing A1-focused test body).
-- [ ] Update `tests/integration/learn.test.ts`: add a new, separate `describe`/`it` block asserting `getUnitsForLevel('A2', ...)` returns 12 units with 4 lessons each (do not edit existing A1-focused assertions).
-- [ ] Run seed + targeted tests + targeted lint; fix until clean.
+- [ ] Run seed + targeted tests + targeted lint; fix until clean. (The existing "at least one lesson for every level above A1" test keeps passing throughout Tasks 1-11; the exact 12-units/48-lessons A2 assertions are added once in Task 12, after the full curriculum exists, to avoid failing interim tasks and to minimize textual overlap with the concurrent B1 track editing the same test files.)
 - [ ] Commit: `feat: seed A2 unit 1 - Wiederholung & Alltag`
 
 ---
@@ -166,7 +164,10 @@ Lessons: (1) Futur-I-Bildung (werden + Infinitiv); (2) Futur I for predictions/a
 Lessons: (1) Berufe (vocabulary: der Lehrer, die Ärztin, etc.); (2) talking about your job (Ich arbeite als..., Ich bin von Beruf...); (3) Lebenslauf/Bewerbung vocabulary (die Erfahrung, die Bewerbung, das Vorstellungsgespräch); (4) job-interview questions and answers, reviewing modal verbs.
 
 - [ ] Write all 4 lessons.
+- [ ] Update `tests/integration/seedContent.test.ts`: add a new, separate `it('has 12 A2 units with four lessons each', ...)` block (do not edit the existing A1-focused test body — the concurrent Phase 7 B1 track edits the same file).
+- [ ] Update `tests/integration/learn.test.ts`: add a new, separate `describe`/`it` block asserting `getUnitsForLevel('A2', ...)` returns 12 units with 4 lessons each (do not edit existing A1-focused assertions).
 - [ ] Final self-review across the whole diff: no MATCHING exercise is positionally guessable (re-check every one added across all 12 units), no vocab duplication anywhere in the file, all 48 A2 lessons have complete trilingual explanations, unit `order` is a clean 1–12 sequence with `levelId: a2.id` throughout, and the `// --- B1: Nebensätze (1 sample lesson) ---` anchor comment is byte-for-byte unmodified.
 - [ ] Run seed + targeted tests + targeted lint; fix until clean.
 - [ ] Run the full `npx vitest run` and `npx eslint .`; confirm both clean.
 - [ ] Commit: `feat: seed A2 unit 12 - Beruf & Bewerbung`
+- [ ] Commit: `test: add A2 curriculum assertions to seedContent/learn tests`
