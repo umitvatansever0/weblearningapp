@@ -3228,6 +3228,171 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 8: Textkohärenz (4 lessons) ---
+  const b2Unit8 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 8, titleDe: 'Textkohärenz', titleEn: 'Textual Coherence', titleTr: 'Metin Bütünlüğü' },
+  })
+
+  const b2Unit8Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit8.id,
+      order: 1,
+      grammarTopic: 'Personalpronomen als Verweiswörter',
+      explanationDe:
+        'Personalpronomen (er, sie, es, ihn, ihm...) verweisen im Text auf bereits genannte Nomen und vermeiden Wiederholungen: "Der Chef kam spät. Er entschuldigte sich."',
+      explanationEn:
+        'Personal pronouns (er, sie, es, ihn, ihm...) refer back to nouns already mentioned in the text, avoiding repetition: "Der Chef kam spät. Er entschuldigte sich." (The boss arrived late. He apologized.)',
+      explanationTr:
+        'Şahıs zamirleri (er, sie, es, ihn, ihm...) metinde daha önce geçen isimlere gönderme yapar ve tekrarı önler: "Der Chef kam spät. Er entschuldigte sich." (Patron geç geldi. Özür diledi.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Studentin gab die Arbeit ab. ___ war erleichtert.', options: ['Sie', 'Er', 'Es', 'Ihr'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Die Studentin" ist feminin, daher "sie".',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Projekt ist fertig. Wir haben lange an ___ gearbeitet.' },
+        correctAnswer: { accepted: ['ihm'] },
+        explanation: '"Das Projekt" ist neutral, im Dativ nach "an": ihm.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit8Lesson1.id, word: 'die Studentin', translationEn: 'the (female) student', translationTr: 'kadın öğrenci', exampleSentence: 'Die Studentin gab die Arbeit ab.' },
+      { lessonId: b2Unit8Lesson1.id, word: 'erleichtert', translationEn: 'relieved', translationTr: 'rahatlamış', exampleSentence: 'Sie war erleichtert.' },
+    ],
+  })
+
+  const b2Unit8Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit8.id,
+      order: 2,
+      grammarTopic: 'Demonstrativpronomen als Verweis',
+      explanationDe:
+        'Demonstrativpronomen wie "dieser/diese/dieses" verweisen stärker auf etwas Genanntes als Personalpronomen: "Ich traf meinen alten Lehrer. Dieser erkannte mich sofort."',
+      explanationEn:
+        'Demonstrative pronouns like "dieser/diese/dieses" refer back more emphatically than personal pronouns: "Ich traf meinen alten Lehrer. Dieser erkannte mich sofort." (I met my old teacher. He/this one recognized me immediately.)',
+      explanationTr:
+        '"Dieser/diese/dieses" gibi işaret zamirleri, şahıs zamirlerinden daha güçlü biçimde daha önce söylenene gönderme yapar: "Ich traf meinen alten Lehrer. Dieser erkannte mich sofort." (Eski öğretmenimle karşılaştım. O beni hemen tanıdı.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich sprach mit der Ärztin. ___ gab mir gute Ratschläge.', options: ['Diese', 'Dieser', 'Dieses', 'Die'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Die Ärztin" ist feminin: diese.',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welches Demonstrativpronomen passt als Verweis auf 'der Lehrer'?" },
+        correctAnswer: { accepted: ['dieser'] },
+        explanation: '"Der Lehrer" ist maskulin: dieser.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit8Lesson2.id, word: 'die Ärztin', translationEn: 'the (female) doctor', translationTr: 'kadın doktor', exampleSentence: 'Ich sprach mit der Ärztin.' },
+      { lessonId: b2Unit8Lesson2.id, word: 'der Ratschlag', translationEn: 'the piece of advice', translationTr: 'tavsiye', exampleSentence: 'Sie gab mir gute Ratschläge.' },
+    ],
+  })
+
+  const b2Unit8Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit8.id,
+      order: 3,
+      grammarTopic: 'Konnektoren zur Textverknüpfung',
+      explanationDe:
+        'Konnektoren wie "außerdem, jedoch, deshalb, schließlich" verknüpfen Sätze logisch und schaffen einen kohärenten Text: "Er war müde. Außerdem hatte er Kopfschmerzen. Deshalb ging er früh ins Bett."',
+      explanationEn:
+        'Connectors like "außerdem, jedoch, deshalb, schließlich" (moreover, however, therefore, finally) link sentences logically and create a coherent text: "Er war müde. Außerdem hatte er Kopfschmerzen. Deshalb ging er früh ins Bett." (He was tired. Moreover, he had a headache. Therefore, he went to bed early.)',
+      explanationTr:
+        '"Außerdem, jedoch, deshalb, schließlich" (ayrıca, ancak, bu yüzden, sonunda) gibi bağlaçlar cümleleri mantıksal olarak bağlar ve tutarlı bir metin oluşturur: "Er war müde. Außerdem hatte er Kopfschmerzen. Deshalb ging er früh ins Bett." (Yorgundu. Ayrıca başı ağrıyordu. Bu yüzden erken yattı.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er war müde. ___ hatte er Kopfschmerzen.', options: ['Außerdem', 'Deshalb', 'Obwohl', 'Damit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Außerdem" fügt eine zusätzliche Information hinzu.',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['früh', 'ging', 'er', 'deshalb', 'ins', 'Bett'] },
+        correctAnswer: { order: ['deshalb', 'ging', 'er', 'früh', 'ins', 'Bett'] },
+        explanation: '"Deshalb" steht an Position 1, danach das Verb.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit8Lesson3.id, word: 'die Kopfschmerzen', translationEn: 'headache', translationTr: 'baş ağrısı', exampleSentence: 'Er hatte Kopfschmerzen.' },
+      { lessonId: b2Unit8Lesson3.id, word: 'schließlich', translationEn: 'finally', translationTr: 'sonunda', exampleSentence: 'Schließlich ging er ins Bett.' },
+    ],
+  })
+
+  const b2Unit8Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit8.id,
+      order: 4,
+      grammarTopic: 'Verweiswörter (dabei/dazu/damit)',
+      explanationDe:
+        'Pronominaladverbien wie "dabei, dazu, damit" verweisen auf zuvor Genanntes und ersetzen Präposition + Nomen: "Sie lernt Deutsch. Dabei hilft ihr eine App." (= bei dem Lernen)',
+      explanationEn:
+        'Pronominal adverbs like "dabei, dazu, damit" refer back to something previously mentioned and replace preposition + noun: "Sie lernt Deutsch. Dabei hilft ihr eine App." (She is learning German. An app helps her with that = with learning.)',
+      explanationTr:
+        '"Dabei, dazu, damit" gibi zamirli zarflar daha önce söylenene gönderme yapar ve edat + isim yapısının yerini alır: "Sie lernt Deutsch. Dabei hilft ihr eine App." (Almanca öğreniyor. Bu konuda bir uygulama ona yardımcı oluyor.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er will die Prüfung bestehen. ___ lernt er jeden Tag.', options: ['Dazu', 'Dabei', 'Damit', 'Daran'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Dazu" verweist auf das Ziel: für die Prüfung.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie nutzt eine App. ___ lernt sie schneller Deutsch. (dabei)' },
+        correctAnswer: { accepted: ['Dabei'] },
+        explanation: '"Dabei" verweist auf die Nutzung der App.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit8Lesson4.id, word: 'die Prüfung', translationEn: 'the exam', translationTr: 'sınav', exampleSentence: 'Er will die Prüfung bestehen.' },
+      { lessonId: b2Unit8Lesson4.id, word: 'bestehen', translationEn: 'to pass (an exam)', translationTr: 'geçmek (sınav)', exampleSentence: 'Er will die Prüfung bestehen.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
