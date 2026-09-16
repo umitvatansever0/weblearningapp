@@ -2922,6 +2922,166 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 7: Präteritum der Modalverben und "sein"/"haben" (4 lessons) ---
+  const a2Unit7 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 7, titleDe: 'Präteritum der Modalverben', titleEn: 'Präteritum of Modal Verbs', titleTr: 'Modal Fiillerin Präteritum Hali' },
+  })
+
+  const a2Unit7Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit7.id,
+      order: 1,
+      grammarTopic: "Präteritum von 'sein' und 'haben'",
+      explanationDe:
+        'Im Präteritum: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren. "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Beispiel: "Ich war müde. Ich hatte keine Zeit."',
+      explanationEn:
+        'In the Präteritum: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren (was/were). "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten (had). Example: "Ich war müde. Ich hatte keine Zeit" (I was tired. I had no time).',
+      explanationTr:
+        'Präteritumda: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren (idi). "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten (sahipti). Örnek: "Ich war müde. Ich hatte keine Zeit" (Yorgundum. Vaktim yoktu).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit7Lesson1.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'du', 'wir'], rights: ['waren', 'war', 'warst'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'war' },
+            { left: 'du', right: 'warst' },
+            { left: 'wir', right: 'waren' },
+          ],
+        },
+        explanation: 'Präteritum von "sein": ich war, du warst, wir waren.',
+      },
+      {
+        lessonId: a2Unit7Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ gestern keine Zeit.' },
+        correctAnswer: { accepted: ['hatte'] },
+        explanation: 'Das Präteritum von "haben" für "ich" ist "hatte".',
+      },
+    ],
+  })
+
+  const a2Unit7Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit7.id,
+      order: 2,
+      grammarTopic: 'Präteritum der Modalverben',
+      explanationDe:
+        'Die Modalverben verlieren im Präteritum den Umlaut: können → konnte, müssen → musste, wollen → wollte, dürfen → durfte. Beispiel: "Ich konnte gestern nicht kommen, weil ich arbeiten musste."',
+      explanationEn:
+        'Modal verbs lose their umlaut in the Präteritum: können → konnte (could), müssen → musste (had to), wollen → wollte (wanted to), dürfen → durfte (was allowed to). Example: "Ich konnte gestern nicht kommen, weil ich arbeiten musste" (I couldn\'t come yesterday because I had to work).',
+      explanationTr:
+        'Modal fiiller Präteritumda umlautlarını kaybeder: können → konnte (yapabildi), müssen → musste (zorunda kaldı), wollen → wollte (istedi), dürfen → durfte (izinliydi). Örnek: "Ich konnte gestern nicht kommen, weil ich arbeiten musste" (Dün gelemedim çünkü çalışmak zorundaydım).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit7Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ gestern nicht kommen. (können, Präteritum)', options: ['konnte', 'kann', 'könnte', 'gekonnt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das Präteritum von "können" für "ich" ist "konnte".',
+      },
+      {
+        lessonId: a2Unit7Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ gestern arbeiten. (müssen, Präteritum)' },
+        correctAnswer: { accepted: ['musste'] },
+        explanation: 'Das Präteritum von "müssen" für "er" ist "musste".',
+      },
+    ],
+  })
+
+  const a2Unit7Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit7.id,
+      order: 3,
+      grammarTopic: "Präteritum: 'mochte' und 'sollte'",
+      explanationDe:
+        '"mögen" wird im Präteritum zu "mochte" (ich mochte, du mochtest...), "sollen" wird zu "sollte" (ich sollte, du solltest...). Diese Formen benutzt man oft beim Erzählen von Geschichten. Beispiel: "Als Kind mochte ich keinen Fisch."',
+      explanationEn:
+        '"mögen" (to like) becomes "mochte" in the Präteritum (ich mochte, du mochtest...), "sollen" (should) becomes "sollte" (ich sollte, du solltest...). These forms are often used when narrating stories. Example: "Als Kind mochte ich keinen Fisch" (As a child I didn\'t like fish).',
+      explanationTr:
+        '"mögen" (sevmek) Präteritumda "mochte" olur (ich mochte, du mochtest...), "sollen" ise "sollte" olur (ich sollte, du solltest...). Bu biçimler genellikle hikaye anlatırken kullanılır. Örnek: "Als Kind mochte ich keinen Fisch" (Çocukken balık sevmezdim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit7Lesson3.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Als Kind ___ ich keinen Fisch. (mögen, Präteritum)' },
+        correctAnswer: { accepted: ['mochte'] },
+        explanation: 'Das Präteritum von "mögen" für "ich" ist "mochte".',
+      },
+      {
+        lessonId: a2Unit7Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Du ___ früher ins Bett gehen. (sollen, Präteritum)', options: ['solltest', 'sollte', 'solltet', 'sollten'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "du" benutzt man "solltest".',
+      },
+    ],
+  })
+
+  const a2Unit7Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit7.id,
+      order: 4,
+      grammarTopic: 'Präteritum vs. Perfekt',
+      explanationDe:
+        'Im gesprochenen Deutsch benutzt man meist das Perfekt, aber "sein", "haben" und die Modalverben werden auch mündlich oft im Präteritum benutzt: "Ich war müde" (nicht "Ich bin müde gewesen"). Im Schriftlichen (Geschichten, Nachrichten) ist das Präteritum häufiger.',
+      explanationEn:
+        'In spoken German, the Perfekt is usually preferred, but "sein", "haben", and the modal verbs are often used in the Präteritum even in speech: "Ich war müde" (not "Ich bin müde gewesen"). In writing (stories, news), the Präteritum is more common.',
+      explanationTr:
+        'Konuşma dilinde genellikle Perfekt tercih edilir, ancak "sein", "haben" ve modal fiiller konuşmada da sıklıkla Präteritumda kullanılır: "Ich war müde" (Ich bin müde gewesen değil). Yazı dilinde (hikayeler, haberler) Präteritum daha yaygındır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit7Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ gestern sehr müde. (gesprochene Form mit "sein")', options: ['war', 'bin gewesen', 'habe gewesen', 'wäre'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sein" benutzt man auch mündlich meist im Präteritum: "war".',
+      },
+      {
+        lessonId: a2Unit7Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I had no time' (mit 'haben', im Präteritum)?" },
+        correctAnswer: { accepted: ['ich hatte keine zeit'] },
+        explanation: '"Ich hatte keine Zeit" bedeutet "I had no time".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit7Lesson1.id, word: 'damals', translationEn: 'back then / at that time', translationTr: 'o zamanlar', exampleSentence: 'Damals war ich Student.' },
+      { lessonId: a2Unit7Lesson1.id, word: 'der Student', translationEn: 'the student', translationTr: 'öğrenci', exampleSentence: 'Damals war ich Student.' },
+      { lessonId: a2Unit7Lesson2.id, word: 'der Chef', translationEn: 'the boss', translationTr: 'patron', exampleSentence: 'Der Chef wollte mich sprechen.' },
+      { lessonId: a2Unit7Lesson2.id, word: 'die Erlaubnis', translationEn: 'the permission', translationTr: 'izin', exampleSentence: 'Ich hatte keine Erlaubnis.' },
+      { lessonId: a2Unit7Lesson3.id, word: 'der Fisch', translationEn: 'the fish', translationTr: 'balık', exampleSentence: 'Als Kind mochte ich keinen Fisch.' },
+      { lessonId: a2Unit7Lesson3.id, word: 'das Bett', translationEn: 'the bed', translationTr: 'yatak', exampleSentence: 'Du solltest früher ins Bett gehen.' },
+      { lessonId: a2Unit7Lesson4.id, word: 'die Nachricht', translationEn: 'the news / message', translationTr: 'haber / mesaj', exampleSentence: 'Das steht in den Nachrichten.' },
+      { lessonId: a2Unit7Lesson4.id, word: 'die Geschichte', translationEn: 'the story / history', translationTr: 'hikaye / tarih', exampleSentence: 'Das ist eine spannende Geschichte.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
