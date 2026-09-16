@@ -3555,6 +3555,160 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 11: Zukunft mit "werden" (4 lessons) ---
+  const a2Unit11 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 11, titleDe: 'Zukunft mit "werden"', titleEn: 'Future with "werden"', titleTr: '"werden" ile Gelecek Zaman' },
+  })
+
+  const a2Unit11Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit11.id,
+      order: 1,
+      grammarTopic: "Futur I: Bildung mit 'werden' + Infinitiv",
+      explanationDe:
+        'Futur I bildet man mit "werden" (konjugiert) + Infinitiv am Satzende: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Beispiel: "Ich werde morgen ins Kino gehen."',
+      explanationEn:
+        'Futur I is formed with "werden" (conjugated) + infinitive at the end of the sentence: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Example: "Ich werde morgen ins Kino gehen" (I will go to the cinema tomorrow).',
+      explanationTr:
+        'Futur I, "werden" (çekimli) + cümle sonunda mastar ile kurulur: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Örnek: "Ich werde morgen ins Kino gehen" (Yarın sinemaya gideceğim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit11Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ morgen ins Kino gehen.', options: ['werde', 'wirst', 'wird', 'werdet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "werde".',
+      },
+      {
+        lessonId: a2Unit11Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ nächstes Jahr nach Spanien reisen. (werden)' },
+        correctAnswer: { accepted: ['wird'] },
+        explanation: 'Mit "er" benutzt man "wird".',
+      },
+    ],
+  })
+
+  const a2Unit11Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit11.id,
+      order: 2,
+      grammarTopic: 'Futur I für Vorhersagen und Vermutungen',
+      explanationDe:
+        'Futur I benutzt man oft für Vorhersagen und Vermutungen über die Zukunft, manchmal mit "wohl" oder "wahrscheinlich": "Es wird morgen wohl regnen." "Die Preise werden wahrscheinlich steigen."',
+      explanationEn:
+        'Futur I is often used for predictions and assumptions about the future, sometimes with "wohl" or "wahrscheinlich" (probably): "Es wird morgen wohl regnen" (It will probably rain tomorrow). "Die Preise werden wahrscheinlich steigen" (Prices will probably rise).',
+      explanationTr:
+        'Futur I genellikle gelecekle ilgili tahmin ve varsayımlar için kullanılır, bazen "wohl" ya da "wahrscheinlich" (muhtemelen) ile: "Es wird morgen wohl regnen." "Die Preise werden wahrscheinlich steigen."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit11Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Es ___ morgen wohl regnen.', options: ['wird', 'werde', 'wirst', 'werdet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "es" benutzt man "wird".',
+      },
+      {
+        lessonId: a2Unit11Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['steigen', 'werden', 'Preise', 'die'] },
+        correctAnswer: { order: ['die', 'Preise', 'werden', 'steigen'] },
+        explanation: 'Reihenfolge: Subjekt, "werden", Infinitiv am Ende.',
+      },
+    ],
+  })
+
+  const a2Unit11Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit11.id,
+      order: 3,
+      grammarTopic: 'Futur I vs. Präsens mit Zeitangabe',
+      explanationDe:
+        'Für geplante Zukunft benutzt man oft einfach das Präsens mit einer Zeitangabe: "Ich fliege nächste Woche nach Rom." Futur I betont stärker eine Vorhersage oder Absicht: "Ich werde nächste Woche nach Rom fliegen."',
+      explanationEn:
+        'For planned future events, German often simply uses the present tense with a time expression: "Ich fliege nächste Woche nach Rom" (I\'m flying to Rome next week). Futur I emphasizes a prediction or intention more strongly: "Ich werde nächste Woche nach Rom fliegen" (I will fly to Rome next week).',
+      explanationTr:
+        'Planlanmış gelecek olaylar için Almanca genellikle zaman ifadesiyle birlikte şimdiki zamanı kullanır: "Ich fliege nächste Woche nach Rom." Futur I ise bir tahmin ya da niyeti daha güçlü vurgular: "Ich werde nächste Woche nach Rom fliegen."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit11Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ nächste Woche nach Rom. (Präsens für Zukunft)', options: ['fliege', 'werde fliegen', 'geflogen', 'fliegen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präsens + Zeitangabe drückt auch die Zukunft aus.',
+      },
+      {
+        lessonId: a2Unit11Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ nächste Woche nach Rom fliegen. (werden, Betonung der Absicht)' },
+        correctAnswer: { accepted: ['werde'] },
+        explanation: 'Futur I betont die Absicht: werde fliegen.',
+      },
+    ],
+  })
+
+  const a2Unit11Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit11.id,
+      order: 4,
+      grammarTopic: 'Übung: Pläne und Vorhersagen im Futur I',
+      explanationDe:
+        'Kombiniere Futur I mit Zeitangaben, um über Pläne und Vorhersagen zu sprechen: "Nächstes Jahr werde ich mehr Sport machen." Bei vorangestellter Zeitangabe steht "werde" direkt danach.',
+      explanationEn:
+        'Combine Futur I with time expressions to talk about plans and predictions: "Nächstes Jahr werde ich mehr Sport machen" (Next year I will do more sports). When the time expression comes first, "werde" comes right after it.',
+      explanationTr:
+        'Planlar ve tahminler hakkında konuşmak için Futur I\'i zaman ifadeleriyle birleştir: "Nächstes Jahr werde ich mehr Sport machen." Zaman ifadesi öne alındığında "werde" hemen ardından gelir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit11Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ich', 'Jahr', 'werde', 'machen', 'nächstes', 'mehr', 'Sport'] },
+        correctAnswer: { order: ['nächstes', 'Jahr', 'werde', 'ich', 'mehr', 'Sport', 'machen'] },
+        explanation: 'Zeitangabe zuerst, dann "werde", dann Subjekt, dann Rest, Infinitiv am Ende.',
+      },
+      {
+        lessonId: a2Unit11Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I will do more sports' (mit 'werden')?" },
+        correctAnswer: { accepted: ['ich werde mehr sport machen'] },
+        explanation: '"Ich werde mehr Sport machen" bedeutet "I will do more sports".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit11Lesson1.id, word: 'reisen', translationEn: 'to travel', translationTr: 'seyahat etmek', exampleSentence: 'Er wird nächstes Jahr nach Spanien reisen.' },
+      { lessonId: a2Unit11Lesson1.id, word: 'das Kino', translationEn: 'the cinema', translationTr: 'sinema', exampleSentence: 'Ich werde morgen ins Kino gehen.' },
+      { lessonId: a2Unit11Lesson2.id, word: 'steigen', translationEn: 'to rise / climb', translationTr: 'yükselmek', exampleSentence: 'Die Preise werden wahrscheinlich steigen.' },
+      { lessonId: a2Unit11Lesson2.id, word: 'wahrscheinlich', translationEn: 'probably', translationTr: 'muhtemelen', exampleSentence: 'Die Preise werden wahrscheinlich steigen.' },
+      { lessonId: a2Unit11Lesson3.id, word: 'fliegen', translationEn: 'to fly', translationTr: 'uçmak', exampleSentence: 'Ich fliege nächste Woche nach Rom.' },
+      { lessonId: a2Unit11Lesson3.id, word: 'die Absicht', translationEn: 'the intention', translationTr: 'niyet', exampleSentence: 'Futur I betont die Absicht.' },
+      { lessonId: a2Unit11Lesson4.id, word: 'der Sport', translationEn: 'sport', translationTr: 'spor', exampleSentence: 'Ich werde mehr Sport machen.' },
+      { lessonId: a2Unit11Lesson4.id, word: 'der Plan', translationEn: 'the plan', translationTr: 'plan', exampleSentence: 'Das ist mein Plan für nächstes Jahr.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
