@@ -56,7 +56,7 @@ async function main() {
     })
   }
 
-  // --- A1: Begrüßung (3 lessons) ---
+  // --- A1: Begrüßung (4 lessons) ---
   const a1Unit = await prisma.unit.create({
     data: { levelId: a1.id, order: 1, titleDe: 'Begrüßung', titleEn: 'Greetings', titleTr: 'Tanışma' },
   })
@@ -266,7 +266,7 @@ async function main() {
         lessonId: a1Unit2Lesson1.id,
         order: 2,
         type: 'MATCHING',
-        data: { lefts: ['Mann', 'Frau', 'Kind'], rights: ['der', 'die', 'das'] },
+        data: { lefts: ['Mann', 'Frau', 'Kind'], rights: ['das', 'der', 'die'] },
         correctAnswer: {
           pairs: [
             { left: 'Mann', right: 'der' },
@@ -418,7 +418,7 @@ async function main() {
         lessonId: a1Unit3Lesson1.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['ich', 'du', 'wir'], rights: ['I', 'you', 'we'] },
+        data: { lefts: ['ich', 'du', 'wir'], rights: ['we', 'I', 'you'] },
         correctAnswer: {
           pairs: [
             { left: 'ich', right: 'I' },
@@ -489,7 +489,7 @@ async function main() {
         lessonId: a1Unit3Lesson3.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['ich', 'du', 'er'], rights: ['habe', 'hast', 'hat'] },
+        data: { lefts: ['ich', 'du', 'er'], rights: ['hat', 'habe', 'hast'] },
         correctAnswer: {
           pairs: [
             { left: 'ich', right: 'habe' },
@@ -580,7 +580,7 @@ async function main() {
         lessonId: a1Unit4Lesson1.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['der Vater', 'die Mutter', 'die Schwester'], rights: ['father', 'mother', 'sister'] },
+        data: { lefts: ['der Vater', 'die Mutter', 'die Schwester'], rights: ['sister', 'father', 'mother'] },
         correctAnswer: {
           pairs: [
             { left: 'der Vater', right: 'father' },
@@ -808,7 +808,7 @@ async function main() {
         lessonId: a1Unit5Lesson3.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['Montag', 'Mittwoch', 'Sonntag'], rights: ['Monday', 'Wednesday', 'Sunday'] },
+        data: { lefts: ['Montag', 'Mittwoch', 'Sonntag'], rights: ['Sunday', 'Monday', 'Wednesday'] },
         correctAnswer: {
           pairs: [
             { left: 'Montag', right: 'Monday' },
@@ -942,7 +942,7 @@ async function main() {
         lessonId: a1Unit6Lesson2.id,
         order: 2,
         type: 'MATCHING',
-        data: { lefts: ['ich', 'du', 'er'], rights: ['mich', 'dich', 'ihn'] },
+        data: { lefts: ['ich', 'du', 'er'], rights: ['ihn', 'mich', 'dich'] },
         correctAnswer: {
           pairs: [
             { left: 'ich', right: 'mich' },
@@ -1411,7 +1411,7 @@ async function main() {
         lessonId: a1Unit9Lesson2.id,
         order: 2,
         type: 'MATCHING',
-        data: { lefts: ['aus', 'mit', 'nach'], rights: ['from', 'with', 'to'] },
+        data: { lefts: ['aus', 'mit', 'nach'], rights: ['to', 'from', 'with'] },
         correctAnswer: {
           pairs: [
             { left: 'aus', right: 'from' },
@@ -1476,7 +1476,7 @@ async function main() {
         lessonId: a1Unit9Lesson4.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['das Schlafzimmer', 'das Badezimmer', 'der Balkon'], rights: ['bedroom', 'bathroom', 'balcony'] },
+        data: { lefts: ['das Schlafzimmer', 'das Badezimmer', 'der Balkon'], rights: ['balcony', 'bedroom', 'bathroom'] },
         correctAnswer: {
           pairs: [
             { left: 'das Schlafzimmer', right: 'bedroom' },
@@ -1533,7 +1533,7 @@ async function main() {
         lessonId: a1Unit10Lesson1.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['der Käse', 'die Milch', 'der Reis'], rights: ['cheese', 'milk', 'rice'] },
+        data: { lefts: ['der Käse', 'die Milch', 'der Reis'], rights: ['rice', 'cheese', 'milk'] },
         correctAnswer: {
           pairs: [
             { left: 'der Käse', right: 'cheese' },
@@ -1895,7 +1895,7 @@ async function main() {
         lessonId: a1Unit12Lesson2.id,
         order: 2,
         type: 'MATCHING',
-        data: { lefts: ['du', 'ihr', 'Sie'], rights: ['Komm!', 'Kommt!', 'Kommen Sie!'] },
+        data: { lefts: ['du', 'ihr', 'Sie'], rights: ['Kommen Sie!', 'Komm!', 'Kommt!'] },
         correctAnswer: {
           pairs: [
             { left: 'du', right: 'Komm!' },
@@ -1970,7 +1970,7 @@ async function main() {
         order: 2,
         type: 'SHORT_ANSWER',
         data: { prompt: "Wie sagt man auf Deutsch: 'Excuse me, where is the train station?'?" },
-        correctAnswer: { accepted: ['entschuldigung, wo ist der bahnhof'] },
+        correctAnswer: { accepted: ['entschuldigung, wo ist der bahnhof', 'entschuldigung wo ist der bahnhof'] },
         explanation: '"Entschuldigung, wo ist der Bahnhof?" bedeutet "Excuse me, where is the train station?"',
       },
     ],
@@ -1985,7 +1985,7 @@ async function main() {
       { lessonId: a1Unit12Lesson3.id, word: 'links', translationEn: 'left', translationTr: 'sol', exampleSentence: 'Biegen Sie links ab.' },
       { lessonId: a1Unit12Lesson3.id, word: 'rechts', translationEn: 'right', translationTr: 'sağ', exampleSentence: 'Biegen Sie rechts ab.' },
       { lessonId: a1Unit12Lesson4.id, word: 'der Bahnhof', translationEn: 'the train station', translationTr: 'tren istasyonu', exampleSentence: 'Wo ist der Bahnhof?' },
-      { lessonId: a1Unit12Lesson4.id, word: 'entschuldigung', translationEn: 'excuse me', translationTr: 'affedersiniz', exampleSentence: 'Entschuldigung, wo ist der Bahnhof?' },
+      { lessonId: a1Unit12Lesson4.id, word: 'Entschuldigung', translationEn: 'excuse me', translationTr: 'affedersiniz', exampleSentence: 'Entschuldigung, wo ist der Bahnhof?' },
     ],
   })
 

@@ -11,7 +11,7 @@ describe('getLevels', () => {
 })
 
 describe('getUnitsForLevel', () => {
-  it('returns the A1 unit with three lessons and no progress for a new user', async () => {
+  it('returns the A1 unit with four lessons and no progress for a new user', async () => {
     const units = await getUnitsForLevel('A1', 'nonexistent-user-id')
     expect(units).toHaveLength(12)
     expect(units[0].lessons).toHaveLength(4)
@@ -38,7 +38,7 @@ describe('getLessonWithExercises', () => {
 
   it('does not leak the MATCHING answer key via the `data` payload', async () => {
     const units = await getUnitsForLevel('A1', 'nonexistent-user-id')
-    // Seeded A1 lesson 2 ("Verb 'sein' im Präsens") contains the single MATCHING exercise.
+    // Seeded A1 lesson 2 ("Verb 'sein' im Präsens") contains a MATCHING exercise.
     const lessonWithMatching = units[0].lessons[1]
     const lesson = await getLessonWithExercises(lessonWithMatching.id)
     expect(lesson).not.toBeNull()
