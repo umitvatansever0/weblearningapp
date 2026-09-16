@@ -3241,6 +3241,166 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 9: Adjektivdeklination (4 lessons) ---
+  const a2Unit9 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 9, titleDe: 'Adjektivdeklination', titleEn: 'Adjective Declension', titleTr: 'Sıfat Çekimi' },
+  })
+
+  const a2Unit9Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit9.id,
+      order: 1,
+      grammarTopic: 'Adjektivendungen im Nominativ (bestimmter Artikel)',
+      explanationDe:
+        'Nach dem bestimmten Artikel im Nominativ endet das Adjektiv meist auf "-e": der neue Mann, die neue Frau, das neue Auto. Beispiel: "Der neue Kollege heißt Tom."',
+      explanationEn:
+        'After the definite article in the nominative, the adjective usually ends in "-e": der neue Mann (the new man), die neue Frau (the new woman), das neue Auto (the new car). Example: "Der neue Kollege heißt Tom" (The new colleague is called Tom).',
+      explanationTr:
+        'Belirli tanımlıktan sonra Nominativ\'de sıfat genellikle "-e" ile biter: der neue Mann, die neue Frau, das neue Auto. Örnek: "Der neue Kollege heißt Tom" (Yeni meslektaş Tom adında).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit9Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der ___ Kollege heißt Tom. (neu)', options: ['neue', 'neuer', 'neuen', 'neues'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nominativ maskulin nach "der": neue.',
+      },
+      {
+        lessonId: a2Unit9Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ Frau wohnt hier. (neu)' },
+        correctAnswer: { accepted: ['neue'] },
+        explanation: 'Nominativ feminin nach "die": neue.',
+      },
+    ],
+  })
+
+  const a2Unit9Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit9.id,
+      order: 2,
+      grammarTopic: 'Adjektivendungen im Akkusativ (bestimmter Artikel)',
+      explanationDe:
+        'Im Akkusativ ändert sich die Adjektivendung nur beim maskulinen Artikel zu "-en": den neuen Mann. Feminin und neutral bleiben wie im Nominativ: die neue Frau, das neue Auto. Beispiel: "Ich sehe den neuen Kollegen."',
+      explanationEn:
+        'In the accusative, the adjective ending changes to "-en" only with the masculine article: den neuen Mann (the new man). Feminine and neuter stay like the nominative: die neue Frau, das neue Auto. Example: "Ich sehe den neuen Kollegen" (I see the new colleague).',
+      explanationTr:
+        'Akkusativ\'de sıfat eki sadece eril tanımlıkla "-en" olur: den neuen Mann. Dişil ve nötr Nominativ\'deki gibi kalır: die neue Frau, das neue Auto. Örnek: "Ich sehe den neuen Kollegen" (Yeni meslektaşı görüyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit9Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich sehe den ___ Kollegen. (neu, Akkusativ)', options: ['neuen', 'neue', 'neuer', 'neues'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Akkusativ maskulin: neuen.',
+      },
+      {
+        lessonId: a2Unit9Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich kaufe die ___ Tasche. (neu, Akkusativ feminin)' },
+        correctAnswer: { accepted: ['neue'] },
+        explanation: 'Akkusativ feminin bleibt wie Nominativ: neue.',
+      },
+    ],
+  })
+
+  const a2Unit9Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit9.id,
+      order: 3,
+      grammarTopic: 'Adjektivdeklination: feminin, neutral, Plural',
+      explanationDe:
+        'Feminin und neutral haben im Nominativ und Akkusativ die gleiche Adjektivendung "-e": die neue Frau, das neue Auto. Im Plural endet das Adjektiv nach "die" auf "-en": die neuen Autos. Beispiel: "Die neuen Autos sind teuer."',
+      explanationEn:
+        'Feminine and neuter have the same adjective ending "-e" in both nominative and accusative: die neue Frau, das neue Auto. In the plural, the adjective ends in "-en" after "die": die neuen Autos. Example: "Die neuen Autos sind teuer" (The new cars are expensive).',
+      explanationTr:
+        'Dişil ve nötr, Nominativ ve Akkusativ\'de aynı "-e" sıfat ekini alır: die neue Frau, das neue Auto. Çoğulda "die"den sonra sıfat "-en" ile biter: die neuen Autos. Örnek: "Die neuen Autos sind teuer" (Yeni arabalar pahalı).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit9Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die ___ Autos sind teuer. (neu, Plural)', options: ['neuen', 'neue', 'neuer', 'neues'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Plural nach "die": neuen.',
+      },
+      {
+        lessonId: a2Unit9Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['der neue Mann', 'das neue Auto', 'die neuen Autos'], rights: ['the new cars', 'the new man', 'the new car'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der neue Mann', right: 'the new man' },
+            { left: 'das neue Auto', right: 'the new car' },
+            { left: 'die neuen Autos', right: 'the new cars' },
+          ],
+        },
+        explanation: 'Adjektivendungen: der neue Mann (Singular mask.), das neue Auto (Singular neutr.), die neuen Autos (Plural).',
+      },
+    ],
+  })
+
+  const a2Unit9Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit9.id,
+      order: 4,
+      grammarTopic: 'Übung: Adjektivdeklination in Sätzen',
+      explanationDe:
+        'Wiederholung: Nominativ maskulin/neutral = "-e", Akkusativ maskulin = "-en", alle anderen bleiben "-e" (Singular) oder "-en" (Plural). Beispiel: "Der alte Baum steht im Garten. Ich sehe den alten Baum."',
+      explanationEn:
+        'Review: nominative masculine/neuter = "-e", accusative masculine = "-en", everything else stays "-e" (singular) or "-en" (plural). Example: "Der alte Baum steht im Garten. Ich sehe den alten Baum" (The old tree stands in the garden. I see the old tree).',
+      explanationTr:
+        'Tekrar: Nominativ eril/nötr = "-e", Akkusativ eril = "-en", diğerleri "-e" (tekil) ya da "-en" (çoğul) olarak kalır. Örnek: "Der alte Baum steht im Garten. Ich sehe den alten Baum" (Yaşlı ağaç bahçede duruyor. Yaşlı ağacı görüyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit9Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich sehe den ___ Baum. (alt, Akkusativ)' },
+        correctAnswer: { accepted: ['alten'] },
+        explanation: 'Akkusativ maskulin: alten.',
+      },
+      {
+        lessonId: a2Unit9Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'The old tree stands in the garden' (mit 'stehen')?" },
+        correctAnswer: { accepted: ['der alte baum steht im garten'] },
+        explanation: '"Der alte Baum steht im Garten" bedeutet "The old tree stands in the garden".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit9Lesson1.id, word: 'neu', translationEn: 'new', translationTr: 'yeni', exampleSentence: 'Der neue Kollege heißt Tom.' },
+      { lessonId: a2Unit9Lesson1.id, word: 'der Kollege', translationEn: 'the colleague', translationTr: 'meslektaş', exampleSentence: 'Der neue Kollege heißt Tom.' },
+      { lessonId: a2Unit9Lesson2.id, word: 'die Tasche', translationEn: 'the bag', translationTr: 'çanta', exampleSentence: 'Ich kaufe die neue Tasche.' },
+      { lessonId: a2Unit9Lesson2.id, word: 'kennenlernen', translationEn: 'to get to know / meet', translationTr: 'tanışmak', exampleSentence: 'Ich möchte den neuen Kollegen kennenlernen.' },
+      { lessonId: a2Unit9Lesson3.id, word: 'das Auto', translationEn: 'the car', translationTr: 'araba', exampleSentence: 'Die neuen Autos sind teuer.' },
+      { lessonId: a2Unit9Lesson3.id, word: 'billig', translationEn: 'cheap', translationTr: 'ucuz', exampleSentence: 'Das alte Auto war billig.' },
+      { lessonId: a2Unit9Lesson4.id, word: 'der Baum', translationEn: 'the tree', translationTr: 'ağaç', exampleSentence: 'Der alte Baum steht im Garten.' },
+      { lessonId: a2Unit9Lesson4.id, word: 'der Garten', translationEn: 'the garden', translationTr: 'bahçe', exampleSentence: 'Der Baum steht im Garten.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
