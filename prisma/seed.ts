@@ -1,6 +1,34 @@
 import { PrismaClient } from '@prisma/client'
 
-const prisma = new PrismaClient()
+// Neon's pooled connection endpoint doesn't reliably honor the `schema=`
+// query param per-query across the pool, so a `DATABASE_URL` pointing at a
+// non-public schema (e.g. isolated per-worktree schemas for parallel content
+// phases) can silently write to `public` instead. Pin the schema explicitly
+// before every query when one is configured. No-op otherwise.
+const configuredSchema = (() => {
+  try {
+    const schema = new URL(process.env.DATABASE_URL ?? '').searchParams.get('schema')
+    return schema && schema !== 'public' ? schema : null
+  } catch {
+    return null
+  }
+})()
+
+function createPrismaClient(): PrismaClient {
+  const client = new PrismaClient()
+  if (!configuredSchema) return client
+
+  return client.$extends({
+    query: {
+      async $allOperations({ args, query }) {
+        await client.$executeRawUnsafe(`SET search_path TO "${configuredSchema}"`)
+        return query(args)
+      },
+    },
+  }) as unknown as PrismaClient
+}
+
+const prisma = createPrismaClient()
 
 async function main() {
   // Delete in FK-safe order so this script is safely re-runnable, even after
