@@ -2094,6 +2094,126 @@ async function main() {
     ],
   })
 
+  const b2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit.id,
+      order: 2,
+      grammarTopic: 'Vorgangspassiv im Präteritum',
+      explanationDe:
+        'Das Vorgangspassiv im Präteritum wird mit "wurde" + Partizip II gebildet, z. B. "Das Haus wurde gebaut." Es beschreibt einen abgeschlossenen Vorgang in der Vergangenheit.',
+      explanationEn:
+        'The passive voice in the simple past (Präteritum) is formed with "wurde" + past participle, e.g. "Das Haus wurde gebaut" (The house was built). It describes a completed process in the past.',
+      explanationTr:
+        'Präteritum\'da edilgen çatı "wurde" + Partizip II ile kurulur, örn. "Das Haus wurde gebaut" (Ev inşa edildi). Geçmişte tamamlanmış bir süreci anlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Brief ___ gestern geschrieben.', options: ['wurde', 'wird', 'ist', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präteritum Passiv: "wurde" + Partizip II.',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Auto ___ letzte Woche repariert.' },
+        correctAnswer: { accepted: ['wurde'] },
+        explanation: 'Präteritum Passiv von "reparieren": "wurde repariert".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Lesson2.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Der Brief wurde gestern geschrieben.' },
+      { lessonId: b2Lesson2.id, word: 'der Brief', translationEn: 'the letter', translationTr: 'mektup', exampleSentence: 'Ich habe einen Brief geschrieben.' },
+    ],
+  })
+
+  const b2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit.id,
+      order: 3,
+      grammarTopic: 'Zustandspassiv',
+      explanationDe:
+        'Das Zustandspassiv wird mit "sein" + Partizip II gebildet und beschreibt das Ergebnis einer Handlung, nicht den Vorgang selbst, z. B. "Die Tür ist geöffnet." (Zustand, nicht Vorgang).',
+      explanationEn:
+        'The stative passive is formed with "sein" + past participle and describes the result of an action, not the process itself, e.g. "Die Tür ist geöffnet" (The door is open — a state, not a process).',
+      explanationTr:
+        'Zustandspassiv "sein" + Partizip II ile kurulur ve eylemin kendisini değil sonucunu anlatır, örn. "Die Tür ist geöffnet" (Kapı açık — süreç değil durum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Laden ___ schon geschlossen.', options: ['ist', 'wird', 'wurde', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Zustandspassiv: "sein" + Partizip II beschreibt den Zustand.',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Tür', 'ist', 'geöffnet', 'die'] },
+        correctAnswer: { order: ['die', 'Tür', 'ist', 'geöffnet'] },
+        explanation: 'Reihenfolge: Artikel + Nomen, Verb "sein", Partizip II.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Lesson3.id, word: 'schließen', translationEn: 'to close', translationTr: 'kapatmak', exampleSentence: 'Der Laden ist schon geschlossen.' },
+      { lessonId: b2Lesson3.id, word: 'der Laden', translationEn: 'the shop', translationTr: 'dükkan', exampleSentence: 'Der Laden ist geöffnet.' },
+    ],
+  })
+
+  const b2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit.id,
+      order: 4,
+      grammarTopic: 'Passiv im Perfekt',
+      explanationDe:
+        'Das Vorgangspassiv im Perfekt wird mit "sein" + Partizip II + "worden" gebildet, z. B. "Das Haus ist gebaut worden." Im Perfekt Passiv steht "worden" statt "geworden".',
+      explanationEn:
+        'The passive voice in the perfect tense is formed with "sein" + past participle + "worden", e.g. "Das Haus ist gebaut worden" (The house has been built). In the perfect passive, "worden" is used instead of "geworden".',
+      explanationTr:
+        'Perfekt\'te edilgen çatı "sein" + Partizip II + "worden" ile kurulur, örn. "Das Haus ist gebaut worden" (Ev inşa edilmiş oldu). Perfekt Passiv\'de "geworden" yerine "worden" kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Projekt ist gestern beendet ___.', options: ['worden', 'geworden', 'wurde', 'wird'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Perfekt Passiv benutzt "worden", nicht "geworden".',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Rechnung ist bereits bezahlt ___.' },
+        correctAnswer: { accepted: ['worden'] },
+        explanation: 'Perfekt Passiv: "ist bezahlt worden".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Lesson4.id, word: 'beenden', translationEn: 'to finish / end', translationTr: 'bitirmek', exampleSentence: 'Das Projekt ist gestern beendet worden.' },
+      { lessonId: b2Lesson4.id, word: 'bezahlen', translationEn: 'to pay', translationTr: 'ödemek', exampleSentence: 'Die Rechnung ist bereits bezahlt worden.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
