@@ -2614,6 +2614,160 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 5: Nebensätze mit "wenn" (4 lessons) ---
+  const a2Unit5 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 5, titleDe: 'Nebensätze mit "wenn"', titleEn: '"wenn" Clauses', titleTr: '"wenn" Yan Cümleleri' },
+  })
+
+  const a2Unit5Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit5.id,
+      order: 1,
+      grammarTopic: "'wenn' für wiederholte Ereignisse",
+      explanationDe:
+        '"wenn" beschreibt wiederholte oder zukünftige Ereignisse in der Zeit. Das Verb steht am Ende des Nebensatzes: "Wenn ich Zeit habe, gehe ich schwimmen."',
+      explanationEn:
+        '"wenn" (when/whenever) describes repeated or future events in time. The verb moves to the end of the subordinate clause: "Wenn ich Zeit habe, gehe ich schwimmen" (Whenever I have time, I go swimming).',
+      explanationTr:
+        '"wenn" (ne zaman/-dığında) tekrar eden ya da gelecekteki olayları anlatır. Fiil yan cümlenin sonuna gider: "Wenn ich Zeit habe, gehe ich schwimmen" (Vaktim olduğunda yüzmeye giderim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit5Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn ich Zeit ___, gehe ich schwimmen.', options: ['habe', 'hat', 'habt', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "habe".',
+      },
+      {
+        lessonId: a2Unit5Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ es regnet, bleibe ich zu Hause.' },
+        correctAnswer: { accepted: ['wenn'] },
+        explanation: '"Wenn" leitet den Nebensatz ein.',
+      },
+    ],
+  })
+
+  const a2Unit5Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit5.id,
+      order: 2,
+      grammarTopic: "'wenn' als Bedingung",
+      explanationDe:
+        '"wenn" leitet auch reale Bedingungssätze ein: "Wenn du müde bist, solltest du schlafen gehen." Der Hauptsatz beschreibt die Folge.',
+      explanationEn:
+        '"wenn" also introduces real conditional clauses: "Wenn du müde bist, solltest du schlafen gehen" (If you\'re tired, you should go to sleep). The main clause describes the consequence.',
+      explanationTr:
+        '"wenn" gerçek koşul cümlelerini de tanıtır: "Wenn du müde bist, solltest du schlafen gehen" (Yorgunsan uyumaya gitmelisin). Ana cümle sonucu anlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit5Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn du müde bist, ___ du schlafen gehen.', options: ['solltest', 'sollte', 'sollten', 'sollt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "du" benutzt man "solltest".',
+      },
+      {
+        lessonId: a2Unit5Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bist', 'du', 'krank', 'wenn'] },
+        correctAnswer: { order: ['wenn', 'du', 'krank', 'bist'] },
+        explanation: 'Im wenn-Satz steht das Verb am Ende: "wenn du krank bist".',
+      },
+    ],
+  })
+
+  const a2Unit5Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit5.id,
+      order: 3,
+      grammarTopic: "'wenn' vs. 'wann'",
+      explanationDe:
+        '"wenn" ist eine Konjunktion (zeitlich/bedingend), "wann" ist ein Fragewort für die Zeit. Vergleiche: "Wann kommst du?" (Frage) / "Ich weiß nicht, wann er kommt." (indirekte Frage) vs. "Wenn er kommt, freue ich mich." (Bedingung).',
+      explanationEn:
+        '"wenn" is a conjunction (temporal/conditional), "wann" is a question word asking about time. Compare: "Wann kommst du?" (When are you coming?) / "Ich weiß nicht, wann er kommt" (I don\'t know when he\'s coming) vs. "Wenn er kommt, freue ich mich" (When/if he comes, I\'ll be happy).',
+      explanationTr:
+        '"wenn" bir bağlaçtır (zamansal/koşullu), "wann" zaman soran bir soru sözcüğüdür. Karşılaştır: "Wann kommst du?" (soru) / "Ich weiß nicht, wann er kommt." (dolaylı soru) vs. "Wenn er kommt, freue ich mich." (koşul).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit5Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ kommst du morgen?', options: ['Wann', 'Wenn', 'Ob', 'Dass'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wann" fragt nach der Zeit.',
+      },
+      {
+        lessonId: a2Unit5Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ er kommt, freue ich mich.' },
+        correctAnswer: { accepted: ['wenn'] },
+        explanation: '"Wenn" leitet hier eine Bedingung ein.',
+      },
+    ],
+  })
+
+  const a2Unit5Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit5.id,
+      order: 4,
+      grammarTopic: 'Wortstellung: Nebensatz zuerst',
+      explanationDe:
+        'Beginnt der Satz mit dem Nebensatz (wenn...), steht das Verb im Hauptsatz direkt danach (Verb-Verb-Stellung): "Wenn es regnet, bleibe ich zu Hause." Beide Verben stehen nebeneinander um das Komma.',
+      explanationEn:
+        'When the sentence starts with the subordinate clause (wenn...), the verb in the main clause comes right after it (verb-verb word order): "Wenn es regnet, bleibe ich zu Hause" (If it rains, I stay home). Both verbs sit next to each other around the comma.',
+      explanationTr:
+        'Cümle yan cümleyle (wenn...) başlarsa, ana cümledeki fiil hemen ardından gelir (fiil-fiil sırası): "Wenn es regnet, bleibe ich zu Hause." İki fiil de virgülün etrafında yan yana durur.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit5Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['regnet', 'es', 'wenn', 'bleibe', 'ich'] },
+        correctAnswer: { order: ['wenn', 'es', 'regnet', 'bleibe', 'ich'] },
+        explanation: 'Nebensatz zuerst: Verb am Ende des Nebensatzes ("regnet"), dann direkt das Verb des Hauptsatzes ("bleibe").',
+      },
+      {
+        lessonId: a2Unit5Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn es regnet, ___ ich zu Hause.', options: ['bleibe', 'bleibst', 'bleibt', 'bleiben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nach dem Komma folgt direkt das Verb des Hauptsatzes: "bleibe".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit5Lesson1.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Wenn es regnet, bleibe ich zu Hause.' },
+      { lessonId: a2Unit5Lesson1.id, word: 'schwimmen', translationEn: 'to swim', translationTr: 'yüzmek', exampleSentence: 'Ich gehe schwimmen.' },
+      { lessonId: a2Unit5Lesson2.id, word: 'die Bedingung', translationEn: 'the condition', translationTr: 'koşul', exampleSentence: 'Das ist die Bedingung.' },
+      { lessonId: a2Unit5Lesson2.id, word: 'sollen', translationEn: 'should / to be supposed to', translationTr: '-meli/-malı', exampleSentence: 'Du solltest schlafen gehen.' },
+      { lessonId: a2Unit5Lesson3.id, word: 'sich freuen', translationEn: 'to be glad / happy', translationTr: 'sevinmek', exampleSentence: 'Wenn er kommt, freue ich mich.' },
+      { lessonId: a2Unit5Lesson3.id, word: 'morgen', translationEn: 'tomorrow', translationTr: 'yarın', exampleSentence: 'Wann kommst du morgen?' },
+      { lessonId: a2Unit5Lesson4.id, word: 'zu Hause', translationEn: 'at home', translationTr: 'evde', exampleSentence: 'Ich bleibe zu Hause.' },
+      { lessonId: a2Unit5Lesson4.id, word: 'die Wortstellung', translationEn: 'word order', translationTr: 'sözcük sırası', exampleSentence: 'Die Wortstellung im Nebensatz ist wichtig.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
