@@ -2460,6 +2460,160 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 4: Nebensätze mit "dass" und "weil" (4 lessons) ---
+  const a2Unit4 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 4, titleDe: 'Nebensätze mit "dass" und "weil"', titleEn: '"dass" and "weil" Clauses', titleTr: '"dass" ve "weil" Yan Cümleleri' },
+  })
+
+  const a2Unit4Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit4.id,
+      order: 1,
+      grammarTopic: "Nebensätze mit 'dass'",
+      explanationDe:
+        'Der Nebensatz mit "dass" gibt an, was jemand denkt, sagt oder weiß. Das konjugierte Verb steht am Ende: "Ich glaube, dass er Recht hat."',
+      explanationEn:
+        'A "dass" (that) clause states what someone thinks, says, or knows. The conjugated verb moves to the end: "Ich glaube, dass er Recht hat" (I believe that he is right).',
+      explanationTr:
+        '"Dass" (ki) cümlesi birinin düşündüğünü, söylediğini ya da bildiğini belirtir. Çekimli fiil cümlenin sonuna gider: "Ich glaube, dass er Recht hat" (Haklı olduğuna inanıyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit4Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich glaube, dass er Recht ___.', options: ['hat', 'ist', 'habe', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Im Nebensatz steht das konjugierte Verb ("hat") am Ende.',
+      },
+      {
+        lessonId: a2Unit4Lesson1.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Zeit', 'habe', 'dass', 'ich', 'keine'] },
+        correctAnswer: { order: ['dass', 'ich', 'keine', 'Zeit', 'habe'] },
+        explanation: 'Im Nebensatz steht das Verb am Ende: "dass ich keine Zeit habe".',
+      },
+    ],
+  })
+
+  const a2Unit4Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit4.id,
+      order: 2,
+      grammarTopic: "Nebensätze mit 'weil'",
+      explanationDe:
+        'Genau wie bei "dass" steht bei "weil" das konjugierte Verb am Ende des Nebensatzes. "weil" nennt einen Grund. Beispiel: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte."',
+      explanationEn:
+        'Just like with "dass", the conjugated verb in a "weil" (because) clause moves to the end. "weil" gives a reason. Example: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte" (I\'m learning German because I want to work in Berlin).',
+      explanationTr:
+        '"Dass" ile aynı şekilde, "weil" (çünkü) cümlesinde de çekimli fiil cümlenin sonuna gider. "weil" bir sebep bildirir. Örnek: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte" (Almanca öğreniyorum çünkü Berlin\'de çalışmak istiyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit4Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich lerne Deutsch, weil ich in Berlin arbeiten ___.', options: ['möchte', 'möchtest', 'möchten', 'möchtet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "möchte".',
+      },
+      {
+        lessonId: a2Unit4Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich bin müde, ___ ich wenig geschlafen habe.' },
+        correctAnswer: { accepted: ['weil'] },
+        explanation: '"Weil" leitet den Grund ein.',
+      },
+    ],
+  })
+
+  const a2Unit4Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit4.id,
+      order: 3,
+      grammarTopic: "'dass' vs. 'weil'",
+      explanationDe:
+        '"dass" leitet einen Inhalt ein (was jemand denkt/sagt), "weil" leitet einen Grund ein (warum). Beide haben Verb-Ende-Stellung: "Ich weiß, dass du müde bist." / "Du bist müde, weil du wenig geschlafen hast."',
+      explanationEn:
+        '"dass" introduces content (what someone thinks or says), "weil" introduces a reason (why). Both have verb-final word order: "Ich weiß, dass du müde bist" (I know that you\'re tired). / "Du bist müde, weil du wenig geschlafen hast" (You\'re tired because you slept little).',
+      explanationTr:
+        '"dass" bir içeriği (birinin ne düşündüğünü/söylediğini) tanıtır, "weil" bir sebebi (neden) tanıtır. İkisi de fiil-sonu sırasına sahiptir: "Ich weiß, dass du müde bist." / "Du bist müde, weil du wenig geschlafen hast."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit4Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich weiß, ___ du müde bist.', options: ['dass', 'weil', 'wenn', 'ob'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"dass" leitet hier den Inhalt des Wissens ein.',
+      },
+      {
+        lessonId: a2Unit4Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welches Wort passt: 'Du bist müde, ___ du wenig geschlafen hast.' (dass oder weil)?" },
+        correctAnswer: { accepted: ['weil'] },
+        explanation: '"weil" nennt den Grund für die Müdigkeit.',
+      },
+    ],
+  })
+
+  const a2Unit4Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit4.id,
+      order: 4,
+      grammarTopic: "Verben mit 'dass'-Sätzen",
+      explanationDe:
+        'Viele Verben werden oft mit einem "dass"-Satz kombiniert: glauben, denken, wissen, hoffen, sagen. Beispiel: "Ich hoffe, dass das Wetter morgen gut ist."',
+      explanationEn:
+        'Many verbs are often combined with a "dass" clause: glauben (believe), denken (think), wissen (know), hoffen (hope), sagen (say). Example: "Ich hoffe, dass das Wetter morgen gut ist" (I hope that the weather is good tomorrow).',
+      explanationTr:
+        'Birçok fiil sıklıkla bir "dass" cümlesiyle birlikte kullanılır: glauben (inanmak), denken (düşünmek), wissen (bilmek), hoffen (ummak), sagen (söylemek). Örnek: "Ich hoffe, dass das Wetter morgen gut ist" (Umarım yarın hava güzel olur).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit4Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___, dass das Wetter morgen gut ist. (hoffen)' },
+        correctAnswer: { accepted: ['hoffe'] },
+        explanation: 'Mit "ich" benutzt man "hoffe".',
+      },
+      {
+        lessonId: a2Unit4Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gut', 'das', 'Wetter', 'ist', 'dass'] },
+        correctAnswer: { order: ['dass', 'das', 'Wetter', 'gut', 'ist'] },
+        explanation: 'Nebensatz-Wortstellung: Konjunktion, Subjekt, Ergänzung, Verb.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit4Lesson1.id, word: 'glauben', translationEn: 'to believe', translationTr: 'inanmak', exampleSentence: 'Ich glaube, dass er Recht hat.' },
+      { lessonId: a2Unit4Lesson1.id, word: 'Recht haben', translationEn: 'to be right', translationTr: 'haklı olmak', exampleSentence: 'Er hat Recht.' },
+      { lessonId: a2Unit4Lesson2.id, word: 'der Grund', translationEn: 'the reason', translationTr: 'sebep', exampleSentence: 'Das ist der Grund.' },
+      { lessonId: a2Unit4Lesson2.id, word: 'schlafen', translationEn: 'to sleep', translationTr: 'uyumak', exampleSentence: 'Ich habe wenig geschlafen.' },
+      { lessonId: a2Unit4Lesson3.id, word: 'wissen', translationEn: 'to know', translationTr: 'bilmek', exampleSentence: 'Ich weiß, dass du müde bist.' },
+      { lessonId: a2Unit4Lesson3.id, word: 'der Unterschied', translationEn: 'the difference', translationTr: 'fark', exampleSentence: 'Kennst du den Unterschied zwischen "dass" und "weil"?' },
+      { lessonId: a2Unit4Lesson4.id, word: 'hoffen', translationEn: 'to hope', translationTr: 'ummak', exampleSentence: 'Ich hoffe, dass das Wetter morgen gut ist.' },
+      { lessonId: a2Unit4Lesson4.id, word: 'denken', translationEn: 'to think', translationTr: 'düşünmek', exampleSentence: 'Ich denke, dass das richtig ist.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
