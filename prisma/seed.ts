@@ -3057,6 +3057,177 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 7: Funktionsverbgefüge (4 lessons) ---
+  const b2Unit7 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 7, titleDe: 'Funktionsverbgefüge', titleEn: 'Support Verb Constructions', titleTr: 'Fiil-İsim Kalıpları' },
+  })
+
+  const b2Unit7Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit7.id,
+      order: 1,
+      grammarTopic: 'in Frage stellen / zur Verfügung stehen',
+      explanationDe:
+        'Funktionsverbgefüge bestehen aus einem "leeren" Verb + Nomen und ersetzen oft ein einfaches Verb: "in Frage stellen" (= bezweifeln), "zur Verfügung stehen" (= verfügbar sein). Typisch für formelle Sprache.',
+      explanationEn:
+        'Support verb constructions consist of a "light" verb + noun and often replace a simple verb: "in Frage stellen" (to call into question, = bezweifeln), "zur Verfügung stehen" (to be available, = verfügbar sein). Typical of formal language.',
+      explanationTr:
+        'Funktionsverbgefüge (fiil-isim kalıpları), "hafif" bir fiil + isimden oluşur ve genellikle basit bir fiilin yerini alır: "in Frage stellen" (sorgulamak, = bezweifeln), "zur Verfügung stehen" (hazır/kullanılabilir olmak, = verfügbar sein). Resmi dilde tipiktir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Ergebnisse werden von Experten ___ gestellt. (bezweifelt)', options: ['in Frage', 'zur Verfügung', 'in Betracht', 'zum Ausdruck'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"In Frage stellen" bedeutet "bezweifeln".',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Berater steht dem Team jederzeit zur ___.' },
+        correctAnswer: { accepted: ['Verfügung'] },
+        explanation: '"Zur Verfügung stehen" = verfügbar sein.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit7Lesson1.id, word: 'bezweifeln', translationEn: 'to doubt', translationTr: 'şüphe etmek', exampleSentence: 'Die Ergebnisse werden bezweifelt.' },
+      { lessonId: b2Unit7Lesson1.id, word: 'der Berater', translationEn: 'the consultant / advisor', translationTr: 'danışman', exampleSentence: 'Der Berater steht dem Team zur Verfügung.' },
+    ],
+  })
+
+  const b2Unit7Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit7.id,
+      order: 2,
+      grammarTopic: 'Anwendung finden / Rücksicht nehmen',
+      explanationDe:
+        '"Anwendung finden" bedeutet "angewendet werden", "Rücksicht nehmen (auf)" bedeutet "sich rücksichtsvoll verhalten (gegenüber)": "Die neue Methode findet in der Praxis Anwendung." "Man sollte auf ältere Menschen Rücksicht nehmen."',
+      explanationEn:
+        '"Anwendung finden" means "to be applied", "Rücksicht nehmen (auf)" means "to be considerate (of)": "Die neue Methode findet in der Praxis Anwendung." (The new method is applied in practice.) "Man sollte auf ältere Menschen Rücksicht nehmen." (One should be considerate of older people.)',
+      explanationTr:
+        '"Anwendung finden" "uygulanmak" anlamına gelir, "Rücksicht nehmen (auf)" ise "(birine) saygılı davranmak" anlamına gelir: "Die neue Methode findet in der Praxis Anwendung." (Yeni yöntem pratikte uygulanıyor.) "Man sollte auf ältere Menschen Rücksicht nehmen." (Yaşlı insanlara karşı saygılı olunmalı.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die neue Methode ___ in der Praxis Anwendung.', options: ['findet', 'macht', 'nimmt', 'stellt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Anwendung finden" = angewendet werden.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Rücksicht', 'sollte', 'man', 'nehmen'] },
+        correctAnswer: { order: ['man', 'sollte', 'Rücksicht', 'nehmen'] },
+        explanation: 'Wortstellung: Subjekt, Modalverb, Nomen, Infinitiv am Ende.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit7Lesson2.id, word: 'die Praxis', translationEn: 'practice', translationTr: 'uygulama / pratik', exampleSentence: 'Die Methode findet in der Praxis Anwendung.' },
+      { lessonId: b2Unit7Lesson2.id, word: 'älter', translationEn: 'older', translationTr: 'daha yaşlı', exampleSentence: 'Man sollte auf ältere Menschen Rücksicht nehmen.' },
+    ],
+  })
+
+  const b2Unit7Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit7.id,
+      order: 3,
+      grammarTopic: 'zum Ausdruck bringen / in Betracht ziehen',
+      explanationDe:
+        '"Zum Ausdruck bringen" bedeutet "ausdrücken", "in Betracht ziehen" bedeutet "berücksichtigen/erwägen": "Sie brachte ihre Freude zum Ausdruck." "Wir sollten alle Optionen in Betracht ziehen."',
+      explanationEn:
+        '"Zum Ausdruck bringen" means "to express", "in Betracht ziehen" means "to consider": "Sie brachte ihre Freude zum Ausdruck." (She expressed her joy.) "Wir sollten alle Optionen in Betracht ziehen." (We should consider all options.)',
+      explanationTr:
+        '"Zum Ausdruck bringen" "ifade etmek" anlamına gelir, "in Betracht ziehen" ise "göz önünde bulundurmak/değerlendirmek" anlamına gelir: "Sie brachte ihre Freude zum Ausdruck." (Sevincini ifade etti.) "Wir sollten alle Optionen in Betracht ziehen." (Tüm seçenekleri değerlendirmeliyiz.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir sollten alle Optionen in ___ ziehen.', options: ['Betracht', 'Frage', 'Anwendung', 'Ausdruck'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"In Betracht ziehen" = berücksichtigen.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie brachte ihre Freude zum ___.' },
+        correctAnswer: { accepted: ['Ausdruck'] },
+        explanation: '"Zum Ausdruck bringen" = ausdrücken.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit7Lesson3.id, word: 'die Freude', translationEn: 'the joy', translationTr: 'sevinç', exampleSentence: 'Sie brachte ihre Freude zum Ausdruck.' },
+      { lessonId: b2Unit7Lesson3.id, word: 'die Option', translationEn: 'the option', translationTr: 'seçenek', exampleSentence: 'Wir sollten alle Optionen in Betracht ziehen.' },
+    ],
+  })
+
+  const b2Unit7Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit7.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Funktionsverbgefüge',
+      explanationDe:
+        'Wiederholung der Funktionsverbgefüge: in Frage stellen, zur Verfügung stehen, Anwendung finden, Rücksicht nehmen, zum Ausdruck bringen, in Betracht ziehen. Merke: leeres Verb + festes Nomen ersetzt ein einfaches Verb.',
+      explanationEn:
+        'Review of support verb constructions: in Frage stellen, zur Verfügung stehen, Anwendung finden, Rücksicht nehmen, zum Ausdruck bringen, in Betracht ziehen. Remember: light verb + fixed noun replaces a simple verb.',
+      explanationTr:
+        'Fiil-isim kalıplarının tekrarı: in Frage stellen, zur Verfügung stehen, Anwendung finden, Rücksicht nehmen, zum Ausdruck bringen, in Betracht ziehen. Unutma: hafif fiil + sabit isim, basit bir fiilin yerini alır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['in Frage stellen', 'zur Verfügung stehen', 'in Betracht ziehen'], rights: ['verfügbar sein', 'berücksichtigen', 'bezweifeln'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'in Frage stellen', right: 'bezweifeln' },
+            { left: 'zur Verfügung stehen', right: 'verfügbar sein' },
+            { left: 'in Betracht ziehen', right: 'berücksichtigen' },
+          ],
+        },
+        explanation: 'Funktionsverbgefüge und ihre einfachen Verb-Entsprechungen.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man einfacher für 'zum Ausdruck bringen'?" },
+        correctAnswer: { accepted: ['ausdrücken'] },
+        explanation: '"Zum Ausdruck bringen" = ausdrücken.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit7Lesson4.id, word: 'berücksichtigen', translationEn: 'to take into account', translationTr: 'göz önünde bulundurmak', exampleSentence: 'Wir müssen alle Faktoren berücksichtigen.' },
+      { lessonId: b2Unit7Lesson4.id, word: 'verfügbar', translationEn: 'available', translationTr: 'kullanılabilir', exampleSentence: 'Der Berater ist verfügbar.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
