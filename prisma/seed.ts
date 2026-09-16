@@ -3401,6 +3401,160 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 10: Reflexive Verben (4 lessons) ---
+  const a2Unit10 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 10, titleDe: 'Reflexive Verben', titleEn: 'Reflexive Verbs', titleTr: 'Dönüşlü Fiiller' },
+  })
+
+  const a2Unit10Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit10.id,
+      order: 1,
+      grammarTopic: 'Reflexivpronomen im Akkusativ',
+      explanationDe:
+        'Reflexivpronomen im Akkusativ: mich, dich, sich, uns, euch, sich. Sie stehen bei reflexiven Verben: "Ich wasche mich." "Er freut sich."',
+      explanationEn:
+        'Accusative reflexive pronouns: mich, dich, sich, uns, euch, sich. They are used with reflexive verbs: "Ich wasche mich" (I wash myself). "Er freut sich" (He is happy).',
+      explanationTr:
+        'Akkusativ dönüşlü zamirler: mich, dich, sich, uns, euch, sich. Dönüşlü fiillerle kullanılır: "Ich wasche mich." (Kendimi yıkarım.) "Er freut sich." (Sevinir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit10Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich wasche ___ jeden Morgen.', options: ['mich', 'dich', 'sich', 'uns'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "mich".',
+      },
+      {
+        lessonId: a2Unit10Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er freut ___ über das Geschenk.' },
+        correctAnswer: { accepted: ['sich'] },
+        explanation: 'Mit "er" benutzt man "sich".',
+      },
+    ],
+  })
+
+  const a2Unit10Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit10.id,
+      order: 2,
+      grammarTopic: 'Häufige reflexive Verben',
+      explanationDe:
+        'Häufige reflexive Verben: sich freuen (über/auf), sich interessieren (für), sich fühlen. Beispiel: "Ich interessiere mich für Musik." "Ich fühle mich gut."',
+      explanationEn:
+        'Common reflexive verbs: sich freuen (über/auf, to be happy about / look forward to), sich interessieren (für, to be interested in), sich fühlen (to feel). Example: "Ich interessiere mich für Musik" (I\'m interested in music). "Ich fühle mich gut" (I feel good).',
+      explanationTr:
+        'Yaygın dönüşlü fiiller: sich freuen (über/auf, sevinmek/dört gözle beklemek), sich interessieren (für, ilgilenmek), sich fühlen (hissetmek). Örnek: "Ich interessiere mich für Musik." "Ich fühle mich gut."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit10Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich interessiere ___ für Musik.', options: ['mich', 'dich', 'sich', 'euch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "mich".',
+      },
+      {
+        lessonId: a2Unit10Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wie fühlst du ___ heute?' },
+        correctAnswer: { accepted: ['dich'] },
+        explanation: 'Mit "du" benutzt man "dich".',
+      },
+    ],
+  })
+
+  const a2Unit10Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit10.id,
+      order: 3,
+      grammarTopic: 'Reflexivpronomen im Dativ',
+      explanationDe:
+        'Bei manchen reflexiven Verben steht das Reflexivpronomen im Dativ, oft mit einem zusätzlichen Akkusativobjekt: mir, dir, sich, uns, euch, sich. Beispiel: "Ich kaufe mir ein neues Handy." "Ich stelle mir das vor."',
+      explanationEn:
+        'With some reflexive verbs, the reflexive pronoun is in the dative, often with an additional accusative object: mir, dir, sich, uns, euch, sich. Example: "Ich kaufe mir ein neues Handy" (I\'m buying myself a new phone). "Ich stelle mir das vor" (I imagine that).',
+      explanationTr:
+        'Bazı dönüşlü fiillerde dönüşlü zamir Dativ\'dedir, genellikle ek bir Akkusativ nesnesiyle birlikte: mir, dir, sich, uns, euch, sich. Örnek: "Ich kaufe mir ein neues Handy." "Ich stelle mir das vor."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit10Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich kaufe ___ ein neues Handy.', options: ['mir', 'mich', 'dir', 'sich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" + Akkusativobjekt benutzt man den Dativ "mir".',
+      },
+      {
+        lessonId: a2Unit10Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Kannst du ___ das vorstellen? (du, Dativ)' },
+        correctAnswer: { accepted: ['dir'] },
+        explanation: 'Mit "du" benutzt man "dir".',
+      },
+    ],
+  })
+
+  const a2Unit10Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit10.id,
+      order: 4,
+      grammarTopic: 'Übung: Reflexive Verben im Alltag',
+      explanationDe:
+        'Reflexive Verben beschreiben oft tägliche Routinen und Gefühle: sich duschen, sich anziehen, sich entspannen. Beispiel: "Ich dusche mich und ziehe mich an."',
+      explanationEn:
+        'Reflexive verbs often describe daily routines and feelings: sich duschen (to shower), sich anziehen (to get dressed), sich entspannen (to relax). Example: "Ich dusche mich und ziehe mich an" (I shower and get dressed).',
+      explanationTr:
+        'Dönüşlü fiiller genellikle günlük rutinleri ve duyguları anlatır: sich duschen (duş almak), sich anziehen (giyinmek), sich entspannen (rahatlamak). Örnek: "Ich dusche mich und ziehe mich an."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit10Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['mich', 'jeden', 'dusche', 'ich', 'Morgen'] },
+        correctAnswer: { order: ['ich', 'dusche', 'mich', 'jeden', 'Morgen'] },
+        explanation: 'Reihenfolge: Subjekt, Verb, Reflexivpronomen, Zeitangabe.',
+      },
+      {
+        lessonId: a2Unit10Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I relax on the weekend' (mit 'sich entspannen')?" },
+        correctAnswer: { accepted: ['ich entspanne mich am wochenende'] },
+        explanation: '"Ich entspanne mich am Wochenende" bedeutet "I relax on the weekend".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit10Lesson1.id, word: 'sich waschen', translationEn: 'to wash oneself', translationTr: 'yıkanmak', exampleSentence: 'Ich wasche mich jeden Morgen.' },
+      { lessonId: a2Unit10Lesson1.id, word: 'das Geschenk', translationEn: 'the gift', translationTr: 'hediye', exampleSentence: 'Er freut sich über das Geschenk.' },
+      { lessonId: a2Unit10Lesson2.id, word: 'sich interessieren', translationEn: 'to be interested (in)', translationTr: 'ilgilenmek', exampleSentence: 'Ich interessiere mich für Musik.' },
+      { lessonId: a2Unit10Lesson2.id, word: 'die Musik', translationEn: 'music', translationTr: 'müzik', exampleSentence: 'Ich interessiere mich für Musik.' },
+      { lessonId: a2Unit10Lesson3.id, word: 'das Handy', translationEn: 'the mobile phone', translationTr: 'cep telefonu', exampleSentence: 'Ich kaufe mir ein neues Handy.' },
+      { lessonId: a2Unit10Lesson3.id, word: 'sich vorstellen', translationEn: 'to imagine', translationTr: 'hayal etmek', exampleSentence: 'Ich kann mir das gut vorstellen.' },
+      { lessonId: a2Unit10Lesson4.id, word: 'sich entspannen', translationEn: 'to relax', translationTr: 'rahatlamak', exampleSentence: 'Ich entspanne mich am Wochenende.' },
+      { lessonId: a2Unit10Lesson4.id, word: 'das Wochenende', translationEn: 'the weekend', translationTr: 'hafta sonu', exampleSentence: 'Ich entspanne mich am Wochenende.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
