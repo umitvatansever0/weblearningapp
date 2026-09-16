@@ -2300,6 +2300,166 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 3: Komparativ & Superlativ (4 lessons) ---
+  const a2Unit3 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 3, titleDe: 'Komparativ & Superlativ', titleEn: 'Comparative & Superlative', titleTr: 'Karşılaştırma ve Üstünlük Derecesi' },
+  })
+
+  const a2Unit3Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit3.id,
+      order: 1,
+      grammarTopic: 'Komparativ (regelmäßig)',
+      explanationDe:
+        'Der Komparativ wird mit "-er" gebildet und vergleicht mit "als": schnell → schneller, klein → kleiner. Beispiel: "Der Zug ist schneller als das Auto."',
+      explanationEn:
+        'The comparative is formed with "-er" and compares using "als" (than): schnell → schneller (faster), klein → kleiner (smaller). Example: "Der Zug ist schneller als das Auto" (The train is faster than the car).',
+      explanationTr:
+        'Karşılaştırma sıfatı "-er" eki ile kurulur ve "als" (-den) ile karşılaştırılır: schnell → schneller (daha hızlı), klein → kleiner (daha küçük). Örnek: "Der Zug ist schneller als das Auto" (Tren arabadan daha hızlıdır).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit3Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Zug ist ___ als das Auto. (schnell)', options: ['schnell', 'schneller', 'am schnellsten', 'schnellst'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Der Komparativ von "schnell" ist "schneller".',
+      },
+      {
+        lessonId: a2Unit3Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Mein Haus ist ___ als deins. (klein)' },
+        correctAnswer: { accepted: ['kleiner'] },
+        explanation: 'Der Komparativ von "klein" ist "kleiner".',
+      },
+    ],
+  })
+
+  const a2Unit3Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit3.id,
+      order: 2,
+      grammarTopic: 'Komparativ mit Umlaut',
+      explanationDe:
+        'Einsilbige Adjektive mit a, o oder u bekommen oft einen Umlaut im Komparativ: groß → größer, jung → jünger, alt → älter. Beispiel: "Meine Schwester ist jünger als ich."',
+      explanationEn:
+        'Single-syllable adjectives with a, o, or u often take an umlaut in the comparative: groß → größer (bigger), jung → jünger (younger), alt → älter (older). Example: "Meine Schwester ist jünger als ich" (My sister is younger than me).',
+      explanationTr:
+        'a, o, u ünlüsü içeren tek heceli sıfatlar genellikle karşılaştırmada umlaut alır: groß → größer (daha büyük), jung → jünger (daha genç), alt → älter (daha yaşlı). Örnek: "Meine Schwester ist jünger als ich" (Kız kardeşim benden daha genç).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit3Lesson2.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['groß', 'jung', 'alt'], rights: ['älter', 'größer', 'jünger'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'groß', right: 'größer' },
+            { left: 'jung', right: 'jünger' },
+            { left: 'alt', right: 'älter' },
+          ],
+        },
+        explanation: 'Komparativ mit Umlaut: groß→größer, jung→jünger, alt→älter.',
+      },
+      {
+        lessonId: a2Unit3Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Mein Opa ist ___ als mein Vater. (alt)' },
+        correctAnswer: { accepted: ['älter'] },
+        explanation: 'Der Komparativ von "alt" ist "älter".',
+      },
+    ],
+  })
+
+  const a2Unit3Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit3.id,
+      order: 3,
+      grammarTopic: "Superlativ mit 'am ...sten'",
+      explanationDe:
+        'Der Superlativ wird mit "am" + Adjektiv + "-sten" gebildet: schnell → am schnellsten, groß → am größten. Beispiel: "Der ICE ist am schnellsten."',
+      explanationEn:
+        'The superlative is formed with "am" + adjective + "-sten": schnell → am schnellsten (fastest), groß → am größten (biggest). Example: "Der ICE ist am schnellsten" (The ICE train is the fastest).',
+      explanationTr:
+        'Üstünlük derecesi "am" + sıfat + "-sten" ile kurulur: schnell → am schnellsten (en hızlı), groß → am größten (en büyük). Örnek: "Der ICE ist am schnellsten" (ICE treni en hızlısıdır).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit3Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der ICE ist ___. (schnell)', options: ['am schnellsten', 'schneller', 'so schnell', 'am schnell'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Superlativ von "schnell" ist "am schnellsten".',
+      },
+      {
+        lessonId: a2Unit3Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Berg', 'ist', 'der', 'am', 'größten'] },
+        correctAnswer: { order: ['der', 'Berg', 'ist', 'am', 'größten'] },
+        explanation: 'Reihenfolge: Artikel, Subjekt, Verb, "am" + Superlativ.',
+      },
+    ],
+  })
+
+  const a2Unit3Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit3.id,
+      order: 4,
+      grammarTopic: 'Unregelmäßige Steigerungsformen',
+      explanationDe:
+        'Einige Adjektive/Adverbien haben unregelmäßige Steigerungsformen: gut → besser → am besten, viel → mehr → am meisten, gern → lieber → am liebsten. Beispiel: "Ich trinke gern Tee, aber ich trinke lieber Kaffee."',
+      explanationEn:
+        'Some adjectives/adverbs have irregular comparison forms: gut → besser → am besten (good/better/best), viel → mehr → am meisten (much/more/most), gern → lieber → am liebsten (gladly/preferably/most preferred). Example: "Ich trinke gern Tee, aber ich trinke lieber Kaffee" (I like drinking tea, but I prefer coffee).',
+      explanationTr:
+        'Bazı sıfat/zarfların düzensiz karşılaştırma biçimleri vardır: gut → besser → am besten (iyi/daha iyi/en iyi), viel → mehr → am meisten (çok/daha çok/en çok), gern → lieber → am liebsten (seve seve/tercihen/en çok tercih edilen). Örnek: "Ich trinke gern Tee, aber ich trinke lieber Kaffee" (Çayı severim ama kahveyi tercih ederim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit3Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Essen hier ist ___ als zu Hause. (gut)', options: ['guter', 'besser', 'am besten', 'guter'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Der Komparativ von "gut" ist unregelmäßig: "besser".',
+      },
+      {
+        lessonId: a2Unit3Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I prefer coffee' (mit 'lieber')?" },
+        correctAnswer: { accepted: ['ich trinke lieber kaffee'] },
+        explanation: '"Ich trinke lieber Kaffee" bedeutet "I prefer coffee".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit3Lesson1.id, word: 'schnell', translationEn: 'fast', translationTr: 'hızlı', exampleSentence: 'Der Zug ist schnell.' },
+      { lessonId: a2Unit3Lesson1.id, word: 'klein', translationEn: 'small', translationTr: 'küçük', exampleSentence: 'Mein Haus ist klein.' },
+      { lessonId: a2Unit3Lesson2.id, word: 'groß', translationEn: 'big / tall', translationTr: 'büyük', exampleSentence: 'Das Haus ist groß.' },
+      { lessonId: a2Unit3Lesson2.id, word: 'jung', translationEn: 'young', translationTr: 'genç', exampleSentence: 'Meine Schwester ist jung.' },
+      { lessonId: a2Unit3Lesson3.id, word: 'der Berg', translationEn: 'the mountain', translationTr: 'dağ', exampleSentence: 'Der Berg ist am größten.' },
+      { lessonId: a2Unit3Lesson3.id, word: 'der Zug', translationEn: 'the train', translationTr: 'tren', exampleSentence: 'Der Zug ist am schnellsten.' },
+      { lessonId: a2Unit3Lesson4.id, word: 'besser', translationEn: 'better', translationTr: 'daha iyi', exampleSentence: 'Das Essen hier ist besser.' },
+      { lessonId: a2Unit3Lesson4.id, word: 'am liebsten', translationEn: 'most of all / favorite', translationTr: 'en çok tercih edilen', exampleSentence: 'Ich trinke am liebsten Tee.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
