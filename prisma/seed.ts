@@ -2140,6 +2140,166 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 2: Perfekt Vertiefung (4 lessons) ---
+  const a2Unit2 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 2, titleDe: 'Perfekt Vertiefung', titleEn: 'Perfekt in Depth', titleTr: 'Perfekt Zamanı Derinlemesine' },
+  })
+
+  const a2Unit2Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit2.id,
+      order: 1,
+      grammarTopic: 'haben oder sein? (Regel)',
+      explanationDe:
+        'Die meisten Verben bilden das Perfekt mit "haben". Nur Verben der Bewegung (gehen, fahren) oder Zustandsänderung (aufwachen, sterben) sowie "sein" und "bleiben" selbst benutzen "sein". Beispiel: "Ich habe gearbeitet." aber "Ich bin gelaufen."',
+      explanationEn:
+        'Most verbs form the Perfekt with "haben". Only verbs of motion (gehen, fahren) or change of state (aufwachen, sterben), plus "sein" and "bleiben" themselves, use "sein". Example: "Ich habe gearbeitet" (I worked) but "Ich bin gelaufen" (I ran).',
+      explanationTr:
+        'Çoğu fiil Perfekt zamanını "haben" ile kurar. Sadece hareket fiilleri (gehen, fahren) veya durum değişikliği fiilleri (aufwachen, sterben) ile "sein" ve "bleiben" fiillerinin kendisi "sein" kullanır. Örnek: "Ich habe gearbeitet" (Çalıştım) ama "Ich bin gelaufen" (Koştum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit2Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ gelaufen.', options: ['habe', 'bin', 'hat', 'ist'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Laufen" ist ein Bewegungsverb, deshalb benutzt man "sein".',
+      },
+      {
+        lessonId: a2Unit2Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ heute viel gearbeitet.' },
+        correctAnswer: { accepted: ['habe'] },
+        explanation: '"Arbeiten" ist kein Bewegungsverb, deshalb benutzt man "haben".',
+      },
+    ],
+  })
+
+  const a2Unit2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit2.id,
+      order: 2,
+      grammarTopic: 'Partizip II unregelmäßiger Verben',
+      explanationDe:
+        'Viele unregelmäßige Verben ändern den Stammvokal im Partizip II: schreiben → geschrieben, nehmen → genommen, finden → gefunden. Diese Formen muss man auswendig lernen.',
+      explanationEn:
+        'Many irregular verbs change their stem vowel in the past participle: schreiben → geschrieben (written), nehmen → genommen (taken), finden → gefunden (found). These forms have to be memorized.',
+      explanationTr:
+        'Birçok düzensiz fiil Partizip II biçiminde kök ünlüsünü değiştirir: schreiben → geschrieben (yazılmış), nehmen → genommen (alınmış), finden → gefunden (bulunmuş). Bu biçimler ezbere öğrenilmelidir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit2Lesson2.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['schreiben', 'nehmen', 'finden'], rights: ['gefunden', 'geschrieben', 'genommen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'schreiben', right: 'geschrieben' },
+            { left: 'nehmen', right: 'genommen' },
+            { left: 'finden', right: 'gefunden' },
+          ],
+        },
+        explanation: 'Partizip II: schreiben→geschrieben, nehmen→genommen, finden→gefunden.',
+      },
+      {
+        lessonId: a2Unit2Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe einen Brief ___ (schreiben).' },
+        correctAnswer: { accepted: ['geschrieben'] },
+        explanation: 'Das Partizip II von "schreiben" ist "geschrieben".',
+      },
+    ],
+  })
+
+  const a2Unit2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit2.id,
+      order: 3,
+      grammarTopic: 'Trennbare Verben im Perfekt',
+      explanationDe:
+        'Bei trennbaren Verben steht "ge" zwischen Präfix und Stamm: aufstehen → aufgestanden, anrufen → angerufen, mitbringen → mitgebracht. Beispiel: "Ich bin um sieben Uhr aufgestanden."',
+      explanationEn:
+        'With separable-prefix verbs, "ge" is inserted between the prefix and the stem: aufstehen → aufgestanden (got up), anrufen → angerufen (called), mitbringen → mitgebracht (brought along). Example: "Ich bin um sieben Uhr aufgestanden" (I got up at seven o\'clock).',
+      explanationTr:
+        'Ayrılabilen fiillerde "ge" öneki ile gövde arasına girer: aufstehen → aufgestanden (kalktı), anrufen → angerufen (aradı), mitbringen → mitgebracht (yanında getirdi). Örnek: "Ich bin um sieben Uhr aufgestanden" (Saat yedide kalktım).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich bin um sieben Uhr ___.', options: ['aufgestanden', 'aufstehen', 'stehe auf', 'aufgestehen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das Partizip II von "aufstehen" ist "aufgestanden".',
+      },
+      {
+        lessonId: a2Unit2Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['angerufen', 'ich', 'habe', 'dich'] },
+        correctAnswer: { order: ['ich', 'habe', 'dich', 'angerufen'] },
+        explanation: 'Position 2 ist das Verb ("habe"), das Partizip II ("angerufen") steht am Satzende.',
+      },
+    ],
+  })
+
+  const a2Unit2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit2.id,
+      order: 4,
+      grammarTopic: "Nicht-trennbare & '-ieren'-Verben im Perfekt",
+      explanationDe:
+        'Verben mit den Präfixen be-, ge-, er-, ver-, zer-, ent-, emp- sowie Verben auf "-ieren" bilden das Partizip II OHNE "ge-": besuchen → besucht, studieren → studiert.',
+      explanationEn:
+        'Verbs with the prefixes be-, ge-, er-, ver-, zer-, ent-, emp- and verbs ending in "-ieren" form the past participle WITHOUT "ge-": besuchen → besucht (visited), studieren → studiert (studied).',
+      explanationTr:
+        'be-, ge-, er-, ver-, zer-, ent-, emp- önekli fiiller ve "-ieren" ile biten fiiller Partizip II\'yi "ge-" OLMADAN kurar: besuchen → besucht (ziyaret edildi), studieren → studiert (okundu).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit2Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich habe Medizin ___.', options: ['studiert', 'gestudiert', 'studieren', 'studierte'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"-ieren"-Verben bilden das Partizip II ohne "ge-": studiert.',
+      },
+      {
+        lessonId: a2Unit2Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er hat seine Oma ___ (besuchen).' },
+        correctAnswer: { accepted: ['besucht'] },
+        explanation: 'Das Partizip II von "besuchen" ist "besucht" (kein "ge-").',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit2Lesson1.id, word: 'laufen', translationEn: 'to run / to walk', translationTr: 'koşmak / yürümek', exampleSentence: 'Ich bin gelaufen.' },
+      { lessonId: a2Unit2Lesson1.id, word: 'die Regel', translationEn: 'the rule', translationTr: 'kural', exampleSentence: 'Das ist eine wichtige Regel.' },
+      { lessonId: a2Unit2Lesson2.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Ich habe einen Brief geschrieben.' },
+      { lessonId: a2Unit2Lesson2.id, word: 'finden', translationEn: 'to find', translationTr: 'bulmak', exampleSentence: 'Ich habe meinen Schlüssel gefunden.' },
+      { lessonId: a2Unit2Lesson3.id, word: 'mitbringen', translationEn: 'to bring along', translationTr: 'yanında getirmek', exampleSentence: 'Ich habe einen Kuchen mitgebracht.' },
+      { lessonId: a2Unit2Lesson3.id, word: 'ausgehen', translationEn: 'to go out', translationTr: 'dışarı çıkmak', exampleSentence: 'Wir sind gestern ausgegangen.' },
+      { lessonId: a2Unit2Lesson4.id, word: 'studieren', translationEn: 'to study (at university)', translationTr: 'üniversitede okumak', exampleSentence: 'Ich habe Medizin studiert.' },
+      { lessonId: a2Unit2Lesson4.id, word: 'erklären', translationEn: 'to explain', translationTr: 'açıklamak', exampleSentence: 'Der Lehrer hat die Regel erklärt.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
