@@ -2768,6 +2768,160 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 6: Indirekte Fragesätze (4 lessons) ---
+  const a2Unit6 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 6, titleDe: 'Indirekte Fragesätze', titleEn: 'Indirect Questions', titleTr: 'Dolaylı Sorular' },
+  })
+
+  const a2Unit6Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit6.id,
+      order: 1,
+      grammarTopic: "Indirekte Fragen mit 'ob'",
+      explanationDe:
+        'Bei indirekten Ja/Nein-Fragen benutzt man "ob" statt einer direkten Frage. Das Verb steht am Ende: "Weißt du, ob er kommt?" statt "Kommt er?"',
+      explanationEn:
+        'For indirect yes/no questions, use "ob" (whether/if) instead of asking directly. The verb moves to the end: "Weißt du, ob er kommt?" (Do you know whether he\'s coming?) instead of "Kommt er?" (Is he coming?)',
+      explanationTr:
+        'Dolaylı evet/hayır sorularında doğrudan soru yerine "ob" (-ip -ipmediği) kullanılır. Fiil sona gider: "Weißt du, ob er kommt?" (Gelip gelmeyeceğini biliyor musun?) yerine "Kommt er?" (Geliyor mu?)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit6Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Weißt du, ___ er kommt?', options: ['ob', 'dass', 'weil', 'wenn'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bei einer indirekten Ja/Nein-Frage benutzt man "ob".',
+      },
+      {
+        lessonId: a2Unit6Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich weiß nicht, ___ das Geschäft heute offen ist.' },
+        correctAnswer: { accepted: ['ob'] },
+        explanation: '"Ob" leitet die indirekte Ja/Nein-Frage ein.',
+      },
+    ],
+  })
+
+  const a2Unit6Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit6.id,
+      order: 2,
+      grammarTopic: 'Indirekte W-Fragen',
+      explanationDe:
+        'Bei indirekten W-Fragen bleibt das Fragewort (wo, wann, warum, was...) erhalten, aber das Verb wandert ans Ende: "Ich weiß nicht, wo der Bahnhof ist." statt "Wo ist der Bahnhof?"',
+      explanationEn:
+        'In indirect W-questions, the question word (wo, wann, warum, was...) stays, but the verb moves to the end: "Ich weiß nicht, wo der Bahnhof ist" (I don\'t know where the train station is) instead of "Wo ist der Bahnhof?" (Where is the train station?)',
+      explanationTr:
+        'Dolaylı W-sorularında soru sözcüğü (wo, wann, warum, was...) kalır, ama fiil sona gider: "Ich weiß nicht, wo der Bahnhof ist." yerine "Wo ist der Bahnhof?"',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit6Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich weiß nicht, wo der Bahnhof ___.', options: ['ist', 'ist er', 'er ist', 'sei'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das Verb "ist" steht am Ende des Nebensatzes.',
+      },
+      {
+        lessonId: a2Unit6Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bist', 'warum', 'traurig', 'du'] },
+        correctAnswer: { order: ['warum', 'du', 'traurig', 'bist'] },
+        explanation: 'Fragewort zuerst, dann Subjekt, dann Ergänzung, dann Verb am Ende.',
+      },
+    ],
+  })
+
+  const a2Unit6Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit6.id,
+      order: 3,
+      grammarTopic: 'Einleitende Ausdrücke für indirekte Fragen',
+      explanationDe:
+        'Häufige Einleitungen für indirekte Fragen: "Ich weiß nicht, ob/wann/wo...", "Kannst du mir sagen, ob/wann/wo...?", "Ich frage mich, ob/wann/wo...". Beispiel: "Kannst du mir sagen, wann der Zug fährt?"',
+      explanationEn:
+        'Common phrases that introduce indirect questions: "Ich weiß nicht, ob/wann/wo..." (I don\'t know whether/when/where...), "Kannst du mir sagen, ob/wann/wo...?" (Can you tell me whether/when/where...?), "Ich frage mich, ob/wann/wo..." (I wonder whether/when/where...). Example: "Kannst du mir sagen, wann der Zug fährt?" (Can you tell me when the train leaves?)',
+      explanationTr:
+        'Dolaylı soruları başlatan yaygın ifadeler: "Ich weiß nicht, ob/wann/wo..." (bilmiyorum...), "Kannst du mir sagen, ob/wann/wo...?" (söyleyebilir misin...?), "Ich frage mich, ob/wann/wo..." (merak ediyorum...). Örnek: "Kannst du mir sagen, wann der Zug fährt?" (Trenin ne zaman kalktığını söyleyebilir misin?)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit6Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Kannst du mir sagen, ___ der Zug fährt?', options: ['wann', 'wenn', 'dass', 'weil'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wann" fragt nach der Zeit der Abfahrt.',
+      },
+      {
+        lessonId: a2Unit6Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I wonder whether he is coming' (mit 'Ich frage mich')?" },
+        correctAnswer: { accepted: ['ich frage mich, ob er kommt', 'ich frage mich ob er kommt'] },
+        explanation: '"Ich frage mich, ob er kommt" bedeutet "I wonder whether he is coming".',
+      },
+    ],
+  })
+
+  const a2Unit6Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit6.id,
+      order: 4,
+      grammarTopic: 'Direkte in indirekte Fragen umwandeln',
+      explanationDe:
+        'Um eine direkte Frage in eine indirekte umzuwandeln: Ja/Nein-Frage → "ob" + Verb-Ende; W-Frage → Fragewort bleibt + Verb-Ende. "Isst du gern Pizza?" → "Ich möchte wissen, ob du gern Pizza isst."',
+      explanationEn:
+        'To turn a direct question into an indirect one: yes/no question → "ob" + verb-final; W-question → question word stays + verb-final. "Isst du gern Pizza?" (Do you like eating pizza?) → "Ich möchte wissen, ob du gern Pizza isst" (I\'d like to know whether you like eating pizza).',
+      explanationTr:
+        'Doğrudan bir soruyu dolaylıya çevirmek için: evet/hayır sorusu → "ob" + fiil sonda; W-sorusu → soru sözcüğü kalır + fiil sonda. "Isst du gern Pizza?" → "Ich möchte wissen, ob du gern Pizza isst."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit6Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich möchte wissen, ___ du gern Pizza isst.' },
+        correctAnswer: { accepted: ['ob'] },
+        explanation: 'Eine Ja/Nein-Frage wird indirekt mit "ob" eingeleitet.',
+      },
+      {
+        lessonId: a2Unit6Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['möchtest', 'du', 'essen', 'was'] },
+        correctAnswer: { order: ['was', 'du', 'essen', 'möchtest'] },
+        explanation: 'Das Fragewort bleibt ("was"), das Verb wandert ans Ende ("möchtest").',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit6Lesson1.id, word: 'das Geschäft', translationEn: 'the shop / business', translationTr: 'dükkan / iş', exampleSentence: 'Ich weiß nicht, ob das Geschäft heute offen ist.' },
+      { lessonId: a2Unit6Lesson1.id, word: 'offen', translationEn: 'open', translationTr: 'açık', exampleSentence: 'Das Geschäft ist offen.' },
+      { lessonId: a2Unit6Lesson2.id, word: 'traurig', translationEn: 'sad', translationTr: 'üzgün', exampleSentence: 'Ich weiß nicht, warum du traurig bist.' },
+      { lessonId: a2Unit6Lesson2.id, word: 'warum', translationEn: 'why', translationTr: 'neden', exampleSentence: 'Warum bist du traurig?' },
+      { lessonId: a2Unit6Lesson3.id, word: 'sich fragen', translationEn: 'to wonder', translationTr: 'merak etmek', exampleSentence: 'Ich frage mich, ob er kommt.' },
+      { lessonId: a2Unit6Lesson3.id, word: 'abfahren', translationEn: 'to depart', translationTr: 'kalkmak (araç)', exampleSentence: 'Der Zug fährt um acht Uhr ab.' },
+      { lessonId: a2Unit6Lesson4.id, word: 'die Frage', translationEn: 'the question', translationTr: 'soru', exampleSentence: 'Das ist eine gute Frage.' },
+      { lessonId: a2Unit6Lesson4.id, word: 'umwandeln', translationEn: 'to convert / transform', translationTr: 'dönüştürmek', exampleSentence: 'Wandle die Frage in eine indirekte Frage um.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
