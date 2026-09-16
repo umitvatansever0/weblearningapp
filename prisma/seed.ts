@@ -2024,6 +2024,122 @@ async function main() {
     ],
   })
 
+  const a2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit.id,
+      order: 2,
+      grammarTopic: "Perfekt mit 'sein'",
+      explanationDe:
+        'Bewegungsverben und Verben, die eine Zustandsveränderung ausdrücken, bilden das Perfekt mit "sein" statt "haben", z. B. "Ich bin nach Berlin gefahren." "Er ist zu Hause geblieben."',
+      explanationEn:
+        'Verbs of motion and verbs expressing a change of state form the Perfekt with "sein" instead of "haben", e.g. "Ich bin nach Berlin gefahren" (I went to Berlin). "Er ist zu Hause geblieben" (He stayed home).',
+      explanationTr:
+        'Hareket bildiren fiiller ve durum değişikliği ifade eden fiiller Perfekt zamanını "haben" yerine "sein" ile kurar, örn. "Ich bin nach Berlin gefahren" (Berlin\'e gittim). "Er ist zu Hause geblieben" (Evde kaldı).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ nach Berlin gefahren.', options: ['bin', 'habe', 'hat', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Fahren" ist ein Bewegungsverb, deshalb benutzt man "sein" im Perfekt.',
+      },
+      {
+        lessonId: a2Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ist zu Hause ___ (bleiben).' },
+        correctAnswer: { accepted: ['geblieben'] },
+        explanation: 'Das Partizip II von "bleiben" ist "geblieben", gebildet mit "sein".',
+      },
+    ],
+  })
+
+  const a2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit.id,
+      order: 3,
+      grammarTopic: 'Zeitangaben der Vergangenheit',
+      explanationDe:
+        'Wichtige Zeitausdrücke für die Vergangenheit: gestern, letzte Woche, vor zwei Tagen, letztes Jahr. Beispiel: "Vor zwei Tagen habe ich meine Oma besucht."',
+      explanationEn:
+        'Important time expressions for the past: gestern (yesterday), letzte Woche (last week), vor zwei Tagen (two days ago), letztes Jahr (last year). Example: "Vor zwei Tagen habe ich meine Oma besucht" (Two days ago I visited my grandma).',
+      explanationTr:
+        'Geçmiş zaman için önemli zaman ifadeleri: gestern (dün), letzte Woche (geçen hafta), vor zwei Tagen (iki gün önce), letztes Jahr (geçen yıl). Örnek: "Vor zwei Tagen habe ich meine Oma besucht" (İki gün önce büyükannemi ziyaret ettim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: '___ habe ich meine Oma besucht. (two days ago)',
+          options: ['Vor zwei Tagen', 'Letzte Woche', 'Nächstes Jahr', 'Morgen'],
+        },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Vor zwei Tagen" bedeutet "two days ago".',
+      },
+      {
+        lessonId: a2Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Woche war ich krank.' },
+        correctAnswer: { accepted: ['letzte'] },
+        explanation: '"Letzte Woche" bedeutet "last week".',
+      },
+    ],
+  })
+
+  const a2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Alltag erzählen',
+      explanationDe:
+        'Kombiniere Perfekt mit "haben" und "sein", um deinen Alltag zu erzählen: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren."',
+      explanationEn:
+        'Combine Perfekt with "haben" and "sein" to narrate your day: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren" (I got up, had breakfast, and drove to work).',
+      explanationTr:
+        'Gününü anlatmak için "haben" ve "sein" ile kurulan Perfekt yapılarını birleştir: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren" (Kalktım, kahvaltı yaptım ve işe gittim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gefrühstückt', 'ich', 'habe'] },
+        correctAnswer: { order: ['ich', 'habe', 'gefrühstückt'] },
+        explanation: 'Position 2 ist das konjugierte Verb ("habe"), das Partizip II steht am Ende.',
+      },
+      {
+        lessonId: a2Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I went to work' (mit 'fahren', im Perfekt)?" },
+        correctAnswer: { accepted: ['ich bin zur arbeit gefahren'] },
+        explanation: '"Ich bin zur Arbeit gefahren" bedeutet "I went to work" - "fahren" braucht "sein".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Lesson2.id, word: 'bleiben', translationEn: 'to stay', translationTr: 'kalmak', exampleSentence: 'Er ist zu Hause geblieben.' },
+      { lessonId: a2Lesson2.id, word: 'aufwachen', translationEn: 'to wake up', translationTr: 'uyanmak', exampleSentence: 'Ich bin früh aufgewacht.' },
+      { lessonId: a2Lesson3.id, word: 'letzte Woche', translationEn: 'last week', translationTr: 'geçen hafta', exampleSentence: 'Letzte Woche war ich krank.' },
+      { lessonId: a2Lesson3.id, word: 'besuchen', translationEn: 'to visit', translationTr: 'ziyaret etmek', exampleSentence: 'Vor zwei Tagen habe ich meine Oma besucht.' },
+      { lessonId: a2Lesson4.id, word: 'die Arbeit', translationEn: 'work / job', translationTr: 'iş', exampleSentence: 'Ich bin zur Arbeit gefahren.' },
+      { lessonId: a2Lesson4.id, word: 'frühstücken', translationEn: 'to have breakfast', translationTr: 'kahvaltı yapmak', exampleSentence: 'Ich habe gefrühstückt.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
