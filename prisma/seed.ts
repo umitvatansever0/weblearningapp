@@ -3709,6 +3709,169 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 12: Beruf & Bewerbung (4 lessons) ---
+  const a2Unit12 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 12, titleDe: 'Beruf & Bewerbung', titleEn: 'Profession & Application', titleTr: 'Meslek & İş Başvurusu' },
+  })
+
+  const a2Unit12Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit12.id,
+      order: 1,
+      grammarTopic: 'Berufe: Wortschatz',
+      explanationDe:
+        'Viele Berufsbezeichnungen haben eine maskuline und eine feminine Form, oft mit der Endung "-in": der Lehrer / die Lehrerin, der Arzt / die Ärztin. Beispiel: "Er ist Lehrer. Sie ist Ärztin."',
+      explanationEn:
+        'Many profession names have a masculine and a feminine form, often with the ending "-in": der Lehrer / die Lehrerin (teacher), der Arzt / die Ärztin (doctor). Example: "Er ist Lehrer. Sie ist Ärztin" (He is a teacher. She is a doctor).',
+      explanationTr:
+        'Birçok meslek adının eril ve dişil bir biçimi vardır, genellikle "-in" ekiyle: der Lehrer / die Lehrerin (öğretmen), der Arzt / die Ärztin (doktor). Örnek: "Er ist Lehrer. Sie ist Ärztin" (O bir öğretmen. O bir doktor).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit12Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Meine Schwester ist ___. Sie arbeitet im Krankenhaus.', options: ['Ärztin', 'Lehrer', 'Kellner', 'Verkäufer'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Im Krankenhaus arbeitet eine Ärztin.',
+      },
+      {
+        lessonId: a2Unit12Lesson1.id,
+        order: 2,
+        type: 'MATCHING',
+        data: {
+          lefts: ['der Lehrer', 'die Ärztin', 'der Kellner'],
+          rights: ['im Krankenhaus', 'im Restaurant', 'in der Schule'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Lehrer', right: 'in der Schule' },
+            { left: 'die Ärztin', right: 'im Krankenhaus' },
+            { left: 'der Kellner', right: 'im Restaurant' },
+          ],
+        },
+        explanation: 'Der Lehrer arbeitet in der Schule, die Ärztin im Krankenhaus, der Kellner im Restaurant.',
+      },
+    ],
+  })
+
+  const a2Unit12Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit12.id,
+      order: 2,
+      grammarTopic: 'Über den Beruf sprechen',
+      explanationDe:
+        'Um über den eigenen Beruf zu sprechen, benutzt man "Ich arbeite als + Beruf" oder "Ich bin von Beruf + Beruf" (ohne Artikel). Beispiel: "Ich arbeite als Ingenieur." "Ich bin von Beruf Verkäuferin."',
+      explanationEn:
+        'To talk about your own profession, use "Ich arbeite als + profession" or "Ich bin von Beruf + profession" (without an article). Example: "Ich arbeite als Ingenieur" (I work as an engineer). "Ich bin von Beruf Verkäuferin" (I am a saleswoman by profession).',
+      explanationTr:
+        'Kendi mesleğinden bahsetmek için "Ich arbeite als + meslek" ya da "Ich bin von Beruf + meslek" (artikelsiz) kullanılır. Örnek: "Ich arbeite als Ingenieur." "Ich bin von Beruf Verkäuferin."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit12Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich arbeite ___ Ingenieur.' },
+        correctAnswer: { accepted: ['als'] },
+        explanation: '"Arbeiten als" + Beruf ohne Artikel.',
+      },
+      {
+        lessonId: a2Unit12Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bin', 'ich', 'Beruf', 'von', 'Verkäuferin'] },
+        correctAnswer: { order: ['ich', 'bin', 'von', 'Beruf', 'Verkäuferin'] },
+        explanation: 'Reihenfolge: Subjekt, Verb, "von Beruf", Berufsbezeichnung.',
+      },
+    ],
+  })
+
+  const a2Unit12Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit12.id,
+      order: 3,
+      grammarTopic: 'Lebenslauf & Bewerbung: Wortschatz',
+      explanationDe:
+        'Wichtige Wörter für Lebenslauf und Bewerbung: die Erfahrung, die Bewerbung, das Vorstellungsgespräch. Beispiel: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung."',
+      explanationEn:
+        'Important words for a résumé and job application: die Erfahrung (experience), die Bewerbung (application), das Vorstellungsgespräch (job interview). Example: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung" (I am writing an application. I have three years of experience).',
+      explanationTr:
+        'Özgeçmiş ve iş başvurusu için önemli kelimeler: die Erfahrung (deneyim), die Bewerbung (başvuru), das Vorstellungsgespräch (iş görüşmesi). Örnek: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung" (Bir başvuru yazıyorum. Üç yıllık deneyimim var).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit12Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich schreibe eine ___ für die neue Stelle.', options: ['Bewerbung', 'Erfahrung', 'Frage', 'Antwort'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Man schreibt eine Bewerbung für eine Stelle.',
+      },
+      {
+        lessonId: a2Unit12Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I have three years of experience' (mit 'Erfahrung')?" },
+        correctAnswer: { accepted: ['ich habe drei jahre erfahrung'] },
+        explanation: '"Ich habe drei Jahre Erfahrung" bedeutet "I have three years of experience".',
+      },
+    ],
+  })
+
+  const a2Unit12Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit12.id,
+      order: 4,
+      grammarTopic: 'Im Vorstellungsgespräch: Fragen und Antworten',
+      explanationDe:
+        'Im Vorstellungsgespräch benutzt man oft Modalverben in der höflichen "Sie"-Form: "Können Sie mir Ihre Stärken beschreiben?" "Wann können Sie beginnen?" Wiederholung: das Modalverb steht konjugiert an Position 2, der Infinitiv am Satzende.',
+      explanationEn:
+        'Job interviews often use modal verbs in the polite "Sie" form: "Können Sie mir Ihre Stärken beschreiben?" (Can you describe your strengths?) "Wann können Sie beginnen?" (When can you start?) Review: the conjugated modal verb is in position 2, the infinitive at the end of the sentence.',
+      explanationTr:
+        'İş görüşmelerinde genellikle saygılı "Sie" biçiminde kip fiilleri kullanılır: "Können Sie mir Ihre Stärken beschreiben?" (Güçlü yönlerinizi anlatabilir misiniz?) "Wann können Sie beginnen?" (Ne zaman başlayabilirsiniz?) Tekrar: çekimli kip fiili 2. sırada, mastar cümle sonunda yer alır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit12Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Sie mir bitte Ihre Stärken beschreiben?', options: ['Können', 'Kann', 'Kannst', 'Könnt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit der höflichen Anrede "Sie" benutzt man "Können".',
+      },
+      {
+        lessonId: a2Unit12Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['beginnen', 'Sie', 'wann', 'können'] },
+        correctAnswer: { order: ['wann', 'können', 'Sie', 'beginnen'] },
+        explanation: 'Reihenfolge: Fragewort, Modalverb, Subjekt, Infinitiv am Ende.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit12Lesson1.id, word: 'der Lehrer', translationEn: 'the teacher', translationTr: 'öğretmen', exampleSentence: 'Der Lehrer arbeitet in der Schule.' },
+      { lessonId: a2Unit12Lesson1.id, word: 'die Ärztin', translationEn: 'the (female) doctor', translationTr: 'kadın doktor', exampleSentence: 'Die Ärztin arbeitet im Krankenhaus.' },
+      { lessonId: a2Unit12Lesson2.id, word: 'der Beruf', translationEn: 'the profession / job', translationTr: 'meslek', exampleSentence: 'Was bist du von Beruf?' },
+      { lessonId: a2Unit12Lesson2.id, word: 'verdienen', translationEn: 'to earn', translationTr: 'kazanmak', exampleSentence: 'Ich verdiene gut in meinem Beruf.' },
+      { lessonId: a2Unit12Lesson3.id, word: 'die Erfahrung', translationEn: 'the experience', translationTr: 'deneyim', exampleSentence: 'Ich habe drei Jahre Erfahrung.' },
+      { lessonId: a2Unit12Lesson3.id, word: 'die Bewerbung', translationEn: 'the application', translationTr: 'iş başvurusu', exampleSentence: 'Ich schreibe eine Bewerbung für die neue Stelle.' },
+      { lessonId: a2Unit12Lesson4.id, word: 'das Vorstellungsgespräch', translationEn: 'the job interview', translationTr: 'iş görüşmesi', exampleSentence: 'Ich habe morgen ein Vorstellungsgespräch.' },
+      { lessonId: a2Unit12Lesson4.id, word: 'die Stärke', translationEn: 'the strength', translationTr: 'güçlü yön', exampleSentence: 'Können Sie mir Ihre Stärken beschreiben?' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
