@@ -19,6 +19,14 @@ describe('getUnitsForLevel', () => {
   })
 })
 
+describe('getUnitsForLevel (A2)', () => {
+  it('returns 12 A2 units with four lessons each', async () => {
+    const units = await getUnitsForLevel('A2', 'nonexistent-user-id')
+    expect(units).toHaveLength(12)
+    units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
+  })
+})
+
 describe('getLessonWithExercises', () => {
   it('returns lesson exercises without leaking correctAnswer', async () => {
     const units = await getUnitsForLevel('A1', 'nonexistent-user-id')
