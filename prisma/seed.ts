@@ -2059,6 +2059,130 @@ async function main() {
     ],
   })
 
+  const b1Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit.id,
+      order: 2,
+      grammarTopic: "Nebensätze mit 'dass'",
+      explanationDe:
+        'Nebensätze mit "dass" leiten eine indirekte Aussage oder Meinung ein; das konjugierte Verb steht am Ende des Nebensatzes, z. B. "Ich glaube, dass er Recht hat."',
+      explanationEn:
+        '"Dass" (that) clauses introduce a reported statement or opinion; the conjugated verb moves to the end of the clause, e.g. "Ich glaube, dass er Recht hat" (I believe that he is right).',
+      explanationTr:
+        '"Dass" (ki/-dığı) cümleleri aktarılan bir ifadeyi ya da görüşü tanıtır; çekimli fiil cümlenin sonuna gider, örn. "Ich glaube, dass er Recht hat" (Onun haklı olduğuna inanıyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich glaube, dass er Recht ___.', options: ['hat', 'habe', 'haben', 'hast'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Im dass-Satz bleibt das Verb konjugiert und steht am Ende: "er hat".',
+      },
+      {
+        lessonId: b1Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie sagt, dass sie morgen ___. (kommen)' },
+        correctAnswer: { accepted: ['kommt'] },
+        explanation: 'Mit "sie" (Einzahl) benutzt man im dass-Satz "kommt".',
+      },
+    ],
+  })
+
+  const b1Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit.id,
+      order: 3,
+      grammarTopic: "Nebensätze mit 'wenn'",
+      explanationDe:
+        'Nebensätze mit "wenn" drücken eine Bedingung oder ein wiederholtes Ereignis aus; das Verb steht am Ende, z. B. "Wenn es regnet, bleibe ich zu Hause."',
+      explanationEn:
+        '"Wenn" (if/when) clauses express a condition or a repeated event; the verb moves to the end, e.g. "Wenn es regnet, bleibe ich zu Hause" (If it rains, I stay home).',
+      explanationTr:
+        '"Wenn" (eğer/-dığında) cümleleri bir koşulu ya da tekrarlanan bir olayı ifade eder; fiil cümlenin sonuna gider, örn. "Wenn es regnet, bleibe ich zu Hause" (Yağmur yağarsa evde kalırım).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Lesson3.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['regnet', 'wenn', 'es'] },
+        correctAnswer: { order: ['wenn', 'es', 'regnet'] },
+        explanation: 'Im wenn-Satz steht das Verb am Ende: "wenn es regnet".',
+      },
+      {
+        lessonId: b1Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wenn es kalt ___, ziehe ich eine Jacke an. (sein)' },
+        correctAnswer: { accepted: ['ist'] },
+        explanation: 'Im wenn-Satz benutzt man für "es" die Form "ist".',
+      },
+    ],
+  })
+
+  const b1Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: weil/dass/wenn',
+      explanationDe:
+        'Wiederholung: "weil" nennt einen Grund, "dass" leitet eine Aussage ein, "wenn" nennt eine Bedingung. In allen drei Nebensätzen steht das Verb am Ende, z. B. "..., weil es regnet."',
+      explanationEn:
+        'Review: "weil" gives a reason, "dass" introduces a statement, "wenn" gives a condition. In all three subordinate clauses the verb goes to the end, e.g. "..., weil es regnet" (..., because it is raining).',
+      explanationTr:
+        'Tekrar: "weil" bir sebep bildirir, "dass" bir ifadeyi tanıtır, "wenn" bir koşul bildirir. Bu üç yan cümlede de fiil sona gider, örn. "..., weil es regnet" (..., çünkü yağmur yağıyor).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: {
+          lefts: ['weil', 'dass', 'wenn'],
+          rights: ['Bedingung', 'Grund', 'Aussage'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'weil', right: 'Grund' },
+            { left: 'dass', right: 'Aussage' },
+            { left: 'wenn', right: 'Bedingung' },
+          ],
+        },
+        explanation: '"Weil" = Grund, "dass" = Aussage, "wenn" = Bedingung.',
+      },
+      {
+        lessonId: b1Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welches Wort benutzt man, um einen Grund zu nennen: 'weil', 'dass' oder 'wenn'?" },
+        correctAnswer: { accepted: ['weil'] },
+        explanation: '"Weil" gibt einen Grund an.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Lesson.id, word: 'der Grund', translationEn: 'the reason', translationTr: 'sebep', exampleSentence: 'Der Grund für die Verspätung war der Stau.' },
+      { lessonId: b1Lesson.id, word: 'die Erkältung', translationEn: 'the cold (illness)', translationTr: 'nezle', exampleSentence: 'Ich habe eine Erkältung und bleibe im Bett.' },
+      { lessonId: b1Lesson2.id, word: 'glauben', translationEn: 'to believe', translationTr: 'inanmak', exampleSentence: 'Ich glaube, dass er Recht hat.' },
+      { lessonId: b1Lesson2.id, word: 'die Meinung', translationEn: 'the opinion', translationTr: 'görüş', exampleSentence: 'Er sagt seine Meinung immer offen.' },
+      { lessonId: b1Lesson3.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Wenn es regnet, bleibe ich zu Hause.' },
+      { lessonId: b1Lesson3.id, word: 'die Bedingung', translationEn: 'the condition', translationTr: 'koşul', exampleSentence: 'Das ist eine wichtige Bedingung.' },
+      { lessonId: b1Lesson4.id, word: 'wiederholen', translationEn: 'to repeat / review', translationTr: 'tekrar etmek', exampleSentence: 'Wir wiederholen die Grammatik.' },
+      { lessonId: b1Lesson4.id, word: 'die Ausrede', translationEn: 'the excuse', translationTr: 'bahane', exampleSentence: 'Das ist keine gute Ausrede.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },

@@ -37,4 +37,11 @@ describe('seed content', () => {
       new Set(['MULTIPLE_CHOICE', 'FILL_IN_BLANK', 'MATCHING', 'SENTENCE_ORDER', 'SHORT_ANSWER'])
     )
   })
+
+  it('has 12 B1 units with four lessons each', async () => {
+    const b1 = await prisma.level.findUniqueOrThrow({ where: { code: 'B1' } })
+    const units = await prisma.unit.findMany({ where: { levelId: b1.id }, include: { lessons: true } })
+    expect(units).toHaveLength(1)
+    units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
+  })
 })
