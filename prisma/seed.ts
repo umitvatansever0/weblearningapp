@@ -2346,6 +2346,169 @@ async function main() {
     ],
   })
 
+  // --- B1 Unit 3: Passiv im Präsens und Präteritum (4 lessons) ---
+  const b1Unit3 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 3, titleDe: 'Passiv im Präsens und Präteritum', titleEn: 'Passive Voice (Present & Simple Past)', titleTr: 'Edilgen Çatı (Şimdiki ve Geçmiş Zaman)' },
+  })
+
+  const b1Unit3Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit3.id,
+      order: 1,
+      grammarTopic: 'Passiv im Präsens',
+      explanationDe:
+        'Das Vorgangspassiv im Präsens wird mit "werden" + Partizip II gebildet, z. B. "Der Brief wird geschrieben."',
+      explanationEn:
+        'The present-tense passive is formed with "werden" + past participle, e.g. "Der Brief wird geschrieben" (The letter is being written).',
+      explanationTr:
+        'Şimdiki zaman edilgen çatı "werden" + Partizip II ile kurulur, örn. "Der Brief wird geschrieben" (Mektup yazılıyor).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit3Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Brief ___ geschrieben.', options: ['wird', 'ist', 'hat', 'wurde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präsens Passiv: "wird" + Partizip II.',
+      },
+      {
+        lessonId: b1Unit3Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Essen ___ gekocht. (Präsens Passiv von kochen)' },
+        correctAnswer: { accepted: ['wird'] },
+        explanation: 'Präsens Passiv von "kochen": "wird gekocht".',
+      },
+    ],
+  })
+
+  const b1Unit3Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit3.id,
+      order: 2,
+      grammarTopic: 'Passiv im Präteritum',
+      explanationDe:
+        'Das Passiv im Präteritum wird mit "wurde" + Partizip II gebildet, z. B. "Das Haus wurde 1990 gebaut."',
+      explanationEn:
+        'The simple-past passive is formed with "wurde" + past participle, e.g. "Das Haus wurde 1990 gebaut" (The house was built in 1990).',
+      explanationTr:
+        'Geçmiş zaman (Präteritum) edilgen çatı "wurde" + Partizip II ile kurulur, örn. "Das Haus wurde 1990 gebaut" (Ev 1990\'da inşa edildi).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit3Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Haus ___ 1990 gebaut.', options: ['wurde', 'wird', 'ist', 'war'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präteritum Passiv: "wurde" + Partizip II.',
+      },
+      {
+        lessonId: b1Unit3Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gebaut', 'Haus', 'wurde', 'Das'] },
+        correctAnswer: { order: ['Das', 'Haus', 'wurde', 'gebaut'] },
+        explanation: 'Wortstellung im Passiv Präteritum: Subjekt, "wurde", ..., Partizip II am Ende.',
+      },
+    ],
+  })
+
+  const b1Unit3Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit3.id,
+      order: 3,
+      grammarTopic: 'Passiv mit Modalverben',
+      explanationDe:
+        'Im Passiv mit Modalverben steht das Modalverb konjugiert, das Partizip II und "werden" (Infinitiv) stehen am Satzende, z. B. "Das Auto muss repariert werden."',
+      explanationEn:
+        'In the passive with modal verbs, the modal verb is conjugated while the past participle and "werden" (infinitive) go to the end of the sentence, e.g. "Das Auto muss repariert werden" (The car must be repaired).',
+      explanationTr:
+        'Modal fiilli edilgen çatıda modal fiil çekimli olur, Partizip II ve "werden" (mastar) cümlenin sonuna gider, örn. "Das Auto muss repariert werden" (Araba tamir edilmeli).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit3Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Auto muss repariert ___.', options: ['werden', 'wird', 'worden', 'sein'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Passiv mit Modalverb: Partizip II + "werden" am Satzende.',
+      },
+      {
+        lessonId: b1Unit3Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Aufgabe kann heute nicht ___ werden. (lösen)' },
+        correctAnswer: { accepted: ['gelöst'] },
+        explanation: 'Partizip II von "lösen" ist "gelöst".',
+      },
+    ],
+  })
+
+  const b1Unit3Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit3.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Passiv',
+      explanationDe:
+        'Wiederholung: Passiv Präsens ("wird" + Partizip II), Präteritum ("wurde" + Partizip II), mit Modalverben (Modalverb + Partizip II + "werden").',
+      explanationEn:
+        'Review: present passive ("wird" + past participle), simple-past passive ("wurde" + past participle), with modal verbs (modal + past participle + "werden").',
+      explanationTr:
+        'Tekrar: Şimdiki zaman edilgen ("wird" + Partizip II), geçmiş zaman edilgen ("wurde" + Partizip II), modal fiilli edilgen (modal fiil + Partizip II + "werden").',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit3Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: {
+          lefts: ['Präsens Passiv', 'Präteritum Passiv', 'Passiv mit Modalverb'],
+          rights: ['muss gebaut werden', 'wird gebaut', 'wurde gebaut'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'Präsens Passiv', right: 'wird gebaut' },
+            { left: 'Präteritum Passiv', right: 'wurde gebaut' },
+            { left: 'Passiv mit Modalverb', right: 'muss gebaut werden' },
+          ],
+        },
+        explanation: 'Präsens: wird + Partizip II; Präteritum: wurde + Partizip II; mit Modalverb: Modalverb + Partizip II + werden.',
+      },
+      {
+        lessonId: b1Unit3Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Ergänzen Sie: Passiv Präteritum = 'wurde' + ___ (Partizip II von 'bauen')" },
+        correctAnswer: { accepted: ['gebaut'] },
+        explanation: 'Partizip II von "bauen" ist "gebaut": "wurde gebaut".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit3Lesson1.id, word: 'der Brief', translationEn: 'the letter', translationTr: 'mektup', exampleSentence: 'Der Brief wird geschrieben.' },
+      { lessonId: b1Unit3Lesson1.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Ich schreibe einen Brief.' },
+      { lessonId: b1Unit3Lesson2.id, word: 'bauen', translationEn: 'to build', translationTr: 'inşa etmek', exampleSentence: 'Das Haus wurde 1990 gebaut.' },
+      { lessonId: b1Unit3Lesson2.id, word: 'das Jahr', translationEn: 'the year', translationTr: 'yıl', exampleSentence: 'In welchem Jahr wurde das Haus gebaut?' },
+      { lessonId: b1Unit3Lesson3.id, word: 'die Aufgabe', translationEn: 'the task', translationTr: 'görev', exampleSentence: 'Die Aufgabe muss gelöst werden.' },
+      { lessonId: b1Unit3Lesson3.id, word: 'lösen', translationEn: 'to solve', translationTr: 'çözmek', exampleSentence: 'Ich kann das Problem lösen.' },
+      { lessonId: b1Unit3Lesson4.id, word: 'das Problem', translationEn: 'the problem', translationTr: 'sorun', exampleSentence: 'Wir müssen das Problem lösen.' },
+      { lessonId: b1Unit3Lesson4.id, word: 'die Reparatur', translationEn: 'the repair', translationTr: 'tamirat', exampleSentence: 'Die Reparatur dauert zwei Stunden.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
