@@ -2183,6 +2183,169 @@ async function main() {
     ],
   })
 
+  // --- B1 Unit 2: Konjunktiv II (4 lessons) ---
+  const b1Unit2 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 2, titleDe: 'Konjunktiv II', titleEn: 'Subjunctive II (Konjunktiv II)', titleTr: 'Konjunktiv II (Dilek Kipi II)' },
+  })
+
+  const b1Unit2Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit2.id,
+      order: 1,
+      grammarTopic: "Konjunktiv II mit 'würde' + Infinitiv",
+      explanationDe:
+        'Mit "würde" + Infinitiv drückt man höfliche Wünsche oder irreale Situationen aus, z. B. "Ich würde gern reisen."',
+      explanationEn:
+        '"Würde" + infinitive expresses polite wishes or unreal/hypothetical situations, e.g. "Ich würde gern reisen" (I would like to travel).',
+      explanationTr:
+        '"Würde" + mastar, kibar dilekleri ya da gerçek dışı durumları ifade eder, örn. "Ich würde gern reisen" (Seyahat etmek isterdim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit2Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ gern ins Kino gehen.', options: ['würde', 'werde', 'wurde', 'würden'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Würde" + Infinitiv für "ich" drückt einen Wunsch aus.',
+      },
+      {
+        lessonId: b1Unit2Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie ___ gern nach Berlin reisen. (würde)' },
+        correctAnswer: { accepted: ['würde'] },
+        explanation: 'Mit "sie" (Einzahl) benutzt man "würde".',
+      },
+    ],
+  })
+
+  const b1Unit2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit2.id,
+      order: 2,
+      grammarTopic: "Konjunktiv II von 'sein': wäre",
+      explanationDe:
+        'Konjunktiv II von "sein" ist "wäre" (ich wäre, du wärst, er/sie/es wäre...). Es drückt einen irrealen oder hypothetischen Zustand aus, z. B. "Ich wäre gern reich."',
+      explanationEn:
+        'The Konjunktiv II of "sein" is "wäre" (ich wäre, du wärst, er/sie/es wäre...). It expresses an unreal or hypothetical state, e.g. "Ich wäre gern reich" (I would like to be rich).',
+      explanationTr:
+        '"Sein" fiilinin Konjunktiv II hali "wäre"dir (ich wäre, du wärst, er/sie/es wäre...). Gerçek dışı ya da varsayımsal bir durumu ifade eder, örn. "Ich wäre gern reich" (Zengin olmak isterdim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit2Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ gern reich.', options: ['wäre', 'bin', 'war', 'werde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv II von "sein" für "ich" ist "wäre".',
+      },
+      {
+        lessonId: b1Unit2Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie lautet die Konjunktiv-II-Form von 'sein' für 'du'?" },
+        correctAnswer: { accepted: ['wärst', 'du wärst'] },
+        explanation: 'Konjunktiv II von "sein" für "du" ist "wärst".',
+      },
+    ],
+  })
+
+  const b1Unit2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit2.id,
+      order: 3,
+      grammarTopic: "Konjunktiv II von 'haben': hätte",
+      explanationDe:
+        'Konjunktiv II von "haben" ist "hätte" (ich hätte, du hättest, er/sie/es hätte...). Man benutzt es für Wünsche, z. B. "Ich hätte gern mehr Freizeit."',
+      explanationEn:
+        'The Konjunktiv II of "haben" is "hätte" (ich hätte, du hättest, er/sie/es hätte...). It is used for wishes, e.g. "Ich hätte gern mehr Freizeit" (I would like to have more free time).',
+      explanationTr:
+        '"Haben" fiilinin Konjunktiv II hali "hätte"dir (ich hätte, du hättest, er/sie/es hätte...). Dilekler için kullanılır, örn. "Ich hätte gern mehr Freizeit" (Daha fazla boş zamanım olsun isterdim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit2Lesson3.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ gern mehr Freizeit. (haben, Konjunktiv II)' },
+        correctAnswer: { accepted: ['hätte'] },
+        explanation: 'Konjunktiv II von "haben" für "ich" ist "hätte".',
+      },
+      {
+        lessonId: b1Unit2Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['hätte', 'gern', 'ich', 'Zeit'] },
+        correctAnswer: { order: ['ich', 'hätte', 'gern', 'Zeit'] },
+        explanation: 'Wortstellung: Subjekt, Verb, dann "gern" + Objekt.',
+      },
+    ],
+  })
+
+  const b1Unit2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit2.id,
+      order: 4,
+      grammarTopic: 'Höfliche Bitten & Wünsche mit Konjunktiv II',
+      explanationDe:
+        'Konjunktiv II macht Bitten höflicher, z. B. "Könnten Sie mir bitte helfen?" statt "Können Sie mir helfen?"',
+      explanationEn:
+        'Konjunktiv II makes requests more polite, e.g. "Könnten Sie mir bitte helfen?" (Could you please help me?) instead of "Können Sie mir helfen?"',
+      explanationTr:
+        'Konjunktiv II, ricaları daha kibar yapar, örn. "Können Sie mir helfen?" yerine "Könnten Sie mir bitte helfen?" (Bana yardım edebilir misiniz, lütfen?)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit2Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Sie mir bitte helfen?', options: ['Könnten', 'Können', 'Konnten', 'Kann'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Könnten" ist die höfliche Konjunktiv-II-Form von "können".',
+      },
+      {
+        lessonId: b1Unit2Lesson4.id,
+        order: 2,
+        type: 'MATCHING',
+        data: {
+          lefts: ['können', 'mögen', 'dürfen'],
+          rights: ['möchten', 'dürften', 'könnten'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'können', right: 'könnten' },
+            { left: 'mögen', right: 'möchten' },
+            { left: 'dürfen', right: 'dürften' },
+          ],
+        },
+        explanation: 'Das sind die höflichen Konjunktiv-II-Formen von können, mögen, dürfen.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit2Lesson1.id, word: 'reisen', translationEn: 'to travel', translationTr: 'seyahat etmek', exampleSentence: 'Ich würde gern nach Italien reisen.' },
+      { lessonId: b1Unit2Lesson1.id, word: 'mehr', translationEn: 'more', translationTr: 'daha fazla', exampleSentence: 'Ich möchte mehr Zeit haben.' },
+      { lessonId: b1Unit2Lesson2.id, word: 'reich', translationEn: 'rich', translationTr: 'zengin', exampleSentence: 'Ich wäre gern reich.' },
+      { lessonId: b1Unit2Lesson2.id, word: 'der Zustand', translationEn: 'the state / condition', translationTr: 'durum', exampleSentence: 'Das ist ein guter Zustand.' },
+      { lessonId: b1Unit2Lesson3.id, word: 'die Freizeit', translationEn: 'the free time', translationTr: 'boş zaman', exampleSentence: 'Ich hätte gern mehr Freizeit.' },
+      { lessonId: b1Unit2Lesson3.id, word: 'die Lust', translationEn: 'the desire / fancy', translationTr: 'istek', exampleSentence: 'Ich hätte Lust auf Kaffee.' },
+      { lessonId: b1Unit2Lesson4.id, word: 'die Bitte', translationEn: 'the request', translationTr: 'rica', exampleSentence: 'Das ist eine höfliche Bitte.' },
+      { lessonId: b1Unit2Lesson4.id, word: 'höflich', translationEn: 'polite', translationTr: 'kibar', exampleSentence: 'Das ist eine höfliche Frage.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
