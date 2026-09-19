@@ -3930,6 +3930,167 @@ async function main() {
     ],
   })
 
+  // --- B1 Unit 13: Wortstellung: Tekamolo (4 lessons) ---
+  const b1Unit13 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 13, titleDe: 'Wortstellung: Tekamolo', titleEn: 'Word Order: Time-Cause-Manner-Place', titleTr: 'Sözcük Dizilimi: Zaman-Sebep-Tarz-Yer' },
+  })
+
+  const b1Unit13Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit13.id,
+      order: 1,
+      grammarTopic: 'Tekamolo: Temporal vor Kausal',
+      explanationDe:
+        'Wenn mehrere Angaben im Satz stehen, gilt die Reihenfolge "Tekamolo": Temporal (wann) - Kausal (warum) - Modal (wie) - Lokal (wo). "Ich fahre heute wegen der Ferien mit dem Auto nach Berlin."',
+      explanationEn:
+        'When a sentence has several adverbials, the order follows "Tekamolo": Temporal (when) - Kausal (why) - Modal (how) - Lokal (where). "Ich fahre heute wegen der Ferien mit dem Auto nach Berlin" (I\'m driving to Berlin today because of the holidays by car).',
+      explanationTr:
+        'Cümlede birden fazla zarf tümleci varsa "Tekamolo" sırası geçerlidir: Zaman - Sebep - Tarz - Yer. "Ich fahre heute wegen der Ferien mit dem Auto nach Berlin."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit13Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Reihenfolge ist korrekt (Tekamolo)?', options: ['Temporal - Kausal - Modal - Lokal', 'Lokal - Modal - Kausal - Temporal', 'Modal - Temporal - Lokal - Kausal', 'Kausal - Lokal - Temporal - Modal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Tekamolo: Temporal, Kausal, Modal, Lokal.',
+      },
+      {
+        lessonId: b1Unit13Lesson1.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['heute', 'ich', 'fahre', 'nach', 'Berlin'] },
+        correctAnswer: { order: ['ich', 'fahre', 'heute', 'nach', 'Berlin'] },
+        explanation: 'Verb Position 2, dann Temporal ("heute"), dann Lokal ("nach Berlin").',
+      },
+    ],
+  })
+
+  const b1Unit13Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit13.id,
+      order: 2,
+      grammarTopic: 'Tekamolo: Modal vor Lokal',
+      explanationDe:
+        'Die Modalangabe (wie) steht vor der Lokalangabe (wo): "Sie fährt mit dem Zug nach München" — nicht "nach München mit dem Zug".',
+      explanationEn:
+        'The manner adverbial (how) comes before the place adverbial (where): "Sie fährt mit dem Zug nach München" (She travels by train to Munich) — not "nach München mit dem Zug".',
+      explanationTr:
+        'Tarz zarfı (nasıl), yer zarfından (nerede) önce gelir: "Sie fährt mit dem Zug nach München" — "nach München mit dem Zug" değil.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit13Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz hat die korrekte Wortstellung?', options: ['Sie fährt mit dem Zug nach München.', 'Sie fährt nach München mit dem Zug.', 'Sie fährt nach mit dem Zug München.', 'Mit dem Zug sie fährt nach München.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Modal ("mit dem Zug") steht vor Lokal ("nach München").',
+      },
+      {
+        lessonId: b1Unit13Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er geht ___ (schnell) ___ (zur Arbeit). (Modal zuerst, dann Lokal)' },
+        correctAnswer: { accepted: ['schnell zur arbeit'] },
+        explanation: 'Modal vor Lokal: "schnell zur Arbeit".',
+      },
+    ],
+  })
+
+  const b1Unit13Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit13.id,
+      order: 3,
+      grammarTopic: 'Tekamolo mit allen vier Angaben',
+      explanationDe:
+        'Ein vollständiges Beispiel: "Wir fliegen morgen (temporal) wegen der Konferenz (kausal) mit dem Flugzeug (modal) nach Wien (lokal)."',
+      explanationEn:
+        'A complete example: "Wir fliegen morgen (temporal) wegen der Konferenz (kausal) mit dem Flugzeug (modal) nach Wien (lokal)" (We are flying tomorrow because of the conference by plane to Vienna).',
+      explanationTr:
+        'Tam bir örnek: "Wir fliegen morgen (zaman) wegen der Konferenz (sebep) mit dem Flugzeug (tarz) nach Wien (yer)."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit13Lesson3.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['morgen', 'wir', 'fliegen', 'nach', 'Wien'] },
+        correctAnswer: { order: ['wir', 'fliegen', 'morgen', 'nach', 'Wien'] },
+        explanation: 'Verb Position 2, dann Temporal, dann Lokal.',
+      },
+      {
+        lessonId: b1Unit13Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "In Tekamolo, was kommt vor 'Modal' (wie)?" },
+        correctAnswer: { accepted: ['kausal'] },
+        explanation: 'Reihenfolge: Temporal, Kausal, Modal, Lokal.',
+      },
+    ],
+  })
+
+  const b1Unit13Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit13.id,
+      order: 4,
+      grammarTopic: 'Abschlussübung: Tekamolo',
+      explanationDe:
+        'Wiederholung der Tekamolo-Regel: Temporal - Kausal - Modal - Lokal. Diese Reihenfolge hilft, klare und natürliche Sätze zu bilden.',
+      explanationEn:
+        'Review of the Tekamolo rule: Temporal - Kausal - Modal - Lokal. This order helps form clear, natural sentences.',
+      explanationTr:
+        'Tekamolo kuralının tekrarı: Zaman - Sebep - Tarz - Yer. Bu sıralama net ve doğal cümleler kurmaya yardımcı olur.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit13Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich gehe ___ ins Kino. (heute Abend, aus Langeweile, zu Fuß — welche Reihenfolge?)', options: ['heute Abend aus Langeweile zu Fuß', 'zu Fuß aus Langeweile heute Abend', 'aus Langeweile zu Fuß heute Abend', 'zu Fuß heute Abend aus Langeweile'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Tekamolo: Temporal (heute Abend), Kausal (aus Langeweile), Modal (zu Fuß).',
+      },
+      {
+        lessonId: b1Unit13Lesson4.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['Temporal', 'Kausal', 'Modal', 'Lokal'], rights: ['heute', 'wegen der Ferien', 'mit dem Auto', 'nach Berlin'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Temporal', right: 'heute' },
+            { left: 'Kausal', right: 'wegen der Ferien' },
+            { left: 'Modal', right: 'mit dem Auto' },
+            { left: 'Lokal', right: 'nach Berlin' },
+          ],
+        },
+        explanation: 'Beispiele für jede Tekamolo-Kategorie.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit13Lesson1.id, word: 'die Ferien', translationEn: 'the holidays', translationTr: 'tatil', exampleSentence: 'Wir fahren wegen der Ferien nach Berlin.' },
+      { lessonId: b1Unit13Lesson1.id, word: 'fahren', translationEn: 'to drive / travel', translationTr: 'gitmek (araçla)', exampleSentence: 'Ich fahre heute nach Berlin.' },
+      { lessonId: b1Unit13Lesson2.id, word: 'der Zug', translationEn: 'the train', translationTr: 'tren', exampleSentence: 'Sie fährt mit dem Zug nach München.' },
+      { lessonId: b1Unit13Lesson2.id, word: 'die Arbeit', translationEn: 'the work', translationTr: 'iş', exampleSentence: 'Er geht schnell zur Arbeit.' },
+      { lessonId: b1Unit13Lesson3.id, word: 'die Konferenz', translationEn: 'the conference', translationTr: 'konferans', exampleSentence: 'Wir fliegen wegen der Konferenz nach Wien.' },
+      { lessonId: b1Unit13Lesson3.id, word: 'das Flugzeug', translationEn: 'the airplane', translationTr: 'uçak', exampleSentence: 'Wir fliegen mit dem Flugzeug.' },
+      { lessonId: b1Unit13Lesson4.id, word: 'die Langeweile', translationEn: 'the boredom', translationTr: 'sıkıntı', exampleSentence: 'Ich gehe aus Langeweile ins Kino.' },
+      { lessonId: b1Unit13Lesson4.id, word: 'zu Fuß', translationEn: 'on foot', translationTr: 'yürüyerek', exampleSentence: 'Ich gehe zu Fuß zur Arbeit.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
