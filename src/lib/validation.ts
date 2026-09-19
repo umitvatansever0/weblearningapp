@@ -11,6 +11,18 @@ export const registerSchema = z.object({
 
 export type RegisterInput = z.infer<typeof registerSchema>
 
+export const forgotPasswordSchema = z.object({
+  email: z
+    .string()
+    .email()
+    .transform((email) => email.toLowerCase()),
+})
+
+export const resetPasswordSchema = z.object({
+  token: z.string().min(1, 'Token is required'),
+  password: z.string().min(8, 'Password must be at least 8 characters'),
+})
+
 export const userRoleUpdateSchema = z.object({
   role: z.enum(['USER', 'ADMIN']),
 })
