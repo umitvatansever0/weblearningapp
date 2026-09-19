@@ -3301,6 +3301,320 @@ async function main() {
     ],
   })
 
+  // --- B1 Unit 9: Adjektivdeklination (4 lessons) ---
+  const b1Unit9 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 9, titleDe: 'Adjektivdeklination', titleEn: 'Adjective Declension', titleTr: 'Sıfat Çekimi' },
+  })
+
+  const b1Unit9Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit9.id,
+      order: 1,
+      grammarTopic: 'Adjektivdeklination im Nominativ und Akkusativ',
+      explanationDe:
+        'Nach bestimmtem Artikel im Akkusativ ändert sich nur die maskuline Form: "Ich sehe den großen Mann" (vs. Nominativ "der große Mann"). Feminin/neutrum/Plural bleiben wie im Nominativ.',
+      explanationEn:
+        'After the definite article in the accusative, only the masculine form changes: "Ich sehe den großen Mann" (I see the tall man) vs. nominative "der große Mann". Feminine/neuter/plural stay the same as the nominative.',
+      explanationTr:
+        'Belirli artikelle -i hâlinde sadece eril biçim değişir: "Ich sehe den großen Mann" (yalın hâl "der große Mann"). Dişil/nötr/çoğul yalın hâldeki gibi kalır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit9Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich sehe den ___ Mann. (groß, Akkusativ)', options: ['große', 'großen', 'großer', 'großes'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Akkusativ maskulin nach "den": Adjektiv + -en.',
+      },
+      {
+        lessonId: b1Unit9Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich kaufe die ___ Tasche. (rot, Akkusativ feminin)' },
+        correctAnswer: { accepted: ['rote'] },
+        explanation: 'Akkusativ feminin bleibt wie Nominativ: Adjektiv + -e.',
+      },
+    ],
+  })
+
+  const b1Unit9Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit9.id,
+      order: 2,
+      grammarTopic: 'Adjektivdeklination im Dativ',
+      explanationDe:
+        'Im Dativ endet das Adjektiv nach bestimmtem und unbestimmtem Artikel immer auf -en: "mit dem großen Mann", "mit einem großen Mann".',
+      explanationEn:
+        'In the dative, the adjective always ends in -en after both definite and indefinite articles: "mit dem großen Mann" (with the tall man), "mit einem großen Mann" (with a tall man).',
+      explanationTr:
+        '-e hâlinde sıfat, belirli ve belirsiz artikelden sonra her zaman -en ile biter: "mit dem großen Mann", "mit einem großen Mann".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit9Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich spreche mit dem ___ Mann. (groß, Dativ)', options: ['große', 'großen', 'großer', 'großes'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Dativ: Adjektiv immer + -en.',
+      },
+      {
+        lessonId: b1Unit9Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welche Endung hat das Adjektiv im Dativ IMMER (nach dem/einem/der/einer)?" },
+        correctAnswer: { accepted: ['-en', 'en'] },
+        explanation: 'Dativ-Adjektivendung ist immer "-en".',
+      },
+    ],
+  })
+
+  const b1Unit9Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit9.id,
+      order: 3,
+      grammarTopic: 'Adjektivdeklination ohne Artikel',
+      explanationDe:
+        'Ohne Artikel trägt das Adjektiv die Endung, die sonst der Artikel hätte (starke Deklination): "frisches Brot" (wie "das"), "guter Wein" (wie "der"), "kalte Milch" (wie "die").',
+      explanationEn:
+        'Without an article, the adjective takes the ending the article would have had (strong declension): "frisches Brot" (fresh bread, like "das"), "guter Wein" (good wine, like "der"), "kalte Milch" (cold milk, like "die").',
+      explanationTr:
+        'Artikelsiz sıfat, artikelin taşıyacağı eki alır (güçlü çekim): "frisches Brot" ("das" gibi), "guter Wein" ("der" gibi), "kalte Milch" ("die" gibi).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit9Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Brot schmeckt gut. (frisch, ohne Artikel)', options: ['Frisches', 'Frische', 'Frischen', 'Frischer'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Ohne Artikel neutral: Adjektiv + -es (wie "das").',
+      },
+      {
+        lessonId: b1Unit9Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Wein ist teuer. (gut, ohne Artikel, maskulin)' },
+        correctAnswer: { accepted: ['guter'] },
+        explanation: 'Ohne Artikel maskulin: Adjektiv + -er (wie "der").',
+      },
+    ],
+  })
+
+  const b1Unit9Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit9.id,
+      order: 4,
+      grammarTopic: 'Übung: Adjektivdeklination',
+      explanationDe:
+        'Wiederholung: Nominativ/Akkusativ, Dativ (immer -en) und Deklination ohne Artikel. "Der freundliche Mann gibt dem kleinen Kind frisches Obst."',
+      explanationEn:
+        'Review: nominative/accusative, dative (always -en), and declension without an article. "Der freundliche Mann gibt dem kleinen Kind frisches Obst" (The friendly man gives the small child fresh fruit).',
+      explanationTr:
+        'Tekrar: yalın/-i hâli, -e hâli (her zaman -en) ve artikelsiz çekim. "Der freundliche Mann gibt dem kleinen Kind frisches Obst".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit9Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Kind', 'dem', 'kleinen', 'ich', 'helfe'] },
+        correctAnswer: { order: ['ich', 'helfe', 'dem', 'kleinen', 'Kind'] },
+        explanation: '"Helfen" + Dativ: "dem kleinen Kind".',
+      },
+      {
+        lessonId: b1Unit9Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der freundliche Mann gibt dem kleinen Kind ___ Obst. (frisch, ohne Artikel)', options: ['frisches', 'frische', 'frischen', 'frischer'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Ohne Artikel neutral Akkusativ: Adjektiv + -es.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit9Lesson1.id, word: 'kaufen', translationEn: 'to buy', translationTr: 'satın almak', exampleSentence: 'Ich kaufe die rote Tasche.' },
+      { lessonId: b1Unit9Lesson1.id, word: 'sehen', translationEn: 'to see', translationTr: 'görmek', exampleSentence: 'Ich sehe den großen Mann.' },
+      { lessonId: b1Unit9Lesson2.id, word: 'sprechen mit', translationEn: 'to talk to/with', translationTr: 'konuşmak (biriyle)', exampleSentence: 'Ich spreche mit dem großen Mann.' },
+      { lessonId: b1Unit9Lesson2.id, word: 'geben', translationEn: 'to give', translationTr: 'vermek', exampleSentence: 'Ich gebe dem Kind ein Geschenk.' },
+      { lessonId: b1Unit9Lesson3.id, word: 'das Brot', translationEn: 'the bread', translationTr: 'ekmek', exampleSentence: 'Frisches Brot schmeckt gut.' },
+      { lessonId: b1Unit9Lesson3.id, word: 'der Wein', translationEn: 'the wine', translationTr: 'şarap', exampleSentence: 'Guter Wein ist teuer.' },
+      { lessonId: b1Unit9Lesson4.id, word: 'freundlich', translationEn: 'friendly', translationTr: 'arkadaş canlısı', exampleSentence: 'Der freundliche Mann hilft mir.' },
+      { lessonId: b1Unit9Lesson4.id, word: 'das Obst', translationEn: 'the fruit', translationTr: 'meyve', exampleSentence: 'Ich esse gern frisches Obst.' },
+    ],
+  })
+
+  // --- B1 Unit 10: obwohl/während/nachdem (4 lessons) ---
+  const b1Unit10 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 10, titleDe: 'obwohl / während / nachdem', titleEn: 'although / while / after', titleTr: 'her ne kadar / esnasında / -dikten sonra' },
+  })
+
+  const b1Unit10Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit10.id,
+      order: 1,
+      grammarTopic: '"obwohl" (Konzessivsatz)',
+      explanationDe:
+        '"Obwohl" (although) leitet einen konzessiven Nebensatz ein, das Verb steht am Ende: "Ich gehe spazieren, obwohl es regnet."',
+      explanationEn:
+        '"Obwohl" (although) introduces a concessive clause, with the verb at the end: "Ich gehe spazieren, obwohl es regnet" (I\'m going for a walk although it\'s raining).',
+      explanationTr:
+        '"Obwohl" (her ne kadar) bir zıtlık cümleciği başlatır, fiil sonda yer alır: "Ich gehe spazieren, obwohl es regnet".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit10Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich gehe spazieren, ___ es regnet.', options: ['obwohl', 'weil', 'dass', 'wenn'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Obwohl" (although) drückt einen Gegensatz aus.',
+      },
+      {
+        lessonId: b1Unit10Lesson1.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['regnet', 'es', 'obwohl'] },
+        correctAnswer: { order: ['obwohl', 'es', 'regnet'] },
+        explanation: 'Verb am Ende im Nebensatz mit "obwohl".',
+      },
+    ],
+  })
+
+  const b1Unit10Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit10.id,
+      order: 2,
+      grammarTopic: '"während" (Temporal/Gegensatz)',
+      explanationDe:
+        '"Während" kann Gleichzeitigkeit ("while") oder Gegensatz ("whereas") ausdrücken: "Während ich koche, liest sie." / "Er ist ruhig, während sie laut ist."',
+      explanationEn:
+        '"Während" can express simultaneity ("while") or contrast ("whereas"): "Während ich koche, liest sie" (While I cook, she reads). / "Er ist ruhig, während sie laut ist" (He is quiet, whereas she is loud).',
+      explanationTr:
+        '"Während" eşzamanlılık ("iken") veya zıtlık ("oysa") ifade edebilir: "Während ich koche, liest sie." / "Er ist ruhig, während sie laut ist."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit10Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ ich koche, liest sie ein Buch.', options: ['Während', 'Obwohl', 'Nachdem', 'Weil'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Während" drückt Gleichzeitigkeit aus.',
+      },
+      {
+        lessonId: b1Unit10Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ist ruhig, ___ sie laut ist. (während)' },
+        correctAnswer: { accepted: ['während'] },
+        explanation: '"Während" kann auch Gegensatz ausdrücken.',
+      },
+    ],
+  })
+
+  const b1Unit10Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit10.id,
+      order: 3,
+      grammarTopic: '"nachdem" (Vorzeitigkeit) – Wiederholung',
+      explanationDe:
+        '"Nachdem" zeigt, dass eine Handlung vor einer anderen passiert (siehe Plusquamperfekt): "Nachdem wir gegessen hatten, räumten wir auf."',
+      explanationEn:
+        '"Nachdem" (after) shows that one action happened before another (see past perfect): "Nachdem wir gegessen hatten, räumten wir auf" (After we had eaten, we cleaned up).',
+      explanationTr:
+        '"Nachdem" bir eylemin diğerinden önce olduğunu gösterir (bkz. miş\'li geçmişin hikâyesi): "Nachdem wir gegessen hatten, räumten wir auf".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit10Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ wir gegessen hatten, räumten wir auf.', options: ['Nachdem', 'Während', 'Obwohl', 'Bevor'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Nachdem" + Plusquamperfekt für Vorzeitigkeit.',
+      },
+      {
+        lessonId: b1Unit10Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welches Tempus benutzt man im 'nachdem'-Satz, wenn der Hauptsatz im Präteritum steht?" },
+        correctAnswer: { accepted: ['plusquamperfekt'] },
+        explanation: 'Der "nachdem"-Satz steht im Plusquamperfekt (Vorzeitigkeit).',
+      },
+    ],
+  })
+
+  const b1Unit10Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit10.id,
+      order: 4,
+      grammarTopic: 'Übung: obwohl / während / nachdem',
+      explanationDe:
+        'Wiederholung: "obwohl" (Gegensatz), "während" (gleichzeitig/Gegensatz), "nachdem" (vorher). "Obwohl es regnete, gingen wir spazieren, nachdem wir gegessen hatten."',
+      explanationEn:
+        'Review: "obwohl" (contrast), "während" (simultaneous/contrast), "nachdem" (before). "Obwohl es regnete, gingen wir spazieren, nachdem wir gegessen hatten" (Although it was raining, we went for a walk after we had eaten).',
+      explanationTr:
+        'Tekrar: "obwohl" (zıtlık), "während" (eşzamanlı/zıtlık), "nachdem" (önce). "Obwohl es regnete, gingen wir spazieren, nachdem wir gegessen hatten".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit10Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['obwohl', 'während', 'nachdem'], rights: ['Gegensatz', 'Gleichzeitigkeit', 'Vorzeitigkeit'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'obwohl', right: 'Gegensatz' },
+            { left: 'während', right: 'Gleichzeitigkeit' },
+            { left: 'nachdem', right: 'Vorzeitigkeit' },
+          ],
+        },
+        explanation: 'Bedeutung der drei Konjunktionen.',
+      },
+      {
+        lessonId: b1Unit10Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ es regnete, gingen wir spazieren. (obwohl)' },
+        correctAnswer: { accepted: ['obwohl'] },
+        explanation: '"Obwohl" für einen Gegensatz.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit10Lesson1.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Es regnet heute.' },
+      { lessonId: b1Unit10Lesson1.id, word: 'trotzdem', translationEn: 'nevertheless', translationTr: 'yine de', exampleSentence: 'Es regnet, trotzdem gehen wir spazieren.' },
+      { lessonId: b1Unit10Lesson2.id, word: 'kochen', translationEn: 'to cook', translationTr: 'yemek pişirmek', exampleSentence: 'Während ich koche, liest sie.' },
+      { lessonId: b1Unit10Lesson2.id, word: 'laut', translationEn: 'loud', translationTr: 'gürültülü', exampleSentence: 'Die Musik ist zu laut.' },
+      { lessonId: b1Unit10Lesson3.id, word: 'aufräumen', translationEn: 'to clean up / tidy', translationTr: 'toplamak (düzenlemek)', exampleSentence: 'Wir räumen die Küche auf.' },
+      { lessonId: b1Unit10Lesson3.id, word: 'bevor', translationEn: 'before (conjunction)', translationTr: '-meden önce', exampleSentence: 'Bevor ich gehe, rufe ich an.' },
+      { lessonId: b1Unit10Lesson4.id, word: 'die Gleichzeitigkeit', translationEn: 'simultaneity', translationTr: 'eşzamanlılık', exampleSentence: 'Während drückt Gleichzeitigkeit aus.' },
+      { lessonId: b1Unit10Lesson4.id, word: 'der Gegensatz', translationEn: 'the contrast', translationTr: 'zıtlık', exampleSentence: 'Obwohl drückt einen Gegensatz aus.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
