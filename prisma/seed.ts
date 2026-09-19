@@ -2509,6 +2509,169 @@ async function main() {
     ],
   })
 
+  // --- B1 Unit 4: Relativsätze (4 lessons) ---
+  const b1Unit4 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 4, titleDe: 'Relativsätze', titleEn: 'Relative Clauses', titleTr: 'İlgi Cümleleri' },
+  })
+
+  const b1Unit4Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit4.id,
+      order: 1,
+      grammarTopic: 'Relativpronomen im Nominativ',
+      explanationDe:
+        'Relativsätze beschreiben ein Nomen näher. Im Nominativ richtet sich das Relativpronomen nach Genus und Numerus des Bezugsworts, z. B. "Der Mann, der dort steht, ist mein Lehrer."',
+      explanationEn:
+        'Relative clauses give more information about a noun. In the nominative, the relative pronoun matches the gender and number of the noun it refers to, e.g. "Der Mann, der dort steht, ist mein Lehrer" (The man who is standing there is my teacher).',
+      explanationTr:
+        'İlgi cümleleri bir ismi daha ayrıntılı tanımlar. Yalın halde ilgi zamiri, atıfta bulunduğu ismin cinsiyet ve sayısına göre değişir, örn. "Der Mann, der dort steht, ist mein Lehrer" (Orada duran adam benim öğretmenim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit4Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Mann, ___ dort steht, ist mein Lehrer.', options: ['der', 'die', 'das', 'den'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Der Mann" ist maskulin, im Nominativ benutzt man "der".',
+      },
+      {
+        lessonId: b1Unit4Lesson1.id,
+        order: 2,
+        type: 'MATCHING',
+        data: {
+          lefts: ['der Mann', 'die Frau', 'das Kind'],
+          rights: ['das', 'der', 'die'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Mann', right: 'der' },
+            { left: 'die Frau', right: 'die' },
+            { left: 'das Kind', right: 'das' },
+          ],
+        },
+        explanation: 'Relativpronomen im Nominativ: maskulin = der, feminin = die, neutral = das.',
+      },
+    ],
+  })
+
+  const b1Unit4Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit4.id,
+      order: 2,
+      grammarTopic: 'Relativpronomen im Akkusativ',
+      explanationDe:
+        'Im Akkusativ ändert sich nur das maskuline Relativpronomen zu "den", z. B. "Das Buch, das ich lese, ist spannend." / "Der Film, den ich sehe, ist neu."',
+      explanationEn:
+        'In the accusative, only the masculine relative pronoun changes, to "den", e.g. "Das Buch, das ich lese, ist spannend" / "Der Film, den ich sehe, ist neu" (The movie that I am watching is new).',
+      explanationTr:
+        '-i halinde sadece eril ilgi zamiri "den" olarak değişir, örn. "Das Buch, das ich lese, ist spannend" / "Der Film, den ich sehe, ist neu" (İzlediğim film yeni).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit4Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Film, ___ ich sehe, ist neu.', options: ['den', 'der', 'die', 'das'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Maskulines Relativpronomen im Akkusativ: "den".',
+      },
+      {
+        lessonId: b1Unit4Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Buch, ___ ich lese, ist spannend. (Relativpronomen, neutral, Akkusativ)' },
+        correctAnswer: { accepted: ['das'] },
+        explanation: 'Neutrales Relativpronomen im Akkusativ bleibt "das".',
+      },
+    ],
+  })
+
+  const b1Unit4Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit4.id,
+      order: 3,
+      grammarTopic: 'Relativsätze mit Präpositionen',
+      explanationDe:
+        'Nach einer Präposition steht das Relativpronomen im entsprechenden Kasus, z. B. "Das ist die Kollegin, mit der ich arbeite." / "Das ist der Tisch, auf dem das Buch liegt."',
+      explanationEn:
+        'After a preposition, the relative pronoun takes the case that preposition requires, e.g. "Das ist die Kollegin, mit der ich arbeite" (That is the colleague I work with) / "Das ist der Tisch, auf dem das Buch liegt" (That is the table the book is lying on).',
+      explanationTr:
+        'Bir edattan sonra ilgi zamiri, o edatın gerektirdiği hal ile kullanılır, örn. "Das ist die Kollegin, mit der ich arbeite" / "Das ist der Tisch, auf dem das Buch liegt".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit4Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist die Kollegin, mit ___ ich arbeite.', options: ['der', 'die', 'dem', 'den'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Mit" verlangt den Dativ; feminines Relativpronomen im Dativ ist "der".',
+      },
+      {
+        lessonId: b1Unit4Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Das ist der Tisch, auf ___ das Buch liegt. (Relativpronomen, maskulin, Dativ nach 'auf')" },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'Maskulines Relativpronomen im Dativ ist "dem".',
+      },
+    ],
+  })
+
+  const b1Unit4Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit4.id,
+      order: 4,
+      grammarTopic: 'Übung: Relativsätze',
+      explanationDe:
+        'Wiederholung: Relativpronomen richten sich nach Genus/Numerus des Bezugsworts (Nominativ, Akkusativ) und nach der Präposition (z. B. Dativ). "Das ist der Kollege, der mir hilft und mit dem ich gern arbeite."',
+      explanationEn:
+        'Review: relative pronouns match the gender/number of the noun (nominative, accusative) and the case required by any preposition (e.g. dative). "Das ist der Kollege, der mir hilft und mit dem ich gern arbeite" (That is the colleague who helps me and with whom I like to work).',
+      explanationTr:
+        'Tekrar: İlgi zamirleri ismin cinsiyet/sayısına (yalın, -i hali) ve edatın gerektirdiği hale (örn. -e hali) göre değişir. "Das ist der Kollege, der mir hilft und mit dem ich gern arbeite".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit4Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['hilft', 'der', 'mir'] },
+        correctAnswer: { order: ['der', 'mir', 'hilft'] },
+        explanation: 'Im Relativsatz steht das Verb am Ende: "der mir hilft".',
+      },
+      {
+        lessonId: b1Unit4Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist der Kollege, ___ mir hilft.', options: ['der', 'die', 'das', 'den'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Der Kollege" ist maskulin, im Nominativ benutzt man "der".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit4Lesson1.id, word: 'der Lehrer', translationEn: 'the (male) teacher', translationTr: 'öğretmen', exampleSentence: 'Der Mann, der dort steht, ist mein Lehrer.' },
+      { lessonId: b1Unit4Lesson1.id, word: 'stehen', translationEn: 'to stand', translationTr: 'ayakta durmak', exampleSentence: 'Er steht dort.' },
+      { lessonId: b1Unit4Lesson2.id, word: 'spannend', translationEn: 'exciting', translationTr: 'heyecanlı', exampleSentence: 'Das Buch ist sehr spannend.' },
+      { lessonId: b1Unit4Lesson2.id, word: 'neu', translationEn: 'new', translationTr: 'yeni', exampleSentence: 'Der Film, den ich sehe, ist neu.' },
+      { lessonId: b1Unit4Lesson3.id, word: 'die Kollegin', translationEn: 'the (female) colleague', translationTr: 'meslektaş (kadın)', exampleSentence: 'Das ist die Kollegin, mit der ich arbeite.' },
+      { lessonId: b1Unit4Lesson3.id, word: 'liegen', translationEn: 'to lie / be located', translationTr: 'yatmak / bulunmak', exampleSentence: 'Das Buch liegt auf dem Tisch.' },
+      { lessonId: b1Unit4Lesson4.id, word: 'der Kollege', translationEn: 'the (male) colleague', translationTr: 'meslektaş (erkek)', exampleSentence: 'Das ist der Kollege, der mir hilft.' },
+      { lessonId: b1Unit4Lesson4.id, word: 'die Hilfe', translationEn: 'the help', translationTr: 'yardım', exampleSentence: 'Ich brauche deine Hilfe.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
