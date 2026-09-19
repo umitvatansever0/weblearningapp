@@ -2541,7 +2541,7 @@ async function main() {
         lessonId: c1Unit2Lesson4.id,
         order: 2,
         type: 'MATCHING',
-        data: { lefts: ['lesen (Perfekt mit haben)', 'gehen (Perfekt mit sein)', 'warten (Perfekt mit haben)'], rights: ['er habe gelesen', 'sie sei gegangen', 'er habe gewartet'] },
+        data: { lefts: ['lesen (Perfekt mit haben)', 'gehen (Perfekt mit sein)', 'warten (Perfekt mit haben)'], rights: ['sie sei gegangen', 'er habe gewartet', 'er habe gelesen'] },
         correctAnswer: {
           pairs: [
             { left: 'lesen (Perfekt mit haben)', right: 'er habe gelesen' },
@@ -2783,7 +2783,7 @@ async function main() {
         lessonId: c1Unit4Lesson2.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['entscheiden', 'sicher', 'möglich'], rights: ['die Entscheidung', 'die Sicherheit', 'die Möglichkeit'] },
+        data: { lefts: ['entscheiden', 'sicher', 'möglich'], rights: ['die Sicherheit', 'die Möglichkeit', 'die Entscheidung'] },
         correctAnswer: {
           pairs: [
             { left: 'entscheiden', right: 'die Entscheidung' },
@@ -2945,7 +2945,7 @@ async function main() {
         lessonId: c1Unit5Lesson2.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['trotzdem', 'gleichwohl', 'nichtsdestotrotz'], rights: ['neutral', 'gehoben', 'gehoben, betont'] },
+        data: { lefts: ['trotzdem', 'gleichwohl', 'nichtsdestotrotz'], rights: ['gehoben, betont', 'neutral', 'gehoben'] },
         correctAnswer: {
           pairs: [
             { left: 'trotzdem', right: 'neutral' },
@@ -3172,7 +3172,7 @@ async function main() {
         lessonId: c1Unit6Lesson4.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['doch', 'mal', 'denn'], rights: ['Widerspruch/Erinnerung', 'mildert Aufforderung', 'freundlichere Frage'] },
+        data: { lefts: ['doch', 'mal', 'denn'], rights: ['freundlichere Frage', 'Widerspruch/Erinnerung', 'mildert Aufforderung'] },
         correctAnswer: {
           pairs: [
             { left: 'doch', right: 'Widerspruch/Erinnerung' },
@@ -3333,7 +3333,7 @@ async function main() {
         type: 'MATCHING',
         data: {
           lefts: ['die Nase voll haben', 'die Katze im Sack kaufen', 'den Nagel auf den Kopf treffen'],
-          rights: ['genervt sein', 'ungeprüft kaufen', 'genau richtig urteilen'],
+          rights: ['genau richtig urteilen', 'genervt sein', 'ungeprüft kaufen'],
         },
         correctAnswer: {
           pairs: [
@@ -3428,7 +3428,7 @@ async function main() {
         lessonId: c1Unit8Lesson2.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['zunächst', 'im Folgenden', 'abschließend'], rights: ['Anfang', 'Mitte', 'Ende'] },
+        data: { lefts: ['zunächst', 'im Folgenden', 'abschließend'], rights: ['Ende', 'Anfang', 'Mitte'] },
         correctAnswer: {
           pairs: [
             { left: 'zunächst', right: 'Anfang' },
@@ -3655,7 +3655,7 @@ async function main() {
         lessonId: c1Unit9Lesson4.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['wissen (haben)', 'losfahren (sein)', 'helfen (haben)'], rights: ['hätte gewusst', 'wäre losgefahren', 'hätte geholfen'] },
+        data: { lefts: ['wissen (haben)', 'losfahren (sein)', 'helfen (haben)'], rights: ['hätte geholfen', 'hätte gewusst', 'wäre losgefahren'] },
         correctAnswer: {
           pairs: [
             { left: 'wissen (haben)', right: 'hätte gewusst' },
@@ -3814,7 +3814,7 @@ async function main() {
         lessonId: c1Unit10Lesson4.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['sich freuen auf', 'sich ärgern über', 'sich sehnen nach'], rights: ['Zukünftiges', 'Geschehenes', 'Sehnsucht'] },
+        data: { lefts: ['sich freuen auf', 'sich ärgern über', 'sich sehnen nach'], rights: ['Sehnsucht', 'Zukünftiges', 'Geschehenes'] },
         correctAnswer: {
           pairs: [
             { left: 'sich freuen auf', right: 'Zukünftiges' },
@@ -3973,7 +3973,7 @@ async function main() {
         lessonId: c1Unit11Lesson4.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['"Toller Regen!" bei Sturm', '"Ein kleines Problem" bei Katastrophe', '"Ist das nicht klar?"'], rights: ['Ironie', 'Understatement', 'rhetorische Frage'] },
+        data: { lefts: ['"Toller Regen!" bei Sturm', '"Ein kleines Problem" bei Katastrophe', '"Ist das nicht klar?"'], rights: ['rhetorische Frage', 'Ironie', 'Understatement'] },
         correctAnswer: {
           pairs: [
             { left: '"Toller Regen!" bei Sturm', right: 'Ironie' },
@@ -4132,7 +4132,7 @@ async function main() {
         lessonId: c1Unit12Lesson4.id,
         order: 1,
         type: 'MATCHING',
-        data: { lefts: ['Bewerbungsschreiben', 'Chat mit Freunden', 'wissenschaftlicher Aufsatz'], rights: ['formell', 'informell', 'sehr formell/fachsprachlich'] },
+        data: { lefts: ['Bewerbungsschreiben', 'Chat mit Freunden', 'wissenschaftlicher Aufsatz'], rights: ['sehr formell/fachsprachlich', 'formell', 'informell'] },
         correctAnswer: {
           pairs: [
             { left: 'Bewerbungsschreiben', right: 'formell' },
@@ -4302,7 +4302,7 @@ async function main() {
         lessonId: c1Unit13Lesson4.id,
         order: 2,
         type: 'MATCHING',
-        data: { lefts: ['Konjunktiv I', 'Nominalstil', 'gleichwohl'], rights: ['neutrale Wiedergabe', 'formelle Präzision', 'gehobenes "trotzdem"'] },
+        data: { lefts: ['Konjunktiv I', 'Nominalstil', 'gleichwohl'], rights: ['gehobenes "trotzdem"', 'neutrale Wiedergabe', 'formelle Präzision'] },
         correctAnswer: {
           pairs: [
             { left: 'Konjunktiv I', right: 'neutrale Wiedergabe' },
