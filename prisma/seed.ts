@@ -10524,6 +10524,123 @@ async function main() {
     ],
   })
 
+  const c2Unit1Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit.id,
+      order: 2,
+      grammarTopic: "Konnektoren wie 'nichtsdestotrotz' und 'insofern als'",
+      explanationDe:
+        '"Nichtsdestotrotz" (trotzdem, dennoch) und "insofern als" (in dem Maße, wie) sind gehobene Konnektoren für formelle Texte und Reden.',
+      explanationEn:
+        '"Nichtsdestotrotz" (nonetheless) and "insofern als" (insofar as) are elevated connectors used in formal writing and speeches.',
+      explanationTr:
+        '"Nichtsdestotrotz" (yine de) ve "insofern als" (şu ölçüde ki) resmi metinlerde ve konuşmalarda kullanılan üst düzey bağlaçlardır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit1Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'Welcher Konnektor bedeutet "insofar as"?',
+          options: ['insofern als', 'obwohl', 'damit', 'sodass'],
+        },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Insofern als" entspricht "insofar as".',
+      },
+      {
+        lessonId: c2Unit1Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne ein Synonym für 'trotzdem' auf gehobenem Sprachniveau." },
+        correctAnswer: { accepted: ['nichtsdestotrotz', 'dennoch', 'gleichwohl'] },
+        explanation: '"Nichtsdestotrotz", "dennoch" und "gleichwohl" sind gehobene Synonyme für "trotzdem".',
+      },
+    ],
+  })
+
+  const c2Unit1Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit.id,
+      order: 3,
+      grammarTopic: "Konnektor 'dessen ungeachtet'",
+      explanationDe:
+        '"Dessen ungeachtet" (unabhängig davon) leitet einen Gegensatz auf sehr formellem Sprachniveau ein, häufig in Verwaltungs- oder Fachtexten.',
+      explanationEn:
+        '"Dessen ungeachtet" (regardless of that) introduces a contrast at a very formal register, common in administrative or technical texts.',
+      explanationTr:
+        '"Dessen ungeachtet" (bundan bağımsız olarak) çok resmi bir dil düzeyinde zıtlık başlatır; idari veya teknik metinlerde sık görülür.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit1Lesson3.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Risiken waren bekannt; ___ wurde das Projekt fortgesetzt. (unabhängig davon)' },
+        correctAnswer: { accepted: ['dessen ungeachtet'] },
+        explanation: '"Dessen ungeachtet" bedeutet "unabhängig davon".',
+      },
+      {
+        lessonId: c2Unit1Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'In welchem Kontext ist "dessen ungeachtet" typisch?',
+          options: ['sehr formelle/administrative Texte', 'lockeres Chatten', 'Kindersprache', 'Werbeslogans'],
+        },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Dessen ungeachtet" gehört zum sehr formellen Register.',
+      },
+    ],
+  })
+
+  const c2Unit1Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit.id,
+      order: 4,
+      grammarTopic: 'Übung: Gehobene Konnektoren',
+      explanationDe:
+        'Wiederholung: "dennoch", "nichtsdestotrotz", "insofern als" und "dessen ungeachtet" drücken alle Gegensatz oder Einschränkung aus, unterscheiden sich aber im Formalitätsgrad.',
+      explanationEn:
+        'Review: "dennoch", "nichtsdestotrotz", "insofern als", and "dessen ungeachtet" all express contrast or qualification but differ in formality.',
+      explanationTr:
+        'Tekrar: "dennoch", "nichtsdestotrotz", "insofern als" ve "dessen ungeachtet" hepsi zıtlık veya sınırlama ifade eder, ancak resmiyet derecesi farklıdır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit1Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['fortgesetzt', 'wurde', 'das', 'Projekt', 'dennoch'] },
+        correctAnswer: { order: ['dennoch', 'wurde', 'das', 'Projekt', 'fortgesetzt'] },
+        explanation: '"Dennoch" am Satzanfang, gefolgt vom Verb: "Dennoch wurde das Projekt fortgesetzt."',
+      },
+      {
+        lessonId: c2Unit1Lesson4.id,
+        order: 2,
+        type: 'MATCHING',
+        data: {
+          lefts: ['sehr formell/administrativ', 'gehobene Schriftsprache', 'neutral gehoben'],
+          rights: ['nichtsdestotrotz', 'dennoch', 'dessen ungeachtet'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'sehr formell/administrativ', right: 'dessen ungeachtet' },
+            { left: 'gehobene Schriftsprache', right: 'nichtsdestotrotz' },
+            { left: 'neutral gehoben', right: 'dennoch' },
+          ],
+        },
+        explanation: 'Konnektoren unterscheiden sich im Formalitätsgrad.',
+      },
+    ],
+  })
+
   await prisma.vocabWord.createMany({
     data: [
       {
@@ -10610,20 +10727,1933 @@ async function main() {
         translationTr: 'açmak',
         exampleSentence: 'Die Tür wird geöffnet.',
       },
+      { lessonId: c2Lesson.id, word: 'dennoch', translationEn: 'nevertheless', translationTr: 'yine de', exampleSentence: 'Er hat hart gearbeitet, dennoch ist er nicht befördert worden.' },
+      { lessonId: c2Lesson.id, word: 'sich lohnen', translationEn: 'to be worth it', translationTr: 'değmek', exampleSentence: 'Die Investition lohnt sich langfristig.' },
+      { lessonId: c2Unit1Lesson2.id, word: 'nichtsdestotrotz', translationEn: 'nonetheless', translationTr: 'yine de', exampleSentence: 'Nichtsdestotrotz hat sie weitergemacht.' },
+      { lessonId: c2Unit1Lesson2.id, word: 'insofern', translationEn: 'insofar', translationTr: 'bu ölçüde', exampleSentence: 'Insofern als das stimmt, müssen wir handeln.' },
+      { lessonId: c2Unit1Lesson3.id, word: 'ungeachtet', translationEn: 'regardless of', translationTr: 'göz ardı ederek', exampleSentence: 'Dessen ungeachtet wurde das Projekt fortgesetzt.' },
+      { lessonId: c2Unit1Lesson3.id, word: 'fortsetzen', translationEn: 'to continue', translationTr: 'devam ettirmek', exampleSentence: 'Man hat das Projekt fortgesetzt.' },
+      { lessonId: c2Unit1Lesson4.id, word: 'das Risiko', translationEn: 'the risk', translationTr: 'risk', exampleSentence: 'Die Risiken waren bekannt.' },
+      { lessonId: c2Unit1Lesson4.id, word: 'die Einschränkung', translationEn: 'the restriction / qualification', translationTr: 'sınırlama', exampleSentence: 'Das gilt nur mit einer Einschränkung.' },
+    ],
+  })
+
+  // --- C2 Unit 2: Gehobener Nominalstil (4 lessons) ---
+  const c2Unit2 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 2, titleDe: 'Gehobener Nominalstil', titleEn: 'Elevated Nominal Style', titleTr: 'Üst Düzey İsim Stili' },
+  })
+
+  const c2Unit2Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit2.id,
+      order: 1,
+      grammarTopic: 'Nominalisierung von Verben',
+      explanationDe:
+        'Im gehobenen Nominalstil werden Verben zu Nomen: "entscheiden" -> "die Entscheidung", "durchführen" -> "die Durchführung". Das wirkt formeller als Verbalsätze.',
+      explanationEn:
+        'In elevated nominal style, verbs become nouns: "entscheiden" (to decide) -> "die Entscheidung" (the decision), "durchführen" (to carry out) -> "die Durchführung" (the execution). This reads more formally than verbal sentences.',
+      explanationTr:
+        'Üst düzey isim stilinde fiiller isimleşir: "entscheiden" (karar vermek) -> "die Entscheidung" (karar), "durchführen" (yürütmek) -> "die Durchführung" (yürütme). Bu, fiil cümlelerinden daha resmi görünür.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
       {
-        lessonId: c2Lesson.id,
-        word: 'dennoch',
-        translationEn: 'nevertheless',
-        translationTr: 'yine de',
-        exampleSentence: 'Er hat hart gearbeitet, dennoch ist er nicht befördert worden.',
+        lessonId: c2Unit2Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Nominalisierung von "entscheiden"?', options: ['die Entscheidung', 'der Entscheider', 'entschieden', 'die Entscheidbarkeit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Entscheiden" -> "die Entscheidung".',
       },
       {
-        lessonId: c2Lesson.id,
-        word: 'sich lohnen',
-        translationEn: 'to be worth it',
-        translationTr: 'değmek',
-        exampleSentence: 'Die Investition lohnt sich langfristig.',
+        lessonId: c2Unit2Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ des Projekts dauerte drei Monate. (durchführen)' },
+        correctAnswer: { accepted: ['durchführung'] },
+        explanation: '"Durchführen" -> "die Durchführung".',
       },
+    ],
+  })
+
+  const c2Unit2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit2.id,
+      order: 2,
+      grammarTopic: 'Funktionsverbgefüge in formellen Texten',
+      explanationDe:
+        'Funktionsverbgefüge wie "zur Anwendung bringen" (statt "anwenden") oder "in Betracht ziehen" (statt "bedenken") sind typisch für Verwaltungs- und Fachsprache.',
+      explanationEn:
+        'Support-verb constructions like "zur Anwendung bringen" (instead of "anwenden" = to apply) or "in Betracht ziehen" (instead of "bedenken" = to consider) are typical of administrative and technical registers.',
+      explanationTr:
+        '"Zur Anwendung bringen" (uygulamak yerine) veya "in Betracht ziehen" (düşünmek yerine) gibi destek fiil yapıları idari ve teknik dil için tipiktir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit2Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Formelles Äquivalent zu "bedenken"?', options: ['in Betracht ziehen', 'zur Anwendung bringen', 'zum Ausdruck bringen', 'in Kraft treten'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"In Betracht ziehen" ersetzt "bedenken" im formellen Stil.',
+      },
+      {
+        lessonId: c2Unit2Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne das Funktionsverbgefüge, das 'anwenden' im formellen Stil ersetzt." },
+        correctAnswer: { accepted: ['zur anwendung bringen'] },
+        explanation: '"Zur Anwendung bringen" ersetzt "anwenden".',
+      },
+    ],
+  })
+
+  const c2Unit2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit2.id,
+      order: 3,
+      grammarTopic: 'Genitivketten',
+      explanationDe:
+        'Im gehobenen Nominalstil reihen sich mehrere Genitive aneinander: "die Erhöhung der Effizienz der Produktion des Unternehmens". Das ist formell, aber schwer lesbar in Übermaß.',
+      explanationEn:
+        'Elevated nominal style often chains multiple genitives: "die Erhöhung der Effizienz der Produktion des Unternehmens" (the increase of the efficiency of the production of the company). Formal, but hard to read in excess.',
+      explanationTr:
+        'Üst düzey isim stilinde birden çok tamlayan hali art arda gelir: "die Erhöhung der Effizienz der Produktion des Unternehmens". Resmidir ama aşırı kullanımda okunması zordur.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was kennzeichnet gehobenen Nominalstil oft negativ?', options: ['zu viele Genitivketten', 'zu kurze Sätze', 'zu viel Umgangssprache', 'zu viele Fragen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Übermäßige Genitivketten erschweren das Lesen.',
+      },
+      {
+        lessonId: c2Unit2Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'die Erhöhung ___ Effizienz der Produktion (Genitiv Artikel, feminin)' },
+        correctAnswer: { accepted: ['der'] },
+        explanation: 'Genitiv feminin Singular: "der".',
+      },
+    ],
+  })
+
+  const c2Unit2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit2.id,
+      order: 4,
+      grammarTopic: 'Übung: Nominalstil vs. Verbalstil',
+      explanationDe:
+        'Wiederholung: Verbalstil ist lebendiger und leichter verständlich, Nominalstil klingt formeller und distanzierter. Gute Texte mischen beide bewusst.',
+      explanationEn:
+        'Review: verbal style is livelier and easier to understand; nominal style sounds more formal and detached. Good writing consciously mixes both.',
+      explanationTr:
+        'Tekrar: fiil stili daha canlı ve anlaşılırdır, isim stili daha resmi ve mesafeli görünür. İyi metinler ikisini bilinçli olarak karıştırır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit2Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['drei', 'dauerte', 'Monate', 'Durchführung', 'die'] },
+        correctAnswer: { order: ['die', 'Durchführung', 'dauerte', 'drei', 'Monate'] },
+        explanation: 'Nominalstil: "die Durchführung" als Subjekt, dann Verb, dann Zeitangabe.',
+      },
+      {
+        lessonId: c2Unit2Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Stil ist distanzierter?', options: ['Nominalstil', 'Verbalstil', 'beide gleich', 'keiner'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nominalstil wirkt formeller und distanzierter.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit2Lesson1.id, word: 'die Entscheidung', translationEn: 'the decision', translationTr: 'karar', exampleSentence: 'Die Entscheidung fiel schnell.' },
+      { lessonId: c2Unit2Lesson1.id, word: 'die Durchführung', translationEn: 'the execution/carrying-out', translationTr: 'yürütme', exampleSentence: 'Die Durchführung dauerte drei Monate.' },
+      { lessonId: c2Unit2Lesson2.id, word: 'in Betracht ziehen', translationEn: 'to take into consideration', translationTr: 'göz önünde bulundurmak', exampleSentence: 'Wir ziehen alle Optionen in Betracht.' },
+      { lessonId: c2Unit2Lesson2.id, word: 'zur Anwendung bringen', translationEn: 'to apply (formally)', translationTr: 'uygulamaya koymak', exampleSentence: 'Die neue Regel wird zur Anwendung gebracht.' },
+      { lessonId: c2Unit2Lesson3.id, word: 'die Effizienz', translationEn: 'efficiency', translationTr: 'verimlilik', exampleSentence: 'Die Effizienz wurde gesteigert.' },
+      { lessonId: c2Unit2Lesson3.id, word: 'das Unternehmen', translationEn: 'the company', translationTr: 'şirket', exampleSentence: 'Das Unternehmen wächst schnell.' },
+      { lessonId: c2Unit2Lesson4.id, word: 'lebendig', translationEn: 'lively', translationTr: 'canlı', exampleSentence: 'Der Text ist sehr lebendig geschrieben.' },
+      { lessonId: c2Unit2Lesson4.id, word: 'distanziert', translationEn: 'detached', translationTr: 'mesafeli', exampleSentence: 'Der Ton wirkt distanziert.' },
+    ],
+  })
+
+  // --- C2 Unit 3: Rhetorische Mittel (4 lessons) ---
+  const c2Unit3 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 3, titleDe: 'Rhetorische Mittel', titleEn: 'Rhetorical Devices', titleTr: 'Retorik Araçlar' },
+  })
+
+  const c2Unit3Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit3.id,
+      order: 1,
+      grammarTopic: 'Metapher und Vergleich',
+      explanationDe:
+        'Eine Metapher überträgt Bedeutung bildlich, ohne "wie": "Die Zeit ist ein Dieb." Ein Vergleich benutzt "wie": "Er ist schnell wie der Wind."',
+      explanationEn:
+        'A metaphor transfers meaning figuratively without "like/as": "Die Zeit ist ein Dieb" (Time is a thief). A simile uses "wie" (like/as): "Er ist schnell wie der Wind" (He is fast as the wind).',
+      explanationTr:
+        'Metafor, "gibi" olmadan anlamı mecazi olarak aktarır: "Die Zeit ist ein Dieb" (Zaman bir hırsızdır). Benzetme "wie" (gibi) kullanır: "Er ist schnell wie der Wind".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit3Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist eine Metapher (kein "wie")?', options: ['Die Zeit ist ein Dieb.', 'Er ist schnell wie der Wind.', 'Sie singt wie ein Engel.', 'Das Haus ist groß wie ein Schloss.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Eine Metapher benutzt kein "wie".',
+      },
+      {
+        lessonId: c2Unit3Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ist schnell ___ der Wind. (Vergleich)' },
+        correctAnswer: { accepted: ['wie'] },
+        explanation: 'Ein Vergleich benutzt "wie".',
+      },
+    ],
+  })
+
+  const c2Unit3Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit3.id,
+      order: 2,
+      grammarTopic: 'Anapher und Wiederholung',
+      explanationDe:
+        'Eine Anapher wiederholt ein Wort oder eine Phrase am Anfang aufeinanderfolgender Sätze, um Nachdruck zu erzeugen: "Wir werden kämpfen. Wir werden gewinnen. Wir werden nicht aufgeben."',
+      explanationEn:
+        'An anaphora repeats a word or phrase at the start of successive sentences for emphasis: "Wir werden kämpfen. Wir werden gewinnen. Wir werden nicht aufgeben." (We will fight. We will win. We will not give up.)',
+      explanationTr:
+        'Anafor, vurgu yaratmak için ardışık cümlelerin başında bir kelime veya öbeği tekrarlar: "Wir werden kämpfen. Wir werden gewinnen. Wir werden nicht aufgeben."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit3Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist eine Anapher?', options: ['Wiederholung am Satzanfang', 'ein Reim am Satzende', 'eine rhetorische Frage', 'eine Übertreibung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Eine Anapher wiederholt am Satzanfang.',
+      },
+      {
+        lessonId: c2Unit3Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie nennt man die Wiederholung eines Wortes am Satzanfang aufeinanderfolgender Sätze?" },
+        correctAnswer: { accepted: ['anapher', 'die anapher'] },
+        explanation: 'Das rhetorische Mittel heißt "Anapher".',
+      },
+    ],
+  })
+
+  const c2Unit3Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit3.id,
+      order: 3,
+      grammarTopic: 'Rhetorische Frage',
+      explanationDe:
+        'Eine rhetorische Frage erwartet keine Antwort, sondern betont eine Aussage: "Ist das nicht offensichtlich?" bedeutet "Das ist offensichtlich."',
+      explanationEn:
+        'A rhetorical question expects no answer; it emphasizes a statement: "Ist das nicht offensichtlich?" (Isn\'t that obvious?) means "That is obvious."',
+      explanationTr:
+        'Retorik soru, cevap beklemez; bir ifadeyi vurgular: "Ist das nicht offensichtlich?" (Bu açık değil mi?) "Bu açıktır" anlamına gelir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit3Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist der Zweck einer rhetorischen Frage?', options: ['eine Aussage betonen', 'eine echte Antwort erhalten', 'eine Bitte formulieren', 'eine Entschuldigung ausdrücken'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Sie betont eine Aussage, statt eine Antwort zu erwarten.',
+      },
+      {
+        lessonId: c2Unit3Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ist das nicht ___? (offensichtlich, rhetorische Frage)' },
+        correctAnswer: { accepted: ['offensichtlich'] },
+        explanation: '"Ist das nicht offensichtlich?" ist eine rhetorische Frage.',
+      },
+    ],
+  })
+
+  const c2Unit3Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit3.id,
+      order: 4,
+      grammarTopic: 'Übung: Rhetorische Mittel erkennen',
+      explanationDe:
+        'Wiederholung: Metapher, Vergleich, Anapher und rhetorische Frage sind Stilmittel, die Reden und Texte überzeugender und einprägsamer machen.',
+      explanationEn:
+        'Review: metaphor, simile, anaphora, and rhetorical question are stylistic devices that make speeches and texts more persuasive and memorable.',
+      explanationTr:
+        'Tekrar: metafor, benzetme, anafor ve retorik soru, konuşmaları ve metinleri daha ikna edici ve akılda kalıcı yapan üslup araçlarıdır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit3Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: {
+          lefts: ['Die Zeit ist ein Dieb.', 'Wir werden kämpfen. Wir werden gewinnen.', 'Ist das nicht offensichtlich?'],
+          rights: ['rhetorische Frage', 'Metapher', 'Anapher'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'Die Zeit ist ein Dieb.', right: 'Metapher' },
+            { left: 'Wir werden kämpfen. Wir werden gewinnen.', right: 'Anapher' },
+            { left: 'Ist das nicht offensichtlich?', right: 'rhetorische Frage' },
+          ],
+        },
+        explanation: 'Jedes Beispiel entspricht einem rhetorischen Mittel.',
+      },
+      {
+        lessonId: c2Unit3Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne ein rhetorisches Mittel, das ohne 'wie' auskommt und Bedeutung bildlich überträgt." },
+        correctAnswer: { accepted: ['metapher', 'die metapher'] },
+        explanation: 'Die Metapher überträgt Bedeutung bildlich ohne "wie".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit3Lesson1.id, word: 'die Metapher', translationEn: 'the metaphor', translationTr: 'metafor', exampleSentence: 'Die Zeit ist ein Dieb ist eine Metapher.' },
+      { lessonId: c2Unit3Lesson1.id, word: 'der Vergleich', translationEn: 'the comparison/simile', translationTr: 'benzetme', exampleSentence: 'Er benutzt oft Vergleiche.' },
+      { lessonId: c2Unit3Lesson2.id, word: 'die Anapher', translationEn: 'the anaphora', translationTr: 'anafor', exampleSentence: 'Die Anapher verstärkt die Wirkung.' },
+      { lessonId: c2Unit3Lesson2.id, word: 'der Nachdruck', translationEn: 'emphasis', translationTr: 'vurgu', exampleSentence: 'Sie sprach mit Nachdruck.' },
+      { lessonId: c2Unit3Lesson3.id, word: 'offensichtlich', translationEn: 'obvious', translationTr: 'açık', exampleSentence: 'Das ist doch offensichtlich.' },
+      { lessonId: c2Unit3Lesson3.id, word: 'die Wirkung', translationEn: 'the effect', translationTr: 'etki', exampleSentence: 'Die Rede hatte große Wirkung.' },
+      { lessonId: c2Unit3Lesson4.id, word: 'überzeugend', translationEn: 'convincing', translationTr: 'ikna edici', exampleSentence: 'Das Argument war überzeugend.' },
+      { lessonId: c2Unit3Lesson4.id, word: 'einprägsam', translationEn: 'memorable', translationTr: 'akılda kalıcı', exampleSentence: 'Der Slogan ist sehr einprägsam.' },
+    ],
+  })
+
+  // --- C2 Unit 4: Sprachliche Nuancen: Sarkasmus & Übertreibung (4 lessons) ---
+  const c2Unit4 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 4, titleDe: 'Sprachliche Nuancen: Sarkasmus & Übertreibung', titleEn: 'Linguistic Nuance: Sarcasm & Hyperbole', titleTr: 'Dilsel İncelik: İğneleme ve Abartma' },
+  })
+
+  const c2Unit4Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit4.id,
+      order: 1,
+      grammarTopic: 'Sarkasmus erkennen',
+      explanationDe:
+        'Sarkasmus sagt das Gegenteil dessen, was gemeint ist, oft mit übertriebener Betonung: "Na toll, jetzt ist der Zug auch noch weg!" (gemeint: das ist ärgerlich).',
+      explanationEn:
+        'Sarcasm says the opposite of what is meant, often with exaggerated emphasis: "Na toll, jetzt ist der Zug auch noch weg!" (Great, now the train is gone too! — meaning: this is annoying).',
+      explanationTr:
+        'Alaycılık, kastedilenin tersini söyler, genellikle abartılı vurguyla: "Na toll, jetzt ist der Zug auch noch weg!" (Harika, şimdi de tren gitti! — anlam: bu can sıkıcı).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit4Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Na toll, jetzt ist der Zug auch noch weg!" ist ein Beispiel für...', options: ['Sarkasmus', 'eine ehrliche Freude', 'eine Bitte', 'eine Entschuldigung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Sprecher meint das Gegenteil von "toll".',
+      },
+      {
+        lessonId: c2Unit4Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie nennt man es, wenn man das Gegenteil dessen sagt, was man meint, um Kritik auszudrücken?" },
+        correctAnswer: { accepted: ['sarkasmus', 'der sarkasmus'] },
+        explanation: 'Das nennt man "Sarkasmus".',
+      },
+    ],
+  })
+
+  const c2Unit4Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit4.id,
+      order: 2,
+      grammarTopic: 'Übertreibung (Hyperbel)',
+      explanationDe:
+        'Eine Hyperbel übertreibt bewusst, um Wirkung zu erzielen: "Ich habe dir das schon tausendmal gesagt!" ist nicht wörtlich gemeint.',
+      explanationEn:
+        'A hyperbole deliberately exaggerates for effect: "Ich habe dir das schon tausendmal gesagt!" (I\'ve told you that a thousand times!) is not meant literally.',
+      explanationTr:
+        'Abartma (hiperbol), etki yaratmak için bilinçli olarak abartır: "Ich habe dir das schon tausendmal gesagt!" gerçek anlamda kastedilmez.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit4Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe dir das schon ___ gesagt! (Übertreibung für "sehr oft")' },
+        correctAnswer: { accepted: ['tausendmal'] },
+        explanation: '"Tausendmal" ist eine typische Hyperbel für "sehr oft".',
+      },
+      {
+        lessonId: c2Unit4Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist eine Hyperbel?', options: ['eine bewusste Übertreibung', 'eine exakte Beschreibung', 'eine Frage', 'ein Widerspruch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Eine Hyperbel ist eine bewusste Übertreibung.',
+      },
+    ],
+  })
+
+  const c2Unit4Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit4.id,
+      order: 3,
+      grammarTopic: 'Sarkasmus im Ton erkennen (schriftlich)',
+      explanationDe:
+        'Schriftlich ist Sarkasmus oft schwer zu erkennen; Anführungszeichen um ein Wort oder Ausdrücke wie "wie zu erwarten" können ironische Distanz signalisieren.',
+      explanationEn:
+        'In writing, sarcasm is often hard to detect; quotation marks around a word or phrases like "wie zu erwarten" (as expected) can signal ironic distance.',
+      explanationTr:
+        'Yazıda alaycılığı fark etmek genellikle zordur; bir kelimenin etrafındaki tırnak işaretleri veya "wie zu erwarten" (beklendiği gibi) gibi ifadeler ironik mesafeyi işaret edebilir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit4Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Signal deutet schriftlich oft auf Ironie hin?', options: ['Anführungszeichen um ein Wort', 'ein Ausrufezeichen', 'ein Komma', 'Großschreibung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Anführungszeichen können ironische Distanz signalisieren.',
+      },
+      {
+        lessonId: c2Unit4Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welcher Ausdruck signalisiert oft ironische Distanz: 'wie zu erwarten' oder 'wie geplant'?" },
+        correctAnswer: { accepted: ['wie zu erwarten'] },
+        explanation: '"Wie zu erwarten" signalisiert oft Ironie.',
+      },
+    ],
+  })
+
+  const c2Unit4Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit4.id,
+      order: 4,
+      grammarTopic: 'Übung: Sarkasmus & Übertreibung',
+      explanationDe:
+        'Wiederholung: Sarkasmus meint das Gegenteil, Hyperbel übertreibt bewusst — beide erzeugen rhetorische Wirkung, aber mit unterschiedlicher Funktion.',
+      explanationEn:
+        'Review: sarcasm means the opposite, hyperbole exaggerates deliberately — both create rhetorical effect but serve different functions.',
+      explanationTr:
+        'Tekrar: alaycılık tersini kasteder, abartma bilinçli olarak büyütür — ikisi de retorik etki yaratır ama işlevleri farklıdır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit4Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: {
+          lefts: ['Na toll, jetzt ist der Zug weg!', 'Ich habe das tausendmal gesagt!'],
+          rights: ['Hyperbel', 'Sarkasmus'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'Na toll, jetzt ist der Zug weg!', right: 'Sarkasmus' },
+            { left: 'Ich habe das tausendmal gesagt!', right: 'Hyperbel' },
+          ],
+        },
+        explanation: 'Sarkasmus meint das Gegenteil, Hyperbel übertreibt.',
+      },
+      {
+        lessonId: c2Unit4Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['toll', 'na', 'jetzt', 'weg', 'der', 'Zug', 'ist'] },
+        correctAnswer: { order: ['na', 'toll', 'jetzt', 'ist', 'der', 'Zug', 'weg'] },
+        explanation: 'Typische sarkastische Struktur: "Na toll, jetzt ist der Zug weg."',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit4Lesson1.id, word: 'der Sarkasmus', translationEn: 'sarcasm', translationTr: 'iğneleme', exampleSentence: 'Sein Sarkasmus war unüberhörbar.' },
+      { lessonId: c2Unit4Lesson1.id, word: 'ärgerlich', translationEn: 'annoying', translationTr: 'sinir bozucu', exampleSentence: 'Das ist wirklich ärgerlich.' },
+      { lessonId: c2Unit4Lesson2.id, word: 'die Übertreibung', translationEn: 'the exaggeration', translationTr: 'abartı', exampleSentence: 'Das war eine klare Übertreibung.' },
+      { lessonId: c2Unit4Lesson2.id, word: 'bewusst', translationEn: 'deliberate/conscious', translationTr: 'bilinçli', exampleSentence: 'Das war eine bewusste Entscheidung.' },
+      { lessonId: c2Unit4Lesson3.id, word: 'die Ironie', translationEn: 'irony', translationTr: 'ironi', exampleSentence: 'Die Ironie war deutlich zu spüren.' },
+      { lessonId: c2Unit4Lesson3.id, word: 'die Distanz', translationEn: 'the distance', translationTr: 'mesafe', exampleSentence: 'Er hielt sprachliche Distanz.' },
+      { lessonId: c2Unit4Lesson4.id, word: 'die Funktion', translationEn: 'the function', translationTr: 'işlev', exampleSentence: 'Jedes Stilmittel hat eine Funktion.' },
+      { lessonId: c2Unit4Lesson4.id, word: 'wirkungsvoll', translationEn: 'effective', translationTr: 'etkili', exampleSentence: 'Der Sarkasmus war sehr wirkungsvoll.' },
+    ],
+  })
+
+  // --- C2 Unit 5: Fach- und Sondersprachen (4 lessons) ---
+  const c2Unit5 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 5, titleDe: 'Fach- und Sondersprachen', titleEn: 'Technical & Specialized Registers', titleTr: 'Uzmanlık ve Özel Diller' },
+  })
+
+  const c2Unit5Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit5.id,
+      order: 1,
+      grammarTopic: 'Juristische Fachsprache',
+      explanationDe:
+        'Die Rechtssprache benutzt feste Formulierungen wie "unbeschadet", "im Sinne des Gesetzes", "vorbehaltlich" — oft mit Nominalstil und Passiv.',
+      explanationEn:
+        'Legal language uses fixed formulations like "unbeschadet" (without prejudice to), "im Sinne des Gesetzes" (within the meaning of the law), "vorbehaltlich" (subject to) — often with nominal style and passive voice.',
+      explanationTr:
+        'Hukuk dili "unbeschadet" (zarar vermeksizin), "im Sinne des Gesetzes" (kanun anlamında), "vorbehaltlich" (şartıyla) gibi sabit ifadeler kullanır — genellikle isim stili ve edilgen çatıyla.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit5Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "vorbehaltlich" in der Rechtssprache?', options: ['subject to / provided that', 'immer', 'niemals', 'sofort'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Vorbehaltlich" bedeutet "subject to / provided that".',
+      },
+      {
+        lessonId: c2Unit5Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ der Genehmigung tritt der Vertrag in Kraft. (subject to)' },
+        correctAnswer: { accepted: ['vorbehaltlich'] },
+        explanation: '"Vorbehaltlich der Genehmigung" = "subject to approval".',
+      },
+    ],
+  })
+
+  const c2Unit5Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit5.id,
+      order: 2,
+      grammarTopic: 'Medizinische Fachsprache',
+      explanationDe:
+        'Die Medizinsprache benutzt oft griechisch-lateinische Fachbegriffe: "die Diagnose", "die Therapie", "die Symptomatik". Ärzte übersetzen diese oft in Alltagssprache für Patienten.',
+      explanationEn:
+        'Medical language often uses Greek-Latin technical terms: "die Diagnose" (diagnosis), "die Therapie" (therapy), "die Symptomatik" (symptomatology). Doctors often translate these into everyday language for patients.',
+      explanationTr:
+        'Tıp dili genellikle Yunanca-Latince teknik terimler kullanır: "die Diagnose" (tanı), "die Therapie" (tedavi), "die Symptomatik" (semptomlar). Doktorlar bunları hastalar için günlük dile çevirir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit5Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "die Diagnose"?', options: ['diagnosis', 'the prescription', 'the surgery', 'the recovery'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Die Diagnose" bedeutet "diagnosis".',
+      },
+      {
+        lessonId: c2Unit5Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne den deutschen Fachbegriff für 'therapy'." },
+        correctAnswer: { accepted: ['die therapie', 'therapie'] },
+        explanation: '"Die Therapie" bedeutet "therapy".',
+      },
+    ],
+  })
+
+  const c2Unit5Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit5.id,
+      order: 3,
+      grammarTopic: 'Bürokratische Fachsprache',
+      explanationDe:
+        'Verwaltungssprache benutzt Formulierungen wie "Antrag auf...", "gemäß §...", "hiermit wird bescheinigt, dass...". Diese sind stark formelhaft und wenig variabel.',
+      explanationEn:
+        'Bureaucratic language uses formulations like "Antrag auf..." (application for...), "gemäß §..." (pursuant to §...), "hiermit wird bescheinigt, dass..." (this certifies that...). These are highly formulaic and rigid.',
+      explanationTr:
+        'Bürokratik dil "Antrag auf..." (başvuru...), "gemäß §..." (madde ...\'e göre), "hiermit wird bescheinigt, dass..." (bununla belgelenmektedir ki...) gibi ifadeler kullanır. Bunlar oldukça kalıplaşmıştır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit5Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Formulierung ist typisch bürokratisch?', options: ['hiermit wird bescheinigt, dass...', 'ich finde das cool', 'lass uns das machen', 'kein Problem'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Hiermit wird bescheinigt, dass..." ist typische Verwaltungssprache.',
+      },
+      {
+        lessonId: c2Unit5Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ auf Kindergeld muss schriftlich gestellt werden. (application)' },
+        correctAnswer: { accepted: ['antrag', 'der antrag'] },
+        explanation: '"Antrag auf Kindergeld" = "application for child benefit".',
+      },
+    ],
+  })
+
+  const c2Unit5Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit5.id,
+      order: 4,
+      grammarTopic: 'Übung: Fachsprachen im Vergleich',
+      explanationDe:
+        'Wiederholung: Jede Fachsprache (juristisch, medizinisch, bürokratisch) hat eigene feste Formulierungen und Fachbegriffe, die Laien oft nicht sofort verstehen.',
+      explanationEn:
+        'Review: each specialized register (legal, medical, bureaucratic) has its own fixed formulations and technical terms that laypeople often don\'t immediately understand.',
+      explanationTr:
+        'Tekrar: her uzmanlık dili (hukuki, tıbbi, bürokratik) kendine özgü sabit ifadelere ve teknik terimlere sahiptir; bunları sıradan kişiler genellikle hemen anlamaz.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit5Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: {
+          lefts: ['vorbehaltlich', 'die Diagnose', 'hiermit wird bescheinigt'],
+          rights: ['bürokratisch', 'juristisch', 'medizinisch'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'vorbehaltlich', right: 'juristisch' },
+            { left: 'die Diagnose', right: 'medizinisch' },
+            { left: 'hiermit wird bescheinigt', right: 'bürokratisch' },
+          ],
+        },
+        explanation: 'Jeder Ausdruck gehört zu einer bestimmten Fachsprache.',
+      },
+      {
+        lessonId: c2Unit5Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne eine der drei in dieser Einheit behandelten Fachsprachen." },
+        correctAnswer: { accepted: ['juristisch', 'medizinisch', 'bürokratisch', 'rechtssprache', 'medizinsprache', 'verwaltungssprache'] },
+        explanation: 'Behandelt wurden juristische, medizinische und bürokratische Fachsprache.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit5Lesson1.id, word: 'vorbehaltlich', translationEn: 'subject to', translationTr: 'şartıyla', exampleSentence: 'Vorbehaltlich der Genehmigung tritt der Vertrag in Kraft.' },
+      { lessonId: c2Unit5Lesson1.id, word: 'unbeschadet', translationEn: 'without prejudice to', translationTr: 'zarar vermeksizin', exampleSentence: 'Unbeschadet dieser Regelung gilt das Gesetz weiter.' },
+      { lessonId: c2Unit5Lesson2.id, word: 'die Diagnose', translationEn: 'the diagnosis', translationTr: 'tanı', exampleSentence: 'Die Diagnose war eindeutig.' },
+      { lessonId: c2Unit5Lesson2.id, word: 'die Therapie', translationEn: 'the therapy', translationTr: 'tedavi', exampleSentence: 'Die Therapie dauert mehrere Wochen.' },
+      { lessonId: c2Unit5Lesson3.id, word: 'der Antrag', translationEn: 'the application', translationTr: 'başvuru', exampleSentence: 'Der Antrag wurde genehmigt.' },
+      { lessonId: c2Unit5Lesson3.id, word: 'bescheinigen', translationEn: 'to certify', translationTr: 'belgelemek', exampleSentence: 'Das wird hiermit bescheinigt.' },
+      { lessonId: c2Unit5Lesson4.id, word: 'der Laie', translationEn: 'the layperson', translationTr: 'sıradan kişi', exampleSentence: 'Für Laien ist das schwer verständlich.' },
+      { lessonId: c2Unit5Lesson4.id, word: 'der Fachbegriff', translationEn: 'the technical term', translationTr: 'teknik terim', exampleSentence: 'Das ist ein medizinischer Fachbegriff.' },
+    ],
+  })
+
+  // --- C2 Unit 6: Archaismen & gehobenes Vokabular (4 lessons) ---
+  const c2Unit6 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 6, titleDe: 'Archaismen & gehobenes Vokabular', titleEn: 'Archaisms & Elevated Vocabulary', titleTr: 'Arkaizmler ve Üst Düzey Kelime Dağarcığı' },
+  })
+
+  const c2Unit6Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit6.id,
+      order: 1,
+      grammarTopic: 'Archaische Wörter erkennen',
+      explanationDe:
+        'Archaismen sind veraltete Wörter, die noch in Literatur oder feierlichen Texten vorkommen: "vonnöten" (statt "nötig"), "alsdann" (statt "dann").',
+      explanationEn:
+        'Archaisms are outdated words still found in literature or ceremonial texts: "vonnöten" (instead of "nötig" = necessary), "alsdann" (instead of "dann" = then).',
+      explanationTr:
+        'Arkaizmler, hâlâ edebiyatta veya törensel metinlerde bulunan eski kelimelerdir: "vonnöten" ("nötig" = gerekli yerine), "alsdann" ("dann" = sonra yerine).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit6Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort ist ein Archaismus für "nötig"?', options: ['vonnöten', 'notwendig', 'wichtig', 'dringend'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Vonnöten" ist eine veraltete Form von "nötig".',
+      },
+      {
+        lessonId: c2Unit6Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ trat er vor die Versammlung. (archaisch für "dann")' },
+        correctAnswer: { accepted: ['alsdann'] },
+        explanation: '"Alsdann" ist ein Archaismus für "dann".',
+      },
+    ],
+  })
+
+  const c2Unit6Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit6.id,
+      order: 2,
+      grammarTopic: 'Gehobenes Vokabular im Alltag',
+      explanationDe:
+        'Gehobene Wörter wie "erhaben" (statt "toll"), "vortrefflich" (statt "sehr gut"), "obsolet" (statt "veraltet") verleihen Texten einen literarischen Ton.',
+      explanationEn:
+        'Elevated words like "erhaben" (sublime, instead of "toll" = great), "vortrefflich" (excellent, instead of "sehr gut"), "obsolet" (obsolete, instead of "veraltet") lend texts a literary tone.',
+      explanationTr:
+        '"Erhaben" (yüce, "toll" = harika yerine), "vortrefflich" (mükemmel, "sehr gut" yerine), "obsolet" (eskimiş, "veraltet" yerine) gibi üst düzey kelimeler metinlere edebi bir ton katar.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit6Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Gehobenes Synonym für "sehr gut"?', options: ['vortrefflich', 'okay', 'ganz nett', 'mittelmäßig'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Vortrefflich" ist ein gehobenes Synonym für "sehr gut".',
+      },
+      {
+        lessonId: c2Unit6Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne ein gehobenes Synonym für 'veraltet'." },
+        correctAnswer: { accepted: ['obsolet'] },
+        explanation: '"Obsolet" bedeutet "veraltet".',
+      },
+    ],
+  })
+
+  const c2Unit6Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit6.id,
+      order: 3,
+      grammarTopic: 'Archaische Verbformen',
+      explanationDe:
+        'In älteren Texten findet man Formen wie "ward" (statt "wurde") oder "spricht er" in Inversion ohne "dass". Diese wirken heute poetisch oder feierlich.',
+      explanationEn:
+        'Older texts contain forms like "ward" (instead of "wurde" = became) or inverted "spricht er" without "dass". These sound poetic or solemn today.',
+      explanationTr:
+        'Eski metinlerde "ward" ("wurde" = oldu yerine) veya "dass" olmadan devrik "spricht er" gibi biçimler bulunur. Bunlar bugün şiirsel veya törensel görünür.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit6Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Ward" ist eine archaische Form von...', options: ['wurde', 'wird', 'war', 'werde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Ward" ist eine veraltete Form von "wurde".',
+      },
+      {
+        lessonId: c2Unit6Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Und es ___ Licht. (archaisch für "wurde")' },
+        correctAnswer: { accepted: ['ward'] },
+        explanation: '"Und es ward Licht" ist eine bekannte archaische Formulierung.',
+      },
+    ],
+  })
+
+  const c2Unit6Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit6.id,
+      order: 4,
+      grammarTopic: 'Übung: Archaismen & gehobenes Vokabular',
+      explanationDe:
+        'Wiederholung: Archaismen und gehobenes Vokabular verleihen Texten literarischen oder feierlichen Charakter, sind aber im Alltag unüblich.',
+      explanationEn:
+        'Review: archaisms and elevated vocabulary give texts a literary or solemn character but are unusual in everyday speech.',
+      explanationTr:
+        'Tekrar: arkaizmler ve üst düzey kelimeler metinlere edebi veya törensel bir karakter katar, ancak günlük konuşmada alışılmadıktır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit6Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['vonnöten', 'vortrefflich', 'obsolet'], rights: ['veraltet', 'nötig', 'sehr gut'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'vonnöten', right: 'nötig' },
+            { left: 'vortrefflich', right: 'sehr gut' },
+            { left: 'obsolet', right: 'veraltet' },
+          ],
+        },
+        explanation: 'Jeder Archaismus/jedes gehobene Wort hat ein alltagssprachliches Äquivalent.',
+      },
+      {
+        lessonId: c2Unit6Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Licht', 'ward', 'es', 'und'] },
+        correctAnswer: { order: ['und', 'es', 'ward', 'Licht'] },
+        explanation: 'Bekannte archaische Wendung: "Und es ward Licht."',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit6Lesson1.id, word: 'vonnöten', translationEn: 'necessary (archaic)', translationTr: 'gerekli (eski)', exampleSentence: 'Geduld ist hier vonnöten.' },
+      { lessonId: c2Unit6Lesson1.id, word: 'alsdann', translationEn: 'then (archaic)', translationTr: 'sonra (eski)', exampleSentence: 'Alsdann trat er vor die Versammlung.' },
+      { lessonId: c2Unit6Lesson2.id, word: 'vortrefflich', translationEn: 'excellent', translationTr: 'mükemmel', exampleSentence: 'Das Konzert war vortrefflich.' },
+      { lessonId: c2Unit6Lesson2.id, word: 'obsolet', translationEn: 'obsolete', translationTr: 'eskimiş', exampleSentence: 'Diese Methode ist obsolet.' },
+      { lessonId: c2Unit6Lesson3.id, word: 'ward', translationEn: 'became (archaic)', translationTr: 'oldu (eski)', exampleSentence: 'Und es ward Licht.' },
+      { lessonId: c2Unit6Lesson3.id, word: 'feierlich', translationEn: 'solemn', translationTr: 'törensel', exampleSentence: 'Die Rede war sehr feierlich.' },
+      { lessonId: c2Unit6Lesson4.id, word: 'literarisch', translationEn: 'literary', translationTr: 'edebi', exampleSentence: 'Der Text hat einen literarischen Charakter.' },
+      { lessonId: c2Unit6Lesson4.id, word: 'unüblich', translationEn: 'unusual', translationTr: 'alışılmadık', exampleSentence: 'Das ist im Alltag unüblich.' },
+    ],
+  })
+
+  // --- C2 Unit 7: Feinheiten des Konjunktivs (4 lessons) ---
+  const c2Unit7 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 7, titleDe: 'Feinheiten des Konjunktivs', titleEn: 'Subtleties of the Subjunctive', titleTr: 'Konjunktif Kipin İncelikleri' },
+  })
+
+  const c2Unit7Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit7.id,
+      order: 1,
+      grammarTopic: 'Konjunktiv I vs. Konjunktiv II in der indirekten Rede',
+      explanationDe:
+        'In sorgfältiger Schriftsprache markiert Konjunktiv I neutrale Redewiedergabe ("er sagt, er komme"), während Konjunktiv II oft Zweifel des Sprechers an der Aussage andeutet ("er sagt, er käme" klingt skeptischer).',
+      explanationEn:
+        'In careful written German, Konjunktiv I marks neutral reported speech ("er sagt, er komme"), while Konjunktiv II often hints at the speaker\'s doubt about the claim ("er sagt, er käme" sounds more skeptical).',
+      explanationTr:
+        'Özenli yazı dilinde Konjunktiv I nötr aktarımı işaretler ("er sagt, er komme"), Konjunktiv II ise genellikle konuşmacının iddiaya şüpheyle yaklaştığını ima eder ("er sagt, er käme" daha şüpheci gelir).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit7Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Form klingt neutraler in der indirekten Rede?', options: ['Konjunktiv I', 'Konjunktiv II', 'Indikativ', 'Imperativ'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv I ist die neutrale Form der indirekten Rede.',
+      },
+      {
+        lessonId: c2Unit7Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welche Form deutet oft Zweifel des Sprechers an: Konjunktiv I oder Konjunktiv II?" },
+        correctAnswer: { accepted: ['konjunktiv ii', 'konjunktiv 2'] },
+        explanation: 'Konjunktiv II kann Skepsis des Sprechers andeuten.',
+      },
+    ],
+  })
+
+  const c2Unit7Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit7.id,
+      order: 2,
+      grammarTopic: 'Konjunktiv in höflichen Formulierungen',
+      explanationDe:
+        'Konjunktiv II macht Bitten und Vorschläge höflicher: "Könnten Sie mir helfen?" statt "Können Sie mir helfen?" klingt distanzierter und formeller.',
+      explanationEn:
+        'Konjunktiv II makes requests and suggestions more polite: "Könnten Sie mir helfen?" (Could you help me?) instead of "Können Sie mir helfen?" (Can you help me?) sounds more formal and reserved.',
+      explanationTr:
+        'Konjunktiv II, rica ve önerileri daha kibar yapar: "Können Sie mir helfen?" yerine "Könnten Sie mir helfen?" daha mesafeli ve resmi gelir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit7Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Frage ist höflicher?', options: ['Könnten Sie mir helfen?', 'Können Sie mir helfen?', 'Hilfst du mir?', 'Hilf mir!'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Könnten Sie..." (Konjunktiv II) ist höflicher.',
+      },
+      {
+        lessonId: c2Unit7Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Sie mir bitte das Salz reichen? (höfliche Bitte mit können)' },
+        correctAnswer: { accepted: ['könnten'] },
+        explanation: '"Könnten Sie..." ist die höfliche Konjunktiv-II-Form.',
+      },
+    ],
+  })
+
+  const c2Unit7Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit7.id,
+      order: 3,
+      grammarTopic: 'Konjunktiv in hypothetischen wissenschaftlichen Aussagen',
+      explanationDe:
+        'In wissenschaftlichen Texten drückt Konjunktiv II Vorsicht bei Hypothesen aus: "Man könnte annehmen, dass..." klingt zurückhaltender als "Man nimmt an, dass...".',
+      explanationEn:
+        'In academic texts, Konjunktiv II expresses caution about hypotheses: "Man könnte annehmen, dass..." (One could assume that...) sounds more tentative than "Man nimmt an, dass..." (One assumes that...).',
+      explanationTr:
+        'Akademik metinlerde Konjunktiv II hipotezlerde temkinliliği ifade eder: "Man könnte annehmen, dass..." ifadesi "Man nimmt an, dass..." ifadesine göre daha çekingen gelir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit7Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Formulierung klingt vorsichtiger?', options: ['Man könnte annehmen, dass...', 'Man nimmt an, dass...', 'Es ist bewiesen, dass...', 'Es steht fest, dass...'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv II ("könnte") signalisiert Vorsicht bei Hypothesen.',
+      },
+      {
+        lessonId: c2Unit7Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie lautet die vorsichtige Konjunktiv-II-Form von 'können' für 'man'?" },
+        correctAnswer: { accepted: ['könnte', 'man könnte'] },
+        explanation: '"Man könnte..." ist die vorsichtige Hypothesenform.',
+      },
+    ],
+  })
+
+  const c2Unit7Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit7.id,
+      order: 4,
+      grammarTopic: 'Übung: Feinheiten des Konjunktivs',
+      explanationDe:
+        'Wiederholung: Konjunktiv I für neutrale Redewiedergabe, Konjunktiv II für Höflichkeit, Zweifel oder vorsichtige Hypothesen — die Wahl beeinflusst den Ton stark.',
+      explanationEn:
+        'Review: Konjunktiv I for neutral reported speech, Konjunktiv II for politeness, doubt, or cautious hypotheses — the choice strongly affects tone.',
+      explanationTr:
+        'Tekrar: nötr aktarım için Konjunktiv I, kibarlık, şüphe veya temkinli hipotezler için Konjunktiv II — seçim tonu güçlü şekilde etkiler.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit7Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: {
+          lefts: ['neutrale Redewiedergabe', 'höfliche Bitte', 'vorsichtige Hypothese'],
+          rights: ['Konjunktiv II (Hypothese)', 'Konjunktiv I', 'Konjunktiv II (Bitte)'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'neutrale Redewiedergabe', right: 'Konjunktiv I' },
+            { left: 'höfliche Bitte', right: 'Konjunktiv II (Bitte)' },
+            { left: 'vorsichtige Hypothese', right: 'Konjunktiv II (Hypothese)' },
+          ],
+        },
+        explanation: 'Jede Funktion des Konjunktivs hat einen typischen Kontext.',
+      },
+      {
+        lessonId: c2Unit7Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['helfen', 'mir', 'Sie', 'könnten'] },
+        correctAnswer: { order: ['könnten', 'Sie', 'mir', 'helfen'] },
+        explanation: 'Höfliche Frage: "Könnten Sie mir helfen?"',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit7Lesson1.id, word: 'die Redewiedergabe', translationEn: 'reported speech', translationTr: 'aktarım', exampleSentence: 'Die Redewiedergabe folgt festen Regeln.' },
+      { lessonId: c2Unit7Lesson1.id, word: 'der Zweifel', translationEn: 'the doubt', translationTr: 'şüphe', exampleSentence: 'Er äußerte Zweifel an der Aussage.' },
+      { lessonId: c2Unit7Lesson2.id, word: 'reichen', translationEn: 'to pass / hand', translationTr: 'uzatmak', exampleSentence: 'Könnten Sie mir das Salz reichen?' },
+      { lessonId: c2Unit7Lesson2.id, word: 'zurückhaltend', translationEn: 'reserved', translationTr: 'çekingen', exampleSentence: 'Er formulierte seine Bitte zurückhaltend.' },
+      { lessonId: c2Unit7Lesson3.id, word: 'annehmen', translationEn: 'to assume', translationTr: 'varsaymak', exampleSentence: 'Man könnte annehmen, dass das stimmt.' },
+      { lessonId: c2Unit7Lesson3.id, word: 'die Hypothese', translationEn: 'the hypothesis', translationTr: 'hipotez', exampleSentence: 'Die Hypothese wurde bestätigt.' },
+      { lessonId: c2Unit7Lesson4.id, word: 'der Ton', translationEn: 'the tone', translationTr: 'ton', exampleSentence: 'Der Ton des Textes war sachlich.' },
+      { lessonId: c2Unit7Lesson4.id, word: 'die Wahl', translationEn: 'the choice', translationTr: 'seçim', exampleSentence: 'Die Wahl der Wörter beeinflusst den Ton.' },
+    ],
+  })
+
+  // --- C2 Unit 8: Textsortenspezifische Stile (4 lessons) ---
+  const c2Unit8 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 8, titleDe: 'Textsortenspezifische Stile', titleEn: 'Genre-Specific Styles', titleTr: 'Metin Türüne Özgü Üsluplar' },
+  })
+
+  const c2Unit8Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit8.id,
+      order: 1,
+      grammarTopic: 'Der Essay',
+      explanationDe:
+        'Ein Essay argumentiert persönlich und reflektierend, oft in der Ich-Form, mit rhetorischen Fragen und pointierten Formulierungen.',
+      explanationEn:
+        'An essay argues in a personal, reflective way, often in first person, using rhetorical questions and pointed phrasing.',
+      explanationTr:
+        'Bir deneme kişisel ve düşünsel şekilde tartışır, genellikle birinci tekil şahısla, retorik sorular ve keskin ifadelerle.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit8Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Merkmal ist typisch für einen Essay?', options: ['persönliche, reflektierende Ich-Form', 'streng unpersönlicher Passivstil', 'reine Faktenaufzählung', 'tabellarische Darstellung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Essays sind oft persönlich und reflektierend.',
+      },
+      {
+        lessonId: c2Unit8Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welche Textsorte argumentiert typischerweise persönlich und reflektierend, oft in der Ich-Form?" },
+        correctAnswer: { accepted: ['der essay', 'essay'] },
+        explanation: 'Der Essay ist die persönliche, reflektierende Textsorte.',
+      },
+    ],
+  })
+
+  const c2Unit8Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit8.id,
+      order: 2,
+      grammarTopic: 'Der Bericht',
+      explanationDe:
+        'Ein Bericht ist sachlich, chronologisch und unpersönlich, oft im Passiv oder mit "man": "Zunächst wurde... Anschließend wurde...".',
+      explanationEn:
+        'A report is factual, chronological, and impersonal, often in passive voice or with "man": "Zunächst wurde... Anschließend wurde..." (First... was... Then... was...).',
+      explanationTr:
+        'Bir rapor nesnel, kronolojik ve kişisiz olur, genellikle edilgen çatı veya "man" ile: "Zunächst wurde... Anschließend wurde...".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit8Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Stil ist typisch für einen Bericht?', options: ['sachlich und chronologisch', 'persönlich und emotional', 'poetisch und bildhaft', 'sarkastisch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Berichte sind sachlich und chronologisch.',
+      },
+      {
+        lessonId: c2Unit8Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Zunächst ___ die Teilnehmer begrüßt. (Passiv, Präteritum)' },
+        correctAnswer: { accepted: ['wurden'] },
+        explanation: 'Passiv Präteritum: "wurden begrüßt".',
+      },
+    ],
+  })
+
+  const c2Unit8Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit8.id,
+      order: 3,
+      grammarTopic: 'Die Rezension',
+      explanationDe:
+        'Eine Rezension bewertet ein Werk (Buch, Film) mit Argumenten und einer klaren Stellungnahme, oft mit einer abschließenden Empfehlung.',
+      explanationEn:
+        'A review evaluates a work (book, film) with arguments and a clear stance, often ending with a recommendation.',
+      explanationTr:
+        'Bir eleştiri, bir eseri (kitap, film) argümanlarla ve net bir tavırla değerlendirir, genellikle bir öneriyle sona erer.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit8Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was gehört typischerweise zu einer Rezension?', options: ['eine klare Stellungnahme mit Empfehlung', 'nur eine Inhaltsangabe', 'ausschließlich Zahlen und Daten', 'ein Gesetzestext'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Rezensionen enthalten eine bewertende Stellungnahme.',
+      },
+      {
+        lessonId: c2Unit8Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie heißt die Textsorte, die ein Buch oder einen Film bewertet?" },
+        correctAnswer: { accepted: ['die rezension', 'rezension'] },
+        explanation: 'Das ist die Rezension.',
+      },
+    ],
+  })
+
+  const c2Unit8Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit8.id,
+      order: 4,
+      grammarTopic: 'Übung: Textsorten im Vergleich',
+      explanationDe:
+        'Wiederholung: Essay (persönlich), Bericht (sachlich-chronologisch) und Rezension (bewertend) verlangen jeweils einen anderen Stil und Ton.',
+      explanationEn:
+        'Review: essay (personal), report (factual-chronological), and review (evaluative) each require a different style and tone.',
+      explanationTr:
+        'Tekrar: deneme (kişisel), rapor (nesnel-kronolojik) ve eleştiri (değerlendirici) her biri farklı bir üslup ve ton gerektirir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit8Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['persönlich, reflektierend', 'sachlich, chronologisch', 'bewertend mit Empfehlung'], rights: ['Rezension', 'Essay', 'Bericht'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'persönlich, reflektierend', right: 'Essay' },
+            { left: 'sachlich, chronologisch', right: 'Bericht' },
+            { left: 'bewertend mit Empfehlung', right: 'Rezension' },
+          ],
+        },
+        explanation: 'Jede Textsorte hat einen eigenen typischen Stil.',
+      },
+      {
+        lessonId: c2Unit8Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welche Textsorte benutzt oft Passiv und 'man' für einen unpersönlichen, chronologischen Stil?" },
+        correctAnswer: { accepted: ['der bericht', 'bericht'] },
+        explanation: 'Der Bericht ist sachlich und oft unpersönlich formuliert.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit8Lesson1.id, word: 'reflektierend', translationEn: 'reflective', translationTr: 'düşünsel', exampleSentence: 'Der Essay ist sehr reflektierend geschrieben.' },
+      { lessonId: c2Unit8Lesson1.id, word: 'pointiert', translationEn: 'pointed / sharp', translationTr: 'keskin', exampleSentence: 'Er formulierte seine These pointiert.' },
+      { lessonId: c2Unit8Lesson2.id, word: 'chronologisch', translationEn: 'chronological', translationTr: 'kronolojik', exampleSentence: 'Der Bericht ist chronologisch aufgebaut.' },
+      { lessonId: c2Unit8Lesson2.id, word: 'begrüßen', translationEn: 'to greet / welcome', translationTr: 'karşılamak', exampleSentence: 'Die Gäste wurden herzlich begrüßt.' },
+      { lessonId: c2Unit8Lesson3.id, word: 'die Stellungnahme', translationEn: 'the position statement', translationTr: 'görüş bildirme', exampleSentence: 'Die Rezension endet mit einer klaren Stellungnahme.' },
+      { lessonId: c2Unit8Lesson3.id, word: 'die Empfehlung', translationEn: 'the recommendation', translationTr: 'tavsiye', exampleSentence: 'Am Ende steht eine klare Empfehlung.' },
+      { lessonId: c2Unit8Lesson4.id, word: 'der Stil', translationEn: 'the style', translationTr: 'üslup', exampleSentence: 'Jede Textsorte hat einen eigenen Stil.' },
+      { lessonId: c2Unit8Lesson4.id, word: 'unpersönlich', translationEn: 'impersonal', translationTr: 'kişisiz', exampleSentence: 'Der Bericht ist bewusst unpersönlich gehalten.' },
+    ],
+  })
+
+  // --- C2 Unit 9: Sprachvarietäten & Dialekte (4 lessons) ---
+  const c2Unit9 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 9, titleDe: 'Sprachvarietäten & Dialekte', titleEn: 'Language Varieties & Dialects', titleTr: 'Dil Çeşitleri ve Lehçeler' },
+  })
+
+  const c2Unit9Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit9.id,
+      order: 1,
+      grammarTopic: 'Standarddeutsch vs. Umgangssprache',
+      explanationDe:
+        'Standarddeutsch folgt den Regeln der Hochsprache, Umgangssprache erlaubt Verkürzungen wie "haste" (hast du) oder "isses" (ist es).',
+      explanationEn:
+        'Standard German follows the rules of the standard language; colloquial speech allows contractions like "haste" (hast du = do you have) or "isses" (ist es = is it).',
+      explanationTr:
+        'Standart Almanca, standart dilin kurallarını izler; günlük dil "haste" (hast du) veya "isses" (ist es) gibi kısaltmalara izin verir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit9Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Haste" ist die umgangssprachliche Form von...', options: ['hast du', 'hat er', 'habt ihr', 'haben sie'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Haste" = "hast du" in der Umgangssprache.',
+      },
+      {
+        lessonId: c2Unit9Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne die Standardform von 'isses'." },
+        correctAnswer: { accepted: ['ist es'] },
+        explanation: '"Isses" ist die umgangssprachliche Verkürzung von "ist es".',
+      },
+    ],
+  })
+
+  const c2Unit9Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit9.id,
+      order: 2,
+      grammarTopic: 'Regionale Varianten (Überblick)',
+      explanationDe:
+        'Deutschsprachige Länder haben regionale Varianten: "Sonnabend" (norddeutsch) vs. "Samstag" (süddeutsch), "Sackerl" (österreichisch) für "Tüte".',
+      explanationEn:
+        'German-speaking countries have regional variants: "Sonnabend" (Northern German) vs. "Samstag" (Southern German) for Saturday, "Sackerl" (Austrian) for "Tüte" (bag).',
+      explanationTr:
+        'Almanca konuşulan ülkelerde bölgesel farklılıklar vardır: "Sonnabend" (kuzey Almanya) - "Samstag" (güney Almanya) "cumartesi" için, "Sackerl" (Avusturya) "Tüte" (torba) için.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit9Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort ist die norddeutsche Variante für "Samstag"?', options: ['Sonnabend', 'Sackerl', 'Feierabend', 'Vorabend'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Sonnabend" ist die norddeutsche Variante von "Samstag".',
+      },
+      {
+        lessonId: c2Unit9Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'In Österreich sagt man oft "___" statt "Tüte".' },
+        correctAnswer: { accepted: ['sackerl'] },
+        explanation: '"Sackerl" ist österreichisches Deutsch für "Tüte".',
+      },
+    ],
+  })
+
+  const c2Unit9Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit9.id,
+      order: 3,
+      grammarTopic: 'Soziolekte und Jugendsprache',
+      explanationDe:
+        'Soziolekte sind gruppenspezifische Sprachformen; Jugendsprache verändert sich schnell und benutzt oft Anglizismen wie "cringe" oder "flexen".',
+      explanationEn:
+        'Sociolects are group-specific language forms; youth slang changes quickly and often borrows English words like "cringe" or "flexen" (to show off).',
+      explanationTr:
+        'Sosyolektler gruba özgü dil biçimleridir; gençlik dili hızla değişir ve "cringe" veya "flexen" gibi İngilizce kökenli kelimeleri sık kullanır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit9Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist ein Soziolekt?', options: ['eine gruppenspezifische Sprachform', 'eine offizielle Amtssprache', 'ein historischer Dialekt', 'eine Fremdsprache'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Ein Soziolekt ist an eine bestimmte Gruppe gebunden.',
+      },
+      {
+        lessonId: c2Unit9Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie nennt man Sprachformen, die typisch für Jugendliche sind?" },
+        correctAnswer: { accepted: ['jugendsprache', 'die jugendsprache'] },
+        explanation: 'Das nennt man "Jugendsprache".',
+      },
+    ],
+  })
+
+  const c2Unit9Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit9.id,
+      order: 4,
+      grammarTopic: 'Übung: Sprachvarietäten',
+      explanationDe:
+        'Wiederholung: Standardsprache, Umgangssprache, regionale Varianten und Soziolekte existieren nebeneinander und werden je nach Situation gewählt.',
+      explanationEn:
+        'Review: standard language, colloquial speech, regional variants, and sociolects coexist and are chosen depending on the situation.',
+      explanationTr:
+        'Tekrar: standart dil, günlük dil, bölgesel çeşitler ve sosyolektler bir arada var olur ve duruma göre seçilir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit9Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['haste', 'Sonnabend', 'cringe'], rights: ['Jugendsprache', 'Umgangssprache', 'regionale Variante'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'haste', right: 'Umgangssprache' },
+            { left: 'Sonnabend', right: 'regionale Variante' },
+            { left: 'cringe', right: 'Jugendsprache' },
+          ],
+        },
+        explanation: 'Jedes Beispiel gehört zu einer Sprachvarietät.',
+      },
+      {
+        lessonId: c2Unit9Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne eine der vier in dieser Einheit behandelten Sprachvarietäten." },
+        correctAnswer: { accepted: ['standardsprache', 'umgangssprache', 'regionale variante', 'soziolekt', 'jugendsprache', 'dialekt'] },
+        explanation: 'Behandelt wurden Standardsprache, Umgangssprache, regionale Varianten und Soziolekte.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit9Lesson1.id, word: 'die Umgangssprache', translationEn: 'colloquial speech', translationTr: 'günlük dil', exampleSentence: 'In der Umgangssprache sagt man oft "haste".' },
+      { lessonId: c2Unit9Lesson1.id, word: 'die Verkürzung', translationEn: 'the contraction', translationTr: 'kısaltma', exampleSentence: '"Haste" ist eine Verkürzung von "hast du".' },
+      { lessonId: c2Unit9Lesson2.id, word: 'die Tüte', translationEn: 'the bag', translationTr: 'torba', exampleSentence: 'Ich brauche noch eine Tüte.' },
+      { lessonId: c2Unit9Lesson2.id, word: 'regional', translationEn: 'regional', translationTr: 'bölgesel', exampleSentence: 'Das ist ein regionaler Ausdruck.' },
+      { lessonId: c2Unit9Lesson3.id, word: 'der Soziolekt', translationEn: 'the sociolect', translationTr: 'sosyolekt', exampleSentence: 'Jugendsprache ist ein Soziolekt.' },
+      { lessonId: c2Unit9Lesson3.id, word: 'der Anglizismus', translationEn: 'the anglicism', translationTr: 'ingilizceden alıntı', exampleSentence: '"Cringe" ist ein moderner Anglizismus.' },
+      { lessonId: c2Unit9Lesson4.id, word: 'nebeneinander', translationEn: 'side by side', translationTr: 'yan yana', exampleSentence: 'Beide Formen existieren nebeneinander.' },
+      { lessonId: c2Unit9Lesson4.id, word: 'die Situation', translationEn: 'the situation', translationTr: 'durum', exampleSentence: 'Die Wahl hängt von der Situation ab.' },
+    ],
+  })
+
+  // --- C2 Unit 10: Wortspiel & Mehrdeutigkeit (4 lessons) ---
+  const c2Unit10 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 10, titleDe: 'Wortspiel & Mehrdeutigkeit', titleEn: 'Wordplay & Ambiguity', titleTr: 'Kelime Oyunu ve Çok Anlamlılık' },
+  })
+
+  const c2Unit10Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit10.id,
+      order: 1,
+      grammarTopic: 'Homonyme und Mehrdeutigkeit',
+      explanationDe:
+        'Homonyme klingen gleich, bedeuten aber Verschiedenes: "die Bank" (Sitzmöbel oder Geldinstitut). Solche Wörter werden oft für Wortspiele genutzt.',
+      explanationEn:
+        'Homonyms sound the same but mean different things: "die Bank" (bench or financial bank). Such words are often used for wordplay.',
+      explanationTr:
+        'Eş sesli kelimeler aynı ses ama farklı anlamlara gelir: "die Bank" (oturma sırası veya banka). Bu tür kelimeler sık sık kelime oyunlarında kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit10Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches deutsche Wort ist ein Homonym mit zwei sehr unterschiedlichen Bedeutungen?', options: ['die Bank', 'das Haus', 'der Tisch', 'die Straße'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Die Bank" bedeutet sowohl "bench" als auch "financial bank".',
+      },
+      {
+        lessonId: c2Unit10Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie nennt man Wörter, die gleich klingen, aber Verschiedenes bedeuten?" },
+        correctAnswer: { accepted: ['homonyme', 'homonym'] },
+        explanation: 'Das nennt man "Homonyme".',
+      },
+    ],
+  })
+
+  const c2Unit10Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit10.id,
+      order: 2,
+      grammarTopic: 'Wortspiele in der Werbung',
+      explanationDe:
+        'Werbung nutzt oft Doppeldeutigkeit für einprägsame Slogans, z. B. Wortspiele mit zusammengesetzten Wörtern oder Redewendungen, die neu interpretiert werden.',
+      explanationEn:
+        'Advertising often uses double meanings for memorable slogans, e.g. wordplay with compound words or idioms reinterpreted in a new way.',
+      explanationTr:
+        'Reklamlar akılda kalıcı sloganlar için sık sık çift anlamlılık kullanır, örn. bileşik kelimelerle veya yeniden yorumlanan deyimlerle kelime oyunları.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit10Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Warum nutzt Werbung oft Wortspiele?', options: ['um Slogans einprägsam zu machen', 'um Texte länger zu machen', 'um Grammatikfehler zu vermeiden', 'um formeller zu wirken'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Wortspiele machen Slogans einprägsamer.',
+      },
+      {
+        lessonId: c2Unit10Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ein Slogan mit doppelter Bedeutung nennt man ein ___. (Wortspiel)' },
+        correctAnswer: { accepted: ['wortspiel'] },
+        explanation: 'Ein Slogan mit doppelter Bedeutung ist ein "Wortspiel".',
+      },
+    ],
+  })
+
+  const c2Unit10Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit10.id,
+      order: 3,
+      grammarTopic: 'Wortspiele mit zusammengesetzten Wörtern',
+      explanationDe:
+        'Deutsche Komposita erlauben kreative Wortspiele: "Frühlingsgefühle" kann wörtlich oder übertragen ("frühlingshafte Verliebtheit") verstanden werden.',
+      explanationEn:
+        'German compound words allow creative wordplay: "Frühlingsgefühle" (spring feelings) can be read literally or figuratively (a springtime feeling of being in love).',
+      explanationTr:
+        'Almanca birleşik kelimeler yaratıcı kelime oyunlarına izin verir: "Frühlingsgefühle" hem gerçek hem mecazi ("bahara özgü aşık olma hissi") anlaşılabilir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit10Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Frühlingsgefühle" kann übertragen bedeuten...', options: ['frühlingshafte Verliebtheit', 'nur kaltes Wetter', 'eine Krankheit', 'eine Jahreszeit allein'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Frühlingsgefühle" wird oft übertragen für Verliebtheit im Frühling benutzt.',
+      },
+      {
+        lessonId: c2Unit10Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Was ermöglicht kreative Wortspiele im Deutschen besonders gut: kurze Wörter oder zusammengesetzte Wörter (Komposita)?" },
+        correctAnswer: { accepted: ['komposita', 'zusammengesetzte wörter', 'zusammengesetzte worter'] },
+        explanation: 'Komposita (zusammengesetzte Wörter) erlauben kreative Doppeldeutigkeit.',
+      },
+    ],
+  })
+
+  const c2Unit10Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit10.id,
+      order: 4,
+      grammarTopic: 'Übung: Wortspiel & Mehrdeutigkeit',
+      explanationDe:
+        'Wiederholung: Homonyme, Werbeslogans und Komposita bieten reichlich Material für Wortspiele — ein Zeichen sprachlicher Meisterschaft, sie zu erkennen und selbst zu bilden.',
+      explanationEn:
+        'Review: homonyms, ad slogans, and compound words offer rich material for wordplay — recognizing and creating them is a sign of linguistic mastery.',
+      explanationTr:
+        'Tekrar: eş sesli kelimeler, reklam sloganları ve birleşik kelimeler kelime oyunları için zengin malzeme sunar — bunları tanımak ve üretmek dil ustalığının bir işaretidir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit10Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['die Bank', 'Frühlingsgefühle', 'einprägsamer Slogan'], rights: ['Werbewortspiel', 'Homonym', 'Kompositum mit Doppeldeutigkeit'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'die Bank', right: 'Homonym' },
+            { left: 'Frühlingsgefühle', right: 'Kompositum mit Doppeldeutigkeit' },
+            { left: 'einprägsamer Slogan', right: 'Werbewortspiel' },
+          ],
+        },
+        explanation: 'Jedes Beispiel zeigt eine Form von Wortspiel oder Mehrdeutigkeit.',
+      },
+      {
+        lessonId: c2Unit10Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne ein deutsches Homonym, das sowohl 'bench' als auch 'financial bank' bedeuten kann." },
+        correctAnswer: { accepted: ['die bank', 'bank'] },
+        explanation: '"Die Bank" ist das klassische Beispiel für dieses Homonym.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit10Lesson1.id, word: 'das Homonym', translationEn: 'the homonym', translationTr: 'eş sesli kelime', exampleSentence: '"Die Bank" ist ein bekanntes Homonym.' },
+      { lessonId: c2Unit10Lesson1.id, word: 'mehrdeutig', translationEn: 'ambiguous', translationTr: 'çok anlamlı', exampleSentence: 'Der Satz ist absichtlich mehrdeutig.' },
+      { lessonId: c2Unit10Lesson2.id, word: 'der Slogan', translationEn: 'the slogan', translationTr: 'slogan', exampleSentence: 'Der Slogan bleibt lange im Kopf.' },
+      { lessonId: c2Unit10Lesson2.id, word: 'doppeldeutig', translationEn: 'double-meaning', translationTr: 'çift anlamlı', exampleSentence: 'Die Werbung ist bewusst doppeldeutig.' },
+      { lessonId: c2Unit10Lesson3.id, word: 'das Kompositum', translationEn: 'the compound word', translationTr: 'birleşik kelime', exampleSentence: 'Deutsche Komposita können sehr lang sein.' },
+      { lessonId: c2Unit10Lesson3.id, word: 'übertragen', translationEn: 'figurative', translationTr: 'mecazi', exampleSentence: 'Das Wort wird hier übertragen benutzt.' },
+      { lessonId: c2Unit10Lesson4.id, word: 'die Meisterschaft', translationEn: 'mastery', translationTr: 'ustalık', exampleSentence: 'Das zeigt sprachliche Meisterschaft.' },
+      { lessonId: c2Unit10Lesson4.id, word: 'erkennen', translationEn: 'to recognize', translationTr: 'tanımak', exampleSentence: 'Er erkennt Wortspiele sofort.' },
+    ],
+  })
+
+  // --- C2 Unit 11: Diskursmarker in akademischen Texten (4 lessons) ---
+  const c2Unit11 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 11, titleDe: 'Diskursmarker in akademischen Texten', titleEn: 'Discourse Markers in Academic Texts', titleTr: 'Akademik Metinlerde Söylem İşaretleyicileri' },
+  })
+
+  const c2Unit11Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit11.id,
+      order: 1,
+      grammarTopic: "Diskursmarker 'mithin' und 'mithilfe'",
+      explanationDe:
+        '"Mithin" (folglich, also) leitet eine logische Schlussfolgerung ein; "mithilfe" (mit Hilfe von) leitet ein Mittel oder Werkzeug ein.',
+      explanationEn:
+        '"Mithin" (consequently, thus) introduces a logical conclusion; "mithilfe" (by means of) introduces a means or tool.',
+      explanationTr:
+        '"Mithin" (dolayısıyla, bu nedenle) mantıksal bir sonucu başlatır; "mithilfe" (yardımıyla) bir araç veya yöntemi başlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit11Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "mithin"?', options: ['folglich / also', 'trotzdem', 'obwohl', 'außerdem'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Mithin" bedeutet "folglich / also".',
+      },
+      {
+        lessonId: c2Unit11Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ einer Umfrage wurden die Daten erhoben. (by means of)' },
+        correctAnswer: { accepted: ['mithilfe'] },
+        explanation: '"Mithilfe einer Umfrage" = "by means of a survey".',
+      },
+    ],
+  })
+
+  const c2Unit11Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit11.id,
+      order: 2,
+      grammarTopic: "Diskursmarker 'diesbezüglich' und 'diesbezüglich'",
+      explanationDe:
+        '"Diesbezüglich" (in dieser Hinsicht, dazu) verweist auf zuvor Gesagtes in formellen Texten: "Diesbezüglich sind weitere Untersuchungen nötig."',
+      explanationEn:
+        '"Diesbezüglich" (in this regard) refers back to something previously mentioned in formal texts: "Diesbezüglich sind weitere Untersuchungen nötig" (In this regard, further investigation is needed).',
+      explanationTr:
+        '"Diesbezüglich" (bu bakımdan) resmi metinlerde daha önce söylenene atıfta bulunur: "Diesbezüglich sind weitere Untersuchungen nötig."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit11Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "diesbezüglich"?', options: ['in dieser Hinsicht', 'überraschenderweise', 'dennoch', 'zunächst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Diesbezüglich" bedeutet "in dieser Hinsicht".',
+      },
+      {
+        lessonId: c2Unit11Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne den formellen Diskursmarker, der 'in this regard' bedeutet." },
+        correctAnswer: { accepted: ['diesbezüglich'] },
+        explanation: '"Diesbezüglich" bedeutet "in this regard".',
+      },
+    ],
+  })
+
+  const c2Unit11Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit11.id,
+      order: 3,
+      grammarTopic: 'Gliederungsmarker: zunächst, des Weiteren, abschließend',
+      explanationDe:
+        'Akademische Texte strukturieren Argumente mit Markern wie "zunächst" (Einleitung), "des Weiteren" (Fortsetzung), "abschließend" (Fazit).',
+      explanationEn:
+        'Academic texts structure arguments with markers like "zunächst" (firstly), "des Weiteren" (furthermore), "abschließend" (finally/in conclusion).',
+      explanationTr:
+        'Akademik metinler argümanları "zunächst" (öncelikle), "des Weiteren" (ayrıca), "abschließend" (sonuç olarak) gibi işaretleyicilerle yapılandırır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit11Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Marker leitet ein Fazit ein?', options: ['abschließend', 'zunächst', 'des Weiteren', 'erstens'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Abschließend" leitet das Fazit ein.',
+      },
+      {
+        lessonId: c2Unit11Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ wird das methodische Vorgehen erläutert. (firstly)' },
+        correctAnswer: { accepted: ['zunächst'] },
+        explanation: '"Zunächst" leitet die Einleitung ein.',
+      },
+    ],
+  })
+
+  const c2Unit11Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit11.id,
+      order: 4,
+      grammarTopic: 'Übung: Diskursmarker im akademischen Text',
+      explanationDe:
+        'Wiederholung: Diskursmarker wie "mithin", "diesbezüglich", "zunächst" und "abschließend" strukturieren akademische Argumentation klar und präzise.',
+      explanationEn:
+        'Review: discourse markers like "mithin", "diesbezüglich", "zunächst", and "abschließend" structure academic argumentation clearly and precisely.',
+      explanationTr:
+        'Tekrar: "mithin", "diesbezüglich", "zunächst" ve "abschließend" gibi söylem işaretleyicileri akademik argümantasyonu net ve kesin şekilde yapılandırır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit11Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['Schlussfolgerung', 'Verweis auf Gesagtes', 'Einleitung'], rights: ['zunächst', 'mithin', 'diesbezüglich'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Schlussfolgerung', right: 'mithin' },
+            { left: 'Verweis auf Gesagtes', right: 'diesbezüglich' },
+            { left: 'Einleitung', right: 'zunächst' },
+          ],
+        },
+        explanation: 'Jeder Diskursmarker hat eine spezifische Funktion im Text.',
+      },
+      {
+        lessonId: c2Unit11Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['nötig', 'sind', 'Untersuchungen', 'diesbezüglich', 'weitere'] },
+        correctAnswer: { order: ['diesbezüglich', 'sind', 'weitere', 'Untersuchungen', 'nötig'] },
+        explanation: 'Diskursmarker "diesbezüglich" steht am Satzanfang, gefolgt vom Verb.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit11Lesson1.id, word: 'mithin', translationEn: 'consequently', translationTr: 'dolayısıyla', exampleSentence: 'Die Daten sind mithin nicht repräsentativ.' },
+      { lessonId: c2Unit11Lesson1.id, word: 'mithilfe', translationEn: 'by means of', translationTr: 'yardımıyla', exampleSentence: 'Mithilfe einer Umfrage wurden die Daten erhoben.' },
+      { lessonId: c2Unit11Lesson2.id, word: 'diesbezüglich', translationEn: 'in this regard', translationTr: 'bu bakımdan', exampleSentence: 'Diesbezüglich gibt es noch offene Fragen.' },
+      { lessonId: c2Unit11Lesson2.id, word: 'die Untersuchung', translationEn: 'the investigation', translationTr: 'inceleme', exampleSentence: 'Weitere Untersuchungen sind geplant.' },
+      { lessonId: c2Unit11Lesson3.id, word: 'zunächst', translationEn: 'firstly', translationTr: 'öncelikle', exampleSentence: 'Zunächst wird das Thema eingeführt.' },
+      { lessonId: c2Unit11Lesson3.id, word: 'abschließend', translationEn: 'in conclusion', translationTr: 'sonuç olarak', exampleSentence: 'Abschließend lässt sich sagen, dass...' },
+      { lessonId: c2Unit11Lesson4.id, word: 'präzise', translationEn: 'precise', translationTr: 'kesin', exampleSentence: 'Die Argumentation ist sehr präzise.' },
+      { lessonId: c2Unit11Lesson4.id, word: 'strukturieren', translationEn: 'to structure', translationTr: 'yapılandırmak', exampleSentence: 'Diskursmarker strukturieren den Text.' },
+    ],
+  })
+
+  // --- C2 Unit 12: Präzision im Ausdruck (4 lessons) ---
+  const c2Unit12 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 12, titleDe: 'Präzision im Ausdruck', titleEn: 'Precision of Expression', titleTr: 'İfadede Hassasiyet' },
+  })
+
+  const c2Unit12Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit12.id,
+      order: 1,
+      grammarTopic: "Synonymdifferenzierung: 'sagen' Varianten",
+      explanationDe:
+        'Statt immer "sagen" zu benutzen, differenzieren Muttersprachler: "erklären" (mit Grund), "behaupten" (ohne Beweis), "betonen" (mit Nachdruck).',
+      explanationEn:
+        'Instead of always using "sagen" (to say), native speakers differentiate: "erklären" (to explain, with reasoning), "behaupten" (to claim, without proof), "betonen" (to emphasize).',
+      explanationTr:
+        'Her zaman "sagen" kullanmak yerine anadili konuşanlar ayrım yapar: "erklären" (açıklamak, gerekçeyle), "behaupten" (iddia etmek, kanıtsız), "betonen" (vurgulamak).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit12Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb passt zu "eine Behauptung ohne Beweis aufstellen"?', options: ['behaupten', 'erklären', 'betonen', 'fragen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Behaupten" bedeutet eine Aussage ohne Beweis machen.',
+      },
+      {
+        lessonId: c2Unit12Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne ein präziseres Synonym für 'sagen', das 'mit Nachdruck sagen' bedeutet." },
+        correctAnswer: { accepted: ['betonen'] },
+        explanation: '"Betonen" bedeutet "mit Nachdruck sagen".',
+      },
+    ],
+  })
+
+  const c2Unit12Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit12.id,
+      order: 2,
+      grammarTopic: "Synonymdifferenzierung: 'groß' Varianten",
+      explanationDe:
+        'Statt "groß" gibt es präzisere Wörter: "gewaltig" (sehr groß, beeindruckend), "beträchtlich" (bedeutend, messbar), "immens" (unermesslich groß).',
+      explanationEn:
+        'Instead of "groß" (big), there are more precise words: "gewaltig" (huge, impressive), "beträchtlich" (considerable, measurable), "immens" (immense).',
+      explanationTr:
+        '"Groß" yerine daha kesin kelimeler vardır: "gewaltig" (muazzam, etkileyici), "beträchtlich" (önemli, ölçülebilir), "immens" (ölçülemez büyüklükte).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit12Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort bedeutet "messbar bedeutend"?', options: ['beträchtlich', 'winzig', 'gewöhnlich', 'unbedeutend'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Beträchtlich" bedeutet "messbar bedeutend".',
+      },
+      {
+        lessonId: c2Unit12Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Kosten sind ___. (unermesslich groß)' },
+        correctAnswer: { accepted: ['immens'] },
+        explanation: '"Immens" bedeutet "unermesslich groß".',
+      },
+    ],
+  })
+
+  const c2Unit12Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit12.id,
+      order: 3,
+      grammarTopic: 'Präzise Verben statt Allgemeinbegriffe',
+      explanationDe:
+        'Statt "machen" präzisiert man oft: "herstellen" (produzieren), "durchführen" (ein Verfahren ausführen), "erledigen" (eine Aufgabe abschließen).',
+      explanationEn:
+        'Instead of "machen" (to do/make), German often uses more precise verbs: "herstellen" (to manufacture), "durchführen" (to carry out a procedure), "erledigen" (to complete a task).',
+      explanationTr:
+        '"Machen" yerine genellikle daha kesin fiiller kullanılır: "herstellen" (üretmek), "durchführen" (bir prosedürü yürütmek), "erledigen" (bir görevi tamamlamak).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit12Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb bedeutet "ein Verfahren ausführen"?', options: ['durchführen', 'herstellen', 'erledigen', 'aufstellen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Durchführen" bedeutet ein Verfahren auszuführen.',
+      },
+      {
+        lessonId: c2Unit12Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne ein präziseres Verb für 'machen', das 'produzieren' bedeutet." },
+        correctAnswer: { accepted: ['herstellen'] },
+        explanation: '"Herstellen" bedeutet "produzieren".',
+      },
+    ],
+  })
+
+  const c2Unit12Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit12.id,
+      order: 4,
+      grammarTopic: 'Übung: Präzision im Ausdruck',
+      explanationDe:
+        'Wiederholung: Präzise Wortwahl (statt "sagen", "groß" oder "machen") macht Texte klarer und wirkt professioneller.',
+      explanationEn:
+        'Review: precise word choice (instead of "sagen", "groß", or "machen") makes texts clearer and more professional.',
+      explanationTr:
+        'Tekrar: kesin kelime seçimi ("sagen", "groß" veya "machen" yerine) metinleri daha net ve profesyonel kılar.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit12Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['sagen (ohne Beweis)', 'groß (messbar)', 'machen (Verfahren)'], rights: ['durchführen', 'behaupten', 'beträchtlich'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'sagen (ohne Beweis)', right: 'behaupten' },
+            { left: 'groß (messbar)', right: 'beträchtlich' },
+            { left: 'machen (Verfahren)', right: 'durchführen' },
+          ],
+        },
+        explanation: 'Jedes Allgemeinwort hat präzisere Alternativen.',
+      },
+      {
+        lessonId: c2Unit12Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Warum ist präzise Wortwahl in gehobenen Texten wichtig?" },
+        correctAnswer: { accepted: ['macht texte klarer', 'wirkt professioneller', 'klarer und professioneller'] },
+        explanation: 'Präzise Wortwahl macht Texte klarer und professioneller.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit12Lesson1.id, word: 'behaupten', translationEn: 'to claim', translationTr: 'iddia etmek', exampleSentence: 'Er behauptet, dass er recht hat.' },
+      { lessonId: c2Unit12Lesson1.id, word: 'betonen', translationEn: 'to emphasize', translationTr: 'vurgulamak', exampleSentence: 'Sie betonte die Wichtigkeit des Themas.' },
+      { lessonId: c2Unit12Lesson2.id, word: 'beträchtlich', translationEn: 'considerable', translationTr: 'önemli', exampleSentence: 'Die Kosten sind beträchtlich gestiegen.' },
+      { lessonId: c2Unit12Lesson2.id, word: 'immens', translationEn: 'immense', translationTr: 'muazzam', exampleSentence: 'Der Schaden war immens.' },
+      { lessonId: c2Unit12Lesson3.id, word: 'herstellen', translationEn: 'to manufacture', translationTr: 'üretmek', exampleSentence: 'Die Firma stellt Autos her.' },
+      { lessonId: c2Unit12Lesson3.id, word: 'erledigen', translationEn: 'to complete / handle', translationTr: 'halletmek', exampleSentence: 'Ich muss noch einige Aufgaben erledigen.' },
+      { lessonId: c2Unit12Lesson4.id, word: 'die Wortwahl', translationEn: 'the word choice', translationTr: 'kelime seçimi', exampleSentence: 'Die Wortwahl beeinflusst den Eindruck.' },
+      { lessonId: c2Unit12Lesson4.id, word: 'professionell', translationEn: 'professional', translationTr: 'profesyonel', exampleSentence: 'Der Text wirkt sehr professionell.' },
+    ],
+  })
+
+  // --- C2 Unit 13: Wiederholung: Meisterschaft im Ausdruck (4 lessons) ---
+  const c2Unit13 = await prisma.unit.create({
+    data: { levelId: c2.id, order: 13, titleDe: 'Wiederholung: Meisterschaft im Ausdruck', titleEn: 'Review: Mastery of Expression', titleTr: 'Tekrar: İfadede Ustalık' },
+  })
+
+  const c2Unit13Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit13.id,
+      order: 1,
+      grammarTopic: 'Wiederholung: Stilmittel kombinieren',
+      explanationDe:
+        'Meisterhafte Texte kombinieren Konnektoren, Nominalstil und rhetorische Mittel bewusst, um Wirkung und Klarheit gleichzeitig zu erzielen.',
+      explanationEn:
+        'Masterful texts deliberately combine connectors, nominal style, and rhetorical devices to achieve both impact and clarity.',
+      explanationTr:
+        'Usta metinler, hem etki hem netlik elde etmek için bağlaçları, isim stilini ve retorik araçları bilinçli olarak birleştirir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit13Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was zeichnet meisterhafte Texte aus?', options: ['bewusste Kombination von Stilmitteln', 'möglichst kurze Sätze', 'nur Umgangssprache', 'zufällige Wortwahl'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Meisterhafte Texte kombinieren Stilmittel bewusst.',
+      },
+      {
+        lessonId: c2Unit13Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Trotz aller Widrigkeiten, ___ wurde das Ziel erreicht. (dennoch, Konnektor)' },
+        correctAnswer: { accepted: ['dennoch'] },
+        explanation: '"Dennoch" verbindet einen Gegensatz auf gehobenem Niveau.',
+      },
+    ],
+  })
+
+  const c2Unit13Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit13.id,
+      order: 2,
+      grammarTopic: 'Wiederholung: Register wechseln',
+      explanationDe:
+        'Meisterschaft zeigt sich im bewussten Wechsel zwischen Registern: formell für Berichte, persönlich für Essays, neutral für Zusammenfassungen.',
+      explanationEn:
+        'Mastery shows in the deliberate switching between registers: formal for reports, personal for essays, neutral for summaries.',
+      explanationTr:
+        'Ustalık, kayıtlar arasında bilinçli geçişte kendini gösterir: raporlar için resmi, denemeler için kişisel, özetler için nötr.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit13Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Register passt zu einem offiziellen Bericht?', options: ['formell', 'sehr persönlich', 'sarkastisch', 'kindlich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Offizielle Berichte verlangen ein formelles Register.',
+      },
+      {
+        lessonId: c2Unit13Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welches Register passt am besten zu einem persönlichen Essay: formell oder persönlich?" },
+        correctAnswer: { accepted: ['persönlich'] },
+        explanation: 'Essays sind typischerweise persönlicher formuliert.',
+      },
+    ],
+  })
+
+  const c2Unit13Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit13.id,
+      order: 3,
+      grammarTopic: 'Wiederholung: Konjunktiv, Nominalstil und Präzision im Zusammenspiel',
+      explanationDe:
+        'Ein meisterhafter Satz kann Konjunktiv II (Vorsicht), Nominalstil (Formalität) und präzise Wortwahl gleichzeitig zeigen: "Man könnte die Durchführung des Projekts als beträchtlichen Erfolg werten."',
+      explanationEn:
+        'A masterful sentence can show Konjunktiv II (caution), nominal style (formality), and precise word choice all at once: "Man könnte die Durchführung des Projekts als beträchtlichen Erfolg werten" (One could regard the execution of the project as a considerable success).',
+      explanationTr:
+        'Usta bir cümle Konjunktiv II (temkin), isim stili (resmiyet) ve kesin kelime seçimini aynı anda gösterebilir: "Man könnte die Durchführung des Projekts als beträchtlichen Erfolg werten."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit13Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort im Beispielsatz zeigt Nominalstil?', options: ['die Durchführung', 'könnte', 'als', 'man'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Die Durchführung" ist die Nominalisierung von "durchführen".',
+      },
+      {
+        lessonId: c2Unit13Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welche Verbform in 'Man könnte...werten' zeigt vorsichtige Distanz?" },
+        correctAnswer: { accepted: ['könnte', 'konjunktiv ii'] },
+        explanation: '"Könnte" ist Konjunktiv II und signalisiert Vorsicht.',
+      },
+    ],
+  })
+
+  const c2Unit13Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c2Unit13.id,
+      order: 4,
+      grammarTopic: 'Abschlussübung: Meisterschaft im Ausdruck',
+      explanationDe:
+        'Abschließende Wiederholung des gesamten C2-Kurses: gehobene Konnektoren, Nominalstil, Rhetorik, Register, Sprachvarietäten, Diskursmarker und Präzision bilden zusammen sprachliche Meisterschaft.',
+      explanationEn:
+        'Final review of the whole C2 course: elevated connectors, nominal style, rhetoric, register, language varieties, discourse markers, and precision together constitute linguistic mastery.',
+      explanationTr:
+        'Tüm C2 kursunun son tekrarı: üst düzey bağlaçlar, isim stili, retorik, kayıt, dil çeşitleri, söylem işaretleyicileri ve hassasiyet birlikte dil ustalığını oluşturur.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c2Unit13Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['werten', 'als', 'Erfolg', 'beträchtlichen', 'man', 'könnte', 'das'] },
+        correctAnswer: { order: ['man', 'könnte', 'das', 'als', 'beträchtlichen', 'Erfolg', 'werten'] },
+        explanation: 'Modalverb "könnte" + Objekt + "als" + Adjektiv + Nomen + Infinitiv am Ende.',
+      },
+      {
+        lessonId: c2Unit13Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne zwei Elemente, die zusammen sprachliche Meisterschaft auf C2-Niveau ausmachen." },
+        correctAnswer: { accepted: ['konnektoren und nominalstil', 'nominalstil und rhetorik', 'register und präzision', 'präzision und rhetorik', 'konnektoren und präzision'] },
+        explanation: 'Meisterschaft entsteht aus dem Zusammenspiel mehrerer Stilmittel wie Konnektoren, Nominalstil, Rhetorik, Register und Präzision.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c2Unit13Lesson1.id, word: 'die Widrigkeit', translationEn: 'the adversity', translationTr: 'zorluk', exampleSentence: 'Trotz aller Widrigkeiten hat sie es geschafft.' },
+      { lessonId: c2Unit13Lesson1.id, word: 'die Klarheit', translationEn: 'the clarity', translationTr: 'netlik', exampleSentence: 'Die Klarheit des Textes wurde gelobt.' },
+      { lessonId: c2Unit13Lesson2.id, word: 'das Register', translationEn: 'the register', translationTr: 'kayıt/üslup düzeyi', exampleSentence: 'Das Register muss zur Situation passen.' },
+      { lessonId: c2Unit13Lesson2.id, word: 'die Zusammenfassung', translationEn: 'the summary', translationTr: 'özet', exampleSentence: 'Die Zusammenfassung ist neutral formuliert.' },
+      { lessonId: c2Unit13Lesson3.id, word: 'werten', translationEn: 'to regard / evaluate', translationTr: 'değerlendirmek', exampleSentence: 'Man könnte das als Erfolg werten.' },
+      { lessonId: c2Unit13Lesson3.id, word: 'der Erfolg', translationEn: 'the success', translationTr: 'başarı', exampleSentence: 'Das Projekt war ein großer Erfolg.' },
+      { lessonId: c2Unit13Lesson4.id, word: 'das Zusammenspiel', translationEn: 'the interplay', translationTr: 'etkileşim', exampleSentence: 'Das Zusammenspiel der Stilmittel ist beeindruckend.' },
+      { lessonId: c2Unit13Lesson4.id, word: 'ausmachen', translationEn: 'to constitute / make up', translationTr: 'oluşturmak', exampleSentence: 'Mehrere Elemente machen die Meisterschaft aus.' },
     ],
   })
 
