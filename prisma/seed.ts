@@ -2558,9 +2558,9 @@ async function main() {
     data: [
       { lessonId: c1Unit2Lesson1.id, word: 'ankommen', translationEn: 'to arrive', translationTr: 'varmak', exampleSentence: 'Sie sagten, sie seien angekommen.' },
       { lessonId: c1Unit2Lesson1.id, word: 'gestehen', translationEn: 'to confess', translationTr: 'itiraf etmek', exampleSentence: 'Er gestand, er habe gelogen.' },
-      { lessonId: c1Unit2Lesson2.id, word: 'warten', translationEn: 'to wait', translationTr: 'beklemek', exampleSentence: 'Er sagte, er habe gewartet.' },
+      { lessonId: c1Unit2Lesson2.id, word: 'die Verspätung', translationEn: 'the delay', translationTr: 'gecikme', exampleSentence: 'Er sagte, er habe wegen der Verspätung gewartet.' },
       { lessonId: c1Unit2Lesson2.id, word: 'mitteilen', translationEn: 'to announce / inform', translationTr: 'bildirmek', exampleSentence: 'Die Polizei teilte mit, der Verdächtige sei geflohen.' },
-      { lessonId: c1Unit2Lesson3.id, word: 'die Zeit', translationEn: 'the time', translationTr: 'zaman', exampleSentence: 'Sie hatten keine Zeit.' },
+      { lessonId: c1Unit2Lesson3.id, word: 'die Übereinstimmung', translationEn: 'the agreement / match', translationTr: 'uyum', exampleSentence: 'Die Form zeigt keine Übereinstimmung mit dem Indikativ.' },
       { lessonId: c1Unit2Lesson3.id, word: 'die Form', translationEn: 'the form', translationTr: 'biçim', exampleSentence: 'Die Form ist im Plural gleich.' },
       { lessonId: c1Unit2Lesson4.id, word: 'der Verdächtige', translationEn: 'the suspect', translationTr: 'şüpheli', exampleSentence: 'Der Verdächtige sei geflohen.' },
       { lessonId: c1Unit2Lesson4.id, word: 'fliehen', translationEn: 'to flee', translationTr: 'kaçmak', exampleSentence: 'Der Verdächtige ist geflohen.' },
@@ -2885,6 +2885,486 @@ async function main() {
       { lessonId: c1Unit4Lesson3.id, word: 'die Daten', translationEn: 'the data', translationTr: 'veri', exampleSentence: 'Die Daten sind vollständig.' },
       { lessonId: c1Unit4Lesson4.id, word: 'lebendig', translationEn: 'lively', translationTr: 'canlı', exampleSentence: 'Der Verbalstil wirkt lebendiger.' },
       { lessonId: c1Unit4Lesson4.id, word: 'die Verwaltung', translationEn: 'the administration', translationTr: 'yönetim', exampleSentence: 'Die Verwaltung bearbeitet den Antrag.' },
+    ],
+  })
+
+  // --- C1 Unit 5: Komplexe Konnektoren (4 lessons) ---
+  const c1Unit5 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 5, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
+  })
+  const c1Unit5Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit5.id,
+      order: 1,
+      grammarTopic: '"zumal" und "insofern"',
+      explanationDe:
+        '"Zumal" begründet zusätzlich (= vor allem weil): "Wir bleiben zu Hause, zumal es regnet." "Insofern" bedeutet "in dieser Hinsicht": "Insofern hat er recht."',
+      explanationEn:
+        '"Zumal" adds an emphasizing reason (= especially because): "Wir bleiben zu Hause, zumal es regnet" (We\'re staying home, especially since it\'s raining). "Insofern" means "in this respect": "Insofern hat er recht" (In that respect, he\'s right).',
+      explanationTr:
+        '"Zumal" ek bir gerekçe vurgular (= özellikle çünkü): "Wir bleiben zu Hause, zumal es regnet." "Insofern" "bu bakımdan" anlamına gelir: "Insofern hat er recht."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit5Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir bleiben zu Hause, ___ es regnet. (verstärkender Grund)', options: ['obwohl', 'zumal', 'trotzdem', 'dennoch'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Zumal" verstärkt den Grund: "vor allem weil".',
+      },
+      {
+        lessonId: c1Unit5Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ hat er recht. (in dieser Hinsicht)' },
+        correctAnswer: { accepted: ['insofern'] },
+        explanation: '"Insofern" bedeutet "in dieser Hinsicht".',
+      },
+    ],
+  })
+
+  const c1Unit5Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit5.id,
+      order: 2,
+      grammarTopic: '"gleichwohl" und "nichtsdestotrotz"',
+      explanationDe:
+        '"Gleichwohl" und "nichtsdestotrotz" sind gehobene Synonyme für "trotzdem": "Das Wetter war schlecht, gleichwohl fuhren wir los."',
+      explanationEn:
+        '"Gleichwohl" and "nichtsdestotrotz" are elevated synonyms for "trotzdem" (nevertheless): "Das Wetter war schlecht, gleichwohl fuhren wir los" (The weather was bad; nevertheless, we set off).',
+      explanationTr:
+        '"Gleichwohl" ve "nichtsdestotrotz", "trotzdem" (yine de) için yüksek dil eşanlamlılarıdır: "Das Wetter war schlecht, gleichwohl fuhren wir los."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit5Lesson2.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['trotzdem', 'gleichwohl', 'nichtsdestotrotz'], rights: ['neutral', 'gehoben', 'gehoben, betont'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'trotzdem', right: 'neutral' },
+            { left: 'gleichwohl', right: 'gehoben' },
+            { left: 'nichtsdestotrotz', right: 'gehoben, betont' },
+          ],
+        },
+        explanation: 'Stilebenen von Konzessivkonnektoren.',
+      },
+      {
+        lessonId: c1Unit5Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne ein gehobenes Synonym für 'trotzdem'." },
+        correctAnswer: { accepted: ['gleichwohl', 'nichtsdestotrotz'] },
+        explanation: '"Gleichwohl" oder "nichtsdestotrotz" sind gehobene Synonyme.',
+      },
+    ],
+  })
+
+  const c1Unit5Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit5.id,
+      order: 3,
+      grammarTopic: 'Konnektoren in Argumentationsketten',
+      explanationDe:
+        'Für Argumentationsketten nutzt man Konnektoren wie "des Weiteren" (außerdem), "nicht zuletzt" (auch, besonders) und "mithin" (folglich): "Nicht zuletzt deshalb ist die Maßnahme sinnvoll."',
+      explanationEn:
+        'Argumentative chains use connectors like "des Weiteren" (furthermore), "nicht zuletzt" (not least, especially), and "mithin" (consequently): "Nicht zuletzt deshalb ist die Maßnahme sinnvoll" (Not least for that reason, the measure makes sense).',
+      explanationTr:
+        'Argüman zincirlerinde "des Weiteren" (ayrıca), "nicht zuletzt" (özellikle) ve "mithin" (dolayısıyla) gibi bağlaçlar kullanılır: "Nicht zuletzt deshalb ist die Maßnahme sinnvoll."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit5Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort bedeutet "folglich" (gehoben)?', options: ['mithin', 'obwohl', 'sobald', 'außer'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Mithin" ist ein gehobenes Synonym für "folglich".',
+      },
+      {
+        lessonId: c1Unit5Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ deshalb ist die Maßnahme sinnvoll. (nicht zuletzt)' },
+        correctAnswer: { accepted: ['nicht zuletzt'] },
+        explanation: '"Nicht zuletzt" betont einen wichtigen, zusätzlichen Grund.',
+      },
+    ],
+  })
+
+  const c1Unit5Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit5.id,
+      order: 4,
+      grammarTopic: 'Übung: Komplexe Konnektoren',
+      explanationDe:
+        'Wiederholung: Gehobene Konnektoren wie "zumal", "gleichwohl" und "mithin" verleihen Texten wissenschaftlichen und formellen Charakter.',
+      explanationEn:
+        'Review: elevated connectors like "zumal", "gleichwohl", and "mithin" give texts an academic and formal character.',
+      explanationTr:
+        'Tekrar: "Zumal", "gleichwohl" ve "mithin" gibi yüksek düzey bağlaçlar metinlere akademik ve resmi bir hava katar.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit5Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['fuhren', 'gleichwohl', 'wir', 'los'] },
+        correctAnswer: { order: ['gleichwohl', 'fuhren', 'wir', 'los'] },
+        explanation: 'Konnektor am Satzanfang, dann Verb-Zweit-Stellung.',
+      },
+      {
+        lessonId: c1Unit5Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Konnektor passt NICHT zu den anderen (bedeutungsmäßig)?', options: ['gleichwohl', 'nichtsdestotrotz', 'trotzdem', 'mithin'] },
+        correctAnswer: { correctIndex: 3 },
+        explanation: '"Mithin" bedeutet "folglich" (Konsequenz), die anderen drei bedeuten "trotzdem" (Konzession).',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit5Lesson1.id, word: 'die Hinsicht', translationEn: 'the respect / regard', translationTr: 'bakım', exampleSentence: 'In dieser Hinsicht hat er recht.' },
+      { lessonId: c1Unit5Lesson1.id, word: 'begründen', translationEn: 'to justify / give a reason', translationTr: 'gerekçelendirmek', exampleSentence: 'Er begründet seine Entscheidung ausführlich.' },
+      { lessonId: c1Unit5Lesson2.id, word: 'gehoben', translationEn: 'elevated / formal (register)', translationTr: 'yüksek (dil düzeyi)', exampleSentence: 'Das ist eine gehobene Ausdrucksweise.' },
+      { lessonId: c1Unit5Lesson2.id, word: 'das Synonym', translationEn: 'the synonym', translationTr: 'eşanlamlı', exampleSentence: 'Das ist ein Synonym für "trotzdem".' },
+      { lessonId: c1Unit5Lesson3.id, word: 'die Maßnahme', translationEn: 'the measure / action taken', translationTr: 'önlem', exampleSentence: 'Die Maßnahme ist sinnvoll.' },
+      { lessonId: c1Unit5Lesson3.id, word: 'sinnvoll', translationEn: 'sensible / meaningful', translationTr: 'anlamlı', exampleSentence: 'Das ist eine sinnvolle Lösung.' },
+      { lessonId: c1Unit5Lesson4.id, word: 'wissenschaftlich', translationEn: 'academic / scientific', translationTr: 'bilimsel', exampleSentence: 'Der Text hat einen wissenschaftlichen Charakter.' },
+      { lessonId: c1Unit5Lesson4.id, word: 'der Charakter', translationEn: 'the character', translationTr: 'karakter', exampleSentence: 'Der Text hat einen formellen Charakter.' },
+    ],
+  })
+
+  // --- C1 Unit 6: Modalpartikeln (4 lessons) ---
+  const c1Unit6 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 6, titleDe: 'Modalpartikeln', titleEn: 'Modal Particles', titleTr: 'Kip Belirteçleri' },
+  })
+  const c1Unit6Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit6.id,
+      order: 1,
+      grammarTopic: '"doch" und "ja"',
+      explanationDe:
+        '"Doch" drückt Widerspruch oder Erinnerung aus: "Das weißt du doch!" "Ja" betont Offensichtliches: "Das ist ja klar!"',
+      explanationEn:
+        '"Doch" expresses contradiction or a reminder: "Das weißt du doch!" (You know that, after all!) "Ja" emphasizes something obvious: "Das ist ja klar!" (That\'s obviously clear!)',
+      explanationTr:
+        '"Doch" itiraz veya hatırlatma ifade eder: "Das weißt du doch!" "Ja" bariz bir şeyi vurgular: "Das ist ja klar!"',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit6Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das weißt du ___! (Erinnerung/Widerspruch)', options: ['mal', 'doch', 'halt', 'eben'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Doch" erinnert oder widerspricht sanft.',
+      },
+      {
+        lessonId: c1Unit6Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist ___ klar! (Offensichtliches betonen)' },
+        correctAnswer: { accepted: ['ja'] },
+        explanation: '"Ja" betont, dass etwas offensichtlich ist.',
+      },
+    ],
+  })
+
+  const c1Unit6Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit6.id,
+      order: 2,
+      grammarTopic: '"eben" und "halt"',
+      explanationDe:
+        '"Eben" und "halt" (süddeutsch/umgangssprachlich) drücken Resignation oder Unabänderlichkeit aus: "So ist es eben." / "Das ist halt so."',
+      explanationEn:
+        '"Eben" and "halt" (Southern German/colloquial) express resignation or that something can\'t be changed: "So ist es eben" / "Das ist halt so" (That\'s just how it is).',
+      explanationTr:
+        '"Eben" ve "halt" (Güney Almanya/günlük dil) teslimiyet veya değiştirilemezlik ifade eder: "So ist es eben." / "Das ist halt so."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit6Lesson2.id,
+        order: 1,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Ergänze mit einer Modalpartikel für 'Resignation': 'So ist es ___.'" },
+        correctAnswer: { accepted: ['eben', 'halt'] },
+        explanation: '"Eben" oder "halt" drücken Resignation aus.',
+      },
+      {
+        lessonId: c1Unit6Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Partikel ist typisch süddeutsch/umgangssprachlich?', options: ['eben', 'halt', 'ja', 'doch'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Halt" ist besonders im süddeutschen Sprachraum verbreitet.',
+      },
+    ],
+  })
+
+  const c1Unit6Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit6.id,
+      order: 3,
+      grammarTopic: '"mal" und "denn"',
+      explanationDe:
+        '"Mal" mildert Aufforderungen: "Komm mal her!" "Denn" macht Fragen freundlicher/interessierter: "Wie geht es dir denn?"',
+      explanationEn:
+        '"Mal" softens a request: "Komm mal her!" (Come here, would you?) "Denn" makes questions sound friendlier/more curious: "Wie geht es dir denn?" (So how are you doing?)',
+      explanationTr:
+        '"Mal" bir talebi yumuşatır: "Komm mal her!" "Denn" soruları daha samimi/ilgili yapar: "Wie geht es dir denn?"',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit6Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Komm ___ her! (mildere Aufforderung)', options: ['denn', 'mal', 'ja', 'doch'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Mal" mildert die Aufforderung.',
+      },
+      {
+        lessonId: c1Unit6Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wie geht es dir ___? (freundliche Frage)' },
+        correctAnswer: { accepted: ['denn'] },
+        explanation: '"Denn" macht die Frage freundlicher.',
+      },
+    ],
+  })
+
+  const c1Unit6Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit6.id,
+      order: 4,
+      grammarTopic: 'Übung: Modalpartikeln',
+      explanationDe:
+        'Wiederholung: Modalpartikeln verändern nicht die Grundbedeutung eines Satzes, sondern die Einstellung/Stimmung des Sprechers. Sie sind typisch für die gesprochene Sprache.',
+      explanationEn:
+        'Review: modal particles don\'t change a sentence\'s core meaning but express the speaker\'s attitude or mood. They\'re typical of spoken German.',
+      explanationTr:
+        'Tekrar: Kip belirteçleri cümlenin temel anlamını değil, konuşmacının tutumunu/ruh halini değiştirir. Konuşma dilinde tipiktirler.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit6Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['doch', 'mal', 'denn'], rights: ['Widerspruch/Erinnerung', 'mildert Aufforderung', 'freundlichere Frage'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'doch', right: 'Widerspruch/Erinnerung' },
+            { left: 'mal', right: 'mildert Aufforderung' },
+            { left: 'denn', right: 'freundlichere Frage' },
+          ],
+        },
+        explanation: 'Jede Modalpartikel hat eine eigene pragmatische Funktion.',
+      },
+      {
+        lessonId: c1Unit6Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Sind Modalpartikeln typischer für gesprochene oder geschriebene Sprache?" },
+        correctAnswer: { accepted: ['gesprochene sprache', 'gesprochen'] },
+        explanation: 'Modalpartikeln sind typisch für die gesprochene Sprache.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit6Lesson1.id, word: 'offensichtlich', translationEn: 'obvious', translationTr: 'bariz', exampleSentence: 'Das ist offensichtlich falsch.' },
+      { lessonId: c1Unit6Lesson1.id, word: 'widersprechen', translationEn: 'to contradict', translationTr: 'itiraz etmek', exampleSentence: 'Er widerspricht mir ständig.' },
+      { lessonId: c1Unit6Lesson2.id, word: 'die Resignation', translationEn: 'resignation', translationTr: 'teslimiyet', exampleSentence: 'In seiner Stimme lag Resignation.' },
+      { lessonId: c1Unit6Lesson2.id, word: 'unabänderlich', translationEn: 'unchangeable', translationTr: 'değiştirilemez', exampleSentence: 'Diese Tatsache ist unabänderlich.' },
+      { lessonId: c1Unit6Lesson3.id, word: 'die Aufforderung', translationEn: 'the request / prompt', translationTr: 'talep', exampleSentence: 'Das war eine freundliche Aufforderung.' },
+      { lessonId: c1Unit6Lesson3.id, word: 'mildern', translationEn: 'to soften', translationTr: 'yumuşatmak', exampleSentence: '"Mal" mildert die Aufforderung.' },
+      { lessonId: c1Unit6Lesson4.id, word: 'die Einstellung', translationEn: 'the attitude', translationTr: 'tutum', exampleSentence: 'Seine Einstellung zeigt sich in der Wortwahl.' },
+      { lessonId: c1Unit6Lesson4.id, word: 'pragmatisch', translationEn: 'pragmatic', translationTr: 'pragmatik', exampleSentence: 'Modalpartikeln haben eine pragmatische Funktion.' },
+    ],
+  })
+
+  // --- C1 Unit 7: Idiomatische Wendungen & Redewendungen (4 lessons) ---
+  const c1Unit7 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 7, titleDe: 'Idiomatische Wendungen & Redewendungen', titleEn: 'Idiomatic Expressions & Sayings', titleTr: 'Deyimler ve Kalıp İfadeler' },
+  })
+  const c1Unit7Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit7.id,
+      order: 1,
+      grammarTopic: 'Redewendungen mit Körperteilen',
+      explanationDe:
+        'Viele Redewendungen nutzen Körperteile bildlich: "die Nase voll haben" (genervt sein), "jemandem die Daumen drücken" (jemandem Glück wünschen).',
+      explanationEn:
+        'Many idioms use body parts figuratively: "die Nase voll haben" (to have had enough — literally "to have a full nose"), "jemandem die Daumen drücken" (to wish someone luck — literally "to press one\'s thumbs").',
+      explanationTr:
+        'Birçok deyim vücut parçalarını mecazi olarak kullanır: "die Nase voll haben" (bıkmak), "jemandem die Daumen drücken" (birine şans dilemek).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit7Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "die Nase voll haben"?', options: ['glücklich sein', 'genervt sein', 'krank sein', 'hungrig sein'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Die Nase voll haben" bedeutet, genervt/frustriert zu sein.',
+      },
+      {
+        lessonId: c1Unit7Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man 'to wish someone luck' idiomatisch mit 'Daumen'?" },
+        correctAnswer: { accepted: ['jemandem die daumen drücken', 'die daumen drücken'] },
+        explanation: '"Jemandem die Daumen drücken" bedeutet "jemandem Glück wünschen".',
+      },
+    ],
+  })
+
+  const c1Unit7Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit7.id,
+      order: 2,
+      grammarTopic: 'Redewendungen mit Tieren',
+      explanationDe:
+        '"Die Katze im Sack kaufen" bedeutet, etwas ungeprüft zu kaufen. "Einen Bärenhunger haben" bedeutet, sehr hungrig zu sein.',
+      explanationEn:
+        '"Die Katze im Sack kaufen" (to buy a cat in a sack) means to buy something without checking it first. "Einen Bärenhunger haben" (to have a bear\'s hunger) means to be very hungry.',
+      explanationTr:
+        '"Die Katze im Sack kaufen" (çuvaldaki kediyi almak) kontrol etmeden bir şey satın almak demektir. "Einen Bärenhunger haben" çok aç olmak demektir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit7Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "die Katze im Sack kaufen"?', options: ['ein Haustier kaufen', 'etwas ungeprüft kaufen', 'sparsam sein', 'sich verstecken'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Es bedeutet, etwas zu kaufen, ohne es vorher zu prüfen.',
+      },
+      {
+        lessonId: c1Unit7Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe einen ___ (Bär + Hunger, sehr hungrig sein).' },
+        correctAnswer: { accepted: ['bärenhunger'] },
+        explanation: '"Einen Bärenhunger haben" bedeutet, sehr hungrig zu sein.',
+      },
+    ],
+  })
+
+  const c1Unit7Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit7.id,
+      order: 3,
+      grammarTopic: 'Feste Wendungen im Geschäftsleben',
+      explanationDe:
+        '"Etwas auf die lange Bank schieben" bedeutet, etwas zu verzögern. "Den Nagel auf den Kopf treffen" bedeutet, genau richtig zu urteilen.',
+      explanationEn:
+        '"Etwas auf die lange Bank schieben" (to push something onto the long bench) means to postpone something. "Den Nagel auf den Kopf treffen" (to hit the nail on the head) means to judge something exactly right.',
+      explanationTr:
+        '"Etwas auf die lange Bank schieben" bir şeyi ertelemek demektir. "Den Nagel auf den Kopf treffen" tam isabetli bir yargıda bulunmak demektir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit7Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "etwas auf die lange Bank schieben"?', options: ['etwas verzögern', 'etwas sofort erledigen', 'etwas vergessen', 'etwas verkaufen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Es bedeutet, eine Entscheidung oder Aufgabe zu verzögern.',
+      },
+      {
+        lessonId: c1Unit7Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Idiom für 'genau richtig urteilen', wörtlich mit 'Nagel' und 'Kopf'?" },
+        correctAnswer: { accepted: ['den nagel auf den kopf treffen'] },
+        explanation: '"Den Nagel auf den Kopf treffen" bedeutet, genau richtig zu urteilen.',
+      },
+    ],
+  })
+
+  const c1Unit7Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit7.id,
+      order: 4,
+      grammarTopic: 'Übung: Idiomatische Wendungen',
+      explanationDe:
+        'Wiederholung: Redewendungen sind fest und dürfen nicht wörtlich übersetzt werden. Der Kontext hilft oft, die Bedeutung zu erschließen.',
+      explanationEn:
+        'Review: idioms are fixed expressions and shouldn\'t be translated literally. Context often helps you infer their meaning.',
+      explanationTr:
+        'Tekrar: Deyimler sabit ifadelerdir ve kelimesi kelimesine çevrilmemelidir. Bağlam genellikle anlamı çıkarmaya yardımcı olur.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit7Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: {
+          lefts: ['die Nase voll haben', 'die Katze im Sack kaufen', 'den Nagel auf den Kopf treffen'],
+          rights: ['genervt sein', 'ungeprüft kaufen', 'genau richtig urteilen'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'die Nase voll haben', right: 'genervt sein' },
+            { left: 'die Katze im Sack kaufen', right: 'ungeprüft kaufen' },
+            { left: 'den Nagel auf den Kopf treffen', right: 'genau richtig urteilen' },
+          ],
+        },
+        explanation: 'Idiome und ihre wörtlichen Bedeutungen.',
+      },
+      {
+        lessonId: c1Unit7Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Sollte man Redewendungen wörtlich übersetzen?" },
+        correctAnswer: { accepted: ['nein'] },
+        explanation: 'Redewendungen haben eine übertragene Bedeutung und sollten nicht wörtlich übersetzt werden.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit7Lesson1.id, word: 'die Nase', translationEn: 'the nose', translationTr: 'burun', exampleSentence: 'Ich habe die Nase voll.' },
+      { lessonId: c1Unit7Lesson1.id, word: 'der Daumen', translationEn: 'the thumb', translationTr: 'başparmak', exampleSentence: 'Ich drücke dir die Daumen.' },
+      { lessonId: c1Unit7Lesson2.id, word: 'der Sack', translationEn: 'the sack / bag', translationTr: 'çuval', exampleSentence: 'Kauf nicht die Katze im Sack.' },
+      { lessonId: c1Unit7Lesson2.id, word: 'der Bärenhunger', translationEn: 'ravenous hunger', translationTr: 'kurt gibi açlık', exampleSentence: 'Ich habe einen Bärenhunger.' },
+      { lessonId: c1Unit7Lesson3.id, word: 'die Bank', translationEn: 'the bench', translationTr: 'bank', exampleSentence: 'Er schiebt alles auf die lange Bank.' },
+      { lessonId: c1Unit7Lesson3.id, word: 'der Nagel', translationEn: 'the nail', translationTr: 'çivi', exampleSentence: 'Du hast den Nagel auf den Kopf getroffen.' },
+      { lessonId: c1Unit7Lesson4.id, word: 'übertragen', translationEn: 'figurative / transferred (meaning)', translationTr: 'mecazi', exampleSentence: 'Das Idiom hat eine übertragene Bedeutung.' },
+      { lessonId: c1Unit7Lesson4.id, word: 'erschließen', translationEn: 'to infer / deduce', translationTr: 'çıkarım yapmak', exampleSentence: 'Man kann die Bedeutung aus dem Kontext erschließen.' },
     ],
   })
 
