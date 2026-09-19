@@ -14,11 +14,9 @@ describe('sendPasswordResetEmail', () => {
     vi.resetModules()
     const sendMock = vi.fn()
     vi.doMock('resend', () => ({
-      Resend: class {
-        constructor() {
-          this.emails = { send: sendMock }
-        }
-      },
+      Resend: vi.fn().mockImplementation(function () {
+        return { emails: { send: sendMock } }
+      }),
     }))
 
     const { sendPasswordResetEmail } = await import('@/lib/email')
@@ -34,11 +32,9 @@ describe('sendPasswordResetEmail', () => {
     vi.resetModules()
     const sendMock = vi.fn().mockResolvedValue({ data: { id: 'abc' }, error: null })
     vi.doMock('resend', () => ({
-      Resend: class {
-        constructor() {
-          this.emails = { send: sendMock }
-        }
-      },
+      Resend: vi.fn().mockImplementation(function () {
+        return { emails: { send: sendMock } }
+      }),
     }))
 
     const { sendPasswordResetEmail } = await import('@/lib/email')
