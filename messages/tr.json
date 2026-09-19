@@ -19,7 +19,8 @@
   "footer": {
     "rights": "Tüm hakları saklıdır.",
     "privacy": "Gizlilik Politikası",
-    "terms": "Kullanım Şartları"
+    "terms": "Kullanım Şartları",
+    "contact": "İletişim"
   },
   "cookieConsent": {
     "message": "Deneyiminizi geliştirmek ve ilgili reklamları göstermek için çerezler kullanıyoruz.",
@@ -131,5 +132,17 @@
       "Bu platformdaki içerikler (gramer açıklamaları, alıştırmalar, kelimeler) eğitim amaçlıdır ve önceden haber verilmeksizin herhangi bir zamanda güncellenebilir veya düzeltilebilir.",
       "Bu şartları ihlal eden, hizmeti kötüye kullanan veya işleyişini bozmaya çalışan hesapları askıya alabilir veya sonlandırabiliriz. Bu şartları değiştirme hakkımızı saklı tutarız; değişikliklerden sonra hizmeti kullanmaya devam etmek, güncellenmiş şartların kabulü anlamına gelir."
     ]
+  },
+  "contact": {
+    "title": "İletişim ve Yasal Bildirim (Impressum)",
+    "intro": "Bu sayfa, yasal gereklilikler doğrultusunda DeutschLernen'in işletmecisini tanımlar ve destek veya veri koruma talepleri için bize nasıl ulaşabileceğinizi açıklar. Aşağıdaki bilgiler yer tutucudur ve bu site yayınlanmadan önce gerçek işletmeci bilgileriyle değiştirilmelidir.",
+    "fields": [
+      { "label": "İşletmeci", "value": "[TAM AD VEYA ŞİRKET ADI]" },
+      { "label": "Adres", "value": "[SOKAK VE NUMARA], [POSTA KODU] [ŞEHİR], [ÜLKE]" },
+      { "label": "E-posta", "value": "[İLETİŞİM E-POSTA ADRESİ]" },
+      { "label": "Telefon", "value": "[TELEFON NUMARASI] (isteğe bağlı)" },
+      { "label": "Vergi Kimlik No.", "value": "[VERGİ KİMLİK NUMARASI, VARSA]" }
+    ],
+    "note": "Kişisel verilerinize erişim, düzeltme veya silme talepleri için lütfen yukarıdaki e-posta adresini kullanın."
   }
 }

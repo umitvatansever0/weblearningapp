@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
 
-const STATIC_PATHS = ['', '/login', '/register', '/privacy', '/terms']
+const STATIC_PATHS = ['', '/login', '/register', '/privacy', '/terms', '/contact']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'

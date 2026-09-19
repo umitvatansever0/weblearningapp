@@ -18,9 +18,10 @@ describe('sitemap', () => {
     expect(urls).toContain('https://example.com/tr/terms')
     expect(urls).toContain('https://example.com/en/login')
     expect(urls).toContain('https://example.com/en/register')
+    expect(urls).toContain('https://example.com/en/contact')
   })
 
-  it('produces exactly 15 entries (3 locales x 5 static paths)', () => {
-    expect(sitemap().length).toBe(15)
+  it('produces exactly 18 entries (3 locales x 6 static paths)', () => {
+    expect(sitemap().length).toBe(18)
   })
 })

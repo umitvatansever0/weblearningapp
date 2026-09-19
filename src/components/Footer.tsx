@@ -15,6 +15,9 @@ export function Footer() {
         <Link href="/terms" className="underline">
           {t('terms')}
         </Link>
+        <Link href="/contact" className="underline">
+          {t('contact')}
+        </Link>
       </nav>
     </footer>
   )

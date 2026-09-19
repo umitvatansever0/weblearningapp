@@ -19,7 +19,8 @@
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
     "privacy": "Datenschutz",
-    "terms": "Nutzungsbedingungen"
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt"
   },
   "cookieConsent": {
     "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und relevante Werbung anzuzeigen.",
@@ -131,5 +132,17 @@
       "Inhalte auf dieser Plattform (Grammatikerklärungen, Übungen, Vokabeln) dienen Bildungszwecken und können jederzeit ohne Vorankündigung aktualisiert oder korrigiert werden.",
       "Wir können Konten sperren oder löschen, die gegen diese Bedingungen verstoßen, den Dienst missbrauchen oder dessen Betrieb stören. Wir behalten uns das Recht vor, diese Bedingungen zu ändern; die weitere Nutzung des Dienstes nach einer Änderung gilt als Zustimmung zu den aktualisierten Bedingungen."
     ]
+  },
+  "contact": {
+    "title": "Kontakt & Impressum",
+    "intro": "Diese Seite weist den Betreiber von DeutschLernen gemäß gesetzlicher Vorgaben aus und erklärt, wie Sie uns für Support- oder Datenschutzanfragen erreichen. Die folgenden Angaben sind Platzhalter und müssen vor der Veröffentlichung dieser Website durch die tatsächlichen Betreiberdaten ersetzt werden.",
+    "fields": [
+      { "label": "Betreiber", "value": "[VOLLSTÄNDIGER NAME ODER FIRMENNAME]" },
+      { "label": "Anschrift", "value": "[STRASSE UND HAUSNUMMER], [POSTLEITZAHL] [ORT], [LAND]" },
+      { "label": "E-Mail", "value": "[KONTAKT-E-MAIL-ADRESSE]" },
+      { "label": "Telefon", "value": "[TELEFONNUMMER] (optional)" },
+      { "label": "USt-IdNr.", "value": "[UMSATZSTEUER-IDENTIFIKATIONSNUMMER, FALLS ZUTREFFEND]" }
+    ],
+    "note": "Für Anfragen zu Zugriff auf, Berichtigung oder Löschung Ihrer personenbezogenen Daten nutzen Sie bitte die oben genannte E-Mail-Adresse."
   }
 }

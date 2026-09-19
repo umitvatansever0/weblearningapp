@@ -13,7 +13,7 @@ vi.mock('@/i18n/navigation', () => ({
 }))
 
 describe('Footer', () => {
-  it('links to the privacy and terms pages', () => {
+  it('links to the privacy, terms, and contact pages', () => {
     render(
       <NextIntlClientProvider locale="en" messages={en}>
         <Footer />
@@ -21,5 +21,6 @@ describe('Footer', () => {
     )
     expect(screen.getByText(en.footer.privacy).closest('a')).toHaveAttribute('href', '/privacy')
     expect(screen.getByText(en.footer.terms).closest('a')).toHaveAttribute('href', '/terms')
+    expect(screen.getByText(en.footer.contact).closest('a')).toHaveAttribute('href', '/contact')
   })
 })

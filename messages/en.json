@@ -19,7 +19,8 @@
   "footer": {
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "contact": "Contact"
   },
   "cookieConsent": {
     "message": "We use cookies to improve your experience and show relevant ads.",
@@ -131,5 +132,17 @@
       "Content on this platform (grammar explanations, exercises, vocabulary) is provided for educational purposes and may be updated or corrected at any time without notice.",
       "We may suspend or terminate accounts that violate these terms, abuse the service, or attempt to disrupt its operation. We reserve the right to modify these terms; continued use of the service after changes constitutes acceptance of the updated terms."
     ]
+  },
+  "contact": {
+    "title": "Contact & Legal Notice (Impressum)",
+    "intro": "This page identifies the operator of DeutschLernen, as required by law, and explains how to reach us for support or data-protection requests. The details below are placeholders and must be replaced with the real operator's information before this site is published.",
+    "fields": [
+      { "label": "Operator", "value": "[FULL NAME OR COMPANY NAME]" },
+      { "label": "Address", "value": "[STREET AND HOUSE NUMBER], [POSTAL CODE] [CITY], [COUNTRY]" },
+      { "label": "Email", "value": "[CONTACT EMAIL ADDRESS]" },
+      { "label": "Phone", "value": "[PHONE NUMBER] (optional)" },
+      { "label": "VAT ID", "value": "[VAT IDENTIFICATION NUMBER, IF APPLICABLE]" }
+    ],
+    "note": "For requests regarding access to, correction of, or deletion of your personal data, please use the email address above."
   }
 }
