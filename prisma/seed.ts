@@ -2672,6 +2672,320 @@ async function main() {
     ],
   })
 
+  // --- B1 Unit 5: Genitiv (4 lessons) ---
+  const b1Unit5 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 5, titleDe: 'Genitiv', titleEn: 'Genitive Case', titleTr: 'Tamlayan Hâli' },
+  })
+
+  const b1Unit5Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit5.id,
+      order: 1,
+      grammarTopic: 'Genitivartikel',
+      explanationDe:
+        'Der Genitiv zeigt Besitz oder Zugehörigkeit. Artikel: "des" (maskulin/neutrum, + -s/-es am Nomen), "der" (feminin/Plural), z. B. "das Auto des Mannes", "die Farbe der Tasche".',
+      explanationEn:
+        'The genitive shows possession or belonging. Articles: "des" (masculine/neuter, + -s/-es on the noun), "der" (feminine/plural), e.g. "das Auto des Mannes" (the man\'s car), "die Farbe der Tasche" (the color of the bag).',
+      explanationTr:
+        'Tamlayan hâli sahiplik veya aidiyeti gösterir. Artikeller: "des" (eril/nötr, isimde + -s/-es), "der" (dişil/çoğul), örn. "das Auto des Mannes" (adamın arabası), "die Farbe der Tasche" (çantanın rengi).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit5Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Auto ___ Mannes ist neu.', options: ['des', 'der', 'dem', 'den'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Maskulin Genitiv: "des" + Nomen mit -es.',
+      },
+      {
+        lessonId: b1Unit5Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Farbe ___ Tasche gefällt mir. (die Tasche, Genitiv)' },
+        correctAnswer: { accepted: ['der'] },
+        explanation: 'Feminin Genitiv: "der".',
+      },
+    ],
+  })
+
+  const b1Unit5Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit5.id,
+      order: 2,
+      grammarTopic: 'Genitivpräpositionen',
+      explanationDe:
+        'Manche Präpositionen verlangen den Genitiv: "wegen" (because of), "trotz" (despite), "während" (during), z. B. "wegen des Regens", "trotz der Kälte".',
+      explanationEn:
+        'Some prepositions require the genitive: "wegen" (because of), "trotz" (despite), "während" (during), e.g. "wegen des Regens" (because of the rain), "trotz der Kälte" (despite the cold).',
+      explanationTr:
+        'Bazı edatlar tamlayan hâli gerektirir: "wegen" (yüzünden), "trotz" (rağmen), "während" (esnasında), örn. "wegen des Regens" (yağmur yüzünden), "trotz der Kälte" (soğuğa rağmen).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit5Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir bleiben zu Hause ___ des Regens.', options: ['wegen', 'trotz', 'während', 'für'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wegen" (because of) + Genitiv.',
+      },
+      {
+        lessonId: b1Unit5Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'despite the cold' (trotz + die Kälte)?" },
+        correctAnswer: { accepted: ['trotz der kälte'] },
+        explanation: '"Trotz" + Genitiv feminin: "trotz der Kälte".',
+      },
+    ],
+  })
+
+  const b1Unit5Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit5.id,
+      order: 3,
+      grammarTopic: 'Possessiver Genitiv bei Namen',
+      explanationDe:
+        'Bei Eigennamen wird der Genitiv oft mit -s ohne Artikel gebildet: "Annas Buch", "Peters Auto". Bei Namen auf -s: "Klaus\' Auto".',
+      explanationEn:
+        'With proper names, the genitive is often formed with -s and no article: "Annas Buch" (Anna\'s book), "Peters Auto" (Peter\'s car). For names ending in -s: "Klaus\' Auto".',
+      explanationTr:
+        'Özel isimlerle tamlayan hâli genellikle artikelsiz -s ile kurulur: "Annas Buch" (Anna\'nın kitabı), "Peters Auto" (Peter\'in arabası). -s ile biten isimlerde: "Klaus\' Auto".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit5Lesson3.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Buch ist interessant. (Anna)' },
+        correctAnswer: { accepted: ['annas'] },
+        explanation: 'Possessiver Genitiv bei Namen: Anna + -s.',
+      },
+      {
+        lessonId: b1Unit5Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['Annas', 'Peters', "Klaus'"], rights: ['Buch', 'Auto', 'Haus'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Annas', right: 'Buch' },
+            { left: 'Peters', right: 'Auto' },
+            { left: "Klaus'", right: 'Haus' },
+          ],
+        },
+        explanation: 'Possessiver Genitiv bei verschiedenen Namen.',
+      },
+    ],
+  })
+
+  const b1Unit5Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit5.id,
+      order: 4,
+      grammarTopic: 'Übung: Genitiv',
+      explanationDe:
+        'Wiederholung: Genitivartikel (des/der), Genitivpräpositionen (wegen/trotz/während) und possessiver Genitiv bei Namen. "Wegen des Wetters bleibt Annas Familie zu Hause."',
+      explanationEn:
+        'Review: genitive articles (des/der), genitive prepositions (wegen/trotz/während), and possessive genitive with names. "Wegen des Wetters bleibt Annas Familie zu Hause" (Because of the weather, Anna\'s family stays home).',
+      explanationTr:
+        'Tekrar: tamlayan hâli artikelleri (des/der), tamlayan hâli edatları (wegen/trotz/während) ve isimlerle possessif tamlayan hâli. "Wegen des Wetters bleibt Annas Familie zu Hause".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit5Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['des', 'wegen', 'Wetters', 'bleiben', 'wir', 'zu', 'Hause'] },
+        correctAnswer: { order: ['wegen', 'des', 'Wetters', 'bleiben', 'wir', 'zu', 'Hause'] },
+        explanation: 'Genitivpräposition "wegen" steht vor dem Genitivobjekt.',
+      },
+      {
+        lessonId: b1Unit5Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Während ___ Woche arbeite ich viel.', options: ['der', 'die', 'des', 'dem'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Während" + Genitiv feminin: "der Woche".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit5Lesson1.id, word: 'die Tasche', translationEn: 'the bag', translationTr: 'çanta', exampleSentence: 'Die Farbe der Tasche gefällt mir.' },
+      { lessonId: b1Unit5Lesson1.id, word: 'gefallen', translationEn: 'to please / like', translationTr: 'hoşlanmak', exampleSentence: 'Das Auto gefällt mir.' },
+      { lessonId: b1Unit5Lesson2.id, word: 'der Regen', translationEn: 'the rain', translationTr: 'yağmur', exampleSentence: 'Wegen des Regens bleiben wir zu Hause.' },
+      { lessonId: b1Unit5Lesson2.id, word: 'die Kälte', translationEn: 'the cold', translationTr: 'soğuk', exampleSentence: 'Trotz der Kälte gehen wir spazieren.' },
+      { lessonId: b1Unit5Lesson3.id, word: 'interessant', translationEn: 'interesting', translationTr: 'ilginç', exampleSentence: 'Annas Buch ist interessant.' },
+      { lessonId: b1Unit5Lesson3.id, word: 'das Haus', translationEn: 'the house', translationTr: 'ev', exampleSentence: "Klaus' Haus ist groß." },
+      { lessonId: b1Unit5Lesson4.id, word: 'das Wetter', translationEn: 'the weather', translationTr: 'hava durumu', exampleSentence: 'Wegen des Wetters bleiben wir zu Hause.' },
+      { lessonId: b1Unit5Lesson4.id, word: 'die Woche', translationEn: 'the week', translationTr: 'hafta', exampleSentence: 'Während der Woche arbeite ich viel.' },
+    ],
+  })
+
+  // --- B1 Unit 6: Plusquamperfekt (4 lessons) ---
+  const b1Unit6 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 6, titleDe: 'Plusquamperfekt', titleEn: 'Past Perfect', titleTr: 'Miş\'li Geçmişin Hikâyesi' },
+  })
+
+  const b1Unit6Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit6.id,
+      order: 1,
+      grammarTopic: 'Plusquamperfekt mit "hatte"',
+      explanationDe:
+        'Das Plusquamperfekt beschreibt ein Ereignis vor einem anderen Ereignis in der Vergangenheit: "hatte" + Partizip II, z. B. "Ich hatte schon gegessen, als er kam."',
+      explanationEn:
+        'The past perfect describes an event before another past event: "hatte" + past participle, e.g. "Ich hatte schon gegessen, als er kam" (I had already eaten when he arrived).',
+      explanationTr:
+        'Miş\'li geçmişin hikâyesi, geçmişteki başka bir olaydan önceki olayı anlatır: "hatte" + Partizip II, örn. "Ich hatte schon gegessen, als er kam" (O geldiğinde ben zaten yemiştim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit6Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ schon gegessen, als er kam.', options: ['habe', 'hatte', 'hätte', 'haben'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Plusquamperfekt: "hatte" + Partizip II.',
+      },
+      {
+        lessonId: b1Unit6Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ den Brief schon geschrieben, bevor ich kam. (haben)' },
+        correctAnswer: { accepted: ['hatte'] },
+        explanation: 'Plusquamperfekt mit "hatte".',
+      },
+    ],
+  })
+
+  const b1Unit6Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit6.id,
+      order: 2,
+      grammarTopic: 'Plusquamperfekt mit "war"',
+      explanationDe:
+        'Bewegungs- und Zustandsverben bilden das Plusquamperfekt mit "war" + Partizip II, z. B. "Sie war schon gegangen, als ich anrief."',
+      explanationEn:
+        'Movement and state verbs form the past perfect with "war" + past participle, e.g. "Sie war schon gegangen, als ich anrief" (She had already left when I called).',
+      explanationTr:
+        'Hareket ve durum fiilleri miş\'li geçmişin hikâyesini "war" + Partizip II ile kurar, örn. "Sie war schon gegangen, als ich anrief" (Ben aradığımda o zaten gitmişti).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit6Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Sie ___ schon gegangen, als ich anrief.', options: ['hatte', 'war', 'ist', 'hat'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"gehen" bildet das Plusquamperfekt mit "war".',
+      },
+      {
+        lessonId: b1Unit6Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man: 'I had already arrived' (ankommen, ich)?" },
+        correctAnswer: { accepted: ['ich war schon angekommen'] },
+        explanation: '"ankommen" braucht "war": "Ich war schon angekommen."',
+      },
+    ],
+  })
+
+  const b1Unit6Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit6.id,
+      order: 3,
+      grammarTopic: 'Plusquamperfekt mit "nachdem"',
+      explanationDe:
+        '"Nachdem" verbindet zwei Vergangenheitsereignisse: der Nebensatz mit "nachdem" steht im Plusquamperfekt, der Hauptsatz im Perfekt/Präteritum. "Nachdem ich gegessen hatte, ging ich spazieren."',
+      explanationEn:
+        '"Nachdem" (after) connects two past events: the "nachdem" clause uses the past perfect, the main clause uses Perfekt/Präteritum. "Nachdem ich gegessen hatte, ging ich spazieren" (After I had eaten, I went for a walk).',
+      explanationTr:
+        '"Nachdem" (sonra) iki geçmiş olayı bağlar: "nachdem" cümleciği miş\'li geçmişin hikâyesinde, ana cümle Perfekt/Präteritum\'da olur. "Nachdem ich gegessen hatte, ging ich spazieren".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit6Lesson3.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gegessen', 'ich', 'nachdem', 'hatte'] },
+        correctAnswer: { order: ['nachdem', 'ich', 'gegessen', 'hatte'] },
+        explanation: 'Im Nebensatz mit "nachdem" steht das Verb am Ende.',
+      },
+      {
+        lessonId: b1Unit6Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Nachdem ich gegessen hatte, ___ ich spazieren.', options: ['ging', 'gehe', 'gegangen', 'gehen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Hauptsatz im Präteritum: "ging".',
+      },
+    ],
+  })
+
+  const b1Unit6Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit6.id,
+      order: 4,
+      grammarTopic: 'Übung: Plusquamperfekt',
+      explanationDe:
+        'Wiederholung: Plusquamperfekt mit "hatte"/"war" beschreibt Vorzeitigkeit. "Nachdem sie angekommen war, hatte sie schon alles vorbereitet."',
+      explanationEn:
+        'Review: past perfect with "hatte"/"war" expresses an earlier past event. "Nachdem sie angekommen war, hatte sie schon alles vorbereitet" (After she had arrived, she had already prepared everything).',
+      explanationTr:
+        'Tekrar: "hatte"/"war" ile miş\'li geçmişin hikâyesi önceki bir geçmiş olayı ifade eder. "Nachdem sie angekommen war, hatte sie schon alles vorbereitet".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit6Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Nachdem sie angekommen ___, hatte sie schon alles vorbereitet. (sein)' },
+        correctAnswer: { accepted: ['war'] },
+        explanation: '"ankommen" + Plusquamperfekt mit "war".',
+      },
+      {
+        lessonId: b1Unit6Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man: 'everything' auf Deutsch (aus dem Beispielsatz)?" },
+        correctAnswer: { accepted: ['alles'] },
+        explanation: '"Alles" bedeutet "everything".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit6Lesson1.id, word: 'der Brief', translationEn: 'the letter', translationTr: 'mektup', exampleSentence: 'Er hatte den Brief schon geschrieben.' },
+      { lessonId: b1Unit6Lesson1.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Ich schreibe einen Brief.' },
+      { lessonId: b1Unit6Lesson2.id, word: 'anrufen', translationEn: 'to call (phone)', translationTr: 'aramak', exampleSentence: 'Ich rufe dich später an.' },
+      { lessonId: b1Unit6Lesson2.id, word: 'ankommen', translationEn: 'to arrive', translationTr: 'varmak', exampleSentence: 'Der Zug ist schon angekommen.' },
+      { lessonId: b1Unit6Lesson3.id, word: 'spazieren', translationEn: 'to walk / stroll', translationTr: 'gezinmek', exampleSentence: 'Ich gehe gern spazieren.' },
+      { lessonId: b1Unit6Lesson3.id, word: 'nachdem', translationEn: 'after (conjunction)', translationTr: '-dikten sonra', exampleSentence: 'Nachdem ich gegessen hatte, ging ich spazieren.' },
+      { lessonId: b1Unit6Lesson4.id, word: 'vorbereiten', translationEn: 'to prepare', translationTr: 'hazırlamak', exampleSentence: 'Sie hatte alles vorbereitet.' },
+      { lessonId: b1Unit6Lesson4.id, word: 'alles', translationEn: 'everything', translationTr: 'her şey', exampleSentence: 'Sie hatte schon alles vorbereitet.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
