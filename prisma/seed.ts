@@ -2184,6 +2184,2014 @@ async function main() {
     ],
   })
 
+  const a2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit.id,
+      order: 2,
+      grammarTopic: "Perfekt mit 'sein'",
+      explanationDe:
+        'Bewegungsverben und Verben, die eine Zustandsveränderung ausdrücken, bilden das Perfekt mit "sein" statt "haben", z. B. "Ich bin nach Berlin gefahren." "Er ist zu Hause geblieben."',
+      explanationEn:
+        'Verbs of motion and verbs expressing a change of state form the Perfekt with "sein" instead of "haben", e.g. "Ich bin nach Berlin gefahren" (I went to Berlin). "Er ist zu Hause geblieben" (He stayed home).',
+      explanationTr:
+        'Hareket bildiren fiiller ve durum değişikliği ifade eden fiiller Perfekt zamanını "haben" yerine "sein" ile kurar, örn. "Ich bin nach Berlin gefahren" (Berlin\'e gittim). "Er ist zu Hause geblieben" (Evde kaldı).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ nach Berlin gefahren.', options: ['bin', 'habe', 'hat', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Fahren" ist ein Bewegungsverb, deshalb benutzt man "sein" im Perfekt.',
+      },
+      {
+        lessonId: a2Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ist zu Hause ___ (bleiben).' },
+        correctAnswer: { accepted: ['geblieben'] },
+        explanation: 'Das Partizip II von "bleiben" ist "geblieben", gebildet mit "sein".',
+      },
+    ],
+  })
+
+  const a2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit.id,
+      order: 3,
+      grammarTopic: 'Zeitangaben der Vergangenheit',
+      explanationDe:
+        'Wichtige Zeitausdrücke für die Vergangenheit: gestern, letzte Woche, vor zwei Tagen, letztes Jahr. Beispiel: "Vor zwei Tagen habe ich meine Oma besucht."',
+      explanationEn:
+        'Important time expressions for the past: gestern (yesterday), letzte Woche (last week), vor zwei Tagen (two days ago), letztes Jahr (last year). Example: "Vor zwei Tagen habe ich meine Oma besucht" (Two days ago I visited my grandma).',
+      explanationTr:
+        'Geçmiş zaman için önemli zaman ifadeleri: gestern (dün), letzte Woche (geçen hafta), vor zwei Tagen (iki gün önce), letztes Jahr (geçen yıl). Örnek: "Vor zwei Tagen habe ich meine Oma besucht" (İki gün önce büyükannemi ziyaret ettim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: '___ habe ich meine Oma besucht. (two days ago)',
+          options: ['Vor zwei Tagen', 'Letzte Woche', 'Nächstes Jahr', 'Morgen'],
+        },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Vor zwei Tagen" bedeutet "two days ago".',
+      },
+      {
+        lessonId: a2Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Woche war ich krank.' },
+        correctAnswer: { accepted: ['letzte'] },
+        explanation: '"Letzte Woche" bedeutet "last week".',
+      },
+    ],
+  })
+
+  const a2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Alltag erzählen',
+      explanationDe:
+        'Kombiniere Perfekt mit "haben" und "sein", um deinen Alltag zu erzählen: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren."',
+      explanationEn:
+        'Combine Perfekt with "haben" and "sein" to narrate your day: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren" (I got up, had breakfast, and drove to work).',
+      explanationTr:
+        'Gününü anlatmak için "haben" ve "sein" ile kurulan Perfekt yapılarını birleştir: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren" (Kalktım, kahvaltı yaptım ve işe gittim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gefrühstückt', 'ich', 'habe'] },
+        correctAnswer: { order: ['ich', 'habe', 'gefrühstückt'] },
+        explanation: 'Position 2 ist das konjugierte Verb ("habe"), das Partizip II steht am Ende.',
+      },
+      {
+        lessonId: a2Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I went to work' (mit 'fahren', im Perfekt)?" },
+        correctAnswer: { accepted: ['ich bin zur arbeit gefahren'] },
+        explanation: '"Ich bin zur Arbeit gefahren" bedeutet "I went to work" - "fahren" braucht "sein".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Lesson2.id, word: 'bleiben', translationEn: 'to stay', translationTr: 'kalmak', exampleSentence: 'Er ist zu Hause geblieben.' },
+      { lessonId: a2Lesson2.id, word: 'aufwachen', translationEn: 'to wake up', translationTr: 'uyanmak', exampleSentence: 'Ich bin früh aufgewacht.' },
+      { lessonId: a2Lesson3.id, word: 'letzte Woche', translationEn: 'last week', translationTr: 'geçen hafta', exampleSentence: 'Letzte Woche war ich krank.' },
+      { lessonId: a2Lesson3.id, word: 'besuchen', translationEn: 'to visit', translationTr: 'ziyaret etmek', exampleSentence: 'Vor zwei Tagen habe ich meine Oma besucht.' },
+      { lessonId: a2Lesson4.id, word: 'die Arbeit', translationEn: 'work / job', translationTr: 'iş', exampleSentence: 'Ich bin zur Arbeit gefahren.' },
+      { lessonId: a2Lesson4.id, word: 'frühstücken', translationEn: 'to have breakfast', translationTr: 'kahvaltı yapmak', exampleSentence: 'Ich habe gefrühstückt.' },
+    ],
+  })
+
+  // --- A2 Unit 2: Perfekt Vertiefung (4 lessons) ---
+  const a2Unit2 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 2, titleDe: 'Perfekt Vertiefung', titleEn: 'Perfekt in Depth', titleTr: 'Perfekt Zamanı Derinlemesine' },
+  })
+
+  const a2Unit2Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit2.id,
+      order: 1,
+      grammarTopic: 'haben oder sein? (Regel)',
+      explanationDe:
+        'Die meisten Verben bilden das Perfekt mit "haben". Nur Verben der Bewegung (gehen, fahren) oder Zustandsänderung (aufwachen, sterben) sowie "sein" und "bleiben" selbst benutzen "sein". Beispiel: "Ich habe gearbeitet." aber "Ich bin gelaufen."',
+      explanationEn:
+        'Most verbs form the Perfekt with "haben". Only verbs of motion (gehen, fahren) or change of state (aufwachen, sterben), plus "sein" and "bleiben" themselves, use "sein". Example: "Ich habe gearbeitet" (I worked) but "Ich bin gelaufen" (I ran).',
+      explanationTr:
+        'Çoğu fiil Perfekt zamanını "haben" ile kurar. Sadece hareket fiilleri (gehen, fahren) veya durum değişikliği fiilleri (aufwachen, sterben) ile "sein" ve "bleiben" fiillerinin kendisi "sein" kullanır. Örnek: "Ich habe gearbeitet" (Çalıştım) ama "Ich bin gelaufen" (Koştum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit2Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ gelaufen.', options: ['habe', 'bin', 'hat', 'ist'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Laufen" ist ein Bewegungsverb, deshalb benutzt man "sein".',
+      },
+      {
+        lessonId: a2Unit2Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ heute viel gearbeitet.' },
+        correctAnswer: { accepted: ['habe'] },
+        explanation: '"Arbeiten" ist kein Bewegungsverb, deshalb benutzt man "haben".',
+      },
+    ],
+  })
+
+  const a2Unit2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit2.id,
+      order: 2,
+      grammarTopic: 'Partizip II unregelmäßiger Verben',
+      explanationDe:
+        'Viele unregelmäßige Verben ändern den Stammvokal im Partizip II: schreiben → geschrieben, nehmen → genommen, finden → gefunden. Diese Formen muss man auswendig lernen.',
+      explanationEn:
+        'Many irregular verbs change their stem vowel in the past participle: schreiben → geschrieben (written), nehmen → genommen (taken), finden → gefunden (found). These forms have to be memorized.',
+      explanationTr:
+        'Birçok düzensiz fiil Partizip II biçiminde kök ünlüsünü değiştirir: schreiben → geschrieben (yazılmış), nehmen → genommen (alınmış), finden → gefunden (bulunmuş). Bu biçimler ezbere öğrenilmelidir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit2Lesson2.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['schreiben', 'nehmen', 'finden'], rights: ['gefunden', 'geschrieben', 'genommen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'schreiben', right: 'geschrieben' },
+            { left: 'nehmen', right: 'genommen' },
+            { left: 'finden', right: 'gefunden' },
+          ],
+        },
+        explanation: 'Partizip II: schreiben→geschrieben, nehmen→genommen, finden→gefunden.',
+      },
+      {
+        lessonId: a2Unit2Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe einen Brief ___ (schreiben).' },
+        correctAnswer: { accepted: ['geschrieben'] },
+        explanation: 'Das Partizip II von "schreiben" ist "geschrieben".',
+      },
+    ],
+  })
+
+  const a2Unit2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit2.id,
+      order: 3,
+      grammarTopic: 'Trennbare Verben im Perfekt',
+      explanationDe:
+        'Bei trennbaren Verben steht "ge" zwischen Präfix und Stamm: aufstehen → aufgestanden, anrufen → angerufen, mitbringen → mitgebracht. Beispiel: "Ich bin um sieben Uhr aufgestanden."',
+      explanationEn:
+        'With separable-prefix verbs, "ge" is inserted between the prefix and the stem: aufstehen → aufgestanden (got up), anrufen → angerufen (called), mitbringen → mitgebracht (brought along). Example: "Ich bin um sieben Uhr aufgestanden" (I got up at seven o\'clock).',
+      explanationTr:
+        'Ayrılabilen fiillerde "ge" öneki ile gövde arasına girer: aufstehen → aufgestanden (kalktı), anrufen → angerufen (aradı), mitbringen → mitgebracht (yanında getirdi). Örnek: "Ich bin um sieben Uhr aufgestanden" (Saat yedide kalktım).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich bin um sieben Uhr ___.', options: ['aufgestanden', 'aufstehen', 'stehe auf', 'aufgestehen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das Partizip II von "aufstehen" ist "aufgestanden".',
+      },
+      {
+        lessonId: a2Unit2Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['angerufen', 'ich', 'habe', 'dich'] },
+        correctAnswer: { order: ['ich', 'habe', 'dich', 'angerufen'] },
+        explanation: 'Position 2 ist das Verb ("habe"), das Partizip II ("angerufen") steht am Satzende.',
+      },
+    ],
+  })
+
+  const a2Unit2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit2.id,
+      order: 4,
+      grammarTopic: "Nicht-trennbare & '-ieren'-Verben im Perfekt",
+      explanationDe:
+        'Verben mit den Präfixen be-, ge-, er-, ver-, zer-, ent-, emp- sowie Verben auf "-ieren" bilden das Partizip II OHNE "ge-": besuchen → besucht, studieren → studiert.',
+      explanationEn:
+        'Verbs with the prefixes be-, ge-, er-, ver-, zer-, ent-, emp- and verbs ending in "-ieren" form the past participle WITHOUT "ge-": besuchen → besucht (visited), studieren → studiert (studied).',
+      explanationTr:
+        'be-, ge-, er-, ver-, zer-, ent-, emp- önekli fiiller ve "-ieren" ile biten fiiller Partizip II\'yi "ge-" OLMADAN kurar: besuchen → besucht (ziyaret edildi), studieren → studiert (okundu).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit2Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich habe Medizin ___.', options: ['studiert', 'gestudiert', 'studieren', 'studierte'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"-ieren"-Verben bilden das Partizip II ohne "ge-": studiert.',
+      },
+      {
+        lessonId: a2Unit2Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er hat seine Oma ___ (besuchen).' },
+        correctAnswer: { accepted: ['besucht'] },
+        explanation: 'Das Partizip II von "besuchen" ist "besucht" (kein "ge-").',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit2Lesson1.id, word: 'laufen', translationEn: 'to run / to walk', translationTr: 'koşmak / yürümek', exampleSentence: 'Ich bin gelaufen.' },
+      { lessonId: a2Unit2Lesson1.id, word: 'die Regel', translationEn: 'the rule', translationTr: 'kural', exampleSentence: 'Das ist eine wichtige Regel.' },
+      { lessonId: a2Unit2Lesson2.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Ich habe einen Brief geschrieben.' },
+      { lessonId: a2Unit2Lesson2.id, word: 'finden', translationEn: 'to find', translationTr: 'bulmak', exampleSentence: 'Ich habe meinen Schlüssel gefunden.' },
+      { lessonId: a2Unit2Lesson3.id, word: 'mitbringen', translationEn: 'to bring along', translationTr: 'yanında getirmek', exampleSentence: 'Ich habe einen Kuchen mitgebracht.' },
+      { lessonId: a2Unit2Lesson3.id, word: 'ausgehen', translationEn: 'to go out', translationTr: 'dışarı çıkmak', exampleSentence: 'Wir sind gestern ausgegangen.' },
+      { lessonId: a2Unit2Lesson4.id, word: 'studieren', translationEn: 'to study (at university)', translationTr: 'üniversitede okumak', exampleSentence: 'Ich habe Medizin studiert.' },
+      { lessonId: a2Unit2Lesson4.id, word: 'erklären', translationEn: 'to explain', translationTr: 'açıklamak', exampleSentence: 'Der Lehrer hat die Regel erklärt.' },
+    ],
+  })
+
+  // --- A2 Unit 3: Komparativ & Superlativ (4 lessons) ---
+  const a2Unit3 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 3, titleDe: 'Komparativ & Superlativ', titleEn: 'Comparative & Superlative', titleTr: 'Karşılaştırma ve Üstünlük Derecesi' },
+  })
+
+  const a2Unit3Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit3.id,
+      order: 1,
+      grammarTopic: 'Komparativ (regelmäßig)',
+      explanationDe:
+        'Der Komparativ wird mit "-er" gebildet und vergleicht mit "als": schnell → schneller, klein → kleiner. Beispiel: "Der Zug ist schneller als das Auto."',
+      explanationEn:
+        'The comparative is formed with "-er" and compares using "als" (than): schnell → schneller (faster), klein → kleiner (smaller). Example: "Der Zug ist schneller als das Auto" (The train is faster than the car).',
+      explanationTr:
+        'Karşılaştırma sıfatı "-er" eki ile kurulur ve "als" (-den) ile karşılaştırılır: schnell → schneller (daha hızlı), klein → kleiner (daha küçük). Örnek: "Der Zug ist schneller als das Auto" (Tren arabadan daha hızlıdır).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit3Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Zug ist ___ als das Auto. (schnell)', options: ['schnell', 'schneller', 'am schnellsten', 'schnellst'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Der Komparativ von "schnell" ist "schneller".',
+      },
+      {
+        lessonId: a2Unit3Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Mein Haus ist ___ als deins. (klein)' },
+        correctAnswer: { accepted: ['kleiner'] },
+        explanation: 'Der Komparativ von "klein" ist "kleiner".',
+      },
+    ],
+  })
+
+  const a2Unit3Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit3.id,
+      order: 2,
+      grammarTopic: 'Komparativ mit Umlaut',
+      explanationDe:
+        'Einsilbige Adjektive mit a, o oder u bekommen oft einen Umlaut im Komparativ: groß → größer, jung → jünger, alt → älter. Beispiel: "Meine Schwester ist jünger als ich."',
+      explanationEn:
+        'Single-syllable adjectives with a, o, or u often take an umlaut in the comparative: groß → größer (bigger), jung → jünger (younger), alt → älter (older). Example: "Meine Schwester ist jünger als ich" (My sister is younger than me).',
+      explanationTr:
+        'a, o, u ünlüsü içeren tek heceli sıfatlar genellikle karşılaştırmada umlaut alır: groß → größer (daha büyük), jung → jünger (daha genç), alt → älter (daha yaşlı). Örnek: "Meine Schwester ist jünger als ich" (Kız kardeşim benden daha genç).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit3Lesson2.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['groß', 'jung', 'alt'], rights: ['älter', 'größer', 'jünger'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'groß', right: 'größer' },
+            { left: 'jung', right: 'jünger' },
+            { left: 'alt', right: 'älter' },
+          ],
+        },
+        explanation: 'Komparativ mit Umlaut: groß→größer, jung→jünger, alt→älter.',
+      },
+      {
+        lessonId: a2Unit3Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Mein Opa ist ___ als mein Vater. (alt)' },
+        correctAnswer: { accepted: ['älter'] },
+        explanation: 'Der Komparativ von "alt" ist "älter".',
+      },
+    ],
+  })
+
+  const a2Unit3Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit3.id,
+      order: 3,
+      grammarTopic: "Superlativ mit 'am ...sten'",
+      explanationDe:
+        'Der Superlativ wird mit "am" + Adjektiv + "-sten" gebildet: schnell → am schnellsten, groß → am größten. Beispiel: "Der ICE ist am schnellsten."',
+      explanationEn:
+        'The superlative is formed with "am" + adjective + "-sten": schnell → am schnellsten (fastest), groß → am größten (biggest). Example: "Der ICE ist am schnellsten" (The ICE train is the fastest).',
+      explanationTr:
+        'Üstünlük derecesi "am" + sıfat + "-sten" ile kurulur: schnell → am schnellsten (en hızlı), groß → am größten (en büyük). Örnek: "Der ICE ist am schnellsten" (ICE treni en hızlısıdır).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit3Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der ICE ist ___. (schnell)', options: ['am schnellsten', 'schneller', 'so schnell', 'am schnell'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Superlativ von "schnell" ist "am schnellsten".',
+      },
+      {
+        lessonId: a2Unit3Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Berg', 'ist', 'der', 'am', 'größten'] },
+        correctAnswer: { order: ['der', 'Berg', 'ist', 'am', 'größten'] },
+        explanation: 'Reihenfolge: Artikel, Subjekt, Verb, "am" + Superlativ.',
+      },
+    ],
+  })
+
+  const a2Unit3Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit3.id,
+      order: 4,
+      grammarTopic: 'Unregelmäßige Steigerungsformen',
+      explanationDe:
+        'Einige Adjektive/Adverbien haben unregelmäßige Steigerungsformen: gut → besser → am besten, viel → mehr → am meisten, gern → lieber → am liebsten. Beispiel: "Ich trinke gern Tee, aber ich trinke lieber Kaffee."',
+      explanationEn:
+        'Some adjectives/adverbs have irregular comparison forms: gut → besser → am besten (good/better/best), viel → mehr → am meisten (much/more/most), gern → lieber → am liebsten (gladly/preferably/most preferred). Example: "Ich trinke gern Tee, aber ich trinke lieber Kaffee" (I like drinking tea, but I prefer coffee).',
+      explanationTr:
+        'Bazı sıfat/zarfların düzensiz karşılaştırma biçimleri vardır: gut → besser → am besten (iyi/daha iyi/en iyi), viel → mehr → am meisten (çok/daha çok/en çok), gern → lieber → am liebsten (seve seve/tercihen/en çok tercih edilen). Örnek: "Ich trinke gern Tee, aber ich trinke lieber Kaffee" (Çayı severim ama kahveyi tercih ederim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit3Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Essen hier ist ___ als zu Hause. (gut)', options: ['guter', 'besser', 'am besten', 'guter'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Der Komparativ von "gut" ist unregelmäßig: "besser".',
+      },
+      {
+        lessonId: a2Unit3Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I prefer coffee' (mit 'lieber')?" },
+        correctAnswer: { accepted: ['ich trinke lieber kaffee'] },
+        explanation: '"Ich trinke lieber Kaffee" bedeutet "I prefer coffee".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit3Lesson1.id, word: 'schnell', translationEn: 'fast', translationTr: 'hızlı', exampleSentence: 'Der Zug ist schnell.' },
+      { lessonId: a2Unit3Lesson1.id, word: 'klein', translationEn: 'small', translationTr: 'küçük', exampleSentence: 'Mein Haus ist klein.' },
+      { lessonId: a2Unit3Lesson2.id, word: 'groß', translationEn: 'big / tall', translationTr: 'büyük', exampleSentence: 'Das Haus ist groß.' },
+      { lessonId: a2Unit3Lesson2.id, word: 'jung', translationEn: 'young', translationTr: 'genç', exampleSentence: 'Meine Schwester ist jung.' },
+      { lessonId: a2Unit3Lesson3.id, word: 'der Berg', translationEn: 'the mountain', translationTr: 'dağ', exampleSentence: 'Der Berg ist am größten.' },
+      { lessonId: a2Unit3Lesson3.id, word: 'der Zug', translationEn: 'the train', translationTr: 'tren', exampleSentence: 'Der Zug ist am schnellsten.' },
+      { lessonId: a2Unit3Lesson4.id, word: 'besser', translationEn: 'better', translationTr: 'daha iyi', exampleSentence: 'Das Essen hier ist besser.' },
+      { lessonId: a2Unit3Lesson4.id, word: 'am liebsten', translationEn: 'most of all / favorite', translationTr: 'en çok tercih edilen', exampleSentence: 'Ich trinke am liebsten Tee.' },
+    ],
+  })
+
+  // --- A2 Unit 4: Nebensätze mit "dass" und "weil" (4 lessons) ---
+  const a2Unit4 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 4, titleDe: 'Nebensätze mit "dass" und "weil"', titleEn: '"dass" and "weil" Clauses', titleTr: '"dass" ve "weil" Yan Cümleleri' },
+  })
+
+  const a2Unit4Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit4.id,
+      order: 1,
+      grammarTopic: "Nebensätze mit 'dass'",
+      explanationDe:
+        'Der Nebensatz mit "dass" gibt an, was jemand denkt, sagt oder weiß. Das konjugierte Verb steht am Ende: "Ich glaube, dass er Recht hat."',
+      explanationEn:
+        'A "dass" (that) clause states what someone thinks, says, or knows. The conjugated verb moves to the end: "Ich glaube, dass er Recht hat" (I believe that he is right).',
+      explanationTr:
+        '"Dass" (ki) cümlesi birinin düşündüğünü, söylediğini ya da bildiğini belirtir. Çekimli fiil cümlenin sonuna gider: "Ich glaube, dass er Recht hat" (Haklı olduğuna inanıyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit4Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich glaube, dass er Recht ___.', options: ['hat', 'ist', 'habe', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Im Nebensatz steht das konjugierte Verb ("hat") am Ende.',
+      },
+      {
+        lessonId: a2Unit4Lesson1.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Zeit', 'habe', 'dass', 'ich', 'keine'] },
+        correctAnswer: { order: ['dass', 'ich', 'keine', 'Zeit', 'habe'] },
+        explanation: 'Im Nebensatz steht das Verb am Ende: "dass ich keine Zeit habe".',
+      },
+    ],
+  })
+
+  const a2Unit4Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit4.id,
+      order: 2,
+      grammarTopic: "Nebensätze mit 'weil'",
+      explanationDe:
+        'Genau wie bei "dass" steht bei "weil" das konjugierte Verb am Ende des Nebensatzes. "weil" nennt einen Grund. Beispiel: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte."',
+      explanationEn:
+        'Just like with "dass", the conjugated verb in a "weil" (because) clause moves to the end. "weil" gives a reason. Example: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte" (I\'m learning German because I want to work in Berlin).',
+      explanationTr:
+        '"Dass" ile aynı şekilde, "weil" (çünkü) cümlesinde de çekimli fiil cümlenin sonuna gider. "weil" bir sebep bildirir. Örnek: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte" (Almanca öğreniyorum çünkü Berlin\'de çalışmak istiyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit4Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich lerne Deutsch, weil ich in Berlin arbeiten ___.', options: ['möchte', 'möchtest', 'möchten', 'möchtet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "möchte".',
+      },
+      {
+        lessonId: a2Unit4Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich bin müde, ___ ich wenig geschlafen habe.' },
+        correctAnswer: { accepted: ['weil'] },
+        explanation: '"Weil" leitet den Grund ein.',
+      },
+    ],
+  })
+
+  const a2Unit4Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit4.id,
+      order: 3,
+      grammarTopic: "'dass' vs. 'weil'",
+      explanationDe:
+        '"dass" leitet einen Inhalt ein (was jemand denkt/sagt), "weil" leitet einen Grund ein (warum). Beide haben Verb-Ende-Stellung: "Ich weiß, dass du müde bist." / "Du bist müde, weil du wenig geschlafen hast."',
+      explanationEn:
+        '"dass" introduces content (what someone thinks or says), "weil" introduces a reason (why). Both have verb-final word order: "Ich weiß, dass du müde bist" (I know that you\'re tired). / "Du bist müde, weil du wenig geschlafen hast" (You\'re tired because you slept little).',
+      explanationTr:
+        '"dass" bir içeriği (birinin ne düşündüğünü/söylediğini) tanıtır, "weil" bir sebebi (neden) tanıtır. İkisi de fiil-sonu sırasına sahiptir: "Ich weiß, dass du müde bist." / "Du bist müde, weil du wenig geschlafen hast."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit4Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich weiß, ___ du müde bist.', options: ['dass', 'weil', 'wenn', 'ob'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"dass" leitet hier den Inhalt des Wissens ein.',
+      },
+      {
+        lessonId: a2Unit4Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welches Wort passt: 'Du bist müde, ___ du wenig geschlafen hast.' (dass oder weil)?" },
+        correctAnswer: { accepted: ['weil'] },
+        explanation: '"weil" nennt den Grund für die Müdigkeit.',
+      },
+    ],
+  })
+
+  const a2Unit4Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit4.id,
+      order: 4,
+      grammarTopic: "Verben mit 'dass'-Sätzen",
+      explanationDe:
+        'Viele Verben werden oft mit einem "dass"-Satz kombiniert: glauben, denken, wissen, hoffen, sagen. Beispiel: "Ich hoffe, dass das Wetter morgen gut ist."',
+      explanationEn:
+        'Many verbs are often combined with a "dass" clause: glauben (believe), denken (think), wissen (know), hoffen (hope), sagen (say). Example: "Ich hoffe, dass das Wetter morgen gut ist" (I hope that the weather is good tomorrow).',
+      explanationTr:
+        'Birçok fiil sıklıkla bir "dass" cümlesiyle birlikte kullanılır: glauben (inanmak), denken (düşünmek), wissen (bilmek), hoffen (ummak), sagen (söylemek). Örnek: "Ich hoffe, dass das Wetter morgen gut ist" (Umarım yarın hava güzel olur).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit4Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___, dass das Wetter morgen gut ist. (hoffen)' },
+        correctAnswer: { accepted: ['hoffe'] },
+        explanation: 'Mit "ich" benutzt man "hoffe".',
+      },
+      {
+        lessonId: a2Unit4Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gut', 'das', 'Wetter', 'ist', 'dass'] },
+        correctAnswer: { order: ['dass', 'das', 'Wetter', 'gut', 'ist'] },
+        explanation: 'Nebensatz-Wortstellung: Konjunktion, Subjekt, Ergänzung, Verb.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit4Lesson1.id, word: 'glauben', translationEn: 'to believe', translationTr: 'inanmak', exampleSentence: 'Ich glaube, dass er Recht hat.' },
+      { lessonId: a2Unit4Lesson1.id, word: 'Recht haben', translationEn: 'to be right', translationTr: 'haklı olmak', exampleSentence: 'Er hat Recht.' },
+      { lessonId: a2Unit4Lesson2.id, word: 'der Grund', translationEn: 'the reason', translationTr: 'sebep', exampleSentence: 'Das ist der Grund.' },
+      { lessonId: a2Unit4Lesson2.id, word: 'schlafen', translationEn: 'to sleep', translationTr: 'uyumak', exampleSentence: 'Ich habe wenig geschlafen.' },
+      { lessonId: a2Unit4Lesson3.id, word: 'wissen', translationEn: 'to know', translationTr: 'bilmek', exampleSentence: 'Ich weiß, dass du müde bist.' },
+      { lessonId: a2Unit4Lesson3.id, word: 'der Unterschied', translationEn: 'the difference', translationTr: 'fark', exampleSentence: 'Kennst du den Unterschied zwischen "dass" und "weil"?' },
+      { lessonId: a2Unit4Lesson4.id, word: 'hoffen', translationEn: 'to hope', translationTr: 'ummak', exampleSentence: 'Ich hoffe, dass das Wetter morgen gut ist.' },
+      { lessonId: a2Unit4Lesson4.id, word: 'denken', translationEn: 'to think', translationTr: 'düşünmek', exampleSentence: 'Ich denke, dass das richtig ist.' },
+    ],
+  })
+
+  // --- A2 Unit 5: Nebensätze mit "wenn" (4 lessons) ---
+  const a2Unit5 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 5, titleDe: 'Nebensätze mit "wenn"', titleEn: '"wenn" Clauses', titleTr: '"wenn" Yan Cümleleri' },
+  })
+
+  const a2Unit5Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit5.id,
+      order: 1,
+      grammarTopic: "'wenn' für wiederholte Ereignisse",
+      explanationDe:
+        '"wenn" beschreibt wiederholte oder zukünftige Ereignisse in der Zeit. Das Verb steht am Ende des Nebensatzes: "Wenn ich Zeit habe, gehe ich schwimmen."',
+      explanationEn:
+        '"wenn" (when/whenever) describes repeated or future events in time. The verb moves to the end of the subordinate clause: "Wenn ich Zeit habe, gehe ich schwimmen" (Whenever I have time, I go swimming).',
+      explanationTr:
+        '"wenn" (ne zaman/-dığında) tekrar eden ya da gelecekteki olayları anlatır. Fiil yan cümlenin sonuna gider: "Wenn ich Zeit habe, gehe ich schwimmen" (Vaktim olduğunda yüzmeye giderim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit5Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn ich Zeit ___, gehe ich schwimmen.', options: ['habe', 'hat', 'habt', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "habe".',
+      },
+      {
+        lessonId: a2Unit5Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ es regnet, bleibe ich zu Hause.' },
+        correctAnswer: { accepted: ['wenn'] },
+        explanation: '"Wenn" leitet den Nebensatz ein.',
+      },
+    ],
+  })
+
+  const a2Unit5Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit5.id,
+      order: 2,
+      grammarTopic: "'wenn' als Bedingung",
+      explanationDe:
+        '"wenn" leitet auch reale Bedingungssätze ein: "Wenn du müde bist, solltest du schlafen gehen." Der Hauptsatz beschreibt die Folge.',
+      explanationEn:
+        '"wenn" also introduces real conditional clauses: "Wenn du müde bist, solltest du schlafen gehen" (If you\'re tired, you should go to sleep). The main clause describes the consequence.',
+      explanationTr:
+        '"wenn" gerçek koşul cümlelerini de tanıtır: "Wenn du müde bist, solltest du schlafen gehen" (Yorgunsan uyumaya gitmelisin). Ana cümle sonucu anlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit5Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn du müde bist, ___ du schlafen gehen.', options: ['solltest', 'sollte', 'sollten', 'sollt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "du" benutzt man "solltest".',
+      },
+      {
+        lessonId: a2Unit5Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bist', 'du', 'krank', 'wenn'] },
+        correctAnswer: { order: ['wenn', 'du', 'krank', 'bist'] },
+        explanation: 'Im wenn-Satz steht das Verb am Ende: "wenn du krank bist".',
+      },
+    ],
+  })
+
+  const a2Unit5Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit5.id,
+      order: 3,
+      grammarTopic: "'wenn' vs. 'wann'",
+      explanationDe:
+        '"wenn" ist eine Konjunktion (zeitlich/bedingend), "wann" ist ein Fragewort für die Zeit. Vergleiche: "Wann kommst du?" (Frage) / "Ich weiß nicht, wann er kommt." (indirekte Frage) vs. "Wenn er kommt, freue ich mich." (Bedingung).',
+      explanationEn:
+        '"wenn" is a conjunction (temporal/conditional), "wann" is a question word asking about time. Compare: "Wann kommst du?" (When are you coming?) / "Ich weiß nicht, wann er kommt" (I don\'t know when he\'s coming) vs. "Wenn er kommt, freue ich mich" (When/if he comes, I\'ll be happy).',
+      explanationTr:
+        '"wenn" bir bağlaçtır (zamansal/koşullu), "wann" zaman soran bir soru sözcüğüdür. Karşılaştır: "Wann kommst du?" (soru) / "Ich weiß nicht, wann er kommt." (dolaylı soru) vs. "Wenn er kommt, freue ich mich." (koşul).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit5Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ kommst du morgen?', options: ['Wann', 'Wenn', 'Ob', 'Dass'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wann" fragt nach der Zeit.',
+      },
+      {
+        lessonId: a2Unit5Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ er kommt, freue ich mich.' },
+        correctAnswer: { accepted: ['wenn'] },
+        explanation: '"Wenn" leitet hier eine Bedingung ein.',
+      },
+    ],
+  })
+
+  const a2Unit5Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit5.id,
+      order: 4,
+      grammarTopic: 'Wortstellung: Nebensatz zuerst',
+      explanationDe:
+        'Beginnt der Satz mit dem Nebensatz (wenn...), steht das Verb im Hauptsatz direkt danach (Verb-Verb-Stellung): "Wenn es regnet, bleibe ich zu Hause." Beide Verben stehen nebeneinander um das Komma.',
+      explanationEn:
+        'When the sentence starts with the subordinate clause (wenn...), the verb in the main clause comes right after it (verb-verb word order): "Wenn es regnet, bleibe ich zu Hause" (If it rains, I stay home). Both verbs sit next to each other around the comma.',
+      explanationTr:
+        'Cümle yan cümleyle (wenn...) başlarsa, ana cümledeki fiil hemen ardından gelir (fiil-fiil sırası): "Wenn es regnet, bleibe ich zu Hause." İki fiil de virgülün etrafında yan yana durur.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit5Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['regnet', 'es', 'wenn', 'bleibe', 'ich'] },
+        correctAnswer: { order: ['wenn', 'es', 'regnet', 'bleibe', 'ich'] },
+        explanation: 'Nebensatz zuerst: Verb am Ende des Nebensatzes ("regnet"), dann direkt das Verb des Hauptsatzes ("bleibe").',
+      },
+      {
+        lessonId: a2Unit5Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn es regnet, ___ ich zu Hause.', options: ['bleibe', 'bleibst', 'bleibt', 'bleiben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nach dem Komma folgt direkt das Verb des Hauptsatzes: "bleibe".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit5Lesson1.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Wenn es regnet, bleibe ich zu Hause.' },
+      { lessonId: a2Unit5Lesson1.id, word: 'schwimmen', translationEn: 'to swim', translationTr: 'yüzmek', exampleSentence: 'Ich gehe schwimmen.' },
+      { lessonId: a2Unit5Lesson2.id, word: 'die Bedingung', translationEn: 'the condition', translationTr: 'koşul', exampleSentence: 'Das ist die Bedingung.' },
+      { lessonId: a2Unit5Lesson2.id, word: 'sollen', translationEn: 'should / to be supposed to', translationTr: '-meli/-malı', exampleSentence: 'Du solltest schlafen gehen.' },
+      { lessonId: a2Unit5Lesson3.id, word: 'sich freuen', translationEn: 'to be glad / happy', translationTr: 'sevinmek', exampleSentence: 'Wenn er kommt, freue ich mich.' },
+      { lessonId: a2Unit5Lesson3.id, word: 'morgen', translationEn: 'tomorrow', translationTr: 'yarın', exampleSentence: 'Wann kommst du morgen?' },
+      { lessonId: a2Unit5Lesson4.id, word: 'zu Hause', translationEn: 'at home', translationTr: 'evde', exampleSentence: 'Ich bleibe zu Hause.' },
+      { lessonId: a2Unit5Lesson4.id, word: 'die Wortstellung', translationEn: 'word order', translationTr: 'sözcük sırası', exampleSentence: 'Die Wortstellung im Nebensatz ist wichtig.' },
+    ],
+  })
+
+  // --- A2 Unit 6: Indirekte Fragesätze (4 lessons) ---
+  const a2Unit6 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 6, titleDe: 'Indirekte Fragesätze', titleEn: 'Indirect Questions', titleTr: 'Dolaylı Sorular' },
+  })
+
+  const a2Unit6Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit6.id,
+      order: 1,
+      grammarTopic: "Indirekte Fragen mit 'ob'",
+      explanationDe:
+        'Bei indirekten Ja/Nein-Fragen benutzt man "ob" statt einer direkten Frage. Das Verb steht am Ende: "Weißt du, ob er kommt?" statt "Kommt er?"',
+      explanationEn:
+        'For indirect yes/no questions, use "ob" (whether/if) instead of asking directly. The verb moves to the end: "Weißt du, ob er kommt?" (Do you know whether he\'s coming?) instead of "Kommt er?" (Is he coming?)',
+      explanationTr:
+        'Dolaylı evet/hayır sorularında doğrudan soru yerine "ob" (-ip -ipmediği) kullanılır. Fiil sona gider: "Weißt du, ob er kommt?" (Gelip gelmeyeceğini biliyor musun?) yerine "Kommt er?" (Geliyor mu?)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit6Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Weißt du, ___ er kommt?', options: ['ob', 'dass', 'weil', 'wenn'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bei einer indirekten Ja/Nein-Frage benutzt man "ob".',
+      },
+      {
+        lessonId: a2Unit6Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich weiß nicht, ___ das Geschäft heute offen ist.' },
+        correctAnswer: { accepted: ['ob'] },
+        explanation: '"Ob" leitet die indirekte Ja/Nein-Frage ein.',
+      },
+    ],
+  })
+
+  const a2Unit6Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit6.id,
+      order: 2,
+      grammarTopic: 'Indirekte W-Fragen',
+      explanationDe:
+        'Bei indirekten W-Fragen bleibt das Fragewort (wo, wann, warum, was...) erhalten, aber das Verb wandert ans Ende: "Ich weiß nicht, wo der Bahnhof ist." statt "Wo ist der Bahnhof?"',
+      explanationEn:
+        'In indirect W-questions, the question word (wo, wann, warum, was...) stays, but the verb moves to the end: "Ich weiß nicht, wo der Bahnhof ist" (I don\'t know where the train station is) instead of "Wo ist der Bahnhof?" (Where is the train station?)',
+      explanationTr:
+        'Dolaylı W-sorularında soru sözcüğü (wo, wann, warum, was...) kalır, ama fiil sona gider: "Ich weiß nicht, wo der Bahnhof ist." yerine "Wo ist der Bahnhof?"',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit6Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich weiß nicht, wo der Bahnhof ___.', options: ['ist', 'ist er', 'er ist', 'sei'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das Verb "ist" steht am Ende des Nebensatzes.',
+      },
+      {
+        lessonId: a2Unit6Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bist', 'warum', 'traurig', 'du'] },
+        correctAnswer: { order: ['warum', 'du', 'traurig', 'bist'] },
+        explanation: 'Fragewort zuerst, dann Subjekt, dann Ergänzung, dann Verb am Ende.',
+      },
+    ],
+  })
+
+  const a2Unit6Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit6.id,
+      order: 3,
+      grammarTopic: 'Einleitende Ausdrücke für indirekte Fragen',
+      explanationDe:
+        'Häufige Einleitungen für indirekte Fragen: "Ich weiß nicht, ob/wann/wo...", "Kannst du mir sagen, ob/wann/wo...?", "Ich frage mich, ob/wann/wo...". Beispiel: "Kannst du mir sagen, wann der Zug fährt?"',
+      explanationEn:
+        'Common phrases that introduce indirect questions: "Ich weiß nicht, ob/wann/wo..." (I don\'t know whether/when/where...), "Kannst du mir sagen, ob/wann/wo...?" (Can you tell me whether/when/where...?), "Ich frage mich, ob/wann/wo..." (I wonder whether/when/where...). Example: "Kannst du mir sagen, wann der Zug fährt?" (Can you tell me when the train leaves?)',
+      explanationTr:
+        'Dolaylı soruları başlatan yaygın ifadeler: "Ich weiß nicht, ob/wann/wo..." (bilmiyorum...), "Kannst du mir sagen, ob/wann/wo...?" (söyleyebilir misin...?), "Ich frage mich, ob/wann/wo..." (merak ediyorum...). Örnek: "Kannst du mir sagen, wann der Zug fährt?" (Trenin ne zaman kalktığını söyleyebilir misin?)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit6Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Kannst du mir sagen, ___ der Zug fährt?', options: ['wann', 'wenn', 'dass', 'weil'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wann" fragt nach der Zeit der Abfahrt.',
+      },
+      {
+        lessonId: a2Unit6Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I wonder whether he is coming' (mit 'Ich frage mich')?" },
+        correctAnswer: { accepted: ['ich frage mich, ob er kommt', 'ich frage mich ob er kommt'] },
+        explanation: '"Ich frage mich, ob er kommt" bedeutet "I wonder whether he is coming".',
+      },
+    ],
+  })
+
+  const a2Unit6Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit6.id,
+      order: 4,
+      grammarTopic: 'Direkte in indirekte Fragen umwandeln',
+      explanationDe:
+        'Um eine direkte Frage in eine indirekte umzuwandeln: Ja/Nein-Frage → "ob" + Verb-Ende; W-Frage → Fragewort bleibt + Verb-Ende. "Isst du gern Pizza?" → "Ich möchte wissen, ob du gern Pizza isst."',
+      explanationEn:
+        'To turn a direct question into an indirect one: yes/no question → "ob" + verb-final; W-question → question word stays + verb-final. "Isst du gern Pizza?" (Do you like eating pizza?) → "Ich möchte wissen, ob du gern Pizza isst" (I\'d like to know whether you like eating pizza).',
+      explanationTr:
+        'Doğrudan bir soruyu dolaylıya çevirmek için: evet/hayır sorusu → "ob" + fiil sonda; W-sorusu → soru sözcüğü kalır + fiil sonda. "Isst du gern Pizza?" → "Ich möchte wissen, ob du gern Pizza isst."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit6Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich möchte wissen, ___ du gern Pizza isst.' },
+        correctAnswer: { accepted: ['ob'] },
+        explanation: 'Eine Ja/Nein-Frage wird indirekt mit "ob" eingeleitet.',
+      },
+      {
+        lessonId: a2Unit6Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['möchtest', 'du', 'essen', 'was'] },
+        correctAnswer: { order: ['was', 'du', 'essen', 'möchtest'] },
+        explanation: 'Das Fragewort bleibt ("was"), das Verb wandert ans Ende ("möchtest").',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit6Lesson1.id, word: 'das Geschäft', translationEn: 'the shop / business', translationTr: 'dükkan / iş', exampleSentence: 'Ich weiß nicht, ob das Geschäft heute offen ist.' },
+      { lessonId: a2Unit6Lesson1.id, word: 'offen', translationEn: 'open', translationTr: 'açık', exampleSentence: 'Das Geschäft ist offen.' },
+      { lessonId: a2Unit6Lesson2.id, word: 'traurig', translationEn: 'sad', translationTr: 'üzgün', exampleSentence: 'Ich weiß nicht, warum du traurig bist.' },
+      { lessonId: a2Unit6Lesson2.id, word: 'warum', translationEn: 'why', translationTr: 'neden', exampleSentence: 'Warum bist du traurig?' },
+      { lessonId: a2Unit6Lesson3.id, word: 'sich fragen', translationEn: 'to wonder', translationTr: 'merak etmek', exampleSentence: 'Ich frage mich, ob er kommt.' },
+      { lessonId: a2Unit6Lesson3.id, word: 'abfahren', translationEn: 'to depart', translationTr: 'kalkmak (araç)', exampleSentence: 'Der Zug fährt um acht Uhr ab.' },
+      { lessonId: a2Unit6Lesson4.id, word: 'die Frage', translationEn: 'the question', translationTr: 'soru', exampleSentence: 'Das ist eine gute Frage.' },
+      { lessonId: a2Unit6Lesson4.id, word: 'umwandeln', translationEn: 'to convert / transform', translationTr: 'dönüştürmek', exampleSentence: 'Wandle die Frage in eine indirekte Frage um.' },
+    ],
+  })
+
+  // --- A2 Unit 7: Präteritum der Modalverben und "sein"/"haben" (4 lessons) ---
+  const a2Unit7 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 7, titleDe: 'Präteritum der Modalverben', titleEn: 'Präteritum of Modal Verbs', titleTr: 'Modal Fiillerin Präteritum Hali' },
+  })
+
+  const a2Unit7Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit7.id,
+      order: 1,
+      grammarTopic: "Präteritum von 'sein' und 'haben'",
+      explanationDe:
+        'Im Präteritum: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren. "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Beispiel: "Ich war müde. Ich hatte keine Zeit."',
+      explanationEn:
+        'In the Präteritum: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren (was/were). "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten (had). Example: "Ich war müde. Ich hatte keine Zeit" (I was tired. I had no time).',
+      explanationTr:
+        'Präteritumda: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren (idi). "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten (sahipti). Örnek: "Ich war müde. Ich hatte keine Zeit" (Yorgundum. Vaktim yoktu).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit7Lesson1.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'du', 'wir'], rights: ['waren', 'war', 'warst'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'war' },
+            { left: 'du', right: 'warst' },
+            { left: 'wir', right: 'waren' },
+          ],
+        },
+        explanation: 'Präteritum von "sein": ich war, du warst, wir waren.',
+      },
+      {
+        lessonId: a2Unit7Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ gestern keine Zeit.' },
+        correctAnswer: { accepted: ['hatte'] },
+        explanation: 'Das Präteritum von "haben" für "ich" ist "hatte".',
+      },
+    ],
+  })
+
+  const a2Unit7Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit7.id,
+      order: 2,
+      grammarTopic: 'Präteritum der Modalverben',
+      explanationDe:
+        'Die Modalverben verlieren im Präteritum den Umlaut: können → konnte, müssen → musste, wollen → wollte, dürfen → durfte. Beispiel: "Ich konnte gestern nicht kommen, weil ich arbeiten musste."',
+      explanationEn:
+        'Modal verbs lose their umlaut in the Präteritum: können → konnte (could), müssen → musste (had to), wollen → wollte (wanted to), dürfen → durfte (was allowed to). Example: "Ich konnte gestern nicht kommen, weil ich arbeiten musste" (I couldn\'t come yesterday because I had to work).',
+      explanationTr:
+        'Modal fiiller Präteritumda umlautlarını kaybeder: können → konnte (yapabildi), müssen → musste (zorunda kaldı), wollen → wollte (istedi), dürfen → durfte (izinliydi). Örnek: "Ich konnte gestern nicht kommen, weil ich arbeiten musste" (Dün gelemedim çünkü çalışmak zorundaydım).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit7Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ gestern nicht kommen. (können, Präteritum)', options: ['konnte', 'kann', 'könnte', 'gekonnt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das Präteritum von "können" für "ich" ist "konnte".',
+      },
+      {
+        lessonId: a2Unit7Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ gestern arbeiten. (müssen, Präteritum)' },
+        correctAnswer: { accepted: ['musste'] },
+        explanation: 'Das Präteritum von "müssen" für "er" ist "musste".',
+      },
+    ],
+  })
+
+  const a2Unit7Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit7.id,
+      order: 3,
+      grammarTopic: "Präteritum: 'mochte' und 'sollte'",
+      explanationDe:
+        '"mögen" wird im Präteritum zu "mochte" (ich mochte, du mochtest...), "sollen" wird zu "sollte" (ich sollte, du solltest...). Diese Formen benutzt man oft beim Erzählen von Geschichten. Beispiel: "Als Kind mochte ich keinen Fisch."',
+      explanationEn:
+        '"mögen" (to like) becomes "mochte" in the Präteritum (ich mochte, du mochtest...), "sollen" (should) becomes "sollte" (ich sollte, du solltest...). These forms are often used when narrating stories. Example: "Als Kind mochte ich keinen Fisch" (As a child I didn\'t like fish).',
+      explanationTr:
+        '"mögen" (sevmek) Präteritumda "mochte" olur (ich mochte, du mochtest...), "sollen" ise "sollte" olur (ich sollte, du solltest...). Bu biçimler genellikle hikaye anlatırken kullanılır. Örnek: "Als Kind mochte ich keinen Fisch" (Çocukken balık sevmezdim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit7Lesson3.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Als Kind ___ ich keinen Fisch. (mögen, Präteritum)' },
+        correctAnswer: { accepted: ['mochte'] },
+        explanation: 'Das Präteritum von "mögen" für "ich" ist "mochte".',
+      },
+      {
+        lessonId: a2Unit7Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Du ___ früher ins Bett gehen. (sollen, Präteritum)', options: ['solltest', 'sollte', 'solltet', 'sollten'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "du" benutzt man "solltest".',
+      },
+    ],
+  })
+
+  const a2Unit7Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit7.id,
+      order: 4,
+      grammarTopic: 'Präteritum vs. Perfekt',
+      explanationDe:
+        'Im gesprochenen Deutsch benutzt man meist das Perfekt, aber "sein", "haben" und die Modalverben werden auch mündlich oft im Präteritum benutzt: "Ich war müde" (nicht "Ich bin müde gewesen"). Im Schriftlichen (Geschichten, Nachrichten) ist das Präteritum häufiger.',
+      explanationEn:
+        'In spoken German, the Perfekt is usually preferred, but "sein", "haben", and the modal verbs are often used in the Präteritum even in speech: "Ich war müde" (not "Ich bin müde gewesen"). In writing (stories, news), the Präteritum is more common.',
+      explanationTr:
+        'Konuşma dilinde genellikle Perfekt tercih edilir, ancak "sein", "haben" ve modal fiiller konuşmada da sıklıkla Präteritumda kullanılır: "Ich war müde" (Ich bin müde gewesen değil). Yazı dilinde (hikayeler, haberler) Präteritum daha yaygındır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit7Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ gestern sehr müde. (gesprochene Form mit "sein")', options: ['war', 'bin gewesen', 'habe gewesen', 'wäre'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sein" benutzt man auch mündlich meist im Präteritum: "war".',
+      },
+      {
+        lessonId: a2Unit7Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I had no time' (mit 'haben', im Präteritum)?" },
+        correctAnswer: { accepted: ['ich hatte keine zeit'] },
+        explanation: '"Ich hatte keine Zeit" bedeutet "I had no time".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit7Lesson1.id, word: 'damals', translationEn: 'back then / at that time', translationTr: 'o zamanlar', exampleSentence: 'Damals war ich Student.' },
+      { lessonId: a2Unit7Lesson1.id, word: 'der Student', translationEn: 'the student', translationTr: 'öğrenci', exampleSentence: 'Damals war ich Student.' },
+      { lessonId: a2Unit7Lesson2.id, word: 'der Chef', translationEn: 'the boss', translationTr: 'patron', exampleSentence: 'Der Chef wollte mich sprechen.' },
+      { lessonId: a2Unit7Lesson2.id, word: 'die Erlaubnis', translationEn: 'the permission', translationTr: 'izin', exampleSentence: 'Ich hatte keine Erlaubnis.' },
+      { lessonId: a2Unit7Lesson3.id, word: 'der Fisch', translationEn: 'the fish', translationTr: 'balık', exampleSentence: 'Als Kind mochte ich keinen Fisch.' },
+      { lessonId: a2Unit7Lesson3.id, word: 'das Bett', translationEn: 'the bed', translationTr: 'yatak', exampleSentence: 'Du solltest früher ins Bett gehen.' },
+      { lessonId: a2Unit7Lesson4.id, word: 'die Nachricht', translationEn: 'the news / message', translationTr: 'haber / mesaj', exampleSentence: 'Das steht in den Nachrichten.' },
+      { lessonId: a2Unit7Lesson4.id, word: 'die Geschichte', translationEn: 'the story / history', translationTr: 'hikaye / tarih', exampleSentence: 'Das ist eine spannende Geschichte.' },
+    ],
+  })
+
+  // --- A2 Unit 8: Wechselpräpositionen Vertiefung (4 lessons) ---
+  const a2Unit8 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 8, titleDe: 'Wechselpräpositionen Vertiefung', titleEn: 'Two-Way Prepositions in Depth', titleTr: 'Wechselpräpositionen Derinlemesine' },
+  })
+
+  const a2Unit8Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit8.id,
+      order: 1,
+      grammarTopic: 'Wechselpräpositionen: Wo? = Dativ',
+      explanationDe:
+        'Die neun Wechselpräpositionen sind: in, an, auf, unter, über, vor, hinter, neben, zwischen. Bei der Frage "Wo?" (Position, keine Bewegung) benutzt man den Dativ: "Das Buch liegt auf dem Tisch."',
+      explanationEn:
+        'The nine two-way prepositions are: in, an, auf, unter, über, vor, hinter, neben, zwischen. When answering "Wo?" (location, no movement), use the dative: "Das Buch liegt auf dem Tisch" (The book is lying on the table).',
+      explanationTr:
+        'Dokuz "Wechselpräposition" şunlardır: in, an, auf, unter, über, vor, hinter, neben, zwischen. "Wo?" (konum, hareket yok) sorusuna cevapta Dativ kullanılır: "Das Buch liegt auf dem Tisch" (Kitap masanın üzerinde duruyor).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit8Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Buch liegt auf ___ Tisch. (Dativ, maskulin)', options: ['dem', 'den', 'der', 'das'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Dativ maskulin: dem Tisch.',
+      },
+      {
+        lessonId: a2Unit8Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Lampe hängt über ___ Bett. (Dativ, neutral)' },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'Dativ neutral: dem Bett.',
+      },
+    ],
+  })
+
+  const a2Unit8Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit8.id,
+      order: 2,
+      grammarTopic: 'Wechselpräpositionen: Wohin? = Akkusativ',
+      explanationDe:
+        'Bei der Frage "Wohin?" (Richtung, Bewegung) benutzt man den Akkusativ: "Ich lege das Buch auf den Tisch." Das Verb zeigt oft die Bewegung an (legen, stellen, hängen).',
+      explanationEn:
+        'When answering "Wohin?" (direction, movement), use the accusative: "Ich lege das Buch auf den Tisch" (I put the book onto the table). The verb often signals the movement (legen, stellen, hängen).',
+      explanationTr:
+        '"Wohin?" (yön, hareket) sorusuna cevapta Akkusativ kullanılır: "Ich lege das Buch auf den Tisch" (Kitabı masanın üzerine koyuyorum). Fiil genellikle hareketi belirtir (legen, stellen, hängen).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit8Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich lege das Buch auf ___ Tisch. (Akkusativ, maskulin)', options: ['den', 'dem', 'der', 'das'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Akkusativ maskulin: den Tisch.',
+      },
+      {
+        lessonId: a2Unit8Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Vase', 'die', 'stelle', 'ich', 'den', 'Tisch', 'auf'] },
+        correctAnswer: { order: ['ich', 'stelle', 'die', 'Vase', 'auf', 'den', 'Tisch'] },
+        explanation: 'Position 2 ist das Verb, dann Akkusativobjekt, dann Präposition + Akkusativ (Richtung).',
+      },
+    ],
+  })
+
+  const a2Unit8Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit8.id,
+      order: 3,
+      grammarTopic: 'Wo vs. Wohin: Kontrastübung',
+      explanationDe:
+        'Vergleiche: "Die Vase steht auf dem Tisch." (Wo? = Dativ, Zustand) vs. "Ich stelle die Vase auf den Tisch." (Wohin? = Akkusativ, Bewegung). Das Verb entscheidet oft mit: stehen/liegen/hängen (Zustand) vs. stellen/legen/hängen (Bewegung).',
+      explanationEn:
+        'Compare: "Die Vase steht auf dem Tisch" (Wo? = dative, state) vs. "Ich stelle die Vase auf den Tisch" (Wohin? = accusative, movement). The verb often decides: stehen/liegen/hängen (state) vs. stellen/legen/hängen (movement).',
+      explanationTr:
+        'Karşılaştır: "Die Vase steht auf dem Tisch." (Wo? = Dativ, durum) vs. "Ich stelle die Vase auf den Tisch." (Wohin? = Akkusativ, hareket). Fiil genellikle belirleyicidir: stehen/liegen/hängen (durum) vs. stellen/legen/hängen (hareket).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit8Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Vase steht auf ___ Tisch. (Zustand)', options: ['dem', 'den', 'der', 'die'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Zustand = Dativ: dem Tisch.',
+      },
+      {
+        lessonId: a2Unit8Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['stehen', 'stellen'], rights: ['Akkusativ', 'Dativ'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'stehen', right: 'Dativ' },
+            { left: 'stellen', right: 'Akkusativ' },
+          ],
+        },
+        explanation: '"stehen" beschreibt einen Zustand (Dativ), "stellen" eine Bewegung (Akkusativ).',
+      },
+    ],
+  })
+
+  const a2Unit8Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit8.id,
+      order: 4,
+      grammarTopic: 'Feste Ausdrücke mit Wechselpräpositionen',
+      explanationDe:
+        'Manche Verben werden fest mit einer Präposition kombiniert, unabhängig von "wo/wohin": warten auf (+Akkusativ), sich freuen auf (+Akkusativ), denken an (+Akkusativ). Beispiel: "Ich warte auf den Bus."',
+      explanationEn:
+        'Some verbs are fixed with a particular preposition, regardless of "wo/wohin": warten auf (+accusative, wait for), sich freuen auf (+accusative, look forward to), denken an (+accusative, think of). Example: "Ich warte auf den Bus" (I\'m waiting for the bus).',
+      explanationTr:
+        'Bazı fiiller "wo/wohin"dan bağımsız olarak belirli bir edatla sabit kullanılır: warten auf (+Akkusativ, beklemek), sich freuen auf (+Akkusativ, dört gözle beklemek), denken an (+Akkusativ, düşünmek). Örnek: "Ich warte auf den Bus" (Otobüsü bekliyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit8Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich warte ___ den Bus.' },
+        correctAnswer: { accepted: ['auf'] },
+        explanation: '"Warten auf" + Akkusativ.',
+      },
+      {
+        lessonId: a2Unit8Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich freue mich ___ den Urlaub.', options: ['auf', 'über', 'für', 'mit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sich freuen auf" + Akkusativ (Vorfreude).',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit8Lesson1.id, word: 'liegen', translationEn: 'to lie (be in a lying position)', translationTr: 'yatay durmak', exampleSentence: 'Das Buch liegt auf dem Tisch.' },
+      { lessonId: a2Unit8Lesson1.id, word: 'hängen', translationEn: 'to hang', translationTr: 'asılı olmak', exampleSentence: 'Die Lampe hängt über dem Bett.' },
+      { lessonId: a2Unit8Lesson2.id, word: 'legen', translationEn: 'to lay / put (flat)', translationTr: 'yatay koymak', exampleSentence: 'Ich lege das Buch auf den Tisch.' },
+      { lessonId: a2Unit8Lesson2.id, word: 'stellen', translationEn: 'to put / place (upright)', translationTr: 'dikey koymak', exampleSentence: 'Ich stelle die Vase auf den Tisch.' },
+      { lessonId: a2Unit8Lesson3.id, word: 'stehen', translationEn: 'to stand', translationTr: 'dikey durmak', exampleSentence: 'Die Vase steht auf dem Tisch.' },
+      { lessonId: a2Unit8Lesson3.id, word: 'die Vase', translationEn: 'the vase', translationTr: 'vazo', exampleSentence: 'Die Vase steht auf dem Tisch.' },
+      { lessonId: a2Unit8Lesson4.id, word: 'der Urlaub', translationEn: 'the vacation', translationTr: 'tatil', exampleSentence: 'Ich freue mich auf den Urlaub.' },
+      { lessonId: a2Unit8Lesson4.id, word: 'denken an', translationEn: 'to think of / about', translationTr: 'düşünmek (biri/bir şey hakkında)', exampleSentence: 'Ich denke an dich.' },
+    ],
+  })
+
+  // --- A2 Unit 9: Adjektivdeklination (4 lessons) ---
+  const a2Unit9 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 9, titleDe: 'Adjektivdeklination', titleEn: 'Adjective Declension', titleTr: 'Sıfat Çekimi' },
+  })
+
+  const a2Unit9Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit9.id,
+      order: 1,
+      grammarTopic: 'Adjektivendungen im Nominativ (bestimmter Artikel)',
+      explanationDe:
+        'Nach dem bestimmten Artikel im Nominativ endet das Adjektiv meist auf "-e": der neue Mann, die neue Frau, das neue Auto. Beispiel: "Der neue Kollege heißt Tom."',
+      explanationEn:
+        'After the definite article in the nominative, the adjective usually ends in "-e": der neue Mann (the new man), die neue Frau (the new woman), das neue Auto (the new car). Example: "Der neue Kollege heißt Tom" (The new colleague is called Tom).',
+      explanationTr:
+        'Belirli tanımlıktan sonra Nominativ\'de sıfat genellikle "-e" ile biter: der neue Mann, die neue Frau, das neue Auto. Örnek: "Der neue Kollege heißt Tom" (Yeni meslektaş Tom adında).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit9Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der ___ Kollege heißt Tom. (neu)', options: ['neue', 'neuer', 'neuen', 'neues'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nominativ maskulin nach "der": neue.',
+      },
+      {
+        lessonId: a2Unit9Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ Frau wohnt hier. (neu)' },
+        correctAnswer: { accepted: ['neue'] },
+        explanation: 'Nominativ feminin nach "die": neue.',
+      },
+    ],
+  })
+
+  const a2Unit9Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit9.id,
+      order: 2,
+      grammarTopic: 'Adjektivendungen im Akkusativ (bestimmter Artikel)',
+      explanationDe:
+        'Im Akkusativ ändert sich die Adjektivendung nur beim maskulinen Artikel zu "-en": den neuen Mann. Feminin und neutral bleiben wie im Nominativ: die neue Frau, das neue Auto. Beispiel: "Ich sehe den neuen Kollegen."',
+      explanationEn:
+        'In the accusative, the adjective ending changes to "-en" only with the masculine article: den neuen Mann (the new man). Feminine and neuter stay like the nominative: die neue Frau, das neue Auto. Example: "Ich sehe den neuen Kollegen" (I see the new colleague).',
+      explanationTr:
+        'Akkusativ\'de sıfat eki sadece eril tanımlıkla "-en" olur: den neuen Mann. Dişil ve nötr Nominativ\'deki gibi kalır: die neue Frau, das neue Auto. Örnek: "Ich sehe den neuen Kollegen" (Yeni meslektaşı görüyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit9Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich sehe den ___ Kollegen. (neu, Akkusativ)', options: ['neuen', 'neue', 'neuer', 'neues'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Akkusativ maskulin: neuen.',
+      },
+      {
+        lessonId: a2Unit9Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich kaufe die ___ Tasche. (neu, Akkusativ feminin)' },
+        correctAnswer: { accepted: ['neue'] },
+        explanation: 'Akkusativ feminin bleibt wie Nominativ: neue.',
+      },
+    ],
+  })
+
+  const a2Unit9Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit9.id,
+      order: 3,
+      grammarTopic: 'Adjektivdeklination: feminin, neutral, Plural',
+      explanationDe:
+        'Feminin und neutral haben im Nominativ und Akkusativ die gleiche Adjektivendung "-e": die neue Frau, das neue Auto. Im Plural endet das Adjektiv nach "die" auf "-en": die neuen Autos. Beispiel: "Die neuen Autos sind teuer."',
+      explanationEn:
+        'Feminine and neuter have the same adjective ending "-e" in both nominative and accusative: die neue Frau, das neue Auto. In the plural, the adjective ends in "-en" after "die": die neuen Autos. Example: "Die neuen Autos sind teuer" (The new cars are expensive).',
+      explanationTr:
+        'Dişil ve nötr, Nominativ ve Akkusativ\'de aynı "-e" sıfat ekini alır: die neue Frau, das neue Auto. Çoğulda "die"den sonra sıfat "-en" ile biter: die neuen Autos. Örnek: "Die neuen Autos sind teuer" (Yeni arabalar pahalı).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit9Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die ___ Autos sind teuer. (neu, Plural)', options: ['neuen', 'neue', 'neuer', 'neues'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Plural nach "die": neuen.',
+      },
+      {
+        lessonId: a2Unit9Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['der neue Mann', 'das neue Auto', 'die neuen Autos'], rights: ['the new cars', 'the new man', 'the new car'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der neue Mann', right: 'the new man' },
+            { left: 'das neue Auto', right: 'the new car' },
+            { left: 'die neuen Autos', right: 'the new cars' },
+          ],
+        },
+        explanation: 'Adjektivendungen: der neue Mann (Singular mask.), das neue Auto (Singular neutr.), die neuen Autos (Plural).',
+      },
+    ],
+  })
+
+  const a2Unit9Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit9.id,
+      order: 4,
+      grammarTopic: 'Übung: Adjektivdeklination in Sätzen',
+      explanationDe:
+        'Wiederholung: Nominativ maskulin/neutral = "-e", Akkusativ maskulin = "-en", alle anderen bleiben "-e" (Singular) oder "-en" (Plural). Beispiel: "Der alte Baum steht im Garten. Ich sehe den alten Baum."',
+      explanationEn:
+        'Review: nominative masculine/neuter = "-e", accusative masculine = "-en", everything else stays "-e" (singular) or "-en" (plural). Example: "Der alte Baum steht im Garten. Ich sehe den alten Baum" (The old tree stands in the garden. I see the old tree).',
+      explanationTr:
+        'Tekrar: Nominativ eril/nötr = "-e", Akkusativ eril = "-en", diğerleri "-e" (tekil) ya da "-en" (çoğul) olarak kalır. Örnek: "Der alte Baum steht im Garten. Ich sehe den alten Baum" (Yaşlı ağaç bahçede duruyor. Yaşlı ağacı görüyorum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit9Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich sehe den ___ Baum. (alt, Akkusativ)' },
+        correctAnswer: { accepted: ['alten'] },
+        explanation: 'Akkusativ maskulin: alten.',
+      },
+      {
+        lessonId: a2Unit9Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'The old tree stands in the garden' (mit 'stehen')?" },
+        correctAnswer: { accepted: ['der alte baum steht im garten'] },
+        explanation: '"Der alte Baum steht im Garten" bedeutet "The old tree stands in the garden".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit9Lesson1.id, word: 'neu', translationEn: 'new', translationTr: 'yeni', exampleSentence: 'Der neue Kollege heißt Tom.' },
+      { lessonId: a2Unit9Lesson1.id, word: 'der Kollege', translationEn: 'the colleague', translationTr: 'meslektaş', exampleSentence: 'Der neue Kollege heißt Tom.' },
+      { lessonId: a2Unit9Lesson2.id, word: 'die Tasche', translationEn: 'the bag', translationTr: 'çanta', exampleSentence: 'Ich kaufe die neue Tasche.' },
+      { lessonId: a2Unit9Lesson2.id, word: 'kennenlernen', translationEn: 'to get to know / meet', translationTr: 'tanışmak', exampleSentence: 'Ich möchte den neuen Kollegen kennenlernen.' },
+      { lessonId: a2Unit9Lesson3.id, word: 'das Auto', translationEn: 'the car', translationTr: 'araba', exampleSentence: 'Die neuen Autos sind teuer.' },
+      { lessonId: a2Unit9Lesson3.id, word: 'billig', translationEn: 'cheap', translationTr: 'ucuz', exampleSentence: 'Das alte Auto war billig.' },
+      { lessonId: a2Unit9Lesson4.id, word: 'der Baum', translationEn: 'the tree', translationTr: 'ağaç', exampleSentence: 'Der alte Baum steht im Garten.' },
+      { lessonId: a2Unit9Lesson4.id, word: 'der Garten', translationEn: 'the garden', translationTr: 'bahçe', exampleSentence: 'Der Baum steht im Garten.' },
+    ],
+  })
+
+  // --- A2 Unit 10: Reflexive Verben (4 lessons) ---
+  const a2Unit10 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 10, titleDe: 'Reflexive Verben', titleEn: 'Reflexive Verbs', titleTr: 'Dönüşlü Fiiller' },
+  })
+
+  const a2Unit10Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit10.id,
+      order: 1,
+      grammarTopic: 'Reflexivpronomen im Akkusativ',
+      explanationDe:
+        'Reflexivpronomen im Akkusativ: mich, dich, sich, uns, euch, sich. Sie stehen bei reflexiven Verben: "Ich wasche mich." "Er freut sich."',
+      explanationEn:
+        'Accusative reflexive pronouns: mich, dich, sich, uns, euch, sich. They are used with reflexive verbs: "Ich wasche mich" (I wash myself). "Er freut sich" (He is happy).',
+      explanationTr:
+        'Akkusativ dönüşlü zamirler: mich, dich, sich, uns, euch, sich. Dönüşlü fiillerle kullanılır: "Ich wasche mich." (Kendimi yıkarım.) "Er freut sich." (Sevinir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit10Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich wasche ___ jeden Morgen.', options: ['mich', 'dich', 'sich', 'uns'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "mich".',
+      },
+      {
+        lessonId: a2Unit10Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er freut ___ über das Geschenk.' },
+        correctAnswer: { accepted: ['sich'] },
+        explanation: 'Mit "er" benutzt man "sich".',
+      },
+    ],
+  })
+
+  const a2Unit10Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit10.id,
+      order: 2,
+      grammarTopic: 'Häufige reflexive Verben',
+      explanationDe:
+        'Häufige reflexive Verben: sich freuen (über/auf), sich interessieren (für), sich fühlen. Beispiel: "Ich interessiere mich für Musik." "Ich fühle mich gut."',
+      explanationEn:
+        'Common reflexive verbs: sich freuen (über/auf, to be happy about / look forward to), sich interessieren (für, to be interested in), sich fühlen (to feel). Example: "Ich interessiere mich für Musik" (I\'m interested in music). "Ich fühle mich gut" (I feel good).',
+      explanationTr:
+        'Yaygın dönüşlü fiiller: sich freuen (über/auf, sevinmek/dört gözle beklemek), sich interessieren (für, ilgilenmek), sich fühlen (hissetmek). Örnek: "Ich interessiere mich für Musik." "Ich fühle mich gut."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit10Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich interessiere ___ für Musik.', options: ['mich', 'dich', 'sich', 'euch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "mich".',
+      },
+      {
+        lessonId: a2Unit10Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wie fühlst du ___ heute?' },
+        correctAnswer: { accepted: ['dich'] },
+        explanation: 'Mit "du" benutzt man "dich".',
+      },
+    ],
+  })
+
+  const a2Unit10Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit10.id,
+      order: 3,
+      grammarTopic: 'Reflexivpronomen im Dativ',
+      explanationDe:
+        'Bei manchen reflexiven Verben steht das Reflexivpronomen im Dativ, oft mit einem zusätzlichen Akkusativobjekt: mir, dir, sich, uns, euch, sich. Beispiel: "Ich kaufe mir ein neues Handy." "Ich stelle mir das vor."',
+      explanationEn:
+        'With some reflexive verbs, the reflexive pronoun is in the dative, often with an additional accusative object: mir, dir, sich, uns, euch, sich. Example: "Ich kaufe mir ein neues Handy" (I\'m buying myself a new phone). "Ich stelle mir das vor" (I imagine that).',
+      explanationTr:
+        'Bazı dönüşlü fiillerde dönüşlü zamir Dativ\'dedir, genellikle ek bir Akkusativ nesnesiyle birlikte: mir, dir, sich, uns, euch, sich. Örnek: "Ich kaufe mir ein neues Handy." "Ich stelle mir das vor."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit10Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich kaufe ___ ein neues Handy.', options: ['mir', 'mich', 'dir', 'sich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" + Akkusativobjekt benutzt man den Dativ "mir".',
+      },
+      {
+        lessonId: a2Unit10Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Kannst du ___ das vorstellen? (du, Dativ)' },
+        correctAnswer: { accepted: ['dir'] },
+        explanation: 'Mit "du" benutzt man "dir".',
+      },
+    ],
+  })
+
+  const a2Unit10Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit10.id,
+      order: 4,
+      grammarTopic: 'Übung: Reflexive Verben im Alltag',
+      explanationDe:
+        'Reflexive Verben beschreiben oft tägliche Routinen und Gefühle: sich duschen, sich anziehen, sich entspannen. Beispiel: "Ich dusche mich und ziehe mich an."',
+      explanationEn:
+        'Reflexive verbs often describe daily routines and feelings: sich duschen (to shower), sich anziehen (to get dressed), sich entspannen (to relax). Example: "Ich dusche mich und ziehe mich an" (I shower and get dressed).',
+      explanationTr:
+        'Dönüşlü fiiller genellikle günlük rutinleri ve duyguları anlatır: sich duschen (duş almak), sich anziehen (giyinmek), sich entspannen (rahatlamak). Örnek: "Ich dusche mich und ziehe mich an."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit10Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['mich', 'jeden', 'dusche', 'ich', 'Morgen'] },
+        correctAnswer: { order: ['ich', 'dusche', 'mich', 'jeden', 'Morgen'] },
+        explanation: 'Reihenfolge: Subjekt, Verb, Reflexivpronomen, Zeitangabe.',
+      },
+      {
+        lessonId: a2Unit10Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I relax on the weekend' (mit 'sich entspannen')?" },
+        correctAnswer: { accepted: ['ich entspanne mich am wochenende'] },
+        explanation: '"Ich entspanne mich am Wochenende" bedeutet "I relax on the weekend".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit10Lesson1.id, word: 'sich waschen', translationEn: 'to wash oneself', translationTr: 'yıkanmak', exampleSentence: 'Ich wasche mich jeden Morgen.' },
+      { lessonId: a2Unit10Lesson1.id, word: 'das Geschenk', translationEn: 'the gift', translationTr: 'hediye', exampleSentence: 'Er freut sich über das Geschenk.' },
+      { lessonId: a2Unit10Lesson2.id, word: 'sich interessieren', translationEn: 'to be interested (in)', translationTr: 'ilgilenmek', exampleSentence: 'Ich interessiere mich für Musik.' },
+      { lessonId: a2Unit10Lesson2.id, word: 'die Musik', translationEn: 'music', translationTr: 'müzik', exampleSentence: 'Ich interessiere mich für Musik.' },
+      { lessonId: a2Unit10Lesson3.id, word: 'das Handy', translationEn: 'the mobile phone', translationTr: 'cep telefonu', exampleSentence: 'Ich kaufe mir ein neues Handy.' },
+      { lessonId: a2Unit10Lesson3.id, word: 'sich vorstellen', translationEn: 'to imagine', translationTr: 'hayal etmek', exampleSentence: 'Ich kann mir das gut vorstellen.' },
+      { lessonId: a2Unit10Lesson4.id, word: 'sich entspannen', translationEn: 'to relax', translationTr: 'rahatlamak', exampleSentence: 'Ich entspanne mich am Wochenende.' },
+      { lessonId: a2Unit10Lesson4.id, word: 'das Wochenende', translationEn: 'the weekend', translationTr: 'hafta sonu', exampleSentence: 'Ich entspanne mich am Wochenende.' },
+    ],
+  })
+
+  // --- A2 Unit 11: Zukunft mit "werden" (4 lessons) ---
+  const a2Unit11 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 11, titleDe: 'Zukunft mit "werden"', titleEn: 'Future with "werden"', titleTr: '"werden" ile Gelecek Zaman' },
+  })
+
+  const a2Unit11Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit11.id,
+      order: 1,
+      grammarTopic: "Futur I: Bildung mit 'werden' + Infinitiv",
+      explanationDe:
+        'Futur I bildet man mit "werden" (konjugiert) + Infinitiv am Satzende: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Beispiel: "Ich werde morgen ins Kino gehen."',
+      explanationEn:
+        'Futur I is formed with "werden" (conjugated) + infinitive at the end of the sentence: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Example: "Ich werde morgen ins Kino gehen" (I will go to the cinema tomorrow).',
+      explanationTr:
+        'Futur I, "werden" (çekimli) + cümle sonunda mastar ile kurulur: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Örnek: "Ich werde morgen ins Kino gehen" (Yarın sinemaya gideceğim).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit11Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ morgen ins Kino gehen.', options: ['werde', 'wirst', 'wird', 'werdet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" benutzt man "werde".',
+      },
+      {
+        lessonId: a2Unit11Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ nächstes Jahr nach Spanien reisen. (werden)' },
+        correctAnswer: { accepted: ['wird'] },
+        explanation: 'Mit "er" benutzt man "wird".',
+      },
+    ],
+  })
+
+  const a2Unit11Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit11.id,
+      order: 2,
+      grammarTopic: 'Futur I für Vorhersagen und Vermutungen',
+      explanationDe:
+        'Futur I benutzt man oft für Vorhersagen und Vermutungen über die Zukunft, manchmal mit "wohl" oder "wahrscheinlich": "Es wird morgen wohl regnen." "Die Preise werden wahrscheinlich steigen."',
+      explanationEn:
+        'Futur I is often used for predictions and assumptions about the future, sometimes with "wohl" or "wahrscheinlich" (probably): "Es wird morgen wohl regnen" (It will probably rain tomorrow). "Die Preise werden wahrscheinlich steigen" (Prices will probably rise).',
+      explanationTr:
+        'Futur I genellikle gelecekle ilgili tahmin ve varsayımlar için kullanılır, bazen "wohl" ya da "wahrscheinlich" (muhtemelen) ile: "Es wird morgen wohl regnen." "Die Preise werden wahrscheinlich steigen."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit11Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Es ___ morgen wohl regnen.', options: ['wird', 'werde', 'wirst', 'werdet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "es" benutzt man "wird".',
+      },
+      {
+        lessonId: a2Unit11Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['steigen', 'werden', 'Preise', 'die'] },
+        correctAnswer: { order: ['die', 'Preise', 'werden', 'steigen'] },
+        explanation: 'Reihenfolge: Subjekt, "werden", Infinitiv am Ende.',
+      },
+    ],
+  })
+
+  const a2Unit11Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit11.id,
+      order: 3,
+      grammarTopic: 'Futur I vs. Präsens mit Zeitangabe',
+      explanationDe:
+        'Für geplante Zukunft benutzt man oft einfach das Präsens mit einer Zeitangabe: "Ich fliege nächste Woche nach Rom." Futur I betont stärker eine Vorhersage oder Absicht: "Ich werde nächste Woche nach Rom fliegen."',
+      explanationEn:
+        'For planned future events, German often simply uses the present tense with a time expression: "Ich fliege nächste Woche nach Rom" (I\'m flying to Rome next week). Futur I emphasizes a prediction or intention more strongly: "Ich werde nächste Woche nach Rom fliegen" (I will fly to Rome next week).',
+      explanationTr:
+        'Planlanmış gelecek olaylar için Almanca genellikle zaman ifadesiyle birlikte şimdiki zamanı kullanır: "Ich fliege nächste Woche nach Rom." Futur I ise bir tahmin ya da niyeti daha güçlü vurgular: "Ich werde nächste Woche nach Rom fliegen."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit11Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ nächste Woche nach Rom. (Präsens für Zukunft)', options: ['fliege', 'werde fliegen', 'geflogen', 'fliegen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präsens + Zeitangabe drückt auch die Zukunft aus.',
+      },
+      {
+        lessonId: a2Unit11Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ nächste Woche nach Rom fliegen. (werden, Betonung der Absicht)' },
+        correctAnswer: { accepted: ['werde'] },
+        explanation: 'Futur I betont die Absicht: werde fliegen.',
+      },
+    ],
+  })
+
+  const a2Unit11Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit11.id,
+      order: 4,
+      grammarTopic: 'Übung: Pläne und Vorhersagen im Futur I',
+      explanationDe:
+        'Kombiniere Futur I mit Zeitangaben, um über Pläne und Vorhersagen zu sprechen: "Nächstes Jahr werde ich mehr Sport machen." Bei vorangestellter Zeitangabe steht "werde" direkt danach.',
+      explanationEn:
+        'Combine Futur I with time expressions to talk about plans and predictions: "Nächstes Jahr werde ich mehr Sport machen" (Next year I will do more sports). When the time expression comes first, "werde" comes right after it.',
+      explanationTr:
+        'Planlar ve tahminler hakkında konuşmak için Futur I\'i zaman ifadeleriyle birleştir: "Nächstes Jahr werde ich mehr Sport machen." Zaman ifadesi öne alındığında "werde" hemen ardından gelir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit11Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ich', 'Jahr', 'werde', 'machen', 'nächstes', 'mehr', 'Sport'] },
+        correctAnswer: { order: ['nächstes', 'Jahr', 'werde', 'ich', 'mehr', 'Sport', 'machen'] },
+        explanation: 'Zeitangabe zuerst, dann "werde", dann Subjekt, dann Rest, Infinitiv am Ende.',
+      },
+      {
+        lessonId: a2Unit11Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I will do more sports' (mit 'werden')?" },
+        correctAnswer: { accepted: ['ich werde mehr sport machen'] },
+        explanation: '"Ich werde mehr Sport machen" bedeutet "I will do more sports".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit11Lesson1.id, word: 'reisen', translationEn: 'to travel', translationTr: 'seyahat etmek', exampleSentence: 'Er wird nächstes Jahr nach Spanien reisen.' },
+      { lessonId: a2Unit11Lesson1.id, word: 'das Kino', translationEn: 'the cinema', translationTr: 'sinema', exampleSentence: 'Ich werde morgen ins Kino gehen.' },
+      { lessonId: a2Unit11Lesson2.id, word: 'steigen', translationEn: 'to rise / climb', translationTr: 'yükselmek', exampleSentence: 'Die Preise werden wahrscheinlich steigen.' },
+      { lessonId: a2Unit11Lesson2.id, word: 'wahrscheinlich', translationEn: 'probably', translationTr: 'muhtemelen', exampleSentence: 'Die Preise werden wahrscheinlich steigen.' },
+      { lessonId: a2Unit11Lesson3.id, word: 'fliegen', translationEn: 'to fly', translationTr: 'uçmak', exampleSentence: 'Ich fliege nächste Woche nach Rom.' },
+      { lessonId: a2Unit11Lesson3.id, word: 'die Absicht', translationEn: 'the intention', translationTr: 'niyet', exampleSentence: 'Futur I betont die Absicht.' },
+      { lessonId: a2Unit11Lesson4.id, word: 'der Sport', translationEn: 'sport', translationTr: 'spor', exampleSentence: 'Ich werde mehr Sport machen.' },
+      { lessonId: a2Unit11Lesson4.id, word: 'der Plan', translationEn: 'the plan', translationTr: 'plan', exampleSentence: 'Das ist mein Plan für nächstes Jahr.' },
+    ],
+  })
+
+  // --- A2 Unit 12: Beruf & Bewerbung (4 lessons) ---
+  const a2Unit12 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 12, titleDe: 'Beruf & Bewerbung', titleEn: 'Profession & Application', titleTr: 'Meslek & İş Başvurusu' },
+  })
+
+  const a2Unit12Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit12.id,
+      order: 1,
+      grammarTopic: 'Berufe: Wortschatz',
+      explanationDe:
+        'Viele Berufsbezeichnungen haben eine maskuline und eine feminine Form, oft mit der Endung "-in": der Lehrer / die Lehrerin, der Arzt / die Ärztin. Beispiel: "Er ist Lehrer. Sie ist Ärztin."',
+      explanationEn:
+        'Many profession names have a masculine and a feminine form, often with the ending "-in": der Lehrer / die Lehrerin (teacher), der Arzt / die Ärztin (doctor). Example: "Er ist Lehrer. Sie ist Ärztin" (He is a teacher. She is a doctor).',
+      explanationTr:
+        'Birçok meslek adının eril ve dişil bir biçimi vardır, genellikle "-in" ekiyle: der Lehrer / die Lehrerin (öğretmen), der Arzt / die Ärztin (doktor). Örnek: "Er ist Lehrer. Sie ist Ärztin" (O bir öğretmen. O bir doktor).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit12Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Meine Schwester ist ___. Sie arbeitet im Krankenhaus.', options: ['Ärztin', 'Lehrer', 'Kellner', 'Verkäufer'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Im Krankenhaus arbeitet eine Ärztin.',
+      },
+      {
+        lessonId: a2Unit12Lesson1.id,
+        order: 2,
+        type: 'MATCHING',
+        data: {
+          lefts: ['der Lehrer', 'die Ärztin', 'der Kellner'],
+          rights: ['im Krankenhaus', 'im Restaurant', 'in der Schule'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Lehrer', right: 'in der Schule' },
+            { left: 'die Ärztin', right: 'im Krankenhaus' },
+            { left: 'der Kellner', right: 'im Restaurant' },
+          ],
+        },
+        explanation: 'Der Lehrer arbeitet in der Schule, die Ärztin im Krankenhaus, der Kellner im Restaurant.',
+      },
+    ],
+  })
+
+  const a2Unit12Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit12.id,
+      order: 2,
+      grammarTopic: 'Über den Beruf sprechen',
+      explanationDe:
+        'Um über den eigenen Beruf zu sprechen, benutzt man "Ich arbeite als + Beruf" oder "Ich bin von Beruf + Beruf" (ohne Artikel). Beispiel: "Ich arbeite als Ingenieur." "Ich bin von Beruf Verkäuferin."',
+      explanationEn:
+        'To talk about your own profession, use "Ich arbeite als + profession" or "Ich bin von Beruf + profession" (without an article). Example: "Ich arbeite als Ingenieur" (I work as an engineer). "Ich bin von Beruf Verkäuferin" (I am a saleswoman by profession).',
+      explanationTr:
+        'Kendi mesleğinden bahsetmek için "Ich arbeite als + meslek" ya da "Ich bin von Beruf + meslek" (artikelsiz) kullanılır. Örnek: "Ich arbeite als Ingenieur." "Ich bin von Beruf Verkäuferin."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit12Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich arbeite ___ Ingenieur.' },
+        correctAnswer: { accepted: ['als'] },
+        explanation: '"Arbeiten als" + Beruf ohne Artikel.',
+      },
+      {
+        lessonId: a2Unit12Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bin', 'ich', 'Beruf', 'von', 'Verkäuferin'] },
+        correctAnswer: { order: ['ich', 'bin', 'von', 'Beruf', 'Verkäuferin'] },
+        explanation: 'Reihenfolge: Subjekt, Verb, "von Beruf", Berufsbezeichnung.',
+      },
+    ],
+  })
+
+  const a2Unit12Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit12.id,
+      order: 3,
+      grammarTopic: 'Lebenslauf & Bewerbung: Wortschatz',
+      explanationDe:
+        'Wichtige Wörter für Lebenslauf und Bewerbung: die Erfahrung, die Bewerbung, das Vorstellungsgespräch. Beispiel: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung."',
+      explanationEn:
+        'Important words for a résumé and job application: die Erfahrung (experience), die Bewerbung (application), das Vorstellungsgespräch (job interview). Example: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung" (I am writing an application. I have three years of experience).',
+      explanationTr:
+        'Özgeçmiş ve iş başvurusu için önemli kelimeler: die Erfahrung (deneyim), die Bewerbung (başvuru), das Vorstellungsgespräch (iş görüşmesi). Örnek: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung" (Bir başvuru yazıyorum. Üç yıllık deneyimim var).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit12Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich schreibe eine ___ für die neue Stelle.', options: ['Bewerbung', 'Erfahrung', 'Frage', 'Antwort'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Man schreibt eine Bewerbung für eine Stelle.',
+      },
+      {
+        lessonId: a2Unit12Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I have three years of experience' (mit 'Erfahrung')?" },
+        correctAnswer: { accepted: ['ich habe drei jahre erfahrung'] },
+        explanation: '"Ich habe drei Jahre Erfahrung" bedeutet "I have three years of experience".',
+      },
+    ],
+  })
+
+  const a2Unit12Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit12.id,
+      order: 4,
+      grammarTopic: 'Im Vorstellungsgespräch: Fragen und Antworten',
+      explanationDe:
+        'Im Vorstellungsgespräch benutzt man oft Modalverben in der höflichen "Sie"-Form: "Können Sie mir Ihre Stärken beschreiben?" "Wann können Sie beginnen?" Wiederholung: das Modalverb steht konjugiert an Position 2, der Infinitiv am Satzende.',
+      explanationEn:
+        'Job interviews often use modal verbs in the polite "Sie" form: "Können Sie mir Ihre Stärken beschreiben?" (Can you describe your strengths?) "Wann können Sie beginnen?" (When can you start?) Review: the conjugated modal verb is in position 2, the infinitive at the end of the sentence.',
+      explanationTr:
+        'İş görüşmelerinde genellikle saygılı "Sie" biçiminde kip fiilleri kullanılır: "Können Sie mir Ihre Stärken beschreiben?" (Güçlü yönlerinizi anlatabilir misiniz?) "Wann können Sie beginnen?" (Ne zaman başlayabilirsiniz?) Tekrar: çekimli kip fiili 2. sırada, mastar cümle sonunda yer alır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit12Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Sie mir bitte Ihre Stärken beschreiben?', options: ['Können', 'Kann', 'Kannst', 'Könnt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit der höflichen Anrede "Sie" benutzt man "Können".',
+      },
+      {
+        lessonId: a2Unit12Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['beginnen', 'Sie', 'wann', 'können'] },
+        correctAnswer: { order: ['wann', 'können', 'Sie', 'beginnen'] },
+        explanation: 'Reihenfolge: Fragewort, Modalverb, Subjekt, Infinitiv am Ende.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit12Lesson1.id, word: 'der Lehrer', translationEn: 'the teacher', translationTr: 'öğretmen', exampleSentence: 'Der Lehrer arbeitet in der Schule.' },
+      { lessonId: a2Unit12Lesson1.id, word: 'die Ärztin', translationEn: 'the (female) doctor', translationTr: 'kadın doktor', exampleSentence: 'Die Ärztin arbeitet im Krankenhaus.' },
+      { lessonId: a2Unit12Lesson2.id, word: 'der Beruf', translationEn: 'the profession / job', translationTr: 'meslek', exampleSentence: 'Was bist du von Beruf?' },
+      { lessonId: a2Unit12Lesson2.id, word: 'verdienen', translationEn: 'to earn', translationTr: 'kazanmak', exampleSentence: 'Ich verdiene gut in meinem Beruf.' },
+      { lessonId: a2Unit12Lesson3.id, word: 'die Erfahrung', translationEn: 'the experience', translationTr: 'deneyim', exampleSentence: 'Ich habe drei Jahre Erfahrung.' },
+      { lessonId: a2Unit12Lesson3.id, word: 'die Bewerbung', translationEn: 'the application', translationTr: 'iş başvurusu', exampleSentence: 'Ich schreibe eine Bewerbung für die neue Stelle.' },
+      { lessonId: a2Unit12Lesson4.id, word: 'das Vorstellungsgespräch', translationEn: 'the job interview', translationTr: 'iş görüşmesi', exampleSentence: 'Ich habe morgen ein Vorstellungsgespräch.' },
+      { lessonId: a2Unit12Lesson4.id, word: 'die Stärke', translationEn: 'the strength', translationTr: 'güçlü yön', exampleSentence: 'Können Sie mir Ihre Stärken beschreiben?' },
+    ],
+  })
+
+  // --- A2 Unit 13: Ordinalzahlen & Datumsangaben (4 lessons) ---
+  const a2Unit13 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 13, titleDe: 'Ordinalzahlen & Datumsangaben', titleEn: 'Ordinal Numbers & Dates', titleTr: 'Sıra Sayıları ve Tarihler' },
+  })
+
+  const a2Unit13Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit13.id,
+      order: 1,
+      grammarTopic: 'Ordinalzahlen (1.-19.)',
+      explanationDe:
+        'Ordinalzahlen bis 19 werden mit -te gebildet: "der dritte" (3.), "der siebte" (7.). Unregelmäßig: "der erste" (1.), "der dritte" (3.), "der siebte" (7.).',
+      explanationEn:
+        'Ordinal numbers up to 19 are formed with -te: "der dritte" (the third), "der siebte" (the seventh). Irregular: "der erste" (first), "der dritte" (third), "der siebte" (seventh).',
+      explanationTr:
+        '19\'a kadar sıra sayıları -te ekiyle yapılır: "der dritte" (üçüncü), "der siebte" (yedinci). Düzensiz: "der erste" (birinci), "der dritte" (üçüncü), "der siebte" (yedinci).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit13Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie heißt die Ordinalzahl für "3" (der ___)?', options: ['dreite', 'dritte', 'drittste', 'dreiste'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"3" ist unregelmäßig: der dritte.',
+      },
+      {
+        lessonId: a2Unit13Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist mein ___ (1.) Deutschkurs.' },
+        correctAnswer: { accepted: ['erster'] },
+        explanation: '"1." ist unregelmäßig: erster.',
+      },
+    ],
+  })
+
+  const a2Unit13Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit13.id,
+      order: 2,
+      grammarTopic: 'Ordinalzahlen (20.+)',
+      explanationDe:
+        'Ab 20 werden Ordinalzahlen mit -ste gebildet: "der zwanzigste" (20.), "der einundzwanzigste" (21.).',
+      explanationEn:
+        'From 20 onward, ordinal numbers are formed with -ste: "der zwanzigste" (the twentieth), "der einundzwanzigste" (the twenty-first).',
+      explanationTr:
+        '20\'den itibaren sıra sayıları -ste ekiyle yapılır: "der zwanzigste" (yirminci), "der einundzwanzigste" (yirmi birinci).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit13Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie heißt die Ordinalzahl für "20" (der ___)?', options: ['zwanzigte', 'zwanzigste', 'zwanzste', 'zwanzigerste'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Ab 20 benutzt man -ste: der zwanzigste.',
+      },
+      {
+        lessonId: a2Unit13Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'the thirty-first' (der ___)?" },
+        correctAnswer: { accepted: ['einunddreißigste', 'der einunddreißigste'] },
+        explanation: '"31." ist "der einunddreißigste".',
+      },
+    ],
+  })
+
+  const a2Unit13Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit13.id,
+      order: 3,
+      grammarTopic: 'Das Datum',
+      explanationDe:
+        'Das Datum bildet man mit "am" + Ordinalzahl + Monat: "Ich habe am dritten Mai Geburtstag." Schriftlich: "3. Mai" (mit Punkt).',
+      explanationEn:
+        'Dates are formed with "am" + ordinal number + month: "Ich habe am dritten Mai Geburtstag" (My birthday is on May 3rd). In writing: "3. Mai" (with a period).',
+      explanationTr:
+        'Tarih "am" + sıra sayısı + ay ile kurulur: "Ich habe am dritten Mai Geburtstag" (Doğum günüm 3 Mayıs\'ta). Yazılışta: "3. Mai" (noktayla).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit13Lesson3.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe ___ dritten Mai Geburtstag.' },
+        correctAnswer: { accepted: ['am'] },
+        explanation: 'Datum mit "am" + Ordinalzahl.',
+      },
+      {
+        lessonId: a2Unit13Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['1. Januar', '3. Mai', '20. Juli'], rights: ['am zwanzigsten Juli', 'am ersten Januar', 'am dritten Mai'] },
+        correctAnswer: {
+          pairs: [
+            { left: '1. Januar', right: 'am ersten Januar' },
+            { left: '3. Mai', right: 'am dritten Mai' },
+            { left: '20. Juli', right: 'am zwanzigsten Juli' },
+          ],
+        },
+        explanation: 'Datum: "am" + Ordinalzahl + Monat.',
+      },
+    ],
+  })
+
+  const a2Unit13Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit13.id,
+      order: 4,
+      grammarTopic: 'Übung: Geburtstage & Termine',
+      explanationDe:
+        'Wiederholung: "Wann hast du Geburtstag?" "Ich habe am zehnten Oktober Geburtstag." Auch für Termine: "Der Termin ist am fünfzehnten Juni."',
+      explanationEn:
+        'Review: "Wann hast du Geburtstag?" (When is your birthday?) "Ich habe am zehnten Oktober Geburtstag" (My birthday is on October 10th). Also for appointments: "Der Termin ist am fünfzehnten Juni" (The appointment is on June 15th).',
+      explanationTr:
+        'Tekrar: "Wann hast du Geburtstag?" (Doğum günün ne zaman?) "Ich habe am zehnten Oktober Geburtstag" (Doğum günüm 10 Ekim\'de). Randevular için de: "Der Termin ist am fünfzehnten Juni" (Randevu 15 Haziran\'da).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit13Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Geburtstag', 'zehnten', 'Oktober', 'am', 'ich', 'habe'] },
+        correctAnswer: { order: ['ich', 'habe', 'am', 'zehnten', 'Oktober', 'Geburtstag'] },
+        explanation: 'Wortstellung: Subjekt, Verb, "am" + Ordinalzahl + Monat, Objekt.',
+      },
+      {
+        lessonId: a2Unit13Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'When is your birthday?'?" },
+        correctAnswer: { accepted: ['wann hast du geburtstag'] },
+        explanation: '"Wann hast du Geburtstag?" bedeutet "When is your birthday?"',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit13Lesson1.id, word: 'der erste', translationEn: 'the first', translationTr: 'birinci', exampleSentence: 'Heute ist der erste Mai.' },
+      { lessonId: a2Unit13Lesson1.id, word: 'der dritte', translationEn: 'the third', translationTr: 'üçüncü', exampleSentence: 'Er kommt am dritten Tag.' },
+      { lessonId: a2Unit13Lesson2.id, word: 'der zwanzigste', translationEn: 'the twentieth', translationTr: 'yirminci', exampleSentence: 'Wir treffen uns am zwanzigsten Juli.' },
+      { lessonId: a2Unit13Lesson2.id, word: 'zwischen', translationEn: 'between', translationTr: 'arasında', exampleSentence: 'Der Termin ist zwischen dem 10. und 15. Mai.' },
+      { lessonId: a2Unit13Lesson3.id, word: 'der Geburtstag', translationEn: 'the birthday', translationTr: 'doğum günü', exampleSentence: 'Wann hast du Geburtstag?' },
+      { lessonId: a2Unit13Lesson3.id, word: 'der Monat', translationEn: 'the month', translationTr: 'ay', exampleSentence: 'Mai ist mein Lieblingsmonat.' },
+      { lessonId: a2Unit13Lesson4.id, word: 'der Termin', translationEn: 'the appointment', translationTr: 'randevu', exampleSentence: 'Der Termin ist am fünfzehnten Juni.' },
+      { lessonId: a2Unit13Lesson4.id, word: 'das Jahr', translationEn: 'the year', translationTr: 'yıl', exampleSentence: 'Nächstes Jahr fahre ich nach Deutschland.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
