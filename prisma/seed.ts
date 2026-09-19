@@ -3848,6 +3848,486 @@ async function main() {
     ],
   })
 
+  // --- C1 Unit 11: Stilmittel - Ironie & Understatement (4 lessons) ---
+  const c1Unit11 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 11, titleDe: 'Stilmittel: Ironie & Understatement', titleEn: 'Stylistic Devices: Irony & Understatement', titleTr: 'Üslup Araçları: İroni ve Az Söyleme' },
+  })
+  const c1Unit11Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit11.id,
+      order: 1,
+      grammarTopic: 'Ironie erkennen',
+      explanationDe:
+        'Ironie sagt das Gegenteil dessen, was gemeint ist, oft mit besonderem Tonfall: "Toller Regen heute!" (bei schlechtem Wetter, eigentlich negativ gemeint).',
+      explanationEn:
+        'Irony says the opposite of what\'s meant, often with a particular tone: "Toller Regen heute!" (Great rain today! — said sarcastically about bad weather, actually meant negatively).',
+      explanationTr:
+        'İroni, kastedilenin tersini söyler, genellikle özel bir tonlamayla: "Toller Regen heute!" (kötü hava için söylenir, aslında olumsuz anlamdadır).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit11Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Toller Regen heute!" bei strömendem Regen gesagt — was ist das?', options: ['ein Kompliment', 'Ironie', 'eine Frage', 'eine Bitte'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Das Gegenteil des Gemeinten wird ausgedrückt — das ist Ironie.',
+      },
+      {
+        lessonId: c1Unit11Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie nennt man es, wenn man das Gegenteil dessen sagt, was man meint?" },
+        correctAnswer: { accepted: ['ironie'] },
+        explanation: 'Das nennt man Ironie.',
+      },
+    ],
+  })
+
+  const c1Unit11Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit11.id,
+      order: 2,
+      grammarTopic: 'Understatement (Untertreibung)',
+      explanationDe:
+        'Understatement untertreibt bewusst: "Das war nicht schlecht" (für etwas sehr Gutes) oder "ein kleines Problem" (für eine Katastrophe).',
+      explanationEn:
+        'Understatement deliberately downplays something: "Das war nicht schlecht" (That wasn\'t bad — for something very good) or "ein kleines Problem" (a small problem — for a disaster).',
+      explanationTr:
+        'Az söyleme (understatement) bilinçli olarak küçümser: "Das war nicht schlecht" (çok iyi bir şey için) veya "ein kleines Problem" (bir felaket için).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit11Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist ein Understatement?', options: ['Übertreibung', 'bewusste Untertreibung', 'ein Vergleich', 'eine Metapher'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Understatement ist eine bewusste Untertreibung.',
+      },
+      {
+        lessonId: c1Unit11Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '"Das war nicht ___" (Untertreibung für "sehr gut").' },
+        correctAnswer: { accepted: ['schlecht'] },
+        explanation: '"Das war nicht schlecht" ist ein typisches Understatement.',
+      },
+    ],
+  })
+
+  const c1Unit11Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit11.id,
+      order: 3,
+      grammarTopic: 'Rhetorische Fragen',
+      explanationDe:
+        'Rhetorische Fragen erwarten keine Antwort, sondern betonen eine Aussage: "Ist das nicht offensichtlich?" (= Das ist offensichtlich.)',
+      explanationEn:
+        'Rhetorical questions don\'t expect an answer; they emphasize a statement: "Ist das nicht offensichtlich?" (Isn\'t that obvious? — = That is obvious.)',
+      explanationTr:
+        'Retorik sorular cevap beklemez, bir ifadeyi vurgular: "Ist das nicht offensichtlich?" (= Bu bariz.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit11Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist der Zweck einer rhetorischen Frage?', options: ['eine Antwort zu erhalten', 'eine Aussage zu betonen', 'um Erlaubnis zu bitten', 'sich zu entschuldigen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Rhetorische Fragen betonen eine Aussage, ohne eine Antwort zu erwarten.',
+      },
+      {
+        lessonId: c1Unit11Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Erwartet eine rhetorische Frage eine Antwort? (ja/nein)" },
+        correctAnswer: { accepted: ['nein'] },
+        explanation: 'Nein, eine rhetorische Frage erwartet keine Antwort.',
+      },
+    ],
+  })
+
+  const c1Unit11Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit11.id,
+      order: 4,
+      grammarTopic: 'Übung: Ironie & Understatement',
+      explanationDe:
+        'Wiederholung: Ironie, Understatement und rhetorische Fragen sind stilistische Mittel, die Bedeutung indirekt und oft mit Humor vermitteln.',
+      explanationEn:
+        'Review: irony, understatement, and rhetorical questions are stylistic devices that convey meaning indirectly, often with humor.',
+      explanationTr:
+        'Tekrar: İroni, az söyleme ve retorik sorular anlamı dolaylı ve çoğunlukla mizahi biçimde ileten üslup araçlarıdır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit11Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['"Toller Regen!" bei Sturm', '"Ein kleines Problem" bei Katastrophe', '"Ist das nicht klar?"'], rights: ['Ironie', 'Understatement', 'rhetorische Frage'] },
+        correctAnswer: {
+          pairs: [
+            { left: '"Toller Regen!" bei Sturm', right: 'Ironie' },
+            { left: '"Ein kleines Problem" bei Katastrophe', right: 'Understatement' },
+            { left: '"Ist das nicht klar?"', right: 'rhetorische Frage' },
+          ],
+        },
+        explanation: 'Jedes Stilmittel hat eine eigene indirekte Wirkung.',
+      },
+      {
+        lessonId: c1Unit11Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne ein Stilmittel, das das Gegenteil des Gemeinten ausdrückt." },
+        correctAnswer: { accepted: ['ironie'] },
+        explanation: 'Ironie drückt das Gegenteil des Gemeinten aus.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit11Lesson1.id, word: 'der Tonfall', translationEn: 'the tone of voice', translationTr: 'ses tonu', exampleSentence: 'Der Tonfall zeigt, dass es ironisch gemeint ist.' },
+      { lessonId: c1Unit11Lesson1.id, word: 'strömend', translationEn: 'pouring (rain)', translationTr: 'bardaktan boşanırcasına', exampleSentence: 'Es regnet strömend.' },
+      { lessonId: c1Unit11Lesson2.id, word: 'untertreiben', translationEn: 'to understate', translationTr: 'küçümsemek', exampleSentence: 'Er untertreibt gern seine Erfolge.' },
+      { lessonId: c1Unit11Lesson2.id, word: 'die Katastrophe', translationEn: 'the catastrophe', translationTr: 'felaket', exampleSentence: 'Das war eine echte Katastrophe.' },
+      { lessonId: c1Unit11Lesson3.id, word: 'die Erlaubnis', translationEn: 'the permission', translationTr: 'izin', exampleSentence: 'Er bittet um Erlaubnis.' },
+      { lessonId: c1Unit11Lesson3.id, word: 'betonen', translationEn: 'to emphasize', translationTr: 'vurgulamak', exampleSentence: 'Sie betont ihre Meinung.' },
+      { lessonId: c1Unit11Lesson4.id, word: 'der Humor', translationEn: 'the humor', translationTr: 'mizah', exampleSentence: 'Der Text hat viel Humor.' },
+      { lessonId: c1Unit11Lesson4.id, word: 'indirekt', translationEn: 'indirect', translationTr: 'dolaylı', exampleSentence: 'Er drückt sich oft indirekt aus.' },
+    ],
+  })
+
+  // --- C1 Unit 12: Fachsprache & Register (4 lessons) ---
+  const c1Unit12 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 12, titleDe: 'Fachsprache & Register', titleEn: 'Technical Language & Register', titleTr: 'Uzmanlık Dili ve Dil Düzeyi' },
+  })
+  const c1Unit12Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit12.id,
+      order: 1,
+      grammarTopic: 'Register erkennen: formell vs. informell',
+      explanationDe:
+        'Register beschreibt die Sprachebene: formell ("Ich bitte um Ihre Rückmeldung") vs. informell ("Meld dich mal!"). Wortwahl, Satzbau und Anrede unterscheiden sich.',
+      explanationEn:
+        'Register describes the level of formality: formal ("Ich bitte um Ihre Rückmeldung" — I kindly request your response) vs. informal ("Meld dich mal!" — Get in touch!). Word choice, sentence structure, and address forms differ.',
+      explanationTr:
+        'Dil düzeyi (register), resmiyet seviyesini tanımlar: resmi ("Ich bitte um Ihre Rückmeldung") ile gayriresmi ("Meld dich mal!"). Kelime seçimi, cümle yapısı ve hitap farklılık gösterir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit12Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist formell?', options: ['Meld dich mal!', 'Ich bitte um Ihre Rückmeldung.', 'Schreib mir!', 'Ruf mich an!'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Ich bitte um Ihre Rückmeldung" ist formell (Sie-Form, höfliche Bitte).',
+      },
+      {
+        lessonId: c1Unit12Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welches Pronomen ist typisch für formelle Anrede im Deutschen?" },
+        correctAnswer: { accepted: ['sie', 'sie-form'] },
+        explanation: 'Die formelle Anrede nutzt "Sie".',
+      },
+    ],
+  })
+
+  const c1Unit12Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit12.id,
+      order: 2,
+      grammarTopic: 'Fachsprache der Wissenschaft',
+      explanationDe:
+        'Wissenschaftliche Fachsprache nutzt Nominalstil, Passiv und Fachbegriffe: "Die Hypothese wurde anhand empirischer Daten überprüft."',
+      explanationEn:
+        'Academic technical language uses nominal style, passive voice, and technical terms: "Die Hypothese wurde anhand empirischer Daten überprüft" (The hypothesis was tested using empirical data).',
+      explanationTr:
+        'Bilimsel uzmanlık dili isim stili, edilgen çatı ve teknik terimler kullanır: "Die Hypothese wurde anhand empirischer Daten überprüft."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit12Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Merkmal ist typisch für wissenschaftliche Fachsprache?', options: ['Umgangssprache', 'Passiv und Nominalstil', 'viele Modalpartikeln', 'kurze Ausrufe'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Wissenschaftliche Texte nutzen häufig Passiv und Nominalstil.',
+      },
+      {
+        lessonId: c1Unit12Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Hypothese ___ anhand empirischer Daten überprüft. (Passiv Präteritum von "werden")' },
+        correctAnswer: { accepted: ['wurde'] },
+        explanation: 'Präteritum Passiv: "wurde überprüft".',
+      },
+    ],
+  })
+
+  const c1Unit12Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit12.id,
+      order: 3,
+      grammarTopic: 'Register wechseln',
+      explanationDe:
+        'Guter Sprachgebrauch passt das Register an die Situation an: eine E-Mail an den Chef ist formell, eine Nachricht an Freunde informell.',
+      explanationEn:
+        'Good language use adapts register to the situation: an email to your boss is formal, a message to friends is informal.',
+      explanationTr:
+        'İyi bir dil kullanımı, dil düzeyini duruma göre ayarlar: patrona e-posta resmi, arkadaşlara mesaj gayriresmidir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit12Lesson3.id,
+        order: 1,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme informell um: 'Ich bitte um Ihre Rückmeldung.' -> '___!' (informell, kurz)" },
+        correctAnswer: { accepted: ['meld dich', 'meld dich mal'] },
+        explanation: 'Informelle Variante: "Meld dich!" oder "Meld dich mal!"',
+      },
+      {
+        lessonId: c1Unit12Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'In welcher Situation ist informelles Register passend?', options: ['Bewerbungsschreiben', 'Nachricht an einen Freund', 'wissenschaftlicher Artikel', 'Behördenbrief'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Eine Nachricht an Freunde erlaubt informelles Register.',
+      },
+    ],
+  })
+
+  const c1Unit12Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit12.id,
+      order: 4,
+      grammarTopic: 'Übung: Fachsprache & Register',
+      explanationDe:
+        'Wiederholung: Die Wahl des richtigen Registers zeigt Sprachgefühl und ist entscheidend für angemessene Kommunikation in unterschiedlichen Kontexten.',
+      explanationEn:
+        'Review: choosing the right register shows language proficiency and is crucial for appropriate communication in different contexts.',
+      explanationTr:
+        'Tekrar: Doğru dil düzeyini seçmek dil becerisini gösterir ve farklı bağlamlarda uygun iletişim için önemlidir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit12Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['Bewerbungsschreiben', 'Chat mit Freunden', 'wissenschaftlicher Aufsatz'], rights: ['formell', 'informell', 'sehr formell/fachsprachlich'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Bewerbungsschreiben', right: 'formell' },
+            { left: 'Chat mit Freunden', right: 'informell' },
+            { left: 'wissenschaftlicher Aufsatz', right: 'sehr formell/fachsprachlich' },
+          ],
+        },
+        explanation: 'Textsorten verlangen unterschiedliche Register.',
+      },
+      {
+        lessonId: c1Unit12Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie nennt man die Anpassung der Sprache an die Situation?" },
+        correctAnswer: { accepted: ['register', 'sprachregister'] },
+        explanation: 'Das nennt man Register bzw. Sprachregister.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit12Lesson1.id, word: 'die Rückmeldung', translationEn: 'the response / feedback', translationTr: 'geri bildirim', exampleSentence: 'Ich bitte um Ihre Rückmeldung.' },
+      { lessonId: c1Unit12Lesson1.id, word: 'die Anrede', translationEn: 'the form of address', translationTr: 'hitap', exampleSentence: 'Die Anrede "Sie" ist formell.' },
+      { lessonId: c1Unit12Lesson2.id, word: 'die Hypothese', translationEn: 'the hypothesis', translationTr: 'hipotez', exampleSentence: 'Die Hypothese wurde überprüft.' },
+      { lessonId: c1Unit12Lesson2.id, word: 'empirisch', translationEn: 'empirical', translationTr: 'ampirik', exampleSentence: 'Die Daten sind empirisch erhoben.' },
+      { lessonId: c1Unit12Lesson3.id, word: 'die Behörde', translationEn: 'the (government) authority', translationTr: 'kurum', exampleSentence: 'Der Brief kommt von einer Behörde.' },
+      { lessonId: c1Unit12Lesson3.id, word: 'passend', translationEn: 'suitable / fitting', translationTr: 'uygun', exampleSentence: 'Das ist ein passendes Register.' },
+      { lessonId: c1Unit12Lesson4.id, word: 'das Sprachgefühl', translationEn: 'the feel for language', translationTr: 'dil sezgisi', exampleSentence: 'Sie hat ein gutes Sprachgefühl.' },
+      { lessonId: c1Unit12Lesson4.id, word: 'angemessen', translationEn: 'appropriate', translationTr: 'uygun (yerinde)', exampleSentence: 'Das war eine angemessene Reaktion.' },
+    ],
+  })
+
+  // --- C1 Unit 13: Wiederholung - Wissenschaft & Diskussion (4 lessons) ---
+  const c1Unit13 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 13, titleDe: 'Wiederholung: Wissenschaft & Diskussion', titleEn: 'Review: Science & Discussion', titleTr: 'Tekrar: Bilim ve Tartışma' },
+  })
+  const c1Unit13Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit13.id,
+      order: 1,
+      grammarTopic: 'Wiederholung: Konjunktiv I in Fachtexten',
+      explanationDe:
+        'In wissenschaftlichen Diskussionen wird oft Konjunktiv I verwendet, um fremde Thesen neutral wiederzugeben: "Der Autor argumentiert, die Studie sei nicht repräsentativ."',
+      explanationEn:
+        'Academic discussions often use Konjunktiv I to neutrally report others\' theses: "Der Autor argumentiert, die Studie sei nicht repräsentativ" (The author argues the study is not representative).',
+      explanationTr:
+        'Bilimsel tartışmalarda başkalarının tezlerini tarafsızca aktarmak için genellikle Konjunktiv I kullanılır: "Der Autor argumentiert, die Studie sei nicht repräsentativ."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit13Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Autor argumentiert, die Studie ___ nicht repräsentativ.', options: ['ist', 'sei', 'war', 'wäre'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Konjunktiv I für neutrale Wiedergabe: "sei".',
+      },
+      {
+        lessonId: c1Unit13Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welcher Modus wird genutzt, um fremde Thesen neutral wiederzugeben?" },
+        correctAnswer: { accepted: ['konjunktiv i', 'konjunktiv 1'] },
+        explanation: 'Konjunktiv I wird für neutrale Wiedergabe genutzt.',
+      },
+    ],
+  })
+
+  const c1Unit13Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit13.id,
+      order: 2,
+      grammarTopic: 'Wiederholung: Nominalstil in Diskussionsbeiträgen',
+      explanationDe:
+        'Diskussionsbeiträge nutzen oft Nominalstil für Präzision: "Die Durchführung weiterer Untersuchungen ist notwendig" statt "Man muss weiter untersuchen."',
+      explanationEn:
+        'Discussion contributions often use nominal style for precision: "Die Durchführung weiterer Untersuchungen ist notwendig" (Conducting further investigations is necessary) instead of "Man muss weiter untersuchen" (One must investigate further).',
+      explanationTr:
+        'Tartışma katkıları genellikle hassasiyet için isim stili kullanır: "Man muss weiter untersuchen" yerine "Die Durchführung weiterer Untersuchungen ist notwendig".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit13Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ weiterer Untersuchungen ist notwendig. (durchführen, Nominalisierung)' },
+        correctAnswer: { accepted: ['durchführung'] },
+        explanation: '"durchführen" -> "die Durchführung".',
+      },
+      {
+        lessonId: c1Unit13Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'Welcher Satz ist im Nominalstil formuliert?',
+          options: ['Wir untersuchen das weiter.', 'Die Durchführung weiterer Untersuchungen ist notwendig.', 'Wir müssen das untersuchen.', 'Es wird untersucht.'],
+        },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Die Durchführung ... ist notwendig" nutzt ein Nomen statt eines Verbs.',
+      },
+    ],
+  })
+
+  const c1Unit13Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit13.id,
+      order: 3,
+      grammarTopic: 'Wiederholung: Komplexe Konnektoren in Argumenten',
+      explanationDe:
+        'Für eine überzeugende Argumentation kombiniert man Konnektoren: "Zumal die Datenlage unklar ist, sollte man, gleichwohl der Zeitdruck besteht, weitere Studien abwarten."',
+      explanationEn:
+        'A convincing argument combines connectors: "Zumal die Datenlage unklar ist, sollte man, gleichwohl der Zeitdruck besteht, weitere Studien abwarten" (Especially since the data situation is unclear, one should wait for further studies, even though there is time pressure).',
+      explanationTr:
+        'İkna edici bir argüman bağlaçları birleştirir: "Zumal die Datenlage unklar ist, sollte man, gleichwohl der Zeitdruck besteht, weitere Studien abwarten."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit13Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Konnektor verstärkt einen Grund (= "vor allem weil")?', options: ['gleichwohl', 'zumal', 'dennoch', 'mithin'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Zumal" verstärkt einen Grund.',
+      },
+      {
+        lessonId: c1Unit13Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne einen gehobenen Konnektor für 'trotzdem'." },
+        correctAnswer: { accepted: ['gleichwohl', 'nichtsdestotrotz'] },
+        explanation: '"Gleichwohl" oder "nichtsdestotrotz" sind gehobene Synonyme für "trotzdem".',
+      },
+    ],
+  })
+
+  const c1Unit13Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit13.id,
+      order: 4,
+      grammarTopic: 'Abschlusswiederholung C1',
+      explanationDe:
+        'Gesamtwiederholung: Konjunktiv I/II, Partizipialattribute, Nominalstil, komplexe Konnektoren und Modalpartikeln bilden zusammen die Grundlage für kompetente wissenschaftliche und formelle Kommunikation auf C1-Niveau.',
+      explanationEn:
+        'Overall review: Konjunktiv I/II, participial attributes, nominal style, complex connectors, and modal particles together form the foundation for competent academic and formal communication at C1 level.',
+      explanationTr:
+        'Genel tekrar: Konjunktiv I/II, sıfat-fiil yapıları, isim stili, karmaşık bağlaçlar ve kip belirteçleri, C1 düzeyinde yetkin bilimsel ve resmi iletişimin temelini oluşturur.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit13Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['sei', 'die', 'Studie', 'repräsentativ', 'nicht'] },
+        correctAnswer: { order: ['die', 'Studie', 'sei', 'nicht', 'repräsentativ'] },
+        explanation: 'Nebensatzstruktur mit Konjunktiv I: Subjekt, Verb, Negation, Prädikativ.',
+      },
+      {
+        lessonId: c1Unit13Lesson4.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['Konjunktiv I', 'Nominalstil', 'gleichwohl'], rights: ['neutrale Wiedergabe', 'formelle Präzision', 'gehobenes "trotzdem"'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Konjunktiv I', right: 'neutrale Wiedergabe' },
+            { left: 'Nominalstil', right: 'formelle Präzision' },
+            { left: 'gleichwohl', right: 'gehobenes "trotzdem"' },
+          ],
+        },
+        explanation: 'Zusammenfassung der C1-Grammatikthemen.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit13Lesson1.id, word: 'repräsentativ', translationEn: 'representative', translationTr: 'temsili', exampleSentence: 'Die Studie ist nicht repräsentativ.' },
+      { lessonId: c1Unit13Lesson1.id, word: 'argumentieren', translationEn: 'to argue', translationTr: 'savunmak', exampleSentence: 'Der Autor argumentiert überzeugend.' },
+      { lessonId: c1Unit13Lesson2.id, word: 'die Präzision', translationEn: 'the precision', translationTr: 'kesinlik', exampleSentence: 'Der Nominalstil erlaubt mehr Präzision.' },
+      { lessonId: c1Unit13Lesson2.id, word: 'der Beitrag', translationEn: 'the contribution', translationTr: 'katkı', exampleSentence: 'Das ist ein wichtiger Beitrag zur Diskussion.' },
+      { lessonId: c1Unit13Lesson3.id, word: 'die Datenlage', translationEn: 'the data situation', translationTr: 'veri durumu', exampleSentence: 'Die Datenlage ist unklar.' },
+      { lessonId: c1Unit13Lesson3.id, word: 'der Zeitdruck', translationEn: 'the time pressure', translationTr: 'zaman baskısı', exampleSentence: 'Trotz des Zeitdrucks bleiben wir gründlich.' },
+      { lessonId: c1Unit13Lesson4.id, word: 'kompetent', translationEn: 'competent', translationTr: 'yetkin', exampleSentence: 'Sie kommuniziert sehr kompetent.' },
+      { lessonId: c1Unit13Lesson4.id, word: 'die Grundlage', translationEn: 'the foundation / basis', translationTr: 'temel', exampleSentence: 'Das ist die Grundlage unserer Argumentation.' },
+    ],
+  })
+
   // --- C2: Komplexe Konnektoren (1 sample lesson) ---
   const c2Unit = await prisma.unit.create({
     data: { levelId: c2.id, order: 1, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
