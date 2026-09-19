@@ -2986,6 +2986,321 @@ async function main() {
     ],
   })
 
+  // --- B1 Unit 7: Doppelkonjunktionen (4 lessons) ---
+  const b1Unit7 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 7, titleDe: 'Doppelkonjunktionen', titleEn: 'Paired Conjunctions', titleTr: 'Çift Bağlaçlar' },
+  })
+
+  const b1Unit7Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit7.id,
+      order: 1,
+      grammarTopic: 'je...desto',
+      explanationDe:
+        '"Je...desto" beschreibt eine proportionale Steigerung; beide Teile stehen mit Komparativ: "Je mehr ich lerne, desto besser verstehe ich."',
+      explanationEn:
+        '"Je...desto" (the...the) expresses proportional increase; both parts use the comparative: "Je mehr ich lerne, desto besser verstehe ich" (The more I study, the better I understand).',
+      explanationTr:
+        '"Je...desto" (ne kadar...o kadar) orantılı bir artışı ifade eder; her iki kısım da karşılaştırma hâlinde olur: "Je mehr ich lerne, desto besser verstehe ich".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit7Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Je mehr ich lerne, ___ besser verstehe ich.', options: ['desto', 'dass', 'weil', 'ob'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Je...desto" ist ein Paar; nach "je" folgt "desto".',
+      },
+      {
+        lessonId: b1Unit7Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Je älter er wird, ___ ruhiger wird er. (desto)' },
+        correctAnswer: { accepted: ['desto'] },
+        explanation: '"Je...desto" mit Komparativ auf beiden Seiten.',
+      },
+    ],
+  })
+
+  const b1Unit7Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit7.id,
+      order: 2,
+      grammarTopic: 'sowohl...als auch',
+      explanationDe:
+        '"Sowohl...als auch" bedeutet "both...and": "Sie spricht sowohl Deutsch als auch Englisch." Beide Elemente werden gleichermaßen betont.',
+      explanationEn:
+        '"Sowohl...als auch" means "both...and": "Sie spricht sowohl Deutsch als auch Englisch" (She speaks both German and English). Both elements are equally emphasized.',
+      explanationTr:
+        '"Sowohl...als auch" "hem...hem de" anlamına gelir: "Sie spricht sowohl Deutsch als auch Englisch" (O hem Almanca hem de İngilizce konuşuyor).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit7Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Sie spricht sowohl Deutsch ___ auch Englisch.', options: ['als', 'wie', 'oder', 'und'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Sowohl...als auch" ist die feste Kombination.',
+      },
+      {
+        lessonId: b1Unit7Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'both...and'?" },
+        correctAnswer: { accepted: ['sowohl...als auch', 'sowohl als auch'] },
+        explanation: '"Sowohl...als auch" bedeutet "both...and".',
+      },
+    ],
+  })
+
+  const b1Unit7Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit7.id,
+      order: 3,
+      grammarTopic: 'weder...noch / entweder...oder',
+      explanationDe:
+        '"Weder...noch" bedeutet "neither...nor": "Er trinkt weder Kaffee noch Tee." "Entweder...oder" bedeutet "either...or": "Entweder du kommst, oder ich gehe."',
+      explanationEn:
+        '"Weder...noch" means "neither...nor": "Er trinkt weder Kaffee noch Tee" (He drinks neither coffee nor tea). "Entweder...oder" means "either...or": "Entweder du kommst, oder ich gehe" (Either you come, or I go).',
+      explanationTr:
+        '"Weder...noch" "ne...ne de" anlamına gelir: "Er trinkt weder Kaffee noch Tee". "Entweder...oder" "ya...ya da" anlamına gelir: "Entweder du kommst, oder ich gehe".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit7Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er trinkt weder Kaffee ___ Tee.', options: ['noch', 'oder', 'und', 'als'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Weder...noch" ist die feste Kombination.',
+      },
+      {
+        lessonId: b1Unit7Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['weder', 'entweder', 'sowohl', 'je'], rights: ['noch', 'oder', 'als auch', 'desto'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'weder', right: 'noch' },
+            { left: 'entweder', right: 'oder' },
+            { left: 'sowohl', right: 'als auch' },
+            { left: 'je', right: 'desto' },
+          ],
+        },
+        explanation: 'Doppelkonjunktionen und ihre Partnerwörter.',
+      },
+    ],
+  })
+
+  const b1Unit7Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit7.id,
+      order: 4,
+      grammarTopic: 'Übung: Doppelkonjunktionen',
+      explanationDe:
+        'Wiederholung: je...desto, sowohl...als auch, weder...noch, entweder...oder verbinden Satzteile mit besonderer Bedeutung.',
+      explanationEn:
+        'Review: je...desto, sowohl...als auch, weder...noch, entweder...oder connect clause parts with special meaning.',
+      explanationTr:
+        'Tekrar: je...desto, sowohl...als auch, weder...noch, entweder...oder özel anlamla cümle parçalarını bağlar.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit7Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['oder', 'oder', 'entweder', 'Tee', 'Kaffee'] },
+        correctAnswer: { order: ['entweder', 'Kaffee', 'oder', 'Tee'] },
+        explanation: '"Entweder...oder" verbindet zwei Alternativen.',
+      },
+      {
+        lessonId: b1Unit7Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Weder er ___ sie kommt heute. (noch)' },
+        correctAnswer: { accepted: ['noch'] },
+        explanation: '"Weder...noch" für zwei negierte Alternativen.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit7Lesson1.id, word: 'ruhig', translationEn: 'calm', translationTr: 'sakin', exampleSentence: 'Je älter er wird, desto ruhiger wird er.' },
+      { lessonId: b1Unit7Lesson1.id, word: 'verstehen', translationEn: 'to understand', translationTr: 'anlamak', exampleSentence: 'Ich verstehe das gut.' },
+      { lessonId: b1Unit7Lesson2.id, word: 'sprechen', translationEn: 'to speak', translationTr: 'konuşmak', exampleSentence: 'Sie spricht sowohl Deutsch als auch Englisch.' },
+      { lessonId: b1Unit7Lesson2.id, word: 'die Sprache', translationEn: 'the language', translationTr: 'dil', exampleSentence: 'Deutsch ist eine schwere Sprache.' },
+      { lessonId: b1Unit7Lesson3.id, word: 'der Kaffee', translationEn: 'the coffee', translationTr: 'kahve', exampleSentence: 'Er trinkt weder Kaffee noch Tee.' },
+      { lessonId: b1Unit7Lesson3.id, word: 'der Tee', translationEn: 'the tea', translationTr: 'çay', exampleSentence: 'Möchtest du Tee oder Kaffee?' },
+      { lessonId: b1Unit7Lesson4.id, word: 'die Alternative', translationEn: 'the alternative', translationTr: 'alternatif', exampleSentence: 'Wir haben keine andere Alternative.' },
+      { lessonId: b1Unit7Lesson4.id, word: 'verbinden', translationEn: 'to connect', translationTr: 'bağlamak', exampleSentence: 'Diese Konjunktion verbindet zwei Sätze.' },
+    ],
+  })
+
+  // --- B1 Unit 8: Infinitiv mit "zu" (4 lessons) ---
+  const b1Unit8 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 8, titleDe: 'Infinitiv mit "zu"', titleEn: 'Infinitive with "zu"', titleTr: '"zu" ile Mastar' },
+  })
+
+  const b1Unit8Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit8.id,
+      order: 1,
+      grammarTopic: 'Infinitiv mit "zu" nach Verben',
+      explanationDe:
+        'Nach vielen Verben (versuchen, hoffen, vergessen) steht der Infinitiv mit "zu": "Ich versuche, früh aufzustehen." Bei trennbaren Verben steht "zu" zwischen Präfix und Verb.',
+      explanationEn:
+        'After many verbs (versuchen/try, hoffen/hope, vergessen/forget), the infinitive takes "zu": "Ich versuche, früh aufzustehen" (I try to get up early). With separable verbs, "zu" goes between the prefix and verb.',
+      explanationTr:
+        'Birçok fiilden sonra (versuchen/denemek, hoffen/ummak, vergessen/unutmak) mastar "zu" ile kullanılır: "Ich versuche, früh aufzustehen". Ayrılabilir fiillerde "zu" önek ile fiil arasına girer.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit8Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich versuche, früh ___ . (aufstehen)', options: ['aufzustehen', 'zu aufstehen', 'aufstehen zu', 'aufgestehen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bei trennbaren Verben: Präfix + zu + Verb = "aufzustehen".',
+      },
+      {
+        lessonId: b1Unit8Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er hofft, die Prüfung ___ bestehen. (zu)' },
+        correctAnswer: { accepted: ['zu'] },
+        explanation: '"Hoffen" + Infinitiv mit "zu".',
+      },
+    ],
+  })
+
+  const b1Unit8Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit8.id,
+      order: 2,
+      grammarTopic: '"um...zu" (Zweck)',
+      explanationDe:
+        '"Um...zu" drückt einen Zweck aus: "Ich lerne Deutsch, um in Deutschland zu arbeiten." Das Subjekt von Haupt- und Nebensatz muss gleich sein.',
+      explanationEn:
+        '"Um...zu" expresses purpose: "Ich lerne Deutsch, um in Deutschland zu arbeiten" (I\'m learning German in order to work in Germany). The subject of both clauses must be the same.',
+      explanationTr:
+        '"Um...zu" amaç ifade eder: "Ich lerne Deutsch, um in Deutschland zu arbeiten" (Almanya\'da çalışmak için Almanca öğreniyorum). Her iki cümlenin öznesi aynı olmalı.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit8Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich lerne Deutsch, ___ in Deutschland zu arbeiten.', options: ['um', 'ohne', 'weil', 'dass'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Um...zu" drückt einen Zweck aus.',
+      },
+      {
+        lessonId: b1Unit8Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man: 'in order to' auf Deutsch?" },
+        correctAnswer: { accepted: ['um...zu', 'um zu'] },
+        explanation: '"Um...zu" bedeutet "in order to".',
+      },
+    ],
+  })
+
+  const b1Unit8Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit8.id,
+      order: 3,
+      grammarTopic: '"ohne...zu" (Verzicht)',
+      explanationDe:
+        '"Ohne...zu" bedeutet "without ...ing": "Er ging weg, ohne sich zu verabschieden." Auch hier ist das Subjekt beider Teile gleich.',
+      explanationEn:
+        '"Ohne...zu" means "without ...ing": "Er ging weg, ohne sich zu verabschieden" (He left without saying goodbye). Again, the subject of both parts is the same.',
+      explanationTr:
+        '"Ohne...zu" "...madan" anlamına gelir: "Er ging weg, ohne sich zu verabschieden" (Vedalaşmadan gitti). Burada da her iki kısmın öznesi aynıdır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit8Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er ging weg, ___ sich zu verabschieden.', options: ['ohne', 'um', 'statt', 'bevor'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Ohne...zu" bedeutet "without ...ing".',
+      },
+      {
+        lessonId: b1Unit8Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie verließ das Haus, ohne die Tür ___ schließen. (zu)' },
+        correctAnswer: { accepted: ['zu'] },
+        explanation: '"Ohne...zu" + Infinitiv.',
+      },
+    ],
+  })
+
+  const b1Unit8Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit8.id,
+      order: 4,
+      grammarTopic: 'Übung: Infinitiv mit "zu"',
+      explanationDe:
+        'Wiederholung: Infinitiv mit "zu" nach Verben, "um...zu" (Zweck) und "ohne...zu" (Verzicht). "Ich rufe an, um dir zu helfen, ohne zu stören."',
+      explanationEn:
+        'Review: infinitive with "zu" after verbs, "um...zu" (purpose), and "ohne...zu" (without). "Ich rufe an, um dir zu helfen, ohne zu stören" (I\'m calling to help you, without disturbing you).',
+      explanationTr:
+        'Tekrar: fiillerden sonra "zu" ile mastar, "um...zu" (amaç) ve "ohne...zu" (-madan). "Ich rufe an, um dir zu helfen, ohne zu stören".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit8Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['zu', 'helfen', 'dir', 'um'] },
+        correctAnswer: { order: ['um', 'dir', 'zu', 'helfen'] },
+        explanation: '"Um" + Subjekt/Objekt + "zu" + Infinitiv am Ende.',
+      },
+      {
+        lessonId: b1Unit8Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er hilft mir, ___ zu stören.', options: ['ohne', 'um', 'weil', 'dass'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Ohne...zu" für "without ...ing".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit8Lesson1.id, word: 'aufstehen', translationEn: 'to get up', translationTr: 'kalkmak', exampleSentence: 'Ich versuche, früh aufzustehen.' },
+      { lessonId: b1Unit8Lesson1.id, word: 'die Prüfung', translationEn: 'the exam', translationTr: 'sınav', exampleSentence: 'Er hofft, die Prüfung zu bestehen.' },
+      { lessonId: b1Unit8Lesson2.id, word: 'arbeiten', translationEn: 'to work', translationTr: 'çalışmak', exampleSentence: 'Ich möchte in Deutschland arbeiten.' },
+      { lessonId: b1Unit8Lesson2.id, word: 'der Zweck', translationEn: 'the purpose', translationTr: 'amaç', exampleSentence: 'Was ist der Zweck dieser Übung?' },
+      { lessonId: b1Unit8Lesson3.id, word: 'sich verabschieden', translationEn: 'to say goodbye', translationTr: 'vedalaşmak', exampleSentence: 'Er ging, ohne sich zu verabschieden.' },
+      { lessonId: b1Unit8Lesson3.id, word: 'schließen', translationEn: 'to close', translationTr: 'kapatmak', exampleSentence: 'Bitte schließen Sie die Tür.' },
+      { lessonId: b1Unit8Lesson4.id, word: 'stören', translationEn: 'to disturb', translationTr: 'rahatsız etmek', exampleSentence: 'Ich möchte dich nicht stören.' },
+      { lessonId: b1Unit8Lesson4.id, word: 'helfen', translationEn: 'to help', translationTr: 'yardım etmek', exampleSentence: 'Ich rufe an, um dir zu helfen.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
