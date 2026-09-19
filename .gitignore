@@ -46,3 +46,7 @@ next-env.d.ts
 
 # git worktrees
 /.worktrees/
+
+# local Claude Code state
+/.claude/
+/.claude/worktrees/
