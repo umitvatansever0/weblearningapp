@@ -1,0 +1,40 @@
+import { NextResponse } from 'next/server'
+import { prisma } from '@/lib/prisma'
+import { resetPasswordSchema } from '@/lib/validation'
+import { hashResetToken } from '@/lib/passwordResetToken'
+import { hashPassword } from '@/lib/password'
+
+const GENERIC_ERROR = 'This reset link is invalid or has expired.'
+
+export async function POST(request: Request) {
+  let body: unknown
+  try {
+    body = await request.json()
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 })
+  }
+
+  const parsed = resetPasswordSchema.safeParse(body)
+  if (!parsed.success) {
+    return NextResponse.json({ error: parsed.error.issues[0].message }, { status: 400 })
+  }
+
+  const tokenHash = hashResetToken(parsed.data.token)
+  const record = await prisma.passwordResetToken.findUnique({ where: { tokenHash } })
+
+  if (!record || record.usedAt || record.expiresAt < new Date()) {
+    return NextResponse.json({ error: GENERIC_ERROR }, { status: 400 })
+  }
+
+  const passwordHash = await hashPassword(parsed.data.password)
+
+  await prisma.$transaction([
+    prisma.user.update({ where: { id: record.userId }, data: { passwordHash } }),
+    prisma.passwordResetToken.update({
+      where: { id: record.id },
+      data: { usedAt: new Date() },
+    }),
+  ])
+
+  return NextResponse.json({ message: 'Password has been reset.' }, { status: 200 })
+}
