@@ -3615,6 +3615,321 @@ async function main() {
     ],
   })
 
+  // --- B1 Unit 11: Konnektoren (4 lessons) ---
+  const b1Unit11 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 11, titleDe: 'Konnektoren', titleEn: 'Connectors', titleTr: 'Bağlaçlar' },
+  })
+
+  const b1Unit11Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit11.id,
+      order: 1,
+      grammarTopic: '"trotzdem" (Adverb, Position 1)',
+      explanationDe:
+        '"Trotzdem" ist ein Adverb, kein Nebensatz-Konnektor: es steht auf Position 1 und das Verb folgt direkt danach. "Es regnet. Trotzdem gehen wir spazieren."',
+      explanationEn:
+        '"Trotzdem" (nevertheless) is an adverb, not a subordinating conjunction: it takes position 1, and the verb follows directly. "Es regnet. Trotzdem gehen wir spazieren" (It\'s raining. Nevertheless, we\'re going for a walk).',
+      explanationTr:
+        '"Trotzdem" (yine de) bir zarf bağlaçtır, yan cümle bağlacı değildir: birinci konumda yer alır ve fiil hemen ardından gelir. "Es regnet. Trotzdem gehen wir spazieren."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit11Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Es regnet. ___ gehen wir spazieren.', options: ['Trotzdem', 'Obwohl', 'Weil', 'Dass'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Trotzdem" als Adverb-Konnektor zwischen zwei Hauptsätzen.',
+      },
+      {
+        lessonId: b1Unit11Lesson1.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gehen', 'wir', 'trotzdem', 'spazieren'] },
+        correctAnswer: { order: ['trotzdem', 'gehen', 'wir', 'spazieren'] },
+        explanation: '"Trotzdem" auf Position 1, Verb direkt danach.',
+      },
+    ],
+  })
+
+  const b1Unit11Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit11.id,
+      order: 2,
+      grammarTopic: '"deshalb" (Konsequenz)',
+      explanationDe:
+        '"Deshalb" (therefore) drückt eine Folge aus und steht auf Position 1: "Ich bin krank, deshalb bleibe ich zu Hause."',
+      explanationEn:
+        '"Deshalb" (therefore) expresses a consequence and takes position 1: "Ich bin krank, deshalb bleibe ich zu Hause" (I\'m sick, therefore I\'m staying home).',
+      explanationTr:
+        '"Deshalb" (bu yüzden) bir sonucu ifade eder ve birinci konumda yer alır: "Ich bin krank, deshalb bleibe ich zu Hause."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit11Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich bin krank, ___ bleibe ich zu Hause.', options: ['deshalb', 'obwohl', 'während', 'als'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Deshalb" drückt eine Konsequenz aus.',
+      },
+      {
+        lessonId: b1Unit11Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie hat keine Zeit, ___ kommt sie nicht. (deshalb)' },
+        correctAnswer: { accepted: ['deshalb'] },
+        explanation: '"Deshalb" für eine logische Folge.',
+      },
+    ],
+  })
+
+  const b1Unit11Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit11.id,
+      order: 3,
+      grammarTopic: '"außerdem" und "allerdings"',
+      explanationDe:
+        '"Außerdem" (furthermore) fügt Information hinzu: "Die Wohnung ist schön. Außerdem ist sie günstig." "Allerdings" (however) schränkt ein: "Die Wohnung ist schön, allerdings weit weg."',
+      explanationEn:
+        '"Außerdem" (furthermore) adds information: "Die Wohnung ist schön. Außerdem ist sie günstig" (The apartment is nice. Furthermore, it\'s affordable). "Allerdings" (however) adds a restriction: "Die Wohnung ist schön, allerdings weit weg" (The apartment is nice, however far away).',
+      explanationTr:
+        '"Außerdem" (ayrıca) bilgi ekler: "Die Wohnung ist schön. Außerdem ist sie günstig." "Allerdings" (ancak) bir sınırlama getirir: "Die Wohnung ist schön, allerdings weit weg."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit11Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Wohnung ist schön. ___ ist sie günstig.', options: ['Außerdem', 'Allerdings', 'Trotzdem', 'Deshalb'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Außerdem" fügt eine weitere positive Information hinzu.',
+      },
+      {
+        lessonId: b1Unit11Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['trotzdem', 'deshalb', 'außerdem', 'allerdings'], rights: ['Gegensatz', 'Folge', 'Ergänzung', 'Einschränkung'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'trotzdem', right: 'Gegensatz' },
+            { left: 'deshalb', right: 'Folge' },
+            { left: 'außerdem', right: 'Ergänzung' },
+            { left: 'allerdings', right: 'Einschränkung' },
+          ],
+        },
+        explanation: 'Bedeutung der vier Konnektoren.',
+      },
+    ],
+  })
+
+  const b1Unit11Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit11.id,
+      order: 4,
+      grammarTopic: 'Übung: Konnektoren',
+      explanationDe:
+        'Wiederholung: "trotzdem" (Gegensatz), "deshalb" (Folge), "außerdem" (Ergänzung), "allerdings" (Einschränkung) — alle auf Position 1, Verb folgt direkt.',
+      explanationEn:
+        'Review: "trotzdem" (contrast), "deshalb" (consequence), "außerdem" (addition), "allerdings" (restriction) — all take position 1, with the verb immediately following.',
+      explanationTr:
+        'Tekrar: "trotzdem" (zıtlık), "deshalb" (sonuç), "außerdem" (ekleme), "allerdings" (sınırlama) — hepsi birinci konumda, fiil hemen ardından gelir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit11Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er hat viel Geld, ___ ist er nicht glücklich. (allerdings)' },
+        correctAnswer: { accepted: ['allerdings'] },
+        explanation: '"Allerdings" schränkt die vorherige Aussage ein.',
+      },
+      {
+        lessonId: b1Unit11Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welcher Konnektor drückt eine Konsequenz aus: 'deshalb' oder 'außerdem'?" },
+        correctAnswer: { accepted: ['deshalb'] },
+        explanation: '"Deshalb" drückt eine Folge/Konsequenz aus.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit11Lesson1.id, word: 'krank', translationEn: 'sick', translationTr: 'hasta', exampleSentence: 'Ich bin krank.' },
+      { lessonId: b1Unit11Lesson1.id, word: 'bleiben', translationEn: 'to stay', translationTr: 'kalmak', exampleSentence: 'Ich bleibe zu Hause.' },
+      { lessonId: b1Unit11Lesson2.id, word: 'die Zeit', translationEn: 'the time', translationTr: 'zaman', exampleSentence: 'Sie hat keine Zeit.' },
+      { lessonId: b1Unit11Lesson2.id, word: 'die Folge', translationEn: 'the consequence', translationTr: 'sonuç', exampleSentence: 'Das hat eine Folge.' },
+      { lessonId: b1Unit11Lesson3.id, word: 'die Wohnung', translationEn: 'the apartment', translationTr: 'daire', exampleSentence: 'Die Wohnung ist schön.' },
+      { lessonId: b1Unit11Lesson3.id, word: 'günstig', translationEn: 'affordable', translationTr: 'uygun fiyatlı', exampleSentence: 'Die Wohnung ist günstig.' },
+      { lessonId: b1Unit11Lesson4.id, word: 'glücklich', translationEn: 'happy', translationTr: 'mutlu', exampleSentence: 'Er ist nicht glücklich.' },
+      { lessonId: b1Unit11Lesson4.id, word: 'das Geld', translationEn: 'the money', translationTr: 'para', exampleSentence: 'Er hat viel Geld.' },
+    ],
+  })
+
+  // --- B1 Unit 12: Indirekte Rede & Nomen-Verb-Verbindungen (4 lessons) ---
+  const b1Unit12 = await prisma.unit.create({
+    data: { levelId: b1.id, order: 12, titleDe: 'Indirekte Rede & Nomen-Verb-Verbindungen', titleEn: 'Reported Speech & Verb-Noun Collocations', titleTr: 'Dolaylı Anlatım ve İsim-Fiil Kalıpları' },
+  })
+
+  const b1Unit12Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit12.id,
+      order: 1,
+      grammarTopic: 'Indirekte Rede mit "dass"',
+      explanationDe:
+        'Auf B1-Niveau bildet man indirekte Rede oft einfach mit "dass" + Indikativ: "Er sagt, dass er müde ist." (Der Konjunktiv I folgt erst auf C1.)',
+      explanationEn:
+        'At B1 level, reported speech is often formed simply with "dass" + indicative: "Er sagt, dass er müde ist" (He says that he is tired). (Konjunktiv I comes later, at C1.)',
+      explanationTr:
+        'B1 seviyesinde dolaylı anlatım genellikle basitçe "dass" + bildirme kipiyle kurulur: "Er sagt, dass er müde ist." (Konjunktiv I ancak C1\'de gelir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit12Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er sagt, ___ er müde ist.', options: ['dass', 'ob', 'weil', 'wenn'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Indirekte Rede auf B1-Niveau mit "dass".',
+      },
+      {
+        lessonId: b1Unit12Lesson1.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ist', 'dass', 'müde', 'er'] },
+        correctAnswer: { order: ['dass', 'er', 'müde', 'ist'] },
+        explanation: 'Verb am Ende im "dass"-Satz.',
+      },
+    ],
+  })
+
+  const b1Unit12Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit12.id,
+      order: 2,
+      grammarTopic: 'Nomen-Verb-Verbindungen (1)',
+      explanationDe:
+        'Feste Nomen-Verb-Verbindungen ersetzen oft ein einfaches Verb: "eine Entscheidung treffen" (= entscheiden), "Rücksicht nehmen" (= rücksichtsvoll sein).',
+      explanationEn:
+        'Fixed noun-verb collocations often replace a simple verb: "eine Entscheidung treffen" (to make a decision, = entscheiden), "Rücksicht nehmen" (to be considerate, = rücksichtsvoll sein).',
+      explanationTr:
+        'Sabit isim-fiil kalıpları genellikle basit bir fiilin yerini alır: "eine Entscheidung treffen" (karar vermek, = entscheiden), "Rücksicht nehmen" (anlayışlı olmak, = rücksichtsvoll sein).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit12Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Eine Entscheidung ___ = entscheiden.', options: ['treffen', 'machen', 'nehmen', 'geben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Eine Entscheidung treffen" bedeutet "to make a decision".',
+      },
+      {
+        lessonId: b1Unit12Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'to make a decision' (Nomen-Verb-Verbindung)?" },
+        correctAnswer: { accepted: ['eine entscheidung treffen'] },
+        explanation: '"Eine Entscheidung treffen" = "to make a decision".',
+      },
+    ],
+  })
+
+  const b1Unit12Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit12.id,
+      order: 3,
+      grammarTopic: 'Nomen-Verb-Verbindungen (2)',
+      explanationDe:
+        'Weitere Beispiele: "Kritik üben" (kritisieren), "in Kontakt stehen" (kontaktieren), "zur Verfügung stehen" (verfügbar sein).',
+      explanationEn:
+        'More examples: "Kritik üben" (to criticize, lit. "exercise criticism"), "in Kontakt stehen" (to be in contact), "zur Verfügung stehen" (to be available).',
+      explanationTr:
+        'Daha fazla örnek: "Kritik üben" (eleştirmek), "in Kontakt stehen" (iletişimde olmak), "zur Verfügung stehen" (kullanıma hazır olmak).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit12Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Kritik ___ = kritisieren.', options: ['üben', 'machen', 'sein', 'stehen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Kritik üben" bedeutet "to criticize".',
+      },
+      {
+        lessonId: b1Unit12Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Team steht zur ___. (Verfügung)' },
+        correctAnswer: { accepted: ['verfügung'] },
+        explanation: '"Zur Verfügung stehen" = "to be available".',
+      },
+    ],
+  })
+
+  const b1Unit12Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b1Unit12.id,
+      order: 4,
+      grammarTopic: 'Abschlusswiederholung B1',
+      explanationDe:
+        'Wiederholung des gesamten B1-Niveaus: Nebensätze, Konjunktiv II, Passiv, Relativsätze, Genitiv, Plusquamperfekt, Doppelkonjunktionen, Infinitiv mit zu, Adjektivdeklination, Konnektoren und indirekte Rede.',
+      explanationEn:
+        'Review of the whole B1 level: subordinate clauses, Konjunktiv II, passive voice, relative clauses, genitive, past perfect, paired conjunctions, infinitive with zu, adjective declension, connectors, and reported speech.',
+      explanationTr:
+        'Tüm B1 seviyesinin tekrarı: yan cümleler, Konjunktiv II, edilgen çatı, ilgi cümleleri, tamlayan hâli, miş\'li geçmişin hikâyesi, çift bağlaçlar, zu ile mastar, sıfat çekimi, bağlaçlar ve dolaylı anlatım.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b1Unit12Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er sagt, ___ er krank ist, ___ bleibt er zu Hause.', options: ['dass / deshalb', 'ob / trotzdem', 'weil / während', 'wenn / obwohl'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Indirekte Rede mit "dass" + logische Folge mit "deshalb".',
+      },
+      {
+        lessonId: b1Unit12Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne eine Nomen-Verb-Verbindung, die 'entscheiden' bedeutet." },
+        correctAnswer: { accepted: ['eine entscheidung treffen'] },
+        explanation: '"Eine Entscheidung treffen" bedeutet "entscheiden".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b1Unit12Lesson1.id, word: 'müde', translationEn: 'tired', translationTr: 'yorgun', exampleSentence: 'Er sagt, dass er müde ist.' },
+      { lessonId: b1Unit12Lesson1.id, word: 'sagen', translationEn: 'to say', translationTr: 'söylemek', exampleSentence: 'Er sagt die Wahrheit.' },
+      { lessonId: b1Unit12Lesson2.id, word: 'die Entscheidung', translationEn: 'the decision', translationTr: 'karar', exampleSentence: 'Ich treffe eine Entscheidung.' },
+      { lessonId: b1Unit12Lesson2.id, word: 'die Rücksicht', translationEn: 'the consideration', translationTr: 'anlayış', exampleSentence: 'Er nimmt Rücksicht auf andere.' },
+      { lessonId: b1Unit12Lesson3.id, word: 'die Kritik', translationEn: 'the criticism', translationTr: 'eleştiri', exampleSentence: 'Er übt Kritik an dem Plan.' },
+      { lessonId: b1Unit12Lesson3.id, word: 'die Verfügung', translationEn: 'the availability / disposal', translationTr: 'kullanıma hazır olma', exampleSentence: 'Das Team steht zur Verfügung.' },
+      { lessonId: b1Unit12Lesson4.id, word: 'die Wahrheit', translationEn: 'the truth', translationTr: 'gerçek', exampleSentence: 'Er sagt die Wahrheit.' },
+      { lessonId: b1Unit12Lesson4.id, word: 'insgesamt', translationEn: 'overall', translationTr: 'toplamda', exampleSentence: 'Insgesamt war der Kurs sehr gut.' },
+    ],
+  })
+
   // --- B2: Passiv (1 sample lesson) ---
   const b2Unit = await prisma.unit.create({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
