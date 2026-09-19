@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: deutschlernen_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/deutschlernen_ci?schema=public
+      NEXTAUTH_SECRET: ci-only-secret-not-used-in-production
+      NEXTAUTH_URL: http://localhost:3000
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Apply migrations
+        run: npx prisma migrate deploy
+
+      - name: Seed database
+        run: npx prisma db seed
+
+      - name: Typecheck
+        run: npx tsc --noEmit -p .
+
+      - name: Lint
+        run: npx eslint .
+
+      - name: Test
+        run: npx vitest run
+
+      - name: Build
+        run: npm run build
