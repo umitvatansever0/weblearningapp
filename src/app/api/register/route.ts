@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { Prisma } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 import { hashPassword } from '@/lib/password'
 import { registerSchema } from '@/lib/validation'
@@ -24,9 +25,18 @@ export async function POST(request: Request) {
   }
 
   const passwordHash = await hashPassword(password)
-  const user = await prisma.user.create({
-    data: { email, passwordHash, name },
-  })
-
-  return NextResponse.json({ id: user.id, email: user.email, name: user.name }, { status: 201 })
+  try {
+    const user = await prisma.user.create({
+      data: { email, passwordHash, name },
+    })
+    return NextResponse.json({ id: user.id, email: user.email, name: user.name }, { status: 201 })
+  } catch (error) {
+    // Concurrent requests can both pass the findUnique check above before
+    // either creates; the DB's unique constraint is the real guard, so
+    // translate its violation into the same 409 as the pre-check.
+    if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === 'P2002') {
+      return NextResponse.json({ error: 'Email already registered' }, { status: 409 })
+    }
+    throw error
+  }
 }
