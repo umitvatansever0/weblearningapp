@@ -20,10 +20,10 @@ describe('getUnitsForLevel', () => {
 })
 
 describe('getUnitsForLevel (B1)', () => {
-  it('returns the B1 unit 1 with four lessons for a new user', async () => {
+  it('returns all 13 B1 units with four lessons each for a new user', async () => {
     const units = await getUnitsForLevel('B1', 'nonexistent-user-id')
-    expect(units.length).toBeGreaterThanOrEqual(1)
-    expect(units[0].lessons).toHaveLength(4)
+    expect(units).toHaveLength(13)
+    units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
   })
 })
 

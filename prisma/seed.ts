@@ -2975,8 +2975,8 @@ async function main() {
 
   await prisma.vocabWord.createMany({
     data: [
-      { lessonId: b1Unit6Lesson1.id, word: 'der Brief', translationEn: 'the letter', translationTr: 'mektup', exampleSentence: 'Er hatte den Brief schon geschrieben.' },
-      { lessonId: b1Unit6Lesson1.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Ich schreibe einen Brief.' },
+      { lessonId: b1Unit6Lesson1.id, word: 'die E-Mail', translationEn: 'the email', translationTr: 'e-posta', exampleSentence: 'Ich hatte die E-Mail schon gesendet.' },
+      { lessonId: b1Unit6Lesson1.id, word: 'senden', translationEn: 'to send', translationTr: 'göndermek', exampleSentence: 'Ich sende dir eine E-Mail.' },
       { lessonId: b1Unit6Lesson2.id, word: 'anrufen', translationEn: 'to call (phone)', translationTr: 'aramak', exampleSentence: 'Ich rufe dich später an.' },
       { lessonId: b1Unit6Lesson2.id, word: 'ankommen', translationEn: 'to arrive', translationTr: 'varmak', exampleSentence: 'Der Zug ist schon angekommen.' },
       { lessonId: b1Unit6Lesson3.id, word: 'spazieren', translationEn: 'to walk / stroll', translationTr: 'gezinmek', exampleSentence: 'Ich gehe gern spazieren.' },
@@ -3604,8 +3604,8 @@ async function main() {
 
   await prisma.vocabWord.createMany({
     data: [
-      { lessonId: b1Unit10Lesson1.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Es regnet heute.' },
-      { lessonId: b1Unit10Lesson1.id, word: 'trotzdem', translationEn: 'nevertheless', translationTr: 'yine de', exampleSentence: 'Es regnet, trotzdem gehen wir spazieren.' },
+      { lessonId: b1Unit10Lesson1.id, word: 'der Regenschirm', translationEn: 'the umbrella', translationTr: 'şemsiye', exampleSentence: 'Ich brauche einen Regenschirm.' },
+      { lessonId: b1Unit10Lesson1.id, word: 'nass', translationEn: 'wet', translationTr: 'ıslak', exampleSentence: 'Meine Schuhe sind nass.' },
       { lessonId: b1Unit10Lesson2.id, word: 'kochen', translationEn: 'to cook', translationTr: 'yemek pişirmek', exampleSentence: 'Während ich koche, liest sie.' },
       { lessonId: b1Unit10Lesson2.id, word: 'laut', translationEn: 'loud', translationTr: 'gürültülü', exampleSentence: 'Die Musik ist zu laut.' },
       { lessonId: b1Unit10Lesson3.id, word: 'aufräumen', translationEn: 'to clean up / tidy', translationTr: 'toplamak (düzenlemek)', exampleSentence: 'Wir räumen die Küche auf.' },
