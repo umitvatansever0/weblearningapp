@@ -3872,6 +3872,166 @@ async function main() {
     ],
   })
 
+  // --- A2 Unit 13: Ordinalzahlen & Datumsangaben (4 lessons) ---
+  const a2Unit13 = await prisma.unit.create({
+    data: { levelId: a2.id, order: 13, titleDe: 'Ordinalzahlen & Datumsangaben', titleEn: 'Ordinal Numbers & Dates', titleTr: 'Sıra Sayıları ve Tarihler' },
+  })
+
+  const a2Unit13Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit13.id,
+      order: 1,
+      grammarTopic: 'Ordinalzahlen (1.-19.)',
+      explanationDe:
+        'Ordinalzahlen bis 19 werden mit -te gebildet: "der dritte" (3.), "der siebte" (7.). Unregelmäßig: "der erste" (1.), "der dritte" (3.), "der siebte" (7.).',
+      explanationEn:
+        'Ordinal numbers up to 19 are formed with -te: "der dritte" (the third), "der siebte" (the seventh). Irregular: "der erste" (first), "der dritte" (third), "der siebte" (seventh).',
+      explanationTr:
+        '19\'a kadar sıra sayıları -te ekiyle yapılır: "der dritte" (üçüncü), "der siebte" (yedinci). Düzensiz: "der erste" (birinci), "der dritte" (üçüncü), "der siebte" (yedinci).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit13Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie heißt die Ordinalzahl für "3" (der ___)?', options: ['dreite', 'dritte', 'drittste', 'dreiste'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"3" ist unregelmäßig: der dritte.',
+      },
+      {
+        lessonId: a2Unit13Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist mein ___ (1.) Deutschkurs.' },
+        correctAnswer: { accepted: ['erster'] },
+        explanation: '"1." ist unregelmäßig: erster.',
+      },
+    ],
+  })
+
+  const a2Unit13Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit13.id,
+      order: 2,
+      grammarTopic: 'Ordinalzahlen (20.+)',
+      explanationDe:
+        'Ab 20 werden Ordinalzahlen mit -ste gebildet: "der zwanzigste" (20.), "der einundzwanzigste" (21.).',
+      explanationEn:
+        'From 20 onward, ordinal numbers are formed with -ste: "der zwanzigste" (the twentieth), "der einundzwanzigste" (the twenty-first).',
+      explanationTr:
+        '20\'den itibaren sıra sayıları -ste ekiyle yapılır: "der zwanzigste" (yirminci), "der einundzwanzigste" (yirmi birinci).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit13Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie heißt die Ordinalzahl für "20" (der ___)?', options: ['zwanzigte', 'zwanzigste', 'zwanzste', 'zwanzigerste'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Ab 20 benutzt man -ste: der zwanzigste.',
+      },
+      {
+        lessonId: a2Unit13Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'the thirty-first' (der ___)?" },
+        correctAnswer: { accepted: ['einunddreißigste', 'der einunddreißigste'] },
+        explanation: '"31." ist "der einunddreißigste".',
+      },
+    ],
+  })
+
+  const a2Unit13Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit13.id,
+      order: 3,
+      grammarTopic: 'Das Datum',
+      explanationDe:
+        'Das Datum bildet man mit "am" + Ordinalzahl + Monat: "Ich habe am dritten Mai Geburtstag." Schriftlich: "3. Mai" (mit Punkt).',
+      explanationEn:
+        'Dates are formed with "am" + ordinal number + month: "Ich habe am dritten Mai Geburtstag" (My birthday is on May 3rd). In writing: "3. Mai" (with a period).',
+      explanationTr:
+        'Tarih "am" + sıra sayısı + ay ile kurulur: "Ich habe am dritten Mai Geburtstag" (Doğum günüm 3 Mayıs\'ta). Yazılışta: "3. Mai" (noktayla).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit13Lesson3.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe ___ dritten Mai Geburtstag.' },
+        correctAnswer: { accepted: ['am'] },
+        explanation: 'Datum mit "am" + Ordinalzahl.',
+      },
+      {
+        lessonId: a2Unit13Lesson3.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['1. Januar', '3. Mai', '20. Juli'], rights: ['am zwanzigsten Juli', 'am ersten Januar', 'am dritten Mai'] },
+        correctAnswer: {
+          pairs: [
+            { left: '1. Januar', right: 'am ersten Januar' },
+            { left: '3. Mai', right: 'am dritten Mai' },
+            { left: '20. Juli', right: 'am zwanzigsten Juli' },
+          ],
+        },
+        explanation: 'Datum: "am" + Ordinalzahl + Monat.',
+      },
+    ],
+  })
+
+  const a2Unit13Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a2Unit13.id,
+      order: 4,
+      grammarTopic: 'Übung: Geburtstage & Termine',
+      explanationDe:
+        'Wiederholung: "Wann hast du Geburtstag?" "Ich habe am zehnten Oktober Geburtstag." Auch für Termine: "Der Termin ist am fünfzehnten Juni."',
+      explanationEn:
+        'Review: "Wann hast du Geburtstag?" (When is your birthday?) "Ich habe am zehnten Oktober Geburtstag" (My birthday is on October 10th). Also for appointments: "Der Termin ist am fünfzehnten Juni" (The appointment is on June 15th).',
+      explanationTr:
+        'Tekrar: "Wann hast du Geburtstag?" (Doğum günün ne zaman?) "Ich habe am zehnten Oktober Geburtstag" (Doğum günüm 10 Ekim\'de). Randevular için de: "Der Termin ist am fünfzehnten Juni" (Randevu 15 Haziran\'da).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a2Unit13Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Geburtstag', 'zehnten', 'Oktober', 'am', 'ich', 'habe'] },
+        correctAnswer: { order: ['ich', 'habe', 'am', 'zehnten', 'Oktober', 'Geburtstag'] },
+        explanation: 'Wortstellung: Subjekt, Verb, "am" + Ordinalzahl + Monat, Objekt.',
+      },
+      {
+        lessonId: a2Unit13Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'When is your birthday?'?" },
+        correctAnswer: { accepted: ['wann hast du geburtstag'] },
+        explanation: '"Wann hast du Geburtstag?" bedeutet "When is your birthday?"',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a2Unit13Lesson1.id, word: 'der erste', translationEn: 'the first', translationTr: 'birinci', exampleSentence: 'Heute ist der erste Mai.' },
+      { lessonId: a2Unit13Lesson1.id, word: 'der dritte', translationEn: 'the third', translationTr: 'üçüncü', exampleSentence: 'Er kommt am dritten Tag.' },
+      { lessonId: a2Unit13Lesson2.id, word: 'der zwanzigste', translationEn: 'the twentieth', translationTr: 'yirminci', exampleSentence: 'Wir treffen uns am zwanzigsten Juli.' },
+      { lessonId: a2Unit13Lesson2.id, word: 'zwischen', translationEn: 'between', translationTr: 'arasında', exampleSentence: 'Der Termin ist zwischen dem 10. und 15. Mai.' },
+      { lessonId: a2Unit13Lesson3.id, word: 'der Geburtstag', translationEn: 'the birthday', translationTr: 'doğum günü', exampleSentence: 'Wann hast du Geburtstag?' },
+      { lessonId: a2Unit13Lesson3.id, word: 'der Monat', translationEn: 'the month', translationTr: 'ay', exampleSentence: 'Mai ist mein Lieblingsmonat.' },
+      { lessonId: a2Unit13Lesson4.id, word: 'der Termin', translationEn: 'the appointment', translationTr: 'randevu', exampleSentence: 'Der Termin ist am fünfzehnten Juni.' },
+      { lessonId: a2Unit13Lesson4.id, word: 'das Jahr', translationEn: 'the year', translationTr: 'yıl', exampleSentence: 'Nächstes Jahr fahre ich nach Deutschland.' },
+    ],
+  })
+
   // --- B1: Nebensätze (1 sample lesson) ---
   const b1Unit = await prisma.unit.create({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
