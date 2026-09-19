@@ -64,4 +64,13 @@ describe('seed content', () => {
     const totalLessons = units.reduce((sum, unit) => sum + unit.lessons.length, 0)
     expect(totalLessons).toBe(52)
   })
+
+  it('has 13 B1 units with four lessons each', async () => {
+    const b1 = await prisma.level.findUniqueOrThrow({ where: { code: 'B1' } })
+    const units = await prisma.unit.findMany({ where: { levelId: b1.id }, include: { lessons: true } })
+    expect(units).toHaveLength(13)
+    units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
+    const totalLessons = units.reduce((sum, unit) => sum + unit.lessons.length, 0)
+    expect(totalLessons).toBe(52)
+  })
 })
