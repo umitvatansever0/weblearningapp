@@ -8446,6 +8446,12 @@ async function main() {
       },
     ],
   })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit1Lesson1.id, word: 'müde', translationEn: 'tired', translationTr: 'yorgun', exampleSentence: 'Er sagt, er sei müde.' },
+      { lessonId: c1Unit1Lesson1.id, word: 'sagen', translationEn: 'to say', translationTr: 'söylemek', exampleSentence: 'Er sagt, er sei müde.' },
+    ],
+  })
 
   const c1Unit1Lesson2 = await prisma.lesson.create({
     data: {
