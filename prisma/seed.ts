@@ -4262,6 +4262,2124 @@ async function main() {
     ],
   })
 
+  const b2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit.id,
+      order: 2,
+      grammarTopic: 'Vorgangspassiv im Präteritum',
+      explanationDe:
+        'Das Vorgangspassiv im Präteritum wird mit "wurde" + Partizip II gebildet, z. B. "Das Haus wurde gebaut." Es beschreibt einen abgeschlossenen Vorgang in der Vergangenheit.',
+      explanationEn:
+        'The passive voice in the simple past (Präteritum) is formed with "wurde" + past participle, e.g. "Das Haus wurde gebaut" (The house was built). It describes a completed process in the past.',
+      explanationTr:
+        'Präteritum\'da edilgen çatı "wurde" + Partizip II ile kurulur, örn. "Das Haus wurde gebaut" (Ev inşa edildi). Geçmişte tamamlanmış bir süreci anlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Brief ___ gestern geschrieben.', options: ['wurde', 'wird', 'ist', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präteritum Passiv: "wurde" + Partizip II.',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Auto ___ letzte Woche repariert.' },
+        correctAnswer: { accepted: ['wurde'] },
+        explanation: 'Präteritum Passiv von "reparieren": "wurde repariert".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Lesson2.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Der Brief wurde gestern geschrieben.' },
+      { lessonId: b2Lesson2.id, word: 'der Brief', translationEn: 'the letter', translationTr: 'mektup', exampleSentence: 'Ich habe einen Brief geschrieben.' },
+    ],
+  })
+
+  const b2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit.id,
+      order: 3,
+      grammarTopic: 'Zustandspassiv',
+      explanationDe:
+        'Das Zustandspassiv wird mit "sein" + Partizip II gebildet und beschreibt das Ergebnis einer Handlung, nicht den Vorgang selbst, z. B. "Die Tür ist geöffnet." (Zustand, nicht Vorgang).',
+      explanationEn:
+        'The stative passive is formed with "sein" + past participle and describes the result of an action, not the process itself, e.g. "Die Tür ist geöffnet" (The door is open — a state, not a process).',
+      explanationTr:
+        'Zustandspassiv "sein" + Partizip II ile kurulur ve eylemin kendisini değil sonucunu anlatır, örn. "Die Tür ist geöffnet" (Kapı açık — süreç değil durum).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Laden ___ schon geschlossen.', options: ['ist', 'wird', 'wurde', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Zustandspassiv: "sein" + Partizip II beschreibt den Zustand.',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Tür', 'ist', 'geöffnet', 'die'] },
+        correctAnswer: { order: ['die', 'Tür', 'ist', 'geöffnet'] },
+        explanation: 'Reihenfolge: Artikel + Nomen, Verb "sein", Partizip II.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Lesson3.id, word: 'schließen', translationEn: 'to close', translationTr: 'kapatmak', exampleSentence: 'Der Laden ist schon geschlossen.' },
+      { lessonId: b2Lesson3.id, word: 'der Laden', translationEn: 'the shop', translationTr: 'dükkan', exampleSentence: 'Der Laden ist geöffnet.' },
+    ],
+  })
+
+  const b2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit.id,
+      order: 4,
+      grammarTopic: 'Passiv im Perfekt',
+      explanationDe:
+        'Das Vorgangspassiv im Perfekt wird mit "sein" + Partizip II + "worden" gebildet, z. B. "Das Haus ist gebaut worden." Im Perfekt Passiv steht "worden" statt "geworden".',
+      explanationEn:
+        'The passive voice in the perfect tense is formed with "sein" + past participle + "worden", e.g. "Das Haus ist gebaut worden" (The house has been built). In the perfect passive, "worden" is used instead of "geworden".',
+      explanationTr:
+        'Perfekt\'te edilgen çatı "sein" + Partizip II + "worden" ile kurulur, örn. "Das Haus ist gebaut worden" (Ev inşa edilmiş oldu). Perfekt Passiv\'de "geworden" yerine "worden" kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Projekt ist gestern beendet ___.', options: ['worden', 'geworden', 'wurde', 'wird'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Perfekt Passiv benutzt "worden", nicht "geworden".',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Rechnung ist bereits bezahlt ___.' },
+        correctAnswer: { accepted: ['worden'] },
+        explanation: 'Perfekt Passiv: "ist bezahlt worden".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Lesson4.id, word: 'beenden', translationEn: 'to finish / end', translationTr: 'bitirmek', exampleSentence: 'Das Projekt ist gestern beendet worden.' },
+      { lessonId: b2Lesson4.id, word: 'bezahlen', translationEn: 'to pay', translationTr: 'ödemek', exampleSentence: 'Die Rechnung ist bereits bezahlt worden.' },
+    ],
+  })
+
+  // --- B2 Unit 2: Konjunktiv I (formelle indirekte Rede) (4 lessons) ---
+  const b2Unit2 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 2, titleDe: 'Konjunktiv I', titleEn: 'Subjunctive I', titleTr: 'Konjunktiv I (Dolaylı Anlatım)' },
+  })
+
+  const b2Unit2Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit2.id,
+      order: 1,
+      grammarTopic: 'Konjunktiv-I-Formen (regelmäßige Verben)',
+      explanationDe:
+        'Der Konjunktiv I wird bei regelmäßigen Verben aus dem Verbstamm + Endungen (-e, -est, -e, -en, -et, -en) gebildet, z. B. "er sage" (von "sagen"). Er wird vor allem in der formellen indirekten Rede verwendet.',
+      explanationEn:
+        'For regular verbs, Konjunktiv I is formed from the verb stem + endings (-e, -est, -e, -en, -et, -en), e.g. "er sage" (from "sagen", to say). It is mainly used in formal reported speech.',
+      explanationTr:
+        'Düzenli fiillerde Konjunktiv I, fiil kökü + ekler (-e, -est, -e, -en, -et, -en) ile kurulur, örn. "er sage" ("sagen"den, söylemek). Öncelikle resmi dolaylı anlatımda kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er sagt, er ___ (arbeiten) viel. (Konjunktiv I)', options: ['arbeite', 'arbeitet', 'arbeitete', 'arbeiten'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv I von "arbeiten" für "er": arbeite (Stamm + -e).',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie behauptet, sie ___ (glauben) das nicht.' },
+        correctAnswer: { accepted: ['glaube'] },
+        explanation: 'Konjunktiv I von "glauben" für "sie": glaube.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit2Lesson1.id, word: 'behaupten', translationEn: 'to claim', translationTr: 'iddia etmek', exampleSentence: 'Sie behauptet, sie glaube das nicht.' },
+      { lessonId: b2Unit2Lesson1.id, word: 'glauben', translationEn: 'to believe', translationTr: 'inanmak', exampleSentence: 'Sie glaubt das nicht.' },
+    ],
+  })
+
+  const b2Unit2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit2.id,
+      order: 2,
+      grammarTopic: 'Konjunktiv I von sein/haben/Modalverben',
+      explanationDe:
+        'Die wichtigsten unregelmäßigen Konjunktiv-I-Formen: "sein" → ich sei, du seiest, er sei; "haben" → er habe; Modalverben wie "können" → er könne, "müssen" → er müsse.',
+      explanationEn:
+        'The most important irregular Konjunktiv I forms: "sein" (to be) → ich sei, du seiest, er sei; "haben" (to have) → er habe; modal verbs like "können" → er könne, "müssen" → er müsse.',
+      explanationTr:
+        'En önemli düzensiz Konjunktiv I biçimleri: "sein" (olmak) → ich sei, du seiest, er sei; "haben" (sahip olmak) → er habe; "können" gibi kip fiilleri → er könne, "müssen" → er müsse.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Chef sagt, er ___ heute keine Zeit. (Konjunktiv I von "haben")', options: ['habe', 'hat', 'hätte', 'haben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv I von "haben" für "er": habe.',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['ich (sein)', 'er (müssen)', 'wir (haben)'], rights: ['müsse', 'haben', 'sei'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich (sein)', right: 'sei' },
+            { left: 'er (müssen)', right: 'müsse' },
+            { left: 'wir (haben)', right: 'haben' },
+          ],
+        },
+        explanation: 'Konjunktiv-I-Formen: sein → sei, müssen → müsse, haben (wir) → haben.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit2Lesson2.id, word: 'der Chef', translationEn: 'the boss', translationTr: 'patron', exampleSentence: 'Der Chef sagt, er habe heute keine Zeit.' },
+      { lessonId: b2Unit2Lesson2.id, word: 'die Firma', translationEn: 'the company', translationTr: 'şirket', exampleSentence: 'Er arbeitet für eine große Firma.' },
+    ],
+  })
+
+  const b2Unit2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit2.id,
+      order: 3,
+      grammarTopic: 'Ersatzform mit "würde"',
+      explanationDe:
+        'Wenn der Konjunktiv I mit dem Indikativ identisch ist (meist bei "wir" und "sie/Sie"), benutzt man stattdessen die Ersatzform mit "würde" + Infinitiv, z. B. "Sie sagen, sie würden kommen" statt "sie kommen".',
+      explanationEn:
+        'When Konjunktiv I is identical to the indicative (usually with "wir" and "sie/Sie"), the substitute form with "würde" + infinitive is used instead, e.g. "Sie sagen, sie würden kommen" (They say they would come) instead of "sie kommen".',
+      explanationTr:
+        'Konjunktiv I, bildirme kipiyle aynı olduğunda (genellikle "wir" ve "sie/Sie" ile), onun yerine "würde" + mastar ile yapılan yedek biçim kullanılır, örn. "Sie sagen, sie würden kommen" ("sie kommen" yerine).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Kollegen sagen, sie ___ morgen kommen. (Ersatzform)', options: ['würden', 'werden', 'würde', 'sind'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bei "sie" (Plural) benutzt man die Ersatzform: würden + Infinitiv.',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er meint, sie ___ das Projekt unterstützen. (würde-Form)' },
+        correctAnswer: { accepted: ['würden'] },
+        explanation: 'Ersatzform für "sie" (Plural): würden.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit2Lesson3.id, word: 'unterstützen', translationEn: 'to support', translationTr: 'desteklemek', exampleSentence: 'Sie würden das Projekt unterstützen.' },
+      { lessonId: b2Unit2Lesson3.id, word: 'die Kollegen', translationEn: 'the colleagues', translationTr: 'meslektaşlar', exampleSentence: 'Die Kollegen sagen, sie würden morgen kommen.' },
+    ],
+  })
+
+  const b2Unit2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit2.id,
+      order: 4,
+      grammarTopic: 'Indirekte Fragen/Aufforderungen',
+      explanationDe:
+        'In indirekten Fragen steht das Fragewort oder "ob" am Satzanfang, das Verb im Konjunktiv I am Ende: "Er fragt, ob sie Zeit habe." Indirekte Aufforderungen werden mit "sollen" wiedergegeben: "Er sagt, sie solle warten."',
+      explanationEn:
+        'In indirect questions, the question word or "ob" (whether) starts the clause and the verb (in Konjunktiv I) comes at the end: "Er fragt, ob sie Zeit habe." (He asks whether she has time.) Indirect commands are reported with "sollen": "Er sagt, sie solle warten." (He says she should wait.)',
+      explanationTr:
+        'Dolaylı sorularda soru kelimesi ya da "ob" cümle başında yer alır, fiil (Konjunktiv I\'de) sonda gelir: "Er fragt, ob sie Zeit habe." (Vakti olup olmadığını soruyor.) Dolaylı emirler "sollen" ile aktarılır: "Er sagt, sie solle warten." (Beklemesi gerektiğini söylüyor.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ob', 'Zeit', 'habe', 'sie'] },
+        correctAnswer: { order: ['ob', 'sie', 'Zeit', 'habe'] },
+        explanation: 'Im indirekten Fragesatz: "ob" + Subjekt + ... + Verb (Konjunktiv I) am Ende.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie lautet die indirekte Aufforderung für 'Warte!' mit 'Er sagt, sie...'?" },
+        correctAnswer: { accepted: ['sie solle warten'] },
+        explanation: 'Indirekte Aufforderung mit "sollen": sie solle warten.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit2Lesson4.id, word: 'die Aufforderung', translationEn: 'the request / command', translationTr: 'istek / emir', exampleSentence: 'Das ist eine indirekte Aufforderung.' },
+      { lessonId: b2Unit2Lesson4.id, word: 'die Frage', translationEn: 'the question', translationTr: 'soru', exampleSentence: 'Er fragt, ob sie Zeit habe.' },
+    ],
+  })
+
+  // --- B2 Unit 3: Passiv mit Modalverben (4 lessons) ---
+  const b2Unit3 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 3, titleDe: 'Passiv mit Modalverben', titleEn: 'Passive with Modal Verbs', titleTr: 'Kip Fiilleriyle Edilgen Çatı' },
+  })
+
+  const b2Unit3Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit3.id,
+      order: 1,
+      grammarTopic: 'Passiv mit Modalverben im Präsens',
+      explanationDe:
+        'Im Passiv mit Modalverben steht das Modalverb konjugiert, das Vollverb als Partizip II und "werden" als Infinitiv am Satzende: "Die Arbeit muss gemacht werden." (Präsens)',
+      explanationEn:
+        'In the passive with modal verbs, the modal verb is conjugated, the main verb appears as a past participle, and "werden" stands as an infinitive at the end of the clause: "Die Arbeit muss gemacht werden." (The work must be done.) (present tense)',
+      explanationTr:
+        'Kip fiilleriyle edilgen çatıda kip fiili çekimli, ana fiil Partizip II olarak, "werden" ise mastar halinde cümle sonunda yer alır: "Die Arbeit muss gemacht werden." (İş yapılmalı.) (şimdiki zaman)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Formular ___ ausgefüllt werden.', options: ['muss', 'musste', 'ist', 'wird'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präsens Passiv mit Modalverb: "muss" + Partizip II + "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Fenster ___ geputzt werden. (müssen)' },
+        correctAnswer: { accepted: ['müssen'] },
+        explanation: 'Mit "die Fenster" (Plural) benutzt man "müssen".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit3Lesson1.id, word: 'ausfüllen', translationEn: 'to fill out', translationTr: 'doldurmak', exampleSentence: 'Das Formular muss ausgefüllt werden.' },
+      { lessonId: b2Unit3Lesson1.id, word: 'putzen', translationEn: 'to clean', translationTr: 'temizlemek', exampleSentence: 'Die Fenster müssen geputzt werden.' },
+    ],
+  })
+
+  const b2Unit3Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit3.id,
+      order: 2,
+      grammarTopic: 'Passiv mit Modalverben im Präteritum',
+      explanationDe:
+        'Im Präteritum Passiv mit Modalverben wird das Modalverb im Präteritum konjugiert: "Die Arbeit musste gemacht werden." (Vergangenheit)',
+      explanationEn:
+        'In the simple past passive with modal verbs, the modal verb is conjugated in the Präteritum: "Die Arbeit musste gemacht werden." (The work had to be done.) (past)',
+      explanationTr:
+        'Kip fiilleriyle Präteritum edilgen çatıda kip fiili Präteritum\'da çekimlenir: "Die Arbeit musste gemacht werden." (İş yapılmalıydı.) (geçmiş)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Bericht ___ gestern geschrieben werden.', options: ['musste', 'muss', 'wurde', 'ist'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präteritum Passiv mit Modalverb: "musste" + Partizip II + "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['werden', 'musste', 'repariert', 'das', 'Auto'] },
+        correctAnswer: { order: ['das', 'Auto', 'musste', 'repariert', 'werden'] },
+        explanation: 'Wortstellung: Subjekt, Modalverb (Präteritum), Partizip II, "werden".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit3Lesson2.id, word: 'der Bericht', translationEn: 'the report', translationTr: 'rapor', exampleSentence: 'Der Bericht musste gestern geschrieben werden.' },
+      { lessonId: b2Unit3Lesson2.id, word: 'die Reparatur', translationEn: 'the repair', translationTr: 'tamir', exampleSentence: 'Das Auto musste repariert werden.' },
+    ],
+  })
+
+  const b2Unit3Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit3.id,
+      order: 3,
+      grammarTopic: 'Negation im Passiv mit Modalverben',
+      explanationDe:
+        'Die Negation steht meist vor dem Partizip II oder vor "werden": "Das darf nicht gemacht werden." / "Das Auto darf hier nicht geparkt werden."',
+      explanationEn:
+        'The negation usually stands before the past participle or before "werden": "Das darf nicht gemacht werden." (That must not be done.) / "Das Auto darf hier nicht geparkt werden." (The car may not be parked here.)',
+      explanationTr:
+        'Olumsuzluk genellikle Partizip II\'den ya da "werden"den önce yer alır: "Das darf nicht gemacht werden." (Bu yapılmamalı.) / "Das Auto darf hier nicht geparkt werden." (Araba burada park edilmemeli.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Hier ___ nicht geraucht werden.', options: ['darf', 'muss', 'kann', 'soll'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Darf nicht" drückt ein Verbot aus.',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Auto darf hier nicht ___ werden. (parken)' },
+        correctAnswer: { accepted: ['geparkt'] },
+        explanation: 'Partizip II von "parken": geparkt.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit3Lesson3.id, word: 'rauchen', translationEn: 'to smoke', translationTr: 'sigara içmek', exampleSentence: 'Hier darf nicht geraucht werden.' },
+      { lessonId: b2Unit3Lesson3.id, word: 'parken', translationEn: 'to park', translationTr: 'park etmek', exampleSentence: 'Das Auto darf hier nicht geparkt werden.' },
+    ],
+  })
+
+  const b2Unit3Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit3.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Passiv mit Modalverben',
+      explanationDe:
+        'Wiederholung: Passiv mit Modalverben in Präsens, Präteritum und Negation. Merke: Modalverb konjugiert + Partizip II + "werden" am Satzende.',
+      explanationEn:
+        'Review: passive with modal verbs in present, simple past, and negation. Remember: conjugated modal verb + past participle + "werden" at the end of the clause.',
+      explanationTr:
+        'Tekrar: kip fiilleriyle şimdiki zaman, geçmiş zaman ve olumsuzlukta edilgen çatı. Unutma: çekimli kip fiili + Partizip II + cümle sonunda "werden".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Regeln ___ beachtet werden. (müssen, Präsens)', options: ['müssen', 'mussten', 'muss', 'musste'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "die Regeln" (Plural) benutzt man "müssen".',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'The letter had to be sent'? (Passiv mit Modalverb, Präteritum)" },
+        correctAnswer: { accepted: ['der brief musste geschickt werden'] },
+        explanation: '"Der Brief musste geschickt werden" ist die richtige Übersetzung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit3Lesson4.id, word: 'beachten', translationEn: 'to observe / pay attention to', translationTr: 'dikkat etmek', exampleSentence: 'Die Regeln müssen beachtet werden.' },
+      { lessonId: b2Unit3Lesson4.id, word: 'die Regel', translationEn: 'the rule', translationTr: 'kural', exampleSentence: 'Die Regeln müssen beachtet werden.' },
+    ],
+  })
+
+  // --- B2 Unit 4: Partizipialattribute (4 lessons) ---
+  const b2Unit4 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 4, titleDe: 'Partizipialattribute', titleEn: 'Participial Attributes', titleTr: 'Partisip Sıfatları' },
+  })
+
+  const b2Unit4Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit4.id,
+      order: 1,
+      grammarTopic: 'Partizip I als Adjektiv',
+      explanationDe:
+        'Partizip I (Infinitiv + d) wird wie ein Adjektiv dekliniert und drückt eine gleichzeitige, aktive Handlung aus: "der schlafende Mann" (der Mann, der schläft).',
+      explanationEn:
+        'Partizip I (infinitive + d) is declined like an adjective and expresses a simultaneous, active action: "der schlafende Mann" (the sleeping man = the man who is sleeping).',
+      explanationTr:
+        'Partizip I (mastar + d), sıfat gibi çekimlenir ve eşzamanlı, etken bir eylemi ifade eder: "der schlafende Mann" (uyuyan adam = uyumakta olan adam).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ___ Kind spielt im Garten. (spielen, Partizip I)', options: ['spielende', 'gespielte', 'spielend', 'spielte'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip I: Infinitiv + d + Adjektivendung: spielende.',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der ___ Hund bellt laut. (bellen, Partizip I)' },
+        correctAnswer: { accepted: ['bellende'] },
+        explanation: 'Partizip I von "bellen": bellende.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit4Lesson1.id, word: 'der Garten', translationEn: 'the garden', translationTr: 'bahçe', exampleSentence: 'Das Kind spielt im Garten.' },
+      { lessonId: b2Unit4Lesson1.id, word: 'bellen', translationEn: 'to bark', translationTr: 'havlamak', exampleSentence: 'Der bellende Hund läuft schnell.' },
+    ],
+  })
+
+  const b2Unit4Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit4.id,
+      order: 2,
+      grammarTopic: 'Partizip II als Adjektiv',
+      explanationDe:
+        'Partizip II wird ebenfalls wie ein Adjektiv dekliniert und drückt meist eine abgeschlossene, passive Handlung aus: "der reparierte Wagen" (der Wagen, der repariert wurde).',
+      explanationEn:
+        'Partizip II is also declined like an adjective and usually expresses a completed, passive action: "der reparierte Wagen" (the repaired car = the car that was repaired).',
+      explanationTr:
+        'Partizip II de sıfat gibi çekimlenir ve genellikle tamamlanmış, edilgen bir eylemi ifade eder: "der reparierte Wagen" (tamir edilmiş araba = tamir edilen araba).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die ___ Tür war kaputt. (öffnen, Partizip II)', options: ['geöffnete', 'öffnende', 'offene', 'öffnete'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip II von "öffnen": geöffnete.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['gekocht', 'geschrieben', 'verkauft'], rights: ['written', 'sold', 'cooked'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'gekocht', right: 'cooked' },
+            { left: 'geschrieben', right: 'written' },
+            { left: 'verkauft', right: 'sold' },
+          ],
+        },
+        explanation: 'Partizip-II-Formen und ihre Bedeutung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit4Lesson2.id, word: 'kaputt', translationEn: 'broken', translationTr: 'bozuk', exampleSentence: 'Die geöffnete Tür war kaputt.' },
+      { lessonId: b2Unit4Lesson2.id, word: 'verkaufen', translationEn: 'to sell', translationTr: 'satmak', exampleSentence: 'Das verkaufte Haus war teuer.' },
+    ],
+  })
+
+  const b2Unit4Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit4.id,
+      order: 3,
+      grammarTopic: 'Erweiterte Partizipialattribute',
+      explanationDe:
+        'Erweiterte Partizipialattribute enthalten zusätzliche Informationen vor dem Partizip: "der von vielen Menschen geliebte Sänger" (der Sänger, der von vielen Menschen geliebt wird). Typisch für formelle, schriftliche Texte.',
+      explanationEn:
+        'Extended participial attributes include additional information before the participle: "der von vielen Menschen geliebte Sänger" (the singer loved by many people). Typical of formal, written texts.',
+      explanationTr:
+        'Genişletilmiş partisip sıfatları, partisipten önce ek bilgi içerir: "der von vielen Menschen geliebte Sänger" (birçok insan tarafından sevilen şarkıcı). Resmi, yazılı metinlerde tipiktir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der ___ Bericht wurde veröffentlicht. (gestern geschrieben)', options: ['gestern geschriebene', 'geschriebene gestern', 'schreibende gestern', 'geschrieben gestern'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Erweitertes Partizipialattribut: Zeitangabe + Partizip II + Nomen.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gelesene', 'das', 'Buch', 'viel'] },
+        correctAnswer: { order: ['das', 'viel', 'gelesene', 'Buch'] },
+        explanation: 'Reihenfolge: Artikel, Zusatzinformation, Partizip, Nomen.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit4Lesson3.id, word: 'veröffentlichen', translationEn: 'to publish', translationTr: 'yayınlamak', exampleSentence: 'Der Bericht wurde veröffentlicht.' },
+      { lessonId: b2Unit4Lesson3.id, word: 'beliebt', translationEn: 'popular', translationTr: 'popüler', exampleSentence: 'Das ist ein beliebtes Buch.' },
+    ],
+  })
+
+  const b2Unit4Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit4.id,
+      order: 4,
+      grammarTopic: 'Umwandlung zu Relativsätzen',
+      explanationDe:
+        'Partizipialattribute lassen sich in Relativsätze umwandeln: "der schlafende Mann" → "der Mann, der schläft"; "das reparierte Auto" → "das Auto, das repariert wurde".',
+      explanationEn:
+        'Participial attributes can be converted into relative clauses: "der schlafende Mann" → "der Mann, der schläft" (the man who is sleeping); "das reparierte Auto" → "das Auto, das repariert wurde" (the car that was repaired).',
+      explanationTr:
+        'Partisip sıfatları ilgi cümlelerine dönüştürülebilir: "der schlafende Mann" → "der Mann, der schläft" (uyuyan adam); "das reparierte Auto" → "das Auto, das repariert wurde" (tamir edilen araba).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Der lachende Junge" bedeutet als Relativsatz: "Der Junge, der ___."', options: ['lacht', 'lachte', 'gelacht hat', 'lachen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip I entspricht dem Präsens im Relativsatz: der lacht.',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wandle um: 'das gebaute Haus' → 'das Haus, das ___' (Relativsatz mit Passiv)" },
+        correctAnswer: { accepted: ['gebaut wurde'] },
+        explanation: 'Partizip II entspricht dem Passiv im Relativsatz: das gebaut wurde.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit4Lesson4.id, word: 'lachen', translationEn: 'to laugh', translationTr: 'gülmek', exampleSentence: 'Der lachende Junge spielt draußen.' },
+      { lessonId: b2Unit4Lesson4.id, word: 'bauen', translationEn: 'to build', translationTr: 'inşa etmek', exampleSentence: 'Das gebaute Haus ist neu.' },
+    ],
+  })
+
+  // --- B2 Unit 5: Nominalisierung (4 lessons) ---
+  const b2Unit5 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 5, titleDe: 'Nominalisierung', titleEn: 'Nominalization', titleTr: 'İsimleştirme' },
+  })
+
+  const b2Unit5Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit5.id,
+      order: 1,
+      grammarTopic: 'Verben zu Nomen (-ung)',
+      explanationDe:
+        'Viele Verben werden durch das Suffix "-ung" zu femininen Nomen: entwickeln → die Entwicklung, untersuchen → die Untersuchung. Diese Nominalisierung ist typisch für formelle Texte.',
+      explanationEn:
+        'Many verbs become feminine nouns with the suffix "-ung": entwickeln (to develop) → die Entwicklung (the development), untersuchen (to examine) → die Untersuchung (the examination). This nominalization is typical of formal texts.',
+      explanationTr:
+        '"-ung" eki ile birçok fiil dişil isme dönüşür: entwickeln (geliştirmek) → die Entwicklung (gelişim), untersuchen (incelemek) → die Untersuchung (inceleme). Bu isimleştirme resmi metinlerde tipiktir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Nomen von "entwickeln" lautet ___.', options: ['die Entwicklung', 'der Entwickler', 'das Entwickeln', 'die Entwickelung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Entwickeln" + "-ung" = die Entwicklung.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ (untersuchen) dauerte drei Stunden.' },
+        correctAnswer: { accepted: ['Untersuchung'] },
+        explanation: '"Untersuchen" + "-ung" = die Untersuchung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit5Lesson1.id, word: 'entwickeln', translationEn: 'to develop', translationTr: 'geliştirmek', exampleSentence: 'Die Entwicklung dauert lange.' },
+      { lessonId: b2Unit5Lesson1.id, word: 'untersuchen', translationEn: 'to examine', translationTr: 'incelemek', exampleSentence: 'Die Untersuchung dauerte drei Stunden.' },
+    ],
+  })
+
+  const b2Unit5Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit5.id,
+      order: 2,
+      grammarTopic: 'Adjektive zu Nomen (-heit/-keit)',
+      explanationDe:
+        'Adjektive werden mit "-heit" oder "-keit" zu femininen Nomen: frei → die Freiheit, möglich → die Möglichkeit, schön → die Schönheit.',
+      explanationEn:
+        'Adjectives become feminine nouns with "-heit" or "-keit": frei (free) → die Freiheit (freedom), möglich (possible) → die Möglichkeit (possibility), schön (beautiful) → die Schönheit (beauty).',
+      explanationTr:
+        'Sıfatlar "-heit" ya da "-keit" ekiyle dişil isme dönüşür: frei (özgür) → die Freiheit (özgürlük), möglich (mümkün) → die Möglichkeit (olasılık), schön (güzel) → die Schönheit (güzellik).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Nomen von "möglich" lautet ___.', options: ['die Möglichkeit', 'die Möglichheit', 'der Mögliche', 'das Möglichsein'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Möglich" + "-keit" = die Möglichkeit.',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['frei', 'schön', 'möglich'], rights: ['Schönheit', 'Möglichkeit', 'Freiheit'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'frei', right: 'Freiheit' },
+            { left: 'schön', right: 'Schönheit' },
+            { left: 'möglich', right: 'Möglichkeit' },
+          ],
+        },
+        explanation: 'Adjektive + "-heit"/"-keit" = Nomen.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit5Lesson2.id, word: 'frei', translationEn: 'free', translationTr: 'özgür', exampleSentence: 'Die Freiheit ist wichtig.' },
+      { lessonId: b2Unit5Lesson2.id, word: 'möglich', translationEn: 'possible', translationTr: 'mümkün', exampleSentence: 'Das ist eine gute Möglichkeit.' },
+    ],
+  })
+
+  const b2Unit5Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit5.id,
+      order: 3,
+      grammarTopic: 'Infinitiv als Nomen',
+      explanationDe:
+        'Jeder Infinitiv kann als neutrales Nomen benutzt werden, großgeschrieben: rauchen → das Rauchen, lesen → das Lesen. Diese Form beschreibt die Handlung allgemein.',
+      explanationEn:
+        'Any infinitive can be used as a neuter noun, capitalized: rauchen (to smoke) → das Rauchen (smoking), lesen (to read) → das Lesen (reading). This form describes the action in general.',
+      explanationTr:
+        'Her mastar büyük harfle yazılarak nötr isim olarak kullanılabilir: rauchen (sigara içmek) → das Rauchen (sigara içme), lesen (okumak) → das Lesen (okuma). Bu biçim eylemi genel olarak anlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ ist hier verboten. (rauchen, als Nomen)', options: ['Das Rauchen', 'Rauchen', 'Der Raucher', 'Das Geraucht'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Infinitiv als Nomen: das Rauchen (großgeschrieben, mit Artikel "das").',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Nomen aus dem Infinitiv 'schwimmen'." },
+        correctAnswer: { accepted: ['das schwimmen'] },
+        explanation: '"Schwimmen" als Nomen: das Schwimmen.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit5Lesson3.id, word: 'verboten', translationEn: 'forbidden', translationTr: 'yasak', exampleSentence: 'Rauchen ist hier verboten.' },
+      { lessonId: b2Unit5Lesson3.id, word: 'das Schwimmen', translationEn: 'swimming', translationTr: 'yüzme', exampleSentence: 'Das Schwimmen macht Spaß.' },
+    ],
+  })
+
+  const b2Unit5Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit5.id,
+      order: 4,
+      grammarTopic: 'Nominalisierung in formellen Texten',
+      explanationDe:
+        'In formellen Texten (Berichten, Amtsdeutsch) wird oft nominalisiert statt Verben zu benutzen: "Nach Abschluss der Untersuchung..." statt "Nachdem die Untersuchung abgeschlossen wurde...". Das wirkt kompakter und offizieller.',
+      explanationEn:
+        'In formal texts (reports, official German), nominalization is often used instead of verbs: "Nach Abschluss der Untersuchung..." (After completion of the investigation...) instead of "Nachdem die Untersuchung abgeschlossen wurde..." (After the investigation was completed...). This sounds more compact and official.',
+      explanationTr:
+        'Resmi metinlerde (raporlar, resmi dil) fiiller yerine sık sık isimleştirme kullanılır: "Nach Abschluss der Untersuchung..." ("İncelemenin tamamlanmasından sonra...") ifadesi, "Nachdem die Untersuchung abgeschlossen wurde..." ("İnceleme tamamlandıktan sonra...") yerine kullanılır. Bu daha derli toplu ve resmi görünür.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Nach ___ der Arbeit gehen wir nach Hause." (Abschluss/beenden)', options: ['Abschluss', 'Beenden', 'Abschließen', 'Beendung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Abschluss" ist das gebräuchliche Nomen für "beenden" in formellen Texten.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ (entscheiden) fiel schwer.' },
+        correctAnswer: { accepted: ['Entscheidung'] },
+        explanation: '"Entscheiden" + "-ung" = die Entscheidung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit5Lesson4.id, word: 'der Abschluss', translationEn: 'the completion / conclusion', translationTr: 'tamamlama', exampleSentence: 'Nach Abschluss der Arbeit gehen wir nach Hause.' },
+      { lessonId: b2Unit5Lesson4.id, word: 'entscheiden', translationEn: 'to decide', translationTr: 'karar vermek', exampleSentence: 'Die Entscheidung fiel schwer.' },
+    ],
+  })
+
+  // --- B2 Unit 6: Komplexe Konnektoren (4 lessons) ---
+  const b2Unit6 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 6, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
+  })
+
+  const b2Unit6Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit6.id,
+      order: 1,
+      grammarTopic: 'dennoch/trotzdem',
+      explanationDe:
+        '"Dennoch" und "trotzdem" drücken einen Gegensatz aus und stehen meist am Satzanfang mit Verb-Zweit-Stellung: "Es regnete stark. Trotzdem gingen wir spazieren."',
+      explanationEn:
+        '"Dennoch" and "trotzdem" (nevertheless) express a contrast and usually stand at the start of the clause with the verb in second position: "Es regnete stark. Trotzdem gingen wir spazieren." (It rained heavily. Nevertheless, we went for a walk.)',
+      explanationTr:
+        '"Dennoch" ve "trotzdem" (yine de) bir zıtlık ifade eder ve genellikle cümle başında, fiil ikinci sırada olacak şekilde yer alır: "Es regnete stark. Trotzdem gingen wir spazieren." (Şiddetli yağmur yağıyordu. Yine de yürüyüşe çıktık.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er war krank. ___ ging er zur Arbeit.', options: ['Trotzdem', 'Deshalb', 'Weil', 'Obwohl'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Trotzdem" drückt einen Gegensatz zwischen Krankheit und Arbeit aus.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['trotzdem', 'wir', 'spazieren', 'gingen'] },
+        correctAnswer: { order: ['trotzdem', 'gingen', 'wir', 'spazieren'] },
+        explanation: '"Trotzdem" steht an Position 1, danach folgt das Verb.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit6Lesson1.id, word: 'spazieren gehen', translationEn: 'to go for a walk', translationTr: 'yürüyüşe çıkmak', exampleSentence: 'Wir gingen trotzdem spazieren.' },
+      { lessonId: b2Unit6Lesson1.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Es regnete stark.' },
+    ],
+  })
+
+  const b2Unit6Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit6.id,
+      order: 2,
+      grammarTopic: 'gleichwohl',
+      explanationDe:
+        '"Gleichwohl" ist ein formelles Synonym für "dennoch/trotzdem" und wird vor allem in geschriebener, gehobener Sprache verwendet: "Die Lage war schwierig, gleichwohl fand man eine Lösung."',
+      explanationEn:
+        '"Gleichwohl" is a formal synonym for "dennoch/trotzdem" (nevertheless) used mainly in written, elevated language: "Die Lage war schwierig, gleichwohl fand man eine Lösung." (The situation was difficult; nevertheless, a solution was found.)',
+      explanationTr:
+        '"Gleichwohl", "dennoch/trotzdem" için resmi bir eş anlamlıdır ve öncelikle yazılı, seçkin dilde kullanılır: "Die Lage war schwierig, gleichwohl fand man eine Lösung." (Durum zordu, yine de bir çözüm bulundu.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Verhandlungen waren schwierig; ___ einigte man sich. (formell)', options: ['gleichwohl', 'weil', 'damit', 'falls'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Gleichwohl" passt formell für einen Gegensatz.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Plan war riskant, ___ wurde er umgesetzt.' },
+        correctAnswer: { accepted: ['gleichwohl'] },
+        explanation: '"Gleichwohl" verbindet Risiko und Umsetzung als Gegensatz.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit6Lesson2.id, word: 'die Verhandlung', translationEn: 'the negotiation', translationTr: 'müzakere', exampleSentence: 'Die Verhandlungen waren schwierig.' },
+      { lessonId: b2Unit6Lesson2.id, word: 'umsetzen', translationEn: 'to implement', translationTr: 'uygulamak', exampleSentence: 'Der Plan wurde umgesetzt.' },
+    ],
+  })
+
+  const b2Unit6Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit6.id,
+      order: 3,
+      grammarTopic: 'insofern (als)',
+      explanationDe:
+        '"Insofern (als)" leitet einen einschränkenden Nebensatz ein und bedeutet "in dem Maße, wie": "Der Vorschlag ist gut, insofern als er realistisch ist."',
+      explanationEn:
+        '"Insofern (als)" introduces a limiting subordinate clause and means "to the extent that": "Der Vorschlag ist gut, insofern als er realistisch ist." (The proposal is good insofar as it is realistic.)',
+      explanationTr:
+        '"Insofern (als)", sınırlayıcı bir yan cümle başlatır ve "şu ölçüde ki" anlamına gelir: "Der Vorschlag ist gut, insofern als er realistisch ist." (Öneri, gerçekçi olduğu ölçüde iyidir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Idee ist interessant, ___ als sie neu ist.', options: ['insofern', 'obwohl', 'damit', 'falls'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Insofern als" schränkt die Aussage ein.',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'to the extent that / insofar as'?" },
+        correctAnswer: { accepted: ['insofern als', 'insofern'] },
+        explanation: '"Insofern (als)" bedeutet "to the extent that".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit6Lesson3.id, word: 'realistisch', translationEn: 'realistic', translationTr: 'gerçekçi', exampleSentence: 'Der Vorschlag ist realistisch.' },
+      { lessonId: b2Unit6Lesson3.id, word: 'der Vorschlag', translationEn: 'the proposal', translationTr: 'öneri', exampleSentence: 'Die Idee ist interessant.' },
+    ],
+  })
+
+  const b2Unit6Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit6.id,
+      order: 4,
+      grammarTopic: 'zumal',
+      explanationDe:
+        '"Zumal" begründet eine Aussage zusätzlich und bedeutet "besonders weil/da": "Wir bleiben zu Hause, zumal es stark regnet." Es steht am Anfang eines Nebensatzes, das Verb am Ende.',
+      explanationEn:
+        '"Zumal" gives an additional reason and means "especially because/since": "Wir bleiben zu Hause, zumal es stark regnet." (We are staying home, especially since it is raining heavily.) It starts a subordinate clause, with the verb at the end.',
+      explanationTr:
+        '"Zumal" ek bir gerekçe sunar ve "özellikle çünkü/madem ki" anlamına gelir: "Wir bleiben zu Hause, zumal es stark regnet." (Evde kalıyoruz, özellikle şiddetli yağmur yağdığından.) Bir yan cümle başlatır, fiil sonda yer alır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir bleiben zu Hause, ___ es stark regnet.', options: ['zumal', 'obwohl', 'damit', 'bevor'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Zumal" begründet zusätzlich: besonders weil es regnet.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['stark', 'regnet', 'es', 'zumal'] },
+        correctAnswer: { order: ['zumal', 'es', 'stark', 'regnet'] },
+        explanation: 'Nebensatz mit "zumal": Konjunktion + Subjekt + ... + Verb am Ende.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit6Lesson4.id, word: 'zu Hause', translationEn: 'at home', translationTr: 'evde', exampleSentence: 'Wir bleiben zu Hause.' },
+      { lessonId: b2Unit6Lesson4.id, word: 'stark', translationEn: 'strong / heavily', translationTr: 'güçlü / şiddetli', exampleSentence: 'Es regnet stark.' },
+    ],
+  })
+
+  // --- B2 Unit 7: Funktionsverbgefüge (4 lessons) ---
+  const b2Unit7 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 7, titleDe: 'Funktionsverbgefüge', titleEn: 'Support Verb Constructions', titleTr: 'Fiil-İsim Kalıpları' },
+  })
+
+  const b2Unit7Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit7.id,
+      order: 1,
+      grammarTopic: 'in Frage stellen / zur Verfügung stehen',
+      explanationDe:
+        'Funktionsverbgefüge bestehen aus einem "leeren" Verb + Nomen und ersetzen oft ein einfaches Verb: "in Frage stellen" (= bezweifeln), "zur Verfügung stehen" (= verfügbar sein). Typisch für formelle Sprache.',
+      explanationEn:
+        'Support verb constructions consist of a "light" verb + noun and often replace a simple verb: "in Frage stellen" (to call into question, = bezweifeln), "zur Verfügung stehen" (to be available, = verfügbar sein). Typical of formal language.',
+      explanationTr:
+        'Funktionsverbgefüge (fiil-isim kalıpları), "hafif" bir fiil + isimden oluşur ve genellikle basit bir fiilin yerini alır: "in Frage stellen" (sorgulamak, = bezweifeln), "zur Verfügung stehen" (hazır/kullanılabilir olmak, = verfügbar sein). Resmi dilde tipiktir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Ergebnisse werden von Experten ___ gestellt. (bezweifelt)', options: ['in Frage', 'zur Verfügung', 'in Betracht', 'zum Ausdruck'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"In Frage stellen" bedeutet "bezweifeln".',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Berater steht dem Team jederzeit zur ___.' },
+        correctAnswer: { accepted: ['Verfügung'] },
+        explanation: '"Zur Verfügung stehen" = verfügbar sein.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit7Lesson1.id, word: 'bezweifeln', translationEn: 'to doubt', translationTr: 'şüphe etmek', exampleSentence: 'Die Ergebnisse werden bezweifelt.' },
+      { lessonId: b2Unit7Lesson1.id, word: 'der Berater', translationEn: 'the consultant / advisor', translationTr: 'danışman', exampleSentence: 'Der Berater steht dem Team zur Verfügung.' },
+    ],
+  })
+
+  const b2Unit7Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit7.id,
+      order: 2,
+      grammarTopic: 'Anwendung finden / Rücksicht nehmen',
+      explanationDe:
+        '"Anwendung finden" bedeutet "angewendet werden", "Rücksicht nehmen (auf)" bedeutet "sich rücksichtsvoll verhalten (gegenüber)": "Die neue Methode findet in der Praxis Anwendung." "Man sollte auf ältere Menschen Rücksicht nehmen."',
+      explanationEn:
+        '"Anwendung finden" means "to be applied", "Rücksicht nehmen (auf)" means "to be considerate (of)": "Die neue Methode findet in der Praxis Anwendung." (The new method is applied in practice.) "Man sollte auf ältere Menschen Rücksicht nehmen." (One should be considerate of older people.)',
+      explanationTr:
+        '"Anwendung finden" "uygulanmak" anlamına gelir, "Rücksicht nehmen (auf)" ise "(birine) saygılı davranmak" anlamına gelir: "Die neue Methode findet in der Praxis Anwendung." (Yeni yöntem pratikte uygulanıyor.) "Man sollte auf ältere Menschen Rücksicht nehmen." (Yaşlı insanlara karşı saygılı olunmalı.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die neue Methode ___ in der Praxis Anwendung.', options: ['findet', 'macht', 'nimmt', 'stellt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Anwendung finden" = angewendet werden.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Rücksicht', 'sollte', 'man', 'nehmen'] },
+        correctAnswer: { order: ['man', 'sollte', 'Rücksicht', 'nehmen'] },
+        explanation: 'Wortstellung: Subjekt, Modalverb, Nomen, Infinitiv am Ende.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit7Lesson2.id, word: 'die Praxis', translationEn: 'practice', translationTr: 'uygulama / pratik', exampleSentence: 'Die Methode findet in der Praxis Anwendung.' },
+      { lessonId: b2Unit7Lesson2.id, word: 'älter', translationEn: 'older', translationTr: 'daha yaşlı', exampleSentence: 'Man sollte auf ältere Menschen Rücksicht nehmen.' },
+    ],
+  })
+
+  const b2Unit7Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit7.id,
+      order: 3,
+      grammarTopic: 'zum Ausdruck bringen / in Betracht ziehen',
+      explanationDe:
+        '"Zum Ausdruck bringen" bedeutet "ausdrücken", "in Betracht ziehen" bedeutet "berücksichtigen/erwägen": "Sie brachte ihre Freude zum Ausdruck." "Wir sollten alle Optionen in Betracht ziehen."',
+      explanationEn:
+        '"Zum Ausdruck bringen" means "to express", "in Betracht ziehen" means "to consider": "Sie brachte ihre Freude zum Ausdruck." (She expressed her joy.) "Wir sollten alle Optionen in Betracht ziehen." (We should consider all options.)',
+      explanationTr:
+        '"Zum Ausdruck bringen" "ifade etmek" anlamına gelir, "in Betracht ziehen" ise "göz önünde bulundurmak/değerlendirmek" anlamına gelir: "Sie brachte ihre Freude zum Ausdruck." (Sevincini ifade etti.) "Wir sollten alle Optionen in Betracht ziehen." (Tüm seçenekleri değerlendirmeliyiz.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir sollten alle Optionen in ___ ziehen.', options: ['Betracht', 'Frage', 'Anwendung', 'Ausdruck'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"In Betracht ziehen" = berücksichtigen.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie brachte ihre Freude zum ___.' },
+        correctAnswer: { accepted: ['Ausdruck'] },
+        explanation: '"Zum Ausdruck bringen" = ausdrücken.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit7Lesson3.id, word: 'die Freude', translationEn: 'the joy', translationTr: 'sevinç', exampleSentence: 'Sie brachte ihre Freude zum Ausdruck.' },
+      { lessonId: b2Unit7Lesson3.id, word: 'die Option', translationEn: 'the option', translationTr: 'seçenek', exampleSentence: 'Wir sollten alle Optionen in Betracht ziehen.' },
+    ],
+  })
+
+  const b2Unit7Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit7.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Funktionsverbgefüge',
+      explanationDe:
+        'Wiederholung der Funktionsverbgefüge: in Frage stellen, zur Verfügung stehen, Anwendung finden, Rücksicht nehmen, zum Ausdruck bringen, in Betracht ziehen. Merke: leeres Verb + festes Nomen ersetzt ein einfaches Verb.',
+      explanationEn:
+        'Review of support verb constructions: in Frage stellen, zur Verfügung stehen, Anwendung finden, Rücksicht nehmen, zum Ausdruck bringen, in Betracht ziehen. Remember: light verb + fixed noun replaces a simple verb.',
+      explanationTr:
+        'Fiil-isim kalıplarının tekrarı: in Frage stellen, zur Verfügung stehen, Anwendung finden, Rücksicht nehmen, zum Ausdruck bringen, in Betracht ziehen. Unutma: hafif fiil + sabit isim, basit bir fiilin yerini alır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['in Frage stellen', 'zur Verfügung stehen', 'in Betracht ziehen'], rights: ['verfügbar sein', 'berücksichtigen', 'bezweifeln'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'in Frage stellen', right: 'bezweifeln' },
+            { left: 'zur Verfügung stehen', right: 'verfügbar sein' },
+            { left: 'in Betracht ziehen', right: 'berücksichtigen' },
+          ],
+        },
+        explanation: 'Funktionsverbgefüge und ihre einfachen Verb-Entsprechungen.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man einfacher für 'zum Ausdruck bringen'?" },
+        correctAnswer: { accepted: ['ausdrücken'] },
+        explanation: '"Zum Ausdruck bringen" = ausdrücken.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit7Lesson4.id, word: 'berücksichtigen', translationEn: 'to take into account', translationTr: 'göz önünde bulundurmak', exampleSentence: 'Wir müssen alle Faktoren berücksichtigen.' },
+      { lessonId: b2Unit7Lesson4.id, word: 'verfügbar', translationEn: 'available', translationTr: 'kullanılabilir', exampleSentence: 'Der Berater ist verfügbar.' },
+    ],
+  })
+
+  // --- B2 Unit 8: Textkohärenz (4 lessons) ---
+  const b2Unit8 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 8, titleDe: 'Textkohärenz', titleEn: 'Textual Coherence', titleTr: 'Metin Bütünlüğü' },
+  })
+
+  const b2Unit8Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit8.id,
+      order: 1,
+      grammarTopic: 'Personalpronomen als Verweiswörter',
+      explanationDe:
+        'Personalpronomen (er, sie, es, ihn, ihm...) verweisen im Text auf bereits genannte Nomen und vermeiden Wiederholungen: "Der Chef kam spät. Er entschuldigte sich."',
+      explanationEn:
+        'Personal pronouns (er, sie, es, ihn, ihm...) refer back to nouns already mentioned in the text, avoiding repetition: "Der Chef kam spät. Er entschuldigte sich." (The boss arrived late. He apologized.)',
+      explanationTr:
+        'Şahıs zamirleri (er, sie, es, ihn, ihm...) metinde daha önce geçen isimlere gönderme yapar ve tekrarı önler: "Der Chef kam spät. Er entschuldigte sich." (Patron geç geldi. Özür diledi.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Studentin gab die Arbeit ab. ___ war erleichtert.', options: ['Sie', 'Er', 'Es', 'Ihr'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Die Studentin" ist feminin, daher "sie".',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Projekt ist fertig. Wir haben lange an ___ gearbeitet.' },
+        correctAnswer: { accepted: ['ihm'] },
+        explanation: '"Das Projekt" ist neutral, im Dativ nach "an": ihm.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit8Lesson1.id, word: 'die Studentin', translationEn: 'the (female) student', translationTr: 'kadın öğrenci', exampleSentence: 'Die Studentin gab die Arbeit ab.' },
+      { lessonId: b2Unit8Lesson1.id, word: 'erleichtert', translationEn: 'relieved', translationTr: 'rahatlamış', exampleSentence: 'Sie war erleichtert.' },
+    ],
+  })
+
+  const b2Unit8Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit8.id,
+      order: 2,
+      grammarTopic: 'Demonstrativpronomen als Verweis',
+      explanationDe:
+        'Demonstrativpronomen wie "dieser/diese/dieses" verweisen stärker auf etwas Genanntes als Personalpronomen: "Ich traf meinen alten Lehrer. Dieser erkannte mich sofort."',
+      explanationEn:
+        'Demonstrative pronouns like "dieser/diese/dieses" refer back more emphatically than personal pronouns: "Ich traf meinen alten Lehrer. Dieser erkannte mich sofort." (I met my old teacher. He/this one recognized me immediately.)',
+      explanationTr:
+        '"Dieser/diese/dieses" gibi işaret zamirleri, şahıs zamirlerinden daha güçlü biçimde daha önce söylenene gönderme yapar: "Ich traf meinen alten Lehrer. Dieser erkannte mich sofort." (Eski öğretmenimle karşılaştım. O beni hemen tanıdı.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich sprach mit der Ärztin. ___ gab mir gute Ratschläge.', options: ['Diese', 'Dieser', 'Dieses', 'Die'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Die Ärztin" ist feminin: diese.',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welches Demonstrativpronomen passt als Verweis auf 'der Lehrer'?" },
+        correctAnswer: { accepted: ['dieser'] },
+        explanation: '"Der Lehrer" ist maskulin: dieser.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit8Lesson2.id, word: 'die Ärztin', translationEn: 'the (female) doctor', translationTr: 'kadın doktor', exampleSentence: 'Ich sprach mit der Ärztin.' },
+      { lessonId: b2Unit8Lesson2.id, word: 'der Ratschlag', translationEn: 'the piece of advice', translationTr: 'tavsiye', exampleSentence: 'Sie gab mir gute Ratschläge.' },
+    ],
+  })
+
+  const b2Unit8Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit8.id,
+      order: 3,
+      grammarTopic: 'Konnektoren zur Textverknüpfung',
+      explanationDe:
+        'Konnektoren wie "außerdem, jedoch, deshalb, schließlich" verknüpfen Sätze logisch und schaffen einen kohärenten Text: "Er war müde. Außerdem hatte er Kopfschmerzen. Deshalb ging er früh ins Bett."',
+      explanationEn:
+        'Connectors like "außerdem, jedoch, deshalb, schließlich" (moreover, however, therefore, finally) link sentences logically and create a coherent text: "Er war müde. Außerdem hatte er Kopfschmerzen. Deshalb ging er früh ins Bett." (He was tired. Moreover, he had a headache. Therefore, he went to bed early.)',
+      explanationTr:
+        '"Außerdem, jedoch, deshalb, schließlich" (ayrıca, ancak, bu yüzden, sonunda) gibi bağlaçlar cümleleri mantıksal olarak bağlar ve tutarlı bir metin oluşturur: "Er war müde. Außerdem hatte er Kopfschmerzen. Deshalb ging er früh ins Bett." (Yorgundu. Ayrıca başı ağrıyordu. Bu yüzden erken yattı.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er war müde. ___ hatte er Kopfschmerzen.', options: ['Außerdem', 'Deshalb', 'Obwohl', 'Damit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Außerdem" fügt eine zusätzliche Information hinzu.',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['früh', 'ging', 'er', 'deshalb', 'ins', 'Bett'] },
+        correctAnswer: { order: ['deshalb', 'ging', 'er', 'früh', 'ins', 'Bett'] },
+        explanation: '"Deshalb" steht an Position 1, danach das Verb.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit8Lesson3.id, word: 'die Kopfschmerzen', translationEn: 'headache', translationTr: 'baş ağrısı', exampleSentence: 'Er hatte Kopfschmerzen.' },
+      { lessonId: b2Unit8Lesson3.id, word: 'schließlich', translationEn: 'finally', translationTr: 'sonunda', exampleSentence: 'Schließlich ging er ins Bett.' },
+    ],
+  })
+
+  const b2Unit8Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit8.id,
+      order: 4,
+      grammarTopic: 'Verweiswörter (dabei/dazu/damit)',
+      explanationDe:
+        'Pronominaladverbien wie "dabei, dazu, damit" verweisen auf zuvor Genanntes und ersetzen Präposition + Nomen: "Sie lernt Deutsch. Dabei hilft ihr eine App." (= bei dem Lernen)',
+      explanationEn:
+        'Pronominal adverbs like "dabei, dazu, damit" refer back to something previously mentioned and replace preposition + noun: "Sie lernt Deutsch. Dabei hilft ihr eine App." (She is learning German. An app helps her with that = with learning.)',
+      explanationTr:
+        '"Dabei, dazu, damit" gibi zamirli zarflar daha önce söylenene gönderme yapar ve edat + isim yapısının yerini alır: "Sie lernt Deutsch. Dabei hilft ihr eine App." (Almanca öğreniyor. Bu konuda bir uygulama ona yardımcı oluyor.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er will die Prüfung bestehen. ___ lernt er jeden Tag.', options: ['Dazu', 'Dabei', 'Damit', 'Daran'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Dazu" verweist auf das Ziel: für die Prüfung.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie nutzt eine App. ___ lernt sie schneller Deutsch. (dabei)' },
+        correctAnswer: { accepted: ['Dabei'] },
+        explanation: '"Dabei" verweist auf die Nutzung der App.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit8Lesson4.id, word: 'die Prüfung', translationEn: 'the exam', translationTr: 'sınav', exampleSentence: 'Er will die Prüfung bestehen.' },
+      { lessonId: b2Unit8Lesson4.id, word: 'bestehen', translationEn: 'to pass (an exam)', translationTr: 'geçmek (sınav)', exampleSentence: 'Er will die Prüfung bestehen.' },
+    ],
+  })
+
+  // --- B2 Unit 9: Konjunktiv II der Vergangenheit (4 lessons) ---
+  const b2Unit9 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 9, titleDe: 'Konjunktiv II der Vergangenheit', titleEn: 'Past Subjunctive II', titleTr: 'Geçmiş Zaman Konjunktiv II' },
+  })
+
+  const b2Unit9Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit9.id,
+      order: 1,
+      grammarTopic: 'Bildung mit "hätte" + Partizip II',
+      explanationDe:
+        'Der Konjunktiv II der Vergangenheit wird mit "hätte" (Konjunktiv II von "haben") + Partizip II gebildet: "Ich hätte das Buch gelesen." Er beschreibt irreale Situationen in der Vergangenheit.',
+      explanationEn:
+        'The past Konjunktiv II is formed with "hätte" (Konjunktiv II of "haben") + past participle: "Ich hätte das Buch gelesen." (I would have read the book.) It describes unreal (hypothetical) situations in the past.',
+      explanationTr:
+        'Geçmiş zaman Konjunktiv II, "hätte" ("haben"in Konjunktiv II biçimi) + Partizip II ile kurulur: "Ich hätte das Buch gelesen." (Kitabı okumuş olurdum.) Geçmişteki gerçek dışı durumları anlatır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ das Buch gelesen, wenn ich Zeit gehabt hätte.', options: ['hätte', 'habe', 'hatte', 'würde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv II der Vergangenheit: "hätte" + Partizip II.',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie ___ die Prüfung bestanden, wenn sie gelernt hätte. (haben)' },
+        correctAnswer: { accepted: ['hätte'] },
+        explanation: 'Konjunktiv II der Vergangenheit für "sie": hätte.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit9Lesson1.id, word: 'die Gelegenheit', translationEn: 'the opportunity', translationTr: 'fırsat', exampleSentence: 'Ich hätte die Gelegenheit genutzt.' },
+      { lessonId: b2Unit9Lesson1.id, word: 'nutzen', translationEn: 'to use / utilize', translationTr: 'kullanmak', exampleSentence: 'Ich hätte die Gelegenheit genutzt.' },
+    ],
+  })
+
+  const b2Unit9Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit9.id,
+      order: 2,
+      grammarTopic: 'Bildung mit "wäre" + Partizip II',
+      explanationDe:
+        'Bei Verben der Bewegung oder Zustandsänderung (die im Perfekt "sein" benutzen) wird der Konjunktiv II der Vergangenheit mit "wäre" + Partizip II gebildet: "Ich wäre gekommen, wenn ich Zeit gehabt hätte."',
+      explanationEn:
+        'For verbs of motion or change of state (which use "sein" in the perfect tense), the past Konjunktiv II is formed with "wäre" + past participle: "Ich wäre gekommen, wenn ich Zeit gehabt hätte." (I would have come if I had had time.)',
+      explanationTr:
+        'Hareket ya da durum değişikliği bildiren fiillerde (Perfekt\'te "sein" kullananlar), geçmiş zaman Konjunktiv II "wäre" + Partizip II ile kurulur: "Ich wäre gekommen, wenn ich Zeit gehabt hätte." (Vaktim olsaydı gelmiş olurdum.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er ___ früher gegangen, wenn er gewusst hätte, dass es regnet.', options: ['wäre', 'hätte', 'war', 'würde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Gehen" bildet das Perfekt mit "sein": wäre gegangen.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['kommen', 'gehen', 'bleiben'], rights: ['wäre gegangen', 'wäre geblieben', 'wäre gekommen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'kommen', right: 'wäre gekommen' },
+            { left: 'gehen', right: 'wäre gegangen' },
+            { left: 'bleiben', right: 'wäre geblieben' },
+          ],
+        },
+        explanation: 'Bewegungsverben bilden den Konjunktiv II der Vergangenheit mit "wäre" + Partizip II.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit9Lesson2.id, word: 'bleiben', translationEn: 'to stay', translationTr: 'kalmak', exampleSentence: 'Ich wäre geblieben, wenn ich Zeit gehabt hätte.' },
+      { lessonId: b2Unit9Lesson2.id, word: 'wissen', translationEn: 'to know', translationTr: 'bilmek', exampleSentence: 'Er wäre früher gegangen, wenn er es gewusst hätte.' },
+    ],
+  })
+
+  const b2Unit9Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit9.id,
+      order: 3,
+      grammarTopic: 'Irreale Bedingungssätze der Vergangenheit',
+      explanationDe:
+        'Irreale Bedingungssätze der Vergangenheit bestehen aus einem "wenn"-Satz und einem Hauptsatz, beide im Konjunktiv II der Vergangenheit: "Wenn ich Zeit gehabt hätte, wäre ich gekommen."',
+      explanationEn:
+        'Unreal conditional clauses in the past consist of a "wenn" clause and a main clause, both in the past Konjunktiv II: "Wenn ich Zeit gehabt hätte, wäre ich gekommen." (If I had had time, I would have come.)',
+      explanationTr:
+        'Geçmiş zamanın gerçek dışı koşul cümleleri, hem "wenn" cümlesinin hem de ana cümlenin geçmiş zaman Konjunktiv II\'de olduğu bir yapıdan oluşur: "Wenn ich Zeit gehabt hätte, wäre ich gekommen." (Vaktim olsaydı gelmiş olurdum.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn ich das gewusst ___, hätte ich anders reagiert.', options: ['hätte', 'wäre', 'habe', 'war'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wissen" bildet das Perfekt mit "haben": hätte gewusst.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wenn ich Zeit gehabt hätte, ___ ich gekommen.' },
+        correctAnswer: { accepted: ['wäre'] },
+        explanation: 'Der Hauptsatz braucht "wäre" für "kommen".',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit9Lesson3.id, word: 'reagieren', translationEn: 'to react', translationTr: 'tepki vermek', exampleSentence: 'Ich hätte anders reagiert.' },
+      { lessonId: b2Unit9Lesson3.id, word: 'die Bedingung', translationEn: 'the condition', translationTr: 'koşul', exampleSentence: 'Das ist ein irrealer Bedingungssatz.' },
+    ],
+  })
+
+  const b2Unit9Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit9.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Konjunktiv II der Vergangenheit',
+      explanationDe:
+        'Wiederholung: Konjunktiv II der Vergangenheit mit "hätte"/"wäre" + Partizip II, benutzt für irreale Bedingungssätze und Vermutungen über die Vergangenheit.',
+      explanationEn:
+        'Review: past Konjunktiv II with "hätte"/"wäre" + past participle, used for unreal conditional sentences and assumptions about the past.',
+      explanationTr:
+        'Tekrar: "hätte"/"wäre" + Partizip II ile geçmiş zaman Konjunktiv II, gerçek dışı koşul cümleleri ve geçmişe dair varsayımlar için kullanılır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn wir das gewusst hätten, ___ wir anders geplant.', options: ['hätten', 'wären', 'haben', 'waren'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Planen" bildet das Perfekt mit "haben": hätten geplant.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I would have helped'?" },
+        correctAnswer: { accepted: ['ich hätte geholfen'] },
+        explanation: '"Ich hätte geholfen" ist die richtige Übersetzung.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit9Lesson4.id, word: 'planen', translationEn: 'to plan', translationTr: 'planlamak', exampleSentence: 'Wir hätten anders geplant.' },
+      { lessonId: b2Unit9Lesson4.id, word: 'die Vermutung', translationEn: 'the assumption', translationTr: 'varsayım', exampleSentence: 'Das ist nur eine Vermutung über die Vergangenheit.' },
+    ],
+  })
+
+  // --- B2 Unit 10: Passiversatzformen (4 lessons) ---
+  const b2Unit10 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 10, titleDe: 'Passiversatzformen', titleEn: 'Passive Substitute Forms', titleTr: 'Edilgen Çatı Alternatifleri' },
+  })
+
+  const b2Unit10Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit10.id,
+      order: 1,
+      grammarTopic: '"sich lassen" + Infinitiv',
+      explanationDe:
+        '"sich lassen" + Infinitiv drückt aus, dass etwas möglich ist, ähnlich wie ein Passiv mit "können": "Das Fenster lässt sich öffnen." (= Das Fenster kann geöffnet werden.)',
+      explanationEn:
+        '"sich lassen" + infinitive expresses that something is possible, similar to a passive with "können": "Das Fenster lässt sich öffnen." (The window can be opened.)',
+      explanationTr:
+        '"sich lassen" + Infinitiv, bir şeyin mümkün olduğunu ifade eder, "können" ile edilgen çatıya benzer: "Das Fenster lässt sich öffnen." (Pencere açılabilir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Tür ___ sich leicht öffnen.', options: ['lässt', 'lasst', 'lasse', 'lässst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"lassen" wird bei "er/sie/es" zu "lässt".',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Problem ___ sich lösen. (lassen)' },
+        correctAnswer: { accepted: ['lässt'] },
+        explanation: '3. Person Singular von "lassen": lässt.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit10Lesson1.id, word: 'lösen', translationEn: 'to solve', translationTr: 'çözmek', exampleSentence: 'Das Problem lässt sich lösen.' },
+      { lessonId: b2Unit10Lesson1.id, word: 'die Tür', translationEn: 'the door', translationTr: 'kapı', exampleSentence: 'Die Tür lässt sich leicht öffnen.' },
+    ],
+  })
+
+  const b2Unit10Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit10.id,
+      order: 2,
+      grammarTopic: 'man-Konstruktion als Passiversatz',
+      explanationDe:
+        'Die man-Konstruktion ersetzt das Passiv durch einen Aktivsatz: "Man repariert das Auto." (= Das Auto wird repariert.) "Man" bleibt unbestimmt und wird nicht genannt.',
+      explanationEn:
+        'The man-construction replaces the passive with an active sentence: "Man repariert das Auto." (The car is being repaired.) "Man" stays indefinite and is never named.',
+      explanationTr:
+        'man-yapısı, edilgen cümlenin yerine etken bir cümle kullanır: "Man repariert das Auto." (Araba tamir ediliyor.) "Man" belirsiz kalır ve isim verilmez.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Passiv: "Das Auto wird repariert." Aktiv mit man-Konstruktion: "___ repariert das Auto."', options: ['Man', 'Er', 'Sie', 'Ich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Die man-Konstruktion ersetzt das unpersönliche Passiv.',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: {
+          lefts: ['Das Brot wird gebacken.', 'Die Fenster werden geputzt.', 'Der Brief wird geschrieben.'],
+          rights: ['Man putzt die Fenster.', 'Man schreibt den Brief.', 'Man backt das Brot.'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'Das Brot wird gebacken.', right: 'Man backt das Brot.' },
+            { left: 'Die Fenster werden geputzt.', right: 'Man putzt die Fenster.' },
+            { left: 'Der Brief wird geschrieben.', right: 'Man schreibt den Brief.' },
+          ],
+        },
+        explanation: 'Jedes Passiv lässt sich mit "man" + Aktivverb umformulieren.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit10Lesson2.id, word: 'backen', translationEn: 'to bake', translationTr: 'pişirmek (fırında)', exampleSentence: 'Man backt das Brot.' },
+      { lessonId: b2Unit10Lesson2.id, word: 'das Fenster', translationEn: 'the window', translationTr: 'pencere', exampleSentence: 'Man putzt die Fenster.' },
+    ],
+  })
+
+  const b2Unit10Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit10.id,
+      order: 3,
+      grammarTopic: '"sein" + zu + Infinitiv',
+      explanationDe:
+        '"sein" + zu + Infinitiv drückt eine Möglichkeit oder Notwendigkeit aus, oft in formellem Stil: "Die Regeln sind zu beachten." (= Die Regeln müssen/können beachtet werden.)',
+      explanationEn:
+        '"sein" + zu + infinitive expresses a possibility or necessity, often in a formal register: "Die Regeln sind zu beachten." (The rules must/can be observed.)',
+      explanationTr:
+        '"sein" + zu + Infinitiv, genellikle resmi bir üslupta olasılık ya da zorunluluk ifade eder: "Die Regeln sind zu beachten." (Kurallara uyulmalı/uyulabilir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Aufgabe ist noch ___ erledigen.', options: ['zu', 'zum', 'zur', 'zuerst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sein" + zu + Infinitiv: "ist zu erledigen".',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['zu', 'Regeln', 'sind', 'Die', 'beachten'] },
+        correctAnswer: { order: ['Die', 'Regeln', 'sind', 'zu', 'beachten'] },
+        explanation: 'Reihenfolge: Artikel, Nomen, "sein"-Form, "zu", Infinitiv.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit10Lesson3.id, word: 'erledigen', translationEn: 'to take care of / finish', translationTr: 'halletmek', exampleSentence: 'Die Aufgabe ist noch zu erledigen.' },
+      { lessonId: b2Unit10Lesson3.id, word: 'die Aufgabe', translationEn: 'the task', translationTr: 'görev', exampleSentence: 'Ich habe heute viele Aufgaben.' },
+    ],
+  })
+
+  const b2Unit10Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit10.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Passiversatzformen im Vergleich',
+      explanationDe:
+        'Wiederholung: "sich lassen" + Infinitiv, die man-Konstruktion und "sein" + zu + Infinitiv sind drei Alternativen zum Passiv, oft mit "können" oder "müssen": "Das lässt sich machen." = "Man kann das machen." = "Das ist zu machen."',
+      explanationEn:
+        'Review: "sich lassen" + infinitive, the man-construction, and "sein" + zu + infinitive are three alternatives to the passive, often meaning "können" or "müssen": "Das lässt sich machen." = "Man kann das machen." = "Das ist zu machen." (all: "This can be done.")',
+      explanationTr:
+        'Tekrar: "sich lassen" + Infinitiv, man-yapısı ve "sein" + zu + Infinitiv, genellikle "können" veya "müssen" anlamına gelen üç edilgen çatı alternatifidir: "Das lässt sich machen." = "Man kann das machen." = "Das ist zu machen." (hepsi: "Bu yapılabilir.")',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Passiversatzform passt zu "Das Problem kann gelöst werden."?', options: ['Das Problem lässt sich lösen.', 'Das Problem hat sich gelöst.', 'Das Problem wird lösen.', 'Das Problem löst sich selbst.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sich lassen" + Infinitiv ersetzt "können" + Passiv.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch mit der man-Konstruktion: 'The window is being cleaned'?" },
+        correctAnswer: { accepted: ['man putzt das fenster'] },
+        explanation: '"Man putzt das Fenster." ist die man-Konstruktion für das Passiv.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit10Lesson4.id, word: 'die Lösung', translationEn: 'the solution', translationTr: 'çözüm', exampleSentence: 'Für jedes Problem gibt es eine Lösung.' },
+      { lessonId: b2Unit10Lesson4.id, word: 'notwendig', translationEn: 'necessary', translationTr: 'gerekli', exampleSentence: 'Es ist notwendig, die Regeln zu beachten.' },
+    ],
+  })
+
+  // --- B2 Unit 11: Relativsätze mit Präpositionen (4 lessons) ---
+  const b2Unit11 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 11, titleDe: 'Relativsätze mit Präpositionen', titleEn: 'Relative Clauses with Prepositions', titleTr: 'Edatlı İlgi Cümleleri' },
+  })
+
+  const b2Unit11Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit11.id,
+      order: 1,
+      grammarTopic: 'Präposition + Relativpronomen (Akkusativ)',
+      explanationDe:
+        'Steht eine Präposition vor dem Relativpronomen, richtet sich der Kasus nach der Präposition, nicht nach der Funktion im Hauptsatz: "Das ist das Projekt, für das ich verantwortlich bin."',
+      explanationEn:
+        'When a preposition precedes the relative pronoun, its case is determined by the preposition, not by the function in the main clause: "Das ist das Projekt, für das ich verantwortlich bin." (That is the project I am responsible for.)',
+      explanationTr:
+        'İlgi zamirinden önce bir edat varsa, hal edata göre belirlenir, ana cümledeki işleve göre değil: "Das ist das Projekt, für das ich verantwortlich bin." (Sorumlu olduğum proje bu.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist das Projekt, für ___ ich verantwortlich bin.', options: ['der', 'die', 'das', 'dem'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"Das Projekt" ist neutrum; "für" verlangt den Akkusativ: "für das".',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist der Grund, ___ ich mich beworben habe. (für)' },
+        correctAnswer: { accepted: ['für den'] },
+        explanation: '"Der Grund" ist maskulin; "für" verlangt den Akkusativ: "für den".',
+      },
+    ],
+  })
+
+  const b2Unit11Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit11.id,
+      order: 2,
+      grammarTopic: 'Präposition + Relativpronomen (Dativ)',
+      explanationDe:
+        'Präpositionen wie "mit", "bei", "von" verlangen den Dativ: "Das ist die Firma, bei der ich arbeite." "Das sind die Kollegen, mit denen ich zusammenarbeite."',
+      explanationEn:
+        'Prepositions like "mit", "bei", "von" require the dative: "Das ist die Firma, bei der ich arbeite." (That is the company I work at.) "Das sind die Kollegen, mit denen ich zusammenarbeite." (Those are the colleagues I work with.)',
+      explanationTr:
+        '"mit", "bei", "von" gibi edatlar -e halini gerektirir: "Das ist die Firma, bei der ich arbeite." "Das sind die Kollegen, mit denen ich zusammenarbeite."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das sind die Kollegen, mit ___ ich zusammenarbeite.', options: ['die', 'denen', 'der', 'dem'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Plural Dativ Relativpronomen ist "denen".',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Das ist die Firma, bei ___ ich arbeite. (Relativpronomen, feminin, Dativ)" },
+        correctAnswer: { accepted: ['der'] },
+        explanation: 'Feminines Relativpronomen im Dativ ist "der".',
+      },
+    ],
+  })
+
+  const b2Unit11Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit11.id,
+      order: 3,
+      grammarTopic: '"was" und "wo(r)+Präposition"',
+      explanationDe:
+        'Bezieht sich der Relativsatz auf einen ganzen Satz oder ein unbestimmtes Wort (alles, nichts, etwas), benutzt man "was": "Er kam zu spät, was mich ärgerte." Bei Präpositionen mit Sachen benutzt man "wo(r)+Präposition": "Das Thema, worüber wir sprechen, ist wichtig."',
+      explanationEn:
+        'When the relative clause refers to a whole sentence or an indefinite word (alles, nichts, etwas), use "was": "Er kam zu spät, was mich ärgerte." (He arrived late, which annoyed me.) For prepositions referring to things, use "wo(r)+preposition": "Das Thema, worüber wir sprechen, ist wichtig." (The topic we are talking about is important.)',
+      explanationTr:
+        'İlgi cümlesi bütün bir cümleye veya belirsiz bir kelimeye (alles, nichts, etwas) atıfta bulunuyorsa "was" kullanılır: "Er kam zu spät, was mich ärgerte." Nesnelerle ilgili edatlarda "wo(r)+edat" kullanılır: "Das Thema, worüber wir sprechen, ist wichtig."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Thema, ___ wir sprechen, ist wichtig. (worüber vs. über das)', options: ['worüber', 'wofür', 'womit', 'wobei'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sprechen über" + Sache -> "worüber".',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er hat mir geholfen, ___ ich sehr dankbar bin. (was)' },
+        correctAnswer: { accepted: ['was'] },
+        explanation: 'Bezug auf den ganzen Satz: "was".',
+      },
+    ],
+  })
+
+  const b2Unit11Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit11.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Relativsätze mit Präpositionen',
+      explanationDe:
+        'Wiederholung: Der Kasus nach der Präposition richtet sich nach der Präposition selbst; bei Sachen mit Präposition oft "wo(r)+Präposition" statt "Präposition + das/die/der".',
+      explanationEn:
+        'Review: the case after a preposition is governed by the preposition itself; for things, "wo(r)+preposition" is often preferred over "preposition + das/die/der".',
+      explanationTr:
+        'Tekrar: edattan sonraki hal, edatın kendisine göre belirlenir; nesnelerde genellikle "edat + das/die/der" yerine "wo(r)+edat" tercih edilir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bin', 'verantwortlich', 'ich', 'das Projekt', 'für'] },
+        correctAnswer: { order: ['ich', 'bin', 'für', 'das Projekt', 'verantwortlich'] },
+        explanation: 'Grundwortstellung: Subjekt, Verb, Präpositionalobjekt, Prädikativ.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['für + Akkusativ', 'bei + Dativ', 'über (Sache)'], rights: ['für das/den/die', 'bei dem/der', 'worüber'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'für + Akkusativ', right: 'für das/den/die' },
+            { left: 'bei + Dativ', right: 'bei dem/der' },
+            { left: 'über (Sache)', right: 'worüber' },
+          ],
+        },
+        explanation: 'Übersicht: Präposition + Relativpronomen bzw. wo(r)-Form.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit11Lesson1.id, word: 'verantwortlich', translationEn: 'responsible', translationTr: 'sorumlu', exampleSentence: 'Ich bin für das Projekt verantwortlich.' },
+      { lessonId: b2Unit11Lesson1.id, word: 'der Grund', translationEn: 'the reason', translationTr: 'sebep', exampleSentence: 'Das ist der Grund für meine Entscheidung.' },
+      { lessonId: b2Unit11Lesson2.id, word: 'zusammenarbeiten', translationEn: 'to collaborate', translationTr: 'birlikte çalışmak', exampleSentence: 'Wir arbeiten gut zusammen.' },
+      { lessonId: b2Unit11Lesson2.id, word: 'das Unternehmen', translationEn: 'the company/enterprise', translationTr: 'işletme', exampleSentence: 'Das Unternehmen wächst schnell.' },
+      { lessonId: b2Unit11Lesson3.id, word: 'ärgern', translationEn: 'to annoy', translationTr: 'sinirlendirmek', exampleSentence: 'Das ärgert mich sehr.' },
+      { lessonId: b2Unit11Lesson3.id, word: 'dankbar', translationEn: 'grateful', translationTr: 'minnettar', exampleSentence: 'Ich bin dir sehr dankbar.' },
+      { lessonId: b2Unit11Lesson4.id, word: 'die Entscheidung', translationEn: 'the decision', translationTr: 'karar', exampleSentence: 'Das war eine schwere Entscheidung.' },
+      { lessonId: b2Unit11Lesson4.id, word: 'wachsen', translationEn: 'to grow', translationTr: 'büyümek', exampleSentence: 'Die Firma wächst schnell.' },
+    ],
+  })
+
+  // --- B2 Unit 12: Redewiedergabe & formelle Stilmittel (4 lessons) ---
+  const b2Unit12 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 12, titleDe: 'Redewiedergabe & formelle Stilmittel', titleEn: 'Reported Speech & Formal Style', titleTr: 'Aktarılan Söz ve Resmi Üslup' },
+  })
+
+  const b2Unit12Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit12.id,
+      order: 1,
+      grammarTopic: 'Redewiedergabe mit Konjunktiv I',
+      explanationDe:
+        'In formellen Texten (Nachrichten, Berichten) wird fremde Rede oft mit Konjunktiv I wiedergegeben: "Die Ministerin sagte, die Reform sei notwendig."',
+      explanationEn:
+        'In formal texts (news, reports), someone else\'s speech is often reported using Konjunktiv I: "Die Ministerin sagte, die Reform sei notwendig." (The minister said the reform was necessary.)',
+      explanationTr:
+        'Resmi metinlerde (haberler, raporlar) başkasının sözü genellikle Konjunktiv I ile aktarılır: "Die Ministerin sagte, die Reform sei notwendig."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Ministerin sagte, die Reform ___ notwendig. (Konjunktiv I von "sein")', options: ['ist', 'sei', 'wäre', 'war'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Konjunktiv I von "sein" für "sie" (3. Person Singular) ist "sei".',
+      },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er sagte, er ___ keine Zeit. (Konjunktiv I von "haben")' },
+        correctAnswer: { accepted: ['habe'] },
+        explanation: 'Konjunktiv I von "haben" für "er" ist "habe".',
+      },
+    ],
+  })
+
+  const b2Unit12Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit12.id,
+      order: 2,
+      grammarTopic: 'Nominalstil vs. Verbalstil',
+      explanationDe:
+        'Der Nominalstil (typisch für formelle Texte) verwendet Substantive statt Verben: "nach der Überprüfung der Unterlagen" statt "nachdem die Unterlagen überprüft wurden".',
+      explanationEn:
+        'Nominal style (typical of formal texts) uses nouns instead of verbs: "nach der Überprüfung der Unterlagen" (after the review of the documents) instead of "nachdem die Unterlagen überprüft wurden" (after the documents were reviewed).',
+      explanationTr:
+        'Nominal üslup (resmi metinlerde tipik) fiil yerine isim kullanır: "nachdem die Unterlagen überprüft wurden" yerine "nach der Überprüfung der Unterlagen".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist im Nominalstil?', options: ['Nachdem er angekommen war, begann die Sitzung.', 'Nach seiner Ankunft begann die Sitzung.', 'Er kam an und die Sitzung begann.', 'Als er ankam, begann die Sitzung.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Nach seiner Ankunft" ist eine Nominalisierung von "ankommen".',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde die Nominalisierung von 'überprüfen' mit Artikel." },
+        correctAnswer: { accepted: ['die überprüfung', 'überprüfung'] },
+        explanation: 'Die Nominalisierung von "überprüfen" ist "die Überprüfung".',
+      },
+    ],
+  })
+
+  const b2Unit12Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit12.id,
+      order: 3,
+      grammarTopic: 'Formelle Konnektoren in Berichten',
+      explanationDe:
+        'Formelle Berichte nutzen Konnektoren wie "des Weiteren" (furthermore), "dementsprechend" (accordingly), "diesbezüglich" (in this regard) statt umgangssprachlicher Alternativen.',
+      explanationEn:
+        'Formal reports use connectors like "des Weiteren" (furthermore), "dementsprechend" (accordingly), "diesbezüglich" (in this regard) instead of colloquial alternatives.',
+      explanationTr:
+        'Resmi raporlar günlük konuşma yerine "des Weiteren" (ayrıca), "dementsprechend" (buna göre), "diesbezüglich" (bu konuda) gibi bağlaçlar kullanır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort passt in einen formellen Bericht für "furthermore"?', options: ['außerdem', 'des Weiteren', 'und dann', 'auch noch'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Des Weiteren" ist die formelle Entsprechung von "außerdem".',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ sind keine weiteren Maßnahmen erforderlich. (accordingly)' },
+        correctAnswer: { accepted: ['dementsprechend'] },
+        explanation: '"Dementsprechend" bedeutet "accordingly".',
+      },
+    ],
+  })
+
+  const b2Unit12Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit12.id,
+      order: 4,
+      grammarTopic: 'Wiederholung Gesamtkurs B2',
+      explanationDe:
+        'Gesamtwiederholung B2: Passiv, Konjunktiv I/II, Nominalisierung, Relativsätze und formelle Konnektoren kombiniert in einem kurzen Bericht.',
+      explanationEn:
+        'Overall B2 review: passive, Konjunktiv I/II, nominalization, relative clauses, and formal connectors combined in a short report.',
+      explanationTr:
+        'B2 genel tekrarı: edilgen çatı, Konjunktiv I/II, isimleştirme, ilgi cümleleri ve resmi bağlaçlar kısa bir raporda bir araya geliyor.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['sei', 'notwendig', 'die Reform', 'sagte', 'er'] },
+        correctAnswer: { order: ['er', 'sagte', 'die Reform', 'sei', 'notwendig'] },
+        explanation: 'Hauptsatz + Konjunktiv-I-Nebensatz ohne "dass".',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'accordingly, no further measures are required'?" },
+        correctAnswer: { accepted: ['dementsprechend sind keine weiteren maßnahmen erforderlich'] },
+        explanation: '"Dementsprechend sind keine weiteren Maßnahmen erforderlich."',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit12Lesson1.id, word: 'die Ministerin', translationEn: 'the (female) minister', translationTr: 'bakan (kadın)', exampleSentence: 'Die Ministerin hielt eine Rede.' },
+      { lessonId: b2Unit12Lesson1.id, word: 'die Reform', translationEn: 'the reform', translationTr: 'reform', exampleSentence: 'Die Reform wurde beschlossen.' },
+      { lessonId: b2Unit12Lesson2.id, word: 'die Ankunft', translationEn: 'the arrival', translationTr: 'varış', exampleSentence: 'Nach seiner Ankunft begann die Sitzung.' },
+      { lessonId: b2Unit12Lesson2.id, word: 'die Sitzung', translationEn: 'the meeting/session', translationTr: 'toplantı', exampleSentence: 'Die Sitzung dauert zwei Stunden.' },
+      { lessonId: b2Unit12Lesson3.id, word: 'diesbezüglich', translationEn: 'in this regard', translationTr: 'bu konuda', exampleSentence: 'Diesbezüglich gibt es keine Fragen.' },
+      { lessonId: b2Unit12Lesson3.id, word: 'die Maßnahme', translationEn: 'the measure', translationTr: 'önlem', exampleSentence: 'Wir ergreifen neue Maßnahmen.' },
+      { lessonId: b2Unit12Lesson4.id, word: 'erforderlich', translationEn: 'required', translationTr: 'gerekli', exampleSentence: 'Das ist nicht erforderlich.' },
+      { lessonId: b2Unit12Lesson4.id, word: 'die Rede', translationEn: 'the speech', translationTr: 'konuşma', exampleSentence: 'Sie hielt eine Rede.' },
+    ],
+  })
+
+  // --- B2 Unit 13: Adverbialsätze - Konzessiv & Konditional (4 lessons) ---
+  const b2Unit13 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 13, titleDe: 'Adverbialsätze: Konzessiv & Konditional', titleEn: 'Adverbial Clauses: Concessive & Conditional', titleTr: 'Zarf Cümleleri: Karşıtlık ve Koşul' },
+  })
+
+  const b2Unit13Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit13.id,
+      order: 1,
+      grammarTopic: 'Konzessivsätze: "auch wenn" / "selbst wenn"',
+      explanationDe:
+        '"auch wenn" und "selbst wenn" verstärken den Gegensatz stärker als "obwohl": "Auch wenn es regnet, gehen wir spazieren." Das Verb steht am Ende des Nebensatzes.',
+      explanationEn:
+        '"auch wenn" and "selbst wenn" ("even if") emphasize the contrast more strongly than "obwohl": "Auch wenn es regnet, gehen wir spazieren." (Even if it rains, we\'ll go for a walk.) The verb goes to the end of the subordinate clause.',
+      explanationTr:
+        '"auch wenn" ve "selbst wenn" (bile) karşıtlığı "obwohl"dan daha güçlü vurgular: "Auch wenn es regnet, gehen wir spazieren." Fiil yan cümlenin sonuna gider.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Auch wenn es regnet, ___ wir spazieren. (gehen)', options: ['gehen', 'geht', 'gingen', 'gegangen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Hauptsatz nach dem Nebensatz: Verb an Position 2, konjugiert für "wir": "gehen".',
+      },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Selbst wenn er müde ___, arbeitet er weiter. (sein)' },
+        correctAnswer: { accepted: ['ist'] },
+        explanation: 'Nebensatz mit "selbst wenn": Verb am Ende, konjugiert für "er": "ist".',
+      },
+    ],
+  })
+
+  const b2Unit13Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit13.id,
+      order: 2,
+      grammarTopic: 'Uneingeleitete Konditionalsätze',
+      explanationDe:
+        'Ohne "wenn" beginnt der Bedingungssatz mit dem konjugierten Verb: "Wäre er hier, würde er helfen." (= Wenn er hier wäre, würde er helfen.)',
+      explanationEn:
+        'Without "wenn", the conditional clause starts with the conjugated verb: "Wäre er hier, würde er helfen." (If he were here, he would help. = "Wenn er hier wäre, würde er helfen.")',
+      explanationTr:
+        '"wenn" olmadan koşul cümlesi çekimli fiille başlar: "Wäre er hier, würde er helfen." (Burada olsaydı yardım ederdi.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Uneingeleiteter Konditionalsatz für "Wenn ich Zeit hätte, würde ich kommen."', options: ['Hätte ich Zeit, würde ich kommen.', 'Ich hätte Zeit, würde ich kommen.', 'Zeit hätte ich, würde ich kommen.', 'Würde ich Zeit haben, käme ich.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das konjugierte Verb rückt an den Satzanfang: "Hätte ich Zeit, ...".',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme uneingeleitet um: 'Wenn er das gewusst hätte, hätte er anders gehandelt.'" },
+        correctAnswer: { accepted: ['hätte er das gewusst, hätte er anders gehandelt'] },
+        explanation: 'Verb an den Satzanfang: "Hätte er das gewusst, ...".',
+      },
+    ],
+  })
+
+  const b2Unit13Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit13.id,
+      order: 3,
+      grammarTopic: '"falls" und "sofern"',
+      explanationDe:
+        '"falls" (in case) und "sofern" (provided that) leiten formellere Bedingungssätze ein: "Falls Sie Fragen haben, melden Sie sich." "Sofern nichts anderes vereinbart wird, gilt der Standardpreis."',
+      explanationEn:
+        '"falls" (in case) and "sofern" (provided that) introduce more formal conditional clauses: "Falls Sie Fragen haben, melden Sie sich." (In case you have questions, get in touch.) "Sofern nichts anderes vereinbart wird, gilt der Standardpreis." (Unless otherwise agreed, the standard price applies.)',
+      explanationTr:
+        '"falls" (eğer) ve "sofern" (şartıyla) daha resmi koşul cümleleri başlatır: "Falls Sie Fragen haben, melden Sie sich." "Sofern nichts anderes vereinbart wird, gilt der Standardpreis."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Sie Fragen haben, melden Sie sich. (in case)', options: ['Obwohl', 'Falls', 'Trotzdem', 'Damit'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Falls" bedeutet "in case".',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ nichts anderes vereinbart wird, gilt der Standardpreis. (provided that)' },
+        correctAnswer: { accepted: ['sofern'] },
+        explanation: '"Sofern" bedeutet "provided that / unless".',
+      },
+    ],
+  })
+
+  const b2Unit13Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit13.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Konzessiv & Konditional',
+      explanationDe:
+        'Wiederholung: "auch wenn/selbst wenn" (Konzessiv), uneingeleitete Bedingungssätze und "falls/sofern" (formeller Konditional) im Vergleich.',
+      explanationEn:
+        'Review: "auch wenn/selbst wenn" (concessive), uninverted-marker conditional clauses, and "falls/sofern" (formal conditional) compared.',
+      explanationTr:
+        'Tekrar: "auch wenn/selbst wenn" (karşıtlık), bağlaçsız koşul cümleleri ve "falls/sofern" (resmi koşul) karşılaştırması.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['er', 'hier', 'wäre', 'würde', 'helfen'] },
+        correctAnswer: { order: ['wäre', 'er', 'hier', 'würde', 'helfen'] },
+        explanation: 'Uneingeleiteter Konditionalsatz: Verb zuerst, dann Subjekt.',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['Konzessiv (verstärkt)', 'Konditional (formell)', 'Konditional (uneingeleitet)'], rights: ['selbst wenn', 'sofern', 'Wäre er hier, ...'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Konzessiv (verstärkt)', right: 'selbst wenn' },
+            { left: 'Konditional (formell)', right: 'sofern' },
+            { left: 'Konditional (uneingeleitet)', right: 'Wäre er hier, ...' },
+          ],
+        },
+        explanation: 'Übersicht über konzessive und konditionale Nebensatzarten.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit13Lesson1.id, word: 'verstärken', translationEn: 'to intensify', translationTr: 'güçlendirmek', exampleSentence: 'Das verstärkt den Gegensatz.' },
+      { lessonId: b2Unit13Lesson1.id, word: 'der Gegensatz', translationEn: 'the contrast', translationTr: 'zıtlık', exampleSentence: 'Es gibt einen klaren Gegensatz.' },
+      { lessonId: b2Unit13Lesson2.id, word: 'die Voraussetzung', translationEn: 'the prerequisite', translationTr: 'ön koşul', exampleSentence: 'Das ist eine wichtige Voraussetzung.' },
+      { lessonId: b2Unit13Lesson2.id, word: 'handeln', translationEn: 'to act', translationTr: 'hareket etmek', exampleSentence: 'Er hat schnell gehandelt.' },
+      { lessonId: b2Unit13Lesson3.id, word: 'vereinbaren', translationEn: 'to agree on', translationTr: 'anlaşmak', exampleSentence: 'Wir haben einen Termin vereinbart.' },
+      { lessonId: b2Unit13Lesson3.id, word: 'der Standardpreis', translationEn: 'the standard price', translationTr: 'standart fiyat', exampleSentence: 'Es gilt der Standardpreis.' },
+      { lessonId: b2Unit13Lesson4.id, word: 'vergleichen', translationEn: 'to compare', translationTr: 'karşılaştırmak', exampleSentence: 'Man kann die beiden Formen vergleichen.' },
+      { lessonId: b2Unit13Lesson4.id, word: 'die Nebensatzart', translationEn: 'the type of subordinate clause', translationTr: 'yan cümle türü', exampleSentence: 'Es gibt viele Nebensatzarten.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },

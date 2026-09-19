@@ -1,11 +1,13 @@
-// Force-load this worktree's own `.env` with override:true. Without this,
-// `@prisma/client`'s internal env resolution (or an ambient DATABASE_URL
-// picked up before this file runs) can win over the worktree-local value
-// and silently point tests at the main repo's shared `public` schema
-// instead of this worktree's isolated schema (see vitest.config.ts envDir
-// comment for the same class of worktree/.env resolution bug).
-import * as dotenv from 'dotenv'
-import * as path from 'path'
+import path from 'path'
+import dotenv from 'dotenv'
+
+// Something upstream of Vitest's own env loading (Next.js/tsx/Vite root
+// detection all walk up looking for a real `.git` *directory*, which a git
+// worktree doesn't have — its `.git` is a file) ends up populating
+// process.env.DATABASE_URL from an ancestor checkout's `.env` before this
+// file runs, even with `envDir` pinned in vitest.config.ts. Force-load this
+// worktree's own `.env` by absolute path and override whatever is already
+// set, so integration tests always hit this worktree's isolated DB schema.
 dotenv.config({ path: path.resolve(__dirname, '.env'), override: true })
 
 import '@testing-library/jest-dom/vitest'
