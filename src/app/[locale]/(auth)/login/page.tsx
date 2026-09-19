@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { signIn } from 'next-auth/react'
-import { useRouter } from '@/i18n/navigation'
+import { Link, useRouter } from '@/i18n/navigation'
 
 export default function LoginPage() {
   const t = useTranslations('auth')
@@ -66,6 +66,11 @@ export default function LoginPage() {
           {t('loginSubmit')}
         </button>
       </form>
+      <p className="mt-4 text-sm">
+        <Link href="/forgot-password" className="underline">
+          {t('forgotPasswordLink')}
+        </Link>
+      </p>
     </main>
   )
 }
