@@ -2254,13 +2254,13 @@ async function main() {
     ],
   })
 
-  // --- C1: Indirekte Rede (1 sample lesson) ---
-  const c1Unit = await prisma.unit.create({
-    data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
+  // --- C1 Unit 1: Konjunktiv I Gegenwart (4 lessons) ---
+  const c1Unit1 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 1, titleDe: 'Konjunktiv I Gegenwart', titleEn: 'Konjunktiv I Present Tense', titleTr: 'Şimdiki Zaman Konjunktiv I' },
   })
-  const c1Lesson = await prisma.lesson.create({
+  const c1Unit1Lesson1 = await prisma.lesson.create({
     data: {
-      unitId: c1Unit.id,
+      unitId: c1Unit1.id,
       order: 1,
       grammarTopic: 'Konjunktiv I in der indirekten Rede',
       explanationDe: 'Der Konjunktiv I wird verwendet, um die Aussage einer anderen Person wiederzugeben, z. B. "Er sagt, er sei müde."',
@@ -2271,7 +2271,7 @@ async function main() {
   await prisma.exercise.createMany({
     data: [
       {
-        lessonId: c1Lesson.id,
+        lessonId: c1Unit1Lesson1.id,
         order: 1,
         type: 'MULTIPLE_CHOICE',
         data: { prompt: 'Er sagt, er ___ müde. (indirekte Rede)', options: ['ist', 'sei', 'war', 'wäre'] },
@@ -2279,13 +2279,132 @@ async function main() {
         explanation: 'Konjunktiv I von "sein" für "er" ist "sei".',
       },
       {
-        lessonId: c1Lesson.id,
+        lessonId: c1Unit1Lesson1.id,
         order: 2,
         type: 'SHORT_ANSWER',
         data: { prompt: "Wie lautet die Konjunktiv-I-Form von 'haben' für 'er'?" },
         correctAnswer: { accepted: ['habe', 'er habe'] },
         explanation: 'Konjunktiv I von "haben" für "er" ist "habe".',
       },
+    ],
+  })
+
+  const c1Unit1Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit1.id,
+      order: 2,
+      grammarTopic: 'Konjunktiv-I-Formen aller Personen',
+      explanationDe:
+        'Konjunktiv I wird vom Präsensstamm gebildet: ich -e, du -est, er/sie/es -e, wir -en, ihr -et, sie -en. Nur bei "sein" gibt es Sonderformen: ich sei, du seist, er sei.',
+      explanationEn:
+        'Konjunktiv I is formed from the present stem: ich -e, du -est, er/sie/es -e, wir -en, ihr -et, sie -en. Only "sein" has special forms: ich sei, du seist, er sei.',
+      explanationTr:
+        'Konjunktiv I şimdiki zaman kökünden türetilir: ich -e, du -est, er/sie/es -e, wir -en, ihr -et, sie -en. Sadece "sein" özel biçimlere sahiptir: ich sei, du seist, er sei.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit1Lesson2.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie sagt, sie ___ (Konjunktiv I von "kommen") morgen.' },
+        correctAnswer: { accepted: ['komme'] },
+        explanation: 'Konjunktiv I von "kommen" für "sie" (Singular) ist "komme".',
+      },
+      {
+        lessonId: c1Unit1Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Konjunktiv I von "sein" für "du"?', options: ['bist', 'seist', 'wärst', 'sei'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"sein" hat die Sonderform "du seist" im Konjunktiv I.',
+      },
+    ],
+  })
+
+  const c1Unit1Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit1.id,
+      order: 3,
+      grammarTopic: 'Ersatzform mit "würde"',
+      explanationDe:
+        'Wenn der Konjunktiv I mit dem Indikativ identisch ist (z. B. bei "sie sagen" -> "sie sagen"), verwendet man die Ersatzform mit "würde" + Infinitiv: "Sie sagen, sie würden kommen."',
+      explanationEn:
+        'When Konjunktiv I is identical to the indicative (e.g. "sie sagen" -> "sie sagen"), the substitute form with "würde" + infinitive is used instead: "Sie sagen, sie würden kommen" (They say they would come).',
+      explanationTr:
+        'Konjunktiv I, haber kipiyle aynıysa (örn. "sie sagen" -> "sie sagen"), yerine "würde" + Infinitiv ile yapılan ikame biçim kullanılır: "Sie sagen, sie würden kommen".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit1Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Sie sagen, sie ___ morgen kommen. (Ersatzform, da Konjunktiv I = Indikativ)', options: ['kommen', 'kämen', 'würden', 'seien'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Bei Formengleichheit mit dem Indikativ nutzt man "würde" + Infinitiv.',
+      },
+      {
+        lessonId: c1Unit1Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Ersatzform: 'Sie sagen, sie ___ (kommen) morgen.' (würde-Form)" },
+        correctAnswer: { accepted: ['würden kommen'] },
+        explanation: 'Die Ersatzform lautet "würden kommen".',
+      },
+    ],
+  })
+
+  const c1Unit1Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit1.id,
+      order: 4,
+      grammarTopic: 'Übung: Konjunktiv I Gegenwart',
+      explanationDe:
+        'Wiederholung: Konjunktiv I in der indirekten Rede zeigt Distanz zur Aussage eines anderen, ohne die eigene Meinung auszudrücken: "Der Minister erklärte, die Lage sei stabil."',
+      explanationEn:
+        'Review: Konjunktiv I in reported speech signals distance from someone else\'s statement without expressing the speaker\'s own opinion: "Der Minister erklärte, die Lage sei stabil" (The minister stated the situation was stable).',
+      explanationTr:
+        'Tekrar: Dolaylı anlatımda Konjunktiv I, konuşmacının kendi görüşünü belirtmeden başkasının ifadesine mesafe koyar: "Der Minister erklärte, die Lage sei stabil".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit1Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['sei', 'die', 'Lage', 'stabil'] },
+        correctAnswer: { order: ['die', 'Lage', 'sei', 'stabil'] },
+        explanation: 'Nebensatz mit Konjunktiv I: Subjekt, Verb, Prädikativ.',
+      },
+      {
+        lessonId: c1Unit1Lesson4.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['er', 'sie (Pl.)', 'ich'], rights: ['würden (Ersatzform)', 'sei', 'komme'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'er', right: 'sei' },
+            { left: 'sie (Pl.)', right: 'würden (Ersatzform)' },
+            { left: 'ich', right: 'komme' },
+          ],
+        },
+        explanation: 'Konjunktiv-I-Formen je nach Person.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit1Lesson2.id, word: 'erklären', translationEn: 'to explain / state', translationTr: 'açıklamak', exampleSentence: 'Der Minister erklärte, die Lage sei stabil.' },
+      { lessonId: c1Unit1Lesson2.id, word: 'die Lage', translationEn: 'the situation', translationTr: 'durum', exampleSentence: 'Die Lage ist stabil.' },
+      { lessonId: c1Unit1Lesson3.id, word: 'behaupten', translationEn: 'to claim', translationTr: 'iddia etmek', exampleSentence: 'Er behauptet, er würde die Wahrheit sagen.' },
+      { lessonId: c1Unit1Lesson3.id, word: 'die Wahrheit', translationEn: 'the truth', translationTr: 'gerçek', exampleSentence: 'Er sagt die Wahrheit.' },
+      { lessonId: c1Unit1Lesson4.id, word: 'die Aussage', translationEn: 'the statement', translationTr: 'ifade', exampleSentence: 'Seine Aussage war nicht ganz klar.' },
+      { lessonId: c1Unit1Lesson4.id, word: 'stabil', translationEn: 'stable', translationTr: 'istikrarlı', exampleSentence: 'Die wirtschaftliche Lage ist stabil.' },
     ],
   })
 
@@ -2414,14 +2533,14 @@ async function main() {
         exampleSentence: 'Die Tür wird geöffnet.',
       },
       {
-        lessonId: c1Lesson.id,
+        lessonId: c1Unit1Lesson1.id,
         word: 'müde',
         translationEn: 'tired',
         translationTr: 'yorgun',
         exampleSentence: 'Er sagt, er sei müde.',
       },
       {
-        lessonId: c1Lesson.id,
+        lessonId: c1Unit1Lesson1.id,
         word: 'sagen',
         translationEn: 'to say',
         translationTr: 'söylemek',
