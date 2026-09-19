@@ -2408,6 +2408,486 @@ async function main() {
     ],
   })
 
+  // --- C1 Unit 2: Konjunktiv I Vergangenheit (4 lessons) ---
+  const c1Unit2 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 2, titleDe: 'Konjunktiv I Vergangenheit', titleEn: 'Konjunktiv I Past Tense', titleTr: 'Geçmiş Zaman Konjunktiv I' },
+  })
+  const c1Unit2Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit2.id,
+      order: 1,
+      grammarTopic: 'Bildung: habe/sei + Partizip II',
+      explanationDe:
+        'Der Konjunktiv I der Vergangenheit wird mit "habe" oder "sei" + Partizip II gebildet: "Er sagte, er habe das Buch gelesen." / "Sie sagte, sie sei nach Hause gegangen."',
+      explanationEn:
+        'The Konjunktiv I past is formed with "habe" or "sei" + past participle: "Er sagte, er habe das Buch gelesen" (He said he had read the book). / "Sie sagte, sie sei nach Hause gegangen" (She said she had gone home).',
+      explanationTr:
+        'Geçmiş zaman Konjunktiv I, "habe" veya "sei" + Partizip II ile kurulur: "Er sagte, er habe das Buch gelesen." / "Sie sagte, sie sei nach Hause gegangen."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit2Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er sagte, er ___ das Buch gelesen.', options: ['habe', 'sei', 'hätte', 'war'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Lesen" bildet das Perfekt mit "haben", also Konjunktiv I mit "habe".',
+      },
+      {
+        lessonId: c1Unit2Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie sagte, sie ___ nach Hause gegangen. (sei/habe)' },
+        correctAnswer: { accepted: ['sei'] },
+        explanation: '"Gehen" bildet das Perfekt mit "sein", also Konjunktiv I mit "sei".',
+      },
+    ],
+  })
+
+  const c1Unit2Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit2.id,
+      order: 2,
+      grammarTopic: 'Indirekte Rede mit Zeitverschiebung',
+      explanationDe:
+        'Bei der Wiedergabe vergangener Aussagen bleibt die Zeitstufe erhalten, aber die Person wechselt: Direkt: "Ich habe gewartet." -> Indirekt: "Er sagte, er habe gewartet."',
+      explanationEn:
+        'When reporting past statements, the time frame stays the same but the person changes: Direct: "Ich habe gewartet" (I waited). -> Indirect: "Er sagte, er habe gewartet" (He said he had waited).',
+      explanationTr:
+        'Geçmiş ifadeler aktarılırken zaman aynı kalır ama şahıs değişir: Doğrudan: "Ich habe gewartet." -> Dolaylı: "Er sagte, er habe gewartet."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit2Lesson2.id,
+        order: 1,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wandle um in indirekte Rede: 'Ich habe gewartet', sagte er. -> Er sagte, er ___." },
+        correctAnswer: { accepted: ['habe gewartet'] },
+        explanation: 'Indirekte Rede: "er habe gewartet".',
+      },
+      {
+        lessonId: c1Unit2Lesson2.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Direkt: "Wir sind angekommen." Indirekt: Sie sagten, sie ___ angekommen.', options: ['seien', 'haben', 'hätten', 'wären'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Ankommen" bildet das Perfekt mit "sein" -> Konjunktiv I: "seien".',
+      },
+    ],
+  })
+
+  const c1Unit2Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit2.id,
+      order: 3,
+      grammarTopic: 'Konjunktiv II der Vergangenheit als Ersatzform',
+      explanationDe:
+        'Ist der Konjunktiv I der Vergangenheit formgleich mit dem Indikativ (bei "sie"/Plural), nutzt man den Konjunktiv II der Vergangenheit: "Sie sagten, sie hätten gewartet."',
+      explanationEn:
+        'When the Konjunktiv I past is identical to the indicative (with "sie"/plural), the Konjunktiv II past is used instead: "Sie sagten, sie hätten gewartet" (They said they had waited).',
+      explanationTr:
+        'Geçmiş Konjunktiv I, haber kipiyle aynıysa ("sie"/çoğul ile), onun yerine geçmiş Konjunktiv II kullanılır: "Sie sagten, sie hätten gewartet."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit2Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Sie (Pl.) sagten, sie ___ gewartet. (Ersatzform)', options: ['haben', 'habe', 'hätten', 'seien'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Bei Formengleichheit im Plural nutzt man den Konjunktiv II: "hätten".',
+      },
+      {
+        lessonId: c1Unit2Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie sagten, sie ___ (haben-Konjunktiv-II) keine Zeit gehabt.' },
+        correctAnswer: { accepted: ['hätten'] },
+        explanation: 'Konjunktiv II von "haben" im Plural ist "hätten".',
+      },
+    ],
+  })
+
+  const c1Unit2Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit2.id,
+      order: 4,
+      grammarTopic: 'Übung: Konjunktiv I Vergangenheit',
+      explanationDe:
+        'Wiederholung: In Nachrichtentexten wird die Vergangenheit oft im Konjunktiv I wiedergegeben: "Die Polizei teilte mit, der Verdächtige sei geflohen."',
+      explanationEn:
+        'Review: news reports often use Konjunktiv I to report past events: "Die Polizei teilte mit, der Verdächtige sei geflohen" (The police announced the suspect had fled).',
+      explanationTr:
+        'Tekrar: Haber metinlerinde geçmiş genellikle Konjunktiv I ile aktarılır: "Die Polizei teilte mit, der Verdächtige sei geflohen."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit2Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['geflohen', 'der', 'sei', 'Verdächtige'] },
+        correctAnswer: { order: ['der', 'Verdächtige', 'sei', 'geflohen'] },
+        explanation: 'Nebensatzstruktur: Subjekt, Konjunktiv-I-Hilfsverb, Partizip II.',
+      },
+      {
+        lessonId: c1Unit2Lesson4.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['lesen (Perfekt mit haben)', 'gehen (Perfekt mit sein)', 'warten (Perfekt mit haben)'], rights: ['er habe gelesen', 'sie sei gegangen', 'er habe gewartet'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'lesen (Perfekt mit haben)', right: 'er habe gelesen' },
+            { left: 'gehen (Perfekt mit sein)', right: 'sie sei gegangen' },
+            { left: 'warten (Perfekt mit haben)', right: 'er habe gewartet' },
+          ],
+        },
+        explanation: 'Konjunktiv I der Vergangenheit richtet sich nach dem Perfekt-Hilfsverb.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit2Lesson1.id, word: 'ankommen', translationEn: 'to arrive', translationTr: 'varmak', exampleSentence: 'Sie sagten, sie seien angekommen.' },
+      { lessonId: c1Unit2Lesson1.id, word: 'gestehen', translationEn: 'to confess', translationTr: 'itiraf etmek', exampleSentence: 'Er gestand, er habe gelogen.' },
+      { lessonId: c1Unit2Lesson2.id, word: 'warten', translationEn: 'to wait', translationTr: 'beklemek', exampleSentence: 'Er sagte, er habe gewartet.' },
+      { lessonId: c1Unit2Lesson2.id, word: 'mitteilen', translationEn: 'to announce / inform', translationTr: 'bildirmek', exampleSentence: 'Die Polizei teilte mit, der Verdächtige sei geflohen.' },
+      { lessonId: c1Unit2Lesson3.id, word: 'die Zeit', translationEn: 'the time', translationTr: 'zaman', exampleSentence: 'Sie hatten keine Zeit.' },
+      { lessonId: c1Unit2Lesson3.id, word: 'die Form', translationEn: 'the form', translationTr: 'biçim', exampleSentence: 'Die Form ist im Plural gleich.' },
+      { lessonId: c1Unit2Lesson4.id, word: 'der Verdächtige', translationEn: 'the suspect', translationTr: 'şüpheli', exampleSentence: 'Der Verdächtige sei geflohen.' },
+      { lessonId: c1Unit2Lesson4.id, word: 'fliehen', translationEn: 'to flee', translationTr: 'kaçmak', exampleSentence: 'Der Verdächtige ist geflohen.' },
+    ],
+  })
+
+  // --- C1 Unit 3: Erweiterte Partizipialattribute (4 lessons) ---
+  const c1Unit3 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 3, titleDe: 'Erweiterte Partizipialattribute', titleEn: 'Extended Participial Attributes', titleTr: 'Genişletilmiş Sıfat-Fiil Yapıları' },
+  })
+  const c1Unit3Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit3.id,
+      order: 1,
+      grammarTopic: 'Erweitertes Partizip I als Attribut',
+      explanationDe:
+        'Ein erweitertes Partizip-I-Attribut steht vor dem Nomen und kann durch weitere Wörter ergänzt werden: "der schnell wachsende Markt" (Partizip I "wachsend" + Adverb "schnell").',
+      explanationEn:
+        'An extended Partizip I attribute sits before the noun and can include additional modifying words: "der schnell wachsende Markt" (the rapidly growing market — Partizip I "wachsend" plus the adverb "schnell").',
+      explanationTr:
+        'Genişletilmiş Partizip I sıfatı isimden önce gelir ve ek kelimelerle genişletilebilir: "der schnell wachsende Markt" (hızla büyüyen pazar).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit3Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Partizip passt? "der schnell ___ Markt" (wachsen)', options: ['gewachsen', 'wachsend', 'wächst', 'wachsende'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Partizip I (Gegenwart, aktiv) von "wachsen" ist "wachsend"; die Endung -e kommt von der Adjektivdeklination.',
+      },
+      {
+        lessonId: c1Unit3Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der schnell ___ Markt zieht viele Investoren an. (wachsen, Partizip I mit Adjektivendung)' },
+        correctAnswer: { accepted: ['wachsende'] },
+        explanation: 'Partizip I + Adjektivendung: "wachsende".',
+      },
+    ],
+  })
+
+  const c1Unit3Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit3.id,
+      order: 2,
+      grammarTopic: 'Erweitertes Partizip II als Attribut',
+      explanationDe:
+        'Auch das Partizip II kann erweitert vor dem Nomen stehen, meist passivisch: "das von der Regierung geplante Gesetz" (das Gesetz, das von der Regierung geplant wird).',
+      explanationEn:
+        'Partizip II can also appear extended before a noun, usually with passive meaning: "das von der Regierung geplante Gesetz" (the law planned by the government).',
+      explanationTr:
+        'Partizip II de genellikle edilgen anlamla isimden önce genişletilmiş biçimde kullanılabilir: "das von der Regierung geplante Gesetz" (hükümet tarafından planlanan yasa).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit3Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"das von der Regierung ___ Gesetz" (planen, Partizip II)', options: ['plant', 'geplante', 'planende', 'geplant hat'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Partizip II "geplant" + Adjektivendung "-e" vor neutralem Nomen im Nominativ.',
+      },
+      {
+        lessonId: c1Unit3Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme um: 'das Gesetz, das von der Regierung geplant wird' -> 'das ___ Gesetz' (Partizipialattribut)" },
+        correctAnswer: { accepted: ['von der regierung geplante'] },
+        explanation: 'Passivischer Relativsatz wird zum Partizipialattribut: "von der Regierung geplante".',
+      },
+    ],
+  })
+
+  const c1Unit3Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit3.id,
+      order: 3,
+      grammarTopic: 'Umwandlung Relativsatz <-> Partizipialattribut',
+      explanationDe:
+        'Partizipialattribute ersetzen oft Relativsätze in formellen Texten: "Die Studie, die letztes Jahr veröffentlicht wurde" -> "Die letztes Jahr veröffentlichte Studie."',
+      explanationEn:
+        'Participial attributes often replace relative clauses in formal texts: "Die Studie, die letztes Jahr veröffentlicht wurde" -> "Die letztes Jahr veröffentlichte Studie" (The study published last year).',
+      explanationTr:
+        'Sıfat-fiil yapıları resmi metinlerde sık sık ilgi cümlelerinin yerini alır: "Die Studie, die letztes Jahr veröffentlicht wurde" -> "Die letztes Jahr veröffentlichte Studie."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit3Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'Welcher Satz ist die Partizipialattribut-Version von "die Studie, die veröffentlicht wurde"?',
+          options: ['die veröffentlichte Studie', 'die veröffentlichende Studie', 'die Studie veröffentlicht', 'die zu veröffentlichende Studie'],
+        },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Passiv -> Partizip II als Attribut: "die veröffentlichte Studie".',
+      },
+      {
+        lessonId: c1Unit3Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die letztes Jahr ___ Studie zeigt neue Ergebnisse. (veröffentlichen, Partizip II)' },
+        correctAnswer: { accepted: ['veröffentlichte'] },
+        explanation: 'Partizip II + Adjektivendung: "veröffentlichte".',
+      },
+    ],
+  })
+
+  const c1Unit3Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit3.id,
+      order: 4,
+      grammarTopic: 'Übung: Partizipialattribute',
+      explanationDe:
+        'Wiederholung: Erweiterte Partizipialattribute sind typisch für Zeitungs- und Fachtexte und ermöglichen kompakte, informationsdichte Sätze.',
+      explanationEn:
+        'Review: extended participial attributes are typical of newspaper and academic texts, allowing compact, information-dense sentences.',
+      explanationTr:
+        'Tekrar: Genişletilmiş sıfat-fiil yapıları gazete ve akademik metinlerde tipiktir; kısa ve bilgi yoğun cümleler kurmayı sağlar.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit3Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Markt', 'wachsende', 'der', 'schnell'] },
+        correctAnswer: { order: ['der', 'schnell', 'wachsende', 'Markt'] },
+        explanation: 'Reihenfolge: Artikel, Adverb, Partizip+Endung, Nomen.',
+      },
+      {
+        lessonId: c1Unit3Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'the rapidly growing market' (als Partizipialattribut)?" },
+        correctAnswer: { accepted: ['der schnell wachsende markt'] },
+        explanation: '"Der schnell wachsende Markt" ist die Partizipialattribut-Form.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit3Lesson1.id, word: 'wachsen', translationEn: 'to grow', translationTr: 'büyümek', exampleSentence: 'Der Markt wächst schnell.' },
+      { lessonId: c1Unit3Lesson1.id, word: 'der Investor', translationEn: 'the investor', translationTr: 'yatırımcı', exampleSentence: 'Viele Investoren interessieren sich für den Markt.' },
+      { lessonId: c1Unit3Lesson2.id, word: 'die Regierung', translationEn: 'the government', translationTr: 'hükümet', exampleSentence: 'Die Regierung plant ein neues Gesetz.' },
+      { lessonId: c1Unit3Lesson2.id, word: 'das Gesetz', translationEn: 'the law', translationTr: 'yasa', exampleSentence: 'Das Gesetz tritt bald in Kraft.' },
+      { lessonId: c1Unit3Lesson3.id, word: 'die Studie', translationEn: 'the study', translationTr: 'araştırma', exampleSentence: 'Die Studie wurde letztes Jahr veröffentlicht.' },
+      { lessonId: c1Unit3Lesson3.id, word: 'veröffentlichen', translationEn: 'to publish', translationTr: 'yayımlamak', exampleSentence: 'Die Ergebnisse wurden veröffentlicht.' },
+      { lessonId: c1Unit3Lesson4.id, word: 'kompakt', translationEn: 'compact', translationTr: 'kompakt', exampleSentence: 'Der Satz ist sehr kompakt formuliert.' },
+      { lessonId: c1Unit3Lesson4.id, word: 'informationsdicht', translationEn: 'information-dense', translationTr: 'bilgi yoğun', exampleSentence: 'Fachtexte sind oft informationsdicht.' },
+    ],
+  })
+
+  // --- C1 Unit 4: Nominalstil vs. Verbalstil (4 lessons) ---
+  const c1Unit4 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 4, titleDe: 'Nominalstil vs. Verbalstil', titleEn: 'Nominal Style vs. Verbal Style', titleTr: 'İsim Stili ve Fiil Stili' },
+  })
+  const c1Unit4Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit4.id,
+      order: 1,
+      grammarTopic: 'Was ist Nominalstil?',
+      explanationDe:
+        'Der Nominalstil drückt Handlungen durch Nomen statt Verben aus und wirkt formeller: "die Durchführung der Untersuchung" statt "die Untersuchung durchführen".',
+      explanationEn:
+        'Nominal style expresses actions through nouns rather than verbs and sounds more formal: "die Durchführung der Untersuchung" (the conducting of the investigation) instead of "die Untersuchung durchführen" (to conduct the investigation).',
+      explanationTr:
+        'İsim stili eylemleri fiil yerine isimle ifade eder ve daha resmi görünür: "die Untersuchung durchführen" yerine "die Durchführung der Untersuchung".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit4Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'Welcher Satz ist im Nominalstil?',
+          options: ['Wir untersuchen den Fall.', 'Die Untersuchung des Falls erfolgt morgen.', 'Wir haben den Fall untersucht.', 'Der Fall wird untersucht.'],
+        },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Die Untersuchung des Falls" ist ein Nomen anstelle eines Verbs — typischer Nominalstil.',
+      },
+      {
+        lessonId: c1Unit4Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Nominalisierung von "durchführen": die ___.' },
+        correctAnswer: { accepted: ['durchführung'] },
+        explanation: '"durchführen" -> "die Durchführung".',
+      },
+    ],
+  })
+
+  const c1Unit4Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit4.id,
+      order: 2,
+      grammarTopic: 'Nominalisierung von Verben',
+      explanationDe:
+        'Verben werden oft mit den Endungen -ung, -heit, -keit oder als substantivierter Infinitiv nominalisiert: "entscheiden" -> "die Entscheidung", "das Entscheiden".',
+      explanationEn:
+        'Verbs are often nominalized with the endings -ung, -heit, -keit, or as a substantivized infinitive: "entscheiden" (to decide) -> "die Entscheidung" (the decision), "das Entscheiden" (the deciding).',
+      explanationTr:
+        'Fiiller genellikle -ung, -heit, -keit ekleriyle veya isimleşmiş mastar olarak isimleştirilir: "entscheiden" -> "die Entscheidung", "das Entscheiden".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit4Lesson2.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['entscheiden', 'sicher', 'möglich'], rights: ['die Entscheidung', 'die Sicherheit', 'die Möglichkeit'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'entscheiden', right: 'die Entscheidung' },
+            { left: 'sicher', right: 'die Sicherheit' },
+            { left: 'möglich', right: 'die Möglichkeit' },
+          ],
+        },
+        explanation: 'Nominalisierung mit -ung (Verb) und -heit/-keit (Adjektiv).',
+      },
+      {
+        lessonId: c1Unit4Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nominalisierung von 'möglich' (Adjektiv, mit -keit)?" },
+        correctAnswer: { accepted: ['die möglichkeit', 'möglichkeit'] },
+        explanation: '"möglich" -> "die Möglichkeit".',
+      },
+    ],
+  })
+
+  const c1Unit4Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit4.id,
+      order: 3,
+      grammarTopic: 'Verbalstil zur Vereinfachung',
+      explanationDe:
+        'Der Verbalstil ist klarer und persönlicher und wird oft für mündliche oder einfache Texte bevorzugt: "die Durchführung der Untersuchung" -> "wir führen die Untersuchung durch".',
+      explanationEn:
+        'Verbal style is clearer and more personal, often preferred for spoken or simpler texts: "die Durchführung der Untersuchung" -> "wir führen die Untersuchung durch" (we conduct the investigation).',
+      explanationTr:
+        'Fiil stili daha açık ve kişiseldir; sözlü veya basit metinlerde tercih edilir: "die Durchführung der Untersuchung" -> "wir führen die Untersuchung durch".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit4Lesson3.id,
+        order: 1,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme in Verbalstil um: 'die Überprüfung der Daten' -> 'wir ___ die Daten.' (überprüfen)" },
+        correctAnswer: { accepted: ['überprüfen'] },
+        explanation: 'Nominalstil -> Verbalstil: "wir überprüfen die Daten".',
+      },
+      {
+        lessonId: c1Unit4Lesson3.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: 'Welcher Satz ist im Verbalstil?',
+          options: ['Die Überprüfung der Daten ist notwendig.', 'Wir überprüfen die Daten.', 'Die Datenüberprüfung erfolgt heute.', 'Eine Überprüfung der Daten findet statt.'],
+        },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Wir überprüfen die Daten" benutzt ein Verb statt eines Nomens.',
+      },
+    ],
+  })
+
+  const c1Unit4Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit4.id,
+      order: 4,
+      grammarTopic: 'Übung: Nominalstil vs. Verbalstil',
+      explanationDe:
+        'Wiederholung: Nominalstil dominiert in Verwaltungs-, Wissenschafts- und Zeitungstexten; Verbalstil wirkt lebendiger und wird in Erzählungen und Gesprächen bevorzugt.',
+      explanationEn:
+        'Review: nominal style dominates administrative, academic, and newspaper texts; verbal style feels livelier and is preferred in narratives and conversation.',
+      explanationTr:
+        'Tekrar: İsim stili resmi, akademik ve gazete metinlerinde baskındır; fiil stili daha canlıdır ve anlatı ile konuşmada tercih edilir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit4Lesson4.id,
+        order: 1,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Nominalstil: "die ___ der Untersuchung" (durchführen, Nominalisierung)' },
+        correctAnswer: { accepted: ['durchführung'] },
+        explanation: '"durchführen" -> "die Durchführung".',
+      },
+      {
+        lessonId: c1Unit4Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'In welchem Textyp dominiert typischerweise der Nominalstil?', options: ['Persönlicher Brief', 'Verwaltungstext', 'Chat-Nachricht', 'Märchen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Verwaltungs- und Fachtexte bevorzugen den formelleren Nominalstil.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit4Lesson1.id, word: 'die Untersuchung', translationEn: 'the investigation', translationTr: 'inceleme', exampleSentence: 'Die Untersuchung des Falls erfolgt morgen.' },
+      { lessonId: c1Unit4Lesson1.id, word: 'erfolgen', translationEn: 'to take place', translationTr: 'gerçekleşmek', exampleSentence: 'Die Prüfung erfolgt am Montag.' },
+      { lessonId: c1Unit4Lesson2.id, word: 'entscheiden', translationEn: 'to decide', translationTr: 'karar vermek', exampleSentence: 'Wir müssen schnell entscheiden.' },
+      { lessonId: c1Unit4Lesson2.id, word: 'möglich', translationEn: 'possible', translationTr: 'mümkün', exampleSentence: 'Das ist gut möglich.' },
+      { lessonId: c1Unit4Lesson3.id, word: 'überprüfen', translationEn: 'to check / verify', translationTr: 'kontrol etmek', exampleSentence: 'Wir überprüfen die Daten sorgfältig.' },
+      { lessonId: c1Unit4Lesson3.id, word: 'die Daten', translationEn: 'the data', translationTr: 'veri', exampleSentence: 'Die Daten sind vollständig.' },
+      { lessonId: c1Unit4Lesson4.id, word: 'lebendig', translationEn: 'lively', translationTr: 'canlı', exampleSentence: 'Der Verbalstil wirkt lebendiger.' },
+      { lessonId: c1Unit4Lesson4.id, word: 'die Verwaltung', translationEn: 'the administration', translationTr: 'yönetim', exampleSentence: 'Die Verwaltung bearbeitet den Antrag.' },
+    ],
+  })
+
   // --- C2: Komplexe Konnektoren (1 sample lesson) ---
   const c2Unit = await prisma.unit.create({
     data: { levelId: c2.id, order: 1, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
