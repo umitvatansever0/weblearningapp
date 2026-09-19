@@ -3564,6 +3564,180 @@ async function main() {
     ],
   })
 
+  // --- B2 Unit 10: Passiversatzformen (4 lessons) ---
+  const b2Unit10 = await prisma.unit.create({
+    data: { levelId: b2.id, order: 10, titleDe: 'Passiversatzformen', titleEn: 'Passive Substitute Forms', titleTr: 'Edilgen Çatı Alternatifleri' },
+  })
+
+  const b2Unit10Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit10.id,
+      order: 1,
+      grammarTopic: '"sich lassen" + Infinitiv',
+      explanationDe:
+        '"sich lassen" + Infinitiv drückt aus, dass etwas möglich ist, ähnlich wie ein Passiv mit "können": "Das Fenster lässt sich öffnen." (= Das Fenster kann geöffnet werden.)',
+      explanationEn:
+        '"sich lassen" + infinitive expresses that something is possible, similar to a passive with "können": "Das Fenster lässt sich öffnen." (The window can be opened.)',
+      explanationTr:
+        '"sich lassen" + Infinitiv, bir şeyin mümkün olduğunu ifade eder, "können" ile edilgen çatıya benzer: "Das Fenster lässt sich öffnen." (Pencere açılabilir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Tür ___ sich leicht öffnen.', options: ['lässt', 'lasst', 'lasse', 'lässst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"lassen" wird bei "er/sie/es" zu "lässt".',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Problem ___ sich lösen. (lassen)' },
+        correctAnswer: { accepted: ['lässt'] },
+        explanation: '3. Person Singular von "lassen": lässt.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit10Lesson1.id, word: 'lösen', translationEn: 'to solve', translationTr: 'çözmek', exampleSentence: 'Das Problem lässt sich lösen.' },
+      { lessonId: b2Unit10Lesson1.id, word: 'die Tür', translationEn: 'the door', translationTr: 'kapı', exampleSentence: 'Die Tür lässt sich leicht öffnen.' },
+    ],
+  })
+
+  const b2Unit10Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit10.id,
+      order: 2,
+      grammarTopic: 'man-Konstruktion als Passiversatz',
+      explanationDe:
+        'Die man-Konstruktion ersetzt das Passiv durch einen Aktivsatz: "Man repariert das Auto." (= Das Auto wird repariert.) "Man" bleibt unbestimmt und wird nicht genannt.',
+      explanationEn:
+        'The man-construction replaces the passive with an active sentence: "Man repariert das Auto." (The car is being repaired.) "Man" stays indefinite and is never named.',
+      explanationTr:
+        'man-yapısı, edilgen cümlenin yerine etken bir cümle kullanır: "Man repariert das Auto." (Araba tamir ediliyor.) "Man" belirsiz kalır ve isim verilmez.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Passiv: "Das Auto wird repariert." Aktiv mit man-Konstruktion: "___ repariert das Auto."', options: ['Man', 'Er', 'Sie', 'Ich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Die man-Konstruktion ersetzt das unpersönliche Passiv.',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: {
+          lefts: ['Das Brot wird gebacken.', 'Die Fenster werden geputzt.', 'Der Brief wird geschrieben.'],
+          rights: ['Man putzt die Fenster.', 'Man schreibt den Brief.', 'Man backt das Brot.'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'Das Brot wird gebacken.', right: 'Man backt das Brot.' },
+            { left: 'Die Fenster werden geputzt.', right: 'Man putzt die Fenster.' },
+            { left: 'Der Brief wird geschrieben.', right: 'Man schreibt den Brief.' },
+          ],
+        },
+        explanation: 'Jedes Passiv lässt sich mit "man" + Aktivverb umformulieren.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit10Lesson2.id, word: 'backen', translationEn: 'to bake', translationTr: 'pişirmek (fırında)', exampleSentence: 'Man backt das Brot.' },
+      { lessonId: b2Unit10Lesson2.id, word: 'das Fenster', translationEn: 'the window', translationTr: 'pencere', exampleSentence: 'Man putzt die Fenster.' },
+    ],
+  })
+
+  const b2Unit10Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit10.id,
+      order: 3,
+      grammarTopic: '"sein" + zu + Infinitiv',
+      explanationDe:
+        '"sein" + zu + Infinitiv drückt eine Möglichkeit oder Notwendigkeit aus, oft in formellem Stil: "Die Regeln sind zu beachten." (= Die Regeln müssen/können beachtet werden.)',
+      explanationEn:
+        '"sein" + zu + infinitive expresses a possibility or necessity, often in a formal register: "Die Regeln sind zu beachten." (The rules must/can be observed.)',
+      explanationTr:
+        '"sein" + zu + Infinitiv, genellikle resmi bir üslupta olasılık ya da zorunluluk ifade eder: "Die Regeln sind zu beachten." (Kurallara uyulmalı/uyulabilir.)',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Aufgabe ist noch ___ erledigen.', options: ['zu', 'zum', 'zur', 'zuerst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sein" + zu + Infinitiv: "ist zu erledigen".',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 2,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['zu', 'Regeln', 'sind', 'Die', 'beachten'] },
+        correctAnswer: { order: ['Die', 'Regeln', 'sind', 'zu', 'beachten'] },
+        explanation: 'Reihenfolge: Artikel, Nomen, "sein"-Form, "zu", Infinitiv.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit10Lesson3.id, word: 'erledigen', translationEn: 'to take care of / finish', translationTr: 'halletmek', exampleSentence: 'Die Aufgabe ist noch zu erledigen.' },
+      { lessonId: b2Unit10Lesson3.id, word: 'die Aufgabe', translationEn: 'the task', translationTr: 'görev', exampleSentence: 'Ich habe heute viele Aufgaben.' },
+    ],
+  })
+
+  const b2Unit10Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: b2Unit10.id,
+      order: 4,
+      grammarTopic: 'Wiederholung: Passiversatzformen im Vergleich',
+      explanationDe:
+        'Wiederholung: "sich lassen" + Infinitiv, die man-Konstruktion und "sein" + zu + Infinitiv sind drei Alternativen zum Passiv, oft mit "können" oder "müssen": "Das lässt sich machen." = "Man kann das machen." = "Das ist zu machen."',
+      explanationEn:
+        'Review: "sich lassen" + infinitive, the man-construction, and "sein" + zu + infinitive are three alternatives to the passive, often meaning "können" or "müssen": "Das lässt sich machen." = "Man kann das machen." = "Das ist zu machen." (all: "This can be done.")',
+      explanationTr:
+        'Tekrar: "sich lassen" + Infinitiv, man-yapısı ve "sein" + zu + Infinitiv, genellikle "können" veya "müssen" anlamına gelen üç edilgen çatı alternatifidir: "Das lässt sich machen." = "Man kann das machen." = "Das ist zu machen." (hepsi: "Bu yapılabilir.")',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Passiversatzform passt zu "Das Problem kann gelöst werden."?', options: ['Das Problem lässt sich lösen.', 'Das Problem hat sich gelöst.', 'Das Problem wird lösen.', 'Das Problem löst sich selbst.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sich lassen" + Infinitiv ersetzt "können" + Passiv.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch mit der man-Konstruktion: 'The window is being cleaned'?" },
+        correctAnswer: { accepted: ['man putzt das fenster'] },
+        explanation: '"Man putzt das Fenster." ist die man-Konstruktion für das Passiv.',
+      },
+    ],
+  })
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: b2Unit10Lesson4.id, word: 'die Lösung', translationEn: 'the solution', translationTr: 'çözüm', exampleSentence: 'Für jedes Problem gibt es eine Lösung.' },
+      { lessonId: b2Unit10Lesson4.id, word: 'notwendig', translationEn: 'necessary', translationTr: 'gerekli', exampleSentence: 'Es ist notwendig, die Regeln zu beachten.' },
+    ],
+  })
+
   // --- C1: Indirekte Rede (1 sample lesson) ---
   const c1Unit = await prisma.unit.create({
     data: { levelId: c1.id, order: 1, titleDe: 'Indirekte Rede', titleEn: 'Reported Speech', titleTr: 'Dolaylı Anlatım' },
