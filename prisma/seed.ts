@@ -3368,6 +3368,486 @@ async function main() {
     ],
   })
 
+  // --- C1 Unit 8: Textkohärenz & Konnektoren (4 lessons) ---
+  const c1Unit8 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 8, titleDe: 'Textkohärenz & Konnektoren', titleEn: 'Text Coherence & Connectors', titleTr: 'Metin Bütünlüğü ve Bağlaçlar' },
+  })
+  const c1Unit8Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit8.id,
+      order: 1,
+      grammarTopic: 'Anaphorische Verweise',
+      explanationDe:
+        'Anaphern verweisen auf bereits Genanntes und vermeiden Wiederholungen: Pronomen ("dieser", "jener"), Synonyme oder Oberbegriffe ("das Tier" für "der Hund").',
+      explanationEn:
+        'Anaphoric references point back to something already mentioned, avoiding repetition: pronouns ("dieser", "jener"), synonyms, or hypernyms ("das Tier" for "der Hund" — "the animal" for "the dog").',
+      explanationTr:
+        'Anaforlar daha önce belirtilen bir şeye işaret eder ve tekrarı önler: zamirler ("dieser", "jener"), eşanlamlılar veya üst kavramlar ("das Tier", "der Hund" yerine).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit8Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: {
+          prompt: '"Der Hund bellte laut. ___ Tier war aufgeregt." Welches Wort passt als Anapher?',
+          options: ['Das', 'Diese', 'Jene', 'Ein'],
+        },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Das Tier" ist ein Oberbegriff, der auf "der Hund" zurückverweist.',
+      },
+      {
+        lessonId: c1Unit8Lesson1.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie nennt man einen Rückverweis auf bereits Genanntes im Text?" },
+        correctAnswer: { accepted: ['anapher', 'anaphorischer verweis'] },
+        explanation: 'Das nennt man eine Anapher.',
+      },
+    ],
+  })
+
+  const c1Unit8Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit8.id,
+      order: 2,
+      grammarTopic: 'Konnektoren für Textstruktur',
+      explanationDe:
+        'Strukturierende Konnektoren gliedern Texte: "zunächst", "im Folgenden", "abschließend" markieren Anfang, Mitte und Ende einer Argumentation.',
+      explanationEn:
+        'Structuring connectors organize texts: "zunächst" (first), "im Folgenden" (in what follows), "abschließend" (in conclusion) mark the beginning, middle, and end of an argument.',
+      explanationTr:
+        'Yapılandırıcı bağlaçlar metni düzenler: "zunächst" (önce), "im Folgenden" (aşağıda), "abschließend" (sonuç olarak) bir argümanın başını, ortasını ve sonunu işaretler.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit8Lesson2.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['zunächst', 'im Folgenden', 'abschließend'], rights: ['Anfang', 'Mitte', 'Ende'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'zunächst', right: 'Anfang' },
+            { left: 'im Folgenden', right: 'Mitte' },
+            { left: 'abschließend', right: 'Ende' },
+          ],
+        },
+        explanation: 'Strukturkonnektoren markieren die Textabschnitte.',
+      },
+      {
+        lessonId: c1Unit8Lesson2.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ lässt sich sagen, dass die Ergebnisse eindeutig sind. (zusammenfassend)' },
+        correctAnswer: { accepted: ['abschließend', 'zusammenfassend'] },
+        explanation: '"Abschließend" oder "zusammenfassend" leiten den Schlussteil ein.',
+      },
+    ],
+  })
+
+  const c1Unit8Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit8.id,
+      order: 3,
+      grammarTopic: 'Kohäsionsmittel: Ellipse und Substitution',
+      explanationDe:
+        'Ellipsen lassen Wiederholtes weg ("Er kam später, sie [kam] früher."), Substitution ersetzt es durch ein anderes Wort ("Ich nehme den roten Wagen; den blauen [Wagen] nicht.").',
+      explanationEn:
+        'Ellipsis omits a repeated element ("Er kam später, sie [kam] früher" — He came later, she [came] earlier), substitution replaces it with another word ("Ich nehme den roten Wagen; den blauen [Wagen] nicht" — I\'ll take the red car; not the blue [one]).',
+      explanationTr:
+        'Eksiltme (ellipse) tekrarlanan bir öğeyi atlar ("Er kam später, sie [kam] früher."), yerine koyma (substitution) onu başka bir kelimeyle değiştirir ("Ich nehme den roten Wagen; den blauen [Wagen] nicht.").',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit8Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was passiert bei einer Ellipse?', options: ['Ein Wort wird ersetzt', 'Ein wiederholtes Element wird weggelassen', 'Ein Satz wird verlängert', 'Ein Pronomen wird hinzugefügt'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Eine Ellipse lässt ein wiederholtes Element aus.',
+      },
+      {
+        lessonId: c1Unit8Lesson3.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie heißt das Kohäsionsmittel, bei dem ein Wort durch ein anderes ersetzt wird?" },
+        correctAnswer: { accepted: ['substitution'] },
+        explanation: 'Das nennt man Substitution.',
+      },
+    ],
+  })
+
+  const c1Unit8Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit8.id,
+      order: 4,
+      grammarTopic: 'Übung: Textkohärenz',
+      explanationDe:
+        'Wiederholung: Kohärente Texte nutzen Anaphern, Strukturkonnektoren und Kohäsionsmittel, um Sätze logisch und flüssig zu verbinden.',
+      explanationEn:
+        'Review: coherent texts use anaphora, structuring connectors, and cohesive devices to link sentences logically and smoothly.',
+      explanationTr:
+        'Tekrar: Tutarlı metinler cümleleri mantıklı ve akıcı bağlamak için anafor, yapı bağlaçları ve bağdaşıklık araçları kullanır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit8Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['eindeutig', 'sind', 'die', 'Ergebnisse'] },
+        correctAnswer: { order: ['die', 'Ergebnisse', 'sind', 'eindeutig'] },
+        explanation: 'Standard-Wortstellung: Subjekt, Verb, Prädikativ.',
+      },
+      {
+        lessonId: c1Unit8Lesson4.id,
+        order: 2,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Mittel vermeidet Wortwiederholung durch einen Oberbegriff?', options: ['Ellipse', 'Anapher', 'Substitution', 'Konjunktiv'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Eine Anapher kann über einen Oberbegriff auf Vorheriges verweisen.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit8Lesson1.id, word: 'aufgeregt', translationEn: 'excited / agitated', translationTr: 'heyecanlı', exampleSentence: 'Das Tier war aufgeregt.' },
+      { lessonId: c1Unit8Lesson1.id, word: 'der Oberbegriff', translationEn: 'the hypernym / umbrella term', translationTr: 'üst kavram', exampleSentence: '"Das Tier" ist ein Oberbegriff für "der Hund".' },
+      { lessonId: c1Unit8Lesson2.id, word: 'zunächst', translationEn: 'first / initially', translationTr: 'önce', exampleSentence: 'Zunächst betrachten wir die Ausgangslage.' },
+      { lessonId: c1Unit8Lesson2.id, word: 'eindeutig', translationEn: 'unambiguous / clear', translationTr: 'net', exampleSentence: 'Die Ergebnisse sind eindeutig.' },
+      { lessonId: c1Unit8Lesson3.id, word: 'weglassen', translationEn: 'to omit', translationTr: 'atlamak', exampleSentence: 'Man kann das wiederholte Wort weglassen.' },
+      { lessonId: c1Unit8Lesson3.id, word: 'ersetzen', translationEn: 'to replace', translationTr: 'değiştirmek', exampleSentence: 'Man kann das Wort durch ein anderes ersetzen.' },
+      { lessonId: c1Unit8Lesson4.id, word: 'kohärent', translationEn: 'coherent', translationTr: 'tutarlı', exampleSentence: 'Der Text ist sehr kohärent.' },
+      { lessonId: c1Unit8Lesson4.id, word: 'flüssig', translationEn: 'fluent / smooth', translationTr: 'akıcı', exampleSentence: 'Er spricht sehr flüssig Deutsch.' },
+    ],
+  })
+
+  // --- C1 Unit 9: Irreale Bedingungssätze (4 lessons) ---
+  const c1Unit9 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 9, titleDe: 'Irreale Bedingungssätze', titleEn: 'Unreal Conditional Clauses', titleTr: 'Gerçek Dışı Koşul Cümleleri' },
+  })
+  const c1Unit9Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit9.id,
+      order: 1,
+      grammarTopic: 'Konjunktiv II der Vergangenheit in wenn-Sätzen',
+      explanationDe:
+        'Irreale Bedingungen in der Vergangenheit nutzen Konjunktiv II der Vergangenheit (hätte/wäre + Partizip II): "Wenn ich das gewusst hätte, wäre ich nicht gekommen."',
+      explanationEn:
+        'Unreal past conditions use the past Konjunktiv II (hätte/wäre + past participle): "Wenn ich das gewusst hätte, wäre ich nicht gekommen" (If I had known that, I wouldn\'t have come).',
+      explanationTr:
+        'Geçmişteki gerçek dışı koşullar geçmiş Konjunktiv II ile kurulur (hätte/wäre + Partizip II): "Wenn ich das gewusst hätte, wäre ich nicht gekommen."',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit9Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wenn ich das gewusst ___, wäre ich nicht gekommen.', options: ['habe', 'hätte', 'hatte', 'würde'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Konjunktiv II der Vergangenheit: "hätte gewusst".',
+      },
+      {
+        lessonId: c1Unit9Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wenn er früher losgefahren ___, hätte er den Zug erreicht. (sein-Konjunktiv-II)' },
+        correctAnswer: { accepted: ['wäre'] },
+        explanation: '"Losfahren" bildet das Perfekt mit "sein", also Konjunktiv II mit "wäre".',
+      },
+    ],
+  })
+
+  const c1Unit9Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit9.id,
+      order: 2,
+      grammarTopic: 'Uneingeleitete Bedingungssätze',
+      explanationDe:
+        'Ohne "wenn" beginnt der Bedingungssatz mit dem Verb: "Wäre er hier, würde er helfen." (= "Wenn er hier wäre, würde er helfen.")',
+      explanationEn:
+        'Without "wenn", the conditional clause starts with the verb: "Wäre er hier, würde er helfen" (Were he here, he would help — = "Wenn er hier wäre, würde er helfen").',
+      explanationTr:
+        '"Wenn" olmadan koşul cümlesi fiille başlar: "Wäre er hier, würde er helfen." (= "Wenn er hier wäre, würde er helfen.")',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit9Lesson2.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['besser,', 'Wetter', 'wäre', 'das', 'käme', 'ich'] },
+        correctAnswer: { order: ['wäre', 'das', 'Wetter', 'besser,', 'käme', 'ich'] },
+        explanation: 'Bei uneingeleiteten Bedingungssätzen beginnt das Verb den Satz: "Wäre das Wetter besser, käme ich."',
+      },
+      {
+        lessonId: c1Unit9Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme uneingeleitet um: 'Wenn ich Zeit hätte, würde ich kommen.' -> '___ ich Zeit, würde ich kommen.'" },
+        correctAnswer: { accepted: ['hätte'] },
+        explanation: 'Uneingeleitet beginnt der Satz mit dem Verb: "Hätte ich Zeit, ...".',
+      },
+    ],
+  })
+
+  const c1Unit9Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit9.id,
+      order: 3,
+      grammarTopic: 'Irreale Wunschsätze',
+      explanationDe:
+        'Irreale Wünsche mit "wenn nur" oder "hätte ich nur" drücken Bedauern aus: "Wenn ich nur mehr Zeit hätte!" "Hätte ich das nur gewusst!"',
+      explanationEn:
+        'Unreal wishes with "wenn nur" or "hätte ich nur" express regret: "Wenn ich nur mehr Zeit hätte!" (If only I had more time!) "Hätte ich das nur gewusst!" (If only I had known that!)',
+      explanationTr:
+        '"Wenn nur" veya "hätte ich nur" ile kurulan gerçek dışı dilekler pişmanlık ifade eder: "Wenn ich nur mehr Zeit hätte!" "Hätte ich das nur gewusst!"',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit9Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz drückt Bedauern über die Vergangenheit aus?', options: ['Wenn ich Zeit habe, komme ich.', 'Hätte ich das nur gewusst!', 'Ich weiß das.', 'Ich komme morgen.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Hätte ich das nur gewusst!" ist ein irrealer Wunsch über die Vergangenheit.',
+      },
+      {
+        lessonId: c1Unit9Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wenn ich nur mehr Zeit ___! (haben-Konjunktiv-II, Wunsch)' },
+        correctAnswer: { accepted: ['hätte'] },
+        explanation: 'Irrealer Wunsch: "hätte" (Konjunktiv II von "haben").',
+      },
+    ],
+  })
+
+  const c1Unit9Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit9.id,
+      order: 4,
+      grammarTopic: 'Übung: Irreale Bedingungssätze',
+      explanationDe:
+        'Wiederholung: Irreale Bedingungssätze der Vergangenheit beschreiben Situationen, die nicht eingetreten sind, oft mit Bedauern oder Spekulation verbunden.',
+      explanationEn:
+        'Review: unreal past conditionals describe situations that didn\'t happen, often connected to regret or speculation.',
+      explanationTr:
+        'Tekrar: Geçmişe yönelik gerçek dışı koşul cümleleri gerçekleşmemiş durumları anlatır, genellikle pişmanlık veya tahminle bağlantılıdır.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit9Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['wissen (haben)', 'losfahren (sein)', 'helfen (haben)'], rights: ['hätte gewusst', 'wäre losgefahren', 'hätte geholfen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'wissen (haben)', right: 'hätte gewusst' },
+            { left: 'losfahren (sein)', right: 'wäre losgefahren' },
+            { left: 'helfen (haben)', right: 'hätte geholfen' },
+          ],
+        },
+        explanation: 'Konjunktiv II der Vergangenheit richtet sich nach dem Perfekt-Hilfsverb.',
+      },
+      {
+        lessonId: c1Unit9Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'If I had known that, I wouldn't have come'?" },
+        correctAnswer: { accepted: ['wenn ich das gewusst hätte, wäre ich nicht gekommen'] },
+        explanation: '"Wenn ich das gewusst hätte, wäre ich nicht gekommen."',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit9Lesson1.id, word: 'erreichen', translationEn: 'to reach / catch (e.g. a train)', translationTr: 'yetişmek', exampleSentence: 'Er hätte den Zug erreicht.' },
+      { lessonId: c1Unit9Lesson1.id, word: 'losfahren', translationEn: 'to set off / depart', translationTr: 'yola çıkmak', exampleSentence: 'Wir sind früh losgefahren.' },
+      { lessonId: c1Unit9Lesson2.id, word: 'uneingeleitet', translationEn: 'not introduced (by a conjunction)', translationTr: 'bağlaçsız başlayan', exampleSentence: 'Uneingeleitete Sätze beginnen mit dem Verb.' },
+      { lessonId: c1Unit9Lesson2.id, word: 'die Bedingung', translationEn: 'the condition', translationTr: 'koşul', exampleSentence: 'Das ist eine wichtige Bedingung.' },
+      { lessonId: c1Unit9Lesson3.id, word: 'das Bedauern', translationEn: 'the regret', translationTr: 'pişmanlık', exampleSentence: 'In seiner Stimme lag Bedauern.' },
+      { lessonId: c1Unit9Lesson3.id, word: 'der Wunsch', translationEn: 'the wish', translationTr: 'dilek', exampleSentence: 'Das war nur ein Wunsch.' },
+      { lessonId: c1Unit9Lesson4.id, word: 'die Spekulation', translationEn: 'the speculation', translationTr: 'spekülasyon', exampleSentence: 'Das ist reine Spekulation.' },
+      { lessonId: c1Unit9Lesson4.id, word: 'eintreten', translationEn: 'to occur / come about', translationTr: 'gerçekleşmek', exampleSentence: 'Diese Situation ist nicht eingetreten.' },
+    ],
+  })
+
+  // --- C1 Unit 10: Feste Präpositionalphrasen (4 lessons) ---
+  const c1Unit10 = await prisma.unit.create({
+    data: { levelId: c1.id, order: 10, titleDe: 'Feste Präpositionalphrasen', titleEn: 'Fixed Prepositional Phrases', titleTr: 'Sabit Edat Öbekleri' },
+  })
+  const c1Unit10Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit10.id,
+      order: 1,
+      grammarTopic: 'Verben mit "auf" und "über"',
+      explanationDe:
+        'Viele Verben verlangen feste Präpositionen: "sich freuen auf" (Zukünftiges), "sich freuen über" (Geschehenes), "sich ärgern über".',
+      explanationEn:
+        'Many verbs require fixed prepositions: "sich freuen auf" (to look forward to something future), "sich freuen über" (to be happy about something that happened), "sich ärgern über" (to be annoyed about).',
+      explanationTr:
+        'Birçok fiil sabit edat gerektirir: "sich freuen auf" (gelecekle ilgili), "sich freuen über" (olmuş bir şeyle ilgili), "sich ärgern über".',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit10Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich freue mich ___ den Urlaub nächste Woche. (Zukunft)', options: ['über', 'auf', 'für', 'an'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Sich freuen auf" bezieht sich auf zukünftige Ereignisse.',
+      },
+      {
+        lessonId: c1Unit10Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ärgert sich ___ den Fehler. (Präposition)' },
+        correctAnswer: { accepted: ['über'] },
+        explanation: '"Sich ärgern über" verlangt die Präposition "über".',
+      },
+    ],
+  })
+
+  const c1Unit10Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit10.id,
+      order: 2,
+      grammarTopic: 'Verben mit "an" und "nach"',
+      explanationDe:
+        '"Denken an" (Akkusativ) bedeutet, an jemanden/etwas zu denken. "Sich sehnen nach" (Dativ) drückt Sehnsucht aus.',
+      explanationEn:
+        '"Denken an" (+ accusative) means to think about someone/something. "Sich sehnen nach" (+ dative) expresses longing for something.',
+      explanationTr:
+        '"Denken an" (-i hali) birini/bir şeyi düşünmek demektir. "Sich sehnen nach" (-e hali) özlem ifade eder.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit10Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich denke oft ___ dich.', options: ['an', 'nach', 'über', 'für'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Denken an" + Akkusativ.',
+      },
+      {
+        lessonId: c1Unit10Lesson2.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welche Präposition folgt auf 'sich sehnen'?" },
+        correctAnswer: { accepted: ['nach'] },
+        explanation: '"Sich sehnen nach" + Dativ.',
+      },
+    ],
+  })
+
+  const c1Unit10Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit10.id,
+      order: 3,
+      grammarTopic: 'Pronominaladverbien: da(r)- und wo(r)-',
+      explanationDe:
+        'Bei Sachen (nicht Personen) bildet man Pronominaladverbien: "sich freuen auf" -> "sich darauf freuen"; Frage: "Worauf freust du dich?"',
+      explanationEn:
+        'For things (not people), pronominal adverbs are formed: "sich freuen auf" -> "sich darauf freuen" (to look forward to it); question: "Worauf freust du dich?" (What are you looking forward to?)',
+      explanationTr:
+        'Nesneler için (kişiler değil) zamirsi zarflar kullanılır: "sich freuen auf" -> "sich darauf freuen"; soru: "Worauf freust du dich?"',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit10Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Frage nach einer Sache mit "sich freuen auf": ___ freust du dich?', options: ['Wen', 'Wer', 'Worauf', 'Wovon'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"Worauf" fragt nach einer Sache mit der Präposition "auf".',
+      },
+      {
+        lessonId: c1Unit10Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich freue mich ___ (Pronominaladverb für "auf" + Sache).' },
+        correctAnswer: { accepted: ['darauf'] },
+        explanation: '"Darauf" ist das Pronominaladverb für "auf" + Sache.',
+      },
+    ],
+  })
+
+  const c1Unit10Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: c1Unit10.id,
+      order: 4,
+      grammarTopic: 'Übung: Feste Präpositionalphrasen',
+      explanationDe:
+        'Wiederholung: Feste Verb-Präposition-Kombinationen müssen mit dem jeweiligen Verb zusammen gelernt werden, da sie nicht logisch ableitbar sind.',
+      explanationEn:
+        'Review: fixed verb-preposition combinations must be learned together with the verb, since they can\'t always be logically deduced.',
+      explanationTr:
+        'Tekrar: Sabit fiil-edat kombinasyonları mantıksal olarak çıkarılamayabileceğinden fiille birlikte ezberlenmelidir.',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: c1Unit10Lesson4.id,
+        order: 1,
+        type: 'MATCHING',
+        data: { lefts: ['sich freuen auf', 'sich ärgern über', 'sich sehnen nach'], rights: ['Zukünftiges', 'Geschehenes', 'Sehnsucht'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'sich freuen auf', right: 'Zukünftiges' },
+            { left: 'sich ärgern über', right: 'Geschehenes' },
+            { left: 'sich sehnen nach', right: 'Sehnsucht' },
+          ],
+        },
+        explanation: 'Feste Präpositionen je nach Verbbedeutung.',
+      },
+      {
+        lessonId: c1Unit10Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'I'm thinking of you' (denken + Präposition)?" },
+        correctAnswer: { accepted: ['ich denke an dich'] },
+        explanation: '"Ich denke an dich." — "denken an" + Akkusativ.',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: c1Unit10Lesson1.id, word: 'sich ärgern', translationEn: 'to be annoyed', translationTr: 'sinirlenmek', exampleSentence: 'Er ärgert sich über den Fehler.' },
+      { lessonId: c1Unit10Lesson1.id, word: 'der Urlaub', translationEn: 'the vacation', translationTr: 'tatil', exampleSentence: 'Ich freue mich auf den Urlaub.' },
+      { lessonId: c1Unit10Lesson2.id, word: 'sich sehnen', translationEn: 'to long for', translationTr: 'özlemek', exampleSentence: 'Ich sehne mich nach der Heimat.' },
+      { lessonId: c1Unit10Lesson2.id, word: 'die Heimat', translationEn: 'the homeland', translationTr: 'memleket', exampleSentence: 'Er sehnt sich nach seiner Heimat.' },
+      { lessonId: c1Unit10Lesson3.id, word: 'das Pronominaladverb', translationEn: 'the pronominal adverb', translationTr: 'zamirsi zarf', exampleSentence: '"Darauf" ist ein Pronominaladverb.' },
+      { lessonId: c1Unit10Lesson3.id, word: 'ableiten', translationEn: 'to derive / deduce', translationTr: 'türetmek', exampleSentence: 'Man kann die Bedeutung nicht immer ableiten.' },
+      { lessonId: c1Unit10Lesson4.id, word: 'die Kombination', translationEn: 'the combination', translationTr: 'kombinasyon', exampleSentence: 'Diese Kombination muss man auswendig lernen.' },
+      { lessonId: c1Unit10Lesson4.id, word: 'auswendig', translationEn: 'by heart', translationTr: 'ezbere', exampleSentence: 'Ich lerne die Verben auswendig.' },
+    ],
+  })
+
   // --- C2: Komplexe Konnektoren (1 sample lesson) ---
   const c2Unit = await prisma.unit.create({
     data: { levelId: c2.id, order: 1, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
