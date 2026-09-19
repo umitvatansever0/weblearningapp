@@ -6,14 +6,14 @@ describe('getLevels', () => {
     const levels = await getLevels()
     expect(levels.map((level) => level.code)).toEqual(['A1', 'A2', 'B1', 'B2', 'C1', 'C2'])
     const a1 = levels.find((level) => level.code === 'A1')
-    expect(a1?.unitCount).toBe(12)
+    expect(a1?.unitCount).toBe(13)
   })
 })
 
 describe('getUnitsForLevel', () => {
   it('returns the A1 unit with four lessons and no progress for a new user', async () => {
     const units = await getUnitsForLevel('A1', 'nonexistent-user-id')
-    expect(units).toHaveLength(12)
+    expect(units).toHaveLength(13)
     expect(units[0].lessons).toHaveLength(4)
     expect(units[0].lessons.every((lesson) => lesson.completed === false)).toBe(true)
   })

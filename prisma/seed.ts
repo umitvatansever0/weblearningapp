@@ -1989,6 +1989,166 @@ async function main() {
     ],
   })
 
+  // --- A1 Unit 13: Adjektive & Vergleiche (4 lessons) ---
+  const a1Unit13 = await prisma.unit.create({
+    data: { levelId: a1.id, order: 13, titleDe: 'Adjektive & Vergleiche', titleEn: 'Adjectives & Comparisons', titleTr: 'Sıfatlar ve Karşılaştırmalar' },
+  })
+
+  const a1Unit13Lesson1 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit13.id,
+      order: 1,
+      grammarTopic: 'Adjektivendungen nach bestimmtem Artikel',
+      explanationDe:
+        'Nach dem bestimmten Artikel (der/die/das) endet das Adjektiv im Nominativ meist auf -e: "der große Mann", "die kleine Frau", "das neue Auto".',
+      explanationEn:
+        'After the definite article (der/die/das), the adjective usually ends in -e in the nominative: "der große Mann" (the tall man), "die kleine Frau" (the small woman), "das neue Auto" (the new car).',
+      explanationTr:
+        'Belirli artikelden (der/die/das) sonra sıfat yalın halde genellikle -e ile biter: "der große Mann" (uzun adam), "die kleine Frau" (küçük kadın), "das neue Auto" (yeni araba).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der ___ Mann ist mein Vater. (groß)', options: ['große', 'großer', 'großes', 'großen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nominativ maskulin nach "der": Adjektiv + -e.',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ___ Auto ist teuer. (neu)' },
+        correctAnswer: { accepted: ['neue'] },
+        explanation: 'Nominativ neutrum nach "das": Adjektiv + -e.',
+      },
+    ],
+  })
+
+  const a1Unit13Lesson2 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit13.id,
+      order: 2,
+      grammarTopic: 'Adjektivendungen nach unbestimmtem Artikel',
+      explanationDe:
+        'Nach dem unbestimmten Artikel (ein/eine) richtet sich die Endung nach dem Genus: "ein großer Mann", "eine kleine Frau", "ein neues Auto".',
+      explanationEn:
+        'After the indefinite article (ein/eine), the ending depends on gender: "ein großer Mann" (a tall man), "eine kleine Frau" (a small woman), "ein neues Auto" (a new car).',
+      explanationTr:
+        'Belirsiz artikelden (ein/eine) sonra sıfat eki cinsiyete göre değişir: "ein großer Mann" (uzun bir adam), "eine kleine Frau" (küçük bir kadın), "ein neues Auto" (yeni bir araba).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist ein ___ Auto. (neu)', options: ['neue', 'neuer', 'neues', 'neuen'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Nominativ neutrum nach "ein": Adjektiv + -es.',
+      },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 2,
+        type: 'MATCHING',
+        data: { lefts: ['ein ___ Mann', 'eine ___ Frau', 'ein ___ Auto'], rights: ['großer', 'kleine', 'neues'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ein ___ Mann', right: 'großer' },
+            { left: 'eine ___ Frau', right: 'kleine' },
+            { left: 'ein ___ Auto', right: 'neues' },
+          ],
+        },
+        explanation: 'Adjektivendungen nach "ein/eine" je nach Genus.',
+      },
+    ],
+  })
+
+  const a1Unit13Lesson3 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit13.id,
+      order: 3,
+      grammarTopic: 'Komparativ',
+      explanationDe:
+        'Der Komparativ wird meist mit -er gebildet: "schnell" -> "schneller". Unregelmäßig: "gut" -> "besser", "gern" -> "lieber", "viel" -> "mehr".',
+      explanationEn:
+        'The comparative is usually formed with -er: "schnell" (fast) -> "schneller" (faster). Irregular: "gut" (good) -> "besser" (better), "gern" (gladly) -> "lieber" (rather), "viel" (much) -> "mehr" (more).',
+      explanationTr:
+        'Karşılaştırma genelde -er ile yapılır: "schnell" (hızlı) -> "schneller" (daha hızlı). Düzensiz: "gut" (iyi) -> "besser" (daha iyi), "gern" (seve seve) -> "lieber" (tercihen), "viel" (çok) -> "mehr" (daha çok).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 1,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Komparativ von "gut"?', options: ['guter', 'gutter', 'besser', 'mehr'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"gut" ist unregelmäßig: besser.',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 2,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Mein Auto ist ___ als deins. (schnell)' },
+        correctAnswer: { accepted: ['schneller'] },
+        explanation: 'Komparativ: schnell + -er.',
+      },
+    ],
+  })
+
+  const a1Unit13Lesson4 = await prisma.lesson.create({
+    data: {
+      unitId: a1Unit13.id,
+      order: 4,
+      grammarTopic: 'Superlativ',
+      explanationDe:
+        'Der Superlativ wird mit "am -sten" gebildet: "am schnellsten". Unregelmäßig: "gut" -> "am besten", "gern" -> "am liebsten".',
+      explanationEn:
+        'The superlative is formed with "am -sten": "am schnellsten" (the fastest). Irregular: "gut" -> "am besten" (best), "gern" -> "am liebsten" (most preferred).',
+      explanationTr:
+        'Üstünlük derecesi "am -sten" ile yapılır: "am schnellsten" (en hızlı). Düzensiz: "gut" -> "am besten" (en iyi), "gern" -> "am liebsten" (en çok tercih edilen).',
+    },
+  })
+  await prisma.exercise.createMany({
+    data: [
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 1,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ist', 'am', 'schnellsten', 'er'] },
+        correctAnswer: { order: ['er', 'ist', 'am', 'schnellsten'] },
+        explanation: 'Superlativ: Subjekt + Verb + am + Adjektiv-sten.',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 2,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man auf Deutsch: 'the best' (superlative of 'good', with 'am')?" },
+        correctAnswer: { accepted: ['am besten'] },
+        explanation: '"am besten" ist der Superlativ von "gut".',
+      },
+    ],
+  })
+
+  await prisma.vocabWord.createMany({
+    data: [
+      { lessonId: a1Unit13Lesson1.id, word: 'groß', translationEn: 'big / tall', translationTr: 'büyük', exampleSentence: 'Der große Mann ist mein Vater.' },
+      { lessonId: a1Unit13Lesson1.id, word: 'klein', translationEn: 'small', translationTr: 'küçük', exampleSentence: 'Die kleine Frau ist meine Mutter.' },
+      { lessonId: a1Unit13Lesson2.id, word: 'neu', translationEn: 'new', translationTr: 'yeni', exampleSentence: 'Ein neues Auto ist teuer.' },
+      { lessonId: a1Unit13Lesson2.id, word: 'alt', translationEn: 'old', translationTr: 'eski', exampleSentence: 'Ein altes Auto ist billig.' },
+      { lessonId: a1Unit13Lesson3.id, word: 'schnell', translationEn: 'fast', translationTr: 'hızlı', exampleSentence: 'Mein Auto ist schneller als deins.' },
+      { lessonId: a1Unit13Lesson3.id, word: 'langsam', translationEn: 'slow', translationTr: 'yavaş', exampleSentence: 'Die Schnecke ist langsam.' },
+      { lessonId: a1Unit13Lesson4.id, word: 'besser', translationEn: 'better', translationTr: 'daha iyi', exampleSentence: 'Das ist besser als das.' },
+      { lessonId: a1Unit13Lesson4.id, word: 'am besten', translationEn: 'best', translationTr: 'en iyi', exampleSentence: 'Das schmeckt am besten.' },
+    ],
+  })
+
   // --- A2: Vergangenheit (1 sample lesson) ---
   const a2Unit = await prisma.unit.create({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
