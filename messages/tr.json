@@ -34,7 +34,24 @@
     "registerSubmit": "Hesap oluştur",
     "loginSubmit": "Giriş yap",
     "registerError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
-    "loginError": "Geçersiz e-posta veya şifre."
+    "loginError": "Geçersiz e-posta veya şifre.",
+    "forgotPasswordLink": "Şifremi unuttum"
+  },
+  "forgotPassword": {
+    "title": "Şifreni sıfırla",
+    "instructions": "E-postanı gir, sana bir sıfırlama bağlantısı gönderelim.",
+    "emailLabel": "E-posta",
+    "submit": "Sıfırlama bağlantısı gönder",
+    "successMessage": "Bu e-posta kayıtlıysa bir sıfırlama bağlantısı gönderildi.",
+    "errorMessage": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+  },
+  "resetPassword": {
+    "title": "Yeni şifre belirle",
+    "passwordLabel": "Yeni şifre",
+    "submit": "Şifreyi sıfırla",
+    "successMessage": "Şifren sıfırlandı. Artık giriş yapabilirsin.",
+    "errorMessage": "Bu bağlantı geçersiz veya süresi dolmuş.",
+    "missingToken": "Bu bağlantıda token eksik. Lütfen yeni bir bağlantı iste."
   },
   "learn": {
     "levelsTitle": "Seviyeler",

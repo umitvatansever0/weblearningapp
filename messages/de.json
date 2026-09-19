@@ -34,7 +34,24 @@
     "registerSubmit": "Konto erstellen",
     "loginSubmit": "Anmelden",
     "registerError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
-    "loginError": "Ungültige E-Mail oder ungültiges Passwort."
+    "loginError": "Ungültige E-Mail oder ungültiges Passwort.",
+    "forgotPasswordLink": "Passwort vergessen?"
+  },
+  "forgotPassword": {
+    "title": "Passwort zurücksetzen",
+    "instructions": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen.",
+    "emailLabel": "E-Mail",
+    "submit": "Link senden",
+    "successMessage": "Falls diese E-Mail registriert ist, wurde ein Link zum Zurücksetzen gesendet.",
+    "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "resetPassword": {
+    "title": "Neues Passwort festlegen",
+    "passwordLabel": "Neues Passwort",
+    "submit": "Passwort zurücksetzen",
+    "successMessage": "Ihr Passwort wurde zurückgesetzt. Sie können sich jetzt anmelden.",
+    "errorMessage": "Dieser Link ist ungültig oder abgelaufen.",
+    "missingToken": "Diesem Link fehlt ein Token. Bitte fordern Sie einen neuen an."
   },
   "learn": {
     "levelsTitle": "Niveaus",

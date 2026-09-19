@@ -34,7 +34,24 @@
     "registerSubmit": "Create account",
     "loginSubmit": "Log in",
     "registerError": "Something went wrong. Please try again.",
-    "loginError": "Invalid email or password."
+    "loginError": "Invalid email or password.",
+    "forgotPasswordLink": "Forgot password?"
+  },
+  "forgotPassword": {
+    "title": "Reset your password",
+    "instructions": "Enter your email and we'll send you a reset link.",
+    "emailLabel": "Email",
+    "submit": "Send reset link",
+    "successMessage": "If that email is registered, a reset link has been sent.",
+    "errorMessage": "Something went wrong. Please try again."
+  },
+  "resetPassword": {
+    "title": "Set a new password",
+    "passwordLabel": "New password",
+    "submit": "Reset password",
+    "successMessage": "Your password has been reset. You can now log in.",
+    "errorMessage": "This reset link is invalid or has expired.",
+    "missingToken": "This reset link is missing a token. Please request a new one."
   },
   "learn": {
     "levelsTitle": "Levels",
