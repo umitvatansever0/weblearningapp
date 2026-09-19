@@ -39,6 +39,15 @@ describe('seed content', () => {
     }
   })
 
+  it('has 13 C1 units with four lessons each', async () => {
+    const c1 = await prisma.level.findUniqueOrThrow({ where: { code: 'C1' } })
+    const units = await prisma.unit.findMany({ where: { levelId: c1.id }, include: { lessons: true } })
+    expect(units).toHaveLength(13)
+    units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
+    const totalLessons = units.reduce((sum, unit) => sum + unit.lessons.length, 0)
+    expect(totalLessons).toBe(52)
+  })
+
   it('uses all five exercise types across the seeded content', async () => {
     const exercises = await prisma.exercise.findMany({ select: { type: true } })
     const types = new Set(exercises.map((exercise) => exercise.type))
