@@ -17,6 +17,12 @@ describe('getUnitsForLevel', () => {
     expect(units[0].lessons).toHaveLength(4)
     expect(units[0].lessons.every((lesson) => lesson.completed === false)).toBe(true)
   })
+
+  it('returns 13 C1 units with four lessons each', async () => {
+    const units = await getUnitsForLevel('C1', 'nonexistent-user-id')
+    expect(units).toHaveLength(13)
+    units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
+  })
 })
 
 describe('getLessonWithExercises', () => {
