@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { describe, it, expect, vi, afterEach } from 'vitest'
 
 describe('sendPasswordResetEmail', () => {
   const originalKey = process.env.RESEND_API_KEY
