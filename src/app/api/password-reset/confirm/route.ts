@@ -28,13 +28,30 @@ export async function POST(request: Request) {
 
   const passwordHash = await hashPassword(parsed.data.password)
 
-  await prisma.$transaction([
-    prisma.user.update({ where: { id: record.userId }, data: { passwordHash } }),
-    prisma.passwordResetToken.update({
-      where: { id: record.id },
-      data: { usedAt: new Date() },
-    }),
-  ])
+  const TOKEN_ALREADY_USED = Symbol('TOKEN_ALREADY_USED')
+
+  try {
+    await prisma.$transaction(async (tx) => {
+      // Conditionally consume the token: only proceeds if it is still
+      // unused. This closes the check-then-act race where two concurrent
+      // requests could both pass the `!record.usedAt` check above.
+      const result = await tx.passwordResetToken.updateMany({
+        where: { id: record.id, usedAt: null },
+        data: { usedAt: new Date() },
+      })
+
+      if (result.count === 0) {
+        throw TOKEN_ALREADY_USED
+      }
+
+      await tx.user.update({ where: { id: record.userId }, data: { passwordHash } })
+    })
+  } catch (err) {
+    if (err === TOKEN_ALREADY_USED) {
+      return NextResponse.json({ error: GENERIC_ERROR }, { status: 400 })
+    }
+    throw err
+  }
 
   return NextResponse.json({ message: 'Password has been reset.' }, { status: 200 })
 }

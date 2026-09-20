@@ -30,7 +30,13 @@ export async function POST(request: Request) {
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
     const locale = user.uiLanguage.toLowerCase()
     const resetUrl = `${siteUrl}/${locale}/reset-password?token=${token}`
-    await sendPasswordResetEmail(user.email, resetUrl)
+    // Fire-and-forget: awaiting the Resend round-trip here would make the
+    // response time measurably longer for existing users than for
+    // nonexistent ones, reopening the account-enumeration channel this
+    // endpoint is designed to close.
+    void sendPasswordResetEmail(user.email, resetUrl).catch((err) => {
+      console.error('Failed to send password reset email:', err)
+    })
   }
 
   return NextResponse.json({ message: GENERIC_MESSAGE }, { status: 200 })
