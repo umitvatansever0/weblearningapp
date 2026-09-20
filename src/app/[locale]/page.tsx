@@ -26,14 +26,30 @@ export default function HomePage() {
       <section>
         <h2 className="text-xl font-semibold mb-4">{t('levelsTitle')}</h2>
         <div className="grid grid-cols-2 gap-4">
-          {LEVELS.map((level) => (
-            <div key={level} className="border rounded p-4 flex flex-col gap-1">
-              <p className="font-bold">{level}</p>
-              <p className="text-sm text-gray-600">
-                {AVAILABLE_LEVELS.includes(level) ? t('levelAvailable') : t('levelComingSoon')}
-              </p>
-            </div>
-          ))}
+          {LEVELS.map((level) => {
+            const available = AVAILABLE_LEVELS.includes(level)
+            const cardContent = (
+              <>
+                <p className="font-bold">{level}</p>
+                <p className="text-sm text-gray-600">
+                  {available ? t('levelAvailable') : t('levelComingSoon')}
+                </p>
+              </>
+            )
+            return available ? (
+              <Link
+                key={level}
+                href={`/learn/${level}`}
+                className="border rounded p-4 flex flex-col gap-1 hover:border-gray-900 transition-colors"
+              >
+                {cardContent}
+              </Link>
+            ) : (
+              <div key={level} className="border rounded p-4 flex flex-col gap-1 opacity-60">
+                {cardContent}
+              </div>
+            )
+          })}
         </div>
       </section>
 

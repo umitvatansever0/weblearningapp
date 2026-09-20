@@ -35,4 +35,25 @@ describe('HomePage', () => {
     expect(screen.getAllByText(en.home.levelComingSoon).length).toBe(3)
     expect(screen.getByText(en.home.levelAvailable)).toBeInTheDocument()
   })
+
+  it('links the available A1 level to its units page', () => {
+    render(
+      <NextIntlClientProvider locale="en" messages={en}>
+        <HomePage />
+      </NextIntlClientProvider>
+    )
+    const a1Link = screen.getByRole('link', { name: /A1/ })
+    expect(a1Link).toHaveAttribute('href', '/learn/A1')
+  })
+
+  it('does not link coming-soon levels', () => {
+    render(
+      <NextIntlClientProvider locale="en" messages={en}>
+        <HomePage />
+      </NextIntlClientProvider>
+    )
+    expect(screen.queryByRole('link', { name: /A2/ })).not.toBeInTheDocument()
+    expect(screen.queryByRole('link', { name: /B1/ })).not.toBeInTheDocument()
+    expect(screen.queryByRole('link', { name: /B2/ })).not.toBeInTheDocument()
+  })
 })
