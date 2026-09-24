@@ -6682,12 +6682,48 @@ Birçok günlük rutin dönüşlü fiillerle anlatılır. Kelime sırasına dikk
       unitId: a2Unit11.id,
       order: 1,
       grammarTopic: "Futur I: Bildung mit 'werden' + Infinitiv",
-      explanationDe:
-        'Futur I bildet man mit "werden" (konjugiert) + Infinitiv am Satzende: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Beispiel: "Ich werde morgen ins Kino gehen."',
-      explanationEn:
-        'Futur I is formed with "werden" (conjugated) + infinitive at the end of the sentence: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Example: "Ich werde morgen ins Kino gehen" (I will go to the cinema tomorrow).',
-      explanationTr:
-        'Futur I, "werden" (çekimli) + cümle sonunda mastar ile kurulur: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Örnek: "Ich werde morgen ins Kino gehen" (Yarın sinemaya gideceğim).',
+      explanationDe: `## Futur I: „werden" + Infinitiv
+
+Das Futur I ist die Zukunftsform. Du bildest es mit dem konjugierten Hilfsverb **„werden"** an Position 2 und dem **Infinitiv** am Satzende.
+
+| Person | werden |
+| --------- | ------ |
+| ich | werde |
+| du | wirst |
+| er/sie/es | wird |
+| wir | werden |
+| ihr | werdet |
+| sie/Sie | werden |
+
+**Beispiele:** Ich **werde** morgen ins Kino **gehen**. · Er **wird** nächstes Jahr nach Spanien **reisen**.`,
+      explanationEn: `## Futur I: "werden" + infinitive
+
+Futur I is the future tense. You form it with the conjugated auxiliary verb **"werden"** in second position and the **infinitive** at the end of the sentence.
+
+| Person | werden |
+| --------- | ------ |
+| ich | werde |
+| du | wirst |
+| er/sie/es | wird |
+| wir | werden |
+| ihr | werdet |
+| sie/Sie | werden |
+
+**Examples:** Ich **werde** morgen ins Kino **gehen**. (I will go to the cinema tomorrow.) · Er **wird** nächstes Jahr nach Spanien **reisen**. (He will travel to Spain next year.)`,
+      explanationTr: `## Futur I: „werden" + mastar
+
+Futur I gelecek zaman biçimidir. İkinci konumda çekimli yardımcı fiil **„werden"** ve cümle sonunda **mastar** ile kurulur.
+
+| Kişi | werden |
+| --------- | ------ |
+| ich | werde |
+| du | wirst |
+| er/sie/es | wird |
+| wir | werden |
+| ihr | werdet |
+| sie/Sie | werden |
+
+**Örnekler:** Ich **werde** morgen ins Kino **gehen**. (Yarın sinemaya gideceğim.) · Er **wird** nächstes Jahr nach Spanien **reisen**. (Gelecek yıl İspanya'ya seyahat edecek.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6716,12 +6752,39 @@ Birçok günlük rutin dönüşlü fiillerle anlatılır. Kelime sırasına dikk
       unitId: a2Unit11.id,
       order: 2,
       grammarTopic: 'Futur I für Vorhersagen und Vermutungen',
-      explanationDe:
-        'Futur I benutzt man oft für Vorhersagen und Vermutungen über die Zukunft, manchmal mit "wohl" oder "wahrscheinlich": "Es wird morgen wohl regnen." "Die Preise werden wahrscheinlich steigen."',
-      explanationEn:
-        'Futur I is often used for predictions and assumptions about the future, sometimes with "wohl" or "wahrscheinlich" (probably): "Es wird morgen wohl regnen" (It will probably rain tomorrow). "Die Preise werden wahrscheinlich steigen" (Prices will probably rise).',
-      explanationTr:
-        'Futur I genellikle gelecekle ilgili tahmin ve varsayımlar için kullanılır, bazen "wohl" ya da "wahrscheinlich" (muhtemelen) ile: "Es wird morgen wohl regnen." "Die Preise werden wahrscheinlich steigen."',
+      explanationDe: `## Futur I für Vorhersagen und Vermutungen
+
+Sehr oft drückt das Futur I keine feste Zukunft aus, sondern eine **Vorhersage** oder **Vermutung**. Dann stehen häufig Signalwörter wie „wohl", „wahrscheinlich" oder „vielleicht" im Satz.
+
+| Signalwort | Bedeutung |
+| ---------- | --------- |
+| wohl | vermutlich |
+| wahrscheinlich | mit hoher Wahrscheinlichkeit |
+| vielleicht | möglicherweise |
+
+**Beispiele:** Es **wird** morgen **wohl** regnen. · Die Preise **werden** **wahrscheinlich** steigen.`,
+      explanationEn: `## Futur I for predictions and assumptions
+
+Very often Futur I does not express a fixed future but a **prediction** or **assumption**. In that case signal words like "wohl", "wahrscheinlich" or "vielleicht" often appear in the sentence.
+
+| Signal word | Meaning |
+| ---------- | --------- |
+| wohl | presumably |
+| wahrscheinlich | probably |
+| vielleicht | maybe |
+
+**Examples:** Es **wird** morgen **wohl** regnen. (It will probably rain tomorrow.) · Die Preise **werden** **wahrscheinlich** steigen. (Prices will probably rise.)`,
+      explanationTr: `## Tahmin ve varsayımlar için Futur I
+
+Futur I çoğu zaman kesin bir gelecek değil, bir **tahmin** ya da **varsayım** ifade eder. Bu durumda cümlede sık sık „wohl", „wahrscheinlich" ya da „vielleicht" gibi işaret sözcükleri bulunur.
+
+| İşaret sözcüğü | Anlamı |
+| ---------- | --------- |
+| wohl | herhalde |
+| wahrscheinlich | muhtemelen |
+| vielleicht | belki |
+
+**Örnekler:** Es **wird** morgen **wohl** regnen. (Yarın herhalde yağmur yağacak.) · Die Preise **werden** **wahrscheinlich** steigen. (Fiyatlar muhtemelen yükselecek.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6750,12 +6813,36 @@ Birçok günlük rutin dönüşlü fiillerle anlatılır. Kelime sırasına dikk
       unitId: a2Unit11.id,
       order: 3,
       grammarTopic: 'Futur I vs. Präsens mit Zeitangabe',
-      explanationDe:
-        'Für geplante Zukunft benutzt man oft einfach das Präsens mit einer Zeitangabe: "Ich fliege nächste Woche nach Rom." Futur I betont stärker eine Vorhersage oder Absicht: "Ich werde nächste Woche nach Rom fliegen."',
-      explanationEn:
-        'For planned future events, German often simply uses the present tense with a time expression: "Ich fliege nächste Woche nach Rom" (I\'m flying to Rome next week). Futur I emphasizes a prediction or intention more strongly: "Ich werde nächste Woche nach Rom fliegen" (I will fly to Rome next week).',
-      explanationTr:
-        'Planlanmış gelecek olaylar için Almanca genellikle zaman ifadesiyle birlikte şimdiki zamanı kullanır: "Ich fliege nächste Woche nach Rom." Futur I ise bir tahmin ya da niyeti daha güçlü vurgular: "Ich werde nächste Woche nach Rom fliegen."',
+      explanationDe: `## Futur I vs. Präsens mit Zeitangabe
+
+Im Alltag benutzt man für **geplante** Zukunft sehr oft einfach das **Präsens** mit einer Zeitangabe. Das Futur I klingt formeller und betont stärker eine Vorhersage oder Absicht.
+
+| Form | Beispiel | Verwendung |
+| ---- | -------- | ---------- |
+| Präsens + Zeitangabe | Ich fliege nächste Woche nach Rom. | konkreter Plan |
+| Futur I | Ich werde nächste Woche nach Rom fliegen. | Vorhersage/Absicht |
+
+**Beispiel:** „Ich **fliege** morgen nach Rom." klingt so sicher wie „Ich **werde** morgen nach Rom **fliegen**."`,
+      explanationEn: `## Futur I vs. present tense with a time expression
+
+In everyday speech, German very often uses the simple **present tense** with a time expression for a **planned** future. Futur I sounds more formal and emphasizes a prediction or intention more strongly.
+
+| Form | Example | Use |
+| ---- | -------- | ---------- |
+| present + time expression | Ich fliege nächste Woche nach Rom. | concrete plan |
+| Futur I | Ich werde nächste Woche nach Rom fliegen. | prediction/intention |
+
+**Example:** "Ich **fliege** morgen nach Rom." (I'm flying to Rome tomorrow.) sounds as definite as "Ich **werde** morgen nach Rom **fliegen**." (I will fly to Rome tomorrow.)`,
+      explanationTr: `## Futur I vs. zaman ifadeli şimdiki zaman
+
+Günlük dilde **planlanmış** bir gelecek için Almanca çoğu zaman bir zaman ifadesiyle birlikte basit **şimdiki zamanı** kullanır. Futur I daha resmi görünür ve bir tahmini ya da niyeti daha güçlü vurgular.
+
+| Biçim | Örnek | Kullanım |
+| ---- | -------- | ---------- |
+| şimdiki zaman + zaman ifadesi | Ich fliege nächste Woche nach Rom. | somut plan |
+| Futur I | Ich werde nächste Woche nach Rom fliegen. | tahmin/niyet |
+
+**Örnek:** „Ich **fliege** morgen nach Rom." (Yarın Roma'ya uçuyorum.) ifadesi „Ich **werde** morgen nach Rom **fliegen**." (Yarın Roma'ya uçacağım.) kadar kesindir.`,
     },
   })
   await prisma.exercise.createMany({
@@ -6784,12 +6871,36 @@ Birçok günlük rutin dönüşlü fiillerle anlatılır. Kelime sırasına dikk
       unitId: a2Unit11.id,
       order: 4,
       grammarTopic: 'Übung: Pläne und Vorhersagen im Futur I',
-      explanationDe:
-        'Kombiniere Futur I mit Zeitangaben, um über Pläne und Vorhersagen zu sprechen: "Nächstes Jahr werde ich mehr Sport machen." Bei vorangestellter Zeitangabe steht "werde" direkt danach.',
-      explanationEn:
-        'Combine Futur I with time expressions to talk about plans and predictions: "Nächstes Jahr werde ich mehr Sport machen" (Next year I will do more sports). When the time expression comes first, "werde" comes right after it.',
-      explanationTr:
-        'Planlar ve tahminler hakkında konuşmak için Futur I\'i zaman ifadeleriyle birleştir: "Nächstes Jahr werde ich mehr Sport machen." Zaman ifadesi öne alındığında "werde" hemen ardından gelir.',
+      explanationDe: `## Übung: Pläne und Vorhersagen im Futur I
+
+Wenn du eine Zeitangabe an den **Satzanfang** stellst, rückt „werden" auf Position 2 und das Subjekt dahinter. Der Infinitiv bleibt immer am Satzende. So beschreibst du gut Vorsätze und Zukunftspläne.
+
+| Position 1 | Position 2 | Mitte | Satzende |
+| ---------- | ---------- | ----- | -------- |
+| Nächstes Jahr | werde | ich mehr Sport | machen |
+| Ich | werde | mehr Sport | machen |
+
+**Beispiel:** Nächstes Jahr **werde** ich mehr Sport **machen**.`,
+      explanationEn: `## Practice: plans and predictions in Futur I
+
+When you put a time expression at the **start** of the sentence, "werden" moves to position 2 and the subject comes after it. The infinitive always stays at the end. This is a good way to describe resolutions and future plans.
+
+| Position 1 | Position 2 | Middle | End |
+| ---------- | ---------- | ----- | -------- |
+| Nächstes Jahr | werde | ich mehr Sport | machen |
+| Ich | werde | mehr Sport | machen |
+
+**Example:** Nächstes Jahr **werde** ich mehr Sport **machen**. (Next year I will do more sports.)`,
+      explanationTr: `## Alıştırma: Futur I ile planlar ve tahminler
+
+Bir zaman ifadesini cümlenin **başına** koyarsan, „werden" 2. konuma geçer ve özne onun ardından gelir. Mastar her zaman cümlenin sonunda kalır. Böylece kararları ve gelecek planlarını iyi anlatabilirsin.
+
+| Konum 1 | Konum 2 | Orta | Son |
+| ---------- | ---------- | ----- | -------- |
+| Nächstes Jahr | werde | ich mehr Sport | machen |
+| Ich | werde | mehr Sport | machen |
+
+**Örnek:** Nächstes Jahr **werde** ich mehr Sport **machen**. (Gelecek yıl daha çok spor yapacağım.)`,
     },
   })
   await prisma.exercise.createMany({
