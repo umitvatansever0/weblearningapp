@@ -2965,12 +2965,42 @@ Kısa bir diyalog:
       unitId: a1Unit11.id,
       order: 1,
       grammarTopic: 'Perfekt mit "haben"',
-      explanationDe:
-        'Das Perfekt bildet man mit "haben" oder "sein" + Partizip II. Die meisten Verben nehmen "haben": "Ich habe gegessen. Du hast gearbeitet."',
-      explanationEn:
-        'The Perfekt (past tense) is formed with "haben" or "sein" + past participle. Most verbs take "haben": "Ich habe gegessen." (I have eaten.) "Du hast gearbeitet." (You have worked.)',
-      explanationTr:
-        'Perfekt (geçmiş zaman) "haben" ya da "sein" + Partizip II ile kurulur. Çoğu fiil "haben" alır: "Ich habe gegessen." (Yedim.) "Du hast gearbeitet." (Çalıştın.)',
+      explanationDe: `## Perfekt mit „haben"
+
+Das Perfekt ist die wichtigste Vergangenheitsform beim Sprechen. Formel: **haben (konjugiert) + Partizip II** am Satzende. Die meisten Verben nehmen „haben".
+
+| Person | Hilfsverb | Partizip II |
+| --------- | --------- | ----------- |
+| ich | habe | gegessen |
+| du | hast | gearbeitet |
+| er/sie/es | hat | gemacht |
+| wir | haben | gespielt |
+
+**Beispiel:** Ich **habe** Pizza **gegessen**. Du **hast** viel **gearbeitet**.`,
+      explanationEn: `## Perfekt with "haben"
+
+The Perfekt is the most important past tense in spoken German. Formula: **haben (conjugated) + past participle** at the end of the sentence. Most verbs take "haben".
+
+| Person | Auxiliary | Past participle |
+| --------- | --------- | --------------- |
+| ich | habe | gegessen |
+| du | hast | gearbeitet |
+| er/sie/es | hat | gemacht |
+| wir | haben | gespielt |
+
+**Example:** Ich **habe** Pizza **gegessen**. (I ate pizza.) Du **hast** viel **gearbeitet**. (You worked a lot.)`,
+      explanationTr: `## „haben" ile Perfekt
+
+Perfekt, konuşmada en önemli geçmiş zaman biçimidir. Formül: **haben (çekimli) + Partizip II** cümlenin sonunda. Çoğu fiil „haben" alır.
+
+| Kişi | Yardımcı fiil | Partizip II |
+| --------- | ------------- | ----------- |
+| ich | habe | gegessen |
+| du | hast | gearbeitet |
+| er/sie/es | hat | gemacht |
+| wir | haben | gespielt |
+
+**Örnek:** Ich **habe** Pizza **gegessen**. (Pizza yedim.) Du **hast** viel **gearbeitet**. (Çok çalıştın.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -2999,12 +3029,42 @@ Kısa bir diyalog:
       unitId: a1Unit11.id,
       order: 2,
       grammarTopic: 'Perfekt mit "sein"',
-      explanationDe:
-        'Verben der Bewegung oder Zustandsänderung bilden das Perfekt mit "sein": "Ich bin gegangen. Er ist gekommen."',
-      explanationEn:
-        'Verbs of movement or change of state form the Perfekt with "sein": "Ich bin gegangen." (I have gone.) "Er ist gekommen." (He has come.)',
-      explanationTr:
-        'Hareket ya da durum değişikliği bildiren fiiller Perfekt\'i "sein" ile kurar: "Ich bin gegangen." (Gittim.) "Er ist gekommen." (Geldi.)',
+      explanationDe: `## Perfekt mit „sein"
+
+Verben der **Bewegung** (gehen, kommen, fahren) und der **Zustandsänderung** (aufstehen, einschlafen) bilden das Perfekt mit **„sein"**.
+
+| Verb | Perfekt |
+| ------ | ------- |
+| gehen | ich **bin** gegangen |
+| kommen | er **ist** gekommen |
+| fahren | wir **sind** gefahren |
+| bleiben | sie **ist** geblieben |
+
+**Beispiel:** Ich **bin** nach Hause **gegangen**. Er **ist** spät **gekommen**. (Merke dir auch: „sein" und „bleiben" nehmen „sein".)`,
+      explanationEn: `## Perfekt with "sein"
+
+Verbs of **movement** (gehen, kommen, fahren) and **change of state** (aufstehen, einschlafen) form the Perfekt with **"sein"**.
+
+| Verb | Perfekt |
+| ------ | ------- |
+| gehen | ich **bin** gegangen |
+| kommen | er **ist** gekommen |
+| fahren | wir **sind** gefahren |
+| bleiben | sie **ist** geblieben |
+
+**Example:** Ich **bin** nach Hause **gegangen**. (I went home.) Er **ist** spät **gekommen**. (He came late.) Note: "sein" and "bleiben" also take "sein".`,
+      explanationTr: `## „sein" ile Perfekt
+
+**Hareket** (gehen, kommen, fahren) ve **durum değişikliği** (aufstehen, einschlafen) bildiren fiiller Perfekt'i **„sein"** ile kurar.
+
+| Fiil | Perfekt |
+| ------ | ------- |
+| gehen | ich **bin** gegangen |
+| kommen | er **ist** gekommen |
+| fahren | wir **sind** gefahren |
+| bleiben | sie **ist** geblieben |
+
+**Örnek:** Ich **bin** nach Hause **gegangen**. (Eve gittim.) Er **ist** spät **gekommen**. (Geç geldi.) Not: „sein" ve „bleiben" de „sein" alır.`,
     },
   })
   await prisma.exercise.createMany({
@@ -3033,12 +3093,39 @@ Kısa bir diyalog:
       unitId: a1Unit11.id,
       order: 3,
       grammarTopic: 'Partizip II (regelmäßig/unregelmäßig)',
-      explanationDe:
-        'Regelmäßige Verben bilden das Partizip II mit ge-...-t: spielen→gespielt. Unregelmäßige Verben oft mit ge-...-en, manchmal mit Vokalwechsel: lesen→gelesen, trinken→getrunken.',
-      explanationEn:
-        'Regular verbs form the past participle with ge-...-t: spielen→gespielt. Irregular verbs often use ge-...-en, sometimes with a vowel change: lesen→gelesen, trinken→getrunken.',
-      explanationTr:
-        'Düzenli fiiller Partizip II\'yi ge-...-t ile kurar: spielen→gespielt. Düzensiz fiiller genellikle ge-...-en kullanır, bazen ünlü değişimiyle: lesen→gelesen, trinken→getrunken.',
+      explanationDe: `## Partizip II (regelmäßig / unregelmäßig)
+
+Das Partizip II ist der Kern des Perfekts. Es gibt zwei Muster:
+
+| Typ | Muster | Beispiel |
+| ------------- | ---------- | -------- |
+| regelmäßig | ge-...-t | spielen → **gespielt** |
+| unregelmäßig | ge-...-en | lesen → **gelesen** |
+| unregelmäßig (Vokalwechsel) | ge-...-en | trinken → **getrunken** |
+
+**Beispiel:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. Unregelmäßige Formen lernst du am besten auswendig.`,
+      explanationEn: `## Past participle (regular / irregular)
+
+The past participle is the core of the Perfekt. There are two patterns:
+
+| Type | Pattern | Example |
+| ------------- | ---------- | -------- |
+| regular | ge-...-t | spielen → **gespielt** |
+| irregular | ge-...-en | lesen → **gelesen** |
+| irregular (vowel change) | ge-...-en | trinken → **getrunken** |
+
+**Example:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. (I played football and read a book.) It's best to learn the irregular forms by heart.`,
+      explanationTr: `## Partizip II (düzenli / düzensiz)
+
+Partizip II, Perfekt'in çekirdeğidir. İki kalıbı vardır:
+
+| Tür | Kalıp | Örnek |
+| ------------- | -------- | ----- |
+| düzenli | ge-...-t | spielen → **gespielt** |
+| düzensiz | ge-...-en | lesen → **gelesen** |
+| düzensiz (ünlü değişimi) | ge-...-en | trinken → **getrunken** |
+
+**Örnek:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. (Futbol oynadım ve bir kitap okudum.) Düzensiz biçimleri ezberlemen en iyisidir.`,
     },
   })
   await prisma.exercise.createMany({
@@ -3067,12 +3154,39 @@ Kısa bir diyalog:
       unitId: a1Unit11.id,
       order: 4,
       grammarTopic: 'Übung (Perfekt Wiederholung)',
-      explanationDe:
-        'Wiederholung: Perfekt mit "haben" und "sein". "Gestern bin ich ins Kino gegangen. Ich habe einen Film gesehen."',
-      explanationEn:
-        'Review: Perfekt with "haben" and "sein". "Gestern bin ich ins Kino gegangen." (Yesterday I went to the cinema.) "Ich habe einen Film gesehen." (I saw a movie.)',
-      explanationTr:
-        'Tekrar: "haben" ve "sein" ile Perfekt. "Gestern bin ich ins Kino gegangen." (Dün sinemaya gittim.) "Ich habe einen Film gesehen." (Bir film izledim.)',
+      explanationDe: `## Übung: Perfekt Wiederholung
+
+Hier wiederholst du das Perfekt. Denk an die Frage: **„haben" oder „sein"?** Bewegung/Zustandsänderung → „sein", sonst meist „haben".
+
+Steht eine Zeitangabe (z. B. „gestern") am Anfang, folgt direkt das Hilfsverb:
+
+- **Gestern bin** ich ins Kino **gegangen**.
+- Ich **habe** einen Film **gesehen**.
+- Wir **haben** Pizza **gegessen** und **sind** spät nach Hause **gekommen**.
+
+**Beispiel:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.`,
+      explanationEn: `## Practice: Perfekt review
+
+Here you review the Perfekt. Remember the question: **"haben" or "sein"?** Movement/change of state → "sein", otherwise usually "haben".
+
+If a time expression (e.g. "gestern" = yesterday) is at the start, the auxiliary verb comes right after:
+
+- **Gestern bin** ich ins Kino **gegangen**. (Yesterday I went to the cinema.)
+- Ich **habe** einen Film **gesehen**. (I watched a movie.)
+- Wir **haben** Pizza **gegessen** und **sind** spät nach Hause **gekommen**. (We ate pizza and came home late.)
+
+**Example:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.`,
+      explanationTr: `## Alıştırma: Perfekt tekrarı
+
+Burada Perfekt'i tekrar edersin. Soruyu hatırla: **„haben" mi „sein" mi?** Hareket/durum değişikliği → „sein", diğer durumlarda çoğunlukla „haben".
+
+Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil hemen ardından gelir:
+
+- **Gestern bin** ich ins Kino **gegangen**. (Dün sinemaya gittim.)
+- Ich **habe** einen Film **gesehen**. (Bir film izledim.)
+- Wir **haben** Pizza **gegessen** und **sind** spät nach Hause **gekommen**. (Pizza yedik ve eve geç geldik.)
+
+**Örnek:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.`,
     },
   })
   await prisma.exercise.createMany({
