@@ -3,15 +3,51 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 async function main() {
-  // Delete in FK-safe order so this script is safely re-runnable, even after
-  // a learner has generated UserProgress/UserVocabCard rows against the
-  // seeded lessons/words.
-  await prisma.userProgress.deleteMany({})
-  await prisma.userVocabCard.deleteMany({})
-  await prisma.vocabWord.deleteMany({})
-  await prisma.exercise.deleteMany({})
-  await prisma.lesson.deleteMany({})
-  await prisma.unit.deleteMany({})
+  // This seed is non-destructive: content is upserted under deterministic IDs
+  // derived from stable natural keys (level/unit/order, lesson word). Because
+  // Lesson/VocabWord IDs stay identical across runs, learner rows in
+  // UserProgress (FK: lessonId) and UserVocabCard (FK: vocabWordId) survive a
+  // re-seed. Content that no longer appears in this file is pruned at the end
+  // (see pruneStaleContent), which only removes learner rows tied to the
+  // removed lessons/words.
+  const seededUnitIds = new Set<string>()
+  const seededLessonIds = new Set<string>()
+  const seededExerciseIds = new Set<string>()
+  const seededVocabIds = new Set<string>()
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async function seedUnit(args: { data: any }) {
+    const data = args.data
+    const id = `unit__${data.levelId}__${data.order}`
+    seededUnitIds.add(id)
+    return prisma.unit.upsert({ where: { id }, update: data, create: { ...data, id } })
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async function seedLesson(args: { data: any }) {
+    const data = args.data
+    const id = `lesson__${data.unitId}__${data.order}`
+    seededLessonIds.add(id)
+    return prisma.lesson.upsert({ where: { id }, update: data, create: { ...data, id } })
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async function seedExercises(args: { data: any[] }) {
+    for (const row of args.data) {
+      const id = `ex__${row.lessonId}__${row.order}`
+      seededExerciseIds.add(id)
+      await prisma.exercise.upsert({ where: { id }, update: row, create: { ...row, id } })
+    }
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async function seedVocab(args: { data: any[] }) {
+    for (const row of args.data) {
+      const id = `vocab__${row.lessonId}__${row.word}`
+      seededVocabIds.add(id)
+      await prisma.vocabWord.upsert({ where: { id }, update: row, create: { ...row, id } })
+    }
+  }
 
   const levelInputs = [
     { code: 'A1' as const, order: 1 },
@@ -57,11 +93,11 @@ async function main() {
   }
 
   // --- A1: Begrüßung (4 lessons) ---
-  const a1Unit = await prisma.unit.create({
+  const a1Unit = await seedUnit({
     data: { levelId: a1.id, order: 1, titleDe: 'Begrüßung', titleEn: 'Greetings', titleTr: 'Tanışma' },
   })
 
-  const a1Lesson1 = await prisma.lesson.create({
+  const a1Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit.id,
       order: 1,
@@ -111,7 +147,7 @@ Vedalaşırken **Auf Wiedersehen** (resmi) ya da **Tschüss** (samimi) dersin.`,
     },
   })
 
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Lesson1.id,
@@ -132,7 +168,7 @@ Vedalaşırken **Auf Wiedersehen** (resmi) ya da **Tschüss** (samimi) dersin.`,
     ],
   })
 
-  const a1Lesson2 = await prisma.lesson.create({
+  const a1Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit.id,
       order: 2,
@@ -188,7 +224,7 @@ Use "sein" to introduce yourself and describe states: Ich **bin** Lehrer. (I am 
     },
   })
 
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Lesson2.id,
@@ -226,7 +262,7 @@ Use "sein" to introduce yourself and describe states: Ich **bin** Lehrer. (I am 
     ],
   })
 
-  const a1Lesson3 = await prisma.lesson.create({
+  const a1Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit.id,
       order: 3,
@@ -288,7 +324,7 @@ Bunlar 1'den 10'a kadar olan sayı adlarıdır. Saymak, telefon numaraları ve f
     },
   })
 
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Lesson3.id,
@@ -309,7 +345,7 @@ Bunlar 1'den 10'a kadar olan sayı adlarıdır. Saymak, telefon numaraları ve f
     ],
   })
 
-  const a1Lesson4 = await prisma.lesson.create({
+  const a1Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit.id,
       order: 4,
@@ -347,7 +383,7 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
     },
   })
 
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Lesson4.id,
@@ -368,7 +404,7 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       {
         lessonId: a1Lesson4.id,
@@ -388,11 +424,11 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
   })
 
   // --- A1 Unit 2: Artikel & Nomen (4 lessons) ---
-  const a1Unit2 = await prisma.unit.create({
+  const a1Unit2 = await seedUnit({
     data: { levelId: a1.id, order: 2, titleDe: 'Artikel & Nomen', titleEn: 'Articles & Nouns', titleTr: 'Tanımlıklar ve İsimler' },
   })
 
-  const a1Unit2Lesson1 = await prisma.lesson.create({
+  const a1Unit2Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit2.id,
       order: 1,
@@ -438,7 +474,7 @@ Her Almanca ismin bir cinsiyeti vardır. Belirli tanımlık („the") bu cinsiye
 Her yeni ismi mutlaka tanımlığıyla birlikte öğren.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit2Lesson1.id,
@@ -465,7 +501,7 @@ Her yeni ismi mutlaka tanımlığıyla birlikte öğren.`,
     ],
   })
 
-  const a1Unit2Lesson2 = await prisma.lesson.create({
+  const a1Unit2Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit2.id,
       order: 2,
@@ -511,7 +547,7 @@ Belirsiz tanımlık („bir") eril ve nötr isimlerde **ein**, dişil isimlerde 
 Bir şey yeni ya da bilinmiyorsa belirsiz tanımlık kullanırsın.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit2Lesson2.id,
@@ -532,7 +568,7 @@ Bir şey yeni ya da bilinmiyorsa belirsiz tanımlık kullanırsın.`,
     ],
   })
 
-  const a1Unit2Lesson3 = await prisma.lesson.create({
+  const a1Unit2Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit2.id,
       order: 3,
@@ -581,7 +617,7 @@ Almanca isimler çoğulu farklı şekillerde yapar. Çoğulda tanımlık her zam
 Çoğulu, ismin kendisiyle birlikte öğrenmen en iyisidir.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit2Lesson3.id,
@@ -602,7 +638,7 @@ Almanca isimler çoğulu farklı şekillerde yapar. Çoğulda tanımlık her zam
     ],
   })
 
-  const a1Unit2Lesson4 = await prisma.lesson.create({
+  const a1Unit2Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit2.id,
       order: 4,
@@ -645,7 +681,7 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
 **Örnek:** Das ist **kein** Problem. (Sorun değil.) Ich trinke **keinen** Kaffee. (Kahve içmiyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit2Lesson4.id,
@@ -666,7 +702,7 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit2Lesson1.id, word: 'der Mann', translationEn: 'the man', translationTr: 'adam', exampleSentence: 'Der Mann ist groß.' },
       { lessonId: a1Unit2Lesson1.id, word: 'die Frau', translationEn: 'the woman', translationTr: 'kadın', exampleSentence: 'Die Frau ist nett.' },
@@ -680,11 +716,11 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
   })
 
   // --- A1 Unit 3: Personalpronomen & Präsens (4 lessons) ---
-  const a1Unit3 = await prisma.unit.create({
+  const a1Unit3 = await seedUnit({
     data: { levelId: a1.id, order: 3, titleDe: 'Personalpronomen & Präsens', titleEn: 'Personal Pronouns & Present Tense', titleTr: 'Şahıs Zamirleri ve Şimdiki Zaman' },
   })
 
-  const a1Unit3Lesson1 = await prisma.lesson.create({
+  const a1Unit3Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit3.id,
       order: 1,
@@ -730,7 +766,7 @@ Personal pronouns replace a person or a thing. These are the subject pronouns in
 **Örnek:** **Ich** bin müde. (Yorgunum.) **Wir** lernen Deutsch. (Almanca öğreniyoruz.) **Sie** sind Herr Müller, oder? (Siz Müller Bey'siniz, değil mi?)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit3Lesson1.id,
@@ -757,7 +793,7 @@ Personal pronouns replace a person or a thing. These are the subject pronouns in
     ],
   })
 
-  const a1Unit3Lesson2 = await prisma.lesson.create({
+  const a1Unit3Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit3.id,
       order: 2,
@@ -806,7 +842,7 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
 **Örnek:** Ich **spiele** Fußball. (Futbol oynuyorum.) Wir **lernen** Deutsch. (Almanca öğreniyoruz.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit3Lesson2.id,
@@ -827,7 +863,7 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
     ],
   })
 
-  const a1Unit3Lesson3 = await prisma.lesson.create({
+  const a1Unit3Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit3.id,
       order: 3,
@@ -876,7 +912,7 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
 **Örnek:** Ich **habe** ein Buch. (Bir kitabım var.) Du **hast** Zeit. (Vaktin var.) „haben" kalıplaşmış ifadelerde de kullanılır: Ich **habe** Hunger. (Karnım aç / Açım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit3Lesson3.id,
@@ -903,7 +939,7 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
     ],
   })
 
-  const a1Unit3Lesson4 = await prisma.lesson.create({
+  const a1Unit3Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit3.id,
       order: 4,
@@ -949,7 +985,7 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
 **Örnek:** **Wo** wohnst du? – Ich wohne in Berlin. (Nerede yaşıyorsun? – Berlin'de yaşıyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit3Lesson4.id,
@@ -970,7 +1006,7 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit3Lesson1.id, word: 'Sie', translationEn: 'formal you', translationTr: 'siz', exampleSentence: 'Wie heißen Sie?' },
       { lessonId: a1Unit3Lesson1.id, word: 'wir', translationEn: 'we', translationTr: 'biz', exampleSentence: 'Wir lernen Deutsch.' },
@@ -984,11 +1020,11 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
   })
 
   // --- A1 Unit 4: Familie & Possessivpronomen (4 lessons) ---
-  const a1Unit4 = await prisma.unit.create({
+  const a1Unit4 = await seedUnit({
     data: { levelId: a1.id, order: 4, titleDe: 'Familie & Possessivpronomen', titleEn: 'Family & Possessives', titleTr: 'Aile ve İyelik Sıfatları' },
   })
 
-  const a1Unit4Lesson1 = await prisma.lesson.create({
+  const a1Unit4Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit4.id,
       order: 1,
@@ -1037,7 +1073,7 @@ Bunlar aileyle ilgili en önemli kelimelerdir. Tanımlığa dikkat et:
 **Örnek:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna. (Babamın adı Peter, annemin adı Anna.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit4Lesson1.id,
@@ -1064,7 +1100,7 @@ Bunlar aileyle ilgili en önemli kelimelerdir. Tanımlığa dikkat et:
     ],
   })
 
-  const a1Unit4Lesson2 = await prisma.lesson.create({
+  const a1Unit4Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit4.id,
       order: 2,
@@ -1107,7 +1143,7 @@ Possessive articles show who something belongs to. The ending follows the noun �
 **Örnek:** **Mein** Bruder ist groß. (Erkek kardeşim uzun boylu.) **Deine** Schwester ist nett. (Senin kız kardeşin hoş biri.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit4Lesson2.id,
@@ -1128,7 +1164,7 @@ Possessive articles show who something belongs to. The ending follows the noun �
     ],
   })
 
-  const a1Unit4Lesson3 = await prisma.lesson.create({
+  const a1Unit4Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit4.id,
       order: 3,
@@ -1165,7 +1201,7 @@ Evet/hayır sorularında **fiil başta** gelir. „Ja" (evet) ya da „Nein" (ha
 **Örnek:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister. (Kardeşin var mı? – Evet, bir kız kardeşim var. / Hayır, kardeşim yok.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit4Lesson3.id,
@@ -1186,7 +1222,7 @@ Evet/hayır sorularında **fiil başta** gelir. „Ja" (evet) ya da „Nein" (ha
     ],
   })
 
-  const a1Unit4Lesson4 = await prisma.lesson.create({
+  const a1Unit4Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit4.id,
       order: 4,
@@ -1226,7 +1262,7 @@ Ailen hakkında şöyle konuşursun:
 **Örnek:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch. (Annem Türkiye'den geliyor ve Türkçe konuşuyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit4Lesson4.id,
@@ -1247,7 +1283,7 @@ Ailen hakkında şöyle konuşursun:
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit4Lesson1.id, word: 'der Vater', translationEn: 'father', translationTr: 'baba', exampleSentence: 'Mein Vater heißt Peter.' },
       { lessonId: a1Unit4Lesson1.id, word: 'die Mutter', translationEn: 'mother', translationTr: 'anne', exampleSentence: 'Meine Mutter ist nett.' },
@@ -1261,11 +1297,11 @@ Ailen hakkında şöyle konuşursun:
   })
 
   // --- A1 Unit 5: Zahlen, Uhrzeit & Alltag (4 lessons) ---
-  const a1Unit5 = await prisma.unit.create({
+  const a1Unit5 = await seedUnit({
     data: { levelId: a1.id, order: 5, titleDe: 'Zahlen, Uhrzeit & Alltag', titleEn: 'Numbers, Time & Daily Life', titleTr: 'Sayılar, Saat ve Günlük Hayat' },
   })
 
-  const a1Unit5Lesson1 = await prisma.lesson.create({
+  const a1Unit5Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit5.id,
       order: 1,
@@ -1314,7 +1350,7 @@ Onlar **-zig** ile biter (istisna: dreißig). 21'den itibaren önce biri, sonra 
 **Örnek:** Ich bin **einundzwanzig** Jahre alt. (Yirmi bir yaşındayım.) Das kostet **dreißig** Euro. (Bu otuz euro.) Not: 21, kelime kelime „bir-ve-yirmi" demektir.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit5Lesson1.id,
@@ -1335,7 +1371,7 @@ Onlar **-zig** ile biter (istisna: dreißig). 21'den itibaren önce biri, sonra 
     ],
   })
 
-  const a1Unit5Lesson2 = await prisma.lesson.create({
+  const a1Unit5Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit5.id,
       order: 2,
@@ -1378,7 +1414,7 @@ Saati **„Wie spät ist es?"** ya da **„Wie viel Uhr ist es?"** (Saat kaç?) 
 **Dikkat:** „halb vier" 3:30 demektir – yani *dörde yarım saat kala*, üç buçuk. Almanca bir sonraki saati sayar.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit5Lesson2.id,
@@ -1399,7 +1435,7 @@ Saati **„Wie spät ist es?"** ya da **„Wie viel Uhr ist es?"** (Saat kaç?) 
     ],
   })
 
-  const a1Unit5Lesson3 = await prisma.lesson.create({
+  const a1Unit5Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit5.id,
       order: 3,
@@ -1451,7 +1487,7 @@ Bütün günler erildir (der). „Bir günde" demek için **am** (an + dem) kull
 **Örnek:** **Am** Montag arbeite ich. (Pazartesi çalışırım.) **Am** Sonntag habe ich frei. (Pazar günü izinliyim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit5Lesson3.id,
@@ -1478,7 +1514,7 @@ Bütün günler erildir (der). „Bir günde" demek için **am** (an + dem) kull
     ],
   })
 
-  const a1Unit5Lesson4 = await prisma.lesson.create({
+  const a1Unit5Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit5.id,
       order: 4,
@@ -1518,7 +1554,7 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
 **Örnek:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr. (Saat sekizde kahvaltı yaparım ve dokuzdan beşe kadar çalışırım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit5Lesson4.id,
@@ -1539,7 +1575,7 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit5Lesson1.id, word: 'zwanzig', translationEn: 'twenty', translationTr: 'yirmi', exampleSentence: 'Ich bin zwanzig Jahre alt.' },
       { lessonId: a1Unit5Lesson1.id, word: 'hundert', translationEn: 'hundred', translationTr: 'yüz', exampleSentence: 'Das kostet hundert Euro.' },
@@ -1553,11 +1589,11 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
   })
 
   // --- A1 Unit 6: Akkusativ (4 lessons) ---
-  const a1Unit6 = await prisma.unit.create({
+  const a1Unit6 = await seedUnit({
     data: { levelId: a1.id, order: 6, titleDe: 'Akkusativ', titleEn: 'Accusative Case', titleTr: 'Akkusativ (-i Hali)' },
   })
 
-  const a1Unit6Lesson1 = await prisma.lesson.create({
+  const a1Unit6Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit6.id,
       order: 1,
@@ -1600,7 +1636,7 @@ Akkusatif nesnesi genelde bir eylemi „alan" kişi ya da nesnedir. Sadece **eri
 **Örnek:** Ich sehe **den** Mann, **die** Frau und **das** Kind. (Adamı, kadını ve çocuğu görüyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit6Lesson1.id,
@@ -1621,7 +1657,7 @@ Akkusatif nesnesi genelde bir eylemi „alan" kişi ya da nesnedir. Sadece **eri
     ],
   })
 
-  const a1Unit6Lesson2 = await prisma.lesson.create({
+  const a1Unit6Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit6.id,
       order: 2,
@@ -1676,7 +1712,7 @@ Personal pronouns also have an accusative form. Only "sie", "es" and "Sie" stay 
 **Örnek:** Ich liebe **dich**. (Seni seviyorum.) Sie sieht **ihn**. (O, onu görüyor.) Er versteht **uns** nicht. (O bizi anlamıyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit6Lesson2.id,
@@ -1703,7 +1739,7 @@ Personal pronouns also have an accusative form. Only "sie", "es" and "Sie" stay 
     ],
   })
 
-  const a1Unit6Lesson3 = await prisma.lesson.create({
+  const a1Unit6Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit6.id,
       order: 3,
@@ -1746,7 +1782,7 @@ Birçok fiil akkusatif nesne alır. Bu fiillerden sonra eril isimlerde „ein" �
 **Örnek:** Ich brauche **einen** Stift und **eine** Tasche. (Bir kaleme ve bir çantaya ihtiyacım var.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit6Lesson3.id,
@@ -1767,7 +1803,7 @@ Birçok fiil akkusatif nesne alır. Bu fiillerden sonra eril isimlerde „ein" �
     ],
   })
 
-  const a1Unit6Lesson4 = await prisma.lesson.create({
+  const a1Unit6Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit6.id,
       order: 4,
@@ -1807,7 +1843,7 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
 **kein mi, nicht mi?** Belirsiz tanımlıklı isimleri **kein** ile, diğer her şeyi **nicht** ile olumsuz yaparsın.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit6Lesson4.id,
@@ -1828,7 +1864,7 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit6Lesson1.id, word: 'sehen', translationEn: 'to see', translationTr: 'görmek', exampleSentence: 'Ich sehe den Mann.' },
       { lessonId: a1Unit6Lesson1.id, word: 'der Apfel', translationEn: 'the apple', translationTr: 'elma', exampleSentence: 'Ich sehe den Apfel.' },
@@ -1842,11 +1878,11 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
   })
 
   // --- A1 Unit 7: Modalverben (4 lessons) ---
-  const a1Unit7 = await prisma.unit.create({
+  const a1Unit7 = await seedUnit({
     data: { levelId: a1.id, order: 7, titleDe: 'Modalverben', titleEn: 'Modal Verbs', titleTr: 'Kip Fiilleri' },
   })
 
-  const a1Unit7Lesson1 = await prisma.lesson.create({
+  const a1Unit7Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit7.id,
       order: 1,
@@ -1895,7 +1931,7 @@ Kip fiilleri başka bir fiilin anlamını değiştirir. **können** = yetenek, *
 **Örnek:** Ich **kann** schwimmen. (Yüzebilirim.) Du **musst** arbeiten. (Çalışmak zorundasın.) Mastar cümlenin sonunda yer alır.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit7Lesson1.id,
@@ -1916,7 +1952,7 @@ Kip fiilleri başka bir fiilin anlamını değiştirir. **können** = yetenek, *
     ],
   })
 
-  const a1Unit7Lesson2 = await prisma.lesson.create({
+  const a1Unit7Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit7.id,
       order: 2,
@@ -1956,7 +1992,7 @@ Bu üç kip fiili istek ve izin ifade eder:
 **İpucu:** „möchten", „wollen" fiilinin kibar biçimidir – restoranda ya da rica ederken kullan.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit7Lesson2.id,
@@ -1977,7 +2013,7 @@ Bu üç kip fiili istek ve izin ifade eder:
     ],
   })
 
-  const a1Unit7Lesson3 = await prisma.lesson.create({
+  const a1Unit7Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit7.id,
       order: 3,
@@ -2014,7 +2050,7 @@ Cümlede kip fiili ile mastar bir **çerçeve** oluşturur: Kip fiili **2. konum
 **Örnek:** Ich **möchte** heute Abend ins Kino **gehen**. (Bu akşam sinemaya gitmek istiyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit7Lesson3.id,
@@ -2035,7 +2071,7 @@ Cümlede kip fiili ile mastar bir **çerçeve** oluşturur: Kip fiili **2. konum
     ],
   })
 
-  const a1Unit7Lesson4 = await prisma.lesson.create({
+  const a1Unit7Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit7.id,
       order: 4,
@@ -2075,7 +2111,7 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
 **Örnek:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**. (Bir çay ve bir dilim pasta istiyorum, lütfen.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit7Lesson4.id,
@@ -2099,7 +2135,7 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit7Lesson1.id, word: 'können', translationEn: 'can / to be able to', translationTr: '-abilmek', exampleSentence: 'Ich kann schwimmen.' },
       { lessonId: a1Unit7Lesson1.id, word: 'müssen', translationEn: 'must / to have to', translationTr: 'zorunda olmak', exampleSentence: 'Du musst arbeiten.' },
@@ -2113,11 +2149,11 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
   })
 
   // --- A1 Unit 8: Trennbare Verben & Alltag (4 lessons) ---
-  const a1Unit8 = await prisma.unit.create({
+  const a1Unit8 = await seedUnit({
     data: { levelId: a1.id, order: 8, titleDe: 'Trennbare Verben & Alltag', titleEn: 'Separable Verbs & Daily Life', titleTr: 'Ayrılabilir Fiiller ve Günlük Hayat' },
   })
 
-  const a1Unit8Lesson1 = await prisma.lesson.create({
+  const a1Unit8Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit8.id,
       order: 1,
@@ -2154,7 +2190,7 @@ Birçok fiilin **ayrılabilen bir ön eki** vardır. Geniş zamanda ön ek ayrı
 **Örnek:** „aufstehen" → Ich **stehe** um sieben Uhr **auf**. (Saat yedide kalkarım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit8Lesson1.id,
@@ -2175,7 +2211,7 @@ Birçok fiilin **ayrılabilen bir ön eki** vardır. Geniş zamanda ön ek ayrı
     ],
   })
 
-  const a1Unit8Lesson2 = await prisma.lesson.create({
+  const a1Unit8Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit8.id,
       order: 2,
@@ -2218,7 +2254,7 @@ Birçok günlük fiil ayrılabilir. Ön ek her zaman cümlenin sonunda yer alır
 **Örnek:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**. (Cumartesi alışveriş yaparım ve akşam televizyon izlerim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit8Lesson2.id,
@@ -2239,7 +2275,7 @@ Birçok günlük fiil ayrılabilir. Ön ek her zaman cümlenin sonunda yer alır
     ],
   })
 
-  const a1Unit8Lesson3 = await prisma.lesson.create({
+  const a1Unit8Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit8.id,
       order: 3,
@@ -2276,7 +2312,7 @@ The conjugated verb stays in **position 2**, the prefix at the **end**. Time exp
 **Örnek:** Ich **stehe** täglich um sieben Uhr **auf**. (Her gün saat yedide kalkarım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit8Lesson3.id,
@@ -2297,7 +2333,7 @@ The conjugated verb stays in **position 2**, the prefix at the **end**. Time exp
     ],
   })
 
-  const a1Unit8Lesson4 = await prisma.lesson.create({
+  const a1Unit8Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit8.id,
       order: 4,
@@ -2337,7 +2373,7 @@ Tipik sorular ve cevaplar:
 **Örnek:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit8Lesson4.id,
@@ -2358,7 +2394,7 @@ Tipik sorular ve cevaplar:
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit8Lesson1.id, word: 'aufstehen', translationEn: 'to get up', translationTr: 'kalkmak', exampleSentence: 'Ich stehe früh auf.' },
       { lessonId: a1Unit8Lesson1.id, word: 'früh', translationEn: 'early', translationTr: 'erken', exampleSentence: 'Ich stehe früh auf.' },
@@ -2372,11 +2408,11 @@ Tipik sorular ve cevaplar:
   })
 
   // --- A1 Unit 9: Dativ & Präpositionen (4 lessons) ---
-  const a1Unit9 = await prisma.unit.create({
+  const a1Unit9 = await seedUnit({
     data: { levelId: a1.id, order: 9, titleDe: 'Dativ & Präpositionen', titleEn: 'Dative Case & Prepositions', titleTr: 'Datif (-e Hali) ve Edatlar' },
   })
 
-  const a1Unit9Lesson1 = await prisma.lesson.create({
+  const a1Unit9Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit9.id,
       order: 1,
@@ -2419,7 +2455,7 @@ Datif çoğu zaman bir eylemin „alıcısıdır". Bütün tanımlıklar değiş
 **Örnek:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern. (Adama, kadına ve çocuklara yardım ediyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit9Lesson1.id,
@@ -2440,7 +2476,7 @@ Datif çoğu zaman bir eylemin „alıcısıdır". Bütün tanımlıklar değiş
     ],
   })
 
-  const a1Unit9Lesson2 = await prisma.lesson.create({
+  const a1Unit9Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit9.id,
       order: 2,
@@ -2492,7 +2528,7 @@ Bu edatlardan sonra **her zaman** datif kullanılır:
 **Hatırlatma:** aus, bei, mit, nach, seit, von, zu – en iyisi ezberlemek.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit9Lesson2.id,
@@ -2519,7 +2555,7 @@ Bu edatlardan sonra **her zaman** datif kullanılır:
     ],
   })
 
-  const a1Unit9Lesson3 = await prisma.lesson.create({
+  const a1Unit9Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit9.id,
       order: 3,
@@ -2556,7 +2592,7 @@ Two-way prepositions (in, an, auf, unter, über …) can take **accusative or da
 **Örnek:** **Wohin?** Ich lege das Buch **auf den** Tisch. (Kitabı masaya koyuyorum.) · **Wo?** Das Buch liegt **auf dem** Tisch. (Kitap masanın üstünde duruyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit9Lesson3.id,
@@ -2577,7 +2613,7 @@ Two-way prepositions (in, an, auf, unter, über …) can take **accusative or da
     ],
   })
 
-  const a1Unit9Lesson4 = await prisma.lesson.create({
+  const a1Unit9Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit9.id,
       order: 4,
@@ -2623,7 +2659,7 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
 **Örnek:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (Mutfakta yemek yaparım ve yatak odasında uyurum.) Odaları datifteki iki yönlü edatlarla birleştir.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit9Lesson4.id,
@@ -2650,7 +2686,7 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit9Lesson1.id, word: 'helfen', translationEn: 'to help', translationTr: 'yardım etmek', exampleSentence: 'Ich helfe dem Mann.' },
       { lessonId: a1Unit9Lesson1.id, word: 'danken', translationEn: 'to thank', translationTr: 'teşekkür etmek', exampleSentence: 'Ich danke dir.' },
@@ -2664,11 +2700,11 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
   })
 
   // --- A1 Unit 10: Essen & Einkaufen (4 lessons) ---
-  const a1Unit10 = await prisma.unit.create({
+  const a1Unit10 = await seedUnit({
     data: { levelId: a1.id, order: 10, titleDe: 'Essen & Einkaufen', titleEn: 'Food & Shopping', titleTr: 'Yemek ve Alışveriş' },
   })
 
-  const a1Unit10Lesson1 = await prisma.lesson.create({
+  const a1Unit10Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit10.id,
       order: 1,
@@ -2717,7 +2753,7 @@ Bunlar yemekle ilgili önemli kelimelerdir. Tanımlığa dikkat et:
 **Örnek:** Ich kaufe **Brot**, **Käse** und **Milch**. (Ekmek, peynir ve süt alırım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit10Lesson1.id,
@@ -2744,7 +2780,7 @@ Bunlar yemekle ilgili önemli kelimelerdir. Tanımlığa dikkat et:
     ],
   })
 
-  const a1Unit10Lesson2 = await prisma.lesson.create({
+  const a1Unit10Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit10.id,
       order: 2,
@@ -2787,7 +2823,7 @@ Alışverişte kibarca **„Ich hätte gern …"** (… isterim) ile sipariş ve
 **Örnek:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte. (Bir kilo elma ve bir litre süt isterim, lütfen.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit10Lesson2.id,
@@ -2811,7 +2847,7 @@ Alışverişte kibarca **„Ich hätte gern …"** (… isterim) ile sipariş ve
     ],
   })
 
-  const a1Unit10Lesson3 = await prisma.lesson.create({
+  const a1Unit10Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit10.id,
       order: 3,
@@ -2857,7 +2893,7 @@ Restoranda tipik bir konuşma şöyle geçer:
 **Örnek:** „Ich **hätte gern** die Suppe und ein Wasser." – „**Die Rechnung, bitte.**"`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit10Lesson3.id,
@@ -2881,7 +2917,7 @@ Restoranda tipik bir konuşma şöyle geçer:
     ],
   })
 
-  const a1Unit10Lesson4 = await prisma.lesson.create({
+  const a1Unit10Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit10.id,
       order: 4,
@@ -2921,7 +2957,7 @@ Kısa bir diyalog:
 **Örnek:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit10Lesson4.id,
@@ -2942,7 +2978,7 @@ Kısa bir diyalog:
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit10Lesson1.id, word: 'der Käse', translationEn: 'cheese', translationTr: 'peynir', exampleSentence: 'Ich esse Käse.' },
       { lessonId: a1Unit10Lesson1.id, word: 'die Milch', translationEn: 'milk', translationTr: 'süt', exampleSentence: 'Ich trinke Milch.' },
@@ -2956,11 +2992,11 @@ Kısa bir diyalog:
   })
 
   // --- A1 Unit 11: Perfekt (Einführung) (4 lessons) ---
-  const a1Unit11 = await prisma.unit.create({
+  const a1Unit11 = await seedUnit({
     data: { levelId: a1.id, order: 11, titleDe: 'Perfekt (Einführung)', titleEn: 'Perfekt (Introduction)', titleTr: 'Perfekt (Giriş)' },
   })
 
-  const a1Unit11Lesson1 = await prisma.lesson.create({
+  const a1Unit11Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit11.id,
       order: 1,
@@ -3003,7 +3039,7 @@ Perfekt, konuşmada en önemli geçmiş zaman biçimidir. Formül: **haben (çek
 **Örnek:** Ich **habe** Pizza **gegessen**. (Pizza yedim.) Du **hast** viel **gearbeitet**. (Çok çalıştın.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit11Lesson1.id,
@@ -3024,7 +3060,7 @@ Perfekt, konuşmada en önemli geçmiş zaman biçimidir. Formül: **haben (çek
     ],
   })
 
-  const a1Unit11Lesson2 = await prisma.lesson.create({
+  const a1Unit11Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit11.id,
       order: 2,
@@ -3067,7 +3103,7 @@ Verbs of **movement** (gehen, kommen, fahren) and **change of state** (aufstehen
 **Örnek:** Ich **bin** nach Hause **gegangen**. (Eve gittim.) Er **ist** spät **gekommen**. (Geç geldi.) Not: „sein" ve „bleiben" de „sein" alır.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit11Lesson2.id,
@@ -3088,7 +3124,7 @@ Verbs of **movement** (gehen, kommen, fahren) and **change of state** (aufstehen
     ],
   })
 
-  const a1Unit11Lesson3 = await prisma.lesson.create({
+  const a1Unit11Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit11.id,
       order: 3,
@@ -3128,7 +3164,7 @@ Partizip II, Perfekt'in çekirdeğidir. İki kalıbı vardır:
 **Örnek:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. (Futbol oynadım ve bir kitap okudum.) Düzensiz biçimleri ezberlemen en iyisidir.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit11Lesson3.id,
@@ -3149,7 +3185,7 @@ Partizip II, Perfekt'in çekirdeğidir. İki kalıbı vardır:
     ],
   })
 
-  const a1Unit11Lesson4 = await prisma.lesson.create({
+  const a1Unit11Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit11.id,
       order: 4,
@@ -3189,7 +3225,7 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
 **Örnek:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit11Lesson4.id,
@@ -3210,7 +3246,7 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit11Lesson1.id, word: 'schmecken', translationEn: 'to taste', translationTr: 'tatmak', exampleSentence: 'Die Suppe hat gut geschmeckt.' },
       { lessonId: a1Unit11Lesson1.id, word: 'kochen', translationEn: 'to cook', translationTr: 'pişirmek', exampleSentence: 'Ich habe Suppe gekocht.' },
@@ -3224,11 +3260,11 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
   })
 
   // --- A1 Unit 12: Imperativ & Wegbeschreibung (4 lessons) ---
-  const a1Unit12 = await prisma.unit.create({
+  const a1Unit12 = await seedUnit({
     data: { levelId: a1.id, order: 12, titleDe: 'Imperativ & Wegbeschreibung', titleEn: 'Imperative & Giving Directions', titleTr: 'Emir Kipi ve Yol Tarifi' },
   })
 
-  const a1Unit12Lesson1 = await prisma.lesson.create({
+  const a1Unit12Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit12.id,
       order: 1,
@@ -3280,7 +3316,7 @@ You form the "du" imperative from the verb stem, usually dropping the -st ending
 „essen" fiilinde ünlü değişimi var (e → i), „sein" ise düzensizdir: Sei ruhig! (Sakin ol!)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit12Lesson1.id,
@@ -3301,7 +3337,7 @@ You form the "du" imperative from the verb stem, usually dropping the -st ending
     ],
   })
 
-  const a1Unit12Lesson2 = await prisma.lesson.create({
+  const a1Unit12Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit12.id,
       order: 2,
@@ -3347,7 +3383,7 @@ Use the Sie form with strangers, and the ihr form with several friends.`,
 Sie biçimini yabancı kişilere, ihr biçimini birden fazla arkadaşına karşı kullanırsın.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit12Lesson2.id,
@@ -3374,7 +3410,7 @@ Sie biçimini yabancı kişilere, ihr biçimini birden fazla arkadaşına karş�
     ],
   })
 
-  const a1Unit12Lesson3 = await prisma.lesson.create({
+  const a1Unit12Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit12.id,
       order: 3,
@@ -3426,7 +3462,7 @@ Yol tarif etmek için genelde emir kipini (çoğunlukla Sie biçimini) ve yön k
 Der Bahnhof ist dann auf der linken Seite. (Tren istasyonu o zaman sol tarafta olur.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit12Lesson3.id,
@@ -3447,7 +3483,7 @@ Der Bahnhof ist dann auf der linken Seite. (Tren istasyonu o zaman sol tarafta o
     ],
   })
 
-  const a1Unit12Lesson4 = await prisma.lesson.create({
+  const a1Unit12Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit12.id,
       order: 4,
@@ -3493,7 +3529,7 @@ Bu alıştırmada emir kipini ve yol tarifini birlikte tekrar edersin. Yolu sora
 Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit12Lesson4.id,
@@ -3514,7 +3550,7 @@ Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit12Lesson1.id, word: 'warten', translationEn: 'to wait', translationTr: 'beklemek', exampleSentence: 'Warte hier!' },
       { lessonId: a1Unit12Lesson1.id, word: 'schauen', translationEn: 'to look', translationTr: 'bakmak', exampleSentence: 'Schau mal!' },
@@ -3528,11 +3564,11 @@ Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
   })
 
   // --- A1 Unit 13: Adjektive & Vergleiche (4 lessons) ---
-  const a1Unit13 = await prisma.unit.create({
+  const a1Unit13 = await seedUnit({
     data: { levelId: a1.id, order: 13, titleDe: 'Adjektive & Vergleiche', titleEn: 'Adjectives & Comparisons', titleTr: 'Sıfatlar ve Karşılaştırmalar' },
   })
 
-  const a1Unit13Lesson1 = await prisma.lesson.create({
+  const a1Unit13Lesson1 = await seedLesson({
     data: {
       unitId: a1Unit13.id,
       order: 1,
@@ -3581,7 +3617,7 @@ Belirli artikelden (der/die/das) sonra sıfat yalın halde genellikle -e ekini a
 Artikel cinsiyeti zaten gösterdiği için sıfata sadece basit -e eki (çoğulda -en) yeterlidir.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit13Lesson1.id,
@@ -3602,7 +3638,7 @@ Artikel cinsiyeti zaten gösterdiği için sıfata sadece basit -e eki (çoğuld
     ],
   })
 
-  const a1Unit13Lesson2 = await prisma.lesson.create({
+  const a1Unit13Lesson2 = await seedLesson({
     data: {
       unitId: a1Unit13.id,
       order: 2,
@@ -3648,7 +3684,7 @@ Belirsiz artikelden (ein/eine) sonra cinsiyeti sıfat gösterir. Bu yüzden yal�
 „ein" cinsiyeti göstermediği için bu görevi sıfat -er veya -es ile üstlenir.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit13Lesson2.id,
@@ -3675,7 +3711,7 @@ Belirsiz artikelden (ein/eine) sonra cinsiyeti sıfat gösterir. Bu yüzden yal�
     ],
   })
 
-  const a1Unit13Lesson3 = await prisma.lesson.create({
+  const a1Unit13Lesson3 = await seedLesson({
     data: {
       unitId: a1Unit13.id,
       order: 3,
@@ -3727,7 +3763,7 @@ Karşılaştırma biçimini genelde -er ile kurarsın. Karşılaştırırken „
 „gut → besser" (iyi → daha iyi) düzensizdir; „groß" ve „alt" bir Umlaut alır (ö, ä).`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit13Lesson3.id,
@@ -3748,7 +3784,7 @@ Karşılaştırma biçimini genelde -er ile kurarsın. Karşılaştırırken „
     ],
   })
 
-  const a1Unit13Lesson4 = await prisma.lesson.create({
+  const a1Unit13Lesson4 = await seedLesson({
     data: {
       unitId: a1Unit13.id,
       order: 4,
@@ -3797,7 +3833,7 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
 „gut → am besten" (iyi → en iyi) düzensizdir; „groß" Umlaut'u üstünlük derecesinde de korur: am größten.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a1Unit13Lesson4.id,
@@ -3818,7 +3854,7 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a1Unit13Lesson1.id, word: 'groß', translationEn: 'big / tall', translationTr: 'büyük', exampleSentence: 'Der große Mann ist mein Vater.' },
       { lessonId: a1Unit13Lesson1.id, word: 'klein', translationEn: 'small', translationTr: 'küçük', exampleSentence: 'Die kleine Frau ist meine Mutter.' },
@@ -3832,10 +3868,10 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
   })
 
   // --- A2: Vergangenheit (1 sample lesson) ---
-  const a2Unit = await prisma.unit.create({
+  const a2Unit = await seedUnit({
     data: { levelId: a2.id, order: 1, titleDe: 'Vergangenheit', titleEn: 'Past Tense', titleTr: 'Geçmiş Zaman' },
   })
-  const a2Lesson = await prisma.lesson.create({
+  const a2Lesson = await seedLesson({
     data: {
       unitId: a2Unit.id,
       order: 1,
@@ -3890,7 +3926,7 @@ Düzenli fiiller Partizip II'yi **ge- + kök + -t** ile kurar: machen → **gema
 **Örnek:** Ich **habe** gestern Pizza **gegessen**. (Dün pizza yedim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Lesson.id,
@@ -3911,7 +3947,7 @@ Düzenli fiiller Partizip II'yi **ge- + kök + -t** ile kurar: machen → **gema
     ],
   })
 
-  const a2Lesson2 = await prisma.lesson.create({
+  const a2Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit.id,
       order: 2,
@@ -3963,7 +3999,7 @@ Yardımcı fiil „sein" 2. pozisyonda, Partizip II ise cümle sonunda yer alır
 **Örnekler:** Ich **bin** nach Berlin **gefahren**. (Berlin'e gittim.) · Er **ist** zu Hause **geblieben**. (Evde kaldı.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Lesson2.id,
@@ -3984,7 +4020,7 @@ Yardımcı fiil „sein" 2. pozisyonda, Partizip II ise cümle sonunda yer alır
     ],
   })
 
-  const a2Lesson3 = await prisma.lesson.create({
+  const a2Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit.id,
       order: 3,
@@ -4030,7 +4066,7 @@ Zaman ifadeleriyle bir şeyin **ne zaman** olduğunu söylersin. Genelde cümle 
 **Örnek:** **Vor zwei Tagen** habe ich meine Oma besucht. (İki gün önce büyükannemi ziyaret ettim.) · **Letzte Woche** war ich krank. (Geçen hafta hastaydım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Lesson3.id,
@@ -4054,7 +4090,7 @@ Zaman ifadeleriyle bir şeyin **ne zaman** olduğunu söylersin. Genelde cümle 
     ],
   })
 
-  const a2Lesson4 = await prisma.lesson.create({
+  const a2Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit.id,
       order: 4,
@@ -4097,7 +4133,7 @@ Gününü anlatırken „haben" ve „sein" ile kurulan Perfekt'i birleştirirsi
 **Örnek:** Ich **bin** aufgestanden, **habe** gefrühstückt und **bin** zur Arbeit gefahren. (Kalktım, kahvaltı yaptım ve işe gittim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Lesson4.id,
@@ -4118,7 +4154,7 @@ Gününü anlatırken „haben" ve „sein" ile kurulan Perfekt'i birleştirirsi
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Lesson2.id, word: 'bleiben', translationEn: 'to stay', translationTr: 'kalmak', exampleSentence: 'Er ist zu Hause geblieben.' },
       { lessonId: a2Lesson2.id, word: 'aufwachen', translationEn: 'to wake up', translationTr: 'uyanmak', exampleSentence: 'Ich bin früh aufgewacht.' },
@@ -4130,11 +4166,11 @@ Gününü anlatırken „haben" ve „sein" ile kurulan Perfekt'i birleştirirsi
   })
 
   // --- A2 Unit 2: Perfekt Vertiefung (4 lessons) ---
-  const a2Unit2 = await prisma.unit.create({
+  const a2Unit2 = await seedUnit({
     data: { levelId: a2.id, order: 2, titleDe: 'Perfekt Vertiefung', titleEn: 'Perfekt in Depth', titleTr: 'Perfekt Zamanı Derinlemesine' },
   })
 
-  const a2Unit2Lesson1 = await prisma.lesson.create({
+  const a2Unit2Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit2.id,
       order: 1,
@@ -4183,7 +4219,7 @@ Fiillerin büyük çoğunluğu „haben" alır. Sadece hareket ve durum değişi
 **Örnekler:** Ich **habe** heute viel **gearbeitet**. (Bugün çok çalıştım.) · Ich **bin** im Park **gelaufen**. (Parkta koştum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit2Lesson1.id,
@@ -4204,7 +4240,7 @@ Fiillerin büyük çoğunluğu „haben" alır. Sadece hareket ve durum değişi
     ],
   })
 
-  const a2Unit2Lesson2 = await prisma.lesson.create({
+  const a2Unit2Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit2.id,
       order: 2,
@@ -4253,7 +4289,7 @@ Düzensiz (güçlü) fiiller Partizip II'de genelde **-en** ile biter ve çoğu 
 **Örnek:** Ich **habe** einen Brief **geschrieben**. (Bir mektup yazdım.) · Er **hat** viel **gesprochen**. (Çok konuştu.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit2Lesson2.id,
@@ -4280,7 +4316,7 @@ Düzensiz (güçlü) fiiller Partizip II'de genelde **-en** ile biter ve çoğu 
     ],
   })
 
-  const a2Unit2Lesson3 = await prisma.lesson.create({
+  const a2Unit2Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit2.id,
       order: 3,
@@ -4326,7 +4362,7 @@ Ayrılabilen önekli fiillerde (aufstehen, anrufen, mitbringen) Partizip'in **-g
 **Örnek:** Ich **bin** um sieben Uhr **aufgestanden**. (Saat yedide kalktım.) · Ich **habe** dich gestern **angerufen**. (Dün seni aradım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit2Lesson3.id,
@@ -4347,7 +4383,7 @@ Ayrılabilen önekli fiillerde (aufstehen, anrufen, mitbringen) Partizip'in **-g
     ],
   })
 
-  const a2Unit2Lesson4 = await prisma.lesson.create({
+  const a2Unit2Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit2.id,
       order: 4,
@@ -4393,7 +4429,7 @@ Two groups form the past participle **without** "ge-": inseparable verbs with th
 **Örnek:** Ich **habe** meine Oma **besucht**. (Büyükannemi ziyaret ettim.) · Ich **habe** Medizin **studiert**. (Tıp okudum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit2Lesson4.id,
@@ -4414,7 +4450,7 @@ Two groups form the past participle **without** "ge-": inseparable verbs with th
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit2Lesson1.id, word: 'laufen', translationEn: 'to run / to walk', translationTr: 'koşmak / yürümek', exampleSentence: 'Ich bin gelaufen.' },
       { lessonId: a2Unit2Lesson1.id, word: 'die Regel', translationEn: 'the rule', translationTr: 'kural', exampleSentence: 'Das ist eine wichtige Regel.' },
@@ -4428,11 +4464,11 @@ Two groups form the past participle **without** "ge-": inseparable verbs with th
   })
 
   // --- A2 Unit 3: Komparativ & Superlativ (4 lessons) ---
-  const a2Unit3 = await prisma.unit.create({
+  const a2Unit3 = await seedUnit({
     data: { levelId: a2.id, order: 3, titleDe: 'Komparativ & Superlativ', titleEn: 'Comparative & Superlative', titleTr: 'Karşılaştırma ve Üstünlük Derecesi' },
   })
 
-  const a2Unit3Lesson1 = await prisma.lesson.create({
+  const a2Unit3Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit3.id,
       order: 1,
@@ -4481,7 +4517,7 @@ Karşılaştırma derecesiyle (Komparativ) iki şeyi kıyaslarsın. Sıfata **-e
 **Örnek:** Der Zug ist **schneller als** das Auto. (Tren arabadan daha hızlıdır.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit3Lesson1.id,
@@ -4502,7 +4538,7 @@ Karşılaştırma derecesiyle (Komparativ) iki şeyi kıyaslarsın. Sıfata **-e
     ],
   })
 
-  const a2Unit3Lesson2 = await prisma.lesson.create({
+  const a2Unit3Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit3.id,
       order: 2,
@@ -4551,7 +4587,7 @@ Many short, single-syllable adjectives with the vowel **a, o** or **u** take an 
 **Örnek:** Meine Schwester ist **jünger als** ich. (Kız kardeşim benden daha genç.) · Mein Opa ist **älter als** mein Vater. (Dedem babamdan daha yaşlı.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit3Lesson2.id,
@@ -4578,7 +4614,7 @@ Many short, single-syllable adjectives with the vowel **a, o** or **u** take an 
     ],
   })
 
-  const a2Unit3Lesson3 = await prisma.lesson.create({
+  const a2Unit3Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit3.id,
       order: 3,
@@ -4621,7 +4657,7 @@ The superlative (second degree of comparison) expresses the highest degree. As a
 **Örnek:** Der ICE ist **am schnellsten**. (ICE en hızlısıdır.) · Der Berg ist **am größten**. (Dağ en büyüğüdür.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit3Lesson3.id,
@@ -4642,7 +4678,7 @@ The superlative (second degree of comparison) expresses the highest degree. As a
     ],
   })
 
-  const a2Unit3Lesson4 = await prisma.lesson.create({
+  const a2Unit3Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit3.id,
       order: 4,
@@ -4694,7 +4730,7 @@ With "gern – lieber – am liebsten" you express preferences.
 **Örnek:** Ich trinke **gern** Tee, aber ich trinke **lieber** Kaffee. Schokolade mag ich **am liebsten**. (Çayı severim ama kahveyi tercih ederim. En çok da çikolatayı severim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit3Lesson4.id,
@@ -4715,7 +4751,7 @@ With "gern – lieber – am liebsten" you express preferences.
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit3Lesson1.id, word: 'schnell', translationEn: 'fast', translationTr: 'hızlı', exampleSentence: 'Der Zug ist schnell.' },
       { lessonId: a2Unit3Lesson1.id, word: 'klein', translationEn: 'small', translationTr: 'küçük', exampleSentence: 'Mein Haus ist klein.' },
@@ -4729,11 +4765,11 @@ With "gern – lieber – am liebsten" you express preferences.
   })
 
   // --- A2 Unit 4: Nebensätze mit "dass" und "weil" (4 lessons) ---
-  const a2Unit4 = await prisma.unit.create({
+  const a2Unit4 = await seedUnit({
     data: { levelId: a2.id, order: 4, titleDe: 'Nebensätze mit "dass" und "weil"', titleEn: '"dass" and "weil" Clauses', titleTr: '"dass" ve "weil" Yan Cümleleri' },
   })
 
-  const a2Unit4Lesson1 = await prisma.lesson.create({
+  const a2Unit4Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit4.id,
       order: 1,
@@ -4773,7 +4809,7 @@ A "dass" (that) clause states **what** someone thinks, says or knows. Important:
 **Örnek:** Ich glaube, **dass** er Recht **hat**. (Haklı olduğunu düşünüyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit4Lesson1.id,
@@ -4794,7 +4830,7 @@ A "dass" (that) clause states **what** someone thinks, says or knows. Important:
     ],
   })
 
-  const a2Unit4Lesson2 = await prisma.lesson.create({
+  const a2Unit4Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit4.id,
       order: 2,
@@ -4837,7 +4873,7 @@ You can also put the "weil" clause first; then the main clause starts with the v
 **Örnek:** Ich lerne Deutsch, **weil** ich in Berlin arbeiten **möchte**. (Almanca öğreniyorum çünkü Berlin'de çalışmak istiyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit4Lesson2.id,
@@ -4858,7 +4894,7 @@ You can also put the "weil" clause first; then the main clause starts with the v
     ],
   })
 
-  const a2Unit4Lesson3 = await prisma.lesson.create({
+  const a2Unit4Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit4.id,
       order: 3,
@@ -4895,7 +4931,7 @@ Her iki bağlaç da **fiili sonda** olan bir yan cümle başlatır – ama anlam
 **Örnekler:** Ich weiß, **dass** du müde **bist**. (Yorgun olduğunu biliyorum.) · Du bist müde, **weil** du wenig geschlafen **hast**. (Az uyuduğun için yorgunsun.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit4Lesson3.id,
@@ -4916,7 +4952,7 @@ Her iki bağlaç da **fiili sonda** olan bir yan cümle başlatır – ama anlam
     ],
   })
 
-  const a2Unit4Lesson4 = await prisma.lesson.create({
+  const a2Unit4Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit4.id,
       order: 4,
@@ -4968,7 +5004,7 @@ Unutma: yan cümledeki fiil sona gider.
 **Örnek:** Ich **hoffe**, dass das Wetter morgen gut **ist**. (Umarım yarın hava güzel olur.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit4Lesson4.id,
@@ -4989,7 +5025,7 @@ Unutma: yan cümledeki fiil sona gider.
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit4Lesson1.id, word: 'glauben', translationEn: 'to believe', translationTr: 'inanmak', exampleSentence: 'Ich glaube, dass er Recht hat.' },
       { lessonId: a2Unit4Lesson1.id, word: 'Recht haben', translationEn: 'to be right', translationTr: 'haklı olmak', exampleSentence: 'Er hat Recht.' },
@@ -5003,11 +5039,11 @@ Unutma: yan cümledeki fiil sona gider.
   })
 
   // --- A2 Unit 5: Nebensätze mit "wenn" (4 lessons) ---
-  const a2Unit5 = await prisma.unit.create({
+  const a2Unit5 = await seedUnit({
     data: { levelId: a2.id, order: 5, titleDe: 'Nebensätze mit "wenn"', titleEn: '"wenn" Clauses', titleTr: '"wenn" Yan Cümleleri' },
   })
 
-  const a2Unit5Lesson1 = await prisma.lesson.create({
+  const a2Unit5Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit5.id,
       order: 1,
@@ -5044,7 +5080,7 @@ You use "wenn" (when/whenever) for things that happen **again and again** (every
 **Örnek:** **Wenn** ich Zeit **habe**, gehe ich schwimmen. (Vaktim olduğunda yüzmeye giderim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit5Lesson1.id,
@@ -5065,7 +5101,7 @@ You use "wenn" (when/whenever) for things that happen **again and again** (every
     ],
   })
 
-  const a2Unit5Lesson2 = await prisma.lesson.create({
+  const a2Unit5Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit5.id,
       order: 2,
@@ -5102,7 +5138,7 @@ You use "wenn" (when/whenever) for things that happen **again and again** (every
 **Örnek:** **Wenn** du müde **bist**, solltest du schlafen gehen. (Yorgunsan uyumaya gitmelisin.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit5Lesson2.id,
@@ -5123,7 +5159,7 @@ You use "wenn" (when/whenever) for things that happen **again and again** (every
     ],
   })
 
-  const a2Unit5Lesson3 = await prisma.lesson.create({
+  const a2Unit5Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit5.id,
       order: 3,
@@ -5169,7 +5205,7 @@ Bu iki kelime benzer sesletilir ama farklı işleri vardır:
 **Örnek:** **Wann** kommst du? · **Wenn** er kommt, freue ich mich.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit5Lesson3.id,
@@ -5190,7 +5226,7 @@ Bu iki kelime benzer sesletilir ama farklı işleri vardır:
     ],
   })
 
-  const a2Unit5Lesson4 = await prisma.lesson.create({
+  const a2Unit5Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit5.id,
       order: 4,
@@ -5227,7 +5263,7 @@ Yan cümle **başta** da durabilir. O zaman bütün yan cümle 1. pozisyon sayı
 **Örnek:** **Wenn** es **regnet**, **bleibe** ich zu Hause. (Yağmur yağarsa evde kalırım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit5Lesson4.id,
@@ -5248,7 +5284,7 @@ Yan cümle **başta** da durabilir. O zaman bütün yan cümle 1. pozisyon sayı
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit5Lesson1.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Wenn es regnet, bleibe ich zu Hause.' },
       { lessonId: a2Unit5Lesson1.id, word: 'schwimmen', translationEn: 'to swim', translationTr: 'yüzmek', exampleSentence: 'Ich gehe schwimmen.' },
@@ -5262,11 +5298,11 @@ Yan cümle **başta** da durabilir. O zaman bütün yan cümle 1. pozisyon sayı
   })
 
   // --- A2 Unit 6: Indirekte Fragesätze (4 lessons) ---
-  const a2Unit6 = await prisma.unit.create({
+  const a2Unit6 = await seedUnit({
     data: { levelId: a2.id, order: 6, titleDe: 'Indirekte Fragesätze', titleEn: 'Indirect Questions', titleTr: 'Dolaylı Sorular' },
   })
 
-  const a2Unit6Lesson1 = await prisma.lesson.create({
+  const a2Unit6Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit6.id,
       order: 1,
@@ -5303,7 +5339,7 @@ An **indirect question** is a more polite question inside a subordinate clause. 
 **Örnek:** Weißt du, **ob** er **kommt**? (Gelip gelmeyeceğini biliyor musun?)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit6Lesson1.id,
@@ -5324,7 +5360,7 @@ An **indirect question** is a more polite question inside a subordinate clause. 
     ],
   })
 
-  const a2Unit6Lesson2 = await prisma.lesson.create({
+  const a2Unit6Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit6.id,
       order: 2,
@@ -5364,7 +5400,7 @@ Soruda bir **soru sözcüğü** varsa (wo, wann, warum, was, wie …), bu sözc�
 **Örnek:** Ich weiß nicht, **wo** der Bahnhof **ist**. (İstasyonun nerede olduğunu bilmiyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit6Lesson2.id,
@@ -5385,7 +5421,7 @@ Soruda bir **soru sözcüğü** varsa (wo, wann, warum, was, wie …), bu sözc�
     ],
   })
 
-  const a2Unit6Lesson3 = await prisma.lesson.create({
+  const a2Unit6Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit6.id,
       order: 3,
@@ -5428,7 +5464,7 @@ Dolaylı sorular çoğu zaman kibar bir **giriş cümlesiyle** başlar. Ardında
 **Örnek:** **Kannst du mir sagen,** wann der Zug **fährt**? (Trenin ne zaman kalktığını söyleyebilir misin?)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit6Lesson3.id,
@@ -5449,7 +5485,7 @@ Dolaylı sorular çoğu zaman kibar bir **giriş cümlesiyle** başlar. Ardında
     ],
   })
 
-  const a2Unit6Lesson4 = await prisma.lesson.create({
+  const a2Unit6Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit6.id,
       order: 4,
@@ -5492,7 +5528,7 @@ Bir doğrudan soruyu dolaylıya şöyle çevirirsin:
 **Örnekler:** Isst du gern Pizza? → Ich möchte wissen, **ob** du gern Pizza **isst**. (Pizza sevip sevmediğini bilmek isterim.) · Was möchtest du essen? → Sag mir, **was** du essen **möchtest**. (Ne yemek istediğini söyle bana.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit6Lesson4.id,
@@ -5513,7 +5549,7 @@ Bir doğrudan soruyu dolaylıya şöyle çevirirsin:
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit6Lesson1.id, word: 'das Geschäft', translationEn: 'the shop / business', translationTr: 'dükkan / iş', exampleSentence: 'Ich weiß nicht, ob das Geschäft heute offen ist.' },
       { lessonId: a2Unit6Lesson1.id, word: 'offen', translationEn: 'open', translationTr: 'açık', exampleSentence: 'Das Geschäft ist offen.' },
@@ -5527,11 +5563,11 @@ Bir doğrudan soruyu dolaylıya şöyle çevirirsin:
   })
 
   // --- A2 Unit 7: Präteritum der Modalverben und "sein"/"haben" (4 lessons) ---
-  const a2Unit7 = await prisma.unit.create({
+  const a2Unit7 = await seedUnit({
     data: { levelId: a2.id, order: 7, titleDe: 'Präteritum der Modalverben', titleEn: 'Präteritum of Modal Verbs', titleTr: 'Modal Fiillerin Präteritum Hali' },
   })
 
-  const a2Unit7Lesson1 = await prisma.lesson.create({
+  const a2Unit7Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit7.id,
       order: 1,
@@ -5580,7 +5616,7 @@ Präteritum, yazıda ve hikaye anlatırken kullanılan geçmiş zamandır. „se
 **Örnek:** Ich **war** müde. Ich **hatte** keine Zeit. (Yorgundum. Vaktim yoktu.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit7Lesson1.id,
@@ -5607,7 +5643,7 @@ Präteritum, yazıda ve hikaye anlatırken kullanılan geçmiş zamandır. „se
     ],
   })
 
-  const a2Unit7Lesson2 = await prisma.lesson.create({
+  const a2Unit7Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit7.id,
       order: 2,
@@ -5653,7 +5689,7 @@ Geçmişte modal fiilleri neredeyse her zaman **Präteritum** ile kullanırsın 
 **Örnek:** Ich **konnte** gestern nicht kommen, weil ich arbeiten **musste**. (Dün gelemedim çünkü çalışmak zorundaydım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit7Lesson2.id,
@@ -5674,7 +5710,7 @@ Geçmişte modal fiilleri neredeyse her zaman **Präteritum** ile kullanırsın 
     ],
   })
 
-  const a2Unit7Lesson3 = await prisma.lesson.create({
+  const a2Unit7Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit7.id,
       order: 3,
@@ -5717,7 +5753,7 @@ Hikaye anlatırken çok işine yarayan iki modal fiil daha var: „mögen" **„
 **Örnek:** Als Kind **mochte** ich keinen Fisch. (Çocukken balık sevmezdim.) · Du **solltest** früher ins Bett gehen. (Daha erken yatmalıydın.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit7Lesson3.id,
@@ -5738,7 +5774,7 @@ Hikaye anlatırken çok işine yarayan iki modal fiil daha var: „mögen" **„
     ],
   })
 
-  const a2Unit7Lesson4 = await prisma.lesson.create({
+  const a2Unit7Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit7.id,
       order: 4,
@@ -5778,7 +5814,7 @@ Both are past tenses, but they are used differently. As a rule of thumb:
 **Örnek:** Ich **war** gestern sehr müde und **hatte** keine Zeit. (Dün çok yorgundum ve vaktim yoktu.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit7Lesson4.id,
@@ -5799,7 +5835,7 @@ Both are past tenses, but they are used differently. As a rule of thumb:
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit7Lesson1.id, word: 'damals', translationEn: 'back then / at that time', translationTr: 'o zamanlar', exampleSentence: 'Damals war ich Student.' },
       { lessonId: a2Unit7Lesson1.id, word: 'der Student', translationEn: 'the student', translationTr: 'öğrenci', exampleSentence: 'Damals war ich Student.' },
@@ -5813,11 +5849,11 @@ Both are past tenses, but they are used differently. As a rule of thumb:
   })
 
   // --- A2 Unit 8: Wechselpräpositionen Vertiefung (4 lessons) ---
-  const a2Unit8 = await prisma.unit.create({
+  const a2Unit8 = await seedUnit({
     data: { levelId: a2.id, order: 8, titleDe: 'Wechselpräpositionen Vertiefung', titleEn: 'Two-Way Prepositions in Depth', titleTr: 'Wechselpräpositionen Derinlemesine' },
   })
 
-  const a2Unit8Lesson1 = await prisma.lesson.create({
+  const a2Unit8Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit8.id,
       order: 1,
@@ -5866,7 +5902,7 @@ Dativ'de tanımlık, cinse göre değişir:
 **Örnekler:** Das Buch liegt auf **dem** Tisch. (Kitap masanın üzerinde duruyor.) · Die Lampe hängt über **dem** Bett. (Lamba yatağın üzerinde asılı.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit8Lesson1.id,
@@ -5887,7 +5923,7 @@ Dativ'de tanımlık, cinse göre değişir:
     ],
   })
 
-  const a2Unit8Lesson2 = await prisma.lesson.create({
+  const a2Unit8Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit8.id,
       order: 2,
@@ -5942,7 +5978,7 @@ Sadece eril tanımlık değişir (der → den).
 **Örnekler:** Ich lege das Buch auf **den** Tisch. (Kitabı masanın üzerine koyuyorum.) · Ich hänge das Bild an **die** Wand. (Resmi duvara asıyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit8Lesson2.id,
@@ -5963,7 +5999,7 @@ Sadece eril tanımlık değişir (der → den).
     ],
   })
 
-  const a2Unit8Lesson3 = await prisma.lesson.create({
+  const a2Unit8Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit8.id,
       order: 3,
@@ -6006,7 +6042,7 @@ Wechselpräposition içeren her cümlede kendine sor: bir **konumdan** mı (Wo? 
 **Örnekler:** Die Vase **steht** auf **dem** Tisch. (Wo? – Vazo masanın üzerinde duruyor.) · Ich **stelle** die Vase auf **den** Tisch. (Wohin? – Vazoyu masanın üzerine koyuyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit8Lesson3.id,
@@ -6032,7 +6068,7 @@ Wechselpräposition içeren her cümlede kendine sor: bir **konumdan** mı (Wo? 
     ],
   })
 
-  const a2Unit8Lesson4 = await prisma.lesson.create({
+  const a2Unit8Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit8.id,
       order: 4,
@@ -6075,7 +6111,7 @@ Bazı fiiller belirli bir edatla sabit biçimde birleşir. Burada „Wo/Wohin?" 
 **Örnekler:** Ich warte auf **den** Bus. (Otobüsü bekliyorum.) · Ich freue mich auf **den** Urlaub. (Tatili dört gözle bekliyorum.) · Ich denke an **dich**. (Seni düşünüyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit8Lesson4.id,
@@ -6096,7 +6132,7 @@ Bazı fiiller belirli bir edatla sabit biçimde birleşir. Burada „Wo/Wohin?" 
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit8Lesson1.id, word: 'liegen', translationEn: 'to lie (be in a lying position)', translationTr: 'yatay durmak', exampleSentence: 'Das Buch liegt auf dem Tisch.' },
       { lessonId: a2Unit8Lesson1.id, word: 'hängen', translationEn: 'to hang', translationTr: 'asılı olmak', exampleSentence: 'Die Lampe hängt über dem Bett.' },
@@ -6110,11 +6146,11 @@ Bazı fiiller belirli bir edatla sabit biçimde birleşir. Burada „Wo/Wohin?" 
   })
 
   // --- A2 Unit 9: Adjektivdeklination (4 lessons) ---
-  const a2Unit9 = await prisma.unit.create({
+  const a2Unit9 = await seedUnit({
     data: { levelId: a2.id, order: 9, titleDe: 'Adjektivdeklination', titleEn: 'Adjective Declension', titleTr: 'Sıfat Çekimi' },
   })
 
-  const a2Unit9Lesson1 = await prisma.lesson.create({
+  const a2Unit9Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit9.id,
       order: 1,
@@ -6157,7 +6193,7 @@ Bir sıfat isimden **önce** geldiğinde bir ek alır. **Nominativ**'de belirli 
 **Örnek:** Der neu**e** Kollege heißt Tom. (Yeni meslektaş Tom adında.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit9Lesson1.id,
@@ -6178,7 +6214,7 @@ Bir sıfat isimden **önce** geldiğinde bir ek alır. **Nominativ**'de belirli 
     ],
   })
 
-  const a2Unit9Lesson2 = await prisma.lesson.create({
+  const a2Unit9Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit9.id,
       order: 2,
@@ -6221,7 +6257,7 @@ Akkusativ neredeyse Nominativ ile aynıdır – sadece **eril** değişir: tanı
 **Örnek:** Ich sehe den neu**en** Kollegen. (Yeni meslektaşı görüyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit9Lesson2.id,
@@ -6242,7 +6278,7 @@ Akkusativ neredeyse Nominativ ile aynıdır – sadece **eril** değişir: tanı
     ],
   })
 
-  const a2Unit9Lesson3 = await prisma.lesson.create({
+  const a2Unit9Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit9.id,
       order: 3,
@@ -6282,7 +6318,7 @@ Dişil ve nötr özellikle kolaydır: sıfat eki hem Nominativ hem de Akkusativ'
 **Örnek:** Die neu**en** Autos sind teuer. (Yeni arabalar pahalı.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit9Lesson3.id,
@@ -6309,7 +6345,7 @@ Dişil ve nötr özellikle kolaydır: sıfat eki hem Nominativ hem de Akkusativ'
     ],
   })
 
-  const a2Unit9Lesson4 = await prisma.lesson.create({
+  const a2Unit9Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit9.id,
       order: 4,
@@ -6352,7 +6388,7 @@ Belirli tanımlıktan sonraki kuralları özetleyelim. Her şeyden önce **tek**
 **Örnek:** Der alt**e** Baum steht im Garten. Ich sehe den alt**en** Baum. (Yaşlı ağaç bahçede duruyor. Yaşlı ağacı görüyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit9Lesson4.id,
@@ -6373,7 +6409,7 @@ Belirli tanımlıktan sonraki kuralları özetleyelim. Her şeyden önce **tek**
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit9Lesson1.id, word: 'neu', translationEn: 'new', translationTr: 'yeni', exampleSentence: 'Der neue Kollege heißt Tom.' },
       { lessonId: a2Unit9Lesson1.id, word: 'der Kollege', translationEn: 'the colleague', translationTr: 'meslektaş', exampleSentence: 'Der neue Kollege heißt Tom.' },
@@ -6387,11 +6423,11 @@ Belirli tanımlıktan sonraki kuralları özetleyelim. Her şeyden önce **tek**
   })
 
   // --- A2 Unit 10: Reflexive Verben (4 lessons) ---
-  const a2Unit10 = await prisma.unit.create({
+  const a2Unit10 = await seedUnit({
     data: { levelId: a2.id, order: 10, titleDe: 'Reflexive Verben', titleEn: 'Reflexive Verbs', titleTr: 'Dönüşlü Fiiller' },
   })
 
-  const a2Unit10Lesson1 = await prisma.lesson.create({
+  const a2Unit10Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit10.id,
       order: 1,
@@ -6440,7 +6476,7 @@ Dönüşlü fiiller eylemi özneye geri döndürür – kişi bir şeyi kendine 
 **Örnekler:** Ich wasche **mich**. (Kendimi yıkarım.) · Er freut **sich**. (Sevinir.) · Wir treffen **uns** um acht. (Saat sekizde buluşuruz.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit10Lesson1.id,
@@ -6461,7 +6497,7 @@ Dönüşlü fiiller eylemi özneye geri döndürür – kişi bir şeyi kendine 
     ],
   })
 
-  const a2Unit10Lesson2 = await prisma.lesson.create({
+  const a2Unit10Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit10.id,
       order: 2,
@@ -6504,7 +6540,7 @@ Birçok dönüşlü fiil sabit bir edatla birlikte gelir. Bu birleşimi bir büt
 **Örnekler:** Ich interessiere **mich** für Musik. (Müzikle ilgileniyorum.) · Ich fühle **mich** gut. (Kendimi iyi hissediyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit10Lesson2.id,
@@ -6525,7 +6561,7 @@ Birçok dönüşlü fiil sabit bir edatla birlikte gelir. Bu birleşimi bir büt
     ],
   })
 
-  const a2Unit10Lesson3 = await prisma.lesson.create({
+  const a2Unit10Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit10.id,
       order: 3,
@@ -6574,7 +6610,7 @@ Cümlede zaten bir Akkusativ nesnesi varsa (örn. „ein neues Handy"), dönüş
 **Örnekler:** Ich kaufe **mir** ein neues Handy. (Kendime yeni bir telefon alıyorum.) · Ich stelle **mir** das vor. (Bunu hayal ediyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit10Lesson3.id,
@@ -6595,7 +6631,7 @@ Cümlede zaten bir Akkusativ nesnesi varsa (örn. „ein neues Handy"), dönüş
     ],
   })
 
-  const a2Unit10Lesson4 = await prisma.lesson.create({
+  const a2Unit10Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit10.id,
       order: 4,
@@ -6638,7 +6674,7 @@ Birçok günlük rutin dönüşlü fiillerle anlatılır. Kelime sırasına dikk
 **Örnek:** Ich dusche **mich** und ziehe **mich** an. (Duş alıp giyinirim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit10Lesson4.id,
@@ -6659,7 +6695,7 @@ Birçok günlük rutin dönüşlü fiillerle anlatılır. Kelime sırasına dikk
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit10Lesson1.id, word: 'sich waschen', translationEn: 'to wash oneself', translationTr: 'yıkanmak', exampleSentence: 'Ich wasche mich jeden Morgen.' },
       { lessonId: a2Unit10Lesson1.id, word: 'das Geschenk', translationEn: 'the gift', translationTr: 'hediye', exampleSentence: 'Er freut sich über das Geschenk.' },
@@ -6673,11 +6709,11 @@ Birçok günlük rutin dönüşlü fiillerle anlatılır. Kelime sırasına dikk
   })
 
   // --- A2 Unit 11: Zukunft mit "werden" (4 lessons) ---
-  const a2Unit11 = await prisma.unit.create({
+  const a2Unit11 = await seedUnit({
     data: { levelId: a2.id, order: 11, titleDe: 'Zukunft mit "werden"', titleEn: 'Future with "werden"', titleTr: '"werden" ile Gelecek Zaman' },
   })
 
-  const a2Unit11Lesson1 = await prisma.lesson.create({
+  const a2Unit11Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit11.id,
       order: 1,
@@ -6726,7 +6762,7 @@ Futur I gelecek zaman biçimidir. İkinci konumda çekimli yardımcı fiil **„
 **Örnekler:** Ich **werde** morgen ins Kino **gehen**. (Yarın sinemaya gideceğim.) · Er **wird** nächstes Jahr nach Spanien **reisen**. (Gelecek yıl İspanya'ya seyahat edecek.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit11Lesson1.id,
@@ -6747,7 +6783,7 @@ Futur I gelecek zaman biçimidir. İkinci konumda çekimli yardımcı fiil **„
     ],
   })
 
-  const a2Unit11Lesson2 = await prisma.lesson.create({
+  const a2Unit11Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit11.id,
       order: 2,
@@ -6787,7 +6823,7 @@ Futur I çoğu zaman kesin bir gelecek değil, bir **tahmin** ya da **varsayım*
 **Örnekler:** Es **wird** morgen **wohl** regnen. (Yarın herhalde yağmur yağacak.) · Die Preise **werden** **wahrscheinlich** steigen. (Fiyatlar muhtemelen yükselecek.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit11Lesson2.id,
@@ -6808,7 +6844,7 @@ Futur I çoğu zaman kesin bir gelecek değil, bir **tahmin** ya da **varsayım*
     ],
   })
 
-  const a2Unit11Lesson3 = await prisma.lesson.create({
+  const a2Unit11Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit11.id,
       order: 3,
@@ -6845,7 +6881,7 @@ Günlük dilde **planlanmış** bir gelecek için Almanca çoğu zaman bir zaman
 **Örnek:** „Ich **fliege** morgen nach Rom." (Yarın Roma'ya uçuyorum.) ifadesi „Ich **werde** morgen nach Rom **fliegen**." (Yarın Roma'ya uçacağım.) kadar kesindir.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit11Lesson3.id,
@@ -6866,7 +6902,7 @@ Günlük dilde **planlanmış** bir gelecek için Almanca çoğu zaman bir zaman
     ],
   })
 
-  const a2Unit11Lesson4 = await prisma.lesson.create({
+  const a2Unit11Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit11.id,
       order: 4,
@@ -6903,7 +6939,7 @@ Bir zaman ifadesini cümlenin **başına** koyarsan, „werden" 2. konuma geçer
 **Örnek:** Nächstes Jahr **werde** ich mehr Sport **machen**. (Gelecek yıl daha çok spor yapacağım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit11Lesson4.id,
@@ -6924,7 +6960,7 @@ Bir zaman ifadesini cümlenin **başına** koyarsan, „werden" 2. konuma geçer
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit11Lesson1.id, word: 'reisen', translationEn: 'to travel', translationTr: 'seyahat etmek', exampleSentence: 'Er wird nächstes Jahr nach Spanien reisen.' },
       { lessonId: a2Unit11Lesson1.id, word: 'das Kino', translationEn: 'the cinema', translationTr: 'sinema', exampleSentence: 'Ich werde morgen ins Kino gehen.' },
@@ -6938,11 +6974,11 @@ Bir zaman ifadesini cümlenin **başına** koyarsan, „werden" 2. konuma geçer
   })
 
   // --- A2 Unit 12: Beruf & Bewerbung (4 lessons) ---
-  const a2Unit12 = await prisma.unit.create({
+  const a2Unit12 = await seedUnit({
     data: { levelId: a2.id, order: 12, titleDe: 'Beruf & Bewerbung', titleEn: 'Profession & Application', titleTr: 'Meslek & İş Başvurusu' },
   })
 
-  const a2Unit12Lesson1 = await prisma.lesson.create({
+  const a2Unit12Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit12.id,
       order: 1,
@@ -6985,7 +7021,7 @@ Most job titles have a masculine and a feminine form. The feminine form usually 
 **Örnek:** Er ist **Lehrer**. (O bir öğretmen.) Sie ist **Ärztin**. (O bir doktor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit12Lesson1.id,
@@ -7015,7 +7051,7 @@ Most job titles have a masculine and a feminine form. The feminine form usually 
     ],
   })
 
-  const a2Unit12Lesson2 = await prisma.lesson.create({
+  const a2Unit12Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit12.id,
       order: 2,
@@ -7055,7 +7091,7 @@ Mesleğinden bahsederken mesleği **tanımlıksız** kullanırsın. Bunun için 
 **Örnek:** Ich arbeite **als** Ingenieur. · Ich bin **von Beruf** Verkäuferin.`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit12Lesson2.id,
@@ -7076,7 +7112,7 @@ Mesleğinden bahsederken mesleği **tanımlıksız** kullanırsın. Bunun için 
     ],
   })
 
-  const a2Unit12Lesson3 = await prisma.lesson.create({
+  const a2Unit12Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit12.id,
       order: 3,
@@ -7119,7 +7155,7 @@ For a job search you need a few fixed terms. Watch the correct article – it al
 **Örnek:** Ich schreibe eine **Bewerbung**. (Bir başvuru yazıyorum.) Ich habe drei Jahre **Erfahrung**. (Üç yıllık deneyimim var.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit12Lesson3.id,
@@ -7140,7 +7176,7 @@ For a job search you need a few fixed terms. Watch the correct article – it al
     ],
   })
 
-  const a2Unit12Lesson4 = await prisma.lesson.create({
+  const a2Unit12Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit12.id,
       order: 4,
@@ -7177,7 +7213,7 @@ In a job interview you are polite and use the **"Sie" form**. With modal verbs, 
 **Örnek:** **Können** Sie mir Ihre Stärken **beschreiben**? (Güçlü yönlerinizi anlatabilir misiniz?) · Wann **können** Sie **beginnen**? (Ne zaman başlayabilirsiniz?)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit12Lesson4.id,
@@ -7198,7 +7234,7 @@ In a job interview you are polite and use the **"Sie" form**. With modal verbs, 
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit12Lesson1.id, word: 'der Lehrer', translationEn: 'the teacher', translationTr: 'öğretmen', exampleSentence: 'Der Lehrer arbeitet in der Schule.' },
       { lessonId: a2Unit12Lesson1.id, word: 'die Ärztin', translationEn: 'the (female) doctor', translationTr: 'kadın doktor', exampleSentence: 'Die Ärztin arbeitet im Krankenhaus.' },
@@ -7212,11 +7248,11 @@ In a job interview you are polite and use the **"Sie" form**. With modal verbs, 
   })
 
   // --- A2 Unit 13: Ordinalzahlen & Datumsangaben (4 lessons) ---
-  const a2Unit13 = await prisma.unit.create({
+  const a2Unit13 = await seedUnit({
     data: { levelId: a2.id, order: 13, titleDe: 'Ordinalzahlen & Datumsangaben', titleEn: 'Ordinal Numbers & Dates', titleTr: 'Sıra Sayıları ve Tarihler' },
   })
 
-  const a2Unit13Lesson1 = await prisma.lesson.create({
+  const a2Unit13Lesson1 = await seedLesson({
     data: {
       unitId: a2Unit13.id,
       order: 1,
@@ -7265,7 +7301,7 @@ Sıra sayıları bir şeyin hangi **sırada** olduğunu söyler (birinci, ikinci
 **Örnek:** Das ist mein **erster** Deutschkurs. (Bu benim ilk Almanca kursum.) · Er kommt am **dritten** Tag. (Üçüncü gün geliyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit13Lesson1.id,
@@ -7286,7 +7322,7 @@ Sıra sayıları bir şeyin hangi **sırada** olduğunu söyler (birinci, ikinci
     ],
   })
 
-  const a2Unit13Lesson2 = await prisma.lesson.create({
+  const a2Unit13Lesson2 = await seedLesson({
     data: {
       unitId: a2Unit13.id,
       order: 2,
@@ -7329,7 +7365,7 @@ From the number **20** on, the ending changes from "-te" to **-ste**. This rule 
 **Örnek:** Wir treffen uns am **zwanzigsten** Juli. (20 Temmuz'da buluşuyoruz.) · Heute ist der **einunddreißigste** Dezember. (Bugün 31 Aralık.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit13Lesson2.id,
@@ -7350,7 +7386,7 @@ From the number **20** on, the ending changes from "-te" to **-ste**. This rule 
     ],
   })
 
-  const a2Unit13Lesson3 = await prisma.lesson.create({
+  const a2Unit13Lesson3 = await seedLesson({
     data: {
       unitId: a2Unit13.id,
       order: 3,
@@ -7390,7 +7426,7 @@ Bir şeyin **ne zaman** olduğunu söylemek için **„am" + sıra sayısı + ay
 **Örnek:** Ich habe **am dritten Mai** Geburtstag. (Doğum günüm 3 Mayıs'ta.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit13Lesson3.id,
@@ -7417,7 +7453,7 @@ Bir şeyin **ne zaman** olduğunu söylemek için **„am" + sıra sayısı + ay
     ],
   })
 
-  const a2Unit13Lesson4 = await prisma.lesson.create({
+  const a2Unit13Lesson4 = await seedLesson({
     data: {
       unitId: a2Unit13.id,
       order: 4,
@@ -7454,7 +7490,7 @@ Tarihle doğum günleri ve randevular hakkında soru sorup cevap verebilirsin. K
 **Örnek:** Ich habe **am zehnten Oktober** Geburtstag. (Doğum günüm 10 Ekim'de.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: a2Unit13Lesson4.id,
@@ -7475,7 +7511,7 @@ Tarihle doğum günleri ve randevular hakkında soru sorup cevap verebilirsin. K
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: a2Unit13Lesson1.id, word: 'der erste', translationEn: 'the first', translationTr: 'birinci', exampleSentence: 'Heute ist der erste Mai.' },
       { lessonId: a2Unit13Lesson1.id, word: 'der dritte', translationEn: 'the third', translationTr: 'üçüncü', exampleSentence: 'Er kommt am dritten Tag.' },
@@ -7489,10 +7525,10 @@ Tarihle doğum günleri ve randevular hakkında soru sorup cevap verebilirsin. K
   })
 
   // --- B1 Unit 1: Nebensätze (4 lessons) ---
-  const b1Unit = await prisma.unit.create({
+  const b1Unit = await seedUnit({
     data: { levelId: b1.id, order: 1, titleDe: 'Nebensätze', titleEn: 'Subordinate Clauses', titleTr: 'Yan Cümleler' },
   })
-  const b1Lesson = await prisma.lesson.create({
+  const b1Lesson = await seedLesson({
     data: {
       unitId: b1Unit.id,
       order: 1,
@@ -7562,7 +7598,7 @@ Ana cümleden en önemli farkı: **çekimli fiil cümlenin en sonuna** gider. Ay
 - Er isst nichts, **weil** er keinen Hunger **hat**. (Karnı aç olmadığı için hiçbir şey yemiyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Lesson.id,
@@ -7583,7 +7619,7 @@ Ana cümleden en önemli farkı: **çekimli fiil cümlenin en sonuna** gider. Ay
     ],
   })
 
-  const b1Lesson2 = await prisma.lesson.create({
+  const b1Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit.id,
       order: 2,
@@ -7653,7 +7689,7 @@ As with "weil", the **conjugated verb goes to the end**. You can often compare a
 - Wir finden, **dass** der Film langweilig **war**. (Bize göre film sıkıcıydı.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Lesson2.id,
@@ -7674,7 +7710,7 @@ As with "weil", the **conjugated verb goes to the end**. You can often compare a
     ],
   })
 
-  const b1Lesson3 = await prisma.lesson.create({
+  const b1Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit.id,
       order: 3,
@@ -7744,7 +7780,7 @@ When the "wenn"-clause comes **first**, it is "position 1". The main clause then
 - Ich freue mich, **wenn** du **kommst**. (Geldiğinde mutlu olurum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Lesson3.id,
@@ -7765,7 +7801,7 @@ When the "wenn"-clause comes **first**, it is "position 1". The main clause then
     ],
   })
 
-  const b1Lesson4 = await prisma.lesson.create({
+  const b1Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit.id,
       order: 4,
@@ -7826,7 +7862,7 @@ All three are **subordinating conjunctions**. The shared rule: the conjugated **
 - **Wenn** ich Zeit **habe**, besuche ich dich. (Zamanım olduğunda seni ziyaret ederim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Lesson4.id,
@@ -7856,7 +7892,7 @@ All three are **subordinating conjunctions**. The shared rule: the conjugated **
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Lesson.id, word: 'der Grund', translationEn: 'the reason', translationTr: 'sebep', exampleSentence: 'Der Grund für die Verspätung war der Stau.' },
       { lessonId: b1Lesson.id, word: 'die Erkältung', translationEn: 'the cold (illness)', translationTr: 'nezle', exampleSentence: 'Ich habe eine Erkältung und bleibe im Bett.' },
@@ -7870,11 +7906,11 @@ All three are **subordinating conjunctions**. The shared rule: the conjugated **
   })
 
   // --- B1 Unit 2: Konjunktiv II (4 lessons) ---
-  const b1Unit2 = await prisma.unit.create({
+  const b1Unit2 = await seedUnit({
     data: { levelId: b1.id, order: 2, titleDe: 'Konjunktiv II', titleEn: 'Subjunctive II (Konjunktiv II)', titleTr: 'Konjunktiv II (Dilek Kipi II)' },
   })
 
-  const b1Unit2Lesson1 = await prisma.lesson.create({
+  const b1Unit2Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit2.id,
       order: 1,
@@ -7950,7 +7986,7 @@ The **Konjunktiv II** expresses what is **not real**: wishes, dreams, polite req
 - An deiner Stelle **würde** ich das nicht **machen**. (öğüt – Yerinde olsam bunu yapmazdım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit2Lesson1.id,
@@ -7971,7 +8007,7 @@ The **Konjunktiv II** expresses what is **not real**: wishes, dreams, polite req
     ],
   })
 
-  const b1Unit2Lesson2 = await prisma.lesson.create({
+  const b1Unit2Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit2.id,
       order: 2,
@@ -8047,7 +8083,7 @@ You use "wäre" for **unreal states**, **wishes** and **assumptions** (*That wou
 - **Wärst** du so nett und machst das Fenster zu? (Pencereyi kapatır mısın lütfen?)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit2Lesson2.id,
@@ -8068,7 +8104,7 @@ You use "wäre" for **unreal states**, **wishes** and **assumptions** (*That wou
     ],
   })
 
-  const b1Unit2Lesson3 = await prisma.lesson.create({
+  const b1Unit2Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit2.id,
       order: 3,
@@ -8144,7 +8180,7 @@ Two uses are especially important: the polite wish **"Ich hätte gern …"** (e.
 - Wenn ich mehr Geld **hätte**, würde ich reisen. (Daha çok param olsa seyahat ederdim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit2Lesson3.id,
@@ -8165,7 +8201,7 @@ Two uses are especially important: the polite wish **"Ich hätte gern …"** (e.
     ],
   })
 
-  const b1Unit2Lesson4 = await prisma.lesson.create({
+  const b1Unit2Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit2.id,
       order: 4,
@@ -8235,7 +8271,7 @@ Günlük dilde bildirme kipi çoğu zaman fazla doğrudan gelir. **Modal fiiller
 - **Dürfte** ich Sie etwas fragen? (Size bir şey sorabilir miyim?)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit2Lesson4.id,
@@ -8265,7 +8301,7 @@ Günlük dilde bildirme kipi çoğu zaman fazla doğrudan gelir. **Modal fiiller
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit2Lesson1.id, word: 'reisen', translationEn: 'to travel', translationTr: 'seyahat etmek', exampleSentence: 'Ich würde gern nach Italien reisen.' },
       { lessonId: b1Unit2Lesson1.id, word: 'mehr', translationEn: 'more', translationTr: 'daha fazla', exampleSentence: 'Ich möchte mehr Zeit haben.' },
@@ -8279,11 +8315,11 @@ Günlük dilde bildirme kipi çoğu zaman fazla doğrudan gelir. **Modal fiiller
   })
 
   // --- B1 Unit 3: Passiv im Präsens und Präteritum (4 lessons) ---
-  const b1Unit3 = await prisma.unit.create({
+  const b1Unit3 = await seedUnit({
     data: { levelId: b1.id, order: 3, titleDe: 'Passiv im Präsens und Präteritum', titleEn: 'Passive Voice (Present & Simple Past)', titleTr: 'Edilgen Çatı (Şimdiki ve Geçmiş Zaman)' },
   })
 
-  const b1Unit3Lesson1 = await prisma.lesson.create({
+  const b1Unit3Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit3.id,
       order: 1,
@@ -8353,7 +8389,7 @@ Dönüştürürken etken cümlenin **-i hâlindeki nesnesi**, edilgen cümlenin 
 - Das Formular **wird** online **ausgefüllt**. (Form çevrimiçi dolduruluyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit3Lesson1.id,
@@ -8374,7 +8410,7 @@ Dönüştürürken etken cümlenin **-i hâlindeki nesnesi**, edilgen cümlenin 
     ],
   })
 
-  const b1Unit3Lesson2 = await prisma.lesson.create({
+  const b1Unit3Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit3.id,
       order: 2,
@@ -8447,7 +8483,7 @@ Sadece yardımcı fiil değişir (wird → wurde); **Partizip II aynı kalır** 
 - Amerika **wurde** 1492 **entdeckt**. (Amerika 1492'de keşfedildi.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit3Lesson2.id,
@@ -8468,7 +8504,7 @@ Sadece yardımcı fiil değişir (wird → wurde); **Partizip II aynı kalır** 
     ],
   })
 
-  const b1Unit3Lesson3 = await prisma.lesson.create({
+  const b1Unit3Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit3.id,
       order: 3,
@@ -8538,7 +8574,7 @@ Yani cümlenin sonunda **iki fiil** olur: önce Partizip II, sonra „werden" ma
 - Der Termin sollte **verschoben werden**. (Randevu ertelenmeli.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit3Lesson3.id,
@@ -8559,7 +8595,7 @@ Yani cümlenin sonunda **iki fiil** olur: önce Partizip II, sonra „werden" ma
     ],
   })
 
-  const b1Unit3Lesson4 = await prisma.lesson.create({
+  const b1Unit3Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit3.id,
       order: 4,
@@ -8626,7 +8662,7 @@ Tüm edilgen biçimlerin özü aynıdır: bir **„werden" biçimi** + **Partizi
 - Die Tickets **können** online **gekauft werden**. (Biletler çevrimiçi alınabilir.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit3Lesson4.id,
@@ -8656,7 +8692,7 @@ Tüm edilgen biçimlerin özü aynıdır: bir **„werden" biçimi** + **Partizi
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit3Lesson1.id, word: 'der Brief', translationEn: 'the letter', translationTr: 'mektup', exampleSentence: 'Der Brief wird geschrieben.' },
       { lessonId: b1Unit3Lesson1.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Ich schreibe einen Brief.' },
@@ -8670,11 +8706,11 @@ Tüm edilgen biçimlerin özü aynıdır: bir **„werden" biçimi** + **Partizi
   })
 
   // --- B1 Unit 4: Relativsätze (4 lessons) ---
-  const b1Unit4 = await prisma.unit.create({
+  const b1Unit4 = await seedUnit({
     data: { levelId: b1.id, order: 4, titleDe: 'Relativsätze', titleEn: 'Relative Clauses', titleTr: 'İlgi Cümleleri' },
   })
 
-  const b1Unit4Lesson1 = await prisma.lesson.create({
+  const b1Unit4Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit4.id,
       order: 1,
@@ -8747,7 +8783,7 @@ The relative pronoun looks almost like the definite article. It takes **gender a
 - Das Kind, **das** dort spielt, ist mein Neffe. (Orada oynayan çocuk benim yeğenim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit4Lesson1.id,
@@ -8777,7 +8813,7 @@ The relative pronoun looks almost like the definite article. It takes **gender a
     ],
   })
 
-  const b1Unit4Lesson2 = await prisma.lesson.create({
+  const b1Unit4Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit4.id,
       order: 2,
@@ -8850,7 +8886,7 @@ Tip: ask yourself what role the noun plays **inside the relative clause**. *"Ich
 - Die Kollegen, **die** ich mag, sind nett. (Sevdiğim meslektaşlar hoş.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit4Lesson2.id,
@@ -8871,7 +8907,7 @@ Tip: ask yourself what role the noun plays **inside the relative clause**. *"Ich
     ],
   })
 
-  const b1Unit4Lesson3 = await prisma.lesson.create({
+  const b1Unit4Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit4.id,
       order: 3,
@@ -8944,7 +8980,7 @@ Bazen ilgi cümlesindeki fiil bir **edat** ister (*arbeiten mit*, *warten auf*, 
 - Das ist das Projekt, **an dem** wir arbeiten. (Üzerinde çalıştığımız proje bu.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit4Lesson3.id,
@@ -8965,7 +9001,7 @@ Bazen ilgi cümlesindeki fiil bir **edat** ister (*arbeiten mit*, *warten auf*, 
     ],
   })
 
-  const b1Unit4Lesson4 = await prisma.lesson.create({
+  const b1Unit4Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit4.id,
       order: 4,
@@ -9032,7 +9068,7 @@ Doğru ilgi zamirini **iki adımda** bul: 1) **cinsiyet/sayı** ilgili isimden, 
 - Der Autor, **dessen** Buch ich lese, ist berühmt. (Kitabını okuduğum yazar ünlü.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit4Lesson4.id,
@@ -9053,7 +9089,7 @@ Doğru ilgi zamirini **iki adımda** bul: 1) **cinsiyet/sayı** ilgili isimden, 
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit4Lesson1.id, word: 'der Lehrer', translationEn: 'the (male) teacher', translationTr: 'öğretmen', exampleSentence: 'Der Mann, der dort steht, ist mein Lehrer.' },
       { lessonId: b1Unit4Lesson1.id, word: 'stehen', translationEn: 'to stand', translationTr: 'ayakta durmak', exampleSentence: 'Er steht dort.' },
@@ -9067,11 +9103,11 @@ Doğru ilgi zamirini **iki adımda** bul: 1) **cinsiyet/sayı** ilgili isimden, 
   })
 
   // --- B1 Unit 5: Genitiv (4 lessons) ---
-  const b1Unit5 = await prisma.unit.create({
+  const b1Unit5 = await seedUnit({
     data: { levelId: b1.id, order: 5, titleDe: 'Genitiv', titleEn: 'Genitive Case', titleTr: 'Tamlayan Hâli' },
   })
 
-  const b1Unit5Lesson1 = await prisma.lesson.create({
+  const b1Unit5Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit5.id,
       order: 1,
@@ -9144,7 +9180,7 @@ Important: with **masculine and neuter** nouns, not only the article ("des") but
 - Das ist das Zimmer **des Kindes**. (Bu çocuğun odası.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit5Lesson1.id,
@@ -9165,7 +9201,7 @@ Important: with **masculine and neuter** nouns, not only the article ("des") but
     ],
   })
 
-  const b1Unit5Lesson2 = await prisma.lesson.create({
+  const b1Unit5Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit5.id,
       order: 2,
@@ -9235,7 +9271,7 @@ Tamlayan hâli sadece sahiplikte değil, belirli **edatlardan** sonra da kullan�
 - **Während der Woche** arbeite ich viel. (Hafta içinde çok çalışırım.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit5Lesson2.id,
@@ -9256,7 +9292,7 @@ Tamlayan hâli sadece sahiplikte değil, belirli **edatlardan** sonra da kullan�
     ],
   })
 
-  const b1Unit5Lesson3 = await prisma.lesson.create({
+  const b1Unit5Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit5.id,
       order: 3,
@@ -9329,7 +9365,7 @@ If the name already ends in an **s-sound** (-s, -ß, -x, -z), you can't add anot
 - **Berlins** Sehenswürdigkeiten sind berühmt. (Berlin'in gezilecek yerleri ünlü.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit5Lesson3.id,
@@ -9356,7 +9392,7 @@ If the name already ends in an **s-sound** (-s, -ß, -x, -z), you can't add anot
     ],
   })
 
-  const b1Unit5Lesson4 = await prisma.lesson.create({
+  const b1Unit5Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit5.id,
       order: 4,
@@ -9420,7 +9456,7 @@ Tamlayan üç tipik durumda görülür. Hepsinde: eril/nötr → **des …(e)s**
 - **Trotz der Probleme** war der Kurs gut. (Sorunlara rağmen kurs iyiydi.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit5Lesson4.id,
@@ -9441,7 +9477,7 @@ Tamlayan üç tipik durumda görülür. Hepsinde: eril/nötr → **des …(e)s**
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit5Lesson1.id, word: 'die Tasche', translationEn: 'the bag', translationTr: 'çanta', exampleSentence: 'Die Farbe der Tasche gefällt mir.' },
       { lessonId: b1Unit5Lesson1.id, word: 'gefallen', translationEn: 'to please / like', translationTr: 'hoşlanmak', exampleSentence: 'Das Auto gefällt mir.' },
@@ -9455,11 +9491,11 @@ Tamlayan üç tipik durumda görülür. Hepsinde: eril/nötr → **des …(e)s**
   })
 
   // --- B1 Unit 6: Plusquamperfekt (4 lessons) ---
-  const b1Unit6 = await prisma.unit.create({
+  const b1Unit6 = await seedUnit({
     data: { levelId: b1.id, order: 6, titleDe: 'Plusquamperfekt', titleEn: 'Past Perfect', titleTr: 'Miş\'li Geçmişin Hikâyesi' },
   })
 
-  const b1Unit6Lesson1 = await prisma.lesson.create({
+  const b1Unit6Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit6.id,
       order: 1,
@@ -9532,7 +9568,7 @@ Neredeyse hiç tek başına durmaz; genellikle ikinci bir geçmiş cümleyle (ç
 - Wir **hatten** die Tickets **gekauft**, deshalb warteten wir nicht. (Biletleri almıştık, o yüzden beklemedik.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit6Lesson1.id,
@@ -9553,7 +9589,7 @@ Neredeyse hiç tek başına durmaz; genellikle ikinci bir geçmiş cümleyle (ç
     ],
   })
 
-  const b1Unit6Lesson2 = await prisma.lesson.create({
+  const b1Unit6Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit6.id,
       order: 2,
@@ -9626,7 +9662,7 @@ Pratik kural: Perfekt'te „ist" alan, Plusquamperfekt'te „war" alır. *Er ist
 - Als wir ankamen, **war** der Film schon **angefangen**. (Vardığımızda film çoktan başlamıştı.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit6Lesson2.id,
@@ -9647,7 +9683,7 @@ Pratik kural: Perfekt'te „ist" alan, Plusquamperfekt'te „war" alır. *Er ist
     ],
   })
 
-  const b1Unit6Lesson3 = await prisma.lesson.create({
+  const b1Unit6Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit6.id,
       order: 3,
@@ -9723,7 +9759,7 @@ Yan cümle olduğu için „nachdem" cümlesinde fiil sonda durur. Başta gelirs
 - Sie fühlte sich besser, **nachdem** sie **geschlafen hatte**. (Uyuduktan sonra kendini daha iyi hissetti.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit6Lesson3.id,
@@ -9744,7 +9780,7 @@ Yan cümle olduğu için „nachdem" cümlesinde fiil sonda durur. Başta gelirs
     ],
   })
 
-  const b1Unit6Lesson4 = await prisma.lesson.create({
+  const b1Unit6Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit6.id,
       order: 4,
@@ -9805,7 +9841,7 @@ Ana fikir: Plusquamperfekt **öncelik** gösterir – eylem, geçmişteki başka
 - Bevor der Kurs begann, **hatte** ich schon viel **gelernt**. (Kurs başlamadan önce çoktan çok şey öğrenmiştim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit6Lesson4.id,
@@ -9826,7 +9862,7 @@ Ana fikir: Plusquamperfekt **öncelik** gösterir – eylem, geçmişteki başka
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit6Lesson1.id, word: 'die E-Mail', translationEn: 'the email', translationTr: 'e-posta', exampleSentence: 'Ich hatte die E-Mail schon gesendet.' },
       { lessonId: b1Unit6Lesson1.id, word: 'senden', translationEn: 'to send', translationTr: 'göndermek', exampleSentence: 'Ich sende dir eine E-Mail.' },
@@ -9840,11 +9876,11 @@ Ana fikir: Plusquamperfekt **öncelik** gösterir – eylem, geçmişteki başka
   })
 
   // --- B1 Unit 7: Doppelkonjunktionen (4 lessons) ---
-  const b1Unit7 = await prisma.unit.create({
+  const b1Unit7 = await seedUnit({
     data: { levelId: b1.id, order: 7, titleDe: 'Doppelkonjunktionen', titleEn: 'Paired Conjunctions', titleTr: 'Çift Bağlaçlar' },
   })
 
-  const b1Unit7Lesson1 = await prisma.lesson.create({
+  const b1Unit7Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit7.id,
       order: 1,
@@ -9911,7 +9947,7 @@ Sözcük dizilimi özeldir: **„je" kısmı** bir yan cümledir → **fiil sond
 - **Je länger** ich warte, **desto nervöser** werde ich. (Ne kadar beklersem o kadar geriliyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit7Lesson1.id,
@@ -9932,7 +9968,7 @@ Sözcük dizilimi özeldir: **„je" kısmı** bir yan cümledir → **fiil sond
     ],
   })
 
-  const b1Unit7Lesson2 = await prisma.lesson.create({
+  const b1Unit7Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit7.id,
       order: 2,
@@ -10002,7 +10038,7 @@ When two subjects are joined by "sowohl … als auch", the verb is usually in th
 - **Sowohl** die Kinder **als auch** die Eltern waren zufrieden. (Hem çocuklar hem de ebeveynler memnundu.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit7Lesson2.id,
@@ -10023,7 +10059,7 @@ When two subjects are joined by "sowohl … als auch", the verb is usually in th
     ],
   })
 
-  const b1Unit7Lesson3 = await prisma.lesson.create({
+  const b1Unit7Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit7.id,
       order: 3,
@@ -10099,7 +10135,7 @@ With "entweder … oder", after "entweder" you can keep normal word order or let
 - Ich habe **weder** Zeit **noch** Lust. (Ne zamanım ne de isteğim var.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit7Lesson3.id,
@@ -10127,7 +10163,7 @@ With "entweder … oder", after "entweder" you can keep normal word order or let
     ],
   })
 
-  const b1Unit7Lesson4 = await prisma.lesson.create({
+  const b1Unit7Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit7.id,
       order: 4,
@@ -10194,7 +10230,7 @@ Dört çift bağlacın karşılaştırması – her biri iki öğeyi bağlar ama
 - **Je** mehr man übt, **desto** sicherer wird man. (Ne kadar alıştırma yaparsan o kadar güvenli olursun.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit7Lesson4.id,
@@ -10215,7 +10251,7 @@ Dört çift bağlacın karşılaştırması – her biri iki öğeyi bağlar ama
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit7Lesson1.id, word: 'ruhig', translationEn: 'calm', translationTr: 'sakin', exampleSentence: 'Je älter er wird, desto ruhiger wird er.' },
       { lessonId: b1Unit7Lesson1.id, word: 'verstehen', translationEn: 'to understand', translationTr: 'anlamak', exampleSentence: 'Ich verstehe das gut.' },
@@ -10229,11 +10265,11 @@ Dört çift bağlacın karşılaştırması – her biri iki öğeyi bağlar ama
   })
 
   // --- B1 Unit 8: Infinitiv mit "zu" (4 lessons) ---
-  const b1Unit8 = await prisma.unit.create({
+  const b1Unit8 = await seedUnit({
     data: { levelId: b1.id, order: 8, titleDe: 'Infinitiv mit "zu"', titleEn: 'Infinitive with "zu"', titleTr: '"zu" ile Mastar' },
   })
 
-  const b1Unit8Lesson1 = await prisma.lesson.create({
+  const b1Unit8Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit8.id,
       order: 1,
@@ -10306,7 +10342,7 @@ Bazı fiiller tek başına duramaz; **„zu" ile mastar** hâlinde ikinci bir fi
 - Wir hoffen, bald **umzuziehen**. (Yakında taşınmayı umuyoruz.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit8Lesson1.id,
@@ -10327,7 +10363,7 @@ Bazı fiiller tek başına duramaz; **„zu" ile mastar** hâlinde ikinci bir fi
     ],
   })
 
-  const b1Unit8Lesson2 = await prisma.lesson.create({
+  const b1Unit8Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit8.id,
       order: 2,
@@ -10397,7 +10433,7 @@ Key condition: the **subject** in both parts must be the **same**. If it differs
 - Sie ruft an, **um** einen Termin **zu machen**. (Randevu almak için arıyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit8Lesson2.id,
@@ -10418,7 +10454,7 @@ Key condition: the **subject** in both parts must be the **same**. If it differs
     ],
   })
 
-  const b1Unit8Lesson3 = await prisma.lesson.create({
+  const b1Unit8Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit8.id,
       order: 3,
@@ -10488,7 +10524,7 @@ Key condition: the **subject** in both parts must be the **same**. If it differs
 - Ich kann nicht schlafen, **ohne** das Fenster **zu öffnen**. (Pencereyi açmadan uyuyamam.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit8Lesson3.id,
@@ -10509,7 +10545,7 @@ Key condition: the **subject** in both parts must be the **same**. If it differs
     ],
   })
 
-  const b1Unit8Lesson4 = await prisma.lesson.create({
+  const b1Unit8Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit8.id,
       order: 4,
@@ -10573,7 +10609,7 @@ Three constructions with "zu" + infinitive – all with the same subject and the
 - Ich helfe dir, **ohne zu stören**. (Rahatsız etmeden sana yardım ederim.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit8Lesson4.id,
@@ -10594,7 +10630,7 @@ Three constructions with "zu" + infinitive – all with the same subject and the
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit8Lesson1.id, word: 'aufstehen', translationEn: 'to get up', translationTr: 'kalkmak', exampleSentence: 'Ich versuche, früh aufzustehen.' },
       { lessonId: b1Unit8Lesson1.id, word: 'die Prüfung', translationEn: 'the exam', translationTr: 'sınav', exampleSentence: 'Er hofft, die Prüfung zu bestehen.' },
@@ -10608,11 +10644,11 @@ Three constructions with "zu" + infinitive – all with the same subject and the
   })
 
   // --- B1 Unit 9: Adjektivdeklination (4 lessons) ---
-  const b1Unit9 = await prisma.unit.create({
+  const b1Unit9 = await seedUnit({
     data: { levelId: b1.id, order: 9, titleDe: 'Adjektivdeklination', titleEn: 'Adjective Declension', titleTr: 'Sıfat Çekimi' },
   })
 
-  const b1Unit9Lesson1 = await prisma.lesson.create({
+  const b1Unit9Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit9.id,
       order: 1,
@@ -10685,7 +10721,7 @@ Bir **sıfat ismin önünde** durunca bir ek alır. **Belirli artikelden** (der/
 - Wir kaufen das **neue** Auto. (Yeni arabayı alıyoruz.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit9Lesson1.id,
@@ -10706,7 +10742,7 @@ Bir **sıfat ismin önünde** durunca bir ek alır. **Belirli artikelden** (der/
     ],
   })
 
-  const b1Unit9Lesson2 = await prisma.lesson.create({
+  const b1Unit9Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit9.id,
       order: 2,
@@ -10779,7 +10815,7 @@ The dative often appears after dative prepositions (*mit, bei, nach, aus, von, z
 - Wir wohnen in einer **ruhigen** Straße. (Sakin bir sokakta oturuyoruz.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit9Lesson2.id,
@@ -10800,7 +10836,7 @@ The dative often appears after dative prepositions (*mit, bei, nach, aus, von, z
     ],
   })
 
-  const b1Unit9Lesson3 = await prisma.lesson.create({
+  const b1Unit9Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit9.id,
       order: 3,
@@ -10873,7 +10909,7 @@ Bu çoğunlukla **sayılamayan maddelerde** ve **miktar ifadelerinde** (*Wein, M
 - Er trinkt **guten** Wein. (eril -i hâli – İyi şarap içer.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit9Lesson3.id,
@@ -10894,7 +10930,7 @@ Bu çoğunlukla **sayılamayan maddelerde** ve **miktar ifadelerinde** (*Wein, M
     ],
   })
 
-  const b1Unit9Lesson4 = await prisma.lesson.create({
+  const b1Unit9Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit9.id,
       order: 4,
@@ -10961,7 +10997,7 @@ How to proceed: 1) definite article? → mostly **-e/-en**, 2) dative? → **alw
 - Mit **gutem** Wein schmeckt das Essen besser. (İyi şarapla yemek daha güzel olur.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit9Lesson4.id,
@@ -10982,7 +11018,7 @@ How to proceed: 1) definite article? → mostly **-e/-en**, 2) dative? → **alw
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit9Lesson1.id, word: 'kaufen', translationEn: 'to buy', translationTr: 'satın almak', exampleSentence: 'Ich kaufe die rote Tasche.' },
       { lessonId: b1Unit9Lesson1.id, word: 'sehen', translationEn: 'to see', translationTr: 'görmek', exampleSentence: 'Ich sehe den großen Mann.' },
@@ -10996,11 +11032,11 @@ How to proceed: 1) definite article? → mostly **-e/-en**, 2) dative? → **alw
   })
 
   // --- B1 Unit 10: obwohl/während/nachdem (4 lessons) ---
-  const b1Unit10 = await prisma.unit.create({
+  const b1Unit10 = await seedUnit({
     data: { levelId: b1.id, order: 10, titleDe: 'obwohl / während / nachdem', titleEn: 'although / while / after', titleTr: 'her ne kadar / esnasında / -dikten sonra' },
   })
 
-  const b1Unit10Lesson1 = await prisma.lesson.create({
+  const b1Unit10Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit10.id,
       order: 1,
@@ -11070,7 +11106,7 @@ Note the difference from **"trotzdem"**: "obwohl" is a **conjunction** (clause, 
 - Sie kauft das Auto, **obwohl** es teuer **ist**. (Araba pahalı olmasına rağmen onu alıyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit10Lesson1.id,
@@ -11091,7 +11127,7 @@ Note the difference from **"trotzdem"**: "obwohl" is a **conjunction** (clause, 
     ],
   })
 
-  const b1Unit10Lesson2 = await prisma.lesson.create({
+  const b1Unit10Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit10.id,
       order: 2,
@@ -11167,7 +11203,7 @@ Not: „während" aynı zamanda **Genitiv'li edat** da olabilir (*während des T
 - Er telefonierte, **während** er **fuhr**. (Araba kullanırken telefonla konuşuyordu.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit10Lesson2.id,
@@ -11188,7 +11224,7 @@ Not: „während" aynı zamanda **Genitiv'li edat** da olabilir (*während des T
     ],
   })
 
-  const b1Unit10Lesson3 = await prisma.lesson.create({
+  const b1Unit10Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit10.id,
       order: 3,
@@ -11255,7 +11291,7 @@ Yapı: *Nachdem wir **gegessen hatten** (Plusquamperfekt), **räumten** wir auf 
 - Er ging nach Hause, **nachdem** die Party **zu Ende war**. (Parti bittikten sonra eve gitti.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit10Lesson3.id,
@@ -11276,7 +11312,7 @@ Yapı: *Nachdem wir **gegessen hatten** (Plusquamperfekt), **räumten** wir auf 
     ],
   })
 
-  const b1Unit10Lesson4 = await prisma.lesson.create({
+  const b1Unit10Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit10.id,
       order: 4,
@@ -11340,7 +11376,7 @@ All three are **subordinating conjunctions** → **verb at the end** + comma. Th
 - **Nachdem** der Film **zu Ende war**, diskutierten wir lange. (Film bittikten sonra uzun uzun tartıştık.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit10Lesson4.id,
@@ -11367,7 +11403,7 @@ All three are **subordinating conjunctions** → **verb at the end** + comma. Th
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit10Lesson1.id, word: 'der Regenschirm', translationEn: 'the umbrella', translationTr: 'şemsiye', exampleSentence: 'Ich brauche einen Regenschirm.' },
       { lessonId: b1Unit10Lesson1.id, word: 'nass', translationEn: 'wet', translationTr: 'ıslak', exampleSentence: 'Meine Schuhe sind nass.' },
@@ -11381,11 +11417,11 @@ All three are **subordinating conjunctions** → **verb at the end** + comma. Th
   })
 
   // --- B1 Unit 11: Konnektoren (4 lessons) ---
-  const b1Unit11 = await prisma.unit.create({
+  const b1Unit11 = await seedUnit({
     data: { levelId: b1.id, order: 11, titleDe: 'Konnektoren', titleEn: 'Connectors', titleTr: 'Bağlaçlar' },
   })
 
-  const b1Unit11Lesson1 = await prisma.lesson.create({
+  const b1Unit11Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit11.id,
       order: 1,
@@ -11452,7 +11488,7 @@ When "trotzdem" is in **position 1**, the basic statement rule applies: the **ve
 - Das Essen war teuer. **Trotzdem hat es** nicht geschmeckt. (Yemek pahalıydı. Yine de beğenilmedi.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit11Lesson1.id,
@@ -11473,7 +11509,7 @@ When "trotzdem" is in **position 1**, the basic statement rule applies: the **ve
     ],
   })
 
-  const b1Unit11Lesson2 = await prisma.lesson.create({
+  const b1Unit11Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit11.id,
       order: 2,
@@ -11543,7 +11579,7 @@ When "trotzdem" is in **position 1**, the basic statement rule applies: the **ve
 - Sie hat verschlafen, **deshalb kam sie** zu spät. (Uyuyakaldı, bu yüzden geç kaldı.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit11Lesson2.id,
@@ -11564,7 +11600,7 @@ When "trotzdem" is in **position 1**, the basic statement rule applies: the **ve
     ],
   })
 
-  const b1Unit11Lesson3 = await prisma.lesson.create({
+  const b1Unit11Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit11.id,
       order: 3,
@@ -11634,7 +11670,7 @@ Karşıt işlevli iki zarf bağlaç daha. İkisi de sıkça **1. konumda** durur
 - Ich komme gern. **Allerdings habe ich** nur wenig Zeit. (Memnuniyetle gelirim. Ancak çok az vaktim var.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit11Lesson3.id,
@@ -11662,7 +11698,7 @@ Karşıt işlevli iki zarf bağlaç daha. İkisi de sıkça **1. konumda** durur
     ],
   })
 
-  const b1Unit11Lesson4 = await prisma.lesson.create({
+  const b1Unit11Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit11.id,
       order: 4,
@@ -11729,7 +11765,7 @@ Dördü de **zarf bağlaçtır**: 1. konumdan sonra **fiil (2. konum)**, sonra �
 - Ich bin müde, **deshalb gehe ich** früh ins Bett. (Yorgunum, bu yüzden erken yatıyorum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit11Lesson4.id,
@@ -11750,7 +11786,7 @@ Dördü de **zarf bağlaçtır**: 1. konumdan sonra **fiil (2. konum)**, sonra �
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit11Lesson1.id, word: 'krank', translationEn: 'sick', translationTr: 'hasta', exampleSentence: 'Ich bin krank.' },
       { lessonId: b1Unit11Lesson1.id, word: 'bleiben', translationEn: 'to stay', translationTr: 'kalmak', exampleSentence: 'Ich bleibe zu Hause.' },
@@ -11764,11 +11800,11 @@ Dördü de **zarf bağlaçtır**: 1. konumdan sonra **fiil (2. konum)**, sonra �
   })
 
   // --- B1 Unit 12: Indirekte Rede & Nomen-Verb-Verbindungen (4 lessons) ---
-  const b1Unit12 = await prisma.unit.create({
+  const b1Unit12 = await seedUnit({
     data: { levelId: b1.id, order: 12, titleDe: 'Indirekte Rede & Nomen-Verb-Verbindungen', titleEn: 'Reported Speech & Verb-Noun Collocations', titleTr: 'Dolaylı Anlatım ve İsim-Fiil Kalıpları' },
   })
 
-  const b1Unit12Lesson1 = await prisma.lesson.create({
+  const b1Unit12Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit12.id,
       order: 1,
@@ -11838,7 +11874,7 @@ The key point is that the **perspective changes**: the **pronouns** (ich → er/
 - Die Kinder sagen, **dass** sie Hunger **haben**. (Çocuklar aç olduklarını söylüyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit12Lesson1.id,
@@ -11859,7 +11895,7 @@ The key point is that the **perspective changes**: the **pronouns** (ich → er/
     ],
   })
 
-  const b1Unit12Lesson2 = await prisma.lesson.create({
+  const b1Unit12Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit12.id,
       order: 2,
@@ -11932,7 +11968,7 @@ Doğru fiili ezberlemek gerekir: genellikle **treffen, nehmen, stellen, machen, 
 - Darf ich eine Frage **stellen**? (Bir soru sorabilir miyim?)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit12Lesson2.id,
@@ -11953,7 +11989,7 @@ Doğru fiili ezberlemek gerekir: genellikle **treffen, nehmen, stellen, machen, 
     ],
   })
 
-  const b1Unit12Lesson3 = await prisma.lesson.create({
+  const b1Unit12Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit12.id,
       order: 3,
@@ -12020,7 +12056,7 @@ Birçok isim-fiil kalıbı sabit bir **edat** + isim + fiil içerir (örn. *zur 
 - Der Chef **übt** Kritik an dem Plan. (Patron planı eleştiriyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit12Lesson3.id,
@@ -12041,7 +12077,7 @@ Birçok isim-fiil kalıbı sabit bir **edat** + isim + fiil içerir (örn. *zur 
     ],
   })
 
-  const b1Unit12Lesson4 = await prisma.lesson.create({
+  const b1Unit12Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit12.id,
       order: 4,
@@ -12114,7 +12150,7 @@ Temel B1 konularına genel bakış:
 - **Nachdem** ich Deutsch gelernt **hatte**, fand ich einen Job. (Almanca öğrendikten sonra bir iş buldum.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit12Lesson4.id,
@@ -12135,7 +12171,7 @@ Temel B1 konularına genel bakış:
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit12Lesson1.id, word: 'müde', translationEn: 'tired', translationTr: 'yorgun', exampleSentence: 'Er sagt, dass er müde ist.' },
       { lessonId: b1Unit12Lesson1.id, word: 'sagen', translationEn: 'to say', translationTr: 'söylemek', exampleSentence: 'Er sagt die Wahrheit.' },
@@ -12149,11 +12185,11 @@ Temel B1 konularına genel bakış:
   })
 
   // --- B1 Unit 13: Wortstellung: Tekamolo (4 lessons) ---
-  const b1Unit13 = await prisma.unit.create({
+  const b1Unit13 = await seedUnit({
     data: { levelId: b1.id, order: 13, titleDe: 'Wortstellung: Tekamolo', titleEn: 'Word Order: Time-Cause-Manner-Place', titleTr: 'Sözcük Dizilimi: Zaman-Sebep-Tarz-Yer' },
   })
 
-  const b1Unit13Lesson1 = await prisma.lesson.create({
+  const b1Unit13Lesson1 = await seedLesson({
     data: {
       unitId: b1Unit13.id,
       order: 1,
@@ -12220,7 +12256,7 @@ Cümlenin orta alanında birden fazla tümleç varsa sıra **TE-KA-MO-LO**'dur:
 - Wir bleiben **heute** **wegen des Regens** **zu Hause**. (Bugün yağmur yüzünden evde kalıyoruz.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit13Lesson1.id,
@@ -12241,7 +12277,7 @@ Cümlenin orta alanında birden fazla tümleç varsa sıra **TE-KA-MO-LO**'dur:
     ],
   })
 
-  const b1Unit13Lesson2 = await prisma.lesson.create({
+  const b1Unit13Lesson2 = await seedLesson({
     data: {
       unitId: b1Unit13.id,
       order: 2,
@@ -12302,7 +12338,7 @@ The **manner adverbial** (how?) comes **before** the **place adverbial** (where 
 - Wir gehen **gemütlich** **durch den Park**. (Parkın içinden keyifle yürüyoruz.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit13Lesson2.id,
@@ -12323,7 +12359,7 @@ The **manner adverbial** (how?) comes **before** the **place adverbial** (where 
     ],
   })
 
-  const b1Unit13Lesson3 = await prisma.lesson.create({
+  const b1Unit13Lesson3 = await seedLesson({
     data: {
       unitId: b1Unit13.id,
       order: 3,
@@ -12381,7 +12417,7 @@ A complete sentence following **verb (position 2) → Te → Ka → Mo → Lo**:
 - Sie kommt **heute aus Freude zu Fuß nach Hause**. (Bugün sevinçten yürüyerek eve geliyor.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit13Lesson3.id,
@@ -12402,7 +12438,7 @@ A complete sentence following **verb (position 2) → Te → Ka → Mo → Lo**:
     ],
   })
 
-  const b1Unit13Lesson4 = await prisma.lesson.create({
+  const b1Unit13Lesson4 = await seedLesson({
     data: {
       unitId: b1Unit13.id,
       order: 4,
@@ -12469,7 +12505,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
 - Er ruft **abends immer aus Gewohnheit** an. (Akşamları hep alışkanlıktan arar.)`,
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b1Unit13Lesson4.id,
@@ -12497,7 +12533,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b1Unit13Lesson1.id, word: 'die Ferien', translationEn: 'the holidays', translationTr: 'tatil', exampleSentence: 'Wir fahren wegen der Ferien nach Berlin.' },
       { lessonId: b1Unit13Lesson1.id, word: 'fahren', translationEn: 'to drive / travel', translationTr: 'gitmek (araçla)', exampleSentence: 'Ich fahre heute nach Berlin.' },
@@ -12511,10 +12547,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2: Passiv (1 sample lesson) ---
-  const b2Unit = await prisma.unit.create({
+  const b2Unit = await seedUnit({
     data: { levelId: b2.id, order: 1, titleDe: 'Passiv', titleEn: 'Passive Voice', titleTr: 'Edilgen Çatı' },
   })
-  const b2Lesson = await prisma.lesson.create({
+  const b2Lesson = await seedLesson({
     data: {
       unitId: b2Unit.id,
       order: 1,
@@ -12524,7 +12560,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       explanationTr: 'Edilgen çatı "werden" + Partizip II ile kurulur, örn. "Das Haus wird gebaut" (Ev inşa ediliyor).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Lesson.id,
@@ -12545,7 +12581,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Lesson2 = await prisma.lesson.create({
+  const b2Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit.id,
       order: 2,
@@ -12558,7 +12594,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Präteritum\'da edilgen çatı "wurde" + Partizip II ile kurulur, örn. "Das Haus wurde gebaut" (Ev inşa edildi). Geçmişte tamamlanmış bir süreci anlatır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Lesson2.id,
@@ -12578,14 +12614,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Lesson2.id, word: 'schreiben', translationEn: 'to write', translationTr: 'yazmak', exampleSentence: 'Der Brief wurde gestern geschrieben.' },
       { lessonId: b2Lesson2.id, word: 'der Brief', translationEn: 'the letter', translationTr: 'mektup', exampleSentence: 'Ich habe einen Brief geschrieben.' },
     ],
   })
 
-  const b2Lesson3 = await prisma.lesson.create({
+  const b2Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit.id,
       order: 3,
@@ -12598,7 +12634,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Zustandspassiv "sein" + Partizip II ile kurulur ve eylemin kendisini değil sonucunu anlatır, örn. "Die Tür ist geöffnet" (Kapı açık — süreç değil durum).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Lesson3.id,
@@ -12618,14 +12654,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Lesson3.id, word: 'schließen', translationEn: 'to close', translationTr: 'kapatmak', exampleSentence: 'Der Laden ist schon geschlossen.' },
       { lessonId: b2Lesson3.id, word: 'der Laden', translationEn: 'the shop', translationTr: 'dükkan', exampleSentence: 'Der Laden ist geöffnet.' },
     ],
   })
 
-  const b2Lesson4 = await prisma.lesson.create({
+  const b2Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit.id,
       order: 4,
@@ -12638,7 +12674,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Perfekt\'te edilgen çatı "sein" + Partizip II + "worden" ile kurulur, örn. "Das Haus ist gebaut worden" (Ev inşa edilmiş oldu). Perfekt Passiv\'de "geworden" yerine "worden" kullanılır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Lesson4.id,
@@ -12658,7 +12694,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Lesson4.id, word: 'beenden', translationEn: 'to finish / end', translationTr: 'bitirmek', exampleSentence: 'Das Projekt ist gestern beendet worden.' },
       { lessonId: b2Lesson4.id, word: 'bezahlen', translationEn: 'to pay', translationTr: 'ödemek', exampleSentence: 'Die Rechnung ist bereits bezahlt worden.' },
@@ -12666,11 +12702,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 2: Konjunktiv I (formelle indirekte Rede) (4 lessons) ---
-  const b2Unit2 = await prisma.unit.create({
+  const b2Unit2 = await seedUnit({
     data: { levelId: b2.id, order: 2, titleDe: 'Konjunktiv I', titleEn: 'Subjunctive I', titleTr: 'Konjunktiv I (Dolaylı Anlatım)' },
   })
 
-  const b2Unit2Lesson1 = await prisma.lesson.create({
+  const b2Unit2Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit2.id,
       order: 1,
@@ -12683,7 +12719,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Düzenli fiillerde Konjunktiv I, fiil kökü + ekler (-e, -est, -e, -en, -et, -en) ile kurulur, örn. "er sage" ("sagen"den, söylemek). Öncelikle resmi dolaylı anlatımda kullanılır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit2Lesson1.id,
@@ -12703,14 +12739,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit2Lesson1.id, word: 'behaupten', translationEn: 'to claim', translationTr: 'iddia etmek', exampleSentence: 'Sie behauptet, sie glaube das nicht.' },
       { lessonId: b2Unit2Lesson1.id, word: 'glauben', translationEn: 'to believe', translationTr: 'inanmak', exampleSentence: 'Sie glaubt das nicht.' },
     ],
   })
 
-  const b2Unit2Lesson2 = await prisma.lesson.create({
+  const b2Unit2Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit2.id,
       order: 2,
@@ -12723,7 +12759,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'En önemli düzensiz Konjunktiv I biçimleri: "sein" (olmak) → ich sei, du seiest, er sei; "haben" (sahip olmak) → er habe; "können" gibi kip fiilleri → er könne, "müssen" → er müsse.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit2Lesson2.id,
@@ -12749,14 +12785,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit2Lesson2.id, word: 'der Chef', translationEn: 'the boss', translationTr: 'patron', exampleSentence: 'Der Chef sagt, er habe heute keine Zeit.' },
       { lessonId: b2Unit2Lesson2.id, word: 'die Firma', translationEn: 'the company', translationTr: 'şirket', exampleSentence: 'Er arbeitet für eine große Firma.' },
     ],
   })
 
-  const b2Unit2Lesson3 = await prisma.lesson.create({
+  const b2Unit2Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit2.id,
       order: 3,
@@ -12769,7 +12805,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Konjunktiv I, bildirme kipiyle aynı olduğunda (genellikle "wir" ve "sie/Sie" ile), onun yerine "würde" + mastar ile yapılan yedek biçim kullanılır, örn. "Sie sagen, sie würden kommen" ("sie kommen" yerine).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit2Lesson3.id,
@@ -12789,14 +12825,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit2Lesson3.id, word: 'unterstützen', translationEn: 'to support', translationTr: 'desteklemek', exampleSentence: 'Sie würden das Projekt unterstützen.' },
       { lessonId: b2Unit2Lesson3.id, word: 'die Kollegen', translationEn: 'the colleagues', translationTr: 'meslektaşlar', exampleSentence: 'Die Kollegen sagen, sie würden morgen kommen.' },
     ],
   })
 
-  const b2Unit2Lesson4 = await prisma.lesson.create({
+  const b2Unit2Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit2.id,
       order: 4,
@@ -12809,7 +12845,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Dolaylı sorularda soru kelimesi ya da "ob" cümle başında yer alır, fiil (Konjunktiv I\'de) sonda gelir: "Er fragt, ob sie Zeit habe." (Vakti olup olmadığını soruyor.) Dolaylı emirler "sollen" ile aktarılır: "Er sagt, sie solle warten." (Beklemesi gerektiğini söylüyor.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit2Lesson4.id,
@@ -12829,7 +12865,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit2Lesson4.id, word: 'die Aufforderung', translationEn: 'the request / command', translationTr: 'istek / emir', exampleSentence: 'Das ist eine indirekte Aufforderung.' },
       { lessonId: b2Unit2Lesson4.id, word: 'die Frage', translationEn: 'the question', translationTr: 'soru', exampleSentence: 'Er fragt, ob sie Zeit habe.' },
@@ -12837,11 +12873,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 3: Passiv mit Modalverben (4 lessons) ---
-  const b2Unit3 = await prisma.unit.create({
+  const b2Unit3 = await seedUnit({
     data: { levelId: b2.id, order: 3, titleDe: 'Passiv mit Modalverben', titleEn: 'Passive with Modal Verbs', titleTr: 'Kip Fiilleriyle Edilgen Çatı' },
   })
 
-  const b2Unit3Lesson1 = await prisma.lesson.create({
+  const b2Unit3Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit3.id,
       order: 1,
@@ -12854,7 +12890,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Kip fiilleriyle edilgen çatıda kip fiili çekimli, ana fiil Partizip II olarak, "werden" ise mastar halinde cümle sonunda yer alır: "Die Arbeit muss gemacht werden." (İş yapılmalı.) (şimdiki zaman)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit3Lesson1.id,
@@ -12874,14 +12910,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit3Lesson1.id, word: 'ausfüllen', translationEn: 'to fill out', translationTr: 'doldurmak', exampleSentence: 'Das Formular muss ausgefüllt werden.' },
       { lessonId: b2Unit3Lesson1.id, word: 'putzen', translationEn: 'to clean', translationTr: 'temizlemek', exampleSentence: 'Die Fenster müssen geputzt werden.' },
     ],
   })
 
-  const b2Unit3Lesson2 = await prisma.lesson.create({
+  const b2Unit3Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit3.id,
       order: 2,
@@ -12894,7 +12930,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Kip fiilleriyle Präteritum edilgen çatıda kip fiili Präteritum\'da çekimlenir: "Die Arbeit musste gemacht werden." (İş yapılmalıydı.) (geçmiş)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit3Lesson2.id,
@@ -12914,14 +12950,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit3Lesson2.id, word: 'der Bericht', translationEn: 'the report', translationTr: 'rapor', exampleSentence: 'Der Bericht musste gestern geschrieben werden.' },
       { lessonId: b2Unit3Lesson2.id, word: 'die Reparatur', translationEn: 'the repair', translationTr: 'tamir', exampleSentence: 'Das Auto musste repariert werden.' },
     ],
   })
 
-  const b2Unit3Lesson3 = await prisma.lesson.create({
+  const b2Unit3Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit3.id,
       order: 3,
@@ -12934,7 +12970,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Olumsuzluk genellikle Partizip II\'den ya da "werden"den önce yer alır: "Das darf nicht gemacht werden." (Bu yapılmamalı.) / "Das Auto darf hier nicht geparkt werden." (Araba burada park edilmemeli.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit3Lesson3.id,
@@ -12954,14 +12990,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit3Lesson3.id, word: 'rauchen', translationEn: 'to smoke', translationTr: 'sigara içmek', exampleSentence: 'Hier darf nicht geraucht werden.' },
       { lessonId: b2Unit3Lesson3.id, word: 'parken', translationEn: 'to park', translationTr: 'park etmek', exampleSentence: 'Das Auto darf hier nicht geparkt werden.' },
     ],
   })
 
-  const b2Unit3Lesson4 = await prisma.lesson.create({
+  const b2Unit3Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit3.id,
       order: 4,
@@ -12974,7 +13010,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: kip fiilleriyle şimdiki zaman, geçmiş zaman ve olumsuzlukta edilgen çatı. Unutma: çekimli kip fiili + Partizip II + cümle sonunda "werden".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit3Lesson4.id,
@@ -12994,7 +13030,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit3Lesson4.id, word: 'beachten', translationEn: 'to observe / pay attention to', translationTr: 'dikkat etmek', exampleSentence: 'Die Regeln müssen beachtet werden.' },
       { lessonId: b2Unit3Lesson4.id, word: 'die Regel', translationEn: 'the rule', translationTr: 'kural', exampleSentence: 'Die Regeln müssen beachtet werden.' },
@@ -13002,11 +13038,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 4: Partizipialattribute (4 lessons) ---
-  const b2Unit4 = await prisma.unit.create({
+  const b2Unit4 = await seedUnit({
     data: { levelId: b2.id, order: 4, titleDe: 'Partizipialattribute', titleEn: 'Participial Attributes', titleTr: 'Partisip Sıfatları' },
   })
 
-  const b2Unit4Lesson1 = await prisma.lesson.create({
+  const b2Unit4Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit4.id,
       order: 1,
@@ -13019,7 +13055,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Partizip I (mastar + d), sıfat gibi çekimlenir ve eşzamanlı, etken bir eylemi ifade eder: "der schlafende Mann" (uyuyan adam = uyumakta olan adam).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit4Lesson1.id,
@@ -13039,14 +13075,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit4Lesson1.id, word: 'der Garten', translationEn: 'the garden', translationTr: 'bahçe', exampleSentence: 'Das Kind spielt im Garten.' },
       { lessonId: b2Unit4Lesson1.id, word: 'bellen', translationEn: 'to bark', translationTr: 'havlamak', exampleSentence: 'Der bellende Hund läuft schnell.' },
     ],
   })
 
-  const b2Unit4Lesson2 = await prisma.lesson.create({
+  const b2Unit4Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit4.id,
       order: 2,
@@ -13059,7 +13095,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Partizip II de sıfat gibi çekimlenir ve genellikle tamamlanmış, edilgen bir eylemi ifade eder: "der reparierte Wagen" (tamir edilmiş araba = tamir edilen araba).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit4Lesson2.id,
@@ -13085,14 +13121,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit4Lesson2.id, word: 'kaputt', translationEn: 'broken', translationTr: 'bozuk', exampleSentence: 'Die geöffnete Tür war kaputt.' },
       { lessonId: b2Unit4Lesson2.id, word: 'verkaufen', translationEn: 'to sell', translationTr: 'satmak', exampleSentence: 'Das verkaufte Haus war teuer.' },
     ],
   })
 
-  const b2Unit4Lesson3 = await prisma.lesson.create({
+  const b2Unit4Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit4.id,
       order: 3,
@@ -13105,7 +13141,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Genişletilmiş partisip sıfatları, partisipten önce ek bilgi içerir: "der von vielen Menschen geliebte Sänger" (birçok insan tarafından sevilen şarkıcı). Resmi, yazılı metinlerde tipiktir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit4Lesson3.id,
@@ -13125,14 +13161,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit4Lesson3.id, word: 'veröffentlichen', translationEn: 'to publish', translationTr: 'yayınlamak', exampleSentence: 'Der Bericht wurde veröffentlicht.' },
       { lessonId: b2Unit4Lesson3.id, word: 'beliebt', translationEn: 'popular', translationTr: 'popüler', exampleSentence: 'Das ist ein beliebtes Buch.' },
     ],
   })
 
-  const b2Unit4Lesson4 = await prisma.lesson.create({
+  const b2Unit4Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit4.id,
       order: 4,
@@ -13145,7 +13181,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Partisip sıfatları ilgi cümlelerine dönüştürülebilir: "der schlafende Mann" → "der Mann, der schläft" (uyuyan adam); "das reparierte Auto" → "das Auto, das repariert wurde" (tamir edilen araba).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit4Lesson4.id,
@@ -13165,7 +13201,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit4Lesson4.id, word: 'lachen', translationEn: 'to laugh', translationTr: 'gülmek', exampleSentence: 'Der lachende Junge spielt draußen.' },
       { lessonId: b2Unit4Lesson4.id, word: 'bauen', translationEn: 'to build', translationTr: 'inşa etmek', exampleSentence: 'Das gebaute Haus ist neu.' },
@@ -13173,11 +13209,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 5: Nominalisierung (4 lessons) ---
-  const b2Unit5 = await prisma.unit.create({
+  const b2Unit5 = await seedUnit({
     data: { levelId: b2.id, order: 5, titleDe: 'Nominalisierung', titleEn: 'Nominalization', titleTr: 'İsimleştirme' },
   })
 
-  const b2Unit5Lesson1 = await prisma.lesson.create({
+  const b2Unit5Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit5.id,
       order: 1,
@@ -13190,7 +13226,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"-ung" eki ile birçok fiil dişil isme dönüşür: entwickeln (geliştirmek) → die Entwicklung (gelişim), untersuchen (incelemek) → die Untersuchung (inceleme). Bu isimleştirme resmi metinlerde tipiktir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit5Lesson1.id,
@@ -13210,14 +13246,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit5Lesson1.id, word: 'entwickeln', translationEn: 'to develop', translationTr: 'geliştirmek', exampleSentence: 'Die Entwicklung dauert lange.' },
       { lessonId: b2Unit5Lesson1.id, word: 'untersuchen', translationEn: 'to examine', translationTr: 'incelemek', exampleSentence: 'Die Untersuchung dauerte drei Stunden.' },
     ],
   })
 
-  const b2Unit5Lesson2 = await prisma.lesson.create({
+  const b2Unit5Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit5.id,
       order: 2,
@@ -13230,7 +13266,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Sıfatlar "-heit" ya da "-keit" ekiyle dişil isme dönüşür: frei (özgür) → die Freiheit (özgürlük), möglich (mümkün) → die Möglichkeit (olasılık), schön (güzel) → die Schönheit (güzellik).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit5Lesson2.id,
@@ -13256,14 +13292,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit5Lesson2.id, word: 'frei', translationEn: 'free', translationTr: 'özgür', exampleSentence: 'Die Freiheit ist wichtig.' },
       { lessonId: b2Unit5Lesson2.id, word: 'möglich', translationEn: 'possible', translationTr: 'mümkün', exampleSentence: 'Das ist eine gute Möglichkeit.' },
     ],
   })
 
-  const b2Unit5Lesson3 = await prisma.lesson.create({
+  const b2Unit5Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit5.id,
       order: 3,
@@ -13276,7 +13312,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Her mastar büyük harfle yazılarak nötr isim olarak kullanılabilir: rauchen (sigara içmek) → das Rauchen (sigara içme), lesen (okumak) → das Lesen (okuma). Bu biçim eylemi genel olarak anlatır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit5Lesson3.id,
@@ -13296,14 +13332,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit5Lesson3.id, word: 'verboten', translationEn: 'forbidden', translationTr: 'yasak', exampleSentence: 'Rauchen ist hier verboten.' },
       { lessonId: b2Unit5Lesson3.id, word: 'das Schwimmen', translationEn: 'swimming', translationTr: 'yüzme', exampleSentence: 'Das Schwimmen macht Spaß.' },
     ],
   })
 
-  const b2Unit5Lesson4 = await prisma.lesson.create({
+  const b2Unit5Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit5.id,
       order: 4,
@@ -13316,7 +13352,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Resmi metinlerde (raporlar, resmi dil) fiiller yerine sık sık isimleştirme kullanılır: "Nach Abschluss der Untersuchung..." ("İncelemenin tamamlanmasından sonra...") ifadesi, "Nachdem die Untersuchung abgeschlossen wurde..." ("İnceleme tamamlandıktan sonra...") yerine kullanılır. Bu daha derli toplu ve resmi görünür.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit5Lesson4.id,
@@ -13336,7 +13372,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit5Lesson4.id, word: 'der Abschluss', translationEn: 'the completion / conclusion', translationTr: 'tamamlama', exampleSentence: 'Nach Abschluss der Arbeit gehen wir nach Hause.' },
       { lessonId: b2Unit5Lesson4.id, word: 'entscheiden', translationEn: 'to decide', translationTr: 'karar vermek', exampleSentence: 'Die Entscheidung fiel schwer.' },
@@ -13344,11 +13380,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 6: Komplexe Konnektoren (4 lessons) ---
-  const b2Unit6 = await prisma.unit.create({
+  const b2Unit6 = await seedUnit({
     data: { levelId: b2.id, order: 6, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
   })
 
-  const b2Unit6Lesson1 = await prisma.lesson.create({
+  const b2Unit6Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit6.id,
       order: 1,
@@ -13361,7 +13397,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Dennoch" ve "trotzdem" (yine de) bir zıtlık ifade eder ve genellikle cümle başında, fiil ikinci sırada olacak şekilde yer alır: "Es regnete stark. Trotzdem gingen wir spazieren." (Şiddetli yağmur yağıyordu. Yine de yürüyüşe çıktık.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit6Lesson1.id,
@@ -13381,14 +13417,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit6Lesson1.id, word: 'spazieren gehen', translationEn: 'to go for a walk', translationTr: 'yürüyüşe çıkmak', exampleSentence: 'Wir gingen trotzdem spazieren.' },
       { lessonId: b2Unit6Lesson1.id, word: 'regnen', translationEn: 'to rain', translationTr: 'yağmur yağmak', exampleSentence: 'Es regnete stark.' },
     ],
   })
 
-  const b2Unit6Lesson2 = await prisma.lesson.create({
+  const b2Unit6Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit6.id,
       order: 2,
@@ -13401,7 +13437,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Gleichwohl", "dennoch/trotzdem" için resmi bir eş anlamlıdır ve öncelikle yazılı, seçkin dilde kullanılır: "Die Lage war schwierig, gleichwohl fand man eine Lösung." (Durum zordu, yine de bir çözüm bulundu.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit6Lesson2.id,
@@ -13421,14 +13457,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit6Lesson2.id, word: 'die Verhandlung', translationEn: 'the negotiation', translationTr: 'müzakere', exampleSentence: 'Die Verhandlungen waren schwierig.' },
       { lessonId: b2Unit6Lesson2.id, word: 'umsetzen', translationEn: 'to implement', translationTr: 'uygulamak', exampleSentence: 'Der Plan wurde umgesetzt.' },
     ],
   })
 
-  const b2Unit6Lesson3 = await prisma.lesson.create({
+  const b2Unit6Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit6.id,
       order: 3,
@@ -13441,7 +13477,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Insofern (als)", sınırlayıcı bir yan cümle başlatır ve "şu ölçüde ki" anlamına gelir: "Der Vorschlag ist gut, insofern als er realistisch ist." (Öneri, gerçekçi olduğu ölçüde iyidir.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit6Lesson3.id,
@@ -13461,14 +13497,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit6Lesson3.id, word: 'realistisch', translationEn: 'realistic', translationTr: 'gerçekçi', exampleSentence: 'Der Vorschlag ist realistisch.' },
       { lessonId: b2Unit6Lesson3.id, word: 'der Vorschlag', translationEn: 'the proposal', translationTr: 'öneri', exampleSentence: 'Die Idee ist interessant.' },
     ],
   })
 
-  const b2Unit6Lesson4 = await prisma.lesson.create({
+  const b2Unit6Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit6.id,
       order: 4,
@@ -13481,7 +13517,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Zumal" ek bir gerekçe sunar ve "özellikle çünkü/madem ki" anlamına gelir: "Wir bleiben zu Hause, zumal es stark regnet." (Evde kalıyoruz, özellikle şiddetli yağmur yağdığından.) Bir yan cümle başlatır, fiil sonda yer alır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit6Lesson4.id,
@@ -13501,7 +13537,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit6Lesson4.id, word: 'zu Hause', translationEn: 'at home', translationTr: 'evde', exampleSentence: 'Wir bleiben zu Hause.' },
       { lessonId: b2Unit6Lesson4.id, word: 'stark', translationEn: 'strong / heavily', translationTr: 'güçlü / şiddetli', exampleSentence: 'Es regnet stark.' },
@@ -13509,11 +13545,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 7: Funktionsverbgefüge (4 lessons) ---
-  const b2Unit7 = await prisma.unit.create({
+  const b2Unit7 = await seedUnit({
     data: { levelId: b2.id, order: 7, titleDe: 'Funktionsverbgefüge', titleEn: 'Support Verb Constructions', titleTr: 'Fiil-İsim Kalıpları' },
   })
 
-  const b2Unit7Lesson1 = await prisma.lesson.create({
+  const b2Unit7Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit7.id,
       order: 1,
@@ -13526,7 +13562,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Funktionsverbgefüge (fiil-isim kalıpları), "hafif" bir fiil + isimden oluşur ve genellikle basit bir fiilin yerini alır: "in Frage stellen" (sorgulamak, = bezweifeln), "zur Verfügung stehen" (hazır/kullanılabilir olmak, = verfügbar sein). Resmi dilde tipiktir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit7Lesson1.id,
@@ -13546,14 +13582,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit7Lesson1.id, word: 'bezweifeln', translationEn: 'to doubt', translationTr: 'şüphe etmek', exampleSentence: 'Die Ergebnisse werden bezweifelt.' },
       { lessonId: b2Unit7Lesson1.id, word: 'der Berater', translationEn: 'the consultant / advisor', translationTr: 'danışman', exampleSentence: 'Der Berater steht dem Team zur Verfügung.' },
     ],
   })
 
-  const b2Unit7Lesson2 = await prisma.lesson.create({
+  const b2Unit7Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit7.id,
       order: 2,
@@ -13566,7 +13602,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Anwendung finden" "uygulanmak" anlamına gelir, "Rücksicht nehmen (auf)" ise "(birine) saygılı davranmak" anlamına gelir: "Die neue Methode findet in der Praxis Anwendung." (Yeni yöntem pratikte uygulanıyor.) "Man sollte auf ältere Menschen Rücksicht nehmen." (Yaşlı insanlara karşı saygılı olunmalı.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit7Lesson2.id,
@@ -13586,14 +13622,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit7Lesson2.id, word: 'die Praxis', translationEn: 'practice', translationTr: 'uygulama / pratik', exampleSentence: 'Die Methode findet in der Praxis Anwendung.' },
       { lessonId: b2Unit7Lesson2.id, word: 'älter', translationEn: 'older', translationTr: 'daha yaşlı', exampleSentence: 'Man sollte auf ältere Menschen Rücksicht nehmen.' },
     ],
   })
 
-  const b2Unit7Lesson3 = await prisma.lesson.create({
+  const b2Unit7Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit7.id,
       order: 3,
@@ -13606,7 +13642,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Zum Ausdruck bringen" "ifade etmek" anlamına gelir, "in Betracht ziehen" ise "göz önünde bulundurmak/değerlendirmek" anlamına gelir: "Sie brachte ihre Freude zum Ausdruck." (Sevincini ifade etti.) "Wir sollten alle Optionen in Betracht ziehen." (Tüm seçenekleri değerlendirmeliyiz.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit7Lesson3.id,
@@ -13626,14 +13662,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit7Lesson3.id, word: 'die Freude', translationEn: 'the joy', translationTr: 'sevinç', exampleSentence: 'Sie brachte ihre Freude zum Ausdruck.' },
       { lessonId: b2Unit7Lesson3.id, word: 'die Option', translationEn: 'the option', translationTr: 'seçenek', exampleSentence: 'Wir sollten alle Optionen in Betracht ziehen.' },
     ],
   })
 
-  const b2Unit7Lesson4 = await prisma.lesson.create({
+  const b2Unit7Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit7.id,
       order: 4,
@@ -13646,7 +13682,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Fiil-isim kalıplarının tekrarı: in Frage stellen, zur Verfügung stehen, Anwendung finden, Rücksicht nehmen, zum Ausdruck bringen, in Betracht ziehen. Unutma: hafif fiil + sabit isim, basit bir fiilin yerini alır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit7Lesson4.id,
@@ -13672,7 +13708,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit7Lesson4.id, word: 'berücksichtigen', translationEn: 'to take into account', translationTr: 'göz önünde bulundurmak', exampleSentence: 'Wir müssen alle Faktoren berücksichtigen.' },
       { lessonId: b2Unit7Lesson4.id, word: 'verfügbar', translationEn: 'available', translationTr: 'kullanılabilir', exampleSentence: 'Der Berater ist verfügbar.' },
@@ -13680,11 +13716,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 8: Textkohärenz (4 lessons) ---
-  const b2Unit8 = await prisma.unit.create({
+  const b2Unit8 = await seedUnit({
     data: { levelId: b2.id, order: 8, titleDe: 'Textkohärenz', titleEn: 'Textual Coherence', titleTr: 'Metin Bütünlüğü' },
   })
 
-  const b2Unit8Lesson1 = await prisma.lesson.create({
+  const b2Unit8Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit8.id,
       order: 1,
@@ -13697,7 +13733,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Şahıs zamirleri (er, sie, es, ihn, ihm...) metinde daha önce geçen isimlere gönderme yapar ve tekrarı önler: "Der Chef kam spät. Er entschuldigte sich." (Patron geç geldi. Özür diledi.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit8Lesson1.id,
@@ -13717,14 +13753,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit8Lesson1.id, word: 'die Studentin', translationEn: 'the (female) student', translationTr: 'kadın öğrenci', exampleSentence: 'Die Studentin gab die Arbeit ab.' },
       { lessonId: b2Unit8Lesson1.id, word: 'erleichtert', translationEn: 'relieved', translationTr: 'rahatlamış', exampleSentence: 'Sie war erleichtert.' },
     ],
   })
 
-  const b2Unit8Lesson2 = await prisma.lesson.create({
+  const b2Unit8Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit8.id,
       order: 2,
@@ -13737,7 +13773,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Dieser/diese/dieses" gibi işaret zamirleri, şahıs zamirlerinden daha güçlü biçimde daha önce söylenene gönderme yapar: "Ich traf meinen alten Lehrer. Dieser erkannte mich sofort." (Eski öğretmenimle karşılaştım. O beni hemen tanıdı.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit8Lesson2.id,
@@ -13757,14 +13793,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit8Lesson2.id, word: 'die Ärztin', translationEn: 'the (female) doctor', translationTr: 'kadın doktor', exampleSentence: 'Ich sprach mit der Ärztin.' },
       { lessonId: b2Unit8Lesson2.id, word: 'der Ratschlag', translationEn: 'the piece of advice', translationTr: 'tavsiye', exampleSentence: 'Sie gab mir gute Ratschläge.' },
     ],
   })
 
-  const b2Unit8Lesson3 = await prisma.lesson.create({
+  const b2Unit8Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit8.id,
       order: 3,
@@ -13777,7 +13813,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Außerdem, jedoch, deshalb, schließlich" (ayrıca, ancak, bu yüzden, sonunda) gibi bağlaçlar cümleleri mantıksal olarak bağlar ve tutarlı bir metin oluşturur: "Er war müde. Außerdem hatte er Kopfschmerzen. Deshalb ging er früh ins Bett." (Yorgundu. Ayrıca başı ağrıyordu. Bu yüzden erken yattı.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit8Lesson3.id,
@@ -13797,14 +13833,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit8Lesson3.id, word: 'die Kopfschmerzen', translationEn: 'headache', translationTr: 'baş ağrısı', exampleSentence: 'Er hatte Kopfschmerzen.' },
       { lessonId: b2Unit8Lesson3.id, word: 'schließlich', translationEn: 'finally', translationTr: 'sonunda', exampleSentence: 'Schließlich ging er ins Bett.' },
     ],
   })
 
-  const b2Unit8Lesson4 = await prisma.lesson.create({
+  const b2Unit8Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit8.id,
       order: 4,
@@ -13817,7 +13853,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Dabei, dazu, damit" gibi zamirli zarflar daha önce söylenene gönderme yapar ve edat + isim yapısının yerini alır: "Sie lernt Deutsch. Dabei hilft ihr eine App." (Almanca öğreniyor. Bu konuda bir uygulama ona yardımcı oluyor.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit8Lesson4.id,
@@ -13837,7 +13873,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit8Lesson4.id, word: 'die Prüfung', translationEn: 'the exam', translationTr: 'sınav', exampleSentence: 'Er will die Prüfung bestehen.' },
       { lessonId: b2Unit8Lesson4.id, word: 'bestehen', translationEn: 'to pass (an exam)', translationTr: 'geçmek (sınav)', exampleSentence: 'Er will die Prüfung bestehen.' },
@@ -13845,11 +13881,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 9: Konjunktiv II der Vergangenheit (4 lessons) ---
-  const b2Unit9 = await prisma.unit.create({
+  const b2Unit9 = await seedUnit({
     data: { levelId: b2.id, order: 9, titleDe: 'Konjunktiv II der Vergangenheit', titleEn: 'Past Subjunctive II', titleTr: 'Geçmiş Zaman Konjunktiv II' },
   })
 
-  const b2Unit9Lesson1 = await prisma.lesson.create({
+  const b2Unit9Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit9.id,
       order: 1,
@@ -13862,7 +13898,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Geçmiş zaman Konjunktiv II, "hätte" ("haben"in Konjunktiv II biçimi) + Partizip II ile kurulur: "Ich hätte das Buch gelesen." (Kitabı okumuş olurdum.) Geçmişteki gerçek dışı durumları anlatır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit9Lesson1.id,
@@ -13882,14 +13918,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit9Lesson1.id, word: 'die Gelegenheit', translationEn: 'the opportunity', translationTr: 'fırsat', exampleSentence: 'Ich hätte die Gelegenheit genutzt.' },
       { lessonId: b2Unit9Lesson1.id, word: 'nutzen', translationEn: 'to use / utilize', translationTr: 'kullanmak', exampleSentence: 'Ich hätte die Gelegenheit genutzt.' },
     ],
   })
 
-  const b2Unit9Lesson2 = await prisma.lesson.create({
+  const b2Unit9Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit9.id,
       order: 2,
@@ -13902,7 +13938,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Hareket ya da durum değişikliği bildiren fiillerde (Perfekt\'te "sein" kullananlar), geçmiş zaman Konjunktiv II "wäre" + Partizip II ile kurulur: "Ich wäre gekommen, wenn ich Zeit gehabt hätte." (Vaktim olsaydı gelmiş olurdum.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit9Lesson2.id,
@@ -13928,14 +13964,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit9Lesson2.id, word: 'bleiben', translationEn: 'to stay', translationTr: 'kalmak', exampleSentence: 'Ich wäre geblieben, wenn ich Zeit gehabt hätte.' },
       { lessonId: b2Unit9Lesson2.id, word: 'wissen', translationEn: 'to know', translationTr: 'bilmek', exampleSentence: 'Er wäre früher gegangen, wenn er es gewusst hätte.' },
     ],
   })
 
-  const b2Unit9Lesson3 = await prisma.lesson.create({
+  const b2Unit9Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit9.id,
       order: 3,
@@ -13948,7 +13984,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Geçmiş zamanın gerçek dışı koşul cümleleri, hem "wenn" cümlesinin hem de ana cümlenin geçmiş zaman Konjunktiv II\'de olduğu bir yapıdan oluşur: "Wenn ich Zeit gehabt hätte, wäre ich gekommen." (Vaktim olsaydı gelmiş olurdum.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit9Lesson3.id,
@@ -13968,14 +14004,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit9Lesson3.id, word: 'reagieren', translationEn: 'to react', translationTr: 'tepki vermek', exampleSentence: 'Ich hätte anders reagiert.' },
       { lessonId: b2Unit9Lesson3.id, word: 'die Bedingung', translationEn: 'the condition', translationTr: 'koşul', exampleSentence: 'Das ist ein irrealer Bedingungssatz.' },
     ],
   })
 
-  const b2Unit9Lesson4 = await prisma.lesson.create({
+  const b2Unit9Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit9.id,
       order: 4,
@@ -13988,7 +14024,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: "hätte"/"wäre" + Partizip II ile geçmiş zaman Konjunktiv II, gerçek dışı koşul cümleleri ve geçmişe dair varsayımlar için kullanılır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit9Lesson4.id,
@@ -14008,7 +14044,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit9Lesson4.id, word: 'planen', translationEn: 'to plan', translationTr: 'planlamak', exampleSentence: 'Wir hätten anders geplant.' },
       { lessonId: b2Unit9Lesson4.id, word: 'die Vermutung', translationEn: 'the assumption', translationTr: 'varsayım', exampleSentence: 'Das ist nur eine Vermutung über die Vergangenheit.' },
@@ -14016,11 +14052,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 10: Passiversatzformen (4 lessons) ---
-  const b2Unit10 = await prisma.unit.create({
+  const b2Unit10 = await seedUnit({
     data: { levelId: b2.id, order: 10, titleDe: 'Passiversatzformen', titleEn: 'Passive Substitute Forms', titleTr: 'Edilgen Çatı Alternatifleri' },
   })
 
-  const b2Unit10Lesson1 = await prisma.lesson.create({
+  const b2Unit10Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit10.id,
       order: 1,
@@ -14033,7 +14069,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"sich lassen" + Infinitiv, bir şeyin mümkün olduğunu ifade eder, "können" ile edilgen çatıya benzer: "Das Fenster lässt sich öffnen." (Pencere açılabilir.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit10Lesson1.id,
@@ -14053,14 +14089,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit10Lesson1.id, word: 'lösen', translationEn: 'to solve', translationTr: 'çözmek', exampleSentence: 'Das Problem lässt sich lösen.' },
       { lessonId: b2Unit10Lesson1.id, word: 'die Tür', translationEn: 'the door', translationTr: 'kapı', exampleSentence: 'Die Tür lässt sich leicht öffnen.' },
     ],
   })
 
-  const b2Unit10Lesson2 = await prisma.lesson.create({
+  const b2Unit10Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit10.id,
       order: 2,
@@ -14073,7 +14109,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'man-yapısı, edilgen cümlenin yerine etken bir cümle kullanır: "Man repariert das Auto." (Araba tamir ediliyor.) "Man" belirsiz kalır ve isim verilmez.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit10Lesson2.id,
@@ -14102,14 +14138,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit10Lesson2.id, word: 'backen', translationEn: 'to bake', translationTr: 'pişirmek (fırında)', exampleSentence: 'Man backt das Brot.' },
       { lessonId: b2Unit10Lesson2.id, word: 'das Fenster', translationEn: 'the window', translationTr: 'pencere', exampleSentence: 'Man putzt die Fenster.' },
     ],
   })
 
-  const b2Unit10Lesson3 = await prisma.lesson.create({
+  const b2Unit10Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit10.id,
       order: 3,
@@ -14122,7 +14158,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"sein" + zu + Infinitiv, genellikle resmi bir üslupta olasılık ya da zorunluluk ifade eder: "Die Regeln sind zu beachten." (Kurallara uyulmalı/uyulabilir.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit10Lesson3.id,
@@ -14142,14 +14178,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit10Lesson3.id, word: 'erledigen', translationEn: 'to take care of / finish', translationTr: 'halletmek', exampleSentence: 'Die Aufgabe ist noch zu erledigen.' },
       { lessonId: b2Unit10Lesson3.id, word: 'die Aufgabe', translationEn: 'the task', translationTr: 'görev', exampleSentence: 'Ich habe heute viele Aufgaben.' },
     ],
   })
 
-  const b2Unit10Lesson4 = await prisma.lesson.create({
+  const b2Unit10Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit10.id,
       order: 4,
@@ -14162,7 +14198,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: "sich lassen" + Infinitiv, man-yapısı ve "sein" + zu + Infinitiv, genellikle "können" veya "müssen" anlamına gelen üç edilgen çatı alternatifidir: "Das lässt sich machen." = "Man kann das machen." = "Das ist zu machen." (hepsi: "Bu yapılabilir.")',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit10Lesson4.id,
@@ -14182,7 +14218,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit10Lesson4.id, word: 'die Lösung', translationEn: 'the solution', translationTr: 'çözüm', exampleSentence: 'Für jedes Problem gibt es eine Lösung.' },
       { lessonId: b2Unit10Lesson4.id, word: 'notwendig', translationEn: 'necessary', translationTr: 'gerekli', exampleSentence: 'Es ist notwendig, die Regeln zu beachten.' },
@@ -14190,11 +14226,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 11: Relativsätze mit Präpositionen (4 lessons) ---
-  const b2Unit11 = await prisma.unit.create({
+  const b2Unit11 = await seedUnit({
     data: { levelId: b2.id, order: 11, titleDe: 'Relativsätze mit Präpositionen', titleEn: 'Relative Clauses with Prepositions', titleTr: 'Edatlı İlgi Cümleleri' },
   })
 
-  const b2Unit11Lesson1 = await prisma.lesson.create({
+  const b2Unit11Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit11.id,
       order: 1,
@@ -14207,7 +14243,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'İlgi zamirinden önce bir edat varsa, hal edata göre belirlenir, ana cümledeki işleve göre değil: "Das ist das Projekt, für das ich verantwortlich bin." (Sorumlu olduğum proje bu.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit11Lesson1.id,
@@ -14228,7 +14264,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit11Lesson2 = await prisma.lesson.create({
+  const b2Unit11Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit11.id,
       order: 2,
@@ -14241,7 +14277,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"mit", "bei", "von" gibi edatlar -e halini gerektirir: "Das ist die Firma, bei der ich arbeite." "Das sind die Kollegen, mit denen ich zusammenarbeite."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit11Lesson2.id,
@@ -14262,7 +14298,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit11Lesson3 = await prisma.lesson.create({
+  const b2Unit11Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit11.id,
       order: 3,
@@ -14275,7 +14311,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'İlgi cümlesi bütün bir cümleye veya belirsiz bir kelimeye (alles, nichts, etwas) atıfta bulunuyorsa "was" kullanılır: "Er kam zu spät, was mich ärgerte." Nesnelerle ilgili edatlarda "wo(r)+edat" kullanılır: "Das Thema, worüber wir sprechen, ist wichtig."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit11Lesson3.id,
@@ -14296,7 +14332,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit11Lesson4 = await prisma.lesson.create({
+  const b2Unit11Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit11.id,
       order: 4,
@@ -14309,7 +14345,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: edattan sonraki hal, edatın kendisine göre belirlenir; nesnelerde genellikle "edat + das/die/der" yerine "wo(r)+edat" tercih edilir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit11Lesson4.id,
@@ -14336,7 +14372,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit11Lesson1.id, word: 'verantwortlich', translationEn: 'responsible', translationTr: 'sorumlu', exampleSentence: 'Ich bin für das Projekt verantwortlich.' },
       { lessonId: b2Unit11Lesson1.id, word: 'der Grund', translationEn: 'the reason', translationTr: 'sebep', exampleSentence: 'Das ist der Grund für meine Entscheidung.' },
@@ -14350,11 +14386,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 12: Redewiedergabe & formelle Stilmittel (4 lessons) ---
-  const b2Unit12 = await prisma.unit.create({
+  const b2Unit12 = await seedUnit({
     data: { levelId: b2.id, order: 12, titleDe: 'Redewiedergabe & formelle Stilmittel', titleEn: 'Reported Speech & Formal Style', titleTr: 'Aktarılan Söz ve Resmi Üslup' },
   })
 
-  const b2Unit12Lesson1 = await prisma.lesson.create({
+  const b2Unit12Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit12.id,
       order: 1,
@@ -14367,7 +14403,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Resmi metinlerde (haberler, raporlar) başkasının sözü genellikle Konjunktiv I ile aktarılır: "Die Ministerin sagte, die Reform sei notwendig."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit12Lesson1.id,
@@ -14388,7 +14424,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit12Lesson2 = await prisma.lesson.create({
+  const b2Unit12Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit12.id,
       order: 2,
@@ -14401,7 +14437,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Nominal üslup (resmi metinlerde tipik) fiil yerine isim kullanır: "nachdem die Unterlagen überprüft wurden" yerine "nach der Überprüfung der Unterlagen".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit12Lesson2.id,
@@ -14422,7 +14458,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit12Lesson3 = await prisma.lesson.create({
+  const b2Unit12Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit12.id,
       order: 3,
@@ -14435,7 +14471,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Resmi raporlar günlük konuşma yerine "des Weiteren" (ayrıca), "dementsprechend" (buna göre), "diesbezüglich" (bu konuda) gibi bağlaçlar kullanır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit12Lesson3.id,
@@ -14456,7 +14492,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit12Lesson4 = await prisma.lesson.create({
+  const b2Unit12Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit12.id,
       order: 4,
@@ -14469,7 +14505,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'B2 genel tekrarı: edilgen çatı, Konjunktiv I/II, isimleştirme, ilgi cümleleri ve resmi bağlaçlar kısa bir raporda bir araya geliyor.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit12Lesson4.id,
@@ -14490,7 +14526,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit12Lesson1.id, word: 'die Ministerin', translationEn: 'the (female) minister', translationTr: 'bakan (kadın)', exampleSentence: 'Die Ministerin hielt eine Rede.' },
       { lessonId: b2Unit12Lesson1.id, word: 'die Reform', translationEn: 'the reform', translationTr: 'reform', exampleSentence: 'Die Reform wurde beschlossen.' },
@@ -14504,11 +14540,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- B2 Unit 13: Adverbialsätze - Konzessiv & Konditional (4 lessons) ---
-  const b2Unit13 = await prisma.unit.create({
+  const b2Unit13 = await seedUnit({
     data: { levelId: b2.id, order: 13, titleDe: 'Adverbialsätze: Konzessiv & Konditional', titleEn: 'Adverbial Clauses: Concessive & Conditional', titleTr: 'Zarf Cümleleri: Karşıtlık ve Koşul' },
   })
 
-  const b2Unit13Lesson1 = await prisma.lesson.create({
+  const b2Unit13Lesson1 = await seedLesson({
     data: {
       unitId: b2Unit13.id,
       order: 1,
@@ -14521,7 +14557,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"auch wenn" ve "selbst wenn" (bile) karşıtlığı "obwohl"dan daha güçlü vurgular: "Auch wenn es regnet, gehen wir spazieren." Fiil yan cümlenin sonuna gider.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit13Lesson1.id,
@@ -14542,7 +14578,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit13Lesson2 = await prisma.lesson.create({
+  const b2Unit13Lesson2 = await seedLesson({
     data: {
       unitId: b2Unit13.id,
       order: 2,
@@ -14555,7 +14591,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"wenn" olmadan koşul cümlesi çekimli fiille başlar: "Wäre er hier, würde er helfen." (Burada olsaydı yardım ederdi.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit13Lesson2.id,
@@ -14576,7 +14612,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit13Lesson3 = await prisma.lesson.create({
+  const b2Unit13Lesson3 = await seedLesson({
     data: {
       unitId: b2Unit13.id,
       order: 3,
@@ -14589,7 +14625,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"falls" (eğer) ve "sofern" (şartıyla) daha resmi koşul cümleleri başlatır: "Falls Sie Fragen haben, melden Sie sich." "Sofern nichts anderes vereinbart wird, gilt der Standardpreis."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit13Lesson3.id,
@@ -14610,7 +14646,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const b2Unit13Lesson4 = await prisma.lesson.create({
+  const b2Unit13Lesson4 = await seedLesson({
     data: {
       unitId: b2Unit13.id,
       order: 4,
@@ -14623,7 +14659,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: "auch wenn/selbst wenn" (karşıtlık), bağlaçsız koşul cümleleri ve "falls/sofern" (resmi koşul) karşılaştırması.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: b2Unit13Lesson4.id,
@@ -14650,7 +14686,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: b2Unit13Lesson1.id, word: 'verstärken', translationEn: 'to intensify', translationTr: 'güçlendirmek', exampleSentence: 'Das verstärkt den Gegensatz.' },
       { lessonId: b2Unit13Lesson1.id, word: 'der Gegensatz', translationEn: 'the contrast', translationTr: 'zıtlık', exampleSentence: 'Es gibt einen klaren Gegensatz.' },
@@ -14664,10 +14700,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 1: Konjunktiv I Gegenwart (4 lessons) ---
-  const c1Unit1 = await prisma.unit.create({
+  const c1Unit1 = await seedUnit({
     data: { levelId: c1.id, order: 1, titleDe: 'Konjunktiv I Gegenwart', titleEn: 'Konjunktiv I Present Tense', titleTr: 'Şimdiki Zaman Konjunktiv I' },
   })
-  const c1Unit1Lesson1 = await prisma.lesson.create({
+  const c1Unit1Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit1.id,
       order: 1,
@@ -14677,7 +14713,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       explanationTr: 'Konjunktiv I, başka birinin söylediğini aktarmak için kullanılır, örn. "Er sagt, er sei müde" (Yorgun olduğunu söylüyor).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit1Lesson1.id,
@@ -14697,14 +14733,14 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       },
     ],
   })
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit1Lesson1.id, word: 'müde', translationEn: 'tired', translationTr: 'yorgun', exampleSentence: 'Er sagt, er sei müde.' },
       { lessonId: c1Unit1Lesson1.id, word: 'sagen', translationEn: 'to say', translationTr: 'söylemek', exampleSentence: 'Er sagt, er sei müde.' },
     ],
   })
 
-  const c1Unit1Lesson2 = await prisma.lesson.create({
+  const c1Unit1Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit1.id,
       order: 2,
@@ -14717,7 +14753,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Konjunktiv I şimdiki zaman kökünden türetilir: ich -e, du -est, er/sie/es -e, wir -en, ihr -et, sie -en. Sadece "sein" özel biçimlere sahiptir: ich sei, du seist, er sei.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit1Lesson2.id,
@@ -14738,7 +14774,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit1Lesson3 = await prisma.lesson.create({
+  const c1Unit1Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit1.id,
       order: 3,
@@ -14751,7 +14787,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Konjunktiv I, haber kipiyle aynıysa (örn. "sie sagen" -> "sie sagen"), yerine "würde" + Infinitiv ile yapılan ikame biçim kullanılır: "Sie sagen, sie würden kommen".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit1Lesson3.id,
@@ -14772,7 +14808,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit1Lesson4 = await prisma.lesson.create({
+  const c1Unit1Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit1.id,
       order: 4,
@@ -14785,7 +14821,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Dolaylı anlatımda Konjunktiv I, konuşmacının kendi görüşünü belirtmeden başkasının ifadesine mesafe koyar: "Der Minister erklärte, die Lage sei stabil".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit1Lesson4.id,
@@ -14812,7 +14848,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit1Lesson2.id, word: 'erklären', translationEn: 'to explain / state', translationTr: 'açıklamak', exampleSentence: 'Der Minister erklärte, die Lage sei stabil.' },
       { lessonId: c1Unit1Lesson2.id, word: 'die Lage', translationEn: 'the situation', translationTr: 'durum', exampleSentence: 'Die Lage ist stabil.' },
@@ -14824,10 +14860,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 2: Konjunktiv I Vergangenheit (4 lessons) ---
-  const c1Unit2 = await prisma.unit.create({
+  const c1Unit2 = await seedUnit({
     data: { levelId: c1.id, order: 2, titleDe: 'Konjunktiv I Vergangenheit', titleEn: 'Konjunktiv I Past Tense', titleTr: 'Geçmiş Zaman Konjunktiv I' },
   })
-  const c1Unit2Lesson1 = await prisma.lesson.create({
+  const c1Unit2Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit2.id,
       order: 1,
@@ -14840,7 +14876,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Geçmiş zaman Konjunktiv I, "habe" veya "sei" + Partizip II ile kurulur: "Er sagte, er habe das Buch gelesen." / "Sie sagte, sie sei nach Hause gegangen."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit2Lesson1.id,
@@ -14861,7 +14897,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit2Lesson2 = await prisma.lesson.create({
+  const c1Unit2Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit2.id,
       order: 2,
@@ -14874,7 +14910,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Geçmiş ifadeler aktarılırken zaman aynı kalır ama şahıs değişir: Doğrudan: "Ich habe gewartet." -> Dolaylı: "Er sagte, er habe gewartet."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit2Lesson2.id,
@@ -14895,7 +14931,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit2Lesson3 = await prisma.lesson.create({
+  const c1Unit2Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit2.id,
       order: 3,
@@ -14908,7 +14944,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Geçmiş Konjunktiv I, haber kipiyle aynıysa ("sie"/çoğul ile), onun yerine geçmiş Konjunktiv II kullanılır: "Sie sagten, sie hätten gewartet."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit2Lesson3.id,
@@ -14929,7 +14965,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit2Lesson4 = await prisma.lesson.create({
+  const c1Unit2Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit2.id,
       order: 4,
@@ -14942,7 +14978,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Haber metinlerinde geçmiş genellikle Konjunktiv I ile aktarılır: "Die Polizei teilte mit, der Verdächtige sei geflohen."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit2Lesson4.id,
@@ -14969,7 +15005,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit2Lesson1.id, word: 'ankommen', translationEn: 'to arrive', translationTr: 'varmak', exampleSentence: 'Sie sagten, sie seien angekommen.' },
       { lessonId: c1Unit2Lesson1.id, word: 'gestehen', translationEn: 'to confess', translationTr: 'itiraf etmek', exampleSentence: 'Er gestand, er habe gelogen.' },
@@ -14983,10 +15019,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 3: Erweiterte Partizipialattribute (4 lessons) ---
-  const c1Unit3 = await prisma.unit.create({
+  const c1Unit3 = await seedUnit({
     data: { levelId: c1.id, order: 3, titleDe: 'Erweiterte Partizipialattribute', titleEn: 'Extended Participial Attributes', titleTr: 'Genişletilmiş Sıfat-Fiil Yapıları' },
   })
-  const c1Unit3Lesson1 = await prisma.lesson.create({
+  const c1Unit3Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit3.id,
       order: 1,
@@ -14999,7 +15035,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Genişletilmiş Partizip I sıfatı isimden önce gelir ve ek kelimelerle genişletilebilir: "der schnell wachsende Markt" (hızla büyüyen pazar).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit3Lesson1.id,
@@ -15020,7 +15056,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit3Lesson2 = await prisma.lesson.create({
+  const c1Unit3Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit3.id,
       order: 2,
@@ -15033,7 +15069,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Partizip II de genellikle edilgen anlamla isimden önce genişletilmiş biçimde kullanılabilir: "das von der Regierung geplante Gesetz" (hükümet tarafından planlanan yasa).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit3Lesson2.id,
@@ -15054,7 +15090,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit3Lesson3 = await prisma.lesson.create({
+  const c1Unit3Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit3.id,
       order: 3,
@@ -15067,7 +15103,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Sıfat-fiil yapıları resmi metinlerde sık sık ilgi cümlelerinin yerini alır: "Die Studie, die letztes Jahr veröffentlicht wurde" -> "Die letztes Jahr veröffentlichte Studie."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit3Lesson3.id,
@@ -15091,7 +15127,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit3Lesson4 = await prisma.lesson.create({
+  const c1Unit3Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit3.id,
       order: 4,
@@ -15104,7 +15140,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Genişletilmiş sıfat-fiil yapıları gazete ve akademik metinlerde tipiktir; kısa ve bilgi yoğun cümleler kurmayı sağlar.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit3Lesson4.id,
@@ -15125,7 +15161,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit3Lesson1.id, word: 'wachsen', translationEn: 'to grow', translationTr: 'büyümek', exampleSentence: 'Der Markt wächst schnell.' },
       { lessonId: c1Unit3Lesson1.id, word: 'der Investor', translationEn: 'the investor', translationTr: 'yatırımcı', exampleSentence: 'Viele Investoren interessieren sich für den Markt.' },
@@ -15139,10 +15175,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 4: Nominalstil vs. Verbalstil (4 lessons) ---
-  const c1Unit4 = await prisma.unit.create({
+  const c1Unit4 = await seedUnit({
     data: { levelId: c1.id, order: 4, titleDe: 'Nominalstil vs. Verbalstil', titleEn: 'Nominal Style vs. Verbal Style', titleTr: 'İsim Stili ve Fiil Stili' },
   })
-  const c1Unit4Lesson1 = await prisma.lesson.create({
+  const c1Unit4Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit4.id,
       order: 1,
@@ -15155,7 +15191,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'İsim stili eylemleri fiil yerine isimle ifade eder ve daha resmi görünür: "die Untersuchung durchführen" yerine "die Durchführung der Untersuchung".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit4Lesson1.id,
@@ -15179,7 +15215,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit4Lesson2 = await prisma.lesson.create({
+  const c1Unit4Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit4.id,
       order: 2,
@@ -15192,7 +15228,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Fiiller genellikle -ung, -heit, -keit ekleriyle veya isimleşmiş mastar olarak isimleştirilir: "entscheiden" -> "die Entscheidung", "das Entscheiden".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit4Lesson2.id,
@@ -15219,7 +15255,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit4Lesson3 = await prisma.lesson.create({
+  const c1Unit4Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit4.id,
       order: 3,
@@ -15232,7 +15268,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Fiil stili daha açık ve kişiseldir; sözlü veya basit metinlerde tercih edilir: "die Durchführung der Untersuchung" -> "wir führen die Untersuchung durch".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit4Lesson3.id,
@@ -15256,7 +15292,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit4Lesson4 = await prisma.lesson.create({
+  const c1Unit4Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit4.id,
       order: 4,
@@ -15269,7 +15305,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: İsim stili resmi, akademik ve gazete metinlerinde baskındır; fiil stili daha canlıdır ve anlatı ile konuşmada tercih edilir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit4Lesson4.id,
@@ -15290,7 +15326,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit4Lesson1.id, word: 'die Untersuchung', translationEn: 'the investigation', translationTr: 'inceleme', exampleSentence: 'Die Untersuchung des Falls erfolgt morgen.' },
       { lessonId: c1Unit4Lesson1.id, word: 'erfolgen', translationEn: 'to take place', translationTr: 'gerçekleşmek', exampleSentence: 'Die Prüfung erfolgt am Montag.' },
@@ -15304,10 +15340,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 5: Komplexe Konnektoren (4 lessons) ---
-  const c1Unit5 = await prisma.unit.create({
+  const c1Unit5 = await seedUnit({
     data: { levelId: c1.id, order: 5, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
   })
-  const c1Unit5Lesson1 = await prisma.lesson.create({
+  const c1Unit5Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit5.id,
       order: 1,
@@ -15320,7 +15356,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Zumal" ek bir gerekçe vurgular (= özellikle çünkü): "Wir bleiben zu Hause, zumal es regnet." "Insofern" "bu bakımdan" anlamına gelir: "Insofern hat er recht."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit5Lesson1.id,
@@ -15341,7 +15377,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit5Lesson2 = await prisma.lesson.create({
+  const c1Unit5Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit5.id,
       order: 2,
@@ -15354,7 +15390,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Gleichwohl" ve "nichtsdestotrotz", "trotzdem" (yine de) için yüksek dil eşanlamlılarıdır: "Das Wetter war schlecht, gleichwohl fuhren wir los."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit5Lesson2.id,
@@ -15381,7 +15417,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit5Lesson3 = await prisma.lesson.create({
+  const c1Unit5Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit5.id,
       order: 3,
@@ -15394,7 +15430,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Argüman zincirlerinde "des Weiteren" (ayrıca), "nicht zuletzt" (özellikle) ve "mithin" (dolayısıyla) gibi bağlaçlar kullanılır: "Nicht zuletzt deshalb ist die Maßnahme sinnvoll."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit5Lesson3.id,
@@ -15415,7 +15451,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit5Lesson4 = await prisma.lesson.create({
+  const c1Unit5Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit5.id,
       order: 4,
@@ -15428,7 +15464,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: "Zumal", "gleichwohl" ve "mithin" gibi yüksek düzey bağlaçlar metinlere akademik ve resmi bir hava katar.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit5Lesson4.id,
@@ -15449,7 +15485,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit5Lesson1.id, word: 'die Hinsicht', translationEn: 'the respect / regard', translationTr: 'bakım', exampleSentence: 'In dieser Hinsicht hat er recht.' },
       { lessonId: c1Unit5Lesson1.id, word: 'begründen', translationEn: 'to justify / give a reason', translationTr: 'gerekçelendirmek', exampleSentence: 'Er begründet seine Entscheidung ausführlich.' },
@@ -15463,10 +15499,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 6: Modalpartikeln (4 lessons) ---
-  const c1Unit6 = await prisma.unit.create({
+  const c1Unit6 = await seedUnit({
     data: { levelId: c1.id, order: 6, titleDe: 'Modalpartikeln', titleEn: 'Modal Particles', titleTr: 'Kip Belirteçleri' },
   })
-  const c1Unit6Lesson1 = await prisma.lesson.create({
+  const c1Unit6Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit6.id,
       order: 1,
@@ -15479,7 +15515,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Doch" itiraz veya hatırlatma ifade eder: "Das weißt du doch!" "Ja" bariz bir şeyi vurgular: "Das ist ja klar!"',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit6Lesson1.id,
@@ -15500,7 +15536,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit6Lesson2 = await prisma.lesson.create({
+  const c1Unit6Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit6.id,
       order: 2,
@@ -15513,7 +15549,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Eben" ve "halt" (Güney Almanya/günlük dil) teslimiyet veya değiştirilemezlik ifade eder: "So ist es eben." / "Das ist halt so."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit6Lesson2.id,
@@ -15534,7 +15570,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit6Lesson3 = await prisma.lesson.create({
+  const c1Unit6Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit6.id,
       order: 3,
@@ -15547,7 +15583,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Mal" bir talebi yumuşatır: "Komm mal her!" "Denn" soruları daha samimi/ilgili yapar: "Wie geht es dir denn?"',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit6Lesson3.id,
@@ -15568,7 +15604,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit6Lesson4 = await prisma.lesson.create({
+  const c1Unit6Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit6.id,
       order: 4,
@@ -15581,7 +15617,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Kip belirteçleri cümlenin temel anlamını değil, konuşmacının tutumunu/ruh halini değiştirir. Konuşma dilinde tipiktirler.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit6Lesson4.id,
@@ -15608,7 +15644,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit6Lesson1.id, word: 'offensichtlich', translationEn: 'obvious', translationTr: 'bariz', exampleSentence: 'Das ist offensichtlich falsch.' },
       { lessonId: c1Unit6Lesson1.id, word: 'widersprechen', translationEn: 'to contradict', translationTr: 'itiraz etmek', exampleSentence: 'Er widerspricht mir ständig.' },
@@ -15622,10 +15658,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 7: Idiomatische Wendungen & Redewendungen (4 lessons) ---
-  const c1Unit7 = await prisma.unit.create({
+  const c1Unit7 = await seedUnit({
     data: { levelId: c1.id, order: 7, titleDe: 'Idiomatische Wendungen & Redewendungen', titleEn: 'Idiomatic Expressions & Sayings', titleTr: 'Deyimler ve Kalıp İfadeler' },
   })
-  const c1Unit7Lesson1 = await prisma.lesson.create({
+  const c1Unit7Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit7.id,
       order: 1,
@@ -15638,7 +15674,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Birçok deyim vücut parçalarını mecazi olarak kullanır: "die Nase voll haben" (bıkmak), "jemandem die Daumen drücken" (birine şans dilemek).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit7Lesson1.id,
@@ -15659,7 +15695,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit7Lesson2 = await prisma.lesson.create({
+  const c1Unit7Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit7.id,
       order: 2,
@@ -15672,7 +15708,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Die Katze im Sack kaufen" (çuvaldaki kediyi almak) kontrol etmeden bir şey satın almak demektir. "Einen Bärenhunger haben" çok aç olmak demektir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit7Lesson2.id,
@@ -15693,7 +15729,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit7Lesson3 = await prisma.lesson.create({
+  const c1Unit7Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit7.id,
       order: 3,
@@ -15706,7 +15742,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Etwas auf die lange Bank schieben" bir şeyi ertelemek demektir. "Den Nagel auf den Kopf treffen" tam isabetli bir yargıda bulunmak demektir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit7Lesson3.id,
@@ -15727,7 +15763,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit7Lesson4 = await prisma.lesson.create({
+  const c1Unit7Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit7.id,
       order: 4,
@@ -15740,7 +15776,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Deyimler sabit ifadelerdir ve kelimesi kelimesine çevrilmemelidir. Bağlam genellikle anlamı çıkarmaya yardımcı olur.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit7Lesson4.id,
@@ -15770,7 +15806,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit7Lesson1.id, word: 'die Nase', translationEn: 'the nose', translationTr: 'burun', exampleSentence: 'Ich habe die Nase voll.' },
       { lessonId: c1Unit7Lesson1.id, word: 'der Daumen', translationEn: 'the thumb', translationTr: 'başparmak', exampleSentence: 'Ich drücke dir die Daumen.' },
@@ -15784,10 +15820,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 8: Textkohärenz & Konnektoren (4 lessons) ---
-  const c1Unit8 = await prisma.unit.create({
+  const c1Unit8 = await seedUnit({
     data: { levelId: c1.id, order: 8, titleDe: 'Textkohärenz & Konnektoren', titleEn: 'Text Coherence & Connectors', titleTr: 'Metin Bütünlüğü ve Bağlaçlar' },
   })
-  const c1Unit8Lesson1 = await prisma.lesson.create({
+  const c1Unit8Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit8.id,
       order: 1,
@@ -15800,7 +15836,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Anaforlar daha önce belirtilen bir şeye işaret eder ve tekrarı önler: zamirler ("dieser", "jener"), eşanlamlılar veya üst kavramlar ("das Tier", "der Hund" yerine).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit8Lesson1.id,
@@ -15824,7 +15860,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit8Lesson2 = await prisma.lesson.create({
+  const c1Unit8Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit8.id,
       order: 2,
@@ -15837,7 +15873,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Yapılandırıcı bağlaçlar metni düzenler: "zunächst" (önce), "im Folgenden" (aşağıda), "abschließend" (sonuç olarak) bir argümanın başını, ortasını ve sonunu işaretler.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit8Lesson2.id,
@@ -15864,7 +15900,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit8Lesson3 = await prisma.lesson.create({
+  const c1Unit8Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit8.id,
       order: 3,
@@ -15877,7 +15913,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Eksiltme (ellipse) tekrarlanan bir öğeyi atlar ("Er kam später, sie [kam] früher."), yerine koyma (substitution) onu başka bir kelimeyle değiştirir ("Ich nehme den roten Wagen; den blauen [Wagen] nicht.").',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit8Lesson3.id,
@@ -15898,7 +15934,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit8Lesson4 = await prisma.lesson.create({
+  const c1Unit8Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit8.id,
       order: 4,
@@ -15911,7 +15947,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Tutarlı metinler cümleleri mantıklı ve akıcı bağlamak için anafor, yapı bağlaçları ve bağdaşıklık araçları kullanır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit8Lesson4.id,
@@ -15932,7 +15968,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit8Lesson1.id, word: 'aufgeregt', translationEn: 'excited / agitated', translationTr: 'heyecanlı', exampleSentence: 'Das Tier war aufgeregt.' },
       { lessonId: c1Unit8Lesson1.id, word: 'der Oberbegriff', translationEn: 'the hypernym / umbrella term', translationTr: 'üst kavram', exampleSentence: '"Das Tier" ist ein Oberbegriff für "der Hund".' },
@@ -15946,10 +15982,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 9: Irreale Bedingungssätze (4 lessons) ---
-  const c1Unit9 = await prisma.unit.create({
+  const c1Unit9 = await seedUnit({
     data: { levelId: c1.id, order: 9, titleDe: 'Irreale Bedingungssätze', titleEn: 'Unreal Conditional Clauses', titleTr: 'Gerçek Dışı Koşul Cümleleri' },
   })
-  const c1Unit9Lesson1 = await prisma.lesson.create({
+  const c1Unit9Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit9.id,
       order: 1,
@@ -15962,7 +15998,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Geçmişteki gerçek dışı koşullar geçmiş Konjunktiv II ile kurulur (hätte/wäre + Partizip II): "Wenn ich das gewusst hätte, wäre ich nicht gekommen."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit9Lesson1.id,
@@ -15983,7 +16019,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit9Lesson2 = await prisma.lesson.create({
+  const c1Unit9Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit9.id,
       order: 2,
@@ -15996,7 +16032,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Wenn" olmadan koşul cümlesi fiille başlar: "Wäre er hier, würde er helfen." (= "Wenn er hier wäre, würde er helfen.")',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit9Lesson2.id,
@@ -16017,7 +16053,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit9Lesson3 = await prisma.lesson.create({
+  const c1Unit9Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit9.id,
       order: 3,
@@ -16030,7 +16066,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Wenn nur" veya "hätte ich nur" ile kurulan gerçek dışı dilekler pişmanlık ifade eder: "Wenn ich nur mehr Zeit hätte!" "Hätte ich das nur gewusst!"',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit9Lesson3.id,
@@ -16051,7 +16087,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit9Lesson4 = await prisma.lesson.create({
+  const c1Unit9Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit9.id,
       order: 4,
@@ -16064,7 +16100,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Geçmişe yönelik gerçek dışı koşul cümleleri gerçekleşmemiş durumları anlatır, genellikle pişmanlık veya tahminle bağlantılıdır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit9Lesson4.id,
@@ -16091,7 +16127,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit9Lesson1.id, word: 'erreichen', translationEn: 'to reach / catch (e.g. a train)', translationTr: 'yetişmek', exampleSentence: 'Er hätte den Zug erreicht.' },
       { lessonId: c1Unit9Lesson1.id, word: 'losfahren', translationEn: 'to set off / depart', translationTr: 'yola çıkmak', exampleSentence: 'Wir sind früh losgefahren.' },
@@ -16105,10 +16141,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 10: Feste Präpositionalphrasen (4 lessons) ---
-  const c1Unit10 = await prisma.unit.create({
+  const c1Unit10 = await seedUnit({
     data: { levelId: c1.id, order: 10, titleDe: 'Feste Präpositionalphrasen', titleEn: 'Fixed Prepositional Phrases', titleTr: 'Sabit Edat Öbekleri' },
   })
-  const c1Unit10Lesson1 = await prisma.lesson.create({
+  const c1Unit10Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit10.id,
       order: 1,
@@ -16121,7 +16157,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Birçok fiil sabit edat gerektirir: "sich freuen auf" (gelecekle ilgili), "sich freuen über" (olmuş bir şeyle ilgili), "sich ärgern über".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit10Lesson1.id,
@@ -16142,7 +16178,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit10Lesson2 = await prisma.lesson.create({
+  const c1Unit10Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit10.id,
       order: 2,
@@ -16155,7 +16191,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Denken an" (-i hali) birini/bir şeyi düşünmek demektir. "Sich sehnen nach" (-e hali) özlem ifade eder.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit10Lesson2.id,
@@ -16176,7 +16212,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit10Lesson3 = await prisma.lesson.create({
+  const c1Unit10Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit10.id,
       order: 3,
@@ -16189,7 +16225,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Nesneler için (kişiler değil) zamirsi zarflar kullanılır: "sich freuen auf" -> "sich darauf freuen"; soru: "Worauf freust du dich?"',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit10Lesson3.id,
@@ -16210,7 +16246,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit10Lesson4 = await prisma.lesson.create({
+  const c1Unit10Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit10.id,
       order: 4,
@@ -16223,7 +16259,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Sabit fiil-edat kombinasyonları mantıksal olarak çıkarılamayabileceğinden fiille birlikte ezberlenmelidir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit10Lesson4.id,
@@ -16250,7 +16286,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit10Lesson1.id, word: 'sich ärgern', translationEn: 'to be annoyed', translationTr: 'sinirlenmek', exampleSentence: 'Er ärgert sich über den Fehler.' },
       { lessonId: c1Unit10Lesson1.id, word: 'der Urlaub', translationEn: 'the vacation', translationTr: 'tatil', exampleSentence: 'Ich freue mich auf den Urlaub.' },
@@ -16264,10 +16300,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 11: Stilmittel - Ironie & Understatement (4 lessons) ---
-  const c1Unit11 = await prisma.unit.create({
+  const c1Unit11 = await seedUnit({
     data: { levelId: c1.id, order: 11, titleDe: 'Stilmittel: Ironie & Understatement', titleEn: 'Stylistic Devices: Irony & Understatement', titleTr: 'Üslup Araçları: İroni ve Az Söyleme' },
   })
-  const c1Unit11Lesson1 = await prisma.lesson.create({
+  const c1Unit11Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit11.id,
       order: 1,
@@ -16280,7 +16316,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'İroni, kastedilenin tersini söyler, genellikle özel bir tonlamayla: "Toller Regen heute!" (kötü hava için söylenir, aslında olumsuz anlamdadır).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit11Lesson1.id,
@@ -16301,7 +16337,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit11Lesson2 = await prisma.lesson.create({
+  const c1Unit11Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit11.id,
       order: 2,
@@ -16314,7 +16350,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Az söyleme (understatement) bilinçli olarak küçümser: "Das war nicht schlecht" (çok iyi bir şey için) veya "ein kleines Problem" (bir felaket için).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit11Lesson2.id,
@@ -16335,7 +16371,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit11Lesson3 = await prisma.lesson.create({
+  const c1Unit11Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit11.id,
       order: 3,
@@ -16348,7 +16384,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Retorik sorular cevap beklemez, bir ifadeyi vurgular: "Ist das nicht offensichtlich?" (= Bu bariz.)',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit11Lesson3.id,
@@ -16369,7 +16405,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit11Lesson4 = await prisma.lesson.create({
+  const c1Unit11Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit11.id,
       order: 4,
@@ -16382,7 +16418,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: İroni, az söyleme ve retorik sorular anlamı dolaylı ve çoğunlukla mizahi biçimde ileten üslup araçlarıdır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit11Lesson4.id,
@@ -16409,7 +16445,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit11Lesson1.id, word: 'der Tonfall', translationEn: 'the tone of voice', translationTr: 'ses tonu', exampleSentence: 'Der Tonfall zeigt, dass es ironisch gemeint ist.' },
       { lessonId: c1Unit11Lesson1.id, word: 'strömend', translationEn: 'pouring (rain)', translationTr: 'bardaktan boşanırcasına', exampleSentence: 'Es regnet strömend.' },
@@ -16423,10 +16459,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 12: Fachsprache & Register (4 lessons) ---
-  const c1Unit12 = await prisma.unit.create({
+  const c1Unit12 = await seedUnit({
     data: { levelId: c1.id, order: 12, titleDe: 'Fachsprache & Register', titleEn: 'Technical Language & Register', titleTr: 'Uzmanlık Dili ve Dil Düzeyi' },
   })
-  const c1Unit12Lesson1 = await prisma.lesson.create({
+  const c1Unit12Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit12.id,
       order: 1,
@@ -16439,7 +16475,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Dil düzeyi (register), resmiyet seviyesini tanımlar: resmi ("Ich bitte um Ihre Rückmeldung") ile gayriresmi ("Meld dich mal!"). Kelime seçimi, cümle yapısı ve hitap farklılık gösterir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit12Lesson1.id,
@@ -16460,7 +16496,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit12Lesson2 = await prisma.lesson.create({
+  const c1Unit12Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit12.id,
       order: 2,
@@ -16473,7 +16509,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Bilimsel uzmanlık dili isim stili, edilgen çatı ve teknik terimler kullanır: "Die Hypothese wurde anhand empirischer Daten überprüft."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit12Lesson2.id,
@@ -16494,7 +16530,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit12Lesson3 = await prisma.lesson.create({
+  const c1Unit12Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit12.id,
       order: 3,
@@ -16507,7 +16543,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'İyi bir dil kullanımı, dil düzeyini duruma göre ayarlar: patrona e-posta resmi, arkadaşlara mesaj gayriresmidir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit12Lesson3.id,
@@ -16528,7 +16564,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit12Lesson4 = await prisma.lesson.create({
+  const c1Unit12Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit12.id,
       order: 4,
@@ -16541,7 +16577,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: Doğru dil düzeyini seçmek dil becerisini gösterir ve farklı bağlamlarda uygun iletişim için önemlidir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit12Lesson4.id,
@@ -16568,7 +16604,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit12Lesson1.id, word: 'die Rückmeldung', translationEn: 'the response / feedback', translationTr: 'geri bildirim', exampleSentence: 'Ich bitte um Ihre Rückmeldung.' },
       { lessonId: c1Unit12Lesson1.id, word: 'die Anrede', translationEn: 'the form of address', translationTr: 'hitap', exampleSentence: 'Die Anrede "Sie" ist formell.' },
@@ -16582,10 +16618,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C1 Unit 13: Wiederholung - Wissenschaft & Diskussion (4 lessons) ---
-  const c1Unit13 = await prisma.unit.create({
+  const c1Unit13 = await seedUnit({
     data: { levelId: c1.id, order: 13, titleDe: 'Wiederholung: Wissenschaft & Diskussion', titleEn: 'Review: Science & Discussion', titleTr: 'Tekrar: Bilim ve Tartışma' },
   })
-  const c1Unit13Lesson1 = await prisma.lesson.create({
+  const c1Unit13Lesson1 = await seedLesson({
     data: {
       unitId: c1Unit13.id,
       order: 1,
@@ -16598,7 +16634,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Bilimsel tartışmalarda başkalarının tezlerini tarafsızca aktarmak için genellikle Konjunktiv I kullanılır: "Der Autor argumentiert, die Studie sei nicht repräsentativ."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit13Lesson1.id,
@@ -16619,7 +16655,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit13Lesson2 = await prisma.lesson.create({
+  const c1Unit13Lesson2 = await seedLesson({
     data: {
       unitId: c1Unit13.id,
       order: 2,
@@ -16632,7 +16668,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tartışma katkıları genellikle hassasiyet için isim stili kullanır: "Man muss weiter untersuchen" yerine "Die Durchführung weiterer Untersuchungen ist notwendig".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit13Lesson2.id,
@@ -16656,7 +16692,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit13Lesson3 = await prisma.lesson.create({
+  const c1Unit13Lesson3 = await seedLesson({
     data: {
       unitId: c1Unit13.id,
       order: 3,
@@ -16669,7 +16705,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'İkna edici bir argüman bağlaçları birleştirir: "Zumal die Datenlage unklar ist, sollte man, gleichwohl der Zeitdruck besteht, weitere Studien abwarten."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit13Lesson3.id,
@@ -16690,7 +16726,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c1Unit13Lesson4 = await prisma.lesson.create({
+  const c1Unit13Lesson4 = await seedLesson({
     data: {
       unitId: c1Unit13.id,
       order: 4,
@@ -16703,7 +16739,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Genel tekrar: Konjunktiv I/II, sıfat-fiil yapıları, isim stili, karmaşık bağlaçlar ve kip belirteçleri, C1 düzeyinde yetkin bilimsel ve resmi iletişimin temelini oluşturur.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c1Unit13Lesson4.id,
@@ -16730,7 +16766,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c1Unit13Lesson1.id, word: 'repräsentativ', translationEn: 'representative', translationTr: 'temsili', exampleSentence: 'Die Studie ist nicht repräsentativ.' },
       { lessonId: c1Unit13Lesson1.id, word: 'argumentieren', translationEn: 'to argue', translationTr: 'savunmak', exampleSentence: 'Der Autor argumentiert überzeugend.' },
@@ -16744,10 +16780,10 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2: Komplexe Konnektoren (1 sample lesson) ---
-  const c2Unit = await prisma.unit.create({
+  const c2Unit = await seedUnit({
     data: { levelId: c2.id, order: 1, titleDe: 'Komplexe Konnektoren', titleEn: 'Complex Connectors', titleTr: 'Karmaşık Bağlaçlar' },
   })
-  const c2Lesson = await prisma.lesson.create({
+  const c2Lesson = await seedLesson({
     data: {
       unitId: c2Unit.id,
       order: 1,
@@ -16757,7 +16793,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       explanationTr: '"Dennoch" (yine de) gibi ileri düzey bağlaçlar zıtlık ifade eder ve cümle başında, fiilden önce yer alır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Lesson.id,
@@ -16781,7 +16817,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit1Lesson2 = await prisma.lesson.create({
+  const c2Unit1Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit.id,
       order: 2,
@@ -16794,7 +16830,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Nichtsdestotrotz" (yine de) ve "insofern als" (şu ölçüde ki) resmi metinlerde ve konuşmalarda kullanılan üst düzey bağlaçlardır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit1Lesson2.id,
@@ -16818,7 +16854,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit1Lesson3 = await prisma.lesson.create({
+  const c2Unit1Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit.id,
       order: 3,
@@ -16831,7 +16867,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Dessen ungeachtet" (bundan bağımsız olarak) çok resmi bir dil düzeyinde zıtlık başlatır; idari veya teknik metinlerde sık görülür.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit1Lesson3.id,
@@ -16855,7 +16891,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit1Lesson4 = await prisma.lesson.create({
+  const c2Unit1Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit.id,
       order: 4,
@@ -16868,7 +16904,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: "dennoch", "nichtsdestotrotz", "insofern als" ve "dessen ungeachtet" hepsi zıtlık veya sınırlama ifade eder, ancak resmiyet derecesi farklıdır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit1Lesson4.id,
@@ -16898,7 +16934,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       {
         lessonId: a1Lesson1.id,
@@ -16996,11 +17032,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 2: Gehobener Nominalstil (4 lessons) ---
-  const c2Unit2 = await prisma.unit.create({
+  const c2Unit2 = await seedUnit({
     data: { levelId: c2.id, order: 2, titleDe: 'Gehobener Nominalstil', titleEn: 'Elevated Nominal Style', titleTr: 'Üst Düzey İsim Stili' },
   })
 
-  const c2Unit2Lesson1 = await prisma.lesson.create({
+  const c2Unit2Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit2.id,
       order: 1,
@@ -17013,7 +17049,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Üst düzey isim stilinde fiiller isimleşir: "entscheiden" (karar vermek) -> "die Entscheidung" (karar), "durchführen" (yürütmek) -> "die Durchführung" (yürütme). Bu, fiil cümlelerinden daha resmi görünür.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit2Lesson1.id,
@@ -17034,7 +17070,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit2Lesson2 = await prisma.lesson.create({
+  const c2Unit2Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit2.id,
       order: 2,
@@ -17047,7 +17083,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Zur Anwendung bringen" (uygulamak yerine) veya "in Betracht ziehen" (düşünmek yerine) gibi destek fiil yapıları idari ve teknik dil için tipiktir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit2Lesson2.id,
@@ -17068,7 +17104,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit2Lesson3 = await prisma.lesson.create({
+  const c2Unit2Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit2.id,
       order: 3,
@@ -17081,7 +17117,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Üst düzey isim stilinde birden çok tamlayan hali art arda gelir: "die Erhöhung der Effizienz der Produktion des Unternehmens". Resmidir ama aşırı kullanımda okunması zordur.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit2Lesson3.id,
@@ -17102,7 +17138,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit2Lesson4 = await prisma.lesson.create({
+  const c2Unit2Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit2.id,
       order: 4,
@@ -17115,7 +17151,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: fiil stili daha canlı ve anlaşılırdır, isim stili daha resmi ve mesafeli görünür. İyi metinler ikisini bilinçli olarak karıştırır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit2Lesson4.id,
@@ -17136,7 +17172,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit2Lesson1.id, word: 'die Entscheidung', translationEn: 'the decision', translationTr: 'karar', exampleSentence: 'Die Entscheidung fiel schnell.' },
       { lessonId: c2Unit2Lesson1.id, word: 'die Durchführung', translationEn: 'the execution/carrying-out', translationTr: 'yürütme', exampleSentence: 'Die Durchführung dauerte drei Monate.' },
@@ -17150,11 +17186,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 3: Rhetorische Mittel (4 lessons) ---
-  const c2Unit3 = await prisma.unit.create({
+  const c2Unit3 = await seedUnit({
     data: { levelId: c2.id, order: 3, titleDe: 'Rhetorische Mittel', titleEn: 'Rhetorical Devices', titleTr: 'Retorik Araçlar' },
   })
 
-  const c2Unit3Lesson1 = await prisma.lesson.create({
+  const c2Unit3Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit3.id,
       order: 1,
@@ -17167,7 +17203,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Metafor, "gibi" olmadan anlamı mecazi olarak aktarır: "Die Zeit ist ein Dieb" (Zaman bir hırsızdır). Benzetme "wie" (gibi) kullanır: "Er ist schnell wie der Wind".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit3Lesson1.id,
@@ -17188,7 +17224,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit3Lesson2 = await prisma.lesson.create({
+  const c2Unit3Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit3.id,
       order: 2,
@@ -17201,7 +17237,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Anafor, vurgu yaratmak için ardışık cümlelerin başında bir kelime veya öbeği tekrarlar: "Wir werden kämpfen. Wir werden gewinnen. Wir werden nicht aufgeben."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit3Lesson2.id,
@@ -17222,7 +17258,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit3Lesson3 = await prisma.lesson.create({
+  const c2Unit3Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit3.id,
       order: 3,
@@ -17235,7 +17271,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Retorik soru, cevap beklemez; bir ifadeyi vurgular: "Ist das nicht offensichtlich?" (Bu açık değil mi?) "Bu açıktır" anlamına gelir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit3Lesson3.id,
@@ -17256,7 +17292,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit3Lesson4 = await prisma.lesson.create({
+  const c2Unit3Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit3.id,
       order: 4,
@@ -17269,7 +17305,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: metafor, benzetme, anafor ve retorik soru, konuşmaları ve metinleri daha ikna edici ve akılda kalıcı yapan üslup araçlarıdır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit3Lesson4.id,
@@ -17299,7 +17335,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit3Lesson1.id, word: 'die Metapher', translationEn: 'the metaphor', translationTr: 'metafor', exampleSentence: 'Die Zeit ist ein Dieb ist eine Metapher.' },
       { lessonId: c2Unit3Lesson1.id, word: 'der Vergleich', translationEn: 'the comparison/simile', translationTr: 'benzetme', exampleSentence: 'Er benutzt oft Vergleiche.' },
@@ -17313,11 +17349,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 4: Sprachliche Nuancen: Sarkasmus & Übertreibung (4 lessons) ---
-  const c2Unit4 = await prisma.unit.create({
+  const c2Unit4 = await seedUnit({
     data: { levelId: c2.id, order: 4, titleDe: 'Sprachliche Nuancen: Sarkasmus & Übertreibung', titleEn: 'Linguistic Nuance: Sarcasm & Hyperbole', titleTr: 'Dilsel İncelik: İğneleme ve Abartma' },
   })
 
-  const c2Unit4Lesson1 = await prisma.lesson.create({
+  const c2Unit4Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit4.id,
       order: 1,
@@ -17330,7 +17366,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Alaycılık, kastedilenin tersini söyler, genellikle abartılı vurguyla: "Na toll, jetzt ist der Zug auch noch weg!" (Harika, şimdi de tren gitti! — anlam: bu can sıkıcı).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit4Lesson1.id,
@@ -17351,7 +17387,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit4Lesson2 = await prisma.lesson.create({
+  const c2Unit4Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit4.id,
       order: 2,
@@ -17364,7 +17400,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Abartma (hiperbol), etki yaratmak için bilinçli olarak abartır: "Ich habe dir das schon tausendmal gesagt!" gerçek anlamda kastedilmez.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit4Lesson2.id,
@@ -17385,7 +17421,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit4Lesson3 = await prisma.lesson.create({
+  const c2Unit4Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit4.id,
       order: 3,
@@ -17398,7 +17434,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Yazıda alaycılığı fark etmek genellikle zordur; bir kelimenin etrafındaki tırnak işaretleri veya "wie zu erwarten" (beklendiği gibi) gibi ifadeler ironik mesafeyi işaret edebilir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit4Lesson3.id,
@@ -17419,7 +17455,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit4Lesson4 = await prisma.lesson.create({
+  const c2Unit4Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit4.id,
       order: 4,
@@ -17432,7 +17468,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: alaycılık tersini kasteder, abartma bilinçli olarak büyütür — ikisi de retorik etki yaratır ama işlevleri farklıdır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit4Lesson4.id,
@@ -17461,7 +17497,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit4Lesson1.id, word: 'der Sarkasmus', translationEn: 'sarcasm', translationTr: 'iğneleme', exampleSentence: 'Sein Sarkasmus war unüberhörbar.' },
       { lessonId: c2Unit4Lesson1.id, word: 'ärgerlich', translationEn: 'annoying', translationTr: 'sinir bozucu', exampleSentence: 'Das ist wirklich ärgerlich.' },
@@ -17475,11 +17511,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 5: Fach- und Sondersprachen (4 lessons) ---
-  const c2Unit5 = await prisma.unit.create({
+  const c2Unit5 = await seedUnit({
     data: { levelId: c2.id, order: 5, titleDe: 'Fach- und Sondersprachen', titleEn: 'Technical & Specialized Registers', titleTr: 'Uzmanlık ve Özel Diller' },
   })
 
-  const c2Unit5Lesson1 = await prisma.lesson.create({
+  const c2Unit5Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit5.id,
       order: 1,
@@ -17492,7 +17528,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Hukuk dili "unbeschadet" (zarar vermeksizin), "im Sinne des Gesetzes" (kanun anlamında), "vorbehaltlich" (şartıyla) gibi sabit ifadeler kullanır — genellikle isim stili ve edilgen çatıyla.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit5Lesson1.id,
@@ -17513,7 +17549,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit5Lesson2 = await prisma.lesson.create({
+  const c2Unit5Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit5.id,
       order: 2,
@@ -17526,7 +17562,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tıp dili genellikle Yunanca-Latince teknik terimler kullanır: "die Diagnose" (tanı), "die Therapie" (tedavi), "die Symptomatik" (semptomlar). Doktorlar bunları hastalar için günlük dile çevirir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit5Lesson2.id,
@@ -17547,7 +17583,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit5Lesson3 = await prisma.lesson.create({
+  const c2Unit5Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit5.id,
       order: 3,
@@ -17560,7 +17596,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Bürokratik dil "Antrag auf..." (başvuru...), "gemäß §..." (madde ...\'e göre), "hiermit wird bescheinigt, dass..." (bununla belgelenmektedir ki...) gibi ifadeler kullanır. Bunlar oldukça kalıplaşmıştır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit5Lesson3.id,
@@ -17581,7 +17617,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit5Lesson4 = await prisma.lesson.create({
+  const c2Unit5Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit5.id,
       order: 4,
@@ -17594,7 +17630,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: her uzmanlık dili (hukuki, tıbbi, bürokratik) kendine özgü sabit ifadelere ve teknik terimlere sahiptir; bunları sıradan kişiler genellikle hemen anlamaz.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit5Lesson4.id,
@@ -17624,7 +17660,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit5Lesson1.id, word: 'vorbehaltlich', translationEn: 'subject to', translationTr: 'şartıyla', exampleSentence: 'Vorbehaltlich der Genehmigung tritt der Vertrag in Kraft.' },
       { lessonId: c2Unit5Lesson1.id, word: 'unbeschadet', translationEn: 'without prejudice to', translationTr: 'zarar vermeksizin', exampleSentence: 'Unbeschadet dieser Regelung gilt das Gesetz weiter.' },
@@ -17638,11 +17674,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 6: Archaismen & gehobenes Vokabular (4 lessons) ---
-  const c2Unit6 = await prisma.unit.create({
+  const c2Unit6 = await seedUnit({
     data: { levelId: c2.id, order: 6, titleDe: 'Archaismen & gehobenes Vokabular', titleEn: 'Archaisms & Elevated Vocabulary', titleTr: 'Arkaizmler ve Üst Düzey Kelime Dağarcığı' },
   })
 
-  const c2Unit6Lesson1 = await prisma.lesson.create({
+  const c2Unit6Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit6.id,
       order: 1,
@@ -17655,7 +17691,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Arkaizmler, hâlâ edebiyatta veya törensel metinlerde bulunan eski kelimelerdir: "vonnöten" ("nötig" = gerekli yerine), "alsdann" ("dann" = sonra yerine).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit6Lesson1.id,
@@ -17676,7 +17712,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit6Lesson2 = await prisma.lesson.create({
+  const c2Unit6Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit6.id,
       order: 2,
@@ -17689,7 +17725,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Erhaben" (yüce, "toll" = harika yerine), "vortrefflich" (mükemmel, "sehr gut" yerine), "obsolet" (eskimiş, "veraltet" yerine) gibi üst düzey kelimeler metinlere edebi bir ton katar.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit6Lesson2.id,
@@ -17710,7 +17746,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit6Lesson3 = await prisma.lesson.create({
+  const c2Unit6Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit6.id,
       order: 3,
@@ -17723,7 +17759,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Eski metinlerde "ward" ("wurde" = oldu yerine) veya "dass" olmadan devrik "spricht er" gibi biçimler bulunur. Bunlar bugün şiirsel veya törensel görünür.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit6Lesson3.id,
@@ -17744,7 +17780,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit6Lesson4 = await prisma.lesson.create({
+  const c2Unit6Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit6.id,
       order: 4,
@@ -17757,7 +17793,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: arkaizmler ve üst düzey kelimeler metinlere edebi veya törensel bir karakter katar, ancak günlük konuşmada alışılmadıktır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit6Lesson4.id,
@@ -17784,7 +17820,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit6Lesson1.id, word: 'vonnöten', translationEn: 'necessary (archaic)', translationTr: 'gerekli (eski)', exampleSentence: 'Geduld ist hier vonnöten.' },
       { lessonId: c2Unit6Lesson1.id, word: 'alsdann', translationEn: 'then (archaic)', translationTr: 'sonra (eski)', exampleSentence: 'Alsdann trat er vor die Versammlung.' },
@@ -17798,11 +17834,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 7: Feinheiten des Konjunktivs (4 lessons) ---
-  const c2Unit7 = await prisma.unit.create({
+  const c2Unit7 = await seedUnit({
     data: { levelId: c2.id, order: 7, titleDe: 'Feinheiten des Konjunktivs', titleEn: 'Subtleties of the Subjunctive', titleTr: 'Konjunktif Kipin İncelikleri' },
   })
 
-  const c2Unit7Lesson1 = await prisma.lesson.create({
+  const c2Unit7Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit7.id,
       order: 1,
@@ -17815,7 +17851,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Özenli yazı dilinde Konjunktiv I nötr aktarımı işaretler ("er sagt, er komme"), Konjunktiv II ise genellikle konuşmacının iddiaya şüpheyle yaklaştığını ima eder ("er sagt, er käme" daha şüpheci gelir).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit7Lesson1.id,
@@ -17836,7 +17872,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit7Lesson2 = await prisma.lesson.create({
+  const c2Unit7Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit7.id,
       order: 2,
@@ -17849,7 +17885,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Konjunktiv II, rica ve önerileri daha kibar yapar: "Können Sie mir helfen?" yerine "Könnten Sie mir helfen?" daha mesafeli ve resmi gelir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit7Lesson2.id,
@@ -17870,7 +17906,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit7Lesson3 = await prisma.lesson.create({
+  const c2Unit7Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit7.id,
       order: 3,
@@ -17883,7 +17919,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Akademik metinlerde Konjunktiv II hipotezlerde temkinliliği ifade eder: "Man könnte annehmen, dass..." ifadesi "Man nimmt an, dass..." ifadesine göre daha çekingen gelir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit7Lesson3.id,
@@ -17904,7 +17940,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit7Lesson4 = await prisma.lesson.create({
+  const c2Unit7Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit7.id,
       order: 4,
@@ -17917,7 +17953,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: nötr aktarım için Konjunktiv I, kibarlık, şüphe veya temkinli hipotezler için Konjunktiv II — seçim tonu güçlü şekilde etkiler.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit7Lesson4.id,
@@ -17947,7 +17983,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit7Lesson1.id, word: 'die Redewiedergabe', translationEn: 'reported speech', translationTr: 'aktarım', exampleSentence: 'Die Redewiedergabe folgt festen Regeln.' },
       { lessonId: c2Unit7Lesson1.id, word: 'der Zweifel', translationEn: 'the doubt', translationTr: 'şüphe', exampleSentence: 'Er äußerte Zweifel an der Aussage.' },
@@ -17961,11 +17997,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 8: Textsortenspezifische Stile (4 lessons) ---
-  const c2Unit8 = await prisma.unit.create({
+  const c2Unit8 = await seedUnit({
     data: { levelId: c2.id, order: 8, titleDe: 'Textsortenspezifische Stile', titleEn: 'Genre-Specific Styles', titleTr: 'Metin Türüne Özgü Üsluplar' },
   })
 
-  const c2Unit8Lesson1 = await prisma.lesson.create({
+  const c2Unit8Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit8.id,
       order: 1,
@@ -17978,7 +18014,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Bir deneme kişisel ve düşünsel şekilde tartışır, genellikle birinci tekil şahısla, retorik sorular ve keskin ifadelerle.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit8Lesson1.id,
@@ -17999,7 +18035,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit8Lesson2 = await prisma.lesson.create({
+  const c2Unit8Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit8.id,
       order: 2,
@@ -18012,7 +18048,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Bir rapor nesnel, kronolojik ve kişisiz olur, genellikle edilgen çatı veya "man" ile: "Zunächst wurde... Anschließend wurde...".',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit8Lesson2.id,
@@ -18033,7 +18069,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit8Lesson3 = await prisma.lesson.create({
+  const c2Unit8Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit8.id,
       order: 3,
@@ -18046,7 +18082,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Bir eleştiri, bir eseri (kitap, film) argümanlarla ve net bir tavırla değerlendirir, genellikle bir öneriyle sona erer.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit8Lesson3.id,
@@ -18067,7 +18103,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit8Lesson4 = await prisma.lesson.create({
+  const c2Unit8Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit8.id,
       order: 4,
@@ -18080,7 +18116,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: deneme (kişisel), rapor (nesnel-kronolojik) ve eleştiri (değerlendirici) her biri farklı bir üslup ve ton gerektirir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit8Lesson4.id,
@@ -18107,7 +18143,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit8Lesson1.id, word: 'reflektierend', translationEn: 'reflective', translationTr: 'düşünsel', exampleSentence: 'Der Essay ist sehr reflektierend geschrieben.' },
       { lessonId: c2Unit8Lesson1.id, word: 'pointiert', translationEn: 'pointed / sharp', translationTr: 'keskin', exampleSentence: 'Er formulierte seine These pointiert.' },
@@ -18121,11 +18157,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 9: Sprachvarietäten & Dialekte (4 lessons) ---
-  const c2Unit9 = await prisma.unit.create({
+  const c2Unit9 = await seedUnit({
     data: { levelId: c2.id, order: 9, titleDe: 'Sprachvarietäten & Dialekte', titleEn: 'Language Varieties & Dialects', titleTr: 'Dil Çeşitleri ve Lehçeler' },
   })
 
-  const c2Unit9Lesson1 = await prisma.lesson.create({
+  const c2Unit9Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit9.id,
       order: 1,
@@ -18138,7 +18174,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Standart Almanca, standart dilin kurallarını izler; günlük dil "haste" (hast du) veya "isses" (ist es) gibi kısaltmalara izin verir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit9Lesson1.id,
@@ -18159,7 +18195,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit9Lesson2 = await prisma.lesson.create({
+  const c2Unit9Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit9.id,
       order: 2,
@@ -18172,7 +18208,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Almanca konuşulan ülkelerde bölgesel farklılıklar vardır: "Sonnabend" (kuzey Almanya) - "Samstag" (güney Almanya) "cumartesi" için, "Sackerl" (Avusturya) "Tüte" (torba) için.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit9Lesson2.id,
@@ -18193,7 +18229,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit9Lesson3 = await prisma.lesson.create({
+  const c2Unit9Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit9.id,
       order: 3,
@@ -18206,7 +18242,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Sosyolektler gruba özgü dil biçimleridir; gençlik dili hızla değişir ve "cringe" veya "flexen" gibi İngilizce kökenli kelimeleri sık kullanır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit9Lesson3.id,
@@ -18227,7 +18263,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit9Lesson4 = await prisma.lesson.create({
+  const c2Unit9Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit9.id,
       order: 4,
@@ -18240,7 +18276,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: standart dil, günlük dil, bölgesel çeşitler ve sosyolektler bir arada var olur ve duruma göre seçilir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit9Lesson4.id,
@@ -18267,7 +18303,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit9Lesson1.id, word: 'die Umgangssprache', translationEn: 'colloquial speech', translationTr: 'günlük dil', exampleSentence: 'In der Umgangssprache sagt man oft "haste".' },
       { lessonId: c2Unit9Lesson1.id, word: 'die Verkürzung', translationEn: 'the contraction', translationTr: 'kısaltma', exampleSentence: '"Haste" ist eine Verkürzung von "hast du".' },
@@ -18281,11 +18317,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 10: Wortspiel & Mehrdeutigkeit (4 lessons) ---
-  const c2Unit10 = await prisma.unit.create({
+  const c2Unit10 = await seedUnit({
     data: { levelId: c2.id, order: 10, titleDe: 'Wortspiel & Mehrdeutigkeit', titleEn: 'Wordplay & Ambiguity', titleTr: 'Kelime Oyunu ve Çok Anlamlılık' },
   })
 
-  const c2Unit10Lesson1 = await prisma.lesson.create({
+  const c2Unit10Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit10.id,
       order: 1,
@@ -18298,7 +18334,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Eş sesli kelimeler aynı ses ama farklı anlamlara gelir: "die Bank" (oturma sırası veya banka). Bu tür kelimeler sık sık kelime oyunlarında kullanılır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit10Lesson1.id,
@@ -18319,7 +18355,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit10Lesson2 = await prisma.lesson.create({
+  const c2Unit10Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit10.id,
       order: 2,
@@ -18332,7 +18368,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Reklamlar akılda kalıcı sloganlar için sık sık çift anlamlılık kullanır, örn. bileşik kelimelerle veya yeniden yorumlanan deyimlerle kelime oyunları.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit10Lesson2.id,
@@ -18353,7 +18389,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit10Lesson3 = await prisma.lesson.create({
+  const c2Unit10Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit10.id,
       order: 3,
@@ -18366,7 +18402,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Almanca birleşik kelimeler yaratıcı kelime oyunlarına izin verir: "Frühlingsgefühle" hem gerçek hem mecazi ("bahara özgü aşık olma hissi") anlaşılabilir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit10Lesson3.id,
@@ -18387,7 +18423,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit10Lesson4 = await prisma.lesson.create({
+  const c2Unit10Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit10.id,
       order: 4,
@@ -18400,7 +18436,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: eş sesli kelimeler, reklam sloganları ve birleşik kelimeler kelime oyunları için zengin malzeme sunar — bunları tanımak ve üretmek dil ustalığının bir işaretidir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit10Lesson4.id,
@@ -18427,7 +18463,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit10Lesson1.id, word: 'das Homonym', translationEn: 'the homonym', translationTr: 'eş sesli kelime', exampleSentence: '"Die Bank" ist ein bekanntes Homonym.' },
       { lessonId: c2Unit10Lesson1.id, word: 'mehrdeutig', translationEn: 'ambiguous', translationTr: 'çok anlamlı', exampleSentence: 'Der Satz ist absichtlich mehrdeutig.' },
@@ -18441,11 +18477,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 11: Diskursmarker in akademischen Texten (4 lessons) ---
-  const c2Unit11 = await prisma.unit.create({
+  const c2Unit11 = await seedUnit({
     data: { levelId: c2.id, order: 11, titleDe: 'Diskursmarker in akademischen Texten', titleEn: 'Discourse Markers in Academic Texts', titleTr: 'Akademik Metinlerde Söylem İşaretleyicileri' },
   })
 
-  const c2Unit11Lesson1 = await prisma.lesson.create({
+  const c2Unit11Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit11.id,
       order: 1,
@@ -18458,7 +18494,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Mithin" (dolayısıyla, bu nedenle) mantıksal bir sonucu başlatır; "mithilfe" (yardımıyla) bir araç veya yöntemi başlatır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit11Lesson1.id,
@@ -18479,7 +18515,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit11Lesson2 = await prisma.lesson.create({
+  const c2Unit11Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit11.id,
       order: 2,
@@ -18492,7 +18528,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Diesbezüglich" (bu bakımdan) resmi metinlerde daha önce söylenene atıfta bulunur: "Diesbezüglich sind weitere Untersuchungen nötig."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit11Lesson2.id,
@@ -18513,7 +18549,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit11Lesson3 = await prisma.lesson.create({
+  const c2Unit11Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit11.id,
       order: 3,
@@ -18526,7 +18562,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Akademik metinler argümanları "zunächst" (öncelikle), "des Weiteren" (ayrıca), "abschließend" (sonuç olarak) gibi işaretleyicilerle yapılandırır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit11Lesson3.id,
@@ -18547,7 +18583,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit11Lesson4 = await prisma.lesson.create({
+  const c2Unit11Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit11.id,
       order: 4,
@@ -18560,7 +18596,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: "mithin", "diesbezüglich", "zunächst" ve "abschließend" gibi söylem işaretleyicileri akademik argümantasyonu net ve kesin şekilde yapılandırır.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit11Lesson4.id,
@@ -18587,7 +18623,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit11Lesson1.id, word: 'mithin', translationEn: 'consequently', translationTr: 'dolayısıyla', exampleSentence: 'Die Daten sind mithin nicht repräsentativ.' },
       { lessonId: c2Unit11Lesson1.id, word: 'mithilfe', translationEn: 'by means of', translationTr: 'yardımıyla', exampleSentence: 'Mithilfe einer Umfrage wurden die Daten erhoben.' },
@@ -18601,11 +18637,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 12: Präzision im Ausdruck (4 lessons) ---
-  const c2Unit12 = await prisma.unit.create({
+  const c2Unit12 = await seedUnit({
     data: { levelId: c2.id, order: 12, titleDe: 'Präzision im Ausdruck', titleEn: 'Precision of Expression', titleTr: 'İfadede Hassasiyet' },
   })
 
-  const c2Unit12Lesson1 = await prisma.lesson.create({
+  const c2Unit12Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit12.id,
       order: 1,
@@ -18618,7 +18654,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Her zaman "sagen" kullanmak yerine anadili konuşanlar ayrım yapar: "erklären" (açıklamak, gerekçeyle), "behaupten" (iddia etmek, kanıtsız), "betonen" (vurgulamak).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit12Lesson1.id,
@@ -18639,7 +18675,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit12Lesson2 = await prisma.lesson.create({
+  const c2Unit12Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit12.id,
       order: 2,
@@ -18652,7 +18688,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Groß" yerine daha kesin kelimeler vardır: "gewaltig" (muazzam, etkileyici), "beträchtlich" (önemli, ölçülebilir), "immens" (ölçülemez büyüklükte).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit12Lesson2.id,
@@ -18673,7 +18709,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit12Lesson3 = await prisma.lesson.create({
+  const c2Unit12Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit12.id,
       order: 3,
@@ -18686,7 +18722,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         '"Machen" yerine genellikle daha kesin fiiller kullanılır: "herstellen" (üretmek), "durchführen" (bir prosedürü yürütmek), "erledigen" (bir görevi tamamlamak).',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit12Lesson3.id,
@@ -18707,7 +18743,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit12Lesson4 = await prisma.lesson.create({
+  const c2Unit12Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit12.id,
       order: 4,
@@ -18720,7 +18756,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tekrar: kesin kelime seçimi ("sagen", "groß" veya "machen" yerine) metinleri daha net ve profesyonel kılar.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit12Lesson4.id,
@@ -18747,7 +18783,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit12Lesson1.id, word: 'behaupten', translationEn: 'to claim', translationTr: 'iddia etmek', exampleSentence: 'Er behauptet, dass er recht hat.' },
       { lessonId: c2Unit12Lesson1.id, word: 'betonen', translationEn: 'to emphasize', translationTr: 'vurgulamak', exampleSentence: 'Sie betonte die Wichtigkeit des Themas.' },
@@ -18761,11 +18797,11 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
   })
 
   // --- C2 Unit 13: Wiederholung: Meisterschaft im Ausdruck (4 lessons) ---
-  const c2Unit13 = await prisma.unit.create({
+  const c2Unit13 = await seedUnit({
     data: { levelId: c2.id, order: 13, titleDe: 'Wiederholung: Meisterschaft im Ausdruck', titleEn: 'Review: Mastery of Expression', titleTr: 'Tekrar: İfadede Ustalık' },
   })
 
-  const c2Unit13Lesson1 = await prisma.lesson.create({
+  const c2Unit13Lesson1 = await seedLesson({
     data: {
       unitId: c2Unit13.id,
       order: 1,
@@ -18778,7 +18814,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Usta metinler, hem etki hem netlik elde etmek için bağlaçları, isim stilini ve retorik araçları bilinçli olarak birleştirir.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit13Lesson1.id,
@@ -18799,7 +18835,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit13Lesson2 = await prisma.lesson.create({
+  const c2Unit13Lesson2 = await seedLesson({
     data: {
       unitId: c2Unit13.id,
       order: 2,
@@ -18812,7 +18848,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Ustalık, kayıtlar arasında bilinçli geçişte kendini gösterir: raporlar için resmi, denemeler için kişisel, özetler için nötr.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit13Lesson2.id,
@@ -18833,7 +18869,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit13Lesson3 = await prisma.lesson.create({
+  const c2Unit13Lesson3 = await seedLesson({
     data: {
       unitId: c2Unit13.id,
       order: 3,
@@ -18846,7 +18882,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Usta bir cümle Konjunktiv II (temkin), isim stili (resmiyet) ve kesin kelime seçimini aynı anda gösterebilir: "Man könnte die Durchführung des Projekts als beträchtlichen Erfolg werten."',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit13Lesson3.id,
@@ -18867,7 +18903,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  const c2Unit13Lesson4 = await prisma.lesson.create({
+  const c2Unit13Lesson4 = await seedLesson({
     data: {
       unitId: c2Unit13.id,
       order: 4,
@@ -18880,7 +18916,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
         'Tüm C2 kursunun son tekrarı: üst düzey bağlaçlar, isim stili, retorik, kayıt, dil çeşitleri, söylem işaretleyicileri ve hassasiyet birlikte dil ustalığını oluşturur.',
     },
   })
-  await prisma.exercise.createMany({
+  await seedExercises({
     data: [
       {
         lessonId: c2Unit13Lesson4.id,
@@ -18901,7 +18937,7 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
-  await prisma.vocabWord.createMany({
+  await seedVocab({
     data: [
       { lessonId: c2Unit13Lesson1.id, word: 'die Widrigkeit', translationEn: 'the adversity', translationTr: 'zorluk', exampleSentence: 'Trotz aller Widrigkeiten hat sie es geschafft.' },
       { lessonId: c2Unit13Lesson1.id, word: 'die Klarheit', translationEn: 'the clarity', translationTr: 'netlik', exampleSentence: 'Die Klarheit des Textes wurde gelobt.' },
@@ -18914,7 +18950,44 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
     ],
   })
 
+  await pruneStaleContent(seededUnitIds, seededLessonIds, seededExerciseIds, seededVocabIds)
+
   console.log('Seed complete.')
+}
+
+// Remove content that is no longer produced by this seed. Runs after all
+// upserts so that anything still in the file is preserved. FK-safe order:
+// dependent learner rows tied to a removed lesson/word are deleted first, so
+// only progress/cards for content that genuinely no longer exists is lost.
+async function pruneStaleContent(
+  unitIds: Set<string>,
+  lessonIds: Set<string>,
+  exerciseIds: Set<string>,
+  vocabIds: Set<string>
+) {
+  await prisma.exercise.deleteMany({ where: { id: { notIn: [...exerciseIds] } } })
+
+  const staleVocab = await prisma.vocabWord.findMany({
+    where: { id: { notIn: [...vocabIds] } },
+    select: { id: true },
+  })
+  if (staleVocab.length > 0) {
+    const staleVocabIds = staleVocab.map((v) => v.id)
+    await prisma.userVocabCard.deleteMany({ where: { vocabWordId: { in: staleVocabIds } } })
+    await prisma.vocabWord.deleteMany({ where: { id: { in: staleVocabIds } } })
+  }
+
+  const staleLessons = await prisma.lesson.findMany({
+    where: { id: { notIn: [...lessonIds] } },
+    select: { id: true },
+  })
+  if (staleLessons.length > 0) {
+    const staleLessonIds = staleLessons.map((l) => l.id)
+    await prisma.userProgress.deleteMany({ where: { lessonId: { in: staleLessonIds } } })
+    await prisma.lesson.deleteMany({ where: { id: { in: staleLessonIds } } })
+  }
+
+  await prisma.unit.deleteMany({ where: { id: { notIn: [...unitIds] } } })
 }
 
 main()
