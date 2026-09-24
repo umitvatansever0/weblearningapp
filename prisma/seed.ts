@@ -4738,12 +4738,39 @@ With "gern – lieber – am liebsten" you express preferences.
       unitId: a2Unit4.id,
       order: 1,
       grammarTopic: "Nebensätze mit 'dass'",
-      explanationDe:
-        'Der Nebensatz mit "dass" gibt an, was jemand denkt, sagt oder weiß. Das konjugierte Verb steht am Ende: "Ich glaube, dass er Recht hat."',
-      explanationEn:
-        'A "dass" (that) clause states what someone thinks, says, or knows. The conjugated verb moves to the end: "Ich glaube, dass er Recht hat" (I believe that he is right).',
-      explanationTr:
-        '"Dass" (ki) cümlesi birinin düşündüğünü, söylediğini ya da bildiğini belirtir. Çekimli fiil cümlenin sonuna gider: "Ich glaube, dass er Recht hat" (Haklı olduğuna inanıyorum).',
+      explanationDe: `## Nebensätze mit „dass"
+
+Ein Nebensatz mit „dass" gibt an, **was** jemand denkt, sagt oder weiß. Wichtig: Im Nebensatz steht das **konjugierte Verb ganz am Ende**. Zwischen Hauptsatz und Nebensatz steht ein Komma.
+
+| Hauptsatz | , | Nebensatz (Verb am Ende) |
+| --------- | --- | ----------------------- |
+| Ich glaube | , | dass er Recht **hat** |
+| Er sagt | , | dass er müde **ist** |
+| Ich weiß | , | dass du keine Zeit **hast** |
+
+**Beispiel:** Ich glaube, **dass** er Recht **hat**.`,
+      explanationEn: `## Subordinate clauses with "dass"
+
+A "dass" (that) clause states **what** someone thinks, says or knows. Important: in the subordinate clause the **conjugated verb goes right at the end**. A comma separates the main clause and the subordinate clause.
+
+| Main clause | , | Subordinate clause (verb at end) |
+| --------- | --- | ----------------------- |
+| Ich glaube | , | dass er Recht **hat** |
+| Er sagt | , | dass er müde **ist** |
+| Ich weiß | , | dass du keine Zeit **hast** |
+
+**Example:** Ich glaube, **dass** er Recht **hat**. (I believe that he is right.)`,
+      explanationTr: `## „dass" ile yan cümleler
+
+„dass" (ki) yan cümlesi birinin **ne** düşündüğünü, söylediğini ya da bildiğini belirtir. Önemli: Yan cümlede **çekimli fiil en sona** gider. Ana cümle ile yan cümle arasına virgül konur.
+
+| Ana cümle | , | Yan cümle (fiil sonda) |
+| --------- | --- | ----------------------- |
+| Ich glaube | , | dass er Recht **hat** |
+| Er sagt | , | dass er müde **ist** |
+| Ich weiß | , | dass du keine Zeit **hast** |
+
+**Örnek:** Ich glaube, **dass** er Recht **hat**. (Haklı olduğunu düşünüyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4772,12 +4799,42 @@ With "gern – lieber – am liebsten" you express preferences.
       unitId: a2Unit4.id,
       order: 2,
       grammarTopic: "Nebensätze mit 'weil'",
-      explanationDe:
-        'Genau wie bei "dass" steht bei "weil" das konjugierte Verb am Ende des Nebensatzes. "weil" nennt einen Grund. Beispiel: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte."',
-      explanationEn:
-        'Just like with "dass", the conjugated verb in a "weil" (because) clause moves to the end. "weil" gives a reason. Example: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte" (I\'m learning German because I want to work in Berlin).',
-      explanationTr:
-        '"Dass" ile aynı şekilde, "weil" (çünkü) cümlesinde de çekimli fiil cümlenin sonuna gider. "weil" bir sebep bildirir. Örnek: "Ich lerne Deutsch, weil ich in Berlin arbeiten möchte" (Almanca öğreniyorum çünkü Berlin\'de çalışmak istiyorum).',
+      explanationDe: `## Nebensätze mit „weil"
+
+Mit „weil" (Grund) antwortest du auf die Frage **„Warum?"**. Wie bei „dass" steht das konjugierte Verb **am Ende** des Nebensatzes.
+
+Du kannst den Nebensatz auch nach vorne stellen; dann folgt im Hauptsatz sofort das Verb: **Weil** ich müde **bin**, gehe ich ins Bett.
+
+| Frage | Antwort mit „weil" |
+| ----- | ------------------ |
+| Warum lernst du Deutsch? | Weil ich in Berlin arbeiten **möchte**. |
+| Warum bist du müde? | Weil ich wenig geschlafen **habe**. |
+
+**Beispiel:** Ich lerne Deutsch, **weil** ich in Berlin arbeiten **möchte**.`,
+      explanationEn: `## Subordinate clauses with "weil"
+
+With "weil" (because) you answer the question **"Warum?" (Why?)**. As with "dass", the conjugated verb goes **at the end** of the clause.
+
+You can also put the "weil" clause first; then the main clause starts with the verb: **Weil** ich müde **bin**, gehe ich ins Bett. (Because I'm tired, I'm going to bed.)
+
+| Question | Answer with "weil" |
+| ----- | ------------------ |
+| Warum lernst du Deutsch? | Weil ich in Berlin arbeiten **möchte**. |
+| Warum bist du müde? | Weil ich wenig geschlafen **habe**. |
+
+**Example:** Ich lerne Deutsch, **weil** ich in Berlin arbeiten **möchte**. (I'm learning German because I want to work in Berlin.)`,
+      explanationTr: `## „weil" ile yan cümleler
+
+„weil" (çünkü) ile **„Warum?" (Neden?)** sorusuna cevap verirsin. „dass" gibi, çekimli fiil yine cümlenin **sonuna** gider.
+
+„weil" cümlesini başa da alabilirsin; o zaman ana cümle fiille başlar: **Weil** ich müde **bin**, gehe ich ins Bett. (Yorgun olduğum için yatağa gidiyorum.)
+
+| Soru | „weil" ile cevap |
+| ----- | ------------------ |
+| Warum lernst du Deutsch? | Weil ich in Berlin arbeiten **möchte**. |
+| Warum bist du müde? | Weil ich wenig geschlafen **habe**. |
+
+**Örnek:** Ich lerne Deutsch, **weil** ich in Berlin arbeiten **möchte**. (Almanca öğreniyorum çünkü Berlin'de çalışmak istiyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4806,12 +4863,36 @@ With "gern – lieber – am liebsten" you express preferences.
       unitId: a2Unit4.id,
       order: 3,
       grammarTopic: "'dass' vs. 'weil'",
-      explanationDe:
-        '"dass" leitet einen Inhalt ein (was jemand denkt/sagt), "weil" leitet einen Grund ein (warum). Beide haben Verb-Ende-Stellung: "Ich weiß, dass du müde bist." / "Du bist müde, weil du wenig geschlafen hast."',
-      explanationEn:
-        '"dass" introduces content (what someone thinks or says), "weil" introduces a reason (why). Both have verb-final word order: "Ich weiß, dass du müde bist" (I know that you\'re tired). / "Du bist müde, weil du wenig geschlafen hast" (You\'re tired because you slept little).',
-      explanationTr:
-        '"dass" bir içeriği (birinin ne düşündüğünü/söylediğini) tanıtır, "weil" bir sebebi (neden) tanıtır. İkisi de fiil-sonu sırasına sahiptir: "Ich weiß, dass du müde bist." / "Du bist müde, weil du wenig geschlafen hast."',
+      explanationDe: `## „dass" oder „weil"?
+
+Beide Konjunktionen leiten einen Nebensatz mit **Verb am Ende** ein – aber sie haben eine unterschiedliche Bedeutung.
+
+| Konjunktion | Bedeutung | Frage |
+| ----------- | --------- | ----- |
+| dass | Inhalt (was?) | Was denkst/weißt du? |
+| weil | Grund (warum?) | Warum? |
+
+**Beispiele:** Ich weiß, **dass** du müde **bist**. · Du bist müde, **weil** du wenig geschlafen **hast**.`,
+      explanationEn: `## "dass" or "weil"?
+
+Both conjunctions introduce a subordinate clause with the **verb at the end** – but they mean different things.
+
+| Conjunction | Meaning | Question |
+| ----------- | --------- | ----- |
+| dass | content (what?) | What do you think/know? |
+| weil | reason (why?) | Why? |
+
+**Examples:** Ich weiß, **dass** du müde **bist**. (I know that you're tired.) · Du bist müde, **weil** du wenig geschlafen **hast**. (You're tired because you slept little.)`,
+      explanationTr: `## „dass" mı „weil" mı?
+
+Her iki bağlaç da **fiili sonda** olan bir yan cümle başlatır – ama anlamları farklıdır.
+
+| Bağlaç | Anlamı | Soru |
+| ----------- | --------- | ----- |
+| dass | içerik (ne?) | Ne düşünüyorsun/biliyorsun? |
+| weil | sebep (neden?) | Neden? |
+
+**Örnekler:** Ich weiß, **dass** du müde **bist**. (Yorgun olduğunu biliyorum.) · Du bist müde, **weil** du wenig geschlafen **hast**. (Az uyuduğun için yorgunsun.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4840,12 +4921,51 @@ With "gern – lieber – am liebsten" you express preferences.
       unitId: a2Unit4.id,
       order: 4,
       grammarTopic: "Verben mit 'dass'-Sätzen",
-      explanationDe:
-        'Viele Verben werden oft mit einem "dass"-Satz kombiniert: glauben, denken, wissen, hoffen, sagen. Beispiel: "Ich hoffe, dass das Wetter morgen gut ist."',
-      explanationEn:
-        'Many verbs are often combined with a "dass" clause: glauben (believe), denken (think), wissen (know), hoffen (hope), sagen (say). Example: "Ich hoffe, dass das Wetter morgen gut ist" (I hope that the weather is good tomorrow).',
-      explanationTr:
-        'Birçok fiil sıklıkla bir "dass" cümlesiyle birlikte kullanılır: glauben (inanmak), denken (düşünmek), wissen (bilmek), hoffen (ummak), sagen (söylemek). Örnek: "Ich hoffe, dass das Wetter morgen gut ist" (Umarım yarın hava güzel olur).',
+      explanationDe: `## Verben mit „dass"-Sätzen
+
+Bestimmte Verben leiten oft einen „dass"-Satz ein. Es sind vor allem Verben des Denkens, Sagens und Fühlens.
+
+| Verb | Beispiel |
+| ----- | -------- |
+| glauben | Ich glaube, dass … |
+| denken | Ich denke, dass … |
+| wissen | Ich weiß, dass … |
+| hoffen | Ich hoffe, dass … |
+| sagen | Er sagt, dass … |
+
+Denk daran: Das Verb im Nebensatz steht am Ende.
+
+**Beispiel:** Ich **hoffe**, dass das Wetter morgen gut **ist**.`,
+      explanationEn: `## Verbs that take "dass" clauses
+
+Certain verbs often introduce a "dass" clause. These are mainly verbs of thinking, saying and feeling.
+
+| Verb | Example |
+| ----- | -------- |
+| glauben | Ich glaube, dass … (I believe that …) |
+| denken | Ich denke, dass … (I think that …) |
+| wissen | Ich weiß, dass … (I know that …) |
+| hoffen | Ich hoffe, dass … (I hope that …) |
+| sagen | Er sagt, dass … (He says that …) |
+
+Remember: the verb in the subordinate clause goes at the end.
+
+**Example:** Ich **hoffe**, dass das Wetter morgen gut **ist**. (I hope that the weather is good tomorrow.)`,
+      explanationTr: `## „dass" cümlesi alan fiiller
+
+Bazı fiiller sıklıkla bir „dass" cümlesi başlatır. Bunlar özellikle düşünme, söyleme ve hissetme fiilleridir.
+
+| Fiil | Örnek |
+| ----- | -------- |
+| glauben | Ich glaube, dass … (İnanıyorum ki …) |
+| denken | Ich denke, dass … (Düşünüyorum ki …) |
+| wissen | Ich weiß, dass … (Biliyorum ki …) |
+| hoffen | Ich hoffe, dass … (Umuyorum ki …) |
+| sagen | Er sagt, dass … (Diyor ki …) |
+
+Unutma: yan cümledeki fiil sona gider.
+
+**Örnek:** Ich **hoffe**, dass das Wetter morgen gut **ist**. (Umarım yarın hava güzel olur.)`,
     },
   })
   await prisma.exercise.createMany({
