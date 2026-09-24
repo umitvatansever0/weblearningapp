@@ -7221,12 +7221,48 @@ In a job interview you are polite and use the **"Sie" form**. With modal verbs, 
       unitId: a2Unit13.id,
       order: 1,
       grammarTopic: 'Ordinalzahlen (1.-19.)',
-      explanationDe:
-        'Ordinalzahlen bis 19 werden mit -te gebildet: "der dritte" (3.), "der siebte" (7.). Unregelmäßig: "der erste" (1.), "der dritte" (3.), "der siebte" (7.).',
-      explanationEn:
-        'Ordinal numbers up to 19 are formed with -te: "der dritte" (the third), "der siebte" (the seventh). Irregular: "der erste" (first), "der dritte" (third), "der siebte" (seventh).',
-      explanationTr:
-        '19\'a kadar sıra sayıları -te ekiyle yapılır: "der dritte" (üçüncü), "der siebte" (yedinci). Düzensiz: "der erste" (birinci), "der dritte" (üçüncü), "der siebte" (yedinci).',
+      explanationDe: `## Ordinalzahlen (1.–19.)
+
+Ordinalzahlen sagen, an welcher **Stelle** etwas steht (der erste, der zweite …). Von 1 bis 19 bildest du sie meist mit der Endung **-te**. Drei Formen sind unregelmäßig: **erste, dritte, siebte** (und „achte" ohne Doppel-t).
+
+| Zahl | Ordinalzahl |
+| ---- | ----------- |
+| 1. | der erste |
+| 2. | der zweite |
+| 3. | der dritte |
+| 7. | der siebte |
+| 8. | der achte |
+| 4./5./6. | der vierte / fünfte / sechste |
+
+**Beispiel:** Das ist mein **erster** Deutschkurs. · Er kommt am **dritten** Tag.`,
+      explanationEn: `## Ordinal numbers (1st–19th)
+
+Ordinal numbers say in which **position** something stands (the first, the second …). From 1 to 19 you usually form them with the ending **-te**. Three forms are irregular: **erste, dritte, siebte** (and "achte" without double t).
+
+| Number | Ordinal |
+| ---- | ----------- |
+| 1. | der erste (first) |
+| 2. | der zweite (second) |
+| 3. | der dritte (third) |
+| 7. | der siebte (seventh) |
+| 8. | der achte (eighth) |
+| 4./5./6. | der vierte / fünfte / sechste |
+
+**Example:** Das ist mein **erster** Deutschkurs. (This is my first German course.) · Er kommt am **dritten** Tag. (He comes on the third day.)`,
+      explanationTr: `## Sıra sayıları (1.–19.)
+
+Sıra sayıları bir şeyin hangi **sırada** olduğunu söyler (birinci, ikinci …). 1'den 19'a kadar genellikle **-te** ekiyle yapılır. Üç biçim düzensizdir: **erste, dritte, siebte** (ve çift t'siz „achte").
+
+| Sayı | Sıra sayısı |
+| ---- | ----------- |
+| 1. | der erste |
+| 2. | der zweite |
+| 3. | der dritte |
+| 7. | der siebte |
+| 8. | der achte |
+| 4./5./6. | der vierte / fünfte / sechste |
+
+**Örnek:** Das ist mein **erster** Deutschkurs. (Bu benim ilk Almanca kursum.) · Er kommt am **dritten** Tag. (Üçüncü gün geliyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7255,12 +7291,42 @@ In a job interview you are polite and use the **"Sie" form**. With modal verbs, 
       unitId: a2Unit13.id,
       order: 2,
       grammarTopic: 'Ordinalzahlen (20.+)',
-      explanationDe:
-        'Ab 20 werden Ordinalzahlen mit -ste gebildet: "der zwanzigste" (20.), "der einundzwanzigste" (21.).',
-      explanationEn:
-        'From 20 onward, ordinal numbers are formed with -ste: "der zwanzigste" (the twentieth), "der einundzwanzigste" (the twenty-first).',
-      explanationTr:
-        '20\'den itibaren sıra sayıları -ste ekiyle yapılır: "der zwanzigste" (yirminci), "der einundzwanzigste" (yirmi birinci).',
+      explanationDe: `## Ordinalzahlen (ab 20.)
+
+Ab der Zahl **20** wechselt die Endung von „-te" zu **-ste**. Diese Regel gilt für alle höheren Zahlen bis in die Hunderter und Tausender.
+
+| Zahl | Ordinalzahl |
+| ---- | ----------- |
+| 20. | der zwanzigste |
+| 21. | der einundzwanzigste |
+| 30. | der dreißigste |
+| 100. | der hundertste |
+
+**Beispiel:** Wir treffen uns am **zwanzigsten** Juli. · Heute ist der **einunddreißigste** Dezember.`,
+      explanationEn: `## Ordinal numbers (from 20th)
+
+From the number **20** on, the ending changes from "-te" to **-ste**. This rule applies to all higher numbers, up into the hundreds and thousands.
+
+| Number | Ordinal |
+| ---- | ----------- |
+| 20. | der zwanzigste (twentieth) |
+| 21. | der einundzwanzigste (twenty-first) |
+| 30. | der dreißigste (thirtieth) |
+| 100. | der hundertste (hundredth) |
+
+**Example:** Wir treffen uns am **zwanzigsten** Juli. (We meet on the twentieth of July.) · Heute ist der **einunddreißigste** Dezember. (Today is the thirty-first of December.)`,
+      explanationTr: `## Sıra sayıları (20.'den itibaren)
+
+**20** sayısından itibaren ek „-te"den **-ste**'ye değişir. Bu kural yüzlere ve binlere kadar tüm daha yüksek sayılar için geçerlidir.
+
+| Sayı | Sıra sayısı |
+| ---- | ----------- |
+| 20. | der zwanzigste |
+| 21. | der einundzwanzigste |
+| 30. | der dreißigste |
+| 100. | der hundertste |
+
+**Örnek:** Wir treffen uns am **zwanzigsten** Juli. (20 Temmuz'da buluşuyoruz.) · Heute ist der **einunddreißigste** Dezember. (Bugün 31 Aralık.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7289,12 +7355,39 @@ In a job interview you are polite and use the **"Sie" form**. With modal verbs, 
       unitId: a2Unit13.id,
       order: 3,
       grammarTopic: 'Das Datum',
-      explanationDe:
-        'Das Datum bildet man mit "am" + Ordinalzahl + Monat: "Ich habe am dritten Mai Geburtstag." Schriftlich: "3. Mai" (mit Punkt).',
-      explanationEn:
-        'Dates are formed with "am" + ordinal number + month: "Ich habe am dritten Mai Geburtstag" (My birthday is on May 3rd). In writing: "3. Mai" (with a period).',
-      explanationTr:
-        'Tarih "am" + sıra sayısı + ay ile kurulur: "Ich habe am dritten Mai Geburtstag" (Doğum günüm 3 Mayıs\'ta). Yazılışta: "3. Mai" (noktayla).',
+      explanationDe: `## Das Datum
+
+Um zu sagen, **wann** etwas passiert, benutzt du **„am" + Ordinalzahl + Monat**. Die Ordinalzahl bekommt dann die Endung **-en** (am dritt**en** Mai). Schriftlich schreibst du die Zahl mit einem Punkt: „3. Mai".
+
+| Frage | Antwort |
+| ----- | ------- |
+| Der Wievielte ist heute? | Heute ist der dritte Mai. |
+| Wann? | am dritten Mai |
+| geschrieben | 3. Mai |
+
+**Beispiel:** Ich habe **am dritten Mai** Geburtstag.`,
+      explanationEn: `## The date
+
+To say **when** something happens, use **"am" + ordinal number + month**. The ordinal number then takes the ending **-en** (am dritt**en** Mai). In writing you write the number with a period: "3. Mai".
+
+| Question | Answer |
+| ----- | ------- |
+| Der Wievielte ist heute? (What's the date today?) | Heute ist der dritte Mai. |
+| Wann? (When?) | am dritten Mai |
+| written | 3. Mai |
+
+**Example:** Ich habe **am dritten Mai** Geburtstag. (My birthday is on the third of May.)`,
+      explanationTr: `## Tarih
+
+Bir şeyin **ne zaman** olduğunu söylemek için **„am" + sıra sayısı + ay** kullanırsın. Sıra sayısı o zaman **-en** ekini alır (am dritt**en** Mai). Yazarken sayıyı noktayla yazarsın: „3. Mai".
+
+| Soru | Cevap |
+| ----- | ------- |
+| Der Wievielte ist heute? (Bugün ayın kaçı?) | Heute ist der dritte Mai. |
+| Wann? (Ne zaman?) | am dritten Mai |
+| yazılışı | 3. Mai |
+
+**Örnek:** Ich habe **am dritten Mai** Geburtstag. (Doğum günüm 3 Mayıs'ta.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7329,12 +7422,36 @@ In a job interview you are polite and use the **"Sie" form**. With modal verbs, 
       unitId: a2Unit13.id,
       order: 4,
       grammarTopic: 'Übung: Geburtstage & Termine',
-      explanationDe:
-        'Wiederholung: "Wann hast du Geburtstag?" "Ich habe am zehnten Oktober Geburtstag." Auch für Termine: "Der Termin ist am fünfzehnten Juni."',
-      explanationEn:
-        'Review: "Wann hast du Geburtstag?" (When is your birthday?) "Ich habe am zehnten Oktober Geburtstag" (My birthday is on October 10th). Also for appointments: "Der Termin ist am fünfzehnten Juni" (The appointment is on June 15th).',
-      explanationTr:
-        'Tekrar: "Wann hast du Geburtstag?" (Doğum günün ne zaman?) "Ich habe am zehnten Oktober Geburtstag" (Doğum günüm 10 Ekim\'de). Randevular için de: "Der Termin ist am fünfzehnten Juni" (Randevu 15 Haziran\'da).',
+      explanationDe: `## Übung: Geburtstage & Termine
+
+Mit dem Datum kannst du nach Geburtstagen und Terminen fragen und antworten. Denk an die Wortstellung: „am" + Ordinalzahl (-en) + Monat steht als Zeitangabe im Satz.
+
+| Frage | Antwort |
+| ----- | ------- |
+| Wann hast du Geburtstag? | Ich habe am zehnten Oktober Geburtstag. |
+| Wann ist der Termin? | Der Termin ist am fünfzehnten Juni. |
+
+**Beispiel:** Ich habe **am zehnten Oktober** Geburtstag.`,
+      explanationEn: `## Practice: birthdays & appointments
+
+With the date you can ask about and answer questions on birthdays and appointments. Mind the word order: "am" + ordinal number (-en) + month is the time expression in the sentence.
+
+| Question | Answer |
+| ----- | ------- |
+| Wann hast du Geburtstag? (When is your birthday?) | Ich habe am zehnten Oktober Geburtstag. |
+| Wann ist der Termin? (When is the appointment?) | Der Termin ist am fünfzehnten Juni. |
+
+**Example:** Ich habe **am zehnten Oktober** Geburtstag. (My birthday is on the tenth of October.)`,
+      explanationTr: `## Alıştırma: doğum günleri & randevular
+
+Tarihle doğum günleri ve randevular hakkında soru sorup cevap verebilirsin. Kelime sırasını unutma: „am" + sıra sayısı (-en) + ay, cümlede zaman ifadesi olarak yer alır.
+
+| Soru | Cevap |
+| ----- | ------- |
+| Wann hast du Geburtstag? (Doğum günün ne zaman?) | Ich habe am zehnten Oktober Geburtstag. |
+| Wann ist der Termin? (Randevu ne zaman?) | Der Termin ist am fünfzehnten Juni. |
+
+**Örnek:** Ich habe **am zehnten Oktober** Geburtstag. (Doğum günüm 10 Ekim'de.)`,
     },
   })
   await prisma.exercise.createMany({
