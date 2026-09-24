@@ -6119,12 +6119,42 @@ Bazı fiiller belirli bir edatla sabit biçimde birleşir. Burada „Wo/Wohin?" 
       unitId: a2Unit9.id,
       order: 1,
       grammarTopic: 'Adjektivendungen im Nominativ (bestimmter Artikel)',
-      explanationDe:
-        'Nach dem bestimmten Artikel im Nominativ endet das Adjektiv meist auf "-e": der neue Mann, die neue Frau, das neue Auto. Beispiel: "Der neue Kollege heißt Tom."',
-      explanationEn:
-        'After the definite article in the nominative, the adjective usually ends in "-e": der neue Mann (the new man), die neue Frau (the new woman), das neue Auto (the new car). Example: "Der neue Kollege heißt Tom" (The new colleague is called Tom).',
-      explanationTr:
-        'Belirli tanımlıktan sonra Nominativ\'de sıfat genellikle "-e" ile biter: der neue Mann, die neue Frau, das neue Auto. Örnek: "Der neue Kollege heißt Tom" (Yeni meslektaş Tom adında).',
+      explanationDe: `## Adjektivendungen im Nominativ (bestimmter Artikel)
+
+Steht ein Adjektiv **vor** einem Nomen, bekommt es eine Endung. Nach dem bestimmten Artikel (der/die/das) im **Nominativ** ist die Endung im Singular fast immer **-e**, im Plural **-en**.
+
+| Genus | Artikel + Adjektiv + Nomen |
+| --------- | -------------------------- |
+| maskulin | der neu**e** Mann |
+| feminin | die neu**e** Frau |
+| neutral | das neu**e** Auto |
+| Plural | die neu**en** Autos |
+
+**Beispiel:** Der neu**e** Kollege heißt Tom.`,
+      explanationEn: `## Adjective endings in the nominative (definite article)
+
+When an adjective stands **before** a noun, it takes an ending. After the definite article (der/die/das) in the **nominative**, the ending is almost always **-e** in the singular and **-en** in the plural.
+
+| Gender | Article + adjective + noun |
+| --------- | -------------------------- |
+| masculine | der neu**e** Mann (the new man) |
+| feminine | die neu**e** Frau (the new woman) |
+| neuter | das neu**e** Auto (the new car) |
+| plural | die neu**en** Autos (the new cars) |
+
+**Example:** Der neu**e** Kollege heißt Tom. (The new colleague is called Tom.)`,
+      explanationTr: `## Nominativ'de sıfat ekleri (belirli tanımlık)
+
+Bir sıfat isimden **önce** geldiğinde bir ek alır. **Nominativ**'de belirli tanımlıktan (der/die/das) sonra ek, tekilde neredeyse her zaman **-e**, çoğulda **-en**'dir.
+
+| Cins | Tanımlık + sıfat + isim |
+| --------- | -------------------------- |
+| eril | der neu**e** Mann |
+| dişil | die neu**e** Frau |
+| nötr | das neu**e** Auto |
+| çoğul | die neu**en** Autos |
+
+**Örnek:** Der neu**e** Kollege heißt Tom. (Yeni meslektaş Tom adında.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6153,12 +6183,42 @@ Bazı fiiller belirli bir edatla sabit biçimde birleşir. Burada „Wo/Wohin?" 
       unitId: a2Unit9.id,
       order: 2,
       grammarTopic: 'Adjektivendungen im Akkusativ (bestimmter Artikel)',
-      explanationDe:
-        'Im Akkusativ ändert sich die Adjektivendung nur beim maskulinen Artikel zu "-en": den neuen Mann. Feminin und neutral bleiben wie im Nominativ: die neue Frau, das neue Auto. Beispiel: "Ich sehe den neuen Kollegen."',
-      explanationEn:
-        'In the accusative, the adjective ending changes to "-en" only with the masculine article: den neuen Mann (the new man). Feminine and neuter stay like the nominative: die neue Frau, das neue Auto. Example: "Ich sehe den neuen Kollegen" (I see the new colleague).',
-      explanationTr:
-        'Akkusativ\'de sıfat eki sadece eril tanımlıkla "-en" olur: den neuen Mann. Dişil ve nötr Nominativ\'deki gibi kalır: die neue Frau, das neue Auto. Örnek: "Ich sehe den neuen Kollegen" (Yeni meslektaşı görüyorum).',
+      explanationDe: `## Adjektivendungen im Akkusativ (bestimmter Artikel)
+
+Der Akkusativ ist fast wie der Nominativ – nur das **Maskulinum** ändert sich: Der Artikel wird zu „den" und die Adjektivendung zu **-en**. Feminin, neutral und Plural bleiben gleich.
+
+| Genus | Nominativ | Akkusativ |
+| --------- | ------------- | ------------- |
+| maskulin | der neue Mann | den neu**en** Mann |
+| feminin | die neue Frau | die neu**e** Frau |
+| neutral | das neue Auto | das neu**e** Auto |
+| Plural | die neuen Autos | die neu**en** Autos |
+
+**Beispiel:** Ich sehe den neu**en** Kollegen.`,
+      explanationEn: `## Adjective endings in the accusative (definite article)
+
+The accusative is almost identical to the nominative – only the **masculine** changes: the article becomes "den" and the adjective ending **-en**. Feminine, neuter and plural stay the same.
+
+| Gender | Nominative | Accusative |
+| --------- | ------------- | ------------- |
+| masculine | der neue Mann | den neu**en** Mann (the new man) |
+| feminine | die neue Frau | die neu**e** Frau |
+| neuter | das neue Auto | das neu**e** Auto |
+| plural | die neuen Autos | die neu**en** Autos |
+
+**Example:** Ich sehe den neu**en** Kollegen. (I see the new colleague.)`,
+      explanationTr: `## Akkusativ'de sıfat ekleri (belirli tanımlık)
+
+Akkusativ neredeyse Nominativ ile aynıdır – sadece **eril** değişir: tanımlık „den" olur, sıfat eki **-en**'e döner. Dişil, nötr ve çoğul aynı kalır.
+
+| Cins | Nominativ | Akkusativ |
+| --------- | ------------- | ------------- |
+| eril | der neue Mann | den neu**en** Mann |
+| dişil | die neue Frau | die neu**e** Frau |
+| nötr | das neue Auto | das neu**e** Auto |
+| çoğul | die neuen Autos | die neu**en** Autos |
+
+**Örnek:** Ich sehe den neu**en** Kollegen. (Yeni meslektaşı görüyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6187,12 +6247,39 @@ Bazı fiiller belirli bir edatla sabit biçimde birleşir. Burada „Wo/Wohin?" 
       unitId: a2Unit9.id,
       order: 3,
       grammarTopic: 'Adjektivdeklination: feminin, neutral, Plural',
-      explanationDe:
-        'Feminin und neutral haben im Nominativ und Akkusativ die gleiche Adjektivendung "-e": die neue Frau, das neue Auto. Im Plural endet das Adjektiv nach "die" auf "-en": die neuen Autos. Beispiel: "Die neuen Autos sind teuer."',
-      explanationEn:
-        'Feminine and neuter have the same adjective ending "-e" in both nominative and accusative: die neue Frau, das neue Auto. In the plural, the adjective ends in "-en" after "die": die neuen Autos. Example: "Die neuen Autos sind teuer" (The new cars are expensive).',
-      explanationTr:
-        'Dişil ve nötr, Nominativ ve Akkusativ\'de aynı "-e" sıfat ekini alır: die neue Frau, das neue Auto. Çoğulda "die"den sonra sıfat "-en" ile biter: die neuen Autos. Örnek: "Die neuen Autos sind teuer" (Yeni arabalar pahalı).',
+      explanationDe: `## Adjektivdeklination: feminin, neutral, Plural
+
+Feminin und neutral sind besonders einfach: Die Adjektivendung ist im Nominativ **und** im Akkusativ immer **-e** (die neu**e** Frau, das neu**e** Auto). Im **Plural** endet das Adjektiv nach „die" immer auf **-en** (die neu**en** Autos).
+
+| Genus | Nominativ | Akkusativ |
+| --------- | ------------- | ------------- |
+| feminin | die neu**e** Frau | die neu**e** Frau |
+| neutral | das neu**e** Auto | das neu**e** Auto |
+| Plural | die neu**en** Autos | die neu**en** Autos |
+
+**Beispiel:** Die neu**en** Autos sind teuer.`,
+      explanationEn: `## Adjective declension: feminine, neuter, plural
+
+Feminine and neuter are especially easy: the adjective ending is **-e** in both the nominative **and** the accusative (die neu**e** Frau, das neu**e** Auto). In the **plural**, the adjective after "die" always ends in **-en** (die neu**en** Autos).
+
+| Gender | Nominative | Accusative |
+| --------- | ------------- | ------------- |
+| feminine | die neu**e** Frau | die neu**e** Frau |
+| neuter | das neu**e** Auto | das neu**e** Auto |
+| plural | die neu**en** Autos | die neu**en** Autos |
+
+**Example:** Die neu**en** Autos sind teuer. (The new cars are expensive.)`,
+      explanationTr: `## Sıfat çekimi: dişil, nötr, çoğul
+
+Dişil ve nötr özellikle kolaydır: sıfat eki hem Nominativ hem de Akkusativ'de her zaman **-e**'dir (die neu**e** Frau, das neu**e** Auto). **Çoğulda** „die"den sonra sıfat her zaman **-en** ile biter (die neu**en** Autos).
+
+| Cins | Nominativ | Akkusativ |
+| --------- | ------------- | ------------- |
+| dişil | die neu**e** Frau | die neu**e** Frau |
+| nötr | das neu**e** Auto | das neu**e** Auto |
+| çoğul | die neu**en** Autos | die neu**en** Autos |
+
+**Örnek:** Die neu**en** Autos sind teuer. (Yeni arabalar pahalı.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6227,12 +6314,42 @@ Bazı fiiller belirli bir edatla sabit biçimde birleşir. Burada „Wo/Wohin?" 
       unitId: a2Unit9.id,
       order: 4,
       grammarTopic: 'Übung: Adjektivdeklination in Sätzen',
-      explanationDe:
-        'Wiederholung: Nominativ maskulin/neutral = "-e", Akkusativ maskulin = "-en", alle anderen bleiben "-e" (Singular) oder "-en" (Plural). Beispiel: "Der alte Baum steht im Garten. Ich sehe den alten Baum."',
-      explanationEn:
-        'Review: nominative masculine/neuter = "-e", accusative masculine = "-en", everything else stays "-e" (singular) or "-en" (plural). Example: "Der alte Baum steht im Garten. Ich sehe den alten Baum" (The old tree stands in the garden. I see the old tree).',
-      explanationTr:
-        'Tekrar: Nominativ eril/nötr = "-e", Akkusativ eril = "-en", diğerleri "-e" (tekil) ya da "-en" (çoğul) olarak kalır. Örnek: "Der alte Baum steht im Garten. Ich sehe den alten Baum" (Yaşlı ağaç bahçede duruyor. Yaşlı ağacı görüyorum).',
+      explanationDe: `## Übung: Adjektivdeklination in Sätzen
+
+Fassen wir die Regeln nach dem bestimmten Artikel zusammen. Merke dir vor allem die **eine** Ausnahme: Akkusativ maskulin = **-en**. Alle anderen Singularformen enden auf **-e**, alle Pluralformen auf **-en**.
+
+| | Nominativ | Akkusativ |
+| --------- | ---- | ---- |
+| maskulin | -e | **-en** |
+| feminin | -e | -e |
+| neutral | -e | -e |
+| Plural | -en | -en |
+
+**Beispiel:** Der alt**e** Baum steht im Garten. Ich sehe den alt**en** Baum.`,
+      explanationEn: `## Practice: adjective declension in sentences
+
+Let's sum up the rules after the definite article. Above all, remember the **one** exception: accusative masculine = **-en**. All other singular forms end in **-e**, all plural forms in **-en**.
+
+| | Nominative | Accusative |
+| --------- | ---- | ---- |
+| masculine | -e | **-en** |
+| feminine | -e | -e |
+| neuter | -e | -e |
+| plural | -en | -en |
+
+**Example:** Der alt**e** Baum steht im Garten. Ich sehe den alt**en** Baum. (The old tree stands in the garden. I see the old tree.)`,
+      explanationTr: `## Alıştırma: cümlelerde sıfat çekimi
+
+Belirli tanımlıktan sonraki kuralları özetleyelim. Her şeyden önce **tek** istisnayı aklında tut: Akkusativ eril = **-en**. Diğer tüm tekil biçimler **-e**, tüm çoğul biçimler **-en** ile biter.
+
+| | Nominativ | Akkusativ |
+| --------- | ---- | ---- |
+| eril | -e | **-en** |
+| dişil | -e | -e |
+| nötr | -e | -e |
+| çoğul | -en | -en |
+
+**Örnek:** Der alt**e** Baum steht im Garten. Ich sehe den alt**en** Baum. (Yaşlı ağaç bahçede duruyor. Yaşlı ağacı görüyorum.)`,
     },
   })
   await prisma.exercise.createMany({
