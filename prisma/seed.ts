@@ -689,12 +689,45 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
       unitId: a1Unit3.id,
       order: 1,
       grammarTopic: 'Personalpronomen',
-      explanationDe:
-        'Die Personalpronomen im Deutschen sind: ich, du, er/sie/es, wir, ihr, sie/Sie. "Sie" (groß geschrieben) ist die höfliche Anrede.',
-      explanationEn:
-        'The personal pronouns in German are: ich, du, er/sie/es, wir, ihr, sie/Sie. Capitalized "Sie" is the polite form of address.',
-      explanationTr:
-        'Almancada şahıs zamirleri şunlardır: ich, du, er/sie/es, wir, ihr, sie/Sie. Büyük yazılan "Sie" saygı ifadesidir.',
+      explanationDe: `## Personalpronomen
+
+Personalpronomen ersetzen eine Person oder eine Sache. Das sind die Subjektpronomen im Deutschen:
+
+| Singular | Plural |
+| -------- | ------ |
+| ich | wir |
+| du | ihr |
+| er/sie/es | sie |
+
+**„Sie"** (immer groß geschrieben) ist die höfliche Anrede für eine oder mehrere Personen.
+
+**Beispiel:** **Ich** bin müde. **Wir** lernen Deutsch. **Sie** sind Herr Müller, oder?`,
+      explanationEn: `## Personal pronouns
+
+Personal pronouns replace a person or a thing. These are the subject pronouns in German:
+
+| Singular | Plural |
+| --------- | ------ |
+| ich (I) | wir (we) |
+| du (you) | ihr (you all) |
+| er/sie/es (he/she/it) | sie (they) |
+
+**"Sie"** (always capitalized) is the polite form of address for one or more people.
+
+**Example:** **Ich** bin müde. (I am tired.) **Wir** lernen Deutsch. (We learn German.) **Sie** sind Herr Müller, oder? (You are Mr Müller, right?)`,
+      explanationTr: `## Şahıs zamirleri
+
+Şahıs zamirleri bir kişinin ya da nesnenin yerini tutar. Almancadaki özne zamirleri şunlardır:
+
+| Tekil | Çoğul |
+| --------- | ----- |
+| ich (ben) | wir (biz) |
+| du (sen) | ihr (siz) |
+| er/sie/es (o) | sie (onlar) |
+
+**„Sie"** (her zaman büyük harfle) bir ya da birden fazla kişiye karşı kullanılan saygı biçimidir.
+
+**Örnek:** **Ich** bin müde. (Yorgunum.) **Wir** lernen Deutsch. (Almanca öğreniyoruz.) **Sie** sind Herr Müller, oder? (Siz Müller Bey'siniz, değil mi?)`,
     },
   })
   await prisma.exercise.createMany({
@@ -729,12 +762,48 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
       unitId: a1Unit3.id,
       order: 2,
       grammarTopic: 'Regelmäßige Verben im Präsens',
-      explanationDe:
-        'Regelmäßige Verben im Präsens: Stamm + Endung. "spielen": ich spiele, du spielst, er spielt, wir spielen, ihr spielt, sie spielen.',
-      explanationEn:
-        'Regular verbs in the present tense: stem + ending. "spielen" (to play): ich spiele, du spielst, er spielt, wir spielen, ihr spielt, sie spielen.',
-      explanationTr:
-        'Düzenli fiillerde şimdiki zaman: gövde + ek. "spielen" (oynamak): ich spiele, du spielst, er spielt, wir spielen, ihr spielt, sie spielen.',
+      explanationDe: `## Regelmäßige Verben im Präsens
+
+Regelmäßige Verben bildest du aus **Stamm + Endung**. Der Stamm von „spielen" ist *spiel-*.
+
+| Person | Endung | Form |
+| --------- | ------ | -------- |
+| ich | -e | spiel**e** |
+| du | -st | spiel**st** |
+| er/sie/es | -t | spiel**t** |
+| wir | -en | spiel**en** |
+| ihr | -t | spiel**t** |
+| sie/Sie | -en | spiel**en** |
+
+**Beispiel:** Ich **spiele** Fußball. Wir **lernen** Deutsch.`,
+      explanationEn: `## Regular verbs in the present tense
+
+You form regular verbs from **stem + ending**. The stem of "spielen" (to play) is *spiel-*.
+
+| Person | Ending | Form |
+| --------- | ------ | -------- |
+| ich | -e | spiel**e** |
+| du | -st | spiel**st** |
+| er/sie/es | -t | spiel**t** |
+| wir | -en | spiel**en** |
+| ihr | -t | spiel**t** |
+| sie/Sie | -en | spiel**en** |
+
+**Example:** Ich **spiele** Fußball. (I play football.) Wir **lernen** Deutsch. (We learn German.)`,
+      explanationTr: `## Düzenli fiillerde geniş/şimdiki zaman
+
+Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin gövdesi *spiel-*'dir.
+
+| Kişi | Ek | Biçim |
+| --------- | ---- | -------- |
+| ich | -e | spiel**e** |
+| du | -st | spiel**st** |
+| er/sie/es | -t | spiel**t** |
+| wir | -en | spiel**en** |
+| ihr | -t | spiel**t** |
+| sie/Sie | -en | spiel**en** |
+
+**Örnek:** Ich **spiele** Fußball. (Futbol oynuyorum.) Wir **lernen** Deutsch. (Almanca öğreniyoruz.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -763,9 +832,48 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
       unitId: a1Unit3.id,
       order: 3,
       grammarTopic: 'Verb "haben"',
-      explanationDe: '"haben" ist unregelmäßig: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben.',
-      explanationEn: '"haben" (to have) is irregular: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben.',
-      explanationTr: '"haben" (sahip olmak) düzensizdir: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben.',
+      explanationDe: `## Das Verb „haben"
+
+„haben" ist unregelmäßig – besonders „du hast" und „er hat" verlieren das *b*. Präsensformen:
+
+| Person | Form |
+| --------- | ---- |
+| ich | habe |
+| du | hast |
+| er/sie/es | hat |
+| wir | haben |
+| ihr | habt |
+| sie/Sie | haben |
+
+**Beispiel:** Ich **habe** ein Buch. Du **hast** Zeit. Man benutzt „haben" auch in festen Wendungen: Ich **habe** Hunger.`,
+      explanationEn: `## The verb "haben" (to have)
+
+"haben" is irregular – notably "du hast" and "er hat" drop the *b*. Present-tense forms:
+
+| Person | Form |
+| --------- | ---- |
+| ich | habe |
+| du | hast |
+| er/sie/es | hat |
+| wir | haben |
+| ihr | habt |
+| sie/Sie | haben |
+
+**Example:** Ich **habe** ein Buch. (I have a book.) Du **hast** Zeit. (You have time.) "haben" is also used in fixed phrases: Ich **habe** Hunger. (I am hungry.)`,
+      explanationTr: `## „haben" fiili (sahip olmak)
+
+„haben" düzensizdir – özellikle „du hast" ve „er hat" biçimlerinde *b* düşer. Geniş zaman çekimi:
+
+| Kişi | Biçim |
+| --------- | ----- |
+| ich | habe |
+| du | hast |
+| er/sie/es | hat |
+| wir | haben |
+| ihr | habt |
+| sie/Sie | haben |
+
+**Örnek:** Ich **habe** ein Buch. (Bir kitabım var.) Du **hast** Zeit. (Vaktin var.) „haben" kalıplaşmış ifadelerde de kullanılır: Ich **habe** Hunger. (Karnım aç / Açım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -800,12 +908,45 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
       unitId: a1Unit3.id,
       order: 4,
       grammarTopic: 'W-Fragen',
-      explanationDe:
-        'W-Fragen beginnen mit einem Fragewort (wer, was, wo, wann, wie) und haben das Verb an zweiter Stelle: "Wo wohnst du?" "Wie heißt du?"',
-      explanationEn:
-        'W-questions start with a question word (wer=who, was=what, wo=where, wann=when, wie=how) and put the verb second: "Wo wohnst du?" (Where do you live?), "Wie heißt du?" (What\'s your name?)',
-      explanationTr:
-        'W-soruları bir soru kelimesiyle başlar (wer=kim, was=ne, wo=nerede, wann=ne zaman, wie=nasıl) ve fiil ikinci sırada gelir: "Wo wohnst du?" (Nerede oturuyorsun?), "Wie heißt du?" (Adın ne?)',
+      explanationDe: `## W-Fragen
+
+W-Fragen beginnen mit einem Fragewort. Das Verb steht immer an **zweiter Stelle**.
+
+| Fragewort | Bedeutung | Beispiel |
+| --------- | --------- | -------- |
+| wer | who | **Wer** ist das? |
+| was | what | **Was** machst du? |
+| wo | where | **Wo** wohnst du? |
+| wann | when | **Wann** kommst du? |
+| wie | how | **Wie** heißt du? |
+
+**Beispiel:** **Wo** wohnst du? – Ich wohne in Berlin.`,
+      explanationEn: `## W-questions (open questions)
+
+W-questions start with a question word. The verb always comes **second**.
+
+| Question word | Meaning | Example |
+| ------------- | ------- | -------- |
+| wer | who | **Wer** ist das? |
+| was | what | **Was** machst du? |
+| wo | where | **Wo** wohnst du? |
+| wann | when | **Wann** kommst du? |
+| wie | how | **Wie** heißt du? |
+
+**Example:** **Wo** wohnst du? – Ich wohne in Berlin. (Where do you live? – I live in Berlin.)`,
+      explanationTr: `## W-soruları (açık uçlu sorular)
+
+W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** gelir.
+
+| Soru kelimesi | Anlamı | Örnek |
+| ------------- | ------ | ----- |
+| wer | kim | **Wer** ist das? |
+| was | ne | **Was** machst du? |
+| wo | nerede | **Wo** wohnst du? |
+| wann | ne zaman | **Wann** kommst du? |
+| wie | nasıl | **Wie** heißt du? |
+
+**Örnek:** **Wo** wohnst du? – Ich wohne in Berlin. (Nerede yaşıyorsun? – Berlin'de yaşıyorum.)`,
     },
   })
   await prisma.exercise.createMany({
