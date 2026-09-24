@@ -2673,11 +2673,48 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
       unitId: a1Unit10.id,
       order: 1,
       grammarTopic: 'Lebensmittel',
-      explanationDe: 'Wichtige Lebensmittel: das Brot, der Käse, die Milch, das Obst, das Gemüse, der Reis.',
-      explanationEn:
-        'Important food items: das Brot (bread), der Käse (cheese), die Milch (milk), das Obst (fruit), das Gemüse (vegetables), der Reis (rice).',
-      explanationTr:
-        'Önemli gıda maddeleri: das Brot (ekmek), der Käse (peynir), die Milch (süt), das Obst (meyve), das Gemüse (sebze), der Reis (pirinç).',
+      explanationDe: `## Lebensmittel
+
+Das sind wichtige Wörter zum Thema Essen. Achte auf den Artikel:
+
+| Deutsch | Englisch |
+| ---------- | ---------- |
+| das Brot | bread |
+| der Käse | cheese |
+| die Milch | milk |
+| das Obst | fruit |
+| das Gemüse | vegetables |
+| der Reis | rice |
+
+**Beispiel:** Ich kaufe **Brot**, **Käse** und **Milch**.`,
+      explanationEn: `## Food items
+
+These are important words about food. Pay attention to the article:
+
+| German | English |
+| ---------- | ---------- |
+| das Brot | bread |
+| der Käse | cheese |
+| die Milch | milk |
+| das Obst | fruit |
+| das Gemüse | vegetables |
+| der Reis | rice |
+
+**Example:** Ich kaufe **Brot**, **Käse** und **Milch**. (I buy bread, cheese and milk.)`,
+      explanationTr: `## Gıda maddeleri
+
+Bunlar yemekle ilgili önemli kelimelerdir. Tanımlığa dikkat et:
+
+| Almanca | Türkçe |
+| ---------- | ------ |
+| das Brot | ekmek |
+| der Käse | peynir |
+| die Milch | süt |
+| das Obst | meyve |
+| das Gemüse | sebze |
+| der Reis | pirinç |
+
+**Örnek:** Ich kaufe **Brot**, **Käse** und **Milch**. (Ekmek, peynir ve süt alırım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -2712,12 +2749,42 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
       unitId: a1Unit10.id,
       order: 2,
       grammarTopic: '"Ich hätte gern" / Mengenangaben',
-      explanationDe:
-        'Beim Einkaufen benutzt man Mengenangaben: "ein Kilo Äpfel", "ein Liter Milch", "ein Stück Käse". Höflich bestellt man mit "Ich hätte gern..."',
-      explanationEn:
-        'When shopping, use quantity expressions: "ein Kilo Äpfel" (a kilo of apples), "ein Liter Milch" (a liter of milk), "ein Stück Käse" (a piece of cheese). Order politely with "Ich hätte gern..." (I\'d like...)',
-      explanationTr:
-        'Alışverişte miktar ifadeleri kullanılır: "ein Kilo Äpfel" (bir kilo elma), "ein Liter Milch" (bir litre süt), "ein Stück Käse" (bir parça peynir). Kibarca sipariş için "Ich hätte gern..." (İsterim...) kullanılır.',
+      explanationDe: `## „Ich hätte gern" und Mengenangaben
+
+Beim Einkaufen bestellst du höflich mit **„Ich hätte gern …"**. Für Mengen benutzt du diese Wörter:
+
+| Menge | Beispiel |
+| -------- | -------- |
+| ein Kilo | ein Kilo **Äpfel** |
+| ein Liter | ein Liter **Milch** |
+| ein Stück | ein Stück **Käse** |
+| eine Flasche | eine Flasche **Wasser** |
+
+**Beispiel:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte.`,
+      explanationEn: `## "Ich hätte gern" and quantities
+
+When shopping you order politely with **"Ich hätte gern …"** (I'd like …). For amounts you use these words:
+
+| Amount | Example |
+| -------- | -------- |
+| ein Kilo | ein Kilo **Äpfel** (a kilo of apples) |
+| ein Liter | ein Liter **Milch** (a liter of milk) |
+| ein Stück | ein Stück **Käse** (a piece of cheese) |
+| eine Flasche | eine Flasche **Wasser** (a bottle of water) |
+
+**Example:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte. (I'd like a kilo of apples and a liter of milk, please.)`,
+      explanationTr: `## „Ich hätte gern" ve miktar ifadeleri
+
+Alışverişte kibarca **„Ich hätte gern …"** (… isterim) ile sipariş verirsin. Miktar için şu kelimeleri kullanırsın:
+
+| Miktar | Örnek |
+| -------- | ----- |
+| ein Kilo | ein Kilo **Äpfel** (bir kilo elma) |
+| ein Liter | ein Liter **Milch** (bir litre süt) |
+| ein Stück | ein Stück **Käse** (bir parça peynir) |
+| eine Flasche | eine Flasche **Wasser** (bir şişe su) |
+
+**Örnek:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte. (Bir kilo elma ve bir litre süt isterim, lütfen.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -2749,12 +2816,45 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
       unitId: a1Unit10.id,
       order: 3,
       grammarTopic: 'Im Restaurant',
-      explanationDe:
-        'Im Restaurant fragt der Kellner: "Was möchten Sie?" Man antwortet: "Ich hätte gern die Suppe." Am Ende sagt man: "Die Rechnung, bitte."',
-      explanationEn:
-        'In a restaurant, the waiter asks: "Was möchten Sie?" (What would you like?) You answer: "Ich hätte gern die Suppe." (I\'d like the soup.) At the end you say: "Die Rechnung, bitte." (The bill, please.)',
-      explanationTr:
-        'Restoranda garson sorar: "Was möchten Sie?" (Ne istersiniz?) Cevap: "Ich hätte gern die Suppe." (Çorba istiyorum.) Sonunda "Die Rechnung, bitte." (Hesap lütfen.) denir.',
+      explanationDe: `## Im Restaurant
+
+Ein typisches Gespräch im Restaurant läuft so ab:
+
+| Wer | Satz |
+| -------- | ---- |
+| Kellner | Was möchten Sie? |
+| Gast | Ich hätte gern die Suppe. |
+| Kellner | Möchten Sie etwas trinken? |
+| Gast | Ein Wasser, bitte. |
+| Gast (am Ende) | Die Rechnung, bitte. |
+
+**Beispiel:** „Ich **hätte gern** die Suppe und ein Wasser." – „**Die Rechnung, bitte.**"`,
+      explanationEn: `## At the restaurant
+
+A typical restaurant conversation goes like this:
+
+| Who | Sentence |
+| -------- | -------- |
+| Waiter | Was möchten Sie? (What would you like?) |
+| Guest | Ich hätte gern die Suppe. (I'd like the soup.) |
+| Waiter | Möchten Sie etwas trinken? (Would you like something to drink?) |
+| Guest | Ein Wasser, bitte. (A water, please.) |
+| Guest (at the end) | Die Rechnung, bitte. (The bill, please.) |
+
+**Example:** "Ich **hätte gern** die Suppe und ein Wasser." – "**Die Rechnung, bitte.**"`,
+      explanationTr: `## Restoranda
+
+Restoranda tipik bir konuşma şöyle geçer:
+
+| Kim | Cümle |
+| -------- | ----- |
+| Garson | Was möchten Sie? (Ne istersiniz?) |
+| Müşteri | Ich hätte gern die Suppe. (Çorba isterim.) |
+| Garson | Möchten Sie etwas trinken? (İçecek bir şey ister misiniz?) |
+| Müşteri | Ein Wasser, bitte. (Bir su, lütfen.) |
+| Müşteri (sonda) | Die Rechnung, bitte. (Hesap, lütfen.) |
+
+**Örnek:** „Ich **hätte gern** die Suppe und ein Wasser." – „**Die Rechnung, bitte.**"`,
     },
   })
   await prisma.exercise.createMany({
@@ -2786,12 +2886,39 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
       unitId: a1Unit10.id,
       order: 4,
       grammarTopic: 'Übung (Essen & Einkaufen Wiederholung)',
-      explanationDe:
-        'Wiederholung: Einkaufen und Bestellen. "Ich gehe einkaufen. Ich kaufe Brot, Käse und Milch. Im Café hätte ich gern einen Kaffee."',
-      explanationEn:
-        'Review: shopping and ordering. "Ich gehe einkaufen." (I go shopping.) "Ich kaufe Brot, Käse und Milch." (I buy bread, cheese, and milk.) "Im Café hätte ich gern einen Kaffee." (At the café I\'d like a coffee.)',
-      explanationTr:
-        'Tekrar: alışveriş ve sipariş verme. "Ich gehe einkaufen." (Alışverişe gidiyorum.) "Ich kaufe Brot, Käse und Milch." (Ekmek, peynir ve süt alıyorum.) "Im Café hätte ich gern einen Kaffee." (Kafede bir kahve isterim.)',
+      explanationDe: `## Übung: Essen & Einkaufen
+
+In dieser Lektion wiederholst du das Einkaufen und Bestellen. Du kombinierst **Lebensmittel**, **Mengenangaben** und höfliche Formen wie „Ich hätte gern".
+
+Ein kleiner Dialog:
+
+- Ich **gehe einkaufen**. Ich **kaufe** Brot, Käse und Milch.
+- Im Café: „Ich **hätte gern** einen Kaffee, bitte."
+- „**Die Rechnung, bitte.**"
+
+**Beispiel:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.`,
+      explanationEn: `## Practice: food & shopping
+
+In this lesson you review shopping and ordering. You combine **food words**, **quantities** and polite forms like "Ich hätte gern".
+
+A short dialogue:
+
+- Ich **gehe einkaufen**. Ich **kaufe** Brot, Käse und Milch. (I go shopping. I buy bread, cheese and milk.)
+- At the café: "Ich **hätte gern** einen Kaffee, bitte." (I'd like a coffee, please.)
+- "**Die Rechnung, bitte.**" (The bill, please.)
+
+**Example:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.`,
+      explanationTr: `## Alıştırma: yemek & alışveriş
+
+Bu derste alışveriş ve sipariş vermeyi tekrar edersin. **Gıda kelimelerini**, **miktar ifadelerini** ve „Ich hätte gern" gibi kibar biçimleri birleştirirsin.
+
+Kısa bir diyalog:
+
+- Ich **gehe einkaufen**. Ich **kaufe** Brot, Käse und Milch. (Alışverişe giderim. Ekmek, peynir ve süt alırım.)
+- Kafede: „Ich **hätte gern** einen Kaffee, bitte." (Bir kahve isterim, lütfen.)
+- „**Die Rechnung, bitte.**" (Hesap, lütfen.)
+
+**Örnek:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.`,
     },
   })
   await prisma.exercise.createMany({
