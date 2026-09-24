@@ -1270,12 +1270,48 @@ Ailen hakkında şöyle konuşursun:
       unitId: a1Unit5.id,
       order: 1,
       grammarTopic: 'Zahlen 11-100',
-      explanationDe:
-        'Zahlen ab 11: elf, zwölf, dreizehn... zwanzig, dreißig... hundert. Ab 21 sagt man die Einer vor den Zehnern: einundzwanzig (21).',
-      explanationEn:
-        'Numbers from 11: elf (11), zwölf (12), dreizehn (13)... zwanzig (20), dreißig (30)... hundert (100). From 21 on, the units come before the tens: einundzwanzig (21, literally "one-and-twenty").',
-      explanationTr:
-        "11'den itibaren sayılar: elf (11), zwölf (12), dreizehn (13)... zwanzig (20), dreißig (30)... hundert (100). 21'den itibaren birler onlardan önce söylenir: einundzwanzig (21, kelimenin tam anlamıyla 'bir-ve-yirmi').",
+      explanationDe: `## Die Zahlen 11–100
+
+Die Zehner enden auf **-zig** (Ausnahme: dreißig). Ab 21 nennst du zuerst den Einer, dann „und", dann den Zehner.
+
+| Zahl | Wort |
+| ---- | ---- |
+| 11 | elf |
+| 12 | zwölf |
+| 20 | zwanzig |
+| 21 | einundzwanzig |
+| 30 | dreißig |
+| 100 | hundert |
+
+**Beispiel:** Ich bin **einundzwanzig** Jahre alt. Das kostet **dreißig** Euro.`,
+      explanationEn: `## Numbers 11–100
+
+The tens end in **-zig** (exception: dreißig). From 21 on, you say the unit first, then "und", then the ten.
+
+| Number | Word |
+| ------ | ---- |
+| 11 | elf |
+| 12 | zwölf |
+| 20 | zwanzig |
+| 21 | einundzwanzig |
+| 30 | dreißig |
+| 100 | hundert |
+
+**Example:** Ich bin **einundzwanzig** Jahre alt. (I am twenty-one years old.) Das kostet **dreißig** Euro. (That costs thirty euros.) Note: 21 is literally "one-and-twenty".`,
+      explanationTr: `## Sayılar 11–100
+
+Onlar **-zig** ile biter (istisna: dreißig). 21'den itibaren önce biri, sonra „und", sonra onu söylersin.
+
+| Sayı | Sözcük |
+| ---- | ------ |
+| 11 | elf |
+| 12 | zwölf |
+| 20 | zwanzig |
+| 21 | einundzwanzig |
+| 30 | dreißig |
+| 100 | hundert |
+
+**Örnek:** Ich bin **einundzwanzig** Jahre alt. (Yirmi bir yaşındayım.) Das kostet **dreißig** Euro. (Bu otuz euro.) Not: 21, kelime kelime „bir-ve-yirmi" demektir.`,
     },
   })
   await prisma.exercise.createMany({
@@ -1304,12 +1340,42 @@ Ailen hakkında şöyle konuşursun:
       unitId: a1Unit5.id,
       order: 2,
       grammarTopic: 'Uhrzeit',
-      explanationDe:
-        'Die Uhrzeit fragt man mit "Wie spät ist es?" oder "Wie viel Uhr ist es?". Antwort: "Es ist drei Uhr." / "Es ist halb vier." (3:30)',
-      explanationEn:
-        'You ask the time with "Wie spät ist es?" or "Wie viel Uhr ist es?" (What time is it?). Answer: "Es ist drei Uhr." (It\'s three o\'clock.) / "Es ist halb vier." (It\'s half past three, literally "half four".)',
-      explanationTr:
-        "Saat 'Wie spät ist es?' ya da 'Wie viel Uhr ist es?' diye sorulur. Cevap: 'Es ist drei Uhr.' (Saat üç.) / 'Es ist halb vier.' (Üç buçuk, kelimenin tam anlamıyla 'dördün yarısı'.)",
+      explanationDe: `## Die Uhrzeit
+
+Du fragst nach der Zeit mit **„Wie spät ist es?"** oder **„Wie viel Uhr ist es?"**. Die Antwort beginnt mit „Es ist …".
+
+| Uhrzeit | Deutsch |
+| ------- | ------- |
+| 3:00 | Es ist drei Uhr. |
+| 3:15 | Es ist Viertel nach drei. |
+| 3:30 | Es ist halb vier. |
+| 3:45 | Es ist Viertel vor vier. |
+
+**Achtung:** „halb vier" bedeutet 3:30 – also *eine halbe Stunde vor vier*.`,
+      explanationEn: `## Telling the time
+
+You ask the time with **"Wie spät ist es?"** or **"Wie viel Uhr ist es?"** (What time is it?). The answer starts with "Es ist …".
+
+| Time | German |
+| ---- | ------ |
+| 3:00 | Es ist drei Uhr. |
+| 3:15 | Es ist Viertel nach drei. |
+| 3:30 | Es ist halb vier. |
+| 3:45 | Es ist Viertel vor vier. |
+
+**Watch out:** "halb vier" means 3:30 – i.e. *half an hour before four*, not after three.`,
+      explanationTr: `## Saati söyleme
+
+Saati **„Wie spät ist es?"** ya da **„Wie viel Uhr ist es?"** (Saat kaç?) diye sorarsın. Cevap „Es ist …" ile başlar.
+
+| Saat | Almanca |
+| ---- | ------- |
+| 3:00 | Es ist drei Uhr. |
+| 3:15 | Es ist Viertel nach drei. |
+| 3:30 | Es ist halb vier. |
+| 3:45 | Es ist Viertel vor vier. |
+
+**Dikkat:** „halb vier" 3:30 demektir – yani *dörde yarım saat kala*, üç buçuk. Almanca bir sonraki saati sayar.`,
     },
   })
   await prisma.exercise.createMany({
@@ -1338,12 +1404,51 @@ Ailen hakkında şöyle konuşursun:
       unitId: a1Unit5.id,
       order: 3,
       grammarTopic: 'Wochentage',
-      explanationDe:
-        'Die Wochentage: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag. "Am Montag" bedeutet "on Monday".',
-      explanationEn:
-        'The days of the week: Montag (Monday), Dienstag (Tuesday), Mittwoch (Wednesday), Donnerstag (Thursday), Freitag (Friday), Samstag (Saturday), Sonntag (Sunday). "Am Montag" means "on Monday".',
-      explanationTr:
-        "Haftanın günleri: Montag (Pazartesi), Dienstag (Salı), Mittwoch (Çarşamba), Donnerstag (Perşembe), Freitag (Cuma), Samstag (Cumartesi), Sonntag (Pazar). 'Am Montag' 'Pazartesi günü' demektir.",
+      explanationDe: `## Die Wochentage
+
+Alle Wochentage sind maskulin (der). Für „an einem Tag" benutzt du **am** (an + dem).
+
+| Deutsch | Englisch |
+| ---------- | -------- |
+| Montag | Monday |
+| Dienstag | Tuesday |
+| Mittwoch | Wednesday |
+| Donnerstag | Thursday |
+| Freitag | Friday |
+| Samstag | Saturday |
+| Sonntag | Sunday |
+
+**Beispiel:** **Am** Montag arbeite ich. **Am** Sonntag habe ich frei.`,
+      explanationEn: `## The days of the week
+
+All weekdays are masculine (der). To say "on a day" you use **am** (an + dem).
+
+| German | English |
+| ---------- | --------- |
+| Montag | Monday |
+| Dienstag | Tuesday |
+| Mittwoch | Wednesday |
+| Donnerstag | Thursday |
+| Freitag | Friday |
+| Samstag | Saturday |
+| Sonntag | Sunday |
+
+**Example:** **Am** Montag arbeite ich. (On Monday I work.) **Am** Sonntag habe ich frei. (On Sunday I'm off.)`,
+      explanationTr: `## Haftanın günleri
+
+Bütün günler erildir (der). „Bir günde" demek için **am** (an + dem) kullanırsın.
+
+| Almanca | Türkçe |
+| ---------- | ------ |
+| Montag | Pazartesi |
+| Dienstag | Salı |
+| Mittwoch | Çarşamba |
+| Donnerstag | Perşembe |
+| Freitag | Cuma |
+| Samstag | Cumartesi |
+| Sonntag | Pazar |
+
+**Örnek:** **Am** Montag arbeite ich. (Pazartesi çalışırım.) **Am** Sonntag habe ich frei. (Pazar günü izinliyim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -1378,12 +1483,39 @@ Ailen hakkında şöyle konuşursun:
       unitId: a1Unit5.id,
       order: 4,
       grammarTopic: 'Tagesablauf',
-      explanationDe:
-        'Um den Tagesablauf zu beschreiben, benutzt man Zeitangaben mit Verben: "Ich esse um acht Uhr Frühstück. Ich arbeite von neun bis siebzehn Uhr."',
-      explanationEn:
-        'To describe your daily routine, use time expressions with verbs: "Ich esse um acht Uhr Frühstück." (I eat breakfast at eight o\'clock.) "Ich arbeite von neun bis siebzehn Uhr." (I work from nine to five.)',
-      explanationTr:
-        "Günlük rutini anlatmak için zaman ifadeleriyle fiiller kullanılır: 'Ich esse um acht Uhr Frühstück.' (Saat sekizde kahvaltı yaparım.) 'Ich arbeite von neun bis siebzehn Uhr.' (Dokuzdan beşe kadar çalışırım.)",
+      explanationDe: `## Der Tagesablauf
+
+Um deinen Tag zu beschreiben, verbindest du Zeitangaben mit Verben. Wichtige Präpositionen:
+
+| Präposition | Bedeutung | Beispiel |
+| ----------- | --------- | -------- |
+| um | at (Uhrzeit) | **um** acht Uhr |
+| von … bis | from … to | **von** neun **bis** siebzehn Uhr |
+| am | on (Tag) | **am** Morgen |
+
+**Beispiel:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr.`,
+      explanationEn: `## Daily routine
+
+To describe your day, you combine time expressions with verbs. Important prepositions:
+
+| Preposition | Meaning | Example |
+| ----------- | ------- | -------- |
+| um | at (a time) | **um** acht Uhr |
+| von … bis | from … to | **von** neun **bis** siebzehn Uhr |
+| am | on (a part of day) | **am** Morgen |
+
+**Example:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr. (I have breakfast at eight and work from nine to five.)`,
+      explanationTr: `## Günlük akış (Tagesablauf)
+
+Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli edatlar:
+
+| Edat | Anlamı | Örnek |
+| ---- | ------ | ----- |
+| um | -de (saat) | **um** acht Uhr |
+| von … bis | -den … -e kadar | **von** neun **bis** siebzehn Uhr |
+| am | -de (günün bölümü) | **am** Morgen |
+
+**Örnek:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr. (Saat sekizde kahvaltı yaparım ve dokuzdan beşe kadar çalışırım.)`,
     },
   })
   await prisma.exercise.createMany({
