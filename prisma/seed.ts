@@ -6396,12 +6396,48 @@ Belirli tanımlıktan sonraki kuralları özetleyelim. Her şeyden önce **tek**
       unitId: a2Unit10.id,
       order: 1,
       grammarTopic: 'Reflexivpronomen im Akkusativ',
-      explanationDe:
-        'Reflexivpronomen im Akkusativ: mich, dich, sich, uns, euch, sich. Sie stehen bei reflexiven Verben: "Ich wasche mich." "Er freut sich."',
-      explanationEn:
-        'Accusative reflexive pronouns: mich, dich, sich, uns, euch, sich. They are used with reflexive verbs: "Ich wasche mich" (I wash myself). "Er freut sich" (He is happy).',
-      explanationTr:
-        'Akkusativ dönüşlü zamirler: mich, dich, sich, uns, euch, sich. Dönüşlü fiillerle kullanılır: "Ich wasche mich." (Kendimi yıkarım.) "Er freut sich." (Sevinir.)',
+      explanationDe: `## Reflexivpronomen im Akkusativ
+
+Reflexive Verben beziehen die Handlung auf das Subjekt zurück – man macht etwas mit sich selbst. Dafür braucht man ein **Reflexivpronomen**. Im Akkusativ sehen die Formen so aus:
+
+| Person | Reflexivpronomen |
+| --------- | ---------------- |
+| ich | mich |
+| du | dich |
+| er/sie/es | sich |
+| wir | uns |
+| ihr | euch |
+| sie/Sie | sich |
+
+**Beispiele:** Ich wasche **mich**. · Er freut **sich**. · Wir treffen **uns** um acht.`,
+      explanationEn: `## Reflexive pronouns in the accusative
+
+Reflexive verbs point the action back at the subject – you do something to yourself. This needs a **reflexive pronoun**. In the accusative the forms are:
+
+| Person | Reflexive pronoun |
+| --------- | ---------------- |
+| ich | mich |
+| du | dich |
+| er/sie/es | sich |
+| wir | uns |
+| ihr | euch |
+| sie/Sie | sich |
+
+**Examples:** Ich wasche **mich**. (I wash myself.) · Er freut **sich**. (He is happy.) · Wir treffen **uns** um acht. (We meet at eight.)`,
+      explanationTr: `## Akkusativ'de dönüşlü zamirler
+
+Dönüşlü fiiller eylemi özneye geri döndürür – kişi bir şeyi kendine yapar. Bunun için bir **dönüşlü zamir** gerekir. Akkusativ'de biçimler şöyledir:
+
+| Kişi | Dönüşlü zamir |
+| --------- | ---------------- |
+| ich | mich |
+| du | dich |
+| er/sie/es | sich |
+| wir | uns |
+| ihr | euch |
+| sie/Sie | sich |
+
+**Örnekler:** Ich wasche **mich**. (Kendimi yıkarım.) · Er freut **sich**. (Sevinir.) · Wir treffen **uns** um acht. (Saat sekizde buluşuruz.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6430,12 +6466,42 @@ Belirli tanımlıktan sonraki kuralları özetleyelim. Her şeyden önce **tek**
       unitId: a2Unit10.id,
       order: 2,
       grammarTopic: 'Häufige reflexive Verben',
-      explanationDe:
-        'Häufige reflexive Verben: sich freuen (über/auf), sich interessieren (für), sich fühlen. Beispiel: "Ich interessiere mich für Musik." "Ich fühle mich gut."',
-      explanationEn:
-        'Common reflexive verbs: sich freuen (über/auf, to be happy about / look forward to), sich interessieren (für, to be interested in), sich fühlen (to feel). Example: "Ich interessiere mich für Musik" (I\'m interested in music). "Ich fühle mich gut" (I feel good).',
-      explanationTr:
-        'Yaygın dönüşlü fiiller: sich freuen (über/auf, sevinmek/dört gözle beklemek), sich interessieren (für, ilgilenmek), sich fühlen (hissetmek). Örnek: "Ich interessiere mich für Musik." "Ich fühle mich gut."',
+      explanationDe: `## Häufige reflexive Verben
+
+Viele reflexive Verben stehen zusammen mit einer festen Präposition. Diese Kombination lernst du am besten als Einheit. Das Reflexivpronomen steht meist direkt nach dem konjugierten Verb.
+
+| Verb | Präposition | Bedeutung |
+| ---- | ----------- | --------- |
+| sich freuen | über / auf | sich freuen |
+| sich interessieren | für | Interesse haben |
+| sich fühlen | – | ein Gefühl haben |
+| sich ärgern | über | sich aufregen |
+
+**Beispiele:** Ich interessiere **mich** für Musik. · Ich fühle **mich** gut.`,
+      explanationEn: `## Common reflexive verbs
+
+Many reflexive verbs come with a fixed preposition. It's best to learn this combination as a unit. The reflexive pronoun usually stands right after the conjugated verb.
+
+| Verb | Preposition | Meaning |
+| ---- | ----------- | --------- |
+| sich freuen | über / auf | to be happy / look forward to |
+| sich interessieren | für | to be interested in |
+| sich fühlen | – | to feel |
+| sich ärgern | über | to be annoyed about |
+
+**Examples:** Ich interessiere **mich** für Musik. (I'm interested in music.) · Ich fühle **mich** gut. (I feel good.)`,
+      explanationTr: `## Yaygın dönüşlü fiiller
+
+Birçok dönüşlü fiil sabit bir edatla birlikte gelir. Bu birleşimi bir bütün olarak öğrenmen en iyisidir. Dönüşlü zamir genellikle çekimli fiilin hemen ardından gelir.
+
+| Fiil | Edat | Anlamı |
+| ---- | ----------- | --------- |
+| sich freuen | über / auf | sevinmek / beklemek |
+| sich interessieren | für | ilgilenmek |
+| sich fühlen | – | hissetmek |
+| sich ärgern | über | sinirlenmek |
+
+**Örnekler:** Ich interessiere **mich** für Musik. (Müzikle ilgileniyorum.) · Ich fühle **mich** gut. (Kendimi iyi hissediyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6464,12 +6530,48 @@ Belirli tanımlıktan sonraki kuralları özetleyelim. Her şeyden önce **tek**
       unitId: a2Unit10.id,
       order: 3,
       grammarTopic: 'Reflexivpronomen im Dativ',
-      explanationDe:
-        'Bei manchen reflexiven Verben steht das Reflexivpronomen im Dativ, oft mit einem zusätzlichen Akkusativobjekt: mir, dir, sich, uns, euch, sich. Beispiel: "Ich kaufe mir ein neues Handy." "Ich stelle mir das vor."',
-      explanationEn:
-        'With some reflexive verbs, the reflexive pronoun is in the dative, often with an additional accusative object: mir, dir, sich, uns, euch, sich. Example: "Ich kaufe mir ein neues Handy" (I\'m buying myself a new phone). "Ich stelle mir das vor" (I imagine that).',
-      explanationTr:
-        'Bazı dönüşlü fiillerde dönüşlü zamir Dativ\'dedir, genellikle ek bir Akkusativ nesnesiyle birlikte: mir, dir, sich, uns, euch, sich. Örnek: "Ich kaufe mir ein neues Handy." "Ich stelle mir das vor."',
+      explanationDe: `## Reflexivpronomen im Dativ
+
+Wenn im Satz schon ein Akkusativobjekt steht (z. B. „ein neues Handy"), rückt das Reflexivpronomen in den **Dativ**. Nur „ich" und „du" unterscheiden sich vom Akkusativ – der Rest bleibt gleich.
+
+| Person | Akkusativ | Dativ |
+| --------- | --------- | ----- |
+| ich | mich | mir |
+| du | dich | dir |
+| er/sie/es | sich | sich |
+| wir | uns | uns |
+| ihr | euch | euch |
+| sie/Sie | sich | sich |
+
+**Beispiele:** Ich kaufe **mir** ein neues Handy. · Ich stelle **mir** das vor.`,
+      explanationEn: `## Reflexive pronouns in the dative
+
+When the sentence already has an accusative object (e.g. "ein neues Handy"), the reflexive pronoun moves into the **dative**. Only "ich" and "du" differ from the accusative – the rest stays the same.
+
+| Person | Accusative | Dative |
+| --------- | --------- | ----- |
+| ich | mich | mir |
+| du | dich | dir |
+| er/sie/es | sich | sich |
+| wir | uns | uns |
+| ihr | euch | euch |
+| sie/Sie | sich | sich |
+
+**Examples:** Ich kaufe **mir** ein neues Handy. (I'm buying myself a new phone.) · Ich stelle **mir** das vor. (I imagine that.)`,
+      explanationTr: `## Dativ'de dönüşlü zamirler
+
+Cümlede zaten bir Akkusativ nesnesi varsa (örn. „ein neues Handy"), dönüşlü zamir **Dativ**'e geçer. Sadece „ich" ve „du" Akkusativ'den farklıdır – geri kalanı aynı kalır.
+
+| Kişi | Akkusativ | Dativ |
+| --------- | --------- | ----- |
+| ich | mich | mir |
+| du | dich | dir |
+| er/sie/es | sich | sich |
+| wir | uns | uns |
+| ihr | euch | euch |
+| sie/Sie | sich | sich |
+
+**Örnekler:** Ich kaufe **mir** ein neues Handy. (Kendime yeni bir telefon alıyorum.) · Ich stelle **mir** das vor. (Bunu hayal ediyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6498,12 +6600,42 @@ Belirli tanımlıktan sonraki kuralları özetleyelim. Her şeyden önce **tek**
       unitId: a2Unit10.id,
       order: 4,
       grammarTopic: 'Übung: Reflexive Verben im Alltag',
-      explanationDe:
-        'Reflexive Verben beschreiben oft tägliche Routinen und Gefühle: sich duschen, sich anziehen, sich entspannen. Beispiel: "Ich dusche mich und ziehe mich an."',
-      explanationEn:
-        'Reflexive verbs often describe daily routines and feelings: sich duschen (to shower), sich anziehen (to get dressed), sich entspannen (to relax). Example: "Ich dusche mich und ziehe mich an" (I shower and get dressed).',
-      explanationTr:
-        'Dönüşlü fiiller genellikle günlük rutinleri ve duyguları anlatır: sich duschen (duş almak), sich anziehen (giyinmek), sich entspannen (rahatlamak). Örnek: "Ich dusche mich und ziehe mich an."',
+      explanationDe: `## Übung: Reflexive Verben im Alltag
+
+Viele Tagesabläufe beschreibt man mit reflexiven Verben. Achte auf die Wortstellung: Subjekt – Verb – Reflexivpronomen – Rest. Bei trennbaren Verben (z. B. „sich anziehen") steht der Vorsilbenteil am Satzende.
+
+| Verb | Bedeutung |
+| ---- | --------- |
+| sich duschen | duş almak |
+| sich anziehen | giyinmek |
+| sich entspannen | rahatlamak |
+| sich beeilen | acele etmek |
+
+**Beispiel:** Ich dusche **mich** und ziehe **mich** an.`,
+      explanationEn: `## Practice: reflexive verbs in everyday life
+
+Many daily routines are described with reflexive verbs. Watch the word order: subject – verb – reflexive pronoun – rest. With separable verbs (e.g. "sich anziehen"), the prefix goes to the end of the sentence.
+
+| Verb | Meaning |
+| ---- | --------- |
+| sich duschen | to shower |
+| sich anziehen | to get dressed |
+| sich entspannen | to relax |
+| sich beeilen | to hurry |
+
+**Example:** Ich dusche **mich** und ziehe **mich** an. (I shower and get dressed.)`,
+      explanationTr: `## Alıştırma: günlük hayatta dönüşlü fiiller
+
+Birçok günlük rutin dönüşlü fiillerle anlatılır. Kelime sırasına dikkat et: özne – fiil – dönüşlü zamir – geri kalan. Ayrılabilen fiillerde (örn. „sich anziehen") ön ek cümlenin sonuna gider.
+
+| Fiil | Anlamı |
+| ---- | --------- |
+| sich duschen | duş almak |
+| sich anziehen | giyinmek |
+| sich entspannen | rahatlamak |
+| sich beeilen | acele etmek |
+
+**Örnek:** Ich dusche **mich** und ziehe **mich** an. (Duş alıp giyinirim.)`,
     },
   })
   await prisma.exercise.createMany({
