@@ -2122,12 +2122,36 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
       unitId: a1Unit8.id,
       order: 1,
       grammarTopic: 'Trennbare Verben (Einführung)',
-      explanationDe:
-        'Trennbare Verben haben ein Präfix, das im Präsens ans Satzende wandert: "aufstehen" → "Ich stehe früh auf."',
-      explanationEn:
-        'Separable verbs have a prefix that moves to the end of the sentence in the present tense: "aufstehen" (to get up) → "Ich stehe früh auf." (I get up early.)',
-      explanationTr:
-        'Ayrılabilir fiillerin bir ön eki vardır ve şimdiki zamanda cümle sonuna gider: "aufstehen" (kalkmak) → "Ich stehe früh auf." (Erken kalkarım.)',
+      explanationDe: `## Trennbare Verben (Einführung)
+
+Viele Verben haben ein **trennbares Präfix**. Im Präsens trennt sich das Präfix ab und wandert ans **Satzende**. Der Wortstamm wird ganz normal konjugiert.
+
+| Infinitiv | Präfix | Satz |
+| ---------- | ------ | ---- |
+| **auf**stehen | auf | Ich stehe früh **auf**. |
+| **an**kommen | an | Der Zug kommt spät **an**. |
+
+**Beispiel:** „aufstehen" → Ich **stehe** um sieben Uhr **auf**.`,
+      explanationEn: `## Separable verbs (introduction)
+
+Many verbs have a **separable prefix**. In the present tense the prefix splits off and moves to the **end of the sentence**. The stem is conjugated as normal.
+
+| Infinitive | Prefix | Sentence |
+| ---------- | ------ | -------- |
+| **auf**stehen (get up) | auf | Ich stehe früh **auf**. |
+| **an**kommen (arrive) | an | Der Zug kommt spät **an**. |
+
+**Example:** "aufstehen" → Ich **stehe** um sieben Uhr **auf**. (I get up at seven o'clock.)`,
+      explanationTr: `## Ayrılabilen fiiller (giriş)
+
+Birçok fiilin **ayrılabilen bir ön eki** vardır. Geniş zamanda ön ek ayrılıp **cümlenin sonuna** gider. Gövde normal şekilde çekimlenir.
+
+| Mastar | Ön ek | Cümle |
+| ------ | ----- | ----- |
+| **auf**stehen (kalkmak) | auf | Ich stehe früh **auf**. |
+| **an**kommen (varmak) | an | Der Zug kommt spät **an**. |
+
+**Örnek:** „aufstehen" → Ich **stehe** um sieben Uhr **auf**. (Saat yedide kalkarım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -2156,12 +2180,42 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
       unitId: a1Unit8.id,
       order: 2,
       grammarTopic: 'Weitere trennbare Verben (einkaufen, fernsehen)',
-      explanationDe:
-        'Weitere trennbare Verben: "einkaufen" (Ich kaufe Gemüse ein), "fernsehen" (Er sieht abends fern), "anrufen" (Sie ruft ihre Mutter an).',
-      explanationEn:
-        'More separable verbs: "einkaufen" (to shop) — Ich kaufe Gemüse ein. "fernsehen" (to watch TV) — Er sieht abends fern. "anrufen" (to call) — Sie ruft ihre Mutter an.',
-      explanationTr:
-        'Diğer ayrılabilir fiiller: "einkaufen" (alışveriş yapmak) — Ich kaufe Gemüse ein. "fernsehen" (televizyon izlemek) — Er sieht abends fern. "anrufen" (aramak) — Sie ruft ihre Mutter an.',
+      explanationDe: `## Weitere trennbare Verben
+
+Viele Alltagsverben sind trennbar. Das Präfix steht immer am Satzende:
+
+| Infinitiv | Bedeutung | Satz |
+| ------------ | ---------- | ---- |
+| einkaufen | to shop | Ich kaufe Gemüse **ein**. |
+| fernsehen | to watch TV | Er sieht abends **fern**. |
+| anrufen | to call | Sie ruft ihre Mutter **an**. |
+| aufräumen | to tidy up | Wir räumen das Zimmer **auf**. |
+
+**Beispiel:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**.`,
+      explanationEn: `## More separable verbs
+
+Many everyday verbs are separable. The prefix always goes at the end of the sentence:
+
+| Infinitive | Meaning | Sentence |
+| ------------ | ---------- | -------- |
+| einkaufen | to shop | Ich kaufe Gemüse **ein**. |
+| fernsehen | to watch TV | Er sieht abends **fern**. |
+| anrufen | to call | Sie ruft ihre Mutter **an**. |
+| aufräumen | to tidy up | Wir räumen das Zimmer **auf**. |
+
+**Example:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**. (I shop on Saturday and watch TV in the evening.)`,
+      explanationTr: `## Diğer ayrılabilen fiiller
+
+Birçok günlük fiil ayrılabilir. Ön ek her zaman cümlenin sonunda yer alır:
+
+| Mastar | Anlamı | Cümle |
+| ------------ | --------- | ----- |
+| einkaufen | alışveriş yapmak | Ich kaufe Gemüse **ein**. |
+| fernsehen | televizyon izlemek | Er sieht abends **fern**. |
+| anrufen | aramak | Sie ruft ihre Mutter **an**. |
+| aufräumen | toplamak | Wir räumen das Zimmer **auf**. |
+
+**Örnek:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**. (Cumartesi alışveriş yaparım ve akşam televizyon izlerim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -2190,11 +2244,36 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
       unitId: a1Unit8.id,
       order: 3,
       grammarTopic: 'Satzstellung mit trennbaren Verben und Zeit',
-      explanationDe: 'Zeitangaben stehen meist nach dem konjugierten Verb: "Ich stehe täglich um sieben Uhr auf."',
-      explanationEn:
-        'Time expressions usually come right after the conjugated verb: "Ich stehe täglich um sieben Uhr auf." (I get up at seven o\'clock every day.)',
-      explanationTr:
-        'Zaman ifadeleri genellikle çekimli fiilden hemen sonra gelir: "Ich stehe täglich um sieben Uhr auf." (Her gün saat yedide kalkarım.)',
+      explanationDe: `## Satzstellung: trennbare Verben und Zeit
+
+Das konjugierte Verb bleibt an **Position 2**, das Präfix am **Ende**. Zeitangaben stehen dazwischen – meist direkt nach dem Verb.
+
+| Position 1 | Verb (2) | Zeit | Ende (Präfix) |
+| ---------- | -------- | ---- | ------------- |
+| Ich | stehe | täglich um sieben Uhr | auf. |
+| Sie | ruft | jeden Abend | an. |
+
+**Beispiel:** Ich **stehe** täglich um sieben Uhr **auf**.`,
+      explanationEn: `## Word order: separable verbs and time
+
+The conjugated verb stays in **position 2**, the prefix at the **end**. Time expressions go in between – usually right after the verb.
+
+| Position 1 | Verb (2) | Time | End (prefix) |
+| ---------- | -------- | ---- | ------------ |
+| Ich | stehe | täglich um sieben Uhr | auf. |
+| Sie | ruft | jeden Abend | an. |
+
+**Example:** Ich **stehe** täglich um sieben Uhr **auf**. (I get up at seven o'clock every day.)`,
+      explanationTr: `## Cümle dizilişi: ayrılabilen fiiller ve zaman
+
+Çekimli fiil **2. konumda**, ön ek **sonda** kalır. Zaman ifadeleri araya girer – çoğunlukla fiilin hemen ardından.
+
+| Konum 1 | Fiil (2) | Zaman | Son (ön ek) |
+| ------- | -------- | ----- | ----------- |
+| Ich | stehe | täglich um sieben Uhr | auf. |
+| Sie | ruft | jeden Abend | an. |
+
+**Örnek:** Ich **stehe** täglich um sieben Uhr **auf**. (Her gün saat yedide kalkarım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -2223,12 +2302,39 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
       unitId: a1Unit8.id,
       order: 4,
       grammarTopic: 'Übung (trennbare Verben Wiederholung)',
-      explanationDe:
-        'Wiederholung: trennbare Verben im Alltag. "Wann stehst du auf?" "Ich stehe um acht Uhr auf und kaufe dann Brot ein."',
-      explanationEn:
-        'Review: separable verbs in daily life. "Wann stehst du auf?" (When do you get up?) "Ich stehe um acht Uhr auf und kaufe dann Brot ein." (I get up at eight and then buy bread.)',
-      explanationTr:
-        'Tekrar: günlük hayatta ayrılabilir fiiller. "Wann stehst du auf?" (Ne zaman kalkarsın?) "Ich stehe um acht Uhr auf und kaufe dann Brot ein." (Saat sekizde kalkarım ve sonra ekmek alırım.)',
+      explanationDe: `## Übung: trennbare Verben im Alltag
+
+In dieser Lektion wiederholst du trennbare Verben. Denk an die Regel: **Verb an Position 2, Präfix am Ende.**
+
+Typische Fragen und Antworten:
+
+- **Wann** stehst du **auf**? – Ich stehe um acht Uhr **auf**.
+- **Was** kaufst du **ein**? – Ich kaufe Brot und Milch **ein**.
+- **Wann** rufst du deine Mutter **an**? – Ich rufe sie am Abend **an**.
+
+**Beispiel:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.`,
+      explanationEn: `## Practice: separable verbs in daily life
+
+In this lesson you review separable verbs. Remember the rule: **verb in position 2, prefix at the end.**
+
+Typical questions and answers:
+
+- **Wann** stehst du **auf**? – Ich stehe um acht Uhr **auf**. (When do you get up? – I get up at eight.)
+- **Was** kaufst du **ein**? – Ich kaufe Brot und Milch **ein**. (What do you buy? – I buy bread and milk.)
+- **Wann** rufst du deine Mutter **an**? – Ich rufe sie am Abend **an**. (When do you call your mother? – I call her in the evening.)
+
+**Example:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.`,
+      explanationTr: `## Alıştırma: günlük hayatta ayrılabilen fiiller
+
+Bu derste ayrılabilen fiilleri tekrar edersin. Kuralı hatırla: **fiil 2. konumda, ön ek sonda.**
+
+Tipik sorular ve cevaplar:
+
+- **Wann** stehst du **auf**? – Ich stehe um acht Uhr **auf**. (Ne zaman kalkarsın? – Saat sekizde kalkarım.)
+- **Was** kaufst du **ein**? – Ich kaufe Brot und Milch **ein**. (Ne alırsın? – Ekmek ve süt alırım.)
+- **Wann** rufst du deine Mutter **an**? – Ich rufe sie am Abend **an**. (Anneni ne zaman ararsın? – Onu akşam ararım.)
+
+**Örnek:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.`,
     },
   })
   await prisma.exercise.createMany({
