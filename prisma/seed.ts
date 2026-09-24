@@ -3537,12 +3537,48 @@ Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
       unitId: a1Unit13.id,
       order: 1,
       grammarTopic: 'Adjektivendungen nach bestimmtem Artikel',
-      explanationDe:
-        'Nach dem bestimmten Artikel (der/die/das) endet das Adjektiv im Nominativ meist auf -e: "der große Mann", "die kleine Frau", "das neue Auto".',
-      explanationEn:
-        'After the definite article (der/die/das), the adjective usually ends in -e in the nominative: "der große Mann" (the tall man), "die kleine Frau" (the small woman), "das neue Auto" (the new car).',
-      explanationTr:
-        'Belirli artikelden (der/die/das) sonra sıfat yalın halde genellikle -e ile biter: "der große Mann" (uzun adam), "die kleine Frau" (küçük kadın), "das neue Auto" (yeni araba).',
+      explanationDe: `## Adjektivendungen nach bestimmtem Artikel
+
+Nach dem bestimmten Artikel (der/die/das) bekommt das Adjektiv im Nominativ meist die Endung -e. Im Plural endet es auf -en.
+
+| Genus | Artikel + Adjektiv + Nomen | Endung |
+| ----- | -------------------------- | ------ |
+| maskulin | der große Mann | -e |
+| feminin | die kleine Frau | -e |
+| neutrum | das neue Auto | -e |
+| Plural | die neuen Autos | -en |
+
+**Beispiele:** **Der große** Mann ist mein Vater. · **Das neue** Auto ist teuer. · **Die kleinen** Kinder spielen.
+
+Weil der Artikel das Genus schon zeigt, reicht beim Adjektiv die einfache Endung -e (im Plural -en).`,
+      explanationEn: `## Adjective endings after the definite article
+
+After the definite article (der/die/das), the adjective usually takes the ending -e in the nominative. In the plural it ends in -en.
+
+| Gender | Article + adjective + noun | Ending |
+| ------ | -------------------------- | ------ |
+| masculine | der große Mann | -e |
+| feminine | die kleine Frau | -e |
+| neuter | das neue Auto | -e |
+| plural | die neuen Autos | -en |
+
+**Examples:** Der große Mann ist mein Vater. (The tall man is my father.) · Das neue Auto ist teuer. (The new car is expensive.) · Die kleinen Kinder spielen. (The small children are playing.)
+
+Because the article already shows the gender, the adjective only needs the simple ending -e (or -en in the plural).`,
+      explanationTr: `## Belirli artikelden sonra sıfat ekleri
+
+Belirli artikelden (der/die/das) sonra sıfat yalın halde genellikle -e ekini alır. Çoğulda ise -en ile biter.
+
+| Cinsiyet | Artikel + sıfat + isim | Ek |
+| -------- | ---------------------- | -- |
+| eril | der große Mann | -e |
+| dişil | die kleine Frau | -e |
+| nötr | das neue Auto | -e |
+| çoğul | die neuen Autos | -en |
+
+**Örnekler:** Der große Mann ist mein Vater. (Uzun adam babamdır.) · Das neue Auto ist teuer. (Yeni araba pahalı.) · Die kleinen Kinder spielen. (Küçük çocuklar oynuyor.)
+
+Artikel cinsiyeti zaten gösterdiği için sıfata sadece basit -e eki (çoğulda -en) yeterlidir.`,
     },
   })
   await prisma.exercise.createMany({
@@ -3571,12 +3607,45 @@ Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
       unitId: a1Unit13.id,
       order: 2,
       grammarTopic: 'Adjektivendungen nach unbestimmtem Artikel',
-      explanationDe:
-        'Nach dem unbestimmten Artikel (ein/eine) richtet sich die Endung nach dem Genus: "ein großer Mann", "eine kleine Frau", "ein neues Auto".',
-      explanationEn:
-        'After the indefinite article (ein/eine), the ending depends on gender: "ein großer Mann" (a tall man), "eine kleine Frau" (a small woman), "ein neues Auto" (a new car).',
-      explanationTr:
-        'Belirsiz artikelden (ein/eine) sonra sıfat eki cinsiyete göre değişir: "ein großer Mann" (uzun bir adam), "eine kleine Frau" (küçük bir kadın), "ein neues Auto" (yeni bir araba).',
+      explanationDe: `## Adjektivendungen nach unbestimmtem Artikel
+
+Nach dem unbestimmten Artikel (ein/eine) zeigt das Adjektiv das Genus. Deshalb bekommt es im Nominativ eine deutlichere Endung: -er (maskulin), -e (feminin) oder -es (neutrum).
+
+| Genus | Artikel + Adjektiv + Nomen | Endung |
+| ----- | -------------------------- | ------ |
+| maskulin | ein großer Mann | -er |
+| feminin | eine kleine Frau | -e |
+| neutrum | ein neues Auto | -es |
+
+**Beispiele:** Das ist **ein großer** Mann. · Ich habe **ein neues** Auto. · Da kommt **eine kleine** Frau.
+
+Weil „ein" das Genus nicht zeigt, übernimmt das Adjektiv diese Aufgabe mit -er oder -es.`,
+      explanationEn: `## Adjective endings after the indefinite article
+
+After the indefinite article (ein/eine), the adjective shows the gender. That is why it takes a clearer ending in the nominative: -er (masculine), -e (feminine) or -es (neuter).
+
+| Gender | Article + adjective + noun | Ending |
+| ------ | -------------------------- | ------ |
+| masculine | ein großer Mann | -er |
+| feminine | eine kleine Frau | -e |
+| neuter | ein neues Auto | -es |
+
+**Examples:** Das ist ein großer Mann. (That is a tall man.) · Ich habe ein neues Auto. (I have a new car.) · Da kommt eine kleine Frau. (Here comes a small woman.)
+
+Because "ein" does not show the gender, the adjective takes on that job with -er or -es.`,
+      explanationTr: `## Belirsiz artikelden sonra sıfat ekleri
+
+Belirsiz artikelden (ein/eine) sonra cinsiyeti sıfat gösterir. Bu yüzden yalın halde daha belirgin bir ek alır: -er (eril), -e (dişil) veya -es (nötr).
+
+| Cinsiyet | Artikel + sıfat + isim | Ek |
+| -------- | ---------------------- | -- |
+| eril | ein großer Mann | -er |
+| dişil | eine kleine Frau | -e |
+| nötr | ein neues Auto | -es |
+
+**Örnekler:** Das ist ein großer Mann. (Bu uzun bir adam.) · Ich habe ein neues Auto. (Yeni bir arabam var.) · Da kommt eine kleine Frau. (İşte küçük bir kadın geliyor.)
+
+„ein" cinsiyeti göstermediği için bu görevi sıfat -er veya -es ile üstlenir.`,
     },
   })
   await prisma.exercise.createMany({
@@ -3611,12 +3680,51 @@ Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
       unitId: a1Unit13.id,
       order: 3,
       grammarTopic: 'Komparativ',
-      explanationDe:
-        'Der Komparativ wird meist mit -er gebildet: "schnell" -> "schneller". Unregelmäßig: "gut" -> "besser", "gern" -> "lieber", "viel" -> "mehr".',
-      explanationEn:
-        'The comparative is usually formed with -er: "schnell" (fast) -> "schneller" (faster). Irregular: "gut" (good) -> "besser" (better), "gern" (gladly) -> "lieber" (rather), "viel" (much) -> "mehr" (more).',
-      explanationTr:
-        'Karşılaştırma genelde -er ile yapılır: "schnell" (hızlı) -> "schneller" (daha hızlı). Düzensiz: "gut" (iyi) -> "besser" (daha iyi), "gern" (seve seve) -> "lieber" (tercihen), "viel" (çok) -> "mehr" (daha çok).',
+      explanationDe: `## Komparativ
+
+Den Komparativ (die Vergleichsform) bildest du meist mit -er. Beim Vergleich benutzt du das Wort „als". Viele kurze Adjektive bekommen zusätzlich einen Umlaut.
+
+| Adjektiv | Komparativ |
+| -------- | ---------- |
+| schnell | schneller |
+| klein | kleiner |
+| groß | größer |
+| alt | älter |
+| gut | besser |
+
+**Beispiele:** Mein Auto ist **schneller als** deins. · Anna ist **größer als** Tom. · Heute ist es **besser als** gestern.
+
+„gut → besser" ist unregelmäßig; „groß" und „alt" bekommen einen Umlaut (ö, ä).`,
+      explanationEn: `## The comparative (Komparativ)
+
+You usually form the comparative with -er. When comparing, you use the word "als" (than). Many short adjectives also add an umlaut.
+
+| Adjective | Comparative |
+| --------- | ----------- |
+| schnell | schneller |
+| klein | kleiner |
+| groß | größer |
+| alt | älter |
+| gut | besser |
+
+**Examples:** Mein Auto ist schneller als deins. (My car is faster than yours.) · Anna ist größer als Tom. (Anna is taller than Tom.) · Heute ist es besser als gestern. (Today it is better than yesterday.)
+
+"gut → besser" (good → better) is irregular; "groß" and "alt" add an umlaut (ö, ä).`,
+      explanationTr: `## Karşılaştırma derecesi (Komparativ)
+
+Karşılaştırma biçimini genelde -er ile kurarsın. Karşılaştırırken „als" (-den daha) kelimesini kullanırsın. Birçok kısa sıfat ayrıca bir Umlaut alır.
+
+| Sıfat | Karşılaştırma |
+| ----- | ------------- |
+| schnell | schneller |
+| klein | kleiner |
+| groß | größer |
+| alt | älter |
+| gut | besser |
+
+**Örnekler:** Mein Auto ist schneller als deins. (Arabam seninkinden daha hızlı.) · Anna ist größer als Tom. (Anna Tom'dan daha uzun.) · Heute ist es besser als gestern. (Bugün dünden daha iyi.)
+
+„gut → besser" (iyi → daha iyi) düzensizdir; „groß" ve „alt" bir Umlaut alır (ö, ä).`,
     },
   })
   await prisma.exercise.createMany({
@@ -3645,12 +3753,48 @@ Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
       unitId: a1Unit13.id,
       order: 4,
       grammarTopic: 'Superlativ',
-      explanationDe:
-        'Der Superlativ wird mit "am -sten" gebildet: "am schnellsten". Unregelmäßig: "gut" -> "am besten", "gern" -> "am liebsten".',
-      explanationEn:
-        'The superlative is formed with "am -sten": "am schnellsten" (the fastest). Irregular: "gut" -> "am besten" (best), "gern" -> "am liebsten" (most preferred).',
-      explanationTr:
-        'Üstünlük derecesi "am -sten" ile yapılır: "am schnellsten" (en hızlı). Düzensiz: "gut" -> "am besten" (en iyi), "gern" -> "am liebsten" (en çok tercih edilen).',
+      explanationDe: `## Superlativ
+
+Den Superlativ (die höchste Stufe) bildest du mit „am" und der Endung -sten. Er sagt, was am meisten von allem ist.
+
+| Adjektiv | Komparativ | Superlativ |
+| -------- | ---------- | ---------- |
+| schnell | schneller | am schnellsten |
+| klein | kleiner | am kleinsten |
+| groß | größer | am größten |
+| gut | besser | am besten |
+
+**Beispiele:** Er läuft **am schnellsten**. · Der Elefant ist **am größten**. · Dieses Buch ist **am besten**.
+
+„gut → am besten" ist unregelmäßig; „groß" behält den Umlaut auch im Superlativ: am größten.`,
+      explanationEn: `## The superlative (Superlativ)
+
+You form the superlative with "am" and the ending -sten. It says what is the most of all.
+
+| Adjective | Comparative | Superlative |
+| --------- | ----------- | ----------- |
+| schnell | schneller | am schnellsten |
+| klein | kleiner | am kleinsten |
+| groß | größer | am größten |
+| gut | besser | am besten |
+
+**Examples:** Er läuft am schnellsten. (He runs the fastest.) · Der Elefant ist am größten. (The elephant is the biggest.) · Dieses Buch ist am besten. (This book is the best.)
+
+"gut → am besten" (good → best) is irregular; "groß" keeps the umlaut in the superlative too: am größten.`,
+      explanationTr: `## Üstünlük derecesi (Superlativ)
+
+Üstünlük derecesini „am" ve -sten ekiyle kurarsın. Hepsinin içinde en fazla olanı belirtir.
+
+| Sıfat | Karşılaştırma | Üstünlük |
+| ----- | ------------- | -------- |
+| schnell | schneller | am schnellsten |
+| klein | kleiner | am kleinsten |
+| groß | größer | am größten |
+| gut | besser | am besten |
+
+**Örnekler:** Er läuft am schnellsten. (En hızlı o koşar.) · Der Elefant ist am größten. (Fil en büyüğü.) · Dieses Buch ist am besten. (Bu kitap en iyisi.)
+
+„gut → am besten" (iyi → en iyi) düzensizdir; „groß" Umlaut'u üstünlük derecesinde de korur: am größten.`,
     },
   })
   await prisma.exercise.createMany({
