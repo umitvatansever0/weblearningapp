@@ -993,11 +993,48 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
       unitId: a1Unit4.id,
       order: 1,
       grammarTopic: 'Familienmitglieder',
-      explanationDe: 'Wichtige Familienwörter: der Vater, die Mutter, der Bruder, die Schwester, die Eltern, die Geschwister.',
-      explanationEn:
-        'Important family words: der Vater (father), die Mutter (mother), der Bruder (brother), die Schwester (sister), die Eltern (parents), die Geschwister (siblings).',
-      explanationTr:
-        'Önemli aile kelimeleri: der Vater (baba), die Mutter (anne), der Bruder (erkek kardeş), die Schwester (kız kardeş), die Eltern (ebeveynler), die Geschwister (kardeşler).',
+      explanationDe: `## Familienmitglieder
+
+Das sind die wichtigsten Wörter für die Familie. Achte auf den Artikel:
+
+| Deutsch | Englisch |
+| ------------- | -------- |
+| der Vater | father |
+| die Mutter | mother |
+| der Bruder | brother |
+| die Schwester | sister |
+| die Eltern | parents |
+| die Geschwister | siblings |
+
+**Beispiel:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna.`,
+      explanationEn: `## Family members
+
+These are the most important words for the family. Pay attention to the article:
+
+| German | English |
+| ------------- | -------- |
+| der Vater | father |
+| die Mutter | mother |
+| der Bruder | brother |
+| die Schwester | sister |
+| die Eltern | parents |
+| die Geschwister | siblings |
+
+**Example:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna. (My father is called Peter and my mother is called Anna.)`,
+      explanationTr: `## Aile bireyleri
+
+Bunlar aileyle ilgili en önemli kelimelerdir. Tanımlığa dikkat et:
+
+| Almanca | Türkçe |
+| ------------- | ------ |
+| der Vater | baba |
+| die Mutter | anne |
+| der Bruder | erkek kardeş |
+| die Schwester | kız kardeş |
+| die Eltern | ebeveynler |
+| die Geschwister | kardeşler |
+
+**Örnek:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna. (Babamın adı Peter, annemin adı Anna.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -1032,12 +1069,42 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
       unitId: a1Unit4.id,
       order: 2,
       grammarTopic: 'Possessivartikel (mein/dein)',
-      explanationDe:
-        'Possessivartikel zeigen Besitz: mein/meine (my), dein/deine (your). Bei maskulin/neutral: mein Vater, mein Kind. Bei feminin: meine Mutter.',
-      explanationEn:
-        'Possessive articles show ownership: mein/meine (my), dein/deine (your). With masculine/neuter: mein Vater, mein Kind. With feminine: meine Mutter.',
-      explanationTr:
-        'İyelik sıfatları sahipliği gösterir: mein/meine (benim), dein/deine (senin). Eril/nötr ile: mein Vater, mein Kind. Dişil ile: meine Mutter.',
+      explanationDe: `## Possessivartikel (mein/dein)
+
+Possessivartikel zeigen, wem etwas gehört. Die Endung richtet sich nach dem Nomen – wie bei „ein/kein".
+
+| Genus/Zahl | mein | dein |
+| ---------- | ------ | ------ |
+| maskulin | mein Vater | dein Vater |
+| feminin | meine Mutter | deine Mutter |
+| neutral | mein Kind | dein Kind |
+| Plural | meine Eltern | deine Eltern |
+
+**Beispiel:** **Mein** Bruder ist groß. **Deine** Schwester ist nett.`,
+      explanationEn: `## Possessive articles (mein/dein)
+
+Possessive articles show who something belongs to. The ending follows the noun – just like "ein/kein".
+
+| Gender/Number | mein (my) | dein (your) |
+| ------------- | ---------- | ----------- |
+| masculine | mein Vater | dein Vater |
+| feminine | meine Mutter | deine Mutter |
+| neuter | mein Kind | dein Kind |
+| plural | meine Eltern | deine Eltern |
+
+**Example:** **Mein** Bruder ist groß. (My brother is tall.) **Deine** Schwester ist nett. (Your sister is nice.)`,
+      explanationTr: `## İyelik tanımlıkları (mein/dein)
+
+İyelik tanımlıkları bir şeyin kime ait olduğunu gösterir. Ek, isme göre değişir – tıpkı „ein/kein" gibi.
+
+| Cinsiyet/Sayı | mein (benim) | dein (senin) |
+| ------------- | ------------ | ------------ |
+| eril | mein Vater | dein Vater |
+| dişil | meine Mutter | deine Mutter |
+| nötr | mein Kind | dein Kind |
+| çoğul | meine Eltern | deine Eltern |
+
+**Örnek:** **Mein** Bruder ist groß. (Erkek kardeşim uzun boylu.) **Deine** Schwester ist nett. (Senin kız kardeşin hoş biri.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -1066,12 +1133,36 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
       unitId: a1Unit4.id,
       order: 3,
       grammarTopic: 'Ja/Nein-Fragen',
-      explanationDe:
-        'Ja/Nein-Fragen beginnen mit dem Verb: "Hast du Geschwister?" "Ja, ich habe eine Schwester." / "Nein, ich habe keine Geschwister."',
-      explanationEn:
-        'Yes/no questions start with the verb: "Hast du Geschwister?" (Do you have siblings?) "Ja, ich habe eine Schwester." (Yes, I have a sister.) / "Nein, ich habe keine Geschwister." (No, I don\'t have siblings.)',
-      explanationTr:
-        'Evet/hayır soruları fiille başlar: "Hast du Geschwister?" (Kardeşin var mı?) "Ja, ich habe eine Schwester." (Evet, bir kız kardeşim var.) / "Nein, ich habe keine Geschwister." (Hayır, kardeşim yok.)',
+      explanationDe: `## Ja/Nein-Fragen
+
+Bei Ja/Nein-Fragen steht das **Verb an erster Stelle**. Man antwortet mit „Ja" oder „Nein".
+
+| Aussage | Frage |
+| ------------------- | ------------------- |
+| Du **hast** Geschwister. | **Hast** du Geschwister? |
+| Er **wohnt** hier. | **Wohnt** er hier? |
+
+**Beispiel:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister.`,
+      explanationEn: `## Yes/no questions
+
+In yes/no questions the **verb comes first**. You answer with "Ja" (yes) or "Nein" (no).
+
+| Statement | Question |
+| ------------------- | ------------------- |
+| Du **hast** Geschwister. | **Hast** du Geschwister? |
+| Er **wohnt** hier. | **Wohnt** er hier? |
+
+**Example:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister. (Do you have siblings? – Yes, I have a sister. / No, I don't have siblings.)`,
+      explanationTr: `## Evet/hayır soruları
+
+Evet/hayır sorularında **fiil başta** gelir. „Ja" (evet) ya da „Nein" (hayır) ile cevap verirsin.
+
+| Cümle | Soru |
+| ------------------- | ------------------- |
+| Du **hast** Geschwister. | **Hast** du Geschwister? |
+| Er **wohnt** hier. | **Wohnt** er hier? |
+
+**Örnek:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister. (Kardeşin var mı? – Evet, bir kız kardeşim var. / Hayır, kardeşim yok.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -1100,12 +1191,39 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
       unitId: a1Unit4.id,
       order: 4,
       grammarTopic: 'Wiederholung (Familie + Artikel + Präsens)',
-      explanationDe:
-        'Wiederholung: Kombiniere Artikel, Possessivpronomen und Präsens, um über deine Familie zu sprechen: "Meine Schwester wohnt in München. Sie spielt gern Fußball."',
-      explanationEn:
-        'Review: combine articles, possessives, and present tense to talk about your family: "Meine Schwester wohnt in München. Sie spielt gern Fußball." (My sister lives in Munich. She likes to play football.)',
-      explanationTr:
-        'Tekrar: aile hakkında konuşmak için tanımlık, iyelik sıfatı ve şimdiki zamanı birleştir: "Meine Schwester wohnt in München. Sie spielt gern Fußball." (Kız kardeşim Münih\'te yaşıyor. Futbol oynamayı seviyor.)',
+      explanationDe: `## Wiederholung: Familie, Artikel und Präsens
+
+In dieser Lektion kombinierst du alles aus Unit 4: **Possessivartikel** (mein/dein), **Familienwörter** und das **Präsens** der Verben.
+
+So sprichst du über deine Familie:
+
+- **Meine** Schwester **wohnt** in München.
+- **Mein** Bruder **spielt** gern Fußball.
+- **Hast** du Geschwister? – Ja, ich **habe** eine Schwester.
+
+**Beispiel:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch.`,
+      explanationEn: `## Review: family, articles and present tense
+
+In this lesson you combine everything from Unit 4: **possessive articles** (mein/dein), **family words** and the **present tense** of verbs.
+
+This is how you talk about your family:
+
+- **Meine** Schwester **wohnt** in München. (My sister lives in Munich.)
+- **Mein** Bruder **spielt** gern Fußball. (My brother likes playing football.)
+- **Hast** du Geschwister? – Ja, ich **habe** eine Schwester. (Do you have siblings? – Yes, I have a sister.)
+
+**Example:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch. (My mother comes from Turkey and speaks Turkish.)`,
+      explanationTr: `## Tekrar: aile, tanımlıklar ve geniş zaman
+
+Bu derste Unit 4'teki her şeyi birleştirirsin: **iyelik tanımlıkları** (mein/dein), **aile kelimeleri** ve fiillerin **geniş zamanı**.
+
+Ailen hakkında şöyle konuşursun:
+
+- **Meine** Schwester **wohnt** in München. (Kız kardeşim Münih'te yaşıyor.)
+- **Mein** Bruder **spielt** gern Fußball. (Erkek kardeşim futbol oynamayı seviyor.)
+- **Hast** du Geschwister? – Ja, ich **habe** eine Schwester. (Kardeşin var mı? – Evet, bir kız kardeşim var.)
+
+**Örnek:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch. (Annem Türkiye'den geliyor ve Türkçe konuşuyor.)`,
     },
   })
   await prisma.exercise.createMany({
