@@ -1,6 +1,4 @@
-import { redirect, notFound } from 'next/navigation'
-import { getServerSession } from 'next-auth'
-import { authOptions } from '@/lib/auth'
+import { notFound } from 'next/navigation'
 import { getLessonWithExercises, pickByLocale } from '@/lib/learn'
 import { ExerciseRunner } from '@/components/exercises/ExerciseRunner'
 import { Markdown } from '@/components/Markdown'
@@ -10,11 +8,9 @@ export default async function LessonPage({
 }: {
   params: Promise<{ locale: string; level: string; unit: string; lesson: string }>
 }) {
+  // Content is public — no login required to read the explanation or do the
+  // exercises. Progress is only saved when a logged-in user completes a lesson.
   const { locale, lesson: lessonId } = await params
-  const session = await getServerSession(authOptions)
-  if (!session?.user?.id) {
-    redirect(`/${locale}/login`)
-  }
 
   const lesson = await getLessonWithExercises(lessonId)
   if (!lesson) {

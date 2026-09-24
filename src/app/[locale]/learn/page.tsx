@@ -1,17 +1,9 @@
-import { redirect } from 'next/navigation'
-import { getServerSession } from 'next-auth'
 import { getTranslations } from 'next-intl/server'
-import { authOptions } from '@/lib/auth'
 import { getLevels } from '@/lib/learn'
 import { Link } from '@/i18n/navigation'
 
 export default async function LevelsPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params
-  const session = await getServerSession(authOptions)
-  if (!session?.user) {
-    redirect(`/${locale}/login`)
-  }
-
+  await params
   const t = await getTranslations('learn')
   const levels = await getLevels()
 

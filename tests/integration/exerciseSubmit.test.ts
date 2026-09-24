@@ -60,12 +60,14 @@ describe('POST /api/exercises/[exerciseId]/submit', () => {
     await prisma.$disconnect()
   })
 
-  it('rejects unauthenticated requests with 401', async () => {
+  it('checks the answer for anonymous (unauthenticated) visitors', async () => {
     vi.mocked(getServerSession).mockResolvedValue(null)
     const res = await POST(makeRequest({ answer: { selectedIndex: 1 } }), {
       params: Promise.resolve({ exerciseId }),
     })
-    expect(res.status).toBe(401)
+    expect(res.status).toBe(200)
+    const json = await res.json()
+    expect(json.correct).toBe(true)
   })
 
   it('returns correct: true for the right answer', async () => {

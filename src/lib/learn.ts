@@ -34,7 +34,11 @@ export interface UnitWithLessons {
   }[]
 }
 
-export async function getUnitsForLevel(code: LevelCode, userId: string): Promise<UnitWithLessons[]> {
+export async function getUnitsForLevel(code: LevelCode, userId?: string): Promise<UnitWithLessons[]> {
+  // Anonymous visitors have no progress. Filter on an id that can never match a
+  // real (cuid) user so no completion state leaks in; when logged in, filter on
+  // the real user id.
+  const progressUserId = userId ?? '__anonymous__'
   const level = await prisma.level.findUnique({
     where: { code },
     include: {
@@ -43,7 +47,7 @@ export async function getUnitsForLevel(code: LevelCode, userId: string): Promise
         include: {
           lessons: {
             orderBy: { order: 'asc' },
-            include: { progress: { where: { userId } } },
+            include: { progress: { where: { userId: progressUserId } } },
           },
         },
       },

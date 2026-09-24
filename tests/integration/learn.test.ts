@@ -23,6 +23,13 @@ describe('getUnitsForLevel', () => {
     expect(units).toHaveLength(13)
     units.forEach((unit) => expect(unit.lessons).toHaveLength(4))
   })
+
+  it('works for anonymous visitors (no userId) with no completion state', async () => {
+    const units = await getUnitsForLevel('A1')
+    expect(units).toHaveLength(13)
+    expect(units[0].lessons).toHaveLength(4)
+    expect(units.every((unit) => unit.lessons.every((lesson) => lesson.completed === false))).toBe(true)
+  })
 })
 
 describe('getUnitsForLevel (A2)', () => {

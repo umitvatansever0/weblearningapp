@@ -67,10 +67,16 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
     await prisma.$disconnect()
   })
 
-  it('rejects unauthenticated requests with 401', async () => {
+  it('acknowledges completion for anonymous visitors without saving progress', async () => {
     vi.mocked(getServerSession).mockResolvedValue(null)
     const res = await POST(makeRequest({ score: 100 }), { params: Promise.resolve({ lessonId }) })
-    expect(res.status).toBe(401)
+    expect(res.status).toBe(200)
+    const json = await res.json()
+    expect(json).toEqual({ completed: true, score: 100, saved: false })
+
+    // No account, so nothing is written to userProgress.
+    const stored = await prisma.userProgress.findFirst({ where: { lessonId } })
+    expect(stored).toBeNull()
   })
 
   it('upserts progress for an authenticated user', async () => {

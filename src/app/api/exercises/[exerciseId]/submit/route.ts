@@ -1,18 +1,13 @@
 import { NextResponse } from 'next/server'
-import { getServerSession } from 'next-auth'
-import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
 import { checkAnswer } from '@/lib/exerciseChecking'
 
+// Checking an answer is public — anonymous visitors can practice without an
+// account. No progress is written here, so no session is required.
 export async function POST(
   request: Request,
   { params }: { params: Promise<{ exerciseId: string }> }
 ) {
-  const session = await getServerSession(authOptions)
-  if (!session?.user) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
-
   const { exerciseId } = await params
   const exercise = await prisma.exercise.findUnique({ where: { id: exerciseId } })
   if (!exercise) {

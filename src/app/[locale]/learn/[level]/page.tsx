@@ -1,4 +1,4 @@
-import { redirect, notFound } from 'next/navigation'
+import { notFound } from 'next/navigation'
 import { getServerSession } from 'next-auth'
 import { getTranslations } from 'next-intl/server'
 import { authOptions } from '@/lib/auth'
@@ -15,17 +15,16 @@ export default async function LevelUnitsPage({
   params: Promise<{ locale: string; level: string }>
 }) {
   const { locale, level } = await params
-  const session = await getServerSession(authOptions)
-  if (!session?.user?.id) {
-    redirect(`/${locale}/login`)
-  }
 
   if (!VALID_LEVELS.includes(level as LevelCode)) {
     notFound()
   }
 
+  // Content is public; if the visitor happens to be logged in we still show
+  // their per-lesson completion ticks, otherwise none are shown.
+  const session = await getServerSession(authOptions)
   const t = await getTranslations('learn')
-  const units = await getUnitsForLevel(level as LevelCode, session.user.id)
+  const units = await getUnitsForLevel(level as LevelCode, session?.user?.id)
 
   return (
     <main className="p-8">

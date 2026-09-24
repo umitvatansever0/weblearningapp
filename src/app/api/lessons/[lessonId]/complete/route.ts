@@ -8,11 +8,6 @@ export async function POST(
   request: Request,
   { params }: { params: Promise<{ lessonId: string }> }
 ) {
-  const session = await getServerSession(authOptions)
-  if (!session?.user?.id) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
-
   const { lessonId } = await params
 
   let body: unknown
@@ -23,6 +18,13 @@ export async function POST(
   }
 
   const score = typeof (body as { score?: unknown })?.score === 'number' ? (body as { score: number }).score : 0
+
+  // Content is public: anonymous visitors can finish a lesson, but there is no
+  // account to attach progress to, so we acknowledge completion without saving.
+  const session = await getServerSession(authOptions)
+  if (!session?.user?.id) {
+    return NextResponse.json({ completed: true, score, saved: false })
+  }
 
   // Must run before the userProgress upsert below: applyLessonCompletionRewards
   // checks whether this lesson was already completed to decide whether to
