@@ -397,12 +397,45 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
       unitId: a1Unit2.id,
       order: 1,
       grammarTopic: 'Bestimmter Artikel (der/die/das)',
-      explanationDe:
-        'Jedes deutsche Nomen hat ein Genus: maskulin (der), feminin (die) oder neutral (das). Zum Beispiel: der Mann, die Frau, das Kind.',
-      explanationEn:
-        'Every German noun has a gender: masculine (der), feminine (die), or neuter (das). For example: der Mann (the man), die Frau (the woman), das Kind (the child).',
-      explanationTr:
-        'Her Almanca isim bir cinsiyete sahiptir: eril (der), dişil (die) ya da nötr (das). Örneğin: der Mann (adam), die Frau (kadın), das Kind (çocuk).',
+      explanationDe: `## Der bestimmte Artikel (der/die/das)
+
+Jedes deutsche Nomen hat ein Genus. Der bestimmte Artikel („the") zeigt dieses Genus an:
+
+| Genus | Artikel | Beispiel |
+| -------- | ------- | -------- |
+| maskulin | der | der Mann |
+| feminin | die | die Frau |
+| neutral | das | das Kind |
+
+**Beispiel:** **Der** Mann ist groß. **Die** Frau liest. **Das** Kind spielt.
+
+Lerne jedes neue Nomen immer zusammen mit seinem Artikel.`,
+      explanationEn: `## The definite article (der/die/das)
+
+Every German noun has a gender. The definite article ("the") shows this gender:
+
+| Gender | Article | Example |
+| --------- | ------- | ------- |
+| masculine | der | der Mann |
+| feminine | die | die Frau |
+| neuter | das | das Kind |
+
+**Example:** **Der** Mann ist groß. (The man is tall.) **Die** Frau liest. (The woman reads.) **Das** Kind spielt. (The child plays.)
+
+Always learn every new noun together with its article.`,
+      explanationTr: `## Belirli tanımlık (der/die/das)
+
+Her Almanca ismin bir cinsiyeti vardır. Belirli tanımlık („the") bu cinsiyeti gösterir:
+
+| Cinsiyet | Tanımlık | Örnek |
+| -------- | -------- | ----- |
+| eril | der | der Mann |
+| dişil | die | die Frau |
+| nötr | das | das Kind |
+
+**Örnek:** **Der** Mann ist groß. (Adam uzun boylu.) **Die** Frau liest. (Kadın okuyor.) **Das** Kind spielt. (Çocuk oynuyor.)
+
+Her yeni ismi mutlaka tanımlığıyla birlikte öğren.`,
     },
   })
   await prisma.exercise.createMany({
@@ -437,12 +470,45 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
       unitId: a1Unit2.id,
       order: 2,
       grammarTopic: 'Unbestimmter Artikel (ein/eine)',
-      explanationDe:
-        'Der unbestimmte Artikel lautet "ein" für maskulin/neutral und "eine" für feminin: ein Mann, eine Frau, ein Kind.',
-      explanationEn:
-        'The indefinite article is "ein" for masculine/neuter and "eine" for feminine: ein Mann (a man), eine Frau (a woman), ein Kind (a child).',
-      explanationTr:
-        'Belirsiz tanımlık eril/nötr için "ein", dişil için "eine" olur: ein Mann (bir adam), eine Frau (bir kadın), ein Kind (bir çocuk).',
+      explanationDe: `## Der unbestimmte Artikel (ein/eine)
+
+Der unbestimmte Artikel („a/an") heißt **ein** bei maskulinen und neutralen Nomen und **eine** bei femininen Nomen:
+
+| Genus | Artikel | Beispiel |
+| -------- | ------- | --------- |
+| maskulin | ein | ein Mann |
+| feminin | eine | eine Frau |
+| neutral | ein | ein Kind |
+
+**Beispiel:** Das ist **ein** Buch. Das ist **eine** Lampe.
+
+Du benutzt den unbestimmten Artikel, wenn etwas neu oder unbekannt ist.`,
+      explanationEn: `## The indefinite article (ein/eine)
+
+The indefinite article ("a/an") is **ein** for masculine and neuter nouns and **eine** for feminine nouns:
+
+| Gender | Article | Example |
+| --------- | ------- | -------- |
+| masculine | ein | ein Mann |
+| feminine | eine | eine Frau |
+| neuter | ein | ein Kind |
+
+**Example:** Das ist **ein** Buch. (That is a book.) Das ist **eine** Lampe. (That is a lamp.)
+
+Use the indefinite article when something is new or unknown.`,
+      explanationTr: `## Belirsiz tanımlık (ein/eine)
+
+Belirsiz tanımlık („bir") eril ve nötr isimlerde **ein**, dişil isimlerde **eine** olur:
+
+| Cinsiyet | Tanımlık | Örnek |
+| -------- | -------- | ------- |
+| eril | ein | ein Mann |
+| dişil | eine | eine Frau |
+| nötr | ein | ein Kind |
+
+**Örnek:** Das ist **ein** Buch. (Bu bir kitap.) Das ist **eine** Lampe. (Bu bir lamba.)
+
+Bir şey yeni ya da bilinmiyorsa belirsiz tanımlık kullanırsın.`,
     },
   })
   await prisma.exercise.createMany({
@@ -471,12 +537,48 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
       unitId: a1Unit2.id,
       order: 3,
       grammarTopic: 'Plural',
-      explanationDe:
-        'Deutsche Nomen bilden den Plural unterschiedlich, oft mit -e, -er, -n/-en oder -s: der Tisch → die Tische, das Kind → die Kinder, die Frau → die Frauen. Im Plural benutzt man immer "die".',
-      explanationEn:
-        'German nouns form the plural in different ways, often with -e, -er, -n/-en, or -s: der Tisch → die Tische (tables), das Kind → die Kinder (children), die Frau → die Frauen (women). The plural article is always "die".',
-      explanationTr:
-        'Almanca isimler çoğulu farklı şekillerde yapar, genellikle -e, -er, -n/-en ya da -s ekleriyle: der Tisch → die Tische (masalar), das Kind → die Kinder (çocuklar), die Frau → die Frauen (kadınlar). Çoğulda her zaman "die" kullanılır.',
+      explanationDe: `## Der Plural
+
+Deutsche Nomen bilden den Plural unterschiedlich. Im Plural ist der Artikel immer **die**.
+
+| Endung | Singular | Plural |
+| ------ | -------- | ------ |
+| -e | der Tisch | die Tisch**e** |
+| -er | das Kind | die Kind**er** |
+| -(e)n | die Frau | die Frau**en** |
+| -s | das Auto | die Auto**s** |
+
+**Beispiel:** **Die** Kinder spielen. **Die** Tische sind neu.
+
+Lerne den Plural am besten zusammen mit dem Nomen.`,
+      explanationEn: `## The plural
+
+German nouns form the plural in different ways. In the plural the article is always **die**.
+
+| Ending | Singular | Plural |
+| ------ | -------- | ------ |
+| -e | der Tisch | die Tisch**e** |
+| -er | das Kind | die Kind**er** |
+| -(e)n | die Frau | die Frau**en** |
+| -s | das Auto | die Auto**s** |
+
+**Example:** **Die** Kinder spielen. (The children play.) **Die** Tische sind neu. (The tables are new.)
+
+It is best to learn the plural together with the noun.`,
+      explanationTr: `## Çoğul (Plural)
+
+Almanca isimler çoğulu farklı şekillerde yapar. Çoğulda tanımlık her zaman **die** olur.
+
+| Ek | Tekil | Çoğul |
+| ---- | -------- | ------ |
+| -e | der Tisch | die Tisch**e** |
+| -er | das Kind | die Kind**er** |
+| -(e)n | die Frau | die Frau**en** |
+| -s | das Auto | die Auto**s** |
+
+**Örnek:** **Die** Kinder spielen. (Çocuklar oynuyor.) **Die** Tische sind neu. (Masalar yeni.)
+
+Çoğulu, ismin kendisiyle birlikte öğrenmen en iyisidir.`,
     },
   })
   await prisma.exercise.createMany({
@@ -505,12 +607,42 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
       unitId: a1Unit2.id,
       order: 4,
       grammarTopic: 'Verneinung mit "kein"',
-      explanationDe:
-        'Nomen mit unbestimmtem oder ohne Artikel werden mit "kein/keine" verneint: Ich habe kein Buch. Ich habe keine Zeit.',
-      explanationEn:
-        'Nouns with an indefinite or no article are negated with "kein/keine": Ich habe kein Buch (I don\'t have a book). Ich habe keine Zeit (I don\'t have time).',
-      explanationTr:
-        'Belirsiz ya da tanımlıksız isimler "kein/keine" ile olumsuz yapılır: Ich habe kein Buch (Kitabım yok). Ich habe keine Zeit (Vaktim yok).',
+      explanationDe: `## Verneinung mit „kein"
+
+Nomen mit unbestimmtem Artikel oder ohne Artikel verneinst du mit **kein**. Die Endung ist wie beim Artikel „ein":
+
+| Genus/Zahl | Form | Beispiel |
+| ---------- | ----- | -------- |
+| maskulin | kein | Ich habe **kein** Auto. |
+| feminin | keine | Ich habe **keine** Zeit. |
+| neutral | kein | Ich habe **kein** Buch. |
+| Plural | keine | Ich habe **keine** Kinder. |
+
+**Beispiel:** Das ist **kein** Problem. Ich trinke **keinen** Kaffee.`,
+      explanationEn: `## Negation with "kein"
+
+Nouns with an indefinite article or no article are negated with **kein**. The ending works like the article "ein":
+
+| Gender/Number | Form | Example |
+| ------------- | ----- | -------- |
+| masculine | kein | Ich habe **kein** Auto. (I have no car.) |
+| feminine | keine | Ich habe **keine** Zeit. (I have no time.) |
+| neuter | kein | Ich habe **kein** Buch. (I have no book.) |
+| plural | keine | Ich habe **keine** Kinder. (I have no children.) |
+
+**Example:** Das ist **kein** Problem. (That's no problem.) Ich trinke **keinen** Kaffee. (I don't drink coffee.)`,
+      explanationTr: `## „kein" ile olumsuzlama
+
+Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yaparsın. Eki „ein" tanımlığı gibi çekilir:
+
+| Cinsiyet/Sayı | Biçim | Örnek |
+| ------------- | ----- | ----- |
+| eril | kein | Ich habe **kein** Auto. (Arabam yok.) |
+| dişil | keine | Ich habe **keine** Zeit. (Vaktim yok.) |
+| nötr | kein | Ich habe **kein** Buch. (Kitabım yok.) |
+| çoğul | keine | Ich habe **keine** Kinder. (Çocuğum yok.) |
+
+**Örnek:** Das ist **kein** Problem. (Sorun değil.) Ich trinke **keinen** Kaffee. (Kahve içmiyorum.)`,
     },
   })
   await prisma.exercise.createMany({
