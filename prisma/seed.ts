@@ -7499,34 +7499,67 @@ Tarihle doğum günleri ve randevular hakkında soru sorup cevap verebilirsin. K
       grammarTopic: "Nebensätze mit 'weil'",
       explanationDe: `## Nebensätze mit „weil"
 
-Mit **„weil"** (Grund) beginnt ein Nebensatz. Das konjugierte **Verb rutscht ans Ende** des Nebensatzes. Der Nebensatz wird mit Komma abgetrennt.
+**„weil"** (Grund/Ursache) leitet einen Nebensatz ein und beantwortet die Frage **„Warum?"**. Ein Nebensatz kann allein nicht stehen – er braucht einen Hauptsatz.
+
+Der wichtigste Unterschied zum Hauptsatz: Das **konjugierte Verb rutscht ans Satzende**. Bei trennbaren Verben kommen die Teile am Ende wieder zusammen (z. B. *ich rufe an* → *…, weil ich anrufe*).
 
 | Hauptsatz | Nebensatz mit „weil" |
 | ---- | ---- |
 | Ich bleibe zu Hause, | weil ich krank **bin**. |
 | Er lernt viel, | weil er eine Prüfung **hat**. |
+| Sie ist müde, | weil sie schlecht **geschlafen hat**. |
 
-**Beispiel:** Ich bleibe zu Hause, weil ich krank **bin**.`,
+**Merke:**
+- Vor „weil" steht immer ein **Komma**.
+- Das konjugierte Verb steht **ganz am Ende**.
+- Im Perfekt steht das Hilfsverb (hat/ist) hinter dem Partizip: *…, weil er gekommen ist*.
+
+**Beispiele:**
+- Ich nehme den Schirm, **weil** es **regnet**.
+- Wir kommen später, **weil** der Zug Verspätung **hat**.
+- Er isst nichts, **weil** er keinen Hunger **hat**.`,
       explanationEn: `## Subordinate clauses with "weil"
 
-A clause starting with **"weil"** (because) gives a reason. The conjugated **verb moves to the end** of the clause, which is separated by a comma.
+**"weil"** (because) introduces a subordinate clause and answers the question **"Why?"**. A subordinate clause cannot stand alone – it needs a main clause.
+
+The key difference from a main clause: the **conjugated verb moves to the very end**. With separable verbs, the parts rejoin at the end (e.g. *ich rufe an* → *…, weil ich anrufe*).
 
 | Main clause | Clause with "weil" |
 | ---- | ---- |
 | Ich bleibe zu Hause, | weil ich krank **bin**. (because I am sick) |
 | Er lernt viel, | weil er eine Prüfung **hat**. (because he has an exam) |
+| Sie ist müde, | weil sie schlecht **geschlafen hat**. (because she slept badly) |
 
-**Example:** Ich bleibe zu Hause, weil ich krank **bin**. (I'm staying home because I'm sick.)`,
+**Note:**
+- There is always a **comma** before "weil".
+- The conjugated verb stands **at the very end**.
+- In the Perfekt, the auxiliary (hat/ist) comes after the participle: *…, weil er gekommen ist*.
+
+**Examples:**
+- Ich nehme den Schirm, **weil** es **regnet**. (I take the umbrella because it's raining.)
+- Wir kommen später, **weil** der Zug Verspätung **hat**. (We're coming later because the train is delayed.)
+- Er isst nichts, **weil** er keinen Hunger **hat**. (He isn't eating because he isn't hungry.)`,
       explanationTr: `## „weil" ile yan cümleler
 
-**„weil"** (çünkü) ile başlayan yan cümle bir sebep bildirir. Çekimli **fiil cümlenin sonuna** gider ve yan cümle virgülle ayrılır.
+**„weil"** (çünkü) bir yan cümle başlatır ve **„Neden?"** sorusuna cevap verir. Yan cümle tek başına kullanılamaz – bir ana cümleye ihtiyaç duyar.
+
+Ana cümleden en önemli farkı: **çekimli fiil cümlenin en sonuna** gider. Ayrılabilir fiillerde parçalar sonda yeniden birleşir (örn. *ich rufe an* → *…, weil ich anrufe*).
 
 | Ana cümle | „weil" cümlesi |
 | ---- | ---- |
 | Ich bleibe zu Hause, | weil ich krank **bin**. (çünkü hastayım) |
 | Er lernt viel, | weil er eine Prüfung **hat**. (çünkü sınavı var) |
+| Sie ist müde, | weil sie schlecht **geschlafen hat**. (çünkü kötü uyudu) |
 
-**Örnek:** Ich bleibe zu Hause, weil ich krank **bin**. (Hastayım diye evde kalıyorum.)`,
+**Unutma:**
+- „weil"den önce her zaman **virgül** vardır.
+- Çekimli fiil **en sonda** durur.
+- Perfekt'te yardımcı fiil (hat/ist) fiilden sonra gelir: *…, weil er gekommen ist*.
+
+**Örnekler:**
+- Ich nehme den Schirm, **weil** es **regnet**. (Yağmur yağdığı için şemsiyeyi alıyorum.)
+- Wir kommen später, **weil** der Zug Verspätung **hat**. (Tren geciktiği için daha sonra geliyoruz.)
+- Er isst nichts, **weil** er keinen Hunger **hat**. (Karnı aç olmadığı için hiçbir şey yemiyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7557,34 +7590,67 @@ A clause starting with **"weil"** (because) gives a reason. The conjugated **ver
       grammarTopic: "Nebensätze mit 'dass'",
       explanationDe: `## Nebensätze mit „dass"
 
-**„dass"** leitet eine Aussage oder Meinung ein (nach Verben wie *glauben, denken, sagen, wissen*). Auch hier steht das **Verb am Ende**.
+**„dass"** fasst eine **Aussage, Meinung oder Tatsache** zu einem Nebensatz zusammen. Es folgt oft auf Verben des Sagens und Denkens wie *glauben, denken, sagen, wissen, hoffen, finden*.
+
+Wie bei „weil" steht das **konjugierte Verb am Ende**. Man kann den „dass"-Satz oft mit einem einfachen Aussagesatz vergleichen: *„Er hat Recht." → Ich glaube, dass er Recht hat.*
 
 | Hauptsatz | Nebensatz mit „dass" |
 | ---- | ---- |
 | Ich glaube, | dass er Recht **hat**. |
 | Sie weiß, | dass ich morgen **komme**. |
+| Es ist gut, | dass du **gekommen bist**. |
 
-**Beispiel:** Ich glaube, dass er Recht **hat**.`,
+**Merke:**
+- Vor „dass" steht ein **Komma**.
+- „dass" (Konjunktion) schreibt man mit **Doppel-s**, nicht wie den Artikel „das".
+- Das Verb steht **am Ende** des Nebensatzes.
+
+**Beispiele:**
+- Ich hoffe, **dass** das Wetter morgen schön **ist**.
+- Sie sagt, **dass** sie keine Zeit **hat**.
+- Wir finden, **dass** der Film langweilig **war**.`,
       explanationEn: `## Subordinate clauses with "dass"
 
-**"dass"** (that) introduces a statement or opinion (after verbs like *glauben/believe, denken/think, sagen/say, wissen/know*). Again, the **verb goes to the end**.
+**"dass"** (that) packs a **statement, opinion or fact** into a subordinate clause. It often follows verbs of saying and thinking such as *glauben/believe, denken/think, sagen/say, wissen/know, hoffen/hope, finden/think*.
+
+As with "weil", the **conjugated verb goes to the end**. You can often compare a "dass"-clause with a simple statement: *"Er hat Recht." → Ich glaube, dass er Recht hat.*
 
 | Main clause | Clause with "dass" |
 | ---- | ---- |
 | Ich glaube, | dass er Recht **hat**. (that he is right) |
 | Sie weiß, | dass ich morgen **komme**. (that I'm coming tomorrow) |
+| Es ist gut, | dass du **gekommen bist**. (that you came) |
 
-**Example:** Ich glaube, dass er Recht **hat**. (I believe that he is right.)`,
+**Note:**
+- There is a **comma** before "dass".
+- The conjunction "dass" is written with **double s**, unlike the article "das".
+- The verb goes **to the end** of the clause.
+
+**Examples:**
+- Ich hoffe, **dass** das Wetter morgen schön **ist**. (I hope the weather is nice tomorrow.)
+- Sie sagt, **dass** sie keine Zeit **hat**. (She says she has no time.)
+- Wir finden, **dass** der Film langweilig **war**. (We think the film was boring.)`,
       explanationTr: `## „dass" ile yan cümleler
 
-**„dass"** bir ifadeyi ya da görüşü tanıtır (*glauben/inanmak, denken/düşünmek, sagen/söylemek, wissen/bilmek* gibi fiillerden sonra). Burada da **fiil sona** gider.
+**„dass"** bir **ifadeyi, görüşü ya da olguyu** yan cümleye dönüştürür. Genellikle *glauben/inanmak, denken/düşünmek, sagen/söylemek, wissen/bilmek, hoffen/ummak, finden/bulmak* gibi söyleme ve düşünme fiillerinden sonra gelir.
+
+„weil"de olduğu gibi **çekimli fiil sona** gider. Bir „dass" cümlesini çoğu zaman basit bir düz cümleyle karşılaştırabilirsin: *„Er hat Recht." → Ich glaube, dass er Recht hat.*
 
 | Ana cümle | „dass" cümlesi |
 | ---- | ---- |
 | Ich glaube, | dass er Recht **hat**. (haklı olduğuna) |
 | Sie weiß, | dass ich morgen **komme**. (yarın geleceğimi) |
+| Es ist gut, | dass du **gekommen bist**. (geldiğin) |
 
-**Örnek:** Ich glaube, dass er Recht **hat**. (Onun haklı olduğuna inanıyorum.)`,
+**Unutma:**
+- „dass"tan önce **virgül** vardır.
+- Bağlaç olan „dass" **çift s** ile yazılır; artikel „das" ile karıştırma.
+- Fiil yan cümlenin **sonuna** gider.
+
+**Örnekler:**
+- Ich hoffe, **dass** das Wetter morgen schön **ist**. (Umarım yarın hava güzel olur.)
+- Sie sagt, **dass** sie keine Zeit **hat**. (Zamanı olmadığını söylüyor.)
+- Wir finden, **dass** der Film langweilig **war**. (Bize göre film sıkıcıydı.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7615,34 +7681,67 @@ A clause starting with **"weil"** (because) gives a reason. The conjugated **ver
       grammarTopic: "Nebensätze mit 'wenn'",
       explanationDe: `## Nebensätze mit „wenn"
 
-**„wenn"** nennt eine **Bedingung** (if) oder ein **wiederholtes Ereignis** (whenever). Steht der Nebensatz vorne, folgt im Hauptsatz sofort das Verb.
+**„wenn"** hat zwei Bedeutungen: eine **Bedingung** (if – etwas ist möglich) oder ein **wiederholtes Ereignis** in Gegenwart/Zukunft (immer wenn / whenever). Für einmalige Ereignisse in der **Vergangenheit** benutzt man dagegen **„als"**.
 
-| Nebensatz mit „wenn" | Hauptsatz |
+Steht der „wenn"-Satz **vorne**, ist er „Position 1". Dann folgt im Hauptsatz sofort das **Verb** (Position 2) – man sagt: „Komma, Verb".
+
+| „wenn"-Satz zuerst | Hauptsatz (Verb direkt nach Komma) |
 | ---- | ---- |
-| Wenn es **regnet**, | bleibe ich zu Hause. |
-| Wenn ich Zeit **habe**, | rufe ich dich an. |
+| Wenn es **regnet**, | **bleibe** ich zu Hause. |
+| Wenn ich Zeit **habe**, | **rufe** ich dich an. |
+| Wenn du **willst**, | **können** wir gehen. |
 
-**Beispiel:** Wenn es regnet, bleibe ich zu Hause.`,
+**Merke:**
+- Das Verb im „wenn"-Satz steht **am Ende**.
+- „wenn" = Bedingung/Wiederholung; **„als"** = einmalig in der Vergangenheit.
+- Steht der Nebensatz vorn: **Komma + Verb** im Hauptsatz.
+
+**Beispiele:**
+- **Wenn** ich Urlaub **habe**, reise ich ans Meer.
+- **Wenn** es kalt **wird**, ziehe ich eine Jacke an.
+- Ich freue mich, **wenn** du **kommst**.`,
       explanationEn: `## Subordinate clauses with "wenn"
 
-**"wenn"** gives a **condition** (if) or a **repeated event** (whenever). When the clause comes first, the main clause starts directly with the verb.
+**"wenn"** has two meanings: a **condition** (if – something is possible) or a **repeated event** in present/future (whenever). For a single event in the **past**, German uses **"als"** instead.
 
-| Clause with "wenn" | Main clause |
+When the "wenn"-clause comes **first**, it is "position 1". The main clause then starts immediately with the **verb** (position 2) – "comma, verb".
+
+| "wenn"-clause first | Main clause (verb right after comma) |
 | ---- | ---- |
-| Wenn es **regnet**, | bleibe ich zu Hause. (If it rains, …) |
-| Wenn ich Zeit **habe**, | rufe ich dich an. (When I have time, …) |
+| Wenn es **regnet**, | **bleibe** ich zu Hause. (If it rains, …) |
+| Wenn ich Zeit **habe**, | **rufe** ich dich an. (When I have time, …) |
+| Wenn du **willst**, | **können** wir gehen. (If you want, …) |
 
-**Example:** Wenn es regnet, bleibe ich zu Hause. (If it rains, I stay home.)`,
+**Note:**
+- The verb in the "wenn"-clause goes **to the end**.
+- "wenn" = condition/repetition; **"als"** = single past event.
+- If the clause comes first: **comma + verb** in the main clause.
+
+**Examples:**
+- **Wenn** ich Urlaub **habe**, reise ich ans Meer. (When I'm on holiday, I travel to the sea.)
+- **Wenn** es kalt **wird**, ziehe ich eine Jacke an. (When it gets cold, I put on a jacket.)
+- Ich freue mich, **wenn** du **kommst**. (I'm happy when you come.)`,
       explanationTr: `## „wenn" ile yan cümleler
 
-**„wenn"** bir **koşul** (eğer) ya da **tekrarlanan bir olay** (-dığında) bildirir. Yan cümle başta olursa ana cümle doğrudan fiille başlar.
+**„wenn"** iki anlama gelir: bir **koşul** (eğer – bir şey mümkün) ya da şimdi/gelecekte **tekrarlanan bir olay** (her … -dığında). Geçmişte **tek seferlik** bir olay için ise **„als"** kullanılır.
 
-| „wenn" cümlesi | Ana cümle |
+„wenn" cümlesi **başta** olursa „1. konum"dur. O zaman ana cümle hemen **fiille** başlar (2. konum) – „virgül, fiil" kuralı.
+
+| Önce „wenn" cümlesi | Ana cümle (virgülden hemen sonra fiil) |
 | ---- | ---- |
-| Wenn es **regnet**, | bleibe ich zu Hause. (Yağmur yağarsa …) |
-| Wenn ich Zeit **habe**, | rufe ich dich an. (Zamanım olduğunda …) |
+| Wenn es **regnet**, | **bleibe** ich zu Hause. (Yağmur yağarsa …) |
+| Wenn ich Zeit **habe**, | **rufe** ich dich an. (Zamanım olduğunda …) |
+| Wenn du **willst**, | **können** wir gehen. (İstersen …) |
 
-**Örnek:** Wenn es regnet, bleibe ich zu Hause. (Yağmur yağarsa evde kalırım.)`,
+**Unutma:**
+- „wenn" cümlesindeki fiil **sona** gider.
+- „wenn" = koşul/tekrar; **„als"** = geçmişte tek seferlik.
+- Yan cümle başta ise: ana cümlede **virgül + fiil**.
+
+**Örnekler:**
+- **Wenn** ich Urlaub **habe**, reise ich ans Meer. (Tatilim olduğunda denize giderim.)
+- **Wenn** es kalt **wird**, ziehe ich eine Jacke an. (Hava soğuduğunda ceket giyerim.)
+- Ich freue mich, **wenn** du **kommst**. (Geldiğinde mutlu olurum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7673,37 +7772,58 @@ A clause starting with **"weil"** (because) gives a reason. The conjugated **ver
       grammarTopic: 'Wiederholung: weil/dass/wenn',
       explanationDe: `## Wiederholung: weil / dass / wenn
 
-Alle drei sind **subordinierende Konjunktionen**: Das konjugierte **Verb steht am Ende** des Nebensatzes.
+Alle drei sind **subordinierende Konjunktionen** (Nebensatz-Konnektoren). Die gemeinsame Regel: Das konjugierte **Verb steht am Ende** und vor der Konjunktion steht ein **Komma**. Sie unterscheiden sich nur in der **Bedeutung**.
 
-| Konjunktion | Bedeutung | Beispiel |
-| ---- | ---- | ---- |
-| weil | Grund | …, weil es **regnet**. |
-| dass | Aussage | …, dass er **kommt**. |
-| wenn | Bedingung | Wenn es **regnet**, … |
+| Konjunktion | Frage/Funktion | Bedeutung | Beispiel |
+| ---- | ---- | ---- | ---- |
+| weil | Warum? | Grund | …, weil es **regnet**. |
+| dass | Was? | Aussage/Tatsache | …, dass er **kommt**. |
+| wenn | Wann?/Unter welcher Bedingung? | Bedingung/Wiederholung | Wenn es **regnet**, … |
 
-**Beispiel:** Ich nehme den Schirm, weil es regnet.`,
+**Merke:**
+- Steht der Nebensatz **vorne**, folgt im Hauptsatz sofort das **Verb** (Komma, Verb).
+- „weil" und „denn" bedeuten dasselbe, aber nach **„denn"** bleibt die normale Wortstellung (Hauptsatz).
+
+**Beispiele:**
+- Ich nehme den Schirm, **weil** es **regnet**.
+- Ich weiß, **dass** du Recht **hast**.
+- **Wenn** ich Zeit **habe**, besuche ich dich.`,
       explanationEn: `## Review: weil / dass / wenn
 
-All three are **subordinating conjunctions**: the conjugated **verb goes to the end** of the clause.
+All three are **subordinating conjunctions**. The shared rule: the conjugated **verb goes to the end**, and there is a **comma** before the conjunction. They differ only in **meaning**.
 
-| Conjunction | Meaning | Example |
-| ---- | ---- | ---- |
-| weil | reason (because) | …, weil es **regnet**. |
-| dass | statement (that) | …, dass er **kommt**. |
-| wenn | condition (if) | Wenn es **regnet**, … |
+| Conjunction | Question/Function | Meaning | Example |
+| ---- | ---- | ---- | ---- |
+| weil | Why? | reason | …, weil es **regnet**. |
+| dass | What? | statement/fact | …, dass er **kommt**. |
+| wenn | When?/On what condition? | condition/repetition | Wenn es **regnet**, … |
 
-**Example:** Ich nehme den Schirm, weil es regnet. (I take the umbrella because it's raining.)`,
+**Note:**
+- If the clause comes **first**, the main clause starts with the **verb** (comma, verb).
+- "weil" and "denn" mean the same, but after **"denn"** the word order stays normal (main clause).
+
+**Examples:**
+- Ich nehme den Schirm, **weil** es **regnet**. (I take the umbrella because it's raining.)
+- Ich weiß, **dass** du Recht **hast**. (I know that you're right.)
+- **Wenn** ich Zeit **habe**, besuche ich dich. (When I have time, I'll visit you.)`,
       explanationTr: `## Tekrar: weil / dass / wenn
 
-Üçü de **yan cümle bağlacıdır**: çekimli **fiil cümlenin sonuna** gider.
+Üçü de **yan cümle bağlacıdır**. Ortak kural: çekimli **fiil sona** gider ve bağlaçtan önce **virgül** vardır. Yalnızca **anlamları** farklıdır.
 
-| Bağlaç | Anlamı | Örnek |
-| ---- | ---- | ---- |
-| weil | sebep (çünkü) | …, weil es **regnet**. |
-| dass | ifade (ki) | …, dass er **kommt**. |
-| wenn | koşul (eğer) | Wenn es **regnet**, … |
+| Bağlaç | Soru/İşlev | Anlamı | Örnek |
+| ---- | ---- | ---- | ---- |
+| weil | Neden? | sebep | …, weil es **regnet**. |
+| dass | Ne? | ifade/olgu | …, dass er **kommt**. |
+| wenn | Ne zaman?/Hangi koşulda? | koşul/tekrar | Wenn es **regnet**, … |
 
-**Örnek:** Ich nehme den Schirm, weil es regnet. (Yağmur yağdığı için şemsiyeyi alıyorum.)`,
+**Unutma:**
+- Yan cümle **başta** ise ana cümle hemen **fiille** başlar (virgül, fiil).
+- „weil" ve „denn" aynı anlama gelir, ama **„denn"**den sonra normal (ana cümle) sözcük dizilimi korunur.
+
+**Örnekler:**
+- Ich nehme den Schirm, **weil** es **regnet**. (Yağmur yağdığı için şemsiyeyi alıyorum.)
+- Ich weiß, **dass** du Recht **hast**. (Haklı olduğunu biliyorum.)
+- **Wenn** ich Zeit **habe**, besuche ich dich. (Zamanım olduğunda seni ziyaret ederim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7761,40 +7881,73 @@ All three are **subordinating conjunctions**: the conjugated **verb goes to the 
       grammarTopic: "Konjunktiv II mit 'würde' + Infinitiv",
       explanationDe: `## Konjunktiv II mit „würde" + Infinitiv
 
-Für höfliche Wünsche und irreale Situationen benutzt man oft **„würde" + Infinitiv** am Satzende. Das ist die einfachste Konjunktiv-II-Form.
+Der **Konjunktiv II** drückt aus, was **nicht real** ist: Wünsche, Träume, höfliche Bitten und hypothetische Situationen (*Was wäre, wenn…?*). Die einfachste und häufigste Form ist **„würde" + Infinitiv**.
 
-| Person | Form | Infinitiv |
+„würde" wird wie ein normales Verb konjugiert und steht auf **Position 2**; der **Infinitiv** wandert ans **Satzende**. Für die meisten Verben klingt „würde + Infinitiv" natürlicher als die alte Konjunktiv-II-Form.
+
+| Person | „würde" | Infinitiv (Ende) |
 | ---- | ---- | ---- |
 | ich | würde | reisen |
 | du | würdest | reisen |
 | er/sie/es | würde | reisen |
 | wir/sie/Sie | würden | reisen |
+| ihr | würdet | reisen |
 
-**Beispiel:** Ich **würde** gern nach Italien **reisen**.`,
+**Merke:**
+- „würde" ≠ „wurde" (Präteritum von werden). Achte auf den Umlaut **ü**.
+- Bei **sein, haben** und **Modalverben** nimmt man lieber die eigenen Formen (*wäre, hätte, könnte*).
+- Mit **„gern"** klingt der Wunsch besonders höflich.
+
+**Beispiele:**
+- Ich **würde** gern nach Italien **reisen**. (Wunsch)
+- **Würdest** du mir bitte **helfen**? (höfliche Bitte)
+- An deiner Stelle **würde** ich das nicht **machen**. (Rat)`,
       explanationEn: `## Konjunktiv II with "würde" + infinitive
 
-For polite wishes and unreal situations you often use **"würde" + infinitive** (at the end). This is the easiest Konjunktiv II form.
+The **Konjunktiv II** expresses what is **not real**: wishes, dreams, polite requests and hypothetical situations (*What if…?*). The easiest and most common form is **"würde" + infinitive**.
 
-| Person | Form | Infinitive |
+"würde" is conjugated like a normal verb and stands in **position 2**; the **infinitive** moves to the **end**. For most verbs, "würde + infinitive" sounds more natural than the older Konjunktiv II form.
+
+| Person | "würde" | infinitive (end) |
 | ---- | ---- | ---- |
 | ich | würde | reisen |
 | du | würdest | reisen |
 | er/sie/es | würde | reisen |
 | wir/sie/Sie | würden | reisen |
+| ihr | würdet | reisen |
 
-**Example:** Ich **würde** gern nach Italien **reisen**. (I would like to travel to Italy.)`,
+**Note:**
+- "würde" ≠ "wurde" (Präteritum of werden). Mind the umlaut **ü**.
+- With **sein, haben** and **modal verbs**, use their own forms (*wäre, hätte, könnte*).
+- Adding **"gern"** makes a wish especially polite.
+
+**Examples:**
+- Ich **würde** gern nach Italien **reisen**. (wish – I'd like to travel to Italy.)
+- **Würdest** du mir bitte **helfen**? (polite request – Would you please help me?)
+- An deiner Stelle **würde** ich das nicht **machen**. (advice – In your place I wouldn't do that.)`,
       explanationTr: `## „würde" + mastar ile Konjunktiv II
 
-Kibar dilekler ve gerçek dışı durumlar için genellikle **„würde" + mastar** (sonda) kullanılır. Bu en kolay Konjunktiv II biçimidir.
+**Konjunktiv II**, **gerçek olmayanı** ifade eder: dilekler, hayaller, kibar ricalar ve varsayımsal durumlar (*Ya olsaydı…?*). En kolay ve en yaygın biçim **„würde" + mastar**tır.
 
-| Kişi | Biçim | Mastar |
+„würde" normal bir fiil gibi çekilir ve **2. konumda** durur; **mastar** ise **cümlenin sonuna** gider. Çoğu fiil için „würde + mastar", eski Konjunktiv II biçiminden daha doğal durur.
+
+| Kişi | „würde" | mastar (sonda) |
 | ---- | ---- | ---- |
 | ich | würde | reisen |
 | du | würdest | reisen |
 | er/sie/es | würde | reisen |
 | wir/sie/Sie | würden | reisen |
+| ihr | würdet | reisen |
 
-**Örnek:** Ich **würde** gern nach Italien **reisen**. (İtalya'ya seyahat etmek isterdim.)`,
+**Unutma:**
+- „würde" ≠ „wurde" (werden'in Präteritum'u). **ü** harfine dikkat.
+- **sein, haben** ve **modal fiillerde** kendi biçimleri tercih edilir (*wäre, hätte, könnte*).
+- **„gern"** eklemek dileği özellikle kibarlaştırır.
+
+**Örnekler:**
+- Ich **würde** gern nach Italien **reisen**. (dilek – İtalya'ya gitmek isterdim.)
+- **Würdest** du mir bitte **helfen**? (kibar rica – Bana yardım eder misin lütfen?)
+- An deiner Stelle **würde** ich das nicht **machen**. (öğüt – Yerinde olsam bunu yapmazdım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7825,40 +7978,73 @@ Kibar dilekler ve gerçek dışı durumlar için genellikle **„würde" + masta
       grammarTopic: "Konjunktiv II von 'sein': wäre",
       explanationDe: `## Konjunktiv II von „sein": wäre
 
-**„sein"** hat eine eigene Konjunktiv-II-Form: **wäre**. Man benutzt sie (nicht „würde sein") für irreale Zustände und Wünsche.
+Das Verb **„sein"** benutzt man fast **nie** mit „würde". Stattdessen gibt es die eigene, kurze Konjunktiv-II-Form **„wäre"**. Sie kommt vom Präteritum „war" + Umlaut + Endung.
 
-| Person | Form |
-| ---- | ---- |
-| ich | wäre |
-| du | wärst |
-| er/sie/es | wäre |
-| wir/sie/Sie | wären |
+Man verwendet „wäre" für **irreale Zustände**, **Wünsche** und **Vermutungen** (*Das wäre schön!*). Sie ist eine der häufigsten Konjunktiv-II-Formen überhaupt.
 
-**Beispiel:** Ich **wäre** jetzt gern im Urlaub.`,
+| Person | Präteritum | Konjunktiv II |
+| ---- | ---- | ---- |
+| ich | war | **wäre** |
+| du | warst | **wärst** |
+| er/sie/es | war | **wäre** |
+| wir/sie/Sie | waren | **wären** |
+| ihr | wart | **wärt** |
+
+**Merke:**
+- „wäre" = *würde sein* (aber schöner). Nie *„würde sein"* benutzen.
+- Sehr häufig in Ratschlägen: *An deiner Stelle wäre ich vorsichtig.*
+- „Das wäre alles." ist ein höflicher Schlusssatz (z. B. im Restaurant).
+
+**Beispiele:**
+- Ich **wäre** jetzt gern im Urlaub.
+- Es **wäre** toll, wenn du kommen könntest.
+- **Wärst** du so nett und machst das Fenster zu?`,
       explanationEn: `## Konjunktiv II of "sein": wäre
 
-**"sein"** has its own Konjunktiv II form: **wäre**. Use it (not "würde sein") for unreal states and wishes.
+The verb **"sein"** is almost **never** used with "würde". Instead it has its own short Konjunktiv II form **"wäre"**, derived from the Präteritum "war" + umlaut + ending.
 
-| Person | Form |
-| ---- | ---- |
-| ich | wäre (I would be) |
-| du | wärst |
-| er/sie/es | wäre |
-| wir/sie/Sie | wären |
+You use "wäre" for **unreal states**, **wishes** and **assumptions** (*That would be nice!*). It is one of the most common Konjunktiv II forms.
 
-**Example:** Ich **wäre** jetzt gern im Urlaub. (I'd like to be on holiday now.)`,
+| Person | Präteritum | Konjunktiv II |
+| ---- | ---- | ---- |
+| ich | war | **wäre** |
+| du | warst | **wärst** |
+| er/sie/es | war | **wäre** |
+| wir/sie/Sie | waren | **wären** |
+| ihr | wart | **wärt** |
+
+**Note:**
+- "wäre" = *würde sein* (but nicer). Never say *"würde sein"*.
+- Very common in advice: *An deiner Stelle wäre ich vorsichtig.* (I'd be careful.)
+- "Das wäre alles." is a polite closing line (e.g. in a restaurant).
+
+**Examples:**
+- Ich **wäre** jetzt gern im Urlaub. (I'd love to be on holiday now.)
+- Es **wäre** toll, wenn du kommen könntest. (It would be great if you could come.)
+- **Wärst** du so nett und machst das Fenster zu? (Would you be so kind as to close the window?)`,
       explanationTr: `## „sein" fiilinin Konjunktiv II'si: wäre
 
-**„sein"** kendi Konjunktiv II biçimine sahiptir: **wäre**. Gerçek dışı durumlar ve dilekler için („würde sein" yerine) bunu kullanırız.
+**„sein"** fiili neredeyse **hiç** „würde" ile kullanılmaz. Bunun yerine kendi kısa Konjunktiv II biçimi **„wäre"** vardır; Präteritum „war" + umlaut + ekten gelir.
 
-| Kişi | Biçim |
-| ---- | ---- |
-| ich | wäre (olurdum) |
-| du | wärst |
-| er/sie/es | wäre |
-| wir/sie/Sie | wären |
+„wäre"yi **gerçek dışı durumlar**, **dilekler** ve **tahminler** için kullanırız (*Bu güzel olurdu!*). En sık kullanılan Konjunktiv II biçimlerinden biridir.
 
-**Örnek:** Ich **wäre** jetzt gern im Urlaub. (Şimdi tatilde olmak isterdim.)`,
+| Kişi | Präteritum | Konjunktiv II |
+| ---- | ---- | ---- |
+| ich | war | **wäre** |
+| du | warst | **wärst** |
+| er/sie/es | war | **wäre** |
+| wir/sie/Sie | waren | **wären** |
+| ihr | wart | **wärt** |
+
+**Unutma:**
+- „wäre" = *würde sein* (ama daha güzel). Asla *„würde sein"* deme.
+- Öğütlerde çok yaygın: *An deiner Stelle wäre ich vorsichtig.* (Yerinde olsam dikkatli olurdum.)
+- „Das wäre alles." kibar bir kapanış cümlesidir (örn. restoranda).
+
+**Örnekler:**
+- Ich **wäre** jetzt gern im Urlaub. (Şimdi tatilde olmak isterdim.)
+- Es **wäre** toll, wenn du kommen könntest. (Gelebilsen harika olurdu.)
+- **Wärst** du so nett und machst das Fenster zu? (Pencereyi kapatır mısın lütfen?)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7889,40 +8075,73 @@ Kibar dilekler ve gerçek dışı durumlar için genellikle **„würde" + masta
       grammarTopic: "Konjunktiv II von 'haben': hätte",
       explanationDe: `## Konjunktiv II von „haben": hätte
 
-**„haben"** hat die Konjunktiv-II-Form **hätte**. Sehr häufig ist „ich hätte gern …" (höflicher Wunsch).
+Wie „sein" hat auch **„haben"** eine eigene Konjunktiv-II-Form: **„hätte"** (vom Präteritum „hatte" + Umlaut). Man benutzt sie statt „würde haben".
 
-| Person | Form |
-| ---- | ---- |
-| ich | hätte |
-| du | hättest |
-| er/sie/es | hätte |
-| wir/sie/Sie | hätten |
+Besonders wichtig sind zwei Verwendungen: der höfliche Wunsch **„Ich hätte gern …"** (z. B. beim Einkaufen) und irreale Bedingungssätze in der Vergangenheit (*Wenn ich Zeit hätte, …*).
 
-**Beispiel:** Ich **hätte** gern mehr Freizeit.`,
+| Person | Präteritum | Konjunktiv II |
+| ---- | ---- | ---- |
+| ich | hatte | **hätte** |
+| du | hattest | **hättest** |
+| er/sie/es | hatte | **hätte** |
+| wir/sie/Sie | hatten | **hätten** |
+| ihr | hattet | **hättet** |
+
+**Merke:**
+- „Ich hätte gern …" ist die höfliche Art zu bestellen oder zu bitten.
+- „hätte" + Nomen = Wunsch; „hätte" + Partizip II = Konjunktiv der Vergangenheit (*Ich hätte das gewusst*).
+- Nie „würde haben" sagen.
+
+**Beispiele:**
+- Ich **hätte** gern einen Kaffee, bitte.
+- **Hättest** du morgen Zeit?
+- Wenn ich mehr Geld **hätte**, würde ich reisen.`,
       explanationEn: `## Konjunktiv II of "haben": hätte
 
-**"haben"** has the Konjunktiv II form **hätte**. Very common is "ich hätte gern …" (a polite wish).
+Like "sein", **"haben"** has its own Konjunktiv II form: **"hätte"** (from the Präteritum "hatte" + umlaut). Use it instead of "würde haben".
 
-| Person | Form |
-| ---- | ---- |
-| ich | hätte (I would have) |
-| du | hättest |
-| er/sie/es | hätte |
-| wir/sie/Sie | hätten |
+Two uses are especially important: the polite wish **"Ich hätte gern …"** (e.g. when shopping) and unreal conditional sentences (*Wenn ich Zeit hätte, …*).
 
-**Example:** Ich **hätte** gern mehr Freizeit. (I would like to have more free time.)`,
+| Person | Präteritum | Konjunktiv II |
+| ---- | ---- | ---- |
+| ich | hatte | **hätte** |
+| du | hattest | **hättest** |
+| er/sie/es | hatte | **hätte** |
+| wir/sie/Sie | hatten | **hätten** |
+| ihr | hattet | **hättet** |
+
+**Note:**
+- "Ich hätte gern …" is the polite way to order or ask for something.
+- "hätte" + noun = wish; "hätte" + past participle = past Konjunktiv (*Ich hätte das gewusst* – I would have known).
+- Never say "würde haben".
+
+**Examples:**
+- Ich **hätte** gern einen Kaffee, bitte. (I'd like a coffee, please.)
+- **Hättest** du morgen Zeit? (Would you have time tomorrow?)
+- Wenn ich mehr Geld **hätte**, würde ich reisen. (If I had more money, I'd travel.)`,
       explanationTr: `## „haben" fiilinin Konjunktiv II'si: hätte
 
-**„haben"** fiilinin Konjunktiv II biçimi **hätte**'dir. „ich hätte gern …" (kibar dilek) çok yaygındır.
+„sein" gibi **„haben"** de kendi Konjunktiv II biçimine sahiptir: **„hätte"** (Präteritum „hatte" + umlaut). „würde haben" yerine bu kullanılır.
 
-| Kişi | Biçim |
-| ---- | ---- |
-| ich | hätte (…olsun isterdim) |
-| du | hättest |
-| er/sie/es | hätte |
-| wir/sie/Sie | hätten |
+Özellikle iki kullanım önemlidir: kibar dilek **„Ich hätte gern …"** (örn. alışverişte) ve gerçek dışı koşul cümleleri (*Wenn ich Zeit hätte, …*).
 
-**Örnek:** Ich **hätte** gern mehr Freizeit. (Daha fazla boş zamanım olsun isterdim.)`,
+| Kişi | Präteritum | Konjunktiv II |
+| ---- | ---- | ---- |
+| ich | hatte | **hätte** |
+| du | hattest | **hättest** |
+| er/sie/es | hatte | **hätte** |
+| wir/sie/Sie | hatten | **hätten** |
+| ihr | hattet | **hättet** |
+
+**Unutma:**
+- „Ich hätte gern …" bir şey sipariş etmenin/istemenin kibar yoludur.
+- „hätte" + isim = dilek; „hätte" + Partizip II = geçmiş Konjunktiv (*Ich hätte das gewusst* – Bilirdim).
+- Asla „würde haben" deme.
+
+**Örnekler:**
+- Ich **hätte** gern einen Kaffee, bitte. (Bir kahve alabilir miyim lütfen?)
+- **Hättest** du morgen Zeit? (Yarın vaktin olur mu?)
+- Wenn ich mehr Geld **hätte**, würde ich reisen. (Daha çok param olsa seyahat ederdim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7953,40 +8172,67 @@ Kibar dilekler ve gerçek dışı durumlar için genellikle **„würde" + masta
       grammarTopic: 'Höfliche Bitten & Wünsche mit Konjunktiv II',
       explanationDe: `## Höfliche Bitten & Wünsche mit Konjunktiv II
 
-Der Konjunktiv II der Modalverben macht Bitten **höflicher**. Statt der Indikativ-Form nimmt man die höfliche Form.
+Im Alltag klingt der Indikativ oft zu direkt. Der **Konjunktiv II der Modalverben** macht Bitten, Vorschläge und Ratschläge deutlich **höflicher**. Die Formen bildet man aus dem Präteritum + Umlaut (außer „sollte" und „wollte").
 
-| Indikativ | Konjunktiv II (höflich) |
-| ---- | ---- |
-| kann | könnte |
-| darf | dürfte |
-| mag | möchte |
-| soll | sollte |
+| Indikativ | Konjunktiv II | Funktion |
+| ---- | ---- | ---- |
+| kann | **könnte** | höfliche Bitte / Möglichkeit |
+| darf | **dürfte** | höfliche Vermutung |
+| muss | **müsste** | wahrscheinlich |
+| soll | **sollte** | Ratschlag |
+| mag | **möchte** | höflicher Wunsch |
 
-**Beispiel:** **Könnten** Sie mir bitte helfen?`,
+**Merke:**
+- „Könnten Sie …?" ist viel höflicher als „Können Sie …?".
+- „sollte" gibt Ratschläge: *Du solltest mehr schlafen.*
+- „dürfte" drückt eine höfliche Vermutung aus: *Das dürfte stimmen.*
+
+**Beispiele:**
+- **Könnten** Sie mir bitte helfen?
+- Du **solltest** zum Arzt gehen.
+- **Dürfte** ich Sie etwas fragen?`,
       explanationEn: `## Polite requests & wishes with Konjunktiv II
 
-The Konjunktiv II of modal verbs makes requests **more polite**. Instead of the indicative you use the polite form.
+In everyday speech the indicative often sounds too direct. The **Konjunktiv II of modal verbs** makes requests, suggestions and advice much **more polite**. The forms come from the Präteritum + umlaut (except "sollte" and "wollte").
 
-| Indicative | Konjunktiv II (polite) |
-| ---- | ---- |
-| kann | könnte (could) |
-| darf | dürfte |
-| mag | möchte (would like) |
-| soll | sollte (should) |
+| Indicative | Konjunktiv II | Function |
+| ---- | ---- | ---- |
+| kann | **könnte** | polite request / possibility |
+| darf | **dürfte** | polite assumption |
+| muss | **müsste** | probably |
+| soll | **sollte** | advice |
+| mag | **möchte** | polite wish |
 
-**Example:** **Könnten** Sie mir bitte helfen? (Could you please help me?)`,
+**Note:**
+- "Könnten Sie …?" is far more polite than "Können Sie …?".
+- "sollte" gives advice: *Du solltest mehr schlafen.* (You should sleep more.)
+- "dürfte" expresses a polite assumption: *Das dürfte stimmen.* (That's probably right.)
+
+**Examples:**
+- **Könnten** Sie mir bitte helfen? (Could you please help me?)
+- Du **solltest** zum Arzt gehen. (You should see a doctor.)
+- **Dürfte** ich Sie etwas fragen? (Might I ask you something?)`,
       explanationTr: `## Konjunktiv II ile kibar ricalar & dilekler
 
-Modal fiillerin Konjunktiv II'si ricaları **daha kibar** yapar. Bildirme kipi yerine kibar biçim kullanılır.
+Günlük dilde bildirme kipi çoğu zaman fazla doğrudan gelir. **Modal fiillerin Konjunktiv II'si** ricaları, önerileri ve öğütleri belirgin şekilde **kibarlaştırır**. Biçimler Präteritum + umlaut ile kurulur (*sollte* ve *wollte* hariç).
 
-| Bildirme | Konjunktiv II (kibar) |
-| ---- | ---- |
-| kann | könnte (…-ebilir misiniz) |
-| darf | dürfte |
-| mag | möchte (isterdim) |
-| soll | sollte (…-meli) |
+| Bildirme | Konjunktiv II | İşlev |
+| ---- | ---- | ---- |
+| kann | **könnte** | kibar rica / olasılık |
+| darf | **dürfte** | kibar tahmin |
+| muss | **müsste** | muhtemelen |
+| soll | **sollte** | öğüt |
+| mag | **möchte** | kibar dilek |
 
-**Örnek:** **Könnten** Sie mir bitte helfen? (Bana yardım edebilir misiniz, lütfen?)`,
+**Unutma:**
+- „Könnten Sie …?", „Können Sie …?"ten çok daha kibardır.
+- „sollte" öğüt verir: *Du solltest mehr schlafen.* (Daha çok uyumalısın.)
+- „dürfte" kibar bir tahmin ifade eder: *Das dürfte stimmen.* (Bu muhtemelen doğru.)
+
+**Örnekler:**
+- **Könnten** Sie mir bitte helfen? (Bana yardım edebilir misiniz lütfen?)
+- Du **solltest** zum Arzt gehen. (Doktora gitmelisin.)
+- **Dürfte** ich Sie etwas fragen? (Size bir şey sorabilir miyim?)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8044,34 +8290,67 @@ Modal fiillerin Konjunktiv II'si ricaları **daha kibar** yapar. Bildirme kipi y
       grammarTopic: 'Passiv im Präsens',
       explanationDe: `## Passiv im Präsens
 
-Im Passiv ist wichtig, **was passiert**, nicht wer es tut. Bildung: **„werden" (konjugiert) + Partizip II** (am Ende).
+Im **Aktiv** ist wichtig, **wer** etwas tut; im **Passiv** ist wichtig, **was passiert**. Der Handelnde ist oft unbekannt oder unwichtig. Man bildet das Präsens-Passiv mit **„werden" (konjugiert) + Partizip II** am Ende.
+
+Beim Umformen wird das **Akkusativobjekt** des Aktivsatzes zum **Subjekt** des Passivsatzes. Wer die Handlung tut, kann man mit **„von" + Dativ** ergänzen (muss man aber nicht).
 
 | Aktiv | Passiv (Präsens) |
 | ---- | ---- |
 | Man schreibt den Brief. | Der Brief **wird geschrieben**. |
 | Man kocht das Essen. | Das Essen **wird gekocht**. |
+| Der Arzt untersucht den Patienten. | Der Patient **wird** (vom Arzt) **untersucht**. |
 
-**Beispiel:** Der Brief **wird** heute **geschrieben**.`,
+**Merke:**
+- Passiv-Signal ist immer eine Form von **„werden"** (nicht „sein").
+- Das **Partizip II** steht am **Satzende**.
+- Der Handelnde: **von** + Person (*vom Arzt*), **durch** + Mittel/Ursache (*durch den Sturm*).
+
+**Beispiele:**
+- Hier **wird** ein neues Haus **gebaut**.
+- Die Rechnungen **werden** am Monatsende **bezahlt**.
+- Das Formular **wird** online **ausgefüllt**.`,
       explanationEn: `## Passive in the present
 
-The passive focuses on **what happens**, not who does it. Formation: **"werden" (conjugated) + past participle** (at the end).
+In the **active**, who does something matters; in the **passive**, what happens matters. The doer is often unknown or unimportant. The present passive is formed with **"werden" (conjugated) + past participle** at the end.
+
+When transforming, the **accusative object** of the active sentence becomes the **subject** of the passive sentence. The doer can be added with **"von" + dative** (but need not be).
 
 | Active | Passive (present) |
 | ---- | ---- |
 | Man schreibt den Brief. | Der Brief **wird geschrieben**. (is being written) |
 | Man kocht das Essen. | Das Essen **wird gekocht**. (is being cooked) |
+| Der Arzt untersucht den Patienten. | Der Patient **wird** (vom Arzt) **untersucht**. |
 
-**Example:** Der Brief **wird** heute **geschrieben**. (The letter is being written today.)`,
+**Note:**
+- The passive signal is always a form of **"werden"** (not "sein").
+- The **past participle** stands at the **end**.
+- The doer: **von** + person (*vom Arzt*), **durch** + means/cause (*durch den Sturm*).
+
+**Examples:**
+- Hier **wird** ein neues Haus **gebaut**. (A new house is being built here.)
+- Die Rechnungen **werden** am Monatsende **bezahlt**. (The bills are paid at month's end.)
+- Das Formular **wird** online **ausgefüllt**. (The form is filled in online.)`,
       explanationTr: `## Şimdiki zamanda edilgen çatı
 
-Edilgende **ne olduğu** önemlidir, kimin yaptığı değil. Kuruluş: **„werden" (çekimli) + Partizip II** (sonda).
+**Etken**te kimin yaptığı önemlidir; **edilgen**de ise **ne olduğu** önemlidir. Eylemi yapan çoğu zaman bilinmez ya da önemsizdir. Şimdiki zaman edilgeni **„werden" (çekimli) + Partizip II** ile kurulur (sonda).
+
+Dönüştürürken etken cümlenin **-i hâlindeki nesnesi**, edilgen cümlenin **öznesi** olur. Eylemi yapan **„von" + Dativ** ile eklenebilir (zorunlu değil).
 
 | Etken | Edilgen (şimdiki zaman) |
 | ---- | ---- |
 | Man schreibt den Brief. | Der Brief **wird geschrieben**. (yazılıyor) |
 | Man kocht das Essen. | Das Essen **wird gekocht**. (pişiriliyor) |
+| Der Arzt untersucht den Patienten. | Der Patient **wird** (vom Arzt) **untersucht**. |
 
-**Örnek:** Der Brief **wird** heute **geschrieben**. (Mektup bugün yazılıyor.)`,
+**Unutma:**
+- Edilgen işareti her zaman bir **„werden"** biçimidir („sein" değil).
+- **Partizip II** cümlenin **sonunda** durur.
+- Eylemi yapan: kişi için **von** (*vom Arzt*), araç/neden için **durch** (*durch den Sturm*).
+
+**Örnekler:**
+- Hier **wird** ein neues Haus **gebaut**. (Burada yeni bir ev inşa ediliyor.)
+- Die Rechnungen **werden** am Monatsende **bezahlt**. (Faturalar ay sonunda ödeniyor.)
+- Das Formular **wird** online **ausgefüllt**. (Form çevrimiçi dolduruluyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8102,37 +8381,70 @@ Edilgende **ne olduğu** önemlidir, kimin yaptığı değil. Kuruluş: **„wer
       grammarTopic: 'Passiv im Präteritum',
       explanationDe: `## Passiv im Präteritum
 
-Für die Vergangenheit nimmt man das **Präteritum von „werden" = „wurde"** + Partizip II.
+Für Handlungen in der **Vergangenheit** benutzt man das **Präteritum von „werden" = „wurde"** + Partizip II. Das Präteritum-Passiv ist typisch für Berichte, Nachrichten und Geschichte (*Das Haus wurde 1990 gebaut*).
 
-| Person | „werden" (Präteritum) |
-| ---- | ---- |
-| ich | wurde |
-| er/sie/es | wurde |
-| wir/sie/Sie | wurden |
+Nur das Hilfsverb ändert sich (wird → wurde); das **Partizip II bleibt gleich** und steht am Ende.
 
-**Beispiel:** Das Haus **wurde** 1990 **gebaut**.`,
+| Person | Präsens | Präteritum |
+| ---- | ---- | ---- |
+| ich | werde | **wurde** |
+| du | wirst | **wurdest** |
+| er/sie/es | wird | **wurde** |
+| wir/sie/Sie | werden | **wurden** |
+
+**Merke:**
+- „wurde" + Partizip II = Passiv **Vergangenheit**.
+- Verwechsle es nicht mit „würde" (Konjunktiv II)!
+- Zeitangaben wie *1990, letztes Jahr, gestern* signalisieren die Vergangenheit.
+
+**Beispiele:**
+- Das Haus **wurde** 1990 **gebaut**.
+- Die Briefe **wurden** gestern **verschickt**.
+- Amerika **wurde** 1492 **entdeckt**.`,
       explanationEn: `## Passive in the simple past
 
-For the past you use the **Präteritum of "werden" = "wurde"** + past participle.
+For actions in the **past** you use the **Präteritum of "werden" = "wurde"** + past participle. The past passive is typical for reports, news and history (*Das Haus wurde 1990 gebaut*).
 
-| Person | "werden" (Präteritum) |
-| ---- | ---- |
-| ich | wurde |
-| er/sie/es | wurde |
-| wir/sie/Sie | wurden |
+Only the auxiliary changes (wird → wurde); the **past participle stays the same** and remains at the end.
 
-**Example:** Das Haus **wurde** 1990 **gebaut**. (The house was built in 1990.)`,
+| Person | Present | Simple past |
+| ---- | ---- | ---- |
+| ich | werde | **wurde** |
+| du | wirst | **wurdest** |
+| er/sie/es | wird | **wurde** |
+| wir/sie/Sie | werden | **wurden** |
+
+**Note:**
+- "wurde" + past participle = **past** passive.
+- Don't confuse it with "würde" (Konjunktiv II)!
+- Time markers like *1990, last year, yesterday* signal the past.
+
+**Examples:**
+- Das Haus **wurde** 1990 **gebaut**. (The house was built in 1990.)
+- Die Briefe **wurden** gestern **verschickt**. (The letters were sent yesterday.)
+- Amerika **wurde** 1492 **entdeckt**. (America was discovered in 1492.)`,
       explanationTr: `## Geçmiş zamanda edilgen çatı
 
-Geçmiş için **„werden" fiilinin Präteritum'u = „wurde"** + Partizip II kullanılır.
+**Geçmişteki** eylemler için **„werden" fiilinin Präteritum'u = „wurde"** + Partizip II kullanılır. Geçmiş zaman edilgeni raporlarda, haberlerde ve tarihte tipiktir (*Das Haus wurde 1990 gebaut*).
 
-| Kişi | „werden" (Präteritum) |
-| ---- | ---- |
-| ich | wurde |
-| er/sie/es | wurde |
-| wir/sie/Sie | wurden |
+Sadece yardımcı fiil değişir (wird → wurde); **Partizip II aynı kalır** ve sonda durur.
 
-**Örnek:** Das Haus **wurde** 1990 **gebaut**. (Ev 1990'da inşa edildi.)`,
+| Kişi | Şimdiki | Präteritum |
+| ---- | ---- | ---- |
+| ich | werde | **wurde** |
+| du | wirst | **wurdest** |
+| er/sie/es | wird | **wurde** |
+| wir/sie/Sie | werden | **wurden** |
+
+**Unutma:**
+- „wurde" + Partizip II = **geçmiş** edilgen.
+- „würde" (Konjunktiv II) ile karıştırma!
+- *1990, geçen yıl, dün* gibi zaman ifadeleri geçmişi belirtir.
+
+**Örnekler:**
+- Das Haus **wurde** 1990 **gebaut**. (Ev 1990'da inşa edildi.)
+- Die Briefe **wurden** gestern **verschickt**. (Mektuplar dün gönderildi.)
+- Amerika **wurde** 1492 **entdeckt**. (Amerika 1492'de keşfedildi.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8163,34 +8475,67 @@ Geçmiş için **„werden" fiilinin Präteritum'u = „wurde"** + Partizip II k
       grammarTopic: 'Passiv mit Modalverben',
       explanationDe: `## Passiv mit Modalverben
 
-Struktur: **Modalverb (konjugiert) + Partizip II + „werden" (Infinitiv)** am Satzende.
+Oft will man sagen, dass etwas getan werden **muss, kann, soll** usw. Dann kombiniert man ein **Modalverb** mit dem Passiv. Struktur: **Modalverb (konjugiert, Position 2) … + Partizip II + „werden" (Infinitiv)** ganz am Ende.
+
+Am Satzende stehen also **zwei Verben**: erst das Partizip II, dann der Infinitiv „werden". Diese Kombination heißt „Passiv-Infinitiv" (*repariert werden*).
 
 | Aktiv | Passiv mit Modalverb |
 | ---- | ---- |
 | Man muss das Auto reparieren. | Das Auto muss **repariert werden**. |
 | Man kann das Problem lösen. | Das Problem kann **gelöst werden**. |
+| Man darf hier nicht rauchen. | Hier darf nicht **geraucht werden**. |
 
-**Beispiel:** Das Auto muss **repariert werden**.`,
+**Merke:**
+- Reihenfolge am Ende: **Partizip II + werden** (nicht umgekehrt).
+- Das Modalverb trägt die Zeit: *muss* (Präsens) → *musste* (Vergangenheit).
+- „werden" steht hier im **Infinitiv**, nicht konjugiert.
+
+**Beispiele:**
+- Die Aufgabe kann heute nicht **gelöst werden**.
+- Das Formular muss **unterschrieben werden**.
+- Der Termin sollte **verschoben werden**.`,
       explanationEn: `## Passive with modal verbs
 
-Structure: **modal verb (conjugated) + past participle + "werden" (infinitive)** at the end.
+Often you want to say that something **must, can, should** be done. Then you combine a **modal verb** with the passive. Structure: **modal verb (conjugated, position 2) … + past participle + "werden" (infinitive)** at the very end.
+
+So there are **two verbs** at the end: first the past participle, then the infinitive "werden". This combination is called the "passive infinitive" (*repariert werden*).
 
 | Active | Passive with modal |
 | ---- | ---- |
 | Man muss das Auto reparieren. | Das Auto muss **repariert werden**. (must be repaired) |
 | Man kann das Problem lösen. | Das Problem kann **gelöst werden**. (can be solved) |
+| Man darf hier nicht rauchen. | Hier darf nicht **geraucht werden**. |
 
-**Example:** Das Auto muss **repariert werden**. (The car must be repaired.)`,
+**Note:**
+- Order at the end: **past participle + werden** (not the other way round).
+- The modal verb carries the tense: *muss* (present) → *musste* (past).
+- Here "werden" is in the **infinitive**, not conjugated.
+
+**Examples:**
+- Die Aufgabe kann heute nicht **gelöst werden**. (The task can't be solved today.)
+- Das Formular muss **unterschrieben werden**. (The form must be signed.)
+- Der Termin sollte **verschoben werden**. (The appointment should be postponed.)`,
       explanationTr: `## Modal fiilli edilgen çatı
 
-Yapı: **Modal fiil (çekimli) + Partizip II + „werden" (mastar)** cümlenin sonunda.
+Çoğu zaman bir şeyin yapılması **gerektiğini, yapılabileceğini, yapılması gerektiğini** söylemek isteriz. O zaman bir **modal fiil** ile edilgeni birleştiririz. Yapı: **Modal fiil (çekimli, 2. konum) … + Partizip II + „werden" (mastar)** en sonda.
+
+Yani cümlenin sonunda **iki fiil** olur: önce Partizip II, sonra „werden" mastarı. Bu birleşime „edilgen mastar" denir (*repariert werden*).
 
 | Etken | Modal fiilli edilgen |
 | ---- | ---- |
 | Man muss das Auto reparieren. | Das Auto muss **repariert werden**. (tamir edilmeli) |
 | Man kann das Problem lösen. | Das Problem kann **gelöst werden**. (çözülebilir) |
+| Man darf hier nicht rauchen. | Hier darf nicht **geraucht werden**. |
 
-**Örnek:** Das Auto muss **repariert werden**. (Araba tamir edilmeli.)`,
+**Unutma:**
+- Sondaki sıra: **Partizip II + werden** (tersi değil).
+- Zamanı modal fiil taşır: *muss* (şimdiki) → *musste* (geçmiş).
+- Burada „werden" **mastar** hâlindedir, çekimli değil.
+
+**Örnekler:**
+- Die Aufgabe kann heute nicht **gelöst werden**. (Görev bugün çözülemez.)
+- Das Formular muss **unterschrieben werden**. (Form imzalanmalı.)
+- Der Termin sollte **verschoben werden**. (Randevu ertelenmeli.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8221,37 +8566,64 @@ Yapı: **Modal fiil (çekimli) + Partizip II + „werden" (mastar)** cümlenin s
       grammarTopic: 'Wiederholung: Passiv',
       explanationDe: `## Wiederholung: Passiv
 
-Alle Passiv-Formen kombinieren eine **Form von „werden"** mit dem **Partizip II**.
+Alle Passiv-Formen haben denselben Kern: eine **Form von „werden"** + **Partizip II**. Nur das „werden" verändert sich je nach Zeit oder Modalverb – das Partizip II bleibt immer gleich und steht am Ende.
 
 | Form | Struktur | Beispiel |
 | ---- | ---- | ---- |
 | Präsens | wird + Partizip II | wird gebaut |
 | Präteritum | wurde + Partizip II | wurde gebaut |
+| Perfekt | ist + Partizip II + worden | ist gebaut worden |
 | mit Modalverb | Modalverb + Partizip II + werden | muss gebaut werden |
 
-**Beispiel:** Das Haus wurde gebaut und muss jetzt renoviert werden.`,
+**Merke:**
+- Aktiv → Passiv: Das **Akkusativobjekt** wird zum **Subjekt**.
+- Der Handelnde ist oft weggelassen (nur mit **von/durch**, wenn nötig).
+- „sein" + Partizip II ist meist **Zustandspassiv** (*Die Tür ist geschlossen* = Ergebnis).
+
+**Beispiele:**
+- Das Haus **wurde** gebaut und muss jetzt **renoviert werden**.
+- Der Brief **wird** geschrieben und morgen **verschickt**.
+- Die Tickets **können** online **gekauft werden**.`,
       explanationEn: `## Review: passive
 
-All passive forms combine a **form of "werden"** with the **past participle**.
+All passive forms share the same core: a **form of "werden"** + **past participle**. Only "werden" changes according to tense or modal verb – the past participle always stays the same and stands at the end.
 
 | Form | Structure | Example |
 | ---- | ---- | ---- |
 | Present | wird + past participle | wird gebaut |
 | Simple past | wurde + past participle | wurde gebaut |
+| Perfekt | ist + past participle + worden | ist gebaut worden |
 | With modal | modal + past participle + werden | muss gebaut werden |
 
-**Example:** Das Haus wurde gebaut und muss jetzt renoviert werden. (The house was built and now must be renovated.)`,
+**Note:**
+- Active → passive: the **accusative object** becomes the **subject**.
+- The doer is often left out (only with **von/durch** when needed).
+- "sein" + past participle is usually the **state passive** (*Die Tür ist geschlossen* = result).
+
+**Examples:**
+- Das Haus **wurde** gebaut und muss jetzt **renoviert werden**. (…was built and now must be renovated.)
+- Der Brief **wird** geschrieben und morgen **verschickt**. (…is written and sent tomorrow.)
+- Die Tickets **können** online **gekauft werden**. (The tickets can be bought online.)`,
       explanationTr: `## Tekrar: edilgen çatı
 
-Tüm edilgen biçimler bir **„werden" biçimini** **Partizip II** ile birleştirir.
+Tüm edilgen biçimlerin özü aynıdır: bir **„werden" biçimi** + **Partizip II**. Yalnızca „werden" zamana ya da modal fiile göre değişir – Partizip II her zaman aynı kalır ve sonda durur.
 
 | Biçim | Yapı | Örnek |
 | ---- | ---- | ---- |
 | Şimdiki | wird + Partizip II | wird gebaut |
 | Geçmiş | wurde + Partizip II | wurde gebaut |
+| Perfekt | ist + Partizip II + worden | ist gebaut worden |
 | Modal fiilli | modal + Partizip II + werden | muss gebaut werden |
 
-**Örnek:** Das Haus wurde gebaut und muss jetzt renoviert werden. (Ev inşa edildi ve şimdi yenilenmeli.)`,
+**Unutma:**
+- Etken → edilgen: **-i hâlindeki nesne**, **özne** olur.
+- Eylemi yapan çoğu zaman atlanır (gerekirse **von/durch** ile).
+- „sein" + Partizip II genellikle **durum edilgeni**dir (*Die Tür ist geschlossen* = sonuç).
+
+**Örnekler:**
+- Das Haus **wurde** gebaut und muss jetzt **renoviert werden**. (…inşa edildi ve şimdi yenilenmeli.)
+- Der Brief **wird** geschrieben und morgen **verschickt**. (…yazılıyor ve yarın gönderilecek.)
+- Die Tickets **können** online **gekauft werden**. (Biletler çevrimiçi alınabilir.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8309,40 +8681,70 @@ Tüm edilgen biçimler bir **„werden" biçimini** **Partizip II** ile birleşt
       grammarTopic: 'Relativpronomen im Nominativ',
       explanationDe: `## Relativpronomen im Nominativ
 
-Ein Relativsatz beschreibt ein Nomen genauer. Das **Relativpronomen** richtet sich nach **Genus/Numerus** des Bezugsworts; das Verb steht am Ende.
+Mit einem **Relativsatz** gibt man zusätzliche Informationen über ein Nomen, ohne einen neuen Satz zu beginnen. Er wird durch ein **Relativpronomen** eingeleitet und mit **Kommas** abgetrennt; das **Verb steht am Ende**.
+
+Das Relativpronomen sieht fast wie der bestimmte Artikel aus. Es übernimmt **Genus und Numerus** vom Bezugswort (dem Nomen davor). Im **Nominativ** ist das Relativpronomen das **Subjekt** des Relativsatzes.
 
 | Bezugswort | Relativpronomen (Nom.) |
 | ---- | ---- |
-| der Mann | der |
-| die Frau | die |
-| das Kind | das |
-| die Leute (Pl.) | die |
+| der Mann | **der** |
+| die Frau | **die** |
+| das Kind | **das** |
+| die Leute (Pl.) | **die** |
 
-**Beispiel:** Der Mann, **der** dort steht, ist mein Lehrer.`,
+**Merke:**
+- Vor und nach dem Relativsatz steht ein **Komma**.
+- Das Relativpronomen richtet sich in Genus/Numerus nach dem **Bezugswort**.
+- Der **Kasus** hängt von der Rolle **im Relativsatz** ab (hier: Subjekt = Nominativ).
+
+**Beispiele:**
+- Der Mann, **der** dort steht, ist mein Lehrer.
+- Die Frau, **die** neben mir wohnt, ist Ärztin.
+- Das Kind, **das** dort spielt, ist mein Neffe.`,
       explanationEn: `## Relative pronouns in the nominative
 
-A relative clause describes a noun in more detail. The **relative pronoun** matches the **gender/number** of the noun; the verb goes to the end.
+A **relative clause** adds extra information about a noun without starting a new sentence. It is introduced by a **relative pronoun** and set off by **commas**; the **verb goes to the end**.
+
+The relative pronoun looks almost like the definite article. It takes **gender and number** from the antecedent (the noun before it). In the **nominative**, the relative pronoun is the **subject** of the relative clause.
 
 | Antecedent | Relative pronoun (nom.) |
 | ---- | ---- |
-| der Mann | der (who/that) |
-| die Frau | die |
-| das Kind | das |
-| die Leute (pl.) | die |
+| der Mann | **der** (who/that) |
+| die Frau | **die** |
+| das Kind | **das** |
+| die Leute (pl.) | **die** |
 
-**Example:** Der Mann, **der** dort steht, ist mein Lehrer. (The man who is standing there is my teacher.)`,
+**Note:**
+- There is a **comma** before and after the relative clause.
+- The pronoun takes gender/number from the **antecedent**.
+- The **case** depends on its role **inside the clause** (here: subject = nominative).
+
+**Examples:**
+- Der Mann, **der** dort steht, ist mein Lehrer. (The man who is standing there is my teacher.)
+- Die Frau, **die** neben mir wohnt, ist Ärztin. (The woman who lives next to me is a doctor.)
+- Das Kind, **das** dort spielt, ist mein Neffe. (The child who is playing there is my nephew.)`,
       explanationTr: `## Yalın hâlde ilgi zamirleri
 
-İlgi cümlesi bir ismi daha ayrıntılı tanımlar. **İlgi zamiri** ismin **cinsiyet/sayısına** göre değişir; fiil sona gider.
+**İlgi cümlesi**, yeni bir cümle başlatmadan bir isim hakkında ek bilgi verir. Bir **ilgi zamiri** ile başlar ve **virgüllerle** ayrılır; **fiil sona** gider.
+
+İlgi zamiri neredeyse belirli artikel gibi görünür. **Cinsiyet ve sayıyı** ilgili isimden (önündeki isimden) alır. **Yalın hâlde** ilgi zamiri, ilgi cümlesinin **öznesidir**.
 
 | İlgili isim | İlgi zamiri (yalın) |
 | ---- | ---- |
-| der Mann | der (ki o) |
-| die Frau | die |
-| das Kind | das |
-| die Leute (çoğul) | die |
+| der Mann | **der** (ki o) |
+| die Frau | **die** |
+| das Kind | **das** |
+| die Leute (çoğul) | **die** |
 
-**Örnek:** Der Mann, **der** dort steht, ist mein Lehrer. (Orada duran adam benim öğretmenim.)`,
+**Unutma:**
+- İlgi cümlesinden önce ve sonra **virgül** vardır.
+- Zamir cinsiyet/sayıyı **ilgili isimden** alır.
+- **Hâl**, cümledeki rolüne bağlıdır (burada: özne = yalın).
+
+**Örnekler:**
+- Der Mann, **der** dort steht, ist mein Lehrer. (Orada duran adam benim öğretmenim.)
+- Die Frau, **die** neben mir wohnt, ist Ärztin. (Yanımda oturan kadın doktordur.)
+- Das Kind, **das** dort spielt, ist mein Neffe. (Orada oynayan çocuk benim yeğenim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8382,7 +8784,9 @@ A relative clause describes a noun in more detail. The **relative pronoun** matc
       grammarTopic: 'Relativpronomen im Akkusativ',
       explanationDe: `## Relativpronomen im Akkusativ
 
-Wie beim Artikel ändert sich im Akkusativ **nur die maskuline Form** zu **„den"**. Feminin, neutrum und Plural bleiben gleich.
+Wenn das Relativpronomen im Relativsatz das **Akkusativobjekt** ist (die Person/Sache, die etwas „bekommt"), steht es im **Akkusativ**. Wie beim Artikel ändert sich dabei **nur die maskuline Form** zu **„den"**; feminin, neutrum und Plural bleiben gleich.
+
+Tipp: Frage dich, welche Rolle das Nomen **im Relativsatz** hat. *„Ich sehe den Film"* → der Film ist Akkusativobjekt → *der Film, **den** ich sehe*.
 
 | Bezugswort | Nominativ | Akkusativ |
 | ---- | ---- | ---- |
@@ -8391,10 +8795,20 @@ Wie beim Artikel ändert sich im Akkusativ **nur die maskuline Form** zu **„de
 | das Buch | das | das |
 | die Leute (Pl.) | die | die |
 
-**Beispiel:** Der Film, **den** ich sehe, ist neu.`,
+**Merke:**
+- Nur **maskulin** ändert sich: der → **den**.
+- Der Kasus kommt von der Rolle **im Relativsatz**, nicht vom Hauptsatz.
+- Das Verb steht trotzdem **am Ende**.
+
+**Beispiele:**
+- Der Film, **den** ich gestern sah, war spannend.
+- Das Buch, **das** ich lese, ist sehr gut.
+- Die Kollegen, **die** ich mag, sind nett.`,
       explanationEn: `## Relative pronouns in the accusative
 
-Like the article, in the accusative **only the masculine form** changes, to **"den"**. Feminine, neuter and plural stay the same.
+When the relative pronoun is the **accusative object** in the relative clause (the person/thing that „receives" the action), it takes the **accusative**. As with the article, **only the masculine form** changes, to **"den"**; feminine, neuter and plural stay the same.
+
+Tip: ask yourself what role the noun plays **inside the relative clause**. *"Ich sehe den Film"* → der Film is the accusative object → *der Film, **den** ich sehe*.
 
 | Antecedent | Nominative | Accusative |
 | ---- | ---- | ---- |
@@ -8403,10 +8817,20 @@ Like the article, in the accusative **only the masculine form** changes, to **"d
 | das Buch | das | das |
 | die Leute (pl.) | die | die |
 
-**Example:** Der Film, **den** ich sehe, ist neu. (The movie that I'm watching is new.)`,
+**Note:**
+- Only **masculine** changes: der → **den**.
+- The case comes from the role **inside the relative clause**, not the main clause.
+- The verb still goes **to the end**.
+
+**Examples:**
+- Der Film, **den** ich gestern sah, war spannend. (The film I saw yesterday was exciting.)
+- Das Buch, **das** ich lese, ist sehr gut. (The book I'm reading is very good.)
+- Die Kollegen, **die** ich mag, sind nett. (The colleagues I like are nice.)`,
       explanationTr: `## -i hâlinde ilgi zamirleri
 
-Artikelde olduğu gibi, -i hâlinde **sadece eril biçim** **„den"** olur. Dişil, nötr ve çoğul aynı kalır.
+İlgi zamiri, ilgi cümlesinde **-i hâlindeki nesne** ise (eylemi „alan" kişi/nesne), **-i hâlinde** olur. Artikelde olduğu gibi **sadece eril biçim** **„den"** olur; dişil, nötr ve çoğul aynı kalır.
+
+İpucu: İsmin **ilgi cümlesindeki** rolünü sor. *„Ich sehe den Film"* → der Film -i hâlinde nesne → *der Film, **den** ich sehe*.
 
 | İlgili isim | Yalın | -i hâli |
 | ---- | ---- | ---- |
@@ -8415,7 +8839,15 @@ Artikelde olduğu gibi, -i hâlinde **sadece eril biçim** **„den"** olur. Di�
 | das Buch | das | das |
 | die Leute (çoğul) | die | die |
 
-**Örnek:** Der Film, **den** ich sehe, ist neu. (İzlediğim film yeni.)`,
+**Unutma:**
+- Sadece **eril** değişir: der → **den**.
+- Hâl, ana cümleden değil **ilgi cümlesindeki** rolden gelir.
+- Fiil yine de **sona** gider.
+
+**Örnekler:**
+- Der Film, **den** ich gestern sah, war spannend. (Dün izlediğim film heyecanlıydı.)
+- Das Buch, **das** ich lese, ist sehr gut. (Okuduğum kitap çok iyi.)
+- Die Kollegen, **die** ich mag, sind nett. (Sevdiğim meslektaşlar hoş.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8446,37 +8878,70 @@ Artikelde olduğu gibi, -i hâlinde **sadece eril biçim** **„den"** olur. Di�
       grammarTopic: 'Relativsätze mit Präpositionen',
       explanationDe: `## Relativsätze mit Präpositionen
 
-Steht eine **Präposition** vor dem Relativpronomen, bestimmt sie den **Kasus**. Die Präposition steht am Anfang des Relativsatzes.
+Manchmal gehört zum Verb im Relativsatz eine **Präposition** (*arbeiten mit*, *warten auf*, *sprechen über*). Dann steht die **Präposition vor dem Relativpronomen**, ganz am Anfang des Relativsatzes – und sie bestimmt den **Kasus**.
 
-| Präposition + Bezugswort | Relativpronomen (Dativ) |
+Zuerst überlegst du, welche Präposition das Verb braucht, dann welchen Kasus diese Präposition verlangt (Dativ oder Akkusativ), dann das passende Relativpronomen.
+
+| Präposition + Bezugswort | Relativpronomen |
 | ---- | ---- |
-| mit + der Mann | mit **dem** |
-| mit + die Kollegin | mit **der** |
-| auf + der Tisch | auf **dem** |
+| mit + der Mann (Dativ) | mit **dem** |
+| mit + die Kollegin (Dativ) | mit **der** |
+| auf + der Tisch (Dativ) | auf **dem** |
+| für + das Kind (Akkusativ) | für **das** |
 
-**Beispiel:** Das ist die Kollegin, **mit der** ich arbeite.`,
+**Merke:**
+- Die **Präposition steht vorne**, nicht am Ende (anders als im Englischen).
+- Der Kasus kommt von der **Präposition**.
+- Für Dinge kann man oft „wo(r)+Präposition" nutzen: *das Thema, **worüber** wir reden*.
+
+**Beispiele:**
+- Das ist die Kollegin, **mit der** ich arbeite.
+- Der Stuhl, **auf dem** du sitzt, ist neu.
+- Das ist das Projekt, **an dem** wir arbeiten.`,
       explanationEn: `## Relative clauses with prepositions
 
-If a **preposition** comes before the relative pronoun, it determines the **case**. The preposition stands at the start of the relative clause.
+Sometimes the verb in the relative clause needs a **preposition** (*arbeiten mit*, *warten auf*, *sprechen über*). Then the **preposition comes before the relative pronoun**, at the very start of the clause – and it determines the **case**.
 
-| Preposition + antecedent | Relative pronoun (dative) |
+First think which preposition the verb needs, then which case that preposition requires (dative or accusative), then the matching relative pronoun.
+
+| Preposition + antecedent | Relative pronoun |
 | ---- | ---- |
-| mit + der Mann | mit **dem** |
-| mit + die Kollegin | mit **der** |
-| auf + der Tisch | auf **dem** |
+| mit + der Mann (dative) | mit **dem** |
+| mit + die Kollegin (dative) | mit **der** |
+| auf + der Tisch (dative) | auf **dem** |
+| für + das Kind (accusative) | für **das** |
 
-**Example:** Das ist die Kollegin, **mit der** ich arbeite. (That's the colleague I work with.)`,
+**Note:**
+- The **preposition comes first**, not at the end (unlike English).
+- The case comes from the **preposition**.
+- For things you can often use "wo(r)+preposition": *das Thema, **worüber** wir reden*.
+
+**Examples:**
+- Das ist die Kollegin, **mit der** ich arbeite. (That's the colleague I work with.)
+- Der Stuhl, **auf dem** du sitzt, ist neu. (The chair you're sitting on is new.)
+- Das ist das Projekt, **an dem** wir arbeiten. (That's the project we're working on.)`,
       explanationTr: `## Edatlı ilgi cümleleri
 
-İlgi zamirinin önünde bir **edat** varsa, **hâli** o edat belirler. Edat ilgi cümlesinin başında yer alır.
+Bazen ilgi cümlesindeki fiil bir **edat** ister (*arbeiten mit*, *warten auf*, *sprechen über*). O zaman **edat, ilgi zamirinin önünde** cümlenin en başında yer alır – ve **hâli** belirler.
 
-| Edat + ilgili isim | İlgi zamiri (-e hâli) |
+Önce fiilin hangi edatı gerektirdiğini, sonra o edatın hangi hâli istediğini (-e ya da -i), sonra uygun ilgi zamirini düşün.
+
+| Edat + ilgili isim | İlgi zamiri |
 | ---- | ---- |
-| mit + der Mann | mit **dem** |
-| mit + die Kollegin | mit **der** |
-| auf + der Tisch | auf **dem** |
+| mit + der Mann (-e hâli) | mit **dem** |
+| mit + die Kollegin (-e hâli) | mit **der** |
+| auf + der Tisch (-e hâli) | auf **dem** |
+| für + das Kind (-i hâli) | für **das** |
 
-**Örnek:** Das ist die Kollegin, **mit der** ich arbeite. (Birlikte çalıştığım meslektaş bu.)`,
+**Unutma:**
+- **Edat başta** durur, sonda değil (İngilizceden farklı).
+- Hâl **edattan** gelir.
+- Nesneler için sık sık „wo(r)+edat" kullanılır: *das Thema, **worüber** wir reden*.
+
+**Örnekler:**
+- Das ist die Kollegin, **mit der** ich arbeite. (Birlikte çalıştığım meslektaş bu.)
+- Der Stuhl, **auf dem** du sitzt, ist neu. (Üzerinde oturduğun sandalye yeni.)
+- Das ist das Projekt, **an dem** wir arbeiten. (Üzerinde çalıştığımız proje bu.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8507,37 +8972,64 @@ If a **preposition** comes before the relative pronoun, it determines the **case
       grammarTopic: 'Übung: Relativsätze',
       explanationDe: `## Übung: Relativsätze
 
-Das Relativpronomen richtet sich nach **Genus/Numerus** (vom Bezugswort) und **Kasus** (von seiner Rolle im Relativsatz).
+So findest du das richtige Relativpronomen in **zwei Schritten**: 1) **Genus/Numerus** vom Bezugswort, 2) **Kasus** von der Rolle im Relativsatz (Subjekt = Nom., Akkusativobjekt = Akk., nach Verb/Präposition mit Dativ = Dat.). Nur der **Dativ Plural (denen)** und der Genitiv weichen stärker vom Artikel ab.
 
 | Kasus | mask. | fem. | neutr. | Plural |
 | ---- | ---- | ---- | ---- | ---- |
 | Nominativ | der | die | das | die |
 | Akkusativ | den | die | das | die |
-| Dativ | dem | der | dem | denen |
+| Dativ | dem | der | dem | **denen** |
+| Genitiv | dessen | deren | dessen | deren |
 
-**Beispiel:** Das ist der Kollege, **der** mir hilft und **mit dem** ich gern arbeite.`,
+**Merke:**
+- Genus/Numerus ← Bezugswort; Kasus ← Rolle im Relativsatz.
+- Dativ Plural ist **denen** (nicht „den").
+- Genitiv: **dessen** (mask./neutr.), **deren** (fem./Plural).
+
+**Beispiele:**
+- Das ist der Kollege, **der** mir hilft und **mit dem** ich gern arbeite.
+- Die Freunde, **denen** ich vertraue, sind wichtig.
+- Der Autor, **dessen** Buch ich lese, ist berühmt.`,
       explanationEn: `## Practice: relative clauses
 
-The relative pronoun matches **gender/number** (from the antecedent) and **case** (from its role in the clause).
+Find the right relative pronoun in **two steps**: 1) **gender/number** from the antecedent, 2) **case** from its role in the clause (subject = nom., accusative object = acc., after a dative verb/preposition = dat.). Only the **dative plural (denen)** and the genitive differ more from the article.
 
 | Case | masc. | fem. | neut. | plural |
 | ---- | ---- | ---- | ---- | ---- |
 | Nominative | der | die | das | die |
 | Accusative | den | die | das | die |
-| Dative | dem | der | dem | denen |
+| Dative | dem | der | dem | **denen** |
+| Genitive | dessen | deren | dessen | deren |
 
-**Example:** Das ist der Kollege, **der** mir hilft und **mit dem** ich gern arbeite. (…who helps me and with whom I like to work.)`,
+**Note:**
+- Gender/number ← antecedent; case ← role in the clause.
+- Dative plural is **denen** (not "den").
+- Genitive: **dessen** (masc./neut.), **deren** (fem./plural).
+
+**Examples:**
+- Das ist der Kollege, **der** mir hilft und **mit dem** ich gern arbeite. (…who helps me and I like working with.)
+- Die Freunde, **denen** ich vertraue, sind wichtig. (The friends I trust are important.)
+- Der Autor, **dessen** Buch ich lese, ist berühmt. (The author whose book I'm reading is famous.)`,
       explanationTr: `## Alıştırma: ilgi cümleleri
 
-İlgi zamiri **cinsiyet/sayı** (ilgili isimden) ve **hâl** (cümledeki rolünden) ile belirlenir.
+Doğru ilgi zamirini **iki adımda** bul: 1) **cinsiyet/sayı** ilgili isimden, 2) **hâl** cümledeki rolden (özne = yalın, -i nesne = -i, -e hâli isteyen fiil/edattan sonra = -e). Yalnızca **çoğul -e hâli (denen)** ve tamlayan hâli artikelden daha çok farklıdır.
 
 | Hâl | eril | dişil | nötr | çoğul |
 | ---- | ---- | ---- | ---- | ---- |
 | Yalın | der | die | das | die |
 | -i hâli | den | die | das | die |
-| -e hâli | dem | der | dem | denen |
+| -e hâli | dem | der | dem | **denen** |
+| Tamlayan | dessen | deren | dessen | deren |
 
-**Örnek:** Das ist der Kollege, **der** mir hilft und **mit dem** ich gern arbeite. (…bana yardım eden ve birlikte çalışmayı sevdiğim.)`,
+**Unutma:**
+- Cinsiyet/sayı ← ilgili isim; hâl ← cümledeki rol.
+- Çoğul -e hâli **denen**dir („den" değil).
+- Tamlayan: **dessen** (eril/nötr), **deren** (dişil/çoğul).
+
+**Örnekler:**
+- Das ist der Kollege, **der** mir hilft und **mit dem** ich gern arbeite. (…bana yardım eden ve birlikte çalışmayı sevdiğim.)
+- Die Freunde, **denen** ich vertraue, sind wichtig. (Güvendiğim arkadaşlar önemli.)
+- Der Autor, **dessen** Buch ich lese, ist berühmt. (Kitabını okuduğum yazar ünlü.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8586,7 +9078,9 @@ The relative pronoun matches **gender/number** (from the antecedent) and **case*
       grammarTopic: 'Genitivartikel',
       explanationDe: `## Genitivartikel
 
-Der Genitiv zeigt **Besitz/Zugehörigkeit** (wessen?). Maskulin/neutrum bekommen **„des"** und das Nomen **+ -s/-es**.
+Der **Genitiv** ist der vierte Kasus und beantwortet die Frage **„wessen?"**. Er zeigt **Besitz oder Zugehörigkeit** und verbindet zwei Nomen: *das Auto **des Mannes*** (wem gehört das Auto? – dem Mann).
+
+Wichtig: Bei **maskulinen und neutralen** Nomen bekommt nicht nur der Artikel („des"), sondern auch das **Nomen selbst die Endung -s oder -es** (kurze Wörter meist -es). Feminin und Plural nehmen nur „der", ohne Nomen-Endung.
 
 | Genus | Artikel | Beispiel |
 | ---- | ---- | ---- |
@@ -8595,10 +9089,20 @@ Der Genitiv zeigt **Besitz/Zugehörigkeit** (wessen?). Maskulin/neutrum bekommen
 | feminin | der | der Tasche |
 | Plural | der | der Kinder |
 
-**Beispiel:** Das Auto **des Mannes** ist neu.`,
+**Merke:**
+- Der Genitiv steht meist **hinter** dem ersten Nomen: *das Ende **des Films***.
+- Nur mask./neutr. Nomen bekommen **-s/-es**.
+- In der gesprochenen Sprache ersetzt man den Genitiv oft durch **„von" + Dativ** (*das Auto von dem Mann*).
+
+**Beispiele:**
+- Das Auto **des Mannes** ist neu.
+- Die Farbe **der Tasche** gefällt mir.
+- Das ist das Zimmer **des Kindes**.`,
       explanationEn: `## Genitive articles
 
-The genitive shows **possession/belonging** (whose?). Masculine/neuter take **"des"** and the noun **+ -s/-es**.
+The **genitive** is the fourth case and answers the question **"whose?"**. It shows **possession or belonging** and links two nouns: *das Auto **des Mannes*** (whose car? – the man's).
+
+Important: with **masculine and neuter** nouns, not only the article ("des") but also the **noun itself takes -s or -es** (short words usually -es). Feminine and plural only take "der", with no ending on the noun.
 
 | Gender | Article | Example |
 | ---- | ---- | ---- |
@@ -8607,10 +9111,20 @@ The genitive shows **possession/belonging** (whose?). Masculine/neuter take **"d
 | feminine | der | der Tasche (of the bag) |
 | plural | der | der Kinder |
 
-**Example:** Das Auto **des Mannes** ist neu. (The man's car is new.)`,
+**Note:**
+- The genitive usually comes **after** the first noun: *das Ende **des Films***.
+- Only masc./neuter nouns take **-s/-es**.
+- In spoken German the genitive is often replaced by **"von" + dative** (*das Auto von dem Mann*).
+
+**Examples:**
+- Das Auto **des Mannes** ist neu. (The man's car is new.)
+- Die Farbe **der Tasche** gefällt mir. (I like the colour of the bag.)
+- Das ist das Zimmer **des Kindes**. (That's the child's room.)`,
       explanationTr: `## Tamlayan hâli artikelleri
 
-Tamlayan hâli **sahiplik/aidiyet** gösterir (kimin?). Eril/nötr **„des"** alır, isim de **+ -s/-es** eki alır.
+**Tamlayan hâli (Genitiv)** dördüncü hâldir ve **„kimin?"** sorusuna cevap verir. **Sahiplik veya aidiyet** gösterir ve iki ismi birbirine bağlar: *das Auto **des Mannes*** (araba kimin? – adamın).
+
+Önemli: **eril ve nötr** isimlerde sadece artikel („des") değil, **ismin kendisi de -s ya da -es** eki alır (kısa kelimeler genellikle -es). Dişil ve çoğul yalnızca „der" alır, isme ek gelmez.
 
 | Cinsiyet | Artikel | Örnek |
 | ---- | ---- | ---- |
@@ -8619,7 +9133,15 @@ Tamlayan hâli **sahiplik/aidiyet** gösterir (kimin?). Eril/nötr **„des"** a
 | dişil | der | der Tasche (çantanın) |
 | çoğul | der | der Kinder |
 
-**Örnek:** Das Auto **des Mannes** ist neu. (Adamın arabası yeni.)`,
+**Unutma:**
+- Tamlayan çoğunlukla ilk ismin **arkasında** durur: *das Ende **des Films***.
+- Sadece eril/nötr isimler **-s/-es** alır.
+- Konuşma dilinde tamlayan çoğu zaman **„von" + Dativ** ile değiştirilir (*das Auto von dem Mann*).
+
+**Örnekler:**
+- Das Auto **des Mannes** ist neu. (Adamın arabası yeni.)
+- Die Farbe **der Tasche** gefällt mir. (Çantanın rengini beğeniyorum.)
+- Das ist das Zimmer **des Kindes**. (Bu çocuğun odası.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8650,7 +9172,7 @@ Tamlayan hâli **sahiplik/aidiyet** gösterir (kimin?). Eril/nötr **„des"** a
       grammarTopic: 'Genitivpräpositionen',
       explanationDe: `## Genitivpräpositionen
 
-Einige Präpositionen verlangen den **Genitiv**. Die wichtigsten:
+Der Genitiv steht nicht nur beim Besitz, sondern auch nach bestimmten **Präpositionen**. Diese Präpositionen sind typisch für die Schrift- und Standardsprache. Nach ihnen folgt ein Nomen im Genitiv (mask./neutr. mit *des …-s*, fem./Plural mit *der*).
 
 | Präposition | Bedeutung | Beispiel |
 | ---- | ---- | ---- |
@@ -8658,11 +9180,20 @@ Einige Präpositionen verlangen den **Genitiv**. Die wichtigsten:
 | trotz | despite | trotz **der** Kälte |
 | während | during | während **des** Tages |
 | (an)statt | instead of | statt **des** Autos |
+| innerhalb | within | innerhalb **einer** Woche |
 
-**Beispiel:** **Wegen des Regens** bleiben wir zu Hause.`,
+**Merke:**
+- „wegen, trotz, während, statt" → **Genitiv** (im Alltag hört man auch Dativ).
+- „während" kann auch **Konjunktion** sein (dann Nebensatz mit Verb am Ende).
+- Die Präposition steht **vor** dem Genitiv: *trotz des Wetters*.
+
+**Beispiele:**
+- **Wegen des Regens** bleiben wir zu Hause.
+- **Trotz der Kälte** gehen wir spazieren.
+- **Während der Woche** arbeite ich viel.`,
       explanationEn: `## Genitive prepositions
 
-Some prepositions require the **genitive**. The most important:
+The genitive is used not only for possession but also after certain **prepositions**. These prepositions are typical of written and standard German. They are followed by a noun in the genitive (masc./neuter with *des …-s*, fem./plural with *der*).
 
 | Preposition | Meaning | Example |
 | ---- | ---- | ---- |
@@ -8670,11 +9201,20 @@ Some prepositions require the **genitive**. The most important:
 | trotz | despite | trotz **der** Kälte |
 | während | during | während **des** Tages |
 | (an)statt | instead of | statt **des** Autos |
+| innerhalb | within | innerhalb **einer** Woche |
 
-**Example:** **Wegen des Regens** bleiben wir zu Hause. (Because of the rain we stay home.)`,
+**Note:**
+- "wegen, trotz, während, statt" → **genitive** (colloquially you also hear the dative).
+- "während" can also be a **conjunction** (then a clause with the verb at the end).
+- The preposition comes **before** the genitive: *trotz des Wetters*.
+
+**Examples:**
+- **Wegen des Regens** bleiben wir zu Hause. (Because of the rain we stay home.)
+- **Trotz der Kälte** gehen wir spazieren. (Despite the cold we go for a walk.)
+- **Während der Woche** arbeite ich viel. (During the week I work a lot.)`,
       explanationTr: `## Tamlayan hâli edatları
 
-Bazı edatlar **tamlayan hâli** gerektirir. En önemlileri:
+Tamlayan hâli sadece sahiplikte değil, belirli **edatlardan** sonra da kullanılır. Bu edatlar yazı ve standart dilde tipiktir. Ardından tamlayan hâlinde bir isim gelir (eril/nötr *des …-s*, dişil/çoğul *der*).
 
 | Edat | Anlamı | Örnek |
 | ---- | ---- | ---- |
@@ -8682,8 +9222,17 @@ Bazı edatlar **tamlayan hâli** gerektirir. En önemlileri:
 | trotz | rağmen | trotz **der** Kälte |
 | während | esnasında | während **des** Tages |
 | (an)statt | yerine | statt **des** Autos |
+| innerhalb | içinde | innerhalb **einer** Woche |
 
-**Örnek:** **Wegen des Regens** bleiben wir zu Hause. (Yağmur yüzünden evde kalıyoruz.)`,
+**Unutma:**
+- „wegen, trotz, während, statt" → **tamlayan** (günlük dilde -e hâli de duyulur).
+- „während" aynı zamanda **bağlaç** olabilir (o zaman fiil sonda yan cümle).
+- Edat, tamlayanın **önünde** durur: *trotz des Wetters*.
+
+**Örnekler:**
+- **Wegen des Regens** bleiben wir zu Hause. (Yağmur yüzünden evde kalıyoruz.)
+- **Trotz der Kälte** gehen wir spazieren. (Soğuğa rağmen yürüyüşe çıkıyoruz.)
+- **Während der Woche** arbeite ich viel. (Hafta içinde çok çalışırım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8714,37 +9263,70 @@ Bazı edatlar **tamlayan hâli** gerektirir. En önemlileri:
       grammarTopic: 'Possessiver Genitiv bei Namen',
       explanationDe: `## Possessiver Genitiv bei Namen
 
-Bei **Eigennamen** bildet man den Genitiv einfach mit **-s** (ohne Artikel) und stellt ihn **vor** das Nomen. Namen auf -s/-z/-x bekommen nur einen **Apostroph**.
+Bei **Eigennamen** (Personen, Städte) ist der Genitiv besonders einfach: Man hängt nur ein **-s** an den Namen (ohne Apostroph, anders als im Englischen!) und stellt ihn **vor** das Nomen – ganz wie im Türkischen die Reihenfolge „Annas Buch".
+
+Endet der Name schon auf einen **s-Laut** (-s, -ß, -x, -z), kann man kein weiteres -s anhängen; dann benutzt man nur einen **Apostroph** oder die Form „von".
 
 | Name | Genitiv |
 | ---- | ---- |
 | Anna | Anna**s** Buch |
 | Peter | Peter**s** Auto |
+| Thomas | Thomas**'** Fahrrad |
 | Klaus | Klaus**'** Haus |
 
-**Beispiel:** **Annas** Buch ist interessant.`,
+**Merke:**
+- Deutsch: **Annas** Buch (kein Apostroph!). Englisch: Anna**'s** book.
+- Name **vor** dem Nomen: *Peters Auto*, nicht *das Auto Peters*.
+- Namen auf s-Laut → nur **Apostroph** (*Max' Handy*) oder *das Handy von Max*.
+
+**Beispiele:**
+- **Annas** Buch ist interessant.
+- Das ist **Peters** neues Fahrrad.
+- **Berlins** Sehenswürdigkeiten sind berühmt.`,
       explanationEn: `## Possessive genitive with names
 
-With **proper names** you simply add **-s** (no article) and place it **before** the noun. Names ending in -s/-z/-x take just an **apostrophe**.
+With **proper names** (people, cities) the genitive is very easy: just add **-s** to the name (no apostrophe, unlike English!) and place it **before** the noun.
+
+If the name already ends in an **s-sound** (-s, -ß, -x, -z), you can't add another -s; then you use just an **apostrophe** or the "von" form.
 
 | Name | Genitive |
 | ---- | ---- |
-| Anna | Anna**s** Buch (Anna's book) |
+| Anna | Anna**s** Buch |
 | Peter | Peter**s** Auto |
+| Thomas | Thomas**'** Fahrrad |
 | Klaus | Klaus**'** Haus |
 
-**Example:** **Annas** Buch ist interessant. (Anna's book is interesting.)`,
+**Note:**
+- German: **Annas** Buch (no apostrophe!). English: Anna**'s** book.
+- Name **before** the noun: *Peters Auto*, not *das Auto Peters*.
+- Names ending in an s-sound → apostrophe only (*Max' Handy*) or *das Handy von Max*.
+
+**Examples:**
+- **Annas** Buch ist interessant. (Anna's book is interesting.)
+- Das ist **Peters** neues Fahrrad. (That's Peter's new bike.)
+- **Berlins** Sehenswürdigkeiten sind berühmt. (Berlin's sights are famous.)`,
       explanationTr: `## İsimlerle iyelik tamlayan hâli
 
-**Özel isimlerde** tamlayan hâli sadece **-s** ile (artikelsiz) kurulur ve ismin **önüne** gelir. -s/-z/-x ile biten isimler sadece **kesme işareti** alır.
+**Özel isimlerde** (kişiler, şehirler) tamlayan çok kolaydır: isme sadece bir **-s** eklenir (İngilizcenin aksine kesme işareti yok!) ve ismin **önüne** konur – Türkçedeki „Anna'nın kitabı" sırası gibi.
+
+İsim zaten bir **s sesiyle** bitiyorsa (-s, -ß, -x, -z), başka bir -s eklenemez; o zaman yalnızca **kesme işareti** ya da „von" biçimi kullanılır.
 
 | İsim | Tamlayan hâli |
 | ---- | ---- |
-| Anna | Anna**s** Buch (Anna'nın kitabı) |
+| Anna | Anna**s** Buch |
 | Peter | Peter**s** Auto |
+| Thomas | Thomas**'** Fahrrad |
 | Klaus | Klaus**'** Haus |
 
-**Örnek:** **Annas** Buch ist interessant. (Anna'nın kitabı ilginç.)`,
+**Unutma:**
+- Almanca: **Annas** Buch (kesme yok!). İngilizce: Anna**'s** book.
+- İsim ismin **önünde**: *Peters Auto*, *das Auto Peters* değil.
+- s sesiyle biten isimler → sadece **kesme** (*Max' Handy*) ya da *das Handy von Max*.
+
+**Örnekler:**
+- **Annas** Buch ist interessant. (Anna'nın kitabı ilginç.)
+- Das ist **Peters** neues Fahrrad. (Bu Peter'in yeni bisikleti.)
+- **Berlins** Sehenswürdigkeiten sind berühmt. (Berlin'in gezilecek yerleri ünlü.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8781,37 +9363,61 @@ With **proper names** you simply add **-s** (no article) and place it **before**
       grammarTopic: 'Übung: Genitiv',
       explanationDe: `## Übung: Genitiv
 
-Wiederholung der drei Genitiv-Bereiche:
+Der Genitiv erscheint in drei typischen Situationen. In allen gilt: mask./neutr. → **des …(e)s**, fem./Plural → **der**; bei Namen einfach **-s**.
 
-| Bereich | Beispiel |
-| ---- | ---- |
-| Artikel (des/der) | das Auto **des** Mannes |
-| Präposition | **wegen des** Wetters |
-| Name + -s | **Annas** Familie |
+| Bereich | Regel | Beispiel |
+| ---- | ---- | ---- |
+| Besitz (Artikel) | des/der + Nomen | das Auto **des** Mannes |
+| Präposition | wegen/trotz/während/statt | **wegen des** Wetters |
+| Name + -s | Name vor dem Nomen | **Annas** Familie |
 
-**Beispiel:** Wegen des Wetters bleibt Annas Familie zu Hause.`,
+**Merke:**
+- Genitivfrage: **wessen?**
+- Nur mask./neutr. Nomen tragen **-s/-es**.
+- Ersatz im Alltag: **von + Dativ** (*das Handy von meinem Bruder*).
+
+**Beispiele:**
+- **Wegen des Wetters** bleibt **Annas** Familie zu Hause.
+- Der Titel **des Buches** ist lang.
+- **Trotz der Probleme** war der Kurs gut.`,
       explanationEn: `## Practice: genitive
 
-Review of the three genitive areas:
+The genitive appears in three typical situations. In all of them: masc./neuter → **des …(e)s**, fem./plural → **der**; with names simply **-s**.
 
-| Area | Example |
-| ---- | ---- |
-| Article (des/der) | das Auto **des** Mannes |
-| Preposition | **wegen des** Wetters |
-| Name + -s | **Annas** Familie |
+| Area | Rule | Example |
+| ---- | ---- | ---- |
+| Possession (article) | des/der + noun | das Auto **des** Mannes |
+| Preposition | wegen/trotz/während/statt | **wegen des** Wetters |
+| Name + -s | name before the noun | **Annas** Familie |
 
-**Example:** Wegen des Wetters bleibt Annas Familie zu Hause. (Because of the weather, Anna's family stays home.)`,
+**Note:**
+- Genitive question: **whose?**
+- Only masc./neuter nouns take **-s/-es**.
+- Everyday alternative: **von + dative** (*das Handy von meinem Bruder*).
+
+**Examples:**
+- **Wegen des Wetters** bleibt **Annas** Familie zu Hause. (Because of the weather, Anna's family stays home.)
+- Der Titel **des Buches** ist lang. (The title of the book is long.)
+- **Trotz der Probleme** war der Kurs gut. (Despite the problems the course was good.)`,
       explanationTr: `## Alıştırma: tamlayan hâli
 
-Üç tamlayan hâli alanının tekrarı:
+Tamlayan üç tipik durumda görülür. Hepsinde: eril/nötr → **des …(e)s**, dişil/çoğul → **der**; isimlerde basitçe **-s**.
 
-| Alan | Örnek |
-| ---- | ---- |
-| Artikel (des/der) | das Auto **des** Mannes |
-| Edat | **wegen des** Wetters |
-| İsim + -s | **Annas** Familie |
+| Alan | Kural | Örnek |
+| ---- | ---- | ---- |
+| Sahiplik (artikel) | des/der + isim | das Auto **des** Mannes |
+| Edat | wegen/trotz/während/statt | **wegen des** Wetters |
+| İsim + -s | isim, ismin önünde | **Annas** Familie |
 
-**Örnek:** Wegen des Wetters bleibt Annas Familie zu Hause. (Hava yüzünden Anna'nın ailesi evde kalıyor.)`,
+**Unutma:**
+- Tamlayan sorusu: **kimin?**
+- Sadece eril/nötr isimler **-s/-es** alır.
+- Günlük dilde karşılık: **von + Dativ** (*das Handy von meinem Bruder*).
+
+**Örnekler:**
+- **Wegen des Wetters** bleibt **Annas** Familie zu Hause. (Hava yüzünden Anna'nın ailesi evde kalıyor.)
+- Der Titel **des Buches** ist lang. (Kitabın başlığı uzun.)
+- **Trotz der Probleme** war der Kurs gut. (Sorunlara rağmen kurs iyiydi.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8860,37 +9466,70 @@ Review of the three genitive areas:
       grammarTopic: 'Plusquamperfekt mit "hatte"',
       explanationDe: `## Plusquamperfekt mit „hatte"
 
-Das Plusquamperfekt beschreibt ein Ereignis **vor** einem anderen Vergangenheitsereignis. Bildung wie Perfekt, aber mit **„hatte"** (Präteritum von haben) + Partizip II.
+Das **Plusquamperfekt** ist die „Vorvergangenheit": Es beschreibt ein Ereignis, das **vor** einem anderen Ereignis in der Vergangenheit passiert ist. Man bildet es genau wie das Perfekt, nur mit dem **Präteritum von „haben" = „hatte"** + Partizip II.
 
-| Person | „hatte" | Partizip II |
+Es steht fast nie allein, sondern zusammen mit einem zweiten Vergangenheitssatz (oft im Präteritum). So wird klar, was zuerst geschah.
+
+| Person | „hatte" | Partizip II (Ende) |
 | ---- | ---- | ---- |
 | ich | hatte | gegessen |
+| du | hattest | gegessen |
 | er/sie/es | hatte | gegessen |
 | wir/sie/Sie | hatten | gegessen |
 
-**Beispiel:** Ich **hatte** schon **gegessen**, als er kam.`,
+**Merke:**
+- Reihenfolge der Zeit: Plusquamperfekt = **zuerst**, Präteritum/Perfekt = **danach**.
+- Verben mit „haben" im Perfekt nehmen auch hier **hatte**.
+- Signalwörter: **schon, bevor, nachdem**.
+
+**Beispiele:**
+- Ich **hatte** schon **gegessen**, als er kam.
+- Sie **hatte** die Hausaufgaben **gemacht**, bevor sie fernsah.
+- Wir **hatten** die Tickets **gekauft**, deshalb warteten wir nicht.`,
       explanationEn: `## Past perfect with "hatte"
 
-The past perfect describes an event **before** another past event. Formed like the Perfekt but with **"hatte"** (Präteritum of haben) + past participle.
+The **past perfect** (Plusquamperfekt) is the "pre-past": it describes an event that happened **before** another past event. It is formed exactly like the Perfekt, but with the **Präteritum of "haben" = "hatte"** + past participle.
 
-| Person | "hatte" | past participle |
+It rarely stands alone; it usually appears with a second past clause (often in the Präteritum), making clear what happened first.
+
+| Person | "hatte" | past participle (end) |
 | ---- | ---- | ---- |
 | ich | hatte | gegessen |
+| du | hattest | gegessen |
 | er/sie/es | hatte | gegessen |
 | wir/sie/Sie | hatten | gegessen |
 
-**Example:** Ich **hatte** schon **gegessen**, als er kam. (I had already eaten when he arrived.)`,
+**Note:**
+- Time order: past perfect = **first**, Präteritum/Perfekt = **after**.
+- Verbs that use "haben" in the Perfekt also use **hatte** here.
+- Signal words: **schon, bevor, nachdem**.
+
+**Examples:**
+- Ich **hatte** schon **gegessen**, als er kam. (I had already eaten when he came.)
+- Sie **hatte** die Hausaufgaben **gemacht**, bevor sie fernsah. (She had done her homework before she watched TV.)
+- Wir **hatten** die Tickets **gekauft**, deshalb warteten wir nicht. (We had bought the tickets, so we didn't wait.)`,
       explanationTr: `## „hatte" ile miş'li geçmişin hikâyesi
 
-Miş'li geçmişin hikâyesi, geçmişteki başka bir olaydan **önce** olan olayı anlatır. Perfekt gibi kurulur ama **„hatte"** (haben'in Präteritum'u) + Partizip II ile.
+**Plusquamperfekt**, „geçmişin öncesidir": geçmişteki başka bir olaydan **önce** olan bir olayı anlatır. Tam Perfekt gibi kurulur, sadece **„haben"in Präteritum'u = „hatte"** + Partizip II ile.
 
-| Kişi | „hatte" | Partizip II |
+Neredeyse hiç tek başına durmaz; genellikle ikinci bir geçmiş cümleyle (çoğunlukla Präteritum) birlikte gelir ve neyin önce olduğunu netleştirir.
+
+| Kişi | „hatte" | Partizip II (sonda) |
 | ---- | ---- | ---- |
 | ich | hatte | gegessen |
+| du | hattest | gegessen |
 | er/sie/es | hatte | gegessen |
 | wir/sie/Sie | hatten | gegessen |
 
-**Örnek:** Ich **hatte** schon **gegessen**, als er kam. (O geldiğinde ben zaten yemiştim.)`,
+**Unutma:**
+- Zaman sırası: Plusquamperfekt = **önce**, Präteritum/Perfekt = **sonra**.
+- Perfekt'te „haben" alan fiiller burada da **hatte** alır.
+- İşaret kelimeleri: **schon, bevor, nachdem**.
+
+**Örnekler:**
+- Ich **hatte** schon **gegessen**, als er kam. (O geldiğinde ben zaten yemiştim.)
+- Sie **hatte** die Hausaufgaben **gemacht**, bevor sie fernsah. (Televizyon izlemeden önce ödevlerini yapmıştı.)
+- Wir **hatten** die Tickets **gekauft**, deshalb warteten wir nicht. (Biletleri almıştık, o yüzden beklemedik.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8921,37 +9560,70 @@ Miş'li geçmişin hikâyesi, geçmişteki başka bir olaydan **önce** olan ola
       grammarTopic: 'Plusquamperfekt mit "war"',
       explanationDe: `## Plusquamperfekt mit „war"
 
-Verben der **Bewegung** und **Zustandsänderung** (gehen, kommen, fahren, aufstehen) bilden das Plusquamperfekt mit **„war"** (Präteritum von sein) + Partizip II.
+Genau wie im Perfekt bilden Verben der **Bewegung** (gehen, kommen, fahren, fliegen) und der **Zustandsänderung** (aufstehen, aufwachen, sterben) sowie **sein/bleiben/werden** das Plusquamperfekt mit **„war"** (Präteritum von sein) + Partizip II.
 
-| Person | „war" | Partizip II |
+Faustregel: Was im Perfekt „ist" nimmt, nimmt im Plusquamperfekt „war". *Er ist gekommen* → *Er war gekommen.*
+
+| Person | „war" | Partizip II (Ende) |
 | ---- | ---- | ---- |
 | ich | war | gegangen |
+| du | warst | gegangen |
 | er/sie/es | war | gegangen |
 | wir/sie/Sie | waren | gegangen |
 
-**Beispiel:** Sie **war** schon **gegangen**, als ich anrief.`,
+**Merke:**
+- „war" für Bewegung/Zustandsänderung + **sein, bleiben, werden**.
+- Wie im Perfekt, nur eine Zeitstufe früher.
+- Partizip II steht am **Satzende**.
+
+**Beispiele:**
+- Sie **war** schon **gegangen**, als ich anrief.
+- Der Zug **war** bereits **abgefahren**.
+- Als wir ankamen, **war** der Film schon **angefangen**.`,
       explanationEn: `## Past perfect with "war"
 
-Verbs of **movement** and **change of state** (gehen, kommen, fahren, aufstehen) form the past perfect with **"war"** (Präteritum of sein) + past participle.
+Just as in the Perfekt, verbs of **movement** (gehen, kommen, fahren, fliegen) and **change of state** (aufstehen, aufwachen, sterben) as well as **sein/bleiben/werden** form the past perfect with **"war"** (Präteritum of sein) + past participle.
 
-| Person | "war" | past participle |
+Rule of thumb: whatever takes "ist" in the Perfekt takes "war" in the past perfect. *Er ist gekommen* → *Er war gekommen.*
+
+| Person | "war" | past participle (end) |
 | ---- | ---- | ---- |
 | ich | war | gegangen |
+| du | warst | gegangen |
 | er/sie/es | war | gegangen |
 | wir/sie/Sie | waren | gegangen |
 
-**Example:** Sie **war** schon **gegangen**, als ich anrief. (She had already left when I called.)`,
+**Note:**
+- "war" for movement/change of state + **sein, bleiben, werden**.
+- Like the Perfekt, just one time-step earlier.
+- The past participle stands at the **end**.
+
+**Examples:**
+- Sie **war** schon **gegangen**, als ich anrief. (She had already left when I called.)
+- Der Zug **war** bereits **abgefahren**. (The train had already departed.)
+- Als wir ankamen, **war** der Film schon **angefangen**. (When we arrived, the film had already started.)`,
       explanationTr: `## „war" ile miş'li geçmişin hikâyesi
 
-**Hareket** ve **durum değişimi** fiilleri (gehen, kommen, fahren, aufstehen) miş'li geçmişin hikâyesini **„war"** (sein'in Präteritum'u) + Partizip II ile kurar.
+Tıpkı Perfekt'te olduğu gibi, **hareket** (gehen, kommen, fahren, fliegen) ve **durum değişimi** (aufstehen, aufwachen, sterben) fiilleri ile **sein/bleiben/werden**, miş'li geçmişin hikâyesini **„war"** (sein'in Präteritum'u) + Partizip II ile kurar.
 
-| Kişi | „war" | Partizip II |
+Pratik kural: Perfekt'te „ist" alan, Plusquamperfekt'te „war" alır. *Er ist gekommen* → *Er war gekommen.*
+
+| Kişi | „war" | Partizip II (sonda) |
 | ---- | ---- | ---- |
 | ich | war | gegangen |
+| du | warst | gegangen |
 | er/sie/es | war | gegangen |
 | wir/sie/Sie | waren | gegangen |
 
-**Örnek:** Sie **war** schon **gegangen**, als ich anrief. (Ben aradığımda o zaten gitmişti.)`,
+**Unutma:**
+- Hareket/durum değişimi + **sein, bleiben, werden** için „war".
+- Perfekt gibi, sadece bir zaman basamağı daha erken.
+- Partizip II cümlenin **sonunda** durur.
+
+**Örnekler:**
+- Sie **war** schon **gegangen**, als ich anrief. (Ben aradığımda o zaten gitmişti.)
+- Der Zug **war** bereits **abgefahren**. (Tren çoktan kalkmıştı.)
+- Als wir ankamen, **war** der Film schon **angefangen**. (Vardığımızda film çoktan başlamıştı.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -8982,34 +9654,73 @@ Verbs of **movement** and **change of state** (gehen, kommen, fahren, aufstehen)
       grammarTopic: 'Plusquamperfekt mit "nachdem"',
       explanationDe: `## Plusquamperfekt mit „nachdem"
 
-**„nachdem"** verbindet zwei Vergangenheitsereignisse. Der frühere Vorgang (nachdem-Satz) steht im **Plusquamperfekt**, der spätere im **Präteritum/Perfekt**.
+Die Konjunktion **„nachdem"** (after) ist der typische Partner des Plusquamperfekts. Sie verbindet zwei Handlungen und zeigt, welche **zuerst** passiert ist. Es gilt ein fester **Zeitenwechsel**:
+
+- **nachdem-Satz** (die frühere Handlung) → **Plusquamperfekt**
+- **Hauptsatz** (die spätere Handlung) → **Präteritum** (oder Perfekt)
+
+Als Nebensatz steht im „nachdem"-Satz das Verb am Ende. Kommt er zuerst, folgt im Hauptsatz sofort das Verb.
 
 | nachdem-Satz (Plusquamperfekt) | Hauptsatz (Präteritum) |
 | ---- | ---- |
-| Nachdem ich **gegessen hatte**, | ging ich spazieren. |
-| Nachdem sie **angekommen war**, | rief sie an. |
+| Nachdem ich **gegessen hatte**, | **ging** ich spazieren. |
+| Nachdem sie **angekommen war**, | **rief** sie an. |
 
-**Beispiel:** Nachdem ich gegessen **hatte**, **ging** ich spazieren.`,
+**Merke:**
+- Zwei verschiedene Zeiten: Plusquamperfekt **+** Präteritum.
+- „nachdem" ≠ „bevor" (umgekehrte Reihenfolge).
+- Verb im Nebensatz **am Ende**.
+
+**Beispiele:**
+- **Nachdem** ich gegessen **hatte**, ging ich spazieren.
+- **Nachdem** der Film zu Ende **war**, gingen wir nach Hause.
+- Sie fühlte sich besser, **nachdem** sie **geschlafen hatte**.`,
       explanationEn: `## Past perfect with "nachdem"
 
-**"nachdem"** (after) connects two past events. The earlier action (nachdem-clause) is in the **past perfect**, the later one in the **Präteritum/Perfekt**.
+The conjunction **"nachdem"** (after) is the typical partner of the past perfect. It links two actions and shows which happened **first**. There is a fixed **tense change**:
+
+- **nachdem-clause** (the earlier action) → **past perfect**
+- **main clause** (the later action) → **Präteritum** (or Perfekt)
+
+Being a subordinate clause, the "nachdem"-clause has the verb at the end. If it comes first, the main clause starts immediately with the verb.
 
 | nachdem-clause (past perfect) | main clause (Präteritum) |
 | ---- | ---- |
-| Nachdem ich **gegessen hatte**, | ging ich spazieren. |
-| Nachdem sie **angekommen war**, | rief sie an. |
+| Nachdem ich **gegessen hatte**, | **ging** ich spazieren. |
+| Nachdem sie **angekommen war**, | **rief** sie an. |
 
-**Example:** Nachdem ich gegessen **hatte**, **ging** ich spazieren. (After I had eaten, I went for a walk.)`,
+**Note:**
+- Two different tenses: past perfect **+** Präteritum.
+- "nachdem" ≠ "bevor" (reversed order).
+- Verb in the subordinate clause goes **to the end**.
+
+**Examples:**
+- **Nachdem** ich gegessen **hatte**, ging ich spazieren. (After I had eaten, I went for a walk.)
+- **Nachdem** der Film zu Ende **war**, gingen wir nach Hause. (After the film had ended, we went home.)
+- Sie fühlte sich besser, **nachdem** sie **geschlafen hatte**. (She felt better after she had slept.)`,
       explanationTr: `## „nachdem" ile miş'li geçmişin hikâyesi
 
-**„nachdem"** (-dikten sonra) iki geçmiş olayı bağlar. Önceki eylem (nachdem cümlesi) **miş'li geçmişin hikâyesinde**, sonraki **Präteritum/Perfekt'te** olur.
+**„nachdem"** (-dikten sonra) bağlacı, Plusquamperfekt'in tipik ortağıdır. İki eylemi bağlar ve hangisinin **önce** olduğunu gösterir. Sabit bir **zaman değişimi** vardır:
+
+- **nachdem cümlesi** (önceki eylem) → **Plusquamperfekt**
+- **ana cümle** (sonraki eylem) → **Präteritum** (ya da Perfekt)
+
+Yan cümle olduğu için „nachdem" cümlesinde fiil sonda durur. Başta gelirse ana cümle hemen fiille başlar.
 
 | nachdem cümlesi (Plusquamperfekt) | Ana cümle (Präteritum) |
 | ---- | ---- |
-| Nachdem ich **gegessen hatte**, | ging ich spazieren. |
-| Nachdem sie **angekommen war**, | rief sie an. |
+| Nachdem ich **gegessen hatte**, | **ging** ich spazieren. |
+| Nachdem sie **angekommen war**, | **rief** sie an. |
 
-**Örnek:** Nachdem ich gegessen **hatte**, **ging** ich spazieren. (Yemek yedikten sonra yürüyüşe çıktım.)`,
+**Unutma:**
+- İki farklı zaman: Plusquamperfekt **+** Präteritum.
+- „nachdem" ≠ „bevor" (ters sıra).
+- Yan cümledeki fiil **sona** gider.
+
+**Örnekler:**
+- **Nachdem** ich gegessen **hatte**, ging ich spazieren. (Yemek yedikten sonra yürüyüşe çıktım.)
+- **Nachdem** der Film zu Ende **war**, gingen wir nach Hause. (Film bittikten sonra eve gittik.)
+- Sie fühlte sich besser, **nachdem** sie **geschlafen hatte**. (Uyuduktan sonra kendini daha iyi hissetti.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9040,34 +9751,58 @@ Verbs of **movement** and **change of state** (gehen, kommen, fahren, aufstehen)
       grammarTopic: 'Übung: Plusquamperfekt',
       explanationDe: `## Übung: Plusquamperfekt
 
-Das Plusquamperfekt drückt **Vorzeitigkeit** aus: Es passierte **vor** etwas anderem in der Vergangenheit.
+Kernidee: Das Plusquamperfekt zeigt **Vorzeitigkeit** – die Handlung war **vor** einem anderen Vergangenheitspunkt schon abgeschlossen. Die Wahl des Hilfsverbs ist dieselbe wie im Perfekt.
 
 | Hilfsverb | wann? | Beispiel |
 | ---- | ---- | ---- |
 | hatte | die meisten Verben | hatte gegessen |
-| war | Bewegung/Zustand | war angekommen |
+| war | Bewegung/Zustandsänderung | war angekommen |
 
-**Beispiel:** Nachdem sie **angekommen war**, **hatte** sie schon alles **vorbereitet**.`,
+**Merke:**
+- Bildung: **hatte/war** + Partizip II.
+- Oft mit **„nachdem"** + Hauptsatz im Präteritum.
+- Signalwörter: **schon, bereits, vorher, bevor, nachdem**.
+
+**Beispiele:**
+- Nachdem sie **angekommen war**, **hatte** sie schon alles **vorbereitet**.
+- Ich war müde, weil ich schlecht **geschlafen hatte**.
+- Bevor der Kurs begann, **hatte** ich schon viel **gelernt**.`,
       explanationEn: `## Practice: past perfect
 
-The past perfect expresses **anteriority**: it happened **before** something else in the past.
+Core idea: the past perfect shows **anteriority** – the action was already finished **before** another point in the past. The choice of auxiliary is the same as in the Perfekt.
 
 | Auxiliary | when? | Example |
 | ---- | ---- | ---- |
 | hatte | most verbs | hatte gegessen |
-| war | movement/state | war angekommen |
+| war | movement/change of state | war angekommen |
 
-**Example:** Nachdem sie **angekommen war**, **hatte** sie schon alles **vorbereitet**. (After she had arrived, she had already prepared everything.)`,
+**Note:**
+- Formation: **hatte/war** + past participle.
+- Often with **"nachdem"** + main clause in the Präteritum.
+- Signal words: **schon, bereits, vorher, bevor, nachdem**.
+
+**Examples:**
+- Nachdem sie **angekommen war**, **hatte** sie schon alles **vorbereitet**. (After she had arrived, she had already prepared everything.)
+- Ich war müde, weil ich schlecht **geschlafen hatte**. (I was tired because I had slept badly.)
+- Bevor der Kurs begann, **hatte** ich schon viel **gelernt**. (Before the course began, I had already learned a lot.)`,
       explanationTr: `## Alıştırma: miş'li geçmişin hikâyesi
 
-Miş'li geçmişin hikâyesi **öncelik** ifade eder: Geçmişte başka bir şeyden **önce** olmuştur.
+Ana fikir: Plusquamperfekt **öncelik** gösterir – eylem, geçmişteki başka bir noktadan **önce** çoktan bitmiştir. Yardımcı fiil seçimi Perfekt'teki ile aynıdır.
 
 | Yardımcı fiil | ne zaman? | Örnek |
 | ---- | ---- | ---- |
 | hatte | çoğu fiil | hatte gegessen |
-| war | hareket/durum | war angekommen |
+| war | hareket/durum değişimi | war angekommen |
 
-**Örnek:** Nachdem sie **angekommen war**, **hatte** sie schon alles **vorbereitet**. (O geldikten sonra her şeyi zaten hazırlamıştı.)`,
+**Unutma:**
+- Kuruluş: **hatte/war** + Partizip II.
+- Çoğunlukla **„nachdem"** + Präteritum'daki ana cümle ile.
+- İşaret kelimeleri: **schon, bereits, vorher, bevor, nachdem**.
+
+**Örnekler:**
+- Nachdem sie **angekommen war**, **hatte** sie schon alles **vorbereitet**. (O geldikten sonra her şeyi zaten hazırlamıştı.)
+- Ich war müde, weil ich schlecht **geschlafen hatte**. (Kötü uyuduğum için yorgundum.)
+- Bevor der Kurs begann, **hatte** ich schon viel **gelernt**. (Kurs başlamadan önce çoktan çok şey öğrenmiştim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9116,34 +9851,64 @@ Miş'li geçmişin hikâyesi **öncelik** ifade eder: Geçmişte başka bir şey
       grammarTopic: 'je...desto',
       explanationDe: `## je … desto
 
-**„je … desto"** zeigt eine **proportionale Steigerung** (the more … the more). Beide Teile brauchen einen **Komparativ**. Nach „je" steht ein Nebensatz (Verb am Ende), nach „desto" folgt das Verb direkt.
+**Doppelkonjunktionen** bestehen aus zwei Teilen, die zusammengehören. **„je … desto"** drückt eine **proportionale Steigerung** aus: Wenn sich das eine ändert, ändert sich das andere mit (the more … the more). Beide Teile brauchen einen **Komparativ**.
+
+Die Wortstellung ist besonders: Der **„je"-Teil** ist ein Nebensatz → **Verb am Ende**. Der **„desto"-Teil** ist der Hauptsatz → nach „desto + Komparativ" folgt sofort das **Verb**, dann das Subjekt.
 
 | je + Komparativ (Nebensatz) | desto + Komparativ (Hauptsatz) |
 | ---- | ---- |
 | Je **mehr** ich lerne, | desto **besser** verstehe ich. |
 | Je **älter** er wird, | desto **ruhiger** wird er. |
 
-**Beispiel:** **Je mehr** ich lerne, **desto besser** verstehe ich.`,
+**Merke:**
+- Immer **zwei Komparative** (je … desto …).
+- „je"-Satz: Verb am Ende; „desto"-Satz: Verb direkt nach dem Komparativ.
+- Statt „desto" ist auch **„umso"** möglich.
+
+**Beispiele:**
+- **Je mehr** ich lerne, **desto besser** verstehe ich.
+- **Je früher** wir losfahren, **desto weniger** Stau haben wir.
+- **Je länger** ich warte, **desto nervöser** werde ich.`,
       explanationEn: `## je … desto
 
-**"je … desto"** shows a **proportional increase** (the more … the more). Both parts need a **comparative**. After "je" comes a subordinate clause (verb at the end); after "desto" the verb follows directly.
+**Paired conjunctions** consist of two parts that belong together. **"je … desto"** expresses a **proportional increase**: when one thing changes, the other changes with it (the more … the more). Both parts need a **comparative**.
+
+The word order is special: the **"je" part** is a subordinate clause → **verb at the end**. The **"desto" part** is the main clause → after "desto + comparative" comes the **verb**, then the subject.
 
 | je + comparative (clause) | desto + comparative (main) |
 | ---- | ---- |
 | Je **mehr** ich lerne, | desto **besser** verstehe ich. |
 | Je **älter** er wird, | desto **ruhiger** wird er. |
 
-**Example:** **Je mehr** ich lerne, **desto besser** verstehe ich. (The more I study, the better I understand.)`,
+**Note:**
+- Always **two comparatives** (je … desto …).
+- "je" clause: verb at the end; "desto" clause: verb right after the comparative.
+- Instead of "desto" you can also use **"umso"**.
+
+**Examples:**
+- **Je mehr** ich lerne, **desto besser** verstehe ich. (The more I learn, the better I understand.)
+- **Je früher** wir losfahren, **desto weniger** Stau haben wir. (The earlier we leave, the less traffic we have.)
+- **Je länger** ich warte, **desto nervöser** werde ich. (The longer I wait, the more nervous I get.)`,
       explanationTr: `## je … desto
 
-**„je … desto"** **orantılı bir artışı** gösterir (ne kadar … o kadar). Her iki kısım da **karşılaştırma** (Komparativ) gerektirir. „je"den sonra yan cümle (fiil sonda), „desto"dan sonra fiil hemen gelir.
+**Çift bağlaçlar** birbirine ait iki parçadan oluşur. **„je … desto"** **orantılı bir artışı** ifade eder: biri değişince öteki de değişir (ne kadar … o kadar). Her iki kısım da **karşılaştırma** (Komparativ) gerektirir.
+
+Sözcük dizilimi özeldir: **„je" kısmı** bir yan cümledir → **fiil sonda**. **„desto" kısmı** ana cümledir → „desto + Komparativ"den sonra hemen **fiil**, sonra özne gelir.
 
 | je + Komparativ (yan cümle) | desto + Komparativ (ana cümle) |
 | ---- | ---- |
 | Je **mehr** ich lerne, | desto **besser** verstehe ich. |
 | Je **älter** er wird, | desto **ruhiger** wird er. |
 
-**Örnek:** **Je mehr** ich lerne, **desto besser** verstehe ich. (Ne kadar çok çalışırsam o kadar iyi anlıyorum.)`,
+**Unutma:**
+- Her zaman **iki karşılaştırma** (je … desto …).
+- „je" cümlesi: fiil sonda; „desto" cümlesi: fiil karşılaştırmadan hemen sonra.
+- „desto" yerine **„umso"** da kullanılabilir.
+
+**Örnekler:**
+- **Je mehr** ich lerne, **desto besser** verstehe ich. (Ne kadar çok öğrenirsem o kadar iyi anlarım.)
+- **Je früher** wir losfahren, **desto weniger** Stau haben wir. (Ne kadar erken çıkarsak o kadar az trafiğe takılırız.)
+- **Je länger** ich warte, **desto nervöser** werde ich. (Ne kadar beklersem o kadar geriliyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9174,34 +9939,67 @@ Miş'li geçmişin hikâyesi **öncelik** ifade eder: Geçmişte başka bir şey
       grammarTopic: 'sowohl...als auch',
       explanationDe: `## sowohl … als auch
 
-**„sowohl … als auch"** bedeutet **„both … and"** und verbindet zwei gleichwertige Elemente. Es verändert die Wortstellung des Satzes nicht.
+**„sowohl … als auch"** bedeutet **„both … and"** (nicht nur eins, sondern beide). Es verbindet zwei **gleichwertige Elemente** – meist zwei Nomen, aber auch Adjektive oder Verben. Wichtig: Es verändert die normale **Wortstellung nicht**.
+
+Wenn zwei Subjekte mit „sowohl … als auch" verbunden sind, steht das Verb meist im **Plural**.
 
 | Struktur | Beispiel |
 | ---- | ---- |
-| sowohl A als auch B | sowohl **Deutsch** als auch **Englisch** |
-| sowohl … als auch (Verben) | Er **kocht** sowohl als auch **backt** gern. |
+| sowohl A als auch B (Nomen) | sowohl **Deutsch** als auch **Englisch** |
+| sowohl A als auch B (Adjektiv) | sowohl **schön** als auch **günstig** |
+| Subjekte → Verb im Plural | Sowohl er als auch sie **kommen**. |
 
-**Beispiel:** Sie spricht **sowohl** Deutsch **als auch** Englisch.`,
+**Merke:**
+- „sowohl … als auch" = **beide** (additiv, positiv).
+- Zwei Subjekte → Verb meist **Plural**.
+- Kein Komma vor „als auch".
+
+**Beispiele:**
+- Sie spricht **sowohl** Deutsch **als auch** Englisch.
+- Die Wohnung ist **sowohl** groß **als auch** hell.
+- **Sowohl** die Kinder **als auch** die Eltern waren zufrieden.`,
       explanationEn: `## sowohl … als auch
 
-**"sowohl … als auch"** means **"both … and"** and links two equal elements. It does not change the word order of the sentence.
+**"sowohl … als auch"** means **"both … and"** (not just one, but both). It links two **equal elements** – usually two nouns, but also adjectives or verbs. Importantly, it does **not** change the normal **word order**.
+
+When two subjects are joined by "sowohl … als auch", the verb is usually in the **plural**.
 
 | Structure | Example |
 | ---- | ---- |
-| sowohl A als auch B | sowohl **Deutsch** als auch **Englisch** |
-| sowohl … als auch (verbs) | Er kocht sowohl als auch backt gern. |
+| sowohl A als auch B (nouns) | sowohl **Deutsch** als auch **Englisch** |
+| sowohl A als auch B (adjective) | sowohl **schön** als auch **günstig** |
+| subjects → plural verb | Sowohl er als auch sie **kommen**. |
 
-**Example:** Sie spricht **sowohl** Deutsch **als auch** Englisch. (She speaks both German and English.)`,
+**Note:**
+- "sowohl … als auch" = **both** (additive, positive).
+- Two subjects → usually a **plural** verb.
+- No comma before "als auch".
+
+**Examples:**
+- Sie spricht **sowohl** Deutsch **als auch** Englisch. (She speaks both German and English.)
+- Die Wohnung ist **sowohl** groß **als auch** hell. (The flat is both big and bright.)
+- **Sowohl** die Kinder **als auch** die Eltern waren zufrieden. (Both the children and the parents were happy.)`,
       explanationTr: `## sowohl … als auch
 
-**„sowohl … als auch"** **„hem … hem de"** anlamına gelir ve eşdeğer iki öğeyi bağlar. Cümlenin sözcük dizilimini değiştirmez.
+**„sowohl … als auch"** **„hem … hem de"** anlamına gelir (sadece biri değil, ikisi birden). İki **eşdeğer öğeyi** bağlar – genellikle iki isim, ama sıfat ya da fiil de olabilir. Önemli: normal **sözcük dizilimini değiştirmez**.
+
+İki özne „sowohl … als auch" ile bağlanırsa fiil genellikle **çoğul** olur.
 
 | Yapı | Örnek |
 | ---- | ---- |
-| sowohl A als auch B | sowohl **Deutsch** als auch **Englisch** |
-| sowohl … als auch (fiiller) | Er kocht sowohl als auch backt gern. |
+| sowohl A als auch B (isim) | sowohl **Deutsch** als auch **Englisch** |
+| sowohl A als auch B (sıfat) | sowohl **schön** als auch **günstig** |
+| özneler → çoğul fiil | Sowohl er als auch sie **kommen**. |
 
-**Örnek:** Sie spricht **sowohl** Deutsch **als auch** Englisch. (O hem Almanca hem de İngilizce konuşuyor.)`,
+**Unutma:**
+- „sowohl … als auch" = **her ikisi** (ekleme, olumlu).
+- İki özne → fiil genellikle **çoğul**.
+- „als auch"tan önce virgül yok.
+
+**Örnekler:**
+- Sie spricht **sowohl** Deutsch **als auch** Englisch. (Hem Almanca hem İngilizce konuşuyor.)
+- Die Wohnung ist **sowohl** groß **als auch** hell. (Daire hem büyük hem aydınlık.)
+- **Sowohl** die Kinder **als auch** die Eltern waren zufrieden. (Hem çocuklar hem de ebeveynler memnundu.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9232,40 +10030,73 @@ Miş'li geçmişin hikâyesi **öncelik** ifade eder: Geçmişte başka bir şey
       grammarTopic: 'weder...noch / entweder...oder',
       explanationDe: `## weder … noch / entweder … oder
 
-Zwei weitere Doppelkonjunktionen:
+Zwei weitere wichtige Doppelkonjunktionen bilden **Gegensätze** zu „sowohl … als auch":
+
+- **„weder … noch"** = **keins von beiden** (neither … nor). Achtung: Es ist schon **verneint** – man benutzt **kein zusätzliches „nicht" oder „kein"**.
+- **„entweder … oder"** = **eins von beiden** (either … or), eine Alternative.
+
+Bei „entweder … oder" kann nach „entweder" die normale Wortstellung stehen oder das Verb (mit Betonung) direkt folgen.
 
 | Konjunktion | Bedeutung | Beispiel |
 | ---- | ---- | ---- |
-| weder … noch | neither … nor | Er trinkt **weder** Kaffee **noch** Tee. |
-| entweder … oder | either … or | **Entweder** du kommst, **oder** ich gehe. |
+| weder … noch | keins von beiden | Er trinkt **weder** Kaffee **noch** Tee. |
+| entweder … oder | eins von beiden | **Entweder** du kommst, **oder** ich gehe. |
 
-„weder … noch" ist schon **verneint** (kein „nicht" nötig).
+**Merke:**
+- „weder … noch" ist **schon negativ** → kein „nicht"!
+- „entweder … oder" bietet eine **Wahl** zwischen zwei Optionen.
+- Bei zwei Subjekten mit „weder … noch" ist Singular oder Plural möglich.
 
-**Beispiel:** Er trinkt **weder** Kaffee **noch** Tee.`,
+**Beispiele:**
+- Er trinkt **weder** Kaffee **noch** Tee.
+- **Entweder** wir nehmen den Bus **oder** wir gehen zu Fuß.
+- Ich habe **weder** Zeit **noch** Lust.`,
       explanationEn: `## weder … noch / entweder … oder
 
-Two more paired conjunctions:
+Two more important paired conjunctions form **opposites** to "sowohl … als auch":
+
+- **"weder … noch"** = **neither of the two** (neither … nor). Note: it is already **negative** – use **no extra "nicht" or "kein"**.
+- **"entweder … oder"** = **one of the two** (either … or), an alternative.
+
+With "entweder … oder", after "entweder" you can keep normal word order or let the verb follow directly (for emphasis).
 
 | Conjunction | Meaning | Example |
 | ---- | ---- | ---- |
-| weder … noch | neither … nor | Er trinkt **weder** Kaffee **noch** Tee. |
-| entweder … oder | either … or | **Entweder** du kommst, **oder** ich gehe. |
+| weder … noch | neither of the two | Er trinkt **weder** Kaffee **noch** Tee. |
+| entweder … oder | one of the two | **Entweder** du kommst, **oder** ich gehe. |
 
-"weder … noch" is already **negative** (no extra "nicht" needed).
+**Note:**
+- "weder … noch" is **already negative** → no "nicht"!
+- "entweder … oder" offers a **choice** between two options.
+- With two subjects and "weder … noch", singular or plural is possible.
 
-**Example:** Er trinkt **weder** Kaffee **noch** Tee. (He drinks neither coffee nor tea.)`,
+**Examples:**
+- Er trinkt **weder** Kaffee **noch** Tee. (He drinks neither coffee nor tea.)
+- **Entweder** wir nehmen den Bus **oder** wir gehen zu Fuß. (Either we take the bus or we walk.)
+- Ich habe **weder** Zeit **noch** Lust. (I have neither time nor desire.)`,
       explanationTr: `## weder … noch / entweder … oder
 
-İki çift bağlaç daha:
+„sowohl … als auch"a **karşıt** iki önemli çift bağlaç daha:
+
+- **„weder … noch"** = **ikisinden hiçbiri** (ne … ne de). Dikkat: zaten **olumsuzdur** – ayrıca **„nicht" ya da „kein" kullanılmaz**.
+- **„entweder … oder"** = **ikisinden biri** (ya … ya da), bir seçenek.
+
+„entweder … oder"da „entweder"den sonra normal dizilim korunabilir ya da (vurgu için) fiil hemen gelebilir.
 
 | Bağlaç | Anlamı | Örnek |
 | ---- | ---- | ---- |
-| weder … noch | ne … ne de | Er trinkt **weder** Kaffee **noch** Tee. |
-| entweder … oder | ya … ya da | **Entweder** du kommst, **oder** ich gehe. |
+| weder … noch | ikisinden hiçbiri | Er trinkt **weder** Kaffee **noch** Tee. |
+| entweder … oder | ikisinden biri | **Entweder** du kommst, **oder** ich gehe. |
 
-„weder … noch" zaten **olumsuzdur** (ayrıca „nicht" gerekmez).
+**Unutma:**
+- „weder … noch" **zaten olumsuz** → „nicht" yok!
+- „entweder … oder" iki seçenek arasında **seçim** sunar.
+- İki özne + „weder … noch" ile tekil veya çoğul mümkün.
 
-**Örnek:** Er trinkt **weder** Kaffee **noch** Tee. (Ne kahve ne de çay içer.)`,
+**Örnekler:**
+- Er trinkt **weder** Kaffee **noch** Tee. (Ne kahve ne de çay içer.)
+- **Entweder** wir nehmen den Bus **oder** wir gehen zu Fuß. (Ya otobüse bineriz ya da yürürüz.)
+- Ich habe **weder** Zeit **noch** Lust. (Ne zamanım ne de isteğim var.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9303,40 +10134,64 @@ Two more paired conjunctions:
       grammarTopic: 'Übung: Doppelkonjunktionen',
       explanationDe: `## Übung: Doppelkonjunktionen
 
-Überblick über die vier Doppelkonjunktionen:
+Die vier Doppelkonjunktionen im Vergleich – jede verbindet zwei Elemente, aber mit anderer Bedeutung:
 
-| Konjunktion | Bedeutung |
-| ---- | ---- |
-| je … desto | the more … the more |
-| sowohl … als auch | both … and |
-| weder … noch | neither … nor |
-| entweder … oder | either … or |
+| Konjunktion | Bedeutung | Idee |
+| ---- | ---- | ---- |
+| sowohl … als auch | both … and | beide (+) |
+| weder … noch | neither … nor | keins (–) |
+| entweder … oder | either … or | eins von beiden |
+| je … desto | the more … the more | proportional |
 
-**Beispiel:** **Entweder** wir nehmen den Bus, **oder** wir gehen zu Fuß.`,
+**Merke:**
+- „weder … noch" ist **negativ** (kein extra „nicht").
+- „je … desto" braucht **zwei Komparative** + besondere Wortstellung.
+- Die anderen drei verändern die Wortstellung kaum.
+
+**Beispiele:**
+- **Entweder** wir nehmen den Bus **oder** wir gehen zu Fuß.
+- Sie ist **sowohl** klug **als auch** fleißig.
+- **Je** mehr man übt, **desto** sicherer wird man.`,
       explanationEn: `## Practice: paired conjunctions
 
-Overview of the four paired conjunctions:
+The four paired conjunctions compared – each links two elements, but with a different meaning:
 
-| Conjunction | Meaning |
-| ---- | ---- |
-| je … desto | the more … the more |
-| sowohl … als auch | both … and |
-| weder … noch | neither … nor |
-| entweder … oder | either … or |
+| Conjunction | Meaning | Idea |
+| ---- | ---- | ---- |
+| sowohl … als auch | both … and | both (+) |
+| weder … noch | neither … nor | neither (–) |
+| entweder … oder | either … or | one of the two |
+| je … desto | the more … the more | proportional |
 
-**Example:** **Entweder** wir nehmen den Bus, **oder** wir gehen zu Fuß. (Either we take the bus or we walk.)`,
+**Note:**
+- "weder … noch" is **negative** (no extra "nicht").
+- "je … desto" needs **two comparatives** + special word order.
+- The other three barely change the word order.
+
+**Examples:**
+- **Entweder** wir nehmen den Bus **oder** wir gehen zu Fuß. (Either we take the bus or we walk.)
+- Sie ist **sowohl** klug **als auch** fleißig. (She is both clever and hard-working.)
+- **Je** mehr man übt, **desto** sicherer wird man. (The more you practise, the more confident you get.)`,
       explanationTr: `## Alıştırma: çift bağlaçlar
 
-Dört çift bağlaca genel bakış:
+Dört çift bağlacın karşılaştırması – her biri iki öğeyi bağlar ama farklı anlamla:
 
-| Bağlaç | Anlamı |
-| ---- | ---- |
-| je … desto | ne kadar … o kadar |
-| sowohl … als auch | hem … hem de |
-| weder … noch | ne … ne de |
-| entweder … oder | ya … ya da |
+| Bağlaç | Anlamı | Fikir |
+| ---- | ---- | ---- |
+| sowohl … als auch | hem … hem de | her ikisi (+) |
+| weder … noch | ne … ne de | hiçbiri (–) |
+| entweder … oder | ya … ya da | ikisinden biri |
+| je … desto | ne kadar … o kadar | orantılı |
 
-**Örnek:** **Entweder** wir nehmen den Bus, **oder** wir gehen zu Fuß. (Ya otobüse bineriz ya da yürürüz.)`,
+**Unutma:**
+- „weder … noch" **olumsuzdur** (ayrıca „nicht" yok).
+- „je … desto" **iki karşılaştırma** + özel dizilim ister.
+- Diğer üçü sözcük dizilimini neredeyse değiştirmez.
+
+**Örnekler:**
+- **Entweder** wir nehmen den Bus **oder** wir gehen zu Fuß. (Ya otobüse bineriz ya da yürürüz.)
+- Sie ist **sowohl** klug **als auch** fleißig. (Hem zeki hem çalışkan.)
+- **Je** mehr man übt, **desto** sicherer wird man. (Ne kadar alıştırma yaparsan o kadar güvenli olursun.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9385,7 +10240,9 @@ Dört çift bağlaca genel bakış:
       grammarTopic: 'Infinitiv mit "zu" nach Verben',
       explanationDe: `## Infinitiv mit „zu" nach Verben
 
-Nach vielen Verben (*versuchen, hoffen, vergessen, anfangen*) folgt ein **Infinitiv mit „zu"** am Satzende. Bei **trennbaren Verben** steht „zu" **zwischen** Präfix und Verb.
+Manche Verben können nicht allein stehen, sondern brauchen ein zweites Verb im **Infinitiv mit „zu"**. Dieser Infinitiv steht **am Satzende**. Typische Verben: *versuchen, hoffen, vergessen, anfangen, beginnen, aufhören, planen, Lust haben*.
+
+Bei **trennbaren Verben** rutscht „zu" **zwischen** Präfix und Stamm: *aufstehen → aufzustehen*. Nach **Modalverben** benutzt man dagegen **kein** „zu" (*Ich muss aufstehen*).
 
 | Verb | Infinitiv mit „zu" |
 | ---- | ---- |
@@ -9394,10 +10251,20 @@ Nach vielen Verben (*versuchen, hoffen, vergessen, anfangen*) folgt ein **Infini
 | aufstehen (trennbar) | auf**zu**stehen |
 | einkaufen (trennbar) | ein**zu**kaufen |
 
-**Beispiel:** Ich versuche, früh **aufzustehen**.`,
+**Merke:**
+- Oft steht vor dem Infinitivsatz ein **Komma** (besonders wenn er länger ist).
+- Trennbare Verben: „zu" **in der Mitte** (aufzustehen).
+- Nach Modalverben: **ohne** „zu".
+
+**Beispiele:**
+- Ich versuche, früh **aufzustehen**.
+- Er hat vergessen, die Tür **abzuschließen**.
+- Wir hoffen, bald **umzuziehen**.`,
       explanationEn: `## Infinitive with "zu" after verbs
 
-After many verbs (*versuchen/try, hoffen/hope, vergessen/forget, anfangen/begin*) comes an **infinitive with "zu"** at the end. With **separable verbs**, "zu" goes **between** prefix and verb.
+Some verbs cannot stand alone; they need a second verb in the **infinitive with "zu"**, which goes **to the end**. Typical verbs: *versuchen/try, hoffen/hope, vergessen/forget, anfangen/begin, aufhören/stop, planen/plan, Lust haben/feel like*.
+
+With **separable verbs**, "zu" slips **between** prefix and stem: *aufstehen → aufzustehen*. After **modal verbs**, however, you use **no** "zu" (*Ich muss aufstehen*).
 
 | Verb | Infinitive with "zu" |
 | ---- | ---- |
@@ -9406,10 +10273,20 @@ After many verbs (*versuchen/try, hoffen/hope, vergessen/forget, anfangen/begin*
 | aufstehen (separable) | auf**zu**stehen |
 | einkaufen (separable) | ein**zu**kaufen |
 
-**Example:** Ich versuche, früh **aufzustehen**. (I try to get up early.)`,
+**Note:**
+- A **comma** often precedes the infinitive clause (especially if it's longer).
+- Separable verbs: "zu" **in the middle** (aufzustehen).
+- After modal verbs: **without** "zu".
+
+**Examples:**
+- Ich versuche, früh **aufzustehen**. (I try to get up early.)
+- Er hat vergessen, die Tür **abzuschließen**. (He forgot to lock the door.)
+- Wir hoffen, bald **umzuziehen**. (We hope to move soon.)`,
       explanationTr: `## Fiillerden sonra „zu" ile mastar
 
-Birçok fiilden sonra (*versuchen/denemek, hoffen/ummak, vergessen/unutmak, anfangen/başlamak*) sonda **„zu" ile mastar** gelir. **Ayrılabilir fiillerde** „zu" önek ile fiilin **arasına** girer.
+Bazı fiiller tek başına duramaz; **„zu" ile mastar** hâlinde ikinci bir fiile ihtiyaç duyar; bu mastar **cümlenin sonuna** gider. Tipik fiiller: *versuchen/denemek, hoffen/ummak, vergessen/unutmak, anfangen/başlamak, aufhören/bırakmak, planen/planlamak, Lust haben/canı istemek*.
+
+**Ayrılabilir fiillerde** „zu", önek ile kök **arasına** girer: *aufstehen → aufzustehen*. **Modal fiillerden** sonra ise „zu" **kullanılmaz** (*Ich muss aufstehen*).
 
 | Fiil | „zu" ile mastar |
 | ---- | ---- |
@@ -9418,7 +10295,15 @@ Birçok fiilden sonra (*versuchen/denemek, hoffen/ummak, vergessen/unutmak, anfa
 | aufstehen (ayrılabilir) | auf**zu**stehen |
 | einkaufen (ayrılabilir) | ein**zu**kaufen |
 
-**Örnek:** Ich versuche, früh **aufzustehen**. (Erken kalkmaya çalışıyorum.)`,
+**Unutma:**
+- Mastar cümlesinden önce çoğu zaman **virgül** olur (özellikle uzunsa).
+- Ayrılabilir fiiller: „zu" **ortada** (aufzustehen).
+- Modal fiillerden sonra: „zu" **yok**.
+
+**Örnekler:**
+- Ich versuche, früh **aufzustehen**. (Erken kalkmaya çalışıyorum.)
+- Er hat vergessen, die Tür **abzuschließen**. (Kapıyı kilitlemeyi unuttu.)
+- Wir hoffen, bald **umzuziehen**. (Yakında taşınmayı umuyoruz.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9449,34 +10334,67 @@ Birçok fiilden sonra (*versuchen/denemek, hoffen/ummak, vergessen/unutmak, anfa
       grammarTopic: '"um...zu" (Zweck)',
       explanationDe: `## „um … zu" (Zweck)
 
-**„um … zu"** drückt einen **Zweck/ein Ziel** aus (in order to). Das **Subjekt** von Haupt- und Nebensatz muss **gleich** sein. Der Infinitiv mit „zu" steht am Ende.
+**„um … zu"** beantwortet die Frage **„Wozu?" / „Warum?"** und drückt einen **Zweck oder ein Ziel** aus (in order to). „um" steht am Anfang des Nebensatzes, „zu" + Infinitiv am Ende.
+
+Wichtige Bedingung: Das **Subjekt** in beiden Satzteilen muss **dasselbe** sein. Ist es unterschiedlich, benutzt man stattdessen **„damit"** (mit eigenem Verb).
 
 | Hauptsatz | um … zu (Zweck) |
 | ---- | ---- |
 | Ich lerne Deutsch, | **um** in Deutschland **zu arbeiten**. |
 | Sie spart Geld, | **um** ein Auto **zu kaufen**. |
+| Er steht früh auf, | **um** den Zug **zu erreichen**. |
 
-**Beispiel:** Ich lerne Deutsch, **um** in Deutschland **zu arbeiten**.`,
+**Merke:**
+- „um … zu" nur bei **gleichem Subjekt**; sonst **„damit"**.
+- Vor „um" steht ein **Komma**.
+- Man kann „um … zu" mit „damit … " umformen: *…, damit ich in Deutschland arbeite*.
+
+**Beispiele:**
+- Ich lerne Deutsch, **um** in Deutschland **zu arbeiten**.
+- Wir gehen ins Bett, **um** früh **aufzustehen**.
+- Sie ruft an, **um** einen Termin **zu machen**.`,
       explanationEn: `## "um … zu" (purpose)
 
-**"um … zu"** expresses a **purpose/goal** (in order to). The **subject** of both clauses must be the **same**. The infinitive with "zu" goes at the end.
+**"um … zu"** answers **"What for? / Why?"** and expresses a **purpose or goal** (in order to). "um" stands at the start of the clause, "zu" + infinitive at the end.
+
+Key condition: the **subject** in both parts must be the **same**. If it differs, use **"damit"** instead (with its own verb).
 
 | Main clause | um … zu (purpose) |
 | ---- | ---- |
 | Ich lerne Deutsch, | **um** in Deutschland **zu arbeiten**. |
 | Sie spart Geld, | **um** ein Auto **zu kaufen**. |
+| Er steht früh auf, | **um** den Zug **zu erreichen**. |
 
-**Example:** Ich lerne Deutsch, **um** in Deutschland **zu arbeiten**. (I'm learning German in order to work in Germany.)`,
+**Note:**
+- "um … zu" only with the **same subject**; otherwise **"damit"**.
+- A **comma** comes before "um".
+- You can rephrase "um … zu" with "damit": *…, damit ich in Deutschland arbeite*.
+
+**Examples:**
+- Ich lerne Deutsch, **um** in Deutschland **zu arbeiten**. (I learn German in order to work in Germany.)
+- Wir gehen ins Bett, **um** früh **aufzustehen**. (We go to bed in order to get up early.)
+- Sie ruft an, **um** einen Termin **zu machen**. (She calls in order to make an appointment.)`,
       explanationTr: `## „um … zu" (amaç)
 
-**„um … zu"** bir **amaç/hedef** ifade eder (…-mek için). Ana ve yan cümlenin **öznesi aynı** olmalıdır. „zu" ile mastar sonda yer alır.
+**„um … zu"** **„Ne için? / Neden?"** sorusuna cevap verir ve bir **amaç ya da hedef** ifade eder (…-mek için). „um" yan cümlenin başında, „zu" + mastar ise sonunda yer alır.
+
+Önemli koşul: her iki kısmın **öznesi aynı** olmalıdır. Farklıysa bunun yerine (kendi fiiliyle) **„damit"** kullanılır.
 
 | Ana cümle | um … zu (amaç) |
 | ---- | ---- |
 | Ich lerne Deutsch, | **um** in Deutschland **zu arbeiten**. |
 | Sie spart Geld, | **um** ein Auto **zu kaufen**. |
+| Er steht früh auf, | **um** den Zug **zu erreichen**. |
 
-**Örnek:** Ich lerne Deutsch, **um** in Deutschland **zu arbeiten**. (Almanya'da çalışmak için Almanca öğreniyorum.)`,
+**Unutma:**
+- „um … zu" yalnızca **aynı özne** olduğunda; aksi hâlde **„damit"**.
+- „um"dan önce **virgül** vardır.
+- „um … zu" „damit" ile yeniden yazılabilir: *…, damit ich in Deutschland arbeite*.
+
+**Örnekler:**
+- Ich lerne Deutsch, **um** in Deutschland **zu arbeiten**. (Almanya'da çalışmak için Almanca öğreniyorum.)
+- Wir gehen ins Bett, **um** früh **aufzustehen**. (Erken kalkmak için yatağa gidiyoruz.)
+- Sie ruft an, **um** einen Termin **zu machen**. (Randevu almak için arıyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9507,34 +10425,67 @@ Birçok fiilden sonra (*versuchen/denemek, hoffen/ummak, vergessen/unutmak, anfa
       grammarTopic: '"ohne...zu" (Verzicht)',
       explanationDe: `## „ohne … zu" (Verzicht)
 
-**„ohne … zu"** bedeutet **„without …ing"**: Etwas passiert **nicht**. Auch hier ist das Subjekt in beiden Teilen gleich.
+**„ohne … zu"** bedeutet **„ohne dass etwas geschieht"** (without …ing). Es zeigt, dass eine erwartete Handlung **nicht** stattfindet. Wie bei „um … zu" muss das **Subjekt gleich** sein; sonst nimmt man **„ohne dass"** + Nebensatz.
+
+„ohne" steht am Anfang, „zu" + Infinitiv am Ende. Verglichen mit dem Türkischen entspricht es der Endung **„-madan/-meden"**.
 
 | Hauptsatz | ohne … zu |
 | ---- | ---- |
 | Er ging weg, | **ohne** sich **zu verabschieden**. |
 | Sie ging, | **ohne** die Tür **zu schließen**. |
+| Er half mir, | **ohne** etwas **zu sagen**. |
 
-**Beispiel:** Er ging weg, **ohne** sich **zu verabschieden**.`,
+**Merke:**
+- „ohne … zu" = etwas passiert **nicht** (kein „nicht" nötig).
+- Gleiches Subjekt → „ohne … zu"; anderes Subjekt → **„ohne dass"**.
+- Vor „ohne" steht ein **Komma**.
+
+**Beispiele:**
+- Er ging weg, **ohne** sich **zu verabschieden**.
+- Sie verließ das Haus, **ohne** die Tür **abzuschließen**.
+- Ich kann nicht schlafen, **ohne** das Fenster **zu öffnen**.`,
       explanationEn: `## "ohne … zu" (without)
 
-**"ohne … zu"** means **"without …ing"**: something does **not** happen. Again, the subject is the same in both parts.
+**"ohne … zu"** means **"without something happening"** (without …ing). It shows that an expected action does **not** take place. As with "um … zu", the **subject must be the same**; otherwise use **"ohne dass"** + clause.
+
+"ohne" comes first, "zu" + infinitive at the end. It corresponds to the Turkish ending **"-madan/-meden"**.
 
 | Main clause | ohne … zu |
 | ---- | ---- |
 | Er ging weg, | **ohne** sich **zu verabschieden**. |
 | Sie ging, | **ohne** die Tür **zu schließen**. |
+| Er half mir, | **ohne** etwas **zu sagen**. |
 
-**Example:** Er ging weg, **ohne** sich **zu verabschieden**. (He left without saying goodbye.)`,
+**Note:**
+- "ohne … zu" = something does **not** happen (no "nicht" needed).
+- Same subject → "ohne … zu"; different subject → **"ohne dass"**.
+- A **comma** comes before "ohne".
+
+**Examples:**
+- Er ging weg, **ohne** sich **zu verabschieden**. (He left without saying goodbye.)
+- Sie verließ das Haus, **ohne** die Tür **abzuschließen**. (She left the house without locking the door.)
+- Ich kann nicht schlafen, **ohne** das Fenster **zu öffnen**. (I can't sleep without opening the window.)`,
       explanationTr: `## „ohne … zu" (…-madan)
 
-**„ohne … zu"** **„…-madan"** anlamına gelir: bir şey **olmaz**. Burada da özne her iki kısımda aynıdır.
+**„ohne … zu"** **„bir şey olmadan"** anlamına gelir (…-madan). Beklenen bir eylemin **gerçekleşmediğini** gösterir. „um … zu"da olduğu gibi **özne aynı** olmalıdır; aksi hâlde **„ohne dass"** + yan cümle kullanılır.
+
+„ohne" başta, „zu" + mastar sonda yer alır. Türkçedeki **„-madan/-meden"** ekine karşılık gelir.
 
 | Ana cümle | ohne … zu |
 | ---- | ---- |
 | Er ging weg, | **ohne** sich **zu verabschieden**. |
 | Sie ging, | **ohne** die Tür **zu schließen**. |
+| Er half mir, | **ohne** etwas **zu sagen**. |
 
-**Örnek:** Er ging weg, **ohne** sich **zu verabschieden**. (Vedalaşmadan gitti.)`,
+**Unutma:**
+- „ohne … zu" = bir şey **olmaz** („nicht" gerekmez).
+- Aynı özne → „ohne … zu"; farklı özne → **„ohne dass"**.
+- „ohne"dan önce **virgül** vardır.
+
+**Örnekler:**
+- Er ging weg, **ohne** sich **zu verabschieden**. (Vedalaşmadan gitti.)
+- Sie verließ das Haus, **ohne** die Tür **abzuschließen**. (Kapıyı kilitlemeden evden çıktı.)
+- Ich kann nicht schlafen, **ohne** das Fenster **zu öffnen**. (Pencereyi açmadan uyuyamam.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9565,37 +10516,61 @@ Birçok fiilden sonra (*versuchen/denemek, hoffen/ummak, vergessen/unutmak, anfa
       grammarTopic: 'Übung: Infinitiv mit "zu"',
       explanationDe: `## Übung: Infinitiv mit „zu"
 
-Überblick über die drei Konstruktionen mit Infinitiv + „zu":
+Drei Konstruktionen mit „zu" + Infinitiv – alle mit gleichem Subjekt und Infinitiv am Ende:
 
-| Konstruktion | Bedeutung | Beispiel |
+| Konstruktion | Bedeutung | Ersatz bei anderem Subjekt |
 | ---- | ---- | ---- |
-| Verb + zu | — | Ich versuche **zu helfen**. |
-| um … zu | Zweck | …, **um** dir **zu helfen** |
-| ohne … zu | Verzicht | …, **ohne zu stören** |
+| Verb + zu | (abhängiges Verb) | — |
+| um … zu | Zweck (wozu?) | damit |
+| ohne … zu | Verzicht (…madan) | ohne dass |
 
-**Beispiel:** Ich rufe an, **um** dir **zu helfen**, **ohne zu stören**.`,
+**Merke:**
+- Trennbare Verben: „zu" **in der Mitte** (anzurufen).
+- Nach Modalverben: **kein** „zu".
+- „um … zu" / „ohne … zu" nur bei **gleichem Subjekt**.
+
+**Beispiele:**
+- Ich versuche, dir **zu helfen**.
+- Ich rufe an, **um** dir **zu helfen**.
+- Ich helfe dir, **ohne zu stören**.`,
       explanationEn: `## Practice: infinitive with "zu"
 
-Overview of the three constructions with infinitive + "zu":
+Three constructions with "zu" + infinitive – all with the same subject and the infinitive at the end:
 
-| Construction | Meaning | Example |
+| Construction | Meaning | Alternative for a different subject |
 | ---- | ---- | ---- |
-| verb + zu | — | Ich versuche **zu helfen**. |
-| um … zu | purpose | …, **um** dir **zu helfen** |
-| ohne … zu | without | …, **ohne zu stören** |
+| verb + zu | (dependent verb) | — |
+| um … zu | purpose (what for?) | damit |
+| ohne … zu | without | ohne dass |
 
-**Example:** Ich rufe an, **um** dir **zu helfen**, **ohne zu stören**. (I'm calling to help you, without disturbing you.)`,
+**Note:**
+- Separable verbs: "zu" **in the middle** (anzurufen).
+- After modal verbs: **no** "zu".
+- "um … zu" / "ohne … zu" only with the **same subject**.
+
+**Examples:**
+- Ich versuche, dir **zu helfen**. (I try to help you.)
+- Ich rufe an, **um** dir **zu helfen**. (I call in order to help you.)
+- Ich helfe dir, **ohne zu stören**. (I help you without disturbing.)`,
       explanationTr: `## Alıştırma: „zu" ile mastar
 
-„zu" mastarlı üç yapıya genel bakış:
+„zu" + mastarlı üç yapı – hepsinde özne aynı ve mastar sonda:
 
-| Yapı | Anlamı | Örnek |
+| Yapı | Anlamı | Farklı öznede karşılık |
 | ---- | ---- | ---- |
-| fiil + zu | — | Ich versuche **zu helfen**. |
-| um … zu | amaç | …, **um** dir **zu helfen** |
-| ohne … zu | …-madan | …, **ohne zu stören** |
+| fiil + zu | (bağımlı fiil) | — |
+| um … zu | amaç (ne için?) | damit |
+| ohne … zu | …-madan | ohne dass |
 
-**Örnek:** Ich rufe an, **um** dir **zu helfen**, **ohne zu stören**. (Rahatsız etmeden sana yardım etmek için arıyorum.)`,
+**Unutma:**
+- Ayrılabilir fiiller: „zu" **ortada** (anzurufen).
+- Modal fiillerden sonra: „zu" **yok**.
+- „um … zu" / „ohne … zu" yalnızca **aynı öznede**.
+
+**Örnekler:**
+- Ich versuche, dir **zu helfen**. (Sana yardım etmeye çalışıyorum.)
+- Ich rufe an, **um** dir **zu helfen**. (Sana yardım etmek için arıyorum.)
+- Ich helfe dir, **ohne zu stören**. (Rahatsız etmeden sana yardım ederim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9644,37 +10619,70 @@ Overview of the three constructions with infinitive + "zu":
       grammarTopic: 'Adjektivdeklination im Nominativ und Akkusativ',
       explanationDe: `## Adjektivdeklination: Nominativ & Akkusativ
 
-Nach **bestimmtem Artikel** endet das Adjektiv auf **-e** oder **-en**. Vom Nominativ zum Akkusativ ändert sich **nur die maskuline Form** (-e → -en).
+Steht ein **Adjektiv vor einem Nomen**, bekommt es eine Endung. Nach dem **bestimmten Artikel** (der/die/das) ist es einfach: Die Endung ist fast überall **-e** oder **-en** (schwache Deklination).
+
+Im **Nominativ** ist die Endung meist **-e**. Beim Wechsel zum **Akkusativ** ändert sich – wie beim Artikel – **nur die maskuline Form** von -e zu **-en**. Feminin, neutrum und Plural bleiben gleich.
 
 | Genus | Nominativ | Akkusativ |
 | ---- | ---- | ---- |
 | maskulin | der groß**e** Mann | den groß**en** Mann |
 | feminin | die schön**e** Frau | die schön**e** Frau |
 | neutrum | das klein**e** Kind | das klein**e** Kind |
+| Plural | die nett**en** Leute | die nett**en** Leute |
 
-**Beispiel:** Ich sehe den **großen** Mann.`,
+**Merke:**
+- Nur **maskulin** ändert sich (Nom. -e → Akk. -en).
+- Plural nach „die" ist immer **-en**.
+- Ohne Endung geht es nur, wenn das Adjektiv **nach** dem Nomen steht (*Der Mann ist groß*).
+
+**Beispiele:**
+- Ich sehe den **großen** Mann.
+- Die **kleine** Katze schläft.
+- Wir kaufen das **neue** Auto.`,
       explanationEn: `## Adjective declension: nominative & accusative
 
-After the **definite article** the adjective ends in **-e** or **-en**. From nominative to accusative **only the masculine form** changes (-e → -en).
+When an **adjective stands before a noun**, it takes an ending. After the **definite article** (der/die/das) it's easy: the ending is almost always **-e** or **-en** (weak declension).
+
+In the **nominative** the ending is usually **-e**. Moving to the **accusative**, only the **masculine form** changes from -e to **-en** (just like the article). Feminine, neuter and plural stay the same.
 
 | Gender | Nominative | Accusative |
 | ---- | ---- | ---- |
 | masculine | der groß**e** Mann | den groß**en** Mann |
 | feminine | die schön**e** Frau | die schön**e** Frau |
 | neuter | das klein**e** Kind | das klein**e** Kind |
+| plural | die nett**en** Leute | die nett**en** Leute |
 
-**Example:** Ich sehe den **großen** Mann. (I see the tall man.)`,
+**Note:**
+- Only **masculine** changes (nom. -e → acc. -en).
+- Plural after "die" is always **-en**.
+- No ending is needed only when the adjective comes **after** the noun (*Der Mann ist groß*).
+
+**Examples:**
+- Ich sehe den **großen** Mann. (I see the tall man.)
+- Die **kleine** Katze schläft. (The little cat is sleeping.)
+- Wir kaufen das **neue** Auto. (We're buying the new car.)`,
       explanationTr: `## Sıfat çekimi: yalın & -i hâli
 
-**Belirli artikelden** sonra sıfat **-e** veya **-en** ile biter. Yalından -i hâline geçerken **sadece eril biçim** değişir (-e → -en).
+Bir **sıfat ismin önünde** durunca bir ek alır. **Belirli artikelden** (der/die/das) sonra kolaydır: ek neredeyse her yerde **-e** ya da **-en**'dir (zayıf çekim).
+
+**Yalın hâlde** ek genellikle **-e**'dir. **-i hâline** geçerken – tıpkı artikel gibi – **yalnızca eril biçim** -e'den **-en**'e değişir. Dişil, nötr ve çoğul aynı kalır.
 
 | Cinsiyet | Yalın | -i hâli |
 | ---- | ---- | ---- |
 | eril | der groß**e** Mann | den groß**en** Mann |
 | dişil | die schön**e** Frau | die schön**e** Frau |
 | nötr | das klein**e** Kind | das klein**e** Kind |
+| çoğul | die nett**en** Leute | die nett**en** Leute |
 
-**Örnek:** Ich sehe den **großen** Mann. (Uzun boylu adamı görüyorum.)`,
+**Unutma:**
+- Yalnızca **eril** değişir (yalın -e → -i hâli -en).
+- „die"den sonra çoğul her zaman **-en**.
+- Ek almaması yalnızca sıfat ismin **arkasında** olduğunda olur (*Der Mann ist groß*).
+
+**Örnekler:**
+- Ich sehe den **großen** Mann. (Uzun boylu adamı görüyorum.)
+- Die **kleine** Katze schläft. (Küçük kedi uyuyor.)
+- Wir kaufen das **neue** Auto. (Yeni arabayı alıyoruz.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9705,40 +10713,70 @@ After the **definite article** the adjective ends in **-e** or **-en**. From nom
       grammarTopic: 'Adjektivdeklination im Dativ',
       explanationDe: `## Adjektivdeklination im Dativ
 
-Im **Dativ** ist es einfach: Das Adjektiv endet nach jedem Artikel **immer auf -en** (maskulin, feminin, neutrum, Plural).
+Der **Dativ** ist die einfachste Stufe: Nach dem bestimmten **und** dem unbestimmten Artikel endet das Adjektiv **immer auf -en** – egal ob maskulin, feminin, neutrum oder Plural.
 
-| Genus | Dativ |
-| ---- | ---- |
-| maskulin | mit dem groß**en** Mann |
-| feminin | mit der groß**en** Frau |
-| neutrum | mit dem klein**en** Kind |
-| Plural | mit den nett**en** Leuten |
+Der Dativ erscheint oft nach Dativ-Präpositionen (*mit, bei, nach, aus, von, zu*) und nach Dativ-Verben (*helfen, danken, gefallen*). Im Dativ Plural bekommt auch das **Nomen ein -n** (*mit den netten Leuten*).
 
-**Beispiel:** Ich spreche mit dem **großen** Mann.`,
+| Genus | Dativ (best. Artikel) | Dativ (unbest. Artikel) |
+| ---- | ---- | ---- |
+| maskulin | dem groß**en** Mann | einem groß**en** Mann |
+| feminin | der groß**en** Frau | einer groß**en** Frau |
+| neutrum | dem klein**en** Kind | einem klein**en** Kind |
+| Plural | den nett**en** Leuten | — netten Leuten |
+
+**Merke:**
+- Dativ-Adjektivendung ist **immer -en**.
+- Dativ Plural: Nomen + **-n** (Leute → Leuten).
+- Signale: Präpositionen *mit, bei, nach…* und Verben *helfen, danken…*.
+
+**Beispiele:**
+- Ich spreche mit dem **großen** Mann.
+- Sie hilft einem **alten** Freund.
+- Wir wohnen in einer **ruhigen** Straße.`,
       explanationEn: `## Adjective declension in the dative
 
-In the **dative** it's easy: after any article the adjective **always ends in -en** (masculine, feminine, neuter, plural).
+The **dative** is the easiest case: after both the definite **and** the indefinite article the adjective **always ends in -en** – whether masculine, feminine, neuter or plural.
 
-| Gender | Dative |
-| ---- | ---- |
-| masculine | mit dem groß**en** Mann |
-| feminine | mit der groß**en** Frau |
-| neuter | mit dem klein**en** Kind |
-| plural | mit den nett**en** Leuten |
+The dative often appears after dative prepositions (*mit, bei, nach, aus, von, zu*) and dative verbs (*helfen, danken, gefallen*). In the dative plural the **noun also takes -n** (*mit den netten Leuten*).
 
-**Example:** Ich spreche mit dem **großen** Mann. (I'm talking to the tall man.)`,
+| Gender | Dative (def. article) | Dative (indef. article) |
+| ---- | ---- | ---- |
+| masculine | dem groß**en** Mann | einem groß**en** Mann |
+| feminine | der groß**en** Frau | einer groß**en** Frau |
+| neuter | dem klein**en** Kind | einem klein**en** Kind |
+| plural | den nett**en** Leuten | — netten Leuten |
+
+**Note:**
+- The dative adjective ending is **always -en**.
+- Dative plural: noun + **-n** (Leute → Leuten).
+- Signals: prepositions *mit, bei, nach…* and verbs *helfen, danken…*.
+
+**Examples:**
+- Ich spreche mit dem **großen** Mann. (I'm talking to the tall man.)
+- Sie hilft einem **alten** Freund. (She helps an old friend.)
+- Wir wohnen in einer **ruhigen** Straße. (We live in a quiet street.)`,
       explanationTr: `## -e hâlinde sıfat çekimi
 
-**-e hâlinde** kolaydır: sıfat her artikelden sonra **her zaman -en** ile biter (eril, dişil, nötr, çoğul).
+**-e hâli** en kolay basamaktır: belirli **ve** belirsiz artikelden sonra sıfat **her zaman -en** ile biter – eril, dişil, nötr ya da çoğul fark etmez.
 
-| Cinsiyet | -e hâli |
-| ---- | ---- |
-| eril | mit dem groß**en** Mann |
-| dişil | mit der groß**en** Frau |
-| nötr | mit dem klein**en** Kind |
-| çoğul | mit den nett**en** Leuten |
+-e hâli çoğu zaman -e hâli edatlarından (*mit, bei, nach, aus, von, zu*) ve -e hâli fiillerinden (*helfen, danken, gefallen*) sonra gelir. Çoğul -e hâlinde **isim de -n** alır (*mit den netten Leuten*).
 
-**Örnek:** Ich spreche mit dem **großen** Mann. (Uzun boylu adamla konuşuyorum.)`,
+| Cinsiyet | -e hâli (belirli) | -e hâli (belirsiz) |
+| ---- | ---- | ---- |
+| eril | dem groß**en** Mann | einem groß**en** Mann |
+| dişil | der groß**en** Frau | einer groß**en** Frau |
+| nötr | dem klein**en** Kind | einem klein**en** Kind |
+| çoğul | den nett**en** Leuten | — netten Leuten |
+
+**Unutma:**
+- -e hâlinde sıfat eki **her zaman -en**.
+- Çoğul -e hâli: isim + **-n** (Leute → Leuten).
+- İşaretler: *mit, bei, nach…* edatları ve *helfen, danken…* fiilleri.
+
+**Örnekler:**
+- Ich spreche mit dem **großen** Mann. (Uzun boylu adamla konuşuyorum.)
+- Sie hilft einem **alten** Freund. (Yaşlı bir arkadaşına yardım ediyor.)
+- Wir wohnen in einer **ruhigen** Straße. (Sakin bir sokakta oturuyoruz.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9769,37 +10807,70 @@ In the **dative** it's easy: after any article the adjective **always ends in -e
       grammarTopic: 'Adjektivdeklination ohne Artikel',
       explanationDe: `## Adjektivdeklination ohne Artikel
 
-Ohne Artikel übernimmt das Adjektiv die **Endung des Artikels** (starke Deklination): Es zeigt selbst das Genus an.
+Ohne Artikel fehlt die Information über das Genus. Deshalb **übernimmt das Adjektiv die Endung des Artikels** (starke Deklination): Die Adjektivendung sieht fast wie der bestimmte Artikel aus (der → -er, die → -e, das → -es).
 
-| Genus | ohne Artikel (Nominativ) | wie Artikel |
+Das passiert oft bei **unzählbaren Stoffen** und **Mengenangaben** (*Wein, Milch, Brot, Wasser*) und im Plural ohne Artikel.
+
+| Genus | ohne Artikel (Nom.) | wie Artikel |
 | ---- | ---- | ---- |
-| maskulin | gut**er** Wein | der |
-| feminin | kalt**e** Milch | die |
-| neutrum | frisch**es** Brot | das |
+| maskulin | gut**er** Wein | der → -er |
+| feminin | kalt**e** Milch | die → -e |
+| neutrum | frisch**es** Brot | das → -es |
+| Plural | nett**e** Leute | die → -e |
 
-**Beispiel:** **Frisches** Brot schmeckt gut.`,
+**Merke:**
+- Ohne Artikel → Adjektiv zeigt das **Genus** (starke Deklination).
+- Endungen ähneln dem bestimmten Artikel (-er/-e/-es).
+- Im Akkusativ maskulin: **-en** (guten Wein).
+
+**Beispiele:**
+- **Frisches** Brot schmeckt gut.
+- Ich trinke gern **kalte** Milch.
+- Er trinkt **guten** Wein. (Akkusativ maskulin)`,
       explanationEn: `## Adjective declension without an article
 
-Without an article, the adjective takes the **article's ending** (strong declension): it shows the gender itself.
+Without an article, the gender information is missing. So **the adjective takes the article's ending** (strong declension): the adjective ending looks almost like the definite article (der → -er, die → -e, das → -es).
 
-| Gender | no article (nominative) | like article |
+This happens often with **uncountable substances** and **quantities** (*Wein, Milch, Brot, Wasser*) and in the plural without an article.
+
+| Gender | no article (nom.) | like article |
 | ---- | ---- | ---- |
-| masculine | gut**er** Wein | der |
-| feminine | kalt**e** Milch | die |
-| neuter | frisch**es** Brot | das |
+| masculine | gut**er** Wein | der → -er |
+| feminine | kalt**e** Milch | die → -e |
+| neuter | frisch**es** Brot | das → -es |
+| plural | nett**e** Leute | die → -e |
 
-**Example:** **Frisches** Brot schmeckt gut. (Fresh bread tastes good.)`,
+**Note:**
+- No article → the adjective shows the **gender** (strong declension).
+- Endings resemble the definite article (-er/-e/-es).
+- Accusative masculine: **-en** (guten Wein).
+
+**Examples:**
+- **Frisches** Brot schmeckt gut. (Fresh bread tastes good.)
+- Ich trinke gern **kalte** Milch. (I like drinking cold milk.)
+- Er trinkt **guten** Wein. (accusative masculine – He drinks good wine.)`,
       explanationTr: `## Artikelsiz sıfat çekimi
 
-Artikelsiz durumda sıfat **artikelin ekini** alır (güçlü çekim): cinsiyeti kendisi gösterir.
+Artikel yokken cinsiyet bilgisi eksik kalır. Bu yüzden **sıfat, artikelin ekini alır** (güçlü çekim): sıfat eki neredeyse belirli artikel gibi görünür (der → -er, die → -e, das → -es).
+
+Bu çoğunlukla **sayılamayan maddelerde** ve **miktar ifadelerinde** (*Wein, Milch, Brot, Wasser*) ve artikelsiz çoğulda olur.
 
 | Cinsiyet | artikelsiz (yalın) | artikel gibi |
 | ---- | ---- | ---- |
-| eril | gut**er** Wein | der |
-| dişil | kalt**e** Milch | die |
-| nötr | frisch**es** Brot | das |
+| eril | gut**er** Wein | der → -er |
+| dişil | kalt**e** Milch | die → -e |
+| nötr | frisch**es** Brot | das → -es |
+| çoğul | nett**e** Leute | die → -e |
 
-**Örnek:** **Frisches** Brot schmeckt gut. (Taze ekmek güzel olur.)`,
+**Unutma:**
+- Artikelsiz → sıfat **cinsiyeti** gösterir (güçlü çekim).
+- Ekler belirli artikele benzer (-er/-e/-es).
+- Eril -i hâlinde: **-en** (guten Wein).
+
+**Örnekler:**
+- **Frisches** Brot schmeckt gut. (Taze ekmek güzel olur.)
+- Ich trinke gern **kalte** Milch. (Soğuk süt içmeyi severim.)
+- Er trinkt **guten** Wein. (eril -i hâli – İyi şarap içer.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9830,40 +10901,64 @@ Artikelsiz durumda sıfat **artikelin ekini** alır (güçlü çekim): cinsiyeti
       grammarTopic: 'Übung: Adjektivdeklination',
       explanationDe: `## Übung: Adjektivdeklination
 
-Kurzüberblick nach bestimmtem Artikel + der Sonderfall ohne Artikel:
+So gehst du vor: 1) bestimmter Artikel? → meist **-e/-en**, 2) Dativ? → **immer -en**, 3) kein Artikel? → Adjektiv zeigt das Genus (**-er/-e/-es**).
 
-| Kasus | mask. | fem. | neutr. |
-| ---- | ---- | ---- | ---- |
-| Nominativ | -e | -e | -e |
-| Akkusativ | -en | -e | -e |
-| Dativ | -en | -en | -en |
-| ohne Artikel (Nom.) | -er | -e | -es |
+| Kasus | mask. | fem. | neutr. | Plural |
+| ---- | ---- | ---- | ---- | ---- |
+| Nominativ | -e | -e | -e | -en |
+| Akkusativ | -en | -e | -e | -en |
+| Dativ | -en | -en | -en | -en |
+| ohne Artikel (Nom.) | -er | -e | -es | -e |
 
-**Beispiel:** Der **freundliche** Mann gibt dem **kleinen** Kind **frisches** Obst.`,
+**Merke:**
+- „Merkhilfe": Nur maskulin Akkusativ ist im Nom./Akk. „anders" (-en).
+- Dativ = **immer -en**.
+- Ohne Artikel „springt" die Artikel-Endung aufs Adjektiv.
+
+**Beispiele:**
+- Der **freundliche** Mann gibt dem **kleinen** Kind **frisches** Obst.
+- Ich kaufe einen **roten** Apfel und **frische** Milch.
+- Mit **gutem** Wein schmeckt das Essen besser.`,
       explanationEn: `## Practice: adjective declension
 
-Quick overview after the definite article + the special case without an article:
+How to proceed: 1) definite article? → mostly **-e/-en**, 2) dative? → **always -en**, 3) no article? → the adjective shows the gender (**-er/-e/-es**).
 
-| Case | masc. | fem. | neut. |
-| ---- | ---- | ---- | ---- |
-| Nominative | -e | -e | -e |
-| Accusative | -en | -e | -e |
-| Dative | -en | -en | -en |
-| no article (nom.) | -er | -e | -es |
+| Case | masc. | fem. | neut. | plural |
+| ---- | ---- | ---- | ---- | ---- |
+| Nominative | -e | -e | -e | -en |
+| Accusative | -en | -e | -e | -en |
+| Dative | -en | -en | -en | -en |
+| no article (nom.) | -er | -e | -es | -e |
 
-**Example:** Der **freundliche** Mann gibt dem **kleinen** Kind **frisches** Obst. (The friendly man gives the small child fresh fruit.)`,
+**Note:**
+- Memory aid: only masculine accusative is "different" (-en) in nom./acc.
+- Dative = **always -en**.
+- Without an article the article ending "jumps" onto the adjective.
+
+**Examples:**
+- Der **freundliche** Mann gibt dem **kleinen** Kind **frisches** Obst. (The friendly man gives the small child fresh fruit.)
+- Ich kaufe einen **roten** Apfel und **frische** Milch. (I buy a red apple and fresh milk.)
+- Mit **gutem** Wein schmeckt das Essen besser. (With good wine the food tastes better.)`,
       explanationTr: `## Alıştırma: sıfat çekimi
 
-Belirli artikelden sonra kısa genel bakış + artikelsiz özel durum:
+Şöyle ilerle: 1) belirli artikel mi? → çoğunlukla **-e/-en**, 2) -e hâli mi? → **her zaman -en**, 3) artikelsiz mi? → sıfat cinsiyeti gösterir (**-er/-e/-es**).
 
-| Hâl | eril | dişil | nötr |
-| ---- | ---- | ---- | ---- |
-| Yalın | -e | -e | -e |
-| -i hâli | -en | -e | -e |
-| -e hâli | -en | -en | -en |
-| artikelsiz (yalın) | -er | -e | -es |
+| Hâl | eril | dişil | nötr | çoğul |
+| ---- | ---- | ---- | ---- | ---- |
+| Yalın | -e | -e | -e | -en |
+| -i hâli | -en | -e | -e | -en |
+| -e hâli | -en | -en | -en | -en |
+| artikelsiz (yalın) | -er | -e | -es | -e |
 
-**Örnek:** Der **freundliche** Mann gibt dem **kleinen** Kind **frisches** Obst. (Güler yüzlü adam küçük çocuğa taze meyve verir.)`,
+**Unutma:**
+- Hatırlatma: yalın/-i hâlinde yalnızca eril -i hâli „farklıdır" (-en).
+- -e hâli = **her zaman -en**.
+- Artikelsizde artikel eki sıfata „sıçrar".
+
+**Örnekler:**
+- Der **freundliche** Mann gibt dem **kleinen** Kind **frisches** Obst. (Güler yüzlü adam küçük çocuğa taze meyve verir.)
+- Ich kaufe einen **roten** Apfel und **frische** Milch. (Kırmızı bir elma ve taze süt alıyorum.)
+- Mit **gutem** Wein schmeckt das Essen besser. (İyi şarapla yemek daha güzel olur.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9912,34 +11007,67 @@ Belirli artikelden sonra kısa genel bakış + artikelsiz özel durum:
       grammarTopic: '"obwohl" (Konzessivsatz)',
       explanationDe: `## „obwohl" (Konzessivsatz)
 
-**„obwohl"** (although) nennt einen **Gegengrund/Widerspruch**. Es leitet einen Nebensatz ein — das **Verb steht am Ende**.
+**„obwohl"** (although/even though) nennt einen **unerwarteten Gegensatz**: Etwas passiert, obwohl man das Gegenteil erwartet. Es leitet einen Nebensatz ein, also steht das **Verb am Ende**.
+
+Wichtig ist der Unterschied zu **„trotzdem"**: „obwohl" ist eine **Konjunktion** (Nebensatz, Verb am Ende), „trotzdem" ist ein **Adverb** (Hauptsatz, Verb auf Position 2). Beide drücken denselben Gegensatz aus.
 
 | Hauptsatz | Nebensatz mit „obwohl" |
 | ---- | ---- |
 | Ich gehe spazieren, | obwohl es **regnet**. |
 | Er kauft es, | obwohl es teuer **ist**. |
+| Sie ist fit, | obwohl sie nie **trainiert**. |
 
-**Beispiel:** Ich gehe spazieren, **obwohl** es **regnet**.`,
+**Merke:**
+- „obwohl" = Konjunktion → **Verb am Ende**.
+- Gleicher Sinn mit „trotzdem" (Adverb): *Es regnet. Trotzdem gehe ich spazieren.*
+- Vor „obwohl" steht ein **Komma**.
+
+**Beispiele:**
+- Ich gehe spazieren, **obwohl** es **regnet**.
+- **Obwohl** er müde **war**, arbeitete er weiter.
+- Sie kauft das Auto, **obwohl** es teuer **ist**.`,
       explanationEn: `## "obwohl" (concessive clause)
 
-**"obwohl"** (although) gives a **counter-reason/contradiction**. It introduces a subordinate clause — the **verb goes to the end**.
+**"obwohl"** (although/even though) states an **unexpected contrast**: something happens even though you'd expect the opposite. It introduces a subordinate clause, so the **verb goes to the end**.
+
+Note the difference from **"trotzdem"**: "obwohl" is a **conjunction** (clause, verb at the end), "trotzdem" is an **adverb** (main clause, verb in position 2). Both express the same contrast.
 
 | Main clause | Clause with "obwohl" |
 | ---- | ---- |
 | Ich gehe spazieren, | obwohl es **regnet**. (although it's raining) |
 | Er kauft es, | obwohl es teuer **ist**. (although it's expensive) |
+| Sie ist fit, | obwohl sie nie **trainiert**. (although she never trains) |
 
-**Example:** Ich gehe spazieren, **obwohl** es **regnet**. (I go for a walk although it's raining.)`,
+**Note:**
+- "obwohl" = conjunction → **verb at the end**.
+- Same meaning with "trotzdem" (adverb): *Es regnet. Trotzdem gehe ich spazieren.*
+- A **comma** comes before "obwohl".
+
+**Examples:**
+- Ich gehe spazieren, **obwohl** es **regnet**. (I go for a walk although it's raining.)
+- **Obwohl** er müde **war**, arbeitete er weiter. (Although he was tired, he kept working.)
+- Sie kauft das Auto, **obwohl** es teuer **ist**. (She buys the car although it's expensive.)`,
       explanationTr: `## „obwohl" (zıtlık cümlesi)
 
-**„obwohl"** (her ne kadar) bir **karşı sebep/çelişki** bildirir. Bir yan cümle başlatır — **fiil sona** gider.
+**„obwohl"** (her ne kadar / -e rağmen) **beklenmedik bir zıtlık** bildirir: insanın tersini beklediği bir şey yine de olur. Bir yan cümle başlatır, yani **fiil sona** gider.
+
+**„trotzdem"**den farkı önemli: „obwohl" bir **bağlaçtır** (yan cümle, fiil sonda), „trotzdem" ise bir **zarftır** (ana cümle, fiil 2. konumda). İkisi de aynı zıtlığı ifade eder.
 
 | Ana cümle | „obwohl" cümlesi |
 | ---- | ---- |
 | Ich gehe spazieren, | obwohl es **regnet**. (yağmur yağmasına rağmen) |
 | Er kauft es, | obwohl es teuer **ist**. (pahalı olmasına rağmen) |
+| Sie ist fit, | obwohl sie nie **trainiert**. (hiç antrenman yapmamasına rağmen) |
 
-**Örnek:** Ich gehe spazieren, **obwohl** es **regnet**. (Yağmur yağmasına rağmen yürüyüşe çıkıyorum.)`,
+**Unutma:**
+- „obwohl" = bağlaç → **fiil sonda**.
+- „trotzdem" (zarf) ile aynı anlam: *Es regnet. Trotzdem gehe ich spazieren.*
+- „obwohl"dan önce **virgül** vardır.
+
+**Örnekler:**
+- Ich gehe spazieren, **obwohl** es **regnet**. (Yağmur yağmasına rağmen yürüyüşe çıkıyorum.)
+- **Obwohl** er müde **war**, arbeitete er weiter. (Yorgun olmasına rağmen çalışmaya devam etti.)
+- Sie kauft das Auto, **obwohl** es teuer **ist**. (Araba pahalı olmasına rağmen onu alıyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -9970,34 +11098,73 @@ Belirli artikelden sonra kısa genel bakış + artikelsiz özel durum:
       grammarTopic: '"während" (Temporal/Gegensatz)',
       explanationDe: `## „während" (Temporal/Gegensatz)
 
-**„während"** hat zwei Bedeutungen. Immer als Nebensatz mit **Verb am Ende**.
+**„während"** kann zwei Dinge ausdrücken. In beiden Fällen ist es eine **Konjunktion** → das **Verb steht am Ende**.
+
+1. **Gleichzeitigkeit** (while): Zwei Handlungen passieren zur selben Zeit.
+2. **Gegensatz** (whereas): Zwei Situationen werden gegenübergestellt.
+
+Merke: „während" kann auch **Präposition** mit Genitiv sein (*während des Tages*). Als **Konjunktion** folgt ein ganzer Nebensatz mit Verb am Ende.
 
 | Bedeutung | Beispiel |
 | ---- | ---- |
-| Gleichzeitigkeit (while) | Während ich **koche**, liest sie. |
-| Gegensatz (whereas) | Er ist ruhig, während sie laut **ist**. |
+| Gleichzeitigkeit | Während ich **koche**, liest sie. |
+| Gegensatz | Er ist ruhig, während sie laut **ist**. |
 
-**Beispiel:** **Während** ich **koche**, liest sie ein Buch.`,
+**Merke:**
+- Konjunktion „während" → Verb am **Ende** (+ Komma).
+- Präposition „während" → **Genitiv** (*während der Woche*).
+- Für Gegensatz sind auch „aber" oder „wohingegen" möglich.
+
+**Beispiele:**
+- **Während** ich **koche**, deckt er den Tisch.
+- **Während** meine Schwester gern liest, sehe ich lieber fern.
+- Er telefonierte, **während** er **fuhr**.`,
       explanationEn: `## "während" (temporal/contrast)
 
-**"während"** has two meanings. Always a subordinate clause with the **verb at the end**.
+**"während"** can express two things. In both cases it is a **conjunction** → the **verb goes to the end**.
+
+1. **Simultaneity** (while): two actions happen at the same time.
+2. **Contrast** (whereas): two situations are contrasted.
+
+Note: "während" can also be a **preposition** with the genitive (*während des Tages*). As a **conjunction** it is followed by a full clause with the verb at the end.
 
 | Meaning | Example |
 | ---- | ---- |
-| simultaneity (while) | Während ich **koche**, liest sie. |
-| contrast (whereas) | Er ist ruhig, während sie laut **ist**. |
+| simultaneity | Während ich **koche**, liest sie. |
+| contrast | Er ist ruhig, während sie laut **ist**. |
 
-**Example:** **Während** ich **koche**, liest sie ein Buch. (While I cook, she reads a book.)`,
+**Note:**
+- Conjunction "während" → verb at the **end** (+ comma).
+- Preposition "während" → **genitive** (*während der Woche*).
+- For contrast, "aber" or "wohingegen" also work.
+
+**Examples:**
+- **Während** ich **koche**, deckt er den Tisch. (While I cook, he sets the table.)
+- **Während** meine Schwester gern liest, sehe ich lieber fern. (Whereas my sister likes reading, I prefer TV.)
+- Er telefonierte, **während** er **fuhr**. (He was on the phone while driving.)`,
       explanationTr: `## „während" (zaman/zıtlık)
 
-**„während"** iki anlama gelir. Her zaman **fiil sonda** olan bir yan cümledir.
+**„während"** iki şey ifade edebilir. Her iki durumda da bir **bağlaçtır** → **fiil sona** gider.
+
+1. **Eşzamanlılık** (iken): İki eylem aynı anda olur.
+2. **Zıtlık** (oysa): İki durum karşılaştırılır.
+
+Not: „während" aynı zamanda **Genitiv'li edat** da olabilir (*während des Tages*). **Bağlaç** olarak ardından fiili sonda olan tam bir yan cümle gelir.
 
 | Anlam | Örnek |
 | ---- | ---- |
-| eşzamanlılık (iken) | Während ich **koche**, liest sie. |
-| zıtlık (oysa) | Er ist ruhig, während sie laut **ist**. |
+| eşzamanlılık | Während ich **koche**, liest sie. |
+| zıtlık | Er ist ruhig, während sie laut **ist**. |
 
-**Örnek:** **Während** ich **koche**, liest sie ein Buch. (Ben yemek yaparken o kitap okuyor.)`,
+**Unutma:**
+- Bağlaç „während" → fiil **sonda** (+ virgül).
+- Edat „während" → **Genitiv** (*während der Woche*).
+- Zıtlık için „aber" ya da „wohingegen" de olur.
+
+**Örnekler:**
+- **Während** ich **koche**, deckt er den Tisch. (Ben yemek yaparken o sofrayı kuruyor.)
+- **Während** meine Schwester gern liest, sehe ich lieber fern. (Kız kardeşim okumayı severken ben televizyonu tercih ederim.)
+- Er telefonierte, **während** er **fuhr**. (Araba kullanırken telefonla konuşuyordu.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10028,34 +11195,64 @@ Belirli artikelden sonra kısa genel bakış + artikelsiz özel durum:
       grammarTopic: '"nachdem" (Vorzeitigkeit) – Wiederholung',
       explanationDe: `## „nachdem" (Vorzeitigkeit) – Wiederholung
 
-**„nachdem"** zeigt, dass eine Handlung **vor** einer anderen passiert. Beachte den **Zeitenwechsel**: nachdem-Satz eine Stufe früher.
+**„nachdem"** (after) verbindet zwei Handlungen und zeigt: Die eine passiert **vor** der anderen. Typisch ist der **Zeitenwechsel** – der „nachdem"-Satz steht eine Zeitstufe früher.
 
-| nachdem-Satz | Hauptsatz |
+| Hauptsatz-Zeit | nachdem-Satz (früher) |
 | ---- | ---- |
-| Plusquamperfekt (hatte/war …) | Präteritum |
-| Nachdem wir **gegessen hatten**, | **räumten** wir auf. |
+| Präteritum / Perfekt | Plusquamperfekt |
+| Präsens | Perfekt |
 
-**Beispiel:** **Nachdem** wir **gegessen hatten**, räumten wir auf.`,
+Beispiel-Struktur: *Nachdem wir **gegessen hatten** (Plusquamperfekt), **räumten** wir auf (Präteritum).*
+
+**Merke:**
+- „nachdem" → **Verb am Ende** (Nebensatz).
+- Zwei Zeitstufen: früher = Plusquamperfekt/Perfekt, später = Präteritum/Präsens.
+- Gegenteil: **„bevor"** (die zweite Handlung zuerst genannt).
+
+**Beispiele:**
+- **Nachdem** wir **gegessen hatten**, räumten wir auf.
+- **Nachdem** ich **geduscht habe**, frühstücke ich. (Präsens/Perfekt)
+- Er ging nach Hause, **nachdem** die Party **zu Ende war**.`,
       explanationEn: `## "nachdem" (anteriority) – review
 
-**"nachdem"** (after) shows one action happens **before** another. Note the **tense shift**: the nachdem-clause is one step earlier.
+**"nachdem"** (after) links two actions and shows: one happens **before** the other. Typical is the **tense shift** – the "nachdem"-clause is one step earlier.
 
-| nachdem-clause | main clause |
+| Main clause tense | nachdem-clause (earlier) |
 | ---- | ---- |
-| past perfect (hatte/war …) | Präteritum |
-| Nachdem wir **gegessen hatten**, | **räumten** wir auf. |
+| Präteritum / Perfekt | past perfect |
+| present | Perfekt |
 
-**Example:** **Nachdem** wir **gegessen hatten**, räumten wir auf. (After we had eaten, we cleaned up.)`,
+Structure: *Nachdem wir **gegessen hatten** (past perfect), **räumten** wir auf (Präteritum).*
+
+**Note:**
+- "nachdem" → **verb at the end** (subordinate clause).
+- Two time steps: earlier = past perfect/Perfekt, later = Präteritum/present.
+- Opposite: **"bevor"** (the second action mentioned first).
+
+**Examples:**
+- **Nachdem** wir **gegessen hatten**, räumten wir auf. (After we had eaten, we cleaned up.)
+- **Nachdem** ich **geduscht habe**, frühstücke ich. (present/Perfekt – After I've showered, I have breakfast.)
+- Er ging nach Hause, **nachdem** die Party **zu Ende war**. (He went home after the party had ended.)`,
       explanationTr: `## „nachdem" (öncelik) – tekrar
 
-**„nachdem"** bir eylemin diğerinden **önce** olduğunu gösterir. **Zaman kaymasına** dikkat: nachdem cümlesi bir basamak daha erken.
+**„nachdem"** (-dikten sonra) iki eylemi bağlar ve gösterir: biri diğerinden **önce** olur. Tipik olan **zaman kaymasıdır** – „nachdem" cümlesi bir zaman basamağı daha erkendir.
 
-| nachdem cümlesi | Ana cümle |
+| Ana cümle zamanı | nachdem cümlesi (daha erken) |
 | ---- | ---- |
-| Plusquamperfekt (hatte/war …) | Präteritum |
-| Nachdem wir **gegessen hatten**, | **räumten** wir auf. |
+| Präteritum / Perfekt | Plusquamperfekt |
+| Präsens | Perfekt |
 
-**Örnek:** **Nachdem** wir **gegessen hatten**, räumten wir auf. (Yemek yedikten sonra toparladık.)`,
+Yapı: *Nachdem wir **gegessen hatten** (Plusquamperfekt), **räumten** wir auf (Präteritum).*
+
+**Unutma:**
+- „nachdem" → **fiil sonda** (yan cümle).
+- İki zaman basamağı: erken = Plusquamperfekt/Perfekt, geç = Präteritum/Präsens.
+- Karşıtı: **„bevor"** (ikinci eylem önce söylenir).
+
+**Örnekler:**
+- **Nachdem** wir **gegessen hatten**, räumten wir auf. (Yemek yedikten sonra toparladık.)
+- **Nachdem** ich **geduscht habe**, frühstücke ich. (Präsens/Perfekt – Duş aldıktan sonra kahvaltı ederim.)
+- Er ging nach Hause, **nachdem** die Party **zu Ende war**. (Parti bittikten sonra eve gitti.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10086,37 +11283,61 @@ Belirli artikelden sonra kısa genel bakış + artikelsiz özel durum:
       grammarTopic: 'Übung: obwohl / während / nachdem',
       explanationDe: `## Übung: obwohl / während / nachdem
 
-Alle drei sind **Nebensatz-Konjunktionen** (Verb am Ende):
+Alle drei sind **subordinierende Konjunktionen** → **Verb am Ende** + Komma. Sie unterscheiden sich in der Bedeutung und in der Zeit.
 
-| Konjunktion | Bedeutung |
-| ---- | ---- |
-| obwohl | Gegensatz (although) |
-| während | Gleichzeitigkeit/Gegensatz (while) |
-| nachdem | Vorzeitigkeit (after) |
+| Konjunktion | Bedeutung | Besonderheit |
+| ---- | ---- | ---- |
+| obwohl | Gegensatz (although) | wie „trotzdem" (Adverb) |
+| während | Gleichzeitigkeit/Gegensatz | auch Präposition + Genitiv |
+| nachdem | Vorzeitigkeit (after) | Zeitenwechsel (Plusquamperf.) |
 
-**Beispiel:** **Obwohl** es regnete, gingen wir spazieren, **nachdem** wir gegessen **hatten**.`,
+**Merke:**
+- „obwohl" ≙ „trotzdem", aber andere Wortstellung.
+- „nachdem" braucht meist **Plusquamperfekt** im Nebensatz.
+- Steht der Nebensatz vorn: Komma, dann **Verb** im Hauptsatz.
+
+**Beispiele:**
+- **Obwohl** es regnete, gingen wir spazieren, **nachdem** wir gegessen **hatten**.
+- **Während** ich arbeitete, spielten die Kinder.
+- **Nachdem** der Film **zu Ende war**, diskutierten wir lange.`,
       explanationEn: `## Practice: obwohl / während / nachdem
 
-All three are **subordinating conjunctions** (verb at the end):
+All three are **subordinating conjunctions** → **verb at the end** + comma. They differ in meaning and in tense.
 
-| Conjunction | Meaning |
-| ---- | ---- |
-| obwohl | contrast (although) |
-| während | simultaneity/contrast (while) |
-| nachdem | anteriority (after) |
+| Conjunction | Meaning | Special feature |
+| ---- | ---- | ---- |
+| obwohl | contrast (although) | like "trotzdem" (adverb) |
+| während | simultaneity/contrast | also preposition + genitive |
+| nachdem | anteriority (after) | tense shift (past perfect) |
 
-**Example:** **Obwohl** es regnete, gingen wir spazieren, **nachdem** wir gegessen **hatten**. (Although it rained, we went for a walk after we had eaten.)`,
+**Note:**
+- "obwohl" ≙ "trotzdem", but different word order.
+- "nachdem" usually needs the **past perfect** in the clause.
+- If the clause comes first: comma, then the **verb** in the main clause.
+
+**Examples:**
+- **Obwohl** es regnete, gingen wir spazieren, **nachdem** wir gegessen **hatten**. (Although it rained, we walked after we had eaten.)
+- **Während** ich arbeitete, spielten die Kinder. (While I worked, the children played.)
+- **Nachdem** der Film **zu Ende war**, diskutierten wir lange. (After the film had ended, we discussed for a long time.)`,
       explanationTr: `## Alıştırma: obwohl / während / nachdem
 
-Üçü de **yan cümle bağlacıdır** (fiil sonda):
+Üçü de **yan cümle bağlacıdır** → **fiil sonda** + virgül. Anlamda ve zamanda farklılaşırlar.
 
-| Bağlaç | Anlamı |
-| ---- | ---- |
-| obwohl | zıtlık (rağmen) |
-| während | eşzamanlılık/zıtlık (iken) |
-| nachdem | öncelik (-dikten sonra) |
+| Bağlaç | Anlamı | Özellik |
+| ---- | ---- | ---- |
+| obwohl | zıtlık (rağmen) | „trotzdem" (zarf) gibi |
+| während | eşzamanlılık/zıtlık | ayrıca Genitiv'li edat |
+| nachdem | öncelik (-dikten sonra) | zaman kayması (Plusquamperf.) |
 
-**Örnek:** **Obwohl** es regnete, gingen wir spazieren, **nachdem** wir gegessen **hatten**. (Yağmur yağmasına rağmen, yemek yedikten sonra yürüyüşe çıktık.)`,
+**Unutma:**
+- „obwohl" ≙ „trotzdem", ama farklı dizilim.
+- „nachdem" yan cümlede genellikle **Plusquamperfekt** ister.
+- Yan cümle başta ise: virgül, sonra ana cümlede **fiil**.
+
+**Örnekler:**
+- **Obwohl** es regnete, gingen wir spazieren, **nachdem** wir gegessen **hatten**. (Yağmura rağmen, yemek yedikten sonra yürüdük.)
+- **Während** ich arbeitete, spielten die Kinder. (Ben çalışırken çocuklar oynadı.)
+- **Nachdem** der Film **zu Ende war**, diskutierten wir lange. (Film bittikten sonra uzun uzun tartıştık.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10171,31 +11392,64 @@ All three are **subordinating conjunctions** (verb at the end):
       grammarTopic: '"trotzdem" (Adverb, Position 1)',
       explanationDe: `## „trotzdem" (Adverb, Position 1)
 
-**„trotzdem"** ist ein **Adverb-Konnektor** (kein Nebensatz). Steht es auf **Position 1**, folgt sofort das **Verb** (Position 2), dann das Subjekt.
+**Konnektoren** verbinden zwei Hauptsätze. **„trotzdem"** (nevertheless) drückt einen **Gegensatz** aus – wie „obwohl", aber grammatisch anders: „trotzdem" ist ein **Adverb**, kein Nebensatz-Konnektor.
+
+Wenn „trotzdem" auf **Position 1** steht, gilt die Grundregel des Aussagesatzes: Das **Verb bleibt auf Position 2**, danach kommt das Subjekt. Man kann „trotzdem" auch ins Satzinnere stellen (*Wir gehen trotzdem spazieren*).
 
 | Position 1 | Verb (2) | Subjekt | Rest |
 | ---- | ---- | ---- | ---- |
 | Trotzdem | gehen | wir | spazieren. |
+| Trotzdem | ist | er | zufrieden. |
 
-**Beispiel:** Es regnet. **Trotzdem gehen wir** spazieren.`,
+**Merke:**
+- „trotzdem" = Adverb → Verb auf **Position 2** (kein Verb am Ende!).
+- Gleiche Bedeutung mit „obwohl" (Nebensatz): *Obwohl es regnet, gehen wir spazieren.*
+- „trotzdem" verbindet oft zwei **Hauptsätze**.
+
+**Beispiele:**
+- Es regnet. **Trotzdem gehen wir** spazieren.
+- Er ist krank. **Trotzdem arbeitet er**.
+- Das Essen war teuer. **Trotzdem hat es** nicht geschmeckt.`,
       explanationEn: `## "trotzdem" (adverb, position 1)
 
-**"trotzdem"** (nevertheless) is an **adverbial connector** (not a subordinate clause). In **position 1** the **verb** follows immediately (position 2), then the subject.
+**Connectors** link two main clauses. **"trotzdem"** (nevertheless) expresses a **contrast** – like "obwohl", but grammatically different: "trotzdem" is an **adverb**, not a subordinating connector.
+
+When "trotzdem" is in **position 1**, the basic statement rule applies: the **verb stays in position 2**, then the subject. You can also put "trotzdem" inside the sentence (*Wir gehen trotzdem spazieren*).
 
 | Position 1 | verb (2) | subject | rest |
 | ---- | ---- | ---- | ---- |
 | Trotzdem | gehen | wir | spazieren. |
+| Trotzdem | ist | er | zufrieden. |
 
-**Example:** Es regnet. **Trotzdem gehen wir** spazieren. (It's raining. Nevertheless, we're going for a walk.)`,
+**Note:**
+- "trotzdem" = adverb → verb in **position 2** (not at the end!).
+- Same meaning with "obwohl" (clause): *Obwohl es regnet, gehen wir spazieren.*
+- "trotzdem" often links two **main clauses**.
+
+**Examples:**
+- Es regnet. **Trotzdem gehen wir** spazieren. (It's raining. Nevertheless, we go for a walk.)
+- Er ist krank. **Trotzdem arbeitet er**. (He's sick. He works anyway.)
+- Das Essen war teuer. **Trotzdem hat es** nicht geschmeckt. (The food was expensive. Still, it didn't taste good.)`,
       explanationTr: `## „trotzdem" (zarf, 1. konum)
 
-**„trotzdem"** bir **zarf bağlaçtır** (yan cümle değil). **1. konumda** olduğunda hemen **fiil** gelir (2. konum), sonra özne.
+**Bağlaçlar** iki ana cümleyi bağlar. **„trotzdem"** (yine de) bir **zıtlık** ifade eder – „obwohl" gibi, ama dilbilgisel olarak farklı: „trotzdem" bir **zarftır**, yan cümle bağlacı değil.
+
+„trotzdem" **1. konumda** olduğunda düz cümle kuralı geçerlidir: **fiil 2. konumda kalır**, sonra özne gelir. „trotzdem" cümle içine de konabilir (*Wir gehen trotzdem spazieren*).
 
 | 1. konum | fiil (2) | özne | kalan |
 | ---- | ---- | ---- | ---- |
 | Trotzdem | gehen | wir | spazieren. |
+| Trotzdem | ist | er | zufrieden. |
 
-**Örnek:** Es regnet. **Trotzdem gehen wir** spazieren. (Yağmur yağıyor. Yine de yürüyüşe çıkıyoruz.)`,
+**Unutma:**
+- „trotzdem" = zarf → fiil **2. konumda** (sonda değil!).
+- „obwohl" (yan cümle) ile aynı anlam: *Obwohl es regnet, gehen wir spazieren.*
+- „trotzdem" çoğunlukla iki **ana cümleyi** bağlar.
+
+**Örnekler:**
+- Es regnet. **Trotzdem gehen wir** spazieren. (Yağmur yağıyor. Yine de yürüyüşe çıkıyoruz.)
+- Er ist krank. **Trotzdem arbeitet er**. (Hasta. Yine de çalışıyor.)
+- Das Essen war teuer. **Trotzdem hat es** nicht geschmeckt. (Yemek pahalıydı. Yine de beğenilmedi.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10226,34 +11480,67 @@ All three are **subordinating conjunctions** (verb at the end):
       grammarTopic: '"deshalb" (Konsequenz)',
       explanationDe: `## „deshalb" (Konsequenz)
 
-**„deshalb"** (therefore) nennt eine **Folge/Konsequenz**. Es steht auf **Position 1**, das Verb folgt direkt. (Ähnlich: *deswegen, darum, daher*.)
+**„deshalb"** (therefore/that's why) nennt eine **Folge**: Zuerst kommt der Grund, dann die Konsequenz mit „deshalb". Es ist ein **Adverb** und steht meist auf **Position 1** → das **Verb folgt direkt** (Position 2).
+
+„deshalb" ist quasi das Gegenstück zu „weil": „weil" leitet den **Grund** ein (Nebensatz), „deshalb" leitet die **Folge** ein (Hauptsatz). Ähnliche Wörter: *deswegen, darum, daher, somit*.
 
 | Grund | deshalb + Folge |
 | ---- | ---- |
 | Ich bin krank, | **deshalb bleibe** ich zu Hause. |
 | Es ist spät, | **deshalb gehe** ich schlafen. |
+| Er hat keine Zeit, | **deshalb kommt** er nicht. |
 
-**Beispiel:** Ich bin krank, **deshalb bleibe** ich zu Hause.`,
+**Merke:**
+- „deshalb" = Adverb → Verb auf **Position 2**.
+- „weil" nennt den Grund, „deshalb" nennt die Folge (umgekehrte Reihenfolge).
+- Synonyme: *deswegen, darum, daher*.
+
+**Beispiele:**
+- Ich bin krank, **deshalb bleibe** ich zu Hause.
+- Das Wetter ist schön, **deshalb gehen wir** an den See.
+- Sie hat verschlafen, **deshalb kam sie** zu spät.`,
       explanationEn: `## "deshalb" (consequence)
 
-**"deshalb"** (therefore) states a **consequence**. It takes **position 1**, and the verb follows directly. (Similar: *deswegen, darum, daher*.)
+**"deshalb"** (therefore / that's why) states a **result**: first the reason, then the consequence with "deshalb". It is an **adverb** and usually stands in **position 1** → the **verb follows directly** (position 2).
+
+"deshalb" is basically the counterpart of "weil": "weil" introduces the **reason** (subordinate clause), "deshalb" introduces the **result** (main clause). Similar words: *deswegen, darum, daher, somit*.
 
 | Reason | deshalb + result |
 | ---- | ---- |
 | Ich bin krank, | **deshalb bleibe** ich zu Hause. |
 | Es ist spät, | **deshalb gehe** ich schlafen. |
+| Er hat keine Zeit, | **deshalb kommt** er nicht. |
 
-**Example:** Ich bin krank, **deshalb bleibe** ich zu Hause. (I'm sick, therefore I'm staying home.)`,
+**Note:**
+- "deshalb" = adverb → verb in **position 2**.
+- "weil" gives the reason, "deshalb" gives the result (reversed order).
+- Synonyms: *deswegen, darum, daher*.
+
+**Examples:**
+- Ich bin krank, **deshalb bleibe** ich zu Hause. (I'm sick, that's why I stay home.)
+- Das Wetter ist schön, **deshalb gehen wir** an den See. (The weather's nice, so we go to the lake.)
+- Sie hat verschlafen, **deshalb kam sie** zu spät. (She overslept, that's why she was late.)`,
       explanationTr: `## „deshalb" (sonuç)
 
-**„deshalb"** (bu yüzden) bir **sonuç** bildirir. **1. konumda** yer alır, fiil hemen ardından gelir. (Benzer: *deswegen, darum, daher*.)
+**„deshalb"** (bu yüzden) bir **sonuç** bildirir: önce sebep, sonra „deshalb" ile sonuç gelir. Bir **zarftır** ve genellikle **1. konumda** durur → **fiil hemen** gelir (2. konum).
+
+„deshalb" aslında „weil"in karşılığıdır: „weil" **sebebi** tanıtır (yan cümle), „deshalb" **sonucu** tanıtır (ana cümle). Benzer kelimeler: *deswegen, darum, daher, somit*.
 
 | Sebep | deshalb + sonuç |
 | ---- | ---- |
 | Ich bin krank, | **deshalb bleibe** ich zu Hause. |
 | Es ist spät, | **deshalb gehe** ich schlafen. |
+| Er hat keine Zeit, | **deshalb kommt** er nicht. |
 
-**Örnek:** Ich bin krank, **deshalb bleibe** ich zu Hause. (Hastayım, bu yüzden evde kalıyorum.)`,
+**Unutma:**
+- „deshalb" = zarf → fiil **2. konumda**.
+- „weil" sebebi, „deshalb" sonucu bildirir (ters sıra).
+- Eş anlamlılar: *deswegen, darum, daher*.
+
+**Örnekler:**
+- Ich bin krank, **deshalb bleibe** ich zu Hause. (Hastayım, bu yüzden evde kalıyorum.)
+- Das Wetter ist schön, **deshalb gehen wir** an den See. (Hava güzel, bu yüzden göle gidiyoruz.)
+- Sie hat verschlafen, **deshalb kam sie** zu spät. (Uyuyakaldı, bu yüzden geç kaldı.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10284,34 +11571,67 @@ All three are **subordinating conjunctions** (verb at the end):
       grammarTopic: '"außerdem" und "allerdings"',
       explanationDe: `## „außerdem" und „allerdings"
 
-Zwei weitere Adverb-Konnektoren (Position 1, Verb folgt):
+Zwei weitere Adverb-Konnektoren mit gegensätzlicher Funktion. Beide stehen gern auf **Position 1** (Verb folgt direkt):
 
-| Konnektor | Bedeutung | Beispiel |
+- **„außerdem"** (furthermore) **fügt** ein zusätzliches Argument hinzu – meist in dieselbe Richtung (oft positiv + positiv).
+- **„allerdings"** (however) **schränkt** die vorherige Aussage ein oder bringt einen kleinen Einwand.
+
+| Konnektor | Funktion | Beispiel |
 | ---- | ---- | ---- |
-| außerdem | Ergänzung (furthermore) | Sie ist schön. **Außerdem ist** sie günstig. |
-| allerdings | Einschränkung (however) | Sie ist schön, **allerdings ist** sie weit weg. |
+| außerdem | Ergänzung (+) | Sie ist schön. **Außerdem ist** sie günstig. |
+| allerdings | Einschränkung (–) | Sie ist schön, **allerdings ist** sie weit weg. |
 
-**Beispiel:** Die Wohnung ist schön. **Außerdem ist** sie günstig.`,
+**Merke:**
+- „außerdem" = noch ein Punkt **dazu**.
+- „allerdings" = **aber**, ein Einwand (schwächer als „aber").
+- Beide sind Adverbien → Verb auf **Position 2**.
+
+**Beispiele:**
+- Das Hotel ist zentral. **Außerdem ist** das Frühstück inklusive.
+- Das Handy ist gut, **allerdings ist** der Akku schwach.
+- Ich komme gern. **Allerdings habe ich** nur wenig Zeit.`,
       explanationEn: `## "außerdem" and "allerdings"
 
-Two more adverbial connectors (position 1, verb follows):
+Two more adverbial connectors with opposite functions. Both like to stand in **position 1** (verb follows directly):
 
-| Connector | Meaning | Example |
+- **"außerdem"** (furthermore) **adds** another argument – usually in the same direction (often positive + positive).
+- **"allerdings"** (however) **restricts** the previous statement or adds a small objection.
+
+| Connector | Function | Example |
 | ---- | ---- | ---- |
-| außerdem | addition (furthermore) | Sie ist schön. **Außerdem ist** sie günstig. |
-| allerdings | restriction (however) | Sie ist schön, **allerdings ist** sie weit weg. |
+| außerdem | addition (+) | Sie ist schön. **Außerdem ist** sie günstig. |
+| allerdings | restriction (–) | Sie ist schön, **allerdings ist** sie weit weg. |
 
-**Example:** Die Wohnung ist schön. **Außerdem ist** sie günstig. (The apartment is nice. Furthermore, it's affordable.)`,
+**Note:**
+- "außerdem" = one more point **on top**.
+- "allerdings" = **but**, an objection (softer than "aber").
+- Both are adverbs → verb in **position 2**.
+
+**Examples:**
+- Das Hotel ist zentral. **Außerdem ist** das Frühstück inklusive. (The hotel is central. Also, breakfast is included.)
+- Das Handy ist gut, **allerdings ist** der Akku schwach. (The phone is good, however the battery is weak.)
+- Ich komme gern. **Allerdings habe ich** nur wenig Zeit. (I'll gladly come. However, I have little time.)`,
       explanationTr: `## „außerdem" ve „allerdings"
 
-İki zarf bağlaç daha (1. konum, fiil ardından):
+Karşıt işlevli iki zarf bağlaç daha. İkisi de sıkça **1. konumda** durur (fiil hemen gelir):
 
-| Bağlaç | Anlamı | Örnek |
+- **„außerdem"** (ayrıca) ek bir argüman **ekler** – genellikle aynı yönde (çoğunlukla olumlu + olumlu).
+- **„allerdings"** (ancak) önceki ifadeyi **sınırlar** ya da küçük bir itiraz getirir.
+
+| Bağlaç | İşlev | Örnek |
 | ---- | ---- | ---- |
-| außerdem | ekleme (ayrıca) | Sie ist schön. **Außerdem ist** sie günstig. |
-| allerdings | sınırlama (ancak) | Sie ist schön, **allerdings ist** sie weit weg. |
+| außerdem | ekleme (+) | Sie ist schön. **Außerdem ist** sie günstig. |
+| allerdings | sınırlama (–) | Sie ist schön, **allerdings ist** sie weit weg. |
 
-**Örnek:** Die Wohnung ist schön. **Außerdem ist** sie günstig. (Daire güzel. Ayrıca uygun fiyatlı.)`,
+**Unutma:**
+- „außerdem" = **üstüne** bir nokta daha.
+- „allerdings" = **ama**, bir itiraz („aber"den yumuşak).
+- İkisi de zarftır → fiil **2. konumda**.
+
+**Örnekler:**
+- Das Hotel ist zentral. **Außerdem ist** das Frühstück inklusive. (Otel merkezî. Ayrıca kahvaltı dahil.)
+- Das Handy ist gut, **allerdings ist** der Akku schwach. (Telefon iyi, ancak pili zayıf.)
+- Ich komme gern. **Allerdings habe ich** nur wenig Zeit. (Memnuniyetle gelirim. Ancak çok az vaktim var.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10349,40 +11669,64 @@ Two more adverbial connectors (position 1, verb follows):
       grammarTopic: 'Übung: Konnektoren',
       explanationDe: `## Übung: Konnektoren
 
-Alle vier sind **Adverb-Konnektoren**: Position 1, dann Verb (2), dann Subjekt.
+Alle vier sind **Adverb-Konnektoren**: Auf Position 1 folgt das **Verb (Position 2)**, dann das Subjekt. Sie unterscheiden sich nur in der Bedeutung.
 
-| Konnektor | Bedeutung |
-| ---- | ---- |
-| trotzdem | Gegensatz (nevertheless) |
-| deshalb | Folge (therefore) |
-| außerdem | Ergänzung (furthermore) |
-| allerdings | Einschränkung (however) |
+| Konnektor | Bedeutung | Verwandt mit |
+| ---- | ---- | ---- |
+| trotzdem | Gegensatz (nevertheless) | obwohl (Nebensatz) |
+| deshalb | Folge (therefore) | weil (Nebensatz) |
+| außerdem | Ergänzung (furthermore) | und |
+| allerdings | Einschränkung (however) | aber |
 
-**Beispiel:** Er hat viel Geld, **allerdings ist** er nicht glücklich.`,
+**Merke:**
+- Adverb-Konnektor → **Verb auf Position 2** (nie am Ende).
+- Jeder hat einen Nebensatz-„Partner" (trotzdem↔obwohl, deshalb↔weil).
+- Man kann sie auch ins Satzinnere stellen: *Er ist trotzdem gekommen.*
+
+**Beispiele:**
+- Er hat viel Geld, **allerdings ist** er nicht glücklich.
+- Es war kalt, **trotzdem sind wir** schwimmen gegangen.
+- Ich bin müde, **deshalb gehe ich** früh ins Bett.`,
       explanationEn: `## Practice: connectors
 
-All four are **adverbial connectors**: position 1, then verb (2), then subject.
+All four are **adverbial connectors**: in position 1 the **verb (position 2)** follows, then the subject. They differ only in meaning.
 
-| Connector | Meaning |
-| ---- | ---- |
-| trotzdem | contrast (nevertheless) |
-| deshalb | consequence (therefore) |
-| außerdem | addition (furthermore) |
-| allerdings | restriction (however) |
+| Connector | Meaning | Related to |
+| ---- | ---- | ---- |
+| trotzdem | contrast (nevertheless) | obwohl (clause) |
+| deshalb | consequence (therefore) | weil (clause) |
+| außerdem | addition (furthermore) | und |
+| allerdings | restriction (however) | aber |
 
-**Example:** Er hat viel Geld, **allerdings ist** er nicht glücklich. (He has a lot of money, however he isn't happy.)`,
+**Note:**
+- Adverbial connector → **verb in position 2** (never at the end).
+- Each has a subordinate-clause "partner" (trotzdem↔obwohl, deshalb↔weil).
+- They can also go inside the sentence: *Er ist trotzdem gekommen.*
+
+**Examples:**
+- Er hat viel Geld, **allerdings ist** er nicht glücklich. (He has a lot of money, however he isn't happy.)
+- Es war kalt, **trotzdem sind wir** schwimmen gegangen. (It was cold; nevertheless we went swimming.)
+- Ich bin müde, **deshalb gehe ich** früh ins Bett. (I'm tired, so I go to bed early.)`,
       explanationTr: `## Alıştırma: bağlaçlar
 
-Dördü de **zarf bağlaçtır**: 1. konum, sonra fiil (2), sonra özne.
+Dördü de **zarf bağlaçtır**: 1. konumdan sonra **fiil (2. konum)**, sonra özne gelir. Yalnızca anlamda farklılaşırlar.
 
-| Bağlaç | Anlamı |
-| ---- | ---- |
-| trotzdem | zıtlık (yine de) |
-| deshalb | sonuç (bu yüzden) |
-| außerdem | ekleme (ayrıca) |
-| allerdings | sınırlama (ancak) |
+| Bağlaç | Anlamı | İlişkili |
+| ---- | ---- | ---- |
+| trotzdem | zıtlık (yine de) | obwohl (yan cümle) |
+| deshalb | sonuç (bu yüzden) | weil (yan cümle) |
+| außerdem | ekleme (ayrıca) | und |
+| allerdings | sınırlama (ancak) | aber |
 
-**Örnek:** Er hat viel Geld, **allerdings ist** er nicht glücklich. (Çok parası var, ancak mutlu değil.)`,
+**Unutma:**
+- Zarf bağlaç → **fiil 2. konumda** (asla sonda değil).
+- Her birinin bir yan cümle „ortağı" var (trotzdem↔obwohl, deshalb↔weil).
+- Cümle içine de konabilirler: *Er ist trotzdem gekommen.*
+
+**Örnekler:**
+- Er hat viel Geld, **allerdings ist** er nicht glücklich. (Çok parası var, ancak mutlu değil.)
+- Es war kalt, **trotzdem sind wir** schwimmen gegangen. (Hava soğuktu, yine de yüzmeye gittik.)
+- Ich bin müde, **deshalb gehe ich** früh ins Bett. (Yorgunum, bu yüzden erken yatıyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10431,34 +11775,67 @@ Dördü de **zarf bağlaçtır**: 1. konum, sonra fiil (2), sonra özne.
       grammarTopic: 'Indirekte Rede mit "dass"',
       explanationDe: `## Indirekte Rede mit „dass"
 
-Auf **B1-Niveau** gibt man Gesagtes einfach mit **„dass" + Indikativ** wieder (der Konjunktiv I kommt erst auf C1). Die **Pronomen** ändern sich.
+Bei der **indirekten Rede** gibt man wieder, was jemand gesagt hat – ohne die genauen Worte zu zitieren. Auf **B1-Niveau** benutzt man dafür einfach einen **„dass"-Satz im Indikativ** (der Konjunktiv I kommt erst auf C1).
 
-| Direkte Rede | Indirekte Rede |
+Wichtig ist, dass sich die **Perspektive ändert**: Die **Pronomen** (ich → er/sie) und oft auch Zeit- und Ortsangaben passen sich an. Das Verb steht wie immer im „dass"-Satz **am Ende**.
+
+| Direkte Rede | Indirekte Rede (mit „dass") |
 | ---- | ---- |
 | „Ich bin müde." | Er sagt, dass **er** müde **ist**. |
 | „Wir kommen später." | Sie sagen, dass **sie** später **kommen**. |
+| „Ich habe keine Zeit." | Sie sagt, dass **sie** keine Zeit **hat**. |
 
-**Beispiel:** Er sagt, **dass** er müde **ist**.`,
+**Merke:**
+- Einleitende Verben: *sagen, meinen, erklären, glauben, berichten*.
+- **Pronomen anpassen**: ich → er/sie, mein → sein/ihr.
+- Verb im „dass"-Satz steht **am Ende**.
+
+**Beispiele:**
+- Er sagt, **dass** er müde **ist**.
+- Sie erklärt, **dass** der Kurs morgen **beginnt**.
+- Die Kinder sagen, **dass** sie Hunger **haben**.`,
       explanationEn: `## Reported speech with "dass"
 
-At **B1 level** you simply report speech with **"dass" + indicative** (Konjunktiv I comes at C1). The **pronouns** change.
+In **reported speech** you convey what someone said – without quoting the exact words. At **B1 level** you simply use a **"dass"-clause in the indicative** (Konjunktiv I comes only at C1).
 
-| Direct speech | Reported speech |
+The key point is that the **perspective changes**: the **pronouns** (ich → er/sie) and often time/place words adjust. As always in a "dass"-clause, the verb goes **to the end**.
+
+| Direct speech | Reported speech (with "dass") |
 | ---- | ---- |
 | "Ich bin müde." | Er sagt, dass **er** müde **ist**. |
 | "Wir kommen später." | Sie sagen, dass **sie** später **kommen**. |
+| "Ich habe keine Zeit." | Sie sagt, dass **sie** keine Zeit **hat**. |
 
-**Example:** Er sagt, **dass** er müde **ist**. (He says that he is tired.)`,
+**Note:**
+- Introductory verbs: *sagen, meinen, erklären, glauben, berichten*.
+- **Adjust the pronouns**: ich → er/sie, mein → sein/ihr.
+- The verb in the "dass"-clause goes **to the end**.
+
+**Examples:**
+- Er sagt, **dass** er müde **ist**. (He says that he is tired.)
+- Sie erklärt, **dass** der Kurs morgen **beginnt**. (She explains that the course starts tomorrow.)
+- Die Kinder sagen, **dass** sie Hunger **haben**. (The children say they are hungry.)`,
       explanationTr: `## „dass" ile dolaylı anlatım
 
-**B1 seviyesinde** söylenenler basitçe **„dass" + bildirme kipiyle** aktarılır (Konjunktiv I ancak C1'de gelir). **Zamirler** değişir.
+**Dolaylı anlatımda** birinin söylediği şey – tam sözcükleri alıntılamadan – aktarılır. **B1 seviyesinde** bunun için basitçe **bildirme kipinde bir „dass" cümlesi** kullanılır (Konjunktiv I ancak C1'de gelir).
 
-| Doğrudan anlatım | Dolaylı anlatım |
+Önemli olan **bakış açısının değişmesidir**: **Zamirler** (ich → er/sie) ve çoğu zaman zaman/yer ifadeleri de uyarlanır. „dass" cümlesinde fiil her zamanki gibi **sona** gider.
+
+| Doğrudan anlatım | Dolaylı anlatım („dass" ile) |
 | ---- | ---- |
 | „Ich bin müde." | Er sagt, dass **er** müde **ist**. |
 | „Wir kommen später." | Sie sagen, dass **sie** später **kommen**. |
+| „Ich habe keine Zeit." | Sie sagt, dass **sie** keine Zeit **hat**. |
 
-**Örnek:** Er sagt, **dass** er müde **ist**. (Yorgun olduğunu söylüyor.)`,
+**Unutma:**
+- Giriş fiilleri: *sagen, meinen, erklären, glauben, berichten*.
+- **Zamirleri uyarla**: ich → er/sie, mein → sein/ihr.
+- „dass" cümlesindeki fiil **sona** gider.
+
+**Örnekler:**
+- Er sagt, **dass** er müde **ist**. (Yorgun olduğunu söylüyor.)
+- Sie erklärt, **dass** der Kurs morgen **beginnt**. (Kursun yarın başladığını açıklıyor.)
+- Die Kinder sagen, **dass** sie Hunger **haben**. (Çocuklar aç olduklarını söylüyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10489,37 +11866,70 @@ At **B1 level** you simply report speech with **"dass" + indicative** (Konjunkti
       grammarTopic: 'Nomen-Verb-Verbindungen (1)',
       explanationDe: `## Nomen-Verb-Verbindungen (1)
 
-Feste **Nomen-Verb-Verbindungen** ersetzen oft ein einfaches Verb und klingen formeller.
+**Nomen-Verb-Verbindungen** (auch Funktionsverbgefüge) sind feste Kombinationen aus einem **Nomen** und einem **Verb**, die zusammen eine Bedeutung tragen. Oft könnte man auch ein einfaches Verb sagen, aber die Verbindung klingt **formeller** – typisch für Zeitungen, Behörden und die Arbeitswelt.
+
+Das entscheidende Verb muss man auswendig lernen: Es ist meist **treffen, nehmen, stellen, machen, halten**. Man kann es nicht wörtlich aus dem Türkischen/Englischen übersetzen.
 
 | Verbindung | einfaches Verb |
 | ---- | ---- |
 | eine Entscheidung **treffen** | entscheiden |
 | Rücksicht **nehmen** | rücksichtsvoll sein |
 | eine Frage **stellen** | fragen |
+| einen Fehler **machen** | sich irren |
 
-**Beispiel:** Wir müssen eine Entscheidung **treffen**.`,
+**Merke:**
+- Das **Verb** ist fest – lerne es zusammen mit dem Nomen.
+- Nicht wörtlich übersetzen (nicht *„eine Entscheidung machen"*).
+- Klingt **formeller/schriftlicher** als das einfache Verb.
+
+**Beispiele:**
+- Wir müssen eine Entscheidung **treffen**.
+- Bitte **nimm** Rücksicht auf die Nachbarn.
+- Darf ich eine Frage **stellen**?`,
       explanationEn: `## Verb-noun collocations (1)
 
-Fixed **verb-noun collocations** often replace a simple verb and sound more formal.
+**Verb-noun collocations** are fixed combinations of a **noun** and a **verb** that together carry one meaning. Often a simple verb would also work, but the collocation sounds **more formal** – typical of newspapers, officialdom and the workplace.
+
+You have to memorise the right verb: it is usually **treffen, nehmen, stellen, machen, halten**. You can't translate it literally from English/Turkish.
 
 | Collocation | simple verb |
 | ---- | ---- |
 | eine Entscheidung **treffen** | entscheiden (to decide) |
 | Rücksicht **nehmen** | rücksichtsvoll sein (to be considerate) |
 | eine Frage **stellen** | fragen (to ask) |
+| einen Fehler **machen** | sich irren (to be mistaken) |
 
-**Example:** Wir müssen eine Entscheidung **treffen**. (We have to make a decision.)`,
+**Note:**
+- The **verb** is fixed – learn it together with the noun.
+- Don't translate literally (not *"eine Entscheidung machen"*).
+- Sounds **more formal/written** than the simple verb.
+
+**Examples:**
+- Wir müssen eine Entscheidung **treffen**. (We have to make a decision.)
+- Bitte **nimm** Rücksicht auf die Nachbarn. (Please be considerate of the neighbours.)
+- Darf ich eine Frage **stellen**? (May I ask a question?)`,
       explanationTr: `## İsim-fiil kalıpları (1)
 
-Sabit **isim-fiil kalıpları** genellikle basit bir fiilin yerini alır ve daha resmî durur.
+**İsim-fiil kalıpları**, bir **isim** ile bir **fiilin** birlikte tek bir anlam taşıdığı sabit birleşimlerdir. Çoğu zaman basit bir fiil de kullanılabilir, ama kalıp **daha resmî** durur – gazetelerde, resmî kurumlarda ve iş dünyasında tipiktir.
+
+Doğru fiili ezberlemek gerekir: genellikle **treffen, nehmen, stellen, machen, halten**. Türkçeden/İngilizceden birebir çevrilemez.
 
 | Kalıp | basit fiil |
 | ---- | ---- |
 | eine Entscheidung **treffen** | entscheiden (karar vermek) |
 | Rücksicht **nehmen** | rücksichtsvoll sein (anlayışlı olmak) |
 | eine Frage **stellen** | fragen (sormak) |
+| einen Fehler **machen** | sich irren (yanılmak) |
 
-**Örnek:** Wir müssen eine Entscheidung **treffen**. (Bir karar vermeliyiz.)`,
+**Unutma:**
+- **Fiil** sabittir – isimle birlikte öğren.
+- Birebir çevirme (*„eine Entscheidung machen"* değil).
+- Basit fiilden **daha resmî/yazılı** durur.
+
+**Örnekler:**
+- Wir müssen eine Entscheidung **treffen**. (Bir karar vermeliyiz.)
+- Bitte **nimm** Rücksicht auf die Nachbarn. (Lütfen komşulara karşı anlayışlı ol.)
+- Darf ich eine Frage **stellen**? (Bir soru sorabilir miyim?)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10550,37 +11960,64 @@ Sabit **isim-fiil kalıpları** genellikle basit bir fiilin yerini alır ve daha
       grammarTopic: 'Nomen-Verb-Verbindungen (2)',
       explanationDe: `## Nomen-Verb-Verbindungen (2)
 
-Weitere häufige Verbindungen — oft mit „stehen" oder „üben":
+Viele Nomen-Verb-Verbindungen enthalten eine feste **Präposition** + Nomen + Verb (z. B. *zur Verfügung stehen*, *in Kontakt stehen*). Diese sind besonders in **E-Mails und im Beruf** wichtig. Auch hier gilt: die ganze Wendung als Einheit lernen.
 
 | Verbindung | einfaches Verb |
 | ---- | ---- |
-| Kritik **üben** | kritisieren |
-| in Kontakt **stehen** | kontaktieren |
+| Kritik **üben** (an + Dativ) | kritisieren |
+| in Kontakt **stehen** (mit + Dativ) | kontaktieren |
 | zur Verfügung **stehen** | verfügbar sein |
+| in Frage **kommen** | möglich sein |
 
-**Beispiel:** Das Team **steht** zur Verfügung.`,
+**Merke:**
+- Oft mit fester **Präposition**: *Kritik üben **an***, *in Kontakt bleiben **mit***.
+- „stehen" (Zustand) vs. „stellen" (Handlung): *zur Verfügung **stehen*** vs. *zur Verfügung **stellen***.
+- Sehr nützlich für formelle E-Mails.
+
+**Beispiele:**
+- Das Team **steht** Ihnen zur Verfügung.
+- Wir **stehen** in Kontakt mit dem Kunden.
+- Der Chef **übt** Kritik an dem Plan.`,
       explanationEn: `## Verb-noun collocations (2)
 
-More common collocations — often with "stehen" or "üben":
+Many verb-noun collocations contain a fixed **preposition** + noun + verb (e.g. *zur Verfügung stehen*, *in Kontakt stehen*). These are especially important in **emails and at work**. Again: learn the whole phrase as a unit.
 
 | Collocation | simple verb |
 | ---- | ---- |
-| Kritik **üben** | kritisieren (to criticize) |
-| in Kontakt **stehen** | kontaktieren (to be in contact) |
+| Kritik **üben** (an + dative) | kritisieren (to criticize) |
+| in Kontakt **stehen** (mit + dative) | kontaktieren (to be in contact) |
 | zur Verfügung **stehen** | verfügbar sein (to be available) |
+| in Frage **kommen** | möglich sein (to be possible) |
 
-**Example:** Das Team **steht** zur Verfügung. (The team is available.)`,
+**Note:**
+- Often with a fixed **preposition**: *Kritik üben **an***, *in Kontakt bleiben **mit***.
+- "stehen" (state) vs. "stellen" (action): *zur Verfügung **stehen*** vs. *zur Verfügung **stellen***.
+- Very useful for formal emails.
+
+**Examples:**
+- Das Team **steht** Ihnen zur Verfügung. (The team is at your disposal.)
+- Wir **stehen** in Kontakt mit dem Kunden. (We are in contact with the customer.)
+- Der Chef **übt** Kritik an dem Plan. (The boss criticises the plan.)`,
       explanationTr: `## İsim-fiil kalıpları (2)
 
-Daha fazla yaygın kalıp — genellikle „stehen" veya „üben" ile:
+Birçok isim-fiil kalıbı sabit bir **edat** + isim + fiil içerir (örn. *zur Verfügung stehen*, *in Kontakt stehen*). Bunlar özellikle **e-postalarda ve iş hayatında** önemlidir. Burada da: tüm ifadeyi bir bütün olarak öğren.
 
 | Kalıp | basit fiil |
 | ---- | ---- |
-| Kritik **üben** | kritisieren (eleştirmek) |
-| in Kontakt **stehen** | kontaktieren (iletişimde olmak) |
+| Kritik **üben** (an + Dativ) | kritisieren (eleştirmek) |
+| in Kontakt **stehen** (mit + Dativ) | kontaktieren (iletişimde olmak) |
 | zur Verfügung **stehen** | verfügbar sein (hazır olmak) |
+| in Frage **kommen** | möglich sein (mümkün olmak) |
 
-**Örnek:** Das Team **steht** zur Verfügung. (Ekip hizmete hazır.)`,
+**Unutma:**
+- Çoğunlukla sabit **edatla**: *Kritik üben **an***, *in Kontakt bleiben **mit***.
+- „stehen" (durum) vs. „stellen" (eylem): *zur Verfügung **stehen*** vs. *zur Verfügung **stellen***.
+- Resmî e-postalar için çok faydalı.
+
+**Örnekler:**
+- Das Team **steht** Ihnen zur Verfügung. (Ekip hizmetinizdedir.)
+- Wir **stehen** in Kontakt mit dem Kunden. (Müşteriyle iletişim hâlindeyiz.)
+- Der Chef **übt** Kritik an dem Plan. (Patron planı eleştiriyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10622,7 +12059,15 @@ Ein Überblick über die wichtigsten B1-Themen:
 | Plusquamperfekt | hatte/war + Partizip II |
 | Konnektoren | trotzdem, deshalb, weil, obwohl … |
 
-**Beispiel:** Er sagt, **dass** er krank ist, **deshalb** bleibt er zu Hause.`,
+**Merke:**
+- Nebensatz-Konnektoren (weil, dass, obwohl, während) → **Verb am Ende**.
+- Adverb-Konnektoren (trotzdem, deshalb, außerdem) → **Verb auf Position 2**.
+- Passiv & Plusquamperfekt teilen sich die Hilfsverben werden bzw. hatte/war.
+
+**Beispiele:**
+- Er sagt, **dass** er krank ist, **deshalb** bleibt er zu Hause.
+- Das Haus, **das** 1990 **gebaut wurde**, muss renoviert werden.
+- **Nachdem** ich Deutsch gelernt **hatte**, fand ich einen Job.`,
       explanationEn: `## Final review B1
 
 An overview of the key B1 topics:
@@ -10636,7 +12081,15 @@ An overview of the key B1 topics:
 | Past perfect | hatte/war + past participle |
 | Connectors | trotzdem, deshalb, weil, obwohl … |
 
-**Example:** Er sagt, **dass** er krank ist, **deshalb** bleibt er zu Hause. (He says he's sick, therefore he stays home.)`,
+**Note:**
+- Subordinating connectors (weil, dass, obwohl, während) → **verb at the end**.
+- Adverbial connectors (trotzdem, deshalb, außerdem) → **verb in position 2**.
+- Passive & past perfect share the auxiliaries werden and hatte/war.
+
+**Examples:**
+- Er sagt, **dass** er krank ist, **deshalb** bleibt er zu Hause. (He says he's sick, therefore he stays home.)
+- Das Haus, **das** 1990 **gebaut wurde**, muss renoviert werden. (The house that was built in 1990 must be renovated.)
+- **Nachdem** ich Deutsch gelernt **hatte**, fand ich einen Job. (After I had learned German, I found a job.)`,
       explanationTr: `## B1 kapanış tekrarı
 
 Temel B1 konularına genel bakış:
@@ -10650,7 +12103,15 @@ Temel B1 konularına genel bakış:
 | Plusquamperfekt | hatte/war + Partizip II |
 | Bağlaçlar | trotzdem, deshalb, weil, obwohl … |
 
-**Örnek:** Er sagt, **dass** er krank ist, **deshalb** bleibt er zu Hause. (Hasta olduğunu söylüyor, bu yüzden evde kalıyor.)`,
+**Unutma:**
+- Yan cümle bağlaçları (weil, dass, obwohl, während) → **fiil sonda**.
+- Zarf bağlaçları (trotzdem, deshalb, außerdem) → **fiil 2. konumda**.
+- Edilgen & Plusquamperfekt yardımcı fiilleri paylaşır: werden ve hatte/war.
+
+**Örnekler:**
+- Er sagt, **dass** er krank ist, **deshalb** bleibt er zu Hause. (Hasta olduğunu söylüyor, bu yüzden evde kalıyor.)
+- Das Haus, **das** 1990 **gebaut wurde**, muss renoviert werden. (1990'da inşa edilen ev yenilenmeli.)
+- **Nachdem** ich Deutsch gelernt **hatte**, fand ich einen Job. (Almanca öğrendikten sonra bir iş buldum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10708,7 +12169,15 @@ Bei mehreren Angaben im Mittelfeld gilt die Reihenfolge **TE-KA-MO-LO**:
 | **Mo**dal | wie? | mit dem Auto |
 | **Lo**kal | wohin/wo? | nach Berlin |
 
-**Beispiel:** Ich fahre **heute** **wegen der Ferien** **mit dem Auto** **nach Berlin**.`,
+**Merke:**
+- „Tekamolo" ist nur ein **Merkwort** für die Reihenfolge, keine feste Regel für jeden Satz.
+- Das **Verb** bleibt trotzdem auf **Position 2**; Tekamolo betrifft nur die Angaben dazwischen.
+- Man muss nicht alle vier Angaben verwenden – die **Reihenfolge** der vorhandenen bleibt aber gleich.
+
+**Beispiele:**
+- Ich fahre **heute** **wegen der Ferien** **mit dem Auto** **nach Berlin**.
+- Sie geht **abends** **aus Langeweile** **ins Kino**.
+- Wir bleiben **heute** **wegen des Regens** **zu Hause**.`,
       explanationEn: `## Tekamolo: time before cause
 
 With several adverbials in the middle field, the order is **TE-KA-MO-LO**:
@@ -10720,7 +12189,15 @@ With several adverbials in the middle field, the order is **TE-KA-MO-LO**:
 | **Mo**dal | how? | mit dem Auto |
 | **Lo**kal | where (to)? | nach Berlin |
 
-**Example:** Ich fahre **heute** **wegen der Ferien** **mit dem Auto** **nach Berlin**. (I'm driving to Berlin today because of the holidays by car.)`,
+**Note:**
+- "Tekamolo" is just a **memory word** for the order, not a strict rule for every sentence.
+- The **verb** still stays in **position 2**; Tekamolo only concerns the adverbials in between.
+- You don't need all four adverbials – but the **order** of those present stays the same.
+
+**Examples:**
+- Ich fahre **heute** **wegen der Ferien** **mit dem Auto** **nach Berlin**. (…today because of the holidays by car to Berlin.)
+- Sie geht **abends** **aus Langeweile** **ins Kino**. (She goes to the cinema in the evening out of boredom.)
+- Wir bleiben **heute** **wegen des Regens** **zu Hause**. (We stay home today because of the rain.)`,
       explanationTr: `## Tekamolo: Zaman, Sebep'ten önce
 
 Cümlenin orta alanında birden fazla tümleç varsa sıra **TE-KA-MO-LO**'dur:
@@ -10732,7 +12209,15 @@ Cümlenin orta alanında birden fazla tümleç varsa sıra **TE-KA-MO-LO**'dur:
 | **Mo**dal | nasıl? | mit dem Auto |
 | **Lo**kal | nereye/nerede? | nach Berlin |
 
-**Örnek:** Ich fahre **heute** **wegen der Ferien** **mit dem Auto** **nach Berlin**. (Bugün tatil yüzünden arabayla Berlin'e gidiyorum.)`,
+**Unutma:**
+- „Tekamolo" sıra için sadece bir **hatırlatma kelimesidir**, her cümle için katı bir kural değil.
+- **Fiil** yine de **2. konumda** kalır; Tekamolo yalnızca aradaki tümleçleri ilgilendirir.
+- Dört tümlecin hepsini kullanmak zorunda değilsin – ama var olanların **sırası** aynı kalır.
+
+**Örnekler:**
+- Ich fahre **heute** **wegen der Ferien** **mit dem Auto** **nach Berlin**. (Bugün tatil yüzünden arabayla Berlin'e gidiyorum.)
+- Sie geht **abends** **aus Langeweile** **ins Kino**. (Akşamları can sıkıntısından sinemaya gider.)
+- Wir bleiben **heute** **wegen des Regens** **zu Hause**. (Bugün yağmur yüzünden evde kalıyoruz.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10770,7 +12255,15 @@ Die **Modalangabe** (wie?) steht **vor** der **Lokalangabe** (wohin/wo?).
 | mit dem Zug nach München | nach München mit dem Zug |
 | schnell zur Arbeit | zur Arbeit schnell |
 
-**Beispiel:** Sie fährt **mit dem Zug** **nach München**.`,
+**Merke:**
+- Reihenfolge: **Modal (wie?) vor Lokal (wohin/wo?)**.
+- Modalangabe = Art und Weise oder Mittel (*mit dem Zug, zu Fuß, schnell*).
+- Lokalangabe = Richtung oder Ort (*nach München, zur Arbeit, hier*).
+
+**Beispiele:**
+- Sie fährt **mit dem Zug** **nach München**.
+- Er läuft **schnell** **zur Schule**.
+- Wir gehen **gemütlich** **durch den Park**.`,
       explanationEn: `## Tekamolo: manner before place
 
 The **manner adverbial** (how?) comes **before** the **place adverbial** (where to?).
@@ -10780,7 +12273,15 @@ The **manner adverbial** (how?) comes **before** the **place adverbial** (where 
 | mit dem Zug nach München | nach München mit dem Zug |
 | schnell zur Arbeit | zur Arbeit schnell |
 
-**Example:** Sie fährt **mit dem Zug** **nach München**. (She travels by train to Munich.)`,
+**Note:**
+- Order: **manner (how?) before place (where to?)**.
+- Manner adverbial = way or means (*mit dem Zug, zu Fuß, schnell*).
+- Place adverbial = direction or location (*nach München, zur Arbeit, hier*).
+
+**Examples:**
+- Sie fährt **mit dem Zug** **nach München**. (She travels by train to Munich.)
+- Er läuft **schnell** **zur Schule**. (He runs quickly to school.)
+- Wir gehen **gemütlich** **durch den Park**. (We stroll leisurely through the park.)`,
       explanationTr: `## Tekamolo: Tarz, Yer'den önce
 
 **Tarz tümleci** (nasıl?), **yer tümlecinden** (nereye?) **önce** gelir.
@@ -10790,7 +12291,15 @@ The **manner adverbial** (how?) comes **before** the **place adverbial** (where 
 | mit dem Zug nach München | nach München mit dem Zug |
 | schnell zur Arbeit | zur Arbeit schnell |
 
-**Örnek:** Sie fährt **mit dem Zug** **nach München**. (Trenle Münih'e gidiyor.)`,
+**Unutma:**
+- Sıra: **Tarz (nasıl?), Yer'den (nereye/nerede?) önce**.
+- Tarz tümleci = biçim ya da araç (*mit dem Zug, zu Fuß, schnell*).
+- Yer tümleci = yön ya da konum (*nach München, zur Arbeit, hier*).
+
+**Örnekler:**
+- Sie fährt **mit dem Zug** **nach München**. (Trenle Münih'e gidiyor.)
+- Er läuft **schnell** **zur Schule**. (Okula hızlıca koşar.)
+- Wir gehen **gemütlich** **durch den Park**. (Parkın içinden keyifle yürüyoruz.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10827,7 +12336,15 @@ Ein vollständiger Satz nach dem Muster **Verb (Position 2) → Te → Ka → Mo
 | ---- | ---- | ---- | ---- | ---- |
 | Wir fliegen | morgen | wegen der Konferenz | mit dem Flugzeug | nach Wien. |
 
-**Beispiel:** Wir fliegen **morgen wegen der Konferenz mit dem Flugzeug nach Wien**.`,
+**Merke:**
+- Zuerst das **konjugierte Verb** (Position 2), dann Te → Ka → Mo → Lo.
+- Das **Subjekt** kann vor dem Verb (Position 1) oder direkt danach stehen.
+- Alle vier Angaben zusammen kommen selten vor – aber die Reihenfolge hilft immer.
+
+**Beispiele:**
+- Wir fliegen **morgen wegen der Konferenz mit dem Flugzeug nach Wien**.
+- Ich fahre **am Montag wegen der Arbeit mit dem Bus in die Stadt**.
+- Sie kommt **heute aus Freude zu Fuß nach Hause**.`,
       explanationEn: `## Tekamolo with all four adverbials
 
 A complete sentence following **verb (position 2) → Te → Ka → Mo → Lo**:
@@ -10836,7 +12353,15 @@ A complete sentence following **verb (position 2) → Te → Ka → Mo → Lo**:
 | ---- | ---- | ---- | ---- | ---- |
 | Wir fliegen | morgen | wegen der Konferenz | mit dem Flugzeug | nach Wien. |
 
-**Example:** Wir fliegen **morgen wegen der Konferenz mit dem Flugzeug nach Wien**. (We're flying to Vienna tomorrow because of the conference by plane.)`,
+**Note:**
+- First the **conjugated verb** (position 2), then Te → Ka → Mo → Lo.
+- The **subject** can stand before the verb (position 1) or right after it.
+- All four adverbials together are rare – but the order always helps.
+
+**Examples:**
+- Wir fliegen **morgen wegen der Konferenz mit dem Flugzeug nach Wien**. (We fly to Vienna tomorrow because of the conference by plane.)
+- Ich fahre **am Montag wegen der Arbeit mit dem Bus in die Stadt**. (I go to town on Monday for work by bus.)
+- Sie kommt **heute aus Freude zu Fuß nach Hause**. (She comes home today on foot out of joy.)`,
       explanationTr: `## Dört tümleçle Tekamolo
 
 **Fiil (2. konum) → Te → Ka → Mo → Lo** kalıbına uyan tam bir cümle:
@@ -10845,7 +12370,15 @@ A complete sentence following **verb (position 2) → Te → Ka → Mo → Lo**:
 | ---- | ---- | ---- | ---- | ---- |
 | Wir fliegen | morgen | wegen der Konferenz | mit dem Flugzeug | nach Wien. |
 
-**Örnek:** Wir fliegen **morgen wegen der Konferenz mit dem Flugzeug nach Wien**. (Yarın konferans için uçakla Viyana'ya uçuyoruz.)`,
+**Unutma:**
+- Önce **çekimli fiil** (2. konum), sonra Te → Ka → Mo → Lo.
+- **Özne** fiilden önce (1. konum) ya da hemen sonra durabilir.
+- Dört tümlecin hepsi birlikte nadiren gelir – ama sıra her zaman yardımcı olur.
+
+**Örnekler:**
+- Wir fliegen **morgen wegen der Konferenz mit dem Flugzeug nach Wien**. (Yarın konferans için uçakla Viyana'ya uçuyoruz.)
+- Ich fahre **am Montag wegen der Arbeit mit dem Bus in die Stadt**. (Pazartesi iş için otobüsle şehre gidiyorum.)
+- Sie kommt **heute aus Freude zu Fuß nach Hause**. (Bugün sevinçten yürüyerek eve geliyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -10885,7 +12418,15 @@ Merke die Reihenfolge **Te-Ka-Mo-Lo** — sie hilft, klare, natürliche Sätze z
 | 3. Modal | zu Fuß |
 | 4. Lokal | ins Kino |
 
-**Beispiel:** Ich gehe **heute Abend aus Langeweile zu Fuß ins Kino**.`,
+**Merke:**
+- **Te-Ka-Mo-Lo** = Temporal, Kausal, Modal, Lokal.
+- Beginnt der Satz mit einer Angabe (Position 1), steht das **Verb auf Position 2**, das Subjekt danach.
+- Dativ-Objekt steht meist **vor** den Tekamolo-Angaben (*Ich gebe **dir** morgen das Buch*).
+
+**Beispiele:**
+- Ich gehe **heute Abend aus Langeweile zu Fuß ins Kino**.
+- **Morgen** fahre ich **wegen der Arbeit mit dem Auto ins Büro**.
+- Er ruft **abends immer aus Gewohnheit** an.`,
       explanationEn: `## Final exercise: Tekamolo
 
 Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentences.
@@ -10897,7 +12438,15 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
 | 3. Modal | zu Fuß |
 | 4. Lokal | ins Kino |
 
-**Example:** Ich gehe **heute Abend aus Langeweile zu Fuß ins Kino**. (Tonight, out of boredom, I'm walking to the cinema.)`,
+**Note:**
+- **Te-Ka-Mo-Lo** = Temporal, Kausal, Modal, Lokal.
+- If the sentence starts with an adverbial (position 1), the **verb is in position 2**, subject after it.
+- A dative object usually comes **before** the Tekamolo adverbials (*Ich gebe **dir** morgen das Buch*).
+
+**Examples:**
+- Ich gehe **heute Abend aus Langeweile zu Fuß ins Kino**. (Tonight, out of boredom, I walk to the cinema.)
+- **Morgen** fahre ich **wegen der Arbeit mit dem Auto ins Büro**. (Tomorrow I drive to the office for work by car.)
+- Er ruft **abends immer aus Gewohnheit** an. (He always calls in the evening out of habit.)`,
       explanationTr: `## Kapanış alıştırması: Tekamolo
 
 **Te-Ka-Mo-Lo** sırasını unutma — net ve doğal cümleler kurmaya yardımcı olur.
@@ -10909,7 +12458,15 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
 | 3. Tarz | zu Fuß |
 | 4. Yer | ins Kino |
 
-**Örnek:** Ich gehe **heute Abend aus Langeweile zu Fuß ins Kino**. (Bu akşam can sıkıntısından yürüyerek sinemaya gidiyorum.)`,
+**Unutma:**
+- **Te-Ka-Mo-Lo** = Zaman, Sebep, Tarz, Yer.
+- Cümle bir tümleçle başlarsa (1. konum), **fiil 2. konumda** olur, özne ardından gelir.
+- -e hâlindeki nesne genellikle Tekamolo tümleçlerinden **önce** gelir (*Ich gebe **dir** morgen das Buch*).
+
+**Örnekler:**
+- Ich gehe **heute Abend aus Langeweile zu Fuß ins Kino**. (Bu akşam can sıkıntısından yürüyerek sinemaya gidiyorum.)
+- **Morgen** fahre ich **wegen der Arbeit mit dem Auto ins Büro**. (Yarın iş için arabayla ofise gidiyorum.)
+- Er ruft **abends immer aus Gewohnheit** an. (Akşamları hep alışkanlıktan arar.)`,
     },
   })
   await prisma.exercise.createMany({
