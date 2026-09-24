@@ -4139,12 +4139,48 @@ Gününü anlatırken „haben" ve „sein" ile kurulan Perfekt'i birleştirirsi
       unitId: a2Unit2.id,
       order: 1,
       grammarTopic: 'haben oder sein? (Regel)',
-      explanationDe:
-        'Die meisten Verben bilden das Perfekt mit "haben". Nur Verben der Bewegung (gehen, fahren) oder Zustandsänderung (aufwachen, sterben) sowie "sein" und "bleiben" selbst benutzen "sein". Beispiel: "Ich habe gearbeitet." aber "Ich bin gelaufen."',
-      explanationEn:
-        'Most verbs form the Perfekt with "haben". Only verbs of motion (gehen, fahren) or change of state (aufwachen, sterben), plus "sein" and "bleiben" themselves, use "sein". Example: "Ich habe gearbeitet" (I worked) but "Ich bin gelaufen" (I ran).',
-      explanationTr:
-        'Çoğu fiil Perfekt zamanını "haben" ile kurar. Sadece hareket fiilleri (gehen, fahren) veya durum değişikliği fiilleri (aufwachen, sterben) ile "sein" ve "bleiben" fiillerinin kendisi "sein" kullanır. Örnek: "Ich habe gearbeitet" (Çalıştım) ama "Ich bin gelaufen" (Koştum).',
+      explanationDe: `## haben oder sein? Die Regel
+
+Wie wählst du das richtige Hilfsverb? Die einfache Faustregel:
+
+| Hilfsverb | Wann? | Beispiel |
+| --------- | ----- | -------- |
+| haben | die meisten Verben (auch alle Verben mit Akkusativobjekt) | ich **habe** gearbeitet |
+| sein | Bewegung (gehen, fahren, laufen) | ich **bin** gelaufen |
+| sein | Zustandsänderung (aufwachen, sterben) | er **ist** aufgewacht |
+| sein | „sein" und „bleiben" | ich **bin** geblieben |
+
+Die große Mehrheit der Verben nimmt „haben". Nur die Gruppe der Bewegungs- und Zustandsverben nimmt „sein".
+
+**Beispiele:** Ich **habe** heute viel **gearbeitet**. · Ich **bin** im Park **gelaufen**.`,
+      explanationEn: `## haben or sein? The rule
+
+How do you choose the right auxiliary verb? The simple rule of thumb:
+
+| Auxiliary | When? | Example |
+| --------- | ----- | -------- |
+| haben | most verbs (and all verbs with an accusative object) | ich **habe** gearbeitet |
+| sein | motion (gehen, fahren, laufen) | ich **bin** gelaufen |
+| sein | change of state (aufwachen, sterben) | er **ist** aufgewacht |
+| sein | "sein" and "bleiben" | ich **bin** geblieben |
+
+The vast majority of verbs take "haben". Only the group of motion and change-of-state verbs takes "sein".
+
+**Examples:** Ich **habe** heute viel **gearbeitet**. (I worked a lot today.) · Ich **bin** im Park **gelaufen**. (I ran in the park.)`,
+      explanationTr: `## haben mı sein mı? Kural
+
+Doğru yardımcı fiili nasıl seçersin? Basit kural şu:
+
+| Yardımcı fiil | Ne zaman? | Örnek |
+| --------- | ----- | -------- |
+| haben | fiillerin çoğu (ve akuzatif nesneli tüm fiiller) | ich **habe** gearbeitet |
+| sein | hareket (gehen, fahren, laufen) | ich **bin** gelaufen |
+| sein | durum değişikliği (aufwachen, sterben) | er **ist** aufgewacht |
+| sein | „sein" ve „bleiben" | ich **bin** geblieben |
+
+Fiillerin büyük çoğunluğu „haben" alır. Sadece hareket ve durum değişikliği fiilleri „sein" alır.
+
+**Örnekler:** Ich **habe** heute viel **gearbeitet**. (Bugün çok çalıştım.) · Ich **bin** im Park **gelaufen**. (Parkta koştum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4173,12 +4209,48 @@ Gününü anlatırken „haben" ve „sein" ile kurulan Perfekt'i birleştirirsi
       unitId: a2Unit2.id,
       order: 2,
       grammarTopic: 'Partizip II unregelmäßiger Verben',
-      explanationDe:
-        'Viele unregelmäßige Verben ändern den Stammvokal im Partizip II: schreiben → geschrieben, nehmen → genommen, finden → gefunden. Diese Formen muss man auswendig lernen.',
-      explanationEn:
-        'Many irregular verbs change their stem vowel in the past participle: schreiben → geschrieben (written), nehmen → genommen (taken), finden → gefunden (found). These forms have to be memorized.',
-      explanationTr:
-        'Birçok düzensiz fiil Partizip II biçiminde kök ünlüsünü değiştirir: schreiben → geschrieben (yazılmış), nehmen → genommen (alınmış), finden → gefunden (bulunmuş). Bu biçimler ezbere öğrenilmelidir.',
+      explanationDe: `## Partizip II unregelmäßiger Verben
+
+Unregelmäßige (starke) Verben enden im Partizip II meist auf **-en** und ändern oft den Stammvokal. Diese Formen kannst du nicht ableiten – du musst sie auswendig lernen.
+
+| Infinitiv | Partizip II |
+| --------- | ----------- |
+| schreiben | geschrieben |
+| nehmen | genommen |
+| finden | gefunden |
+| trinken | getrunken |
+| sprechen | gesprochen |
+| essen | gegessen |
+
+**Beispiel:** Ich **habe** einen Brief **geschrieben**. · Er **hat** viel **gesprochen**.`,
+      explanationEn: `## Past participle of irregular verbs
+
+Irregular (strong) verbs usually end in **-en** in the past participle and often change their stem vowel. You cannot derive these forms – you have to memorize them.
+
+| Infinitive | Partizip II |
+| --------- | ----------- |
+| schreiben | geschrieben (written) |
+| nehmen | genommen (taken) |
+| finden | gefunden (found) |
+| trinken | getrunken (drunk) |
+| sprechen | gesprochen (spoken) |
+| essen | gegessen (eaten) |
+
+**Example:** Ich **habe** einen Brief **geschrieben**. (I wrote a letter.) · Er **hat** viel **gesprochen**. (He spoke a lot.)`,
+      explanationTr: `## Düzensiz fiillerin Partizip II biçimi
+
+Düzensiz (güçlü) fiiller Partizip II'de genelde **-en** ile biter ve çoğu zaman kök ünlüsünü değiştirir. Bu biçimleri türetemezsin – ezbere öğrenmen gerekir.
+
+| Mastar | Partizip II |
+| --------- | ----------- |
+| schreiben | geschrieben (yazdı) |
+| nehmen | genommen (aldı) |
+| finden | gefunden (buldu) |
+| trinken | getrunken (içti) |
+| sprechen | gesprochen (konuştu) |
+| essen | gegessen (yedi) |
+
+**Örnek:** Ich **habe** einen Brief **geschrieben**. (Bir mektup yazdım.) · Er **hat** viel **gesprochen**. (Çok konuştu.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4213,12 +4285,45 @@ Gününü anlatırken „haben" ve „sein" ile kurulan Perfekt'i birleştirirsi
       unitId: a2Unit2.id,
       order: 3,
       grammarTopic: 'Trennbare Verben im Perfekt',
-      explanationDe:
-        'Bei trennbaren Verben steht "ge" zwischen Präfix und Stamm: aufstehen → aufgestanden, anrufen → angerufen, mitbringen → mitgebracht. Beispiel: "Ich bin um sieben Uhr aufgestanden."',
-      explanationEn:
-        'With separable-prefix verbs, "ge" is inserted between the prefix and the stem: aufstehen → aufgestanden (got up), anrufen → angerufen (called), mitbringen → mitgebracht (brought along). Example: "Ich bin um sieben Uhr aufgestanden" (I got up at seven o\'clock).',
-      explanationTr:
-        'Ayrılabilen fiillerde "ge" öneki ile gövde arasına girer: aufstehen → aufgestanden (kalktı), anrufen → angerufen (aradı), mitbringen → mitgebracht (yanında getirdi). Örnek: "Ich bin um sieben Uhr aufgestanden" (Saat yedide kalktım).',
+      explanationDe: `## Trennbare Verben im Perfekt
+
+Bei trennbaren Verben (aufstehen, anrufen, mitbringen) steht das **-ge-** des Partizips zwischen Präfix und Stamm: auf**ge**standen, an**ge**rufen. Das ganze Partizip bleibt ein Wort und steht am Satzende.
+
+| Infinitiv | Partizip II |
+| --------- | ----------- |
+| aufstehen | aufgestanden |
+| anrufen | angerufen |
+| mitbringen | mitgebracht |
+| einkaufen | eingekauft |
+| ausgehen | ausgegangen |
+
+**Beispiel:** Ich **bin** um sieben Uhr **aufgestanden**. · Ich **habe** dich gestern **angerufen**.`,
+      explanationEn: `## Separable verbs in the Perfekt
+
+With separable-prefix verbs (aufstehen, anrufen, mitbringen), the **-ge-** of the participle goes between the prefix and the stem: auf**ge**standen, an**ge**rufen. The whole participle stays one word and goes at the end of the sentence.
+
+| Infinitive | Partizip II |
+| --------- | ----------- |
+| aufstehen | aufgestanden (got up) |
+| anrufen | angerufen (called) |
+| mitbringen | mitgebracht (brought along) |
+| einkaufen | eingekauft (shopped) |
+| ausgehen | ausgegangen (went out) |
+
+**Example:** Ich **bin** um sieben Uhr **aufgestanden**. (I got up at seven.) · Ich **habe** dich gestern **angerufen**. (I called you yesterday.)`,
+      explanationTr: `## Ayrılabilen fiiller Perfekt'te
+
+Ayrılabilen önekli fiillerde (aufstehen, anrufen, mitbringen) Partizip'in **-ge-** eki önek ile kök arasına girer: auf**ge**standen, an**ge**rufen. Bütün Partizip tek kelime kalır ve cümle sonunda yer alır.
+
+| Mastar | Partizip II |
+| --------- | ----------- |
+| aufstehen | aufgestanden (kalktı) |
+| anrufen | angerufen (aradı) |
+| mitbringen | mitgebracht (getirdi) |
+| einkaufen | eingekauft (alışveriş yaptı) |
+| ausgehen | ausgegangen (dışarı çıktı) |
+
+**Örnek:** Ich **bin** um sieben Uhr **aufgestanden**. (Saat yedide kalktım.) · Ich **habe** dich gestern **angerufen**. (Dün seni aradım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4247,12 +4352,45 @@ Gününü anlatırken „haben" ve „sein" ile kurulan Perfekt'i birleştirirsi
       unitId: a2Unit2.id,
       order: 4,
       grammarTopic: "Nicht-trennbare & '-ieren'-Verben im Perfekt",
-      explanationDe:
-        'Verben mit den Präfixen be-, ge-, er-, ver-, zer-, ent-, emp- sowie Verben auf "-ieren" bilden das Partizip II OHNE "ge-": besuchen → besucht, studieren → studiert.',
-      explanationEn:
-        'Verbs with the prefixes be-, ge-, er-, ver-, zer-, ent-, emp- and verbs ending in "-ieren" form the past participle WITHOUT "ge-": besuchen → besucht (visited), studieren → studiert (studied).',
-      explanationTr:
-        'be-, ge-, er-, ver-, zer-, ent-, emp- önekli fiiller ve "-ieren" ile biten fiiller Partizip II\'yi "ge-" OLMADAN kurar: besuchen → besucht (ziyaret edildi), studieren → studiert (okundu).',
+      explanationDe: `## Verben ohne „ge-" im Partizip
+
+Zwei Gruppen bilden das Partizip II **ohne** „ge-": untrennbare Verben mit den Präfixen **be-, ge-, er-, ver-, zer-, ent-, emp-** und Verben, die auf **-ieren** enden.
+
+| Infinitiv | Partizip II |
+| --------- | ----------- |
+| besuchen | besucht |
+| verkaufen | verkauft |
+| erklären | erklärt |
+| studieren | studiert |
+| telefonieren | telefoniert |
+
+**Beispiel:** Ich **habe** meine Oma **besucht**. · Ich **habe** Medizin **studiert**.`,
+      explanationEn: `## Verbs without "ge-" in the participle
+
+Two groups form the past participle **without** "ge-": inseparable verbs with the prefixes **be-, ge-, er-, ver-, zer-, ent-, emp-** and verbs ending in **-ieren**.
+
+| Infinitive | Partizip II |
+| --------- | ----------- |
+| besuchen | besucht (visited) |
+| verkaufen | verkauft (sold) |
+| erklären | erklärt (explained) |
+| studieren | studiert (studied) |
+| telefonieren | telefoniert (phoned) |
+
+**Example:** Ich **habe** meine Oma **besucht**. (I visited my grandma.) · Ich **habe** Medizin **studiert**. (I studied medicine.)`,
+      explanationTr: `## Partizip'te „ge-" almayan fiiller
+
+İki grup Partizip II'yi „ge-" **olmadan** kurar: **be-, ge-, er-, ver-, zer-, ent-, emp-** önekli ayrılamayan fiiller ve **-ieren** ile biten fiiller.
+
+| Mastar | Partizip II |
+| --------- | ----------- |
+| besuchen | besucht (ziyaret etti) |
+| verkaufen | verkauft (sattı) |
+| erklären | erklärt (açıkladı) |
+| studieren | studiert (okudu) |
+| telefonieren | telefoniert (telefonla görüştü) |
+
+**Örnek:** Ich **habe** meine Oma **besucht**. (Büyükannemi ziyaret ettim.) · Ich **habe** Medizin **studiert**. (Tıp okudum.)`,
     },
   })
   await prisma.exercise.createMany({
