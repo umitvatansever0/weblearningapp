@@ -5271,12 +5271,36 @@ Yan cümle **başta** da durabilir. O zaman bütün yan cümle 1. pozisyon sayı
       unitId: a2Unit6.id,
       order: 1,
       grammarTopic: "Indirekte Fragen mit 'ob'",
-      explanationDe:
-        'Bei indirekten Ja/Nein-Fragen benutzt man "ob" statt einer direkten Frage. Das Verb steht am Ende: "Weißt du, ob er kommt?" statt "Kommt er?"',
-      explanationEn:
-        'For indirect yes/no questions, use "ob" (whether/if) instead of asking directly. The verb moves to the end: "Weißt du, ob er kommt?" (Do you know whether he\'s coming?) instead of "Kommt er?" (Is he coming?)',
-      explanationTr:
-        'Dolaylı evet/hayır sorularında doğrudan soru yerine "ob" (-ip -ipmediği) kullanılır. Fiil sona gider: "Weißt du, ob er kommt?" (Gelip gelmeyeceğini biliyor musun?) yerine "Kommt er?" (Geliyor mu?)',
+      explanationDe: `## Indirekte Fragen mit „ob"
+
+Eine **indirekte Frage** ist eine höflichere Frage in einem Nebensatz. Bei **Ja/Nein-Fragen** ohne Fragewort benutzt du die Konjunktion **„ob"**. Wie in jedem Nebensatz steht das Verb am Ende.
+
+| Direkte Frage | Indirekte Frage |
+| ------------- | --------------- |
+| Kommt er? | Weißt du, **ob** er **kommt**? |
+| Ist das Geschäft offen? | Ich weiß nicht, **ob** das Geschäft offen **ist**. |
+
+**Beispiel:** Weißt du, **ob** er **kommt**?`,
+      explanationEn: `## Indirect questions with "ob"
+
+An **indirect question** is a more polite question inside a subordinate clause. For **yes/no questions** with no question word, you use the conjunction **"ob"** (whether/if). As in every subordinate clause, the verb goes at the end.
+
+| Direct question | Indirect question |
+| ------------- | --------------- |
+| Kommt er? | Weißt du, **ob** er **kommt**? |
+| Ist das Geschäft offen? | Ich weiß nicht, **ob** das Geschäft offen **ist**. |
+
+**Example:** Weißt du, **ob** er **kommt**? (Do you know whether he's coming?)`,
+      explanationTr: `## „ob" ile dolaylı sorular
+
+**Dolaylı soru**, yan cümle içinde daha kibar bir sorudur. Soru sözcüğü olmayan **evet/hayır sorularında** **„ob"** (-ip -mediği) bağlacını kullanırsın. Her yan cümlede olduğu gibi fiil sona gider.
+
+| Doğrudan soru | Dolaylı soru |
+| ------------- | --------------- |
+| Kommt er? | Weißt du, **ob** er **kommt**? |
+| Ist das Geschäft offen? | Ich weiß nicht, **ob** das Geschäft offen **ist**. |
+
+**Örnek:** Weißt du, **ob** er **kommt**? (Gelip gelmeyeceğini biliyor musun?)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5305,12 +5329,39 @@ Yan cümle **başta** da durabilir. O zaman bütün yan cümle 1. pozisyon sayı
       unitId: a2Unit6.id,
       order: 2,
       grammarTopic: 'Indirekte W-Fragen',
-      explanationDe:
-        'Bei indirekten W-Fragen bleibt das Fragewort (wo, wann, warum, was...) erhalten, aber das Verb wandert ans Ende: "Ich weiß nicht, wo der Bahnhof ist." statt "Wo ist der Bahnhof?"',
-      explanationEn:
-        'In indirect W-questions, the question word (wo, wann, warum, was...) stays, but the verb moves to the end: "Ich weiß nicht, wo der Bahnhof ist" (I don\'t know where the train station is) instead of "Wo ist der Bahnhof?" (Where is the train station?)',
-      explanationTr:
-        'Dolaylı W-sorularında soru sözcüğü (wo, wann, warum, was...) kalır, ama fiil sona gider: "Ich weiß nicht, wo der Bahnhof ist." yerine "Wo ist der Bahnhof?"',
+      explanationDe: `## Indirekte W-Fragen
+
+Hat die Frage ein **Fragewort** (wo, wann, warum, was, wie …), dann bleibt dieses Fragewort erhalten und wird zur Konjunktion. Du brauchst kein „ob". Das Verb steht am Ende.
+
+| Fragewort | Direkte Frage | Indirekte Frage |
+| --------- | ------------- | --------------- |
+| wo | Wo ist der Bahnhof? | Ich weiß nicht, **wo** der Bahnhof **ist**. |
+| warum | Warum bist du traurig? | Sag mir, **warum** du traurig **bist**. |
+| wann | Wann kommt der Bus? | Ich frage mich, **wann** der Bus **kommt**. |
+
+**Beispiel:** Ich weiß nicht, **wo** der Bahnhof **ist**.`,
+      explanationEn: `## Indirect W-questions
+
+If the question has a **question word** (wo, wann, warum, was, wie …), that word stays and becomes the conjunction. You do not need "ob". The verb goes at the end.
+
+| Question word | Direct question | Indirect question |
+| --------- | ------------- | --------------- |
+| wo | Wo ist der Bahnhof? | Ich weiß nicht, **wo** der Bahnhof **ist**. |
+| warum | Warum bist du traurig? | Sag mir, **warum** du traurig **bist**. |
+| wann | Wann kommt der Bus? | Ich frage mich, **wann** der Bus **kommt**. |
+
+**Example:** Ich weiß nicht, **wo** der Bahnhof **ist**. (I don't know where the train station is.)`,
+      explanationTr: `## Dolaylı W-soruları
+
+Soruda bir **soru sözcüğü** varsa (wo, wann, warum, was, wie …), bu sözcük olduğu gibi kalır ve bağlaç haline gelir. „ob"a gerek yoktur. Fiil sona gider.
+
+| Soru sözcüğü | Doğrudan soru | Dolaylı soru |
+| --------- | ------------- | --------------- |
+| wo | Wo ist der Bahnhof? | Ich weiß nicht, **wo** der Bahnhof **ist**. |
+| warum | Warum bist du traurig? | Sag mir, **warum** du traurig **bist**. |
+| wann | Wann kommt der Bus? | Ich frage mich, **wann** der Bus **kommt**. |
+
+**Örnek:** Ich weiß nicht, **wo** der Bahnhof **ist**. (İstasyonun nerede olduğunu bilmiyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5339,12 +5390,42 @@ Yan cümle **başta** da durabilir. O zaman bütün yan cümle 1. pozisyon sayı
       unitId: a2Unit6.id,
       order: 3,
       grammarTopic: 'Einleitende Ausdrücke für indirekte Fragen',
-      explanationDe:
-        'Häufige Einleitungen für indirekte Fragen: "Ich weiß nicht, ob/wann/wo...", "Kannst du mir sagen, ob/wann/wo...?", "Ich frage mich, ob/wann/wo...". Beispiel: "Kannst du mir sagen, wann der Zug fährt?"',
-      explanationEn:
-        'Common phrases that introduce indirect questions: "Ich weiß nicht, ob/wann/wo..." (I don\'t know whether/when/where...), "Kannst du mir sagen, ob/wann/wo...?" (Can you tell me whether/when/where...?), "Ich frage mich, ob/wann/wo..." (I wonder whether/when/where...). Example: "Kannst du mir sagen, wann der Zug fährt?" (Can you tell me when the train leaves?)',
-      explanationTr:
-        'Dolaylı soruları başlatan yaygın ifadeler: "Ich weiß nicht, ob/wann/wo..." (bilmiyorum...), "Kannst du mir sagen, ob/wann/wo...?" (söyleyebilir misin...?), "Ich frage mich, ob/wann/wo..." (merak ediyorum...). Örnek: "Kannst du mir sagen, wann der Zug fährt?" (Trenin ne zaman kalktığını söyleyebilir misin?)',
+      explanationDe: `## Einleitende Ausdrücke
+
+Indirekte Fragen beginnen oft mit einem höflichen **Einleitungssatz**. Danach folgt „ob" (Ja/Nein-Frage) oder ein Fragewort, und das Verb steht am Ende.
+
+| Einleitung | Bedeutung |
+| ---------- | --------- |
+| Ich weiß nicht, … | drückt Unsicherheit aus |
+| Kannst du mir sagen, …? | höfliche Bitte |
+| Weißt du, …? | einfache Nachfrage |
+| Ich frage mich, … | eigenes Nachdenken |
+
+**Beispiel:** **Kannst du mir sagen,** wann der Zug **fährt**?`,
+      explanationEn: `## Introductory phrases
+
+Indirect questions often start with a polite **introductory phrase**. After it comes "ob" (yes/no question) or a question word, and the verb goes at the end.
+
+| Introduction | Meaning |
+| ---------- | --------- |
+| Ich weiß nicht, … | expresses uncertainty |
+| Kannst du mir sagen, …? | polite request |
+| Weißt du, …? | simple query |
+| Ich frage mich, … | wondering to yourself |
+
+**Example:** **Kannst du mir sagen,** wann der Zug **fährt**? (Can you tell me when the train leaves?)`,
+      explanationTr: `## Giriş ifadeleri
+
+Dolaylı sorular çoğu zaman kibar bir **giriş cümlesiyle** başlar. Ardından „ob" (evet/hayır sorusu) ya da bir soru sözcüğü gelir ve fiil sona gider.
+
+| Giriş | Anlamı |
+| ---------- | --------- |
+| Ich weiß nicht, … | belirsizlik belirtir |
+| Kannst du mir sagen, …? | kibar rica |
+| Weißt du, …? | basit soru |
+| Ich frage mich, … | kendi kendine merak etme |
+
+**Örnek:** **Kannst du mir sagen,** wann der Zug **fährt**? (Trenin ne zaman kalktığını söyleyebilir misin?)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5373,12 +5454,42 @@ Yan cümle **başta** da durabilir. O zaman bütün yan cümle 1. pozisyon sayı
       unitId: a2Unit6.id,
       order: 4,
       grammarTopic: 'Direkte in indirekte Fragen umwandeln',
-      explanationDe:
-        'Um eine direkte Frage in eine indirekte umzuwandeln: Ja/Nein-Frage → "ob" + Verb-Ende; W-Frage → Fragewort bleibt + Verb-Ende. "Isst du gern Pizza?" → "Ich möchte wissen, ob du gern Pizza isst."',
-      explanationEn:
-        'To turn a direct question into an indirect one: yes/no question → "ob" + verb-final; W-question → question word stays + verb-final. "Isst du gern Pizza?" (Do you like eating pizza?) → "Ich möchte wissen, ob du gern Pizza isst" (I\'d like to know whether you like eating pizza).',
-      explanationTr:
-        'Doğrudan bir soruyu dolaylıya çevirmek için: evet/hayır sorusu → "ob" + fiil sonda; W-sorusu → soru sözcüğü kalır + fiil sonda. "Isst du gern Pizza?" → "Ich möchte wissen, ob du gern Pizza isst."',
+      explanationDe: `## Direkte in indirekte Fragen umwandeln
+
+So machst du aus einer direkten Frage eine indirekte:
+
+| Fragetyp | Regel |
+| -------- | ----- |
+| Ja/Nein-Frage | Einleitung + **ob** + Verb ans Ende |
+| W-Frage | Einleitung + **Fragewort** + Verb ans Ende |
+
+Das Verb, das direkt vorne stand, wandert nach hinten: „Isst du …?" → „…, ob du … isst".
+
+**Beispiele:** Isst du gern Pizza? → Ich möchte wissen, **ob** du gern Pizza **isst**. · Was möchtest du essen? → Sag mir, **was** du essen **möchtest**.`,
+      explanationEn: `## Turning direct into indirect questions
+
+Here is how to turn a direct question into an indirect one:
+
+| Question type | Rule |
+| -------- | ----- |
+| yes/no question | introduction + **ob** + verb to the end |
+| W-question | introduction + **question word** + verb to the end |
+
+The verb that stood up front moves to the back: "Isst du …?" → "…, ob du … isst".
+
+**Examples:** Isst du gern Pizza? → Ich möchte wissen, **ob** du gern Pizza **isst**. (I'd like to know whether you like pizza.) · Was möchtest du essen? → Sag mir, **was** du essen **möchtest**. (Tell me what you'd like to eat.)`,
+      explanationTr: `## Doğrudan soruyu dolaylıya çevirmek
+
+Bir doğrudan soruyu dolaylıya şöyle çevirirsin:
+
+| Soru tipi | Kural |
+| -------- | ----- |
+| evet/hayır sorusu | giriş + **ob** + fiil sona |
+| W-sorusu | giriş + **soru sözcüğü** + fiil sona |
+
+Önde duran fiil arkaya kayar: „Isst du …?" → „…, ob du … isst".
+
+**Örnekler:** Isst du gern Pizza? → Ich möchte wissen, **ob** du gern Pizza **isst**. (Pizza sevip sevmediğini bilmek isterim.) · Was möchtest du essen? → Sag mir, **was** du essen **möchtest**. (Ne yemek istediğini söyle bana.)`,
     },
   })
   await prisma.exercise.createMany({
