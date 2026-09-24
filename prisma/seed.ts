@@ -1562,12 +1562,42 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
       unitId: a1Unit6.id,
       order: 1,
       grammarTopic: 'Akkusativ-Artikel',
-      explanationDe:
-        'Im Akkusativ ändert sich nur der maskuline Artikel: der → den. Feminin, neutral und Plural bleiben gleich: Ich sehe den Mann / die Frau / das Kind.',
-      explanationEn:
-        'In the accusative, only the masculine article changes: der → den. Feminine, neuter, and plural stay the same: Ich sehe den Mann (I see the man) / die Frau / das Kind.',
-      explanationTr:
-        'Akkusativde sadece eril tanımlık değişir: der → den. Dişil, nötr ve çoğul aynı kalır: Ich sehe den Mann (Adamı görüyorum) / die Frau / das Kind.',
+      explanationDe: `## Der Akkusativ: Artikel
+
+Das Akkusativobjekt ist meist die Person oder Sache, die eine Handlung „empfängt". Nur der **maskuline** Artikel ändert sich – der Rest bleibt gleich.
+
+| Genus | Nominativ | Akkusativ |
+| -------- | --------- | --------- |
+| maskulin | der/ein | **den/einen** |
+| feminin | die/eine | die/eine |
+| neutral | das/ein | das/ein |
+| Plural | die | die |
+
+**Beispiel:** Ich sehe **den** Mann, **die** Frau und **das** Kind.`,
+      explanationEn: `## The accusative: articles
+
+The accusative object is usually the person or thing that "receives" the action. Only the **masculine** article changes – the rest stays the same.
+
+| Gender | Nominative | Accusative |
+| --------- | ---------- | ---------- |
+| masculine | der/ein | **den/einen** |
+| feminine | die/eine | die/eine |
+| neuter | das/ein | das/ein |
+| plural | die | die |
+
+**Example:** Ich sehe **den** Mann, **die** Frau und **das** Kind. (I see the man, the woman and the child.)`,
+      explanationTr: `## Akkusatif: tanımlıklar
+
+Akkusatif nesnesi genelde bir eylemi „alan" kişi ya da nesnedir. Sadece **eril** tanımlık değişir – geri kalanı aynı kalır.
+
+| Cinsiyet | Nominatif | Akkusatif |
+| -------- | --------- | --------- |
+| eril | der/ein | **den/einen** |
+| dişil | die/eine | die/eine |
+| nötr | das/ein | das/ein |
+| çoğul | die | die |
+
+**Örnek:** Ich sehe **den** Mann, **die** Frau und **das** Kind. (Adamı, kadını ve çocuğu görüyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -1596,12 +1626,54 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
       unitId: a1Unit6.id,
       order: 2,
       grammarTopic: 'Akkusativ-Pronomen',
-      explanationDe:
-        'Auch die Personalpronomen ändern sich im Akkusativ: ich→mich, du→dich, er→ihn, sie→sie, es→es, wir→uns, ihr→euch, sie/Sie→sie/Sie.',
-      explanationEn:
-        'Personal pronouns also change in the accusative: ich→mich (me), du→dich (you), er→ihn (him), sie→sie (her), es→es (it), wir→uns (us), ihr→euch (you pl.), sie/Sie→sie/Sie (them/you formal).',
-      explanationTr:
-        'Şahıs zamirleri de akkusativde değişir: ich→mich (beni), du→dich (seni), er→ihn (onu), sie→sie (onu), es→es (onu), wir→uns (bizi), ihr→euch (sizi), sie/Sie→sie/Sie (onları/sizi).',
+      explanationDe: `## Der Akkusativ: Pronomen
+
+Auch die Personalpronomen haben eine Akkusativform. Nur „sie", „es", „Sie" bleiben gleich.
+
+| Nominativ | Akkusativ |
+| --------- | --------- |
+| ich | mich |
+| du | dich |
+| er | ihn |
+| sie | sie |
+| es | es |
+| wir | uns |
+| ihr | euch |
+| sie/Sie | sie/Sie |
+
+**Beispiel:** Ich liebe **dich**. Sie sieht **ihn**. Er versteht **uns** nicht.`,
+      explanationEn: `## The accusative: pronouns
+
+Personal pronouns also have an accusative form. Only "sie", "es" and "Sie" stay the same.
+
+| Nominative | Accusative |
+| ---------- | ---------- |
+| ich | mich (me) |
+| du | dich (you) |
+| er | ihn (him) |
+| sie | sie (her) |
+| es | es (it) |
+| wir | uns (us) |
+| ihr | euch (you pl.) |
+| sie/Sie | sie/Sie (them/you) |
+
+**Example:** Ich liebe **dich**. (I love you.) Sie sieht **ihn**. (She sees him.) Er versteht **uns** nicht. (He doesn't understand us.)`,
+      explanationTr: `## Akkusatif: zamirler
+
+Şahıs zamirlerinin de bir akkusatif biçimi vardır. Sadece „sie", „es" ve „Sie" aynı kalır.
+
+| Nominatif | Akkusatif |
+| --------- | --------- |
+| ich | mich (beni) |
+| du | dich (seni) |
+| er | ihn (onu) |
+| sie | sie (onu) |
+| es | es (onu) |
+| wir | uns (bizi) |
+| ihr | euch (sizi) |
+| sie/Sie | sie/Sie (onları/sizi) |
+
+**Örnek:** Ich liebe **dich**. (Seni seviyorum.) Sie sieht **ihn**. (O, onu görüyor.) Er versteht **uns** nicht. (O bizi anlamıyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -1636,12 +1708,42 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
       unitId: a1Unit6.id,
       order: 3,
       grammarTopic: 'Verben mit Akkusativ',
-      explanationDe:
-        'Viele Verben brauchen ein Akkusativobjekt: haben, brauchen, möchten, kaufen. "Ich brauche einen Stift." "Ich möchte einen Kaffee."',
-      explanationEn:
-        'Many verbs take an accusative object: haben (to have), brauchen (to need), möchten (would like), kaufen (to buy). "Ich brauche einen Stift." (I need a pen.) "Ich möchte einen Kaffee." (I would like a coffee.)',
-      explanationTr:
-        'Birçok fiil akkusativ nesne alır: haben (sahip olmak), brauchen (ihtiyaç duymak), möchten (istemek), kaufen (satın almak). "Ich brauche einen Stift." (Bir kaleme ihtiyacım var.) "Ich möchte einen Kaffee." (Bir kahve istiyorum.)',
+      explanationDe: `## Verben mit Akkusativ
+
+Viele Verben brauchen ein Akkusativobjekt. Nach diesen Verben wird „ein" bei maskulinen Nomen zu **einen**.
+
+| Verb | Beispiel |
+| -------- | -------- |
+| haben | Ich habe **einen** Hund. |
+| brauchen | Ich brauche **einen** Stift. |
+| möchten | Ich möchte **einen** Kaffee. |
+| kaufen | Ich kaufe **einen** Apfel. |
+
+**Beispiel:** Ich brauche **einen** Stift und **eine** Tasche.`,
+      explanationEn: `## Verbs with the accusative
+
+Many verbs need an accusative object. After these verbs, "ein" becomes **einen** with masculine nouns.
+
+| Verb | Example |
+| -------- | -------- |
+| haben (to have) | Ich habe **einen** Hund. |
+| brauchen (to need) | Ich brauche **einen** Stift. |
+| möchten (would like) | Ich möchte **einen** Kaffee. |
+| kaufen (to buy) | Ich kaufe **einen** Apfel. |
+
+**Example:** Ich brauche **einen** Stift und **eine** Tasche. (I need a pen and a bag.)`,
+      explanationTr: `## Akkusatif alan fiiller
+
+Birçok fiil akkusatif nesne alır. Bu fiillerden sonra eril isimlerde „ein" → **einen** olur.
+
+| Fiil | Örnek |
+| -------- | ----- |
+| haben (sahip olmak) | Ich habe **einen** Hund. |
+| brauchen (ihtiyacı olmak) | Ich brauche **einen** Stift. |
+| möchten (istemek) | Ich möchte **einen** Kaffee. |
+| kaufen (satın almak) | Ich kaufe **einen** Apfel. |
+
+**Örnek:** Ich brauche **einen** Stift und **eine** Tasche. (Bir kaleme ve bir çantaya ihtiyacım var.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -1670,12 +1772,39 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
       unitId: a1Unit6.id,
       order: 4,
       grammarTopic: 'Verneinung mit "nicht"',
-      explanationDe:
-        '"nicht" verneint Verben, Adjektive oder ganze Sätze (nicht Nomen mit unbestimmtem Artikel, dafür "kein"): "Ich verstehe das nicht." "Das ist nicht richtig."',
-      explanationEn:
-        '"nicht" negates verbs, adjectives, or whole sentences (not nouns with an indefinite article — use "kein" for that): "Ich verstehe das nicht." (I don\'t understand that.) "Das ist nicht richtig." (That\'s not correct.)',
-      explanationTr:
-        '"nicht" fiilleri, sıfatları ya da tüm cümleyi olumsuz yapar (belirsiz tanımlıklı isimler için değil, onun için "kein" kullanılır): "Ich verstehe das nicht." (Bunu anlamıyorum.) "Das ist nicht richtig." (Bu doğru değil.)',
+      explanationDe: `## Verneinung mit „nicht"
+
+Mit **nicht** verneinst du Verben, Adjektive oder ganze Sätze. „nicht" steht meist am Satzende oder direkt vor dem Wort, das du verneinst.
+
+| Verneint … | Beispiel |
+| ----------- | -------- |
+| ein Verb | Ich verstehe das **nicht**. |
+| ein Adjektiv | Das ist **nicht** richtig. |
+| einen Ort | Er wohnt **nicht** hier. |
+
+**kein oder nicht?** Nomen mit unbestimmtem Artikel verneinst du mit **kein**, alles andere mit **nicht**.`,
+      explanationEn: `## Negation with "nicht"
+
+You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usually goes at the end of the sentence or right before the word you negate.
+
+| Negates … | Example |
+| ---------- | -------- |
+| a verb | Ich verstehe das **nicht**. (I don't understand that.) |
+| an adjective | Das ist **nicht** richtig. (That's not correct.) |
+| a place | Er wohnt **nicht** hier. (He doesn't live here.) |
+
+**kein or nicht?** Negate nouns with an indefinite article using **kein**, everything else with **nicht**.`,
+      explanationTr: `## „nicht" ile olumsuzlama
+
+**nicht** ile fiilleri, sıfatları ya da tüm cümleyi olumsuz yaparsın. „nicht" genellikle cümlenin sonuna ya da olumsuzladığın kelimenin hemen önüne gelir.
+
+| Neyi olumsuzlar | Örnek |
+| --------------- | ----- |
+| bir fiili | Ich verstehe das **nicht**. (Bunu anlamıyorum.) |
+| bir sıfatı | Das ist **nicht** richtig. (Bu doğru değil.) |
+| bir yeri | Er wohnt **nicht** hier. (O burada yaşamıyor.) |
+
+**kein mi, nicht mi?** Belirsiz tanımlıklı isimleri **kein** ile, diğer her şeyi **nicht** ile olumsuz yaparsın.`,
     },
   })
   await prisma.exercise.createMany({
