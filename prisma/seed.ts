@@ -5822,12 +5822,48 @@ Both are past tenses, but they are used differently. As a rule of thumb:
       unitId: a2Unit8.id,
       order: 1,
       grammarTopic: 'Wechselpräpositionen: Wo? = Dativ',
-      explanationDe:
-        'Die neun Wechselpräpositionen sind: in, an, auf, unter, über, vor, hinter, neben, zwischen. Bei der Frage "Wo?" (Position, keine Bewegung) benutzt man den Dativ: "Das Buch liegt auf dem Tisch."',
-      explanationEn:
-        'The nine two-way prepositions are: in, an, auf, unter, über, vor, hinter, neben, zwischen. When answering "Wo?" (location, no movement), use the dative: "Das Buch liegt auf dem Tisch" (The book is lying on the table).',
-      explanationTr:
-        'Dokuz "Wechselpräposition" şunlardır: in, an, auf, unter, über, vor, hinter, neben, zwischen. "Wo?" (konum, hareket yok) sorusuna cevapta Dativ kullanılır: "Das Buch liegt auf dem Tisch" (Kitap masanın üzerinde duruyor).',
+      explanationDe: `## Wechselpräpositionen mit „Wo?" (Dativ)
+
+Es gibt neun Wechselpräpositionen: **in, an, auf, unter, über, vor, hinter, neben, zwischen**. Sie können mit dem Dativ oder mit dem Akkusativ stehen. Wenn du fragst „Wo?" – also nach einer Position ohne Bewegung –, benutzt du den **Dativ**.
+
+Der Artikel im Dativ verändert sich je nach Genus:
+
+| Genus | Nominativ | Dativ |
+| --------- | --------- | ----- |
+| maskulin | der Tisch | dem Tisch |
+| neutral | das Bett | dem Bett |
+| feminin | die Wand | der Wand |
+| Plural | die Regale | den Regalen |
+
+**Beispiele:** Das Buch liegt auf **dem** Tisch. · Die Lampe hängt über **dem** Bett. · Das Bild hängt an **der** Wand.`,
+      explanationEn: `## Two-way prepositions with "Wo?" (dative)
+
+There are nine two-way prepositions: **in, an, auf, unter, über, vor, hinter, neben, zwischen**. They can take the dative or the accusative. When you ask "Wo?" (where?) – that is, about a position with no movement – you use the **dative**.
+
+The article in the dative changes by gender:
+
+| Gender | Nominative | Dative |
+| --------- | --------- | ----- |
+| masculine | der Tisch | dem Tisch |
+| neuter | das Bett | dem Bett |
+| feminine | die Wand | der Wand |
+| plural | die Regale | den Regalen |
+
+**Examples:** Das Buch liegt auf **dem** Tisch. (The book is lying on the table.) · Die Lampe hängt über **dem** Bett. (The lamp hangs over the bed.)`,
+      explanationTr: `## „Wo?" ile Wechselpräpositionen (Dativ)
+
+Dokuz tane Wechselpräposition vardır: **in, an, auf, unter, über, vor, hinter, neben, zwischen**. Bunlar Dativ ya da Akkusativ ile kullanılabilir. „Wo?" (nerede?) diye soruyorsan – yani hareketsiz bir konumdan bahsediyorsan – **Dativ** kullanırsın.
+
+Dativ'de tanımlık, cinse göre değişir:
+
+| Cins | Nominativ | Dativ |
+| --------- | --------- | ----- |
+| eril | der Tisch | dem Tisch |
+| nötr | das Bett | dem Bett |
+| dişil | die Wand | der Wand |
+| çoğul | die Regale | den Regalen |
+
+**Örnekler:** Das Buch liegt auf **dem** Tisch. (Kitap masanın üzerinde duruyor.) · Die Lampe hängt über **dem** Bett. (Lamba yatağın üzerinde asılı.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5856,12 +5892,54 @@ Both are past tenses, but they are used differently. As a rule of thumb:
       unitId: a2Unit8.id,
       order: 2,
       grammarTopic: 'Wechselpräpositionen: Wohin? = Akkusativ',
-      explanationDe:
-        'Bei der Frage "Wohin?" (Richtung, Bewegung) benutzt man den Akkusativ: "Ich lege das Buch auf den Tisch." Das Verb zeigt oft die Bewegung an (legen, stellen, hängen).',
-      explanationEn:
-        'When answering "Wohin?" (direction, movement), use the accusative: "Ich lege das Buch auf den Tisch" (I put the book onto the table). The verb often signals the movement (legen, stellen, hängen).',
-      explanationTr:
-        '"Wohin?" (yön, hareket) sorusuna cevapta Akkusativ kullanılır: "Ich lege das Buch auf den Tisch" (Kitabı masanın üzerine koyuyorum). Fiil genellikle hareketi belirtir (legen, stellen, hängen).',
+      explanationDe: `## Wechselpräpositionen mit „Wohin?" (Akkusativ)
+
+Wenn du fragst „Wohin?" – also nach einer Richtung mit Bewegung –, benutzt du bei den Wechselpräpositionen den **Akkusativ**. Das Verb zeigt oft die Bewegung: **legen, stellen, setzen, hängen**.
+
+Der Artikel im Akkusativ:
+
+| Genus | Nominativ | Akkusativ |
+| --------- | --------- | --------- |
+| maskulin | der Tisch | den Tisch |
+| neutral | das Bett | das Bett |
+| feminin | die Wand | die Wand |
+| Plural | die Regale | die Regale |
+
+Nur im Maskulinum ändert sich der Artikel (der → den).
+
+**Beispiele:** Ich lege das Buch auf **den** Tisch. · Ich stelle die Vase auf **den** Tisch. · Ich hänge das Bild an **die** Wand.`,
+      explanationEn: `## Two-way prepositions with "Wohin?" (accusative)
+
+When you ask "Wohin?" (where to?) – that is, about a direction with movement – the two-way prepositions take the **accusative**. The verb often signals the movement: **legen, stellen, setzen, hängen**.
+
+The article in the accusative:
+
+| Gender | Nominative | Accusative |
+| --------- | --------- | --------- |
+| masculine | der Tisch | den Tisch |
+| neuter | das Bett | das Bett |
+| feminine | die Wand | die Wand |
+| plural | die Regale | die Regale |
+
+Only the masculine article changes (der → den).
+
+**Examples:** Ich lege das Buch auf **den** Tisch. (I put the book onto the table.) · Ich hänge das Bild an **die** Wand. (I hang the picture onto the wall.)`,
+      explanationTr: `## „Wohin?" ile Wechselpräpositionen (Akkusativ)
+
+„Wohin?" (nereye?) diye soruyorsan – yani hareketli bir yönden bahsediyorsan – Wechselpräpositionen **Akkusativ** alır. Fiil çoğu zaman hareketi gösterir: **legen, stellen, setzen, hängen**.
+
+Akkusativ'de tanımlık:
+
+| Cins | Nominativ | Akkusativ |
+| --------- | --------- | --------- |
+| eril | der Tisch | den Tisch |
+| nötr | das Bett | das Bett |
+| dişil | die Wand | die Wand |
+| çoğul | die Regale | die Regale |
+
+Sadece eril tanımlık değişir (der → den).
+
+**Örnekler:** Ich lege das Buch auf **den** Tisch. (Kitabı masanın üzerine koyuyorum.) · Ich hänge das Bild an **die** Wand. (Resmi duvara asıyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5890,12 +5968,42 @@ Both are past tenses, but they are used differently. As a rule of thumb:
       unitId: a2Unit8.id,
       order: 3,
       grammarTopic: 'Wo vs. Wohin: Kontrastübung',
-      explanationDe:
-        'Vergleiche: "Die Vase steht auf dem Tisch." (Wo? = Dativ, Zustand) vs. "Ich stelle die Vase auf den Tisch." (Wohin? = Akkusativ, Bewegung). Das Verb entscheidet oft mit: stehen/liegen/hängen (Zustand) vs. stellen/legen/hängen (Bewegung).',
-      explanationEn:
-        'Compare: "Die Vase steht auf dem Tisch" (Wo? = dative, state) vs. "Ich stelle die Vase auf den Tisch" (Wohin? = accusative, movement). The verb often decides: stehen/liegen/hängen (state) vs. stellen/legen/hängen (movement).',
-      explanationTr:
-        'Karşılaştır: "Die Vase steht auf dem Tisch." (Wo? = Dativ, durum) vs. "Ich stelle die Vase auf den Tisch." (Wohin? = Akkusativ, hareket). Fiil genellikle belirleyicidir: stehen/liegen/hängen (durum) vs. stellen/legen/hängen (hareket).',
+      explanationDe: `## Wo? vs. Wohin? – Kontrast
+
+Bei jedem Satz mit einer Wechselpräposition fragst du dich: geht es um eine **Position** (Wo? → Dativ) oder um eine **Bewegung zu einem Ziel** (Wohin? → Akkusativ)? Oft verrät dir schon das Verb die Antwort: „schwache" Zustandsverben stehen mit Dativ, „starke" Bewegungsverben mit Akkusativ.
+
+| Zustand (Wo? · Dativ) | Bewegung (Wohin? · Akkusativ) |
+| --------------------- | ----------------------------- |
+| stehen | stellen |
+| liegen | legen |
+| sitzen | setzen |
+| hängen | hängen |
+
+**Beispiele:** Die Vase **steht** auf **dem** Tisch. (Wo?) · Ich **stelle** die Vase auf **den** Tisch. (Wohin?)`,
+      explanationEn: `## Wo? vs. Wohin? – contrast
+
+With every sentence that has a two-way preposition, ask yourself: is it about a **position** (Wo? → dative) or a **movement toward a goal** (Wohin? → accusative)? Often the verb already tells you: "weak" position verbs take the dative, "strong" movement verbs take the accusative.
+
+| State (Wo? · dative) | Movement (Wohin? · accusative) |
+| --------------------- | ----------------------------- |
+| stehen (to stand) | stellen (to place upright) |
+| liegen (to lie) | legen (to lay down) |
+| sitzen (to sit) | setzen (to set down) |
+| hängen (to hang) | hängen (to hang up) |
+
+**Examples:** Die Vase **steht** auf **dem** Tisch. (Wo? – The vase stands on the table.) · Ich **stelle** die Vase auf **den** Tisch. (Wohin? – I put the vase onto the table.)`,
+      explanationTr: `## Wo? vs. Wohin? – karşıtlık
+
+Wechselpräposition içeren her cümlede kendine sor: bir **konumdan** mı (Wo? → Dativ) yoksa bir **hedefe doğru harekettten** mi (Wohin? → Akkusativ) bahsediliyor? Çoğu zaman fiil sana cevabı verir: „zayıf" durum fiilleri Dativ, „güçlü" hareket fiilleri Akkusativ alır.
+
+| Durum (Wo? · Dativ) | Hareket (Wohin? · Akkusativ) |
+| --------------------- | ----------------------------- |
+| stehen (dik durmak) | stellen (dik koymak) |
+| liegen (yatık durmak) | legen (yatık koymak) |
+| sitzen (oturmak) | setzen (oturtmak) |
+| hängen (asılı olmak) | hängen (asmak) |
+
+**Örnekler:** Die Vase **steht** auf **dem** Tisch. (Wo? – Vazo masanın üzerinde duruyor.) · Ich **stelle** die Vase auf **den** Tisch. (Wohin? – Vazoyu masanın üzerine koyuyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5929,12 +6037,42 @@ Both are past tenses, but they are used differently. As a rule of thumb:
       unitId: a2Unit8.id,
       order: 4,
       grammarTopic: 'Feste Ausdrücke mit Wechselpräpositionen',
-      explanationDe:
-        'Manche Verben werden fest mit einer Präposition kombiniert, unabhängig von "wo/wohin": warten auf (+Akkusativ), sich freuen auf (+Akkusativ), denken an (+Akkusativ). Beispiel: "Ich warte auf den Bus."',
-      explanationEn:
-        'Some verbs are fixed with a particular preposition, regardless of "wo/wohin": warten auf (+accusative, wait for), sich freuen auf (+accusative, look forward to), denken an (+accusative, think of). Example: "Ich warte auf den Bus" (I\'m waiting for the bus).',
-      explanationTr:
-        'Bazı fiiller "wo/wohin"dan bağımsız olarak belirli bir edatla sabit kullanılır: warten auf (+Akkusativ, beklemek), sich freuen auf (+Akkusativ, dört gözle beklemek), denken an (+Akkusativ, düşünmek). Örnek: "Ich warte auf den Bus" (Otobüsü bekliyorum).',
+      explanationDe: `## Feste Ausdrücke mit Wechselpräpositionen
+
+Manche Verben verbinden sich fest mit einer bestimmten Präposition. Hier hilft die Frage „Wo/Wohin?" **nicht** – der Kasus gehört einfach zum Ausdruck und muss auswendig gelernt werden. Die meisten dieser Verben stehen mit dem Akkusativ.
+
+| Ausdruck | Kasus | Bedeutung |
+| -------- | ----- | --------- |
+| warten auf | Akkusativ | auf etwas warten |
+| sich freuen auf | Akkusativ | Vorfreude |
+| denken an | Akkusativ | im Kopf haben |
+| teilnehmen an | Dativ | dabei sein |
+
+**Beispiele:** Ich warte auf **den** Bus. · Ich freue mich auf **den** Urlaub. · Ich denke an **dich**.`,
+      explanationEn: `## Fixed expressions with two-way prepositions
+
+Some verbs combine firmly with a particular preposition. Here the "Wo/Wohin?" question does **not** help – the case simply belongs to the expression and must be memorized. Most of these verbs take the accusative.
+
+| Expression | Case | Meaning |
+| -------- | ----- | --------- |
+| warten auf | accusative | to wait for |
+| sich freuen auf | accusative | to look forward to |
+| denken an | accusative | to think of |
+| teilnehmen an | dative | to take part in |
+
+**Examples:** Ich warte auf **den** Bus. (I'm waiting for the bus.) · Ich freue mich auf **den** Urlaub. (I'm looking forward to the holiday.) · Ich denke an **dich**. (I'm thinking of you.)`,
+      explanationTr: `## Wechselpräpositionen ile kalıplaşmış ifadeler
+
+Bazı fiiller belirli bir edatla sabit biçimde birleşir. Burada „Wo/Wohin?" sorusu **işe yaramaz** – durum (Kasus) ifadenin bir parçasıdır ve ezberlenmelidir. Bu fiillerin çoğu Akkusativ alır.
+
+| İfade | Durum | Anlamı |
+| -------- | ----- | --------- |
+| warten auf | Akkusativ | beklemek |
+| sich freuen auf | Akkusativ | dört gözle beklemek |
+| denken an | Akkusativ | düşünmek |
+| teilnehmen an | Dativ | katılmak |
+
+**Örnekler:** Ich warte auf **den** Bus. (Otobüsü bekliyorum.) · Ich freue mich auf **den** Urlaub. (Tatili dört gözle bekliyorum.) · Ich denke an **dich**. (Seni düşünüyorum.)`,
     },
   })
   await prisma.exercise.createMany({
