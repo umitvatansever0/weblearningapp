@@ -66,12 +66,48 @@ async function main() {
       unitId: a1Unit.id,
       order: 1,
       grammarTopic: 'Begrüßungsformen',
-      explanationDe:
-        'Man begrüßt sich je nach Tageszeit unterschiedlich: "Guten Morgen" am Morgen, "Guten Tag" tagsüber, "Guten Abend" am Abend. "Hallo" passt informell zu jeder Zeit.',
-      explanationEn:
-        'Greetings differ by time of day: "Guten Morgen" (good morning), "Guten Tag" (good day), "Guten Abend" (good evening). "Hallo" (hello) works informally at any time.',
-      explanationTr:
-        'Selamlaşma günün saatine göre değişir: sabah "Guten Morgen", gün içinde "Guten Tag", akşam "Guten Abend". "Hallo" ise günün her saati kullanılabilecek resmi olmayan bir selamlaşmadır.',
+      explanationDe: `## Begrüßungsformen
+
+Im Deutschen begrüßt man sich je nach Tageszeit. Die höfliche Form beginnt mit „Guten …", informell sagt man einfach „Hallo".
+
+| Tageszeit | Begrüßung |
+| --------- | --------- |
+| morgens | Guten Morgen |
+| tagsüber | Guten Tag |
+| abends | Guten Abend |
+| jederzeit (informell) | Hallo |
+
+**Beispiele:** **Guten Morgen**, Frau Meier! · **Hallo**, wie geht's?
+
+Zum Abschied sagt man **Auf Wiedersehen** (formell) oder **Tschüss** (informell).`,
+      explanationEn: `## Greetings
+
+In German you greet people differently depending on the time of day. The polite form starts with "Guten …", while informally you just say "Hallo".
+
+| Time of day | Greeting |
+| ----------- | -------- |
+| morning | Guten Morgen |
+| daytime | Guten Tag |
+| evening | Guten Abend |
+| any time (informal) | Hallo |
+
+**Examples:** **Guten Morgen**, Frau Meier! (Good morning, Mrs Meier!) · **Hallo**, wie geht's? (Hi, how are you?)
+
+To say goodbye, use **Auf Wiedersehen** (formal) or **Tschüss** (informal).`,
+      explanationTr: `## Selamlaşma biçimleri
+
+Almancada günün saatine göre farklı selamlaşırsın. Kibar biçim „Guten …" ile başlar, samimi biçimde ise sadece „Hallo" dersin.
+
+| Günün saati | Selamlaşma |
+| ----------- | ---------- |
+| sabah | Guten Morgen |
+| gündüz | Guten Tag |
+| akşam | Guten Abend |
+| her zaman (samimi) | Hallo |
+
+**Örnekler:** **Guten Morgen**, Frau Meier! (Günaydın, Meier Hanım!) · **Hallo**, wie geht's? (Selam, nasılsın?)
+
+Vedalaşırken **Auf Wiedersehen** (resmi) ya da **Tschüss** (samimi) dersin.`,
     },
   })
 
@@ -101,12 +137,54 @@ async function main() {
       unitId: a1Unit.id,
       order: 2,
       grammarTopic: "Verb 'sein' im Präsens",
-      explanationDe:
-        'Das Verb "sein" wird konjugiert: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Man benutzt es auch, um sich vorzustellen: "Ich bin Anna."',
-      explanationEn:
-        'The verb "sein" (to be) conjugates as: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. It is also used to introduce yourself: "Ich bin Anna" (I am Anna).',
-      explanationTr:
-        '"Sein" (olmak) fiili şöyle çekimlenir: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Kendini tanıtmak için de kullanılır: "Ich bin Anna" (Ben Anna\'yım).',
+      explanationDe: `## Das Verb „sein"
+
+„sein" ist unregelmäßig und eines der wichtigsten deutschen Verben. Hier sind die Präsensformen:
+
+| Person | Form |
+| --------- | ---- |
+| ich | bin |
+| du | bist |
+| er/sie/es | ist |
+| wir | sind |
+| ihr | seid |
+| sie/Sie | sind |
+
+**Beispiele:** Ich **bin** Anna. · Wir **sind** müde.
+
+Man benutzt „sein", um sich vorzustellen und Zustände zu beschreiben: Ich **bin** Lehrer.`,
+      explanationEn: `## The verb "sein" (to be)
+
+"sein" is irregular and one of the most important German verbs. Here are its present-tense forms:
+
+| Pronoun | Form |
+| --------- | ---- |
+| ich | bin |
+| du | bist |
+| er/sie/es | ist |
+| wir | sind |
+| ihr | seid |
+| sie/Sie | sind |
+
+**Examples:** Ich **bin** Anna. (I am Anna.) · Wir **sind** müde. (We are tired.)
+
+Use "sein" to introduce yourself and describe states: Ich **bin** Lehrer. (I am a teacher.)`,
+      explanationTr: `## „sein" fiili (olmak)
+
+„sein" düzensiz bir fiildir ve Almancanın en önemli fiillerinden biridir. Geniş zaman çekimi şöyledir:
+
+| Kişi | Biçim |
+| --------- | ----- |
+| ich | bin |
+| du | bist |
+| er/sie/es | ist |
+| wir | sind |
+| ihr | seid |
+| sie/Sie | sind |
+
+**Örnekler:** Ich **bin** Anna. (Ben Anna'yım.) · Wir **sind** müde. (Biz yorgunuz.)
+
+„sein" fiilini kendini tanıtmak ve durum belirtmek için kullanırsın: Ich **bin** Lehrer. (Ben öğretmenim.)`,
     },
   })
 
@@ -153,9 +231,60 @@ async function main() {
       unitId: a1Unit.id,
       order: 3,
       grammarTopic: 'Zahlen 1-10',
-      explanationDe: 'Die Zahlen von 1 bis 10 auf Deutsch: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn.',
-      explanationEn: 'The numbers from 1 to 10 in German: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn.',
-      explanationTr: 'Almanca 1\'den 10\'a kadar sayılar: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn.',
+      explanationDe: `## Die Zahlen 1–10
+
+Das sind die Grundzahlen von 1 bis 10. Du brauchst sie zum Zählen, für Telefonnummern und Preise.
+
+| Ziffer | Wort |
+| ------ | ---- |
+| 1 | eins |
+| 2 | zwei |
+| 3 | drei |
+| 4 | vier |
+| 5 | fünf |
+| 6 | sechs |
+| 7 | sieben |
+| 8 | acht |
+| 9 | neun |
+| 10 | zehn |
+
+**Beispiel:** Ich habe **zwei** Katzen und **drei** Hunde.`,
+      explanationEn: `## Numbers 1–10
+
+These are the cardinal numbers from 1 to 10. You need them for counting, phone numbers and prices.
+
+| Digit | Word |
+| ----- | ---- |
+| 1 | eins |
+| 2 | zwei |
+| 3 | drei |
+| 4 | vier |
+| 5 | fünf |
+| 6 | sechs |
+| 7 | sieben |
+| 8 | acht |
+| 9 | neun |
+| 10 | zehn |
+
+**Example:** Ich habe **zwei** Katzen und **drei** Hunde. (I have two cats and three dogs.)`,
+      explanationTr: `## Sayılar 1–10
+
+Bunlar 1'den 10'a kadar olan sayı adlarıdır. Saymak, telefon numaraları ve fiyatlar için gereklidir.
+
+| Rakam | Sözcük |
+| ----- | ------ |
+| 1 | eins |
+| 2 | zwei |
+| 3 | drei |
+| 4 | vier |
+| 5 | fünf |
+| 6 | sechs |
+| 7 | sieben |
+| 8 | acht |
+| 9 | neun |
+| 10 | zehn |
+
+**Örnek:** Ich habe **zwei** Katzen und **drei** Hunde. (İki kedim ve üç köpeğim var.)`,
     },
   })
 
@@ -185,12 +314,36 @@ async function main() {
       unitId: a1Unit.id,
       order: 4,
       grammarTopic: 'Sich vorstellen (Herkunft und Wohnort)',
-      explanationDe:
-        'Um zu sagen, woher man kommt, benutzt man "kommen aus" + Land. Um zu sagen, wo man wohnt, benutzt man "wohnen in" + Stadt. Beispiel: "Ich komme aus Deutschland. Ich wohne in Berlin."',
-      explanationEn:
-        'To say where you\'re from, use "kommen aus" + country. To say where you live, use "wohnen in" + city. Example: "Ich komme aus Deutschland. Ich wohne in Berlin." (I come from Germany. I live in Berlin.)',
-      explanationTr:
-        'Nereli olduğunuzu söylemek için "kommen aus" + ülke kullanılır. Nerede yaşadığınızı söylemek için "wohnen in" + şehir kullanılır. Örnek: "Ich komme aus Deutschland. Ich wohne in Berlin." (Almanya\'dan geliyorum. Berlin\'de yaşıyorum.)',
+      explanationDe: `## Sich vorstellen: Herkunft und Wohnort
+
+Um zu sagen, woher du kommst, benutzt du **kommen aus** + Land. Um zu sagen, wo du wohnst, benutzt du **wohnen in** + Stadt.
+
+| Frage | Antwort |
+| ----- | ------- |
+| Woher kommst du? | Ich komme **aus** Deutschland. |
+| Wo wohnst du? | Ich wohne **in** Berlin. |
+
+**Beispiel:** Ich **komme aus** der Türkei und **wohne in** München.`,
+      explanationEn: `## Introducing yourself: origin and place of residence
+
+To say where you come from, use **kommen aus** + country. To say where you live, use **wohnen in** + city.
+
+| Question | Answer |
+| -------- | ------ |
+| Woher kommst du? (Where are you from?) | Ich komme **aus** Deutschland. |
+| Wo wohnst du? (Where do you live?) | Ich wohne **in** Berlin. |
+
+**Example:** Ich **komme aus** der Türkei und **wohne in** München. (I come from Turkey and live in Munich.)`,
+      explanationTr: `## Kendini tanıtma: memleket ve yaşanılan yer
+
+Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede yaşadığını söylemek için **wohnen in** + şehir kullanırsın.
+
+| Soru | Cevap |
+| ---- | ----- |
+| Woher kommst du? (Nerelisin?) | Ich komme **aus** Deutschland. |
+| Wo wohnst du? (Nerede yaşıyorsun?) | Ich wohne **in** Berlin. |
+
+**Örnek:** Ich **komme aus** der Türkei und **wohne in** München. (Türkiye'den geliyorum ve Münih'te yaşıyorum.)`,
     },
   })
 
