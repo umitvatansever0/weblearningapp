@@ -6947,12 +6947,42 @@ Bir zaman ifadesini cümlenin **başına** koyarsan, „werden" 2. konuma geçer
       unitId: a2Unit12.id,
       order: 1,
       grammarTopic: 'Berufe: Wortschatz',
-      explanationDe:
-        'Viele Berufsbezeichnungen haben eine maskuline und eine feminine Form, oft mit der Endung "-in": der Lehrer / die Lehrerin, der Arzt / die Ärztin. Beispiel: "Er ist Lehrer. Sie ist Ärztin."',
-      explanationEn:
-        'Many profession names have a masculine and a feminine form, often with the ending "-in": der Lehrer / die Lehrerin (teacher), der Arzt / die Ärztin (doctor). Example: "Er ist Lehrer. Sie ist Ärztin" (He is a teacher. She is a doctor).',
-      explanationTr:
-        'Birçok meslek adının eril ve dişil bir biçimi vardır, genellikle "-in" ekiyle: der Lehrer / die Lehrerin (öğretmen), der Arzt / die Ärztin (doktor). Örnek: "Er ist Lehrer. Sie ist Ärztin" (O bir öğretmen. O bir doktor).',
+      explanationDe: `## Berufe: Wortschatz
+
+Die meisten Berufsbezeichnungen haben eine maskuline und eine feminine Form. Die feminine Form bekommt meist die Endung **-in**; bei manchen Wörtern kommt zusätzlich ein Umlaut (a → ä).
+
+| maskulin | feminin | Bedeutung |
+| -------- | ------- | --------- |
+| der Lehrer | die Lehrerin | öğretmen |
+| der Arzt | die Ärztin | doktor |
+| der Kellner | die Kellnerin | garson |
+| der Verkäufer | die Verkäuferin | satıcı |
+
+**Beispiel:** Er ist **Lehrer**. Sie ist **Ärztin**.`,
+      explanationEn: `## Professions: vocabulary
+
+Most job titles have a masculine and a feminine form. The feminine form usually takes the ending **-in**; with some words an umlaut is added as well (a → ä).
+
+| masculine | feminine | Meaning |
+| -------- | ------- | --------- |
+| der Lehrer | die Lehrerin | teacher |
+| der Arzt | die Ärztin | doctor |
+| der Kellner | die Kellnerin | waiter/waitress |
+| der Verkäufer | die Verkäuferin | salesperson |
+
+**Example:** Er ist **Lehrer**. (He is a teacher.) Sie ist **Ärztin**. (She is a doctor.)`,
+      explanationTr: `## Meslekler: kelime hazinesi
+
+Çoğu meslek adının eril ve dişil bir biçimi vardır. Dişil biçim genellikle **-in** ekini alır; bazı kelimelerde ayrıca bir Umlaut da eklenir (a → ä).
+
+| eril | dişil | Anlamı |
+| -------- | ------- | --------- |
+| der Lehrer | die Lehrerin | öğretmen |
+| der Arzt | die Ärztin | doktor |
+| der Kellner | die Kellnerin | garson |
+| der Verkäufer | die Verkäuferin | satıcı |
+
+**Örnek:** Er ist **Lehrer**. (O bir öğretmen.) Sie ist **Ärztin**. (O bir doktor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -6990,12 +7020,39 @@ Bir zaman ifadesini cümlenin **başına** koyarsan, „werden" 2. konuma geçer
       unitId: a2Unit12.id,
       order: 2,
       grammarTopic: 'Über den Beruf sprechen',
-      explanationDe:
-        'Um über den eigenen Beruf zu sprechen, benutzt man "Ich arbeite als + Beruf" oder "Ich bin von Beruf + Beruf" (ohne Artikel). Beispiel: "Ich arbeite als Ingenieur." "Ich bin von Beruf Verkäuferin."',
-      explanationEn:
-        'To talk about your own profession, use "Ich arbeite als + profession" or "Ich bin von Beruf + profession" (without an article). Example: "Ich arbeite als Ingenieur" (I work as an engineer). "Ich bin von Beruf Verkäuferin" (I am a saleswoman by profession).',
-      explanationTr:
-        'Kendi mesleğinden bahsetmek için "Ich arbeite als + meslek" ya da "Ich bin von Beruf + meslek" (artikelsiz) kullanılır. Örnek: "Ich arbeite als Ingenieur." "Ich bin von Beruf Verkäuferin."',
+      explanationDe: `## Über den Beruf sprechen
+
+Wenn du über deinen Beruf sprichst, benutzt du den Beruf **ohne Artikel**. Dafür gibt es mehrere feste Wendungen.
+
+| Wendung | Beispiel |
+| ------- | -------- |
+| Ich bin … | Ich bin Ingenieur. |
+| Ich arbeite als … | Ich arbeite als Ingenieur. |
+| Ich bin von Beruf … | Ich bin von Beruf Verkäuferin. |
+
+**Beispiel:** Ich arbeite **als** Ingenieur. · Ich bin **von Beruf** Verkäuferin.`,
+      explanationEn: `## Talking about your job
+
+When you talk about your job, you use the profession **without an article**. There are several fixed phrases for this.
+
+| Phrase | Example |
+| ------- | -------- |
+| Ich bin … | Ich bin Ingenieur. (I am an engineer.) |
+| Ich arbeite als … | Ich arbeite als Ingenieur. (I work as an engineer.) |
+| Ich bin von Beruf … | Ich bin von Beruf Verkäuferin. (I'm a saleswoman by profession.) |
+
+**Example:** Ich arbeite **als** Ingenieur. · Ich bin **von Beruf** Verkäuferin.`,
+      explanationTr: `## Meslek hakkında konuşmak
+
+Mesleğinden bahsederken mesleği **tanımlıksız** kullanırsın. Bunun için birkaç kalıp ifade vardır.
+
+| İfade | Örnek |
+| ------- | -------- |
+| Ich bin … | Ich bin Ingenieur. (Ben mühendisim.) |
+| Ich arbeite als … | Ich arbeite als Ingenieur. (Mühendis olarak çalışıyorum.) |
+| Ich bin von Beruf … | Ich bin von Beruf Verkäuferin. (Mesleğim satıcılık.) |
+
+**Örnek:** Ich arbeite **als** Ingenieur. · Ich bin **von Beruf** Verkäuferin.`,
     },
   })
   await prisma.exercise.createMany({
@@ -7024,12 +7081,42 @@ Bir zaman ifadesini cümlenin **başına** koyarsan, „werden" 2. konuma geçer
       unitId: a2Unit12.id,
       order: 3,
       grammarTopic: 'Lebenslauf & Bewerbung: Wortschatz',
-      explanationDe:
-        'Wichtige Wörter für Lebenslauf und Bewerbung: die Erfahrung, die Bewerbung, das Vorstellungsgespräch. Beispiel: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung."',
-      explanationEn:
-        'Important words for a résumé and job application: die Erfahrung (experience), die Bewerbung (application), das Vorstellungsgespräch (job interview). Example: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung" (I am writing an application. I have three years of experience).',
-      explanationTr:
-        'Özgeçmiş ve iş başvurusu için önemli kelimeler: die Erfahrung (deneyim), die Bewerbung (başvuru), das Vorstellungsgespräch (iş görüşmesi). Örnek: "Ich schreibe eine Bewerbung. Ich habe drei Jahre Erfahrung" (Bir başvuru yazıyorum. Üç yıllık deneyimim var).',
+      explanationDe: `## Lebenslauf & Bewerbung: Wortschatz
+
+Für die Jobsuche brauchst du einige feste Begriffe. Achte auf den richtigen Artikel – er hilft dir auch beim Kasus im Satz.
+
+| Wort | Artikel | Bedeutung |
+| ---- | ------- | --------- |
+| Lebenslauf | der | özgeçmiş |
+| Bewerbung | die | başvuru |
+| Erfahrung | die | deneyim |
+| Stelle | die | pozisyon |
+
+**Beispiel:** Ich schreibe eine **Bewerbung**. Ich habe drei Jahre **Erfahrung**.`,
+      explanationEn: `## Résumé & application: vocabulary
+
+For a job search you need a few fixed terms. Watch the correct article – it also helps you with the case in the sentence.
+
+| Word | Article | Meaning |
+| ---- | ------- | --------- |
+| Lebenslauf | der | résumé/CV |
+| Bewerbung | die | application |
+| Erfahrung | die | experience |
+| Stelle | die | position |
+
+**Example:** Ich schreibe eine **Bewerbung**. (I'm writing an application.) Ich habe drei Jahre **Erfahrung**. (I have three years of experience.)`,
+      explanationTr: `## Özgeçmiş & başvuru: kelime hazinesi
+
+İş aramak için birkaç sabit terime ihtiyacın var. Doğru tanımlığa dikkat et – cümledeki duruma (Kasus) da yardımcı olur.
+
+| Kelime | Tanımlık | Anlamı |
+| ---- | ------- | --------- |
+| Lebenslauf | der | özgeçmiş |
+| Bewerbung | die | başvuru |
+| Erfahrung | die | deneyim |
+| Stelle | die | pozisyon |
+
+**Örnek:** Ich schreibe eine **Bewerbung**. (Bir başvuru yazıyorum.) Ich habe drei Jahre **Erfahrung**. (Üç yıllık deneyimim var.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -7058,12 +7145,36 @@ Bir zaman ifadesini cümlenin **başına** koyarsan, „werden" 2. konuma geçer
       unitId: a2Unit12.id,
       order: 4,
       grammarTopic: 'Im Vorstellungsgespräch: Fragen und Antworten',
-      explanationDe:
-        'Im Vorstellungsgespräch benutzt man oft Modalverben in der höflichen "Sie"-Form: "Können Sie mir Ihre Stärken beschreiben?" "Wann können Sie beginnen?" Wiederholung: das Modalverb steht konjugiert an Position 2, der Infinitiv am Satzende.',
-      explanationEn:
-        'Job interviews often use modal verbs in the polite "Sie" form: "Können Sie mir Ihre Stärken beschreiben?" (Can you describe your strengths?) "Wann können Sie beginnen?" (When can you start?) Review: the conjugated modal verb is in position 2, the infinitive at the end of the sentence.',
-      explanationTr:
-        'İş görüşmelerinde genellikle saygılı "Sie" biçiminde kip fiilleri kullanılır: "Können Sie mir Ihre Stärken beschreiben?" (Güçlü yönlerinizi anlatabilir misiniz?) "Wann können Sie beginnen?" (Ne zaman başlayabilirsiniz?) Tekrar: çekimli kip fiili 2. sırada, mastar cümle sonunda yer alır.',
+      explanationDe: `## Im Vorstellungsgespräch: Fragen und Antworten
+
+Im Vorstellungsgespräch bist du höflich und benutzt die **„Sie"-Form**. Bei Modalverben steht das konjugierte Verb vorn und der Infinitiv am Satzende. Bei W-Fragen kommt zuerst das Fragewort, bei Ja/Nein-Fragen das Verb.
+
+| Fragetyp | Beispiel |
+| -------- | -------- |
+| Ja/Nein-Frage | Können Sie mir Ihre Stärken beschreiben? |
+| W-Frage | Wann können Sie beginnen? |
+
+**Beispiel:** **Können** Sie mir Ihre Stärken **beschreiben**? · Wann **können** Sie **beginnen**?`,
+      explanationEn: `## In a job interview: questions and answers
+
+In a job interview you are polite and use the **"Sie" form**. With modal verbs, the conjugated verb comes first and the infinitive goes to the end. In wh-questions the question word comes first; in yes/no questions the verb does.
+
+| Question type | Example |
+| -------- | -------- |
+| yes/no question | Können Sie mir Ihre Stärken beschreiben? |
+| wh-question | Wann können Sie beginnen? |
+
+**Example:** **Können** Sie mir Ihre Stärken **beschreiben**? (Can you describe your strengths?) · Wann **können** Sie **beginnen**? (When can you start?)`,
+      explanationTr: `## İş görüşmesinde: sorular ve cevaplar
+
+İş görüşmesinde kibarsın ve **„Sie" biçimini** kullanırsın. Kip fiillerinde çekimli fiil önde, mastar cümle sonunda yer alır. W-sorularında önce soru sözcüğü, evet/hayır sorularında ise fiil gelir.
+
+| Soru türü | Örnek |
+| -------- | -------- |
+| evet/hayır sorusu | Können Sie mir Ihre Stärken beschreiben? |
+| W-sorusu | Wann können Sie beginnen? |
+
+**Örnek:** **Können** Sie mir Ihre Stärken **beschreiben**? (Güçlü yönlerinizi anlatabilir misiniz?) · Wann **können** Sie **beginnen**? (Ne zaman başlayabilirsiniz?)`,
     },
   })
   await prisma.exercise.createMany({
