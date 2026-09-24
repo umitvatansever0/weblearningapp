@@ -1851,12 +1851,48 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
       unitId: a1Unit7.id,
       order: 1,
       grammarTopic: 'können/müssen',
-      explanationDe:
-        'Modalverben sind unregelmäßig und stehen mit dem Infinitiv am Satzende: "Ich kann schwimmen." "Du musst arbeiten."',
-      explanationEn:
-        'Modal verbs are irregular and pair with an infinitive at the end of the sentence: "Ich kann schwimmen." (I can swim.) "Du musst arbeiten." (You must work.)',
-      explanationTr:
-        'Kip fiilleri düzensizdir ve cümle sonunda mastar ile kullanılır: "Ich kann schwimmen." (Yüzebilirim.) "Du musst arbeiten." (Çalışmak zorundasın.)',
+      explanationDe: `## Modalverben: können / müssen
+
+Modalverben verändern die Bedeutung eines anderen Verbs. **können** = Fähigkeit, **müssen** = Notwendigkeit. Sie sind unregelmäßig (ich- und er-Form sind gleich).
+
+| Person | können | müssen |
+| --------- | ------ | ------ |
+| ich | kann | muss |
+| du | kannst | musst |
+| er/sie/es | kann | muss |
+| wir | können | müssen |
+| ihr | könnt | müsst |
+| sie/Sie | können | müssen |
+
+**Beispiel:** Ich **kann** schwimmen. Du **musst** arbeiten. Der Infinitiv steht am Satzende.`,
+      explanationEn: `## Modal verbs: können / müssen
+
+Modal verbs change the meaning of another verb. **können** = ability, **müssen** = necessity. They are irregular (the ich- and er-forms are identical).
+
+| Person | können | müssen |
+| --------- | ------ | ------ |
+| ich | kann | muss |
+| du | kannst | musst |
+| er/sie/es | kann | muss |
+| wir | können | müssen |
+| ihr | könnt | müsst |
+| sie/Sie | können | müssen |
+
+**Example:** Ich **kann** schwimmen. (I can swim.) Du **musst** arbeiten. (You must work.) The infinitive goes at the end of the sentence.`,
+      explanationTr: `## Kip fiilleri: können / müssen
+
+Kip fiilleri başka bir fiilin anlamını değiştirir. **können** = yetenek, **müssen** = zorunluluk. Düzensizdirler (ich ve er biçimleri aynıdır).
+
+| Kişi | können | müssen |
+| --------- | ------ | ------ |
+| ich | kann | muss |
+| du | kannst | musst |
+| er/sie/es | kann | muss |
+| wir | können | müssen |
+| ihr | könnt | müsst |
+| sie/Sie | können | müssen |
+
+**Örnek:** Ich **kann** schwimmen. (Yüzebilirim.) Du **musst** arbeiten. (Çalışmak zorundasın.) Mastar cümlenin sonunda yer alır.`,
     },
   })
   await prisma.exercise.createMany({
@@ -1885,12 +1921,39 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
       unitId: a1Unit7.id,
       order: 2,
       grammarTopic: 'wollen/möchten/dürfen',
-      explanationDe:
-        '"wollen" drückt einen starken Wunsch aus, "möchten" ist höflicher: "Ich will Pizza essen." "Ich möchte einen Kaffee." "dürfen" bedeutet Erlaubnis: "Darf ich rauchen?"',
-      explanationEn:
-        '"wollen" expresses a strong want, "möchten" is more polite: "Ich will Pizza essen." (I want to eat pizza.) "Ich möchte einen Kaffee." (I would like a coffee.) "dürfen" means permission: "Darf ich rauchen?" (May I smoke?)',
-      explanationTr:
-        '"wollen" güçlü bir isteği ifade eder, "möchten" daha kibardır: "Ich will Pizza essen." (Pizza yemek istiyorum.) "Ich möchte einen Kaffee." (Bir kahve istiyorum.) "dürfen" izin anlamına gelir: "Darf ich rauchen?" (Sigara içebilir miyim?)',
+      explanationDe: `## Modalverben: wollen / möchten / dürfen
+
+Diese drei Modalverben drücken Wunsch und Erlaubnis aus:
+
+| Verb | Bedeutung | Beispiel |
+| -------- | ---------- | -------- |
+| wollen | starker Wunsch | Ich **will** Pizza essen. |
+| möchten | höflicher Wunsch | Ich **möchte** einen Kaffee. |
+| dürfen | Erlaubnis | **Darf** ich rauchen? |
+
+**Tipp:** „möchten" ist die höfliche Form von „wollen" – benutze sie im Restaurant oder bei Bitten.`,
+      explanationEn: `## Modal verbs: wollen / möchten / dürfen
+
+These three modal verbs express wishes and permission:
+
+| Verb | Meaning | Example |
+| -------- | ---------- | -------- |
+| wollen | strong want | Ich **will** Pizza essen. |
+| möchten | polite wish | Ich **möchte** einen Kaffee. |
+| dürfen | permission | **Darf** ich rauchen? |
+
+**Tip:** "möchten" is the polite form of "wollen" – use it in restaurants or when making requests.`,
+      explanationTr: `## Kip fiilleri: wollen / möchten / dürfen
+
+Bu üç kip fiili istek ve izin ifade eder:
+
+| Fiil | Anlamı | Örnek |
+| -------- | --------- | ----- |
+| wollen | güçlü istek | Ich **will** Pizza essen. |
+| möchten | kibar istek | Ich **möchte** einen Kaffee. |
+| dürfen | izin | **Darf** ich rauchen? |
+
+**İpucu:** „möchten", „wollen" fiilinin kibar biçimidir – restoranda ya da rica ederken kullan.`,
     },
   })
   await prisma.exercise.createMany({
@@ -1919,11 +1982,36 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
       unitId: a1Unit7.id,
       order: 3,
       grammarTopic: 'Satzstruktur mit Modalverben',
-      explanationDe: 'Das Modalverb steht an Position 2, der Infinitiv am Satzende: "Ich möchte heute Abend ins Kino gehen."',
-      explanationEn:
-        'The modal verb is in position 2, the infinitive goes at the end: "Ich möchte heute Abend ins Kino gehen." (I would like to go to the cinema tonight.)',
-      explanationTr:
-        'Kip fiili 2. konumda, mastar cümle sonunda yer alır: "Ich möchte heute Abend ins Kino gehen." (Bu akşam sinemaya gitmek istiyorum.)',
+      explanationDe: `## Satzstruktur mit Modalverben
+
+Im Satz bilden Modalverb und Infinitiv eine **Klammer**: Das Modalverb steht an **Position 2**, der Infinitiv ganz am **Ende**.
+
+| Pos. 1 | Pos. 2 (Modalverb) | Mitte | Ende (Infinitiv) |
+| ------ | ------------------ | ----- | ---------------- |
+| Ich | möchte | heute Abend ins Kino | gehen. |
+| Er | kann | sehr gut Deutsch | sprechen. |
+
+**Beispiel:** Ich **möchte** heute Abend ins Kino **gehen**.`,
+      explanationEn: `## Sentence structure with modal verbs
+
+In the sentence, the modal verb and the infinitive form a **bracket**: the modal verb is in **position 2**, the infinitive goes right at the **end**.
+
+| Pos. 1 | Pos. 2 (modal) | middle | end (infinitive) |
+| ------ | -------------- | ------ | ---------------- |
+| Ich | möchte | heute Abend ins Kino | gehen. |
+| Er | kann | sehr gut Deutsch | sprechen. |
+
+**Example:** Ich **möchte** heute Abend ins Kino **gehen**. (I'd like to go to the cinema tonight.)`,
+      explanationTr: `## Kip fiilleriyle cümle yapısı
+
+Cümlede kip fiili ile mastar bir **çerçeve** oluşturur: Kip fiili **2. konumda**, mastar ise en **sonda** yer alır.
+
+| Konum 1 | Konum 2 (kip fiili) | orta | son (mastar) |
+| ------- | ------------------- | ---- | ------------ |
+| Ich | möchte | heute Abend ins Kino | gehen. |
+| Er | kann | sehr gut Deutsch | sprechen. |
+
+**Örnek:** Ich **möchte** heute Abend ins Kino **gehen**. (Bu akşam sinemaya gitmek istiyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -1952,12 +2040,39 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
       unitId: a1Unit7.id,
       order: 4,
       grammarTopic: 'Bestellungen ("Ich möchte...")',
-      explanationDe:
-        'Im Restaurant oder Café benutzt man "Ich möchte..." für Bestellungen: "Ich möchte ein Wasser, bitte." "Ich hätte gern einen Kaffee."',
-      explanationEn:
-        'In a restaurant or café, use "Ich möchte..." to order: "Ich möchte ein Wasser, bitte." (I\'d like a water, please.) "Ich hätte gern einen Kaffee." (I\'d like a coffee.)',
-      explanationTr:
-        'Restoranda ya da kafede sipariş vermek için "Ich möchte..." kullanılır: "Ich möchte ein Wasser, bitte." (Bir su istiyorum, lütfen.) "Ich hätte gern einen Kaffee." (Bir kahve rica ederim.)',
+      explanationDe: `## Bestellungen: „Ich möchte …"
+
+Im Restaurant oder Café bestellst du höflich mit **„Ich möchte …"** oder **„Ich hätte gern …"**. Vergiss „bitte" nicht.
+
+| Formel | Beispiel |
+| ------------------ | -------- |
+| Ich möchte … | Ich **möchte** ein Wasser, bitte. |
+| Ich hätte gern … | Ich **hätte gern** einen Kaffee. |
+| Ich nehme … | Ich **nehme** die Suppe. |
+
+**Beispiel:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**.`,
+      explanationEn: `## Ordering: "Ich möchte …"
+
+In a restaurant or café you order politely with **"Ich möchte …"** or **"Ich hätte gern …"**. Don't forget "bitte" (please).
+
+| Phrase | Example |
+| ------------------ | -------- |
+| Ich möchte … | Ich **möchte** ein Wasser, bitte. |
+| Ich hätte gern … | Ich **hätte gern** einen Kaffee. |
+| Ich nehme … | Ich **nehme** die Suppe. |
+
+**Example:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**. (I'd like a tea and a piece of cake, please.)`,
+      explanationTr: `## Sipariş verme: „Ich möchte …"
+
+Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte gern …"** ile sipariş verirsin. „bitte" (lütfen) demeyi unutma.
+
+| Kalıp | Örnek |
+| ------------------ | ----- |
+| Ich möchte … | Ich **möchte** ein Wasser, bitte. |
+| Ich hätte gern … | Ich **hätte gern** einen Kaffee. |
+| Ich nehme … | Ich **nehme** die Suppe. |
+
+**Örnek:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**. (Bir çay ve bir dilim pasta istiyorum, lütfen.)`,
     },
   })
   await prisma.exercise.createMany({
