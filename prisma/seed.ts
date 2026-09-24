@@ -5012,12 +5012,36 @@ Unutma: yan cümledeki fiil sona gider.
       unitId: a2Unit5.id,
       order: 1,
       grammarTopic: "'wenn' für wiederholte Ereignisse",
-      explanationDe:
-        '"wenn" beschreibt wiederholte oder zukünftige Ereignisse in der Zeit. Das Verb steht am Ende des Nebensatzes: "Wenn ich Zeit habe, gehe ich schwimmen."',
-      explanationEn:
-        '"wenn" (when/whenever) describes repeated or future events in time. The verb moves to the end of the subordinate clause: "Wenn ich Zeit habe, gehe ich schwimmen" (Whenever I have time, I go swimming).',
-      explanationTr:
-        '"wenn" (ne zaman/-dığında) tekrar eden ya da gelecekteki olayları anlatır. Fiil yan cümlenin sonuna gider: "Wenn ich Zeit habe, gehe ich schwimmen" (Vaktim olduğunda yüzmeye giderim).',
+      explanationDe: `## „wenn" für wiederholte Ereignisse
+
+„wenn" benutzt du für Dinge, die **immer wieder** (jedes Mal) oder in der **Zukunft** passieren. Es ist eine Konjunktion, also steht das Verb am **Ende** des Nebensatzes. Statt „wenn" kannst du auch „immer wenn" sagen.
+
+| Nebensatz mit „wenn" | Hauptsatz |
+| -------------------- | --------- |
+| Wenn ich Zeit **habe**, | gehe ich schwimmen. |
+| Wenn es **regnet**, | bleibe ich zu Hause. |
+
+**Beispiel:** **Wenn** ich Zeit **habe**, gehe ich schwimmen.`,
+      explanationEn: `## "wenn" for repeated events
+
+You use "wenn" (when/whenever) for things that happen **again and again** (every time) or in the **future**. It is a conjunction, so the verb goes at the **end** of the subordinate clause. Instead of "wenn" you can also say "immer wenn" (whenever).
+
+| Subordinate clause with "wenn" | Main clause |
+| -------------------- | --------- |
+| Wenn ich Zeit **habe**, | gehe ich schwimmen. |
+| Wenn es **regnet**, | bleibe ich zu Hause. |
+
+**Example:** **Wenn** ich Zeit **habe**, gehe ich schwimmen. (Whenever I have time, I go swimming.)`,
+      explanationTr: `## Tekrarlanan olaylar için „wenn"
+
+„wenn"i **tekrar tekrar** (her seferinde) ya da **gelecekte** olan şeyler için kullanırsın. Bir bağlaç olduğu için fiil yan cümlenin **sonuna** gider. „wenn" yerine „immer wenn" (her ne zaman) da diyebilirsin.
+
+| „wenn" ile yan cümle | Ana cümle |
+| -------------------- | --------- |
+| Wenn ich Zeit **habe**, | gehe ich schwimmen. |
+| Wenn es **regnet**, | bleibe ich zu Hause. |
+
+**Örnek:** **Wenn** ich Zeit **habe**, gehe ich schwimmen. (Vaktim olduğunda yüzmeye giderim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5046,12 +5070,36 @@ Unutma: yan cümledeki fiil sona gider.
       unitId: a2Unit5.id,
       order: 2,
       grammarTopic: "'wenn' als Bedingung",
-      explanationDe:
-        '"wenn" leitet auch reale Bedingungssätze ein: "Wenn du müde bist, solltest du schlafen gehen." Der Hauptsatz beschreibt die Folge.',
-      explanationEn:
-        '"wenn" also introduces real conditional clauses: "Wenn du müde bist, solltest du schlafen gehen" (If you\'re tired, you should go to sleep). The main clause describes the consequence.',
-      explanationTr:
-        '"wenn" gerçek koşul cümlelerini de tanıtır: "Wenn du müde bist, solltest du schlafen gehen" (Yorgunsan uyumaya gitmelisin). Ana cümle sonucu anlatır.',
+      explanationDe: `## „wenn" als Bedingung
+
+„wenn" bedeutet nicht nur „immer wenn", sondern auch **„falls"** – es nennt eine **Bedingung**. Der „wenn"-Satz nennt die Bedingung, der Hauptsatz die Folge. Auch hier steht das Verb im Nebensatz am Ende.
+
+| Bedingung (wenn) | Folge (Hauptsatz) |
+| ---------------- | ----------------- |
+| Wenn du müde **bist**, | solltest du schlafen gehen. |
+| Wenn es kalt **wird**, | ziehe ich eine Jacke an. |
+
+**Beispiel:** **Wenn** du müde **bist**, solltest du schlafen gehen.`,
+      explanationEn: `## "wenn" as a condition
+
+"wenn" does not only mean "whenever" but also **"if"** – it states a **condition**. The "wenn" clause gives the condition, the main clause gives the consequence. Here too the verb goes to the end of the subordinate clause.
+
+| Condition (wenn) | Consequence (main clause) |
+| ---------------- | ----------------- |
+| Wenn du müde **bist**, | solltest du schlafen gehen. |
+| Wenn es kalt **wird**, | ziehe ich eine Jacke an. |
+
+**Example:** **Wenn** du müde **bist**, solltest du schlafen gehen. (If you're tired, you should go to sleep.)`,
+      explanationTr: `## Koşul olarak „wenn"
+
+„wenn" sadece „her ne zaman" değil, **„eğer"** anlamına da gelir – bir **koşul** bildirir. „wenn" cümlesi koşulu, ana cümle sonucu belirtir. Burada da yan cümledeki fiil sona gider.
+
+| Koşul (wenn) | Sonuç (ana cümle) |
+| ---------------- | ----------------- |
+| Wenn du müde **bist**, | solltest du schlafen gehen. |
+| Wenn es kalt **wird**, | ziehe ich eine Jacke an. |
+
+**Örnek:** **Wenn** du müde **bist**, solltest du schlafen gehen. (Yorgunsan uyumaya gitmelisin.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5080,12 +5128,45 @@ Unutma: yan cümledeki fiil sona gider.
       unitId: a2Unit5.id,
       order: 3,
       grammarTopic: "'wenn' vs. 'wann'",
-      explanationDe:
-        '"wenn" ist eine Konjunktion (zeitlich/bedingend), "wann" ist ein Fragewort für die Zeit. Vergleiche: "Wann kommst du?" (Frage) / "Ich weiß nicht, wann er kommt." (indirekte Frage) vs. "Wenn er kommt, freue ich mich." (Bedingung).',
-      explanationEn:
-        '"wenn" is a conjunction (temporal/conditional), "wann" is a question word asking about time. Compare: "Wann kommst du?" (When are you coming?) / "Ich weiß nicht, wann er kommt" (I don\'t know when he\'s coming) vs. "Wenn er kommt, freue ich mich" (When/if he comes, I\'ll be happy).',
-      explanationTr:
-        '"wenn" bir bağlaçtır (zamansal/koşullu), "wann" zaman soran bir soru sözcüğüdür. Karşılaştır: "Wann kommst du?" (soru) / "Ich weiß nicht, wann er kommt." (dolaylı soru) vs. "Wenn er kommt, freue ich mich." (koşul).',
+      explanationDe: `## „wenn" oder „wann"?
+
+Diese beiden Wörter klingen ähnlich, haben aber verschiedene Aufgaben:
+
+| Wort | Funktion | Beispiel |
+| ---- | -------- | -------- |
+| wann | Fragewort (Zeit) | **Wann** kommst du? |
+| wann | indirekte Frage | Ich weiß nicht, **wann** er kommt. |
+| wenn | Konjunktion (Zeit/Bedingung) | **Wenn** er kommt, freue ich mich. |
+
+Merke: Kannst du „zu welcher Uhrzeit?" fragen, brauchst du „wann". Geht es um „immer wenn / falls", benutzt du „wenn".
+
+**Beispiel:** **Wann** kommst du? · **Wenn** er kommt, freue ich mich.`,
+      explanationEn: `## "wenn" or "wann"?
+
+These two words sound similar but have different jobs:
+
+| Word | Function | Example |
+| ---- | -------- | -------- |
+| wann | question word (time) | **Wann** kommst du? (When are you coming?) |
+| wann | indirect question | Ich weiß nicht, **wann** er kommt. (I don't know when he's coming.) |
+| wenn | conjunction (time/condition) | **Wenn** er kommt, freue ich mich. (When/if he comes, I'll be happy.) |
+
+Tip: if you can ask "at what time?", you need "wann". If it means "whenever / if", use "wenn".
+
+**Example:** **Wann** kommst du? · **Wenn** er kommt, freue ich mich.`,
+      explanationTr: `## „wenn" mi „wann" mı?
+
+Bu iki kelime benzer sesletilir ama farklı işleri vardır:
+
+| Kelime | İşlevi | Örnek |
+| ---- | -------- | -------- |
+| wann | soru sözcüğü (zaman) | **Wann** kommst du? (Ne zaman geliyorsun?) |
+| wann | dolaylı soru | Ich weiß nicht, **wann** er kommt. (Ne zaman geleceğini bilmiyorum.) |
+| wenn | bağlaç (zaman/koşul) | **Wenn** er kommt, freue ich mich. (Geldiğinde sevinirim.) |
+
+İpucu: „saat kaçta?" diye sorabiliyorsan „wann" gerekir. „her ne zaman / eğer" anlamındaysa „wenn" kullanırsın.
+
+**Örnek:** **Wann** kommst du? · **Wenn** er kommt, freue ich mich.`,
     },
   })
   await prisma.exercise.createMany({
@@ -5114,12 +5195,36 @@ Unutma: yan cümledeki fiil sona gider.
       unitId: a2Unit5.id,
       order: 4,
       grammarTopic: 'Wortstellung: Nebensatz zuerst',
-      explanationDe:
-        'Beginnt der Satz mit dem Nebensatz (wenn...), steht das Verb im Hauptsatz direkt danach (Verb-Verb-Stellung): "Wenn es regnet, bleibe ich zu Hause." Beide Verben stehen nebeneinander um das Komma.',
-      explanationEn:
-        'When the sentence starts with the subordinate clause (wenn...), the verb in the main clause comes right after it (verb-verb word order): "Wenn es regnet, bleibe ich zu Hause" (If it rains, I stay home). Both verbs sit next to each other around the comma.',
-      explanationTr:
-        'Cümle yan cümleyle (wenn...) başlarsa, ana cümledeki fiil hemen ardından gelir (fiil-fiil sırası): "Wenn es regnet, bleibe ich zu Hause." İki fiil de virgülün etrafında yan yana durur.',
+      explanationDe: `## Wortstellung: Nebensatz zuerst
+
+Der Nebensatz kann auch **am Anfang** stehen. Dann zählt der ganze Nebensatz als Position 1, und im Hauptsatz kommt sofort das **konjugierte Verb** (Position 2). So stehen zwei Verben direkt nebeneinander – „Verb, Verb" um das Komma.
+
+| Position 1 (Nebensatz) | Position 2 (Verb) | Rest |
+| ---------------------- | ----------------- | ---- |
+| Wenn es **regnet**, | **bleibe** | ich zu Hause. |
+| Wenn ich Zeit **habe**, | **gehe** | ich schwimmen. |
+
+**Beispiel:** **Wenn** es **regnet**, **bleibe** ich zu Hause.`,
+      explanationEn: `## Word order: subordinate clause first
+
+The subordinate clause can also come **first**. Then the whole subordinate clause counts as position 1, and the main clause starts immediately with the **conjugated verb** (position 2). This puts two verbs right next to each other – "verb, verb" around the comma.
+
+| Position 1 (subordinate clause) | Position 2 (verb) | Rest |
+| ---------------------- | ----------------- | ---- |
+| Wenn es **regnet**, | **bleibe** | ich zu Hause. |
+| Wenn ich Zeit **habe**, | **gehe** | ich schwimmen. |
+
+**Example:** **Wenn** es **regnet**, **bleibe** ich zu Hause. (If it rains, I stay home.)`,
+      explanationTr: `## Sözcük sırası: önce yan cümle
+
+Yan cümle **başta** da durabilir. O zaman bütün yan cümle 1. pozisyon sayılır ve ana cümle hemen **çekimli fiille** başlar (2. pozisyon). Böylece iki fiil yan yana gelir – virgülün etrafında „fiil, fiil".
+
+| 1. pozisyon (yan cümle) | 2. pozisyon (fiil) | Kalan |
+| ---------------------- | ----------------- | ---- |
+| Wenn es **regnet**, | **bleibe** | ich zu Hause. |
+| Wenn ich Zeit **habe**, | **gehe** | ich schwimmen. |
+
+**Örnek:** **Wenn** es **regnet**, **bleibe** ich zu Hause. (Yağmur yağarsa evde kalırım.)`,
     },
   })
   await prisma.exercise.createMany({
