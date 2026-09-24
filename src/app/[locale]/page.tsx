@@ -3,7 +3,7 @@ import { Link } from '@/i18n/navigation'
 import { AdSlot } from '@/components/AdSlot'
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2'] as const
-const AVAILABLE_LEVELS: readonly string[] = ['A1', 'A2']
+const AVAILABLE_LEVELS: readonly string[] = ['A1', 'A2', 'B1']
 
 export default function HomePage() {
   const t = useTranslations('home')
