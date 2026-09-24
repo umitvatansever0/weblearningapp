@@ -2381,12 +2381,42 @@ Tipik sorular ve cevaplar:
       unitId: a1Unit9.id,
       order: 1,
       grammarTopic: 'Dativ-Artikel',
-      explanationDe:
-        'Im Dativ ändern sich die Artikel: der→dem, die→der, das→dem, die (Plural)→den. Beispiel: "Ich helfe dem Mann."',
-      explanationEn:
-        'In the dative, the articles change: der→dem, die→der, das→dem, die (plural)→den. Example: "Ich helfe dem Mann." (I help the man.)',
-      explanationTr:
-        'Datifte tanımlıklar değişir: der→dem, die→der, das→dem, die (çoğul)→den. Örnek: "Ich helfe dem Mann." (Adama yardım ediyorum.)',
+      explanationDe: `## Der Dativ: Artikel
+
+Der Dativ ist oft der „Empfänger" einer Handlung. Alle Artikel ändern sich (im Plural bekommt das Nomen zusätzlich ein **-n**).
+
+| Genus | Nominativ | Dativ |
+| -------- | --------- | ----- |
+| maskulin | der | **dem** |
+| feminin | die | **der** |
+| neutral | das | **dem** |
+| Plural | die | **den** (+ Nomen -n) |
+
+**Beispiel:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern.`,
+      explanationEn: `## The dative: articles
+
+The dative is often the "receiver" of an action. All articles change (in the plural the noun also gets an extra **-n**).
+
+| Gender | Nominative | Dative |
+| --------- | ---------- | ------ |
+| masculine | der | **dem** |
+| feminine | die | **der** |
+| neuter | das | **dem** |
+| plural | die | **den** (+ noun -n) |
+
+**Example:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern. (I help the man, the woman and the children.)`,
+      explanationTr: `## Datif: tanımlıklar
+
+Datif çoğu zaman bir eylemin „alıcısıdır". Bütün tanımlıklar değişir (çoğulda isim ayrıca **-n** eki alır).
+
+| Cinsiyet | Nominatif | Datif |
+| -------- | --------- | ----- |
+| eril | der | **dem** |
+| dişil | die | **der** |
+| nötr | das | **dem** |
+| çoğul | die | **den** (+ isim -n) |
+
+**Örnek:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern. (Adama, kadına ve çocuklara yardım ediyorum.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -2415,12 +2445,51 @@ Tipik sorular ve cevaplar:
       unitId: a1Unit9.id,
       order: 2,
       grammarTopic: 'Präpositionen mit Dativ',
-      explanationDe:
-        'Feste Präpositionen mit Dativ: aus, bei, mit, nach, seit, von, zu. "Ich fahre mit dem Bus." "Ich komme aus der Türkei."',
-      explanationEn:
-        'Fixed dative prepositions: aus, bei, mit, nach, seit, von, zu. "Ich fahre mit dem Bus." (I travel by bus.) "Ich komme aus der Türkei." (I come from Turkey.)',
-      explanationTr:
-        'Sabit datif edatları: aus, bei, mit, nach, seit, von, zu. "Ich fahre mit dem Bus." (Otobüsle giderim.) "Ich komme aus der Türkei." (Türkiye\'den geliyorum.)',
+      explanationDe: `## Präpositionen mit Dativ
+
+Nach diesen Präpositionen steht **immer** der Dativ:
+
+| Präposition | Bedeutung | Beispiel |
+| ----------- | --------- | -------- |
+| aus | from/out of | Ich komme **aus der** Türkei. |
+| bei | at/near | Ich bin **bei dem** (beim) Arzt. |
+| mit | with | Ich fahre **mit dem** Bus. |
+| nach | after/to | **nach der** Arbeit |
+| seit | since | **seit einem** Jahr |
+| von | from/of | ein Brief **von der** Mutter |
+| zu | to | Ich gehe **zu dem** (zum) Arzt. |
+
+**Merkhilfe:** aus, bei, mit, nach, seit, von, zu – am besten auswendig lernen.`,
+      explanationEn: `## Prepositions with the dative
+
+After these prepositions you **always** use the dative:
+
+| Preposition | Meaning | Example |
+| ----------- | ------- | -------- |
+| aus | from/out of | Ich komme **aus der** Türkei. |
+| bei | at/near | Ich bin **bei dem** (beim) Arzt. |
+| mit | with | Ich fahre **mit dem** Bus. |
+| nach | after/to | **nach der** Arbeit |
+| seit | since | **seit einem** Jahr |
+| von | from/of | ein Brief **von der** Mutter |
+| zu | to | Ich gehe **zu dem** (zum) Arzt. |
+
+**Memory aid:** aus, bei, mit, nach, seit, von, zu – best learned by heart.`,
+      explanationTr: `## Datif alan edatlar
+
+Bu edatlardan sonra **her zaman** datif kullanılır:
+
+| Edat | Anlamı | Örnek |
+| ---- | ------ | ----- |
+| aus | -den (içinden) | Ich komme **aus der** Türkei. |
+| bei | yanında/-de | Ich bin **bei dem** (beim) Arzt. |
+| mit | ile | Ich fahre **mit dem** Bus. |
+| nach | -den sonra/-e | **nach der** Arbeit |
+| seit | -den beri | **seit einem** Jahr |
+| von | -den/-in | ein Brief **von der** Mutter |
+| zu | -e (birine/yere) | Ich gehe **zu dem** (zum) Arzt. |
+
+**Hatırlatma:** aus, bei, mit, nach, seit, von, zu – en iyisi ezberlemek.`,
     },
   })
   await prisma.exercise.createMany({
@@ -2455,12 +2524,36 @@ Tipik sorular ve cevaplar:
       unitId: a1Unit9.id,
       order: 3,
       grammarTopic: 'Wechselpräpositionen (Einführung)',
-      explanationDe:
-        'Wechselpräpositionen (in, an, auf...) stehen mit Akkusativ bei Bewegung (wohin?) und mit Dativ bei Ort (wo?): "Ich gehe in die Küche" (Akkusativ) vs. "Ich bin in der Küche" (Dativ).',
-      explanationEn:
-        'Two-way prepositions (in, an, auf...) take accusative for movement (wohin? = where to?) and dative for location (wo? = where?): "Ich gehe in die Küche" (accusative) vs. "Ich bin in der Küche" (dative).',
-      explanationTr:
-        'İki yönlü edatlar (in, an, auf...) hareket için akkusativ (wohin? = nereye?), konum için datif (wo? = nerede?) alır: "Ich gehe in die Küche" (akkusativ) ile "Ich bin in der Küche" (datif) karşılaştırın.',
+      explanationDe: `## Wechselpräpositionen (Einführung)
+
+Wechselpräpositionen (in, an, auf, unter, über …) können **Akkusativ oder Dativ** verlangen. Die Frage entscheidet:
+
+| Frage | Kasus | Beispiel |
+| ------------- | --------- | -------- |
+| wohin? (Bewegung) | Akkusativ | Ich gehe **in die** Küche. |
+| wo? (Ort) | Dativ | Ich bin **in der** Küche. |
+
+**Beispiel:** **Wohin?** Ich lege das Buch **auf den** Tisch. · **Wo?** Das Buch liegt **auf dem** Tisch.`,
+      explanationEn: `## Two-way prepositions (introduction)
+
+Two-way prepositions (in, an, auf, unter, über …) can take **accusative or dative**. The question decides:
+
+| Question | Case | Example |
+| ------------- | ---------- | -------- |
+| wohin? (movement) | accusative | Ich gehe **in die** Küche. |
+| wo? (location) | dative | Ich bin **in der** Küche. |
+
+**Example:** **Wohin?** Ich lege das Buch **auf den** Tisch. · **Wo?** Das Buch liegt **auf dem** Tisch.`,
+      explanationTr: `## İki yönlü edatlar (giriş)
+
+İki yönlü edatlar (in, an, auf, unter, über …) hem **akkusatif hem datif** alabilir. Hangi soruya cevap verdiği belirler:
+
+| Soru | Durum | Örnek |
+| ------------- | -------- | ----- |
+| wohin? (hareket) | akkusatif | Ich gehe **in die** Küche. |
+| wo? (konum) | datif | Ich bin **in der** Küche. |
+
+**Örnek:** **Wohin?** Ich lege das Buch **auf den** Tisch. (Kitabı masaya koyuyorum.) · **Wo?** Das Buch liegt **auf dem** Tisch. (Kitap masanın üstünde duruyor.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -2489,11 +2582,45 @@ Tipik sorular ve cevaplar:
       unitId: a1Unit9.id,
       order: 4,
       grammarTopic: 'Wohnung/Zimmer',
-      explanationDe: 'Wörter für die Wohnung: das Wohnzimmer, das Schlafzimmer, das Badezimmer, die Küche, der Balkon.',
-      explanationEn:
-        'Words for the apartment: das Wohnzimmer (living room), das Schlafzimmer (bedroom), das Badezimmer (bathroom), die Küche (kitchen), der Balkon (balcony).',
-      explanationTr:
-        'Ev için kelimeler: das Wohnzimmer (oturma odası), das Schlafzimmer (yatak odası), das Badezimmer (banyo), die Küche (mutfak), der Balkon (balkon).',
+      explanationDe: `## Wohnung und Zimmer
+
+Das sind die wichtigsten Räume einer Wohnung. Achte auf den Artikel:
+
+| Deutsch | Englisch |
+| ---------------- | ----------- |
+| das Wohnzimmer | living room |
+| das Schlafzimmer | bedroom |
+| das Badezimmer | bathroom |
+| die Küche | kitchen |
+| der Balkon | balcony |
+
+**Beispiel:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (Kombiniere die Zimmer mit Wechselpräpositionen im Dativ.)`,
+      explanationEn: `## Apartment and rooms
+
+These are the most important rooms of an apartment. Pay attention to the article:
+
+| German | English |
+| ---------------- | ----------- |
+| das Wohnzimmer | living room |
+| das Schlafzimmer | bedroom |
+| das Badezimmer | bathroom |
+| die Küche | kitchen |
+| der Balkon | balcony |
+
+**Example:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (I cook in the kitchen and sleep in the bedroom.) Combine the rooms with two-way prepositions in the dative.`,
+      explanationTr: `## Daire ve odalar
+
+Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
+
+| Almanca | Türkçe |
+| ---------------- | -------------- |
+| das Wohnzimmer | oturma odası |
+| das Schlafzimmer | yatak odası |
+| das Badezimmer | banyo |
+| die Küche | mutfak |
+| der Balkon | balkon |
+
+**Örnek:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (Mutfakta yemek yaparım ve yatak odasında uyurum.) Odaları datifteki iki yönlü edatlarla birleştir.`,
     },
   })
   await prisma.exercise.createMany({
