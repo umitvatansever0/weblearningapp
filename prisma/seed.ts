@@ -4437,12 +4437,48 @@ Two groups form the past participle **without** "ge-": inseparable verbs with th
       unitId: a2Unit3.id,
       order: 1,
       grammarTopic: 'Komparativ (regelmäßig)',
-      explanationDe:
-        'Der Komparativ wird mit "-er" gebildet und vergleicht mit "als": schnell → schneller, klein → kleiner. Beispiel: "Der Zug ist schneller als das Auto."',
-      explanationEn:
-        'The comparative is formed with "-er" and compares using "als" (than): schnell → schneller (faster), klein → kleiner (smaller). Example: "Der Zug ist schneller als das Auto" (The train is faster than the car).',
-      explanationTr:
-        'Karşılaştırma sıfatı "-er" eki ile kurulur ve "als" (-den) ile karşılaştırılır: schnell → schneller (daha hızlı), klein → kleiner (daha küçük). Örnek: "Der Zug ist schneller als das Auto" (Tren arabadan daha hızlıdır).',
+      explanationDe: `## Der Komparativ (regelmäßig)
+
+Mit dem Komparativ (1. Steigerungsstufe) vergleichst du zwei Dinge. Du hängst **-er** an das Adjektiv und benutzt das Wort **„als"** für den Vergleich.
+
+| Grundform | Komparativ |
+| --------- | ---------- |
+| schnell | schneller |
+| klein | kleiner |
+| billig | billiger |
+| schön | schöner |
+
+Sind zwei Dinge gleich, benutzt du **„so … wie"**: Er ist **so groß wie** ich.
+
+**Beispiel:** Der Zug ist **schneller als** das Auto.`,
+      explanationEn: `## The comparative (regular)
+
+The comparative (first degree of comparison) lets you compare two things. You add **-er** to the adjective and use the word **"als"** (than) for the comparison.
+
+| Base form | Comparative |
+| --------- | ---------- |
+| schnell | schneller (faster) |
+| klein | kleiner (smaller) |
+| billig | billiger (cheaper) |
+| schön | schöner (nicer) |
+
+If two things are equal, you use **"so … wie"** (as … as): Er ist **so groß wie** ich. (He is as tall as me.)
+
+**Example:** Der Zug ist **schneller als** das Auto. (The train is faster than the car.)`,
+      explanationTr: `## Karşılaştırma derecesi (düzenli)
+
+Karşılaştırma derecesiyle (Komparativ) iki şeyi kıyaslarsın. Sıfata **-er** eklersin ve karşılaştırma için **„als"** (-den daha) kelimesini kullanırsın.
+
+| Temel biçim | Komparativ |
+| --------- | ---------- |
+| schnell | schneller (daha hızlı) |
+| klein | kleiner (daha küçük) |
+| billig | billiger (daha ucuz) |
+| schön | schöner (daha güzel) |
+
+İki şey eşitse **„so … wie"** (… kadar) kullanırsın: Er ist **so groß wie** ich. (O benim kadar uzun.)
+
+**Örnek:** Der Zug ist **schneller als** das Auto. (Tren arabadan daha hızlıdır.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4471,12 +4507,48 @@ Two groups form the past participle **without** "ge-": inseparable verbs with th
       unitId: a2Unit3.id,
       order: 2,
       grammarTopic: 'Komparativ mit Umlaut',
-      explanationDe:
-        'Einsilbige Adjektive mit a, o oder u bekommen oft einen Umlaut im Komparativ: groß → größer, jung → jünger, alt → älter. Beispiel: "Meine Schwester ist jünger als ich."',
-      explanationEn:
-        'Single-syllable adjectives with a, o, or u often take an umlaut in the comparative: groß → größer (bigger), jung → jünger (younger), alt → älter (older). Example: "Meine Schwester ist jünger als ich" (My sister is younger than me).',
-      explanationTr:
-        'a, o, u ünlüsü içeren tek heceli sıfatlar genellikle karşılaştırmada umlaut alır: groß → größer (daha büyük), jung → jünger (daha genç), alt → älter (daha yaşlı). Örnek: "Meine Schwester ist jünger als ich" (Kız kardeşim benden daha genç).',
+      explanationDe: `## Komparativ mit Umlaut
+
+Viele kurze, einsilbige Adjektive mit dem Vokal **a, o** oder **u** bekommen im Komparativ (und Superlativ) einen **Umlaut**: a → ä, o → ö, u → ü.
+
+| Grundform | Komparativ |
+| --------- | ---------- |
+| alt | älter |
+| jung | jünger |
+| groß | größer |
+| lang | länger |
+| kurz | kürzer |
+| warm | wärmer |
+
+**Beispiel:** Meine Schwester ist **jünger als** ich. · Mein Opa ist **älter als** mein Vater.`,
+      explanationEn: `## Comparative with umlaut
+
+Many short, single-syllable adjectives with the vowel **a, o** or **u** take an **umlaut** in the comparative (and superlative): a → ä, o → ö, u → ü.
+
+| Base form | Comparative |
+| --------- | ---------- |
+| alt | älter (older) |
+| jung | jünger (younger) |
+| groß | größer (bigger) |
+| lang | länger (longer) |
+| kurz | kürzer (shorter) |
+| warm | wärmer (warmer) |
+
+**Example:** Meine Schwester ist **jünger als** ich. (My sister is younger than me.) · Mein Opa ist **älter als** mein Vater. (My grandpa is older than my father.)`,
+      explanationTr: `## Umlaut'lu karşılaştırma
+
+**a, o** veya **u** ünlüsü içeren birçok kısa, tek heceli sıfat karşılaştırma (ve üstünlük) derecesinde **umlaut** alır: a → ä, o → ö, u → ü.
+
+| Temel biçim | Komparativ |
+| --------- | ---------- |
+| alt | älter (daha yaşlı) |
+| jung | jünger (daha genç) |
+| groß | größer (daha büyük) |
+| lang | länger (daha uzun) |
+| kurz | kürzer (daha kısa) |
+| warm | wärmer (daha sıcak) |
+
+**Örnek:** Meine Schwester ist **jünger als** ich. (Kız kardeşim benden daha genç.) · Mein Opa ist **älter als** mein Vater. (Dedem babamdan daha yaşlı.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4511,12 +4583,42 @@ Two groups form the past participle **without** "ge-": inseparable verbs with th
       unitId: a2Unit3.id,
       order: 3,
       grammarTopic: "Superlativ mit 'am ...sten'",
-      explanationDe:
-        'Der Superlativ wird mit "am" + Adjektiv + "-sten" gebildet: schnell → am schnellsten, groß → am größten. Beispiel: "Der ICE ist am schnellsten."',
-      explanationEn:
-        'The superlative is formed with "am" + adjective + "-sten": schnell → am schnellsten (fastest), groß → am größten (biggest). Example: "Der ICE ist am schnellsten" (The ICE train is the fastest).',
-      explanationTr:
-        'Üstünlük derecesi "am" + sıfat + "-sten" ile kurulur: schnell → am schnellsten (en hızlı), groß → am größten (en büyük). Örnek: "Der ICE ist am schnellsten" (ICE treni en hızlısıdır).',
+      explanationDe: `## Der Superlativ mit „am …sten"
+
+Der Superlativ (2. Steigerungsstufe) drückt die höchste Stufe aus. Als Prädikat bildest du ihn mit **„am"** + Adjektiv + **„-sten"**. Adjektive auf -d, -t, -s, -z bekommen **-esten** (am ältesten).
+
+| Grundform | Komparativ | Superlativ |
+| --------- | ---------- | ---------- |
+| schnell | schneller | am schnellsten |
+| groß | größer | am größten |
+| alt | älter | am ältesten |
+| schön | schöner | am schönsten |
+
+**Beispiel:** Der ICE ist **am schnellsten**. · Der Berg ist **am größten**.`,
+      explanationEn: `## The superlative with "am …sten"
+
+The superlative (second degree of comparison) expresses the highest degree. As a predicate you form it with **"am"** + adjective + **"-sten"**. Adjectives ending in -d, -t, -s, -z take **-esten** (am ältesten).
+
+| Base form | Comparative | Superlative |
+| --------- | ---------- | ---------- |
+| schnell | schneller | am schnellsten (fastest) |
+| groß | größer | am größten (biggest) |
+| alt | älter | am ältesten (oldest) |
+| schön | schöner | am schönsten (nicest) |
+
+**Example:** Der ICE ist **am schnellsten**. (The ICE is the fastest.) · Der Berg ist **am größten**. (The mountain is the biggest.)`,
+      explanationTr: `## „am …sten" ile üstünlük derecesi
+
+Üstünlük derecesi (Superlativ) en yüksek dereceyi belirtir. Yüklem olarak **„am"** + sıfat + **„-sten"** ile kurarsın. -d, -t, -s, -z ile biten sıfatlar **-esten** alır (am ältesten).
+
+| Temel biçim | Komparativ | Superlativ |
+| --------- | ---------- | ---------- |
+| schnell | schneller | am schnellsten (en hızlı) |
+| groß | größer | am größten (en büyük) |
+| alt | älter | am ältesten (en yaşlı) |
+| schön | schöner | am schönsten (en güzel) |
+
+**Örnek:** Der ICE ist **am schnellsten**. (ICE en hızlısıdır.) · Der Berg ist **am größten**. (Dağ en büyüğüdür.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -4545,12 +4647,51 @@ Two groups form the past participle **without** "ge-": inseparable verbs with th
       unitId: a2Unit3.id,
       order: 4,
       grammarTopic: 'Unregelmäßige Steigerungsformen',
-      explanationDe:
-        'Einige Adjektive/Adverbien haben unregelmäßige Steigerungsformen: gut → besser → am besten, viel → mehr → am meisten, gern → lieber → am liebsten. Beispiel: "Ich trinke gern Tee, aber ich trinke lieber Kaffee."',
-      explanationEn:
-        'Some adjectives/adverbs have irregular comparison forms: gut → besser → am besten (good/better/best), viel → mehr → am meisten (much/more/most), gern → lieber → am liebsten (gladly/preferably/most preferred). Example: "Ich trinke gern Tee, aber ich trinke lieber Kaffee" (I like drinking tea, but I prefer coffee).',
-      explanationTr:
-        'Bazı sıfat/zarfların düzensiz karşılaştırma biçimleri vardır: gut → besser → am besten (iyi/daha iyi/en iyi), viel → mehr → am meisten (çok/daha çok/en çok), gern → lieber → am liebsten (seve seve/tercihen/en çok tercih edilen). Örnek: "Ich trinke gern Tee, aber ich trinke lieber Kaffee" (Çayı severim ama kahveyi tercih ederim).',
+      explanationDe: `## Unregelmäßige Steigerungsformen
+
+Einige sehr häufige Wörter steigern völlig unregelmäßig. Diese Formen musst du auswendig lernen:
+
+| Grundform | Komparativ | Superlativ |
+| --------- | ---------- | ---------- |
+| gut | besser | am besten |
+| viel | mehr | am meisten |
+| gern | lieber | am liebsten |
+| hoch | höher | am höchsten |
+| nah | näher | am nächsten |
+
+Mit „gern – lieber – am liebsten" drückst du Vorlieben aus.
+
+**Beispiel:** Ich trinke **gern** Tee, aber ich trinke **lieber** Kaffee. Schokolade mag ich **am liebsten**.`,
+      explanationEn: `## Irregular comparison forms
+
+A few very common words are compared completely irregularly. You have to memorize these forms:
+
+| Base form | Comparative | Superlative |
+| --------- | ---------- | ---------- |
+| gut | besser | am besten (good/better/best) |
+| viel | mehr | am meisten (much/more/most) |
+| gern | lieber | am liebsten (gladly/preferably/most of all) |
+| hoch | höher | am höchsten (high/higher/highest) |
+| nah | näher | am nächsten (near/nearer/nearest) |
+
+With "gern – lieber – am liebsten" you express preferences.
+
+**Example:** Ich trinke **gern** Tee, aber ich trinke **lieber** Kaffee. Schokolade mag ich **am liebsten**. (I like tea, but I prefer coffee. I like chocolate most of all.)`,
+      explanationTr: `## Düzensiz karşılaştırma biçimleri
+
+Çok sık kullanılan birkaç kelime tamamen düzensiz derecelenir. Bu biçimleri ezbere öğrenmen gerekir:
+
+| Temel biçim | Komparativ | Superlativ |
+| --------- | ---------- | ---------- |
+| gut | besser | am besten (iyi/daha iyi/en iyi) |
+| viel | mehr | am meisten (çok/daha çok/en çok) |
+| gern | lieber | am liebsten (severek/tercihen/en çok) |
+| hoch | höher | am höchsten (yüksek/daha yüksek/en yüksek) |
+| nah | näher | am nächsten (yakın/daha yakın/en yakın) |
+
+„gern – lieber – am liebsten" ile tercihlerini ifade edersin.
+
+**Örnek:** Ich trinke **gern** Tee, aber ich trinke **lieber** Kaffee. Schokolade mag ich **am liebsten**. (Çayı severim ama kahveyi tercih ederim. En çok da çikolatayı severim.)`,
     },
   })
   await prisma.exercise.createMany({
