@@ -3233,12 +3233,51 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
       unitId: a1Unit12.id,
       order: 1,
       grammarTopic: 'Imperativ (du)',
-      explanationDe:
-        'Der Imperativ für "du" benutzt den Verbstamm, oft ohne -st: "Komm!" "Geh!" "Iss!" (von "essen", mit Vokalwechsel).',
-      explanationEn:
-        'The imperative for "du" uses the verb stem, usually without -st: "Komm!" (Come!) "Geh!" (Go!) "Iss!" (Eat! — from "essen", with a vowel change).',
-      explanationTr:
-        '"du" için emir kipi fiil gövdesini kullanır, genellikle -st olmadan: "Komm!" (Gel!) "Geh!" (Git!) "Iss!" (Ye! — "essen"den, ünlü değişimiyle).',
+      explanationDe: `## Imperativ (du)
+
+Den Imperativ für „du" bildest du aus dem Verbstamm, meist ohne die Endung -st und ohne Pronomen. Aus „du kommst" wird „Komm!"
+
+| Infinitiv | du-Form | Imperativ |
+| --------- | ------- | --------- |
+| kommen | du kommst | Komm! |
+| gehen | du gehst | Geh! |
+| warten | du wartest | Warte! |
+| essen | du isst | Iss! |
+| sein | du bist | Sei! |
+
+**Beispiele:** **Komm** her! · **Geh** nach Hause! · **Sei** leise!
+
+„essen" hat einen Vokalwechsel (e → i), „sein" ist unregelmäßig: **Sei** ruhig!`,
+      explanationEn: `## The imperative (du)
+
+You form the "du" imperative from the verb stem, usually dropping the -st ending and the pronoun. "du kommst" becomes "Komm!"
+
+| Infinitive | du form | Imperative |
+| ---------- | ------- | ---------- |
+| kommen | du kommst | Komm! |
+| gehen | du gehst | Geh! |
+| warten | du wartest | Warte! |
+| essen | du isst | Iss! |
+| sein | du bist | Sei! |
+
+**Examples:** Komm her! (Come here!) · Geh nach Hause! (Go home!) · Sei leise! (Be quiet!)
+
+"essen" has a vowel change (e → i), and "sein" is irregular: Sei ruhig! (Be calm!)`,
+      explanationTr: `## Emir kipi (du)
+
+„du" için emir kipini fiil gövdesinden kurarsın, genellikle -st ekini ve zamiri atarsın. „du kommst" → „Komm!"
+
+| Mastar | du biçimi | Emir |
+| ------ | --------- | ---- |
+| kommen | du kommst | Komm! |
+| gehen | du gehst | Geh! |
+| warten | du wartest | Warte! |
+| essen | du isst | Iss! |
+| sein | du bist | Sei! |
+
+**Örnekler:** Komm her! (Buraya gel!) · Geh nach Hause! (Eve git!) · Sei leise! (Sessiz ol!)
+
+„essen" fiilinde ünlü değişimi var (e → i), „sein" ise düzensizdir: Sei ruhig! (Sakin ol!)`,
     },
   })
   await prisma.exercise.createMany({
@@ -3267,12 +3306,45 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
       unitId: a1Unit12.id,
       order: 2,
       grammarTopic: 'Imperativ (ihr/Sie)',
-      explanationDe:
-        'Für "ihr" benutzt man die Verbform ohne Pronomen: "Kommt!" Für die höfliche Form "Sie" benutzt man Verb + Sie: "Kommen Sie!"',
-      explanationEn:
-        'For "ihr" (plural you), use the verb form without the pronoun: "Kommt!" For the polite "Sie" form, use verb + Sie: "Kommen Sie!"',
-      explanationTr:
-        '"ihr" için fiil zamirsiz kullanılır: "Kommt!" Kibar "Sie" formu için fiil + Sie kullanılır: "Kommen Sie!"',
+      explanationDe: `## Imperativ (ihr/Sie)
+
+Für „ihr" nimmst du die ihr-Form des Verbs ohne Pronomen: „Kommt!" Für die höfliche Form „Sie" bleibt das Pronomen, aber es steht hinter dem Verb: „Kommen Sie!"
+
+| Verb | du | ihr | Sie |
+| ---- | -- | --- | --- |
+| kommen | Komm! | Kommt! | Kommen Sie! |
+| gehen | Geh! | Geht! | Gehen Sie! |
+| nehmen | Nimm! | Nehmt! | Nehmen Sie! |
+
+**Beispiele:** **Kommt** herein! · **Nehmen Sie** bitte Platz! · **Geht** nach Hause!
+
+Die Sie-Form benutzt du gegenüber fremden Personen, die ihr-Form gegenüber mehreren Freunden.`,
+      explanationEn: `## The imperative (ihr/Sie)
+
+For "ihr" (plural you), take the ihr form of the verb without the pronoun: "Kommt!" For the polite "Sie" form, keep the pronoun, but place it after the verb: "Kommen Sie!"
+
+| Verb | du | ihr | Sie |
+| ---- | -- | --- | --- |
+| kommen | Komm! | Kommt! | Kommen Sie! |
+| gehen | Geh! | Geht! | Gehen Sie! |
+| nehmen | Nimm! | Nehmt! | Nehmen Sie! |
+
+**Examples:** Kommt herein! (Come in!) · Nehmen Sie bitte Platz! (Please have a seat!) · Geht nach Hause! (Go home!)
+
+Use the Sie form with strangers, and the ihr form with several friends.`,
+      explanationTr: `## Emir kipi (ihr/Sie)
+
+„ihr" için fiilin ihr biçimini zamirsiz kullanırsın: „Kommt!" Kibar „Sie" biçiminde ise zamir kalır ama fiilden sonra gelir: „Kommen Sie!"
+
+| Fiil | du | ihr | Sie |
+| ---- | -- | --- | --- |
+| kommen | Komm! | Kommt! | Kommen Sie! |
+| gehen | Geh! | Geht! | Gehen Sie! |
+| nehmen | Nimm! | Nehmt! | Nehmen Sie! |
+
+**Örnekler:** Kommt herein! (İçeri gelin!) · Nehmen Sie bitte Platz! (Lütfen oturun!) · Geht nach Hause! (Eve gidin!)
+
+Sie biçimini yabancı kişilere, ihr biçimini birden fazla arkadaşına karşı kullanırsın.`,
     },
   })
   await prisma.exercise.createMany({
@@ -3307,12 +3379,51 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
       unitId: a1Unit12.id,
       order: 3,
       grammarTopic: 'Wegbeschreibung',
-      explanationDe:
-        'Wegbeschreibungen benutzen Imperativ und Richtungswörter: "Gehen Sie geradeaus. Biegen Sie links ab." "links" (left), "rechts" (right), "geradeaus" (straight ahead).',
-      explanationEn:
-        'Directions use the imperative and direction words: "Gehen Sie geradeaus." (Go straight ahead.) "Biegen Sie links ab." (Turn left.) "links" (left), "rechts" (right), "geradeaus" (straight ahead).',
-      explanationTr:
-        'Yol tarifi emir kipi ve yön kelimeleriyle yapılır: "Gehen Sie geradeaus." (Düz gidin.) "Biegen Sie links ab." (Sola dönün.) "links" (sol), "rechts" (sağ), "geradeaus" (düz).',
+      explanationDe: `## Wegbeschreibung
+
+Um den Weg zu beschreiben, benutzt du oft den Imperativ (meist die Sie-Form) und Richtungswörter. So erklärst du jemandem, wie er zu einem Ort kommt.
+
+| Wort | Bedeutung |
+| ---- | --------- |
+| geradeaus | immer weiter nach vorne |
+| links | auf die linke Seite |
+| rechts | auf die rechte Seite |
+| an der Ampel | bei der Verkehrsampel |
+| die erste Straße | die erste Abzweigung |
+
+**Beispiele:** **Gehen Sie geradeaus.** · **Biegen Sie an der Ampel links ab.** · **Nehmen Sie die erste Straße rechts.**
+
+Der Bahnhof ist dann auf der linken Seite.`,
+      explanationEn: `## Giving directions (Wegbeschreibung)
+
+To describe the way, you often use the imperative (usually the Sie form) together with direction words. This is how you tell someone how to get somewhere.
+
+| German | Meaning |
+| ------ | ------- |
+| geradeaus | straight ahead |
+| links | left |
+| rechts | right |
+| an der Ampel | at the traffic light |
+| die erste Straße | the first street |
+
+**Examples:** Gehen Sie geradeaus. (Go straight ahead.) · Biegen Sie an der Ampel links ab. (Turn left at the traffic light.) · Nehmen Sie die erste Straße rechts. (Take the first street on the right.)
+
+Der Bahnhof ist dann auf der linken Seite. (The station is then on the left-hand side.)`,
+      explanationTr: `## Yol tarifi (Wegbeschreibung)
+
+Yol tarif etmek için genelde emir kipini (çoğunlukla Sie biçimini) ve yön kelimelerini kullanırsın. Böylece birine bir yere nasıl gideceğini anlatırsın.
+
+| Almanca | Anlamı |
+| ------- | ------ |
+| geradeaus | düz |
+| links | sol |
+| rechts | sağ |
+| an der Ampel | ışıklarda |
+| die erste Straße | ilk sokak |
+
+**Örnekler:** Gehen Sie geradeaus. (Düz gidin.) · Biegen Sie an der Ampel links ab. (Işıklarda sola dönün.) · Nehmen Sie die erste Straße rechts. (İlk sokaktan sağa dönün.)
+
+Der Bahnhof ist dann auf der linken Seite. (Tren istasyonu o zaman sol tarafta olur.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -3341,12 +3452,45 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
       unitId: a1Unit12.id,
       order: 4,
       grammarTopic: 'Übung (Imperativ & Wegbeschreibung Wiederholung)',
-      explanationDe:
-        'Wiederholung: "Entschuldigung, wo ist der Bahnhof?" "Gehen Sie geradeaus und biegen Sie dann rechts ab."',
-      explanationEn:
-        'Review: "Entschuldigung, wo ist der Bahnhof?" (Excuse me, where is the train station?) "Gehen Sie geradeaus und biegen Sie dann rechts ab." (Go straight ahead and then turn right.)',
-      explanationTr:
-        'Tekrar: "Entschuldigung, wo ist der Bahnhof?" (Affedersiniz, tren istasyonu nerede?) "Gehen Sie geradeaus und biegen Sie dann rechts ab." (Düz gidin ve sonra sağa dönün.)',
+      explanationDe: `## Übung: Imperativ & Wegbeschreibung
+
+In dieser Übung wiederholst du den Imperativ und die Wegbeschreibung zusammen. Wenn du nach dem Weg fragst, beginnst du oft mit „Entschuldigung", und die Antwort steht meist im Imperativ.
+
+**Dialog:**
+
+- „**Entschuldigung**, wo ist der Bahnhof?"
+- „**Gehen Sie** geradeaus und **biegen Sie** dann rechts ab. Der Bahnhof ist links."
+- „Vielen Dank!"
+
+**Weitere Beispiele:** **Nimm** die erste Straße links! · **Geht** geradeaus bis zur Ampel!
+
+So verbindest du die höfliche Frage mit einer klaren Wegbeschreibung im Imperativ.`,
+      explanationEn: `## Practice: imperative & directions
+
+In this exercise you review the imperative and giving directions together. When you ask for the way, you often start with "Entschuldigung", and the answer is usually in the imperative.
+
+**Dialogue:**
+
+- "Entschuldigung, wo ist der Bahnhof?" (Excuse me, where is the train station?)
+- "Gehen Sie geradeaus und biegen Sie dann rechts ab. Der Bahnhof ist links." (Go straight ahead and then turn right. The station is on the left.)
+- "Vielen Dank!" (Thank you very much!)
+
+**More examples:** Nimm die erste Straße links! (Take the first street on the left!) · Geht geradeaus bis zur Ampel! (Go straight ahead to the traffic light!)
+
+This is how you combine the polite question with a clear direction in the imperative.`,
+      explanationTr: `## Alıştırma: emir kipi & yol tarifi
+
+Bu alıştırmada emir kipini ve yol tarifini birlikte tekrar edersin. Yolu sorarken genelde „Entschuldigung" ile başlarsın ve cevap çoğunlukla emir kipindedir.
+
+**Diyalog:**
+
+- „Entschuldigung, wo ist der Bahnhof?" (Affedersiniz, tren istasyonu nerede?)
+- „Gehen Sie geradeaus und biegen Sie dann rechts ab. Der Bahnhof ist links." (Düz gidin ve sonra sağa dönün. İstasyon solda.)
+- „Vielen Dank!" (Çok teşekkürler!)
+
+**Diğer örnekler:** Nimm die erste Straße links! (İlk sokaktan sola dön!) · Geht geradeaus bis zur Ampel! (Işıklara kadar düz gidin!)
+
+Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
     },
   })
   await prisma.exercise.createMany({
