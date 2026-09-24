@@ -5536,12 +5536,48 @@ Bir doğrudan soruyu dolaylıya şöyle çevirirsin:
       unitId: a2Unit7.id,
       order: 1,
       grammarTopic: "Präteritum von 'sein' und 'haben'",
-      explanationDe:
-        'Im Präteritum: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren. "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Beispiel: "Ich war müde. Ich hatte keine Zeit."',
-      explanationEn:
-        'In the Präteritum: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren (was/were). "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten (had). Example: "Ich war müde. Ich hatte keine Zeit" (I was tired. I had no time).',
-      explanationTr:
-        'Präteritumda: "sein" → ich war, du warst, er war, wir waren, ihr wart, sie waren (idi). "haben" → ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten (sahipti). Örnek: "Ich war müde. Ich hatte keine Zeit" (Yorgundum. Vaktim yoktu).',
+      explanationDe: `## Präteritum von „sein" und „haben"
+
+Das Präteritum ist die Vergangenheitsform, die man beim Schreiben und beim Erzählen benutzt. Bei „sein" und „haben" ist es auch beim Sprechen üblich – man sagt lieber „ich war" als „ich bin gewesen".
+
+| Person | sein | haben |
+| --------- | ---- | ----- |
+| ich | war | hatte |
+| du | warst | hattest |
+| er/sie/es | war | hatte |
+| wir | waren | hatten |
+| ihr | wart | hattet |
+| sie/Sie | waren | hatten |
+
+**Beispiel:** Ich **war** müde. Ich **hatte** keine Zeit.`,
+      explanationEn: `## Präteritum of "sein" and "haben"
+
+The Präteritum is the past tense used in writing and storytelling. With "sein" and "haben" it is also common in speech – people prefer "ich war" over "ich bin gewesen".
+
+| Pronoun | sein | haben |
+| --------- | ---- | ----- |
+| ich | war | hatte |
+| du | warst | hattest |
+| er/sie/es | war | hatte |
+| wir | waren | hatten |
+| ihr | wart | hattet |
+| sie/Sie | waren | hatten |
+
+**Example:** Ich **war** müde. Ich **hatte** keine Zeit. (I was tired. I had no time.)`,
+      explanationTr: `## „sein" ve „haben"in Präteritum hali
+
+Präteritum, yazıda ve hikaye anlatırken kullanılan geçmiş zamandır. „sein" ve „haben"de konuşmada da yaygındır – „ich bin gewesen" yerine „ich war" demeyi tercih edersin.
+
+| Kişi | sein | haben |
+| --------- | ---- | ----- |
+| ich | war | hatte |
+| du | warst | hattest |
+| er/sie/es | war | hatte |
+| wir | waren | hatten |
+| ihr | wart | hattet |
+| sie/Sie | waren | hatten |
+
+**Örnek:** Ich **war** müde. Ich **hatte** keine Zeit. (Yorgundum. Vaktim yoktu.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5576,12 +5612,45 @@ Bir doğrudan soruyu dolaylıya şöyle çevirirsin:
       unitId: a2Unit7.id,
       order: 2,
       grammarTopic: 'Präteritum der Modalverben',
-      explanationDe:
-        'Die Modalverben verlieren im Präteritum den Umlaut: können → konnte, müssen → musste, wollen → wollte, dürfen → durfte. Beispiel: "Ich konnte gestern nicht kommen, weil ich arbeiten musste."',
-      explanationEn:
-        'Modal verbs lose their umlaut in the Präteritum: können → konnte (could), müssen → musste (had to), wollen → wollte (wanted to), dürfen → durfte (was allowed to). Example: "Ich konnte gestern nicht kommen, weil ich arbeiten musste" (I couldn\'t come yesterday because I had to work).',
-      explanationTr:
-        'Modal fiiller Präteritumda umlautlarını kaybeder: können → konnte (yapabildi), müssen → musste (zorunda kaldı), wollen → wollte (istedi), dürfen → durfte (izinliydi). Örnek: "Ich konnte gestern nicht kommen, weil ich arbeiten musste" (Dün gelemedim çünkü çalışmak zorundaydım).',
+      explanationDe: `## Präteritum der Modalverben
+
+Modalverben benutzt man in der Vergangenheit fast immer im **Präteritum** (nicht im Perfekt). Wichtig: Der **Umlaut fällt weg**, und man hängt ein **-te** an den Stamm an.
+
+| Infinitiv | Präteritum (ich) |
+| --------- | ---------------- |
+| können | konnte |
+| müssen | musste |
+| wollen | wollte |
+| dürfen | durfte |
+| sollen | sollte |
+
+**Beispiel:** Ich **konnte** gestern nicht kommen, weil ich arbeiten **musste**.`,
+      explanationEn: `## Präteritum of modal verbs
+
+In the past, modal verbs are almost always used in the **Präteritum** (not the Perfekt). Important: the **umlaut drops**, and you add **-te** to the stem.
+
+| Infinitive | Präteritum (ich) |
+| --------- | ---------------- |
+| können | konnte (could) |
+| müssen | musste (had to) |
+| wollen | wollte (wanted to) |
+| dürfen | durfte (was allowed to) |
+| sollen | sollte (was supposed to) |
+
+**Example:** Ich **konnte** gestern nicht kommen, weil ich arbeiten **musste**. (I couldn't come yesterday because I had to work.)`,
+      explanationTr: `## Modal fiillerin Präteritum hali
+
+Geçmişte modal fiilleri neredeyse her zaman **Präteritum** ile kullanırsın (Perfekt ile değil). Önemli: **umlaut düşer** ve köke **-te** eklersin.
+
+| Mastar | Präteritum (ich) |
+| --------- | ---------------- |
+| können | konnte (yapabildi) |
+| müssen | musste (zorunda kaldı) |
+| wollen | wollte (istedi) |
+| dürfen | durfte (izinliydi) |
+| sollen | sollte (-meliydi) |
+
+**Örnek:** Ich **konnte** gestern nicht kommen, weil ich arbeiten **musste**. (Dün gelemedim çünkü çalışmak zorundaydım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5610,12 +5679,42 @@ Bir doğrudan soruyu dolaylıya şöyle çevirirsin:
       unitId: a2Unit7.id,
       order: 3,
       grammarTopic: "Präteritum: 'mochte' und 'sollte'",
-      explanationDe:
-        '"mögen" wird im Präteritum zu "mochte" (ich mochte, du mochtest...), "sollen" wird zu "sollte" (ich sollte, du solltest...). Diese Formen benutzt man oft beim Erzählen von Geschichten. Beispiel: "Als Kind mochte ich keinen Fisch."',
-      explanationEn:
-        '"mögen" (to like) becomes "mochte" in the Präteritum (ich mochte, du mochtest...), "sollen" (should) becomes "sollte" (ich sollte, du solltest...). These forms are often used when narrating stories. Example: "Als Kind mochte ich keinen Fisch" (As a child I didn\'t like fish).',
-      explanationTr:
-        '"mögen" (sevmek) Präteritumda "mochte" olur (ich mochte, du mochtest...), "sollen" ise "sollte" olur (ich sollte, du solltest...). Bu biçimler genellikle hikaye anlatırken kullanılır. Örnek: "Als Kind mochte ich keinen Fisch" (Çocukken balık sevmezdim).',
+      explanationDe: `## Präteritum: „mochte" und „sollte"
+
+Zwei weitere Modalverben sind besonders nützlich beim Erzählen: „mögen" wird zu **„mochte"** und „sollen" wird zu **„sollte"**. Beachte: „mögen" verliert das g und bekommt ein ch.
+
+| Person | mögen → mochte | sollen → sollte |
+| --------- | -------------- | --------------- |
+| ich | mochte | sollte |
+| du | mochtest | solltest |
+| er/sie/es | mochte | sollte |
+| wir | mochten | sollten |
+
+**Beispiel:** Als Kind **mochte** ich keinen Fisch. · Du **solltest** früher ins Bett gehen.`,
+      explanationEn: `## Präteritum: "mochte" and "sollte"
+
+Two more modal verbs are especially useful for storytelling: "mögen" becomes **"mochte"** and "sollen" becomes **"sollte"**. Note: "mögen" loses the g and gets a ch.
+
+| Pronoun | mögen → mochte | sollen → sollte |
+| --------- | -------------- | --------------- |
+| ich | mochte | sollte |
+| du | mochtest | solltest |
+| er/sie/es | mochte | sollte |
+| wir | mochten | sollten |
+
+**Example:** Als Kind **mochte** ich keinen Fisch. (As a child I didn't like fish.) · Du **solltest** früher ins Bett gehen. (You should have gone to bed earlier.)`,
+      explanationTr: `## Präteritum: „mochte" ve „sollte"
+
+Hikaye anlatırken çok işine yarayan iki modal fiil daha var: „mögen" **„mochte"** olur, „sollen" ise **„sollte"** olur. Dikkat: „mögen" g'yi kaybedip ch alır.
+
+| Kişi | mögen → mochte | sollen → sollte |
+| --------- | -------------- | --------------- |
+| ich | mochte | sollte |
+| du | mochtest | solltest |
+| er/sie/es | mochte | sollte |
+| wir | mochten | sollten |
+
+**Örnek:** Als Kind **mochte** ich keinen Fisch. (Çocukken balık sevmezdim.) · Du **solltest** früher ins Bett gehen. (Daha erken yatmalıydın.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -5644,12 +5743,39 @@ Bir doğrudan soruyu dolaylıya şöyle çevirirsin:
       unitId: a2Unit7.id,
       order: 4,
       grammarTopic: 'Präteritum vs. Perfekt',
-      explanationDe:
-        'Im gesprochenen Deutsch benutzt man meist das Perfekt, aber "sein", "haben" und die Modalverben werden auch mündlich oft im Präteritum benutzt: "Ich war müde" (nicht "Ich bin müde gewesen"). Im Schriftlichen (Geschichten, Nachrichten) ist das Präteritum häufiger.',
-      explanationEn:
-        'In spoken German, the Perfekt is usually preferred, but "sein", "haben", and the modal verbs are often used in the Präteritum even in speech: "Ich war müde" (not "Ich bin müde gewesen"). In writing (stories, news), the Präteritum is more common.',
-      explanationTr:
-        'Konuşma dilinde genellikle Perfekt tercih edilir, ancak "sein", "haben" ve modal fiiller konuşmada da sıklıkla Präteritumda kullanılır: "Ich war müde" (Ich bin müde gewesen değil). Yazı dilinde (hikayeler, haberler) Präteritum daha yaygındır.',
+      explanationDe: `## Präteritum oder Perfekt?
+
+Beide sind Vergangenheitsformen, aber man benutzt sie unterschiedlich. Als Faustregel:
+
+| Form | Wann? | Beispiel |
+| ---- | ----- | -------- |
+| Perfekt | gesprochene Sprache, die meisten Verben | Ich **habe** gegessen. |
+| Präteritum | geschriebene Sprache (Geschichten, Nachrichten) | Er **ging** nach Hause. |
+| Präteritum | „sein", „haben" und Modalverben – auch mündlich | Ich **war** müde. Ich **hatte** keine Zeit. |
+
+**Beispiel:** Ich **war** gestern sehr müde und **hatte** keine Zeit.`,
+      explanationEn: `## Präteritum or Perfekt?
+
+Both are past tenses, but they are used differently. As a rule of thumb:
+
+| Form | When? | Example |
+| ---- | ----- | -------- |
+| Perfekt | spoken language, most verbs | Ich **habe** gegessen. (I ate.) |
+| Präteritum | written language (stories, news) | Er **ging** nach Hause. (He went home.) |
+| Präteritum | "sein", "haben" and modal verbs – also in speech | Ich **war** müde. Ich **hatte** keine Zeit. |
+
+**Example:** Ich **war** gestern sehr müde und **hatte** keine Zeit. (Yesterday I was very tired and had no time.)`,
+      explanationTr: `## Präteritum mı Perfekt mi?
+
+İkisi de geçmiş zamandır ama farklı kullanılır. Genel kural:
+
+| Biçim | Ne zaman? | Örnek |
+| ---- | ----- | -------- |
+| Perfekt | konuşma dili, fiillerin çoğu | Ich **habe** gegessen. (Yedim.) |
+| Präteritum | yazı dili (hikayeler, haberler) | Er **ging** nach Hause. (Eve gitti.) |
+| Präteritum | „sein", „haben" ve modal fiiller – konuşmada da | Ich **war** müde. Ich **hatte** keine Zeit. |
+
+**Örnek:** Ich **war** gestern sehr müde und **hatte** keine Zeit. (Dün çok yorgundum ve vaktim yoktu.)`,
     },
   })
   await prisma.exercise.createMany({
