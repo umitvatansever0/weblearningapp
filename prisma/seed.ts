@@ -3840,9 +3840,54 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
       unitId: a2Unit.id,
       order: 1,
       grammarTopic: "Perfekt mit 'haben'",
-      explanationDe: 'Die meisten Verben bilden das Perfekt mit "haben" + Partizip II, z. B. "Ich habe gegessen."',
-      explanationEn: 'Most verbs form the Perfekt (past tense) with "haben" + past participle, e.g. "Ich habe gegessen" (I have eaten).',
-      explanationTr: 'Çoğu fiil Perfekt (geçmiş zaman) yapısını "haben" + Partizip II ile kurar, örn. "Ich habe gegessen" (Yedim).',
+      explanationDe: `## Das Perfekt mit „haben"
+
+Das Perfekt ist die wichtigste Vergangenheitsform beim Sprechen. Die meisten Verben bilden es mit dem Hilfsverb „haben" (konjugiert auf Position 2) und dem **Partizip II** am Satzende.
+
+| Person | haben | Partizip II |
+| --------- | ----- | ----------- |
+| ich | habe | gegessen |
+| du | hast | gemacht |
+| er/sie/es | hat | gekauft |
+| wir | haben | gespielt |
+| ihr | habt | getrunken |
+| sie/Sie | haben | gearbeitet |
+
+Regelmäßige Verben bilden das Partizip II mit **ge- + Stamm + -t**: machen → **gemacht**. Unregelmäßige Verben enden oft auf **-en**: essen → **gegessen**.
+
+**Beispiel:** Ich **habe** gestern Pizza **gegessen**.`,
+      explanationEn: `## The Perfekt with "haben"
+
+The Perfekt is the most important past tense in spoken German. Most verbs form it with the auxiliary "haben" (conjugated in position 2) and the **past participle (Partizip II)** at the end of the sentence.
+
+| Pronoun | haben | Partizip II |
+| --------- | ----- | ----------- |
+| ich | habe | gegessen |
+| du | hast | gemacht |
+| er/sie/es | hat | gekauft |
+| wir | haben | gespielt |
+| ihr | habt | getrunken |
+| sie/Sie | haben | gearbeitet |
+
+Regular verbs form the participle with **ge- + stem + -t**: machen → **gemacht** (made). Irregular verbs often end in **-en**: essen → **gegessen** (eaten).
+
+**Example:** Ich **habe** gestern Pizza **gegessen**. (I ate pizza yesterday.)`,
+      explanationTr: `## „haben" ile Perfekt
+
+Perfekt, konuşma dilindeki en önemli geçmiş zaman biçimidir. Fiillerin çoğu bunu yardımcı fiil „haben" (2. pozisyonda çekilir) ve cümle sonundaki **Partizip II** ile kurar.
+
+| Kişi | haben | Partizip II |
+| --------- | ----- | ----------- |
+| ich | habe | gegessen |
+| du | hast | gemacht |
+| er/sie/es | hat | gekauft |
+| wir | haben | gespielt |
+| ihr | habt | getrunken |
+| sie/Sie | haben | gearbeitet |
+
+Düzenli fiiller Partizip II'yi **ge- + kök + -t** ile kurar: machen → **gemacht** (yaptı). Düzensiz fiiller ise genelde **-en** ile biter: essen → **gegessen** (yedi).
+
+**Örnek:** Ich **habe** gestern Pizza **gegessen**. (Dün pizza yedim.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -3871,12 +3916,51 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
       unitId: a2Unit.id,
       order: 2,
       grammarTopic: "Perfekt mit 'sein'",
-      explanationDe:
-        'Bewegungsverben und Verben, die eine Zustandsveränderung ausdrücken, bilden das Perfekt mit "sein" statt "haben", z. B. "Ich bin nach Berlin gefahren." "Er ist zu Hause geblieben."',
-      explanationEn:
-        'Verbs of motion and verbs expressing a change of state form the Perfekt with "sein" instead of "haben", e.g. "Ich bin nach Berlin gefahren" (I went to Berlin). "Er ist zu Hause geblieben" (He stayed home).',
-      explanationTr:
-        'Hareket bildiren fiiller ve durum değişikliği ifade eden fiiller Perfekt zamanını "haben" yerine "sein" ile kurar, örn. "Ich bin nach Berlin gefahren" (Berlin\'e gittim). "Er ist zu Hause geblieben" (Evde kaldı).',
+      explanationDe: `## Das Perfekt mit „sein"
+
+Einige Verben bilden das Perfekt mit „sein" statt „haben". Das gilt vor allem für **Bewegungsverben** (gehen, fahren, kommen) und Verben der **Zustandsveränderung** (aufstehen, aufwachen). Auch „sein" und „bleiben" gehören dazu.
+
+| Verb | Perfekt |
+| ----- | ------- |
+| gehen | ich **bin** gegangen |
+| fahren | ich **bin** gefahren |
+| kommen | ich **bin** gekommen |
+| bleiben | ich **bin** geblieben |
+| sein | ich **bin** gewesen |
+
+Das Hilfsverb „sein" steht auf Position 2, das Partizip II am Satzende.
+
+**Beispiele:** Ich **bin** nach Berlin **gefahren**. · Er **ist** zu Hause **geblieben**.`,
+      explanationEn: `## The Perfekt with "sein"
+
+Some verbs form the Perfekt with "sein" instead of "haben". This applies mainly to **verbs of motion** (gehen, fahren, kommen) and verbs of **change of state** (aufstehen, aufwachen). "sein" and "bleiben" also belong here.
+
+| Verb | Perfekt |
+| ----- | ------- |
+| gehen | ich **bin** gegangen (I went) |
+| fahren | ich **bin** gefahren (I drove) |
+| kommen | ich **bin** gekommen (I came) |
+| bleiben | ich **bin** geblieben (I stayed) |
+| sein | ich **bin** gewesen (I have been) |
+
+The auxiliary "sein" goes in position 2, the participle at the end of the sentence.
+
+**Examples:** Ich **bin** nach Berlin **gefahren**. (I went to Berlin.) · Er **ist** zu Hause **geblieben**. (He stayed home.)`,
+      explanationTr: `## „sein" ile Perfekt
+
+Bazı fiiller Perfekt'i „haben" yerine „sein" ile kurar. Bu özellikle **hareket fiilleri** (gehen, fahren, kommen) ve **durum değişikliği** bildiren fiiller (aufstehen, aufwachen) için geçerlidir. „sein" ve „bleiben" de bu gruba girer.
+
+| Fiil | Perfekt |
+| ----- | ------- |
+| gehen | ich **bin** gegangen (gittim) |
+| fahren | ich **bin** gefahren (gittim/sürdüm) |
+| kommen | ich **bin** gekommen (geldim) |
+| bleiben | ich **bin** geblieben (kaldım) |
+| sein | ich **bin** gewesen (oldum/bulundum) |
+
+Yardımcı fiil „sein" 2. pozisyonda, Partizip II ise cümle sonunda yer alır.
+
+**Örnekler:** Ich **bin** nach Berlin **gefahren**. (Berlin'e gittim.) · Er **ist** zu Hause **geblieben**. (Evde kaldı.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -3905,12 +3989,45 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
       unitId: a2Unit.id,
       order: 3,
       grammarTopic: 'Zeitangaben der Vergangenheit',
-      explanationDe:
-        'Wichtige Zeitausdrücke für die Vergangenheit: gestern, letzte Woche, vor zwei Tagen, letztes Jahr. Beispiel: "Vor zwei Tagen habe ich meine Oma besucht."',
-      explanationEn:
-        'Important time expressions for the past: gestern (yesterday), letzte Woche (last week), vor zwei Tagen (two days ago), letztes Jahr (last year). Example: "Vor zwei Tagen habe ich meine Oma besucht" (Two days ago I visited my grandma).',
-      explanationTr:
-        'Geçmiş zaman için önemli zaman ifadeleri: gestern (dün), letzte Woche (geçen hafta), vor zwei Tagen (iki gün önce), letztes Jahr (geçen yıl). Örnek: "Vor zwei Tagen habe ich meine Oma besucht" (İki gün önce büyükannemi ziyaret ettim).',
+      explanationDe: `## Zeitangaben der Vergangenheit
+
+Mit Zeitausdrücken sagst du, **wann** etwas passiert ist. Sie stehen oft am Satzanfang; dann folgt direkt das konjugierte Verb (Position 2).
+
+| Zeitangabe | Bedeutung |
+| ----------- | --------- |
+| gestern | der Tag zuvor |
+| vorgestern | zwei Tage zuvor |
+| letzte Woche | die Woche davor |
+| letztes Jahr | das Jahr davor |
+| vor zwei Tagen | vor einer bestimmten Zeit |
+
+**Beispiel:** **Vor zwei Tagen** habe ich meine Oma besucht. · **Letzte Woche** war ich krank.`,
+      explanationEn: `## Time expressions for the past
+
+Time expressions tell you **when** something happened. They often stand at the beginning of the sentence; then the conjugated verb comes right after (position 2).
+
+| Time expression | Meaning |
+| ----------- | --------- |
+| gestern | yesterday |
+| vorgestern | the day before yesterday |
+| letzte Woche | last week |
+| letztes Jahr | last year |
+| vor zwei Tagen | two days ago |
+
+**Example:** **Vor zwei Tagen** habe ich meine Oma besucht. (Two days ago I visited my grandma.) · **Letzte Woche** war ich krank. (Last week I was ill.)`,
+      explanationTr: `## Geçmiş zaman ifadeleri
+
+Zaman ifadeleriyle bir şeyin **ne zaman** olduğunu söylersin. Genelde cümle başında bulunurlar; o zaman çekimli fiil hemen ardından gelir (2. pozisyon).
+
+| Zaman ifadesi | Anlamı |
+| ----------- | --------- |
+| gestern | dün |
+| vorgestern | evvelki gün |
+| letzte Woche | geçen hafta |
+| letztes Jahr | geçen yıl |
+| vor zwei Tagen | iki gün önce |
+
+**Örnek:** **Vor zwei Tagen** habe ich meine Oma besucht. (İki gün önce büyükannemi ziyaret ettim.) · **Letzte Woche** war ich krank. (Geçen hafta hastaydım.)`,
     },
   })
   await prisma.exercise.createMany({
@@ -3942,12 +4059,42 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
       unitId: a2Unit.id,
       order: 4,
       grammarTopic: 'Wiederholung: Alltag erzählen',
-      explanationDe:
-        'Kombiniere Perfekt mit "haben" und "sein", um deinen Alltag zu erzählen: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren."',
-      explanationEn:
-        'Combine Perfekt with "haben" and "sein" to narrate your day: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren" (I got up, had breakfast, and drove to work).',
-      explanationTr:
-        'Gününü anlatmak için "haben" ve "sein" ile kurulan Perfekt yapılarını birleştir: "Ich bin aufgestanden, habe gefrühstückt und bin zur Arbeit gefahren" (Kalktım, kahvaltı yaptım ve işe gittim).',
+      explanationDe: `## Wiederholung: den Alltag erzählen
+
+Wenn du deinen Tag erzählst, kombinierst du das Perfekt mit „haben" und „sein". Bewegungsverben nehmen „sein", die meisten anderen Verben „haben". Mit „und", „dann" und „danach" verbindest du die Sätze.
+
+| Verb | Hilfsverb | Beispiel |
+| ----- | --------- | -------- |
+| aufstehen | sein | ich **bin** aufgestanden |
+| frühstücken | haben | ich **habe** gefrühstückt |
+| fahren | sein | ich **bin** gefahren |
+| arbeiten | haben | ich **habe** gearbeitet |
+
+**Beispiel:** Ich **bin** aufgestanden, **habe** gefrühstückt und **bin** zur Arbeit gefahren.`,
+      explanationEn: `## Review: narrating your day
+
+When you tell someone about your day, you combine the Perfekt with "haben" and "sein". Verbs of motion take "sein", most other verbs take "haben". You link the sentences with "und" (and), "dann" (then) and "danach" (afterwards).
+
+| Verb | Auxiliary | Example |
+| ----- | --------- | -------- |
+| aufstehen | sein | ich **bin** aufgestanden (I got up) |
+| frühstücken | haben | ich **habe** gefrühstückt (I had breakfast) |
+| fahren | sein | ich **bin** gefahren (I drove) |
+| arbeiten | haben | ich **habe** gearbeitet (I worked) |
+
+**Example:** Ich **bin** aufgestanden, **habe** gefrühstückt und **bin** zur Arbeit gefahren. (I got up, had breakfast and drove to work.)`,
+      explanationTr: `## Tekrar: gününü anlatmak
+
+Gününü anlatırken „haben" ve „sein" ile kurulan Perfekt'i birleştirirsin. Hareket fiilleri „sein", diğer fiillerin çoğu „haben" alır. Cümleleri „und" (ve), „dann" (sonra) ve „danach" (ardından) ile bağlarsın.
+
+| Fiil | Yardımcı fiil | Örnek |
+| ----- | --------- | -------- |
+| aufstehen | sein | ich **bin** aufgestanden (kalktım) |
+| frühstücken | haben | ich **habe** gefrühstückt (kahvaltı yaptım) |
+| fahren | sein | ich **bin** gefahren (gittim) |
+| arbeiten | haben | ich **habe** gearbeitet (çalıştım) |
+
+**Örnek:** Ich **bin** aufgestanden, **habe** gefrühstückt und **bin** zur Arbeit gefahren. (Kalktım, kahvaltı yaptım ve işe gittim.)`,
     },
   })
   await prisma.exercise.createMany({
