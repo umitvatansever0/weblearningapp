@@ -12557,67 +12557,148 @@ Remember the order **Te-Ka-Mo-Lo** — it helps you build clear, natural sentenc
       grammarTopic: 'Vorgangspassiv im Präsens',
       explanationDe: `## Das Vorgangspassiv (Präsens)
 
-Im **Aktiv** steht die handelnde Person im Mittelpunkt: *Der Arbeiter baut das Haus.* Im **Passiv** rückt die **Handlung selbst** in den Vordergrund – wer sie ausführt, ist oft unwichtig oder unbekannt.
+Im **Aktiv** steht die **handelnde Person** im Mittelpunkt: *Der Arbeiter baut das Haus.* Im **Passiv** rückt die **Handlung selbst** in den Vordergrund – wer sie ausführt, ist oft unwichtig, unbekannt oder selbstverständlich. Deshalb ist das Passiv typisch für **Nachrichten, Anleitungen, Rezepte und wissenschaftliche Texte**.
 
-Das Vorgangspassiv im Präsens wird mit **„werden" (konjugiert) + Partizip II** gebildet. Das Akkusativobjekt des Aktivsatzes wird zum **Subjekt** im Nominativ.
+### Bildung
+Das Vorgangspassiv im Präsens wird mit **„werden" (konjugiert) + Partizip II** gebildet. Das **Akkusativobjekt** des Aktivsatzes wird zum **Subjekt** (Nominativ) des Passivsatzes.
+
+> Aktiv: *Der Arzt untersucht **den Patienten**.*
+> Passiv: ***Der Patient** wird untersucht.*
+
+| Person | „werden" | Beispiel |
+| ---- | ---- | ---- |
+| ich | werde | Ich **werde** gefragt. |
+| du | wirst | Du **wirst** gefragt. |
+| er/sie/es | wird | Er **wird** gefragt. |
+| wir | werden | Wir **werden** gefragt. |
+| ihr | werdet | Ihr **werdet** gefragt. |
+| sie/Sie | werden | Sie **werden** gefragt. |
+
+### Vom Aktiv zum Passiv
+1. Das **Akkusativobjekt** wird **Subjekt**.
+2. Das Verb wird zu **„werden" + Partizip II**.
+3. Das alte Subjekt (der Handelnde) fällt weg **oder** wird mit **„von" + Dativ** genannt.
 
 | Aktiv | Passiv |
 | ---- | ---- |
 | Man baut das Haus. | Das Haus **wird gebaut**. |
-| Der Arzt untersucht den Patienten. | Der Patient **wird untersucht**. |
+| Der Arzt untersucht den Patienten. | Der Patient **wird** (vom Arzt) **untersucht**. |
 | Die Firma stellt neue Mitarbeiter ein. | Neue Mitarbeiter **werden eingestellt**. |
 
+### Das Agens: „von" oder „durch"
+- **„von" + Dativ** → die handelnde **Person/Institution**: *Das Gesetz wird **vom** Parlament beschlossen.*
+- **„durch" + Akkusativ** → das **Mittel/die Ursache**: *Die Stadt wurde **durch** ein Erdbeben zerstört.*
+
 **Merke:**
-- Das **Partizip II** steht immer **am Satzende**.
-- Den Handelnden kann man mit **„von" + Dativ** nennen: *Das Haus wird **von** dem Architekten geplant.*
-- Nur Verben mit Akkusativobjekt bilden ein „echtes" Passiv.
+- Das **Partizip II** steht immer **am Satzende** (Satzklammer).
+- Nur Verben mit **Akkusativobjekt** bilden ein „echtes" Passiv.
+- Bei trennbaren Verben bleibt das Partizip zusammen: *Das Licht wird **ausgeschaltet**.*
+
+### Häufige Fehler
+- ❌ *Das Haus ist gebaut.* (das ist Zustandspassiv!) → ✅ *Das Haus **wird** gebaut.* (Vorgang)
+- ❌ *Das Auto wird reparieren.* → ✅ *Das Auto wird **repariert**.* (Partizip II, nicht Infinitiv)
 
 **Beispiele:**
 - Hier **wird** ein Tunnel **gebaut**.
 - Die Rechnungen **werden** am Monatsende **bezahlt**.
-- Der Patient **wird** sofort **operiert**.`,
+- Der Patient **wird** sofort **operiert**.
+- In diesem Büro **wird** nur Deutsch **gesprochen**.`,
       explanationEn: `## The passive voice (present tense)
 
-In the **active** voice the agent is the focus: *Der Arbeiter baut das Haus.* (The worker builds the house.) In the **passive**, the **action itself** takes center stage – who performs it is often unimportant or unknown.
+In the **active** voice the **agent** is the focus: *Der Arbeiter baut das Haus.* (The worker builds the house.) In the **passive**, the **action itself** takes center stage – who performs it is often unimportant, unknown or obvious. That is why the passive is typical of **news, instructions, recipes and academic texts**.
 
-The present-tense passive is formed with **conjugated "werden" + past participle (Partizip II)**. The accusative object of the active sentence becomes the **subject** (nominative).
+### Formation
+The present-tense passive is formed with **conjugated "werden" + past participle (Partizip II)**. The **accusative object** of the active sentence becomes the **subject** (nominative) of the passive sentence.
+
+> Active: *Der Arzt untersucht **den Patienten**.*
+> Passive: ***Der Patient** wird untersucht.*
+
+| Person | "werden" | Example |
+| ---- | ---- | ---- |
+| ich | werde | Ich **werde** gefragt. |
+| du | wirst | Du **wirst** gefragt. |
+| er/sie/es | wird | Er **wird** gefragt. |
+| wir | werden | Wir **werden** gefragt. |
+| ihr | werdet | Ihr **werdet** gefragt. |
+| sie/Sie | werden | Sie **werden** gefragt. |
+
+### From active to passive
+1. The **accusative object** becomes the **subject**.
+2. The verb becomes **"werden" + past participle**.
+3. The old subject (the agent) is dropped **or** named with **"von" + dative**.
 
 | Active | Passive |
 | ---- | ---- |
-| Man baut das Haus. | Das Haus **wird gebaut**. (The house is being built.) |
-| Der Arzt untersucht den Patienten. | Der Patient **wird untersucht**. (The patient is examined.) |
-| Die Firma stellt neue Mitarbeiter ein. | Neue Mitarbeiter **werden eingestellt**. (New staff are hired.) |
+| Man baut das Haus. | Das Haus **wird gebaut**. (is being built) |
+| Der Arzt untersucht den Patienten. | Der Patient **wird** (vom Arzt) **untersucht**. |
+| Die Firma stellt neue Mitarbeiter ein. | Neue Mitarbeiter **werden eingestellt**. |
+
+### The agent: "von" or "durch"
+- **"von" + dative** → the acting **person/institution**: *Das Gesetz wird **vom** Parlament beschlossen.*
+- **"durch" + accusative** → the **means/cause**: *Die Stadt wurde **durch** ein Erdbeben zerstört.*
 
 **Note:**
 - The **Partizip II** always goes to the **end** of the clause.
-- The agent can be named with **"von" + dative**: *Das Haus wird **von** dem Architekten geplant.*
-- Only verbs with an accusative object form a "true" passive.
+- Only verbs with an **accusative object** form a "true" passive.
+- With separable verbs the participle stays together: *Das Licht wird **ausgeschaltet**.*
+
+### Common mistakes
+- ❌ *Das Haus ist gebaut.* (that's the stative passive!) → ✅ *Das Haus **wird** gebaut.* (process)
+- ❌ *Das Auto wird reparieren.* → ✅ *Das Auto wird **repariert**.* (past participle, not infinitive)
 
 **Examples:**
 - Hier **wird** ein Tunnel **gebaut**. (A tunnel is being built here.)
 - Die Rechnungen **werden** am Monatsende **bezahlt**. (The bills are paid at the end of the month.)
-- Der Patient **wird** sofort **operiert**. (The patient is operated on immediately.)`,
+- Der Patient **wird** sofort **operiert**. (The patient is operated on immediately.)
+- In diesem Büro **wird** nur Deutsch **gesprochen**. (Only German is spoken in this office.)`,
       explanationTr: `## Edilgen çatı (Geniş zaman)
 
-**Etken** çatıda eylemi yapan öne çıkar: *Der Arbeiter baut das Haus.* (İşçi evi inşa ediyor.) **Edilgen** çatıda ise **eylemin kendisi** öne çıkar – eylemi kimin yaptığı genelde önemsiz ya da bilinmezdir.
+**Etken** çatıda **eylemi yapan** öne çıkar: *Der Arbeiter baut das Haus.* (İşçi evi inşa ediyor.) **Edilgen** çatıda ise **eylemin kendisi** öne çıkar – eylemi kimin yaptığı çoğu zaman önemsiz, bilinmez ya da apaçıktır. Bu yüzden edilgen; **haber, talimat, tarif ve bilimsel metinlerde** tipiktir.
 
-Geniş zamanda edilgen çatı **çekimli „werden" + Partizip II** ile kurulur. Etken cümledeki akkusativ nesne, edilgen cümlede **özne** (nominativ) olur.
+### Kuruluş
+Geniş zamanda edilgen çatı **çekimli „werden" + Partizip II** ile kurulur. Etken cümledeki **akkusativ nesne**, edilgen cümlenin **öznesi** (nominativ) olur.
+
+> Etken: *Der Arzt untersucht **den Patienten**.*
+> Edilgen: ***Der Patient** wird untersucht.*
+
+| Kişi | „werden" | Örnek |
+| ---- | ---- | ---- |
+| ich | werde | Ich **werde** gefragt. |
+| du | wirst | Du **wirst** gefragt. |
+| er/sie/es | wird | Er **wird** gefragt. |
+| wir | werden | Wir **werden** gefragt. |
+| ihr | werdet | Ihr **werdet** gefragt. |
+| sie/Sie | werden | Sie **werden** gefragt. |
+
+### Etkenden edilgene
+1. **Akkusativ nesne** → **özne** olur.
+2. Fiil → **„werden" + Partizip II** olur.
+3. Eski özne (eylemi yapan) düşer **ya da** **„von" + Dativ** ile belirtilir.
 
 | Etken | Edilgen |
 | ---- | ---- |
-| Man baut das Haus. | Das Haus **wird gebaut**. (Ev inşa ediliyor.) |
-| Der Arzt untersucht den Patienten. | Der Patient **wird untersucht**. (Hasta muayene ediliyor.) |
-| Die Firma stellt neue Mitarbeiter ein. | Neue Mitarbeiter **werden eingestellt**. (Yeni personel işe alınıyor.) |
+| Man baut das Haus. | Das Haus **wird gebaut**. (inşa ediliyor) |
+| Der Arzt untersucht den Patienten. | Der Patient **wird** (vom Arzt) **untersucht**. |
+| Die Firma stellt neue Mitarbeiter ein. | Neue Mitarbeiter **werden eingestellt**. |
+
+### Eylemi yapan: „von" mü „durch" mü?
+- **„von" + Dativ** → eylemi yapan **kişi/kurum**: *Das Gesetz wird **vom** Parlament beschlossen.*
+- **„durch" + Akkusativ** → **araç/neden**: *Die Stadt wurde **durch** ein Erdbeben zerstört.*
 
 **Unutma:**
-- **Partizip II** her zaman **cümlenin sonunda** durur.
-- Eylemi yapan **„von" + Dativ** ile belirtilebilir: *Das Haus wird **von** dem Architekten geplant.*
-- Yalnızca akkusativ nesne alan fiiller „gerçek" edilgen kurar.
+- **Partizip II** her zaman **cümlenin sonunda** durur (cümle parantezi).
+- Yalnızca **akkusativ nesne** alan fiiller „gerçek" edilgen kurar.
+- Ayrılabilir fiillerde partisip birleşik kalır: *Das Licht wird **ausgeschaltet**.*
+
+### Sık yapılan hatalar
+- ❌ *Das Haus ist gebaut.* (bu durum edilgeni!) → ✅ *Das Haus **wird** gebaut.* (süreç)
+- ❌ *Das Auto wird reparieren.* → ✅ *Das Auto wird **repariert**.* (Partizip II, mastar değil)
 
 **Örnekler:**
 - Hier **wird** ein Tunnel **gebaut**. (Burada bir tünel inşa ediliyor.)
 - Die Rechnungen **werden** am Monatsende **bezahlt**. (Faturalar ay sonunda ödeniyor.)
-- Der Patient **wird** sofort **operiert**. (Hasta hemen ameliyat ediliyor.)`,
+- Der Patient **wird** sofort **operiert**. (Hasta hemen ameliyat ediliyor.)
+- In diesem Büro **wird** nur Deutsch **gesprochen**. (Bu ofiste yalnızca Almanca konuşulur.)`,
     },
   })
   await seedExercises({
@@ -12628,7 +12709,7 @@ Geniş zamanda edilgen çatı **çekimli „werden" + Partizip II** ile kurulur.
         type: 'MULTIPLE_CHOICE',
         data: { prompt: 'Das Auto ___ repariert.', options: ['wird', 'ist', 'hat', 'wurde'] },
         correctAnswer: { correctIndex: 0 },
-        explanation: 'Präsens Passiv: "wird" + Partizip II.',
+        explanation: 'Präsens Passiv (Singular): "wird" + Partizip II.',
       },
       {
         lessonId: b2Lesson.id,
@@ -12637,6 +12718,76 @@ Geniş zamanda edilgen çatı **çekimli „werden" + Partizip II** ile kurulur.
         data: { sentence: 'Die Tür ___ geöffnet.' },
         correctAnswer: { accepted: ['wird'] },
         explanation: 'Präsens Passiv von "öffnen": "wird geöffnet".',
+      },
+      {
+        lessonId: b2Lesson.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Häuser ___ schnell gebaut.', options: ['werden', 'wird', 'ist', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Plural-Subjekt "die Häuser" → "werden".',
+      },
+      {
+        lessonId: b2Lesson.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'In der Schweiz ___ auch Französisch gesprochen. (Präsens Passiv)' },
+        correctAnswer: { accepted: ['wird'] },
+        explanation: '"Französisch" (Singular) → "wird gesprochen".',
+      },
+      {
+        lessonId: b2Lesson.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie lautet das Partizip II in "Die Gäste werden ___"? (einladen)', options: ['eingeladen', 'einladen', 'geeinladen', 'eingeladet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip II von "einladen" ist "eingeladen".',
+      },
+      {
+        lessonId: b2Lesson.id,
+        order: 6,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['wird', 'das', 'repariert', 'Auto'] },
+        correctAnswer: { order: ['das', 'Auto', 'wird', 'repariert'] },
+        explanation: 'Subjekt + "wird" (Position 2) + Partizip II am Ende.',
+      },
+      {
+        lessonId: b2Lesson.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['bezahlen', 'öffnen', 'bauen'], rights: ['gebaut', 'bezahlt', 'geöffnet'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'bezahlen', right: 'bezahlt' },
+            { left: 'öffnen', right: 'geöffnet' },
+            { left: 'bauen', right: 'gebaut' },
+          ],
+        },
+        explanation: 'Infinitiv → Partizip II: bezahlen→bezahlt, öffnen→geöffnet, bauen→gebaut.',
+      },
+      {
+        lessonId: b2Lesson.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Aktiv: "Man liest das Buch." Passiv: "Das Buch ___ gelesen."', options: ['wird', 'werden', 'ist', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"das Buch" (Singular) → "wird gelesen".',
+      },
+      {
+        lessonId: b2Lesson.id,
+        order: 9,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Gesetz wird ___ dem Parlament beschlossen. (Agens: Person)' },
+        correctAnswer: { accepted: ['von'] },
+        explanation: 'Handelnde Person → "von" + Dativ.',
+      },
+      {
+        lessonId: b2Lesson.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Präsens Passiv (er/es) von 'reparieren' mit dem Subjekt 'das Auto' (3 Wörter)." },
+        correctAnswer: { accepted: ['das auto wird repariert'] },
+        explanation: 'Das Auto wird repariert.',
       },
     ],
   })
@@ -12667,10 +12818,20 @@ Um einen Vorgang in der **Vergangenheit** passivisch auszudrücken, benutzt man 
 - Das **Partizip II** bleibt unverändert am Satzende.
 - Nicht mit dem Konjunktiv II „würde" verwechseln!
 
+### „wurde" vs. „würde"
+Diese beiden Formen werden oft verwechselt:
+- **wurde/wurden** = **Präteritum Passiv** (Vergangenheit, real): *Das Haus **wurde** gebaut.*
+- **würde/würden** = **Konjunktiv II** (irreal, höflich): *Ich **würde** dir helfen.*
+
+### Häufige Fehler
+- ❌ *Das Haus wurde bauen.* → ✅ *Das Haus wurde **gebaut**.* (Partizip II!)
+- ❌ *Die Häuser wurde gebaut.* → ✅ *Die Häuser **wurden** gebaut.* (Plural!)
+
 **Beispiele:**
 - Die Brücke **wurde** 1890 **gebaut**.
 - Alle Fenster **wurden** gestern **geputzt**.
-- Der Dieb **wurde** von der Polizei **festgenommen**.`,
+- Der Dieb **wurde** von der Polizei **festgenommen**.
+- Amerika **wurde** 1492 **entdeckt**.`,
       explanationEn: `## The passive voice (simple past / Präteritum)
 
 To express a past process in the passive, use the **Präteritum of "werden" → "wurde(n)" + past participle**. The Präteritum is the standard narrative form in reports, news and written texts.
@@ -12692,10 +12853,20 @@ To express a past process in the passive, use the **Präteritum of "werden" → 
 - The **Partizip II** stays unchanged at the end of the clause.
 - Do not confuse it with the Konjunktiv II "würde"!
 
+### "wurde" vs. "würde"
+These two are often confused:
+- **wurde/wurden** = **Präteritum passive** (past, real): *Das Haus **wurde** gebaut.*
+- **würde/würden** = **Konjunktiv II** (unreal, polite): *Ich **würde** dir helfen.*
+
+### Common mistakes
+- ❌ *Das Haus wurde bauen.* → ✅ *Das Haus wurde **gebaut**.* (past participle!)
+- ❌ *Die Häuser wurde gebaut.* → ✅ *Die Häuser **wurden** gebaut.* (plural!)
+
 **Examples:**
 - Die Brücke **wurde** 1890 **gebaut**. (The bridge was built in 1890.)
 - Alle Fenster **wurden** gestern **geputzt**. (All windows were cleaned yesterday.)
-- Der Dieb **wurde** von der Polizei **festgenommen**. (The thief was arrested by the police.)`,
+- Der Dieb **wurde** von der Polizei **festgenommen**. (The thief was arrested by the police.)
+- Amerika **wurde** 1492 **entdeckt**. (America was discovered in 1492.)`,
       explanationTr: `## Edilgen çatı (Präteritum / di'li geçmiş)
 
 Geçmişteki bir süreci edilgen anlatmak için **„werden" fiilinin Präteritum'u → „wurde(n)" + Partizip II** kullanılır. Präteritum; raporlarda, haberlerde ve yazılı metinlerde tipik anlatım biçimidir.
@@ -12717,10 +12888,20 @@ Geçmişteki bir süreci edilgen anlatmak için **„werden" fiilinin Präteritu
 - **Partizip II** değişmeden cümle sonunda kalır.
 - Konjunktiv II „würde" ile karıştırma!
 
+### „wurde" vs. „würde"
+Bu ikisi sık karıştırılır:
+- **wurde/wurden** = **Präteritum edilgen** (geçmiş, gerçek): *Das Haus **wurde** gebaut.*
+- **würde/würden** = **Konjunktiv II** (gerçek dışı, kibar): *Ich **würde** dir helfen.*
+
+### Sık yapılan hatalar
+- ❌ *Das Haus wurde bauen.* → ✅ *Das Haus wurde **gebaut**.* (Partizip II!)
+- ❌ *Die Häuser wurde gebaut.* → ✅ *Die Häuser **wurden** gebaut.* (çoğul!)
+
 **Örnekler:**
 - Die Brücke **wurde** 1890 **gebaut**. (Köprü 1890'da inşa edildi.)
 - Alle Fenster **wurden** gestern **geputzt**. (Bütün pencereler dün temizlendi.)
-- Der Dieb **wurde** von der Polizei **festgenommen**. (Hırsız polis tarafından yakalandı.)`,
+- Der Dieb **wurde** von der Polizei **festgenommen**. (Hırsız polis tarafından yakalandı.)
+- Amerika **wurde** 1492 **entdeckt**. (Amerika 1492'de keşfedildi.)`,
     },
   })
   await seedExercises({
@@ -12731,7 +12912,7 @@ Geçmişteki bir süreci edilgen anlatmak için **„werden" fiilinin Präteritu
         type: 'MULTIPLE_CHOICE',
         data: { prompt: 'Der Brief ___ gestern geschrieben.', options: ['wurde', 'wird', 'ist', 'hat'] },
         correctAnswer: { correctIndex: 0 },
-        explanation: 'Präteritum Passiv: "wurde" + Partizip II.',
+        explanation: 'Präteritum Passiv (Singular): "wurde" + Partizip II.',
       },
       {
         lessonId: b2Lesson2.id,
@@ -12740,6 +12921,76 @@ Geçmişteki bir süreci edilgen anlatmak için **„werden" fiilinin Präteritu
         data: { sentence: 'Das Auto ___ letzte Woche repariert.' },
         correctAnswer: { accepted: ['wurde'] },
         explanation: 'Präteritum Passiv von "reparieren": "wurde repariert".',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Häuser ___ 1950 gebaut.', options: ['wurden', 'wurde', 'sind', 'waren'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Plural-Subjekt "die Häuser" → "wurden".',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Rechnung ___ pünktlich bezahlt. (Präteritum Passiv)' },
+        correctAnswer: { accepted: ['wurde'] },
+        explanation: '"die Rechnung" (Singular) → "wurde bezahlt".',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Gestern ___ das Fenster geöffnet. (Vergangenheit)', options: ['wurde', 'wird', 'ist', 'würde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Vergangenheit + Passiv → "wurde" (nicht "würde" = Konjunktiv II).',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 6,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['wurde', 'die', 'gebaut', 'Brücke'] },
+        correctAnswer: { order: ['die', 'Brücke', 'wurde', 'gebaut'] },
+        explanation: 'Subjekt + "wurde" (Position 2) + Partizip II am Ende.',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['wird gebaut', 'werden geputzt', 'wird geöffnet'], rights: ['wurden geputzt', 'wurde geöffnet', 'wurde gebaut'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'wird gebaut', right: 'wurde gebaut' },
+            { left: 'werden geputzt', right: 'wurden geputzt' },
+            { left: 'wird geöffnet', right: 'wurde geöffnet' },
+          ],
+        },
+        explanation: 'Präsens → Präteritum: wird→wurde, werden→wurden.',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 8,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Dieb ___ von der Polizei festgenommen. (Präteritum Passiv)' },
+        correctAnswer: { accepted: ['wurde'] },
+        explanation: '"der Dieb" (Singular) → "wurde festgenommen".',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 9,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Fenster ___ gestern geputzt.', options: ['wurden', 'wurde', 'ist', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Plural "die Fenster" → "wurden geputzt".',
+      },
+      {
+        lessonId: b2Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Präteritum Passiv (er/es) von 'bauen' mit dem Subjekt 'das Haus' (3 Wörter)." },
+        correctAnswer: { accepted: ['das haus wurde gebaut'] },
+        explanation: 'Das Haus wurde gebaut.',
       },
     ],
   })
@@ -12770,10 +13021,20 @@ Das **Vorgangspassiv** (mit „werden") beschreibt eine **Handlung im Ablauf**. 
 - „sein" = *etwas ist schon fertig* → Zustand/Ergebnis.
 - Das Zustandspassiv im Präteritum: **„war" + Partizip II** (*Die Tür **war** geöffnet.*).
 
+### Vorgang oder Zustand? – die Kernfrage
+Frage dich: *Passiert die Handlung gerade (Vorgang) oder ist sie schon abgeschlossen (Zustand)?*
+- **Vorgang:** *Das Fenster **wird** (gerade) **geputzt**.*
+- **Zustand:** *Das Fenster **ist** (schon) **geputzt**.*
+
+### Häufige Fehler
+- ❌ *Die Tür ist geöffnet worden, sie ist noch zu.* (Widerspruch) → Zustand = Ergebnis!
+- Nicht jedes „sein + Partizip II" ist Zustandspassiv – manchmal ist es Perfekt Aktiv (*Er ist gekommen.*).
+
 **Beispiele:**
 - Das Fenster **ist** schon **geputzt**. (Ergebnis)
 - Der Brief **ist** endlich **geschrieben**.
-- Alle Läden **waren** am Sonntag **geschlossen**.`,
+- Alle Läden **waren** am Sonntag **geschlossen**.
+- Die Heizung **ist** noch nicht **repariert**.`,
       explanationEn: `## The stative passive (sein-passive)
 
 The **process passive** (with "werden") describes an **action in progress**. The **stative passive** (with **"sein" + past participle**) describes the **result**, the **state** after the action.
@@ -12820,7 +13081,7 @@ The **process passive** (with "werden") describes an **action in progress**. The
         lessonId: b2Lesson3.id,
         order: 1,
         type: 'MULTIPLE_CHOICE',
-        data: { prompt: 'Der Laden ___ schon geschlossen.', options: ['ist', 'wird', 'wurde', 'hat'] },
+        data: { prompt: 'Der Laden ___ schon geschlossen. (Zustand)', options: ['ist', 'wird', 'wurde', 'hat'] },
         correctAnswer: { correctIndex: 0 },
         explanation: 'Zustandspassiv: "sein" + Partizip II beschreibt den Zustand.',
       },
@@ -12831,6 +13092,76 @@ The **process passive** (with "werden") describes an **action in progress**. The
         data: { words: ['Tür', 'ist', 'geöffnet', 'die'] },
         correctAnswer: { order: ['die', 'Tür', 'ist', 'geöffnet'] },
         explanation: 'Reihenfolge: Artikel + Nomen, Verb "sein", Partizip II.',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Gerade jetzt ___ die Tür geöffnet. (Vorgang, es passiert)', options: ['wird', 'ist', 'war', 'sind'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Vorgang (gerade jetzt) → Vorgangspassiv mit "wird".',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Tisch ist schon ___. (decken – Zustand)' },
+        correctAnswer: { accepted: ['gedeckt'] },
+        explanation: 'Partizip II von "decken" = gedeckt.',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz beschreibt ein Ergebnis (Zustand)?', options: ['Die Tür ist geöffnet.', 'Die Tür wird geöffnet.', 'Die Tür wurde geöffnet.', 'Die Tür öffnet sich.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"ist geöffnet" = Zustandspassiv (Ergebnis).',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Am Sonntag ___ alle Läden geschlossen. (Zustand, Vergangenheit)' },
+        correctAnswer: { accepted: ['waren'] },
+        explanation: 'Zustandspassiv Vergangenheit: "war/waren" + Partizip II.',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['wird geöffnet', 'wird gedeckt', 'wird geschlossen'], rights: ['ist geschlossen', 'ist geöffnet', 'ist gedeckt'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'wird geöffnet', right: 'ist geöffnet' },
+            { left: 'wird gedeckt', right: 'ist gedeckt' },
+            { left: 'wird geschlossen', right: 'ist geschlossen' },
+          ],
+        },
+        explanation: 'Vorgang (werden) → Zustand/Ergebnis (sein).',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Buch liegt fertig da. → Das Buch ___ geschrieben.', options: ['ist', 'wird', 'werden', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Fertiges Ergebnis → Zustandspassiv "ist".',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 9,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Rechnung ___ bereits bezahlt. (Zustand, Präsens)' },
+        correctAnswer: { accepted: ['ist'] },
+        explanation: 'Zustand jetzt → "ist bezahlt".',
+      },
+      {
+        lessonId: b2Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Zustandspassiv (Präsens) von 'öffnen' mit 'die Tür' (3 Wörter)." },
+        correctAnswer: { accepted: ['die tür ist geöffnet'] },
+        explanation: 'Die Tür ist geöffnet.',
       },
     ],
   })
@@ -12863,10 +13194,23 @@ Das Passiv im Perfekt wird mit **„sein" (konjugiert) + Partizip II + „worden
 - Reihenfolge am Satzende: **Partizip II + worden**.
 - „worden" (Passiv) ↔ „geworden" (Zustandswechsel: *Er ist krank geworden.*).
 
+### Alle Passiv-Zeitformen im Überblick
+| Zeit | Beispiel (bauen) |
+| ---- | ---- |
+| Präsens | Das Haus **wird gebaut**. |
+| Präteritum | Das Haus **wurde gebaut**. |
+| Perfekt | Das Haus **ist gebaut worden**. |
+| Plusquamperfekt | Das Haus **war gebaut worden**. |
+
+### Häufige Fehler
+- ❌ *Das Haus ist gebaut geworden.* → ✅ *Das Haus ist gebaut **worden**.*
+- ❌ *Das Haus hat gebaut worden.* → ✅ *Das Haus **ist** gebaut worden.* (Hilfsverb "sein")
+
 **Beispiele:**
 - Das Projekt **ist** gestern **beendet worden**.
 - Alle Rechnungen **sind** schon **bezahlt worden**.
-- Der Vertrag **ist** letzte Woche **unterschrieben worden**.`,
+- Der Vertrag **ist** letzte Woche **unterschrieben worden**.
+- Das Problem **ist** endlich **gelöst worden**.`,
       explanationEn: `## The passive voice in the perfect tense
 
 The perfect passive is formed with **conjugated "sein" + past participle + "worden"**. Important: in the passive it is **"worden"**, not "geworden" as with the full verb "werden".
@@ -12884,10 +13228,23 @@ The perfect passive is formed with **conjugated "sein" + past participle + "word
 - Order at the end of the clause: **Partizip II + worden**.
 - "worden" (passive) ↔ "geworden" (change of state: *Er ist krank geworden.* — He became ill).
 
+### All passive tenses at a glance
+| Tense | Example (bauen) |
+| ---- | ---- |
+| Present | Das Haus **wird gebaut**. |
+| Simple past | Das Haus **wurde gebaut**. |
+| Perfect | Das Haus **ist gebaut worden**. |
+| Past perfect | Das Haus **war gebaut worden**. |
+
+### Common mistakes
+- ❌ *Das Haus ist gebaut geworden.* → ✅ *Das Haus ist gebaut **worden**.*
+- ❌ *Das Haus hat gebaut worden.* → ✅ *Das Haus **ist** gebaut worden.* (auxiliary "sein")
+
 **Examples:**
 - Das Projekt **ist** gestern **beendet worden**. (The project was finished yesterday.)
 - Alle Rechnungen **sind** schon **bezahlt worden**. (All bills have already been paid.)
-- Der Vertrag **ist** letzte Woche **unterschrieben worden**. (The contract was signed last week.)`,
+- Der Vertrag **ist** letzte Woche **unterschrieben worden**. (The contract was signed last week.)
+- Das Problem **ist** endlich **gelöst worden**. (The problem has finally been solved.)`,
       explanationTr: `## Perfekt'te edilgen çatı
 
 Perfekt'te edilgen **çekimli „sein" + Partizip II + „worden"** ile kurulur. Önemli: Edilgende, ana fiil „werden"deki gibi „geworden" değil **„worden"** denir.
@@ -12905,10 +13262,23 @@ Perfekt'te edilgen **çekimli „sein" + Partizip II + „worden"** ile kurulur.
 - Cümle sonundaki sıra: **Partizip II + worden**.
 - „worden" (edilgen) ↔ „geworden" (durum değişimi: *Er ist krank geworden.* — Hastalandı).
 
+### Tüm edilgen zamanlar bir bakışta
+| Zaman | Örnek (bauen) |
+| ---- | ---- |
+| Geniş zaman | Das Haus **wird gebaut**. |
+| Präteritum | Das Haus **wurde gebaut**. |
+| Perfekt | Das Haus **ist gebaut worden**. |
+| Plusquamperfekt | Das Haus **war gebaut worden**. |
+
+### Sık yapılan hatalar
+- ❌ *Das Haus ist gebaut geworden.* → ✅ *Das Haus ist gebaut **worden**.*
+- ❌ *Das Haus hat gebaut worden.* → ✅ *Das Haus **ist** gebaut worden.* (yardımcı fiil "sein")
+
 **Örnekler:**
 - Das Projekt **ist** gestern **beendet worden**. (Proje dün bitirildi.)
 - Alle Rechnungen **sind** schon **bezahlt worden**. (Bütün faturalar çoktan ödendi.)
-- Der Vertrag **ist** letzte Woche **unterschrieben worden**. (Sözleşme geçen hafta imzalandı.)`,
+- Der Vertrag **ist** letzte Woche **unterschrieben worden**. (Sözleşme geçen hafta imzalandı.)
+- Das Problem **ist** endlich **gelöst worden**. (Sorun nihayet çözüldü.)`,
     },
   })
   await seedExercises({
@@ -12928,6 +13298,76 @@ Perfekt'te edilgen **çekimli „sein" + Partizip II + „worden"** ile kurulur.
         data: { sentence: 'Die Rechnung ist bereits bezahlt ___.' },
         correctAnswer: { accepted: ['worden'] },
         explanation: 'Perfekt Passiv: "ist bezahlt worden".',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Fehler ___ schon korrigiert worden.', options: ['sind', 'ist', 'haben', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Hilfsverb "sein", Plural → "sind … worden".',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Haus ist letztes Jahr gebaut ___. (Perfekt Passiv)' },
+        correctAnswer: { accepted: ['worden'] },
+        explanation: 'Perfekt Passiv: "ist gebaut worden".',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er ist letztes Jahr Arzt ___. (Zustandswechsel, kein Passiv)', options: ['geworden', 'worden', 'gewesen', 'wurde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Vollverb "werden" (Zustandswechsel) → "geworden", nicht "worden".',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 6,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ist', 'das', 'gebaut', 'Haus', 'worden'] },
+        correctAnswer: { order: ['das', 'Haus', 'ist', 'gebaut', 'worden'] },
+        explanation: 'Subjekt + "ist" + Partizip II + "worden" am Ende.',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['schreiben', 'unterschreiben', 'beenden'], rights: ['beendet', 'geschrieben', 'unterschrieben'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'schreiben', right: 'geschrieben' },
+            { left: 'unterschreiben', right: 'unterschrieben' },
+            { left: 'beenden', right: 'beendet' },
+          ],
+        },
+        explanation: 'Partizip II: schreiben→geschrieben, unterschreiben→unterschrieben, beenden→beendet.',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Brief ___ gestern geschrieben worden. (Hilfsverb)', options: ['ist', 'hat', 'wird', 'war'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Perfekt Passiv: Hilfsverb ist immer "sein" → "ist … worden".',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 9,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Vertrag ist letzte Woche unterschrieben ___.' },
+        correctAnswer: { accepted: ['worden'] },
+        explanation: 'Perfekt Passiv: "ist unterschrieben worden".',
+      },
+      {
+        lessonId: b2Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Perfekt Passiv (es) von 'bauen' mit 'das Haus' (4 Wörter)." },
+        correctAnswer: { accepted: ['das haus ist gebaut worden'] },
+        explanation: 'Das Haus ist gebaut worden.',
       },
     ],
   })
