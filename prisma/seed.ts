@@ -18506,6 +18506,10 @@ Mit dem **Konjunktiv II der Vergangenheit** spricht man über **Irreales in der 
 - Struktur: **hätte(n) + Partizip II** am Satzende.
 - Nur für die **Vergangenheit** – für die Gegenwart nimmt man „würde/hätte" ohne Partizip.
 
+### Häufige Fehler
+- ❌ *Ich **würde** das gemacht **haben**.* → ✅ *Ich **hätte** das **gemacht**.* (kein „würde" + Partizip in der Vergangenheit).
+- ❌ *Ich **hätte** gekommen.* → ✅ *Ich **wäre** gekommen.* (Bewegungsverben mit „wäre", siehe nächste Lektion).
+
 **Beispiele:**
 - Ich **hätte** dir **geholfen**, wenn du gefragt hättest.
 - Sie **hätte** die Prüfung **bestanden**, wenn sie gelernt hätte.
@@ -18528,6 +18532,10 @@ With the **past Konjunktiv II** you talk about things that are **unreal in the p
 **Note:**
 - Structure: **hätte(n) + past participle** at the end of the clause.
 - Only for the **past** – for the present you use "würde/hätte" without a participle.
+
+### Common mistakes
+- ❌ *Ich **würde** das gemacht **haben**.* → ✅ *Ich **hätte** das **gemacht**.* (no "würde" + participle in the past).
+- ❌ *Ich **hätte** gekommen.* → ✅ *Ich **wäre** gekommen.* (motion verbs use "wäre", see next lesson).
 
 **Examples:**
 - Ich **hätte** dir **geholfen**, wenn du gefragt hättest. (I would have helped you if you had asked.)
@@ -18552,6 +18560,10 @@ With the **past Konjunktiv II** you talk about things that are **unreal in the p
 - Yapı: cümle sonunda **hätte(n) + Partizip II**.
 - Yalnızca **geçmiş** için – şimdiki zaman için partisipsiz „würde/hätte" kullanılır.
 
+### Sık yapılan hatalar
+- ❌ *Ich **würde** das gemacht **haben**.* → ✅ *Ich **hätte** das **gemacht**.* (geçmişte „würde" + partisip yok).
+- ❌ *Ich **hätte** gekommen.* → ✅ *Ich **wäre** gekommen.* (hareket fiilleri „wäre" ile, bkz. sonraki ders).
+
 **Örnekler:**
 - Ich **hätte** dir **geholfen**, wenn du gefragt hättest. (Sorsaydın sana yardım ederdim.)
 - Sie **hätte** die Prüfung **bestanden**, wenn sie gelernt hätte. (Çalışsaydı sınavı geçmiş olurdu.)
@@ -18575,6 +18587,76 @@ With the **past Konjunktiv II** you talk about things that are **unreal in the p
         data: { sentence: 'Sie ___ die Prüfung bestanden, wenn sie gelernt hätte. (haben)' },
         correctAnswer: { accepted: ['hätte'] },
         explanation: 'Konjunktiv II der Vergangenheit für "sie": hätte.',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie lautet die Struktur des Konjunktiv II der Vergangenheit (haben-Verben)?', options: ['hätte + Partizip II', 'würde + Infinitiv', 'hatte + Infinitiv', 'habe + Partizip II'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'hätte(n) + Partizip II.',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ___ ich nicht gedacht! (haben, ich)' },
+        correctAnswer: { accepted: ['hätte'] },
+        explanation: 'ich → hätte + gedacht.',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Form passt zu "du"?', options: ['hättest', 'hätte', 'hätten', 'hattest'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'du → hättest.',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'du', 'wir'], rights: ['hätten', 'hätte', 'hättest'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'hätte' },
+            { left: 'du', right: 'hättest' },
+            { left: 'wir', right: 'hätten' },
+          ],
+        },
+        explanation: 'Konjugation von "hätte".',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich hätte die Gelegenheit ___. (nutzen → Partizip II)' },
+        correctAnswer: { accepted: ['genutzt'] },
+        explanation: 'Partizip II von "nutzen": genutzt.',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was drückt der Konjunktiv II der Vergangenheit aus?', options: ['Irreales in der Vergangenheit', 'sichere Zukunft', 'Gewohnheit', 'einen Befehl'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Etwas, das nicht passiert ist ("was gewesen wäre, wenn …").',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['geholfen', 'hätte', 'dir', 'ich'] },
+        correctAnswer: { order: ['ich', 'hätte', 'dir', 'geholfen'] },
+        explanation: 'ich hätte dir geholfen (Partizip II am Ende).',
+      },
+      {
+        lessonId: b2Unit9Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Übersetze: 'She would have read the book.' (haben-Verb)" },
+        correctAnswer: { accepted: ['sie hätte das buch gelesen'] },
+        explanation: 'Sie hätte das Buch gelesen.',
       },
     ],
   })
@@ -18612,6 +18694,10 @@ Verben der **Bewegung** (gehen, kommen, fahren, laufen) und der **Zustandsänder
 - Frage: Bildet das Verb das Perfekt mit „ist"? → dann **„wäre"**.
 - Struktur: **wäre(n) + Partizip II**.
 
+### Häufige Fehler
+- ❌ *Ich **hätte** früher gekommen.* → ✅ *Ich **wäre** früher gekommen.* (Bewegungsverb → „wäre").
+- ❌ *Ich **würde** gekommen **sein**.* → ✅ *Ich **wäre** gekommen.* (kein „würde … sein").
+
 **Beispiele:**
 - Ich **wäre** früher **gekommen**, wenn ich es gewusst hätte.
 - Er **wäre** zu Hause **geblieben**.
@@ -18638,6 +18724,10 @@ Verbs of **motion** (gehen, kommen, fahren, laufen) and **change of state** (auf
 - Ask: does the verb form the perfect with "ist"? → then **"wäre"**.
 - Structure: **wäre(n) + past participle**.
 
+### Common mistakes
+- ❌ *Ich **hätte** früher gekommen.* → ✅ *Ich **wäre** früher gekommen.* (motion verb → "wäre").
+- ❌ *Ich **würde** gekommen **sein**.* → ✅ *Ich **wäre** gekommen.* (no "würde … sein").
+
 **Examples:**
 - Ich **wäre** früher **gekommen**, wenn ich es gewusst hätte. (I would have come earlier if I had known.)
 - Er **wäre** zu Hause **geblieben**. (He would have stayed home.)
@@ -18663,6 +18753,10 @@ Verbs of **motion** (gehen, kommen, fahren, laufen) and **change of state** (auf
 **Unutma:**
 - Sor: Fiil Perfekt'i „ist" ile mi kurar? → öyleyse **„wäre"**.
 - Yapı: **wäre(n) + Partizip II**.
+
+### Sık yapılan hatalar
+- ❌ *Ich **hätte** früher gekommen.* → ✅ *Ich **wäre** früher gekommen.* (hareket fiili → „wäre").
+- ❌ *Ich **würde** gekommen **sein**.* → ✅ *Ich **wäre** gekommen.* („würde … sein" yok).
 
 **Örnekler:**
 - Ich **wäre** früher **gekommen**, wenn ich es gewusst hätte. (Bilseydim daha erken gelirdim.)
@@ -18693,6 +18787,77 @@ Verbs of **motion** (gehen, kommen, fahren, laufen) and **change of state** (auf
           ],
         },
         explanation: 'Bewegungsverben bilden den Konjunktiv II der Vergangenheit mit "wäre" + Partizip II.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Verben bilden den Konjunktiv II Vergangenheit mit "wäre"?', options: ['Bewegungs-/Zustandsänderungsverben (sein-Verben)', 'alle Verben', 'nur Modalverben', 'nur trennbare Verben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'sein-Verben (gehen, kommen, bleiben …) → wäre.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ zu Hause geblieben. (sein-Verb, er)' },
+        correctAnswer: { accepted: ['wäre'] },
+        explanation: '"bleiben" → wäre geblieben.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Test macht man für "wäre"?', options: ['Bildet das Verb das Perfekt mit "ist"?', 'Ist es ein Modalverb?', 'Steht es am Anfang?', 'Ist es trennbar?'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Perfekt mit "ist"? → dann "wäre".',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['machen', 'gehen', 'lesen', 'fahren'], rights: ['hätte gemacht', 'wäre gegangen', 'hätte gelesen', 'wäre gefahren'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'machen', right: 'hätte gemacht' },
+            { left: 'gehen', right: 'wäre gegangen' },
+            { left: 'lesen', right: 'hätte gelesen' },
+            { left: 'fahren', right: 'wäre gefahren' },
+          ],
+        },
+        explanation: 'haben-Verben → hätte; sein-Verben → wäre.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir ___ fast zu spät gekommen. (wir)' },
+        correctAnswer: { accepted: ['wären'] },
+        explanation: 'wir → wären + gekommen.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Form passt zu "du" (sein-Verb)?', options: ['wärst', 'wäre', 'wären', 'warst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'du → wärst.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['geblieben', 'zu', 'er', 'wäre', 'Hause'] },
+        correctAnswer: { order: ['er', 'wäre', 'zu', 'Hause', 'geblieben'] },
+        explanation: 'er wäre zu Hause geblieben.',
+      },
+      {
+        lessonId: b2Unit9Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Übersetze: 'He would have stayed home.'" },
+        correctAnswer: { accepted: ['er wäre zu hause geblieben'] },
+        explanation: 'Er wäre zu Hause geblieben.',
       },
     ],
   })
@@ -18725,6 +18890,10 @@ Ein irrealer Bedingungssatz der Vergangenheit sagt: *Etwas ist nicht passiert �
 - Im wenn-Satz steht das Hilfsverb (hätte/wäre) **am Ende**.
 - Steht der wenn-Satz vorn, beginnt der Hauptsatz mit dem **Verb**: *…, **wäre** ich gekommen.*
 
+### Häufige Fehler
+- ❌ Nur ein Teil im Konjunktiv: *Wenn ich Zeit **hatte**, wäre ich gekommen.* → ✅ *Wenn ich Zeit **gehabt hätte**, wäre ich gekommen.* (beide Teile Konjunktiv II Vergangenheit).
+- ❌ *Wenn ich Zeit gehabt hätte, **ich wäre** gekommen.* → ✅ *…, **wäre ich** gekommen.* (nach vorangestelltem wenn-Satz: Verb zuerst).
+
 **Beispiele:**
 - **Wenn** ich das **gewusst hätte**, **hätte** ich anders **reagiert**.
 - **Wenn** wir früher **losgefahren wären**, **hätten** wir den Zug **erreicht**.
@@ -18746,6 +18915,10 @@ An unreal past conditional says: *Something didn't happen – but if the conditi
 - In the wenn-clause the auxiliary (hätte/wäre) goes to the **end**.
 - If the wenn-clause comes first, the main clause starts with the **verb**: *…, **wäre** ich gekommen.*
 
+### Common mistakes
+- ❌ only one part in the subjunctive: *Wenn ich Zeit **hatte**, wäre ich gekommen.* → ✅ *Wenn ich Zeit **gehabt hätte**, wäre ich gekommen.* (both parts in past Konjunktiv II).
+- ❌ *Wenn ich Zeit gehabt hätte, **ich wäre** gekommen.* → ✅ *…, **wäre ich** gekommen.* (after a fronted wenn-clause: verb first).
+
 **Examples:**
 - **Wenn** ich das **gewusst hätte**, **hätte** ich anders **reagiert**. (If I had known that, I would have reacted differently.)
 - **Wenn** wir früher **losgefahren wären**, **hätten** wir den Zug **erreicht**. (If we had left earlier, we would have caught the train.)
@@ -18766,6 +18939,10 @@ Geçmiş zamanın gerçek dışı koşul cümlesi şunu söyler: *Bir şey olmad
 - **Her iki** bölüm de geçmiş Konjunktiv II'de (hätte/wäre + Partizip II).
 - wenn cümlesinde yardımcı fiil (hätte/wäre) **sonda** durur.
 - wenn cümlesi başta ise, ana cümle **fiille** başlar: *…, **wäre** ich gekommen.*
+
+### Sık yapılan hatalar
+- ❌ Yalnızca bir bölüm Konjunktiv: *Wenn ich Zeit **hatte**, wäre ich gekommen.* → ✅ *Wenn ich Zeit **gehabt hätte**, wäre ich gekommen.* (her iki bölüm de geçmiş Konjunktiv II).
+- ❌ *Wenn ich Zeit gehabt hätte, **ich wäre** gekommen.* → ✅ *…, **wäre ich** gekommen.* (öne alınan wenn cümlesinden sonra: önce fiil).
 
 **Örnekler:**
 - **Wenn** ich das **gewusst hätte**, **hätte** ich anders **reagiert**. (Bunu bilseydim farklı tepki verirdim.)
@@ -18790,6 +18967,75 @@ Geçmiş zamanın gerçek dışı koşul cümlesi şunu söyler: *Bir şey olmad
         data: { sentence: 'Wenn ich Zeit gehabt hätte, ___ ich gekommen.' },
         correctAnswer: { accepted: ['wäre'] },
         explanation: 'Der Hauptsatz braucht "wäre" für "kommen".',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'In welchem Modus stehen beide Teile eines irrealen Bedingungssatzes der Vergangenheit?', options: ['Konjunktiv II der Vergangenheit', 'Indikativ Präsens', 'Konjunktiv I', 'Imperativ'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Beide Teile: hätte/wäre + Partizip II.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wenn wir früher losgefahren wären, ___ wir den Zug erreicht. (haben, wir)' },
+        correctAnswer: { accepted: ['hätten'] },
+        explanation: '"erreichen" mit haben → hätten erreicht.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das Hilfsverb (hätte/wäre) im wenn-Satz?', options: ['am Ende', 'an Position 1', 'an Position 2', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Im Nebensatz (wenn-Satz) steht das Hilfsverb am Ende.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie wäre gesund geblieben, wenn sie sich ___ hätte. (schonen → Partizip II)' },
+        correctAnswer: { accepted: ['geschont'] },
+        explanation: 'Partizip II von "schonen": geschont.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist korrekt?', options: ['Wenn ich das gewusst hätte, hätte ich anders reagiert.', 'Wenn ich das wusste, hätte ich anders reagiert.', 'Wenn ich das gewusst hätte, ich hätte anders reagiert.', 'Wenn ich das gewusst habe, reagierte ich anders.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Beide Teile Konjunktiv II Vergangenheit; nach dem wenn-Satz Verb zuerst.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 8,
+        type: 'MATCHING',
+        data: { lefts: ['wenn-Satz', 'Hauptsatz (nachgestellt)'], rights: ['Verb zuerst: wäre ich gekommen', 'Hilfsverb am Ende: … gehabt hätte'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'wenn-Satz', right: 'Hilfsverb am Ende: … gehabt hätte' },
+            { left: 'Hauptsatz (nachgestellt)', right: 'Verb zuerst: wäre ich gekommen' },
+          ],
+        },
+        explanation: 'Verbstellung in den beiden Teilen.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gehabt', 'ich', 'wenn', 'hätte', 'Zeit'] },
+        correctAnswer: { order: ['wenn', 'ich', 'Zeit', 'gehabt', 'hätte'] },
+        explanation: 'wenn + Subjekt + … + Partizip II + Hilfsverb am Ende.',
+      },
+      {
+        lessonId: b2Unit9Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Übersetze: 'If I had had time, I would have come.'" },
+        correctAnswer: { accepted: ['wenn ich zeit gehabt hätte, wäre ich gekommen', 'wenn ich zeit gehabt hätte wäre ich gekommen'] },
+        explanation: 'Wenn ich Zeit gehabt hätte, wäre ich gekommen.',
       },
     ],
   })
@@ -18823,6 +19069,10 @@ Der Konjunktiv II der Vergangenheit = **hätte/wäre + Partizip II**. Er drückt
 - Immer **zwei Verbteile** am Ende: Konjunktiv-Hilfsverb + Partizip II.
 - Für die Gegenwart: „würde/hätte/wäre" **ohne** Partizip.
 
+### Häufige Fehler
+- ❌ Falsches Hilfsverb: *Ich **hätte** nach Hause gegangen.* → ✅ *Ich **wäre** nach Hause gegangen.*
+- ❌ Partizip vergessen: *Ich **hätte** dir gern.* → ✅ *Ich **hätte** dir gern **geholfen**.*
+
 **Beispiele:**
 - Wenn wir das gewusst hätten, **hätten** wir anders **geplant**.
 - Ich **hätte** dir gern **geholfen**.
@@ -18845,6 +19095,10 @@ The past Konjunktiv II = **hätte/wäre + past participle**. It expresses what *
 - Always **two verb parts** at the end: subjunctive auxiliary + past participle.
 - For the present: "würde/hätte/wäre" **without** a participle.
 
+### Common mistakes
+- ❌ wrong auxiliary: *Ich **hätte** nach Hause gegangen.* → ✅ *Ich **wäre** nach Hause gegangen.*
+- ❌ missing participle: *Ich **hätte** dir gern.* → ✅ *Ich **hätte** dir gern **geholfen**.*
+
 **Examples:**
 - Wenn wir das gewusst hätten, **hätten** wir anders **geplant**. (If we had known, we would have planned differently.)
 - Ich **hätte** dir gern **geholfen**. (I would have gladly helped you.)
@@ -18866,6 +19120,10 @@ Geçmiş zaman Konjunktiv II = **hätte/wäre + Partizip II**. Geçmişte **müm
 **Unutma:**
 - Sonda her zaman **iki fiil parçası**: Konjunktiv yardımcı fiili + Partizip II.
 - Şimdiki zaman için: partisipsiz „würde/hätte/wäre".
+
+### Sık yapılan hatalar
+- ❌ Yanlış yardımcı fiil: *Ich **hätte** nach Hause gegangen.* → ✅ *Ich **wäre** nach Hause gegangen.*
+- ❌ Partisip unutmak: *Ich **hätte** dir gern.* → ✅ *Ich **hätte** dir gern **geholfen**.*
 
 **Örnekler:**
 - Wenn wir das gewusst hätten, **hätten** wir anders **geplant**. (Bunu bilseydik farklı planlardık.)
@@ -18890,6 +19148,76 @@ Geçmiş zaman Konjunktiv II = **hätte/wäre + Partizip II**. Geçmişte **müm
         data: { prompt: "Wie sagt man auf Deutsch: 'I would have helped'?" },
         correctAnswer: { accepted: ['ich hätte geholfen'] },
         explanation: '"Ich hätte geholfen" ist die richtige Übersetzung.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Hilfsverb passt zu "fahren" (Bewegung)?', options: ['wäre', 'hätte', 'würde', 'hatte'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bewegungsverb → wäre gefahren.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Fast ___ das Glas heruntergefallen. (sein-Verb)' },
+        correctAnswer: { accepted: ['wäre'] },
+        explanation: '"herunterfallen" → wäre heruntergefallen.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie viele Verbteile stehen am Satzende?', options: ['zwei (Hilfsverb + Partizip II)', 'einer', 'drei', 'keiner'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Immer zwei: Konjunktiv-Hilfsverb + Partizip II.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['irreale Bedingung', 'irrealer Wunsch', 'vorsichtige Vermutung'], rights: ['Das wäre möglich gewesen.', 'Wenn ich gelernt hätte, hätte ich bestanden.', 'Hätte ich das nur gewusst!'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'irreale Bedingung', right: 'Wenn ich gelernt hätte, hätte ich bestanden.' },
+            { left: 'irrealer Wunsch', right: 'Hätte ich das nur gewusst!' },
+            { left: 'vorsichtige Vermutung', right: 'Das wäre möglich gewesen.' },
+          ],
+        },
+        explanation: 'Funktionen des Konjunktiv II der Vergangenheit.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich hätte dir gern ___. (helfen → Partizip II)' },
+        correctAnswer: { accepted: ['geholfen'] },
+        explanation: 'Partizip II von "helfen": geholfen.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Womit bildet man den Konjunktiv II der Gegenwart (Gegensatz zur Vergangenheit)?', options: ['würde/hätte/wäre ohne Partizip', 'hätte/wäre + Partizip II', 'nur mit Präteritum', 'mit Konjunktiv I'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Gegenwart: ohne Partizip; Vergangenheit: mit Partizip II.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['geplant', 'wir', 'anders', 'hätten'] },
+        correctAnswer: { order: ['wir', 'hätten', 'anders', 'geplant'] },
+        explanation: 'wir hätten anders geplant.',
+      },
+      {
+        lessonId: b2Unit9Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Übersetze: 'We would have planned differently.'" },
+        correctAnswer: { accepted: ['wir hätten anders geplant'] },
+        explanation: 'Wir hätten anders geplant.',
       },
     ],
   })
