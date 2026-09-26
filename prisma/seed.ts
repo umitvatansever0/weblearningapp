@@ -17787,6 +17787,10 @@ Ein guter Text vermeidet **Wiederholungen**. Statt ein Nomen mehrfach zu nennen,
 - Es muss **eindeutig** sein, auf welches Nomen es sich bezieht.
 - Nach Präpositionen den passenden Kasus wählen: *an ihm, für sie, mit ihm.*
 
+### Häufige Fehler
+- ❌ *Das Kind spielt. **Er** ist glücklich.* → ✅ *…**Es** ist glücklich.* (Genus des Nomens beachten: das Kind → es).
+- ❌ Unklarer Bezug: *Der Chef traf den Kollegen. **Er** ging.* (wer?) → besser ein Demonstrativpronomen oder das Nomen wiederholen.
+
 **Beispiele:**
 - Der Chef kam spät. **Er** entschuldigte sich.
 - Ich sah die Lehrerin und grüßte **sie**.
@@ -17806,6 +17810,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - It must be **unambiguous** which noun it refers to.
 - After prepositions, choose the correct case: *an ihm, für sie, mit ihm.*
 
+### Common mistakes
+- ❌ *Das Kind spielt. **Er** ist glücklich.* → ✅ *…**Es** ist glücklich.* (mind the gender: das Kind → es).
+- ❌ ambiguous reference: *Der Chef traf den Kollegen. **Er** ging.* (who?) → better use a demonstrative or repeat the noun.
+
 **Examples:**
 - Der Chef kam spät. **Er** entschuldigte sich. (The boss arrived late. He apologized.)
 - Ich sah die Lehrerin und grüßte **sie**. (I saw the teacher and greeted her.)
@@ -17824,6 +17832,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - Zamir, ismin **cinsine** (der/die/das) ve **durumuna** (Kasus) göre biçimlenir.
 - Hangi isme gönderme yaptığı **açık** olmalı.
 - Edatlardan sonra doğru durumu seç: *an ihm, für sie, mit ihm.*
+
+### Sık yapılan hatalar
+- ❌ *Das Kind spielt. **Er** ist glücklich.* → ✅ *…**Es** ist glücklich.* (ismin cinsine dikkat: das Kind → es).
+- ❌ Belirsiz gönderme: *Der Chef traf den Kollegen. **Er** ging.* (kim?) → işaret zamiri kullan ya da ismi tekrarla.
 
 **Örnekler:**
 - Der Chef kam spät. **Er** entschuldigte sich. (Patron geç geldi. Özür diledi.)
@@ -17848,6 +17860,76 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
         data: { sentence: 'Das Projekt ist fertig. Wir haben lange an ___ gearbeitet.' },
         correctAnswer: { accepted: ['ihm'] },
         explanation: '"Das Projekt" ist neutral, im Dativ nach "an": ihm.',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wonach richtet sich das Personalpronomen?', options: ['nach Genus und Kasus des Nomens', 'nur nach dem Kasus', 'nur nach der Bedeutung', 'nach dem Verb'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Genus (der/die/das) und Kasus bestimmen die Form.',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich sah die Lehrerin und grüßte ___. (Akkusativ)' },
+        correctAnswer: { accepted: ['sie'] },
+        explanation: '"die Lehrerin" (f), Akkusativ: sie.',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Warum benutzt man Verweiswörter?', options: ['um Wiederholungen zu vermeiden / Kohärenz zu schaffen', 'um Sätze länger zu machen', 'um formeller zu klingen', 'um Fragen zu stellen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Sie vermeiden Wiederholungen und schaffen Textzusammenhang.',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['der Chef (Nom.)', 'die Chefin (Dat.)', 'das Kind (Dat.)'], rights: ['ihm', 'er', 'ihr'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Chef (Nom.)', right: 'er' },
+            { left: 'die Chefin (Dat.)', right: 'ihr' },
+            { left: 'das Kind (Dat.)', right: 'ihm' },
+          ],
+        },
+        explanation: 'Pronomen nach Genus und Kasus.',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Chef kam spät. ___ entschuldigte sich. (Nominativ, maskulin)' },
+        correctAnswer: { accepted: ['Er'] },
+        explanation: 'der Chef (m), Nominativ: Er.',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Für "das Buch" im Akkusativ benutzt man:', options: ['es', 'ihn', 'sie', 'ihm'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'das Buch (n), Akkusativ: es.',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['sich', 'er', 'entschuldigte'] },
+        correctAnswer: { order: ['er', 'entschuldigte', 'sich'] },
+        explanation: 'er entschuldigte sich.',
+      },
+      {
+        lessonId: b2Unit8Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Ersetze das Nomen: 'Ich helfe dem Mann.' → 'Ich helfe ___.' (Dativ)" },
+        correctAnswer: { accepted: ['ihm'] },
+        explanation: 'der Mann, Dativ: ihm.',
       },
     ],
   })
@@ -17882,6 +17964,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - Sie werden wie **der-Wörter** dekliniert.
 - Typisch für präzise, formelle Texte.
 
+### Häufige Fehler
+- ❌ *Ich sprach mit der Ärztin. **Dieser** gab mir Rat.* → ✅ *…**Diese** gab mir Rat.* (Genus beachten: die Ärztin → diese).
+- ❌ „dieser" für Personen als bloßer Ersatz für „er" → nur einsetzen, wenn ein Personalpronomen **mehrdeutig** wäre.
+
 **Beispiele:**
 - Ich traf meinen alten Lehrer. **Dieser** erkannte mich sofort.
 - Ich sprach mit der Ärztin. **Diese** gab mir gute Ratschläge.
@@ -17904,6 +17990,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - "dieser/diese/dieses" emphasizes and usually refers to the **nearer / last-mentioned** noun.
 - They are declined like **der-words**.
 - Typical of precise, formal texts.
+
+### Common mistakes
+- ❌ *Ich sprach mit der Ärztin. **Dieser** gab mir Rat.* → ✅ *…**Diese** gab mir Rat.* (mind the gender: die Ärztin → diese).
+- ❌ using "dieser" for people as a mere replacement for "er" → only use it when a personal pronoun would be **ambiguous**.
 
 **Examples:**
 - Ich traf meinen alten Lehrer. **Dieser** erkannte mich sofort. (I met my old teacher. He recognized me at once.)
@@ -17928,6 +18018,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - **der-sözcükleri** gibi çekimlenirler.
 - Kesin, resmi metinlerde tipiktir.
 
+### Sık yapılan hatalar
+- ❌ *Ich sprach mit der Ärztin. **Dieser** gab mir Rat.* → ✅ *…**Diese** gab mir Rat.* (cinse dikkat: die Ärztin → diese).
+- ❌ Kişiler için „er"in yerine yalnızca „dieser" → sadece şahıs zamiri **belirsiz** olacaksa kullan.
+
 **Örnekler:**
 - Ich traf meinen alten Lehrer. **Dieser** erkannte mich sofort. (Eski öğretmenimle karşılaştım. O beni hemen tanıdı.)
 - Ich sprach mit der Ärztin. **Diese** gab mir gute Ratschläge. (Doktorla konuştum. O bana iyi tavsiyeler verdi.)
@@ -17951,6 +18045,76 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
         data: { prompt: "Welches Demonstrativpronomen passt als Verweis auf 'der Lehrer'?" },
         correctAnswer: { accepted: ['dieser'] },
         explanation: '"Der Lehrer" ist maskulin: dieser.',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann benutzt man ein Demonstrativpronomen statt "er/sie/es"?', options: ['wenn ein Personalpronomen mehrdeutig wäre', 'immer', 'nie', 'nur im Plural'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bei Mehrdeutigkeit sorgt das Demonstrativpronomen für Klarheit.',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Vater sprach mit dem Sohn. ___ war noch jung. (Verweis auf den Sohn, maskulin)' },
+        correctAnswer: { accepted: ['Dieser'] },
+        explanation: '"dieser" verweist eindeutig auf das zuletzt genannte Nomen (der Sohn).',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Auf welches Nomen verweist "dieser" meist?', options: ['das zuletzt genannte', 'das erste im Text', 'ein beliebiges', 'das Subjekt des ersten Satzes'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"dieser" zeigt meist auf das näherstehende / zuletzt genannte Nomen.',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['der Lehrer', 'die Ärztin', 'das Fahrrad'], rights: ['dieses', 'dieser', 'diese'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Lehrer', right: 'dieser' },
+            { left: 'die Ärztin', right: 'diese' },
+            { left: 'das Fahrrad', right: 'dieses' },
+          ],
+        },
+        explanation: 'Demonstrativpronomen nach Genus.',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er kaufte ein Auto und ein Fahrrad. ___ benutzt er täglich. (Verweis auf das Fahrrad, neutral)' },
+        correctAnswer: { accepted: ['Dieses'] },
+        explanation: '"das Fahrrad" (n): dieses.',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie werden Demonstrativpronomen dekliniert?', options: ['wie der-Wörter', 'wie ein-Wörter', 'gar nicht', 'wie Adjektive ohne Artikel'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Sie werden wie der-Wörter dekliniert.',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['erkannte', 'sofort', 'dieser', 'mich'] },
+        correctAnswer: { order: ['dieser', 'erkannte', 'mich', 'sofort'] },
+        explanation: 'dieser (Pos. 1) + Verb (Pos. 2) …',
+      },
+      {
+        lessonId: b2Unit8Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Demonstrativpronomen (Nom.) als Verweis auf 'das Kind'?" },
+        correctAnswer: { accepted: ['dieses'] },
+        explanation: 'das Kind (n): dieses.',
       },
     ],
   })
@@ -17982,6 +18146,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - Sie machen die **Gedankenschritte** eines Textes sichtbar.
 - Nicht zu viele auf einmal – gezielt einsetzen.
 
+### Häufige Fehler
+- ❌ *Außerdem **er hatte** Kopfschmerzen.* → ✅ *Außerdem **hatte er** Kopfschmerzen.* (Adverb → Verb an Position 2).
+- ❌ Falsche Bedeutung: *Er war müde. **Deshalb** war er wach.* → „deshalb" zeigt eine **Folge**, hier passt ein Gegensatz („allerdings/jedoch").
+
 **Beispiele:**
 - Er war müde. **Außerdem** hatte er Kopfschmerzen. **Deshalb** ging er früh ins Bett.
 - Der Preis ist hoch. **Allerdings** ist die Qualität sehr gut.
@@ -18002,6 +18170,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - They make the **steps of thought** in a text visible.
 - Don't use too many at once – use them purposefully.
 
+### Common mistakes
+- ❌ *Außerdem **er hatte** Kopfschmerzen.* → ✅ *Außerdem **hatte er** Kopfschmerzen.* (adverb → verb in position 2).
+- ❌ wrong meaning: *Er war müde. **Deshalb** war er wach.* → "deshalb" shows a **consequence**; here a contrast ("allerdings/jedoch") fits.
+
 **Examples:**
 - Er war müde. **Außerdem** hatte er Kopfschmerzen. **Deshalb** ging er früh ins Bett. (He was tired. Moreover, he had a headache. Therefore he went to bed early.)
 - Der Preis ist hoch. **Allerdings** ist die Qualität sehr gut. (The price is high. However, the quality is very good.)
@@ -18021,6 +18193,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - Bu bağlaçlar **belirteçtir** → cümle başında **fiil 2. pozisyonda** gelir: *Außerdem **hatte** er …*
 - Bir metnin **düşünce adımlarını** görünür kılar.
 - Aynı anda çok fazla kullanma – amaca yönelik kullan.
+
+### Sık yapılan hatalar
+- ❌ *Außerdem **er hatte** Kopfschmerzen.* → ✅ *Außerdem **hatte er** Kopfschmerzen.* (belirteç → fiil 2. pozisyonda).
+- ❌ Yanlış anlam: *Er war müde. **Deshalb** war er wach.* → „deshalb" bir **sonuç** gösterir; burada zıtlık („allerdings/jedoch") uygun.
 
 **Örnekler:**
 - Er war müde. **Außerdem** hatte er Kopfschmerzen. **Deshalb** ging er früh ins Bett. (Yorgundu. Ayrıca başı ağrıyordu. Bu yüzden erken yattı.)
@@ -18045,6 +18221,76 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
         data: { words: ['früh', 'ging', 'er', 'deshalb', 'ins', 'Bett'] },
         correctAnswer: { order: ['deshalb', 'ging', 'er', 'früh', 'ins', 'Bett'] },
         explanation: '"Deshalb" steht an Position 1, danach das Verb.',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Konnektor drückt einen Gegensatz aus?', options: ['allerdings', 'außerdem', 'deshalb', 'zudem'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"allerdings" (auch: jedoch, dagegen) drückt einen Gegensatz aus.',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Preis ist hoch. ___ ist die Qualität sehr gut. (Gegensatz-Adverb mit "a…")' },
+        correctAnswer: { accepted: ['Allerdings'] },
+        explanation: 'Gegensatz: Allerdings (Verb folgt an Position 2).',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Konnektor zeigt eine Folge/einen Grund?', options: ['folglich', 'außerdem', 'zunächst', 'jedoch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"folglich" (auch deshalb, daher) drückt Folge/Grund aus.',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['außerdem', 'jedoch', 'deshalb'], rights: ['Folge/Grund', 'Hinzufügung', 'Gegensatz'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'außerdem', right: 'Hinzufügung' },
+            { left: 'jedoch', right: 'Gegensatz' },
+            { left: 'deshalb', right: 'Folge/Grund' },
+          ],
+        },
+        explanation: 'Bedeutung der Konnektoren.',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Zunächst planen wir, dann handeln wir, ___ prüfen wir das Ergebnis. (Abschluss)' },
+        correctAnswer: { accepted: ['schließlich'] },
+        explanation: 'Reihung/Schluss: schließlich.',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was sind diese Konnektoren grammatisch?', options: ['Adverbien (Verb an Position 2)', 'Nebensatz-Konjunktionen', 'Präpositionen', 'Nomen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Es sind Adverbien → Verb an Position 2.',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Kopfschmerzen', 'außerdem', 'er', 'hatte'] },
+        correctAnswer: { order: ['außerdem', 'hatte', 'er', 'Kopfschmerzen'] },
+        explanation: 'außerdem (Pos. 1) + Verb (Pos. 2) + Subjekt …',
+      },
+      {
+        lessonId: b2Unit8Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne einen Konnektor für 'Hinzufügung' (ein Wort)." },
+        correctAnswer: { accepted: ['außerdem', 'zudem', 'darüber hinaus'] },
+        explanation: 'z. B. außerdem, zudem, darüber hinaus.',
       },
     ],
   })
@@ -18076,6 +18322,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - Vor Vokal wird ein **-r-** eingefügt: **damit** aber **dar**auf, **dar**an, **dar**über.
 - Sie verweisen auf einen ganzen vorher genannten Sachverhalt.
 
+### Häufige Fehler
+- ❌ Für Personen: *Ich rechne **damit**.* (gemeint: mein Freund) → ✅ *Ich rechne **mit ihm**.* (Personen → Präposition + Pronomen).
+- ❌ *da**auf***, *da**an*** → ✅ *dar**auf***, *dar**an*** (vor Vokal wird -r- eingefügt).
+
 **Beispiele:**
 - Sie lernt Deutsch. **Dabei** hilft ihr eine App.
 - Wir haben ein Problem. **Dazu** möchte ich etwas sagen.
@@ -18096,6 +18346,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 - Before a vowel an **-r-** is inserted: **damit** but **dar**auf, **dar**an, **dar**über.
 - They refer back to a whole previously mentioned situation.
 
+### Common mistakes
+- ❌ for people: *Ich rechne **damit**.* (meaning: my friend) → ✅ *Ich rechne **mit ihm**.* (people → preposition + pronoun).
+- ❌ *da**auf***, *da**an*** → ✅ *dar**auf***, *dar**an*** (an -r- is inserted before a vowel).
+
 **Examples:**
 - Sie lernt Deutsch. **Dabei** hilft ihr eine App. (She's learning German. An app helps her with that.)
 - Wir haben ein Problem. **Dazu** möchte ich etwas sagen. (We have a problem. I'd like to say something about that.)
@@ -18115,6 +18369,10 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
 **Unutma:**
 - Ünlüden önce araya **-r-** girer: **damit** ama **dar**auf, **dar**an, **dar**über.
 - Daha önce anılan tüm bir duruma gönderme yaparlar.
+
+### Sık yapılan hatalar
+- ❌ Kişiler için: *Ich rechne **damit**.* (kastedilen: arkadaşım) → ✅ *Ich rechne **mit ihm**.* (kişiler → edat + zamir).
+- ❌ *da**auf***, *da**an*** → ✅ *dar**auf***, *dar**an*** (ünlüden önce araya -r- girer).
 
 **Örnekler:**
 - Sie lernt Deutsch. **Dabei** hilft ihr eine App. (Almanca öğreniyor. Bu konuda bir uygulama yardımcı oluyor.)
@@ -18139,6 +18397,76 @@ A good text avoids **repetition**. Instead of naming a noun again and again, you
         data: { sentence: 'Sie nutzt eine App. ___ lernt sie schneller Deutsch. (dabei)' },
         correctAnswer: { accepted: ['Dabei'] },
         explanation: '"Dabei" verweist auf die Nutzung der App.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wofür benutzt man Pronominaladverbien (da-/dar-)?', options: ['für Sachen', 'für Personen', 'für beides gleich', 'nur für Orte'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Für Sachen da(r)-; für Personen Präposition + Pronomen.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er kaufte Werkzeug und reparierte ___ das Fahrrad. (mit + Sache)' },
+        correctAnswer: { accepted: ['damit'] },
+        explanation: 'mit + Sache → damit.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie sagt man "mit + Person"? (z. B. mein Freund)', options: ['mit ihm', 'damit', 'darmit', 'mit es'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Personen → Präposition + Pronomen: mit ihm.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['bei + Sache', 'zu + Sache', 'mit + Sache'], rights: ['damit', 'dabei', 'dazu'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'bei + Sache', right: 'dabei' },
+            { left: 'zu + Sache', right: 'dazu' },
+            { left: 'mit + Sache', right: 'damit' },
+          ],
+        },
+        explanation: 'da- + Präposition.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir haben ein Problem. ___ möchte ich etwas sagen. (zu + Sache)' },
+        correctAnswer: { accepted: ['Dazu'] },
+        explanation: 'zu + Sache → dazu.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Form ist korrekt (Präposition "auf")?', options: ['darauf', 'daauf', 'dauf', 'darrauf'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Vor Vokal wird -r- eingefügt: darauf.',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['hilft', 'dabei', 'eine', 'App', 'ihr'] },
+        correctAnswer: { order: ['dabei', 'hilft', 'ihr', 'eine', 'App'] },
+        explanation: 'dabei (Pos. 1) + Verb (Pos. 2) …',
+      },
+      {
+        lessonId: b2Unit8Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Ersetze 'mit dem Werkzeug' (Sache) durch ein Pronominaladverb." },
+        correctAnswer: { accepted: ['damit'] },
+        explanation: 'mit + Sache → damit.',
       },
     ],
   })
