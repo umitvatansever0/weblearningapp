@@ -14180,6 +14180,11 @@ Verbindet man Passiv und Modalverb, entsteht eine typische **Satzklammer**: Das 
 - Davor steht das **Partizip II** des Vollverbs.
 - Das Modalverb richtet sich nach dem Subjekt: *Die Fenster **müssen** geputzt werden.*
 
+### Häufige Fehler
+- ❌ *Die Arbeit muss gemacht **wird**.* → ✅ *Die Arbeit muss gemacht **werden**.* (am Ende Infinitiv „werden", nicht „wird").
+- ❌ *Das Problem kann **lösen** werden.* → ✅ *Das Problem kann **gelöst** werden.* (Partizip II, nicht Infinitiv).
+- ❌ *Die Fenster **muss** geputzt werden.* → ✅ *Die Fenster **müssen** geputzt werden.* (Modalverb an das Subjekt anpassen).
+
 **Beispiele:**
 - Das Formular **muss** ausgefüllt **werden**.
 - Diese Regeln **können** leicht verstanden **werden**.
@@ -14201,6 +14206,11 @@ Combining the passive with a modal verb creates a typical **sentence bracket**: 
 - Before it comes the **Partizip II** of the main verb.
 - The modal verb agrees with the subject: *Die Fenster **müssen** geputzt werden.*
 
+### Common mistakes
+- ❌ *Die Arbeit muss gemacht **wird**.* → ✅ *Die Arbeit muss gemacht **werden**.* (infinitive "werden" at the end, not "wird").
+- ❌ *Das Problem kann **lösen** werden.* → ✅ *Das Problem kann **gelöst** werden.* (Partizip II, not the infinitive).
+- ❌ *Die Fenster **muss** geputzt werden.* → ✅ *Die Fenster **müssen** geputzt werden.* (make the modal verb agree with the subject).
+
 **Examples:**
 - Das Formular **muss** ausgefüllt **werden**. (The form must be filled out.)
 - Diese Regeln **können** leicht verstanden **werden**. (These rules can be understood easily.)
@@ -14221,6 +14231,11 @@ Edilgen çatı ile kip fiili birleşince tipik bir **cümle parantezi** oluşur:
 - En sonda her zaman **„werden" mastarı** durur („wird" değil).
 - Ondan önce ana fiilin **Partizip II'si** gelir.
 - Kip fiili özneye göre çekimlenir: *Die Fenster **müssen** geputzt werden.*
+
+### Sık yapılan hatalar
+- ❌ *Die Arbeit muss gemacht **wird**.* → ✅ *Die Arbeit muss gemacht **werden**.* (sonda „wird" değil „werden" mastarı).
+- ❌ *Das Problem kann **lösen** werden.* → ✅ *Das Problem kann **gelöst** werden.* (mastar değil Partizip II).
+- ❌ *Die Fenster **muss** geputzt werden.* → ✅ *Die Fenster **müssen** geputzt werden.* (kip fiilini özneye uydur).
 
 **Örnekler:**
 - Das Formular **muss** ausgefüllt **werden**. (Form doldurulmalı.)
@@ -14245,6 +14260,76 @@ Edilgen çatı ile kip fiili birleşince tipik bir **cümle parantezi** oluşur:
         data: { sentence: 'Die Fenster ___ geputzt werden. (müssen)' },
         correctAnswer: { accepted: ['müssen'] },
         explanation: 'Mit "die Fenster" (Plural) benutzt man "müssen".',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort steht ganz am Satzende?', options: ['werden', 'wird', 'das Partizip II', 'das Modalverb'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Am Ende steht immer der Infinitiv "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Problem kann leicht ___ werden. (lösen → Partizip II)' },
+        correctAnswer: { accepted: ['gelöst'] },
+        explanation: 'Partizip II von "lösen": gelöst.',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Aktiv: "Man soll das Formular ausfüllen." → Passiv:', options: ['Das Formular soll ausgefüllt werden.', 'Das Formular soll ausfüllen werden.', 'Das Formular wird ausgefüllt sollen.', 'Das Formular soll ausgefüllt wird.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Modalverb + Partizip II + "werden": soll ausgefüllt werden.',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 6,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['werden', 'gelöst', 'kann', 'das', 'Problem'] },
+        correctAnswer: { order: ['das', 'Problem', 'kann', 'gelöst', 'werden'] },
+        explanation: 'Subjekt – Modalverb – Partizip II – "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Antrag ___ heute abgeschickt werden. (sollen, "der Antrag")' },
+        correctAnswer: { accepted: ['soll'] },
+        explanation: 'Singular "der Antrag" → soll.',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 8,
+        type: 'MATCHING',
+        data: { lefts: ['machen', 'lösen', 'ausfüllen'], rights: ['ausgefüllt', 'gemacht', 'gelöst'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'machen', right: 'gemacht' },
+            { left: 'lösen', right: 'gelöst' },
+            { left: 'ausfüllen', right: 'ausgefüllt' },
+          ],
+        },
+        explanation: 'Partizip II der Vollverben.',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 9,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Warum "werden" und nicht "wird" am Ende?', options: ['weil es der Infinitiv im Passiv ist', 'weil das Subjekt Plural ist', 'weil es Vergangenheit ist', 'weil es eine Frage ist'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nach dem Modalverb steht "werden" als Infinitiv am Satzende.',
+      },
+      {
+        lessonId: b2Unit3Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Passiv mit Modalverb: 'Man muss die Tür schließen.' (5 Wörter)" },
+        correctAnswer: { accepted: ['die tür muss geschlossen werden'] },
+        explanation: 'Die Tür muss geschlossen werden.',
       },
     ],
   })
@@ -14276,6 +14361,10 @@ In der Vergangenheit wird nur das **Modalverb ins Präteritum** gesetzt. Der Res
 - Nur das **Modalverb** ändert die Zeit; „werden" bleibt Infinitiv.
 - Wortstellung: *Subjekt – Modalverb (Prät.) – … – Partizip II – werden.*
 
+### Häufige Fehler
+- ❌ *Die Arbeit **wurde** gemacht werden.* → ✅ *Die Arbeit **musste** gemacht werden.* (Vergangenheit über das Modalverb, nicht über „wurde").
+- ❌ *Das Auto konnte repariert **wurden**.* → ✅ *Das Auto konnte repariert **werden**.* (am Ende bleibt der Infinitiv „werden").
+
 **Beispiele:**
 - Der Bericht **musste** gestern geschrieben **werden**.
 - Das Problem **konnte** schnell gelöst **werden**.
@@ -14296,6 +14385,10 @@ In the past, only the **modal verb goes into the Präteritum**. The rest of the 
 - Only the **modal verb** changes tense; "werden" stays an infinitive.
 - Word order: *subject – modal verb (past) – … – past participle – werden.*
 
+### Common mistakes
+- ❌ *Die Arbeit **wurde** gemacht werden.* → ✅ *Die Arbeit **musste** gemacht werden.* (put the past on the modal verb, not on "wurde").
+- ❌ *Das Auto konnte repariert **wurden**.* → ✅ *Das Auto konnte repariert **werden**.* (the infinitive "werden" stays at the end).
+
 **Examples:**
 - Der Bericht **musste** gestern geschrieben **werden**. (The report had to be written yesterday.)
 - Das Problem **konnte** schnell gelöst **werden**. (The problem could be solved quickly.)
@@ -14315,6 +14408,10 @@ Geçmişte yalnızca **kip fiili Präteritum'a** çekilir. Yapının geri kalan�
 **Unutma:**
 - Sadece **kip fiili** zaman değiştirir; „werden" mastar kalır.
 - Sözcük dizimi: *özne – kip fiili (geçmiş) – … – Partizip II – werden.*
+
+### Sık yapılan hatalar
+- ❌ *Die Arbeit **wurde** gemacht werden.* → ✅ *Die Arbeit **musste** gemacht werden.* (geçmişi „wurde" değil kip fiili taşır).
+- ❌ *Das Auto konnte repariert **wurden**.* → ✅ *Das Auto konnte repariert **werden**.* (sonda „werden" mastarı kalır).
 
 **Örnekler:**
 - Der Bericht **musste** gestern geschrieben **werden**. (Rapor dün yazılmalıydı.)
@@ -14339,6 +14436,76 @@ Geçmişte yalnızca **kip fiili Präteritum'a** çekilir. Yapının geri kalan�
         data: { words: ['werden', 'musste', 'repariert', 'das', 'Auto'] },
         correctAnswer: { order: ['das', 'Auto', 'musste', 'repariert', 'werden'] },
         explanation: 'Wortstellung: Subjekt, Modalverb (Präteritum), Partizip II, "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Problem ___ schnell gelöst werden. (können, Präteritum)' },
+        correctAnswer: { accepted: ['konnte'] },
+        explanation: 'Präteritum von "kann" (er/es): konnte.',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 4,
+        type: 'MATCHING',
+        data: { lefts: ['muss', 'kann', 'soll'], rights: ['konnte', 'sollte', 'musste'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'muss', right: 'musste' },
+            { left: 'kann', right: 'konnte' },
+            { left: 'soll', right: 'sollte' },
+          ],
+        },
+        explanation: 'Modalverben im Präteritum (er/sie/es).',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Form ändert sich beim Wechsel Präsens → Präteritum?', options: ['nur das Modalverb', 'nur "werden"', 'das Partizip II', 'alle drei'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nur das Modalverb wird ins Präteritum gesetzt; der Rest bleibt gleich.',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Gäste ___ rechtzeitig informiert werden. (sollen, Präteritum, Plural)' },
+        correctAnswer: { accepted: ['sollten'] },
+        explanation: 'Plural "die Gäste" im Präteritum: sollten.',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Präsens: "Der Brief soll geschickt werden." → Präteritum:', options: ['Der Brief sollte geschickt werden.', 'Der Brief soll geschickt wurde.', 'Der Brief wurde geschickt sollen.', 'Der Brief sollte geschickt wurde.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nur das Modalverb ins Präteritum: sollte.',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 8,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Termin konnte leider nicht verschoben ___. (werden?)' },
+        correctAnswer: { accepted: ['werden'] },
+        explanation: 'Am Ende bleibt der Infinitiv "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['werden', 'geschrieben', 'musste', 'der', 'Bericht'] },
+        correctAnswer: { order: ['der', 'Bericht', 'musste', 'geschrieben', 'werden'] },
+        explanation: 'Subjekt – Modalverb (Prät.) – Partizip II – "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Präteritum-Passiv mit Modalverb: 'The car could be repaired.' (5 Wörter)" },
+        correctAnswer: { accepted: ['das auto konnte repariert werden'] },
+        explanation: 'Das Auto konnte repariert werden.',
       },
     ],
   })
@@ -14369,6 +14536,10 @@ Zum **Verneinen** setzt man **„nicht"** vor den Verbteil am Satzende, also **v
 - **„muss nicht"** = keine Notwendigkeit (etwas ist nicht nötig) – Vorsicht: nicht dasselbe wie „darf nicht"!
 - „kein-" verneint dagegen ein Nomen: *Es darf **kein** Lärm gemacht werden.*
 
+### Häufige Fehler
+- ❌ *Hier darf **nicht rauchen** werden.* → ✅ *Hier darf **nicht geraucht** werden.* (Partizip II, nicht Infinitiv).
+- ❌ *Das **muss nicht** gemacht werden* im Sinne von „verboten" → besser *Das **darf nicht** gemacht werden.* („muss nicht" = nicht nötig, „darf nicht" = verboten).
+
 **Beispiele:**
 - Hier **darf nicht** geraucht **werden**.
 - Diese Tür **darf nicht** geöffnet **werden**.
@@ -14388,6 +14559,10 @@ To **negate**, place **"nicht"** before the verb cluster at the end, i.e. **befo
 - **"muss nicht"** = no necessity (something isn't required) – careful: not the same as "darf nicht"!
 - "kein-" instead negates a noun: *Es darf **kein** Lärm gemacht werden.*
 
+### Common mistakes
+- ❌ *Hier darf **nicht rauchen** werden.* → ✅ *Hier darf **nicht geraucht** werden.* (Partizip II, not the infinitive).
+- ❌ using *Das **muss nicht** gemacht werden* to mean "forbidden" → use *Das **darf nicht** gemacht werden.* ("muss nicht" = not necessary, "darf nicht" = forbidden).
+
 **Examples:**
 - Hier **darf nicht** geraucht **werden**. (Smoking is not allowed here.)
 - Diese Tür **darf nicht** geöffnet **werden**. (This door must not be opened.)
@@ -14406,6 +14581,10 @@ To **negate**, place **"nicht"** before the verb cluster at the end, i.e. **befo
 - **„darf nicht"** = yasak (bir şeye izin yok).
 - **„muss nicht"** = gereklilik yok (bir şey zorunlu değil) – dikkat: „darf nicht" ile aynı değil!
 - „kein-" ise bir ismi olumsuzlar: *Es darf **kein** Lärm gemacht werden.*
+
+### Sık yapılan hatalar
+- ❌ *Hier darf **nicht rauchen** werden.* → ✅ *Hier darf **nicht geraucht** werden.* (mastar değil Partizip II).
+- ❌ „yasak" için *Das **muss nicht** gemacht werden* → doğrusu *Das **darf nicht** gemacht werden.* („muss nicht" = gerekli değil, „darf nicht" = yasak).
 
 **Örnekler:**
 - Hier **darf nicht** geraucht **werden**. (Burada sigara içilmemeli.)
@@ -14430,6 +14609,76 @@ To **negate**, place **"nicht"** before the verb cluster at the end, i.e. **befo
         data: { sentence: 'Das Auto darf hier nicht ___ werden. (parken)' },
         correctAnswer: { accepted: ['geparkt'] },
         explanation: 'Partizip II von "parken": geparkt.',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "Das darf nicht gemacht werden."?', options: ['ein Verbot', 'keine Notwendigkeit', 'eine Möglichkeit', 'ein Wunsch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"darf nicht" drückt ein Verbot aus.',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz bedeutet "es ist nicht nötig"?', options: ['Das muss nicht gemacht werden.', 'Das darf nicht gemacht werden.', 'Das kann nicht gemacht werden.', 'Das soll nicht gemacht werden.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"muss nicht" = keine Notwendigkeit.',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 5,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wo steht "nicht"? – Der Rasen darf ___ betreten werden. (nicht einsetzen)' },
+        correctAnswer: { accepted: ['nicht'] },
+        explanation: '"nicht" steht vor dem Verbteil am Ende (vor dem Partizip II).',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 6,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['werden', 'geöffnet', 'nicht', 'darf', 'Tür', 'diese'] },
+        correctAnswer: { order: ['diese', 'Tür', 'darf', 'nicht', 'geöffnet', 'werden'] },
+        explanation: 'Subjekt – Modalverb – nicht – Partizip II – "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Es darf ___ Lärm gemacht werden. (Nomen verneinen)' },
+        correctAnswer: { accepted: ['kein'] },
+        explanation: 'Ein Nomen (Lärm) wird mit "kein-" verneint.',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Hier ___ nicht geparkt werden" – welches Modalverb passt für ein Verbot?', options: ['darf', 'muss', 'will', 'möchte'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Verbot → "darf nicht".',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 9,
+        type: 'MATCHING',
+        data: { lefts: ['darf nicht', 'muss nicht', 'kein Lärm'], rights: ['Nomen-Verneinung', 'Verbot', 'keine Notwendigkeit'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'darf nicht', right: 'Verbot' },
+            { left: 'muss nicht', right: 'keine Notwendigkeit' },
+            { left: 'kein Lärm', right: 'Nomen-Verneinung' },
+          ],
+        },
+        explanation: 'darf nicht = verboten; muss nicht = nicht nötig; kein- = Nomen verneinen.',
+      },
+      {
+        lessonId: b2Unit3Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Verneine als Verbot: 'Hier ___ geraucht werden.' (3 Wörter für die Lücke + Verb)" },
+        correctAnswer: { accepted: ['darf nicht geraucht', 'darf nicht'] },
+        explanation: 'Hier darf nicht geraucht werden.',
       },
     ],
   })
@@ -14461,6 +14710,10 @@ Das Grundmuster bleibt in allen Zeiten gleich: **Modalverb (konjugiert) + Partiz
 - Zeit und Person zeigt nur das **Modalverb**.
 - Im **Nebensatz** wandert das konjugierte Modalverb ganz ans Ende: *…, weil das repariert werden **muss**.*
 
+### Häufige Fehler
+- ❌ *…, dass die Arbeit gemacht **muss** werden.* → ✅ *…, dass die Arbeit gemacht werden **muss**.* (im Nebensatz steht das Modalverb ganz am Ende).
+- ❌ *Die Regeln **muss** beachtet werden.* → ✅ *Die Regeln **müssen** beachtet werden.* (Plural-Subjekt).
+
 **Beispiele:**
 - Die Regeln **müssen** beachtet **werden**.
 - Der Termin **konnte** leider nicht verschoben **werden**.
@@ -14481,6 +14734,10 @@ The basic pattern stays the same in every tense: **modal verb (conjugated) + Par
 - Only the **modal verb** shows tense and person.
 - In a **subordinate clause** the conjugated modal verb moves to the very end: *…, weil das repariert werden **muss**.*
 
+### Common mistakes
+- ❌ *…, dass die Arbeit gemacht **muss** werden.* → ✅ *…, dass die Arbeit gemacht werden **muss**.* (in a subordinate clause the modal verb goes to the very end).
+- ❌ *Die Regeln **muss** beachtet werden.* → ✅ *Die Regeln **müssen** beachtet werden.* (plural subject).
+
 **Examples:**
 - Die Regeln **müssen** beachtet **werden**. (The rules must be observed.)
 - Der Termin **konnte** leider nicht verschoben **werden**. (The appointment could not be postponed.)
@@ -14500,6 +14757,10 @@ Temel kalıp bütün zamanlarda aynı kalır: cümle sonunda **kip fiili (çekim
 - „werden" her zaman sonda **mastar** kalır.
 - Zaman ve kişiyi yalnızca **kip fiili** gösterir.
 - **Yan cümlede** çekimli kip fiili en sona gider: *…, weil das repariert werden **muss**.*
+
+### Sık yapılan hatalar
+- ❌ *…, dass die Arbeit gemacht **muss** werden.* → ✅ *…, dass die Arbeit gemacht werden **muss**.* (yan cümlede kip fiili en sona gider).
+- ❌ *Die Regeln **muss** beachtet werden.* → ✅ *Die Regeln **müssen** beachtet werden.* (çoğul özne).
 
 **Örnekler:**
 - Die Regeln **müssen** beachtet **werden**. (Kurallara uyulmalı.)
@@ -14524,6 +14785,76 @@ Temel kalıp bütün zamanlarda aynı kalır: cümle sonunda **kip fiili (çekim
         data: { prompt: "Wie sagt man auf Deutsch: 'The letter had to be sent'? (Passiv mit Modalverb, Präteritum)" },
         correctAnswer: { accepted: ['der brief musste geschickt werden'] },
         explanation: '"Der Brief musste geschickt werden" ist die richtige Übersetzung.',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Nebensatz: "Ich weiß, dass der Antrag heute abgeschickt werden ___." Was passt?', options: ['muss', 'wird', 'ist', 'hat'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Im Nebensatz steht das konjugierte Modalverb ("muss") ganz am Ende.',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 4,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['muss', 'werden', 'repariert', 'das', 'weil'] },
+        correctAnswer: { order: ['weil', 'das', 'repariert', 'werden', 'muss'] },
+        explanation: 'Im Nebensatz: …, weil das repariert werden muss.',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 5,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Termin konnte leider nicht verschoben ___. (werden?)' },
+        correctAnswer: { accepted: ['werden'] },
+        explanation: 'Am Ende bleibt der Infinitiv "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Element zeigt Zeit und Person?', options: ['das Modalverb', '"werden"', 'das Partizip II', 'das Subjekt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nur das Modalverb zeigt Zeit und Person.',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Präteritum, Verbot: Hier durfte nicht geparkt ___. ' },
+        correctAnswer: { accepted: ['werden'] },
+        explanation: 'Auch im Präteritum bleibt am Ende "werden".',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 8,
+        type: 'MATCHING',
+        data: { lefts: ['Präsens', 'Präteritum', 'Negation/Verbot'], rights: ['darf nicht gemacht werden', 'muss gemacht werden', 'musste gemacht werden'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Präsens', right: 'muss gemacht werden' },
+            { left: 'Präteritum', right: 'musste gemacht werden' },
+            { left: 'Negation/Verbot', right: 'darf nicht gemacht werden' },
+          ],
+        },
+        explanation: 'Grundmuster in verschiedenen Formen.',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 9,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bleibt in allen Zeiten am Satzende gleich?', options: ['der Infinitiv "werden"', 'das Modalverb', 'das Subjekt', 'das Fragewort'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"werden" bleibt immer als Infinitiv am Ende.',
+      },
+      {
+        lessonId: b2Unit3Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde einen Nebensatz: 'Ich weiß, dass ...' + 'Der Antrag muss abgeschickt werden.'" },
+        correctAnswer: { accepted: ['ich weiß, dass der antrag abgeschickt werden muss', 'dass der antrag abgeschickt werden muss'] },
+        explanation: 'Im Nebensatz wandert "muss" ans Ende: …, dass der Antrag abgeschickt werden muss.',
       },
     ],
   })
