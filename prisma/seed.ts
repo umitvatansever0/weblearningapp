@@ -20718,6 +20718,10 @@ In **Nachrichten und Berichten** gibt man fremde Aussagen **distanziert** wieder
 - Wichtigste Formen: **sei, habe, komme, gebe** (3. Person Singular).
 - Bei Formgleichheit mit dem Indikativ → Ersatzform mit **würde/Konjunktiv II**.
 
+### Häufige Fehler
+- ❌ *Die Ministerin sagte, die Reform **ist** notwendig.* (Indikativ) → ✅ *…, die Reform **sei** notwendig.* (Konjunktiv I).
+- ❌ *Sie sagten, sie **haben** Zeit* (= Indikativ) → ✅ Ersatzform: *…, sie **hätten** Zeit* (bei Formgleichheit Konjunktiv II).
+
 **Beispiele:**
 - Der Sprecher betonte, man **arbeite** an einer Lösung.
 - Sie erklärte, sie **sei** überrascht.
@@ -20737,6 +20741,10 @@ In **news and reports**, other people's statements are reported at a **distance*
 - Key forms: **sei, habe, komme, gebe** (3rd person singular).
 - If identical to the indicative → substitute with **würde/Konjunktiv II**.
 
+### Common mistakes
+- ❌ *Die Ministerin sagte, die Reform **ist** notwendig.* (indicative) → ✅ *…, die Reform **sei** notwendig.* (Konjunktiv I).
+- ❌ *Sie sagten, sie **haben** Zeit* (= indicative) → ✅ substitute: *…, sie **hätten** Zeit* (Konjunktiv II when the forms coincide).
+
 **Examples:**
 - Der Sprecher betonte, man **arbeite** an einer Lösung. (The spokesperson stressed that they were working on a solution.)
 - Sie erklärte, sie **sei** überrascht. (She stated she was surprised.)
@@ -20755,6 +20763,10 @@ In **news and reports**, other people's statements are reported at a **distance*
 - Aktarma fiilleri: sagen, erklären, betonen, behaupten, mitteilen …
 - En önemli biçimler: **sei, habe, komme, gebe** (3. tekil kişi).
 - Bildirme kipiyle aynıysa → **würde/Konjunktiv II** ile yedek biçim.
+
+### Sık yapılan hatalar
+- ❌ *Die Ministerin sagte, die Reform **ist** notwendig.* (bildirme) → ✅ *…, die Reform **sei** notwendig.* (Konjunktiv I).
+- ❌ *Sie sagten, sie **haben** Zeit* (= bildirme) → ✅ yedek biçim: *…, sie **hätten** Zeit* (form aynıysa Konjunktiv II).
 
 **Örnekler:**
 - Der Sprecher betonte, man **arbeite** an einer Lösung. (Sözcü, bir çözüm üzerinde çalışıldığını vurguladı.)
@@ -20780,6 +20792,76 @@ In **news and reports**, other people's statements are reported at a **distance*
         correctAnswer: { accepted: ['habe'] },
         explanation: 'Konjunktiv I von "haben" für "er" ist "habe".',
       },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Warum benutzt man in Berichten den Konjunktiv I?', options: ['um Aussagen distanziert wiederzugeben', 'um Befehle zu geben', 'um Fragen zu stellen', 'um Wünsche auszudrücken'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Schreiber berichtet, ohne selbst zu bürgen.',
+      },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Firma teilte mit, die Zahlen ___ gestiegen. (Konjunktiv I von "sein", Plural)' },
+        correctAnswer: { accepted: ['seien'] },
+        explanation: 'Konjunktiv I Plural von "sein": seien.',
+      },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Verben leiten die Redewiedergabe ein?', options: ['sagen, erklären, betonen, mitteilen', 'gehen, kommen, fahren', 'essen, trinken', 'schlafen, träumen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Verben des Sagens.',
+      },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['sein (er)', 'haben (er)', 'kommen (er)'], rights: ['habe', 'komme', 'sei'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'sein (er)', right: 'sei' },
+            { left: 'haben (er)', right: 'habe' },
+            { left: 'kommen (er)', right: 'komme' },
+          ],
+        },
+        explanation: 'Wichtigste Konjunktiv-I-Formen (3. Person Singular).',
+      },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie erklärte, sie ___ überrascht. (Konjunktiv I von "sein", sie)' },
+        correctAnswer: { accepted: ['sei'] },
+        explanation: 'Konjunktiv I von "sein": sei.',
+      },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie steht das Verb nach der Redeeinleitung oft (ohne "dass")?', options: ['an Position 2', 'am Ende', 'an Position 1', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Ohne "dass": Verb an Position 2.',
+      },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['sei', 'sie', 'erklärte', 'überrascht'] },
+        correctAnswer: { order: ['sie', 'erklärte', 'sei', 'überrascht'] },
+        explanation: 'Wobei hier "sie erklärte, sie sei überrascht" – Verb der Wiedergabe an Position 2.',
+      },
+      {
+        lessonId: b2Unit12Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Setze in Redewiedergabe: „Ich habe keine Zeit." → Er sagte, er ___ keine Zeit.' },
+        correctAnswer: { accepted: ['habe', 'er habe keine zeit'] },
+        explanation: 'Konjunktiv I: er habe keine Zeit.',
+      },
     ],
   })
 
@@ -20803,6 +20885,10 @@ Denselben Inhalt kann man **verbal** (mit Nebensatz + Verb) oder **nominal** (mi
 - Verbalstil ist **leichter lesbar**, Nominalstil **dichter/offizieller**.
 - Prüfungsaufgaben verlangen oft die **Umformung** in beide Richtungen.
 
+### Häufige Fehler
+- ❌ *Nach **überprüfen** der Unterlagen* → ✅ *Nach **der Überprüfung** der Unterlagen* (Nomen statt Infinitiv).
+- ❌ Falscher Kasus: *wegen **die** steigenden Preise* → ✅ *wegen **der** steigenden Preise* (Genitiv).
+
 **Beispiele:**
 - **Nach der Prüfung** der Anträge folgt eine Entscheidung.
 - **Bei Regen** fällt die Veranstaltung aus.
@@ -20822,6 +20908,10 @@ The same content can be expressed **verbally** (with a clause + verb) or **nomin
 - Verbal style is **easier to read**, nominal style **denser/more official**.
 - Exam tasks often ask you to **transform** in both directions.
 
+### Common mistakes
+- ❌ *Nach **überprüfen** der Unterlagen* → ✅ *Nach **der Überprüfung** der Unterlagen* (a noun, not the infinitive).
+- ❌ wrong case: *wegen **die** steigenden Preise* → ✅ *wegen **der** steigenden Preise* (genitive).
+
 **Examples:**
 - **Nach der Prüfung** der Anträge folgt eine Entscheidung. (After the review of the applications, a decision follows.)
 - **Bei Regen** fällt die Veranstaltung aus. (In case of rain the event is cancelled.)
@@ -20840,6 +20930,10 @@ Aynı içerik **fiille** (yan cümle + fiil) ya da **isimle** (isim + edat) ifad
 - Nominal üslup: **edat + (tanımlık) + isim**, çoğu zaman Genitiv ile.
 - Fiil üslubu **daha kolay okunur**, nominal üslup **daha yoğun/resmidir**.
 - Sınav soruları çoğu zaman iki yönde de **dönüştürme** ister.
+
+### Sık yapılan hatalar
+- ❌ *Nach **überprüfen** der Unterlagen* → ✅ *Nach **der Überprüfung** der Unterlagen* (mastar değil isim).
+- ❌ Yanlış hal: *wegen **die** steigenden Preise* → ✅ *wegen **der** steigenden Preise* (Genitiv).
 
 **Örnekler:**
 - **Nach der Prüfung** der Anträge folgt eine Entscheidung. (Başvuruların incelenmesinin ardından bir karar gelir.)
@@ -20864,6 +20958,76 @@ Aynı içerik **fiille** (yan cümle + fiil) ya da **isimle** (isim + edat) ifad
         data: { prompt: "Bilde die Nominalisierung von 'überprüfen' mit Artikel." },
         correctAnswer: { accepted: ['die überprüfung', 'überprüfung'] },
         explanation: 'Die Nominalisierung von "überprüfen" ist "die Überprüfung".',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Stil ist kompakter und offizieller?', options: ['Nominalstil', 'Verbalstil', 'beide gleich', 'keiner'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Nominalstil ist dichter/offizieller.',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Verbalstil: „als er ankam" → Nominalstil: „bei seiner ___". (Nomen zu "ankommen")' },
+        correctAnswer: { accepted: ['Ankunft'] },
+        explanation: 'ankommen → die Ankunft.',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['als er ankam', 'nachdem überprüft wurde', 'weil die Preise steigen'], rights: ['wegen der steigenden Preise', 'bei seiner Ankunft', 'nach der Überprüfung'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'als er ankam', right: 'bei seiner Ankunft' },
+            { left: 'nachdem überprüft wurde', right: 'nach der Überprüfung' },
+            { left: 'weil die Preise steigen', right: 'wegen der steigenden Preise' },
+          ],
+        },
+        explanation: 'Verbalstil ↔ Nominalstil.',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Woraus besteht der Nominalstil typischerweise?', options: ['Präposition + (Artikel) + Nomen', 'Konjunktion + Verb', 'nur Verben', 'nur Adjektive'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Präposition + Nomen, oft im Genitiv.',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Regen fällt die Veranstaltung aus. (Präposition „bei", Nominalstil)' },
+        correctAnswer: { accepted: ['Bei'] },
+        explanation: 'Bei Regen … (Nominalstil).',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Stil ist leichter lesbar?', options: ['Verbalstil', 'Nominalstil', 'beide gleich', 'keiner'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Verbalstil ist leichter lesbar.',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['der', 'nach', 'Anträge', 'Prüfung'] },
+        correctAnswer: { order: ['nach', 'der', 'Prüfung', 'Anträge'] },
+        explanation: 'nach der Prüfung (der Anträge).',
+      },
+      {
+        lessonId: b2Unit12Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Nominalstil: „trotz der Verspätung" – nenne das Nomen.' },
+        correctAnswer: { accepted: ['die verspätung', 'verspätung'] },
+        explanation: 'sich verspäten → die Verspätung.',
       },
     ],
   })
@@ -20890,6 +21054,10 @@ In Berichten und offiziellen Texten benutzt man **gehobene Konnektoren** statt d
 - Sie gliedern einen Bericht klar (Aufzählung, Folge, Bezug, Abschluss).
 - Nicht übertreiben – gezielt an den Gelenkstellen des Textes einsetzen.
 
+### Häufige Fehler
+- ❌ *Des Weiteren **die Kosten wurden** geprüft.* → ✅ *Des Weiteren **wurden die Kosten** geprüft.* (Adverb → Verb an Position 2).
+- ❌ Register mischen: „des Weiteren" in lockerer SMS → dort besser „außerdem".
+
 **Beispiele:**
 - **Des Weiteren** wurden die Kosten geprüft.
 - **Dementsprechend** sind keine weiteren Maßnahmen erforderlich.
@@ -20911,6 +21079,10 @@ In reports and official texts you use **elevated connectors** instead of everyda
 - They structure a report clearly (listing, consequence, reference, conclusion).
 - Don't overdo it – place them purposefully at the joints of the text.
 
+### Common mistakes
+- ❌ *Des Weiteren **die Kosten wurden** geprüft.* → ✅ *Des Weiteren **wurden die Kosten** geprüft.* (adverb → verb in position 2).
+- ❌ mixing register: "des Weiteren" in a casual text → prefer "außerdem" there.
+
 **Examples:**
 - **Des Weiteren** wurden die Kosten geprüft. (Furthermore, the costs were reviewed.)
 - **Dementsprechend** sind keine weiteren Maßnahmen erforderlich. (Accordingly, no further measures are required.)
@@ -20931,6 +21103,10 @@ Raporlarda ve resmi metinlerde günlük kelimeler yerine **seçkin bağlaçlar**
 - Bu bağlaçlar çoğunlukla **belirteçtir** → cümle başında **fiil 2. pozisyonda** gelir: *Des Weiteren **ist** …*
 - Bir raporu net biçimde bölümler (sıralama, sonuç, atıf, kapanış).
 - Abartma – metnin eklem noktalarında amaca yönelik kullan.
+
+### Sık yapılan hatalar
+- ❌ *Des Weiteren **die Kosten wurden** geprüft.* → ✅ *Des Weiteren **wurden die Kosten** geprüft.* (belirteç → fiil 2. pozisyonda).
+- ❌ Register karıştırmak: gündelik mesajda „des Weiteren" → orada „außerdem" daha uygun.
 
 **Örnekler:**
 - **Des Weiteren** wurden die Kosten geprüft. (Ayrıca maliyetler incelendi.)
@@ -20955,6 +21131,76 @@ Raporlarda ve resmi metinlerde günlük kelimeler yerine **seçkin bağlaçlar**
         data: { sentence: '___ sind keine weiteren Maßnahmen erforderlich. (accordingly)' },
         correctAnswer: { accepted: ['dementsprechend'] },
         explanation: '"Dementsprechend" bedeutet "accordingly".',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 3,
+        type: 'MATCHING',
+        data: { lefts: ['außerdem', 'aber', 'zum Schluss'], rights: ['abschließend', 'des Weiteren', 'jedoch'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'außerdem', right: 'des Weiteren' },
+            { left: 'aber', right: 'jedoch' },
+            { left: 'zum Schluss', right: 'abschließend' },
+          ],
+        },
+        explanation: 'Umgangssprachlich ↔ formell.',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ liegen bereits Ergebnisse vor. (formell für „dazu/darüber")' },
+        correctAnswer: { accepted: ['Diesbezüglich'] },
+        explanation: '"diesbezüglich" = in this regard.',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches formelle Wort bedeutet "in conclusion"?', options: ['abschließend', 'des Weiteren', 'diesbezüglich', 'jedoch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"abschließend" = zum Schluss.',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Wortart sind diese Konnektoren meist?', options: ['Adverbien (Verb an Position 2)', 'Nebensatz-Konjunktionen', 'Präpositionen', 'Nomen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Adverbien → Verb an Position 2.',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Formell für „aber": ___ ist die Qualität sehr gut. (ein Wort mit „j")' },
+        correctAnswer: { accepted: ['Jedoch'] },
+        explanation: 'jedoch = formeller Gegensatz.',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"folglich" drückt aus:', options: ['eine Folge/Schlussfolgerung', 'einen Gegensatz', 'eine Aufzählung', 'einen Zeitpunkt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'folglich = daher, als Folge.',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['die', 'des', 'wurden', 'Kosten', 'Weiteren', 'geprüft'] },
+        correctAnswer: { order: ['des', 'Weiteren', 'wurden', 'die', 'Kosten', 'geprüft'] },
+        explanation: 'Des Weiteren wurden die Kosten geprüft (Verb an Position 2).',
+      },
+      {
+        lessonId: b2Unit12Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Formelles Wort für „außerdem"?' },
+        correctAnswer: { accepted: ['des weiteren'] },
+        explanation: 'des Weiteren.',
       },
     ],
   })
@@ -20981,6 +21227,10 @@ Die großen B2-Themen greifen in formellen Texten ineinander. So sieht ein klein
 - **Nominalstil & Funktionsverbgefüge** → kompakte, offizielle Sprache.
 - **Relativsätze & Konnektoren** → Sätze verknüpfen, Text gliedern.
 
+### Häufige Fehler
+- ❌ In der Redewiedergabe den Indikativ nehmen: *Er sagte, die Reform **ist** notwendig.* → ✅ *…, die Reform **sei** notwendig.*
+- ❌ Register mischen: umgangssprachliche und formelle Mittel wild kombinieren → in Berichten durchgehend **formell** bleiben.
+
 **Beispiele:**
 - Er sagte, die Reform **sei** notwendig.
 - **Nach Abschluss** der Prüfung **wurden** die Ergebnisse **veröffentlicht**.
@@ -21002,6 +21252,10 @@ The big B2 topics interlock in formal texts. Here is what a short report looks l
 - **Nominal style & support verbs** → compact, official language.
 - **Relative clauses & connectors** → link sentences, structure a text.
 
+### Common mistakes
+- ❌ using the indicative in reported speech: *Er sagte, die Reform **ist** notwendig.* → ✅ *…, die Reform **sei** notwendig.*
+- ❌ mixing registers: wildly combining colloquial and formal devices → in reports stay consistently **formal**.
+
 **Examples:**
 - Er sagte, die Reform **sei** notwendig. (He said the reform was necessary.)
 - **Nach Abschluss** der Prüfung **wurden** die Ergebnisse **veröffentlicht**. (After the review, the results were published.)
@@ -21022,6 +21276,10 @@ Büyük B2 konuları resmi metinlerde iç içe geçer. Kısa bir rapor şöyle g
 - **Konjunktiv II (geçmiş)** → gerçek dışı, nezaket.
 - **Nominal üslup & fiil-isim kalıpları** → derli toplu, resmi dil.
 - **İlgi cümleleri & bağlaçlar** → cümleleri bağlama, metni bölme.
+
+### Sık yapılan hatalar
+- ❌ Aktarımda bildirme kipini kullanmak: *Er sagte, die Reform **ist** notwendig.* → ✅ *…, die Reform **sei** notwendig.*
+- ❌ Register karıştırmak: gündelik ve resmi araçları rastgele birleştirmek → raporlarda baştan sona **resmi** kal.
 
 **Örnekler:**
 - Er sagte, die Reform **sei** notwendig. (Reformun gerekli olduğunu söyledi.)
@@ -21046,6 +21304,77 @@ Büyük B2 konuları resmi metinlerde iç içe geçer. Kısa bir rapor şöyle g
         data: { prompt: "Wie sagt man auf Deutsch: 'accordingly, no further measures are required'?" },
         correctAnswer: { accepted: ['dementsprechend sind keine weiteren maßnahmen erforderlich'] },
         explanation: '"Dementsprechend sind keine weiteren Maßnahmen erforderlich."',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 3,
+        type: 'MATCHING',
+        data: { lefts: ['Passiv', 'Konjunktiv I', 'Nominalstil', 'Relativsatz'], rights: ['Das ist der Punkt, auf den es ankommt.', 'Der Antrag wurde geprüft.', 'Nach der Prüfung folgte die Entscheidung.', 'Er sagte, alles sei in Ordnung.'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Passiv', right: 'Der Antrag wurde geprüft.' },
+            { left: 'Konjunktiv I', right: 'Er sagte, alles sei in Ordnung.' },
+            { left: 'Nominalstil', right: 'Nach der Prüfung folgte die Entscheidung.' },
+            { left: 'Relativsatz', right: 'Das ist der Punkt, auf den es ankommt.' },
+          ],
+        },
+        explanation: 'Die Bausteine der formellen Sprache.',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er sagte, die Reform ___ notwendig. (Konjunktiv I von "sein")' },
+        correctAnswer: { accepted: ['sei'] },
+        explanation: 'Konjunktiv I: sei.',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wofür benutzt man das Passiv/Passiversatz?', options: ['die Handlung statt des Handelnden betonen', 'Wünsche ausdrücken', 'Fragen stellen', 'Befehle geben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Fokus auf die Handlung.',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Womit gibt man fremde Aussagen distanziert wieder?', options: ['Konjunktiv I', 'Imperativ', 'Passiv', 'Nominalstil'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv I für Redewiedergabe.',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Nach ___ der Prüfung wurden die Ergebnisse veröffentlicht. (Nomen zu „abschließen")' },
+        correctAnswer: { accepted: ['Abschluss'] },
+        explanation: 'nach Abschluss der Prüfung (Nominalstil).',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wozu dienen Relativsätze und Konnektoren?', options: ['Sätze verknüpfen und den Text gliedern', 'nur Fragen bilden', 'nur Vergangenheit ausdrücken', 'nur Wünsche'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Sie schaffen Textzusammenhang.',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['auf', 'der', 'es', 'ankommt', 'den', 'Punkt', 'das', 'ist'] },
+        correctAnswer: { order: ['das', 'ist', 'der', 'Punkt', 'auf', 'den', 'es', 'ankommt'] },
+        explanation: 'Das ist der Punkt, auf den es ankommt.',
+      },
+      {
+        lessonId: b2Unit12Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne zwei B2-Werkzeuge für formelle Sprache (Stichworte)." },
+        correctAnswer: { accepted: ['passiv, konjunktiv i', 'passiv und konjunktiv i', 'nominalstil, relativsätze', 'passiv, nominalstil'] },
+        explanation: 'z. B. Passiv, Konjunktiv I, Nominalstil, Relativsätze, Konnektoren.',
       },
     ],
   })
