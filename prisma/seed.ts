@@ -19977,6 +19977,10 @@ Manchmal gehört zum Verb des Relativsatzes eine **Präposition** (*verantwortli
 - Reihenfolge: **Komma + Präposition + Relativpronomen**, Verb am Ende.
 - Erst prüfen: Welche Präposition verlangt das Verb? Dann den Kasus wählen.
 
+### Häufige Fehler
+- ❌ *Das Projekt, **das** ich verantwortlich bin.* → ✅ *Das Projekt, **für das** ich verantwortlich bin.* (Präposition „für" nicht vergessen).
+- ❌ Kasus vom Hauptsatz nehmen: *der Kollege, für **dem*** → ✅ *für **den*** („für" = Akkusativ).
+
 **Beispiele:**
 - Das ist der Kollege, **auf den** ich warte.
 - Das ist das Thema, **über das** wir sprechen.
@@ -20000,6 +20004,10 @@ Sometimes the verb of the relative clause takes a **preposition** (*verantwortli
 **Note:**
 - Order: **comma + preposition + relative pronoun**, verb at the end.
 - First check: which preposition does the verb require? Then choose the case.
+
+### Common mistakes
+- ❌ *Das Projekt, **das** ich verantwortlich bin.* → ✅ *Das Projekt, **für das** ich verantwortlich bin.* (don't drop the preposition "für").
+- ❌ taking the case from the main clause: *der Kollege, für **dem*** → ✅ *für **den*** ("für" = accusative).
 
 **Examples:**
 - Das ist der Kollege, **auf den** ich warte. (That's the colleague I'm waiting for.)
@@ -20025,6 +20033,10 @@ Bazen ilgi cümlesinin fiili bir **edat** alır (*verantwortlich sein **für**, 
 - Sıra: **virgül + edat + ilgi zamiri**, fiil sonda.
 - Önce sor: Fiil hangi edatı istiyor? Sonra hali seç.
 
+### Sık yapılan hatalar
+- ❌ *Das Projekt, **das** ich verantwortlich bin.* → ✅ *Das Projekt, **für das** ich verantwortlich bin.* („für" edatını unutma).
+- ❌ Hali ana cümleden almak: *der Kollege, für **dem*** → ✅ *für **den*** („für" = Akkusativ).
+
 **Örnekler:**
 - Das ist der Kollege, **auf den** ich warte. (Beklediğim meslektaş bu.)
 - Das ist das Thema, **über das** wir sprechen. (Hakkında konuştuğumuz konu bu.)
@@ -20048,6 +20060,76 @@ Bazen ilgi cümlesinin fiili bir **edat** alır (*verantwortlich sein **für**, 
         data: { sentence: 'Das ist der Grund, ___ ich mich beworben habe. (für)' },
         correctAnswer: { accepted: ['für den'] },
         explanation: '"Der Grund" ist maskulin; "für" verlangt den Akkusativ: "für den".',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wonach richtet sich der Kasus des Relativpronomens?', options: ['nach der Präposition', 'nach der Rolle im Hauptsatz', 'nach dem Subjekt', 'nach dem Verb im Hauptsatz'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Die Präposition bestimmt den Kasus.',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist das Thema, ___ wir sprechen. (über + das)' },
+        correctAnswer: { accepted: ['über das'] },
+        explanation: '"sprechen über" + Akkusativ (n): über das.',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Präposition verlangt hier den Akkusativ?', options: ['für', 'bei', 'mit', 'von'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"für" ist eine Akkusativ-Präposition.',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['der Grund (für)', 'die Frage (über)', 'das Projekt (für)'], rights: ['über die', 'für das', 'für den'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Grund (für)', right: 'für den' },
+            { left: 'die Frage (über)', right: 'über die' },
+            { left: 'das Projekt (für)', right: 'für das' },
+          ],
+        },
+        explanation: 'Präposition + Relativpronomen im Akkusativ.',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das sind die Ziele, ___ wir kämpfen. (für + Plural)' },
+        correctAnswer: { accepted: ['für die'] },
+        explanation: 'Plural Akkusativ: für die.',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht die Präposition im Relativsatz?', options: ['vor dem Relativpronomen', 'am Satzende', 'nach dem Verb', 'am Anfang des Hauptsatzes'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Komma + Präposition + Relativpronomen.',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['warte', 'auf', 'ich', 'den'] },
+        correctAnswer: { order: ['auf', 'den', 'ich', 'warte'] },
+        explanation: 'auf den ich warte (Verb am Ende).',
+      },
+      {
+        lessonId: b2Unit11Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Ergänze: 'Das ist das Thema, ___ wir sprechen.' (über + das)" },
+        correctAnswer: { accepted: ['über das'] },
+        explanation: 'über das.',
       },
     ],
   })
@@ -20076,6 +20158,10 @@ Bazen ilgi cümlesinin fiili bir **edat** alır (*verantwortlich sein **für**, 
 - Auch hier: Kasus kommt von der **Präposition**.
 - Für **Personen** normal, für Sachen oft auch „wo(r)+Präp." möglich (siehe nächste Lektion).
 
+### Häufige Fehler
+- ❌ *die Kollegen, mit **den*** → ✅ *die Kollegen, mit **denen*** (Dativ-Plural ist „denen").
+- ❌ *die Firma, bei **die*** → ✅ *die Firma, bei **der*** („bei" = Dativ, feminin → der).
+
 **Beispiele:**
 - Das ist der Freund, **mit dem** ich verreise.
 - Das ist die Ärztin, **von der** ich das weiß.
@@ -20098,6 +20184,10 @@ Bazen ilgi cümlesinin fiili bir **edat** alır (*verantwortlich sein **für**, 
 - The dative plural is always **"denen"** (not "den").
 - Here too: the case comes from the **preposition**.
 - Normal for **people**; for things "wo(r)+prep." is often possible too (see next lesson).
+
+### Common mistakes
+- ❌ *die Kollegen, mit **den*** → ✅ *die Kollegen, mit **denen*** (the dative plural is "denen").
+- ❌ *die Firma, bei **die*** → ✅ *die Firma, bei **der*** ("bei" = dative, feminine → der).
 
 **Examples:**
 - Das ist der Freund, **mit dem** ich verreise. (That's the friend I travel with.)
@@ -20122,6 +20212,10 @@ Bazen ilgi cümlesinin fiili bir **edat** alır (*verantwortlich sein **für**, 
 - Burada da: hal **edattan** gelir.
 - **Kişiler** için normaldir; şeyler için çoğu zaman „wo(r)+edat" da olur (bkz. sonraki ders).
 
+### Sık yapılan hatalar
+- ❌ *die Kollegen, mit **den*** → ✅ *die Kollegen, mit **denen*** (Dativ çoğul „denen").
+- ❌ *die Firma, bei **die*** → ✅ *die Firma, bei **der*** („bei" = Dativ, dişil → der).
+
 **Örnekler:**
 - Das ist der Freund, **mit dem** ich verreise. (Birlikte seyahat ettiğim arkadaş bu.)
 - Das ist die Ärztin, **von der** ich das weiß. (Bunu kendisinden öğrendiğim doktor bu.)
@@ -20145,6 +20239,76 @@ Bazen ilgi cümlesinin fiili bir **edat** alır (*verantwortlich sein **für**, 
         data: { prompt: "Das ist die Firma, bei ___ ich arbeite. (Relativpronomen, feminin, Dativ)" },
         correctAnswer: { accepted: ['der'] },
         explanation: 'Feminines Relativpronomen im Dativ ist "der".',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie lautet das Dativ-Plural-Relativpronomen?', options: ['denen', 'den', 'die', 'der'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Dativ-Plural = denen.',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist der Freund, mit ___ ich verreise. (maskulin, Dativ)' },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'maskulin Dativ: dem.',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Präposition verlangt den Dativ?', options: ['mit', 'für', 'über', 'durch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"mit" ist eine Dativ-Präposition.',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['der Chef (mit)', 'die Firma (bei)', 'die Kollegen (mit)'], rights: ['mit denen', 'mit dem', 'bei der'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Chef (mit)', right: 'mit dem' },
+            { left: 'die Firma (bei)', right: 'bei der' },
+            { left: 'die Kollegen (mit)', right: 'mit denen' },
+          ],
+        },
+        explanation: 'Dativ-Relativpronomen nach Genus/Numerus.',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist die Ärztin, von ___ ich das weiß. (feminin, Dativ)' },
+        correctAnswer: { accepted: ['der'] },
+        explanation: 'feminin Dativ: der.',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist das Team, ___ ich gehöre. (zu + neutrum, Dativ)', options: ['zu dem', 'zu das', 'zu der', 'zu denen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'neutrum Dativ: zu dem.',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['denen', 'ich', 'mit', 'arbeite'] },
+        correctAnswer: { order: ['mit', 'denen', 'ich', 'arbeite'] },
+        explanation: 'mit denen ich arbeite.',
+      },
+      {
+        lessonId: b2Unit11Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Ergänze: 'die Leute, ___ ich arbeite' (mit + Plural, Dativ)" },
+        correctAnswer: { accepted: ['mit denen'] },
+        explanation: 'mit denen.',
       },
     ],
   })
@@ -20178,6 +20342,10 @@ Zwei Sonderfälle bei Relativsätzen:
 - **„wo(r)-"** nur für **Sachen**; für Personen weiter „Präposition + Relativpronomen".
 - Vor Vokal: **wor**über, **wor**auf (mit -r-).
 
+### Häufige Fehler
+- ❌ Für Personen: *der Mann, **womit** ich rede* → ✅ *der Mann, **mit dem** ich rede* („wo(r)-" nur für Sachen).
+- ❌ *Das ist alles, **das** ich weiß.* → ✅ *Das ist alles, **was** ich weiß.* (nach „alles/etwas/nichts" → „was").
+
 **Beispiele:**
 - Sie hat bestanden, **was** uns freute.
 - Das ist etwas, **worüber** man nachdenken muss.
@@ -20205,6 +20373,10 @@ Two special cases in relative clauses:
 - **"was"** for whole sentences and indefinite words.
 - **"wo(r)-"** only for **things**; for people keep "preposition + relative pronoun".
 - Before a vowel: **wor**über, **wor**auf (with -r-).
+
+### Common mistakes
+- ❌ for people: *der Mann, **womit** ich rede* → ✅ *der Mann, **mit dem** ich rede* ("wo(r)-" only for things).
+- ❌ *Das ist alles, **das** ich weiß.* → ✅ *Das ist alles, **was** ich weiß.* (after "alles/etwas/nichts" → "was").
 
 **Examples:**
 - Sie hat bestanden, **was** uns freute. (She passed, which pleased us.)
@@ -20234,6 +20406,10 @@ Two special cases in relative clauses:
 - **„wo(r)-"** yalnızca **şeyler** için; kişiler için „edat + ilgi zamiri" kalır.
 - Ünlüden önce: **wor**über, **wor**auf (-r- ile).
 
+### Sık yapılan hatalar
+- ❌ Kişiler için: *der Mann, **womit** ich rede* → ✅ *der Mann, **mit dem** ich rede* („wo(r)-" yalnızca şeyler için).
+- ❌ *Das ist alles, **das** ich weiß.* → ✅ *Das ist alles, **was** ich weiß.* („alles/etwas/nichts" sonrası → „was").
+
 **Örnekler:**
 - Sie hat bestanden, **was** uns freute. (Geçti, ki bu bizi sevindirdi.)
 - Das ist etwas, **worüber** man nachdenken muss. (Bu, üzerine düşünülmesi gereken bir şey.)
@@ -20255,8 +20431,78 @@ Two special cases in relative clauses:
         order: 2,
         type: 'FILL_IN_BLANK',
         data: { sentence: 'Er hat mir geholfen, ___ ich sehr dankbar bin. (was)' },
+        correctAnswer: { accepted: ['wofür'] },
+        explanation: '"dankbar sein für" + Bezug → wofür.',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann benutzt man "was"?', options: ['bei ganzen Sätzen und unbestimmten Wörtern', 'nur bei Personen', 'nur im Plural', 'nur nach Präpositionen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"was" bezieht sich auf ganze Sätze oder alles/nichts/etwas …',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist alles, ___ ich weiß.' },
         correctAnswer: { accepted: ['was'] },
-        explanation: 'Bezug auf den ganzen Satz: "was".',
+        explanation: 'Nach "alles" → was.',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"wo(r)+Präposition" benutzt man …', options: ['für Sachen', 'für Personen', 'immer', 'nur für Zeitangaben'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"wo(r)-" nur für Sachen.',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['über', 'mit', 'für'], rights: ['wofür', 'worüber', 'womit'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'über', right: 'worüber' },
+            { left: 'mit', right: 'womit' },
+            { left: 'für', right: 'wofür' },
+          ],
+        },
+        explanation: 'wo(r)- + Präposition.',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist das Werkzeug, ___ er arbeitet. (mit + Sache)' },
+        correctAnswer: { accepted: ['womit'] },
+        explanation: 'mit + Sache → womit.',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Form ist korrekt (Präposition "auf")?', options: ['worauf', 'woauf', 'wofür', 'worüber'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Vor Vokal -r-: worauf.',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['nachdenken', 'worüber', 'muss', 'man'] },
+        correctAnswer: { order: ['worüber', 'man', 'nachdenken', 'muss'] },
+        explanation: 'worüber man nachdenken muss (Verb am Ende).',
+      },
+      {
+        lessonId: b2Unit11Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde die wo-Form zu 'für' (Sache)." },
+        correctAnswer: { accepted: ['wofür'] },
+        explanation: 'für → wofür.',
       },
     ],
   })
@@ -20281,6 +20527,10 @@ Kernregeln dieser Einheit auf einen Blick:
 - Dativ-Plural = **denen**.
 - **Personen** nie mit „wo-" (kein „womit" für Menschen → „mit dem/der/denen").
 
+### Häufige Fehler
+- ❌ Kasus verwechseln: *die Frage, auf **der*** → ✅ *die Frage, auf **die*** („auf" hier Akkusativ → die).
+- ❌ „was" statt Präp. + Pronomen bei konkreten Sachen mit Verbrektion: *das Auto, **was** wir fahren* → ✅ *das Auto, **mit dem** wir gefahren sind*.
+
 **Beispiele:**
 - Das ist das Auto, **mit dem** wir gefahren sind.
 - Das ist die Frage, **auf die** es keine Antwort gibt.
@@ -20300,6 +20550,10 @@ The key rules of this unit at a glance:
 - Dative plural = **denen**.
 - **People** never with "wo-" (no "womit" for people → "mit dem/der/denen").
 
+### Common mistakes
+- ❌ wrong case: *die Frage, auf **der*** → ✅ *die Frage, auf **die*** ("auf" is accusative here → die).
+- ❌ using "was" instead of prep. + pronoun for concrete things with verb government: *das Auto, **was** wir fahren* → ✅ *das Auto, **mit dem** wir gefahren sind*.
+
 **Examples:**
 - Das ist das Auto, **mit dem** wir gefahren sind. (That's the car we drove in.)
 - Das ist die Frage, **auf die** es keine Antwort gibt. (That's the question there's no answer to.)
@@ -20318,6 +20572,10 @@ Bu ünitenin temel kuralları tek bakışta:
 - **Hal** her zaman **edattan** gelir, ana cümledeki rolden değil.
 - Dativ çoğul = **denen**.
 - **Kişiler** asla „wo-" ile olmaz (insan için „womit" yok → „mit dem/der/denen").
+
+### Sık yapılan hatalar
+- ❌ Hali karıştırmak: *die Frage, auf **der*** → ✅ *die Frage, auf **die*** (burada „auf" Akkusativ → die).
+- ❌ Fiil rejili somut şeylerde „was" kullanmak: *das Auto, **was** wir fahren* → ✅ *das Auto, **mit dem** wir gefahren sind*.
 
 **Örnekler:**
 - Das ist das Auto, **mit dem** wir gefahren sind. (İçinde gittiğimiz araba bu.)
@@ -20348,6 +20606,76 @@ Bu ünitenin temel kuralları tek bakışta:
           ],
         },
         explanation: 'Übersicht: Präposition + Relativpronomen bzw. wo(r)-Form.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist das Auto, ___ wir gefahren sind. (mit + neutrum, Dativ)', options: ['mit dem', 'mit das', 'womit', 'mit der'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'neutrum Dativ: mit dem.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist die Frage, ___ es keine Antwort gibt. (auf + Akkusativ, feminin)' },
+        correctAnswer: { accepted: ['auf die'] },
+        explanation: '"eine Antwort auf" + Akkusativ (f): auf die.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er hat gewonnen, ___ sich alle freuten. (Bezug auf ganzen Satz + Verbrektion "über")', options: ['worüber', 'über das', 'was', 'über die'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bezug auf ganzen Satz + "freuen über" (Sache) → worüber.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das sind die Freunde, mit ___ ich verreise. (Plural, Dativ)' },
+        correctAnswer: { accepted: ['denen'] },
+        explanation: 'Dativ-Plural: denen.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wovon kommt der Kasus des Relativpronomens?', options: ['von der Präposition', 'vom Genus allein', 'vom Hauptsatz', 'vom Subjekt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Kasus kommt von der Präposition.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 8,
+        type: 'MATCHING',
+        data: { lefts: ['ganzer Satz', 'Sache + Präp.', 'Person + Präp.'], rights: ['mit dem/der/denen', 'was', 'wo(r)+Präp.'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ganzer Satz', right: 'was' },
+            { left: 'Sache + Präp.', right: 'wo(r)+Präp.' },
+            { left: 'Person + Präp.', right: 'mit dem/der/denen' },
+          ],
+        },
+        explanation: 'Überblick der drei Fälle.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['dem', 'gefahren', 'mit', 'sind', 'wir'] },
+        correctAnswer: { order: ['mit', 'dem', 'wir', 'gefahren', 'sind'] },
+        explanation: 'mit dem wir gefahren sind.',
+      },
+      {
+        lessonId: b2Unit11Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie lautet das Dativ-Plural-Relativpronomen?" },
+        correctAnswer: { accepted: ['denen'] },
+        explanation: 'denen.',
       },
     ],
   })
