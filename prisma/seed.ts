@@ -19257,6 +19257,10 @@ Geçmiş zaman Konjunktiv II = **hätte/wäre + Partizip II**. Geçmişte **müm
 - Bedeutung ≈ „kann … werden" (Möglichkeit).
 - Sehr häufig in Alltag und Technik.
 
+### Häufige Fehler
+- ❌ *Das Problem lässt sich **gelöst**.* → ✅ *Das Problem lässt sich **lösen**.* (Infinitiv, nicht Partizip II).
+- ❌ *„sich" vergessen: Das lässt öffnen.* → ✅ *Das lässt **sich** öffnen.* (Reflexivpronomen „sich" ist Pflicht).
+
 **Beispiele:**
 - Die Tür **lässt sich** leicht **öffnen**.
 - Das **lässt sich** machen!
@@ -19279,6 +19283,10 @@ Geçmiş zaman Konjunktiv II = **hätte/wäre + Partizip II**. Geçmişte **müm
 - Structure: **lässt/lassen + sich + infinitive** (at the end).
 - Meaning ≈ "can be …" (possibility).
 - Very common in everyday and technical language.
+
+### Common mistakes
+- ❌ *Das Problem lässt sich **gelöst**.* → ✅ *Das Problem lässt sich **lösen**.* (infinitive, not the participle).
+- ❌ dropping "sich": *Das lässt öffnen.* → ✅ *Das lässt **sich** öffnen.* (the reflexive "sich" is required).
 
 **Examples:**
 - Die Tür **lässt sich** leicht **öffnen**. (The door can be opened easily.)
@@ -19303,6 +19311,10 @@ Geçmiş zaman Konjunktiv II = **hätte/wäre + Partizip II**. Geçmişte **müm
 - Anlam ≈ „…-ebilir" (olanak).
 - Günlük ve teknik dilde çok yaygın.
 
+### Sık yapılan hatalar
+- ❌ *Das Problem lässt sich **gelöst**.* → ✅ *Das Problem lässt sich **lösen**.* (Partizip II değil mastar).
+- ❌ „sich"i unutmak: *Das lässt öffnen.* → ✅ *Das lässt **sich** öffnen.* (dönüşlü „sich" zorunlu).
+
 **Örnekler:**
 - Die Tür **lässt sich** leicht **öffnen**. (Kapı kolayca açılabilir.)
 - Das **lässt sich** machen! (Bu yapılabilir!)
@@ -19326,6 +19338,75 @@ Geçmiş zaman Konjunktiv II = **hätte/wäre + Partizip II**. Geçmişte **müm
         data: { sentence: 'Das Problem ___ sich lösen. (lassen)' },
         correctAnswer: { accepted: ['lässt'] },
         explanation: '3. Person Singular von "lassen": lässt.',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Das lässt sich öffnen" bedeutet:', options: ['Das kann geöffnet werden.', 'Das muss geöffnet werden.', 'Das wurde geöffnet.', 'Das öffnet sich selbst.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sich lassen" ≈ "kann … werden" (Möglichkeit).',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Solche Fehler lassen sich leicht ___. (vermeiden – Infinitiv)' },
+        correctAnswer: { accepted: ['vermeiden'] },
+        explanation: 'Am Ende steht der Infinitiv: vermeiden.',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort fehlt nie in dieser Konstruktion?', options: ['sich', 'werden', 'zu', 'man'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das Reflexivpronomen "sich" gehört fest dazu.',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['Das Problem lässt sich lösen.', 'Der Fehler lässt sich erklären.'], rights: ['Der Fehler kann erklärt werden.', 'Das Problem kann gelöst werden.'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Das Problem lässt sich lösen.', right: 'Das Problem kann gelöst werden.' },
+            { left: 'Der Fehler lässt sich erklären.', right: 'Der Fehler kann erklärt werden.' },
+          ],
+        },
+        explanation: '"sich lassen" ↔ Passiv mit "können".',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Diese Probleme ___ sich nicht leicht lösen. (lassen, Plural)' },
+        correctAnswer: { accepted: ['lassen'] },
+        explanation: 'Plural-Subjekt → lassen.',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Umformung von "Das Fenster kann geöffnet werden":', options: ['Das Fenster lässt sich öffnen.', 'Das Fenster lässt öffnen.', 'Das Fenster lässt sich geöffnet.', 'Das Fenster ist sich öffnen.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'lässt + sich + Infinitiv.',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['sich', 'lässt', 'öffnen', 'die', 'Tür'] },
+        correctAnswer: { order: ['die', 'Tür', 'lässt', 'sich', 'öffnen'] },
+        explanation: 'die Tür lässt sich öffnen.',
+      },
+      {
+        lessonId: b2Unit10Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme um mit 'sich lassen': 'Das kann gemacht werden.'" },
+        correctAnswer: { accepted: ['das lässt sich machen'] },
+        explanation: 'Das lässt sich machen.',
       },
     ],
   })
@@ -19356,6 +19437,10 @@ Statt eines Passivs kann man einen **Aktivsatz mit „man"** benutzen. „man" i
 - Das Akkusativobjekt bleibt im Akkusativ: *Man repariert **das Auto**.*
 - Passt gut, wenn die handelnde Person **unwichtig/allgemein** ist.
 
+### Häufige Fehler
+- ❌ *Man **sprechen** hier Deutsch.* → ✅ *Man **spricht** hier Deutsch.* (Verb in der 3. Person Singular).
+- ❌ „man" mit „man" im Akkusativ verwechseln → für den Akkusativ heißt es **„einen"**: *Das ärgert **einen**.*
+
 **Beispiele:**
 - **Man** spricht hier Deutsch.
 - In Deutschland isst **man** viel Brot.
@@ -19375,6 +19460,10 @@ Instead of a passive you can use an **active sentence with "man"**. "man" is an 
 - The accusative object stays accusative: *Man repariert **das Auto**.*
 - Fits well when the acting person is **unimportant/general**.
 
+### Common mistakes
+- ❌ *Man **sprechen** hier Deutsch.* → ✅ *Man **spricht** hier Deutsch.* (verb in the 3rd person singular).
+- ❌ using "man" in the accusative → the accusative form is **"einen"**: *Das ärgert **einen**.*
+
 **Examples:**
 - **Man** spricht hier Deutsch. (German is spoken here.)
 - In Deutschland isst **man** viel Brot. (In Germany people eat a lot of bread.)
@@ -19393,6 +19482,10 @@ Edilgen yerine **„man" ile etken bir cümle** kullanılabilir. „man" belirsi
 - „man" **öznedir** (Nominativ), fiil **3. tekil kişide**.
 - Akkusativ nesne akkusativ kalır: *Man repariert **das Auto**.*
 - Eylemi yapan kişi **önemsiz/genel** olduğunda uygundur.
+
+### Sık yapılan hatalar
+- ❌ *Man **sprechen** hier Deutsch.* → ✅ *Man **spricht** hier Deutsch.* (fiil 3. tekil kişide).
+- ❌ „man"ı akkusativde kullanmak → akkusativ biçimi **„einen"**: *Das ärgert **einen**.*
 
 **Örnekler:**
 - **Man** spricht hier Deutsch. (Burada Almanca konuşulur.)
@@ -19427,6 +19520,70 @@ Edilgen yerine **„man" ile etken bir cümle** kullanılabilir. „man" belirsi
         },
         explanation: 'Jedes Passiv lässt sich mit "man" + Aktivverb umformulieren.',
       },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'In welcher Person steht das Verb bei "man"?', options: ['3. Person Singular', '1. Person Singular', '3. Person Plural', '2. Person'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"man" + Verb in der 3. Person Singular.',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'In Deutschland ___ man viel Brot. (essen)' },
+        correctAnswer: { accepted: ['isst'] },
+        explanation: '3. Person Singular von "essen": isst.',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann ist die "man"-Konstruktion besonders passend?', options: ['wenn die handelnde Person unwichtig/allgemein ist', 'wenn eine konkrete Person handelt', 'nur in Fragen', 'nur in der Vergangenheit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"man" bleibt offen, wer handelt.',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Passiv → man: "Hier wird viel gearbeitet." → Hier ___ man viel. (arbeiten)' },
+        correctAnswer: { accepted: ['arbeitet'] },
+        explanation: 'Hier arbeitet man viel.',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Kasus hat "man"?', options: ['Nominativ (Subjekt)', 'Akkusativ', 'Dativ', 'Genitiv'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"man" ist immer Subjekt (Nominativ).',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'In welchem Register ist die "man"-Konstruktion oft natürlicher als das Passiv?', options: ['gesprochenes Deutsch', 'nur Amtstexte', 'nur Gedichte', 'nur Verträge'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Im gesprochenen Deutsch oft natürlicher.',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['man', 'das', 'repariert', 'Auto'] },
+        correctAnswer: { order: ['man', 'repariert', 'das', 'Auto'] },
+        explanation: 'man repariert das Auto (Akkusativobjekt bleibt Akkusativ).',
+      },
+      {
+        lessonId: b2Unit10Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme mit 'man' um: 'Der Brief wird geschrieben.'" },
+        correctAnswer: { accepted: ['man schreibt den brief'] },
+        explanation: 'Man schreibt den Brief.',
+      },
     ],
   })
   await seedVocab({
@@ -19456,6 +19613,10 @@ Edilgen yerine **„man" ile etken bir cümle** kullanılabilir. „man" belirsi
 - Notwendigkeit oder Möglichkeit erkennt man am **Kontext**.
 - Typisch für **Vorschriften, Anleitungen, Amtstexte**.
 
+### Häufige Fehler
+- ❌ *Die Regeln sind zu **beachtet**.* → ✅ *Die Regeln sind zu **beachten**.* (Infinitiv, nicht Partizip II).
+- ❌ Bei trennbaren Verben „zu" falsch stellen: *ist zu **ausfüllen*** → ✅ *ist **auszufüllen*** („zu" zwischen Vorsilbe und Stamm).
+
 **Beispiele:**
 - Diese Formulare **sind** vollständig **auszufüllen**. (= müssen …)
 - Das Problem **ist** leicht **zu lösen**. (= kann …)
@@ -19475,6 +19636,10 @@ Edilgen yerine **„man" ile etken bir cümle** kullanılabilir. „man" belirsi
 - Necessity or possibility is recognized from the **context**.
 - Typical of **regulations, instructions, official texts**.
 
+### Common mistakes
+- ❌ *Die Regeln sind zu **beachtet**.* → ✅ *Die Regeln sind zu **beachten**.* (infinitive, not the participle).
+- ❌ misplacing "zu" with separable verbs: *ist zu **ausfüllen*** → ✅ *ist **auszufüllen*** ("zu" between prefix and stem).
+
 **Examples:**
 - Diese Formulare **sind** vollständig **auszufüllen**. (must be filled out completely)
 - Das Problem **ist** leicht **zu lösen**. (can be solved easily)
@@ -19493,6 +19658,10 @@ Edilgen yerine **„man" ile etken bir cümle** kullanılabilir. „man" belirsi
 - Yapı: **sein (çekimli) + zu + Infinitiv** (sonda).
 - Zorunluluk mu olanak mı olduğu **bağlamdan** anlaşılır.
 - **Yönetmelik, talimat, resmi metinlerde** tipiktir.
+
+### Sık yapılan hatalar
+- ❌ *Die Regeln sind zu **beachtet**.* → ✅ *Die Regeln sind zu **beachten**.* (Partizip II değil mastar).
+- ❌ Ayrılabilir fiillerde „zu"yu yanlış koymak: *ist zu **ausfüllen*** → ✅ *ist **auszufüllen*** („zu" ön ek ile kök arasında).
 
 **Örnekler:**
 - Diese Formulare **sind** vollständig **auszufüllen**. (eksiksiz doldurulmalı)
@@ -19517,6 +19686,75 @@ Edilgen yerine **„man" ile etken bir cümle** kullanılabilir. „man" belirsi
         data: { words: ['zu', 'Regeln', 'sind', 'Die', 'beachten'] },
         correctAnswer: { order: ['Die', 'Regeln', 'sind', 'zu', 'beachten'] },
         explanation: 'Reihenfolge: Artikel, Nomen, "sein"-Form, "zu", Infinitiv.',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Die Regeln sind zu beachten." Welche Bedeutung?', options: ['müssen beachtet werden (Notwendigkeit)', 'können beachtet werden', 'wurden beachtet', 'werden nie beachtet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Hier: Notwendigkeit (müssen).',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Diese Formulare sind vollständig ___. (ausfüllen mit "zu")' },
+        correctAnswer: { accepted: ['auszufüllen'] },
+        explanation: 'Trennbares Verb: "zu" zwischen Vorsilbe und Stamm → auszufüllen.',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Der Text ist leicht zu verstehen." Welche Bedeutung?', options: ['kann verstanden werden (Möglichkeit)', 'muss verstanden werden', 'wurde verstanden', 'ist verstanden worden'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Hier: Möglichkeit (können).',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['ist zu beachten', 'ist zu verstehen'], rights: ['kann verstanden werden', 'muss beachtet werden'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ist zu beachten', right: 'muss beachtet werden' },
+            { left: 'ist zu verstehen', right: 'kann verstanden werden' },
+          ],
+        },
+        explanation: 'Notwendigkeit vs. Möglichkeit je nach Kontext.',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Frist ist unbedingt ___. (einhalten mit "zu")' },
+        correctAnswer: { accepted: ['einzuhalten'] },
+        explanation: 'Trennbares Verb: einzuhalten.',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Zu welchem Register gehört "sein + zu + Infinitiv"?', options: ['sehr formell (Vorschriften, Amtstexte)', 'umgangssprachlich', 'dialektal', 'kindersprachlich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Sehr formelle Passiversatzform.',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['zu', 'ist', 'lösen', 'Problem', 'das'] },
+        correctAnswer: { order: ['das', 'Problem', 'ist', 'zu', 'lösen'] },
+        explanation: 'das Problem ist zu lösen.',
+      },
+      {
+        lessonId: b2Unit10Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme um mit 'sein + zu': 'Die Aufgabe muss erledigt werden.'" },
+        correctAnswer: { accepted: ['die aufgabe ist zu erledigen'] },
+        explanation: 'Die Aufgabe ist zu erledigen.',
       },
     ],
   })
@@ -19550,6 +19788,10 @@ Drei Formen ersetzen oft ein Passiv mit „können"/„müssen". Beispiel „Das
 - Alle drei vermeiden das „echte" werden-Passiv.
 - „man" ist am **umgangssprachlichsten**, „sein + zu" am **formellsten**.
 
+### Häufige Fehler
+- ❌ Formen mischen: *Das lässt sich zu machen.* → ✅ *Das lässt sich machen.* / *Das ist zu machen.* (nicht kombinieren).
+- ❌ Register verfehlen: „sein + zu" in einem lockeren Gespräch → dort besser „man kann …".
+
 **Beispiele:**
 - Das **lässt sich** machen. / **Man kann** das machen. / Das **ist** zu machen.
 - Fehler **lassen sich** vermeiden.
@@ -19572,6 +19814,10 @@ Three forms often replace a passive with "können"/"müssen". Example "The probl
 - All three avoid the "real" werden-passive.
 - "man" is the most **colloquial**, "sein + zu" the most **formal**.
 
+### Common mistakes
+- ❌ mixing forms: *Das lässt sich zu machen.* → ✅ *Das lässt sich machen.* / *Das ist zu machen.* (don't combine them).
+- ❌ wrong register: "sein + zu" in a casual chat → there "man kann …" fits better.
+
 **Examples:**
 - Das **lässt sich** machen. / **Man kann** das machen. / Das **ist** zu machen. (all: This can be done.)
 - Fehler **lassen sich** vermeiden. (Mistakes can be avoided.)
@@ -19593,6 +19839,10 @@ Three forms often replace a passive with "können"/"müssen". Example "The probl
 **Unutma:**
 - Üçü de „gerçek" werden-edilgeninden kaçınır.
 - „man" en **konuşma diline yakın**, „sein + zu" en **resmi** olanıdır.
+
+### Sık yapılan hatalar
+- ❌ Biçimleri karıştırmak: *Das lässt sich zu machen.* → ✅ *Das lässt sich machen.* / *Das ist zu machen.* (birleştirme).
+- ❌ Yanlış register: gündelik sohbette „sein + zu" → orada „man kann …" daha uygun.
 
 **Örnekler:**
 - Das **lässt sich** machen. / **Man kann** das machen. / Das **ist** zu machen. (hepsi: Bu yapılabilir.)
@@ -19617,6 +19867,76 @@ Three forms often replace a passive with "können"/"müssen". Example "The probl
         data: { prompt: "Wie sagt man auf Deutsch mit der man-Konstruktion: 'The window is being cleaned'?" },
         correctAnswer: { accepted: ['man putzt das fenster'] },
         explanation: '"Man putzt das Fenster." ist die man-Konstruktion für das Passiv.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Form ist am formellsten?', options: ['sein + zu + Infinitiv', 'man + Aktiv', 'sich lassen + Infinitiv', 'werden-Passiv'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sein + zu" ist am formellsten.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 4,
+        type: 'MATCHING',
+        data: { lefts: ['sich lassen', 'man + Aktiv', 'sein + zu'], rights: ['am formellsten', 'elegante Möglichkeit', 'am umgangssprachlichsten'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'sich lassen', right: 'elegante Möglichkeit' },
+            { left: 'man + Aktiv', right: 'am umgangssprachlichsten' },
+            { left: 'sein + zu', right: 'am formellsten' },
+          ],
+        },
+        explanation: 'Register der drei Passiversatzformen.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 5,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Fehler lassen ___ vermeiden. (Reflexivpronomen)' },
+        correctAnswer: { accepted: ['sich'] },
+        explanation: '"sich lassen" braucht "sich".',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was vermeiden alle drei Formen?', options: ['das werden-Passiv', 'den Konjunktiv', 'das Präteritum', 'die Fragen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Sie sind Alternativen zum werden-Passiv.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Vorschrift ist ___. (einhalten mit "zu")' },
+        correctAnswer: { accepted: ['einzuhalten'] },
+        explanation: '"sein + zu": einzuhalten.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"sich lassen" und "man" drücken meist aus:', options: ['Möglichkeit (können)', 'nur Notwendigkeit', 'Vergangenheit', 'einen Wunsch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Beide → meist Möglichkeit.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['sich', 'Fehler', 'vermeiden', 'lassen'] },
+        correctAnswer: { order: ['Fehler', 'lassen', 'sich', 'vermeiden'] },
+        explanation: 'Fehler lassen sich vermeiden.',
+      },
+      {
+        lessonId: b2Unit10Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne die drei Passiversatzformen (Stichworte)." },
+        correctAnswer: { accepted: ['sich lassen, man, sein zu', 'sich lassen + infinitiv, man-konstruktion, sein + zu + infinitiv', 'sich lassen; man; sein zu'] },
+        explanation: '„sich lassen" + Infinitiv, „man"-Konstruktion, „sein" + zu + Infinitiv.',
       },
     ],
   })
