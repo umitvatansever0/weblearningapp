@@ -21421,6 +21421,10 @@ Büyük B2 konuları resmi metinlerde iç içe geçer. Kısa bir rapor şöyle g
 - Steht der Nebensatz vorn, beginnt der Hauptsatz mit dem **Verb**: *Auch wenn …, **gehen** wir …*
 - „selbst wenn" ist etwas nachdrücklicher als „auch wenn".
 
+### Häufige Fehler
+- ❌ *Auch wenn es **regnet trotzdem**, gehen wir.* → ✅ *Auch wenn es regnet, gehen wir.* (nicht mit „trotzdem" doppeln).
+- ❌ *Auch wenn es **regnet**, wir gehen spazieren.* → ✅ *…, **gehen wir** spazieren.* (nach vorangestelltem Nebensatz: Verb zuerst).
+
 **Beispiele:**
 - **Auch wenn** es teuer **ist**, kaufe ich es.
 - **Selbst wenn** du recht **hättest**, würde ich anders handeln.
@@ -21444,6 +21448,10 @@ Büyük B2 konuları resmi metinlerde iç içe geçer. Kısa bir rapor şöyle g
 - If the subordinate clause is first, the main clause starts with the **verb**: *Auch wenn …, **gehen** wir …*
 - "selbst wenn" is slightly more emphatic than "auch wenn".
 
+### Common mistakes
+- ❌ *Auch wenn es **regnet trotzdem**, gehen wir.* → ✅ *Auch wenn es regnet, gehen wir.* (don't double it with "trotzdem").
+- ❌ *Auch wenn es **regnet**, wir gehen spazieren.* → ✅ *…, **gehen wir** spazieren.* (after a fronted subordinate clause: verb first).
+
 **Examples:**
 - **Auch wenn** es teuer **ist**, kaufe ich es. (Even if it's expensive, I'll buy it.)
 - **Selbst wenn** du recht **hättest**, würde ich anders handeln. (Even if you were right, I would act differently.)
@@ -21466,6 +21474,10 @@ Büyük B2 konuları resmi metinlerde iç içe geçer. Kısa bir rapor şöyle g
 - Yan cümledeki fiil **sonda** durur.
 - Yan cümle başta ise, ana cümle **fiille** başlar: *Auch wenn …, **gehen** wir …*
 - „selbst wenn", „auch wenn"den biraz daha vurguludur.
+
+### Sık yapılan hatalar
+- ❌ *Auch wenn es **regnet trotzdem**, gehen wir.* → ✅ *Auch wenn es regnet, gehen wir.* („trotzdem" ile tekrarlama).
+- ❌ *Auch wenn es **regnet**, wir gehen spazieren.* → ✅ *…, **gehen wir** spazieren.* (öne alınan yan cümleden sonra: önce fiil).
 
 **Örnekler:**
 - **Auch wenn** es teuer **ist**, kaufe ich es. (Pahalı olsa bile alırım.)
@@ -21491,6 +21503,75 @@ Büyük B2 konuları resmi metinlerde iç içe geçer. Kısa bir rapor şöyle g
         correctAnswer: { accepted: ['ist'] },
         explanation: 'Nebensatz mit "selbst wenn": Verb am Ende, konjugiert für "er": "ist".',
       },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was drücken Konzessivsätze aus?', options: ['einen Einwand/Gegensatz', 'einen Grund', 'eine Zeit', 'einen Zweck'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konzessiv = Einwand/Gegensatz.',
+      },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Unterschied "obwohl" vs. "auch wenn"?', options: ['obwohl = reale Tatsache, auch wenn = hypothetisch/extrem', 'sie sind identisch', 'obwohl ist ein Adverb', 'auch wenn nennt einen Grund'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"obwohl" = real, "auch wenn/selbst wenn" = auch im hypothetischen Fall.',
+      },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 5,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir kommen, auch wenn wir spät dran ___. (sein, wir)' },
+        correctAnswer: { accepted: ['sind'] },
+        explanation: 'Nebensatz → Verb am Ende: sind.',
+      },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das Verb im Konzessiv-Nebensatz?', options: ['am Ende', 'an Position 1', 'an Position 2', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nebensatz-Konnektor → Verb am Ende.',
+      },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['obwohl', 'auch wenn'], rights: ['auch im extremen/hypothetischen Fall', 'reale Tatsache'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'obwohl', right: 'reale Tatsache' },
+            { left: 'auch wenn', right: 'auch im extremen/hypothetischen Fall' },
+          ],
+        },
+        explanation: 'Bedeutungsunterschied.',
+      },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 8,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Auch wenn es teuer ist, ___ ich es. (kaufen, ich – nach vorangestelltem Nebensatz)' },
+        correctAnswer: { accepted: ['kaufe'] },
+        explanation: 'Nach dem Nebensatz: Verb zuerst im Hauptsatz: kaufe ich es.',
+      },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['er', 'weiter', 'müde', 'ist', 'selbst', 'arbeitet', 'wenn'] },
+        correctAnswer: { order: ['selbst', 'wenn', 'er', 'müde', 'ist', 'arbeitet', 'weiter'] },
+        explanation: 'Selbst wenn er müde ist, arbeitet weiter (Nebensatz zuerst, dann Hauptsatz mit Verb).',
+      },
+      {
+        lessonId: b2Unit13Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welcher Konnektor ist nachdrücklicher: 'auch wenn' oder 'selbst wenn'?" },
+        correctAnswer: { accepted: ['selbst wenn'] },
+        explanation: '"selbst wenn" ist etwas nachdrücklicher.',
+      },
     ],
   })
 
@@ -21514,6 +21595,10 @@ Einen Bedingungssatz kann man **ohne „wenn"** bilden. Dann rückt das **konjug
 - Der Hauptsatz beginnt oft mit **„so" oder „dann"**: *Hätte ich Zeit, **so** käme ich.*
 - Vor allem im **Konjunktiv II** (irreale Bedingung) gebräuchlich.
 
+### Häufige Fehler
+- ❌ *Wenn **hätte** ich Zeit, …* → ✅ Entweder *Wenn ich Zeit **hätte**, …* oder ***Hätte** ich Zeit, …* (nicht beides).
+- ❌ Verb nicht an Position 1: *Ich **hätte** Zeit, käme ich.* → ✅ ***Hätte** ich Zeit, käme ich.*
+
 **Beispiele:**
 - **Hätte** ich das gewusst, hätte ich anders gehandelt.
 - **Wäre** das Wetter besser, würden wir wandern.
@@ -21533,6 +21618,10 @@ A conditional clause can be formed **without "wenn"**. Then the **conjugated ver
 - The main clause often starts with **"so" or "dann"**: *Hätte ich Zeit, **so** käme ich.*
 - Used above all with the **Konjunktiv II** (unreal condition).
 
+### Common mistakes
+- ❌ *Wenn **hätte** ich Zeit, …* → ✅ either *Wenn ich Zeit **hätte**, …* or ***Hätte** ich Zeit, …* (not both).
+- ❌ verb not in position 1: *Ich **hätte** Zeit, käme ich.* → ✅ ***Hätte** ich Zeit, käme ich.*
+
 **Examples:**
 - **Hätte** ich das gewusst, hätte ich anders gehandelt. (Had I known that, I would have acted differently.)
 - **Wäre** das Wetter besser, würden wir wandern. (Were the weather better, we would go hiking.)
@@ -21551,6 +21640,10 @@ Bir koşul cümlesi **„wenn" olmadan** kurulabilir. O zaman **çekimli fiil c�
 - Fiil (wäre, hätte, würde …) **1. pozisyonda** durur – tıpkı bir soruda gibi.
 - Ana cümle çoğu zaman **„so" ya da „dann"** ile başlar: *Hätte ich Zeit, **so** käme ich.*
 - Özellikle **Konjunktiv II** (gerçek dışı koşul) ile yaygındır.
+
+### Sık yapılan hatalar
+- ❌ *Wenn **hätte** ich Zeit, …* → ✅ ya *Wenn ich Zeit **hätte**, …* ya da ***Hätte** ich Zeit, …* (ikisi birden değil).
+- ❌ Fiil 1. pozisyonda değil: *Ich **hätte** Zeit, käme ich.* → ✅ ***Hätte** ich Zeit, käme ich.*
 
 **Örnekler:**
 - **Hätte** ich das gewusst, hätte ich anders gehandelt. (Bunu bilseydim farklı davranırdım.)
@@ -21573,8 +21666,78 @@ Bir koşul cümlesi **„wenn" olmadan** kurulabilir. O zaman **çekimli fiil c�
         order: 2,
         type: 'SHORT_ANSWER',
         data: { prompt: "Forme uneingeleitet um: 'Wenn er das gewusst hätte, hätte er anders gehandelt.'" },
-        correctAnswer: { accepted: ['hätte er das gewusst, hätte er anders gehandelt'] },
+        correctAnswer: { accepted: ['hätte er das gewusst, hätte er anders gehandelt', 'hätte er das gewusst hätte er anders gehandelt'] },
         explanation: 'Verb an den Satzanfang: "Hätte er das gewusst, ...".',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'An welche Position rückt das Verb ohne "wenn"?', options: ['Position 1 (Satzanfang)', 'Position 2', 'ans Ende', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Das konjugierte Verb steht an Position 1 – wie in einer Frage.',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ohne "wenn": ___ das Wetter besser, würden wir wandern. (sein, es)' },
+        correctAnswer: { accepted: ['Wäre'] },
+        explanation: 'Verb an Position 1: Wäre das Wetter besser, …',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Womit beginnt der Hauptsatz oft nach dem uneingeleiteten Konditionalsatz?', options: ['mit "so" oder "dann"', 'mit "weil"', 'mit "obwohl"', 'mit "dass"'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Oft "so" oder "dann": Hätte ich Zeit, so käme ich.',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['Wenn er hier wäre, …', 'Wenn ich Zeit hätte, …', 'Wenn man das wüsste, …'], rights: ['Hätte ich Zeit, …', 'Wüsste man das, …', 'Wäre er hier, …'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Wenn er hier wäre, …', right: 'Wäre er hier, …' },
+            { left: 'Wenn ich Zeit hätte, …', right: 'Hätte ich Zeit, …' },
+            { left: 'Wenn man das wüsste, …', right: 'Wüsste man das, …' },
+          ],
+        },
+        explanation: 'mit „wenn" ↔ uneingeleitet.',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Uneingeleitet: ___ er pünktlich, gäbe es kein Problem. (kommen, er, Konjunktiv II)' },
+        correctAnswer: { accepted: ['Käme'] },
+        explanation: 'Verb an Position 1: Käme er pünktlich, …',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'In welchem Modus ist die uneingeleitete Form vor allem gebräuchlich?', options: ['Konjunktiv II', 'Indikativ Präsens', 'Konjunktiv I', 'Imperativ'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Vor allem im Konjunktiv II (irreale Bedingung).',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ich', 'Zeit', 'käme', 'hätte', 'ich'] },
+        correctAnswer: { order: ['hätte', 'ich', 'Zeit', 'käme', 'ich'] },
+        explanation: 'Hätte ich Zeit, käme ich (Verb an Position 1).',
+      },
+      {
+        lessonId: b2Unit13Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Forme uneingeleitet um: 'Wenn das Wetter besser wäre, würden wir wandern.'" },
+        correctAnswer: { accepted: ['wäre das wetter besser, würden wir wandern', 'wäre das wetter besser würden wir wandern'] },
+        explanation: 'Wäre das Wetter besser, würden wir wandern.',
       },
     ],
   })
@@ -21601,6 +21764,10 @@ Neben „wenn" gibt es zwei präzisere, **formellere** Konditional-Konnektoren. 
 - „sofern" ≈ „nur wenn / vorausgesetzt, dass" (Bedingung/Einschränkung).
 - Beide: **Verb am Satzende**, typisch für **formelle** Briefe und Verträge.
 
+### Häufige Fehler
+- ❌ *Falls Sie Fragen **haben?*** → ✅ *Falls Sie Fragen **haben**, …* (Nebensatz = kein Fragezeichen; Verb am Ende).
+- ❌ „sofern" = Gegensatz? Nein → „sofern" nennt eine **Bedingung/Voraussetzung**, keinen Gegensatz.
+
 **Beispiele:**
 - **Falls** es regnet, bleiben wir zu Hause.
 - **Sofern** die Zahlung eingeht, versenden wir die Ware.
@@ -21621,6 +21788,10 @@ Besides "wenn" there are two more precise, **formal** conditional connectors. Bo
 - "falls" ≈ "wenn", but stresses **uncertainty** (possibly).
 - "sofern" ≈ "only if / provided that" (condition/restriction).
 - Both: **verb at the end**, typical of **formal** letters and contracts.
+
+### Common mistakes
+- ❌ *Falls Sie Fragen **haben?*** → ✅ *Falls Sie Fragen **haben**, …* (subordinate clause = no question mark; verb at the end).
+- ❌ is "sofern" a contrast? No → "sofern" names a **condition/precondition**, not a contrast.
 
 **Examples:**
 - **Falls** es regnet, bleiben wir zu Hause. (In case it rains, we'll stay home.)
@@ -21643,6 +21814,10 @@ Besides "wenn" there are two more precise, **formal** conditional connectors. Bo
 - „sofern" ≈ „yalnızca …-se / … şartıyla" (koşul/sınırlama).
 - İkisi de: **fiil sonda**, **resmi** mektup ve sözleşmelerde tipiktir.
 
+### Sık yapılan hatalar
+- ❌ *Falls Sie Fragen **haben?*** → ✅ *Falls Sie Fragen **haben**, …* (yan cümle = soru işareti yok; fiil sonda).
+- ❌ „sofern" zıtlık mı? Hayır → „sofern" bir **koşul/ön koşul** belirtir, zıtlık değil.
+
 **Örnekler:**
 - **Falls** es regnet, bleiben wir zu Hause. (Yağmur yağarsa evde kalırız.)
 - **Sofern** die Zahlung eingeht, versenden wir die Ware. (Ödeme geldiği takdirde malı göndeririz.)
@@ -21664,8 +21839,78 @@ Besides "wenn" there are two more precise, **formal** conditional connectors. Bo
         order: 2,
         type: 'FILL_IN_BLANK',
         data: { sentence: '___ nichts anderes vereinbart wird, gilt der Standardpreis. (provided that)' },
-        correctAnswer: { accepted: ['sofern'] },
+        correctAnswer: { accepted: ['sofern', 'Sofern'] },
         explanation: '"Sofern" bedeutet "provided that / unless".',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was betont "falls" besonders?', options: ['die Unsicherheit (vielleicht)', 'einen Gegensatz', 'einen Zeitpunkt', 'einen Grund'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"falls" = für den Fall, dass (eventuell).',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"sofern" bedeutet …', options: ['unter der Bedingung, dass', 'obwohl', 'weil', 'damit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sofern" = vorausgesetzt, dass / nur wenn.',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 5,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Falls es regnet, ___ wir zu Hause. (bleiben, wir – nach vorangestelltem Nebensatz)' },
+        correctAnswer: { accepted: ['bleiben'] },
+        explanation: 'Nach dem Nebensatz: Verb zuerst: bleiben wir zu Hause.',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das Verb im Nebensatz mit "falls/sofern"?', options: ['am Ende', 'an Position 1', 'an Position 2', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nebensatz-Konnektor → Verb am Ende.',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['falls', 'sofern', 'obwohl'], rights: ['Gegensatz', 'für den Fall, dass', 'unter der Bedingung, dass'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'falls', right: 'für den Fall, dass' },
+            { left: 'sofern', right: 'unter der Bedingung, dass' },
+            { left: 'obwohl', right: 'Gegensatz' },
+          ],
+        },
+        explanation: 'Bedeutung der Konnektoren.',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 8,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sofern die Zahlung eingeht, ___ wir die Ware. (versenden, wir)' },
+        correctAnswer: { accepted: ['versenden'] },
+        explanation: 'Nach dem Nebensatz: Verb zuerst: versenden wir …',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Fragen', 'falls', 'haben', 'Sie'] },
+        correctAnswer: { order: ['falls', 'Sie', 'Fragen', 'haben'] },
+        explanation: 'falls Sie Fragen haben (Verb am Ende).',
+      },
+      {
+        lessonId: b2Unit13Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welcher Konnektor bedeutet 'in case' (ein Wort)?" },
+        correctAnswer: { accepted: ['falls'] },
+        explanation: 'falls.',
       },
     ],
   })
@@ -21691,6 +21936,10 @@ Zum Abschluss von B2 der Überblick über die neuen Adverbialsätze:
 - Alle mit Konnektor: **Verb am Ende** des Nebensatzes.
 - Uneingeleitet: **Verb zuerst** (ohne „wenn"), gehoben.
 
+### Häufige Fehler
+- ❌ Konzessiv und Konditional verwechseln: „auch wenn" ≠ „falls" – das eine ist **Einwand**, das andere **Bedingung**.
+- ❌ Bei „falls/sofern/wenn" das Verb nicht ans Ende stellen: *Falls Sie **haben** Fragen* → ✅ *Falls Sie Fragen **haben***.
+
 **Beispiele:**
 - **Auch wenn** es schwer ist, geben wir nicht auf.
 - **Sofern** alles klappt, sind wir morgen fertig.
@@ -21711,6 +21960,10 @@ To wrap up B2, an overview of the new adverbial clauses:
 - All with a connector: **verb at the end** of the subordinate clause.
 - Without a connector: **verb first** (no "wenn"), elevated.
 
+### Common mistakes
+- ❌ confusing concessive and conditional: "auch wenn" ≠ "falls" – one is an **objection**, the other a **condition**.
+- ❌ not putting the verb at the end with "falls/sofern/wenn": *Falls Sie **haben** Fragen* → ✅ *Falls Sie Fragen **haben***.
+
 **Examples:**
 - **Auch wenn** es schwer ist, geben wir nicht auf. (Even if it's hard, we won't give up.)
 - **Sofern** alles klappt, sind wir morgen fertig. (Provided everything works out, we'll be done tomorrow.)
@@ -21730,6 +21983,10 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
 - **Karşıtlık** = zıtlık/itiraz; **koşul** = şart.
 - Bağlaçlı olanların hepsinde: yan cümlede **fiil sonda**.
 - Bağlaçsız: **fiil başta** („wenn" olmadan), seçkin.
+
+### Sık yapılan hatalar
+- ❌ Karşıtlık ve koşulu karıştırmak: „auch wenn" ≠ „falls" – biri **itiraz**, diğeri **koşul**.
+- ❌ „falls/sofern/wenn" ile fiili sona koymamak: *Falls Sie **haben** Fragen* → ✅ *Falls Sie Fragen **haben***.
 
 **Örnekler:**
 - **Auch wenn** es schwer ist, geben wir nicht auf. (Zor olsa bile pes etmiyoruz.)
@@ -21760,6 +22017,77 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
           ],
         },
         explanation: 'Übersicht über konzessive und konditionale Nebensatzarten.',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Typ drückt einen Einwand/Gegensatz aus?', options: ['konzessiv (auch wenn)', 'konditional (wenn)', 'konditional (falls)', 'uneingeleitet'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konzessiv = Gegensatz/Einwand.',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sofern alles klappt, ___ wir morgen fertig. (sein, wir – nach vorangestelltem Nebensatz)' },
+        correctAnswer: { accepted: ['sind'] },
+        explanation: 'Nach dem Nebensatz: Verb zuerst: sind wir morgen fertig.',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das Verb bei einem uneingeleiteten Konditionalsatz?', options: ['an Position 1', 'am Ende', 'an Position 2', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Ohne Konnektor: Verb zuerst.',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['auch wenn', 'wenn', 'falls', 'Wäre er hier, …'], rights: ['Konditional (neutral)', 'Konditional (uneingeleitet)', 'Konzessiv', 'Konditional (formell)'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'auch wenn', right: 'Konzessiv' },
+            { left: 'wenn', right: 'Konditional (neutral)' },
+            { left: 'falls', right: 'Konditional (formell)' },
+            { left: 'Wäre er hier, …', right: 'Konditional (uneingeleitet)' },
+          ],
+        },
+        explanation: 'Zuordnung der Satzarten.',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Auch wenn es schwer ist, ___ wir nicht auf. (aufgeben, wir – nach Nebensatz)' },
+        correctAnswer: { accepted: ['geben'] },
+        explanation: 'geben wir nicht auf (trennbar: geben … auf).',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das Verb bei allen Konnektoren (auch wenn, wenn, falls, sofern)?', options: ['am Ende des Nebensatzes', 'an Position 1', 'an Position 2', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit Konnektor → Verb am Ende.',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['schwer', 'es', 'auch', 'ist', 'wenn'] },
+        correctAnswer: { order: ['auch', 'wenn', 'es', 'schwer', 'ist'] },
+        explanation: 'auch wenn es schwer ist (Verb am Ende).',
+      },
+      {
+        lessonId: b2Unit13Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nenne einen formellen Konditional-Konnektor (ein Wort)." },
+        correctAnswer: { accepted: ['falls', 'sofern'] },
+        explanation: 'z. B. falls oder sofern.',
       },
     ],
   })
