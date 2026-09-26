@@ -17074,6 +17074,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Die Kombinationen sind **fest** – man kann die Teile nicht frei austauschen.
 - Häufig in Wissenschaft, Wirtschaft, Verwaltung.
 
+### Häufige Fehler
+- ❌ *zur Verfügung **stellen*** ↔ *zur Verfügung **stehen*** verwechseln → *stellen* = bereitstellen (aktiv), *stehen* = verfügbar sein.
+- ❌ *etwas **in Frage machen*** → ✅ *etwas **in Frage stellen*** (festes Verb ist „stellen").
+
 **Beispiele:**
 - Experten **stellen** die Ergebnisse **in Frage**.
 - Ein Berater **steht** dem Team **zur Verfügung**.
@@ -17093,6 +17097,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - The combinations are **fixed** – you cannot freely swap the parts.
 - Common in academia, business, administration.
 
+### Common mistakes
+- ❌ confusing *zur Verfügung **stellen*** ↔ *zur Verfügung **stehen*** → *stellen* = to provide (active), *stehen* = to be available.
+- ❌ *etwas **in Frage machen*** → ✅ *etwas **in Frage stellen*** (the fixed verb is "stellen").
+
 **Examples:**
 - Experten **stellen** die Ergebnisse **in Frage**. (Experts call the results into question.)
 - Ein Berater **steht** dem Team **zur Verfügung**. (A consultant is available to the team.)
@@ -17111,6 +17119,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Asıl fiil (stellen, stehen) neredeyse anlamsızdır – anlam **isimdedir** (Frage, Verfügung).
 - Bileşimler **sabittir** – parçalar serbestçe değiştirilemez.
 - Bilim, ekonomi, idare dilinde yaygındır.
+
+### Sık yapılan hatalar
+- ❌ *zur Verfügung **stellen*** ↔ *zur Verfügung **stehen*** karıştırmak → *stellen* = sağlamak (etken), *stehen* = hazır olmak.
+- ❌ *etwas **in Frage machen*** → ✅ *etwas **in Frage stellen*** (sabit fiil „stellen").
 
 **Örnekler:**
 - Experten **stellen** die Ergebnisse **in Frage**. (Uzmanlar sonuçları sorguluyor.)
@@ -17135,6 +17147,76 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
         data: { sentence: 'Der Berater steht dem Team jederzeit zur ___.' },
         correctAnswer: { accepted: ['Verfügung'] },
         explanation: '"Zur Verfügung stehen" = verfügbar sein.',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"in Frage stellen" bedeutet:', options: ['bezweifeln', 'antworten', 'fragen', 'bereitstellen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"in Frage stellen" = bezweifeln.',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Firma ___ Räume zur Verfügung. (stellen → bereitstellen, Präsens)' },
+        correctAnswer: { accepted: ['stellt'] },
+        explanation: 'zur Verfügung stellen = bereitstellen (aktiv): stellt.',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steckt bei einem FVG die eigentliche Bedeutung?', options: ['im Nomen', 'im Verb', 'in der Präposition', 'im Artikel'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Die Bedeutung steckt im Nomen (Frage, Verfügung).',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['in Frage stellen', 'zur Verfügung stehen', 'zur Verfügung stellen'], rights: ['bereitstellen', 'bezweifeln', 'verfügbar sein'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'in Frage stellen', right: 'bezweifeln' },
+            { left: 'zur Verfügung stehen', right: 'verfügbar sein' },
+            { left: 'zur Verfügung stellen', right: 'bereitstellen' },
+          ],
+        },
+        explanation: 'FVG und einfache Verben.',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Experten stellen die Ergebnisse in ___. (Nomen)' },
+        correctAnswer: { accepted: ['Frage'] },
+        explanation: 'in Frage stellen.',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Zu welchem Sprachregister gehören Funktionsverbgefüge?', options: ['formell/schriftlich', 'umgangssprachlich', 'dialektal', 'kindersprachlich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'FVG sind typisch für die formelle Sprache.',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['zur', 'steht', 'Berater', 'Verfügung', 'der'] },
+        correctAnswer: { order: ['der', 'Berater', 'steht', 'zur', 'Verfügung'] },
+        explanation: 'der Berater steht zur Verfügung.',
+      },
+      {
+        lessonId: b2Unit7Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Einfaches Verb für 'in Frage stellen' (ein Wort)?" },
+        correctAnswer: { accepted: ['bezweifeln'] },
+        explanation: 'bezweifeln.',
       },
     ],
   })
@@ -17165,6 +17247,10 @@ Zwei weitere häufige FVG mit den Verben **„finden"** und **„nehmen"**:
 - „Rücksicht nehmen **auf** + Akkusativ": *Rücksicht **auf** die Nachbarn nehmen.*
 - Das Nomen (Anwendung, Rücksicht) trägt die Bedeutung, das Verb ist nur „Träger".
 
+### Häufige Fehler
+- ❌ *Rücksicht **für** die Nachbarn nehmen* → ✅ *Rücksicht **auf** die Nachbarn nehmen* (feste Präposition „auf" + Akkusativ).
+- ❌ *Anwendung **machen*** → ✅ *Anwendung **finden*** (festes Verb ist „finden").
+
 **Beispiele:**
 - Die neue Methode **findet** in der Praxis **Anwendung**.
 - Man sollte **auf** ältere Menschen **Rücksicht nehmen**.
@@ -17185,6 +17271,10 @@ Two more common constructions, with the verbs **"finden"** and **"nehmen"**:
 - "Rücksicht nehmen **auf** + accusative": *Rücksicht **auf** die Nachbarn nehmen.*
 - The noun (Anwendung, Rücksicht) carries the meaning; the verb is just a "carrier".
 
+### Common mistakes
+- ❌ *Rücksicht **für** die Nachbarn nehmen* → ✅ *Rücksicht **auf** die Nachbarn nehmen* (fixed preposition "auf" + accusative).
+- ❌ *Anwendung **machen*** → ✅ *Anwendung **finden*** (the fixed verb is "finden").
+
 **Examples:**
 - Die neue Methode **findet** in der Praxis **Anwendung**. (The new method is applied in practice.)
 - Man sollte **auf** ältere Menschen **Rücksicht nehmen**. (One should be considerate of older people.)
@@ -17204,6 +17294,10 @@ Two more common constructions, with the verbs **"finden"** and **"nehmen"**:
 - „Anwendung finden" edilgen anlam taşır („uygulanır").
 - „Rücksicht nehmen **auf** + Akkusativ": *Rücksicht **auf** die Nachbarn nehmen.*
 - Anlamı isim (Anwendung, Rücksicht) taşır; fiil yalnızca „taşıyıcıdır".
+
+### Sık yapılan hatalar
+- ❌ *Rücksicht **für** die Nachbarn nehmen* → ✅ *Rücksicht **auf** die Nachbarn nehmen* (sabit edat „auf" + Akkusativ).
+- ❌ *Anwendung **machen*** → ✅ *Anwendung **finden*** (sabit fiil „finden").
 
 **Örnekler:**
 - Die neue Methode **findet** in der Praxis **Anwendung**. (Yeni yöntem pratikte uygulanıyor.)
@@ -17228,6 +17322,75 @@ Two more common constructions, with the verbs **"finden"** and **"nehmen"**:
         data: { words: ['Rücksicht', 'sollte', 'man', 'nehmen'] },
         correctAnswer: { order: ['man', 'sollte', 'Rücksicht', 'nehmen'] },
         explanation: 'Wortstellung: Subjekt, Modalverb, Nomen, Infinitiv am Ende.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Präposition steht bei "Rücksicht nehmen"?', options: ['auf (+ Akkusativ)', 'für', 'mit', 'von'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Rücksicht nehmen auf + Akkusativ.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Man sollte ___ ältere Menschen Rücksicht nehmen. (Präposition)' },
+        correctAnswer: { accepted: ['auf'] },
+        explanation: 'Rücksicht nehmen auf + Akkusativ.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Anwendung finden" bedeutet:', options: ['angewendet werden', 'suchen', 'verlieren', 'erklären'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Anwendung finden" = angewendet werden (passivische Bedeutung).',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['Anwendung finden', 'Rücksicht nehmen auf'], rights: ['rücksichtsvoll sein gegenüber', 'angewendet werden'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Anwendung finden', right: 'angewendet werden' },
+            { left: 'Rücksicht nehmen auf', right: 'rücksichtsvoll sein gegenüber' },
+          ],
+        },
+        explanation: 'FVG und Bedeutung.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die neue Methode findet in der Praxis ___. (Nomen)' },
+        correctAnswer: { accepted: ['Anwendung'] },
+        explanation: 'Anwendung finden.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb gehört zu "Anwendung"?', options: ['finden', 'nehmen', 'stellen', 'ziehen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Anwendung finden.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['auf', 'nimm', 'Rücksicht', 'deine', 'Mitmenschen'] },
+        correctAnswer: { order: ['nimm', 'Rücksicht', 'auf', 'deine', 'Mitmenschen'] },
+        explanation: 'nimm Rücksicht auf deine Mitmenschen.',
+      },
+      {
+        lessonId: b2Unit7Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Einfaches Verb für 'Anwendung finden'?" },
+        correctAnswer: { accepted: ['angewendet werden', 'angewendet'] },
+        explanation: 'angewendet werden.',
       },
     ],
   })
@@ -17258,6 +17421,10 @@ Zwei sehr formelle FVG mit **„bringen"** und **„ziehen"**:
 - „in Betracht ziehen" = eine Option ernsthaft **erwägen**.
 - Diese FVG klingen deutlich **gehobener** als die einfachen Verben.
 
+### Häufige Fehler
+- ❌ *Die Freude **bringt** zum Ausdruck.* → ✅ *Die Freude **kommt** zum Ausdruck.* (ohne Agens → „kommen"; mit Agens → „bringen").
+- ❌ *in Betracht **nehmen*** → ✅ *in Betracht **ziehen*** (festes Verb ist „ziehen").
+
 **Beispiele:**
 - Sie **brachte** ihre Freude **zum Ausdruck**.
 - Wir sollten alle Optionen **in Betracht ziehen**.
@@ -17277,6 +17444,10 @@ Two very formal constructions with **"bringen"** and **"ziehen"**:
 - "in Betracht ziehen" = to seriously **consider** an option.
 - These constructions sound clearly **more elevated** than the simple verbs.
 
+### Common mistakes
+- ❌ *Die Freude **bringt** zum Ausdruck.* → ✅ *Die Freude **kommt** zum Ausdruck.* (no agent → "kommen"; with agent → "bringen").
+- ❌ *in Betracht **nehmen*** → ✅ *in Betracht **ziehen*** (the fixed verb is "ziehen").
+
 **Examples:**
 - Sie **brachte** ihre Freude **zum Ausdruck**. (She expressed her joy.)
 - Wir sollten alle Optionen **in Betracht ziehen**. (We should consider all options.)
@@ -17295,6 +17466,10 @@ Two very formal constructions with **"bringen"** and **"ziehen"**:
 - „bringen" (etken, birisi yapar) ↔ „kommen" (süreç kendini gösterir): *Freude **zum Ausdruck bringen*** vs. *Die Freude **kommt zum Ausdruck**.*
 - „in Betracht ziehen" = bir seçeneği ciddi biçimde **değerlendirmek**.
 - Bu kalıplar basit fiillerden belirgin biçimde **daha seçkin** durur.
+
+### Sık yapılan hatalar
+- ❌ *Die Freude **bringt** zum Ausdruck.* → ✅ *Die Freude **kommt** zum Ausdruck.* (yapan yoksa → „kommen"; yapan varsa → „bringen").
+- ❌ *in Betracht **nehmen*** → ✅ *in Betracht **ziehen*** (sabit fiil „ziehen").
 
 **Örnekler:**
 - Sie **brachte** ihre Freude **zum Ausdruck**. (Sevincini ifade etti.)
@@ -17319,6 +17494,76 @@ Two very formal constructions with **"bringen"** and **"ziehen"**:
         data: { sentence: 'Sie brachte ihre Freude zum ___.' },
         correctAnswer: { accepted: ['Ausdruck'] },
         explanation: '"Zum Ausdruck bringen" = ausdrücken.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"in Betracht ziehen" bedeutet:', options: ['berücksichtigen/erwägen', 'ablehnen', 'ausdrücken', 'anwenden'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"in Betracht ziehen" = berücksichtigen, erwägen.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'In der Rede ___ seine Sorge deutlich zum Ausdruck. (kommen, Präteritum – ohne Agens)' },
+        correctAnswer: { accepted: ['kam'] },
+        explanation: 'Ohne Handelnden → "zum Ausdruck kommen": kam.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann benutzt man "zum Ausdruck bringen" (statt "kommen")?', options: ['wenn jemand es aktiv tut', 'wenn sich etwas von selbst zeigt', 'nie', 'nur im Passiv'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"bringen" = aktiv, jemand drückt etwas aus.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['zum Ausdruck bringen', 'in Betracht ziehen', 'zum Ausdruck kommen'], rights: ['sich zeigen', 'ausdrücken', 'berücksichtigen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'zum Ausdruck bringen', right: 'ausdrücken' },
+            { left: 'in Betracht ziehen', right: 'berücksichtigen' },
+            { left: 'zum Ausdruck kommen', right: 'sich zeigen' },
+          ],
+        },
+        explanation: 'FVG und einfache Verben.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir sollten alle Optionen in Betracht ___. (Verb)' },
+        correctAnswer: { accepted: ['ziehen'] },
+        explanation: 'in Betracht ziehen.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb passt zu "zum Ausdruck" (aktiv)?', options: ['bringen', 'nehmen', 'finden', 'stellen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'zum Ausdruck bringen (aktiv).',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Betracht', 'wir', 'ziehen', 'in', 'Optionen', 'alle', 'sollten'] },
+        correctAnswer: { order: ['wir', 'sollten', 'alle', 'Optionen', 'in', 'Betracht', 'ziehen'] },
+        explanation: 'wir sollten alle Optionen in Betracht ziehen.',
+      },
+      {
+        lessonId: b2Unit7Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Einfaches Verb für 'in Betracht ziehen'?" },
+        correctAnswer: { accepted: ['berücksichtigen', 'erwägen'] },
+        explanation: 'berücksichtigen / erwägen.',
       },
     ],
   })
@@ -17352,6 +17597,10 @@ Ein FVG = **festes Nomen + Funktionsverb**; die Bedeutung steckt im Nomen. Hier 
 - FVG gehören zur **Schriftsprache** – im Alltag genügt oft das einfache Verb.
 - Beim Lernen immer die **ganze Wendung** samt Präposition/Artikel merken.
 
+### Häufige Fehler
+- ❌ Verben frei tauschen: *in Frage **nehmen*** → ✅ *in Frage **stellen*** (jedes FVG hat ein festes Verb).
+- ❌ Im Passiv das Partizip vergessen: *Der Plan wurde in Frage **stellen**.* → ✅ *…in Frage **gestellt**.*
+
 **Beispiele:**
 - Der Plan wurde **in Frage gestellt**.
 - Neue Regeln **finden** ab morgen **Anwendung**.
@@ -17374,6 +17623,10 @@ A construction = **fixed noun + support verb**; the meaning is in the noun. Here
 - These constructions belong to **written language** – in everyday speech the simple verb is often enough.
 - When learning, always memorize the **whole phrase** including its preposition/article.
 
+### Common mistakes
+- ❌ swapping verbs freely: *in Frage **nehmen*** → ✅ *in Frage **stellen*** (each construction has a fixed verb).
+- ❌ forgetting the participle in the passive: *Der Plan wurde in Frage **stellen**.* → ✅ *…in Frage **gestellt**.*
+
 **Examples:**
 - Der Plan wurde **in Frage gestellt**. (The plan was called into question.)
 - Neue Regeln **finden** ab morgen **Anwendung**. (New rules apply from tomorrow.)
@@ -17395,6 +17648,10 @@ Bir kalıp = **sabit isim + fonksiyon fiili**; anlam isimdedir. Bu ünitedeki en
 - Fiil (stellen, stehen, finden, nehmen, bringen, ziehen) yalnızca **sabit kalıbın içinde** yer değiştirir.
 - Bu kalıplar **yazı diline** aittir – günlükte çoğu zaman basit fiil yeter.
 - Öğrenirken her zaman **tüm kalıbı** edat/tanımlığıyla birlikte ezberle.
+
+### Sık yapılan hatalar
+- ❌ Fiilleri serbestçe değiştirmek: *in Frage **nehmen*** → ✅ *in Frage **stellen*** (her kalıbın sabit bir fiili vardır).
+- ❌ Edilgende partisip unutmak: *Der Plan wurde in Frage **stellen**.* → ✅ *…in Frage **gestellt**.*
 
 **Örnekler:**
 - Der Plan wurde **in Frage gestellt**. (Plan sorgulandı.)
@@ -17425,6 +17682,76 @@ Bir kalıp = **sabit isim + fonksiyon fiili**; anlam isimdedir. Bu ünitedeki en
         data: { prompt: "Wie sagt man einfacher für 'zum Ausdruck bringen'?" },
         correctAnswer: { accepted: ['ausdrücken'] },
         explanation: '"Zum Ausdruck bringen" = ausdrücken.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb gehört zu "Anwendung"?', options: ['finden', 'nehmen', 'stellen', 'bringen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Anwendung finden.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Plan wurde in Frage ___. (Partizip II von stellen)' },
+        correctAnswer: { accepted: ['gestellt'] },
+        explanation: 'Passiv: in Frage gestellt.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Zu welcher Sprache gehören FVG vor allem?', options: ['Schriftsprache', 'Umgangssprache', 'Dialekt', 'Kindersprache'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'FVG gehören zur Schriftsprache.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['Rücksicht nehmen', 'zum Ausdruck bringen', 'Anwendung finden'], rights: ['angewendet werden', 'rücksichtsvoll sein', 'ausdrücken'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Rücksicht nehmen', right: 'rücksichtsvoll sein' },
+            { left: 'zum Ausdruck bringen', right: 'ausdrücken' },
+            { left: 'Anwendung finden', right: 'angewendet werden' },
+          ],
+        },
+        explanation: 'FVG ↔ einfache Verben.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Neue Regeln ___ ab morgen Anwendung. (finden, Präsens)' },
+        correctAnswer: { accepted: ['finden'] },
+        explanation: 'Anwendung finden: finden.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was sollte man beim Lernen eines FVG immer merken?', options: ['die ganze Wendung mit Präposition/Artikel', 'nur das Verb', 'nur das Nomen', 'nur die Übersetzung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Immer die ganze feste Wendung lernen.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['in', 'Lösungen', 'ziehen', 'andere', 'Betracht', 'Sie'] },
+        correctAnswer: { order: ['Sie', 'ziehen', 'andere', 'Lösungen', 'in', 'Betracht'] },
+        explanation: 'Sie ziehen andere Lösungen in Betracht.',
+      },
+      {
+        lessonId: b2Unit7Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Einfaches Verb für 'zur Verfügung stehen'?" },
+        correctAnswer: { accepted: ['verfügbar sein', 'verfügbar'] },
+        explanation: 'verfügbar sein.',
       },
     ],
   })
