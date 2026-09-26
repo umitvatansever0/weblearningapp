@@ -13407,10 +13407,20 @@ Gebildet wird er aus dem **Verbstamm des Infinitivs + festen Endungen**:
 - Die wichtigste Form ist **er/sie/es** (…, er sag**e**) – hier unterscheidet sich der Konjunktiv I deutlich vom Indikativ (er sag**t**).
 - Bei „ich, wir, sie/Sie" ist die Form oft mit dem Indikativ identisch → dann Ersatzform (siehe Lektion 3).
 
+### Satzbau der indirekten Rede
+Nach einem Verb des Sagens (sagen, erklären, berichten …) folgt der Konjunktiv-I-Satz – **mit oder ohne „dass"**:
+- ohne „dass": *Er sagt, er **komme** morgen.* (Verb an Position 2)
+- mit „dass": *Er sagt, dass er morgen **komme**.* (Verb am Ende)
+
+### Häufige Fehler
+- ❌ *Er sagt, er kommt morgen.* (Indikativ) → ✅ *Er sagt, er **komme** morgen.* (Konjunktiv I)
+- ❌ *…, er kommet* → ✅ *…, er **komme*** (nur -e, kein zusätzliches -t).
+
 **Beispiele:**
 - Der Minister sagt, er **komme** morgen.
 - Sie erklärt, sie **arbeite** an dem Projekt.
-- Man berichtet, die Firma **plane** neue Stellen.`,
+- Man berichtet, die Firma **plane** neue Stellen.
+- Der Zeuge sagt, er **sehe** den Mann zum ersten Mal.`,
       explanationEn: `## Konjunktiv I – forms
 
 **Konjunktiv I** is the form of **reported (indirect) speech**: it reports what someone else said without the speaker committing to it. It is typical of **news, reports and formal texts**.
@@ -13430,10 +13440,20 @@ It is formed from the **stem of the infinitive + fixed endings**:
 - The most important form is **er/sie/es** (…, er sag**e**) – here Konjunktiv I clearly differs from the indicative (er sag**t**).
 - For "ich, wir, sie/Sie" the form is often identical to the indicative → then use the substitute form (see lesson 3).
 
+### Word order in reported speech
+After a verb of saying (sagen, erklären, berichten …) the Konjunktiv-I clause follows – **with or without "dass"**:
+- without "dass": *Er sagt, er **komme** morgen.* (verb in position 2)
+- with "dass": *Er sagt, dass er morgen **komme**.* (verb at the end)
+
+### Common mistakes
+- ❌ *Er sagt, er kommt morgen.* (indicative) → ✅ *Er sagt, er **komme** morgen.* (Konjunktiv I)
+- ❌ *…, er kommet* → ✅ *…, er **komme*** (only -e, no extra -t).
+
 **Examples:**
 - Der Minister sagt, er **komme** morgen. (The minister says he is coming tomorrow.)
 - Sie erklärt, sie **arbeite** an dem Projekt. (She explains that she is working on the project.)
-- Man berichtet, die Firma **plane** neue Stellen. (It is reported that the company is planning new jobs.)`,
+- Man berichtet, die Firma **plane** neue Stellen. (It is reported that the company is planning new jobs.)
+- Der Zeuge sagt, er **sehe** den Mann zum ersten Mal. (The witness says he is seeing the man for the first time.)`,
       explanationTr: `## Konjunktiv I – biçimler
 
 **Konjunktiv I**, **dolaylı anlatımın** kipidir: Başka birinin söylediğini, konuşan kişi kendi görüşü haline getirmeden aktarır. **Haber, rapor ve resmi metinlerde** tipiktir.
@@ -13453,10 +13473,20 @@ Mastarın **kökü + sabit ekler** ile kurulur:
 - En önemli biçim **er/sie/es** (…, er sag**e**) – burada Konjunktiv I, bildirme kipinden (er sag**t**) belirgin şekilde ayrılır.
 - „ich, wir, sie/Sie" için biçim çoğu zaman bildirme kipiyle aynıdır → o zaman yedek biçim kullanılır (bkz. 3. ders).
 
+### Dolaylı anlatımda cümle dizimi
+Bir söyleme fiilinden (sagen, erklären, berichten …) sonra Konjunktiv I cümlesi gelir – **„dass" ile veya „dass" olmadan**:
+- „dass" olmadan: *Er sagt, er **komme** morgen.* (fiil 2. pozisyonda)
+- „dass" ile: *Er sagt, dass er morgen **komme**.* (fiil sonda)
+
+### Sık yapılan hatalar
+- ❌ *Er sagt, er kommt morgen.* (bildirme) → ✅ *Er sagt, er **komme** morgen.* (Konjunktiv I)
+- ❌ *…, er kommet* → ✅ *…, er **komme*** (yalnızca -e, fazladan -t yok).
+
 **Örnekler:**
 - Der Minister sagt, er **komme** morgen. (Bakan yarın geleceğini söylüyor.)
 - Sie erklärt, sie **arbeite** an dem Projekt. (Projede çalıştığını açıklıyor.)
-- Man berichtet, die Firma **plane** neue Stellen. (Şirketin yeni pozisyonlar planladığı bildiriliyor.)`,
+- Man berichtet, die Firma **plane** neue Stellen. (Şirketin yeni pozisyonlar planladığı bildiriliyor.)
+- Der Zeuge sagt, er **sehe** den Mann zum ersten Mal. (Tanık, adamı ilk kez gördüğünü söylüyor.)`,
     },
   })
   await seedExercises({
@@ -13476,6 +13506,76 @@ Mastarın **kökü + sabit ekler** ile kurulur:
         data: { sentence: 'Sie behauptet, sie ___ (glauben) das nicht.' },
         correctAnswer: { accepted: ['glaube'] },
         explanation: 'Konjunktiv I von "glauben" für "sie": glaube.',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Endung hat der Konjunktiv I bei "er/sie/es"?', options: ['-e', '-t', '-est', '-en'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bei er/sie/es lautet die Endung "-e": er sage, er komme.',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Minister sagt, er ___ (kommen) morgen. (Konjunktiv I)' },
+        correctAnswer: { accepted: ['komme'] },
+        explanation: 'Konjunktiv I von "kommen" für "er": komme.',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Indikativ: "er sagt". Wie lautet der Konjunktiv I?', options: ['er sage', 'er sagt', 'er sagte', 'er sagen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Indikativ "sagt" → Konjunktiv I "sage".',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['sagen (er)', 'kommen (er)', 'arbeiten (er)'], rights: ['komme', 'arbeite', 'sage'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'sagen (er)', right: 'sage' },
+            { left: 'kommen (er)', right: 'komme' },
+            { left: 'arbeiten (er)', right: 'arbeite' },
+          ],
+        },
+        explanation: 'Konjunktiv I (er): Stamm + -e.',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Man berichtet, die Firma ___ (planen) neue Stellen. (Konjunktiv I)' },
+        correctAnswer: { accepted: ['plane'] },
+        explanation: 'Konjunktiv I von "planen" für "die Firma": plane.',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wofür wird der Konjunktiv I vor allem benutzt?', options: ['für die indirekte Rede', 'für Befehle', 'für die Zukunft', 'für Fragen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Konjunktiv I ist die Form der indirekten Rede.',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['arbeite', 'er', 'viel'] },
+        correctAnswer: { order: ['er', 'arbeite', 'viel'] },
+        explanation: 'Indirekte Rede (Nebensatz ohne "dass"): Subjekt + Konjunktiv I: "…, er arbeite viel".',
+      },
+      {
+        lessonId: b2Unit2Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie lautet die Konjunktiv-I-Form von 'lernen' für 'er'?" },
+        correctAnswer: { accepted: ['lerne', 'er lerne'] },
+        explanation: 'Konjunktiv I von "lernen" für "er": lerne.',
       },
     ],
   })
@@ -13508,10 +13608,18 @@ Einige häufige Verben haben besondere, sehr gebräuchliche Konjunktiv-I-Formen.
 - Modalverben verlieren im Konjunktiv I den Umlaut nicht: *er könne, er müsse, er dürfe*.
 - Diese Formen braucht man ständig, um Meinungen und Behauptungen wiederzugeben.
 
+### Warum gerade „sein" so wichtig ist
+„sein" ist in **allen Personen** eindeutig vom Indikativ verschieden (sei, seist, sei, seien …). Deshalb steht in der indirekten Rede fast immer die reine Konjunktiv-I-Form – ohne Ersatzform.
+
+### Häufige Fehler
+- ❌ *…, er seie / er habt* → ✅ *…, er **sei** / er **habe***.
+- ❌ *…, er kann* (Indikativ) → ✅ *…, er **könne*** (Konjunktiv I).
+
 **Beispiele:**
 - Der Chef sagt, er **habe** keine Zeit.
 - Die Ärztin meint, der Patient **sei** gesund.
-- Er behauptet, er **könne** das Problem lösen.`,
+- Er behauptet, er **könne** das Problem lösen.
+- Sie erklärt, sie **müsse** noch arbeiten.`,
       explanationEn: `## Konjunktiv I: sein, haben, modal verbs
 
 A few frequent verbs have special, very common Konjunktiv I forms. Above all **"sein"** is irregular and unambiguous in every person.
@@ -13529,10 +13637,18 @@ A few frequent verbs have special, very common Konjunktiv I forms. Above all **"
 - Modal verbs keep their umlaut in Konjunktiv I: *er könne, er müsse, er dürfe*.
 - You need these forms constantly to report opinions and claims.
 
+### Why "sein" is so important
+"sein" differs clearly from the indicative in **all persons** (sei, seist, sei, seien …). That is why reported speech almost always uses the pure Konjunktiv I form – no substitute needed.
+
+### Common mistakes
+- ❌ *…, er seie / er habt* → ✅ *…, er **sei** / er **habe***.
+- ❌ *…, er kann* (indicative) → ✅ *…, er **könne*** (Konjunktiv I).
+
 **Examples:**
 - Der Chef sagt, er **habe** keine Zeit. (The boss says he has no time.)
 - Die Ärztin meint, der Patient **sei** gesund. (The doctor thinks the patient is healthy.)
-- Er behauptet, er **könne** das Problem lösen. (He claims he can solve the problem.)`,
+- Er behauptet, er **könne** das Problem lösen. (He claims he can solve the problem.)
+- Sie erklärt, sie **müsse** noch arbeiten. (She explains that she still has to work.)`,
       explanationTr: `## Konjunktiv I: sein, haben, kip fiilleri
 
 Bazı sık kullanılan fiillerin özel ve çok yaygın Konjunktiv I biçimleri vardır. Özellikle **„sein"** düzensizdir ve bütün kişilerde nettir.
@@ -13550,10 +13666,18 @@ Bazı sık kullanılan fiillerin özel ve çok yaygın Konjunktiv I biçimleri v
 - Kip fiilleri Konjunktiv I'de Umlaut'unu korur: *er könne, er müsse, er dürfe*.
 - Görüş ve iddiaları aktarmak için bu biçimlere sürekli ihtiyaç duyulur.
 
+### „sein" neden bu kadar önemli?
+„sein", **tüm kişilerde** bildirme kipinden net biçimde ayrılır (sei, seist, sei, seien …). Bu yüzden dolaylı anlatımda neredeyse her zaman saf Konjunktiv I biçimi kullanılır – yedek biçime gerek kalmaz.
+
+### Sık yapılan hatalar
+- ❌ *…, er seie / er habt* → ✅ *…, er **sei** / er **habe***.
+- ❌ *…, er kann* (bildirme) → ✅ *…, er **könne*** (Konjunktiv I).
+
 **Örnekler:**
 - Der Chef sagt, er **habe** keine Zeit. (Patron vaktinin olmadığını söylüyor.)
 - Die Ärztin meint, der Patient **sei** gesund. (Doktor hastanın sağlıklı olduğunu düşünüyor.)
-- Er behauptet, er **könne** das Problem lösen. (Sorunu çözebileceğini iddia ediyor.)`,
+- Er behauptet, er **könne** das Problem lösen. (Sorunu çözebileceğini iddia ediyor.)
+- Sie erklärt, sie **müsse** noch arbeiten. (Hâlâ çalışması gerektiğini açıklıyor.)`,
     },
   })
   await seedExercises({
@@ -13579,6 +13703,76 @@ Bazı sık kullanılan fiillerin özel ve çok yaygın Konjunktiv I biçimleri v
           ],
         },
         explanation: 'Konjunktiv-I-Formen: sein → sei, müssen → müsse, haben (wir) → haben.',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die Ärztin meint, der Patient ___ gesund. (Konjunktiv I von "sein")', options: ['sei', 'ist', 'wäre', 'sein'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Konjunktiv I von "sein" für "er": sei.',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er behauptet, er ___ das Problem lösen. (können, Konjunktiv I)' },
+        correctAnswer: { accepted: ['könne'] },
+        explanation: 'Konjunktiv I von "können" für "er": könne.',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Konjunktiv I von "sein" für "ich":', options: ['sei', 'bin', 'seie', 'sein'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sein" bekommt in der 1./3. Person kein -e: ich sei, er sei.',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie sagt, sie ___ heute leider nicht kommen. (können, Konjunktiv I)' },
+        correctAnswer: { accepted: ['könne'] },
+        explanation: 'Konjunktiv I von "können" für "sie": könne.',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['sein (er)', 'haben (er)', 'wissen (er)'], rights: ['habe', 'wisse', 'sei'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'sein (er)', right: 'sei' },
+            { left: 'haben (er)', right: 'habe' },
+            { left: 'wissen (er)', right: 'wisse' },
+          ],
+        },
+        explanation: 'Konjunktiv I (er): sein→sei, haben→habe, wissen→wisse.',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Konjunktiv-I-Form ist FALSCH?', options: ['er seie', 'er sei', 'er habe', 'er müsse'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Richtig ist "er sei" (ohne -e-Zusatz), nicht "er seie".',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['habe', 'er', 'Zeit', 'keine'] },
+        correctAnswer: { order: ['er', 'habe', 'keine', 'Zeit'] },
+        explanation: 'Indirekte Rede: Subjekt + Konjunktiv I: "…, er habe keine Zeit".',
+      },
+      {
+        lessonId: b2Unit2Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie lautet die Konjunktiv-I-Form von 'müssen' für 'er'?" },
+        correctAnswer: { accepted: ['müsse', 'er müsse'] },
+        explanation: 'Konjunktiv I von "müssen" für "er": müsse.',
       },
     ],
   })
@@ -13677,6 +13871,76 @@ Birçok fiilde Konjunktiv I, bazı kişilerde **bildirme kipiyle aynıdır** –
         correctAnswer: { accepted: ['würden'] },
         explanation: 'Ersatzform für "sie" (Plural): würden.',
       },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Warum benutzt man bei "sie kommen" die Ersatzform?', options: ['weil Konjunktiv I = Indikativ ist', 'weil es ein Befehl ist', 'weil es Vergangenheit ist', 'weil es eine Frage ist'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"kommen" ist im Konjunktiv I und Indikativ gleich → Ersatzform "würden".',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie sagt, sie ___ gern helfen. (würde-Form, "sie" Singular)' },
+        correctAnswer: { accepted: ['würde'] },
+        explanation: 'Singular "sie" → würde + Infinitiv.',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Bei welchem Verb braucht man KEINE Ersatzform (Konjunktiv I ist klar)?', options: ['sein (er sei)', 'kommen (sie kommen)', 'arbeiten (wir arbeiten)', 'helfen (ich helfe)'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sei" ist eindeutig Konjunktiv I → keine Ersatzform nötig.',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['sie kommen', 'wir arbeiten', 'ich helfe'], rights: ['würde helfen', 'würden kommen', 'würden arbeiten'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'sie kommen', right: 'würden kommen' },
+            { left: 'wir arbeiten', right: 'würden arbeiten' },
+            { left: 'ich helfe', right: 'würde helfen' },
+          ],
+        },
+        explanation: 'Ersatzform: würde(n) + Infinitiv.',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie behauptet, wir ___ zu viel reden. (Ersatzform, "wir")' },
+        correctAnswer: { accepted: ['würden'] },
+        explanation: '"wir" → würden + Infinitiv.',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Hat "würde" hier die Bedeutung eines Wunsches?', options: ['Nein, es ist nur Ersatzform', 'Ja, immer ein Wunsch', 'Ja, eine Bedingung', 'Ja, ein Befehl'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'In der indirekten Rede ist "würde" reine Ersatzform, kein Wunsch.',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['würden', 'sie', 'kommen', 'morgen'] },
+        correctAnswer: { order: ['sie', 'würden', 'morgen', 'kommen'] },
+        explanation: 'Ersatzform: Subjekt + würden + … + Infinitiv am Ende.',
+      },
+      {
+        lessonId: b2Unit2Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Ersatzform für 'sie prüfen' (Plural, indirekte Rede) – 2 Wörter?" },
+        correctAnswer: { accepted: ['würden prüfen', 'sie würden prüfen'] },
+        explanation: 'würden + Infinitiv: würden prüfen.',
+      },
     ],
   })
   await seedVocab({
@@ -13709,10 +13973,21 @@ Nicht nur Aussagen, auch **Fragen und Aufforderungen** kann man indirekt wiederg
 | „Kommst du mit?" | Er fragt, **ob** ich **mitkomme**. |
 | „Ruf mich an!" | Sie sagt, ich **solle** sie **anrufen**. |
 
+### Weitere Beispiele
+- „Warum lachst du?" → *Sie fragt, **warum** ich **lache**.*
+- „Kann ich helfen?" → *Er fragt, **ob** er **helfen könne**.*
+- „Bringen Sie das Formular mit!" → *Man teilt mit, wir **sollten** das Formular **mitbringen**.*
+
+### Häufige Fehler
+- ❌ *Er fragt, ob ich Zeit **habe?*** (kein Fragezeichen) → ✅ *Er fragt, ob ich Zeit **habe**.* (indirekte Frage = Aussagesatz, Punkt).
+- ❌ *Er fragt, **dass** ich Zeit habe.* → ✅ *Er fragt, **ob** ich Zeit habe.* (Ja/Nein-Frage braucht „ob", nicht „dass").
+- ❌ *Sie sagt, ich **muss** warten.* → ✅ *Sie sagt, ich **solle** warten.* (Aufforderung mit „sollen").
+
 **Merke:**
 - Ohne Fragewort → immer **„ob"**.
 - Aufforderung → **„sollen"** im Konjunktiv I (er solle, sie solle).
-- Das Verb rutscht ans **Ende** des Nebensatzes.`,
+- Das Verb rutscht ans **Ende** des Nebensatzes.
+- Indirekte Fragen enden mit einem **Punkt**, nicht mit einem Fragezeichen.`,
       explanationEn: `## Indirect questions and commands
 
 Not only statements, but also **questions and commands** can be reported indirectly. The verb goes into **Konjunktiv I** and to the **end** of the clause (subordinate clause).
@@ -13731,10 +14006,21 @@ Not only statements, but also **questions and commands** can be reported indirec
 | „Kommst du mit?" | Er fragt, **ob** ich **mitkomme**. |
 | „Ruf mich an!" | Sie sagt, ich **solle** sie **anrufen**. |
 
+### More examples
+- „Warum lachst du?" → *Sie fragt, **warum** ich **lache**.* (She asks why I am laughing.)
+- „Kann ich helfen?" → *Er fragt, **ob** er **helfen könne**.* (He asks whether he can help.)
+- „Bringen Sie das Formular mit!" → *Man teilt mit, wir **sollten** das Formular **mitbringen**.* (We are told to bring the form.)
+
+### Common mistakes
+- ❌ *Er fragt, ob ich Zeit **habe?*** (no question mark) → ✅ *Er fragt, ob ich Zeit **habe**.* (an indirect question is a statement → full stop).
+- ❌ *Er fragt, **dass** ich Zeit habe.* → ✅ *Er fragt, **ob** ich Zeit habe.* (yes/no questions need "ob", not "dass").
+- ❌ *Sie sagt, ich **muss** warten.* → ✅ *Sie sagt, ich **solle** warten.* (command with "sollen").
+
 **Note:**
 - No question word → always **"ob"**.
 - Command → **"sollen"** in Konjunktiv I (er solle, sie solle).
-- The verb moves to the **end** of the subordinate clause.`,
+- The verb moves to the **end** of the subordinate clause.
+- Indirect questions end with a **full stop**, not a question mark.`,
       explanationTr: `## Dolaylı sorular ve emirler
 
 Yalnızca ifadeler değil, **sorular ve emirler** de dolaylı aktarılabilir. Fiil **Konjunktiv I'de** ve cümlenin **sonunda** durur (yan cümle).
@@ -13753,10 +14039,21 @@ Yalnızca ifadeler değil, **sorular ve emirler** de dolaylı aktarılabilir. Fi
 | „Kommst du mit?" | Er fragt, **ob** ich **mitkomme**. |
 | „Ruf mich an!" | Sie sagt, ich **solle** sie **anrufen**. |
 
+### Daha fazla örnek
+- „Warum lachst du?" → *Sie fragt, **warum** ich **lache**.* (Neden güldüğümü soruyor.)
+- „Kann ich helfen?" → *Er fragt, **ob** er **helfen könne**.* (Yardım edip edemeyeceğini soruyor.)
+- „Bringen Sie das Formular mit!" → *Man teilt mit, wir **sollten** das Formular **mitbringen**.* (Formu getirmemiz gerektiği bildiriliyor.)
+
+### Sık yapılan hatalar
+- ❌ *Er fragt, ob ich Zeit **habe?*** (soru işareti yok) → ✅ *Er fragt, ob ich Zeit **habe**.* (dolaylı soru = düz cümle → nokta).
+- ❌ *Er fragt, **dass** ich Zeit habe.* → ✅ *Er fragt, **ob** ich Zeit habe.* (evet/hayır sorusu „dass" değil „ob" ister).
+- ❌ *Sie sagt, ich **muss** warten.* → ✅ *Sie sagt, ich **solle** warten.* („sollen" ile emir).
+
 **Unutma:**
 - Soru kelimesi yoksa → her zaman **„ob"**.
 - Emir → Konjunktiv I'de **„sollen"** (er solle, sie solle).
-- Fiil, yan cümlenin **sonuna** kayar.`,
+- Fiil, yan cümlenin **sonuna** kayar.
+- Dolaylı sorular soru işaretiyle değil, **nokta** ile biter.`,
     },
   })
   await seedExercises({
@@ -13776,6 +14073,76 @@ Yalnızca ifadeler değil, **sorular ve emirler** de dolaylı aktarılabilir. Fi
         data: { prompt: "Wie lautet die indirekte Aufforderung für 'Warte!' mit 'Er sagt, sie...'?" },
         correctAnswer: { accepted: ['sie solle warten'] },
         explanation: 'Indirekte Aufforderung mit "sollen": sie solle warten.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort leitet eine indirekte Ja/Nein-Frage ein?', options: ['ob', 'dass', 'wenn', 'wann'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Ja/Nein-Fragen werden indirekt mit "ob" eingeleitet.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Direkt: „Wo wohnst du?" → Sie fragt, ___ ich wohne. (Fragewort)' },
+        correctAnswer: { accepted: ['wo'] },
+        explanation: 'W-Frage: das Fragewort "wo" leitet die indirekte Frage ein.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie drückt man eine indirekte Aufforderung aus?', options: ['mit "sollen" im Konjunktiv I', 'mit "müssen" im Indikativ', 'mit "ob"', 'mit einem Fragezeichen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Aufforderungen werden mit "sollen" im Konjunktiv I wiedergegeben.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['„Kommst du mit?"', '„Wo wohnst du?"', '„Ruf mich an!"'], rights: ['Sie sagt, ich solle sie anrufen.', 'Er fragt, ob ich mitkomme.', 'Sie fragt, wo ich wohne.'] },
+        correctAnswer: {
+          pairs: [
+            { left: '„Kommst du mit?"', right: 'Er fragt, ob ich mitkomme.' },
+            { left: '„Wo wohnst du?"', right: 'Sie fragt, wo ich wohne.' },
+            { left: '„Ruf mich an!"', right: 'Sie sagt, ich solle sie anrufen.' },
+          ],
+        },
+        explanation: 'Ja/Nein-Frage → ob; W-Frage → Fragewort; Aufforderung → sollen.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Direkt: „Hast du Zeit?" → Er fragt, ___ ich Zeit habe. (Einleitewort)' },
+        correctAnswer: { accepted: ['ob'] },
+        explanation: 'Ohne Fragewort → immer "ob".',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Womit endet eine indirekte Frage?', options: ['mit einem Punkt', 'mit einem Fragezeichen', 'mit einem Ausrufezeichen', 'mit einem Komma'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Die indirekte Frage ist ein Aussagesatz und endet mit einem Punkt.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['wann', 'komme', 'ich', 'fragt', 'er'] },
+        correctAnswer: { order: ['er', 'fragt', 'wann', 'ich', 'komme'] },
+        explanation: 'Hauptsatz: er fragt; Nebensatz: wann + Subjekt + Verb (Konjunktiv I) am Ende.',
+      },
+      {
+        lessonId: b2Unit2Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Setze indirekt um: „Bleib hier!" mit "Er sagt, ich..." (3 Wörter)' },
+        correctAnswer: { accepted: ['ich solle hierbleiben', 'solle hierbleiben', 'ich solle bleiben'] },
+        explanation: 'Aufforderung mit "sollen": ich solle hierbleiben/bleiben.',
       },
     ],
   })
