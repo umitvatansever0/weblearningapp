@@ -14891,6 +14891,10 @@ Das **Partizip I** bildet man aus **Infinitiv + „-d"** (*schlafen → schlafen
 - Es bekommt die **normalen Adjektivendungen** (der schlafend**e**, ein schlafend**er**).
 - Nicht mit dem Partizip II verwechseln (das drückt Passiv/Abgeschlossenheit aus).
 
+### Häufige Fehler
+- ❌ *das **spielend** Kind* → ✅ *das **spielende** Kind* (Adjektivendung nicht vergessen).
+- ❌ *der **geschlafene** Mann* (Part. II, passiv) → ✅ *der **schlafende** Mann* (aktiv, gleichzeitig → Partizip I).
+
 **Beispiele:**
 - Der **weinende** Junge braucht Hilfe.
 - Die **steigenden** Preise sind ein Problem.
@@ -14911,6 +14915,10 @@ The **Partizip I** is formed from **infinitive + "-d"** (*schlafen → schlafend
 - It takes the **normal adjective endings** (der schlafend**e**, ein schlafend**er**).
 - Do not confuse it with the Partizip II (which expresses passive/completed).
 
+### Common mistakes
+- ❌ *das **spielend** Kind* → ✅ *das **spielende** Kind* (don't forget the adjective ending).
+- ❌ *der **geschlafene** Mann* (Part. II, passive) → ✅ *der **schlafende** Mann* (active, simultaneous → Partizip I).
+
 **Examples:**
 - Der **weinende** Junge braucht Hilfe. (The crying boy needs help.)
 - Die **steigenden** Preise sind ein Problem. (The rising prices are a problem.)
@@ -14930,6 +14938,10 @@ The **Partizip I** is formed from **infinitive + "-d"** (*schlafen → schlafend
 - Anlam = **etken + eşzamanlı**: *der lesende Student* = (o an) okumakta olan öğrenci.
 - **Normal sıfat eklerini** alır (der schlafend**e**, ein schlafend**er**).
 - Partizip II ile karıştırma (o, edilgen/tamamlanmışlık ifade eder).
+
+### Sık yapılan hatalar
+- ❌ *das **spielend** Kind* → ✅ *das **spielende** Kind* (sıfat ekini unutma).
+- ❌ *der **geschlafene** Mann* (Part. II, edilgen) → ✅ *der **schlafende** Mann* (etken, eşzamanlı → Partizip I).
 
 **Örnekler:**
 - Der **weinende** Junge braucht Hilfe. (Ağlayan çocuğun yardıma ihtiyacı var.)
@@ -14954,6 +14966,76 @@ The **Partizip I** is formed from **infinitive + "-d"** (*schlafen → schlafend
         data: { sentence: 'Der ___ Hund bellt laut. (bellen, Partizip I)' },
         correctAnswer: { accepted: ['bellende'] },
         explanation: 'Partizip I von "bellen": bellende.',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie bildet man das Partizip I?', options: ['Infinitiv + -d', 'ge- + Stamm + -t', 'Stamm + -te', 'Infinitiv + -en'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip I = Infinitiv + "-d" (+ Adjektivendung).',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ Preise sind ein Problem. (steigen, Partizip I, Plural)' },
+        correctAnswer: { accepted: ['steigenden'] },
+        explanation: 'Partizip I von "steigen" + Plural-Endung: steigenden.',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Bedeutung hat das Partizip I?', options: ['aktiv + gleichzeitig', 'passiv + abgeschlossen', 'nur Vergangenheit', 'nur Zukunft'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip I = aktiv und gleichzeitig (der lesende Student = der Student, der liest).',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['schlafen', 'lachen', 'brennen'], rights: ['brennend', 'schlafend', 'lachend'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'schlafen', right: 'schlafend' },
+            { left: 'lachen', right: 'lachend' },
+            { left: 'brennen', right: 'brennend' },
+          ],
+        },
+        explanation: 'Partizip I: Infinitiv + -d.',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich sah eine ___ Kerze. (brennen, Partizip I)' },
+        correctAnswer: { accepted: ['brennende'] },
+        explanation: 'Partizip I von "brennen": brennende.',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"der lesende Student" bedeutet:', options: ['der Student, der liest', 'der Student, der gelesen wurde', 'der Student, der gelesen hat', 'der gelesene Student'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip I = aktiv, gleichzeitig: der Student, der (gerade) liest.',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Kind', 'spielende', 'das', 'lacht'] },
+        correctAnswer: { order: ['das', 'spielende', 'Kind', 'lacht'] },
+        explanation: 'Artikel + Partizip I (Adjektiv) + Nomen + Verb.',
+      },
+      {
+        lessonId: b2Unit4Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Partizip I als Adjektiv: 'die Kinder, die lachen' → 'die ___ Kinder'" },
+        correctAnswer: { accepted: ['lachenden'] },
+        explanation: 'Partizip I + Plural-Endung: lachenden.',
       },
     ],
   })
@@ -14991,6 +15073,10 @@ Auch das **Partizip II** (*gemacht, geschrieben, repariert*) kann vor einem Nome
 - Partizip II = **Passiv + abgeschlossen**.
 - Auch hier gelten die **normalen Adjektivendungen**.
 
+### Häufige Fehler
+- ❌ *das **kochende** Ei* (aktiv) für „gekocht" → ✅ *das **gekochte** Ei* (passiv, fertig → Partizip II).
+- ❌ *der **repariert** Wagen* → ✅ *der **reparierte** Wagen* (Adjektivendung nicht vergessen).
+
 **Beispiele:**
 - Der **gedeckte** Tisch sieht schön aus.
 - Die **eingeladenen** Gäste kommen um acht.
@@ -15017,6 +15103,10 @@ The **Partizip II** (*gemacht, geschrieben, repariert*) can also stand before a 
 - Partizip II = **passive + completed**.
 - The **normal adjective endings** apply here too.
 
+### Common mistakes
+- ❌ *das **kochende** Ei* (active) for "boiled" → ✅ *das **gekochte** Ei* (passive, finished → Partizip II).
+- ❌ *der **repariert** Wagen* → ✅ *der **reparierte** Wagen* (don't forget the adjective ending).
+
 **Examples:**
 - Der **gedeckte** Tisch sieht schön aus. (The set table looks nice.)
 - Die **eingeladenen** Gäste kommen um acht. (The invited guests arrive at eight.)
@@ -15042,6 +15132,10 @@ The **Partizip II** (*gemacht, geschrieben, repariert*) can also stand before a 
 **Unutma:**
 - Partizip II = **edilgen + tamamlanmış**.
 - Burada da **normal sıfat ekleri** geçerlidir.
+
+### Sık yapılan hatalar
+- ❌ „haşlanmış" için *das **kochende** Ei* (etken) → ✅ *das **gekochte** Ei* (edilgen, bitmiş → Partizip II).
+- ❌ *der **repariert** Wagen* → ✅ *der **reparierte** Wagen* (sıfat ekini unutma).
 
 **Örnekler:**
 - Der **gedeckte** Tisch sieht schön aus. (Kurulmuş masa güzel görünüyor.)
@@ -15072,6 +15166,75 @@ The **Partizip II** (*gemacht, geschrieben, repariert*) can also stand before a 
           ],
         },
         explanation: 'Partizip-II-Formen und ihre Bedeutung.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Bedeutung hat das Partizip II als Adjektiv?', options: ['passiv + abgeschlossen', 'aktiv + gleichzeitig', 'nur Zukunft', 'immer Frage'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip II = passiv und abgeschlossen (das reparierte Auto = das Auto, das repariert wurde).',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der ___ Brief liegt auf dem Tisch. (schreiben, Partizip II)' },
+        correctAnswer: { accepted: ['geschriebene'] },
+        explanation: 'Partizip II von "schreiben" + Endung: geschriebene.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "das gekochte Ei"?', options: ['das Ei, das gekocht wurde', 'das Ei, das gerade kocht', 'das Ei, das kochen wird', 'das kochende Wasser'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip II = passiv, fertig: das Ei, das gekocht wurde.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['das kochende Wasser', 'das gekochte Ei'], rights: ['passiv, fertig (Part. II)', 'aktiv, gerade (Part. I)'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'das kochende Wasser', right: 'aktiv, gerade (Part. I)' },
+            { left: 'das gekochte Ei', right: 'passiv, fertig (Part. II)' },
+          ],
+        },
+        explanation: 'Partizip I = aktiv/gleichzeitig, Partizip II = passiv/abgeschlossen.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ Gäste kommen um acht. (einladen, Partizip II, Plural)' },
+        correctAnswer: { accepted: ['eingeladenen'] },
+        explanation: 'Partizip II von "einladen" + Plural-Endung: eingeladenen.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"das verkaufte Haus" – welche Form ist das?', options: ['Partizip II als Adjektiv', 'Partizip I als Adjektiv', 'Infinitiv', 'Präteritum'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"verkauft" ist Partizip II, hier als Adjektiv dekliniert.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Tisch', 'gedeckte', 'der', 'schön', 'ist'] },
+        correctAnswer: { order: ['der', 'gedeckte', 'Tisch', 'ist', 'schön'] },
+        explanation: 'Artikel + Partizip II (Adjektiv) + Nomen + Verb.',
+      },
+      {
+        lessonId: b2Unit4Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Partizip II als Adjektiv: 'das Auto, das repariert wurde' → 'das ___ Auto'" },
+        correctAnswer: { accepted: ['reparierte'] },
+        explanation: 'Partizip II + Endung: reparierte.',
       },
     ],
   })
@@ -15107,6 +15270,10 @@ In formellen, schriftlichen Texten kann das Partizip durch **weitere Angaben erg
 - Typisch für **Nachrichten, Wissenschaft, Verwaltung** – in der gesprochenen Sprache seltener.
 - Man kann es immer in einen **Relativsatz** auflösen (siehe nächste Lektion).
 
+### Häufige Fehler
+- ❌ *der Bericht **gestern veröffentlichte*** → ✅ *der **gestern veröffentlichte** Bericht* (der ganze Block steht **vor** dem Nomen).
+- ❌ *die von der Firma **geplante** Projekte* → ✅ *die von der Firma **geplanten** Projekte* (Adjektivendung an den Plural anpassen).
+
 **Beispiele:**
 - Der **im Jahr 1990 gebaute** Turm ist berühmt.
 - Die **von Experten empfohlene** Lösung wurde umgesetzt.
@@ -15130,6 +15297,10 @@ In formal, written texts the participle can be **expanded with further details**
 - The participle carries the **adjective ending** matching the noun.
 - Typical of **news, academia, administration** – rarer in spoken language.
 - It can always be resolved into a **relative clause** (see next lesson).
+
+### Common mistakes
+- ❌ *der Bericht **gestern veröffentlichte*** → ✅ *der **gestern veröffentlichte** Bericht* (the whole block stands **before** the noun).
+- ❌ *die von der Firma **geplante** Projekte* → ✅ *die von der Firma **geplanten** Projekte* (match the adjective ending to the plural).
 
 **Examples:**
 - Der **im Jahr 1990 gebaute** Turm ist berühmt. (The tower built in 1990 is famous.)
@@ -15155,6 +15326,10 @@ Resmi, yazılı metinlerde partisip **ek bilgilerle genişletilebilir**. Bunlar 
 - **Haber, bilim, idare** dilinde tipiktir – konuşma dilinde daha nadirdir.
 - Her zaman bir **ilgi cümlesine** çözülebilir (bkz. sonraki ders).
 
+### Sık yapılan hatalar
+- ❌ *der Bericht **gestern veröffentlichte*** → ✅ *der **gestern veröffentlichte** Bericht* (tüm öbek ismin **önünde** durur).
+- ❌ *die von der Firma **geplante** Projekte* → ✅ *die von der Firma **geplanten** Projekte* (sıfat ekini çoğula uydur).
+
 **Örnekler:**
 - Der **im Jahr 1990 gebaute** Turm ist berühmt. (1990'da inşa edilen kule ünlüdür.)
 - Die **von Experten empfohlene** Lösung wurde umgesetzt. (Uzmanların önerdiği çözüm uygulandı.)
@@ -15178,6 +15353,76 @@ Resmi, yazılı metinlerde partisip **ek bilgilerle genişletilebilir**. Bunlar 
         data: { words: ['gelesene', 'das', 'Buch', 'viel'] },
         correctAnswer: { order: ['das', 'viel', 'gelesene', 'Buch'] },
         explanation: 'Reihenfolge: Artikel, Zusatzinformation, Partizip, Nomen.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht der erweiterte Block?', options: ['zwischen Artikel und Nomen', 'nach dem Nomen', 'am Satzanfang', 'am Satzende'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der erweiterte Block steht zwischen Artikel und Partizip, also vor dem Nomen.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die von Experten ___ Lösung wurde umgesetzt. (empfehlen, Partizip II)' },
+        correctAnswer: { accepted: ['empfohlene'] },
+        explanation: 'Partizip II von "empfehlen" + Endung: empfohlene.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wozu wird der Agens (Handelnder) eingeleitet?', options: ['mit "von"', 'mit "für"', 'mit "mit"', 'mit "zu"'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Der Agens im Passiv wird mit "von" angegeben: von der Firma geplant.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die von der Firma ___ Projekte starten bald. (planen, Partizip II, Plural)' },
+        correctAnswer: { accepted: ['geplanten'] },
+        explanation: 'Partizip II + Plural-Endung: geplanten.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 7,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['veröffentlichte', 'der', 'Bericht', 'gestern'] },
+        correctAnswer: { order: ['der', 'gestern', 'veröffentlichte', 'Bericht'] },
+        explanation: 'Artikel → Zeitangabe → Partizip → Nomen.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'In welchen Textsorten sind erweiterte Partizipialattribute typisch?', options: ['Nachrichten, Wissenschaft, Verwaltung', 'nur SMS', 'nur Gespräche', 'nur Werbung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Typisch für formelle, schriftliche Texte.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 9,
+        type: 'MATCHING',
+        data: { lefts: ['gestern veröffentlicht', 'von der Firma geplant', 'schnell fahrend'], rights: ['Angabe (Adverb)', 'Zeit', 'Agens (von …)'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'gestern veröffentlicht', right: 'Zeit' },
+            { left: 'von der Firma geplant', right: 'Agens (von …)' },
+            { left: 'schnell fahrend', right: 'Angabe (Adverb)' },
+          ],
+        },
+        explanation: 'Erweiterungen können Zeit, Agens oder Adverbiale sein.',
+      },
+      {
+        lessonId: b2Unit4Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Baue ein erweitertes Partizipialattribut: 'der Turm' + 'im Jahr 1990 gebaut' (4 Wörter)" },
+        correctAnswer: { accepted: ['der im jahr 1990 gebaute turm', 'im jahr 1990 gebaute'] },
+        explanation: 'der im Jahr 1990 gebaute Turm.',
       },
     ],
   })
@@ -15211,6 +15456,10 @@ Jedes Partizipialattribut kann man in einen **Relativsatz** auflösen – das ma
 - Nach dem Nomen kommt ein **Komma** und das passende **Relativpronomen** (der/die/das).
 - Das Verb steht im Relativsatz **am Ende**.
 
+### Häufige Fehler
+- ❌ *das reparierte Auto → das Auto, das **repariert**.* → ✅ *das Auto, das **repariert wurde**.* (Partizip II → Passiv-Relativsatz).
+- ❌ *der schlafende Mann → der Mann, der **geschlafen wird**.* → ✅ *der Mann, der **schläft**.* (Partizip I → Aktiv).
+
 **Beispiele:**
 - der **weinende** Junge → der Junge, der **weint**.
 - die **eingeladenen** Gäste → die Gäste, die **eingeladen wurden**.
@@ -15233,6 +15482,10 @@ Every participial attribute can be resolved into a **relative clause** – this 
 - After the noun comes a **comma** and the matching **relative pronoun** (der/die/das).
 - The verb stands at the **end** of the relative clause.
 
+### Common mistakes
+- ❌ *das reparierte Auto → das Auto, das **repariert**.* → ✅ *das Auto, das **repariert wurde**.* (Partizip II → passive relative clause).
+- ❌ *der schlafende Mann → der Mann, der **geschlafen wird**.* → ✅ *der Mann, der **schläft**.* (Partizip I → active).
+
 **Examples:**
 - der **weinende** Junge → der Junge, der **weint**.
 - die **eingeladenen** Gäste → die Gäste, die **eingeladen wurden**.
@@ -15254,6 +15507,10 @@ Her partisip sıfatı bir **ilgi cümlesine** çözülebilir – bu, resmi cüml
 **Unutma:**
 - İsimden sonra bir **virgül** ve uygun **ilgi zamiri** (der/die/das) gelir.
 - İlgi cümlesinde fiil **sonda** durur.
+
+### Sık yapılan hatalar
+- ❌ *das reparierte Auto → das Auto, das **repariert**.* → ✅ *das Auto, das **repariert wurde**.* (Partizip II → edilgen ilgi cümlesi).
+- ❌ *der schlafende Mann → der Mann, der **geschlafen wird**.* → ✅ *der Mann, der **schläft**.* (Partizip I → etken).
 
 **Örnekler:**
 - der **weinende** Junge → der Junge, der **weint**.
@@ -15278,6 +15535,76 @@ Her partisip sıfatı bir **ilgi cümlesine** çözülebilir – bu, resmi cüml
         data: { prompt: "Wandle um: 'das gebaute Haus' → 'das Haus, das ___' (Relativsatz mit Passiv)" },
         correctAnswer: { accepted: ['gebaut wurde'] },
         explanation: 'Partizip II entspricht dem Passiv im Relativsatz: das gebaut wurde.',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Partizip I wird zu einem Relativsatz im …', options: ['Aktiv', 'Passiv', 'Konjunktiv', 'Imperativ'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip I → Aktiv (der schläft, der lacht).',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Partizip II wird meist zu einem Relativsatz im …', options: ['Passiv', 'Aktiv', 'Futur', 'Imperativ'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Partizip II → meist Passiv (das gebaut wurde).',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 5,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'die eingeladenen Gäste → die Gäste, die eingeladen ___. (Passiv, Präteritum)' },
+        correctAnswer: { accepted: ['wurden'] },
+        explanation: 'Plural + Passiv Präteritum: eingeladen wurden.',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['der schlafende Mann', 'das reparierte Auto', 'die gestern gelesene Zeitung'], rights: ['das Auto, das repariert wurde', 'die Zeitung, die gestern gelesen wurde', 'der Mann, der schläft'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der schlafende Mann', right: 'der Mann, der schläft' },
+            { left: 'das reparierte Auto', right: 'das Auto, das repariert wurde' },
+            { left: 'die gestern gelesene Zeitung', right: 'die Zeitung, die gestern gelesen wurde' },
+          ],
+        },
+        explanation: 'Partizipialattribut ↔ Relativsatz.',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'der weinende Junge → der Junge, der ___. (Aktiv, Präsens)' },
+        correctAnswer: { accepted: ['weint'] },
+        explanation: 'Partizip I → Aktiv Präsens: der Junge, der weint.',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was kommt direkt nach dem Nomen im Relativsatz?', options: ['ein Komma und ein Relativpronomen', 'ein Punkt', 'ein Fragezeichen', 'nichts'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nach dem Nomen: Komma + Relativpronomen (der/die/das).',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['der', 'schläft', 'Mann', 'der'] },
+        correctAnswer: { order: ['der', 'Mann', 'der', 'schläft'] },
+        explanation: 'der Mann, der schläft – Verb am Ende des Relativsatzes.',
+      },
+      {
+        lessonId: b2Unit4Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wandle um: 'das von allen erwartete Ergebnis' → 'das Ergebnis, das von allen ___'" },
+        correctAnswer: { accepted: ['erwartet wurde'] },
+        explanation: 'Partizip II → Passiv: erwartet wurde.',
       },
     ],
   })
