@@ -16373,6 +16373,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Bedeutung ≈ „obwohl", aber andere Satzstellung.
 - „obwohl" leitet einen **Nebensatz** ein (Verb am Ende); „trotzdem/dennoch" ist ein **Adverb** (Verb an Position 2).
 
+### Häufige Fehler
+- ❌ *Trotzdem **wir gingen** spazieren.* → ✅ *Trotzdem **gingen wir** spazieren.* (Adverb → Verb an Position 2).
+- ❌ *Obwohl es regnete, **trotzdem** gingen wir.* → ✅ *Obwohl es regnete, gingen wir.* / *Es regnete. Trotzdem gingen wir.* (nicht beides zusammen).
+
 **Beispiele:**
 - Er hatte wenig Zeit. **Trotzdem** half er mir.
 - Die Aufgabe war schwer. **Dennoch** löste sie das Kind.
@@ -16392,6 +16396,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Meaning ≈ "obwohl" (although), but different word order.
 - "obwohl" introduces a **subordinate clause** (verb at the end); "trotzdem/dennoch" is an **adverb** (verb in position 2).
 
+### Common mistakes
+- ❌ *Trotzdem **wir gingen** spazieren.* → ✅ *Trotzdem **gingen wir** spazieren.* (adverb → verb in position 2).
+- ❌ *Obwohl es regnete, **trotzdem** gingen wir.* → ✅ *Obwohl es regnete, gingen wir.* / *Es regnete. Trotzdem gingen wir.* (don't use both together).
+
 **Examples:**
 - Er hatte wenig Zeit. **Trotzdem** half er mir. (He had little time. Nevertheless he helped me.)
 - Die Aufgabe war schwer. **Dennoch** löste sie das Kind. (The task was hard. Nevertheless the child solved it.)
@@ -16410,6 +16418,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 **Unutma:**
 - Anlam ≈ „obwohl" (her ne kadar), ama farklı dizim.
 - „obwohl" bir **yan cümle** başlatır (fiil sonda); „trotzdem/dennoch" bir **belirteçtir** (fiil 2. pozisyonda).
+
+### Sık yapılan hatalar
+- ❌ *Trotzdem **wir gingen** spazieren.* → ✅ *Trotzdem **gingen wir** spazieren.* (belirteç → fiil 2. pozisyonda).
+- ❌ *Obwohl es regnete, **trotzdem** gingen wir.* → ✅ *Obwohl es regnete, gingen wir.* / *Es regnete. Trotzdem gingen wir.* (ikisini birlikte kullanma).
 
 **Örnekler:**
 - Er hatte wenig Zeit. **Trotzdem** half er mir. (Az vakti vardı. Yine de bana yardım etti.)
@@ -16434,6 +16446,75 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
         data: { words: ['trotzdem', 'wir', 'spazieren', 'gingen'] },
         correctAnswer: { order: ['trotzdem', 'gingen', 'wir', 'spazieren'] },
         explanation: '"Trotzdem" steht an Position 1, danach folgt das Verb.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Wortart sind "trotzdem" und "dennoch"?', options: ['Konnektor-Adverbien', 'Nebensatz-Konjunktionen', 'Präpositionen', 'Nomen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Es sind Adverbien → Verb an Position 2.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er war müde. ___ arbeitete er weiter. (gehobenes/neutrales Gegensatz-Adverb)' },
+        correctAnswer: { accepted: ['Dennoch', 'Trotzdem'] },
+        explanation: 'Gegensatz-Adverb: Dennoch/Trotzdem.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Wort leitet einen Nebensatz ein (Verb am Ende)?', options: ['obwohl', 'trotzdem', 'dennoch', 'gleichwohl'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nur "obwohl" ist eine Nebensatz-Konjunktion.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['obwohl', 'trotzdem'], rights: ['Adverb, Verb an Position 2', 'Nebensatz, Verb am Ende'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'obwohl', right: 'Nebensatz, Verb am Ende' },
+            { left: 'trotzdem', right: 'Adverb, Verb an Position 2' },
+          ],
+        },
+        explanation: 'obwohl = Konjunktion; trotzdem = Adverb.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Es war teuer. Trotzdem ___ wir es. (kaufen, Präteritum)' },
+        correctAnswer: { accepted: ['kauften'] },
+        explanation: 'Nach "Trotzdem" (Position 1) folgt das Verb an Position 2: kauften.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Bedeutung hat "trotzdem"?', options: ['Gegensatz (unerwartete Folge)', 'Grund', 'Zeit', 'Bedingung'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"trotzdem" drückt einen Gegensatz aus.',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['er', 'dennoch', 'weiter', 'arbeitete'] },
+        correctAnswer: { order: ['dennoch', 'arbeitete', 'er', 'weiter'] },
+        explanation: 'Dennoch (Pos. 1) + Verb (Pos. 2) + Subjekt …',
+      },
+      {
+        lessonId: b2Unit6Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Verbinde mit 'trotzdem': 'Es regnete stark.' + 'Wir gingen spazieren.' (beginne mit Trotzdem)" },
+        correctAnswer: { accepted: ['trotzdem gingen wir spazieren'] },
+        explanation: 'Trotzdem gingen wir spazieren.',
       },
     ],
   })
@@ -16463,6 +16544,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Steht am Satzanfang: *Gleichwohl **fand** man eine Lösung.*
 - Wirkt in Alltagsgesprächen schnell zu gestelzt – vor allem in Texten verwenden.
 
+### Häufige Fehler
+- ❌ *…, gleichwohl **man fand** eine Lösung.* → ✅ *…, gleichwohl **fand man** eine Lösung.* (Adverb → Verb an Position 2).
+- ❌ „gleichwohl" im lockeren Gespräch → besser „trotzdem" (Register beachten).
+
 **Beispiele:**
 - Die Lage war schwierig, **gleichwohl** fand man eine Lösung.
 - Der Plan war riskant; **gleichwohl** wurde er umgesetzt.
@@ -16481,6 +16566,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Stands at the start of the clause: *Gleichwohl **fand** man eine Lösung.*
 - In everyday speech it quickly sounds stilted – use it mainly in texts.
 
+### Common mistakes
+- ❌ *…, gleichwohl **man fand** eine Lösung.* → ✅ *…, gleichwohl **fand man** eine Lösung.* (adverb → verb in position 2).
+- ❌ using "gleichwohl" in casual conversation → prefer "trotzdem" (mind the register).
+
 **Examples:**
 - Die Lage war schwierig, **gleichwohl** fand man eine Lösung. (The situation was difficult; nevertheless, a solution was found.)
 - Der Plan war riskant; **gleichwohl** wurde er umgesetzt. (The plan was risky; it was implemented nonetheless.)
@@ -16498,6 +16587,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Anlam = zıtlık („trotzdem"), ama **daha resmi** ve daha nadir.
 - Cümle başında durur: *Gleichwohl **fand** man eine Lösung.*
 - Günlük konuşmada çabuk yapmacık durur – daha çok metinlerde kullan.
+
+### Sık yapılan hatalar
+- ❌ *…, gleichwohl **man fand** eine Lösung.* → ✅ *…, gleichwohl **fand man** eine Lösung.* (belirteç → fiil 2. pozisyonda).
+- ❌ günlük konuşmada „gleichwohl" → daha iyisi „trotzdem" (üsluba dikkat).
 
 **Örnekler:**
 - Die Lage war schwierig, **gleichwohl** fand man eine Lösung. (Durum zordu, yine de bir çözüm bulundu.)
@@ -16522,6 +16615,75 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
         data: { sentence: 'Der Plan war riskant, ___ wurde er umgesetzt.' },
         correctAnswer: { accepted: ['gleichwohl'] },
         explanation: '"Gleichwohl" verbindet Risiko und Umsetzung als Gegensatz.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Zu welchem Register gehört "gleichwohl"?', options: ['gehoben/schriftlich', 'umgangssprachlich', 'dialektal', 'kindersprachlich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"gleichwohl" ist gehoben und schriftlich.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"gleichwohl" hat dieselbe Bedeutung wie …', options: ['trotzdem/dennoch', 'weil', 'damit', 'obwohl (Nebensatz)'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Bedeutung = Gegensatz, wie trotzdem/dennoch.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 5,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Kritik war hart. Gleichwohl ___ er bei seiner Meinung. (bleiben, Präteritum)' },
+        correctAnswer: { accepted: ['blieb'] },
+        explanation: 'Adverb an Position 1 → Verb an Position 2: blieb.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['neutral/gesprochen', 'gehoben/schriftlich'], rights: ['gleichwohl', 'trotzdem'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'neutral/gesprochen', right: 'trotzdem' },
+            { left: 'gehoben/schriftlich', right: 'gleichwohl' },
+          ],
+        },
+        explanation: 'Register-Zuordnung.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das Verb nach "gleichwohl" am Satzanfang?', options: ['an Position 2', 'am Ende', 'an Position 1', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Als Adverb → Verb an Position 2.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz klingt in einem Essay am passendsten?', options: ['Die Lage war ernst; gleichwohl blieb man ruhig.', 'Die Lage war ernst; gleichwohl man ruhig blieb.', 'Gleichwohl die Lage ernst war.', 'Die Lage war ernst, gleichwohl weil man ruhig blieb.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Korrekte Adverb-Stellung + gehobener Kontext.',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['man', 'gleichwohl', 'eine', 'fand', 'Lösung'] },
+        correctAnswer: { order: ['gleichwohl', 'fand', 'man', 'eine', 'Lösung'] },
+        explanation: 'Gleichwohl (Pos. 1) + Verb (Pos. 2) + Subjekt …',
+      },
+      {
+        lessonId: b2Unit6Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Formelles Synonym für 'trotzdem' (ein Wort)?" },
+        correctAnswer: { accepted: ['gleichwohl'] },
+        explanation: 'gleichwohl.',
       },
     ],
   })
@@ -16553,6 +16715,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Als Konnektor mit **„als"**, Verb am Satzende.
 - Gehört zur **formellen** Argumentationssprache.
 
+### Häufige Fehler
+- ❌ *…, insofern als die Fakten **stimmen nicht**.* (Verbstellung) → ✅ *…, insofern als die Fakten **stimmen**.* (Nebensatz → Verb am Ende).
+- ❌ „insofern" mit „obwohl" verwechseln → „insofern" = **einschränkend**, nicht Gegensatz.
+
 **Beispiele:**
 - Die Kritik ist berechtigt, **insofern als** die Fakten stimmen.
 - Er hat recht, **insofern** man seine Perspektive teilt.
@@ -16573,6 +16739,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - As a connector with **"als"**, the verb goes to the end.
 - Belongs to **formal** argumentative language.
 
+### Common mistakes
+- ❌ *…, insofern als die Fakten **stimmen nicht**.* → ✅ *…, insofern als die Fakten **stimmen**.* (subordinate clause → verb at the end).
+- ❌ confusing "insofern" with "obwohl" → "insofern" is **restrictive**, not contrastive.
+
 **Examples:**
 - Die Kritik ist berechtigt, **insofern als** die Fakten stimmen. (The criticism is justified insofar as the facts are correct.)
 - Er hat recht, **insofern** man seine Perspektive teilt. (He is right to the extent that one shares his perspective.)
@@ -16592,6 +16762,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Anlam: **sınırlayıcı** – „yalnızca bu koşulda / bu noktada".
 - Bağlaç olarak **„als"** ile, fiil cümle sonunda.
 - **Resmi** tartışma diline aittir.
+
+### Sık yapılan hatalar
+- ❌ *…, insofern als die Fakten **stimmen nicht**.* → ✅ *…, insofern als die Fakten **stimmen**.* (yan cümle → fiil sonda).
+- ❌ „insofern"u „obwohl" ile karıştırma → „insofern" **sınırlayıcıdır**, zıtlık değil.
 
 **Örnekler:**
 - Die Kritik ist berechtigt, **insofern als** die Fakten stimmen. (Eleştiri, gerçekler doğru olduğu ölçüde haklıdır.)
@@ -16616,6 +16790,76 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
         data: { prompt: "Wie sagt man auf Deutsch: 'to the extent that / insofar as'?" },
         correctAnswer: { accepted: ['insofern als', 'insofern'] },
         explanation: '"Insofern (als)" bedeutet "to the extent that".',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Bedeutung hat "insofern als"?', options: ['einschränkend (in dem Maße, wie)', 'Gegensatz', 'Grund', 'Zeit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"insofern als" schränkt ein: in dem Maße, wie.',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Plan ist sinnvoll, insofern als genug Geld da ___. (sein)' },
+        correctAnswer: { accepted: ['ist'] },
+        explanation: 'Nebensatz → Verb am Ende: ist.',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Als Nebensatz-Konnektor: Wo steht das Verb?', options: ['am Ende', 'an Position 1', 'an Position 2', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nebensatz → Verb am Ende.',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Er hat wenig geübt. Insofern ist das Ergebnis verständlich." Welche Funktion hat "insofern" hier?', options: ['Adverb mit Rückbezug', 'Nebensatz-Konnektor', 'Präposition', 'Nomen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Hier ist "insofern" ein rückbeziehendes Adverb (Verb an Position 2).',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Kritik ist berechtigt, insofern ___ die Fakten stimmen. (Ergänzungswort)' },
+        correctAnswer: { accepted: ['als'] },
+        explanation: 'Als Konnektor mit "als": insofern als.',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 8,
+        type: 'MATCHING',
+        data: { lefts: ['insofern als', 'obwohl', 'zumal'], rights: ['verstärkter Grund', 'Einschränkung', 'Gegensatz'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'insofern als', right: 'Einschränkung' },
+            { left: 'obwohl', right: 'Gegensatz' },
+            { left: 'zumal', right: 'verstärkter Grund' },
+          ],
+        },
+        explanation: 'Funktion der Konnektoren.',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['er', 'insofern', 'realistisch', 'als', 'ist'] },
+        correctAnswer: { order: ['insofern', 'als', 'er', 'realistisch', 'ist'] },
+        explanation: 'insofern als + Subjekt + … + Verb am Ende.',
+      },
+      {
+        lessonId: b2Unit6Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Zu welchem Sprachstil gehört 'insofern als'? (ein Wort)" },
+        correctAnswer: { accepted: ['formell', 'formell/schriftlich', 'schriftlich'] },
+        explanation: 'Formelle Argumentationssprache.',
       },
     ],
   })
@@ -16650,6 +16894,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Vor „zumal" steht ein **Komma**, das Verb geht ans Ende.
 - Gehobener, argumentativer Stil.
 
+### Häufige Fehler
+- ❌ *…, zumal ich morgen früh **aufstehen** muss* mit falscher Stellung → im Nebensatz steht das **konjugierte Verb ganz am Ende**: *…, zumal ich morgen früh aufstehen **muss**.*
+- ❌ „zumal" als einzigen Grund benutzen → es **verstärkt** meist einen schon genannten Grund.
+
 **Beispiele:**
 - Ich gehe früh ins Bett, **zumal** ich morgen früh **aufstehen muss**.
 - Der Ausflug lohnt sich, **zumal** das Wetter schön **ist**.
@@ -16672,6 +16920,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - "zumal" often presupposes an **already mentioned** reason and strengthens it.
 - A **comma** comes before "zumal", and the verb goes to the end.
 - Elevated, argumentative style.
+
+### Common mistakes
+- ❌ wrong verb position after "zumal" → in a subordinate clause the **conjugated verb goes to the very end**: *…, zumal ich morgen früh aufstehen **muss**.*
+- ❌ using "zumal" as the only reason → it usually **reinforces** an already mentioned reason.
 
 **Examples:**
 - Ich gehe früh ins Bett, **zumal** ich morgen früh **aufstehen muss**. (I'm going to bed early, especially since I have to get up early tomorrow.)
@@ -16696,6 +16948,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - „zumal"dan önce **virgül** gelir, fiil sona gider.
 - Seçkin, tartışmacı üslup.
 
+### Sık yapılan hatalar
+- ❌ „zumal"dan sonra yanlış fiil konumu → yan cümlede **çekimli fiil en sona gider**: *…, zumal ich morgen früh aufstehen **muss**.*
+- ❌ „zumal"ı tek gerekçe olarak kullanmak → genellikle zaten söylenmiş bir gerekçeyi **pekiştirir**.
+
 **Örnekler:**
 - Ich gehe früh ins Bett, **zumal** ich morgen früh **aufstehen muss**. (Erken yatıyorum, hele ki yarın erken kalkmam gerekiyor.)
 - Der Ausflug lohnt sich, **zumal** das Wetter schön **ist**. (Gezi buna değer, üstelik hava da güzel.)
@@ -16719,6 +16975,70 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
         data: { words: ['stark', 'regnet', 'es', 'zumal'] },
         correctAnswer: { order: ['zumal', 'es', 'stark', 'regnet'] },
         explanation: 'Nebensatz mit "zumal": Konjunktion + Subjekt + ... + Verb am Ende.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Bedeutung hat "zumal"?', options: ['verstärkender, zusätzlicher Grund', 'Gegensatz', 'Bedingung', 'Zeitpunkt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"zumal" = besonders weil / vor allem da.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir sollten sparen, zumal die Preise ___. (steigen)' },
+        correctAnswer: { accepted: ['steigen'] },
+        explanation: 'Nebensatz → Verb am Ende: steigen.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie unterscheiden sich "weil" und "zumal"?', options: ['weil = Hauptgrund, zumal = zusätzlicher, verstärkender Grund', 'sie sind identisch', 'weil ist formeller', 'zumal nennt einen Gegensatz'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"weil" nennt den Hauptgrund, "zumal" verstärkt.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was steht vor "zumal"?', options: ['ein Komma', 'ein Punkt', 'ein Doppelpunkt', 'nichts'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Vor dem Nebensatz mit "zumal" steht ein Komma.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich gehe früh ins Bett, zumal ich morgen früh aufstehen ___. (müssen)' },
+        correctAnswer: { accepted: ['muss'] },
+        explanation: 'Konjugiertes Verb am Ende: muss.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Zu welchem Stil gehört "zumal"?', options: ['gehoben/argumentativ', 'umgangssprachlich', 'dialektal', 'kindersprachlich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Gehobener, argumentativer Stil.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ist', 'zumal', 'das', 'schön', 'Wetter'] },
+        correctAnswer: { order: ['zumal', 'das', 'Wetter', 'schön', 'ist'] },
+        explanation: 'zumal + Subjekt + … + Verb am Ende.',
+      },
+      {
+        lessonId: b2Unit6Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Welcher Konnektor bedeutet 'besonders weil'? (ein Wort)" },
+        correctAnswer: { accepted: ['zumal'] },
+        explanation: 'zumal.',
       },
     ],
   })
