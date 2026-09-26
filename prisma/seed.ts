@@ -15642,6 +15642,10 @@ Sehr viele Verben lassen sich durch das Suffix **„-ung"** in ein **feminines N
 - Sie beschreiben oft das **Ergebnis oder den Vorgang** einer Handlung.
 - Typisch für **formelle und schriftliche** Sprache (Berichte, Wissenschaft).
 
+### Häufige Fehler
+- ❌ *der Lösung, das Lösung* → ✅ *die Lösung* (Nomen auf „-ung" sind immer feminin).
+- ❌ *die Entwickelung* → ✅ *die Entwicklung* (kein zusätzliches „-e-").
+
 **Beispiele:**
 - Die **Entwicklung** der Stadt dauert Jahre.
 - Die **Untersuchung** ergab keine Fehler.
@@ -15663,6 +15667,10 @@ Very many verbs can be turned into a **feminine noun** with the suffix **"-ung"*
 - They often describe the **result or process** of an action.
 - Typical of **formal, written** language (reports, academia).
 
+### Common mistakes
+- ❌ *der Lösung, das Lösung* → ✅ *die Lösung* (nouns ending in "-ung" are always feminine).
+- ❌ *die Entwickelung* → ✅ *die Entwicklung* (no extra "-e-").
+
 **Examples:**
 - Die **Entwicklung** der Stadt dauert Jahre. (The development of the city takes years.)
 - Die **Untersuchung** ergab keine Fehler. (The examination revealed no errors.)
@@ -15683,6 +15691,10 @@ Very many verbs can be turned into a **feminine noun** with the suffix **"-ung"*
 - **„-ung" ile biten isimler her zaman dişildir** → tanımlık **die**.
 - Çoğu zaman bir eylemin **sonucunu ya da sürecini** anlatır.
 - **Resmi ve yazılı** dilde tipiktir (raporlar, bilim).
+
+### Sık yapılan hatalar
+- ❌ *der Lösung, das Lösung* → ✅ *die Lösung* („-ung" ile biten isimler her zaman dişildir).
+- ❌ *die Entwickelung* → ✅ *die Entwicklung* (fazladan „-e-" yok).
 
 **Örnekler:**
 - Die **Entwicklung** der Stadt dauert Jahre. (Şehrin gelişimi yıllar sürer.)
@@ -15707,6 +15719,76 @@ Very many verbs can be turned into a **feminine noun** with the suffix **"-ung"*
         data: { sentence: 'Die ___ (untersuchen) dauerte drei Stunden.' },
         correctAnswer: { accepted: ['Untersuchung'] },
         explanation: '"Untersuchen" + "-ung" = die Untersuchung.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Artikel haben Nomen auf "-ung"?', options: ['die', 'der', 'das', 'wechselnd'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nomen auf "-ung" sind immer feminin → die.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Für dieses Problem gibt es keine einfache ___. (lösen → Nomen)' },
+        correctAnswer: { accepted: ['Lösung'] },
+        explanation: '"lösen" + "-ung" = die Lösung.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['erklären', 'bedeuten', 'entwickeln'], rights: ['Entwicklung', 'Erklärung', 'Bedeutung'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'erklären', right: 'Erklärung' },
+            { left: 'bedeuten', right: 'Bedeutung' },
+            { left: 'entwickeln', right: 'Entwicklung' },
+          ],
+        },
+        explanation: 'Verbstamm + "-ung".',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Nomen von "erklären" lautet:', options: ['die Erklärung', 'der Erklärer', 'das Erklären', 'die Erklärheit'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"erklären" + "-ung" = die Erklärung.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ (bedeuten) dieses Wortes ist unklar.' },
+        correctAnswer: { accepted: ['Bedeutung'] },
+        explanation: '"bedeuten" + "-ung" = die Bedeutung.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was beschreiben Nomen auf "-ung" oft?', options: ['das Ergebnis oder den Vorgang einer Handlung', 'eine Person', 'einen Ort', 'eine Farbe'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Sie bezeichnen häufig Vorgang oder Ergebnis.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['die', 'lange', 'Entwicklung', 'dauert'] },
+        correctAnswer: { order: ['die', 'Entwicklung', 'dauert', 'lange'] },
+        explanation: 'die Entwicklung dauert lange.',
+      },
+      {
+        lessonId: b2Unit5Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Nomen mit Artikel aus 'ausbilden'." },
+        correctAnswer: { accepted: ['die ausbildung'] },
+        explanation: '"ausbilden" + "-ung" = die Ausbildung.',
       },
     ],
   })
@@ -15742,6 +15824,10 @@ Aus **Adjektiven** bildet man abstrakte, **feminine Nomen** mit **„-heit"** od
 - Nomen auf **„-heit/-keit" sind immer feminin (die)**.
 - Sie sind **abstrakt** (Eigenschaften, keine Gegenstände).
 
+### Häufige Fehler
+- ❌ *die Möglich**heit*** → ✅ *die Möglich**keit*** (nach -lich/-ig/-bar → „-keit").
+- ❌ *das Freiheit, der Freiheit* → ✅ *die Freiheit* (immer feminin).
+
 **Beispiele:**
 - Die **Freiheit** ist ein hohes Gut.
 - Es gibt viele **Möglichkeiten**.
@@ -15766,6 +15852,10 @@ From **adjectives** you form abstract, **feminine nouns** with **"-heit"** or **
 - Nouns ending in **"-heit/-keit" are always feminine (die)**.
 - They are **abstract** (qualities, not objects).
 
+### Common mistakes
+- ❌ *die Möglich**heit*** → ✅ *die Möglich**keit*** (after -lich/-ig/-bar → "-keit").
+- ❌ *das Freiheit, der Freiheit* → ✅ *die Freiheit* (always feminine).
+
 **Examples:**
 - Die **Freiheit** ist ein hohes Gut. (Freedom is a great good.)
 - Es gibt viele **Möglichkeiten**. (There are many possibilities.)
@@ -15789,6 +15879,10 @@ From **adjectives** you form abstract, **feminine nouns** with **"-heit"** or **
 **Unutma:**
 - **„-heit/-keit" ile biten isimler her zaman dişildir (die)**.
 - **Soyutturlar** (özellikler, nesne değil).
+
+### Sık yapılan hatalar
+- ❌ *die Möglich**heit*** → ✅ *die Möglich**keit*** (-lich/-ig/-bar sonrası → „-keit").
+- ❌ *das Freiheit, der Freiheit* → ✅ *die Freiheit* (her zaman dişil).
 
 **Örnekler:**
 - Die **Freiheit** ist ein hohes Gut. (Özgürlük büyük bir değerdir.)
@@ -15820,6 +15914,76 @@ From **adjectives** you form abstract, **feminine nouns** with **"-heit"** or **
         },
         explanation: 'Adjektive + "-heit"/"-keit" = Nomen.',
       },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Suffix nimmt man nach "-lich", "-ig", "-bar"?', options: ['-keit', '-heit', '-ung', '-schaft'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nach -lich/-ig/-bar/-sam → "-keit".',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Seine ___ (freundlich) hat mich beeindruckt.' },
+        correctAnswer: { accepted: ['Freundlichkeit'] },
+        explanation: '"freundlich" + "-keit" = die Freundlichkeit.',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das Nomen von "gesund" lautet:', options: ['die Gesundheit', 'die Gesundkeit', 'das Gesund', 'der Gesunde'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"gesund" + "-heit" = die Gesundheit.',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['pünktlich', 'krank', 'dankbar'], rights: ['Krankheit', 'Dankbarkeit', 'Pünktlichkeit'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'pünktlich', right: 'Pünktlichkeit' },
+            { left: 'krank', right: 'Krankheit' },
+            { left: 'dankbar', right: 'Dankbarkeit' },
+          ],
+        },
+        explanation: '-lich/-bar → -keit; einfache Adjektive → -heit.',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Es gibt viele ___ (möglich, Plural).' },
+        correctAnswer: { accepted: ['Möglichkeiten'] },
+        explanation: '"möglich" + "-keit" + Plural: Möglichkeiten.',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Artikel haben Nomen auf "-heit/-keit"?', options: ['die', 'der', 'das', 'wechselnd'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Immer feminin → die.',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['die', 'wichtig', 'Freiheit', 'ist'] },
+        correctAnswer: { order: ['die', 'Freiheit', 'ist', 'wichtig'] },
+        explanation: 'die Freiheit ist wichtig.',
+      },
+      {
+        lessonId: b2Unit5Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Nomen mit Artikel aus 'schön'." },
+        correctAnswer: { accepted: ['die schönheit'] },
+        explanation: '"schön" + "-heit" = die Schönheit.',
+      },
     ],
   })
   await seedVocab({
@@ -15850,6 +16014,10 @@ Jeder **Infinitiv** kann zu einem **neutralen Nomen** werden. Man schreibt ihn *
 - Nach Präpositionen sehr häufig: *beim Lesen, zum Essen, vor dem Einschlafen.*
 - Sie haben **keinen Plural**.
 
+### Häufige Fehler
+- ❌ *das rauchen ist verboten* → ✅ *das **R**auchen ist verboten* (Substantiv → großschreiben).
+- ❌ *der Lesen, die Lesen* → ✅ *das Lesen* (substantivierte Infinitive sind immer neutral).
+
 **Beispiele:**
 - **Das Rauchen** ist hier verboten.
 - Beim **Lernen** höre ich gern Musik.
@@ -15870,6 +16038,10 @@ Any **infinitive** can become a **neuter noun**. You capitalize it and place the
 - Very common after prepositions: *beim Lesen, zum Essen, vor dem Einschlafen.*
 - They have **no plural**.
 
+### Common mistakes
+- ❌ *das rauchen ist verboten* → ✅ *das **R**auchen ist verboten* (a noun → capitalize it).
+- ❌ *der Lesen, die Lesen* → ✅ *das Lesen* (nominalized infinitives are always neuter).
+
 **Examples:**
 - **Das Rauchen** ist hier verboten. (Smoking is forbidden here.)
 - Beim **Lernen** höre ich gern Musik. (I like listening to music while studying.)
@@ -15889,6 +16061,10 @@ Her **mastar**, **nötr bir isme** dönüşebilir. **Büyük harfle** yazılır 
 - İsimleşmiş mastarlar **her zaman nötrdür** → tanımlık **das**.
 - Edatlardan sonra çok sık: *beim Lesen, zum Essen, vor dem Einschlafen.*
 - **Çoğulları yoktur**.
+
+### Sık yapılan hatalar
+- ❌ *das rauchen ist verboten* → ✅ *das **R**auchen ist verboten* (isim → büyük harf).
+- ❌ *der Lesen, die Lesen* → ✅ *das Lesen* (isimleşmiş mastarlar her zaman nötrdür).
 
 **Örnekler:**
 - **Das Rauchen** ist hier verboten. (Burada sigara içmek yasaktır.)
@@ -15913,6 +16089,76 @@ Her **mastar**, **nötr bir isme** dönüşebilir. **Büyük harfle** yazılır 
         data: { prompt: "Bilde das Nomen aus dem Infinitiv 'schwimmen'." },
         correctAnswer: { accepted: ['das schwimmen'] },
         explanation: '"Schwimmen" als Nomen: das Schwimmen.',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Artikel haben substantivierte Infinitive?', options: ['das', 'der', 'die', 'wechselnd'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Sie sind immer neutral → das.',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Beim ___ (lernen) höre ich gern Musik.' },
+        correctAnswer: { accepted: ['Lernen'] },
+        explanation: 'Nach "beim" steht der substantivierte Infinitiv: beim Lernen.',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist an substantivierten Infinitiven besonders?', options: ['sie haben keinen Plural', 'sie sind maskulin', 'sie werden kleingeschrieben', 'sie haben immer -s'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Substantivierte Infinitive haben keinen Plural.',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 6,
+        type: 'MATCHING',
+        data: { lefts: ['essen', 'lesen', 'warten'], rights: ['das Warten', 'das Essen', 'das Lesen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'essen', right: 'das Essen' },
+            { left: 'lesen', right: 'das Lesen' },
+            { left: 'warten', right: 'das Warten' },
+          ],
+        },
+        explanation: 'Infinitiv → das + großgeschriebener Infinitiv.',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ___ (warten) macht mich nervös.' },
+        correctAnswer: { accepted: ['Warten'] },
+        explanation: 'das Warten (substantivierter Infinitiv).',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist korrekt?', options: ['Zum Essen gehen wir ins Restaurant.', 'Zum essen gehen wir ins Restaurant.', 'Zum Essens gehen wir ins Restaurant.', 'Zu Essen gehen wir ins Restaurant.'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nach "zum" der substantivierte Infinitiv, großgeschrieben: zum Essen.',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ist', 'das', 'verboten', 'Rauchen'] },
+        correctAnswer: { order: ['das', 'Rauchen', 'ist', 'verboten'] },
+        explanation: 'das Rauchen ist verboten.',
+      },
+      {
+        lessonId: b2Unit5Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde das Nomen mit Artikel aus 'einkaufen'." },
+        correctAnswer: { accepted: ['das einkaufen'] },
+        explanation: 'Substantivierter Infinitiv: das Einkaufen.',
       },
     ],
   })
@@ -15945,6 +16191,10 @@ In Berichten, Verträgen und Amtsdeutsch wird oft **nominalisiert**: Ein Nebensa
 - In der **gesprochenen** Sprache bevorzugt man den **Verbalstil** (mit Nebensatz).
 - Häufige Nominalisierungen: *-ung, -Abschluss, -Beginn, -Ankunft.*
 
+### Häufige Fehler
+- ❌ *Wegen **das** schlechte Wetter* → ✅ *Wegen **des schlechten Wetters*** (nach „wegen" meist Genitiv).
+- ❌ *Nach **beenden** der Arbeit* → ✅ *Nach **Abschluss** der Arbeit* (Nomen, nicht Infinitiv).
+
 **Beispiele:**
 - **Nach Abschluss** des Projekts folgte eine Feier.
 - **Aufgrund** der hohen Nachfrage wurde die Produktion erhöht.
@@ -15966,6 +16216,10 @@ In reports, contracts and official German, things are often **nominalized**: a s
 - In **spoken** language, the **verbal style** (with a clause) is preferred.
 - Frequent nominalizations: *-ung, -Abschluss, -Beginn, -Ankunft.*
 
+### Common mistakes
+- ❌ *Wegen **das** schlechte Wetter* → ✅ *Wegen **des schlechten Wetters*** (after "wegen" usually the genitive).
+- ❌ *Nach **beenden** der Arbeit* → ✅ *Nach **Abschluss** der Arbeit* (a noun, not the infinitive).
+
 **Examples:**
 - **Nach Abschluss** des Projekts folgte eine Feier. (After the completion of the project there was a celebration.)
 - **Aufgrund** der hohen Nachfrage wurde die Produktion erhöht. (Due to high demand, production was increased.)
@@ -15986,6 +16240,10 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
 - Nominalstil **derli toplu ve resmidir**, ama okunması daha zordur.
 - **Konuşma** dilinde **fiilli biçim** (yan cümleli) tercih edilir.
 - Sık isimleştirmeler: *-ung, -Abschluss, -Beginn, -Ankunft.*
+
+### Sık yapılan hatalar
+- ❌ *Wegen **das** schlechte Wetter* → ✅ *Wegen **des schlechten Wetters*** („wegen" sonrası genellikle Genitiv).
+- ❌ *Nach **beenden** der Arbeit* → ✅ *Nach **Abschluss** der Arbeit* (mastar değil isim).
 
 **Örnekler:**
 - **Nach Abschluss** des Projekts folgte eine Feier. (Projenin tamamlanmasından sonra bir kutlama yapıldı.)
@@ -16010,6 +16268,76 @@ Raporlarda, sözleşmelerde ve resmi dilde sık sık **isimleştirme** yapılır
         data: { sentence: 'Die ___ (entscheiden) fiel schwer.' },
         correctAnswer: { accepted: ['Entscheidung'] },
         explanation: '"Entscheiden" + "-ung" = die Entscheidung.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Verbalstil: "Weil das Wetter schlecht war, …" → Nominalstil:', options: ['Wegen des schlechten Wetters …', 'Weil des schlechten Wetters …', 'Wegen das schlechte Wetter …', 'Ob das Wetter schlecht …'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"weil"-Satz → "wegen" + Genitiv.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 4,
+        type: 'MATCHING',
+        data: { lefts: ['nachdem abgeschlossen wurde', 'bevor man beginnt', 'weil schlecht war'], rights: ['wegen', 'nach Abschluss', 'vor Beginn'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'nachdem abgeschlossen wurde', right: 'nach Abschluss' },
+            { left: 'bevor man beginnt', right: 'vor Beginn' },
+            { left: 'weil schlecht war', right: 'wegen' },
+          ],
+        },
+        explanation: 'Verbalstil ↔ Nominalstil.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Präpositionen sind typisch für den Nominalstil?', options: ['bei, nach, vor, wegen, trotz, aufgrund', 'und, oder, aber', 'weil, dass, ob', 'sehr, ganz, viel'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Typische Präpositionen + Nomen (oft Genitiv).',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ der hohen Nachfrage wurde die Produktion erhöht. (Grund: „aufgrund")' },
+        correctAnswer: { accepted: ['Aufgrund'] },
+        explanation: '"aufgrund" + Genitiv drückt den Grund aus.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Stil ist in der gesprochenen Sprache üblicher?', options: ['der Verbalstil (mit Nebensatz)', 'der Nominalstil', 'beide gleich', 'keiner'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Gesprochen bevorzugt man den Verbalstil.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 8,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Nach ___ (beginnen → Nomen) der Sitzung kam der Chef.' },
+        correctAnswer: { accepted: ['Beginn'] },
+        explanation: 'Nomen zu "beginnen": der Beginn → nach Beginn.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['des', 'nach', 'Projekts', 'Abschluss'] },
+        correctAnswer: { order: ['nach', 'Abschluss', 'des', 'Projekts'] },
+        explanation: 'Präposition + Nomen + Genitivobjekt: nach Abschluss des Projekts.',
+      },
+      {
+        lessonId: b2Unit5Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Nominalstil bilden: 'Bevor man beginnt, …' → 'Vor ___'" },
+        correctAnswer: { accepted: ['beginn', 'vor beginn'] },
+        explanation: '"Bevor man beginnt" → vor Beginn.',
       },
     ],
   })
