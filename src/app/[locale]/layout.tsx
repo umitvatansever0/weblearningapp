@@ -28,6 +28,9 @@ export async function generateMetadata({
   const { locale } = await params
   return {
     title: TITLES[locale] ?? TITLES.en,
+    other: {
+      'google-adsense-account': 'ca-pub-1871274232514582',
+    },
   }
 }
 
