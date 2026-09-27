@@ -136,11 +136,79 @@
   },
   "legal": {
     "privacyTitle": "Gizlilik Politikası",
-    "privacyParagraphs": [
-      "Hesap oluştururken sağladığınız bilgileri (e-posta, ad, şifre) ve DeutschLernen'i kullanırken oluşan öğrenme verilerini —ders ilerlemesi, XP, seri (streak), rozetler ve kelime tekrar geçmişi dahil— topluyoruz. Bu veriler sunucularımızda saklanır ve yalnızca hizmeti sunmak ve geliştirmek için kullanılır.",
-      "Gerekli olmayan çerezleri yüklemeden önce izninizi almak için bir çerez onay banner'ı kullanıyoruz. Kabul ederseniz reklam göstermek için Google AdSense ve site kullanımını anlamak için Google Analytics yükleyebiliriz. Reddederseniz bu üçüncü taraf script'lerinden hiçbiri yüklenmez; yalnızca oturum açma gibi kesinlikle gerekli çerezler kullanılır.",
-      "İletişim sayfamızdaki bilgileri kullanarak bize ulaşıp kişisel verilerinize erişim, düzeltme veya silme talebinde her zaman bulunabilirsiniz. Ayrıca bu site için tarayıcınızın yerel depolamasını temizleyerek çerez onayınızı istediğiniz zaman geri çekebilirsiniz.",
-      "Bu politikayla ilgili sorularınız için lütfen hesap ayarlarınızda veya iletişim sayfamızda belirtilen e-posta adresinden bize ulaşın."
+    "privacyIntro": "Gizliliğinize saygı duyuyor ve kişisel bilgilerinizi korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, hangi bilgileri topladığımızı, bunları nasıl kullandığımızı ve DeutschLernen üzerinde çerezlerin ve üçüncü taraf reklam hizmetlerinin nasıl kullanılabileceğini açıklar.",
+    "privacySections": [
+      {
+        "heading": "Topladığımız Bilgiler",
+        "paragraphs": [
+          "Bir hesap oluşturduğunuzda, doğrudan bize sağladığınız e-posta adresi, ad ve şifre gibi bilgileri toplayabiliriz.",
+          "DeutschLernen'i kullanırken, ders ilerlemesi, XP, seriler (streak), rozetler, kelime tekrar geçmişi ve hizmeti kullanımınıza ilişkin diğer bilgiler dahil olmak üzere öğrenmeyle ilgili bilgileri de toplayabiliriz.",
+          "Bu bilgiler sunucularımızda saklanır ve DeutschLernen hizmetini sunmak, sürdürmek, kişiselleştirmek ve geliştirmek için kullanılır."
+        ]
+      },
+      {
+        "heading": "Çerezler ve Benzeri Teknolojiler",
+        "paragraphs": [
+          "DeutschLernen, temel web sitesi işlevselliğini sağlamak ve onay verdiğiniz durumlarda analiz ve reklamcılığı desteklemek için çerezler ve benzeri teknolojiler kullanır.",
+          "Gerekli olmayan çerezleri veya üçüncü taraf hizmetleri yüklemeden önce izninizi istemek için bir çerez onay banner'ı kullanıyoruz.",
+          "Onay mekanizmamız aracılığıyla ilgili çerezleri kabul ederseniz, Google AdSense ve Google Analytics gibi üçüncü taraf hizmetleri kullanabiliriz.",
+          "Gerekli olmayan çerezleri reddederseniz, bu üçüncü taraf hizmetleri web sitemiz aracılığıyla yüklenmez ve yalnızca oturumunuzu sürdürmek gibi temel işlevler için kesinlikle gerekli teknolojileri kullanırız."
+        ]
+      },
+      {
+        "heading": "Google AdSense ve Üçüncü Taraf Reklamcılık",
+        "paragraphs": [
+          "DeutschLernen üzerinde reklam göstermek için Google LLC tarafından sağlanan bir reklam hizmeti olan Google AdSense'i kullanabiliriz.",
+          "Google ve reklam ortakları; geçerli yasalara ve gerektiğinde kullanıcının onayına tabi olarak, reklamları sunmak, ölçmek ve kişiselleştirmek için çerezler, web işaretçileri, cihaz bilgileri, IP adresi ve benzeri teknolojileri kullanabilir.",
+          "Google dahil üçüncü taraf tedarikçiler, bir kullanıcının bu web sitesine veya diğer web sitelerine yaptığı önceki ziyaretlere dayalı olarak reklam sunmak için çerezler kullanabilir.",
+          "Kullanıcının onayına ve geçerli yasalara bağlı olarak, Google AdSense aracılığıyla gösterilen reklamlar; kullanıcının ilgi alanları, gezinme etkinliği veya reklamlarla etkileşimleri gibi bilgilere göre kişiselleştirilebilir.",
+          "Kullanıcılar, reklam tercihlerini Google'ın reklam ayarları üzerinden yönetebilir ve çerezleri tarayıcı ayarları aracılığıyla da denetleyebilir.",
+          "Google'ın hizmetlerini kullanan web sitelerinden ve uygulamalardan gelen bilgileri nasıl kullandığı hakkında daha fazla bilgi için lütfen Google'ın gizlilik ve reklamcılık belgelerine başvurun."
+        ]
+      },
+      {
+        "heading": "Google Analytics",
+        "paragraphs": [
+          "Uygun onayı vermeniz halinde, ziyaretçilerin DeutschLernen'i nasıl kullandığını anlamak ve web sitesini ve öğrenme deneyimini geliştirmek için Google Analytics'i kullanabiliriz.",
+          "Google Analytics; ziyaret edilen sayfalar, web sitesiyle etkileşimler, cihaz bilgileri, yaklaşık konum ve diğer kullanım bilgileri gibi bilgileri toplayabilir.",
+          "Google Analytics yalnızca, yasal olarak onay gerektiği durumlarda çerez onay mekanizmamız aracılığıyla ilgili onay verildiğinde yüklenir."
+        ]
+      },
+      {
+        "heading": "Çerez Tercihlerinizi Yönetme",
+        "paragraphs": [
+          "Gerekli olmayan çerezlere izin verip vermeyeceğinizi çerez onay banner'ımız aracılığıyla seçebilirsiniz.",
+          "Web sitesinde sunulan çerez veya gizlilik ayarlarını kullanarak onayınızı istediğiniz zaman geri çekebilir veya değiştirebilirsiniz. Ayrıca çerezleri tarayıcı ayarlarınız aracılığıyla silebilir veya engelleyebilirsiniz.",
+          "Kesinlikle gerekli çerezleri devre dışı bırakmanın, hesaba giriş gibi bazı temel özelliklerin düzgün çalışmasını engelleyebileceğini lütfen unutmayın."
+        ]
+      },
+      {
+        "heading": "Kişisel Veri Haklarınız",
+        "paragraphs": [
+          "İletişim sayfamızda belirtilen iletişim bilgilerini kullanarak bize ulaşarak kişisel verilerinize erişim, düzeltme veya silme talebinde her zaman bulunabilirsiniz.",
+          "Veri koruma yasası kapsamında geçerli olduğu durumlarda; işlemenin kısıtlanmasını talep etme, belirli işleme faaliyetlerine itiraz etme veya kişisel verilerinizin bir kopyasını talep etme hakkına da sahip olabilirsiniz."
+        ]
+      },
+      {
+        "heading": "Veri Güvenliği",
+        "paragraphs": [
+          "Topladığımız bilgileri yetkisiz erişime, kayba, kötüye kullanıma, değiştirilmeye veya ifşaya karşı korumak için makul teknik ve organizasyonel önlemler alıyoruz.",
+          "Ancak, İnternet üzerinden hiçbir iletim veya depolama yönteminin tamamen güvenli olduğu garanti edilemez."
+        ]
+      },
+      {
+        "heading": "Bu Gizlilik Politikasındaki Değişiklikler",
+        "paragraphs": [
+          "Hizmetlerimizdeki, teknolojilerimizdeki, yasal gerekliliklerdeki veya üçüncü taraf hizmetlerdeki değişiklikleri yansıtmak için bu Gizlilik Politikasını zaman zaman güncelleyebiliriz.",
+          "Herhangi bir değişiklik, uygun olduğunda güncellenmiş bir yürürlük tarihiyle bu sayfada yayınlanacaktır."
+        ]
+      },
+      {
+        "heading": "Bize Ulaşın",
+        "paragraphs": [
+          "Bu Gizlilik Politikası veya kişisel bilgilerinizin nasıl işlendiği hakkında sorularınız varsa, lütfen hesap ayarlarınızda veya İletişim sayfamızda belirtilen e-posta adresinden bize ulaşın."
+        ]
+      }
     ],
     "termsTitle": "Kullanım Şartları",
     "termsParagraphs": [

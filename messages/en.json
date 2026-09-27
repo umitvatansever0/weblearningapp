@@ -136,11 +136,79 @@
   },
   "legal": {
     "privacyTitle": "Privacy Policy",
-    "privacyParagraphs": [
-      "We collect the information you provide when you create an account (email, name, password) and the learning data generated while you use DeutschLernen, including lesson progress, XP, streaks, badges, and vocabulary review history. This data is stored on our servers and used solely to provide and improve the service.",
-      "We use a cookie consent banner to ask for your permission before loading any non-essential cookies. If you accept, we may load Google AdSense to show ads and Google Analytics to understand site usage. If you decline, none of these third-party scripts are loaded, and only strictly necessary cookies (such as your login session) are used.",
-      "You can request access to, correction of, or deletion of your personal data at any time by contacting us using the details on our contact page. You can also withdraw cookie consent at any time by clearing your browser's local storage for this site.",
-      "If you have questions about this policy, please contact us at the email address listed in your account settings or on our contact page."
+    "privacyIntro": "We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what information we collect, how we use it, and how cookies and third-party advertising services may be used on DeutschLernen.",
+    "privacySections": [
+      {
+        "heading": "Information We Collect",
+        "paragraphs": [
+          "When you create an account, we may collect information that you provide directly to us, including your email address, name, and password.",
+          "While you use DeutschLernen, we may also collect learning-related information, including lesson progress, XP, streaks, badges, vocabulary review history, and other information related to your use of the service.",
+          "This information is stored on our servers and is used to provide, maintain, personalize, and improve the DeutschLernen service."
+        ]
+      },
+      {
+        "heading": "Cookies and Similar Technologies",
+        "paragraphs": [
+          "DeutschLernen uses cookies and similar technologies to provide essential website functionality and, where you give consent, to support analytics and advertising.",
+          "We use a cookie consent banner to request your permission before loading non-essential cookies or third-party services.",
+          "If you accept the relevant cookies through our consent mechanism, we may use third-party services such as Google AdSense and Google Analytics.",
+          "If you decline non-essential cookies, these third-party services will not be loaded through our website, and we will only use strictly necessary technologies required for essential functions, such as maintaining your login session."
+        ]
+      },
+      {
+        "heading": "Google AdSense and Third-Party Advertising",
+        "paragraphs": [
+          "We may use Google AdSense, an advertising service provided by Google LLC, to display advertisements on DeutschLernen.",
+          "Google and its advertising partners may use cookies, web beacons, device information, IP address, and similar technologies to serve, measure, and personalize advertisements, subject to applicable laws and the user's consent where required.",
+          "Third-party vendors, including Google, may use cookies to serve advertisements based on a user's previous visits to this website or other websites.",
+          "Depending on the user's consent and applicable laws, advertisements displayed through Google AdSense may be personalized based on information such as the user's interests, browsing activity, or interactions with advertisements.",
+          "Users may manage their advertising preferences through Google's advertising settings and may also control cookies through their browser settings.",
+          "For more information about how Google uses information from websites and apps that use its services, please refer to Google's privacy and advertising documentation."
+        ]
+      },
+      {
+        "heading": "Google Analytics",
+        "paragraphs": [
+          "If you provide the appropriate consent, we may use Google Analytics to understand how visitors use DeutschLernen and to improve the website and learning experience.",
+          "Google Analytics may collect information such as pages visited, interactions with the website, device information, approximate location, and other usage information.",
+          "Google Analytics is only loaded when the applicable consent is provided through our cookie consent mechanism, where consent is required by law."
+        ]
+      },
+      {
+        "heading": "Managing Your Cookie Preferences",
+        "paragraphs": [
+          "You can choose whether to allow non-essential cookies through our cookie consent banner.",
+          "You can withdraw or change your consent at any time using the cookie or privacy settings provided on the website. You may also delete or block cookies through your browser settings.",
+          "Please note that disabling strictly necessary cookies may prevent certain essential features, such as account login, from functioning correctly."
+        ]
+      },
+      {
+        "heading": "Your Personal Data Rights",
+        "paragraphs": [
+          "You may request access to, correction of, or deletion of your personal data at any time by contacting us using the contact details provided on our Contact page.",
+          "Where applicable under data protection law, you may also have the right to request restriction of processing, object to certain processing activities, or request a copy of your personal data."
+        ]
+      },
+      {
+        "heading": "Data Security",
+        "paragraphs": [
+          "We take reasonable technical and organizational measures to protect the information we collect against unauthorized access, loss, misuse, alteration, or disclosure.",
+          "However, no method of transmission or storage over the Internet can be guaranteed to be completely secure."
+        ]
+      },
+      {
+        "heading": "Changes to This Privacy Policy",
+        "paragraphs": [
+          "We may update this Privacy Policy from time to time to reflect changes to our services, technologies, legal requirements, or third-party services.",
+          "Any changes will be posted on this page with an updated effective date where appropriate."
+        ]
+      },
+      {
+        "heading": "Contact Us",
+        "paragraphs": [
+          "If you have questions about this Privacy Policy or how your personal information is handled, please contact us using the email address listed in your account settings or on our Contact page."
+        ]
+      }
     ],
     "termsTitle": "Terms of Service",
     "termsParagraphs": [

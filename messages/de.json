@@ -136,11 +136,79 @@
   },
   "legal": {
     "privacyTitle": "Datenschutzerklärung",
-    "privacyParagraphs": [
-      "Wir erheben die Informationen, die Sie bei der Kontoerstellung angeben (E-Mail, Name, Passwort), sowie die Lerndaten, die bei der Nutzung von DeutschLernen entstehen, einschließlich Lektionsfortschritt, XP, Serien (Streaks), Abzeichen und Vokabelwiederholungsverlauf. Diese Daten werden auf unseren Servern gespeichert und ausschließlich zur Bereitstellung und Verbesserung des Dienstes verwendet.",
-      "Wir verwenden einen Cookie-Consent-Banner, um vor dem Laden nicht notwendiger Cookies Ihre Zustimmung einzuholen. Bei Zustimmung können wir Google AdSense zur Anzeige von Werbung und Google Analytics zur Nutzungsanalyse laden. Bei Ablehnung werden keine dieser Drittanbieter-Skripte geladen; es werden nur unbedingt notwendige Cookies (z. B. für Ihre Anmeldesitzung) verwendet.",
-      "Sie können jederzeit Auskunft über, Berichtigung oder Löschung Ihrer personenbezogenen Daten verlangen, indem Sie uns über die auf unserer Kontaktseite angegebenen Kontaktdaten kontaktieren. Sie können Ihre Cookie-Zustimmung außerdem jederzeit widerrufen, indem Sie den lokalen Speicher Ihres Browsers für diese Website löschen.",
-      "Bei Fragen zu dieser Richtlinie kontaktieren Sie uns bitte über die E-Mail-Adresse in Ihren Kontoeinstellungen oder auf unserer Kontaktseite."
+    "privacyIntro": "Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre personenbezogenen Daten zu schützen. Diese Datenschutzerklärung erläutert, welche Informationen wir erheben, wie wir sie verwenden und wie Cookies und Werbedienste von Drittanbietern auf DeutschLernen eingesetzt werden können.",
+    "privacySections": [
+      {
+        "heading": "Informationen, die wir erheben",
+        "paragraphs": [
+          "Wenn Sie ein Konto erstellen, können wir Informationen erheben, die Sie uns direkt zur Verfügung stellen, einschließlich Ihrer E-Mail-Adresse, Ihres Namens und Ihres Passworts.",
+          "Während Sie DeutschLernen nutzen, können wir außerdem lernbezogene Informationen erheben, darunter Lektionsfortschritt, XP, Serien (Streaks), Abzeichen, Vokabelwiederholungsverlauf und weitere Informationen im Zusammenhang mit Ihrer Nutzung des Dienstes.",
+          "Diese Informationen werden auf unseren Servern gespeichert und dienen dazu, den DeutschLernen-Dienst bereitzustellen, aufrechtzuerhalten, zu personalisieren und zu verbessern."
+        ]
+      },
+      {
+        "heading": "Cookies und ähnliche Technologien",
+        "paragraphs": [
+          "DeutschLernen verwendet Cookies und ähnliche Technologien, um wesentliche Funktionen der Website bereitzustellen und – sofern Sie Ihre Zustimmung erteilen – Analyse und Werbung zu unterstützen.",
+          "Wir verwenden einen Cookie-Consent-Banner, um vor dem Laden nicht notwendiger Cookies oder Drittanbieterdienste Ihre Zustimmung einzuholen.",
+          "Wenn Sie die entsprechenden Cookies über unseren Zustimmungsmechanismus akzeptieren, können wir Drittanbieterdienste wie Google AdSense und Google Analytics verwenden.",
+          "Wenn Sie nicht notwendige Cookies ablehnen, werden diese Drittanbieterdienste nicht über unsere Website geladen, und wir verwenden nur unbedingt notwendige Technologien, die für wesentliche Funktionen erforderlich sind, wie etwa die Aufrechterhaltung Ihrer Anmeldesitzung."
+        ]
+      },
+      {
+        "heading": "Google AdSense und Werbung von Drittanbietern",
+        "paragraphs": [
+          "Wir können Google AdSense, einen von Google LLC bereitgestellten Werbedienst, verwenden, um Werbung auf DeutschLernen anzuzeigen.",
+          "Google und seine Werbepartner können Cookies, Web Beacons, Geräteinformationen, IP-Adressen und ähnliche Technologien verwenden, um Werbung auszuliefern, zu messen und zu personalisieren, vorbehaltlich der geltenden Gesetze und – sofern erforderlich – der Zustimmung des Nutzers.",
+          "Drittanbieter, einschließlich Google, können Cookies verwenden, um Werbung auf Grundlage früherer Besuche eines Nutzers auf dieser oder anderen Websites auszuliefern.",
+          "Abhängig von der Zustimmung des Nutzers und den geltenden Gesetzen kann über Google AdSense angezeigte Werbung auf Grundlage von Informationen wie den Interessen des Nutzers, seinem Surfverhalten oder seinen Interaktionen mit Werbung personalisiert werden.",
+          "Nutzer können ihre Werbeeinstellungen über die Werbeeinstellungen von Google verwalten und Cookies auch über ihre Browsereinstellungen steuern.",
+          "Weitere Informationen darüber, wie Google Informationen von Websites und Apps verwendet, die seine Dienste nutzen, finden Sie in den Datenschutz- und Werbeunterlagen von Google."
+        ]
+      },
+      {
+        "heading": "Google Analytics",
+        "paragraphs": [
+          "Wenn Sie die entsprechende Zustimmung erteilen, können wir Google Analytics verwenden, um zu verstehen, wie Besucher DeutschLernen nutzen, und um die Website und das Lernerlebnis zu verbessern.",
+          "Google Analytics kann Informationen wie besuchte Seiten, Interaktionen mit der Website, Geräteinformationen, ungefähren Standort und andere Nutzungsinformationen erheben.",
+          "Google Analytics wird nur geladen, wenn die entsprechende Zustimmung über unseren Cookie-Consent-Mechanismus erteilt wird, sofern eine Zustimmung gesetzlich erforderlich ist."
+        ]
+      },
+      {
+        "heading": "Verwaltung Ihrer Cookie-Einstellungen",
+        "paragraphs": [
+          "Über unseren Cookie-Consent-Banner können Sie wählen, ob Sie nicht notwendige Cookies zulassen möchten.",
+          "Sie können Ihre Zustimmung jederzeit über die auf der Website bereitgestellten Cookie- oder Datenschutzeinstellungen widerrufen oder ändern. Sie können Cookies außerdem über Ihre Browsereinstellungen löschen oder blockieren.",
+          "Bitte beachten Sie, dass das Deaktivieren unbedingt notwendiger Cookies dazu führen kann, dass bestimmte wesentliche Funktionen, wie die Kontoanmeldung, nicht ordnungsgemäß funktionieren."
+        ]
+      },
+      {
+        "heading": "Ihre Rechte in Bezug auf personenbezogene Daten",
+        "paragraphs": [
+          "Sie können jederzeit Auskunft über, Berichtigung oder Löschung Ihrer personenbezogenen Daten verlangen, indem Sie uns über die auf unserer Kontaktseite angegebenen Kontaktdaten kontaktieren.",
+          "Soweit nach dem Datenschutzrecht anwendbar, haben Sie möglicherweise auch das Recht, eine Einschränkung der Verarbeitung zu verlangen, bestimmten Verarbeitungstätigkeiten zu widersprechen oder eine Kopie Ihrer personenbezogenen Daten anzufordern."
+        ]
+      },
+      {
+        "heading": "Datensicherheit",
+        "paragraphs": [
+          "Wir treffen angemessene technische und organisatorische Maßnahmen, um die von uns erhobenen Informationen vor unbefugtem Zugriff, Verlust, Missbrauch, Veränderung oder Offenlegung zu schützen.",
+          "Es kann jedoch keine Methode der Übertragung oder Speicherung über das Internet als vollständig sicher garantiert werden."
+        ]
+      },
+      {
+        "heading": "Änderungen dieser Datenschutzerklärung",
+        "paragraphs": [
+          "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, um Änderungen an unseren Diensten, Technologien, gesetzlichen Anforderungen oder Drittanbieterdiensten zu berücksichtigen.",
+          "Etwaige Änderungen werden auf dieser Seite veröffentlicht, gegebenenfalls mit einem aktualisierten Gültigkeitsdatum."
+        ]
+      },
+      {
+        "heading": "Kontakt",
+        "paragraphs": [
+          "Wenn Sie Fragen zu dieser Datenschutzerklärung oder zum Umgang mit Ihren personenbezogenen Daten haben, kontaktieren Sie uns bitte über die E-Mail-Adresse in Ihren Kontoeinstellungen oder auf unserer Kontaktseite."
+        ]
+      }
     ],
     "termsTitle": "Nutzungsbedingungen",
     "termsParagraphs": [

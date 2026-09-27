@@ -7,15 +7,19 @@ import ContactPage from '@/app/[locale]/(public)/contact/page'
 import en from '../../messages/en.json'
 
 describe('PrivacyPage', () => {
-  it('renders the privacy title and all paragraphs', () => {
+  it('renders the privacy title, intro, and all section headings and paragraphs', () => {
     render(
       <NextIntlClientProvider locale="en" messages={en}>
         <PrivacyPage />
       </NextIntlClientProvider>
     )
     expect(screen.getByText(en.legal.privacyTitle)).toBeInTheDocument()
-    en.legal.privacyParagraphs.forEach((paragraph) => {
-      expect(screen.getByText(paragraph)).toBeInTheDocument()
+    expect(screen.getByText(en.legal.privacyIntro)).toBeInTheDocument()
+    en.legal.privacySections.forEach((section) => {
+      expect(screen.getByText(section.heading)).toBeInTheDocument()
+      section.paragraphs.forEach((paragraph) => {
+        expect(screen.getByText(paragraph)).toBeInTheDocument()
+      })
     })
   })
 })
