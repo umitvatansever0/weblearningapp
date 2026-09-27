@@ -152,13 +152,13 @@
   },
   "contact": {
     "title": "Kontakt & Impressum",
-    "intro": "Diese Seite weist den Betreiber von DeutschLernen gemäß gesetzlicher Vorgaben aus und erklärt, wie Sie uns für Support- oder Datenschutzanfragen erreichen. Die folgenden Angaben sind Platzhalter und müssen vor der Veröffentlichung dieser Website durch die tatsächlichen Betreiberdaten ersetzt werden.",
+    "intro": "Diese Seite weist den Betreiber von DeutschLernen gemäß gesetzlicher Vorgaben aus und erklärt, wie Sie uns für Support- oder Datenschutzanfragen erreichen.",
     "fields": [
-      { "label": "Betreiber", "value": "[VOLLSTÄNDIGER NAME ODER FIRMENNAME]" },
-      { "label": "Anschrift", "value": "[STRASSE UND HAUSNUMMER], [POSTLEITZAHL] [ORT], [LAND]" },
-      { "label": "E-Mail", "value": "[KONTAKT-E-MAIL-ADRESSE]" },
-      { "label": "Telefon", "value": "[TELEFONNUMMER] (optional)" },
-      { "label": "USt-IdNr.", "value": "[UMSATZSTEUER-IDENTIFIKATIONSNUMMER, FALLS ZUTREFFEND]" }
+      { "label": "Betreiber", "value": "Yumit Vatansever" },
+      { "label": "Anschrift", "value": "Charlottenweg 9, Neuhausen, Schweiz" },
+      { "label": "E-Mail", "value": "umitvatansever0@gmail.com" },
+      { "label": "Telefon", "value": "+41 77 280 66 82" },
+      { "label": "USt-IdNr.", "value": "N/A" }
     ],
     "note": "Für Anfragen zu Zugriff auf, Berichtigung oder Löschung Ihrer personenbezogenen Daten nutzen Sie bitte die oben genannte E-Mail-Adresse."
   }

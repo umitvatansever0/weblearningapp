@@ -152,13 +152,13 @@
   },
   "contact": {
     "title": "İletişim ve Yasal Bildirim (Impressum)",
-    "intro": "Bu sayfa, yasal gereklilikler doğrultusunda DeutschLernen'in işletmecisini tanımlar ve destek veya veri koruma talepleri için bize nasıl ulaşabileceğinizi açıklar. Aşağıdaki bilgiler yer tutucudur ve bu site yayınlanmadan önce gerçek işletmeci bilgileriyle değiştirilmelidir.",
+    "intro": "Bu sayfa, yasal gereklilikler doğrultusunda DeutschLernen'in işletmecisini tanımlar ve destek veya veri koruma talepleri için bize nasıl ulaşabileceğinizi açıklar.",
     "fields": [
-      { "label": "İşletmeci", "value": "[TAM AD VEYA ŞİRKET ADI]" },
-      { "label": "Adres", "value": "[SOKAK VE NUMARA], [POSTA KODU] [ŞEHİR], [ÜLKE]" },
-      { "label": "E-posta", "value": "[İLETİŞİM E-POSTA ADRESİ]" },
-      { "label": "Telefon", "value": "[TELEFON NUMARASI] (isteğe bağlı)" },
-      { "label": "Vergi Kimlik No.", "value": "[VERGİ KİMLİK NUMARASI, VARSA]" }
+      { "label": "İşletmeci", "value": "Yumit Vatansever" },
+      { "label": "Adres", "value": "Charlottenweg 9, Neuhausen, İsviçre" },
+      { "label": "E-posta", "value": "umitvatansever0@gmail.com" },
+      { "label": "Telefon", "value": "+41 77 280 66 82" },
+      { "label": "Vergi Kimlik No.", "value": "Yok (n/a)" }
     ],
     "note": "Kişisel verilerinize erişim, düzeltme veya silme talepleri için lütfen yukarıdaki e-posta adresini kullanın."
   }

@@ -152,13 +152,13 @@
   },
   "contact": {
     "title": "Contact & Legal Notice (Impressum)",
-    "intro": "This page identifies the operator of DeutschLernen, as required by law, and explains how to reach us for support or data-protection requests. The details below are placeholders and must be replaced with the real operator's information before this site is published.",
+    "intro": "This page identifies the operator of DeutschLernen, as required by law, and explains how to reach us for support or data-protection requests.",
     "fields": [
-      { "label": "Operator", "value": "[FULL NAME OR COMPANY NAME]" },
-      { "label": "Address", "value": "[STREET AND HOUSE NUMBER], [POSTAL CODE] [CITY], [COUNTRY]" },
-      { "label": "Email", "value": "[CONTACT EMAIL ADDRESS]" },
-      { "label": "Phone", "value": "[PHONE NUMBER] (optional)" },
-      { "label": "VAT ID", "value": "[VAT IDENTIFICATION NUMBER, IF APPLICABLE]" }
+      { "label": "Operator", "value": "Yumit Vatansever" },
+      { "label": "Address", "value": "Charlottenweg 9, Neuhausen, Switzerland" },
+      { "label": "Email", "value": "umitvatansever0@gmail.com" },
+      { "label": "Phone", "value": "+41 77 280 66 82" },
+      { "label": "VAT ID", "value": "N/A" }
     ],
     "note": "For requests regarding access to, correction of, or deletion of your personal data, please use the email address above."
   }
