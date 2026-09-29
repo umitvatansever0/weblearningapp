@@ -104,46 +104,91 @@ async function main() {
       grammarTopic: 'Begrüßungsformen',
       explanationDe: `## Begrüßungsformen
 
-Im Deutschen begrüßt man sich je nach Tageszeit. Die höfliche Form beginnt mit „Guten …", informell sagt man einfach „Hallo".
+Im Deutschen begrüßt man sich je nach **Tageszeit** und je nachdem, ob die Situation **formell** (höflich, mit Fremden) oder **informell** (mit Freunden und Familie) ist. Die höfliche Form beginnt mit „Guten …", informell sagt man einfach „Hallo".
 
-| Tageszeit | Begrüßung |
-| --------- | --------- |
-| morgens | Guten Morgen |
-| tagsüber | Guten Tag |
-| abends | Guten Abend |
-| jederzeit (informell) | Hallo |
+| Tageszeit | Begrüßung (formell) | informell |
+| --------- | --------- | --------- |
+| morgens (bis ca. 10 Uhr) | Guten Morgen | Morgen! |
+| tagsüber | Guten Tag | Hallo |
+| abends (ab ca. 18 Uhr) | Guten Abend | Hallo / Hi |
+| beim Schlafengehen | Gute Nacht | — |
 
-**Beispiele:** **Guten Morgen**, Frau Meier! · **Hallo**, wie geht's?
+**Regional:** Im Süden hört man oft **Grüß Gott** oder **Servus**, im Norden **Moin**.
 
-Zum Abschied sagt man **Auf Wiedersehen** (formell) oder **Tschüss** (informell).`,
+### Nach dem Befinden fragen
+- **Wie geht es Ihnen?** (formell) → Danke, gut. Und Ihnen?
+- **Wie geht's?** (informell) → Danke, gut. Und dir?
+
+### Abschied
+| formell | informell |
+| ---- | ---- |
+| Auf Wiedersehen | Tschüss |
+| Bis bald | Bis dann / Ciao |
+
+### Häufige Fehler
+- ❌ *Gute Morgen* → ✅ **Guten** Morgen (der Morgen → „Guten").
+- ❌ *Gute Tag* → ✅ **Guten** Tag.
+- ✅ Aber: **Gute** Nacht (die Nacht → „Gute").
+
+**Beispiele:** **Guten Morgen**, Frau Meier! · **Hallo**, wie geht's? · **Auf Wiedersehen**, bis morgen!`,
       explanationEn: `## Greetings
 
-In German you greet people differently depending on the time of day. The polite form starts with "Guten …", while informally you just say "Hallo".
+In German you greet people differently depending on the **time of day** and on whether the situation is **formal** (polite, with strangers) or **informal** (with friends and family). The polite form starts with "Guten …", while informally you just say "Hallo".
 
-| Time of day | Greeting |
-| ----------- | -------- |
-| morning | Guten Morgen |
-| daytime | Guten Tag |
-| evening | Guten Abend |
-| any time (informal) | Hallo |
+| Time of day | Greeting (formal) | informal |
+| ----------- | -------- | -------- |
+| morning (until ~10 am) | Guten Morgen | Morgen! |
+| daytime | Guten Tag | Hallo |
+| evening (from ~6 pm) | Guten Abend | Hallo / Hi |
+| going to bed | Gute Nacht | — |
 
-**Examples:** **Guten Morgen**, Frau Meier! (Good morning, Mrs Meier!) · **Hallo**, wie geht's? (Hi, how are you?)
+**Regional:** In the south you often hear **Grüß Gott** or **Servus**, in the north **Moin**.
 
-To say goodbye, use **Auf Wiedersehen** (formal) or **Tschüss** (informal).`,
+### Asking how someone is
+- **Wie geht es Ihnen?** (formal) → Danke, gut. Und Ihnen? (Thanks, fine. And you?)
+- **Wie geht's?** (informal) → Danke, gut. Und dir?
+
+### Saying goodbye
+| formal | informal |
+| ---- | ---- |
+| Auf Wiedersehen | Tschüss |
+| Bis bald (see you soon) | Bis dann / Ciao |
+
+### Common mistakes
+- ❌ *Gute Morgen* → ✅ **Guten** Morgen (der Morgen is masculine → "Guten").
+- ❌ *Gute Tag* → ✅ **Guten** Tag.
+- ✅ But: **Gute** Nacht (die Nacht is feminine → "Gute").
+
+**Examples:** **Guten Morgen**, Frau Meier! · **Hallo**, wie geht's? · **Auf Wiedersehen**, bis morgen! (Goodbye, see you tomorrow!)`,
       explanationTr: `## Selamlaşma biçimleri
 
-Almancada günün saatine göre farklı selamlaşırsın. Kibar biçim „Guten …" ile başlar, samimi biçimde ise sadece „Hallo" dersin.
+Almancada **günün saatine** ve durumun **resmi** (kibar, yabancılarla) mı yoksa **samimi** (arkadaş ve aileyle) mi olduğuna göre farklı selamlaşırsın. Kibar biçim „Guten …" ile başlar, samimi biçimde ise sadece „Hallo" dersin.
 
-| Günün saati | Selamlaşma |
-| ----------- | ---------- |
-| sabah | Guten Morgen |
-| gündüz | Guten Tag |
-| akşam | Guten Abend |
-| her zaman (samimi) | Hallo |
+| Günün saati | Selamlaşma (resmi) | samimi |
+| ----------- | ---------- | ---------- |
+| sabah (~10'a kadar) | Guten Morgen | Morgen! |
+| gündüz | Guten Tag | Hallo |
+| akşam (~18'den sonra) | Guten Abend | Hallo / Hi |
+| yatarken | Gute Nacht | — |
 
-**Örnekler:** **Guten Morgen**, Frau Meier! (Günaydın, Meier Hanım!) · **Hallo**, wie geht's? (Selam, nasılsın?)
+**Bölgesel:** Güneyde sık sık **Grüß Gott** ya da **Servus**, kuzeyde **Moin** duyarsın.
 
-Vedalaşırken **Auf Wiedersehen** (resmi) ya da **Tschüss** (samimi) dersin.`,
+### Hatır sorma
+- **Wie geht es Ihnen?** (resmi) → Danke, gut. Und Ihnen? (Teşekkürler, iyiyim. Ya siz?)
+- **Wie geht's?** (samimi) → Danke, gut. Und dir?
+
+### Vedalaşma
+| resmi | samimi |
+| ---- | ---- |
+| Auf Wiedersehen | Tschüss |
+| Bis bald (yakında görüşürüz) | Bis dann / Ciao |
+
+### Sık yapılan hatalar
+- ❌ *Gute Morgen* → ✅ **Guten** Morgen (der Morgen eril → „Guten").
+- ❌ *Gute Tag* → ✅ **Guten** Tag.
+- ✅ Ama: **Gute** Nacht (die Nacht dişil → „Gute").
+
+**Örnekler:** **Guten Morgen**, Frau Meier! · **Hallo**, wie geht's? · **Auf Wiedersehen**, bis morgen! (Hoşça kal, yarın görüşürüz!)`,
     },
   })
 
@@ -164,6 +209,79 @@ Vedalaşırken **Auf Wiedersehen** (resmi) ya da **Tschüss** (samimi) dersin.`,
         data: { sentence: '___ Tag! Wie geht es Ihnen?' },
         correctAnswer: { accepted: ['guten'] },
         explanation: '"Guten Tag" ist die formelle Begrüßung tagsüber.',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was sagt man am Abend?', options: ['Guten Morgen', 'Guten Tag', 'Guten Abend', 'Guten Mittag'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Ab ca. 18 Uhr sagt man "Guten Abend".',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Nacht! Ich gehe jetzt schlafen. (die Nacht)' },
+        correctAnswer: { accepted: ['gute'] },
+        explanation: '"die Nacht" ist feminin → "Gute Nacht" (nicht "Guten").',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: {
+          lefts: ['Guten Morgen', 'Guten Abend', 'Auf Wiedersehen'],
+          rights: ['Abschied (formell)', 'am Abend', 'am Morgen'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'Guten Morgen', right: 'am Morgen' },
+            { left: 'Guten Abend', right: 'am Abend' },
+            { left: 'Auf Wiedersehen', right: 'Abschied (formell)' },
+          ],
+        },
+        explanation: 'Begrüßungen und Abschied den passenden Situationen zuordnen.',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie verabschiedet man sich formell?', options: ['Tschüss', 'Auf Wiedersehen', 'Hallo', 'Moin'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Auf Wiedersehen" ist der formelle Abschied; "Tschüss" ist informell.',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Informeller Abschied unter Freunden: ___!' },
+        correctAnswer: { accepted: ['tschüss', 'ciao', 'bis dann', 'bis bald'] },
+        explanation: '"Tschüss" (auch "Ciao", "Bis dann") ist ein informeller Abschied.',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Begrüßung ist informell?', options: ['Guten Tag', 'Hallo', 'Guten Abend', 'Auf Wiedersehen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Hallo" benutzt man informell zu jeder Tageszeit.',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Morgen', 'Frau', 'Guten', 'Meier'] },
+        correctAnswer: { order: ['Guten', 'Morgen', 'Frau', 'Meier'] },
+        explanation: 'Höfliche Begrüßung mit Namen: "Guten Morgen, Frau Meier".',
+      },
+      {
+        lessonId: a1Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie fragt man formell nach dem Befinden? (Wie geht es ...?)" },
+        correctAnswer: { accepted: ['wie geht es ihnen', 'wie geht es ihnen?'] },
+        explanation: 'Formell: "Wie geht es Ihnen?" – informell: "Wie geht es dir?"',
       },
     ],
   })
@@ -188,7 +306,21 @@ Vedalaşırken **Auf Wiedersehen** (resmi) ya da **Tschüss** (samimi) dersin.`,
 
 **Beispiele:** Ich **bin** Anna. · Wir **sind** müde.
 
-Man benutzt „sein", um sich vorzustellen und Zustände zu beschreiben: Ich **bin** Lehrer.`,
+Man benutzt „sein", um sich vorzustellen und Zustände zu beschreiben: Ich **bin** Lehrer.
+
+### Verneinung
+Mit **nicht** verneint man: Ich **bin nicht** müde. · Das **ist nicht** richtig.
+
+### Fragen
+- **Ja/Nein-Frage:** Verb zuerst → **Bist** du müde? · **Ist** er Lehrer?
+- **W-Frage:** W-Wort + Verb → **Wer bist** du? · **Wie** alt **bist** du?
+
+### Häufige Fehler
+- ❌ *Ich bist* → ✅ Ich **bin**.
+- ❌ *Du bin* → ✅ Du **bist**.
+- ❌ *Wir ist* → ✅ Wir **sind**.
+
+**Weitere Beispiele:** Du **bist** nett. · Ihr **seid** Studenten. · Die Kinder **sind** klein.`,
       explanationEn: `## The verb "sein" (to be)
 
 "sein" is irregular and one of the most important German verbs. Here are its present-tense forms:
@@ -204,7 +336,21 @@ Man benutzt „sein", um sich vorzustellen und Zustände zu beschreiben: Ich **b
 
 **Examples:** Ich **bin** Anna. (I am Anna.) · Wir **sind** müde. (We are tired.)
 
-Use "sein" to introduce yourself and describe states: Ich **bin** Lehrer. (I am a teacher.)`,
+Use "sein" to introduce yourself and describe states: Ich **bin** Lehrer. (I am a teacher.)
+
+### Negation
+Use **nicht** to negate: Ich **bin nicht** müde. (I'm not tired.) · Das **ist nicht** richtig. (That's not right.)
+
+### Questions
+- **Yes/no question:** verb first → **Bist** du müde? · **Ist** er Lehrer?
+- **W-question:** question word + verb → **Wer bist** du? (Who are you?) · **Wie** alt **bist** du? (How old are you?)
+
+### Common mistakes
+- ❌ *Ich bist* → ✅ Ich **bin**.
+- ❌ *Du bin* → ✅ Du **bist**.
+- ❌ *Wir ist* → ✅ Wir **sind**.
+
+**More examples:** Du **bist** nett. · Ihr **seid** Studenten. · Die Kinder **sind** klein.`,
       explanationTr: `## „sein" fiili (olmak)
 
 „sein" düzensiz bir fiildir ve Almancanın en önemli fiillerinden biridir. Geniş zaman çekimi şöyledir:
@@ -220,7 +366,21 @@ Use "sein" to introduce yourself and describe states: Ich **bin** Lehrer. (I am 
 
 **Örnekler:** Ich **bin** Anna. (Ben Anna'yım.) · Wir **sind** müde. (Biz yorgunuz.)
 
-„sein" fiilini kendini tanıtmak ve durum belirtmek için kullanırsın: Ich **bin** Lehrer. (Ben öğretmenim.)`,
+„sein" fiilini kendini tanıtmak ve durum belirtmek için kullanırsın: Ich **bin** Lehrer. (Ben öğretmenim.)
+
+### Olumsuzluk
+**nicht** ile olumsuz yaparsın: Ich **bin nicht** müde. (Yorgun değilim.) · Das **ist nicht** richtig. (Bu doğru değil.)
+
+### Sorular
+- **Evet/Hayır sorusu:** önce fiil → **Bist** du müde? · **Ist** er Lehrer?
+- **W-sorusu:** soru sözcüğü + fiil → **Wer bist** du? (Sen kimsin?) · **Wie** alt **bist** du? (Kaç yaşındasın?)
+
+### Sık yapılan hatalar
+- ❌ *Ich bist* → ✅ Ich **bin**.
+- ❌ *Du bin* → ✅ Du **bist**.
+- ❌ *Wir ist* → ✅ Wir **sind**.
+
+**Diğer örnekler:** Du **bist** nett. (Naziksin.) · Ihr **seid** Studenten. (Siz öğrencisiniz.) · Die Kinder **sind** klein. (Çocuklar küçük.)`,
     },
   })
 
@@ -259,6 +419,71 @@ Use "sein" to introduce yourself and describe states: Ich **bin** Lehrer. (I am 
         },
         explanation: 'Das sind die Präsensformen von "sein" für ich, du, er/sie/es.',
       },
+      {
+        lessonId: a1Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir ___ müde. (sein)' },
+        correctAnswer: { accepted: ['sind'] },
+        explanation: 'Mit "wir" benutzt man "sind".',
+      },
+      {
+        lessonId: a1Lesson2.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ihr ___ Studenten.', options: ['seid', 'sind', 'seit', 'bist'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ihr" benutzt man "seid" (nicht "seit" – das ist eine Präposition).',
+      },
+      {
+        lessonId: a1Lesson2.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Du ___ sehr nett. (sein)' },
+        correctAnswer: { accepted: ['bist'] },
+        explanation: 'Mit "du" benutzt man "bist".',
+      },
+      {
+        lessonId: a1Lesson2.id,
+        order: 7,
+        type: 'MATCHING',
+        data: {
+          lefts: ['ich', 'wir', 'ihr'],
+          rights: ['seid', 'sind', 'bin'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'bin' },
+            { left: 'wir', right: 'sind' },
+            { left: 'ihr', right: 'seid' },
+          ],
+        },
+        explanation: 'ich → bin, wir → sind, ihr → seid.',
+      },
+      {
+        lessonId: a1Lesson2.id,
+        order: 8,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bist', 'du', 'müde'] },
+        correctAnswer: { order: ['du', 'bist', 'müde'] },
+        explanation: 'Aussagesatz: Subjekt + Verb + Rest → "Du bist müde".',
+      },
+      {
+        lessonId: a1Lesson2.id,
+        order: 9,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Verneinung: Ich ___ nicht müde.', options: ['bin', 'bist', 'ist', 'seid'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Die Verneinung ändert das Verb nicht: "Ich bin nicht müde".',
+      },
+      {
+        lessonId: a1Lesson2.id,
+        order: 10,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ du müde? (Frage mit "sein", du)' },
+        correctAnswer: { accepted: ['bist'] },
+        explanation: 'Ja/Nein-Frage: Verb zuerst → "Bist du müde?".',
+      },
     ],
   })
 
@@ -284,7 +509,18 @@ Das sind die Grundzahlen von 1 bis 10. Du brauchst sie zum Zählen, für Telefon
 | 9 | neun |
 | 10 | zehn |
 
-**Beispiel:** Ich habe **zwei** Katzen und **drei** Hunde.`,
+**Beispiel:** Ich habe **zwei** Katzen und **drei** Hunde.
+
+### Wichtig
+- **0** heißt **null**.
+- Am Telefon sagt man „zwo" statt „zwei", damit man es nicht mit „drei" verwechselt.
+- Frage nach der Menge: **Wie viele** …? → **Wie viele** Hunde hast du?
+
+### Häufige Fehler
+- ❌ *ein* Katze zum Zählen → beim Zählen sagt man **eins** (ein/eine nur vor einem Nomen: **eine** Katze).
+- Verwechsle nicht **zwei** (2) und **drei** (3).
+
+**Weitere Beispiele:** Ich habe **fünf** Euro. · Wir sind **vier** Personen. · Das kostet **zehn** Euro.`,
       explanationEn: `## Numbers 1–10
 
 These are the cardinal numbers from 1 to 10. You need them for counting, phone numbers and prices.
@@ -302,7 +538,18 @@ These are the cardinal numbers from 1 to 10. You need them for counting, phone n
 | 9 | neun |
 | 10 | zehn |
 
-**Example:** Ich habe **zwei** Katzen und **drei** Hunde. (I have two cats and three dogs.)`,
+**Example:** Ich habe **zwei** Katzen und **drei** Hunde. (I have two cats and three dogs.)
+
+### Important
+- **0** is **null**.
+- On the phone Germans say "zwo" instead of "zwei" so it isn't confused with "drei".
+- Asking about quantity: **Wie viele** …? (How many …?) → **Wie viele** Hunde hast du?
+
+### Common mistakes
+- When counting, say **eins**; use *ein/eine* only before a noun (**eine** Katze = one cat).
+- Don't mix up **zwei** (2) and **drei** (3).
+
+**More examples:** Ich habe **fünf** Euro. · Wir sind **vier** Personen. (There are four of us.) · Das kostet **zehn** Euro. (That costs ten euros.)`,
       explanationTr: `## Sayılar 1–10
 
 Bunlar 1'den 10'a kadar olan sayı adlarıdır. Saymak, telefon numaraları ve fiyatlar için gereklidir.
@@ -320,7 +567,18 @@ Bunlar 1'den 10'a kadar olan sayı adlarıdır. Saymak, telefon numaraları ve f
 | 9 | neun |
 | 10 | zehn |
 
-**Örnek:** Ich habe **zwei** Katzen und **drei** Hunde. (İki kedim ve üç köpeğim var.)`,
+**Örnek:** Ich habe **zwei** Katzen und **drei** Hunde. (İki kedim ve üç köpeğim var.)
+
+### Önemli
+- **0** = **null**.
+- Telefonda „drei" ile karışmasın diye „zwei" yerine „zwo" denir.
+- Miktar sorusu: **Wie viele** …? (Kaç tane …?) → **Wie viele** Hunde hast du?
+
+### Sık yapılan hatalar
+- Sayarken **eins** denir; *ein/eine* yalnızca bir isimden önce kullanılır (**eine** Katze = bir kedi).
+- **zwei** (2) ile **drei** (3) karıştırma.
+
+**Diğer örnekler:** Ich habe **fünf** Euro. (Beş avrom var.) · Wir sind **vier** Personen. (Dört kişiyiz.) · Das kostet **zehn** Euro. (Bu on avro.)`,
     },
   })
 
@@ -342,6 +600,79 @@ Bunlar 1'den 10'a kadar olan sayı adlarıdır. Saymak, telefon numaraları ve f
         correctAnswer: { accepted: ['fünf'] },
         explanation: 'Nach vier kommt fünf.',
       },
+      {
+        lessonId: a1Lesson3.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Zahl ist "sieben"?', options: ['6', '7', '8', '9'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"sieben" = 7.',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Zahl 8 heißt ___.' },
+        correctAnswer: { accepted: ['acht'] },
+        explanation: '8 = acht.',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: {
+          lefts: ['drei', 'sechs', 'neun'],
+          rights: ['9', '3', '6'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'drei', right: '3' },
+            { left: 'sechs', right: '6' },
+            { left: 'neun', right: '9' },
+          ],
+        },
+        explanation: 'drei = 3, sechs = 6, neun = 9.',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie heißt die 0?', options: ['null', 'nein', 'nichts', 'neun'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '0 = null.',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        order: 7,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['sechs', 'fünf', 'sieben'] },
+        correctAnswer: { order: ['fünf', 'sechs', 'sieben'] },
+        explanation: 'Richtige Reihenfolge: fünf (5), sechs (6), sieben (7).',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        order: 8,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Vor "zehn" kommt ___.' },
+        correctAnswer: { accepted: ['neun'] },
+        explanation: 'Vor 10 kommt 9 (neun).',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        order: 9,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie viele sind "zwei + drei"?', options: ['vier', 'fünf', 'sechs', 'sieben'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '2 + 3 = 5 (fünf).',
+      },
+      {
+        lessonId: a1Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Schreibe die Zahl 10 als Wort.' },
+        correctAnswer: { accepted: ['zehn'] },
+        explanation: '10 = zehn.',
+      },
     ],
   })
 
@@ -359,7 +690,18 @@ Um zu sagen, woher du kommst, benutzt du **kommen aus** + Land. Um zu sagen, wo 
 | Woher kommst du? | Ich komme **aus** Deutschland. |
 | Wo wohnst du? | Ich wohne **in** Berlin. |
 
-**Beispiel:** Ich **komme aus** der Türkei und **wohne in** München.`,
+**Beispiel:** Ich **komme aus** der Türkei und **wohne in** München.
+
+### Länder mit Artikel
+Die meisten Länder haben keinen Artikel (aus **Deutschland**, aus **Spanien**). Einige aber schon: aus **der** Türkei, aus **der** Schweiz, aus **den** USA.
+
+### Sich vollständig vorstellen
+> Hallo! Ich **heiße** Ali. Ich **komme aus** der Türkei und **wohne in** Berlin. Ich **bin** 25 Jahre alt.
+
+### Häufige Fehler
+- ❌ *Ich komme von Deutschland* → ✅ Ich komme **aus** Deutschland.
+- ❌ *Ich wohne in die Türkei* → ✅ Ich wohne **in der** Türkei.
+- ❌ *Ich komme aus Türkei* → ✅ Ich komme aus **der** Türkei.`,
       explanationEn: `## Introducing yourself: origin and place of residence
 
 To say where you come from, use **kommen aus** + country. To say where you live, use **wohnen in** + city.
@@ -369,7 +711,18 @@ To say where you come from, use **kommen aus** + country. To say where you live,
 | Woher kommst du? (Where are you from?) | Ich komme **aus** Deutschland. |
 | Wo wohnst du? (Where do you live?) | Ich wohne **in** Berlin. |
 
-**Example:** Ich **komme aus** der Türkei und **wohne in** München. (I come from Turkey and live in Munich.)`,
+**Example:** Ich **komme aus** der Türkei und **wohne in** München. (I come from Turkey and live in Munich.)
+
+### Countries with an article
+Most countries take no article (aus **Deutschland**, aus **Spanien**). But some do: aus **der** Türkei, aus **der** Schweiz, aus **den** USA.
+
+### Introducing yourself fully
+> Hallo! Ich **heiße** Ali. Ich **komme aus** der Türkei und **wohne in** Berlin. Ich **bin** 25 Jahre alt. (Hi! My name is Ali. I'm from Turkey and live in Berlin. I'm 25 years old.)
+
+### Common mistakes
+- ❌ *Ich komme von Deutschland* → ✅ Ich komme **aus** Deutschland.
+- ❌ *Ich wohne in die Türkei* → ✅ Ich wohne **in der** Türkei.
+- ❌ *Ich komme aus Türkei* → ✅ Ich komme aus **der** Türkei.`,
       explanationTr: `## Kendini tanıtma: memleket ve yaşanılan yer
 
 Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede yaşadığını söylemek için **wohnen in** + şehir kullanırsın.
@@ -379,7 +732,18 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
 | Woher kommst du? (Nerelisin?) | Ich komme **aus** Deutschland. |
 | Wo wohnst du? (Nerede yaşıyorsun?) | Ich wohne **in** Berlin. |
 
-**Örnek:** Ich **komme aus** der Türkei und **wohne in** München. (Türkiye'den geliyorum ve Münih'te yaşıyorum.)`,
+**Örnek:** Ich **komme aus** der Türkei und **wohne in** München. (Türkiye'den geliyorum ve Münih'te yaşıyorum.)
+
+### Tanımlıklı ülkeler
+Çoğu ülke tanımlıksızdır (aus **Deutschland**, aus **Spanien**). Ama bazıları tanımlık alır: aus **der** Türkei, aus **der** Schweiz, aus **den** USA.
+
+### Kendini tam olarak tanıtma
+> Hallo! Ich **heiße** Ali. Ich **komme aus** der Türkei und **wohne in** Berlin. Ich **bin** 25 Jahre alt. (Merhaba! Adım Ali. Türkiye'den geliyorum ve Berlin'de yaşıyorum. 25 yaşındayım.)
+
+### Sık yapılan hatalar
+- ❌ *Ich komme von Deutschland* → ✅ Ich komme **aus** Deutschland.
+- ❌ *Ich wohne in die Türkei* → ✅ Ich wohne **in der** Türkei.
+- ❌ *Ich komme aus Türkei* → ✅ Ich komme aus **der** Türkei.`,
     },
   })
 
@@ -400,6 +764,79 @@ Nereden geldiğini söylemek için **kommen aus** + ülke kullanırsın. Nerede 
         data: { sentence: 'Ich wohne ___ Berlin.' },
         correctAnswer: { accepted: ['in'] },
         explanation: '"Wohnen" + "in" + Stadt.',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Woher kommst du? – Ich komme ___ Deutschland.' },
+        correctAnswer: { accepted: ['aus'] },
+        explanation: 'Herkunft: "kommen aus" + Land.',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Frage passt zu "Ich wohne in Berlin"?', options: ['Woher kommst du?', 'Wo wohnst du?', 'Wie heißt du?', 'Wie alt bist du?'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Wo wohnst du?" fragt nach dem Wohnort.',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: {
+          lefts: ['Woher kommst du?', 'Wo wohnst du?', 'Wie heißt du?'],
+          rights: ['Ich wohne in Wien.', 'Ich heiße Lena.', 'Ich komme aus Italien.'],
+        },
+        correctAnswer: {
+          pairs: [
+            { left: 'Woher kommst du?', right: 'Ich komme aus Italien.' },
+            { left: 'Wo wohnst du?', right: 'Ich wohne in Wien.' },
+            { left: 'Wie heißt du?', right: 'Ich heiße Lena.' },
+          ],
+        },
+        explanation: 'Frage und passende Antwort zuordnen.',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich komme aus ___ Türkei. (Artikel!)' },
+        correctAnswer: { accepted: ['der'] },
+        explanation: 'Die Türkei braucht den Artikel: "aus der Türkei".',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich komme von Spanien.', 'Ich komme aus Spanien.', 'Ich komme in Spanien.', 'Ich komme zu Spanien.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Herkunft immer mit "aus": "Ich komme aus Spanien".',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 8,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['komme', 'ich', 'Deutschland', 'aus'] },
+        correctAnswer: { order: ['ich', 'komme', 'aus', 'Deutschland'] },
+        explanation: 'Subjekt + Verb + Präposition + Land: "Ich komme aus Deutschland".',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 9,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ kommst du? – Aus Frankreich. (Frage nach Herkunft)' },
+        correctAnswer: { accepted: ['woher'] },
+        explanation: '"Woher" fragt nach der Herkunft.',
+      },
+      {
+        lessonId: a1Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie sagt man: "I live in Hamburg"? (Ich ...)' },
+        correctAnswer: { accepted: ['ich wohne in hamburg', 'ich wohne in hamburg.'] },
+        explanation: '"wohnen in" + Stadt: "Ich wohne in Hamburg".',
       },
     ],
   })
@@ -445,7 +882,17 @@ Jedes deutsche Nomen hat ein Genus. Der bestimmte Artikel („the") zeigt dieses
 
 **Beispiel:** **Der** Mann ist groß. **Die** Frau liest. **Das** Kind spielt.
 
-Lerne jedes neue Nomen immer zusammen mit seinem Artikel.`,
+Lerne jedes neue Nomen immer zusammen mit seinem Artikel.
+
+### Kleine Hilfen beim Genus
+- **der**: oft männliche Personen, Tage, Monate (der Vater, der Montag).
+- **die**: oft weibliche Personen, Wörter auf **-ung, -heit, -keit** (die Zeitung, die Freiheit).
+- **das**: oft Verkleinerungen auf **-chen/-lein** (das Mädchen, das Brötchen).
+
+### Häufige Fehler
+- ❌ *die Mann* → ✅ **der** Mann.
+- ❌ *der Frau* → ✅ **die** Frau.
+- ❌ *der Mädchen* → ✅ **das** Mädchen (trotz Bedeutung „Mädchen" → neutral wegen **-chen**).`,
       explanationEn: `## The definite article (der/die/das)
 
 Every German noun has a gender. The definite article ("the") shows this gender:
@@ -458,7 +905,17 @@ Every German noun has a gender. The definite article ("the") shows this gender:
 
 **Example:** **Der** Mann ist groß. (The man is tall.) **Die** Frau liest. (The woman reads.) **Das** Kind spielt. (The child plays.)
 
-Always learn every new noun together with its article.`,
+Always learn every new noun together with its article.
+
+### Small hints for the gender
+- **der**: often male persons, days, months (der Vater, der Montag).
+- **die**: often female persons, words ending in **-ung, -heit, -keit** (die Zeitung, die Freiheit).
+- **das**: often diminutives ending in **-chen/-lein** (das Mädchen, das Brötchen).
+
+### Common mistakes
+- ❌ *die Mann* → ✅ **der** Mann.
+- ❌ *der Frau* → ✅ **die** Frau.
+- ❌ *der Mädchen* → ✅ **das** Mädchen (neuter because of **-chen**, despite meaning "girl").`,
       explanationTr: `## Belirli tanımlık (der/die/das)
 
 Her Almanca ismin bir cinsiyeti vardır. Belirli tanımlık („the") bu cinsiyeti gösterir:
@@ -471,7 +928,17 @@ Her Almanca ismin bir cinsiyeti vardır. Belirli tanımlık („the") bu cinsiye
 
 **Örnek:** **Der** Mann ist groß. (Adam uzun boylu.) **Die** Frau liest. (Kadın okuyor.) **Das** Kind spielt. (Çocuk oynuyor.)
 
-Her yeni ismi mutlaka tanımlığıyla birlikte öğren.`,
+Her yeni ismi mutlaka tanımlığıyla birlikte öğren.
+
+### Cinsiyeti bulmak için küçük ipuçları
+- **der**: genelde erkek kişiler, günler, aylar (der Vater, der Montag).
+- **die**: genelde kadın kişiler, **-ung, -heit, -keit** ile biten sözcükler (die Zeitung, die Freiheit).
+- **das**: genelde **-chen/-lein** ile biten küçültmeler (das Mädchen, das Brötchen).
+
+### Sık yapılan hatalar
+- ❌ *die Mann* → ✅ **der** Mann.
+- ❌ *der Frau* → ✅ **die** Frau.
+- ❌ *der Mädchen* → ✅ **das** Mädchen (anlamı „kız" olsa da **-chen** yüzünden nötr).`,
     },
   })
   await seedExercises({
@@ -498,6 +965,76 @@ Her yeni ismi mutlaka tanımlığıyla birlikte öğren.`,
         },
         explanation: 'Mann = der, Frau = die, Kind = das.',
       },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Frau liest ein Buch. (bestimmter Artikel)' },
+        correctAnswer: { accepted: ['die'] },
+        explanation: '"Frau" ist feminin: die Frau.',
+      },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Kind spielt im Garten.', options: ['Der', 'Die', 'Das', 'Den'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"Kind" ist neutral: das Kind.',
+      },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Artikel hat "Mädchen"?', options: ['der', 'die', 'das', 'den'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Nomen auf "-chen" sind neutral: das Mädchen.',
+      },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Montag ist ein Wochentag. (Artikel)' },
+        correctAnswer: { accepted: ['der'] },
+        explanation: 'Wochentage sind maskulin: der Montag.',
+      },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['Vater', 'Zeitung', 'Brötchen'], rights: ['das', 'der', 'die'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Vater', right: 'der' },
+            { left: 'Zeitung', right: 'die' },
+            { left: 'Brötchen', right: 'das' },
+          ],
+        },
+        explanation: 'der Vater, die Zeitung (-ung), das Brötchen (-chen).',
+      },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Die Mann ist groß.', 'Der Mann ist groß.', 'Das Mann ist groß.', 'Den Mann ist groß.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Mann" ist maskulin: der Mann.',
+      },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Frau', 'die', 'nett', 'ist'] },
+        correctAnswer: { order: ['die', 'Frau', 'ist', 'nett'] },
+        explanation: 'Artikel + Nomen + Verb + Adjektiv: "Die Frau ist nett".',
+      },
+      {
+        lessonId: a1Unit2Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Welchen Artikel hat "Freiheit"? (nur der/die/das)' },
+        correctAnswer: { accepted: ['die'] },
+        explanation: 'Nomen auf "-heit" sind feminin: die Freiheit.',
+      },
     ],
   })
 
@@ -518,7 +1055,18 @@ Der unbestimmte Artikel („a/an") heißt **ein** bei maskulinen und neutralen N
 
 **Beispiel:** Das ist **ein** Buch. Das ist **eine** Lampe.
 
-Du benutzt den unbestimmten Artikel, wenn etwas neu oder unbekannt ist.`,
+Du benutzt den unbestimmten Artikel, wenn etwas neu oder unbekannt ist.
+
+### bestimmt vs. unbestimmt
+- **ein/eine** = etwas Neues, zum ersten Mal genannt: Da ist **ein** Hund.
+- **der/die/das** = etwas Bekanntes: **Der** Hund ist süß.
+
+### Kein Plural bei „ein"
+„ein/eine" gibt es nur im Singular. Im Plural steht **kein Artikel**: Das sind ~~eine~~ Bücher.
+
+### Häufige Fehler
+- ❌ *eine Buch* → ✅ **ein** Buch (neutral).
+- ❌ *ein Frau* → ✅ **eine** Frau (feminin).`,
       explanationEn: `## The indefinite article (ein/eine)
 
 The indefinite article ("a/an") is **ein** for masculine and neuter nouns and **eine** for feminine nouns:
@@ -531,7 +1079,18 @@ The indefinite article ("a/an") is **ein** for masculine and neuter nouns and **
 
 **Example:** Das ist **ein** Buch. (That is a book.) Das ist **eine** Lampe. (That is a lamp.)
 
-Use the indefinite article when something is new or unknown.`,
+Use the indefinite article when something is new or unknown.
+
+### definite vs. indefinite
+- **ein/eine** = something new, mentioned for the first time: Da ist **ein** Hund. (There is a dog.)
+- **der/die/das** = something already known: **Der** Hund ist süß. (The dog is cute.)
+
+### No plural for "ein"
+"ein/eine" exists only in the singular. In the plural there is **no article**: Das sind ~~eine~~ Bücher.
+
+### Common mistakes
+- ❌ *eine Buch* → ✅ **ein** Buch (neuter).
+- ❌ *ein Frau* → ✅ **eine** Frau (feminine).`,
       explanationTr: `## Belirsiz tanımlık (ein/eine)
 
 Belirsiz tanımlık („bir") eril ve nötr isimlerde **ein**, dişil isimlerde **eine** olur:
@@ -544,7 +1103,18 @@ Belirsiz tanımlık („bir") eril ve nötr isimlerde **ein**, dişil isimlerde 
 
 **Örnek:** Das ist **ein** Buch. (Bu bir kitap.) Das ist **eine** Lampe. (Bu bir lamba.)
 
-Bir şey yeni ya da bilinmiyorsa belirsiz tanımlık kullanırsın.`,
+Bir şey yeni ya da bilinmiyorsa belirsiz tanımlık kullanırsın.
+
+### belirli mi belirsiz mi
+- **ein/eine** = yeni, ilk kez bahsedilen bir şey: Da ist **ein** Hund. (Orada bir köpek var.)
+- **der/die/das** = zaten bilinen bir şey: **Der** Hund ist süß. (O köpek tatlı.)
+
+### „ein"in çoğulu yoktur
+„ein/eine" yalnızca tekilde vardır. Çoğulda **tanımlık kullanılmaz**: Das sind ~~eine~~ Bücher.
+
+### Sık yapılan hatalar
+- ❌ *eine Buch* → ✅ **ein** Buch (nötr).
+- ❌ *ein Frau* → ✅ **eine** Frau (dişil).`,
     },
   })
   await seedExercises({
@@ -564,6 +1134,76 @@ Bir şey yeni ya da bilinmiyorsa belirsiz tanımlık kullanırsın.`,
         data: { prompt: 'Das ist ___ Buch.', options: ['ein', 'eine', 'der', 'die'] },
         correctAnswer: { correctIndex: 0 },
         explanation: '"Buch" ist neutral: ein Buch.',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Da ist ___ Mann. (unbestimmter Artikel)' },
+        correctAnswer: { accepted: ['ein'] },
+        explanation: '"Mann" ist maskulin: ein Mann.',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist ___ Lampe.', options: ['ein', 'eine', 'das', 'der'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Lampe" ist feminin: eine Lampe.',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['ein Mann', 'eine Frau', 'ein Kind'], rights: ['neutral', 'maskulin', 'feminin'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ein Mann', right: 'maskulin' },
+            { left: 'eine Frau', right: 'feminin' },
+            { left: 'ein Kind', right: 'neutral' },
+          ],
+        },
+        explanation: 'ein (m/n), eine (f).',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Das ist eine Buch.', 'Das ist ein Buch.', 'Das ist einen Buch.', 'Das ist der Buch.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Buch" ist neutral: ein Buch.',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe ___ Auto. ("Auto" ist neutral)' },
+        correctAnswer: { accepted: ['ein'] },
+        explanation: '"Auto" ist neutral: ein Auto.',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann benutzt man "ein/eine"?', options: ['bei etwas Bekanntem', 'bei etwas Neuem/Unbekanntem', 'nur im Plural', 'nur bei Personen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Unbestimmter Artikel = etwas Neues/Unbekanntes.',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ist', 'das', 'Lampe', 'eine'] },
+        correctAnswer: { order: ['das', 'ist', 'eine', 'Lampe'] },
+        explanation: '"Das ist eine Lampe."',
+      },
+      {
+        lessonId: a1Unit2Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Ergänze: "Das ist ___ Frau." (unbestimmter Artikel)' },
+        correctAnswer: { accepted: ['eine'] },
+        explanation: '"Frau" ist feminin: eine Frau.',
       },
     ],
   })
@@ -586,7 +1226,15 @@ Deutsche Nomen bilden den Plural unterschiedlich. Im Plural ist der Artikel imme
 
 **Beispiel:** **Die** Kinder spielen. **Die** Tische sind neu.
 
-Lerne den Plural am besten zusammen mit dem Nomen.`,
+Lerne den Plural am besten zusammen mit dem Nomen.
+
+### Umlaut im Plural
+Viele Nomen bekommen im Plural einen **Umlaut** (a→ä, o→ö, u→ü): der Mann → die M**ä**nner, das Buch → die B**ü**cher, die Mutter → die M**ü**tter.
+
+### Häufige Fehler
+- ❌ *die Kinds* → ✅ die **Kinder**.
+- ❌ *die Fraus* → ✅ die **Frauen**.
+- ❌ *der Tische* (Plural) → ✅ **die** Tische (Plural-Artikel immer „die").`,
       explanationEn: `## The plural
 
 German nouns form the plural in different ways. In the plural the article is always **die**.
@@ -600,7 +1248,15 @@ German nouns form the plural in different ways. In the plural the article is alw
 
 **Example:** **Die** Kinder spielen. (The children play.) **Die** Tische sind neu. (The tables are new.)
 
-It is best to learn the plural together with the noun.`,
+It is best to learn the plural together with the noun.
+
+### Umlaut in the plural
+Many nouns take an **umlaut** in the plural (a→ä, o→ö, u→ü): der Mann → die M**ä**nner, das Buch → die B**ü**cher, die Mutter → die M**ü**tter.
+
+### Common mistakes
+- ❌ *die Kinds* → ✅ die **Kinder**.
+- ❌ *die Fraus* → ✅ die **Frauen**.
+- ❌ *der Tische* (plural) → ✅ **die** Tische (the plural article is always "die").`,
       explanationTr: `## Çoğul (Plural)
 
 Almanca isimler çoğulu farklı şekillerde yapar. Çoğulda tanımlık her zaman **die** olur.
@@ -614,7 +1270,15 @@ Almanca isimler çoğulu farklı şekillerde yapar. Çoğulda tanımlık her zam
 
 **Örnek:** **Die** Kinder spielen. (Çocuklar oynuyor.) **Die** Tische sind neu. (Masalar yeni.)
 
-Çoğulu, ismin kendisiyle birlikte öğrenmen en iyisidir.`,
+Çoğulu, ismin kendisiyle birlikte öğrenmen en iyisidir.
+
+### Çoğulda Umlaut
+Birçok isim çoğulda **Umlaut** alır (a→ä, o→ö, u→ü): der Mann → die M**ä**nner, das Buch → die B**ü**cher, die Mutter → die M**ü**tter.
+
+### Sık yapılan hatalar
+- ❌ *die Kinds* → ✅ die **Kinder**.
+- ❌ *die Fraus* → ✅ die **Frauen**.
+- ❌ *der Tische* (çoğul) → ✅ **die** Tische (çoğul tanımlığı her zaman „die").`,
     },
   })
   await seedExercises({
@@ -635,6 +1299,76 @@ Almanca isimler çoğulu farklı şekillerde yapar. Çoğulda tanımlık her zam
         correctAnswer: { order: ['die', 'Frauen', 'sind', 'hier'] },
         explanation: 'Reihenfolge: Artikel, Nomen, Verb, Ort.',
       },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Singular: der Tisch → Plural: die ___.' },
+        correctAnswer: { accepted: ['tische'] },
+        explanation: 'der Tisch → die Tische (Endung -e).',
+      },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Artikel steht im Plural?', options: ['der', 'die', 'das', 'ein'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Im Plural ist der bestimmte Artikel immer "die".',
+      },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['das Auto', 'die Frau', 'das Kind'], rights: ['die Frauen', 'die Kinder', 'die Autos'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'das Auto', right: 'die Autos' },
+            { left: 'die Frau', right: 'die Frauen' },
+            { left: 'das Kind', right: 'die Kinder' },
+          ],
+        },
+        explanation: 'Auto → Autos (-s), Frau → Frauen (-en), Kind → Kinder (-er).',
+      },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Plural von "der Mann" (mit Umlaut): die ___.' },
+        correctAnswer: { accepted: ['männer'] },
+        explanation: 'der Mann → die Männer (Umlaut + -er).',
+      },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Plural von "das Buch" ist ___.', options: ['die Buchs', 'die Bücher', 'die Buchen', 'das Bücher'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'das Buch → die Bücher (Umlaut + -er).',
+      },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Der Kinder spielen.', 'Die Kinder spielen.', 'Das Kinder spielen.', 'Die Kind spielen.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Plural: die Kinder, Verb im Plural: spielen.',
+      },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 9,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Plural von "das Auto": die ___.' },
+        correctAnswer: { accepted: ['autos'] },
+        explanation: 'Fremdwörter oft mit -s: die Autos.',
+      },
+      {
+        lessonId: a1Unit2Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie lautet der Plural-Artikel? (nur ein Wort)' },
+        correctAnswer: { accepted: ['die'] },
+        explanation: 'Im Plural immer "die".',
+      },
     ],
   })
 
@@ -654,7 +1388,18 @@ Nomen mit unbestimmtem Artikel oder ohne Artikel verneinst du mit **kein**. Die 
 | neutral | kein | Ich habe **kein** Buch. |
 | Plural | keine | Ich habe **keine** Kinder. |
 
-**Beispiel:** Das ist **kein** Problem. Ich trinke **keinen** Kaffee.`,
+**Beispiel:** Das ist **kein** Problem. Ich trinke **keinen** Kaffee.
+
+### „kein" oder „nicht"?
+- **kein** verneint ein Nomen mit „ein" oder ohne Artikel: Ich habe **kein** Auto.
+- **nicht** verneint den Rest (Verben, Adjektive, Nomen mit bestimmtem Artikel): Ich arbeite **nicht**. · Das ist **nicht** der Chef.
+
+### Im Akkusativ
+Bei maskulinen Nomen im Akkusativ heißt es **keinen**: Ich habe **keinen** Bruder.
+
+### Häufige Fehler
+- ❌ *Ich habe nicht Zeit* → ✅ Ich habe **keine** Zeit.
+- ❌ *Ich habe kein Zeit* → ✅ Ich habe **keine** Zeit (feminin).`,
       explanationEn: `## Negation with "kein"
 
 Nouns with an indefinite article or no article are negated with **kein**. The ending works like the article "ein":
@@ -666,7 +1411,18 @@ Nouns with an indefinite article or no article are negated with **kein**. The en
 | neuter | kein | Ich habe **kein** Buch. (I have no book.) |
 | plural | keine | Ich habe **keine** Kinder. (I have no children.) |
 
-**Example:** Das ist **kein** Problem. (That's no problem.) Ich trinke **keinen** Kaffee. (I don't drink coffee.)`,
+**Example:** Das ist **kein** Problem. (That's no problem.) Ich trinke **keinen** Kaffee. (I don't drink coffee.)
+
+### "kein" or "nicht"?
+- **kein** negates a noun with "ein" or with no article: Ich habe **kein** Auto.
+- **nicht** negates the rest (verbs, adjectives, nouns with a definite article): Ich arbeite **nicht**. · Das ist **nicht** der Chef.
+
+### In the accusative
+Masculine nouns in the accusative use **keinen**: Ich habe **keinen** Bruder.
+
+### Common mistakes
+- ❌ *Ich habe nicht Zeit* → ✅ Ich habe **keine** Zeit.
+- ❌ *Ich habe kein Zeit* → ✅ Ich habe **keine** Zeit (feminine).`,
       explanationTr: `## „kein" ile olumsuzlama
 
 Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yaparsın. Eki „ein" tanımlığı gibi çekilir:
@@ -678,7 +1434,18 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
 | nötr | kein | Ich habe **kein** Buch. (Kitabım yok.) |
 | çoğul | keine | Ich habe **keine** Kinder. (Çocuğum yok.) |
 
-**Örnek:** Das ist **kein** Problem. (Sorun değil.) Ich trinke **keinen** Kaffee. (Kahve içmiyorum.)`,
+**Örnek:** Das ist **kein** Problem. (Sorun değil.) Ich trinke **keinen** Kaffee. (Kahve içmiyorum.)
+
+### „kein" mi „nicht" mi?
+- **kein**, „ein"li ya da tanımlıksız bir ismi olumsuz yapar: Ich habe **kein** Auto.
+- **nicht**, geri kalanı olumsuz yapar (fiiller, sıfatlar, belirli tanımlıklı isimler): Ich arbeite **nicht**. · Das ist **nicht** der Chef.
+
+### Akkusativde
+Eril isimler Akkusativde **keinen** olur: Ich habe **keinen** Bruder.
+
+### Sık yapılan hatalar
+- ❌ *Ich habe nicht Zeit* → ✅ Ich habe **keine** Zeit.
+- ❌ *Ich habe kein Zeit* → ✅ Ich habe **keine** Zeit (dişil).`,
     },
   })
   await seedExercises({
@@ -698,6 +1465,76 @@ Belirsiz tanımlıklı ya da tanımlıksız isimleri **kein** ile olumsuz yapars
         data: { prompt: 'Er hat ___ Buch.', options: ['kein', 'keine', 'nicht', 'keinen'] },
         correctAnswer: { correctIndex: 0 },
         explanation: '"Buch" ist neutral: kein Buch.',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe ___ Kinder. (Plural)' },
+        correctAnswer: { accepted: ['keine'] },
+        explanation: 'Im Plural: keine Kinder.',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich habe ___ Bruder. (Akkusativ, maskulin)', options: ['kein', 'keine', 'keinen', 'nicht'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Maskulin im Akkusativ: keinen Bruder.',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['kein', 'keine', 'keinen'], rights: ['maskulin (Akkusativ)', 'maskulin (Nom.) / neutral', 'feminin / Plural'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'kein', right: 'maskulin (Nom.) / neutral' },
+            { left: 'keine', right: 'feminin / Plural' },
+            { left: 'keinen', right: 'maskulin (Akkusativ)' },
+          ],
+        },
+        explanation: 'kein (m Nom./n), keine (f/Pl.), keinen (m Akk.).',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Verneine: "Ich arbeite heute." →', options: ['Ich arbeite kein heute.', 'Ich arbeite heute nicht.', 'Ich arbeite keine heute.', 'Ich nicht arbeite heute.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Verben verneint man mit "nicht": "Ich arbeite heute nicht".',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist ___ Problem. ("Problem" ist neutral)' },
+        correctAnswer: { accepted: ['kein'] },
+        explanation: '"Problem" ist neutral: kein Problem.',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann benutzt man "kein"?', options: ['bei Verben', 'bei Nomen mit "ein" oder ohne Artikel', 'bei Adjektiven', 'bei bestimmtem Artikel'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"kein" verneint Nomen mit "ein" oder ohne Artikel.',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['habe', 'ich', 'Zeit', 'keine'] },
+        correctAnswer: { order: ['ich', 'habe', 'keine', 'Zeit'] },
+        explanation: '"Ich habe keine Zeit."',
+      },
+      {
+        lessonId: a1Unit2Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Ergänze: "Ich habe ___ Zeit." (feminin)' },
+        correctAnswer: { accepted: ['keine'] },
+        explanation: '"Zeit" ist feminin: keine Zeit.',
       },
     ],
   })
@@ -737,7 +1574,19 @@ Personalpronomen ersetzen eine Person oder eine Sache. Das sind die Subjektprono
 
 **„Sie"** (immer groß geschrieben) ist die höfliche Anrede für eine oder mehrere Personen.
 
-**Beispiel:** **Ich** bin müde. **Wir** lernen Deutsch. **Sie** sind Herr Müller, oder?`,
+**Beispiel:** **Ich** bin müde. **Wir** lernen Deutsch. **Sie** sind Herr Müller, oder?
+
+### er / sie / es für Dinge
+Das Pronomen richtet sich nach dem **Genus** des Nomens, nicht nach der Bedeutung:
+- der Tisch → **er** · die Lampe → **sie** · das Buch → **es**
+
+### du oder Sie?
+- **du**: Familie, Freunde, Kinder.
+- **Sie**: Fremde, im Beruf, offizielle Situationen (immer groß: **Sie**).
+
+### Häufige Fehler
+- ❌ *Ich und du sind* → ✅ **Wir** sind.
+- Verwechsle nicht **sie** (sie/they, klein) und **Sie** (formell, groß).`,
       explanationEn: `## Personal pronouns
 
 Personal pronouns replace a person or a thing. These are the subject pronouns in German:
@@ -750,7 +1599,19 @@ Personal pronouns replace a person or a thing. These are the subject pronouns in
 
 **"Sie"** (always capitalized) is the polite form of address for one or more people.
 
-**Example:** **Ich** bin müde. (I am tired.) **Wir** lernen Deutsch. (We learn German.) **Sie** sind Herr Müller, oder? (You are Mr Müller, right?)`,
+**Example:** **Ich** bin müde. (I am tired.) **Wir** lernen Deutsch. (We learn German.) **Sie** sind Herr Müller, oder? (You are Mr Müller, right?)
+
+### er / sie / es for things
+The pronoun follows the **gender** of the noun, not the meaning:
+- der Tisch → **er** · die Lampe → **sie** · das Buch → **es**
+
+### du or Sie?
+- **du**: family, friends, children.
+- **Sie**: strangers, at work, official situations (always capitalized: **Sie**).
+
+### Common mistakes
+- ❌ *Ich und du sind* → ✅ **Wir** sind.
+- Don't confuse **sie** (she/they, lowercase) and **Sie** (formal, capitalized).`,
       explanationTr: `## Şahıs zamirleri
 
 Şahıs zamirleri bir kişinin ya da nesnenin yerini tutar. Almancadaki özne zamirleri şunlardır:
@@ -763,7 +1624,19 @@ Personal pronouns replace a person or a thing. These are the subject pronouns in
 
 **„Sie"** (her zaman büyük harfle) bir ya da birden fazla kişiye karşı kullanılan saygı biçimidir.
 
-**Örnek:** **Ich** bin müde. (Yorgunum.) **Wir** lernen Deutsch. (Almanca öğreniyoruz.) **Sie** sind Herr Müller, oder? (Siz Müller Bey'siniz, değil mi?)`,
+**Örnek:** **Ich** bin müde. (Yorgunum.) **Wir** lernen Deutsch. (Almanca öğreniyoruz.) **Sie** sind Herr Müller, oder? (Siz Müller Bey'siniz, değil mi?)
+
+### Nesneler için er / sie / es
+Zamir ismin **cinsiyetine** göre seçilir, anlamına göre değil:
+- der Tisch → **er** · die Lampe → **sie** · das Buch → **es**
+
+### du mu Sie mi?
+- **du**: aile, arkadaşlar, çocuklar.
+- **Sie**: yabancılar, iş ortamı, resmi durumlar (her zaman büyük: **Sie**).
+
+### Sık yapılan hatalar
+- ❌ *Ich und du sind* → ✅ **Wir** sind.
+- **sie** (o/onlar, küçük harf) ile **Sie** (resmi, büyük harf) karıştırma.`,
     },
   })
   await seedExercises({
@@ -790,6 +1663,76 @@ Personal pronouns replace a person or a thing. These are the subject pronouns in
         correctAnswer: { correctIndex: 1 },
         explanation: '"Sie" ist die höfliche Form.',
       },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Anna und ich lernen Deutsch. ___ lernen Deutsch. (Pronomen)' },
+        correctAnswer: { accepted: ['wir'] },
+        explanation: '"Anna und ich" = wir.',
+      },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Pronomen ersetzt "der Tisch"?', options: ['er', 'sie', 'es', 'ihr'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'der Tisch ist maskulin → er.',
+      },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['der Tisch', 'die Lampe', 'das Buch'], rights: ['es', 'er', 'sie'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Tisch', right: 'er' },
+            { left: 'die Lampe', right: 'sie' },
+            { left: 'das Buch', right: 'es' },
+          ],
+        },
+        explanation: 'der → er, die → sie, das → es.',
+      },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Du sprichst mit einem Kind. Welche Anrede?', options: ['Sie', 'du', 'ihr', 'er'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Mit Kindern und Freunden benutzt man "du".',
+      },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist die Lampe. ___ ist neu. (Pronomen)' },
+        correctAnswer: { accepted: ['sie'] },
+        explanation: 'die Lampe → sie.',
+      },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Pronomen bedeutet "you all" (informell, Plural)?', options: ['du', 'ihr', 'sie', 'Sie'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"ihr" = mehrere Personen, die man duzt.',
+      },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['lernen', 'wir', 'Deutsch'] },
+        correctAnswer: { order: ['wir', 'lernen', 'Deutsch'] },
+        explanation: '"Wir lernen Deutsch."',
+      },
+      {
+        lessonId: a1Unit3Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Welches Pronomen benutzt man für eine Gruppe (they)?' },
+        correctAnswer: { accepted: ['sie'] },
+        explanation: '"sie" (klein) = they.',
+      },
     ],
   })
 
@@ -811,7 +1754,18 @@ Regelmäßige Verben bildest du aus **Stamm + Endung**. Der Stamm von „spielen
 | ihr | -t | spiel**t** |
 | sie/Sie | -en | spiel**en** |
 
-**Beispiel:** Ich **spiele** Fußball. Wir **lernen** Deutsch.`,
+**Beispiel:** Ich **spiele** Fußball. Wir **lernen** Deutsch.
+
+### Verben auf -t/-d, -n/-m
+Endet der Stamm auf **-t** oder **-d** (arbeit-, find-), fügt man bei du/er/ihr ein **-e-** ein: du arbeit**e**st, er arbeit**e**t, ihr arbeit**e**t.
+
+### Präsens = auch Zukunft
+Das Präsens beschreibt Gegenwart **und** oft Zukunft: Morgen **spiele** ich Fußball.
+
+### Häufige Fehler
+- ❌ *Ich spiele**n*** → ✅ Ich spiel**e**.
+- ❌ *Du arbeit**st*** → ✅ Du arbeit**est** (Stamm auf -t).
+- ❌ *Er spiel**en*** → ✅ Er spiel**t**.`,
       explanationEn: `## Regular verbs in the present tense
 
 You form regular verbs from **stem + ending**. The stem of "spielen" (to play) is *spiel-*.
@@ -825,7 +1779,18 @@ You form regular verbs from **stem + ending**. The stem of "spielen" (to play) i
 | ihr | -t | spiel**t** |
 | sie/Sie | -en | spiel**en** |
 
-**Example:** Ich **spiele** Fußball. (I play football.) Wir **lernen** Deutsch. (We learn German.)`,
+**Example:** Ich **spiele** Fußball. (I play football.) Wir **lernen** Deutsch. (We learn German.)
+
+### Verbs with a stem in -t/-d
+If the stem ends in **-t** or **-d** (arbeit-, find-), you insert an **-e-** for du/er/ihr: du arbeit**e**st, er arbeit**e**t, ihr arbeit**e**t.
+
+### Present = also future
+The present tense describes the present **and** often the future: Morgen **spiele** ich Fußball. (Tomorrow I'll play football.)
+
+### Common mistakes
+- ❌ *Ich spiele**n*** → ✅ Ich spiel**e**.
+- ❌ *Du arbeit**st*** → ✅ Du arbeit**est** (stem ends in -t).
+- ❌ *Er spiel**en*** → ✅ Er spiel**t**.`,
       explanationTr: `## Düzenli fiillerde geniş/şimdiki zaman
 
 Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin gövdesi *spiel-*'dir.
@@ -839,7 +1804,18 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
 | ihr | -t | spiel**t** |
 | sie/Sie | -en | spiel**en** |
 
-**Örnek:** Ich **spiele** Fußball. (Futbol oynuyorum.) Wir **lernen** Deutsch. (Almanca öğreniyoruz.)`,
+**Örnek:** Ich **spiele** Fußball. (Futbol oynuyorum.) Wir **lernen** Deutsch. (Almanca öğreniyoruz.)
+
+### Gövdesi -t/-d ile biten fiiller
+Gövde **-t** ya da **-d** ile bitiyorsa (arbeit-, find-), du/er/ihr'de araya **-e-** eklenir: du arbeit**e**st, er arbeit**e**t, ihr arbeit**e**t.
+
+### Präsens = gelecek de olabilir
+Präsens hem şimdiki zamanı **hem de** çoğu zaman geleceği anlatır: Morgen **spiele** ich Fußball. (Yarın futbol oynayacağım.)
+
+### Sık yapılan hatalar
+- ❌ *Ich spiele**n*** → ✅ Ich spiel**e**.
+- ❌ *Du arbeit**st*** → ✅ Du arbeit**est** (gövde -t ile bitiyor).
+- ❌ *Er spiel**en*** → ✅ Er spiel**t**.`,
     },
   })
   await seedExercises({
@@ -859,6 +1835,76 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
         data: { prompt: 'Wir ___ Deutsch.', options: ['lerne', 'lernst', 'lernen', 'lernt'] },
         correctAnswer: { correctIndex: 2 },
         explanation: 'Mit "wir" benutzt man die Endung -en: lernen.',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ (wohnen) in Berlin.' },
+        correctAnswer: { accepted: ['wohnt'] },
+        explanation: 'Mit "er" die Endung -t: wohnt.',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ Fußball.', options: ['spiele', 'spielst', 'spielt', 'spielen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ich" die Endung -e: spiele.',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'du', 'er'], rights: ['spielt', 'spiele', 'spielst'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'spiele' },
+            { left: 'du', right: 'spielst' },
+            { left: 'er', right: 'spielt' },
+          ],
+        },
+        explanation: 'ich -e, du -st, er -t.',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Du ___ (arbeiten) viel. (Stamm auf -t → -est)' },
+        correctAnswer: { accepted: ['arbeitest'] },
+        explanation: 'Stamm auf -t: du arbeitest.',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ihr ___ Deutsch.', options: ['lernt', 'lernen', 'lerne', 'lernst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ihr" die Endung -t: lernt.',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich spielen Fußball.', 'Ich spiele Fußball.', 'Ich spielst Fußball.', 'Ich spielt Fußball.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'ich + -e: "Ich spiele Fußball".',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['spielt', 'Fußball', 'er'] },
+        correctAnswer: { order: ['er', 'spielt', 'Fußball'] },
+        explanation: '"Er spielt Fußball."',
+      },
+      {
+        lessonId: a1Unit3Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Konjugiere "machen" für "wir".' },
+        correctAnswer: { accepted: ['machen', 'wir machen'] },
+        explanation: 'wir + -en: machen.',
       },
     ],
   })
@@ -881,7 +1927,18 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
 | ihr | habt |
 | sie/Sie | haben |
 
-**Beispiel:** Ich **habe** ein Buch. Du **hast** Zeit. Man benutzt „haben" auch in festen Wendungen: Ich **habe** Hunger.`,
+**Beispiel:** Ich **habe** ein Buch. Du **hast** Zeit. Man benutzt „haben" auch in festen Wendungen: Ich **habe** Hunger.
+
+### Feste Wendungen mit „haben"
+Ich **habe** Hunger / Durst / Zeit / Angst / Recht / Glück.
+
+### Verneinung mit „kein"
+Nomen nach „haben" verneint man meist mit **kein**: Ich **habe kein** Auto. · Ich **habe keine** Zeit.
+
+### Häufige Fehler
+- ❌ *Du habst* → ✅ Du **hast**.
+- ❌ *Er habt* → ✅ Er **hat**.
+- ❌ *Ich habe nicht Zeit* → ✅ Ich habe **keine** Zeit.`,
       explanationEn: `## The verb "haben" (to have)
 
 "haben" is irregular – notably "du hast" and "er hat" drop the *b*. Present-tense forms:
@@ -895,7 +1952,18 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
 | ihr | habt |
 | sie/Sie | haben |
 
-**Example:** Ich **habe** ein Buch. (I have a book.) Du **hast** Zeit. (You have time.) "haben" is also used in fixed phrases: Ich **habe** Hunger. (I am hungry.)`,
+**Example:** Ich **habe** ein Buch. (I have a book.) Du **hast** Zeit. (You have time.) "haben" is also used in fixed phrases: Ich **habe** Hunger. (I am hungry.)
+
+### Fixed phrases with "haben"
+Ich **habe** Hunger / Durst / Zeit / Angst / Recht / Glück. (I'm hungry / thirsty / have time / am afraid / am right / am lucky.)
+
+### Negation with "kein"
+Nouns after "haben" are usually negated with **kein**: Ich **habe kein** Auto. · Ich **habe keine** Zeit.
+
+### Common mistakes
+- ❌ *Du habst* → ✅ Du **hast**.
+- ❌ *Er habt* → ✅ Er **hat**.
+- ❌ *Ich habe nicht Zeit* → ✅ Ich habe **keine** Zeit.`,
       explanationTr: `## „haben" fiili (sahip olmak)
 
 „haben" düzensizdir – özellikle „du hast" ve „er hat" biçimlerinde *b* düşer. Geniş zaman çekimi:
@@ -909,7 +1977,18 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
 | ihr | habt |
 | sie/Sie | haben |
 
-**Örnek:** Ich **habe** ein Buch. (Bir kitabım var.) Du **hast** Zeit. (Vaktin var.) „haben" kalıplaşmış ifadelerde de kullanılır: Ich **habe** Hunger. (Karnım aç / Açım.)`,
+**Örnek:** Ich **habe** ein Buch. (Bir kitabım var.) Du **hast** Zeit. (Vaktin var.) „haben" kalıplaşmış ifadelerde de kullanılır: Ich **habe** Hunger. (Karnım aç / Açım.)
+
+### „haben" ile kalıplaşmış ifadeler
+Ich **habe** Hunger / Durst / Zeit / Angst / Recht / Glück. (Açım / susadım / vaktim var / korkuyorum / haklıyım / şanslıyım.)
+
+### „kein" ile olumsuzlama
+„haben"den sonraki isimler genelde **kein** ile olumsuz yapılır: Ich **habe kein** Auto. · Ich **habe keine** Zeit.
+
+### Sık yapılan hatalar
+- ❌ *Du habst* → ✅ Du **hast**.
+- ❌ *Er habt* → ✅ Er **hat**.
+- ❌ *Ich habe nicht Zeit* → ✅ Ich habe **keine** Zeit.`,
     },
   })
   await seedExercises({
@@ -936,6 +2015,76 @@ Düzenli fiilleri **gövde + ek** ile yaparsın. „spielen" (oynamak) fiilinin 
         correctAnswer: { accepted: ['ich habe hunger'] },
         explanation: '"Ich habe Hunger" bedeutet "I am hungry".',
       },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Du ___ (haben) ein Auto.' },
+        correctAnswer: { accepted: ['hast'] },
+        explanation: 'Mit "du": hast.',
+      },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir ___ Zeit.', options: ['habe', 'hast', 'hat', 'haben'] },
+        correctAnswer: { correctIndex: 3 },
+        explanation: 'Mit "wir": haben.',
+      },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 5,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er ___ (haben) Durst.' },
+        correctAnswer: { accepted: ['hat'] },
+        explanation: 'Mit "er": hat (das "b" fällt weg).',
+      },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ihr ___ ein Haus.', options: ['habt', 'haben', 'hast', 'habe'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "ihr": habt.',
+      },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 7,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'ihr', 'wir'], rights: ['habt', 'habe', 'haben'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'habe' },
+            { left: 'ihr', right: 'habt' },
+            { left: 'wir', right: 'haben' },
+          ],
+        },
+        explanation: 'ich → habe, ihr → habt, wir → haben.',
+      },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Verneine: "Ich habe ein Auto." →', options: ['Ich habe nicht Auto.', 'Ich habe kein Auto.', 'Ich habe keine Auto.', 'Ich habe keinen Auto.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Auto" ist neutral: kein Auto.',
+      },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['habe', 'ich', 'Hunger'] },
+        correctAnswer: { order: ['ich', 'habe', 'Hunger'] },
+        explanation: '"Ich habe Hunger."',
+      },
+      {
+        lessonId: a1Unit3Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Konjugiere "haben" für "du".' },
+        correctAnswer: { accepted: ['hast', 'du hast'] },
+        explanation: 'du hast.',
+      },
     ],
   })
 
@@ -956,7 +2105,23 @@ W-Fragen beginnen mit einem Fragewort. Das Verb steht immer an **zweiter Stelle*
 | wann | when | **Wann** kommst du? |
 | wie | how | **Wie** heißt du? |
 
-**Beispiel:** **Wo** wohnst du? – Ich wohne in Berlin.`,
+**Beispiel:** **Wo** wohnst du? – Ich wohne in Berlin.
+
+### Mehr Fragewörter
+| Fragewort | Bedeutung |
+| ---- | ---- |
+| warum | why |
+| woher | where from |
+| wohin | where to |
+| wie viel(e) | how much/many |
+
+### W-Frage vs. Ja/Nein-Frage
+- **W-Frage:** Fragewort + Verb + Subjekt → **Wann** kommst du?
+- **Ja/Nein-Frage:** Verb + Subjekt → **Kommst** du?
+
+### Häufige Fehler
+- ❌ *Wo du wohnst?* → ✅ **Wo wohnst du?** (Verb an Position 2).
+- ❌ *Was du machst?* → ✅ **Was machst du?**`,
       explanationEn: `## W-questions (open questions)
 
 W-questions start with a question word. The verb always comes **second**.
@@ -969,7 +2134,23 @@ W-questions start with a question word. The verb always comes **second**.
 | wann | when | **Wann** kommst du? |
 | wie | how | **Wie** heißt du? |
 
-**Example:** **Wo** wohnst du? – Ich wohne in Berlin. (Where do you live? – I live in Berlin.)`,
+**Example:** **Wo** wohnst du? – Ich wohne in Berlin. (Where do you live? – I live in Berlin.)
+
+### More question words
+| Question word | Meaning |
+| ---- | ---- |
+| warum | why |
+| woher | where from |
+| wohin | where to |
+| wie viel(e) | how much/many |
+
+### W-question vs. yes/no question
+- **W-question:** question word + verb + subject → **Wann** kommst du?
+- **Yes/no question:** verb + subject → **Kommst** du?
+
+### Common mistakes
+- ❌ *Wo du wohnst?* → ✅ **Wo wohnst du?** (verb in position 2).
+- ❌ *Was du machst?* → ✅ **Was machst du?**`,
       explanationTr: `## W-soruları (açık uçlu sorular)
 
 W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** gelir.
@@ -982,7 +2163,23 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
 | wann | ne zaman | **Wann** kommst du? |
 | wie | nasıl | **Wie** heißt du? |
 
-**Örnek:** **Wo** wohnst du? – Ich wohne in Berlin. (Nerede yaşıyorsun? – Berlin'de yaşıyorum.)`,
+**Örnek:** **Wo** wohnst du? – Ich wohne in Berlin. (Nerede yaşıyorsun? – Berlin'de yaşıyorum.)
+
+### Daha fazla soru kelimesi
+| Soru kelimesi | Anlamı |
+| ---- | ---- |
+| warum | neden |
+| woher | nereden |
+| wohin | nereye |
+| wie viel(e) | ne kadar / kaç tane |
+
+### W-sorusu ve Evet/Hayır sorusu
+- **W-sorusu:** soru kelimesi + fiil + özne → **Wann** kommst du?
+- **Evet/Hayır sorusu:** fiil + özne → **Kommst** du?
+
+### Sık yapılan hatalar
+- ❌ *Wo du wohnst?* → ✅ **Wo wohnst du?** (fiil 2. sırada).
+- ❌ *Was du machst?* → ✅ **Was machst du?**`,
     },
   })
   await seedExercises({
@@ -1002,6 +2199,76 @@ W-soruları bir soru kelimesiyle başlar. Fiil her zaman **ikinci sırada** geli
         data: { words: ['du', 'heißt', 'wie'] },
         correctAnswer: { order: ['wie', 'heißt', 'du'] },
         explanation: 'W-Wort zuerst, dann Verb, dann Subjekt.',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ heißt du? – Ich heiße Ali. (Frage nach dem Namen)' },
+        correctAnswer: { accepted: ['wie'] },
+        explanation: '"Wie heißt du?" fragt nach dem Namen.',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ ist das? – Das ist Herr Müller.', options: ['Wo', 'Wer', 'Was', 'Wie'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Wer" fragt nach einer Person.',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['wer', 'wo', 'wann'], rights: ['when', 'who', 'where'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'wer', right: 'who' },
+            { left: 'wo', right: 'where' },
+            { left: 'wann', right: 'when' },
+          ],
+        },
+        explanation: 'wer = who, wo = where, wann = when.',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ machst du? – Ich lerne Deutsch. (Frage nach der Tätigkeit)' },
+        correctAnswer: { accepted: ['was'] },
+        explanation: '"Was" fragt nach der Sache/Tätigkeit.',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'An welcher Stelle steht das Verb in einer W-Frage?', options: ['Position 1', 'Position 2', 'am Ende', 'egal'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Das Verb steht immer an Position 2.',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ kommst du? – Aus Spanien.', options: ['Wohin', 'Woher', 'Warum', 'Wann'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Woher" fragt nach der Herkunft.',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['wohnst', 'wo', 'du'] },
+        correctAnswer: { order: ['wo', 'wohnst', 'du'] },
+        explanation: '"Wo wohnst du?"',
+      },
+      {
+        lessonId: a1Unit3Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Welches Fragewort bedeutet "why"?' },
+        correctAnswer: { accepted: ['warum'] },
+        explanation: 'warum = why.',
       },
     ],
   })
@@ -1042,7 +2309,23 @@ Das sind die wichtigsten Wörter für die Familie. Achte auf den Artikel:
 | die Eltern | parents |
 | die Geschwister | siblings |
 
-**Beispiel:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna.`,
+**Beispiel:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna.
+
+### Mehr Familienwörter
+| Deutsch | Englisch |
+| ---- | ---- |
+| der Sohn | son |
+| die Tochter | daughter |
+| der Opa / Großvater | grandpa |
+| die Oma / Großmutter | grandma |
+| der Onkel | uncle |
+| die Tante | aunt |
+
+**Merke:** **die Eltern** und **die Geschwister** gibt es nur im Plural.
+
+### Häufige Fehler
+- ❌ *die Vater* → ✅ **der** Vater.
+- ❌ *der Mutter* → ✅ **die** Mutter.`,
       explanationEn: `## Family members
 
 These are the most important words for the family. Pay attention to the article:
@@ -1056,7 +2339,23 @@ These are the most important words for the family. Pay attention to the article:
 | die Eltern | parents |
 | die Geschwister | siblings |
 
-**Example:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna. (My father is called Peter and my mother is called Anna.)`,
+**Example:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna. (My father is called Peter and my mother is called Anna.)
+
+### More family words
+| German | English |
+| ---- | ---- |
+| der Sohn | son |
+| die Tochter | daughter |
+| der Opa / Großvater | grandpa |
+| die Oma / Großmutter | grandma |
+| der Onkel | uncle |
+| die Tante | aunt |
+
+**Note:** **die Eltern** (parents) and **die Geschwister** (siblings) exist only in the plural.
+
+### Common mistakes
+- ❌ *die Vater* → ✅ **der** Vater.
+- ❌ *der Mutter* → ✅ **die** Mutter.`,
       explanationTr: `## Aile bireyleri
 
 Bunlar aileyle ilgili en önemli kelimelerdir. Tanımlığa dikkat et:
@@ -1070,7 +2369,23 @@ Bunlar aileyle ilgili en önemli kelimelerdir. Tanımlığa dikkat et:
 | die Eltern | ebeveynler |
 | die Geschwister | kardeşler |
 
-**Örnek:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna. (Babamın adı Peter, annemin adı Anna.)`,
+**Örnek:** Mein **Vater** heißt Peter und meine **Mutter** heißt Anna. (Babamın adı Peter, annemin adı Anna.)
+
+### Daha fazla aile kelimesi
+| Almanca | Türkçe |
+| ---- | ---- |
+| der Sohn | oğul |
+| die Tochter | kız (evlat) |
+| der Opa / Großvater | dede |
+| die Oma / Großmutter | nine |
+| der Onkel | amca/dayı |
+| die Tante | teyze/hala |
+
+**Not:** **die Eltern** (ebeveynler) ve **die Geschwister** (kardeşler) yalnızca çoğuldur.
+
+### Sık yapılan hatalar
+- ❌ *die Vater* → ✅ **der** Vater.
+- ❌ *der Mutter* → ✅ **die** Mutter.`,
     },
   })
   await seedExercises({
@@ -1097,6 +2412,76 @@ Bunlar aileyle ilgili en önemli kelimelerdir. Tanımlığa dikkat et:
         correctAnswer: { accepted: ['vater'] },
         explanation: '"Vater" bedeutet "father".',
       },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Meine ___ heißt Anna. (mother)' },
+        correctAnswer: { accepted: ['mutter'] },
+        explanation: '"Mutter" = mother.',
+      },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "die Geschwister"?', options: ['parents', 'siblings', 'grandparents', 'children'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"die Geschwister" = siblings (nur Plural).',
+      },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['der Sohn', 'die Tochter', 'die Oma'], rights: ['grandma', 'son', 'daughter'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Sohn', right: 'son' },
+            { left: 'die Tochter', right: 'daughter' },
+            { left: 'die Oma', right: 'grandma' },
+          ],
+        },
+        explanation: 'Sohn = son, Tochter = daughter, Oma = grandma.',
+      },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Artikel hat "Bruder"?', options: ['der', 'die', 'das', 'den'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'der Bruder.',
+      },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Meine Eltern sind mein Vater und meine ___.' },
+        correctAnswer: { accepted: ['mutter'] },
+        explanation: 'Eltern = Vater + Mutter.',
+      },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "die Tante"?', options: ['uncle', 'aunt', 'cousin', 'niece'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'die Tante = aunt.',
+      },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Vater', 'mein', 'Peter', 'heißt'] },
+        correctAnswer: { order: ['mein', 'Vater', 'heißt', 'Peter'] },
+        explanation: '"Mein Vater heißt Peter."',
+      },
+      {
+        lessonId: a1Unit4Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie heißt "brother" auf Deutsch? (mit Artikel)' },
+        correctAnswer: { accepted: ['der bruder', 'bruder'] },
+        explanation: 'der Bruder.',
+      },
     ],
   })
 
@@ -1116,7 +2501,21 @@ Possessivartikel zeigen, wem etwas gehört. Die Endung richtet sich nach dem Nom
 | neutral | mein Kind | dein Kind |
 | Plural | meine Eltern | deine Eltern |
 
-**Beispiel:** **Mein** Bruder ist groß. **Deine** Schwester ist nett.`,
+**Beispiel:** **Mein** Bruder ist groß. **Deine** Schwester ist nett.
+
+### Weitere Possessivartikel
+| Person | Artikel |
+| ---- | ---- |
+| er | sein (sein Vater, seine Mutter) |
+| sie | ihr (ihr Vater, ihre Mutter) |
+| wir | unser (unser Haus) |
+| Sie/sie | Ihr/ihr |
+
+**Regel:** maskulin/neutral → **kein -e** (mein Vater, mein Kind); feminin/Plural → **-e** (meine Mutter, meine Eltern).
+
+### Häufige Fehler
+- ❌ *meine Vater* → ✅ **mein** Vater (maskulin).
+- ❌ *mein Mutter* → ✅ **meine** Mutter (feminin).`,
       explanationEn: `## Possessive articles (mein/dein)
 
 Possessive articles show who something belongs to. The ending follows the noun – just like "ein/kein".
@@ -1128,7 +2527,21 @@ Possessive articles show who something belongs to. The ending follows the noun �
 | neuter | mein Kind | dein Kind |
 | plural | meine Eltern | deine Eltern |
 
-**Example:** **Mein** Bruder ist groß. (My brother is tall.) **Deine** Schwester ist nett. (Your sister is nice.)`,
+**Example:** **Mein** Bruder ist groß. (My brother is tall.) **Deine** Schwester ist nett. (Your sister is nice.)
+
+### More possessive articles
+| Person | Article |
+| ---- | ---- |
+| er | sein (sein Vater, seine Mutter) |
+| sie | ihr (ihr Vater, ihre Mutter) |
+| wir | unser (unser Haus) |
+| Sie/sie | Ihr/ihr |
+
+**Rule:** masculine/neuter → **no -e** (mein Vater, mein Kind); feminine/plural → **-e** (meine Mutter, meine Eltern).
+
+### Common mistakes
+- ❌ *meine Vater* → ✅ **mein** Vater (masculine).
+- ❌ *mein Mutter* → ✅ **meine** Mutter (feminine).`,
       explanationTr: `## İyelik tanımlıkları (mein/dein)
 
 İyelik tanımlıkları bir şeyin kime ait olduğunu gösterir. Ek, isme göre değişir – tıpkı „ein/kein" gibi.
@@ -1140,7 +2553,21 @@ Possessive articles show who something belongs to. The ending follows the noun �
 | nötr | mein Kind | dein Kind |
 | çoğul | meine Eltern | deine Eltern |
 
-**Örnek:** **Mein** Bruder ist groß. (Erkek kardeşim uzun boylu.) **Deine** Schwester ist nett. (Senin kız kardeşin hoş biri.)`,
+**Örnek:** **Mein** Bruder ist groß. (Erkek kardeşim uzun boylu.) **Deine** Schwester ist nett. (Senin kız kardeşin hoş biri.)
+
+### Diğer iyelik tanımlıkları
+| Kişi | Tanımlık |
+| ---- | ---- |
+| er | sein (sein Vater, seine Mutter) |
+| sie | ihr (ihr Vater, ihre Mutter) |
+| wir | unser (unser Haus) |
+| Sie/sie | Ihr/ihr |
+
+**Kural:** eril/nötr → **-e yok** (mein Vater, mein Kind); dişil/çoğul → **-e** (meine Mutter, meine Eltern).
+
+### Sık yapılan hatalar
+- ❌ *meine Vater* → ✅ **mein** Vater (eril).
+- ❌ *mein Mutter* → ✅ **meine** Mutter (dişil).`,
     },
   })
   await seedExercises({
@@ -1161,6 +2588,76 @@ Possessive articles show who something belongs to. The ending follows the noun �
         correctAnswer: { accepted: ['dein'] },
         explanation: '"Bruder" ist maskulin: dein Bruder.',
       },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Eltern wohnen in Berlin. (my, Plural)' },
+        correctAnswer: { accepted: ['meine'] },
+        explanation: 'Plural → -e: meine Eltern.',
+      },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Das ist ___ Kind. (my, neutral)', options: ['mein', 'meine', 'meinen', 'meiner'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'neutral → kein -e: mein Kind.',
+      },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['mein Vater', 'meine Mutter', 'meine Eltern'], rights: ['feminin', 'Plural', 'maskulin'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'mein Vater', right: 'maskulin' },
+            { left: 'meine Mutter', right: 'feminin' },
+            { left: 'meine Eltern', right: 'Plural' },
+          ],
+        },
+        explanation: 'mein (m), meine (f), meine (Pl.).',
+      },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er liebt ___ Mutter. (his, feminin)' },
+        correctAnswer: { accepted: ['seine'] },
+        explanation: '"er" → sein; feminin → seine Mutter.',
+      },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Sie liebt ___ Vater. (her, maskulin)', options: ['ihr', 'ihre', 'sein', 'seine'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"sie" → ihr; maskulin → ihr Vater.',
+      },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Meine Vater ist groß.', 'Mein Vater ist groß.', 'Meinen Vater ist groß.', 'Meiner Vater ist groß.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'maskulin: mein Vater.',
+      },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['nett', 'Schwester', 'deine', 'ist'] },
+        correctAnswer: { order: ['deine', 'Schwester', 'ist', 'nett'] },
+        explanation: '"Deine Schwester ist nett."',
+      },
+      {
+        lessonId: a1Unit4Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Ergänze: "___ Mutter ist nett." (my, feminin)' },
+        correctAnswer: { accepted: ['meine'] },
+        explanation: 'feminin → meine Mutter.',
+      },
     ],
   })
 
@@ -1178,7 +2675,18 @@ Bei Ja/Nein-Fragen steht das **Verb an erster Stelle**. Man antwortet mit „Ja"
 | Du **hast** Geschwister. | **Hast** du Geschwister? |
 | Er **wohnt** hier. | **Wohnt** er hier? |
 
-**Beispiel:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister.`,
+**Beispiel:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister.
+
+### Antwort mit „doch"
+Auf eine **verneinte** Frage antwortet man mit **doch** (statt „ja"), wenn man widerspricht:
+> **Hast** du keine Zeit? – **Doch**, ich habe Zeit!
+
+### W-Frage vs. Ja/Nein-Frage
+- Ja/Nein-Frage: **Verb** zuerst → **Wohnst** du hier?
+- W-Frage: **Fragewort** zuerst → **Wo** wohnst du?
+
+### Häufige Fehler
+- ❌ *Du hast Geschwister?* (nur Betonung) → besser: **Hast** du Geschwister? (Verb zuerst).`,
       explanationEn: `## Yes/no questions
 
 In yes/no questions the **verb comes first**. You answer with "Ja" (yes) or "Nein" (no).
@@ -1188,7 +2696,18 @@ In yes/no questions the **verb comes first**. You answer with "Ja" (yes) or "Nei
 | Du **hast** Geschwister. | **Hast** du Geschwister? |
 | Er **wohnt** hier. | **Wohnt** er hier? |
 
-**Example:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister. (Do you have siblings? – Yes, I have a sister. / No, I don't have siblings.)`,
+**Example:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister. (Do you have siblings? – Yes, I have a sister. / No, I don't have siblings.)
+
+### Answering with "doch"
+To a **negative** question you answer with **doch** (instead of "ja") when you contradict it:
+> **Hast** du keine Zeit? – **Doch**, ich habe Zeit! (Don't you have time? – Yes I do!)
+
+### W-question vs. yes/no question
+- Yes/no question: **verb** first → **Wohnst** du hier?
+- W-question: **question word** first → **Wo** wohnst du?
+
+### Common mistakes
+- ❌ *Du hast Geschwister?* (intonation only) → better: **Hast** du Geschwister? (verb first).`,
       explanationTr: `## Evet/hayır soruları
 
 Evet/hayır sorularında **fiil başta** gelir. „Ja" (evet) ya da „Nein" (hayır) ile cevap verirsin.
@@ -1198,7 +2717,18 @@ Evet/hayır sorularında **fiil başta** gelir. „Ja" (evet) ya da „Nein" (ha
 | Du **hast** Geschwister. | **Hast** du Geschwister? |
 | Er **wohnt** hier. | **Wohnt** er hier? |
 
-**Örnek:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister. (Kardeşin var mı? – Evet, bir kız kardeşim var. / Hayır, kardeşim yok.)`,
+**Örnek:** **Hast** du Geschwister? – **Ja**, ich habe eine Schwester. / **Nein**, ich habe keine Geschwister. (Kardeşin var mı? – Evet, bir kız kardeşim var. / Hayır, kardeşim yok.)
+
+### „doch" ile cevap
+**Olumsuz** bir soruya, karşı çıkarken „ja" yerine **doch** ile cevap verilir:
+> **Hast** du keine Zeit? – **Doch**, ich habe Zeit! (Vaktin yok mu? – Var ya!)
+
+### W-sorusu ve Evet/Hayır sorusu
+- Evet/Hayır sorusu: önce **fiil** → **Wohnst** du hier?
+- W-sorusu: önce **soru kelimesi** → **Wo** wohnst du?
+
+### Sık yapılan hatalar
+- ❌ *Du hast Geschwister?* (yalnızca vurgu) → daha iyisi: **Hast** du Geschwister? (önce fiil).`,
     },
   })
   await seedExercises({
@@ -1219,6 +2749,76 @@ Evet/hayır sorularında **fiil başta** gelir. „Ja" (evet) ya da „Nein" (ha
         correctAnswer: { correctIndex: 0 },
         explanation: 'Mit "du" benutzt man "hast".',
       },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ er hier? (Frage mit "wohnen", er)' },
+        correctAnswer: { accepted: ['wohnt'] },
+        explanation: 'Ja/Nein-Frage: Verb zuerst → "Wohnt er hier?".',
+      },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche ist eine Ja/Nein-Frage?', options: ['Wo wohnst du?', 'Wohnst du in Berlin?', 'Wie heißt du?', 'Wer ist das?'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Ja/Nein-Frage beginnt mit dem Verb: "Wohnst du in Berlin?".',
+      },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['Hast du Zeit?', 'Hast du keine Zeit?', 'Wo wohnst du?'], rights: ['In Berlin.', 'Ja, ich habe Zeit.', 'Doch, ich habe Zeit!'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Hast du Zeit?', right: 'Ja, ich habe Zeit.' },
+            { left: 'Hast du keine Zeit?', right: 'Doch, ich habe Zeit!' },
+            { left: 'Wo wohnst du?', right: 'In Berlin.' },
+          ],
+        },
+        explanation: 'Verneinte Frage → Antwort mit "Doch".',
+      },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Antwort auf "Hast du keine Geschwister?" (du hast welche)', options: ['Ja', 'Doch', 'Nein', 'Kein'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Verneinte Frage + Widerspruch → "Doch".',
+      },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ ihr Deutsch? (Frage mit "sprechen", ihr)' },
+        correctAnswer: { accepted: ['sprecht'] },
+        explanation: 'Verb zuerst, "ihr" → sprecht: "Sprecht ihr Deutsch?".',
+      },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das Verb in einer Ja/Nein-Frage?', options: ['an Position 1', 'an Position 2', 'am Ende', 'egal'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Verb zuerst (Position 1).',
+      },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['du', 'wohnst', 'Berlin', 'in'] },
+        correctAnswer: { order: ['wohnst', 'du', 'in', 'Berlin'] },
+        explanation: 'Ja/Nein-Frage: "Wohnst du in Berlin?".',
+      },
+      {
+        lessonId: a1Unit4Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Mache eine Ja/Nein-Frage aus "Du hast Zeit."' },
+        correctAnswer: { accepted: ['hast du zeit', 'hast du zeit?'] },
+        explanation: 'Verb zuerst: "Hast du Zeit?".',
+      },
     ],
   })
 
@@ -1237,7 +2837,15 @@ So sprichst du über deine Familie:
 - **Mein** Bruder **spielt** gern Fußball.
 - **Hast** du Geschwister? – Ja, ich **habe** eine Schwester.
 
-**Beispiel:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch.`,
+**Beispiel:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch.
+
+### Eine kleine Familienvorstellung
+> Das ist **meine** Familie. **Mein** Vater **heißt** Peter und **arbeitet** in Berlin. **Meine** Mutter **kommt** aus der Türkei. Ich **habe** eine Schwester. **Sie** **ist** zehn Jahre alt.
+
+### Denk daran
+- Possessivartikel: mein/meine je nach Genus.
+- Verbendung je nach Person: ich -e, du -st, er/sie -t, wir/sie -en.
+- Fragen: W-Wort + Verb oder Verb zuerst.`,
       explanationEn: `## Review: family, articles and present tense
 
 In this lesson you combine everything from Unit 4: **possessive articles** (mein/dein), **family words** and the **present tense** of verbs.
@@ -1248,7 +2856,15 @@ This is how you talk about your family:
 - **Mein** Bruder **spielt** gern Fußball. (My brother likes playing football.)
 - **Hast** du Geschwister? – Ja, ich **habe** eine Schwester. (Do you have siblings? – Yes, I have a sister.)
 
-**Example:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch. (My mother comes from Turkey and speaks Turkish.)`,
+**Example:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch. (My mother comes from Turkey and speaks Turkish.)
+
+### A short family introduction
+> Das ist **meine** Familie. **Mein** Vater **heißt** Peter und **arbeitet** in Berlin. **Meine** Mutter **kommt** aus der Türkei. Ich **habe** eine Schwester. **Sie** **ist** zehn Jahre alt.
+
+### Remember
+- Possessive articles: mein/meine depending on gender.
+- Verb ending by person: ich -e, du -st, er/sie -t, wir/sie -en.
+- Questions: W-word + verb, or verb first.`,
       explanationTr: `## Tekrar: aile, tanımlıklar ve geniş zaman
 
 Bu derste Unit 4'teki her şeyi birleştirirsin: **iyelik tanımlıkları** (mein/dein), **aile kelimeleri** ve fiillerin **geniş zamanı**.
@@ -1259,7 +2875,15 @@ Ailen hakkında şöyle konuşursun:
 - **Mein** Bruder **spielt** gern Fußball. (Erkek kardeşim futbol oynamayı seviyor.)
 - **Hast** du Geschwister? – Ja, ich **habe** eine Schwester. (Kardeşin var mı? – Evet, bir kız kardeşim var.)
 
-**Örnek:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch. (Annem Türkiye'den geliyor ve Türkçe konuşuyor.)`,
+**Örnek:** **Meine** Mutter **kommt** aus der Türkei und **spricht** Türkisch. (Annem Türkiye'den geliyor ve Türkçe konuşuyor.)
+
+### Kısa bir aile tanıtımı
+> Das ist **meine** Familie. **Mein** Vater **heißt** Peter und **arbeitet** in Berlin. **Meine** Mutter **kommt** aus der Türkei. Ich **habe** eine Schwester. **Sie** **ist** zehn Jahre alt.
+
+### Unutma
+- İyelik tanımlıkları: cinsiyete göre mein/meine.
+- Kişiye göre fiil eki: ich -e, du -st, er/sie -t, wir/sie -en.
+- Sorular: W-kelimesi + fiil ya da önce fiil.`,
     },
   })
   await seedExercises({
@@ -1279,6 +2903,76 @@ Ailen hakkında şöyle konuşursun:
         data: { prompt: "Wie sagt man auf Deutsch: 'My brother plays football'?" },
         correctAnswer: { accepted: ['mein bruder spielt fußball'] },
         explanation: '"Mein Bruder spielt Fußball" bedeutet "My brother plays football".',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Mutter kommt aus der Türkei. (my, feminin)' },
+        correctAnswer: { accepted: ['meine'] },
+        explanation: 'feminin → meine Mutter.',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Mein Bruder ___ gern Fußball.', options: ['spiele', 'spielst', 'spielt', 'spielen'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '3. Person Singular: spielt.',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['ich habe', 'du hast', 'er hat'], rights: ['er/sie/es', 'ich', 'du'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich habe', right: 'ich' },
+            { left: 'du hast', right: 'du' },
+            { left: 'er hat', right: 'er/sie/es' },
+          ],
+        },
+        explanation: 'haben-Formen zuordnen.',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Meine Eltern ___ (wohnen) in Berlin. (Plural)' },
+        correctAnswer: { accepted: ['wohnen'] },
+        explanation: 'Plural (sie) → -en: wohnen.',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Meine Vater arbeitet.', 'Mein Vater arbeitet.', 'Mein Vater arbeiten.', 'Meine Vater arbeiten.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'mein Vater (m) + arbeitet (3. Sg.).',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 8,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ du Geschwister? (Ja/Nein-Frage, haben)' },
+        correctAnswer: { accepted: ['hast'] },
+        explanation: 'Verb zuerst: "Hast du Geschwister?".',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['wohnt', 'Schwester', 'meine', 'München', 'in'] },
+        correctAnswer: { order: ['meine', 'Schwester', 'wohnt', 'in', 'München'] },
+        explanation: '"Meine Schwester wohnt in München."',
+      },
+      {
+        lessonId: a1Unit4Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man: 'My mother comes from Turkey'? (Meine Mutter ...)" },
+        correctAnswer: { accepted: ['meine mutter kommt aus der türkei', 'meine mutter kommt aus der türkei.'] },
+        explanation: '"Meine Mutter kommt aus der Türkei."',
       },
     ],
   })
@@ -1319,7 +3013,24 @@ Die Zehner enden auf **-zig** (Ausnahme: dreißig). Ab 21 nennst du zuerst den E
 | 30 | dreißig |
 | 100 | hundert |
 
-**Beispiel:** Ich bin **einundzwanzig** Jahre alt. Das kostet **dreißig** Euro.`,
+**Beispiel:** Ich bin **einundzwanzig** Jahre alt. Das kostet **dreißig** Euro.
+
+### Die Zehner
+| Zahl | Wort |
+| ---- | ---- |
+| 40 | vierzig |
+| 50 | fünfzig |
+| 60 | sechzig (nicht *sechszig*) |
+| 70 | siebzig (nicht *siebenzig*) |
+| 80 | achtzig |
+| 90 | neunzig |
+
+**Aufbau ab 21:** Einer + **und** + Zehner, zusammengeschrieben: **vier**und**vierzig** (44), **sieben**und**sechzig** (67).
+
+### Häufige Fehler
+- ❌ *zwanzigeins* → ✅ **einundzwanzig**.
+- ❌ *dreizig* → ✅ **dreißig** (mit ß).
+- ❌ *sechzehn/sechzig* mit „s": ✅ **sechzehn**, **sechzig**.`,
       explanationEn: `## Numbers 11–100
 
 The tens end in **-zig** (exception: dreißig). From 21 on, you say the unit first, then "und", then the ten.
@@ -1333,7 +3044,24 @@ The tens end in **-zig** (exception: dreißig). From 21 on, you say the unit fir
 | 30 | dreißig |
 | 100 | hundert |
 
-**Example:** Ich bin **einundzwanzig** Jahre alt. (I am twenty-one years old.) Das kostet **dreißig** Euro. (That costs thirty euros.) Note: 21 is literally "one-and-twenty".`,
+**Example:** Ich bin **einundzwanzig** Jahre alt. (I am twenty-one years old.) Das kostet **dreißig** Euro. (That costs thirty euros.) Note: 21 is literally "one-and-twenty".
+
+### The tens
+| Number | Word |
+| ---- | ---- |
+| 40 | vierzig |
+| 50 | fünfzig |
+| 60 | sechzig (not *sechszig*) |
+| 70 | siebzig (not *siebenzig*) |
+| 80 | achtzig |
+| 90 | neunzig |
+
+**Structure from 21:** unit + **und** + ten, written as one word: **vier**und**vierzig** (44), **sieben**und**sechzig** (67).
+
+### Common mistakes
+- ❌ *zwanzigeins* → ✅ **einundzwanzig**.
+- ❌ *dreizig* → ✅ **dreißig** (with ß).
+- ❌ *sechzehn/sechzig* keep an "s": ✅ **sechzehn**, **sechzig**.`,
       explanationTr: `## Sayılar 11–100
 
 Onlar **-zig** ile biter (istisna: dreißig). 21'den itibaren önce biri, sonra „und", sonra onu söylersin.
@@ -1347,7 +3075,24 @@ Onlar **-zig** ile biter (istisna: dreißig). 21'den itibaren önce biri, sonra 
 | 30 | dreißig |
 | 100 | hundert |
 
-**Örnek:** Ich bin **einundzwanzig** Jahre alt. (Yirmi bir yaşındayım.) Das kostet **dreißig** Euro. (Bu otuz euro.) Not: 21, kelime kelime „bir-ve-yirmi" demektir.`,
+**Örnek:** Ich bin **einundzwanzig** Jahre alt. (Yirmi bir yaşındayım.) Das kostet **dreißig** Euro. (Bu otuz euro.) Not: 21, kelime kelime „bir-ve-yirmi" demektir.
+
+### Onlar
+| Sayı | Sözcük |
+| ---- | ---- |
+| 40 | vierzig |
+| 50 | fünfzig |
+| 60 | sechzig (*sechszig* değil) |
+| 70 | siebzig (*siebenzig* değil) |
+| 80 | achtzig |
+| 90 | neunzig |
+
+**21'den itibaren yapı:** birler + **und** + onlar, bitişik yazılır: **vier**und**vierzig** (44), **sieben**und**sechzig** (67).
+
+### Sık yapılan hatalar
+- ❌ *zwanzigeins* → ✅ **einundzwanzig**.
+- ❌ *dreizig* → ✅ **dreißig** (ß ile).
+- ❌ **sechzehn**, **sechzig** „s" korunur.`,
     },
   })
   await seedExercises({
@@ -1368,6 +3113,76 @@ Onlar **-zig** ile biter (istisna: dreißig). 21'den itibaren önce biri, sonra 
         correctAnswer: { accepted: ['zwanzig'] },
         explanation: 'Nach 19 kommt 20 (zwanzig).',
       },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Zahl 30 heißt ___.' },
+        correctAnswer: { accepted: ['dreißig', 'dreissig'] },
+        explanation: '30 = dreißig (mit ß).',
+      },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie sagt man "44"?', options: ['vierzigvier', 'vierundvierzig', 'vierundvier', 'vierzehnvierzig'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '44 = vierundvierzig (vier + und + vierzig).',
+      },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['zwölf', 'fünfzig', 'hundert'], rights: ['100', '12', '50'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'zwölf', right: '12' },
+            { left: 'fünfzig', right: '50' },
+            { left: 'hundert', right: '100' },
+          ],
+        },
+        explanation: 'zwölf = 12, fünfzig = 50, hundert = 100.',
+      },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Zahl ist "siebzig"?', options: ['17', '70', '7', '77'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'siebzig = 70.',
+      },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Zahl 67 heißt ___. (ein Wort)' },
+        correctAnswer: { accepted: ['siebenundsechzig'] },
+        explanation: '67 = siebenundsechzig.',
+      },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Schreibweise ist richtig?', options: ['dreizig', 'dreißig', 'dreissigzehn', 'dreizehnzig'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '30 = dreißig.',
+      },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bin', 'ich', 'Jahre', 'alt', 'einundzwanzig'] },
+        correctAnswer: { order: ['ich', 'bin', 'einundzwanzig', 'Jahre', 'alt'] },
+        explanation: '"Ich bin einundzwanzig Jahre alt."',
+      },
+      {
+        lessonId: a1Unit5Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Schreibe die Zahl 100 als Wort.' },
+        correctAnswer: { accepted: ['hundert', 'einhundert'] },
+        explanation: '100 = (ein)hundert.',
+      },
     ],
   })
 
@@ -1387,7 +3202,18 @@ Du fragst nach der Zeit mit **„Wie spät ist es?"** oder **„Wie viel Uhr ist
 | 3:30 | Es ist halb vier. |
 | 3:45 | Es ist Viertel vor vier. |
 
-**Achtung:** „halb vier" bedeutet 3:30 – also *eine halbe Stunde vor vier*.`,
+**Achtung:** „halb vier" bedeutet 3:30 – also *eine halbe Stunde vor vier*.
+
+### Offizielle Uhrzeit (24 Stunden)
+Im Fahrplan/Radio: **Es ist 14:30 Uhr** = „vierzehn Uhr dreißig". Umgangssprachlich: **halb drei** (14:30).
+
+### Minuten „nach" und „vor"
+- 3:10 → **zehn nach drei**
+- 3:50 → **zehn vor vier**
+
+### Häufige Fehler
+- ❌ *halb vier* = 4:30 → ✅ „halb vier" = **3:30** (Deutsch zählt zur nächsten vollen Stunde).
+- ❌ *Es ist Viertel nach vier* für 3:45 → ✅ **Viertel vor vier**.`,
       explanationEn: `## Telling the time
 
 You ask the time with **"Wie spät ist es?"** or **"Wie viel Uhr ist es?"** (What time is it?). The answer starts with "Es ist …".
@@ -1399,7 +3225,18 @@ You ask the time with **"Wie spät ist es?"** or **"Wie viel Uhr ist es?"** (Wha
 | 3:30 | Es ist halb vier. |
 | 3:45 | Es ist Viertel vor vier. |
 
-**Watch out:** "halb vier" means 3:30 – i.e. *half an hour before four*, not after three.`,
+**Watch out:** "halb vier" means 3:30 – i.e. *half an hour before four*, not after three.
+
+### Official time (24-hour)
+On timetables/radio: **Es ist 14:30 Uhr** = "vierzehn Uhr dreißig". Colloquially: **halb drei** (14:30).
+
+### Minutes "nach" and "vor"
+- 3:10 → **zehn nach drei** (ten past three)
+- 3:50 → **zehn vor vier** (ten to four)
+
+### Common mistakes
+- ❌ *halb vier* = 4:30 → ✅ "halb vier" = **3:30** (German counts towards the next full hour).
+- ❌ *Es ist Viertel nach vier* for 3:45 → ✅ **Viertel vor vier**.`,
       explanationTr: `## Saati söyleme
 
 Saati **„Wie spät ist es?"** ya da **„Wie viel Uhr ist es?"** (Saat kaç?) diye sorarsın. Cevap „Es ist …" ile başlar.
@@ -1411,7 +3248,18 @@ Saati **„Wie spät ist es?"** ya da **„Wie viel Uhr ist es?"** (Saat kaç?) 
 | 3:30 | Es ist halb vier. |
 | 3:45 | Es ist Viertel vor vier. |
 
-**Dikkat:** „halb vier" 3:30 demektir – yani *dörde yarım saat kala*, üç buçuk. Almanca bir sonraki saati sayar.`,
+**Dikkat:** „halb vier" 3:30 demektir – yani *dörde yarım saat kala*, üç buçuk. Almanca bir sonraki saati sayar.
+
+### Resmi saat (24 saat)
+Tarifelerde/radyoda: **Es ist 14:30 Uhr** = „vierzehn Uhr dreißig". Günlük dilde: **halb drei** (14:30).
+
+### „nach" ve „vor" ile dakikalar
+- 3:10 → **zehn nach drei** (üçü on geçe)
+- 3:50 → **zehn vor vier** (dörde on kala)
+
+### Sık yapılan hatalar
+- ❌ *halb vier* = 4:30 → ✅ „halb vier" = **3:30** (Almanca bir sonraki tam saate göre sayar).
+- ❌ 3:45 için *Viertel nach vier* → ✅ **Viertel vor vier**.`,
     },
   })
   await seedExercises({
@@ -1431,6 +3279,76 @@ Saati **„Wie spät ist es?"** ya da **„Wie viel Uhr ist es?"** (Saat kaç?) 
         data: { prompt: "Wie sagt man auf Deutsch: 'It is three o'clock'?" },
         correctAnswer: { accepted: ['es ist drei uhr'] },
         explanation: '"Es ist drei Uhr" bedeutet "It is three o\'clock".',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "halb vier"?', options: ['4:30', '3:30', '4:15', '3:15'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"halb vier" = 3:30 (halbe Stunde bis vier).',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '3:15 = Es ist Viertel ___ drei.' },
+        correctAnswer: { accepted: ['nach'] },
+        explanation: '3:15 = Viertel nach drei.',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['3:00', '3:30', '3:45'], rights: ['halb vier', 'drei Uhr', 'Viertel vor vier'] },
+        correctAnswer: {
+          pairs: [
+            { left: '3:00', right: 'drei Uhr' },
+            { left: '3:30', right: 'halb vier' },
+            { left: '3:45', right: 'Viertel vor vier' },
+          ],
+        },
+        explanation: 'Uhrzeiten zuordnen.',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie sagt man 3:45?', options: ['Viertel nach vier', 'Viertel vor vier', 'halb vier', 'Viertel vor drei'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '3:45 = Viertel vor vier.',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Offiziell: Es ist 14:00 Uhr = ___ Uhr. (Zahl als Wort)' },
+        correctAnswer: { accepted: ['vierzehn'] },
+        explanation: '14:00 offiziell = vierzehn Uhr.',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie fragt man noch nach der Zeit?', options: ['Wie viel Uhr ist es?', 'Wie viele Uhren?', 'Wo ist die Uhr?', 'Wann ist es?'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Wie viel Uhr ist es?" = Wie spät ist es?',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ist', 'es', 'Uhr', 'drei'] },
+        correctAnswer: { order: ['es', 'ist', 'drei', 'Uhr'] },
+        explanation: '"Es ist drei Uhr."',
+      },
+      {
+        lessonId: a1Unit5Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie sagt man 3:30 umgangssprachlich? (halb ...)' },
+        correctAnswer: { accepted: ['halb vier'] },
+        explanation: '3:30 = halb vier.',
       },
     ],
   })
@@ -1454,7 +3372,19 @@ Alle Wochentage sind maskulin (der). Für „an einem Tag" benutzt du **am** (an
 | Samstag | Saturday |
 | Sonntag | Sunday |
 
-**Beispiel:** **Am** Montag arbeite ich. **Am** Sonntag habe ich frei.`,
+**Beispiel:** **Am** Montag arbeite ich. **Am** Sonntag habe ich frei.
+
+### Nützliche Wörter
+- **das Wochenende** → **am** Wochenende
+- **heute** (today), **morgen** (tomorrow), **gestern** (yesterday)
+- Frage: **Welcher Tag ist heute?** – Heute ist Montag.
+
+### Reihenfolge im Satz
+Steht die Zeitangabe vorn, kommt das Verb direkt danach: **Am Montag arbeite ich.** (nicht *Am Montag ich arbeite*).
+
+### Häufige Fehler
+- ❌ *in Montag* → ✅ **am** Montag.
+- ❌ *am Wochenende ich arbeite* → ✅ Am Wochenende **arbeite ich**.`,
       explanationEn: `## The days of the week
 
 All weekdays are masculine (der). To say "on a day" you use **am** (an + dem).
@@ -1469,7 +3399,19 @@ All weekdays are masculine (der). To say "on a day" you use **am** (an + dem).
 | Samstag | Saturday |
 | Sonntag | Sunday |
 
-**Example:** **Am** Montag arbeite ich. (On Monday I work.) **Am** Sonntag habe ich frei. (On Sunday I'm off.)`,
+**Example:** **Am** Montag arbeite ich. (On Monday I work.) **Am** Sonntag habe ich frei. (On Sunday I'm off.)
+
+### Useful words
+- **das Wochenende** (weekend) → **am** Wochenende
+- **heute** (today), **morgen** (tomorrow), **gestern** (yesterday)
+- Question: **Welcher Tag ist heute?** (What day is it today?) – Heute ist Montag.
+
+### Word order in the sentence
+If the time expression is first, the verb comes right after: **Am Montag arbeite ich.** (not *Am Montag ich arbeite*).
+
+### Common mistakes
+- ❌ *in Montag* → ✅ **am** Montag.
+- ❌ *am Wochenende ich arbeite* → ✅ Am Wochenende **arbeite ich**.`,
       explanationTr: `## Haftanın günleri
 
 Bütün günler erildir (der). „Bir günde" demek için **am** (an + dem) kullanırsın.
@@ -1484,7 +3426,19 @@ Bütün günler erildir (der). „Bir günde" demek için **am** (an + dem) kull
 | Samstag | Cumartesi |
 | Sonntag | Pazar |
 
-**Örnek:** **Am** Montag arbeite ich. (Pazartesi çalışırım.) **Am** Sonntag habe ich frei. (Pazar günü izinliyim.)`,
+**Örnek:** **Am** Montag arbeite ich. (Pazartesi çalışırım.) **Am** Sonntag habe ich frei. (Pazar günü izinliyim.)
+
+### Faydalı kelimeler
+- **das Wochenende** (hafta sonu) → **am** Wochenende
+- **heute** (bugün), **morgen** (yarın), **gestern** (dün)
+- Soru: **Welcher Tag ist heute?** (Bugün günlerden ne?) – Heute ist Montag.
+
+### Cümlede sıralama
+Zaman ifadesi başta ise fiil hemen ardından gelir: **Am Montag arbeite ich.** (*Am Montag ich arbeite* değil).
+
+### Sık yapılan hatalar
+- ❌ *in Montag* → ✅ **am** Montag.
+- ❌ *am Wochenende ich arbeite* → ✅ Am Wochenende **arbeite ich**.`,
     },
   })
   await seedExercises({
@@ -1511,6 +3465,76 @@ Bütün günler erildir (der). „Bir günde" demek için **am** (an + dem) kull
         correctAnswer: { order: ['ich', 'arbeite', 'am', 'Montag'] },
         explanation: 'Reihenfolge: Subjekt, Verb, Zeitangabe.',
       },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Sonntag habe ich frei. (Präposition)' },
+        correctAnswer: { accepted: ['am'] },
+        explanation: 'Tage mit "am": am Sonntag.',
+      },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Tag kommt nach Dienstag?', options: ['Montag', 'Mittwoch', 'Donnerstag', 'Freitag'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Nach Dienstag kommt Mittwoch.',
+      },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['Freitag', 'Samstag', 'Donnerstag'], rights: ['Thursday', 'Friday', 'Saturday'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Freitag', right: 'Friday' },
+            { left: 'Samstag', right: 'Saturday' },
+            { left: 'Donnerstag', right: 'Thursday' },
+          ],
+        },
+        explanation: 'Freitag = Friday, Samstag = Saturday, Donnerstag = Thursday.',
+      },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 6,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der erste Tag der Woche (in D) ist der ___.' },
+        correctAnswer: { accepted: ['montag'] },
+        explanation: 'Die Woche beginnt mit Montag.',
+      },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 7,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Artikel haben die Wochentage?', options: ['der', 'die', 'das', 'kein'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Alle Wochentage sind maskulin: der Montag.',
+      },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 8,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ Wochenende schlafe ich lange. (Präposition)' },
+        correctAnswer: { accepted: ['am'] },
+        explanation: 'am Wochenende.',
+      },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['habe', 'am', 'ich', 'Sonntag', 'frei'] },
+        correctAnswer: { order: ['am', 'Sonntag', 'habe', 'ich', 'frei'] },
+        explanation: 'Zeitangabe vorn → Verb danach: "Am Sonntag habe ich frei."',
+      },
+      {
+        lessonId: a1Unit5Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie heißt "Tuesday" auf Deutsch?' },
+        correctAnswer: { accepted: ['dienstag', 'der dienstag'] },
+        explanation: 'Tuesday = Dienstag.',
+      },
     ],
   })
 
@@ -1529,7 +3553,23 @@ Um deinen Tag zu beschreiben, verbindest du Zeitangaben mit Verben. Wichtige Pr�
 | von … bis | from … to | **von** neun **bis** siebzehn Uhr |
 | am | on (Tag) | **am** Morgen |
 
-**Beispiel:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr.`,
+**Beispiel:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr.
+
+### Typische Tagesabschnitte
+| Deutsch | Bedeutung |
+| ---- | ---- |
+| am Morgen / morgens | in the morning |
+| am Mittag / mittags | at noon |
+| am Nachmittag | in the afternoon |
+| am Abend / abends | in the evening |
+| in der Nacht / nachts | at night |
+
+### Wichtige Alltagsverben
+aufstehen, frühstücken, arbeiten, essen, schlafen gehen.
+
+### Häufige Fehler
+- ❌ *um Morgen* → ✅ **am** Morgen.
+- ❌ *Ich stehe auf um 7 Uhr* → besser: Ich **stehe** um 7 Uhr **auf** (trennbares Verb).`,
       explanationEn: `## Daily routine
 
 To describe your day, you combine time expressions with verbs. Important prepositions:
@@ -1540,7 +3580,23 @@ To describe your day, you combine time expressions with verbs. Important preposi
 | von … bis | from … to | **von** neun **bis** siebzehn Uhr |
 | am | on (a part of day) | **am** Morgen |
 
-**Example:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr. (I have breakfast at eight and work from nine to five.)`,
+**Example:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr. (I have breakfast at eight and work from nine to five.)
+
+### Typical parts of the day
+| German | Meaning |
+| ---- | ---- |
+| am Morgen / morgens | in the morning |
+| am Mittag / mittags | at noon |
+| am Nachmittag | in the afternoon |
+| am Abend / abends | in the evening |
+| in der Nacht / nachts | at night |
+
+### Important daily verbs
+aufstehen (get up), frühstücken (have breakfast), arbeiten, essen, schlafen gehen.
+
+### Common mistakes
+- ❌ *um Morgen* → ✅ **am** Morgen.
+- ❌ *Ich stehe auf um 7 Uhr* → better: Ich **stehe** um 7 Uhr **auf** (separable verb).`,
       explanationTr: `## Günlük akış (Tagesablauf)
 
 Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli edatlar:
@@ -1551,7 +3607,23 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
 | von … bis | -den … -e kadar | **von** neun **bis** siebzehn Uhr |
 | am | -de (günün bölümü) | **am** Morgen |
 
-**Örnek:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr. (Saat sekizde kahvaltı yaparım ve dokuzdan beşe kadar çalışırım.)`,
+**Örnek:** Ich esse **um** acht Uhr Frühstück und arbeite **von** neun **bis** siebzehn Uhr. (Saat sekizde kahvaltı yaparım ve dokuzdan beşe kadar çalışırım.)
+
+### Günün tipik bölümleri
+| Almanca | Anlamı |
+| ---- | ---- |
+| am Morgen / morgens | sabahları |
+| am Mittag / mittags | öğle vakti |
+| am Nachmittag | öğleden sonra |
+| am Abend / abends | akşamları |
+| in der Nacht / nachts | geceleri |
+
+### Önemli günlük fiiller
+aufstehen (kalkmak), frühstücken (kahvaltı yapmak), arbeiten, essen, schlafen gehen.
+
+### Sık yapılan hatalar
+- ❌ *um Morgen* → ✅ **am** Morgen.
+- ❌ *Ich stehe auf um 7 Uhr* → daha iyisi: Ich **stehe** um 7 Uhr **auf** (ayrılabilir fiil).`,
     },
   })
   await seedExercises({
@@ -1571,6 +3643,76 @@ Gününü anlatmak için zaman ifadelerini fiillerle birleştirirsin. Önemli ed
         data: { prompt: 'Ich arbeite ___ neun bis siebzehn Uhr.', options: ['von', 'um', 'am', 'bei'] },
         correctAnswer: { correctIndex: 0 },
         explanation: '"Von...bis" beschreibt einen Zeitraum.',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich arbeite von neun ___ siebzehn Uhr.' },
+        correctAnswer: { accepted: ['bis'] },
+        explanation: 'von … bis (Zeitraum).',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '___ Morgen trinke ich Kaffee.', options: ['Um', 'Am', 'Von', 'Bis'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Tagesabschnitt mit "am": am Morgen.',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['um', 'von … bis', 'am'], rights: ['Tagesabschnitt', 'genaue Uhrzeit', 'Zeitraum'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'um', right: 'genaue Uhrzeit' },
+            { left: 'von … bis', right: 'Zeitraum' },
+            { left: 'am', right: 'Tagesabschnitt' },
+          ],
+        },
+        explanation: 'um (Uhrzeit), von…bis (Zeitraum), am (Tagesabschnitt/Tag).',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "abends"?', options: ['in the morning', 'at noon', 'in the evening', 'at night'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'abends = in the evening.',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ um 7 Uhr auf. (aufstehen, ich – trennbar)' },
+        correctAnswer: { accepted: ['stehe'] },
+        explanation: 'aufstehen: Ich stehe … auf.',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann isst man Frühstück?', options: ['am Abend', 'am Morgen', 'in der Nacht', 'am Nachmittag'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Frühstück isst man am Morgen.',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['esse', 'um', 'ich', 'acht', 'Frühstück', 'Uhr'] },
+        correctAnswer: { order: ['ich', 'esse', 'um', 'acht', 'Uhr', 'Frühstück'] },
+        explanation: '"Ich esse um acht Uhr Frühstück."',
+      },
+      {
+        lessonId: a1Unit5Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Welche Präposition benutzt man für eine genaue Uhrzeit? (z. B. ___ 8 Uhr)' },
+        correctAnswer: { accepted: ['um'] },
+        explanation: 'Genaue Uhrzeit mit "um".',
       },
     ],
   })
@@ -1609,7 +3751,17 @@ Das Akkusativobjekt ist meist die Person oder Sache, die eine Handlung „empfä
 | neutral | das/ein | das/ein |
 | Plural | die | die |
 
-**Beispiel:** Ich sehe **den** Mann, **die** Frau und **das** Kind.`,
+**Beispiel:** Ich sehe **den** Mann, **die** Frau und **das** Kind.
+
+### Merksatz
+Nur **maskulin** ändert sich: **der → den**, **ein → einen**, **kein → keinen**, **mein → meinen**.
+
+### Wer oder was? (Frage nach dem Akkusativ)
+Frage mit **Wen?** oder **Was?**: Ich sehe **den** Mann. → **Wen** sehe ich? – Den Mann.
+
+### Häufige Fehler
+- ❌ *Ich sehe der Mann* → ✅ Ich sehe **den** Mann.
+- ❌ *Ich habe einen Frau* → ✅ Ich habe **eine** Frau (feminin bleibt gleich).`,
       explanationEn: `## The accusative: articles
 
 The accusative object is usually the person or thing that "receives" the action. Only the **masculine** article changes – the rest stays the same.
@@ -1621,7 +3773,17 @@ The accusative object is usually the person or thing that "receives" the action.
 | neuter | das/ein | das/ein |
 | plural | die | die |
 
-**Example:** Ich sehe **den** Mann, **die** Frau und **das** Kind. (I see the man, the woman and the child.)`,
+**Example:** Ich sehe **den** Mann, **die** Frau und **das** Kind. (I see the man, the woman and the child.)
+
+### Memory aid
+Only **masculine** changes: **der → den**, **ein → einen**, **kein → keinen**, **mein → meinen**.
+
+### Whom or what? (asking for the accusative)
+Ask with **Wen?** (whom) or **Was?** (what): Ich sehe **den** Mann. → **Wen** sehe ich? – Den Mann.
+
+### Common mistakes
+- ❌ *Ich sehe der Mann* → ✅ Ich sehe **den** Mann.
+- ❌ *Ich habe einen Frau* → ✅ Ich habe **eine** Frau (feminine stays the same).`,
       explanationTr: `## Akkusatif: tanımlıklar
 
 Akkusatif nesnesi genelde bir eylemi „alan" kişi ya da nesnedir. Sadece **eril** tanımlık değişir – geri kalanı aynı kalır.
@@ -1633,7 +3795,17 @@ Akkusatif nesnesi genelde bir eylemi „alan" kişi ya da nesnedir. Sadece **eri
 | nötr | das/ein | das/ein |
 | çoğul | die | die |
 
-**Örnek:** Ich sehe **den** Mann, **die** Frau und **das** Kind. (Adamı, kadını ve çocuğu görüyorum.)`,
+**Örnek:** Ich sehe **den** Mann, **die** Frau und **das** Kind. (Adamı, kadını ve çocuğu görüyorum.)
+
+### Akılda kalıcı kural
+Yalnızca **eril** değişir: **der → den**, **ein → einen**, **kein → keinen**, **mein → meinen**.
+
+### Kimi ya da neyi? (Akkusatif sorusu)
+**Wen?** (kimi) ya da **Was?** (neyi) ile sor: Ich sehe **den** Mann. → **Wen** sehe ich? – Den Mann.
+
+### Sık yapılan hatalar
+- ❌ *Ich sehe der Mann* → ✅ Ich sehe **den** Mann.
+- ❌ *Ich habe einen Frau* → ✅ Ich habe **eine** Frau (dişil aynı kalır).`,
     },
   })
   await seedExercises({
@@ -1653,6 +3825,76 @@ Akkusatif nesnesi genelde bir eylemi „alan" kişi ya da nesnedir. Sadece **eri
         data: { sentence: 'Ich sehe ___ Frau.' },
         correctAnswer: { accepted: ['die'] },
         explanation: 'Feminin bleibt im Akkusativ gleich: die Frau.',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe ___ Hund. (ein, maskulin, Akkusativ)' },
+        correctAnswer: { accepted: ['einen'] },
+        explanation: 'ein → einen (maskulin Akkusativ).',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich sehe ___ Kind. (bestimmter Artikel)', options: ['der', 'den', 'die', 'das'] },
+        correctAnswer: { correctIndex: 3 },
+        explanation: 'Neutral bleibt gleich: das Kind.',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['der Mann', 'die Frau', 'das Kind'], rights: ['das Kind', 'den Mann', 'die Frau'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Mann', right: 'den Mann' },
+            { left: 'die Frau', right: 'die Frau' },
+            { left: 'das Kind', right: 'das Kind' },
+          ],
+        },
+        explanation: 'Nominativ → Akkusativ: nur maskulin ändert sich.',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Fragewort passt zum Akkusativ (Person)?', options: ['Wer', 'Wen', 'Wo', 'Wann'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Wen?" fragt nach dem Akkusativobjekt.',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich kaufe ___ Apfel. (der Apfel, bestimmter Artikel, Akkusativ)' },
+        correctAnswer: { accepted: ['den'] },
+        explanation: 'der → den: den Apfel.',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich sehe der Mann.', 'Ich sehe den Mann.', 'Ich sehe dem Mann.', 'Ich sehe des Mann.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Akkusativ maskulin: den Mann.',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['den', 'ich', 'Mann', 'sehe'] },
+        correctAnswer: { order: ['ich', 'sehe', 'den', 'Mann'] },
+        explanation: '"Ich sehe den Mann."',
+      },
+      {
+        lessonId: a1Unit6Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie lautet "der" im Akkusativ?' },
+        correctAnswer: { accepted: ['den'] },
+        explanation: 'der → den.',
       },
     ],
   })
@@ -1677,7 +3919,18 @@ Auch die Personalpronomen haben eine Akkusativform. Nur „sie", „es", „Sie"
 | ihr | euch |
 | sie/Sie | sie/Sie |
 
-**Beispiel:** Ich liebe **dich**. Sie sieht **ihn**. Er versteht **uns** nicht.`,
+**Beispiel:** Ich liebe **dich**. Sie sieht **ihn**. Er versteht **uns** nicht.
+
+### Position im Satz
+Das Akkusativpronomen steht meist direkt nach dem Verb: Ich **sehe dich**. · **Kennst** du **ihn**?
+
+### Wichtig: „ihn" ≠ „ihm"
+- **ihn** = Akkusativ (Ich sehe **ihn**.)
+- **ihm** = Dativ (Ich helfe **ihm**.) → kommt in Unit 9.
+
+### Häufige Fehler
+- ❌ *Ich liebe er* → ✅ Ich liebe **ihn**.
+- ❌ *Er sieht ich* → ✅ Er sieht **mich**.`,
       explanationEn: `## The accusative: pronouns
 
 Personal pronouns also have an accusative form. Only "sie", "es" and "Sie" stay the same.
@@ -1693,7 +3946,18 @@ Personal pronouns also have an accusative form. Only "sie", "es" and "Sie" stay 
 | ihr | euch (you pl.) |
 | sie/Sie | sie/Sie (them/you) |
 
-**Example:** Ich liebe **dich**. (I love you.) Sie sieht **ihn**. (She sees him.) Er versteht **uns** nicht. (He doesn't understand us.)`,
+**Example:** Ich liebe **dich**. (I love you.) Sie sieht **ihn**. (She sees him.) Er versteht **uns** nicht. (He doesn't understand us.)
+
+### Position in the sentence
+The accusative pronoun usually comes right after the verb: Ich **sehe dich**. · **Kennst** du **ihn**?
+
+### Important: "ihn" ≠ "ihm"
+- **ihn** = accusative (Ich sehe **ihn**.)
+- **ihm** = dative (Ich helfe **ihm**.) → comes in Unit 9.
+
+### Common mistakes
+- ❌ *Ich liebe er* → ✅ Ich liebe **ihn**.
+- ❌ *Er sieht ich* → ✅ Er sieht **mich**.`,
       explanationTr: `## Akkusatif: zamirler
 
 Şahıs zamirlerinin de bir akkusatif biçimi vardır. Sadece „sie", „es" ve „Sie" aynı kalır.
@@ -1709,7 +3973,18 @@ Personal pronouns also have an accusative form. Only "sie", "es" and "Sie" stay 
 | ihr | euch (sizi) |
 | sie/Sie | sie/Sie (onları/sizi) |
 
-**Örnek:** Ich liebe **dich**. (Seni seviyorum.) Sie sieht **ihn**. (O, onu görüyor.) Er versteht **uns** nicht. (O bizi anlamıyor.)`,
+**Örnek:** Ich liebe **dich**. (Seni seviyorum.) Sie sieht **ihn**. (O, onu görüyor.) Er versteht **uns** nicht. (O bizi anlamıyor.)
+
+### Cümledeki yeri
+Akkusatif zamiri genelde fiilden hemen sonra gelir: Ich **sehe dich**. · **Kennst** du **ihn**?
+
+### Önemli: „ihn" ≠ „ihm"
+- **ihn** = Akkusatif (Ich sehe **ihn**.)
+- **ihm** = Dativ (Ich helfe **ihm**.) → Unit 9'da gelecek.
+
+### Sık yapılan hatalar
+- ❌ *Ich liebe er* → ✅ Ich liebe **ihn**.
+- ❌ *Er sieht ich* → ✅ Er sieht **mich**.`,
     },
   })
   await seedExercises({
@@ -1736,6 +4011,76 @@ Personal pronouns also have an accusative form. Only "sie", "es" and "Sie" stay 
         },
         explanation: 'Akkusativpronomen.',
       },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er sieht ___. (mich/ich – 1. Person)' },
+        correctAnswer: { accepted: ['mich'] },
+        explanation: 'ich → mich (Akkusativ).',
+      },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir verstehen ___ nicht. (you all)', options: ['ihr', 'euch', 'uns', 'sie'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'ihr → euch (Akkusativ).',
+      },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['wir', 'ihr', 'sie (she)'], rights: ['sie', 'uns', 'euch'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'wir', right: 'uns' },
+            { left: 'ihr', right: 'euch' },
+            { left: 'sie (she)', right: 'sie' },
+          ],
+        },
+        explanation: 'wir → uns, ihr → euch, sie → sie.',
+      },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist die Akkusativform von "du"?', options: ['dir', 'dich', 'du', 'dein'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'du → dich.',
+      },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich liebe ___. (you – informell)' },
+        correctAnswer: { accepted: ['dich'] },
+        explanation: 'du → dich: "Ich liebe dich".',
+      },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich liebe er.', 'Ich liebe ihn.', 'Ich liebe ihm.', 'Ich liebe sein.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'er → ihn (Akkusativ).',
+      },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ihn', 'sieht', 'sie'] },
+        correctAnswer: { order: ['sie', 'sieht', 'ihn'] },
+        explanation: '"Sie sieht ihn."',
+      },
+      {
+        lessonId: a1Unit6Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie lautet "wir" im Akkusativ?' },
+        correctAnswer: { accepted: ['uns'] },
+        explanation: 'wir → uns.',
+      },
     ],
   })
 
@@ -1755,7 +4100,17 @@ Viele Verben brauchen ein Akkusativobjekt. Nach diesen Verben wird „ein" bei m
 | möchten | Ich möchte **einen** Kaffee. |
 | kaufen | Ich kaufe **einen** Apfel. |
 
-**Beispiel:** Ich brauche **einen** Stift und **eine** Tasche.`,
+**Beispiel:** Ich brauche **einen** Stift und **eine** Tasche.
+
+### Weitere Akkusativverben
+sehen, kennen, lesen, essen, trinken, nehmen, suchen, besuchen, mögen.
+
+### „möchten" für höfliche Wünsche
+Im Café: **Ich möchte einen** Kaffee, bitte. · **Ich möchte ein** Wasser.
+
+### Häufige Fehler
+- ❌ *Ich brauche ein Stift* → ✅ Ich brauche **einen** Stift (maskulin Akkusativ).
+- ❌ *Ich möchte einen Wasser* → ✅ Ich möchte **ein** Wasser (neutral bleibt gleich).`,
       explanationEn: `## Verbs with the accusative
 
 Many verbs need an accusative object. After these verbs, "ein" becomes **einen** with masculine nouns.
@@ -1767,7 +4122,17 @@ Many verbs need an accusative object. After these verbs, "ein" becomes **einen**
 | möchten (would like) | Ich möchte **einen** Kaffee. |
 | kaufen (to buy) | Ich kaufe **einen** Apfel. |
 
-**Example:** Ich brauche **einen** Stift und **eine** Tasche. (I need a pen and a bag.)`,
+**Example:** Ich brauche **einen** Stift und **eine** Tasche. (I need a pen and a bag.)
+
+### More accusative verbs
+sehen (see), kennen (know), lesen (read), essen (eat), trinken (drink), nehmen (take), suchen (look for), besuchen (visit), mögen (like).
+
+### "möchten" for polite wishes
+In a café: **Ich möchte einen** Kaffee, bitte. · **Ich möchte ein** Wasser.
+
+### Common mistakes
+- ❌ *Ich brauche ein Stift* → ✅ Ich brauche **einen** Stift (masculine accusative).
+- ❌ *Ich möchte einen Wasser* → ✅ Ich möchte **ein** Wasser (neuter stays the same).`,
       explanationTr: `## Akkusatif alan fiiller
 
 Birçok fiil akkusatif nesne alır. Bu fiillerden sonra eril isimlerde „ein" → **einen** olur.
@@ -1779,7 +4144,17 @@ Birçok fiil akkusatif nesne alır. Bu fiillerden sonra eril isimlerde „ein" �
 | möchten (istemek) | Ich möchte **einen** Kaffee. |
 | kaufen (satın almak) | Ich kaufe **einen** Apfel. |
 
-**Örnek:** Ich brauche **einen** Stift und **eine** Tasche. (Bir kaleme ve bir çantaya ihtiyacım var.)`,
+**Örnek:** Ich brauche **einen** Stift und **eine** Tasche. (Bir kaleme ve bir çantaya ihtiyacım var.)
+
+### Diğer Akkusatif fiilleri
+sehen (görmek), kennen (tanımak), lesen (okumak), essen (yemek), trinken (içmek), nehmen (almak), suchen (aramak), besuchen (ziyaret etmek), mögen (sevmek).
+
+### Kibar isteklerde „möchten"
+Kafede: **Ich möchte einen** Kaffee, bitte. · **Ich möchte ein** Wasser.
+
+### Sık yapılan hatalar
+- ❌ *Ich brauche ein Stift* → ✅ Ich brauche **einen** Stift (eril Akkusatif).
+- ❌ *Ich möchte einen Wasser* → ✅ Ich möchte **ein** Wasser (nötr aynı kalır).`,
     },
   })
   await seedExercises({
@@ -1800,6 +4175,76 @@ Birçok fiil akkusatif nesne alır. Bu fiillerden sonra eril isimlerde „ein" �
         correctAnswer: { correctIndex: 2 },
         explanation: '"Kaffee" ist maskulin: einen Kaffee.',
       },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich möchte ___ Wasser, bitte. (das Wasser)' },
+        correctAnswer: { accepted: ['ein'] },
+        explanation: 'neutral bleibt gleich: ein Wasser.',
+      },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich kaufe ___ Tasche. (die Tasche)', options: ['ein', 'eine', 'einen', 'einem'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'feminin bleibt gleich: eine Tasche.',
+      },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['einen Apfel', 'eine Tasche', 'ein Wasser'], rights: ['neutral', 'maskulin', 'feminin'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'einen Apfel', right: 'maskulin' },
+            { left: 'eine Tasche', right: 'feminin' },
+            { left: 'ein Wasser', right: 'neutral' },
+          ],
+        },
+        explanation: 'einen (m), eine (f), ein (n) im Akkusativ.',
+      },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb braucht ein Akkusativobjekt?', options: ['schlafen', 'kaufen', 'gehen', 'kommen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"kaufen" braucht ein Objekt: etwas kaufen.',
+      },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe ___ Hund. (ein, maskulin)' },
+        correctAnswer: { accepted: ['einen'] },
+        explanation: 'haben + Akkusativ: einen Hund.',
+      },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich brauche ein Stift.', 'Ich brauche einen Stift.', 'Ich brauche einem Stift.', 'Ich brauche der Stift.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'einen Stift (maskulin Akkusativ).',
+      },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['einen', 'ich', 'Kaffee', 'möchte'] },
+        correctAnswer: { order: ['ich', 'möchte', 'einen', 'Kaffee'] },
+        explanation: '"Ich möchte einen Kaffee."',
+      },
+      {
+        lessonId: a1Unit6Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man höflich: 'I would like a coffee'? (Ich möchte ...)" },
+        correctAnswer: { accepted: ['ich möchte einen kaffee', 'ich möchte einen kaffee.'] },
+        explanation: '"Ich möchte einen Kaffee."',
+      },
     ],
   })
 
@@ -1818,7 +4263,16 @@ Mit **nicht** verneinst du Verben, Adjektive oder ganze Sätze. „nicht" steht 
 | ein Adjektiv | Das ist **nicht** richtig. |
 | einen Ort | Er wohnt **nicht** hier. |
 
-**kein oder nicht?** Nomen mit unbestimmtem Artikel verneinst du mit **kein**, alles andere mit **nicht**.`,
+**kein oder nicht?** Nomen mit unbestimmtem Artikel verneinst du mit **kein**, alles andere mit **nicht**.
+
+### Position von „nicht"
+- Ganzer Satz / Verb: „nicht" ans **Ende** → Ich komme heute **nicht**.
+- Vor Adjektiv/Adverb/Ort: „nicht" **davor** → Das ist **nicht** teuer. · Er wohnt **nicht** hier.
+- Mit bestimmtem Artikel: Ich kenne **den Mann nicht**.
+
+### Häufige Fehler
+- ❌ *Ich nicht verstehe das* → ✅ Ich verstehe das **nicht**.
+- ❌ *Ich habe nicht ein Auto* → ✅ Ich habe **kein** Auto.`,
       explanationEn: `## Negation with "nicht"
 
 You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usually goes at the end of the sentence or right before the word you negate.
@@ -1829,7 +4283,16 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
 | an adjective | Das ist **nicht** richtig. (That's not correct.) |
 | a place | Er wohnt **nicht** hier. (He doesn't live here.) |
 
-**kein or nicht?** Negate nouns with an indefinite article using **kein**, everything else with **nicht**.`,
+**kein or nicht?** Negate nouns with an indefinite article using **kein**, everything else with **nicht**.
+
+### Position of "nicht"
+- Whole sentence / verb: "nicht" goes to the **end** → Ich komme heute **nicht**.
+- Before an adjective/adverb/place: "nicht" goes **before it** → Das ist **nicht** teuer. · Er wohnt **nicht** hier.
+- With a definite article: Ich kenne **den Mann nicht**.
+
+### Common mistakes
+- ❌ *Ich nicht verstehe das* → ✅ Ich verstehe das **nicht**.
+- ❌ *Ich habe nicht ein Auto* → ✅ Ich habe **kein** Auto.`,
       explanationTr: `## „nicht" ile olumsuzlama
 
 **nicht** ile fiilleri, sıfatları ya da tüm cümleyi olumsuz yaparsın. „nicht" genellikle cümlenin sonuna ya da olumsuzladığın kelimenin hemen önüne gelir.
@@ -1840,7 +4303,16 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
 | bir sıfatı | Das ist **nicht** richtig. (Bu doğru değil.) |
 | bir yeri | Er wohnt **nicht** hier. (O burada yaşamıyor.) |
 
-**kein mi, nicht mi?** Belirsiz tanımlıklı isimleri **kein** ile, diğer her şeyi **nicht** ile olumsuz yaparsın.`,
+**kein mi, nicht mi?** Belirsiz tanımlıklı isimleri **kein** ile, diğer her şeyi **nicht** ile olumsuz yaparsın.
+
+### „nicht"in yeri
+- Tüm cümle / fiil: „nicht" **sona** gider → Ich komme heute **nicht**.
+- Sıfat/zarf/yerden önce: „nicht" **önüne** gelir → Das ist **nicht** teuer. · Er wohnt **nicht** hier.
+- Belirli tanımlıkla: Ich kenne **den Mann nicht**.
+
+### Sık yapılan hatalar
+- ❌ *Ich nicht verstehe das* → ✅ Ich verstehe das **nicht**.
+- ❌ *Ich habe nicht ein Auto* → ✅ Ich habe **kein** Auto.`,
     },
   })
   await seedExercises({
@@ -1860,6 +4332,76 @@ You use **nicht** to negate verbs, adjectives or whole sentences. "nicht" usuall
         data: { words: ['richtig', 'das', 'nicht', 'ist'] },
         correctAnswer: { order: ['das', 'ist', 'nicht', 'richtig'] },
         explanation: 'Reihenfolge: Subjekt, Verb, "nicht", Adjektiv.',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 3,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Verneine: "Ich habe ein Auto." →', options: ['Ich habe nicht ein Auto.', 'Ich habe kein Auto.', 'Ich habe nicht Auto.', 'Ich habe keine Auto.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Nomen mit "ein" → mit "kein" verneinen: kein Auto.',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Er wohnt ___ hier. (Verneinung des Ortes)' },
+        correctAnswer: { accepted: ['nicht'] },
+        explanation: 'Ort mit "nicht" verneinen: nicht hier.',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['ein Verb', 'ein Nomen mit "ein"', 'ein Adjektiv'], rights: ['kein', 'nicht (Ende)', 'nicht (davor)'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ein Verb', right: 'nicht (Ende)' },
+            { left: 'ein Nomen mit "ein"', right: 'kein' },
+            { left: 'ein Adjektiv', right: 'nicht (davor)' },
+          ],
+        },
+        explanation: 'Verb → nicht (Ende), Nomen mit ein → kein, Adjektiv → nicht davor.',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich kenne ___ Mann nicht. (bestimmter Artikel, Akkusativ)', options: ['der', 'den', 'dem', 'die'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Akkusativ maskulin: den Mann; verneint mit "nicht" (bestimmter Artikel).',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist ___ teuer. (Adjektiv verneinen)' },
+        correctAnswer: { accepted: ['nicht'] },
+        explanation: 'Adjektiv mit "nicht": nicht teuer.',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht "nicht", wenn es das ganze Verb verneint?', options: ['am Anfang', 'nach dem Subjekt', 'am Satzende', 'vor dem Subjekt'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Bei Verbverneinung oft am Satzende.',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['komme', 'ich', 'nicht', 'heute'] },
+        correctAnswer: { order: ['ich', 'komme', 'heute', 'nicht'] },
+        explanation: '"Ich komme heute nicht."',
+      },
+      {
+        lessonId: a1Unit6Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Womit verneint man ein Nomen mit unbestimmtem Artikel? (ein Wort)' },
+        correctAnswer: { accepted: ['kein', 'mit kein'] },
+        explanation: 'Mit "kein".',
       },
     ],
   })
@@ -1900,7 +4442,19 @@ Modalverben verändern die Bedeutung eines anderen Verbs. **können** = Fähigke
 | ihr | könnt | müsst |
 | sie/Sie | können | müssen |
 
-**Beispiel:** Ich **kann** schwimmen. Du **musst** arbeiten. Der Infinitiv steht am Satzende.`,
+**Beispiel:** Ich **kann** schwimmen. Du **musst** arbeiten. Der Infinitiv steht am Satzende.
+
+### Verneinung
+- **nicht müssen** = nicht nötig: Du **musst nicht** kommen. (= du kannst zu Hause bleiben)
+- **nicht dürfen** = verboten: Du **darfst nicht** rauchen.
+
+### Merke
+- ich- und er/sie/es-Form sind **gleich** und haben **keine Endung**: ich kann, er kann.
+- Der zweite Verb steht als **Infinitiv am Ende**.
+
+### Häufige Fehler
+- ❌ *Ich kann schwimme* → ✅ Ich kann **schwimmen** (Infinitiv).
+- ❌ *Er kannt* → ✅ Er **kann**.`,
       explanationEn: `## Modal verbs: können / müssen
 
 Modal verbs change the meaning of another verb. **können** = ability, **müssen** = necessity. They are irregular (the ich- and er-forms are identical).
@@ -1914,7 +4468,19 @@ Modal verbs change the meaning of another verb. **können** = ability, **müssen
 | ihr | könnt | müsst |
 | sie/Sie | können | müssen |
 
-**Example:** Ich **kann** schwimmen. (I can swim.) Du **musst** arbeiten. (You must work.) The infinitive goes at the end of the sentence.`,
+**Example:** Ich **kann** schwimmen. (I can swim.) Du **musst** arbeiten. (You must work.) The infinitive goes at the end of the sentence.
+
+### Negation
+- **nicht müssen** = not necessary: Du **musst nicht** kommen. (= you can stay home)
+- **nicht dürfen** = forbidden: Du **darfst nicht** rauchen.
+
+### Note
+- The ich- and er/sie/es-forms are **identical** and take **no ending**: ich kann, er kann.
+- The second verb goes as an **infinitive at the end**.
+
+### Common mistakes
+- ❌ *Ich kann schwimme* → ✅ Ich kann **schwimmen** (infinitive).
+- ❌ *Er kannt* → ✅ Er **kann**.`,
       explanationTr: `## Kip fiilleri: können / müssen
 
 Kip fiilleri başka bir fiilin anlamını değiştirir. **können** = yetenek, **müssen** = zorunluluk. Düzensizdirler (ich ve er biçimleri aynıdır).
@@ -1928,7 +4494,19 @@ Kip fiilleri başka bir fiilin anlamını değiştirir. **können** = yetenek, *
 | ihr | könnt | müsst |
 | sie/Sie | können | müssen |
 
-**Örnek:** Ich **kann** schwimmen. (Yüzebilirim.) Du **musst** arbeiten. (Çalışmak zorundasın.) Mastar cümlenin sonunda yer alır.`,
+**Örnek:** Ich **kann** schwimmen. (Yüzebilirim.) Du **musst** arbeiten. (Çalışmak zorundasın.) Mastar cümlenin sonunda yer alır.
+
+### Olumsuzluk
+- **nicht müssen** = gerekli değil: Du **musst nicht** kommen. (= evde kalabilirsin)
+- **nicht dürfen** = yasak: Du **darfst nicht** rauchen.
+
+### Unutma
+- ich ve er/sie/es biçimleri **aynıdır** ve **eksizdir**: ich kann, er kann.
+- İkinci fiil **mastar olarak sonda** durur.
+
+### Sık yapılan hatalar
+- ❌ *Ich kann schwimme* → ✅ Ich kann **schwimmen** (mastar).
+- ❌ *Er kannt* → ✅ Er **kann**.`,
     },
   })
   await seedExercises({
@@ -1949,6 +4527,76 @@ Kip fiilleri başka bir fiilin anlamını değiştirir. **können** = yetenek, *
         correctAnswer: { correctIndex: 0 },
         explanation: 'Mit "du" benutzt man "musst".',
       },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir ___ (müssen) heute lernen.' },
+        correctAnswer: { accepted: ['müssen', 'muessen'] },
+        explanation: 'Mit "wir": müssen.',
+      },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er ___ sehr gut kochen.', options: ['kann', 'kannst', 'können', 'könnt'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'ich- und er-Form gleich: er kann.',
+      },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['ich kann', 'du musst', 'ihr könnt'], rights: ['ihr', 'ich', 'du'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich kann', right: 'ich' },
+            { left: 'du musst', right: 'du' },
+            { left: 'ihr könnt', right: 'ihr' },
+          ],
+        },
+        explanation: 'Formen den Personen zuordnen.',
+      },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"Du musst nicht kommen" bedeutet …', options: ['Kommen ist verboten', 'Kommen ist nicht nötig', 'Du sollst kommen', 'Du willst kommen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"nicht müssen" = nicht notwendig.',
+      },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ihr ___ (können) hier warten.' },
+        correctAnswer: { accepted: ['könnt', 'koennt'] },
+        explanation: 'Mit "ihr": könnt.',
+      },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich kann schwimme.', 'Ich kann schwimmen.', 'Ich kann geschwommen.', 'Ich kanne schwimmen.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Modalverb + Infinitiv am Ende: kann schwimmen.',
+      },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['arbeiten', 'du', 'musst', 'heute'] },
+        correctAnswer: { order: ['du', 'musst', 'heute', 'arbeiten'] },
+        explanation: 'Modalverb Position 2, Infinitiv am Ende.',
+      },
+      {
+        lessonId: a1Unit7Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Konjugiere "können" für "ich".' },
+        correctAnswer: { accepted: ['kann', 'ich kann'] },
+        explanation: 'ich kann.',
+      },
     ],
   })
 
@@ -1967,7 +4615,23 @@ Diese drei Modalverben drücken Wunsch und Erlaubnis aus:
 | möchten | höflicher Wunsch | Ich **möchte** einen Kaffee. |
 | dürfen | Erlaubnis | **Darf** ich rauchen? |
 
-**Tipp:** „möchten" ist die höfliche Form von „wollen" – benutze sie im Restaurant oder bei Bitten.`,
+**Tipp:** „möchten" ist die höfliche Form von „wollen" – benutze sie im Restaurant oder bei Bitten.
+
+### Konjugation
+| Person | wollen | dürfen |
+| ---- | ---- | ---- |
+| ich | will | darf |
+| du | willst | darfst |
+| er/sie/es | will | darf |
+| wir | wollen | dürfen |
+| ihr | wollt | dürft |
+| sie/Sie | wollen | dürfen |
+
+**möchten:** ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten.
+
+### Häufige Fehler
+- ❌ *Ich will ein Kaffee* (unhöflich) → besser: Ich **möchte** einen Kaffee.
+- ❌ *Ich wolle* → ✅ Ich **will**.`,
       explanationEn: `## Modal verbs: wollen / möchten / dürfen
 
 These three modal verbs express wishes and permission:
@@ -1978,7 +4642,23 @@ These three modal verbs express wishes and permission:
 | möchten | polite wish | Ich **möchte** einen Kaffee. |
 | dürfen | permission | **Darf** ich rauchen? |
 
-**Tip:** "möchten" is the polite form of "wollen" – use it in restaurants or when making requests.`,
+**Tip:** "möchten" is the polite form of "wollen" – use it in restaurants or when making requests.
+
+### Conjugation
+| Person | wollen | dürfen |
+| ---- | ---- | ---- |
+| ich | will | darf |
+| du | willst | darfst |
+| er/sie/es | will | darf |
+| wir | wollen | dürfen |
+| ihr | wollt | dürft |
+| sie/Sie | wollen | dürfen |
+
+**möchten:** ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten.
+
+### Common mistakes
+- ❌ *Ich will ein Kaffee* (impolite) → better: Ich **möchte** einen Kaffee.
+- ❌ *Ich wolle* → ✅ Ich **will**.`,
       explanationTr: `## Kip fiilleri: wollen / möchten / dürfen
 
 Bu üç kip fiili istek ve izin ifade eder:
@@ -1989,7 +4669,23 @@ Bu üç kip fiili istek ve izin ifade eder:
 | möchten | kibar istek | Ich **möchte** einen Kaffee. |
 | dürfen | izin | **Darf** ich rauchen? |
 
-**İpucu:** „möchten", „wollen" fiilinin kibar biçimidir – restoranda ya da rica ederken kullan.`,
+**İpucu:** „möchten", „wollen" fiilinin kibar biçimidir – restoranda ya da rica ederken kullan.
+
+### Çekim
+| Kişi | wollen | dürfen |
+| ---- | ---- | ---- |
+| ich | will | darf |
+| du | willst | darfst |
+| er/sie/es | will | darf |
+| wir | wollen | dürfen |
+| ihr | wollt | dürft |
+| sie/Sie | wollen | dürfen |
+
+**möchten:** ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten.
+
+### Sık yapılan hatalar
+- ❌ *Ich will ein Kaffee* (kaba) → daha iyisi: Ich **möchte** einen Kaffee.
+- ❌ *Ich wolle* → ✅ Ich **will**.`,
     },
   })
   await seedExercises({
@@ -2010,6 +4706,76 @@ Bu üç kip fiili istek ve izin ifade eder:
         correctAnswer: { accepted: ['ich möchte einen kaffee'] },
         explanation: '"Ich möchte einen Kaffee" ist die höfliche Form.',
       },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ (wollen) heute ins Kino gehen.' },
+        correctAnswer: { accepted: ['will'] },
+        explanation: 'Mit "ich": will.',
+      },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Modalverb drückt Erlaubnis aus?', options: ['müssen', 'dürfen', 'wollen', 'können'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"dürfen" = Erlaubnis.',
+      },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['wollen', 'möchten', 'dürfen'], rights: ['Erlaubnis', 'starker Wunsch', 'höflicher Wunsch'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'wollen', right: 'starker Wunsch' },
+            { left: 'möchten', right: 'höflicher Wunsch' },
+            { left: 'dürfen', right: 'Erlaubnis' },
+          ],
+        },
+        explanation: 'Bedeutung der Modalverben.',
+      },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Du ___ hier nicht parken. (verboten)', options: ['darfst', 'willst', 'möchtest', 'kannst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"nicht dürfen" = verboten.',
+      },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ ich Sie etwas fragen? (Erlaubnis, höflich)' },
+        correctAnswer: { accepted: ['darf'] },
+        explanation: 'Höfliche Bitte um Erlaubnis: "Darf ich …?".',
+      },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist am höflichsten im Restaurant?', options: ['Ich will Pizza.', 'Gib mir Pizza.', 'Ich möchte eine Pizza, bitte.', 'Pizza!'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"Ich möchte …, bitte" ist höflich.',
+      },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['essen', 'ich', 'Pizza', 'will'] },
+        correctAnswer: { order: ['ich', 'will', 'Pizza', 'essen'] },
+        explanation: '"Ich will Pizza essen."',
+      },
+      {
+        lessonId: a1Unit7Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Konjugiere "dürfen" für "du".' },
+        correctAnswer: { accepted: ['darfst', 'du darfst'] },
+        explanation: 'du darfst.',
+      },
     ],
   })
 
@@ -2027,7 +4793,18 @@ Im Satz bilden Modalverb und Infinitiv eine **Klammer**: Das Modalverb steht an 
 | Ich | möchte | heute Abend ins Kino | gehen. |
 | Er | kann | sehr gut Deutsch | sprechen. |
 
-**Beispiel:** Ich **möchte** heute Abend ins Kino **gehen**.`,
+**Beispiel:** Ich **möchte** heute Abend ins Kino **gehen**.
+
+### Fragen mit Modalverben
+- Ja/Nein-Frage: **Kannst** du mir **helfen**?
+- W-Frage: **Wann** kannst du **kommen**?
+
+### Verneinung
+„nicht"/„kein" steht **vor dem Infinitiv** am Ende: Ich kann heute **nicht kommen**. · Ich möchte **keinen Kaffee trinken**.
+
+### Häufige Fehler
+- ❌ *Ich möchte gehen ins Kino* → ✅ Ich möchte ins Kino **gehen** (Infinitiv ans Ende).
+- ❌ *Ich kann sprechen gut Deutsch* → ✅ Ich kann gut Deutsch **sprechen**.`,
       explanationEn: `## Sentence structure with modal verbs
 
 In the sentence, the modal verb and the infinitive form a **bracket**: the modal verb is in **position 2**, the infinitive goes right at the **end**.
@@ -2037,7 +4814,18 @@ In the sentence, the modal verb and the infinitive form a **bracket**: the modal
 | Ich | möchte | heute Abend ins Kino | gehen. |
 | Er | kann | sehr gut Deutsch | sprechen. |
 
-**Example:** Ich **möchte** heute Abend ins Kino **gehen**. (I'd like to go to the cinema tonight.)`,
+**Example:** Ich **möchte** heute Abend ins Kino **gehen**. (I'd like to go to the cinema tonight.)
+
+### Questions with modal verbs
+- Yes/no question: **Kannst** du mir **helfen**? (Can you help me?)
+- W-question: **Wann** kannst du **kommen**? (When can you come?)
+
+### Negation
+"nicht"/"kein" goes **before the infinitive** at the end: Ich kann heute **nicht kommen**. · Ich möchte **keinen Kaffee trinken**.
+
+### Common mistakes
+- ❌ *Ich möchte gehen ins Kino* → ✅ Ich möchte ins Kino **gehen** (infinitive to the end).
+- ❌ *Ich kann sprechen gut Deutsch* → ✅ Ich kann gut Deutsch **sprechen**.`,
       explanationTr: `## Kip fiilleriyle cümle yapısı
 
 Cümlede kip fiili ile mastar bir **çerçeve** oluşturur: Kip fiili **2. konumda**, mastar ise en **sonda** yer alır.
@@ -2047,7 +4835,18 @@ Cümlede kip fiili ile mastar bir **çerçeve** oluşturur: Kip fiili **2. konum
 | Ich | möchte | heute Abend ins Kino | gehen. |
 | Er | kann | sehr gut Deutsch | sprechen. |
 
-**Örnek:** Ich **möchte** heute Abend ins Kino **gehen**. (Bu akşam sinemaya gitmek istiyorum.)`,
+**Örnek:** Ich **möchte** heute Abend ins Kino **gehen**. (Bu akşam sinemaya gitmek istiyorum.)
+
+### Kip fiilleriyle sorular
+- Evet/Hayır sorusu: **Kannst** du mir **helfen**? (Bana yardım edebilir misin?)
+- W-sorusu: **Wann** kannst du **kommen**? (Ne zaman gelebilirsin?)
+
+### Olumsuzluk
+„nicht"/„kein", sondaki **mastardan önce** gelir: Ich kann heute **nicht kommen**. · Ich möchte **keinen Kaffee trinken**.
+
+### Sık yapılan hatalar
+- ❌ *Ich möchte gehen ins Kino* → ✅ Ich möchte ins Kino **gehen** (mastar sona).
+- ❌ *Ich kann sprechen gut Deutsch* → ✅ Ich kann gut Deutsch **sprechen**.`,
     },
   })
   await seedExercises({
@@ -2068,6 +4867,70 @@ Cümlede kip fiili ile mastar bir **çerçeve** oluşturur: Kip fiili **2. konum
         correctAnswer: { correctIndex: 1 },
         explanation: 'Nach Modalverben steht der Infinitiv.',
       },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 3,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['helfen', 'du', 'mir', 'kannst'] },
+        correctAnswer: { order: ['kannst', 'du', 'mir', 'helfen'] },
+        explanation: 'Ja/Nein-Frage: Modalverb zuerst, Infinitiv am Ende.',
+      },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich kann heute nicht ___. (kommen, Infinitiv am Ende)' },
+        correctAnswer: { accepted: ['kommen'] },
+        explanation: 'Infinitiv am Ende: nicht kommen.',
+      },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'An welcher Position steht das Modalverb im Aussagesatz?', options: ['Position 1', 'Position 2', 'am Ende', 'egal'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Modalverb an Position 2.',
+      },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht der Infinitiv?', options: ['Position 1', 'Position 2', 'am Satzende', 'nach dem Subjekt'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Infinitiv am Satzende (Satzklammer).',
+      },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wann ___ (können) du kommen? (W-Frage, du)' },
+        correctAnswer: { accepted: ['kannst'] },
+        explanation: 'W-Frage: W-Wort + Modalverb: "Wann kannst du kommen?".',
+      },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich muss lernen heute.', 'Ich muss heute lernen.', 'Ich lernen muss heute.', 'Ich heute muss lernen.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Modalverb Pos. 2, Infinitiv am Ende: "Ich muss heute lernen".',
+      },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ins', 'ich', 'gehen', 'Kino', 'möchte'] },
+        correctAnswer: { order: ['ich', 'möchte', 'ins', 'Kino', 'gehen'] },
+        explanation: '"Ich möchte ins Kino gehen."',
+      },
+      {
+        lessonId: a1Unit7Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'In welcher Form steht das zweite Verb nach einem Modalverb?' },
+        correctAnswer: { accepted: ['infinitiv', 'im infinitiv', 'infinitive'] },
+        explanation: 'Als Infinitiv am Ende.',
+      },
     ],
   })
 
@@ -2086,7 +4949,18 @@ Im Restaurant oder Café bestellst du höflich mit **„Ich möchte …"** oder 
 | Ich hätte gern … | Ich **hätte gern** einen Kaffee. |
 | Ich nehme … | Ich **nehme** die Suppe. |
 
-**Beispiel:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**.`,
+**Beispiel:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**.
+
+### Nach dem Preis fragen und bezahlen
+- **Was kostet das?** / **Wie viel macht das?**
+- **Die Rechnung, bitte.** – **Zusammen** oder **getrennt**?
+
+### Der Kellner fragt
+- **Was möchten Sie?** / **Was darf es sein?** / **Möchten Sie noch etwas?**
+
+### Häufige Fehler
+- ❌ *Ich will ein Kaffee* → ✅ Ich möchte **einen** Kaffee (höflich + Akkusativ).
+- ❌ *Wie viel kostet?* → ✅ **Was kostet das?** / **Wie viel kostet das?**`,
       explanationEn: `## Ordering: "Ich möchte …"
 
 In a restaurant or café you order politely with **"Ich möchte …"** or **"Ich hätte gern …"**. Don't forget "bitte" (please).
@@ -2097,7 +4971,18 @@ In a restaurant or café you order politely with **"Ich möchte …"** or **"Ich
 | Ich hätte gern … | Ich **hätte gern** einen Kaffee. |
 | Ich nehme … | Ich **nehme** die Suppe. |
 
-**Example:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**. (I'd like a tea and a piece of cake, please.)`,
+**Example:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**. (I'd like a tea and a piece of cake, please.)
+
+### Asking the price and paying
+- **Was kostet das?** / **Wie viel macht das?** (How much is it?)
+- **Die Rechnung, bitte.** (The bill, please.) – **Zusammen** oder **getrennt**? (Together or separately?)
+
+### The waiter asks
+- **Was möchten Sie?** / **Was darf es sein?** / **Möchten Sie noch etwas?** (Anything else?)
+
+### Common mistakes
+- ❌ *Ich will ein Kaffee* → ✅ Ich möchte **einen** Kaffee (polite + accusative).
+- ❌ *Wie viel kostet?* → ✅ **Was kostet das?** / **Wie viel kostet das?**`,
       explanationTr: `## Sipariş verme: „Ich möchte …"
 
 Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte gern …"** ile sipariş verirsin. „bitte" (lütfen) demeyi unutma.
@@ -2108,7 +4993,18 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
 | Ich hätte gern … | Ich **hätte gern** einen Kaffee. |
 | Ich nehme … | Ich **nehme** die Suppe. |
 
-**Örnek:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**. (Bir çay ve bir dilim pasta istiyorum, lütfen.)`,
+**Örnek:** Ich **möchte** einen Tee und ein Stück Kuchen, **bitte**. (Bir çay ve bir dilim pasta istiyorum, lütfen.)
+
+### Fiyat sorma ve ödeme
+- **Was kostet das?** / **Wie viel macht das?** (Ne kadar?)
+- **Die Rechnung, bitte.** (Hesap, lütfen.) – **Zusammen** oder **getrennt**? (Birlikte mi ayrı mı?)
+
+### Garson sorar
+- **Was möchten Sie?** / **Was darf es sein?** / **Möchten Sie noch etwas?** (Başka bir şey?)
+
+### Sık yapılan hatalar
+- ❌ *Ich will ein Kaffee* → ✅ Ich möchte **einen** Kaffee (kibar + Akkusatif).
+- ❌ *Wie viel kostet?* → ✅ **Was kostet das?** / **Wie viel kostet das?**`,
     },
   })
   await seedExercises({
@@ -2131,6 +5027,76 @@ Restoranda ya da kafede kibarca **„Ich möchte …"** ya da **„Ich hätte ge
         },
         correctAnswer: { correctIndex: 1 },
         explanation: '"Ich möchte..., bitte" ist höflich.',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ gern einen Kaffee. (höflich: hätte ...)' },
+        correctAnswer: { accepted: ['hätte', 'haette'] },
+        explanation: '"Ich hätte gern …" ist eine höfliche Bestellform.',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie fragt man nach dem Preis?', options: ['Was kostet das?', 'Wo ist das?', 'Wer ist das?', 'Wie heißt das?'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Was kostet das?" fragt nach dem Preis.',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['Die Rechnung, bitte.', 'Was kostet das?', 'Was darf es sein?'], rights: ['Frage des Kellners', 'bezahlen', 'nach dem Preis fragen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Die Rechnung, bitte.', right: 'bezahlen' },
+            { left: 'Was kostet das?', right: 'nach dem Preis fragen' },
+            { left: 'Was darf es sein?', right: 'Frage des Kellners' },
+          ],
+        },
+        explanation: 'Situationen im Café zuordnen.',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich möchte ___ Tee. (der Tee, Akkusativ)', options: ['ein', 'eine', 'einen', 'einem'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'der Tee → einen Tee (Akkusativ).',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Zum Schluss: Die ___, bitte! (bezahlen)' },
+        correctAnswer: { accepted: ['rechnung'] },
+        explanation: '"Die Rechnung, bitte."',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Kellner fragt: "Zusammen oder ___?"', options: ['getrennt', 'zusammen', 'gemeinsam', 'gleich'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Zusammen oder getrennt?" – zusammen/getrennt bezahlen.',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['möchte', 'ich', 'Wasser', 'ein'] },
+        correctAnswer: { order: ['ich', 'möchte', 'ein', 'Wasser'] },
+        explanation: '"Ich möchte ein Wasser."',
+      },
+      {
+        lessonId: a1Unit7Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie bittest du höflich um die Rechnung? (Die ..., bitte!)" },
+        correctAnswer: { accepted: ['die rechnung, bitte', 'die rechnung bitte', 'die rechnung, bitte!'] },
+        explanation: '"Die Rechnung, bitte!"',
       },
     ],
   })
@@ -2167,7 +5133,18 @@ Viele Verben haben ein **trennbares Präfix**. Im Präsens trennt sich das Präf
 | **auf**stehen | auf | Ich stehe früh **auf**. |
 | **an**kommen | an | Der Zug kommt spät **an**. |
 
-**Beispiel:** „aufstehen" → Ich **stehe** um sieben Uhr **auf**.`,
+**Beispiel:** „aufstehen" → Ich **stehe** um sieben Uhr **auf**.
+
+### Häufige trennbare Präfixe
+**auf-, an-, ein-, aus-, mit-, ab-, zu-, vor-, fern-**: aufstehen, ankommen, einkaufen, ausgehen, mitkommen, abfahren.
+
+### Trennbar oder nicht?
+- **Trennbar** (Präfix betont): **auf**stehen → ich stehe auf.
+- **Nicht trennbar** (Präfix unbetont: be-, ver-, er-, ent-): **ver**stehen → ich verstehe (bleibt zusammen).
+
+### Häufige Fehler
+- ❌ *Ich aufstehe um sieben.* → ✅ Ich **stehe** um sieben **auf**.
+- ❌ *Ich stehe auf früh.* → ✅ Ich stehe früh **auf** (Präfix ganz ans Ende).`,
       explanationEn: `## Separable verbs (introduction)
 
 Many verbs have a **separable prefix**. In the present tense the prefix splits off and moves to the **end of the sentence**. The stem is conjugated as normal.
@@ -2177,7 +5154,18 @@ Many verbs have a **separable prefix**. In the present tense the prefix splits o
 | **auf**stehen (get up) | auf | Ich stehe früh **auf**. |
 | **an**kommen (arrive) | an | Der Zug kommt spät **an**. |
 
-**Example:** "aufstehen" → Ich **stehe** um sieben Uhr **auf**. (I get up at seven o'clock.)`,
+**Example:** "aufstehen" → Ich **stehe** um sieben Uhr **auf**. (I get up at seven o'clock.)
+
+### Common separable prefixes
+**auf-, an-, ein-, aus-, mit-, ab-, zu-, vor-, fern-**: aufstehen, ankommen, einkaufen, ausgehen, mitkommen, abfahren.
+
+### Separable or not?
+- **Separable** (stressed prefix): **auf**stehen → ich stehe auf.
+- **Inseparable** (unstressed prefix: be-, ver-, er-, ent-): **ver**stehen → ich verstehe (stays together).
+
+### Common mistakes
+- ❌ *Ich aufstehe um sieben.* → ✅ Ich **stehe** um sieben **auf**.
+- ❌ *Ich stehe auf früh.* → ✅ Ich stehe früh **auf** (prefix right at the end).`,
       explanationTr: `## Ayrılabilen fiiller (giriş)
 
 Birçok fiilin **ayrılabilen bir ön eki** vardır. Geniş zamanda ön ek ayrılıp **cümlenin sonuna** gider. Gövde normal şekilde çekimlenir.
@@ -2187,7 +5175,18 @@ Birçok fiilin **ayrılabilen bir ön eki** vardır. Geniş zamanda ön ek ayrı
 | **auf**stehen (kalkmak) | auf | Ich stehe früh **auf**. |
 | **an**kommen (varmak) | an | Der Zug kommt spät **an**. |
 
-**Örnek:** „aufstehen" → Ich **stehe** um sieben Uhr **auf**. (Saat yedide kalkarım.)`,
+**Örnek:** „aufstehen" → Ich **stehe** um sieben Uhr **auf**. (Saat yedide kalkarım.)
+
+### Sık kullanılan ayrılabilen ön ekler
+**auf-, an-, ein-, aus-, mit-, ab-, zu-, vor-, fern-**: aufstehen, ankommen, einkaufen, ausgehen, mitkommen, abfahren.
+
+### Ayrılabilir mi değil mi?
+- **Ayrılabilir** (ön ek vurgulu): **auf**stehen → ich stehe auf.
+- **Ayrılamaz** (ön ek vurgusuz: be-, ver-, er-, ent-): **ver**stehen → ich verstehe (bitişik kalır).
+
+### Sık yapılan hatalar
+- ❌ *Ich aufstehe um sieben.* → ✅ Ich **stehe** um sieben **auf**.
+- ❌ *Ich stehe auf früh.* → ✅ Ich stehe früh **auf** (ön ek tam sona).`,
     },
   })
   await seedExercises({
@@ -2208,6 +5207,76 @@ Birçok fiilin **ayrılabilen bir ön eki** vardır. Geniş zamanda ön ek ayrı
         correctAnswer: { correctIndex: 0 },
         explanation: 'Nur das Präfix steht am Ende: auf.',
       },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Zug kommt spät ___. (ankommen)' },
+        correctAnswer: { accepted: ['an'] },
+        explanation: 'Präfix "an" am Satzende: kommt … an.',
+      },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb ist trennbar?', options: ['verstehen', 'bezahlen', 'aufstehen', 'erklären'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"aufstehen" ist trennbar; be-/ver-/er- sind nicht trennbar.',
+      },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['aufstehen', 'ankommen', 'einkaufen'], rights: ['ein', 'auf', 'an'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'aufstehen', right: 'auf' },
+            { left: 'ankommen', right: 'an' },
+            { left: 'einkaufen', right: 'ein' },
+          ],
+        },
+        explanation: 'Präfix jedes Verbs.',
+      },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb ist NICHT trennbar?', options: ['ankommen', 'verstehen', 'aufstehen', 'einkaufen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"verstehen" (ver-) ist nicht trennbar.',
+      },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ um sieben Uhr auf. (aufstehen, ich)' },
+        correctAnswer: { accepted: ['stehe'] },
+        explanation: 'Stamm konjugieren: ich stehe … auf.',
+      },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich aufstehe früh.', 'Ich stehe früh auf.', 'Ich stehe auf früh.', 'Ich auf stehe früh.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Verb Pos. 2, Präfix am Ende: "Ich stehe früh auf".',
+      },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['an', 'der', 'kommt', 'Zug', 'spät'] },
+        correctAnswer: { order: ['der', 'Zug', 'kommt', 'spät', 'an'] },
+        explanation: '"Der Zug kommt spät an."',
+      },
+      {
+        lessonId: a1Unit8Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wohin geht das Präfix eines trennbaren Verbs im Präsens?' },
+        correctAnswer: { accepted: ['ans ende', 'satzende', 'ans satzende', 'an das ende', 'ende'] },
+        explanation: 'Ans Satzende.',
+      },
     ],
   })
 
@@ -2227,7 +5296,23 @@ Viele Alltagsverben sind trennbar. Das Präfix steht immer am Satzende:
 | anrufen | to call | Sie ruft ihre Mutter **an**. |
 | aufräumen | to tidy up | Wir räumen das Zimmer **auf**. |
 
-**Beispiel:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**.`,
+**Beispiel:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**.
+
+### Noch mehr Alltagsverben
+| Infinitiv | Bedeutung |
+| ---- | ---- |
+| aufmachen | to open |
+| zumachen | to close |
+| mitkommen | to come along |
+| abfahren | to depart |
+| ausgehen | to go out |
+
+### Mit Modalverb bleibt es zusammen!
+Mit Modalverb steht das trennbare Verb **im Infinitiv** (nicht getrennt) am Ende: Ich muss heute **einkaufen**. · Ich will **fernsehen**.
+
+### Häufige Fehler
+- ❌ *Ich sehe fern abends.* → ✅ Ich **sehe** abends **fern**.
+- ❌ *Ich muss ein kaufen.* → ✅ Ich muss **einkaufen** (mit Modalverb zusammen).`,
       explanationEn: `## More separable verbs
 
 Many everyday verbs are separable. The prefix always goes at the end of the sentence:
@@ -2239,7 +5324,23 @@ Many everyday verbs are separable. The prefix always goes at the end of the sent
 | anrufen | to call | Sie ruft ihre Mutter **an**. |
 | aufräumen | to tidy up | Wir räumen das Zimmer **auf**. |
 
-**Example:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**. (I shop on Saturday and watch TV in the evening.)`,
+**Example:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**. (I shop on Saturday and watch TV in the evening.)
+
+### Even more everyday verbs
+| Infinitive | Meaning |
+| ---- | ---- |
+| aufmachen | to open |
+| zumachen | to close |
+| mitkommen | to come along |
+| abfahren | to depart |
+| ausgehen | to go out |
+
+### With a modal verb it stays together!
+With a modal verb, the separable verb stays as an **infinitive** (not split) at the end: Ich muss heute **einkaufen**. · Ich will **fernsehen**.
+
+### Common mistakes
+- ❌ *Ich sehe fern abends.* → ✅ Ich **sehe** abends **fern**.
+- ❌ *Ich muss ein kaufen.* → ✅ Ich muss **einkaufen** (together with the modal verb).`,
       explanationTr: `## Diğer ayrılabilen fiiller
 
 Birçok günlük fiil ayrılabilir. Ön ek her zaman cümlenin sonunda yer alır:
@@ -2251,7 +5352,23 @@ Birçok günlük fiil ayrılabilir. Ön ek her zaman cümlenin sonunda yer alır
 | anrufen | aramak | Sie ruft ihre Mutter **an**. |
 | aufräumen | toplamak | Wir räumen das Zimmer **auf**. |
 
-**Örnek:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**. (Cumartesi alışveriş yaparım ve akşam televizyon izlerim.)`,
+**Örnek:** Ich **kaufe** am Samstag **ein** und **sehe** abends **fern**. (Cumartesi alışveriş yaparım ve akşam televizyon izlerim.)
+
+### Daha fazla günlük fiil
+| Mastar | Anlamı |
+| ---- | ---- |
+| aufmachen | açmak |
+| zumachen | kapatmak |
+| mitkommen | birlikte gelmek |
+| abfahren | hareket etmek (kalkmak) |
+| ausgehen | dışarı çıkmak |
+
+### Kip fiiliyle bitişik kalır!
+Kip fiiliyle, ayrılabilen fiil sonda **mastar olarak** (ayrılmadan) durur: Ich muss heute **einkaufen**. · Ich will **fernsehen**.
+
+### Sık yapılan hatalar
+- ❌ *Ich sehe fern abends.* → ✅ Ich **sehe** abends **fern**.
+- ❌ *Ich muss ein kaufen.* → ✅ Ich muss **einkaufen** (kip fiiliyle bitişik).`,
     },
   })
   await seedExercises({
@@ -2272,6 +5389,76 @@ Birçok günlük fiil ayrılabilir. Ön ek her zaman cümlenin sonunda yer alır
         correctAnswer: { correctIndex: 0 },
         explanation: 'Präfix "ein" steht am Ende: ich kaufe ein.',
       },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Sie ___ ihre Mutter an. (anrufen, sie – 3. Person)' },
+        correctAnswer: { accepted: ['ruft'] },
+        explanation: 'Stamm konjugieren: sie ruft … an.',
+      },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "aufräumen"?', options: ['to call', 'to tidy up', 'to shop', 'to watch TV'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'aufräumen = to tidy up.',
+      },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['anrufen', 'aufräumen', 'ausgehen'], rights: ['to go out', 'to call', 'to tidy up'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'anrufen', right: 'to call' },
+            { left: 'aufräumen', right: 'to tidy up' },
+            { left: 'ausgehen', right: 'to go out' },
+          ],
+        },
+        explanation: 'Bedeutung der trennbaren Verben.',
+      },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Mit Modalverb: Ich muss heute ___.', options: ['ein kaufe', 'einkaufen', 'kaufe ein', 'eingekauft'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Mit Modalverb bleibt es zusammen: einkaufen (Infinitiv).',
+      },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir ___ das Zimmer auf. (aufräumen, wir)' },
+        correctAnswer: { accepted: ['räumen', 'raeumen'] },
+        explanation: 'wir räumen … auf.',
+      },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Er fern sieht abends.', 'Er sieht abends fern.', 'Er sieht fern abends.', 'Er abends fern sieht.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Er sieht abends fern."',
+      },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ein', 'ich', 'Gemüse', 'kaufe'] },
+        correctAnswer: { order: ['ich', 'kaufe', 'Gemüse', 'ein'] },
+        explanation: '"Ich kaufe Gemüse ein."',
+      },
+      {
+        lessonId: a1Unit8Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie heißt "to watch TV" auf Deutsch? (Infinitiv)' },
+        correctAnswer: { accepted: ['fernsehen'] },
+        explanation: 'fernsehen.',
+      },
     ],
   })
 
@@ -2289,7 +5476,18 @@ Das konjugierte Verb bleibt an **Position 2**, das Präfix am **Ende**. Zeitanga
 | Ich | stehe | täglich um sieben Uhr | auf. |
 | Sie | ruft | jeden Abend | an. |
 
-**Beispiel:** Ich **stehe** täglich um sieben Uhr **auf**.`,
+**Beispiel:** Ich **stehe** täglich um sieben Uhr **auf**.
+
+### Zeitangabe vorn
+Beginnt der Satz mit der Zeit, kommt das Verb an Position 2, das Subjekt danach: **Täglich stehe ich** um sieben Uhr **auf**.
+
+### In der Frage
+- Ja/Nein: **Stehst** du früh **auf**?
+- W-Frage: **Wann** stehst du **auf**?
+
+### Häufige Fehler
+- ❌ *Täglich ich stehe … auf.* → ✅ Täglich **stehe ich** … auf.
+- ❌ *Ich stehe auf um sieben.* → ✅ Ich stehe um sieben **auf**.`,
       explanationEn: `## Word order: separable verbs and time
 
 The conjugated verb stays in **position 2**, the prefix at the **end**. Time expressions go in between – usually right after the verb.
@@ -2299,7 +5497,18 @@ The conjugated verb stays in **position 2**, the prefix at the **end**. Time exp
 | Ich | stehe | täglich um sieben Uhr | auf. |
 | Sie | ruft | jeden Abend | an. |
 
-**Example:** Ich **stehe** täglich um sieben Uhr **auf**. (I get up at seven o'clock every day.)`,
+**Example:** Ich **stehe** täglich um sieben Uhr **auf**. (I get up at seven o'clock every day.)
+
+### Time expression first
+If the sentence starts with the time, the verb is in position 2 and the subject follows: **Täglich stehe ich** um sieben Uhr **auf**.
+
+### In questions
+- Yes/no: **Stehst** du früh **auf**?
+- W-question: **Wann** stehst du **auf**?
+
+### Common mistakes
+- ❌ *Täglich ich stehe … auf.* → ✅ Täglich **stehe ich** … auf.
+- ❌ *Ich stehe auf um sieben.* → ✅ Ich stehe um sieben **auf**.`,
       explanationTr: `## Cümle dizilişi: ayrılabilen fiiller ve zaman
 
 Çekimli fiil **2. konumda**, ön ek **sonda** kalır. Zaman ifadeleri araya girer – çoğunlukla fiilin hemen ardından.
@@ -2309,7 +5518,18 @@ The conjugated verb stays in **position 2**, the prefix at the **end**. Time exp
 | Ich | stehe | täglich um sieben Uhr | auf. |
 | Sie | ruft | jeden Abend | an. |
 
-**Örnek:** Ich **stehe** täglich um sieben Uhr **auf**. (Her gün saat yedide kalkarım.)`,
+**Örnek:** Ich **stehe** täglich um sieben Uhr **auf**. (Her gün saat yedide kalkarım.)
+
+### Zaman ifadesi başta
+Cümle zamanla başlarsa fiil 2. konuma, özne ondan sonra gelir: **Täglich stehe ich** um sieben Uhr **auf**.
+
+### Soruda
+- Evet/Hayır: **Stehst** du früh **auf**?
+- W-sorusu: **Wann** stehst du **auf**?
+
+### Sık yapılan hatalar
+- ❌ *Täglich ich stehe … auf.* → ✅ Täglich **stehe ich** … auf.
+- ❌ *Ich stehe auf um sieben.* → ✅ Ich stehe um sieben **auf**.`,
     },
   })
   await seedExercises({
@@ -2330,6 +5550,70 @@ The conjugated verb stays in **position 2**, the prefix at the **end**. Time exp
         correctAnswer: { correctIndex: 0 },
         explanation: 'Präfix "an" steht am Satzende.',
       },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 3,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['stehe', 'täglich', 'ich', 'auf'] },
+        correctAnswer: { order: ['täglich', 'stehe', 'ich', 'auf'] },
+        explanation: 'Zeit vorn → Verb Pos. 2: "Täglich stehe ich auf."',
+      },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 4,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ stehst du auf? – Um acht Uhr. (Frage nach der Zeit)' },
+        correctAnswer: { accepted: ['wann'] },
+        explanation: '"Wann stehst du auf?"',
+      },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 5,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das konjugierte Verb im Aussagesatz?', options: ['Position 1', 'Position 2', 'am Ende', 'egal'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Verb an Position 2, Präfix am Ende.',
+      },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Täglich ich stehe auf.', 'Täglich stehe ich auf.', 'Täglich stehe auf ich.', 'Ich täglich stehe auf.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Zeit vorn → Verb Pos. 2, Subjekt danach.',
+      },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Jeden Abend ___ sie ihre Mutter an. (anrufen, sie)' },
+        correctAnswer: { accepted: ['ruft'] },
+        explanation: 'Zeit vorn → Verb Pos. 2: "Jeden Abend ruft sie … an."',
+      },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht die Zeitangabe meistens?', options: ['am Satzende', 'direkt nach dem Verb', 'vor dem Verb', 'nach dem Präfix'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Zeit meist direkt nach dem Verb (oder am Anfang).',
+      },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['an', 'du', 'rufst', 'wann'] },
+        correctAnswer: { order: ['wann', 'rufst', 'du', 'an'] },
+        explanation: '"Wann rufst du an?"',
+      },
+      {
+        lessonId: a1Unit8Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Bilde die Frage: 'When do you get up?' (Wann ...?)" },
+        correctAnswer: { accepted: ['wann stehst du auf', 'wann stehst du auf?'] },
+        explanation: '"Wann stehst du auf?"',
+      },
     ],
   })
 
@@ -2348,7 +5632,14 @@ Typische Fragen und Antworten:
 - **Was** kaufst du **ein**? – Ich kaufe Brot und Milch **ein**.
 - **Wann** rufst du deine Mutter **an**? – Ich rufe sie am Abend **an**.
 
-**Beispiel:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.`,
+**Beispiel:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.
+
+### Mein Tag (Beispieltext)
+> Ich **stehe** um sieben Uhr **auf**. Dann **frühstücke** ich. Am Nachmittag **kaufe** ich **ein**. Abends **sehe** ich **fern** und **rufe** meine Freundin **an**.
+
+### Denk daran
+- Verb an Position 2, Präfix am Ende.
+- Mit Modalverb: Infinitiv (zusammen) am Ende.`,
       explanationEn: `## Practice: separable verbs in daily life
 
 In this lesson you review separable verbs. Remember the rule: **verb in position 2, prefix at the end.**
@@ -2359,7 +5650,14 @@ Typical questions and answers:
 - **Was** kaufst du **ein**? – Ich kaufe Brot und Milch **ein**. (What do you buy? – I buy bread and milk.)
 - **Wann** rufst du deine Mutter **an**? – Ich rufe sie am Abend **an**. (When do you call your mother? – I call her in the evening.)
 
-**Example:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.`,
+**Example:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.
+
+### My day (sample text)
+> Ich **stehe** um sieben Uhr **auf**. Dann **frühstücke** ich. Am Nachmittag **kaufe** ich **ein**. Abends **sehe** ich **fern** und **rufe** meine Freundin **an**.
+
+### Remember
+- Verb in position 2, prefix at the end.
+- With a modal verb: infinitive (together) at the end.`,
       explanationTr: `## Alıştırma: günlük hayatta ayrılabilen fiiller
 
 Bu derste ayrılabilen fiilleri tekrar edersin. Kuralı hatırla: **fiil 2. konumda, ön ek sonda.**
@@ -2370,7 +5668,14 @@ Tipik sorular ve cevaplar:
 - **Was** kaufst du **ein**? – Ich kaufe Brot und Milch **ein**. (Ne alırsın? – Ekmek ve süt alırım.)
 - **Wann** rufst du deine Mutter **an**? – Ich rufe sie am Abend **an**. (Anneni ne zaman ararsın? – Onu akşam ararım.)
 
-**Örnek:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.`,
+**Örnek:** Ich **stehe** um acht Uhr **auf** und **kaufe** dann Brot **ein**.
+
+### Günüm (örnek metin)
+> Ich **stehe** um sieben Uhr **auf**. Dann **frühstücke** ich. Am Nachmittag **kaufe** ich **ein**. Abends **sehe** ich **fern** und **rufe** meine Freundin **an**.
+
+### Unutma
+- Fiil 2. konumda, ön ek sonda.
+- Kip fiiliyle: mastar (bitişik) sonda.`,
     },
   })
   await seedExercises({
@@ -2390,6 +5695,76 @@ Tipik sorular ve cevaplar:
         data: { prompt: "Wie sagt man auf Deutsch: 'I get up at eight o'clock'?" },
         correctAnswer: { accepted: ['ich stehe um acht uhr auf'] },
         explanation: '"Ich stehe um acht Uhr auf" bedeutet "I get up at eight o\'clock".',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Was kaufst du ein? – Ich ___ Brot und Milch ein. (einkaufen, ich)' },
+        correctAnswer: { accepted: ['kaufe'] },
+        explanation: 'ich kaufe … ein.',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich muss heute noch ___. (aufräumen, mit Modalverb)', options: ['auf räume', 'aufräumen', 'räume auf', 'aufgeräumt'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Mit Modalverb: Infinitiv aufräumen am Ende.',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['Wann stehst du auf?', 'Was kaufst du ein?', 'Wann rufst du an?'], rights: ['Brot und Milch.', 'Am Abend.', 'Um acht Uhr.'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Wann stehst du auf?', right: 'Um acht Uhr.' },
+            { left: 'Was kaufst du ein?', right: 'Brot und Milch.' },
+            { left: 'Wann rufst du an?', right: 'Am Abend.' },
+          ],
+        },
+        explanation: 'Frage und passende Antwort.',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich ___ abends fern. (fernsehen, ich)', options: ['sehe', 'sieht', 'sehen', 'siehst'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'ich sehe … fern.',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Abends sehe ich ___. (fernsehen, Präfix am Ende)' },
+        correctAnswer: { accepted: ['fern'] },
+        explanation: 'Präfix "fern" am Ende.',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich kaufe ein Brot am Samstag.', 'Ich kaufe am Samstag Brot ein.', 'Ich einkaufe Brot am Samstag.', 'Ich kaufe Brot ein am Samstag.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Präfix ans Ende: "Ich kaufe am Samstag Brot ein."',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['auf', 'um', 'ich', 'acht', 'stehe', 'Uhr'] },
+        correctAnswer: { order: ['ich', 'stehe', 'um', 'acht', 'Uhr', 'auf'] },
+        explanation: '"Ich stehe um acht Uhr auf."',
+      },
+      {
+        lessonId: a1Unit8Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagt man: 'I call my mother in the evening'? (Ich rufe ...)" },
+        correctAnswer: { accepted: ['ich rufe meine mutter am abend an', 'ich rufe abends meine mutter an', 'ich rufe meine mutter abends an'] },
+        explanation: '"Ich rufe meine Mutter am Abend an."',
       },
     ],
   })
@@ -2428,7 +5803,18 @@ Der Dativ ist oft der „Empfänger" einer Handlung. Alle Artikel ändern sich (
 | neutral | das | **dem** |
 | Plural | die | **den** (+ Nomen -n) |
 
-**Beispiel:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern.`,
+**Beispiel:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern.
+
+### Dativverben
+Manche Verben verlangen den Dativ: **helfen, danken, gehören, gefallen, antworten, glauben**.
+> Ich **helfe dem** Mann. · Das Buch **gehört der** Frau. · Das Auto **gefällt dem** Kind.
+
+### Frage nach dem Dativ
+Frage mit **Wem?**: Ich helfe **dem** Mann. → **Wem** helfe ich? – Dem Mann.
+
+### Häufige Fehler
+- ❌ *Ich helfe den Mann* → ✅ Ich helfe **dem** Mann (Dativ, nicht Akkusativ).
+- ❌ *mit den Kinder* → ✅ mit **den Kindern** (Plural + -n).`,
       explanationEn: `## The dative: articles
 
 The dative is often the "receiver" of an action. All articles change (in the plural the noun also gets an extra **-n**).
@@ -2440,7 +5826,18 @@ The dative is often the "receiver" of an action. All articles change (in the plu
 | neuter | das | **dem** |
 | plural | die | **den** (+ noun -n) |
 
-**Example:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern. (I help the man, the woman and the children.)`,
+**Example:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern. (I help the man, the woman and the children.)
+
+### Dative verbs
+Some verbs require the dative: **helfen, danken, gehören, gefallen, antworten, glauben**.
+> Ich **helfe dem** Mann. · Das Buch **gehört der** Frau. · Das Auto **gefällt dem** Kind.
+
+### Asking for the dative
+Ask with **Wem?** (to whom): Ich helfe **dem** Mann. → **Wem** helfe ich? – Dem Mann.
+
+### Common mistakes
+- ❌ *Ich helfe den Mann* → ✅ Ich helfe **dem** Mann (dative, not accusative).
+- ❌ *mit den Kinder* → ✅ mit **den Kindern** (plural + -n).`,
       explanationTr: `## Datif: tanımlıklar
 
 Datif çoğu zaman bir eylemin „alıcısıdır". Bütün tanımlıklar değişir (çoğulda isim ayrıca **-n** eki alır).
@@ -2452,7 +5849,18 @@ Datif çoğu zaman bir eylemin „alıcısıdır". Bütün tanımlıklar değiş
 | nötr | das | **dem** |
 | çoğul | die | **den** (+ isim -n) |
 
-**Örnek:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern. (Adama, kadına ve çocuklara yardım ediyorum.)`,
+**Örnek:** Ich helfe **dem** Mann, **der** Frau und **den** Kindern. (Adama, kadına ve çocuklara yardım ediyorum.)
+
+### Datif fiilleri
+Bazı fiiller datif ister: **helfen, danken, gehören, gefallen, antworten, glauben**.
+> Ich **helfe dem** Mann. · Das Buch **gehört der** Frau. · Das Auto **gefällt dem** Kind.
+
+### Datif sorusu
+**Wem?** (kime) ile sor: Ich helfe **dem** Mann. → **Wem** helfe ich? – Dem Mann.
+
+### Sık yapılan hatalar
+- ❌ *Ich helfe den Mann* → ✅ Ich helfe **dem** Mann (datif, akkusatif değil).
+- ❌ *mit den Kinder* → ✅ mit **den Kindern** (çoğul + -n).`,
     },
   })
   await seedExercises({
@@ -2472,6 +5880,76 @@ Datif çoğu zaman bir eylemin „alıcısıdır". Bütün tanımlıklar değiş
         data: { sentence: 'Ich helfe ___ Kind. (neutral, Dativ)' },
         correctAnswer: { accepted: ['dem'] },
         explanation: 'Neutral im Dativ: dem Kind.',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich helfe ___ Mann. (maskulin, Dativ)' },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'Maskulin im Dativ: dem Mann.',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich spiele mit ___ Kindern. (Plural, Dativ)', options: ['die', 'der', 'dem', 'den'] },
+        correctAnswer: { correctIndex: 3 },
+        explanation: 'Plural im Dativ: den Kindern (+ -n).',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['der Mann', 'die Frau', 'das Kind'], rights: ['dem Kind', 'dem Mann', 'der Frau'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Mann', right: 'dem Mann' },
+            { left: 'die Frau', right: 'der Frau' },
+            { left: 'das Kind', right: 'dem Kind' },
+          ],
+        },
+        explanation: 'Nominativ → Dativ.',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Fragewort passt zum Dativ?', options: ['Wen', 'Wem', 'Was', 'Wer'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Wem?" fragt nach dem Dativ.',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Buch gehört ___ Frau. (feminin, Dativ)' },
+        correctAnswer: { accepted: ['der'] },
+        explanation: 'gehören + Dativ: der Frau.',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb braucht den Dativ?', options: ['sehen', 'helfen', 'kaufen', 'brauchen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"helfen" + Dativ.',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['dem', 'ich', 'Mann', 'helfe'] },
+        correctAnswer: { order: ['ich', 'helfe', 'dem', 'Mann'] },
+        explanation: '"Ich helfe dem Mann."',
+      },
+      {
+        lessonId: a1Unit9Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie lautet "der" (maskulin) im Dativ?' },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'der → dem.',
       },
     ],
   })
@@ -2495,7 +5973,18 @@ Nach diesen Präpositionen steht **immer** der Dativ:
 | von | from/of | ein Brief **von der** Mutter |
 | zu | to | Ich gehe **zu dem** (zum) Arzt. |
 
-**Merkhilfe:** aus, bei, mit, nach, seit, von, zu – am besten auswendig lernen.`,
+**Merkhilfe:** aus, bei, mit, nach, seit, von, zu – am besten auswendig lernen.
+
+### Verschmelzungen (kurze Formen)
+- bei + dem = **beim**
+- von + dem = **vom**
+- zu + dem = **zum**
+- zu + der = **zur**
+
+### Häufige Fehler
+- ❌ *mit der Bus* → ✅ mit **dem** Bus (maskulin Dativ).
+- ❌ *zu dem Arzt* (unüblich) → besser: **zum** Arzt.
+- ❌ *nach die Arbeit* → ✅ **nach der** Arbeit.`,
       explanationEn: `## Prepositions with the dative
 
 After these prepositions you **always** use the dative:
@@ -2510,7 +5999,18 @@ After these prepositions you **always** use the dative:
 | von | from/of | ein Brief **von der** Mutter |
 | zu | to | Ich gehe **zu dem** (zum) Arzt. |
 
-**Memory aid:** aus, bei, mit, nach, seit, von, zu – best learned by heart.`,
+**Memory aid:** aus, bei, mit, nach, seit, von, zu – best learned by heart.
+
+### Contractions (short forms)
+- bei + dem = **beim**
+- von + dem = **vom**
+- zu + dem = **zum**
+- zu + der = **zur**
+
+### Common mistakes
+- ❌ *mit der Bus* → ✅ mit **dem** Bus (masculine dative).
+- ❌ *zu dem Arzt* (unusual) → better: **zum** Arzt.
+- ❌ *nach die Arbeit* → ✅ **nach der** Arbeit.`,
       explanationTr: `## Datif alan edatlar
 
 Bu edatlardan sonra **her zaman** datif kullanılır:
@@ -2525,7 +6025,18 @@ Bu edatlardan sonra **her zaman** datif kullanılır:
 | von | -den/-in | ein Brief **von der** Mutter |
 | zu | -e (birine/yere) | Ich gehe **zu dem** (zum) Arzt. |
 
-**Hatırlatma:** aus, bei, mit, nach, seit, von, zu – en iyisi ezberlemek.`,
+**Hatırlatma:** aus, bei, mit, nach, seit, von, zu – en iyisi ezberlemek.
+
+### Kaynaşmalar (kısa biçimler)
+- bei + dem = **beim**
+- von + dem = **vom**
+- zu + dem = **zum**
+- zu + der = **zur**
+
+### Sık yapılan hatalar
+- ❌ *mit der Bus* → ✅ mit **dem** Bus (eril datif).
+- ❌ *zu dem Arzt* (alışılmadık) → daha iyisi: **zum** Arzt.
+- ❌ *nach die Arbeit* → ✅ **nach der** Arbeit.`,
     },
   })
   await seedExercises({
@@ -2552,6 +6063,76 @@ Bu edatlardan sonra **her zaman** datif kullanılır:
         },
         explanation: 'Dativpräpositionen und ihre Bedeutung.',
       },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich wohne ___ meinen Eltern. (Präposition: at/with)' },
+        correctAnswer: { accepted: ['bei'] },
+        explanation: '"bei" + Dativ: bei meinen Eltern.',
+      },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich gehe ___ Arzt. (zu + dem)', options: ['zu dem', 'zum', 'zur', 'zu der'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'zu + dem = zum: zum Arzt.',
+      },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['bei + dem', 'von + dem', 'zu + der'], rights: ['zur', 'beim', 'vom'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'bei + dem', right: 'beim' },
+            { left: 'von + dem', right: 'vom' },
+            { left: 'zu + der', right: 'zur' },
+          ],
+        },
+        explanation: 'Verschmelzungen: beim, vom, zur.',
+      },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Präposition steht NICHT immer mit Dativ?', options: ['mit', 'für', 'aus', 'nach'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"für" steht mit Akkusativ, nicht mit Dativ.',
+      },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich lerne Deutsch ___ einem Jahr. (since)' },
+        correctAnswer: { accepted: ['seit'] },
+        explanation: '"seit" + Dativ: seit einem Jahr.',
+      },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich fahre ___ der Straßenbahn.', options: ['mit', 'für', 'ohne', 'durch'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Verkehrsmittel mit "mit" + Dativ.',
+      },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['dem', 'ich', 'mit', 'Bus', 'fahre'] },
+        correctAnswer: { order: ['ich', 'fahre', 'mit', 'dem', 'Bus'] },
+        explanation: '"Ich fahre mit dem Bus."',
+      },
+      {
+        lessonId: a1Unit9Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie lautet "zu + dem" als kurze Form?' },
+        correctAnswer: { accepted: ['zum'] },
+        explanation: 'zu + dem = zum.',
+      },
     ],
   })
 
@@ -2569,7 +6150,18 @@ Wechselpräpositionen (in, an, auf, unter, über …) können **Akkusativ oder D
 | wohin? (Bewegung) | Akkusativ | Ich gehe **in die** Küche. |
 | wo? (Ort) | Dativ | Ich bin **in der** Küche. |
 
-**Beispiel:** **Wohin?** Ich lege das Buch **auf den** Tisch. · **Wo?** Das Buch liegt **auf dem** Tisch.`,
+**Beispiel:** **Wohin?** Ich lege das Buch **auf den** Tisch. · **Wo?** Das Buch liegt **auf dem** Tisch.
+
+### Die Wechselpräpositionen
+**in, an, auf, über, unter, vor, hinter, neben, zwischen** – alle können Akkusativ oder Dativ.
+
+### Merksatz
+- **Bewegung von A nach B** → wohin? → **Akkusativ**
+- **Position/kein Ortswechsel** → wo? → **Dativ**
+
+### Häufige Fehler
+- ❌ *Ich bin in die Küche* (wenn du dort bist) → ✅ Ich bin **in der** Küche (wo? Dativ).
+- ❌ *Ich gehe in der Küche* (Bewegung) → ✅ Ich gehe **in die** Küche (wohin? Akkusativ).`,
       explanationEn: `## Two-way prepositions (introduction)
 
 Two-way prepositions (in, an, auf, unter, über …) can take **accusative or dative**. The question decides:
@@ -2579,7 +6171,18 @@ Two-way prepositions (in, an, auf, unter, über …) can take **accusative or da
 | wohin? (movement) | accusative | Ich gehe **in die** Küche. |
 | wo? (location) | dative | Ich bin **in der** Küche. |
 
-**Example:** **Wohin?** Ich lege das Buch **auf den** Tisch. · **Wo?** Das Buch liegt **auf dem** Tisch.`,
+**Example:** **Wohin?** Ich lege das Buch **auf den** Tisch. · **Wo?** Das Buch liegt **auf dem** Tisch.
+
+### The two-way prepositions
+**in, an, auf, über, unter, vor, hinter, neben, zwischen** – all can take accusative or dative.
+
+### Rule of thumb
+- **Movement from A to B** → wohin? → **accusative**
+- **Position / no change of place** → wo? → **dative**
+
+### Common mistakes
+- ❌ *Ich bin in die Küche* (when you are there) → ✅ Ich bin **in der** Küche (where? dative).
+- ❌ *Ich gehe in der Küche* (movement) → ✅ Ich gehe **in die** Küche (where to? accusative).`,
       explanationTr: `## İki yönlü edatlar (giriş)
 
 İki yönlü edatlar (in, an, auf, unter, über …) hem **akkusatif hem datif** alabilir. Hangi soruya cevap verdiği belirler:
@@ -2589,7 +6192,18 @@ Two-way prepositions (in, an, auf, unter, über …) can take **accusative or da
 | wohin? (hareket) | akkusatif | Ich gehe **in die** Küche. |
 | wo? (konum) | datif | Ich bin **in der** Küche. |
 
-**Örnek:** **Wohin?** Ich lege das Buch **auf den** Tisch. (Kitabı masaya koyuyorum.) · **Wo?** Das Buch liegt **auf dem** Tisch. (Kitap masanın üstünde duruyor.)`,
+**Örnek:** **Wohin?** Ich lege das Buch **auf den** Tisch. (Kitabı masaya koyuyorum.) · **Wo?** Das Buch liegt **auf dem** Tisch. (Kitap masanın üstünde duruyor.)
+
+### İki yönlü edatlar
+**in, an, auf, über, unter, vor, hinter, neben, zwischen** – hepsi akkusatif ya da datif alabilir.
+
+### Kolay kural
+- **A'dan B'ye hareket** → wohin? → **Akkusatif**
+- **Konum / yer değişikliği yok** → wo? → **Datif**
+
+### Sık yapılan hatalar
+- ❌ *Ich bin in die Küche* (oradaysan) → ✅ Ich bin **in der** Küche (nerede? datif).
+- ❌ *Ich gehe in der Küche* (hareket) → ✅ Ich gehe **in die** Küche (nereye? akkusatif).`,
     },
   })
   await seedExercises({
@@ -2609,6 +6223,75 @@ Two-way prepositions (in, an, auf, unter, über …) can take **accusative or da
         data: { prompt: 'Ich gehe in ___ Küche. (wohin? Akkusativ)', options: ['die', 'der', 'dem', 'den'] },
         correctAnswer: { correctIndex: 0 },
         explanation: 'Feminin im Akkusativ bleibt gleich: die Küche.',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das Buch liegt auf ___ Tisch. (wo? der Tisch, Dativ)' },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'wo? → Dativ: auf dem Tisch.',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Ich lege das Buch auf ___ Tisch. (wohin? Akkusativ)', options: ['der', 'dem', 'den', 'die'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'wohin? → Akkusativ: auf den Tisch.',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['wohin? (Bewegung)', 'wo? (Ort)'], rights: ['Dativ', 'Akkusativ'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'wohin? (Bewegung)', right: 'Akkusativ' },
+            { left: 'wo? (Ort)', right: 'Dativ' },
+          ],
+        },
+        explanation: 'wohin → Akkusativ, wo → Dativ.',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Frage passt zu "Ich bin in der Küche"?', options: ['wohin?', 'wo?', 'wann?', 'wie?'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Ort/Position → wo? (Dativ).',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die Lampe hängt über ___ Tisch. (wo? der Tisch, Dativ)' },
+        correctAnswer: { accepted: ['dem'] },
+        explanation: 'wo? → Dativ: über dem Tisch.',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches ist eine Wechselpräposition?', options: ['mit', 'aus', 'auf', 'seit'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"auf" ist eine Wechselpräposition; mit/aus/seit stehen immer mit Dativ.',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['der', 'ich', 'in', 'bin', 'Küche'] },
+        correctAnswer: { order: ['ich', 'bin', 'in', 'der', 'Küche'] },
+        explanation: 'wo? → Dativ: "Ich bin in der Küche."',
+      },
+      {
+        lessonId: a1Unit9Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Welchen Kasus verlangt "wohin?" bei Wechselpräpositionen?' },
+        correctAnswer: { accepted: ['akkusativ', 'den akkusativ', 'accusative'] },
+        explanation: 'wohin? → Akkusativ.',
       },
     ],
   })
@@ -2630,7 +6313,22 @@ Das sind die wichtigsten Räume einer Wohnung. Achte auf den Artikel:
 | die Küche | kitchen |
 | der Balkon | balcony |
 
-**Beispiel:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (Kombiniere die Zimmer mit Wechselpräpositionen im Dativ.)`,
+**Beispiel:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (Kombiniere die Zimmer mit Wechselpräpositionen im Dativ.)
+
+### Mehr Wohnungswörter
+| Deutsch | Englisch |
+| ---- | ---- |
+| das Haus | house |
+| die Wohnung | flat/apartment |
+| der Flur | hallway |
+| der Garten | garden |
+| das Möbel / die Möbel | piece(s) of furniture |
+
+**in + dem = im**: Ich bin **im** Wohnzimmer. · Ich koche **in der** Küche.
+
+### Häufige Fehler
+- ❌ *in dem Schlafzimmer* → besser: **im** Schlafzimmer.
+- ❌ *auf dem Küche* → ✅ **in der** Küche.`,
       explanationEn: `## Apartment and rooms
 
 These are the most important rooms of an apartment. Pay attention to the article:
@@ -2643,7 +6341,22 @@ These are the most important rooms of an apartment. Pay attention to the article
 | die Küche | kitchen |
 | der Balkon | balcony |
 
-**Example:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (I cook in the kitchen and sleep in the bedroom.) Combine the rooms with two-way prepositions in the dative.`,
+**Example:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (I cook in the kitchen and sleep in the bedroom.) Combine the rooms with two-way prepositions in the dative.
+
+### More home vocabulary
+| German | English |
+| ---- | ---- |
+| das Haus | house |
+| die Wohnung | flat/apartment |
+| der Flur | hallway |
+| der Garten | garden |
+| das Möbel / die Möbel | piece(s) of furniture |
+
+**in + dem = im**: Ich bin **im** Wohnzimmer. · Ich koche **in der** Küche.
+
+### Common mistakes
+- ❌ *in dem Schlafzimmer* → better: **im** Schlafzimmer.
+- ❌ *auf dem Küche* → ✅ **in der** Küche.`,
       explanationTr: `## Daire ve odalar
 
 Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
@@ -2656,7 +6369,22 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
 | die Küche | mutfak |
 | der Balkon | balkon |
 
-**Örnek:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (Mutfakta yemek yaparım ve yatak odasında uyurum.) Odaları datifteki iki yönlü edatlarla birleştir.`,
+**Örnek:** Ich koche **in der** Küche und schlafe **im** Schlafzimmer. (Mutfakta yemek yaparım ve yatak odasında uyurum.) Odaları datifteki iki yönlü edatlarla birleştir.
+
+### Daha fazla ev kelimesi
+| Almanca | Türkçe |
+| ---- | ---- |
+| das Haus | ev |
+| die Wohnung | daire |
+| der Flur | koridor |
+| der Garten | bahçe |
+| das Möbel / die Möbel | mobilya |
+
+**in + dem = im**: Ich bin **im** Wohnzimmer. · Ich koche **in der** Küche.
+
+### Sık yapılan hatalar
+- ❌ *in dem Schlafzimmer* → daha iyisi: **im** Schlafzimmer.
+- ❌ *auf dem Küche* → ✅ **in der** Küche.`,
     },
   })
   await seedExercises({
@@ -2682,6 +6410,76 @@ Bunlar bir dairenin en önemli odalarıdır. Tanımlığa dikkat et:
         data: { sentence: 'Ich schlafe im ___. (bedroom)' },
         correctAnswer: { accepted: ['schlafzimmer'] },
         explanation: '"Schlafzimmer" ist das Zimmer zum Schlafen.',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich koche in ___ Küche. (in + der)' },
+        correctAnswer: { accepted: ['der'] },
+        explanation: 'wo? → Dativ: in der Küche.',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "das Wohnzimmer"?', options: ['bedroom', 'living room', 'bathroom', 'kitchen'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Wohnzimmer = living room.',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['die Küche', 'das Wohnzimmer', 'der Garten'], rights: ['garden', 'kitchen', 'living room'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'die Küche', right: 'kitchen' },
+            { left: 'das Wohnzimmer', right: 'living room' },
+            { left: 'der Garten', right: 'garden' },
+          ],
+        },
+        explanation: 'Räume und ihre Bedeutung.',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: '"in + dem" wird kurz zu …', options: ['im', 'am', 'zum', 'beim'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'in + dem = im.',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir sitzen auf dem ___. (balcony)' },
+        correctAnswer: { accepted: ['balkon'] },
+        explanation: 'der Balkon = balcony.',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo duscht man?', options: ['im Wohnzimmer', 'im Badezimmer', 'in der Küche', 'im Garten'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Man duscht im Badezimmer.',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['im', 'ich', 'schlafe', 'Schlafzimmer'] },
+        correctAnswer: { order: ['ich', 'schlafe', 'im', 'Schlafzimmer'] },
+        explanation: '"Ich schlafe im Schlafzimmer."',
+      },
+      {
+        lessonId: a1Unit9Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie heißt "kitchen" auf Deutsch? (mit Artikel)' },
+        correctAnswer: { accepted: ['die küche', 'küche'] },
+        explanation: 'die Küche.',
       },
     ],
   })
@@ -2722,7 +6520,26 @@ Das sind wichtige Wörter zum Thema Essen. Achte auf den Artikel:
 | das Gemüse | vegetables |
 | der Reis | rice |
 
-**Beispiel:** Ich kaufe **Brot**, **Käse** und **Milch**.`,
+**Beispiel:** Ich kaufe **Brot**, **Käse** und **Milch**.
+
+### Mehr Lebensmittel & Getränke
+| Deutsch | Englisch |
+| ---- | ---- |
+| der Apfel / die Äpfel | apple(s) |
+| die Kartoffel | potato |
+| das Ei / die Eier | egg(s) |
+| das Fleisch | meat |
+| der Fisch | fish |
+| das Wasser | water |
+| der Saft | juice |
+
+### essen vs. trinken
+- **essen** (unregelmäßig): ich esse, du **isst**, er **isst**.
+- **trinken**: ich trinke, du trinkst, er trinkt.
+
+### Häufige Fehler
+- ❌ *die Brot* → ✅ **das** Brot.
+- ❌ *du esst* → ✅ du **isst**.`,
       explanationEn: `## Food items
 
 These are important words about food. Pay attention to the article:
@@ -2736,7 +6553,26 @@ These are important words about food. Pay attention to the article:
 | das Gemüse | vegetables |
 | der Reis | rice |
 
-**Example:** Ich kaufe **Brot**, **Käse** und **Milch**. (I buy bread, cheese and milk.)`,
+**Example:** Ich kaufe **Brot**, **Käse** und **Milch**. (I buy bread, cheese and milk.)
+
+### More food & drinks
+| German | English |
+| ---- | ---- |
+| der Apfel / die Äpfel | apple(s) |
+| die Kartoffel | potato |
+| das Ei / die Eier | egg(s) |
+| das Fleisch | meat |
+| der Fisch | fish |
+| das Wasser | water |
+| der Saft | juice |
+
+### essen vs. trinken
+- **essen** (irregular): ich esse, du **isst**, er **isst**.
+- **trinken**: ich trinke, du trinkst, er trinkt.
+
+### Common mistakes
+- ❌ *die Brot* → ✅ **das** Brot.
+- ❌ *du esst* → ✅ du **isst**.`,
       explanationTr: `## Gıda maddeleri
 
 Bunlar yemekle ilgili önemli kelimelerdir. Tanımlığa dikkat et:
@@ -2750,7 +6586,26 @@ Bunlar yemekle ilgili önemli kelimelerdir. Tanımlığa dikkat et:
 | das Gemüse | sebze |
 | der Reis | pirinç |
 
-**Örnek:** Ich kaufe **Brot**, **Käse** und **Milch**. (Ekmek, peynir ve süt alırım.)`,
+**Örnek:** Ich kaufe **Brot**, **Käse** und **Milch**. (Ekmek, peynir ve süt alırım.)
+
+### Daha fazla yiyecek & içecek
+| Almanca | Türkçe |
+| ---- | ---- |
+| der Apfel / die Äpfel | elma(lar) |
+| die Kartoffel | patates |
+| das Ei / die Eier | yumurta(lar) |
+| das Fleisch | et |
+| der Fisch | balık |
+| das Wasser | su |
+| der Saft | meyve suyu |
+
+### essen ve trinken
+- **essen** (düzensiz): ich esse, du **isst**, er **isst**.
+- **trinken**: ich trinke, du trinkst, er trinkt.
+
+### Sık yapılan hatalar
+- ❌ *die Brot* → ✅ **das** Brot.
+- ❌ *du esst* → ✅ du **isst**.`,
     },
   })
   await seedExercises({
@@ -2777,6 +6632,76 @@ Bunlar yemekle ilgili önemli kelimelerdir. Tanımlığa dikkat et:
         correctAnswer: { correctIndex: 1 },
         explanation: '"Obst" bedeutet "fruit".',
       },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich trinke ___ Wasser. (Verb + neutral: kein/ein? Hier: das Wasser)' },
+        correctAnswer: { accepted: ['das', 'ein'] },
+        explanation: 'Ich trinke das/ein Wasser.',
+      },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welchen Artikel hat "Milch"?', options: ['der', 'die', 'das', 'den'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'die Milch.',
+      },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['das Ei', 'der Fisch', 'das Fleisch'], rights: ['meat', 'egg', 'fish'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'das Ei', right: 'egg' },
+            { left: 'der Fisch', right: 'fish' },
+            { left: 'das Fleisch', right: 'meat' },
+          ],
+        },
+        explanation: 'Ei = egg, Fisch = fish, Fleisch = meat.',
+      },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Du ___ gern Obst. (essen, du)', options: ['isst', 'esst', 'esse', 'essen'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'essen ist unregelmäßig: du isst.',
+      },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Plural von "der Apfel" ist die ___.' },
+        correctAnswer: { accepted: ['äpfel', 'aepfel'] },
+        explanation: 'der Apfel → die Äpfel (Umlaut).',
+      },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist ein Getränk?', options: ['das Brot', 'der Saft', 'der Käse', 'das Ei'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'der Saft ist ein Getränk.',
+      },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Brot', 'ich', 'kaufe', 'Käse', 'und'] },
+        correctAnswer: { order: ['ich', 'kaufe', 'Brot', 'und', 'Käse'] },
+        explanation: '"Ich kaufe Brot und Käse."',
+      },
+      {
+        lessonId: a1Unit10Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie heißt "vegetables" auf Deutsch? (mit Artikel)' },
+        correctAnswer: { accepted: ['das gemüse', 'gemüse', 'das gemuese', 'gemuese'] },
+        explanation: 'das Gemüse.',
+      },
     ],
   })
 
@@ -2796,7 +6721,21 @@ Beim Einkaufen bestellst du höflich mit **„Ich hätte gern …"**. Für Menge
 | ein Stück | ein Stück **Käse** |
 | eine Flasche | eine Flasche **Wasser** |
 
-**Beispiel:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte.`,
+**Beispiel:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte.
+
+### Mehr Mengen
+| Menge | Beispiel |
+| ---- | ---- |
+| eine Dose | eine Dose Tomaten |
+| eine Packung | eine Packung Reis |
+| ein Gramm / 100 Gramm | 100 Gramm Käse |
+| eine Tafel | eine Tafel Schokolade |
+
+**Merke:** Nach Mengen steht das Lebensmittel **ohne Artikel**: ein Kilo **Äpfel** (nicht *ein Kilo die Äpfel*).
+
+### Häufige Fehler
+- ❌ *ein Kilo von Äpfeln* → ✅ ein Kilo **Äpfel**.
+- ❌ *Ich hätte gern* ohne „bitte" wirkt weniger höflich → besser mit **bitte**.`,
       explanationEn: `## "Ich hätte gern" and quantities
 
 When shopping you order politely with **"Ich hätte gern …"** (I'd like …). For amounts you use these words:
@@ -2808,7 +6747,21 @@ When shopping you order politely with **"Ich hätte gern …"** (I'd like …). 
 | ein Stück | ein Stück **Käse** (a piece of cheese) |
 | eine Flasche | eine Flasche **Wasser** (a bottle of water) |
 
-**Example:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte. (I'd like a kilo of apples and a liter of milk, please.)`,
+**Example:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte. (I'd like a kilo of apples and a liter of milk, please.)
+
+### More quantities
+| Amount | Example |
+| ---- | ---- |
+| eine Dose | eine Dose Tomaten (a can of tomatoes) |
+| eine Packung | eine Packung Reis (a packet of rice) |
+| ein Gramm / 100 Gramm | 100 Gramm Käse |
+| eine Tafel | eine Tafel Schokolade (a bar of chocolate) |
+
+**Note:** After a quantity, the food comes **without an article**: ein Kilo **Äpfel** (not *ein Kilo die Äpfel*).
+
+### Common mistakes
+- ❌ *ein Kilo von Äpfeln* → ✅ ein Kilo **Äpfel**.
+- ❌ "Ich hätte gern" without "bitte" sounds less polite → better with **bitte**.`,
       explanationTr: `## „Ich hätte gern" ve miktar ifadeleri
 
 Alışverişte kibarca **„Ich hätte gern …"** (… isterim) ile sipariş verirsin. Miktar için şu kelimeleri kullanırsın:
@@ -2820,7 +6773,21 @@ Alışverişte kibarca **„Ich hätte gern …"** (… isterim) ile sipariş ve
 | ein Stück | ein Stück **Käse** (bir parça peynir) |
 | eine Flasche | eine Flasche **Wasser** (bir şişe su) |
 
-**Örnek:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte. (Bir kilo elma ve bir litre süt isterim, lütfen.)`,
+**Örnek:** Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch, bitte. (Bir kilo elma ve bir litre süt isterim, lütfen.)
+
+### Daha fazla miktar
+| Miktar | Örnek |
+| ---- | ---- |
+| eine Dose | eine Dose Tomaten (bir kutu domates) |
+| eine Packung | eine Packung Reis (bir paket pirinç) |
+| ein Gramm / 100 Gramm | 100 Gramm Käse |
+| eine Tafel | eine Tafel Schokolade (bir tablet çikolata) |
+
+**Not:** Miktardan sonra gıda **tanımlıksız** gelir: ein Kilo **Äpfel** (*ein Kilo die Äpfel* değil).
+
+### Sık yapılan hatalar
+- ❌ *ein Kilo von Äpfeln* → ✅ ein Kilo **Äpfel**.
+- ❌ „Ich hätte gern" „bitte" olmadan daha az kibar → **bitte** ile daha iyi.`,
     },
   })
   await seedExercises({
@@ -2844,6 +6811,76 @@ Alışverişte kibarca **„Ich hätte gern …"** (… isterim) ile sipariş ve
         correctAnswer: { correctIndex: 1 },
         explanation: '"Ich hätte gern..." ist höflich.',
       },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich hätte gern einen ___ Milch. (1000 ml)' },
+        correctAnswer: { accepted: ['liter'] },
+        explanation: 'ein Liter Milch.',
+      },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Menge passt zu "Käse"?', options: ['ein Liter', 'ein Stück', 'eine Flasche', 'ein Glas'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'ein Stück Käse.',
+      },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['Milch', 'Äpfel', 'Wasser'], rights: ['eine Flasche', 'ein Liter', 'ein Kilo'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Milch', right: 'ein Liter' },
+            { left: 'Äpfel', right: 'ein Kilo' },
+            { left: 'Wasser', right: 'eine Flasche' },
+          ],
+        },
+        explanation: 'Passende Mengenangaben.',
+      },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was steht nach der Menge?', options: ['das Lebensmittel mit Artikel', 'das Lebensmittel ohne Artikel', 'immer "von"', 'ein Verb'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'ein Kilo Äpfel (ohne Artikel).',
+      },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Eine ___ Wasser, bitte. (bottle)' },
+        correctAnswer: { accepted: ['flasche'] },
+        explanation: 'eine Flasche Wasser.',
+      },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich hätte gern ein Kilo die Äpfel.', 'Ich hätte gern ein Kilo Äpfel.', 'Ich hätte gern ein Kilo von Äpfeln.', 'Ich hätte gern Kilo Äpfel.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'ein Kilo Äpfel (ohne Artikel, ohne "von").',
+      },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gern', 'ich', 'Käse', 'hätte', 'Stück', 'ein'] },
+        correctAnswer: { order: ['ich', 'hätte', 'gern', 'ein', 'Stück', 'Käse'] },
+        explanation: '"Ich hätte gern ein Stück Käse."',
+      },
+      {
+        lessonId: a1Unit10Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie bestellst du höflich einen Liter Milch? (Ich hätte gern ...)" },
+        correctAnswer: { accepted: ['ich hätte gern einen liter milch', 'ich hätte gern einen liter milch, bitte', 'ich haette gern einen liter milch'] },
+        explanation: '"Ich hätte gern einen Liter Milch, bitte."',
+      },
     ],
   })
 
@@ -2864,7 +6901,19 @@ Ein typisches Gespräch im Restaurant läuft so ab:
 | Gast | Ein Wasser, bitte. |
 | Gast (am Ende) | Die Rechnung, bitte. |
 
-**Beispiel:** „Ich **hätte gern** die Suppe und ein Wasser." – „**Die Rechnung, bitte.**"`,
+**Beispiel:** „Ich **hätte gern** die Suppe und ein Wasser." – „**Die Rechnung, bitte.**"
+
+### Nützliche Sätze
+- **Ich nehme** … / **Für mich** bitte …
+- **Zusammen** oder **getrennt**? (beim Bezahlen)
+- **Guten Appetit!** (vor dem Essen) · **Prost!** (beim Anstoßen)
+
+### Speisekarte
+die Vorspeise, das Hauptgericht, die Nachspeise/der Nachtisch, die Getränke.
+
+### Häufige Fehler
+- ❌ *Ich will die Suppe* (unhöflich) → besser: Ich **hätte gern** / Ich **möchte** die Suppe.
+- ❌ *Rechnung bitte* ohne Artikel → besser: **Die** Rechnung, bitte.`,
       explanationEn: `## At the restaurant
 
 A typical restaurant conversation goes like this:
@@ -2877,7 +6926,19 @@ A typical restaurant conversation goes like this:
 | Guest | Ein Wasser, bitte. (A water, please.) |
 | Guest (at the end) | Die Rechnung, bitte. (The bill, please.) |
 
-**Example:** "Ich **hätte gern** die Suppe und ein Wasser." – "**Die Rechnung, bitte.**"`,
+**Example:** "Ich **hätte gern** die Suppe und ein Wasser." – "**Die Rechnung, bitte.**"
+
+### Useful sentences
+- **Ich nehme** … (I'll have …) / **Für mich** bitte … (For me, please …)
+- **Zusammen** oder **getrennt**? (together or separately? when paying)
+- **Guten Appetit!** (before eating) · **Prost!** (cheers!)
+
+### The menu
+die Vorspeise (starter), das Hauptgericht (main course), die Nachspeise/der Nachtisch (dessert), die Getränke (drinks).
+
+### Common mistakes
+- ❌ *Ich will die Suppe* (impolite) → better: Ich **hätte gern** / Ich **möchte** die Suppe.
+- ❌ *Rechnung bitte* without the article → better: **Die** Rechnung, bitte.`,
       explanationTr: `## Restoranda
 
 Restoranda tipik bir konuşma şöyle geçer:
@@ -2890,7 +6951,19 @@ Restoranda tipik bir konuşma şöyle geçer:
 | Müşteri | Ein Wasser, bitte. (Bir su, lütfen.) |
 | Müşteri (sonda) | Die Rechnung, bitte. (Hesap, lütfen.) |
 
-**Örnek:** „Ich **hätte gern** die Suppe und ein Wasser." – „**Die Rechnung, bitte.**"`,
+**Örnek:** „Ich **hätte gern** die Suppe und ein Wasser." – „**Die Rechnung, bitte.**"
+
+### Faydalı cümleler
+- **Ich nehme** … (… alacağım) / **Für mich** bitte … (Benim için lütfen …)
+- **Zusammen** oder **getrennt**? (ödeme sırasında: birlikte mi ayrı mı?)
+- **Guten Appetit!** (yemekten önce) · **Prost!** (şerefe!)
+
+### Menü
+die Vorspeise (başlangıç), das Hauptgericht (ana yemek), die Nachspeise/der Nachtisch (tatlı), die Getränke (içecekler).
+
+### Sık yapılan hatalar
+- ❌ *Ich will die Suppe* (kaba) → daha iyisi: Ich **hätte gern** / Ich **möchte** die Suppe.
+- ❌ *Rechnung bitte* tanımlıksız → daha iyisi: **Die** Rechnung, bitte.`,
     },
   })
   await seedExercises({
@@ -2914,6 +6987,76 @@ Restoranda tipik bir konuşma şöyle geçer:
         correctAnswer: { accepted: ['ich hätte gern die suppe'] },
         explanation: '"Ich hätte gern die Suppe" bedeutet "I would like the soup".',
       },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Kellner fragt: "Was ___ Sie?" (möchten)' },
+        correctAnswer: { accepted: ['möchten', 'moechten'] },
+        explanation: '"Was möchten Sie?"',
+      },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was sagt man vor dem Essen?', options: ['Prost!', 'Guten Appetit!', 'Die Rechnung, bitte.', 'Tschüss!'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Guten Appetit!" vor dem Essen.',
+      },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['Was möchten Sie?', 'Die Rechnung, bitte.', 'Guten Appetit!'], rights: ['vor dem Essen', 'Kellner fragt', 'bezahlen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'Was möchten Sie?', right: 'Kellner fragt' },
+            { left: 'Die Rechnung, bitte.', right: 'bezahlen' },
+            { left: 'Guten Appetit!', right: 'vor dem Essen' },
+          ],
+        },
+        explanation: 'Sätze im Restaurant zuordnen.',
+      },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist eine "Vorspeise"?', options: ['dessert', 'starter', 'main course', 'drink'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'die Vorspeise = starter.',
+      },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Zum Bezahlen: Die ___, bitte!' },
+        correctAnswer: { accepted: ['rechnung'] },
+        explanation: '"Die Rechnung, bitte!"',
+      },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Der Kellner fragt beim Bezahlen: "Zusammen oder ___?"', options: ['einzeln', 'getrennt', 'allein', 'halb'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Zusammen oder getrennt?"',
+      },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gern', 'ich', 'Suppe', 'die', 'hätte'] },
+        correctAnswer: { order: ['ich', 'hätte', 'gern', 'die', 'Suppe'] },
+        explanation: '"Ich hätte gern die Suppe."',
+      },
+      {
+        lessonId: a1Unit10Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie bittest du um die Rechnung? (Die ..., bitte)' },
+        correctAnswer: { accepted: ['die rechnung, bitte', 'die rechnung bitte'] },
+        explanation: '"Die Rechnung, bitte."',
+      },
     ],
   })
 
@@ -2932,7 +7075,17 @@ Ein kleiner Dialog:
 - Im Café: „Ich **hätte gern** einen Kaffee, bitte."
 - „**Die Rechnung, bitte.**"
 
-**Beispiel:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.`,
+**Beispiel:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.
+
+### Einkaufsdialog
+> – Guten Tag! Sie **wünschen**?
+> – Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch.
+> – **Sonst noch etwas?**
+> – Nein, danke. **Was kostet das?**
+
+### Denk daran
+- höflich: „Ich hätte gern …" / „Ich möchte …"
+- Menge + Lebensmittel **ohne** Artikel.`,
       explanationEn: `## Practice: food & shopping
 
 In this lesson you review shopping and ordering. You combine **food words**, **quantities** and polite forms like "Ich hätte gern".
@@ -2943,7 +7096,17 @@ A short dialogue:
 - At the café: "Ich **hätte gern** einen Kaffee, bitte." (I'd like a coffee, please.)
 - "**Die Rechnung, bitte.**" (The bill, please.)
 
-**Example:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.`,
+**Example:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.
+
+### Shopping dialogue
+> – Guten Tag! Sie **wünschen**? (Good day! What would you like?)
+> – Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch.
+> – **Sonst noch etwas?** (Anything else?)
+> – Nein, danke. **Was kostet das?**
+
+### Remember
+- polite: "Ich hätte gern …" / "Ich möchte …"
+- quantity + food **without** an article.`,
       explanationTr: `## Alıştırma: yemek & alışveriş
 
 Bu derste alışveriş ve sipariş vermeyi tekrar edersin. **Gıda kelimelerini**, **miktar ifadelerini** ve „Ich hätte gern" gibi kibar biçimleri birleştirirsin.
@@ -2954,7 +7117,17 @@ Kısa bir diyalog:
 - Kafede: „Ich **hätte gern** einen Kaffee, bitte." (Bir kahve isterim, lütfen.)
 - „**Die Rechnung, bitte.**" (Hesap, lütfen.)
 
-**Örnek:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.`,
+**Örnek:** Ich **hätte gern** ein Kilo Äpfel und ein Stück Käse.
+
+### Alışveriş diyaloğu
+> – Guten Tag! Sie **wünschen**? (İyi günler! Ne arzu edersiniz?)
+> – Ich **hätte gern** ein Kilo Äpfel und einen Liter Milch.
+> – **Sonst noch etwas?** (Başka bir şey?)
+> – Nein, danke. **Was kostet das?**
+
+### Unutma
+- kibar: „Ich hätte gern …" / „Ich möchte …"
+- Miktar + gıda **tanımlıksız**.`,
     },
   })
   await seedExercises({
@@ -2974,6 +7147,76 @@ Kısa bir diyalog:
         data: { prompt: 'Ich gehe ___.', options: ['einkaufen', 'einkauft', 'kaufe ein', 'gekauft'] },
         correctAnswer: { correctIndex: 0 },
         explanation: '"Einkaufen gehen" bedeutet "to go shopping".',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich hätte gern ein ___ Käse. (piece)' },
+        correctAnswer: { accepted: ['stück', 'stueck'] },
+        explanation: 'ein Stück Käse.',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "teuer"?', options: ['cheap', 'expensive', 'fresh', 'sweet'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'teuer = expensive (Gegenteil: billig/günstig).',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['der Kaffee', 'die Suppe', 'die Rechnung'], rights: ['the bill', 'coffee', 'soup'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der Kaffee', right: 'coffee' },
+            { left: 'die Suppe', right: 'soup' },
+            { left: 'die Rechnung', right: 'the bill' },
+          ],
+        },
+        explanation: 'Wörter aus Unit 10.',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie fragt der Verkäufer nach weiteren Wünschen?', options: ['Sonst noch etwas?', 'Wie heißt du?', 'Wo wohnst du?', 'Wie spät ist es?'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"Sonst noch etwas?"',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich hätte gern einen ___, bitte. (coffee, Akkusativ)' },
+        correctAnswer: { accepted: ['kaffee'] },
+        explanation: 'einen Kaffee (maskulin Akkusativ).',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist höflich?', options: ['Gib mir Milch!', 'Milch!', 'Ich hätte gern Milch, bitte.', 'Ich will Milch.'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"Ich hätte gern …, bitte" ist höflich.',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['einkaufen', 'ich', 'gehe'] },
+        correctAnswer: { order: ['ich', 'gehe', 'einkaufen'] },
+        explanation: '"Ich gehe einkaufen."',
+      },
+      {
+        lessonId: a1Unit10Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie fragst du nach dem Preis? (Was ...?)' },
+        correctAnswer: { accepted: ['was kostet das', 'was kostet das?'] },
+        explanation: '"Was kostet das?"',
       },
     ],
   })
@@ -3012,7 +7255,17 @@ Das Perfekt ist die wichtigste Vergangenheitsform beim Sprechen. Formel: **haben
 | er/sie/es | hat | gemacht |
 | wir | haben | gespielt |
 
-**Beispiel:** Ich **habe** Pizza **gegessen**. Du **hast** viel **gearbeitet**.`,
+**Beispiel:** Ich **habe** Pizza **gegessen**. Du **hast** viel **gearbeitet**.
+
+### Satzklammer
+Das Hilfsverb steht an **Position 2**, das Partizip II ganz am **Ende**: Ich **habe** gestern Pizza **gegessen**.
+
+### Wann „haben"?
+Die meisten Verben, besonders Verben **mit Objekt** (Akkusativ): essen, trinken, machen, kaufen, lesen, sehen, spielen.
+
+### Häufige Fehler
+- ❌ *Ich habe gegessen Pizza* → ✅ Ich habe Pizza **gegessen** (Partizip ans Ende).
+- ❌ *Ich bin Pizza gegessen* → ✅ Ich **habe** Pizza gegessen.`,
       explanationEn: `## Perfekt with "haben"
 
 The Perfekt is the most important past tense in spoken German. Formula: **haben (conjugated) + past participle** at the end of the sentence. Most verbs take "haben".
@@ -3024,7 +7277,17 @@ The Perfekt is the most important past tense in spoken German. Formula: **haben 
 | er/sie/es | hat | gemacht |
 | wir | haben | gespielt |
 
-**Example:** Ich **habe** Pizza **gegessen**. (I ate pizza.) Du **hast** viel **gearbeitet**. (You worked a lot.)`,
+**Example:** Ich **habe** Pizza **gegessen**. (I ate pizza.) Du **hast** viel **gearbeitet**. (You worked a lot.)
+
+### The sentence bracket
+The auxiliary is in **position 2**, the past participle right at the **end**: Ich **habe** gestern Pizza **gegessen**.
+
+### When "haben"?
+Most verbs, especially verbs **with an object** (accusative): essen, trinken, machen, kaufen, lesen, sehen, spielen.
+
+### Common mistakes
+- ❌ *Ich habe gegessen Pizza* → ✅ Ich habe Pizza **gegessen** (participle to the end).
+- ❌ *Ich bin Pizza gegessen* → ✅ Ich **habe** Pizza gegessen.`,
       explanationTr: `## „haben" ile Perfekt
 
 Perfekt, konuşmada en önemli geçmiş zaman biçimidir. Formül: **haben (çekimli) + Partizip II** cümlenin sonunda. Çoğu fiil „haben" alır.
@@ -3036,7 +7299,17 @@ Perfekt, konuşmada en önemli geçmiş zaman biçimidir. Formül: **haben (çek
 | er/sie/es | hat | gemacht |
 | wir | haben | gespielt |
 
-**Örnek:** Ich **habe** Pizza **gegessen**. (Pizza yedim.) Du **hast** viel **gearbeitet**. (Çok çalıştın.)`,
+**Örnek:** Ich **habe** Pizza **gegessen**. (Pizza yedim.) Du **hast** viel **gearbeitet**. (Çok çalıştın.)
+
+### Cümle çerçevesi
+Yardımcı fiil **2. konumda**, Partizip II en **sonda**: Ich **habe** gestern Pizza **gegessen**.
+
+### Ne zaman „haben"?
+Çoğu fiil, özellikle **nesne alan** (Akkusatif) fiiller: essen, trinken, machen, kaufen, lesen, sehen, spielen.
+
+### Sık yapılan hatalar
+- ❌ *Ich habe gegessen Pizza* → ✅ Ich habe Pizza **gegessen** (Partizip sona).
+- ❌ *Ich bin Pizza gegessen* → ✅ Ich **habe** Pizza gegessen.`,
     },
   })
   await seedExercises({
@@ -3057,6 +7330,76 @@ Perfekt, konuşmada en önemli geçmiş zaman biçimidir. Formül: **haben (çek
         correctAnswer: { correctIndex: 0 },
         explanation: 'Mit "du" benutzt man "hast".',
       },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir ___ Fußball gespielt. (haben)' },
+        correctAnswer: { accepted: ['haben'] },
+        explanation: 'Mit "wir": haben.',
+      },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Er ___ ein Buch gelesen.', options: ['hat', 'habe', 'hast', 'ist'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Mit "er": hat.',
+      },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['ich', 'du', 'er'], rights: ['hat', 'habe', 'hast'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'ich', right: 'habe' },
+            { left: 'du', right: 'hast' },
+            { left: 'er', right: 'hat' },
+          ],
+        },
+        explanation: 'Hilfsverb "haben" im Perfekt.',
+      },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wo steht das Partizip II?', options: ['Position 1', 'Position 2', 'am Satzende', 'nach dem Subjekt'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Partizip II am Satzende (Satzklammer).',
+      },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ihr ___ viel gemacht. (haben)' },
+        correctAnswer: { accepted: ['habt'] },
+        explanation: 'Mit "ihr": habt.',
+      },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich habe gegessen Pizza.', 'Ich habe Pizza gegessen.', 'Ich bin Pizza gegessen.', 'Ich habe Pizza essen.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'haben + Partizip II am Ende: "Ich habe Pizza gegessen".',
+      },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gegessen', 'ich', 'Pizza', 'habe'] },
+        correctAnswer: { order: ['ich', 'habe', 'Pizza', 'gegessen'] },
+        explanation: '"Ich habe Pizza gegessen."',
+      },
+      {
+        lessonId: a1Unit11Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Welches Hilfsverb nehmen die meisten Verben im Perfekt?' },
+        correctAnswer: { accepted: ['haben'] },
+        explanation: 'Die meisten Verben: haben.',
+      },
     ],
   })
 
@@ -3076,7 +7419,17 @@ Verben der **Bewegung** (gehen, kommen, fahren) und der **Zustandsänderung** (a
 | fahren | wir **sind** gefahren |
 | bleiben | sie **ist** geblieben |
 
-**Beispiel:** Ich **bin** nach Hause **gegangen**. Er **ist** spät **gekommen**. (Merke dir auch: „sein" und „bleiben" nehmen „sein".)`,
+**Beispiel:** Ich **bin** nach Hause **gegangen**. Er **ist** spät **gekommen**. (Merke dir auch: „sein" und „bleiben" nehmen „sein".)
+
+### Weitere „sein"-Verben
+laufen, fliegen, reisen, aufstehen, einschlafen, passieren, werden.
+
+### Merksatz
+„sein" bei **Ortswechsel** (A → B) oder **Zustandsänderung**. Sonst „haben".
+
+### Häufige Fehler
+- ❌ *Ich habe nach Hause gegangen* → ✅ Ich **bin** nach Hause gegangen (Bewegung).
+- ❌ *Ich bin Pizza gegessen* → ✅ Ich **habe** Pizza gegessen (kein Ortswechsel).`,
       explanationEn: `## Perfekt with "sein"
 
 Verbs of **movement** (gehen, kommen, fahren) and **change of state** (aufstehen, einschlafen) form the Perfekt with **"sein"**.
@@ -3088,7 +7441,17 @@ Verbs of **movement** (gehen, kommen, fahren) and **change of state** (aufstehen
 | fahren | wir **sind** gefahren |
 | bleiben | sie **ist** geblieben |
 
-**Example:** Ich **bin** nach Hause **gegangen**. (I went home.) Er **ist** spät **gekommen**. (He came late.) Note: "sein" and "bleiben" also take "sein".`,
+**Example:** Ich **bin** nach Hause **gegangen**. (I went home.) Er **ist** spät **gekommen**. (He came late.) Note: "sein" and "bleiben" also take "sein".
+
+### More "sein" verbs
+laufen, fliegen, reisen, aufstehen, einschlafen, passieren, werden.
+
+### Rule of thumb
+"sein" for a **change of place** (A → B) or a **change of state**. Otherwise "haben".
+
+### Common mistakes
+- ❌ *Ich habe nach Hause gegangen* → ✅ Ich **bin** nach Hause gegangen (movement).
+- ❌ *Ich bin Pizza gegessen* → ✅ Ich **habe** Pizza gegessen (no change of place).`,
       explanationTr: `## „sein" ile Perfekt
 
 **Hareket** (gehen, kommen, fahren) ve **durum değişikliği** (aufstehen, einschlafen) bildiren fiiller Perfekt'i **„sein"** ile kurar.
@@ -3100,7 +7463,17 @@ Verbs of **movement** (gehen, kommen, fahren) and **change of state** (aufstehen
 | fahren | wir **sind** gefahren |
 | bleiben | sie **ist** geblieben |
 
-**Örnek:** Ich **bin** nach Hause **gegangen**. (Eve gittim.) Er **ist** spät **gekommen**. (Geç geldi.) Not: „sein" ve „bleiben" de „sein" alır.`,
+**Örnek:** Ich **bin** nach Hause **gegangen**. (Eve gittim.) Er **ist** spät **gekommen**. (Geç geldi.) Not: „sein" ve „bleiben" de „sein" alır.
+
+### Diğer „sein" fiilleri
+laufen, fliegen, reisen, aufstehen, einschlafen, passieren, werden.
+
+### Kolay kural
+**Yer değişikliği** (A → B) ya da **durum değişikliği** varsa „sein". Aksi halde „haben".
+
+### Sık yapılan hatalar
+- ❌ *Ich habe nach Hause gegangen* → ✅ Ich **bin** nach Hause gegangen (hareket).
+- ❌ *Ich bin Pizza gegessen* → ✅ Ich **habe** Pizza gegessen (yer değişikliği yok).`,
     },
   })
   await seedExercises({
@@ -3121,6 +7494,76 @@ Verbs of **movement** (gehen, kommen, fahren) and **change of state** (aufstehen
         correctAnswer: { accepted: ['ist'] },
         explanation: 'Mit "er" benutzt man "ist".',
       },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Wir ___ nach Berlin gefahren. (sein, wir)' },
+        correctAnswer: { accepted: ['sind'] },
+        explanation: 'Mit "wir": sind.',
+      },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Verb bildet das Perfekt mit "sein"?', options: ['essen', 'kaufen', 'gehen', 'lesen'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: '"gehen" = Bewegung → sein.',
+      },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['gehen', 'fahren', 'bleiben'], rights: ['ist geblieben', 'ist gegangen', 'ist gefahren'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'gehen', right: 'ist gegangen' },
+            { left: 'fahren', right: 'ist gefahren' },
+            { left: 'bleiben', right: 'ist geblieben' },
+          ],
+        },
+        explanation: 'Perfekt mit "sein".',
+      },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich habe nach Hause gegangen.', 'Ich bin nach Hause gegangen.', 'Ich bin nach Hause gehen.', 'Ich habe nach Hause gehen.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'gehen (Bewegung) → sein: "Ich bin nach Hause gegangen".',
+      },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich ___ um 6 Uhr aufgestanden. (sein, ich)' },
+        correctAnswer: { accepted: ['bin'] },
+        explanation: 'aufstehen (Zustandsänderung) → sein: ich bin aufgestanden.',
+      },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann benutzt man "sein" im Perfekt?', options: ['bei Objektverben', 'bei Bewegung/Zustandsänderung', 'immer', 'nie'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Bewegung/Zustandsänderung → sein.',
+      },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gefahren', 'wir', 'nach', 'sind', 'Berlin'] },
+        correctAnswer: { order: ['wir', 'sind', 'nach', 'Berlin', 'gefahren'] },
+        explanation: '"Wir sind nach Berlin gefahren."',
+      },
+      {
+        lessonId: a1Unit11Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Welches Hilfsverb nimmt "gehen" im Perfekt?' },
+        correctAnswer: { accepted: ['sein', 'ist', 'bin'] },
+        explanation: 'gehen → sein (ich bin gegangen).',
+      },
     ],
   })
 
@@ -3139,7 +7582,19 @@ Das Partizip II ist der Kern des Perfekts. Es gibt zwei Muster:
 | unregelmäßig | ge-...-en | lesen → **gelesen** |
 | unregelmäßig (Vokalwechsel) | ge-...-en | trinken → **getrunken** |
 
-**Beispiel:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. Unregelmäßige Formen lernst du am besten auswendig.`,
+**Beispiel:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. Unregelmäßige Formen lernst du am besten auswendig.
+
+### Ohne „ge-"
+- Verben auf **-ieren**: studieren → **studiert**, telefonieren → **telefoniert**.
+- **Nicht trennbare** Verben (be-, ver-, er-): bezahlen → **bezahlt**, verstehen → **verstanden**.
+
+### Trennbare Verben: „ge-" in der Mitte
+aufstehen → auf**ge**standen, einkaufen → ein**ge**kauft.
+
+### Häufige Fehler
+- ❌ *gespielen* → ✅ **gespielt** (regelmäßig: -t).
+- ❌ *getrinkt* → ✅ **getrunken** (unregelmäßig).
+- ❌ *gestudiert* → ✅ **studiert** (-ieren: kein ge-).`,
       explanationEn: `## Past participle (regular / irregular)
 
 The past participle is the core of the Perfekt. There are two patterns:
@@ -3150,7 +7605,19 @@ The past participle is the core of the Perfekt. There are two patterns:
 | irregular | ge-...-en | lesen → **gelesen** |
 | irregular (vowel change) | ge-...-en | trinken → **getrunken** |
 
-**Example:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. (I played football and read a book.) It's best to learn the irregular forms by heart.`,
+**Example:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. (I played football and read a book.) It's best to learn the irregular forms by heart.
+
+### Without "ge-"
+- Verbs ending in **-ieren**: studieren → **studiert**, telefonieren → **telefoniert**.
+- **Inseparable** verbs (be-, ver-, er-): bezahlen → **bezahlt**, verstehen → **verstanden**.
+
+### Separable verbs: "ge-" in the middle
+aufstehen → auf**ge**standen, einkaufen → ein**ge**kauft.
+
+### Common mistakes
+- ❌ *gespielen* → ✅ **gespielt** (regular: -t).
+- ❌ *getrinkt* → ✅ **getrunken** (irregular).
+- ❌ *gestudiert* → ✅ **studiert** (-ieren: no ge-).`,
       explanationTr: `## Partizip II (düzenli / düzensiz)
 
 Partizip II, Perfekt'in çekirdeğidir. İki kalıbı vardır:
@@ -3161,7 +7628,19 @@ Partizip II, Perfekt'in çekirdeğidir. İki kalıbı vardır:
 | düzensiz | ge-...-en | lesen → **gelesen** |
 | düzensiz (ünlü değişimi) | ge-...-en | trinken → **getrunken** |
 
-**Örnek:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. (Futbol oynadım ve bir kitap okudum.) Düzensiz biçimleri ezberlemen en iyisidir.`,
+**Örnek:** Ich habe Fußball **gespielt** und ein Buch **gelesen**. (Futbol oynadım ve bir kitap okudum.) Düzensiz biçimleri ezberlemen en iyisidir.
+
+### „ge-" olmadan
+- **-ieren** ile biten fiiller: studieren → **studiert**, telefonieren → **telefoniert**.
+- **Ayrılamaz** fiiller (be-, ver-, er-): bezahlen → **bezahlt**, verstehen → **verstanden**.
+
+### Ayrılabilen fiiller: „ge-" ortada
+aufstehen → auf**ge**standen, einkaufen → ein**ge**kauft.
+
+### Sık yapılan hatalar
+- ❌ *gespielen* → ✅ **gespielt** (düzenli: -t).
+- ❌ *getrinkt* → ✅ **getrunken** (düzensiz).
+- ❌ *gestudiert* → ✅ **studiert** (-ieren: ge- yok).`,
     },
   })
   await seedExercises({
@@ -3182,6 +7661,76 @@ Partizip II, Perfekt'in çekirdeğidir. İki kalıbı vardır:
         correctAnswer: { accepted: ['getrunken'] },
         explanation: 'Unregelmäßig: trinken→getrunken.',
       },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe die Rechnung ___. (bezahlen – nicht trennbar)' },
+        correctAnswer: { accepted: ['bezahlt'] },
+        explanation: 'be- → kein ge-: bezahlt.',
+      },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Partizip II von "studieren"?', options: ['gestudiert', 'studiert', 'studieren', 'gestudieren'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '-ieren: kein ge- → studiert.',
+      },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['machen', 'lesen', 'trinken'], rights: ['getrunken', 'gemacht', 'gelesen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'machen', right: 'gemacht' },
+            { left: 'lesen', right: 'gelesen' },
+            { left: 'trinken', right: 'getrunken' },
+          ],
+        },
+        explanation: 'Partizip-II-Formen.',
+      },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welches Partizip ist regelmäßig?', options: ['gegessen', 'gespielt', 'gelesen', 'getrunken'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'gespielt = regelmäßig (ge-...-t).',
+      },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Partizip II von "aufstehen" (trennbar): auf___standen.' },
+        correctAnswer: { accepted: ['ge'] },
+        explanation: 'Trennbar: ge- in der Mitte → aufgestanden.',
+      },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Partizip II von "essen"?', options: ['geessen', 'gegessen', 'geesst', 'esst'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'essen → gegessen (unregelmäßig).',
+      },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['gelesen', 'ein', 'ich', 'Buch', 'habe'] },
+        correctAnswer: { order: ['ich', 'habe', 'ein', 'Buch', 'gelesen'] },
+        explanation: '"Ich habe ein Buch gelesen."',
+      },
+      {
+        lessonId: a1Unit11Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie lautet das Partizip II von "spielen"?' },
+        correctAnswer: { accepted: ['gespielt'] },
+        explanation: 'gespielt.',
+      },
     ],
   })
 
@@ -3200,7 +7749,14 @@ Steht eine Zeitangabe (z. B. „gestern") am Anfang, folgt direkt das Hilfsverb:
 - Ich **habe** einen Film **gesehen**.
 - Wir **haben** Pizza **gegessen** und **sind** spät nach Hause **gekommen**.
 
-**Beispiel:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.`,
+**Beispiel:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.
+
+### Mein Wochenende (Beispieltext)
+> Am Samstag **habe** ich lange **geschlafen**. Dann **bin** ich einkaufen **gegangen**. Am Abend **habe** ich einen Film **gesehen**. Am Sonntag **bin** ich zu Hause **geblieben**.
+
+### Denk daran
+- „haben" oder „sein"? Bewegung/Zustandsänderung → sein.
+- Partizip II am **Satzende**.`,
       explanationEn: `## Practice: Perfekt review
 
 Here you review the Perfekt. Remember the question: **"haben" or "sein"?** Movement/change of state → "sein", otherwise usually "haben".
@@ -3211,7 +7767,14 @@ If a time expression (e.g. "gestern" = yesterday) is at the start, the auxiliary
 - Ich **habe** einen Film **gesehen**. (I watched a movie.)
 - Wir **haben** Pizza **gegessen** und **sind** spät nach Hause **gekommen**. (We ate pizza and came home late.)
 
-**Example:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.`,
+**Example:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.
+
+### My weekend (sample text)
+> Am Samstag **habe** ich lange **geschlafen**. Dann **bin** ich einkaufen **gegangen**. Am Abend **habe** ich einen Film **gesehen**. Am Sonntag **bin** ich zu Hause **geblieben**.
+
+### Remember
+- "haben" or "sein"? Movement/change of state → sein.
+- Past participle at the **end of the sentence**.`,
       explanationTr: `## Alıştırma: Perfekt tekrarı
 
 Burada Perfekt'i tekrar edersin. Soruyu hatırla: **„haben" mi „sein" mi?** Hareket/durum değişikliği → „sein", diğer durumlarda çoğunlukla „haben".
@@ -3222,7 +7785,14 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
 - Ich **habe** einen Film **gesehen**. (Bir film izledim.)
 - Wir **haben** Pizza **gegessen** und **sind** spät nach Hause **gekommen**. (Pizza yedik ve eve geç geldik.)
 
-**Örnek:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.`,
+**Örnek:** Am Wochenende **habe** ich viel **gemacht**: Ich **bin** spazieren **gegangen** und **habe** Freunde **getroffen**.
+
+### Hafta sonum (örnek metin)
+> Am Samstag **habe** ich lange **geschlafen**. Dann **bin** ich einkaufen **gegangen**. Am Abend **habe** ich einen Film **gesehen**. Am Sonntag **bin** ich zu Hause **geblieben**.
+
+### Unutma
+- „haben" mi „sein" mi? Hareket/durum değişikliği → sein.
+- Partizip II **cümlenin sonunda**.`,
     },
   })
   await seedExercises({
@@ -3242,6 +7812,76 @@ Bir zaman ifadesi (örn. „gestern" = dün) başta olduğunda, yardımcı fiil 
         data: { prompt: 'Ich habe einen Film ___.', options: ['gesehen', 'sehen', 'sieht', 'gesehene'] },
         correctAnswer: { correctIndex: 0 },
         explanation: 'Partizip II von "sehen" ist "gesehen".',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Gestern ___ ich ins Kino gegangen. (sein, ich)' },
+        correctAnswer: { accepted: ['bin'] },
+        explanation: 'gehen → sein: bin gegangen.',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wir ___ Pizza gegessen.', options: ['haben', 'sind', 'hat', 'ist'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'essen → haben; wir → haben.',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['gegessen', 'gegangen', 'gesehen'], rights: ['sehen', 'essen', 'gehen'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'gegessen', right: 'essen' },
+            { left: 'gegangen', right: 'gehen' },
+            { left: 'gesehen', right: 'sehen' },
+          ],
+        },
+        explanation: 'Partizip → Infinitiv.',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich bin einen Film gesehen.', 'Ich habe einen Film gesehen.', 'Ich habe einen Film sehen.', 'Ich bin einen Film sehen.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'sehen → haben + gesehen.',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Am Sonntag bin ich zu Hause ___. (bleiben)' },
+        correctAnswer: { accepted: ['geblieben'] },
+        explanation: 'bleiben → sein + geblieben.',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist das Partizip II von "schlafen"?', options: ['geschlaft', 'geschlafen', 'schlafen', 'geschlift'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'schlafen → geschlafen.',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['ich', 'gestern', 'gegangen', 'ins', 'bin', 'Kino'] },
+        correctAnswer: { order: ['gestern', 'bin', 'ich', 'ins', 'Kino', 'gegangen'] },
+        explanation: 'Zeit vorn → Hilfsverb Pos. 2: "Gestern bin ich ins Kino gegangen."',
+      },
+      {
+        lessonId: a1Unit11Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Sag im Perfekt: 'I ate pizza.' (Ich habe ...)" },
+        correctAnswer: { accepted: ['ich habe pizza gegessen', 'ich habe pizza gegessen.'] },
+        explanation: '"Ich habe Pizza gegessen."',
       },
     ],
   })
@@ -3283,7 +7923,18 @@ Den Imperativ für „du" bildest du aus dem Verbstamm, meist ohne die Endung -s
 
 **Beispiele:** **Komm** her! · **Geh** nach Hause! · **Sei** leise!
 
-„essen" hat einen Vokalwechsel (e → i), „sein" ist unregelmäßig: **Sei** ruhig!`,
+„essen" hat einen Vokalwechsel (e → i), „sein" ist unregelmäßig: **Sei** ruhig!
+
+### Höflicher mit „bitte" und „mal"
+**Komm bitte!** · **Warte mal!** – „bitte"/„mal" machen den Befehl freundlicher.
+
+### -e bei Stamm auf -t/-d
+warten → **Warte!**, arbeiten → **Arbeite!** (das -e bleibt).
+
+### Häufige Fehler
+- ❌ *Du komm!* → ✅ **Komm!** (kein Pronomen).
+- ❌ *Kommst!* → ✅ **Komm!** (kein -st).
+- ❌ *Ess!* → ✅ **Iss!** (Vokalwechsel e→i).`,
       explanationEn: `## The imperative (du)
 
 You form the "du" imperative from the verb stem, usually dropping the -st ending and the pronoun. "du kommst" becomes "Komm!"
@@ -3298,7 +7949,18 @@ You form the "du" imperative from the verb stem, usually dropping the -st ending
 
 **Examples:** Komm her! (Come here!) · Geh nach Hause! (Go home!) · Sei leise! (Be quiet!)
 
-"essen" has a vowel change (e → i), and "sein" is irregular: Sei ruhig! (Be calm!)`,
+"essen" has a vowel change (e → i), and "sein" is irregular: Sei ruhig! (Be calm!)
+
+### Softer with "bitte" and "mal"
+**Komm bitte!** · **Warte mal!** – "bitte"/"mal" make the command friendlier.
+
+### -e when the stem ends in -t/-d
+warten → **Warte!**, arbeiten → **Arbeite!** (the -e stays).
+
+### Common mistakes
+- ❌ *Du komm!* → ✅ **Komm!** (no pronoun).
+- ❌ *Kommst!* → ✅ **Komm!** (no -st).
+- ❌ *Ess!* → ✅ **Iss!** (vowel change e→i).`,
       explanationTr: `## Emir kipi (du)
 
 „du" için emir kipini fiil gövdesinden kurarsın, genellikle -st ekini ve zamiri atarsın. „du kommst" → „Komm!"
@@ -3313,7 +7975,18 @@ You form the "du" imperative from the verb stem, usually dropping the -st ending
 
 **Örnekler:** Komm her! (Buraya gel!) · Geh nach Hause! (Eve git!) · Sei leise! (Sessiz ol!)
 
-„essen" fiilinde ünlü değişimi var (e → i), „sein" ise düzensizdir: Sei ruhig! (Sakin ol!)`,
+„essen" fiilinde ünlü değişimi var (e → i), „sein" ise düzensizdir: Sei ruhig! (Sakin ol!)
+
+### „bitte" ve „mal" ile daha kibar
+**Komm bitte!** · **Warte mal!** – „bitte"/„mal" emri daha nazik yapar.
+
+### Gövde -t/-d ile bitiyorsa -e
+warten → **Warte!**, arbeiten → **Arbeite!** (-e kalır).
+
+### Sık yapılan hatalar
+- ❌ *Du komm!* → ✅ **Komm!** (zamir yok).
+- ❌ *Kommst!* → ✅ **Komm!** (-st yok).
+- ❌ *Ess!* → ✅ **Iss!** (ünlü değişimi e→i).`,
     },
   })
   await seedExercises({
@@ -3333,6 +8006,76 @@ You form the "du" imperative from the verb stem, usually dropping the -st ending
         data: { sentence: '___! (Eat! - zu einem Freund)' },
         correctAnswer: { accepted: ['iss'] },
         explanation: 'Imperativ von "essen" mit Vokalwechsel: Iss!',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ hier! (warten – du, Stamm auf -t)' },
+        correctAnswer: { accepted: ['warte'] },
+        explanation: 'Stamm auf -t → -e bleibt: Warte!',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Imperativ (du) von "gehen"?', options: ['Gehst!', 'Geh!', 'Gehen!', 'Geht!'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'gehen → Geh!',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['kommen', 'essen', 'sein'], rights: ['Sei!', 'Komm!', 'Iss!'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'kommen', right: 'Komm!' },
+            { left: 'essen', right: 'Iss!' },
+            { left: 'sein', right: 'Sei!' },
+          ],
+        },
+        explanation: 'Imperativformen (du).',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Imperativ ist richtig?', options: ['Du komm!', 'Kommst!', 'Komm!', 'Kommen du!'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Ohne Pronomen, ohne -st: Komm!',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ ruhig! (sein – du)' },
+        correctAnswer: { accepted: ['sei'] },
+        explanation: 'sein → Sei! (unregelmäßig).',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie macht man den Befehl freundlicher?', options: ['mit "bitte"', 'mit "-st"', 'mit dem Pronomen "du"', 'gar nicht'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: '"bitte"/"mal" machen es freundlicher.',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['bitte', 'komm', 'her'] },
+        correctAnswer: { order: ['komm', 'bitte', 'her'] },
+        explanation: '"Komm bitte her!"',
+      },
+      {
+        lessonId: a1Unit12Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Bilde den Imperativ (du) von "gehen".' },
+        correctAnswer: { accepted: ['geh', 'geh!'] },
+        explanation: 'Geh!',
       },
     ],
   })
@@ -3354,7 +8097,17 @@ Für „ihr" nimmst du die ihr-Form des Verbs ohne Pronomen: „Kommt!" Für die
 
 **Beispiele:** **Kommt** herein! · **Nehmen Sie** bitte Platz! · **Geht** nach Hause!
 
-Die Sie-Form benutzt du gegenüber fremden Personen, die ihr-Form gegenüber mehreren Freunden.`,
+Die Sie-Form benutzt du gegenüber fremden Personen, die ihr-Form gegenüber mehreren Freunden.
+
+### „sein" als Ausnahme
+- du: **Sei** · ihr: **Seid** · Sie: **Seien Sie**
+
+### Trennbare Verben
+Das Präfix bleibt am Ende: **Steh** bitte **auf**! · **Machen Sie** die Tür **zu**!
+
+### Häufige Fehler
+- ❌ *Kommen Sie!* ohne „Sie" → die Sie-Form braucht **immer** das Pronomen.
+- ❌ *Ihr kommt!* als Befehl → ✅ **Kommt!** (ohne „ihr").`,
       explanationEn: `## The imperative (ihr/Sie)
 
 For "ihr" (plural you), take the ihr form of the verb without the pronoun: "Kommt!" For the polite "Sie" form, keep the pronoun, but place it after the verb: "Kommen Sie!"
@@ -3367,7 +8120,17 @@ For "ihr" (plural you), take the ihr form of the verb without the pronoun: "Komm
 
 **Examples:** Kommt herein! (Come in!) · Nehmen Sie bitte Platz! (Please have a seat!) · Geht nach Hause! (Go home!)
 
-Use the Sie form with strangers, and the ihr form with several friends.`,
+Use the Sie form with strangers, and the ihr form with several friends.
+
+### "sein" as an exception
+- du: **Sei** · ihr: **Seid** · Sie: **Seien Sie**
+
+### Separable verbs
+The prefix stays at the end: **Steh** bitte **auf**! · **Machen Sie** die Tür **zu**!
+
+### Common mistakes
+- ❌ *Kommen Sie!* without "Sie" → the Sie form **always** needs the pronoun.
+- ❌ *Ihr kommt!* as a command → ✅ **Kommt!** (without "ihr").`,
       explanationTr: `## Emir kipi (ihr/Sie)
 
 „ihr" için fiilin ihr biçimini zamirsiz kullanırsın: „Kommt!" Kibar „Sie" biçiminde ise zamir kalır ama fiilden sonra gelir: „Kommen Sie!"
@@ -3380,7 +8143,17 @@ Use the Sie form with strangers, and the ihr form with several friends.`,
 
 **Örnekler:** Kommt herein! (İçeri gelin!) · Nehmen Sie bitte Platz! (Lütfen oturun!) · Geht nach Hause! (Eve gidin!)
 
-Sie biçimini yabancı kişilere, ihr biçimini birden fazla arkadaşına karşı kullanırsın.`,
+Sie biçimini yabancı kişilere, ihr biçimini birden fazla arkadaşına karşı kullanırsın.
+
+### İstisna: „sein"
+- du: **Sei** · ihr: **Seid** · Sie: **Seien Sie**
+
+### Ayrılabilen fiiller
+Ön ek sonda kalır: **Steh** bitte **auf**! · **Machen Sie** die Tür **zu**!
+
+### Sık yapılan hatalar
+- ❌ *Kommen Sie!* „Sie" olmadan → Sie biçimi **her zaman** zamir ister.
+- ❌ *Ihr kommt!* emir olarak → ✅ **Kommt!** („ihr" olmadan).`,
     },
   })
   await seedExercises({
@@ -3407,6 +8180,76 @@ Sie biçimini yabancı kişilere, ihr biçimini birden fazla arkadaşına karş�
         },
         explanation: 'Imperativformen je nach Person.',
       },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___ herein! (kommen – ihr)' },
+        correctAnswer: { accepted: ['kommt'] },
+        explanation: 'ihr-Imperativ: Kommt!',
+      },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Höflich (Sie) von "gehen"?', options: ['Geh!', 'Geht!', 'Gehen Sie!', 'Gehen!'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Sie-Imperativ: Verb + Sie.',
+      },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['du: sein', 'ihr: sein', 'Sie: sein'], rights: ['Seien Sie!', 'Sei!', 'Seid!'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'du: sein', right: 'Sei!' },
+            { left: 'ihr: sein', right: 'Seid!' },
+            { left: 'Sie: sein', right: 'Seien Sie!' },
+          ],
+        },
+        explanation: 'sein: Sei! / Seid! / Seien Sie!',
+      },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig (höflich)?', options: ['Nehmen Platz!', 'Nehmen Sie Platz!', 'Nimm Sie Platz!', 'Nehmt Sie Platz!'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Nehmen Sie Platz!" (Sie-Form mit Pronomen).',
+      },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Trennbar: ___ Sie bitte die Tür zu! (zumachen)' },
+        correctAnswer: { accepted: ['machen'] },
+        explanation: 'Machen Sie … zu (Präfix am Ende).',
+      },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wann benutzt man die Sie-Form?', options: ['bei Freunden', 'bei Kindern', 'bei fremden Personen', 'nie'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Sie = formell, bei Fremden.',
+      },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Sie', 'Platz', 'nehmen', 'bitte'] },
+        correctAnswer: { order: ['nehmen', 'Sie', 'bitte', 'Platz'] },
+        explanation: '"Nehmen Sie bitte Platz!"',
+      },
+      {
+        lessonId: a1Unit12Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Bilde die Sie-Form von "kommen".' },
+        correctAnswer: { accepted: ['kommen sie', 'kommen sie!'] },
+        explanation: 'Kommen Sie!',
+      },
     ],
   })
 
@@ -3429,7 +8272,23 @@ Um den Weg zu beschreiben, benutzt du oft den Imperativ (meist die Sie-Form) und
 
 **Beispiele:** **Gehen Sie geradeaus.** · **Biegen Sie an der Ampel links ab.** · **Nehmen Sie die erste Straße rechts.**
 
-Der Bahnhof ist dann auf der linken Seite.`,
+Der Bahnhof ist dann auf der linken Seite.
+
+### Mehr Richtungswörter
+| Deutsch | Bedeutung |
+| ---- | ---- |
+| bis zu / bis zur | up to |
+| über die Straße | across the street |
+| an … vorbei | past … |
+| die Kreuzung | crossroads |
+| die Ecke | corner |
+
+### Nach dem Weg fragen
+**Entschuldigung, wie komme ich zum Bahnhof?** · **Wo ist die Post?**
+
+### Häufige Fehler
+- ❌ *Gehen Sie rechts ab an der Ampel* (Wortstellung) → besser: Biegen Sie **an der Ampel rechts ab**.
+- ❌ *nach links* immer nötig? → oft reicht **links/rechts** allein: Biegen Sie links ab.`,
       explanationEn: `## Giving directions (Wegbeschreibung)
 
 To describe the way, you often use the imperative (usually the Sie form) together with direction words. This is how you tell someone how to get somewhere.
@@ -3444,7 +8303,23 @@ To describe the way, you often use the imperative (usually the Sie form) togethe
 
 **Examples:** Gehen Sie geradeaus. (Go straight ahead.) · Biegen Sie an der Ampel links ab. (Turn left at the traffic light.) · Nehmen Sie die erste Straße rechts. (Take the first street on the right.)
 
-Der Bahnhof ist dann auf der linken Seite. (The station is then on the left-hand side.)`,
+Der Bahnhof ist dann auf der linken Seite. (The station is then on the left-hand side.)
+
+### More direction words
+| German | Meaning |
+| ---- | ---- |
+| bis zu / bis zur | up to |
+| über die Straße | across the street |
+| an … vorbei | past … |
+| die Kreuzung | crossroads |
+| die Ecke | corner |
+
+### Asking for the way
+**Entschuldigung, wie komme ich zum Bahnhof?** (Excuse me, how do I get to the station?) · **Wo ist die Post?**
+
+### Common mistakes
+- ❌ *Gehen Sie rechts ab an der Ampel* (word order) → better: Biegen Sie **an der Ampel rechts ab**.
+- ❌ *nach links* always needed? → often just **links/rechts** is enough: Biegen Sie links ab.`,
       explanationTr: `## Yol tarifi (Wegbeschreibung)
 
 Yol tarif etmek için genelde emir kipini (çoğunlukla Sie biçimini) ve yön kelimelerini kullanırsın. Böylece birine bir yere nasıl gideceğini anlatırsın.
@@ -3459,7 +8334,23 @@ Yol tarif etmek için genelde emir kipini (çoğunlukla Sie biçimini) ve yön k
 
 **Örnekler:** Gehen Sie geradeaus. (Düz gidin.) · Biegen Sie an der Ampel links ab. (Işıklarda sola dönün.) · Nehmen Sie die erste Straße rechts. (İlk sokaktan sağa dönün.)
 
-Der Bahnhof ist dann auf der linken Seite. (Tren istasyonu o zaman sol tarafta olur.)`,
+Der Bahnhof ist dann auf der linken Seite. (Tren istasyonu o zaman sol tarafta olur.)
+
+### Daha fazla yön kelimesi
+| Almanca | Anlamı |
+| ---- | ---- |
+| bis zu / bis zur | -e kadar |
+| über die Straße | caddenin karşısına |
+| an … vorbei | -in yanından geçerek |
+| die Kreuzung | kavşak |
+| die Ecke | köşe |
+
+### Yol sorma
+**Entschuldigung, wie komme ich zum Bahnhof?** (Affedersiniz, istasyona nasıl giderim?) · **Wo ist die Post?**
+
+### Sık yapılan hatalar
+- ❌ *Gehen Sie rechts ab an der Ampel* (kelime sırası) → daha iyisi: Biegen Sie **an der Ampel rechts ab**.
+- ❌ *nach links* her zaman gerekli mi? → çoğu zaman tek başına **links/rechts** yeter: Biegen Sie links ab.`,
     },
   })
   await seedExercises({
@@ -3479,6 +8370,76 @@ Der Bahnhof ist dann auf der linken Seite. (Tren istasyonu o zaman sol tarafta o
         data: { sentence: 'Biegen Sie ___ ab. (left)' },
         correctAnswer: { accepted: ['links'] },
         explanation: '"Links" bedeutet "left".',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Nehmen Sie die erste Straße ___. (right)' },
+        correctAnswer: { accepted: ['rechts'] },
+        explanation: 'rechts = right.',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "an der Ampel"?', options: ['at the corner', 'at the traffic light', 'at the station', 'at the crossroads'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'die Ampel = traffic light.',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['links', 'rechts', 'geradeaus'], rights: ['straight ahead', 'left', 'right'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'links', right: 'left' },
+            { left: 'rechts', right: 'right' },
+            { left: 'geradeaus', right: 'straight ahead' },
+          ],
+        },
+        explanation: 'Richtungswörter.',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Wie fragt man nach dem Weg?', options: ['Wie heißt du?', 'Wie komme ich zum Bahnhof?', 'Wie spät ist es?', 'Wie geht es dir?'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Wie komme ich zum Bahnhof?"',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Gehen Sie ___ bis zur Ampel. (straight ahead)' },
+        correctAnswer: { accepted: ['geradeaus'] },
+        explanation: 'geradeaus = straight ahead.',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist "die Kreuzung"?', options: ['corner', 'crossroads', 'street', 'bridge'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'die Kreuzung = crossroads.',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Sie', 'geradeaus', 'gehen'] },
+        correctAnswer: { order: ['gehen', 'Sie', 'geradeaus'] },
+        explanation: '"Gehen Sie geradeaus."',
+      },
+      {
+        lessonId: a1Unit12Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie heißt "left" auf Deutsch?' },
+        correctAnswer: { accepted: ['links'] },
+        explanation: 'links.',
       },
     ],
   })
@@ -3500,7 +8461,16 @@ In dieser Übung wiederholst du den Imperativ und die Wegbeschreibung zusammen. 
 
 **Weitere Beispiele:** **Nimm** die erste Straße links! · **Geht** geradeaus bis zur Ampel!
 
-So verbindest du die höfliche Frage mit einer klaren Wegbeschreibung im Imperativ.`,
+So verbindest du die höfliche Frage mit einer klaren Wegbeschreibung im Imperativ.
+
+### Nützliche Antworten
+- **Immer geradeaus**, dann die **zweite Straße links**.
+- **An der Kreuzung rechts.**
+- **Das ist ganz in der Nähe / gleich um die Ecke.**
+
+### Denk daran
+- Imperativ: du (Geh!), ihr (Geht!), Sie (Gehen Sie!).
+- Richtung: links, rechts, geradeaus, an der Ampel.`,
       explanationEn: `## Practice: imperative & directions
 
 In this exercise you review the imperative and giving directions together. When you ask for the way, you often start with "Entschuldigung", and the answer is usually in the imperative.
@@ -3513,7 +8483,16 @@ In this exercise you review the imperative and giving directions together. When 
 
 **More examples:** Nimm die erste Straße links! (Take the first street on the left!) · Geht geradeaus bis zur Ampel! (Go straight ahead to the traffic light!)
 
-This is how you combine the polite question with a clear direction in the imperative.`,
+This is how you combine the polite question with a clear direction in the imperative.
+
+### Useful answers
+- **Immer geradeaus**, dann die **zweite Straße links**. (Always straight ahead, then the second street on the left.)
+- **An der Kreuzung rechts.** (Right at the crossroads.)
+- **Das ist ganz in der Nähe / gleich um die Ecke.** (It's very close / just around the corner.)
+
+### Remember
+- Imperative: du (Geh!), ihr (Geht!), Sie (Gehen Sie!).
+- Directions: links, rechts, geradeaus, an der Ampel.`,
       explanationTr: `## Alıştırma: emir kipi & yol tarifi
 
 Bu alıştırmada emir kipini ve yol tarifini birlikte tekrar edersin. Yolu sorarken genelde „Entschuldigung" ile başlarsın ve cevap çoğunlukla emir kipindedir.
@@ -3526,7 +8505,16 @@ Bu alıştırmada emir kipini ve yol tarifini birlikte tekrar edersin. Yolu sora
 
 **Diğer örnekler:** Nimm die erste Straße links! (İlk sokaktan sola dön!) · Geht geradeaus bis zur Ampel! (Işıklara kadar düz gidin!)
 
-Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
+Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.
+
+### Faydalı cevaplar
+- **Immer geradeaus**, dann die **zweite Straße links**. (Hep düz, sonra ikinci sokaktan sola.)
+- **An der Kreuzung rechts.** (Kavşakta sağa.)
+- **Das ist ganz in der Nähe / gleich um die Ecke.** (Çok yakında / hemen köşede.)
+
+### Unutma
+- Emir kipi: du (Geh!), ihr (Geht!), Sie (Gehen Sie!).
+- Yön: links, rechts, geradeaus, an der Ampel.`,
     },
   })
   await seedExercises({
@@ -3546,6 +8534,76 @@ Böylece kibar soruyu emir kipindeki net bir yol tarifiyle birleştirirsin.`,
         data: { prompt: "Wie sagt man auf Deutsch: 'Excuse me, where is the train station?'?" },
         correctAnswer: { accepted: ['entschuldigung, wo ist der bahnhof', 'entschuldigung wo ist der bahnhof'] },
         explanation: '"Entschuldigung, wo ist der Bahnhof?" bedeutet "Excuse me, where is the train station?"',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Biegen Sie an der Ampel ___ ab. (right)' },
+        correctAnswer: { accepted: ['rechts'] },
+        explanation: 'rechts = right.',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Womit beginnt man eine höfliche Frage an Fremde?', options: ['Hallo!', 'Entschuldigung', 'Tschüss', 'Prost'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"Entschuldigung, …?"',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['du: gehen', 'ihr: gehen', 'Sie: gehen'], rights: ['Gehen Sie!', 'Geh!', 'Geht!'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'du: gehen', right: 'Geh!' },
+            { left: 'ihr: gehen', right: 'Geht!' },
+            { left: 'Sie: gehen', right: 'Gehen Sie!' },
+          ],
+        },
+        explanation: 'Imperativformen von "gehen".',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was bedeutet "gleich um die Ecke"?', options: ['weit weg', 'ganz in der Nähe', 'geradeaus', 'links'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"um die Ecke" = ganz in der Nähe.',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: '___, wie komme ich zum Bahnhof? (höfliche Anrede)' },
+        correctAnswer: { accepted: ['entschuldigung'] },
+        explanation: '"Entschuldigung, wie komme ich …?"',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Höflicher Imperativ (Sie): "___ Sie geradeaus."', options: ['Geh', 'Geht', 'Gehen', 'Gehe'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Gehen Sie geradeaus.',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['Sie', 'rechts', 'biegen', 'ab'] },
+        correctAnswer: { order: ['biegen', 'Sie', 'rechts', 'ab'] },
+        explanation: '"Biegen Sie rechts ab."',
+      },
+      {
+        lessonId: a1Unit12Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: "Wie sagst du höflich (Sie): 'Go straight ahead.'?" },
+        correctAnswer: { accepted: ['gehen sie geradeaus', 'gehen sie geradeaus.'] },
+        explanation: '"Gehen Sie geradeaus."',
       },
     ],
   })
@@ -3586,7 +8644,16 @@ Nach dem bestimmten Artikel (der/die/das) bekommt das Adjektiv im Nominativ meis
 
 **Beispiele:** **Der große** Mann ist mein Vater. · **Das neue** Auto ist teuer. · **Die kleinen** Kinder spielen.
 
-Weil der Artikel das Genus schon zeigt, reicht beim Adjektiv die einfache Endung -e (im Plural -en).`,
+Weil der Artikel das Genus schon zeigt, reicht beim Adjektiv die einfache Endung -e (im Plural -en).
+
+### Prädikativ = keine Endung
+Steht das Adjektiv **nach dem Verb** (nicht vor dem Nomen), bekommt es **keine** Endung:
+> Der Mann ist **groß**. · Das Auto ist **neu**. · Die Kinder sind **klein**.
+
+### Häufige Fehler
+- ❌ *der große**r** Mann* → ✅ der **große** Mann (nach „der" nur -e).
+- ❌ *die klein**e** Kinder* → ✅ die **kleinen** Kinder (Plural: -en).
+- ❌ *Der Mann ist große* → ✅ Der Mann ist **groß** (prädikativ: keine Endung).`,
       explanationEn: `## Adjective endings after the definite article
 
 After the definite article (der/die/das), the adjective usually takes the ending -e in the nominative. In the plural it ends in -en.
@@ -3600,7 +8667,16 @@ After the definite article (der/die/das), the adjective usually takes the ending
 
 **Examples:** Der große Mann ist mein Vater. (The tall man is my father.) · Das neue Auto ist teuer. (The new car is expensive.) · Die kleinen Kinder spielen. (The small children are playing.)
 
-Because the article already shows the gender, the adjective only needs the simple ending -e (or -en in the plural).`,
+Because the article already shows the gender, the adjective only needs the simple ending -e (or -en in the plural).
+
+### Predicative = no ending
+If the adjective comes **after the verb** (not before the noun), it takes **no** ending:
+> Der Mann ist **groß**. · Das Auto ist **neu**. · Die Kinder sind **klein**.
+
+### Common mistakes
+- ❌ *der große**r** Mann* → ✅ der **große** Mann (after "der" only -e).
+- ❌ *die klein**e** Kinder* → ✅ die **kleinen** Kinder (plural: -en).
+- ❌ *Der Mann ist große* → ✅ Der Mann ist **groß** (predicative: no ending).`,
       explanationTr: `## Belirli artikelden sonra sıfat ekleri
 
 Belirli artikelden (der/die/das) sonra sıfat yalın halde genellikle -e ekini alır. Çoğulda ise -en ile biter.
@@ -3614,7 +8690,16 @@ Belirli artikelden (der/die/das) sonra sıfat yalın halde genellikle -e ekini a
 
 **Örnekler:** Der große Mann ist mein Vater. (Uzun adam babamdır.) · Das neue Auto ist teuer. (Yeni araba pahalı.) · Die kleinen Kinder spielen. (Küçük çocuklar oynuyor.)
 
-Artikel cinsiyeti zaten gösterdiği için sıfata sadece basit -e eki (çoğulda -en) yeterlidir.`,
+Artikel cinsiyeti zaten gösterdiği için sıfata sadece basit -e eki (çoğulda -en) yeterlidir.
+
+### Yüklem konumu = eksiz
+Sıfat **fiilden sonra** gelirse (ismin önünde değil) **ek almaz**:
+> Der Mann ist **groß**. · Das Auto ist **neu**. · Die Kinder sind **klein**.
+
+### Sık yapılan hatalar
+- ❌ *der große**r** Mann* → ✅ der **große** Mann („der"den sonra sadece -e).
+- ❌ *die klein**e** Kinder* → ✅ die **kleinen** Kinder (çoğul: -en).
+- ❌ *Der Mann ist große* → ✅ Der Mann ist **groß** (yüklem: eksiz).`,
     },
   })
   await seedExercises({
@@ -3634,6 +8719,76 @@ Artikel cinsiyeti zaten gösterdiği için sıfata sadece basit -e eki (çoğuld
         data: { sentence: 'Das ___ Auto ist teuer. (neu)' },
         correctAnswer: { accepted: ['neue'] },
         explanation: 'Nominativ neutrum nach "das": Adjektiv + -e.',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Die ___ Frau ist nett. (klein, nach "die")' },
+        correctAnswer: { accepted: ['kleine'] },
+        explanation: 'Nominativ feminin nach "die": -e.',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Die ___ Kinder spielen. (klein, Plural)', options: ['kleine', 'kleiner', 'kleines', 'kleinen'] },
+        correctAnswer: { correctIndex: 3 },
+        explanation: 'Plural nach "die": -en.',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['der ___ Mann', 'die ___ Frau', 'die ___ Kinder'], rights: ['kleinen', 'große', 'kleine'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'der ___ Mann', right: 'große' },
+            { left: 'die ___ Frau', right: 'kleine' },
+            { left: 'die ___ Kinder', right: 'kleinen' },
+          ],
+        },
+        explanation: 'Singular nach best. Artikel: -e; Plural: -en.',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Der Mann ist große.', 'Der Mann ist groß.', 'Der Mann ist großer.', 'Der Mann ist großen.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Prädikativ (nach dem Verb): keine Endung.',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der ___ Mann ist mein Vater. (groß, nach "der")' },
+        correctAnswer: { accepted: ['große'] },
+        explanation: 'Nominativ maskulin nach "der": -e.',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Endung nach "das" (Singular)?', options: ['-e', '-er', '-es', '-en'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Nach best. Artikel im Singular: -e.',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['neue', 'das', 'teuer', 'Auto', 'ist'] },
+        correctAnswer: { order: ['das', 'neue', 'Auto', 'ist', 'teuer'] },
+        explanation: '"Das neue Auto ist teuer."',
+      },
+      {
+        lessonId: a1Unit13Lesson1.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Welche Adjektivendung steht im Plural nach "die"?' },
+        correctAnswer: { accepted: ['-en', 'en'] },
+        explanation: 'Plural: -en.',
       },
     ],
   })
@@ -3655,7 +8810,20 @@ Nach dem unbestimmten Artikel (ein/eine) zeigt das Adjektiv das Genus. Deshalb b
 
 **Beispiele:** Das ist **ein großer** Mann. · Ich habe **ein neues** Auto. · Da kommt **eine kleine** Frau.
 
-Weil „ein" das Genus nicht zeigt, übernimmt das Adjektiv diese Aufgabe mit -er oder -es.`,
+Weil „ein" das Genus nicht zeigt, übernimmt das Adjektiv diese Aufgabe mit -er oder -es.
+
+### Vergleich: der vs. ein
+| | maskulin | neutrum |
+| ---- | ---- | ---- |
+| **der/das** | der **große** Mann | das **neue** Auto |
+| **ein** | ein **großer** Mann | ein **neues** Auto |
+
+Merke: Die „Signalendung" (-er/-es) wandert vom Artikel zum Adjektiv, wenn der Artikel sie nicht zeigt.
+
+### Häufige Fehler
+- ❌ *ein große Mann* → ✅ ein **großer** Mann.
+- ❌ *ein neue Auto* → ✅ ein **neues** Auto.
+- ✅ eine **kleine** Frau (feminin: -e wie beim best. Artikel).`,
       explanationEn: `## Adjective endings after the indefinite article
 
 After the indefinite article (ein/eine), the adjective shows the gender. That is why it takes a clearer ending in the nominative: -er (masculine), -e (feminine) or -es (neuter).
@@ -3668,7 +8836,20 @@ After the indefinite article (ein/eine), the adjective shows the gender. That is
 
 **Examples:** Das ist ein großer Mann. (That is a tall man.) · Ich habe ein neues Auto. (I have a new car.) · Da kommt eine kleine Frau. (Here comes a small woman.)
 
-Because "ein" does not show the gender, the adjective takes on that job with -er or -es.`,
+Because "ein" does not show the gender, the adjective takes on that job with -er or -es.
+
+### Comparison: der vs. ein
+| | masculine | neuter |
+| ---- | ---- | ---- |
+| **der/das** | der **große** Mann | das **neue** Auto |
+| **ein** | ein **großer** Mann | ein **neues** Auto |
+
+Note: the "signal ending" (-er/-es) moves from the article to the adjective when the article doesn't show it.
+
+### Common mistakes
+- ❌ *ein große Mann* → ✅ ein **großer** Mann.
+- ❌ *ein neue Auto* → ✅ ein **neues** Auto.
+- ✅ eine **kleine** Frau (feminine: -e, same as with the definite article).`,
       explanationTr: `## Belirsiz artikelden sonra sıfat ekleri
 
 Belirsiz artikelden (ein/eine) sonra cinsiyeti sıfat gösterir. Bu yüzden yalın halde daha belirgin bir ek alır: -er (eril), -e (dişil) veya -es (nötr).
@@ -3681,7 +8862,20 @@ Belirsiz artikelden (ein/eine) sonra cinsiyeti sıfat gösterir. Bu yüzden yal�
 
 **Örnekler:** Das ist ein großer Mann. (Bu uzun bir adam.) · Ich habe ein neues Auto. (Yeni bir arabam var.) · Da kommt eine kleine Frau. (İşte küçük bir kadın geliyor.)
 
-„ein" cinsiyeti göstermediği için bu görevi sıfat -er veya -es ile üstlenir.`,
+„ein" cinsiyeti göstermediği için bu görevi sıfat -er veya -es ile üstlenir.
+
+### Karşılaştırma: der vs. ein
+| | eril | nötr |
+| ---- | ---- | ---- |
+| **der/das** | der **große** Mann | das **neue** Auto |
+| **ein** | ein **großer** Mann | ein **neues** Auto |
+
+Not: „sinyal eki" (-er/-es), artikel onu göstermiyorsa artikelden sıfata geçer.
+
+### Sık yapılan hatalar
+- ❌ *ein große Mann* → ✅ ein **großer** Mann.
+- ❌ *ein neue Auto* → ✅ ein **neues** Auto.
+- ✅ eine **kleine** Frau (dişil: -e, belirli artikeldeki gibi).`,
     },
   })
   await seedExercises({
@@ -3708,6 +8902,76 @@ Belirsiz artikelden (ein/eine) sonra cinsiyeti sıfat gösterir. Bu yüzden yal�
         },
         explanation: 'Adjektivendungen nach "ein/eine" je nach Genus.',
       },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Das ist ein ___ Mann. (groß, maskulin)' },
+        correctAnswer: { accepted: ['großer', 'grosser'] },
+        explanation: 'Maskulin nach "ein": -er.',
+      },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Da kommt eine ___ Frau. (klein)', options: ['kleiner', 'kleines', 'kleine', 'kleinen'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'Feminin nach "eine": -e.',
+      },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['maskulin (ein)', 'feminin (eine)', 'neutrum (ein)'], rights: ['-es', '-er', '-e'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'maskulin (ein)', right: '-er' },
+            { left: 'feminin (eine)', right: '-e' },
+            { left: 'neutrum (ein)', right: '-es' },
+          ],
+        },
+        explanation: 'ein: -er (m), -e (f), -es (n).',
+      },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich habe ein neue Auto.', 'Ich habe ein neues Auto.', 'Ich habe ein neuer Auto.', 'Ich habe ein neuen Auto.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Neutrum nach "ein": -es → ein neues Auto.',
+      },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Ich habe ein ___ Auto. (neu, neutrum)' },
+        correctAnswer: { accepted: ['neues'] },
+        explanation: 'Neutrum nach "ein": -es.',
+      },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welche Endung: maskulin nach "ein"?', options: ['-e', '-er', '-es', '-en'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Maskulin nach "ein": -er.',
+      },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['großer', 'ein', 'das', 'Mann', 'ist'] },
+        correctAnswer: { order: ['das', 'ist', 'ein', 'großer', 'Mann'] },
+        explanation: '"Das ist ein großer Mann."',
+      },
+      {
+        lessonId: a1Unit13Lesson2.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Ergänze die Endung: "ein neu__ Auto" (nur die Endung)' },
+        correctAnswer: { accepted: ['es', '-es'] },
+        explanation: 'ein neues Auto (-es).',
+      },
     ],
   })
 
@@ -3730,7 +8994,20 @@ Den Komparativ (die Vergleichsform) bildest du meist mit -er. Beim Vergleich ben
 
 **Beispiele:** Mein Auto ist **schneller als** deins. · Anna ist **größer als** Tom. · Heute ist es **besser als** gestern.
 
-„gut → besser" ist unregelmäßig; „groß" und „alt" bekommen einen Umlaut (ö, ä).`,
+„gut → besser" ist unregelmäßig; „groß" und „alt" bekommen einen Umlaut (ö, ä).
+
+### Gleichheit: „so … wie"
+Bei **gleichen** Dingen benutzt du **so … wie**: Tom ist **so groß wie** Anna. (nicht „als").
+
+### Weitere unregelmäßige Formen
+- viel → **mehr**
+- gern → **lieber**
+- hoch → **höher**
+
+### Häufige Fehler
+- ❌ *schneller wie* → ✅ schneller **als** (Vergleich mit Unterschied).
+- ❌ *mehr groß* → ✅ **größer** (Komparativ mit -er, nicht mit „mehr").
+- ❌ *gooder/gutter* → ✅ **besser**.`,
       explanationEn: `## The comparative (Komparativ)
 
 You usually form the comparative with -er. When comparing, you use the word "als" (than). Many short adjectives also add an umlaut.
@@ -3745,7 +9022,20 @@ You usually form the comparative with -er. When comparing, you use the word "als
 
 **Examples:** Mein Auto ist schneller als deins. (My car is faster than yours.) · Anna ist größer als Tom. (Anna is taller than Tom.) · Heute ist es besser als gestern. (Today it is better than yesterday.)
 
-"gut → besser" (good → better) is irregular; "groß" and "alt" add an umlaut (ö, ä).`,
+"gut → besser" (good → better) is irregular; "groß" and "alt" add an umlaut (ö, ä).
+
+### Equality: "so … wie"
+For things that are **equal**, use **so … wie** (as … as): Tom ist **so groß wie** Anna. (not "als").
+
+### More irregular forms
+- viel → **mehr** (more)
+- gern → **lieber** (rather/prefer)
+- hoch → **höher** (higher)
+
+### Common mistakes
+- ❌ *schneller wie* → ✅ schneller **als** (comparison with a difference uses "als").
+- ❌ *mehr groß* → ✅ **größer** (comparative with -er, not with "mehr").
+- ❌ *gooder/gutter* → ✅ **besser**.`,
       explanationTr: `## Karşılaştırma derecesi (Komparativ)
 
 Karşılaştırma biçimini genelde -er ile kurarsın. Karşılaştırırken „als" (-den daha) kelimesini kullanırsın. Birçok kısa sıfat ayrıca bir Umlaut alır.
@@ -3760,7 +9050,20 @@ Karşılaştırma biçimini genelde -er ile kurarsın. Karşılaştırırken „
 
 **Örnekler:** Mein Auto ist schneller als deins. (Arabam seninkinden daha hızlı.) · Anna ist größer als Tom. (Anna Tom'dan daha uzun.) · Heute ist es besser als gestern. (Bugün dünden daha iyi.)
 
-„gut → besser" (iyi → daha iyi) düzensizdir; „groß" ve „alt" bir Umlaut alır (ö, ä).`,
+„gut → besser" (iyi → daha iyi) düzensizdir; „groß" ve „alt" bir Umlaut alır (ö, ä).
+
+### Eşitlik: „so … wie"
+**Eşit** şeylerde **so … wie** (… kadar) kullanırsın: Tom ist **so groß wie** Anna. („als" değil).
+
+### Diğer düzensiz biçimler
+- viel → **mehr** (daha çok)
+- gern → **lieber** (tercihen)
+- hoch → **höher** (daha yüksek)
+
+### Sık yapılan hatalar
+- ❌ *schneller wie* → ✅ schneller **als** (farklı olan karşılaştırmada „als").
+- ❌ *mehr groß* → ✅ **größer** (Komparativ -er ile, „mehr" ile değil).
+- ❌ *gooder/gutter* → ✅ **besser**.`,
     },
   })
   await seedExercises({
@@ -3780,6 +9083,76 @@ Karşılaştırma biçimini genelde -er ile kurarsın. Karşılaştırırken „
         data: { sentence: 'Mein Auto ist ___ als deins. (schnell)' },
         correctAnswer: { accepted: ['schneller'] },
         explanation: 'Komparativ: schnell + -er.',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Anna ist größer ___ Tom. (Vergleichswort)' },
+        correctAnswer: { accepted: ['als'] },
+        explanation: 'Vergleich mit Unterschied: "als".',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Komparativ von "alt"?', options: ['alter', 'älter', 'altere', 'mehr alt'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: '"alt" bekommt einen Umlaut: älter.',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['groß', 'gut', 'viel'], rights: ['mehr', 'größer', 'besser'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'groß', right: 'größer' },
+            { left: 'gut', right: 'besser' },
+            { left: 'viel', right: 'mehr' },
+          ],
+        },
+        explanation: 'Komparativformen (teils unregelmäßig).',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Tom ist ___ groß ___ Anna. (Gleichheit)', options: ['so … wie', 'so … als', 'mehr … als', 'als … wie'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'Gleichheit: so … wie.',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Komparativ von "gern" ist ___.' },
+        correctAnswer: { accepted: ['lieber'] },
+        explanation: 'gern → lieber (unregelmäßig).',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Welcher Satz ist richtig?', options: ['Ich bin größer wie du.', 'Ich bin größer als du.', 'Ich bin mehr groß als du.', 'Ich bin so größer wie du.'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Komparativ + "als".',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['größer', 'Anna', 'als', 'ist', 'Tom'] },
+        correctAnswer: { order: ['Anna', 'ist', 'größer', 'als', 'Tom'] },
+        explanation: '"Anna ist größer als Tom."',
+      },
+      {
+        lessonId: a1Unit13Lesson3.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie lautet der Komparativ von "klein"?' },
+        correctAnswer: { accepted: ['kleiner'] },
+        explanation: 'klein → kleiner.',
       },
     ],
   })
@@ -3802,7 +9175,20 @@ Den Superlativ (die höchste Stufe) bildest du mit „am" und der Endung -sten. 
 
 **Beispiele:** Er läuft **am schnellsten**. · Der Elefant ist **am größten**. · Dieses Buch ist **am besten**.
 
-„gut → am besten" ist unregelmäßig; „groß" behält den Umlaut auch im Superlativ: am größten.`,
+„gut → am besten" ist unregelmäßig; „groß" behält den Umlaut auch im Superlativ: am größten.
+
+### -esten bei Stamm auf -t/-d/-s/-ß
+alt → am **ältesten**, kurz → am **kürzesten** (Extra-e zur Aussprache).
+
+### Weitere unregelmäßige Superlative
+- gut → **am besten**
+- viel → **am meisten**
+- gern → **am liebsten**
+- hoch → **am höchsten**
+
+### Häufige Fehler
+- ❌ *der schnellste* vs. *am schnellsten*: Mit „am" → **am schnellsten** (prädikativ). Vor dem Nomen: der **schnellste** Läufer.
+- ❌ *am gutsten* → ✅ **am besten**.`,
       explanationEn: `## The superlative (Superlativ)
 
 You form the superlative with "am" and the ending -sten. It says what is the most of all.
@@ -3816,7 +9202,20 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
 
 **Examples:** Er läuft am schnellsten. (He runs the fastest.) · Der Elefant ist am größten. (The elephant is the biggest.) · Dieses Buch ist am besten. (This book is the best.)
 
-"gut → am besten" (good → best) is irregular; "groß" keeps the umlaut in the superlative too: am größten.`,
+"gut → am besten" (good → best) is irregular; "groß" keeps the umlaut in the superlative too: am größten.
+
+### -esten when the stem ends in -t/-d/-s/-ß
+alt → am **ältesten**, kurz → am **kürzesten** (extra -e for pronunciation).
+
+### More irregular superlatives
+- gut → **am besten**
+- viel → **am meisten**
+- gern → **am liebsten**
+- hoch → **am höchsten**
+
+### Common mistakes
+- ❌ *der schnellste* vs. *am schnellsten*: with "am" → **am schnellsten** (predicative). Before a noun: der **schnellste** Läufer.
+- ❌ *am gutsten* → ✅ **am besten**.`,
       explanationTr: `## Üstünlük derecesi (Superlativ)
 
 Üstünlük derecesini „am" ve -sten ekiyle kurarsın. Hepsinin içinde en fazla olanı belirtir.
@@ -3830,7 +9229,20 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
 
 **Örnekler:** Er läuft am schnellsten. (En hızlı o koşar.) · Der Elefant ist am größten. (Fil en büyüğü.) · Dieses Buch ist am besten. (Bu kitap en iyisi.)
 
-„gut → am besten" (iyi → en iyi) düzensizdir; „groß" Umlaut'u üstünlük derecesinde de korur: am größten.`,
+„gut → am besten" (iyi → en iyi) düzensizdir; „groß" Umlaut'u üstünlük derecesinde de korur: am größten.
+
+### Gövde -t/-d/-s/-ß ile bitince -esten
+alt → am **ältesten**, kurz → am **kürzesten** (telaffuz için ekstra -e).
+
+### Diğer düzensiz üstünlükler
+- gut → **am besten**
+- viel → **am meisten**
+- gern → **am liebsten**
+- hoch → **am höchsten**
+
+### Sık yapılan hatalar
+- ❌ *der schnellste* vs. *am schnellsten*: „am" ile → **am schnellsten** (yüklem). İsimden önce: der **schnellste** Läufer.
+- ❌ *am gutsten* → ✅ **am besten**.`,
     },
   })
   await seedExercises({
@@ -3850,6 +9262,76 @@ You form the superlative with "am" and the ending -sten. It says what is the mos
         data: { prompt: "Wie sagt man auf Deutsch: 'the best' (superlative of 'good', with 'am')?" },
         correctAnswer: { accepted: ['am besten'] },
         explanation: '"am besten" ist der Superlativ von "gut".',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 3,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Der Elefant ist ___ größten. (Superlativ mit "am")' },
+        correctAnswer: { accepted: ['am'] },
+        explanation: 'Superlativ: am größten.',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 4,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Superlativ von "schnell"?', options: ['am schnellsten', 'am schneller', 'schnellster', 'am schnellste'] },
+        correctAnswer: { correctIndex: 0 },
+        explanation: 'am schnellsten.',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 5,
+        type: 'MATCHING',
+        data: { lefts: ['schnell', 'gut', 'groß'], rights: ['am größten', 'am schnellsten', 'am besten'] },
+        correctAnswer: {
+          pairs: [
+            { left: 'schnell', right: 'am schnellsten' },
+            { left: 'gut', right: 'am besten' },
+            { left: 'groß', right: 'am größten' },
+          ],
+        },
+        explanation: 'Superlativformen.',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 6,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Superlativ von "viel"?', options: ['am vielsten', 'am mehr', 'am meisten', 'am viele'] },
+        correctAnswer: { correctIndex: 2 },
+        explanation: 'viel → am meisten (unregelmäßig).',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 7,
+        type: 'FILL_IN_BLANK',
+        data: { sentence: 'Superlativ von "alt": am ___. (mit Extra-e)' },
+        correctAnswer: { accepted: ['ältesten', 'aeltesten'] },
+        explanation: 'Stamm auf -t → -esten: am ältesten.',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 8,
+        type: 'MULTIPLE_CHOICE',
+        data: { prompt: 'Was ist die Steigerung: schnell – ___ – am schnellsten?', options: ['schnellst', 'schneller', 'schnelle', 'mehr schnell'] },
+        correctAnswer: { correctIndex: 1 },
+        explanation: 'Positiv – Komparativ (schneller) – Superlativ.',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 9,
+        type: 'SENTENCE_ORDER',
+        data: { words: ['am', 'ist', 'der', 'Elefant', 'größten'] },
+        correctAnswer: { order: ['der', 'Elefant', 'ist', 'am', 'größten'] },
+        explanation: '"Der Elefant ist am größten."',
+      },
+      {
+        lessonId: a1Unit13Lesson4.id,
+        order: 10,
+        type: 'SHORT_ANSWER',
+        data: { prompt: 'Wie lautet der Superlativ von "gern" (mit "am")?' },
+        correctAnswer: { accepted: ['am liebsten'] },
+        explanation: 'gern → am liebsten.',
       },
     ],
   })
