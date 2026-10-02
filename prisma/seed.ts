@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client'
+import { uniqueSlug } from '../src/lib/slug'
 
 const prisma = new PrismaClient()
 
@@ -15,12 +16,21 @@ async function main() {
   const seededExerciseIds = new Set<string>()
   const seededVocabIds = new Set<string>()
 
+  // Slugs are deterministic across re-seeds because the seed data (and thus the
+  // iteration order) is stable. Collisions are resolved per scope: unit slugs
+  // are unique within a level, lesson slugs within a unit.
+  const unitSlugsByLevel = new Map<string, Set<string>>()
+  const lessonSlugsByUnit = new Map<string, Set<string>>()
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async function seedUnit(args: { data: any }) {
     const data = args.data
     const id = `unit__${data.levelId}__${data.order}`
     seededUnitIds.add(id)
-    return prisma.unit.upsert({ where: { id }, update: data, create: { ...data, id } })
+    const taken = unitSlugsByLevel.get(data.levelId) ?? new Set<string>()
+    unitSlugsByLevel.set(data.levelId, taken)
+    const withSlug = { ...data, slug: uniqueSlug(data.titleEn, taken, 'unit') }
+    return prisma.unit.upsert({ where: { id }, update: withSlug, create: { ...withSlug, id } })
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -28,7 +38,10 @@ async function main() {
     const data = args.data
     const id = `lesson__${data.unitId}__${data.order}`
     seededLessonIds.add(id)
-    return prisma.lesson.upsert({ where: { id }, update: data, create: { ...data, id } })
+    const taken = lessonSlugsByUnit.get(data.unitId) ?? new Set<string>()
+    lessonSlugsByUnit.set(data.unitId, taken)
+    const withSlug = { ...data, slug: uniqueSlug(data.grammarTopic, taken, 'lesson') }
+    return prisma.lesson.upsert({ where: { id }, update: withSlug, create: { ...withSlug, id } })
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

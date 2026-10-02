@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import { requireAdminApi } from '@/lib/adminAuth'
 import { prisma } from '@/lib/prisma'
 import { unitInputSchema } from '@/lib/validation'
+import { uniqueSlug } from '@/lib/slug'
 
 export async function GET() {
   const auth = await requireAdminApi()
@@ -45,10 +46,19 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Level not found' }, { status: 404 })
   }
 
+  // Generate a URL slug unique within the level, derived from the English title.
+  const existing = await prisma.unit.findMany({
+    where: { levelId: level.id, slug: { not: null } },
+    select: { slug: true },
+  })
+  const taken = new Set(existing.map((u) => u.slug as string))
+  const slug = uniqueSlug(parsed.data.titleEn, taken, 'unit')
+
   const unit = await prisma.unit.create({
     data: {
       levelId: level.id,
       order: parsed.data.order,
+      slug,
       titleDe: parsed.data.titleDe,
       titleEn: parsed.data.titleEn,
       titleTr: parsed.data.titleTr,

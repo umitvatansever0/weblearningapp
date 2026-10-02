@@ -5,6 +5,10 @@ import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
 import { pickByLocale } from '@/lib/learn'
 import { VocabReviewSession } from '@/components/vocab/VocabReviewSession'
+import { NOINDEX_METADATA } from '@/lib/seo'
+
+// Private, per-user spaced-repetition page — never index.
+export const metadata = NOINDEX_METADATA
 
 export default async function VocabPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params

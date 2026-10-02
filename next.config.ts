@@ -43,6 +43,19 @@ const nextConfig: NextConfig = {
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
   },
+  // Enforce a single canonical host: permanently redirect the bare apex
+  // domain to the preferred www host. Only matches that exact host, so local
+  // development and preview deployments are unaffected.
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'deutschstep.com' }],
+        destination: 'https://www.deutschstep.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default withNextIntl(nextConfig)

@@ -5,6 +5,10 @@ import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
 import { pickByLocale } from '@/lib/learn'
 import { AdSlot } from '@/components/AdSlot'
+import { NOINDEX_METADATA } from '@/lib/seo'
+
+// Private, per-user page — never index.
+export const metadata = NOINDEX_METADATA
 
 const XP_MILESTONE = 50
 

@@ -71,21 +71,26 @@ model Level {
 }
 
 model Unit {
-  id      String @id @default(cuid())
+  id      String  @id @default(cuid())
   levelId String
-  level   Level  @relation(fields: [levelId], references: [id])
+  level   Level   @relation(fields: [levelId], references: [id])
   order   Int
+  slug    String?
   titleDe String
   titleEn String
   titleTr String
   lessons Lesson[]
+
+  // Human-readable URL segment, unique within a level.
+  @@unique([levelId, slug])
 }
 
 model Lesson {
-  id            String @id @default(cuid())
+  id            String  @id @default(cuid())
   unitId        String
-  unit          Unit   @relation(fields: [unitId], references: [id])
+  unit          Unit    @relation(fields: [unitId], references: [id])
   order         Int
+  slug          String?
   grammarTopic  String
   explanationDe String
   explanationEn String
@@ -93,6 +98,9 @@ model Lesson {
   exercises     Exercise[]
   progress      UserProgress[]
   vocabWords    VocabWord[]
+
+  // Human-readable URL segment, unique within a unit; stable across locales.
+  @@unique([unitId, slug])
 }
 
 model Exercise {

@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="p-4 text-center text-sm text-gray-500 border-t flex flex-col gap-1">
       <p>
-        &copy; {new Date().getFullYear()} DeutschLernen — {t('rights')}
+        &copy; {new Date().getFullYear()} DeutschStep — {t('rights')}
       </p>
       <nav className="flex gap-3 justify-center">
         <Link href="/privacy" className="underline">

@@ -12,9 +12,10 @@ export function Header() {
   return (
     <header className="flex items-center justify-between p-4 border-b">
       <Link href="/" className="font-bold text-lg">
-        DeutschLernen
+        DeutschStep
       </Link>
       <nav className="flex items-center gap-4">
+        <Link href="/learn">{t('learn')}</Link>
         {status === 'authenticated' ? (
           <>
             {session.user?.role === 'ADMIN' && <Link href="/admin">{t('admin')}</Link>}

@@ -1,4 +1,22 @@
+import type { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
+import { buildPublicMetadata, metaDescriptionFromMarkdown } from '@/lib/seo'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations('legal')
+  return buildPublicMetadata({
+    locale,
+    path: '/privacy',
+    title: t('privacyTitle'),
+    description: metaDescriptionFromMarkdown(t('privacyIntro')),
+  })
+}
 
 type PrivacySection = { heading: string; paragraphs: string[] }
 

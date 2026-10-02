@@ -1,4 +1,23 @@
+import type { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
+import { buildPublicMetadata, metaDescriptionFromMarkdown } from '@/lib/seo'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations('legal')
+  const paragraphs = t.raw('termsParagraphs') as string[]
+  return buildPublicMetadata({
+    locale,
+    path: '/terms',
+    title: t('termsTitle'),
+    description: metaDescriptionFromMarkdown(paragraphs[0] ?? ''),
+  })
+}
 
 export default function TermsPage() {
   const t = useTranslations('legal')

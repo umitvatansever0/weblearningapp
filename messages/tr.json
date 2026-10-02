@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Ana Sayfa",
+    "learn": "Dersler",
     "login": "Giriş Yap",
     "register": "Kayıt Ol",
     "logout": "Çıkış Yap",
@@ -8,13 +9,37 @@
     "languageSwitcherLabel": "Dil"
   },
   "home": {
-    "heroTitle": "Almancayı akıllıca öğren",
-    "heroSubtitle": "Her seviyeden Almanca öğrenenler için ücretsiz gramer dersleri, alıştırmalar ve aralıklı tekrar yöntemiyle kelime çalışması.",
+    "heroTitle": "DeutschStep ile Online Almanca Öğren",
+    "heroSubtitle": "Ücretsiz, yapılandırılmış A1–B2 dilbilgisi dersleri, interaktif alıştırmalar ve aralıklı tekrar yöntemiyle kelime pratiği.",
+    "intro": "DeutschStep, başlangıç seviyesinden (A1) üst orta seviyeye (B2) kadar Almanca öğrenmek için ücretsiz bir çevrim içi platformdur. Her seviye, açık dilbilgisi anlatımlarını, interaktif alıştırmaları ve kelime pratiğini bir araya getirir; böylece ister sıfırdan başlayın ister ileri becerilerinizi geliştirin, kendi hızınızda çalışabilirsiniz.",
     "ctaRegister": "Ücretsiz başla",
     "ctaLogin": "Giriş yap",
-    "levelsTitle": "Seviyeler",
+    "levelsTitle": "Seviyeni seç",
+    "levelsIntro": "Almanca kurslar CEFR ölçeğini izler. Mevcut seviyenize uygun olanı seçin ve dilbilgisi, kelime ve alıştırmaları adım adım çalışın.",
     "levelAvailable": "Şimdi kullanılabilir",
-    "levelComingSoon": "Yakında"
+    "levelComingSoon": "Yakında",
+    "levelA1Desc": "Tam başlangıç: artikeller, zamirler, geniş zaman ve günlük kelimeler.",
+    "levelA2Desc": "Temel: Perfekt zamanı, modal fiiller ve datif edatlar.",
+    "levelB1Desc": "Orta: yan cümleler, bağlaçlar ve genitif durumu.",
+    "levelB2Desc": "Üst orta: edilgen çatı, Konjunktiv II ve ilgi cümleleri.",
+    "viewAllLessons": "Tüm Almanca derslerine göz at",
+    "featuresTitle": "Almanca öğrenmek için ihtiyacın olan her şey",
+    "featureGrammarTitle": "Dilbilgisi dersleri",
+    "featureGrammarBody": "Her seviye için der/die/das'tan edilgen çatıya kadar örneklerle açık Almanca dilbilgisi anlatımları.",
+    "featureVocabTitle": "Kelime pratiği",
+    "featureVocabBody": "Her dersten alınan kelimeler ve örnek cümlelerle Almanca kelime dağarcığını geliştir.",
+    "featureExercisesTitle": "İnteraktif alıştırmalar",
+    "featureExercisesBody": "Çoktan seçmeli, boşluk doldurma, eşleştirme ve cümle sıralama alıştırmaları her dersi pekiştirir.",
+    "featureSrsTitle": "Aralıklı tekrar",
+    "featureSrsBody": "Aralıklı tekrar sistemi, kelime tekrarlarını en uygun zamanda planlar; böylece kelimeler uzun süreli hafızaya yerleşir.",
+    "audienceTitle": "DeutschStep kimler için?",
+    "audienceBody": "DeutschStep; kendi kendine öğrenenler, öğrenciler ve Almanca sınavlarına hazırlanan, A1'den B2'ye yapılandırılmış ve ücretsiz bir yol arayan herkes içindir."
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "description": "Üzgünüz, bu sayfayı bulamadık. Almanca öğrenmeye devam etmek için aşağıdaki bağlantılardan birini deneyin.",
+    "home": "Ana sayfaya git",
+    "levelsHeading": "Almanca seviyeleri"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",

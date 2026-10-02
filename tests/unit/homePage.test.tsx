@@ -12,47 +12,43 @@ vi.mock('@/i18n/navigation', () => ({
   ),
 }))
 
+function renderHome() {
+  return render(
+    <NextIntlClientProvider locale="en" messages={en}>
+      <HomePage />
+    </NextIntlClientProvider>
+  )
+}
+
 describe('HomePage', () => {
-  it('renders the hero heading and both CTAs', () => {
-    render(
-      <NextIntlClientProvider locale="en" messages={en}>
-        <HomePage />
-      </NextIntlClientProvider>
-    )
-    expect(screen.getByText(en.home.heroTitle)).toBeInTheDocument()
-    expect(screen.getByText(en.home.ctaRegister)).toBeInTheDocument()
-    expect(screen.getByText(en.home.ctaLogin)).toBeInTheDocument()
+  it('renders the product H1 and crawlable intro copy', () => {
+    renderHome()
+    expect(screen.getByRole('heading', { level: 1, name: en.home.heroTitle })).toBeInTheDocument()
+    expect(screen.getByText(en.home.intro)).toBeInTheDocument()
+    expect(screen.getByText(en.home.audienceBody)).toBeInTheDocument()
   })
 
-  it('renders all four CEFR levels with an availability label', () => {
-    render(
-      <NextIntlClientProvider locale="en" messages={en}>
-        <HomePage />
-      </NextIntlClientProvider>
-    )
-    expect(screen.getByText('A1')).toBeInTheDocument()
-    expect(screen.getByText('B2')).toBeInTheDocument()
-    expect(screen.getAllByText(en.home.levelComingSoon).length).toBe(2)
-    expect(screen.getAllByText(en.home.levelAvailable).length).toBe(2)
+  it('links every CEFR level to its lessons page with a real href', () => {
+    renderHome()
+    for (const level of ['A1', 'A2', 'B1', 'B2'] as const) {
+      expect(screen.getByRole('link', { name: new RegExp(`German ${level}`) })).toHaveAttribute(
+        'href',
+        `/learn/${level}`
+      )
+    }
   })
 
-  it('links the available A1 and A2 levels to their units pages', () => {
-    render(
-      <NextIntlClientProvider locale="en" messages={en}>
-        <HomePage />
-      </NextIntlClientProvider>
-    )
-    expect(screen.getByRole('link', { name: /A1/ })).toHaveAttribute('href', '/learn/A1')
-    expect(screen.getByRole('link', { name: /A2/ })).toHaveAttribute('href', '/learn/A2')
+  it('links to the all-lessons index and the register CTA', () => {
+    renderHome()
+    expect(screen.getByRole('link', { name: en.home.viewAllLessons })).toHaveAttribute('href', '/learn')
+    expect(screen.getByRole('link', { name: en.home.ctaRegister })).toHaveAttribute('href', '/register')
   })
 
-  it('does not link coming-soon levels', () => {
-    render(
-      <NextIntlClientProvider locale="en" messages={en}>
-        <HomePage />
-      </NextIntlClientProvider>
-    )
-    expect(screen.queryByRole('link', { name: /B1/ })).not.toBeInTheDocument()
-    expect(screen.queryByRole('link', { name: /B2/ })).not.toBeInTheDocument()
+  it('describes the core features for crawlers', () => {
+    renderHome()
+    expect(screen.getByText(en.home.featureGrammarTitle)).toBeInTheDocument()
+    expect(screen.getByText(en.home.featureVocabTitle)).toBeInTheDocument()
+    expect(screen.getByText(en.home.featureExercisesTitle)).toBeInTheDocument()
+    expect(screen.getByText(en.home.featureSrsTitle)).toBeInTheDocument()
   })
 })

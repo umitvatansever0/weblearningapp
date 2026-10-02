@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import { requireAdminApi } from '@/lib/adminAuth'
 import { prisma } from '@/lib/prisma'
 import { lessonInputSchema } from '@/lib/validation'
+import { uniqueSlug } from '@/lib/slug'
 
 export async function GET(_request: Request, { params }: { params: Promise<{ unitId: string }> }) {
   const auth = await requireAdminApi()
@@ -50,8 +51,16 @@ export async function POST(request: Request, { params }: { params: Promise<{ uni
     return NextResponse.json({ error: 'Unit not found' }, { status: 404 })
   }
 
+  // Generate a URL slug unique within the unit, derived from the grammar topic.
+  const existing = await prisma.lesson.findMany({
+    where: { unitId, slug: { not: null } },
+    select: { slug: true },
+  })
+  const taken = new Set(existing.map((l) => l.slug as string))
+  const slug = uniqueSlug(parsed.data.grammarTopic, taken, 'lesson')
+
   const lesson = await prisma.lesson.create({
-    data: { unitId, ...parsed.data },
+    data: { unitId, slug, ...parsed.data },
   })
 
   return NextResponse.json({ id: lesson.id }, { status: 201 })

@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Startseite",
+    "learn": "Lektionen",
     "login": "Anmelden",
     "register": "Registrieren",
     "logout": "Abmelden",
@@ -8,13 +9,37 @@
     "languageSwitcherLabel": "Sprache"
   },
   "home": {
-    "heroTitle": "Lerne Deutsch auf die smarte Art",
-    "heroSubtitle": "Kostenlose Grammatiklektionen, Übungen und Vokabeltraining mit Spaced Repetition für Deutschlernende jeder Stufe.",
+    "heroTitle": "Deutsch online lernen mit DeutschStep",
+    "heroSubtitle": "Kostenlose, strukturierte A1–B2 Grammatiklektionen, interaktive Übungen und Vokabeltraining mit Spaced Repetition.",
+    "intro": "DeutschStep ist eine kostenlose Online-Plattform zum Deutschlernen vom Anfänger (A1) bis zur oberen Mittelstufe (B2). Jede Stufe verbindet klare Grammatikerklärungen, interaktive Übungen und Vokabeltraining, damit du in deinem eigenen Tempo lernen kannst – ob als Einsteiger oder zum Auffrischen fortgeschrittener Kenntnisse.",
     "ctaRegister": "Kostenlos starten",
     "ctaLogin": "Anmelden",
-    "levelsTitle": "Niveaus",
+    "levelsTitle": "Wähle dein Niveau",
+    "levelsIntro": "Deutschkurse folgen der CEFR-Skala. Wähle das Niveau, das deinem aktuellen Können entspricht, und arbeite dich Schritt für Schritt durch Grammatik, Wortschatz und Übungen.",
     "levelAvailable": "Jetzt verfügbar",
-    "levelComingSoon": "Demnächst"
+    "levelComingSoon": "Demnächst",
+    "levelA1Desc": "Absoluter Anfänger: Artikel, Pronomen, Präsens und Alltagswörter.",
+    "levelA2Desc": "Grundstufe: Perfekt, Modalverben und Dativpräpositionen.",
+    "levelB1Desc": "Mittelstufe: Nebensätze, Konnektoren und der Genitiv.",
+    "levelB2Desc": "Obere Mittelstufe: Passiv, Konjunktiv II und Relativsätze.",
+    "viewAllLessons": "Alle Deutschlektionen durchsuchen",
+    "featuresTitle": "Alles, was du zum Deutschlernen brauchst",
+    "featureGrammarTitle": "Grammatiklektionen",
+    "featureGrammarBody": "Klare, beispielorientierte Erklärungen der deutschen Grammatik für jede Stufe – von der/die/das bis zum Passiv.",
+    "featureVocabTitle": "Vokabeltraining",
+    "featureVocabBody": "Erweitere deinen deutschen Wortschatz mit Wörtern und Beispielsätzen aus jeder Lektion.",
+    "featureExercisesTitle": "Interaktive Übungen",
+    "featureExercisesBody": "Multiple-Choice-, Lückentext-, Zuordnungs- und Satzstellungsübungen festigen jede Lektion.",
+    "featureSrsTitle": "Spaced Repetition",
+    "featureSrsBody": "Ein Spaced-Repetition-System plant Vokabelwiederholungen zum optimalen Zeitpunkt, damit Wörter ins Langzeitgedächtnis gelangen.",
+    "audienceTitle": "Für wen ist DeutschStep?",
+    "audienceBody": "DeutschStep ist für Selbstlernende, Studierende und alle, die sich auf Deutschprüfungen vorbereiten und einen strukturierten, kostenlosen Weg von A1 bis B2 suchen."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Diese Seite konnten wir leider nicht finden. Nutze einen der Links unten, um weiter Deutsch zu lernen.",
+    "home": "Zur Startseite",
+    "levelsHeading": "Deutsch-Niveaus"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",

@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "learn": "Lessons",
     "login": "Log in",
     "register": "Sign up",
     "logout": "Log out",
@@ -8,13 +9,37 @@
     "languageSwitcherLabel": "Language"
   },
   "home": {
-    "heroTitle": "Learn German the smart way",
-    "heroSubtitle": "Free grammar lessons, exercises, and spaced-repetition vocabulary practice for German learners at every level.",
+    "heroTitle": "Learn German Online with DeutschStep",
+    "heroSubtitle": "Free structured A1–B2 grammar lessons, interactive exercises and spaced-repetition vocabulary practice.",
+    "intro": "DeutschStep is a free online platform for learning German from beginner (A1) to upper-intermediate (B2). Every level combines clear grammar explanations, interactive exercises and vocabulary practice so you can study at your own pace — whether you are starting from zero or refining advanced skills.",
     "ctaRegister": "Get started for free",
     "ctaLogin": "Log in",
-    "levelsTitle": "Levels",
+    "levelsTitle": "Choose your level",
+    "levelsIntro": "German courses follow the CEFR scale. Pick the level that matches your current ability and work through grammar, vocabulary and exercises step by step.",
     "levelAvailable": "Available now",
-    "levelComingSoon": "Coming soon"
+    "levelComingSoon": "Coming soon",
+    "levelA1Desc": "Absolute beginner: articles, pronouns, present tense and everyday words.",
+    "levelA2Desc": "Elementary: perfect tense, modal verbs and dative prepositions.",
+    "levelB1Desc": "Intermediate: subordinate clauses, connectors and the genitive case.",
+    "levelB2Desc": "Upper-intermediate: passive voice, Konjunktiv II and relative clauses.",
+    "viewAllLessons": "Browse all German lessons",
+    "featuresTitle": "Everything you need to learn German",
+    "featureGrammarTitle": "Grammar lessons",
+    "featureGrammarBody": "Clear, example-driven explanations of German grammar for every level, from der/die/das to the passive voice.",
+    "featureVocabTitle": "Vocabulary practice",
+    "featureVocabBody": "Build your German vocabulary with words and example sentences drawn from each lesson.",
+    "featureExercisesTitle": "Interactive exercises",
+    "featureExercisesBody": "Multiple-choice, fill-in-the-blank, matching and sentence-ordering exercises reinforce every lesson.",
+    "featureSrsTitle": "Spaced repetition",
+    "featureSrsBody": "A spaced-repetition system schedules vocabulary reviews at the optimal time so words move into long-term memory.",
+    "audienceTitle": "Who is DeutschStep for?",
+    "audienceBody": "DeutschStep is for self-learners, students and anyone preparing for German exams who wants a structured, free path from A1 to B2."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, we couldn’t find that page. Try one of the links below to keep learning German.",
+    "home": "Go to the homepage",
+    "levelsHeading": "German levels"
   },
   "footer": {
     "rights": "All rights reserved.",
