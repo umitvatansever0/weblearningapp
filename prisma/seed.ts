@@ -35241,9 +35241,126 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit.id,
       order: 1,
       grammarTopic: "Konnektoren wie 'dennoch'",
-      explanationDe: 'Fortgeschrittene Konnektoren wie "dennoch" (trotzdem) drücken einen Gegensatz aus und stehen am Satzanfang, gefolgt vom Verb.',
-      explanationEn: 'Advanced connectors like "dennoch" (nevertheless) express contrast and stand at the start of the clause, followed by the verb.',
-      explanationTr: '"Dennoch" (yine de) gibi ileri düzey bağlaçlar zıtlık ifade eder ve cümle başında, fiilden önce yer alır.',
+      explanationDe: `## Konnektoren wie „dennoch"
+
+**„dennoch"** drückt einen **Gegensatz** aus: Etwas geschieht, **obwohl** das zuvor Gesagte dagegen spricht. Es ist ein **Konjunktionaladverb** und steht meist am Satzanfang (Position 1) – das **Verb folgt direkt**.
+
+> Er hat hart gearbeitet, **dennoch ist** er nicht befördert worden.
+> Die Kosten sind hoch; **dennoch lohnt** sich die Investition langfristig.
+
+### Gegensatz-Ausdrücke nach Stilebene
+| Ausdruck | Wortart | Stil | Beispiel |
+| ---- | ---- | ---- | ---- |
+| trotzdem | Adverb | neutral, mündlich | Es regnete, **trotzdem** gingen wir raus. |
+| **dennoch** | Adverb | gehoben, schriftlich | Es regnete, **dennoch** gingen wir hinaus. |
+| doch | Konjunktion / Adverb | neutral–gehoben | Er versuchte es, **doch** es gelang nicht. |
+| jedoch | Adverb / Konjunktion | formell | Das Angebot ist gut, **jedoch** zu teuer. |
+| allerdings | Adverb | neutral–formell | Die Idee ist gut, **allerdings** schwer umsetzbar. |
+| nichtsdestotrotz | Adverb | gehoben | **Nichtsdestotrotz** halten wir am Plan fest. |
+| gleichwohl | Adverb | sehr gehoben | **Gleichwohl** bleibt die Frage offen. |
+| dessen ungeachtet | Adverbiale | sehr formell | **Dessen ungeachtet** wurde der Antrag genehmigt. |
+
+### Position im Satz
+1. **Position 1** (Verb folgt): ***Dennoch fuhren** wir los.*
+2. **Mittelfeld** (nach dem Verb): *Wir fuhren **dennoch** los.*
+3. Nach **und / aber**: *Er war krank **und dennoch** kam er zur Arbeit.*
+
+### dennoch vs. obwohl vs. trotz
+| | Beispiel |
+| ---- | ---- |
+| **obwohl** + Nebensatz | **Obwohl** er hart gearbeitet hat, wurde er nicht befördert. |
+| **trotz** + Genitiv | **Trotz** harter Arbeit wurde er nicht befördert. |
+| **dennoch** (Hauptsatz) | Er hat hart gearbeitet. **Dennoch** wurde er nicht befördert. |
+
+### Häufige Fehler
+- ❌ *Dennoch er kam zu spät.* → ✅ *Dennoch **kam er** zu spät.*
+- ❌ *Er kam, dennoch er krank war.* → ✅ *Er kam, **obwohl** er krank war.* (dennoch leitet keinen Nebensatz ein!)
+
+**Beispiele:**
+- Die Prüfung war schwer; **dennoch** haben alle bestanden.
+- Sie war müde, **und dennoch** arbeitete sie bis Mitternacht.
+- Das Risiko ist bekannt. Man hat **dennoch** investiert.
+- Der Film erhielt schlechte Kritiken, **dennoch** war er ein Kassenerfolg.`,
+      explanationEn: `## Connectors like "dennoch"
+
+**"dennoch"** (nevertheless, yet) expresses **contrast**: something happens **although** what was said before suggests otherwise. It is a **conjunctive adverb** and usually stands at the start of the clause (position 1) – the **verb follows directly**.
+
+> Er hat hart gearbeitet, **dennoch ist** er nicht befördert worden. (He worked hard, yet he wasn't promoted.)
+> Die Kosten sind hoch; **dennoch lohnt** sich die Investition langfristig. (The costs are high; nevertheless the investment pays off in the long run.)
+
+### Contrast expressions by register
+| expression | word class | style | example |
+| ---- | ---- | ---- | ---- |
+| trotzdem | adverb | neutral, spoken | Es regnete, **trotzdem** gingen wir raus. (It rained, but we went out anyway.) |
+| **dennoch** | adverb | elevated, written | Es regnete, **dennoch** gingen wir hinaus. |
+| doch | conjunction / adverb | neutral–elevated | Er versuchte es, **doch** es gelang nicht. (He tried, but it didn't work.) |
+| jedoch | adverb / conjunction | formal | Das Angebot ist gut, **jedoch** zu teuer. (The offer is good, but too expensive.) |
+| allerdings | adverb | neutral–formal | Die Idee ist gut, **allerdings** schwer umsetzbar. (The idea is good, though hard to implement.) |
+| nichtsdestotrotz | adverb | elevated | **Nichtsdestotrotz** halten wir am Plan fest. (Nonetheless we're sticking to the plan.) |
+| gleichwohl | adverb | very elevated | **Gleichwohl** bleibt die Frage offen. (Even so, the question remains open.) |
+| dessen ungeachtet | adverbial | very formal | **Dessen ungeachtet** wurde der Antrag genehmigt. (Notwithstanding this, the application was approved.) |
+
+### Position in the sentence
+1. **Position 1** (verb follows): ***Dennoch fuhren** wir los.* (Nevertheless we set off.)
+2. **Middle field** (after the verb): *Wir fuhren **dennoch** los.*
+3. After **und / aber**: *Er war krank **und dennoch** kam er zur Arbeit.* (He was ill and yet he came to work.)
+
+### dennoch vs. obwohl vs. trotz
+| | example |
+| ---- | ---- |
+| **obwohl** + subordinate clause | **Obwohl** er hart gearbeitet hat, wurde er nicht befördert. (Although he worked hard …) |
+| **trotz** + genitive | **Trotz** harter Arbeit wurde er nicht befördert. (Despite hard work …) |
+| **dennoch** (main clause) | Er hat hart gearbeitet. **Dennoch** wurde er nicht befördert. (He worked hard. Nevertheless …) |
+
+### Common mistakes
+- ❌ *Dennoch er kam zu spät.* → ✅ *Dennoch **kam er** zu spät.*
+- ❌ *Er kam, dennoch er krank war.* → ✅ *Er kam, **obwohl** er krank war.* (dennoch doesn't introduce a subordinate clause!)
+
+**Examples:**
+- Die Prüfung war schwer; **dennoch** haben alle bestanden. (The exam was hard; nevertheless everyone passed.)
+- Sie war müde, **und dennoch** arbeitete sie bis Mitternacht. (She was tired, and yet she worked until midnight.)
+- Das Risiko ist bekannt. Man hat **dennoch** investiert. (The risk is known. They invested anyway.)
+- Der Film erhielt schlechte Kritiken, **dennoch** war er ein Kassenerfolg. (The film got bad reviews, yet it was a box-office hit.)`,
+      explanationTr: `## „dennoch" gibi bağlayıcılar
+
+**„dennoch"** (yine de, buna rağmen) bir **karşıtlık** bildirir: Önce söylenen aksini düşündürse **de** bir şey gerçekleşir. Bir **bağlaç-zarftır** ve çoğunlukla cümle başında (1. pozisyon) durur – **fiil hemen ardından gelir**.
+
+> Er hat hart gearbeitet, **dennoch ist** er nicht befördert worden. (Çok çalıştı, yine de terfi ettirilmedi.)
+> Die Kosten sind hoch; **dennoch lohnt** sich die Investition langfristig. (Maliyetler yüksek; buna rağmen yatırım uzun vadede kârlı.)
+
+### Üslup düzeyine göre karşıtlık ifadeleri
+| ifade | sözcük türü | üslup | örnek |
+| ---- | ---- | ---- | ---- |
+| trotzdem | zarf | nötr, konuşma | Es regnete, **trotzdem** gingen wir raus. (Yağmur yağdı, yine de dışarı çıktık.) |
+| **dennoch** | zarf | yüksek, yazı | Es regnete, **dennoch** gingen wir hinaus. |
+| doch | bağlaç / zarf | nötr–yüksek | Er versuchte es, **doch** es gelang nicht. (Denedi ama olmadı.) |
+| jedoch | zarf / bağlaç | resmî | Das Angebot ist gut, **jedoch** zu teuer. (Teklif iyi, ancak çok pahalı.) |
+| allerdings | zarf | nötr–resmî | Die Idee ist gut, **allerdings** schwer umsetzbar. (Fikir iyi, ne var ki uygulaması zor.) |
+| nichtsdestotrotz | zarf | yüksek | **Nichtsdestotrotz** halten wir am Plan fest. (Buna rağmen plana bağlı kalıyoruz.) |
+| gleichwohl | zarf | çok yüksek | **Gleichwohl** bleibt die Frage offen. (Bununla birlikte soru açık kalıyor.) |
+| dessen ungeachtet | zarf öbeği | çok resmî | **Dessen ungeachtet** wurde der Antrag genehmigt. (Buna bakılmaksızın başvuru onaylandı.) |
+
+### Cümledeki konumu
+1. **1. pozisyon** (fiil ardından gelir): ***Dennoch fuhren** wir los.* (Yine de yola çıktık.)
+2. **Cümle ortası** (fiilden sonra): *Wir fuhren **dennoch** los.*
+3. **und / aber**'den sonra: *Er war krank **und dennoch** kam er zur Arbeit.* (Hastaydı ve yine de işe geldi.)
+
+### dennoch – obwohl – trotz
+| | örnek |
+| ---- | ---- |
+| **obwohl** + yan cümle | **Obwohl** er hart gearbeitet hat, wurde er nicht befördert. (Çok çalışmasına rağmen …) |
+| **trotz** + Genitiv | **Trotz** harter Arbeit wurde er nicht befördert. (Sıkı çalışmaya rağmen …) |
+| **dennoch** (ana cümle) | Er hat hart gearbeitet. **Dennoch** wurde er nicht befördert. (Çok çalıştı. Yine de …) |
+
+### Sık yapılan hatalar
+- ❌ *Dennoch er kam zu spät.* → ✅ *Dennoch **kam er** zu spät.*
+- ❌ *Er kam, dennoch er krank war.* → ✅ *Er kam, **obwohl** er krank war.* (dennoch yan cümle başlatmaz!)
+
+**Örnekler:**
+- Die Prüfung war schwer; **dennoch** haben alle bestanden. (Sınav zordu; yine de herkes geçti.)
+- Sie war müde, **und dennoch** arbeitete sie bis Mitternacht. (Yorgundu, ama yine de gece yarısına kadar çalıştı.)
+- Das Risiko ist bekannt. Man hat **dennoch** investiert. (Risk biliniyor. Yine de yatırım yapıldı.)
+- Der Film erhielt schlechte Kritiken, **dennoch** war er ein Kassenerfolg. (Film kötü eleştiriler aldı, yine de gişede başarılı oldu.)`,
     },
   })
   await seedExercises({
@@ -35275,12 +35392,126 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit.id,
       order: 2,
       grammarTopic: "Konnektoren wie 'nichtsdestotrotz' und 'insofern als'",
-      explanationDe:
-        '"Nichtsdestotrotz" (trotzdem, dennoch) und "insofern als" (in dem Maße, wie) sind gehobene Konnektoren für formelle Texte und Reden.',
-      explanationEn:
-        '"Nichtsdestotrotz" (nonetheless) and "insofern als" (insofar as) are elevated connectors used in formal writing and speeches.',
-      explanationTr:
-        '"Nichtsdestotrotz" (yine de) ve "insofern als" (şu ölçüde ki) resmi metinlerde ve konuşmalarda kullanılan üst düzey bağlaçlardır.',
+      explanationDe: `## „nichtsdestotrotz" und „insofern als"
+
+### nichtsdestotrotz – „trotzdem", aber nachdrücklicher
+**„nichtsdestotrotz"** ist ein gehobenes, etwas **nachdrückliches** Synonym für *trotzdem / dennoch*. Es entstand scherzhaft aus *nichtsdestoweniger* + *trotz* und ist heute in Reden, Kommentaren und formellen Texten üblich.
+
+> Die Lage ist schwierig. **Nichtsdestotrotz** werden wir unsere Ziele erreichen.
+
+| Synonym | Stil |
+| ---- | ---- |
+| trotzdem | neutral |
+| dennoch | gehoben |
+| nichtsdestotrotz | gehoben, nachdrücklich (in Reden beliebt) |
+| nichtsdestoweniger | sehr formell, schriftlich |
+
+### insofern als – „in dem Maße, wie" / „weil (nur in dieser Hinsicht)"
+**„insofern als"** leitet einen **Nebensatz** ein (Verb am Ende). Es **begründet** etwas, aber gleichzeitig **schränkt** es die Gültigkeit ein: Die Aussage gilt **nur in dieser Hinsicht**.
+
+> Die Reform ist **insofern** problematisch, **als** sie die Geringverdiener **benachteiligt**.
+> (= Die Reform ist problematisch – und zwar in der Hinsicht, dass sie Geringverdiener benachteiligt.)
+
+**Stellung:** *insofern* steht oft im **Hauptsatz**, *als* leitet den **Nebensatz** ein. Beide Teile können aber auch zusammen stehen:
+- *Er hat **insofern** recht, **als** die Zahlen gestiegen sind.*
+- *Er hat recht, **insofern als** die Zahlen gestiegen sind.*
+
+### Verwandte Ausdrücke
+| Ausdruck | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| **insoweit (als)** | = insofern (als), formeller | Das gilt **insoweit**, **als** keine anderen Regeln bestehen. |
+| **soweit** | in dem Umfang, wie | **Soweit** ich weiß, kommt er morgen. |
+| **sofern** | unter der Bedingung, dass | **Sofern** nichts dazwischenkommt, reisen wir ab. |
+
+### Häufige Fehler
+- ❌ *insofern als* = „weil" allgemein → Nein: *insofern als* betont immer **eine bestimmte Hinsicht**.
+- ❌ *Er hat insofern recht, dass …* → ✅ *Er hat insofern recht, **als** …*
+
+**Beispiele:**
+- Der Umsatz ist gesunken. **Nichtsdestotrotz** bleibt das Unternehmen profitabel.
+- Die Studie ist **insofern** bedeutsam, **als** sie erstmals Langzeitdaten liefert.
+- **Nichtsdestotrotz** sollten wir die Kritik ernst nehmen.
+- Das Experiment war **insofern** erfolgreich, **als** die Methode funktioniert hat.`,
+      explanationEn: `## "nichtsdestotrotz" and "insofern als"
+
+### nichtsdestotrotz – "nevertheless", but more emphatic
+**"nichtsdestotrotz"** is an elevated, rather **emphatic** synonym for *trotzdem / dennoch*. It arose jokingly from *nichtsdestoweniger* + *trotz* and is now common in speeches, commentaries and formal texts.
+
+> Die Lage ist schwierig. **Nichtsdestotrotz** werden wir unsere Ziele erreichen. (The situation is difficult. Nevertheless we will achieve our goals.)
+
+| synonym | style |
+| ---- | ---- |
+| trotzdem | neutral |
+| dennoch | elevated |
+| nichtsdestotrotz | elevated, emphatic (popular in speeches) |
+| nichtsdestoweniger | very formal, written |
+
+### insofern als – "insofar as" / "to the extent that"
+**"insofern als"** introduces a **subordinate clause** (verb at the end). It **gives a reason** but at the same time **limits** its validity: the statement holds **only in this respect**.
+
+> Die Reform ist **insofern** problematisch, **als** sie die Geringverdiener **benachteiligt**.
+> (The reform is problematic insofar as it disadvantages low earners.)
+
+**Position:** *insofern* often stands in the **main clause**, *als* introduces the **subordinate clause**. Both parts can also stand together:
+- *Er hat **insofern** recht, **als** die Zahlen gestiegen sind.* (He is right insofar as the figures have risen.)
+- *Er hat recht, **insofern als** die Zahlen gestiegen sind.*
+
+### Related expressions
+| expression | meaning | example |
+| ---- | ---- | ---- |
+| **insoweit (als)** | = insofern (als), more formal | Das gilt **insoweit**, **als** keine anderen Regeln bestehen. (This applies insofar as no other rules exist.) |
+| **soweit** | as far as | **Soweit** ich weiß, kommt er morgen. (As far as I know, he's coming tomorrow.) |
+| **sofern** | provided that | **Sofern** nichts dazwischenkommt, reisen wir ab. (Provided nothing comes up, we'll leave.) |
+
+### Common mistakes
+- ❌ *insofern als* = "because" in general → No: *insofern als* always stresses **a particular respect**.
+- ❌ *Er hat insofern recht, dass …* → ✅ *Er hat insofern recht, **als** …*
+
+**Examples:**
+- Der Umsatz ist gesunken. **Nichtsdestotrotz** bleibt das Unternehmen profitabel. (Sales have fallen. Nevertheless the company remains profitable.)
+- Die Studie ist **insofern** bedeutsam, **als** sie erstmals Langzeitdaten liefert. (The study is significant insofar as it provides long-term data for the first time.)
+- **Nichtsdestotrotz** sollten wir die Kritik ernst nehmen. (Nonetheless we should take the criticism seriously.)
+- Das Experiment war **insofern** erfolgreich, **als** die Methode funktioniert hat. (The experiment was successful insofar as the method worked.)`,
+      explanationTr: `## „nichtsdestotrotz" ve „insofern als"
+
+### nichtsdestotrotz – „yine de", ama daha vurgulu
+**„nichtsdestotrotz"**, *trotzdem / dennoch*'un yüksek üsluplu, biraz **vurgulu** bir eş anlamlısıdır. Şakacı bir şekilde *nichtsdestoweniger* + *trotz*'dan türemiştir ve bugün konuşmalarda, yorumlarda ve resmî metinlerde yaygındır.
+
+> Die Lage ist schwierig. **Nichtsdestotrotz** werden wir unsere Ziele erreichen. (Durum zor. Buna rağmen hedeflerimize ulaşacağız.)
+
+| eş anlamlı | üslup |
+| ---- | ---- |
+| trotzdem | nötr |
+| dennoch | yüksek |
+| nichtsdestotrotz | yüksek, vurgulu (konuşmalarda sevilir) |
+| nichtsdestoweniger | çok resmî, yazı dili |
+
+### insofern als – „… ölçüde" / „… bakımından"
+**„insofern als"** bir **yan cümle** başlatır (fiil sonda). Bir şeyi **gerekçelendirir**, ama aynı zamanda geçerliliğini **sınırlar**: İfade **yalnızca bu açıdan** geçerlidir.
+
+> Die Reform ist **insofern** problematisch, **als** sie die Geringverdiener **benachteiligt**.
+> (Reform, düşük gelirlileri dezavantajlı duruma düşürmesi bakımından sorunlu.)
+
+**Konum:** *insofern* çoğu zaman **ana cümlede**, *als* ise **yan cümlenin** başında durur. İki parça birlikte de durabilir:
+- *Er hat **insofern** recht, **als** die Zahlen gestiegen sind.* (Rakamların arttığı ölçüde haklı.)
+- *Er hat recht, **insofern als** die Zahlen gestiegen sind.*
+
+### İlgili ifadeler
+| ifade | anlamı | örnek |
+| ---- | ---- | ---- |
+| **insoweit (als)** | = insofern (als), daha resmî | Das gilt **insoweit**, **als** keine anderen Regeln bestehen. (Başka kural bulunmadığı ölçüde bu geçerlidir.) |
+| **soweit** | … kadarıyla | **Soweit** ich weiß, kommt er morgen. (Bildiğim kadarıyla yarın geliyor.) |
+| **sofern** | … şartıyla | **Sofern** nichts dazwischenkommt, reisen wir ab. (Bir aksilik olmazsa yola çıkıyoruz.) |
+
+### Sık yapılan hatalar
+- ❌ *insofern als* = genel olarak „çünkü" → Hayır: *insofern als* her zaman **belirli bir açıyı** vurgular.
+- ❌ *Er hat insofern recht, dass …* → ✅ *Er hat insofern recht, **als** …*
+
+**Örnekler:**
+- Der Umsatz ist gesunken. **Nichtsdestotrotz** bleibt das Unternehmen profitabel. (Ciro düştü. Buna rağmen şirket kârlı olmaya devam ediyor.)
+- Die Studie ist **insofern** bedeutsam, **als** sie erstmals Langzeitdaten liefert. (Çalışma, ilk kez uzun vadeli veri sunması bakımından önemli.)
+- **Nichtsdestotrotz** sollten wir die Kritik ernst nehmen. (Yine de eleştiriyi ciddiye almalıyız.)
+- Das Experiment war **insofern** erfolgreich, **als** die Methode funktioniert hat. (Deney, yöntemin işe yaraması bakımından başarılıydı.)`,
     },
   })
   await seedExercises({
@@ -35312,12 +35543,111 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit.id,
       order: 3,
       grammarTopic: "Konnektor 'dessen ungeachtet'",
-      explanationDe:
-        '"Dessen ungeachtet" (unabhängig davon) leitet einen Gegensatz auf sehr formellem Sprachniveau ein, häufig in Verwaltungs- oder Fachtexten.',
-      explanationEn:
-        '"Dessen ungeachtet" (regardless of that) introduces a contrast at a very formal register, common in administrative or technical texts.',
-      explanationTr:
-        '"Dessen ungeachtet" (bundan bağımsız olarak) çok resmi bir dil düzeyinde zıtlık başlatır; idari veya teknik metinlerde sık görülür.',
+      explanationDe: `## Konnektor „dessen ungeachtet"
+
+**„dessen ungeachtet"** bedeutet *„unabhängig davon / ohne das zu berücksichtigen / trotzdem"*. Es gehört zum **sehr formellen** Register und findet sich vor allem in **Verwaltungs-, Rechts- und Fachtexten** sowie in gehobenem Journalismus.
+
+> Die Kosten haben sich verdoppelt. **Dessen ungeachtet** hält die Stadt an dem Projekt fest.
+
+### Grammatik
+- *dessen* ist ein **Genitiv** (= „davon"), *ungeachtet* eine Präposition mit **Genitiv**, die hier **nachgestellt** ist.
+- *dessen ungeachtet* steht als Adverbiale meist auf **Position 1** → **Verb folgt direkt**.
+- Variante: ***ungeachtet dessen***, *…* (gleiche Bedeutung).
+
+### Die Präposition „ungeachtet" + Genitiv
+„ungeachtet" kann auch direkt vor einem Nomen stehen (= *trotz*, formell):
+- ***Ungeachtet** der Proteste wurde das Gesetz verabschiedet.*
+- ***Ungeachtet** seines Alters ist er sehr sportlich.*
+- *Die Regel gilt für alle, **ungeachtet** ihrer Herkunft.* (= unabhängig von)
+
+### Formalitätsskala der Gegensatz-Adverbien
+| Ausdruck | Register | typischer Kontext |
+| ---- | ---- | ---- |
+| trotzdem | neutral | Alltag |
+| dennoch | gehoben | Zeitung, Literatur |
+| nichtsdestotrotz | gehoben | Reden, Kommentare |
+| gleichwohl | sehr gehoben | Essay, Wissenschaft |
+| **dessen ungeachtet** | sehr formell | Verwaltung, Recht, Berichte |
+
+### Verwechslungsgefahr
+- *ungeachtet* ≠ *unbeachtet*! *unbeachtet* = nicht bemerkt: *Der Brief blieb **unbeachtet** liegen.*
+
+**Beispiele:**
+- Die Gutachter äußerten Bedenken. **Dessen ungeachtet** wurde der Bau genehmigt.
+- Die Frist ist abgelaufen; **ungeachtet dessen** wird Ihr Antrag geprüft.
+- **Ungeachtet** aller Warnungen fuhr er weiter.
+- Der Vertrag bleibt **ungeachtet** der Kündigung bis Jahresende gültig.
+- Die Mehrheit stimmte dagegen. **Dessen ungeachtet** setzte der Vorstand die Maßnahme um.`,
+      explanationEn: `## The connector "dessen ungeachtet"
+
+**"dessen ungeachtet"** means *"regardless of this / notwithstanding this / nevertheless"*. It belongs to the **very formal** register and is found mainly in **administrative, legal and technical texts** and in quality journalism.
+
+> Die Kosten haben sich verdoppelt. **Dessen ungeachtet** hält die Stadt an dem Projekt fest. (Costs have doubled. Notwithstanding this, the city is sticking to the project.)
+
+### Grammar
+- *dessen* is a **genitive** (= "of it"), *ungeachtet* is a preposition taking the **genitive**, here **placed after** its object.
+- As an adverbial, *dessen ungeachtet* usually stands in **position 1** → the **verb follows directly**.
+- Variant: ***ungeachtet dessen***, *…* (same meaning).
+
+### The preposition "ungeachtet" + genitive
+"ungeachtet" can also stand directly before a noun (= *trotz*, formal):
+- ***Ungeachtet** der Proteste wurde das Gesetz verabschiedet.* (Despite the protests, the law was passed.)
+- ***Ungeachtet** seines Alters ist er sehr sportlich.* (Regardless of his age, he is very athletic.)
+- *Die Regel gilt für alle, **ungeachtet** ihrer Herkunft.* (The rule applies to everyone regardless of origin.)
+
+### Formality scale of contrast adverbs
+| expression | register | typical context |
+| ---- | ---- | ---- |
+| trotzdem | neutral | everyday |
+| dennoch | elevated | newspapers, literature |
+| nichtsdestotrotz | elevated | speeches, commentaries |
+| gleichwohl | very elevated | essays, academia |
+| **dessen ungeachtet** | very formal | administration, law, reports |
+
+### Risk of confusion
+- *ungeachtet* ≠ *unbeachtet*! *unbeachtet* = unnoticed: *Der Brief blieb **unbeachtet** liegen.* (The letter lay unnoticed.)
+
+**Examples:**
+- Die Gutachter äußerten Bedenken. **Dessen ungeachtet** wurde der Bau genehmigt. (The experts voiced concerns. Notwithstanding this, construction was approved.)
+- Die Frist ist abgelaufen; **ungeachtet dessen** wird Ihr Antrag geprüft. (The deadline has passed; regardless, your application will be examined.)
+- **Ungeachtet** aller Warnungen fuhr er weiter. (Despite all warnings, he drove on.)
+- Der Vertrag bleibt **ungeachtet** der Kündigung bis Jahresende gültig. (Notwithstanding the notice of termination, the contract remains valid until the end of the year.)
+- Die Mehrheit stimmte dagegen. **Dessen ungeachtet** setzte der Vorstand die Maßnahme um. (The majority voted against. Nevertheless the board implemented the measure.)`,
+      explanationTr: `## „dessen ungeachtet" bağlayıcısı
+
+**„dessen ungeachtet"**, *„buna bakılmaksızın / bunu dikkate almadan / yine de"* anlamına gelir. **Çok resmî** dil düzeyine aittir ve özellikle **resmî kurum, hukuk ve uzmanlık metinlerinde** ve nitelikli gazetecilikte görülür.
+
+> Die Kosten haben sich verdoppelt. **Dessen ungeachtet** hält die Stadt an dem Projekt fest. (Maliyetler iki katına çıktı. Buna bakılmaksızın belediye projeden vazgeçmiyor.)
+
+### Dilbilgisi
+- *dessen* bir **Genitiv**'dir (= „bunun"), *ungeachtet* ise **Genitiv** alan bir edattır; burada nesnesinden **sonra** gelir.
+- Zarf öbeği olarak *dessen ungeachtet* çoğunlukla **1. pozisyonda** durur → **fiil hemen ardından gelir**.
+- Varyant: ***ungeachtet dessen***, *…* (aynı anlam).
+
+### „ungeachtet" + Genitiv edatı
+„ungeachtet" doğrudan bir ismin önünde de durabilir (= *trotz*, resmî):
+- ***Ungeachtet** der Proteste wurde das Gesetz verabschiedet.* (Protestolara rağmen yasa kabul edildi.)
+- ***Ungeachtet** seines Alters ist er sehr sportlich.* (Yaşına rağmen çok sportif.)
+- *Die Regel gilt für alle, **ungeachtet** ihrer Herkunft.* (Kural, kökenine bakılmaksızın herkes için geçerli.)
+
+### Karşıtlık zarflarının resmîlik ölçeği
+| ifade | dil düzeyi | tipik bağlam |
+| ---- | ---- | ---- |
+| trotzdem | nötr | günlük hayat |
+| dennoch | yüksek | gazete, edebiyat |
+| nichtsdestotrotz | yüksek | konuşmalar, yorumlar |
+| gleichwohl | çok yüksek | deneme, bilim |
+| **dessen ungeachtet** | çok resmî | kamu yönetimi, hukuk, raporlar |
+
+### Karıştırma tehlikesi
+- *ungeachtet* ≠ *unbeachtet*! *unbeachtet* = fark edilmemiş: *Der Brief blieb **unbeachtet** liegen.* (Mektup fark edilmeden kaldı.)
+
+**Örnekler:**
+- Die Gutachter äußerten Bedenken. **Dessen ungeachtet** wurde der Bau genehmigt. (Bilirkişiler kaygılarını dile getirdi. Buna bakılmaksızın inşaat onaylandı.)
+- Die Frist ist abgelaufen; **ungeachtet dessen** wird Ihr Antrag geprüft. (Süre doldu; buna rağmen başvurunuz incelenecek.)
+- **Ungeachtet** aller Warnungen fuhr er weiter. (Tüm uyarılara rağmen sürmeye devam etti.)
+- Der Vertrag bleibt **ungeachtet** der Kündigung bis Jahresende gültig. (Fesih bildirimine bakılmaksızın sözleşme yıl sonuna kadar geçerli.)
+- Die Mehrheit stimmte dagegen. **Dessen ungeachtet** setzte der Vorstand die Maßnahme um. (Çoğunluk karşı oy verdi. Buna bakılmaksızın yönetim önlemi uyguladı.)`,
     },
   })
   await seedExercises({
@@ -35349,12 +35679,113 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit.id,
       order: 4,
       grammarTopic: 'Übung: Gehobene Konnektoren',
-      explanationDe:
-        'Wiederholung: "dennoch", "nichtsdestotrotz", "insofern als" und "dessen ungeachtet" drücken alle Gegensatz oder Einschränkung aus, unterscheiden sich aber im Formalitätsgrad.',
-      explanationEn:
-        'Review: "dennoch", "nichtsdestotrotz", "insofern als", and "dessen ungeachtet" all express contrast or qualification but differ in formality.',
-      explanationTr:
-        'Tekrar: "dennoch", "nichtsdestotrotz", "insofern als" ve "dessen ungeachtet" hepsi zıtlık veya sınırlama ifade eder, ancak resmiyet derecesi farklıdır.',
+      explanationDe: `## Übung: Gehobene Konnektoren – Zusammenfassung
+
+„dennoch", „nichtsdestotrotz", „insofern als" und „dessen ungeachtet" drücken **Gegensatz** oder **Einschränkung** aus. Auf C2-Niveau geht es darum, sie nach **Bedeutungsnuance** und **Formalitätsgrad** präzise auszuwählen.
+
+### Übersicht
+| Konnektor | Funktion | Satzbau | Register |
+| ---- | ---- | ---- | ---- |
+| dennoch | Gegensatz | Adverb, Verb auf Pos. 2 | gehoben |
+| nichtsdestotrotz | Gegensatz (nachdrücklich) | Adverb, Verb auf Pos. 2 | gehoben |
+| dessen ungeachtet | Gegensatz (sachlich, distanziert) | Adverbiale, Verb auf Pos. 2 | sehr formell |
+| insofern … als | Einschränkung / Begründung | Nebensatz, Verb am Ende | gehoben |
+| gleichwohl | Gegensatz | Adverb (oder Subjunktion) | sehr gehoben |
+
+### Welcher Konnektor passt?
+| Kontext | beste Wahl |
+| ---- | ---- |
+| Gespräch unter Kollegen | *trotzdem* |
+| Zeitungskommentar | *dennoch / nichtsdestotrotz* |
+| Bescheid einer Behörde | *dessen ungeachtet / ungeachtet dessen* |
+| wissenschaftliche Diskussion | *gleichwohl / insofern als* |
+| politische Rede | *nichtsdestotrotz* |
+
+### Ein Text – vier Konnektoren
+*Die Haushaltslage der Gemeinde ist angespannt. **Dennoch** wurde der Bau einer neuen Schule beschlossen. Die Entscheidung ist **insofern** nachvollziehbar, **als** die Schülerzahlen stark steigen. Kritiker bemängeln die hohen Kosten. **Dessen ungeachtet** hält der Gemeinderat an seinem Beschluss fest. **Nichtsdestotrotz** sollten Einsparmöglichkeiten geprüft werden.*
+
+### Häufige Fehler
+- ❌ *Dessen ungeachtet die Stadt baut weiter.* → ✅ *Dessen ungeachtet **baut die Stadt** weiter.*
+- ❌ *Er hat insofern recht, weil …* → ✅ *Er hat insofern recht, **als** …*
+- ❌ *nichtsdestotrotz* im formellen Rechtstext → besser *dessen ungeachtet*.
+
+**Beispiele:**
+- Die Nachfrage sinkt; **dennoch** erhöht der Hersteller die Produktion.
+- Das Projekt ist **insofern** riskant, **als** die Finanzierung unsicher ist.
+- **Nichtsdestotrotz** blicken wir optimistisch in die Zukunft.
+- **Ungeachtet** der Einwände wurde der Vertrag unterzeichnet.`,
+      explanationEn: `## Practice: elevated connectors – summary
+
+"dennoch", "nichtsdestotrotz", "insofern als" and "dessen ungeachtet" express **contrast** or **restriction**. At C2 level the point is to choose them precisely by **nuance of meaning** and **degree of formality**.
+
+### Overview
+| connector | function | syntax | register |
+| ---- | ---- | ---- | ---- |
+| dennoch | contrast | adverb, verb in pos. 2 | elevated |
+| nichtsdestotrotz | contrast (emphatic) | adverb, verb in pos. 2 | elevated |
+| dessen ungeachtet | contrast (objective, detached) | adverbial, verb in pos. 2 | very formal |
+| insofern … als | restriction / reason | subordinate clause, verb at end | elevated |
+| gleichwohl | contrast | adverb (or conjunction) | very elevated |
+
+### Which connector fits?
+| context | best choice |
+| ---- | ---- |
+| conversation among colleagues | *trotzdem* |
+| newspaper commentary | *dennoch / nichtsdestotrotz* |
+| official notice from an authority | *dessen ungeachtet / ungeachtet dessen* |
+| academic discussion | *gleichwohl / insofern als* |
+| political speech | *nichtsdestotrotz* |
+
+### One text – four connectors
+*Die Haushaltslage der Gemeinde ist angespannt. **Dennoch** wurde der Bau einer neuen Schule beschlossen. Die Entscheidung ist **insofern** nachvollziehbar, **als** die Schülerzahlen stark steigen. Kritiker bemängeln die hohen Kosten. **Dessen ungeachtet** hält der Gemeinderat an seinem Beschluss fest. **Nichtsdestotrotz** sollten Einsparmöglichkeiten geprüft werden.*
+(The municipality's budget is tight. Nevertheless, the construction of a new school was approved. The decision is understandable insofar as pupil numbers are rising sharply. Critics object to the high costs. Notwithstanding this, the council is sticking to its decision. Nonetheless, opportunities for savings should be examined.)
+
+### Common mistakes
+- ❌ *Dessen ungeachtet die Stadt baut weiter.* → ✅ *Dessen ungeachtet **baut die Stadt** weiter.*
+- ❌ *Er hat insofern recht, weil …* → ✅ *Er hat insofern recht, **als** …*
+- ❌ *nichtsdestotrotz* in a formal legal text → *dessen ungeachtet* is better.
+
+**Examples:**
+- Die Nachfrage sinkt; **dennoch** erhöht der Hersteller die Produktion. (Demand is falling; nevertheless the manufacturer is increasing production.)
+- Das Projekt ist **insofern** riskant, **als** die Finanzierung unsicher ist. (The project is risky insofar as funding is uncertain.)
+- **Nichtsdestotrotz** blicken wir optimistisch in die Zukunft. (Nonetheless we look to the future with optimism.)
+- **Ungeachtet** der Einwände wurde der Vertrag unterzeichnet. (Notwithstanding the objections, the contract was signed.)`,
+      explanationTr: `## Alıştırma: Yüksek üsluplu bağlayıcılar – özet
+
+„dennoch", „nichtsdestotrotz", „insofern als" ve „dessen ungeachtet" **karşıtlık** veya **sınırlama** bildirir. C2 seviyesinde amaç, bunları **anlam inceliğine** ve **resmîlik derecesine** göre doğru seçmektir.
+
+### Genel bakış
+| bağlayıcı | işlev | söz dizimi | dil düzeyi |
+| ---- | ---- | ---- | ---- |
+| dennoch | karşıtlık | zarf, fiil 2. poz. | yüksek |
+| nichtsdestotrotz | karşıtlık (vurgulu) | zarf, fiil 2. poz. | yüksek |
+| dessen ungeachtet | karşıtlık (nesnel, mesafeli) | zarf öbeği, fiil 2. poz. | çok resmî |
+| insofern … als | sınırlama / gerekçe | yan cümle, fiil sonda | yüksek |
+| gleichwohl | karşıtlık | zarf (veya bağlaç) | çok yüksek |
+
+### Hangi bağlayıcı uygun?
+| bağlam | en iyi seçim |
+| ---- | ---- |
+| iş arkadaşları arasında sohbet | *trotzdem* |
+| gazete yorumu | *dennoch / nichtsdestotrotz* |
+| resmî daire kararı | *dessen ungeachtet / ungeachtet dessen* |
+| bilimsel tartışma | *gleichwohl / insofern als* |
+| siyasi konuşma | *nichtsdestotrotz* |
+
+### Bir metin – dört bağlayıcı
+*Die Haushaltslage der Gemeinde ist angespannt. **Dennoch** wurde der Bau einer neuen Schule beschlossen. Die Entscheidung ist **insofern** nachvollziehbar, **als** die Schülerzahlen stark steigen. Kritiker bemängeln die hohen Kosten. **Dessen ungeachtet** hält der Gemeinderat an seinem Beschluss fest. **Nichtsdestotrotz** sollten Einsparmöglichkeiten geprüft werden.*
+(Belediyenin bütçesi sıkışık. Yine de yeni bir okul yapılmasına karar verildi. Öğrenci sayısının hızla artması bakımından karar anlaşılır. Eleştirmenler yüksek maliyetleri kusur buluyor. Buna bakılmaksızın belediye meclisi kararından vazgeçmiyor. Bununla birlikte tasarruf olanakları incelenmeli.)
+
+### Sık yapılan hatalar
+- ❌ *Dessen ungeachtet die Stadt baut weiter.* → ✅ *Dessen ungeachtet **baut die Stadt** weiter.*
+- ❌ *Er hat insofern recht, weil …* → ✅ *Er hat insofern recht, **als** …*
+- ❌ Resmî hukuk metninde *nichtsdestotrotz* → *dessen ungeachtet* daha iyi.
+
+**Örnekler:**
+- Die Nachfrage sinkt; **dennoch** erhöht der Hersteller die Produktion. (Talep düşüyor; yine de üretici üretimi artırıyor.)
+- Das Projekt ist **insofern** riskant, **als** die Finanzierung unsicher ist. (Proje, finansmanın belirsiz olması bakımından riskli.)
+- **Nichtsdestotrotz** blicken wir optimistisch in die Zukunft. (Buna rağmen geleceğe iyimser bakıyoruz.)
+- **Ungeachtet** der Einwände wurde der Vertrag unterzeichnet. (İtirazlara bakılmaksızın sözleşme imzalandı.)`,
     },
   })
   await seedExercises({
@@ -35494,12 +35925,111 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit2.id,
       order: 1,
       grammarTopic: 'Nominalisierung von Verben',
-      explanationDe:
-        'Im gehobenen Nominalstil werden Verben zu Nomen: "entscheiden" -> "die Entscheidung", "durchführen" -> "die Durchführung". Das wirkt formeller als Verbalsätze.',
-      explanationEn:
-        'In elevated nominal style, verbs become nouns: "entscheiden" (to decide) -> "die Entscheidung" (the decision), "durchführen" (to carry out) -> "die Durchführung" (the execution). This reads more formally than verbal sentences.',
-      explanationTr:
-        'Üst düzey isim stilinde fiiller isimleşir: "entscheiden" (karar vermek) -> "die Entscheidung" (karar), "durchführen" (yürütmek) -> "die Durchführung" (yürütme). Bu, fiil cümlelerinden daha resmi görünür.',
+      explanationDe: `## Gehobener Nominalstil: Nominalisierung von Verben
+
+Auf C2-Niveau geht es nicht mehr nur darum, Verben in Nomen umzuwandeln, sondern ganze **Satzgefüge** in **kompakte Nominalgruppen** zu überführen – und umgekehrt. Das ist typisch für Gutachten, Gesetzestexte, Fachaufsätze und Leitartikel.
+
+### Von einfacher zu komplexer Nominalisierung
+| Verbalstil | einfacher Nominalstil | gehobener Nominalstil |
+| ---- | ---- | ---- |
+| Wir entscheiden. | die Entscheidung | die **Entscheidungsfindung** |
+| Man führt das Projekt durch. | die Durchführung des Projekts | die **projektbezogene Durchführung** |
+| Die Preise steigen stark. | der starke Anstieg der Preise | der **massive Preisanstieg** |
+| Weil man die Gesetze nicht einhielt, … | wegen der Nichteinhaltung der Gesetze | **aufgrund** der **Nichteinhaltung** gesetzlicher **Vorgaben** |
+
+### Mittel des gehobenen Nominalstils
+1. **Komposita**: *Preisanstieg, Entscheidungsprozess, Rahmenbedingungen*
+2. **Präfix „Nicht-"**: *Nichtbeachtung, Nichterfüllung, Nichtteilnahme*
+3. **Adjektivattribute statt Adverbien**: *schnell handeln → **rasches** Handeln*
+4. **Präpositionen mit Genitiv**: *aufgrund, infolge, hinsichtlich, mittels, zwecks, angesichts*
+5. **Partizipialattribute**: *die **zu treffenden** Maßnahmen*
+
+### Präpositionen des Nominalstils
+| Präposition | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| **angesichts** + G | wenn man … betrachtet | **Angesichts** der Lage … |
+| **infolge** + G | als Folge von | **Infolge** des Sturms … |
+| **hinsichtlich** + G | in Bezug auf | **Hinsichtlich** der Kosten … |
+| **mittels** + G | mit Hilfe von | **Mittels** neuer Verfahren … |
+| **zwecks** + G | zum Zweck | **Zwecks** Klärung … |
+| **seitens** + G | von Seiten | **Seitens** der Behörde … |
+
+**Beispiele:**
+- *Weil die Nachfrage plötzlich stark gestiegen ist, …* → ***Infolge** des **sprunghaften Nachfrageanstiegs** …*
+- *Wenn man bedenkt, dass sich das Klima wandelt, …* → ***Angesichts** des **Klimawandels** …*
+- *Damit man die Frage klärt, …* → ***Zwecks Klärung** der Frage …*
+- *Wer die Frist nicht einhält, …* → *Bei **Nichteinhaltung** der Frist …*
+- *Die Behörde hat erklärt, …* → ***Seitens** der Behörde wurde erklärt, …*`,
+      explanationEn: `## Elevated nominal style: nominalising verbs
+
+At C2 level it's no longer just about turning verbs into nouns, but about converting entire **clause structures** into **compact noun phrases** – and back again. This is typical of expert opinions, legislation, academic essays and editorials.
+
+### From simple to complex nominalisation
+| verbal style | simple nominal style | elevated nominal style |
+| ---- | ---- | ---- |
+| Wir entscheiden. (We decide.) | die Entscheidung (the decision) | die **Entscheidungsfindung** (the decision-making process) |
+| Man führt das Projekt durch. (The project is carried out.) | die Durchführung des Projekts | die **projektbezogene Durchführung** (project-related implementation) |
+| Die Preise steigen stark. (Prices are rising sharply.) | der starke Anstieg der Preise | der **massive Preisanstieg** (the massive price increase) |
+| Weil man die Gesetze nicht einhielt, … (Because the laws weren't observed …) | wegen der Nichteinhaltung der Gesetze | **aufgrund** der **Nichteinhaltung** gesetzlicher **Vorgaben** (owing to non-compliance with legal requirements) |
+
+### Devices of elevated nominal style
+1. **Compounds**: *Preisanstieg, Entscheidungsprozess, Rahmenbedingungen* (price rise, decision process, framework conditions)
+2. **Prefix "Nicht-"**: *Nichtbeachtung, Nichterfüllung, Nichtteilnahme* (non-observance, non-fulfilment, non-participation)
+3. **Adjective attributes instead of adverbs**: *schnell handeln → **rasches** Handeln* (act quickly → swift action)
+4. **Prepositions with genitive**: *aufgrund, infolge, hinsichtlich, mittels, zwecks, angesichts*
+5. **Participial attributes**: *die **zu treffenden** Maßnahmen* (the measures to be taken)
+
+### Prepositions of nominal style
+| preposition | meaning | example |
+| ---- | ---- | ---- |
+| **angesichts** + gen. | in view of | **Angesichts** der Lage … (In view of the situation …) |
+| **infolge** + gen. | as a result of | **Infolge** des Sturms … (As a result of the storm …) |
+| **hinsichtlich** + gen. | with regard to | **Hinsichtlich** der Kosten … (Regarding the costs …) |
+| **mittels** + gen. | by means of | **Mittels** neuer Verfahren … (By means of new procedures …) |
+| **zwecks** + gen. | for the purpose of | **Zwecks** Klärung … (For the purpose of clarification …) |
+| **seitens** + gen. | on the part of | **Seitens** der Behörde … (On the part of the authority …) |
+
+**Examples:**
+- *Weil die Nachfrage plötzlich stark gestiegen ist, …* → ***Infolge** des **sprunghaften Nachfrageanstiegs** …* (As a result of the sudden surge in demand …)
+- *Wenn man bedenkt, dass sich das Klima wandelt, …* → ***Angesichts** des **Klimawandels** …* (In view of climate change …)
+- *Damit man die Frage klärt, …* → ***Zwecks Klärung** der Frage …* (For the purpose of clarifying the question …)
+- *Wer die Frist nicht einhält, …* → *Bei **Nichteinhaltung** der Frist …* (In the event of failure to meet the deadline …)
+- *Die Behörde hat erklärt, …* → ***Seitens** der Behörde wurde erklärt, …* (It was stated on the part of the authority …)`,
+      explanationTr: `## Yüksek isim üslubu: fiillerin isimleştirilmesi
+
+C2 seviyesinde mesele yalnızca fiilleri isme çevirmek değil, bütün **cümle yapılarını** **yoğun isim öbeklerine** dönüştürmek – ve tersini yapabilmektir. Bu, bilirkişi raporlarına, yasa metinlerine, akademik makalelere ve başyazılara özgüdür.
+
+### Basit isimleştirmeden karmaşığa
+| fiil üslubu | basit isim üslubu | yüksek isim üslubu |
+| ---- | ---- | ---- |
+| Wir entscheiden. (Karar veriyoruz.) | die Entscheidung (karar) | die **Entscheidungsfindung** (karar alma süreci) |
+| Man führt das Projekt durch. (Proje yürütülüyor.) | die Durchführung des Projekts | die **projektbezogene Durchführung** (projeye yönelik yürütme) |
+| Die Preise steigen stark. (Fiyatlar çok artıyor.) | der starke Anstieg der Preise | der **massive Preisanstieg** (muazzam fiyat artışı) |
+| Weil man die Gesetze nicht einhielt, … (Yasalara uyulmadığı için …) | wegen der Nichteinhaltung der Gesetze | **aufgrund** der **Nichteinhaltung** gesetzlicher **Vorgaben** (yasal düzenlemelere uyulmaması nedeniyle) |
+
+### Yüksek isim üslubunun araçları
+1. **Bileşik isimler**: *Preisanstieg, Entscheidungsprozess, Rahmenbedingungen* (fiyat artışı, karar süreci, çerçeve koşullar)
+2. **„Nicht-" öneki**: *Nichtbeachtung, Nichterfüllung, Nichtteilnahme* (uyulmama, yerine getirilmeme, katılmama)
+3. **Zarf yerine sıfat**: *schnell handeln → **rasches** Handeln* (hızlı davranmak → hızlı eylem)
+4. **Genitiv alan edatlar**: *aufgrund, infolge, hinsichtlich, mittels, zwecks, angesichts*
+5. **Sıfat-fiil öbekleri**: *die **zu treffenden** Maßnahmen* (alınması gereken önlemler)
+
+### İsim üslubunun edatları
+| edat | anlamı | örnek |
+| ---- | ---- | ---- |
+| **angesichts** + G | … göz önüne alındığında | **Angesichts** der Lage … (Durum göz önüne alındığında …) |
+| **infolge** + G | … sonucunda | **Infolge** des Sturms … (Fırtına sonucunda …) |
+| **hinsichtlich** + G | … bakımından | **Hinsichtlich** der Kosten … (Maliyetler bakımından …) |
+| **mittels** + G | … aracılığıyla | **Mittels** neuer Verfahren … (Yeni yöntemler aracılığıyla …) |
+| **zwecks** + G | … amacıyla | **Zwecks** Klärung … (Açıklığa kavuşturmak amacıyla …) |
+| **seitens** + G | … tarafından | **Seitens** der Behörde … (Kurum tarafından …) |
+
+**Örnekler:**
+- *Weil die Nachfrage plötzlich stark gestiegen ist, …* → ***Infolge** des **sprunghaften Nachfrageanstiegs** …* (Talepteki ani artış sonucunda …)
+- *Wenn man bedenkt, dass sich das Klima wandelt, …* → ***Angesichts** des **Klimawandels** …* (İklim değişikliği göz önüne alındığında …)
+- *Damit man die Frage klärt, …* → ***Zwecks Klärung** der Frage …* (Sorunun açıklığa kavuşturulması amacıyla …)
+- *Wer die Frist nicht einhält, …* → *Bei **Nichteinhaltung** der Frist …* (Süreye uyulmaması hâlinde …)
+- *Die Behörde hat erklärt, …* → ***Seitens** der Behörde wurde erklärt, …* (Kurum tarafından açıklandı ki …)`,
     },
   })
   await seedExercises({
@@ -35528,12 +36058,144 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit2.id,
       order: 2,
       grammarTopic: 'Funktionsverbgefüge in formellen Texten',
-      explanationDe:
-        'Funktionsverbgefüge wie "zur Anwendung bringen" (statt "anwenden") oder "in Betracht ziehen" (statt "bedenken") sind typisch für Verwaltungs- und Fachsprache.',
-      explanationEn:
-        'Support-verb constructions like "zur Anwendung bringen" (instead of "anwenden" = to apply) or "in Betracht ziehen" (instead of "bedenken" = to consider) are typical of administrative and technical registers.',
-      explanationTr:
-        '"Zur Anwendung bringen" (uygulamak yerine) veya "in Betracht ziehen" (düşünmek yerine) gibi destek fiil yapıları idari ve teknik dil için tipiktir.',
+      explanationDe: `## Funktionsverbgefüge in formellen Texten
+
+Ein **Funktionsverbgefüge (FVG)** besteht aus einem **Nomen** (meist mit Präposition) und einem **Funktionsverb** (*bringen, kommen, stellen, nehmen, ziehen, finden, treffen* …), das seine eigentliche Bedeutung weitgehend verloren hat. Die **Bedeutung** trägt das **Nomen**.
+
+| Funktionsverbgefüge | einfaches Verb |
+| ---- | ---- |
+| zur Anwendung **bringen** / **kommen** | anwenden / angewendet werden |
+| in Betracht **ziehen** | bedenken, erwägen |
+| eine Entscheidung **treffen** | entscheiden |
+| zur Verfügung **stellen** | bereitstellen |
+| Kritik **üben** (an) | kritisieren |
+| in Kraft **treten** | gültig werden |
+| Anwendung **finden** | angewendet werden |
+| zum Abschluss **bringen** | abschließen |
+| in Frage **stellen** | bezweifeln |
+| Bezug **nehmen** (auf) | sich beziehen |
+| zur Diskussion **stellen** | diskutieren lassen |
+| unter Beweis **stellen** | beweisen |
+| in Erwägung **ziehen** | erwägen |
+
+### Warum Funktionsverbgefüge?
+1. **Formeller Ton** – typisch für Verwaltung, Recht, Wissenschaft.
+2. **Aktionsart / Nuancen**: Das FVG kann **Beginn**, **Verlauf** oder **Passiv** ausdrücken:
+   - *in Bewegung **setzen*** (beginnen lassen) – *in Bewegung **sein*** (Verlauf) – *in Bewegung **kommen*** (beginnen)
+   - *zur Sprache **bringen*** (aktiv) – *zur Sprache **kommen*** (passivisch: wird angesprochen)
+3. **Feste Kollokationen**, die im Fachtext erwartet werden.
+
+### Aktiv- und Passiv-Paare
+| aktiv (jemand bewirkt) | passivisch (etwas geschieht) |
+| ---- | ---- |
+| etwas zur Anwendung **bringen** | zur Anwendung **kommen** |
+| etwas zum Abschluss **bringen** | zum Abschluss **kommen** |
+| etwas in Gang **setzen** | in Gang **kommen** |
+| jemanden unter Druck **setzen** | unter Druck **stehen / geraten** |
+
+### Häufige Fehler
+- ❌ *eine Entscheidung machen* → ✅ *eine Entscheidung **treffen***
+- ❌ *in Betracht nehmen* → ✅ *in Betracht **ziehen***
+- ❌ *Kritik machen* → ✅ *Kritik **üben***
+
+**Beispiele:**
+- Das neue Verfahren **kommt** ab Januar **zur Anwendung**.
+- Wir **ziehen** auch andere Lösungen **in Betracht**.
+- Die Firma **stellt** den Mitarbeitern Laptops **zur Verfügung**.
+- Das Gesetz **tritt** am 1. Juli **in Kraft**.
+- Die Opposition **übte** scharfe **Kritik** an dem Vorschlag.`,
+      explanationEn: `## Light-verb constructions in formal texts
+
+A **light-verb construction** (Funktionsverbgefüge, FVG) consists of a **noun** (usually with a preposition) and a **function verb** (*bringen, kommen, stellen, nehmen, ziehen, finden, treffen* …) that has largely lost its own meaning. The **meaning** is carried by the **noun**.
+
+| light-verb construction | simple verb |
+| ---- | ---- |
+| zur Anwendung **bringen** / **kommen** (bring/come into use) | anwenden / angewendet werden (apply / be applied) |
+| in Betracht **ziehen** (take into consideration) | bedenken, erwägen (consider) |
+| eine Entscheidung **treffen** (make a decision) | entscheiden (decide) |
+| zur Verfügung **stellen** (make available) | bereitstellen (provide) |
+| Kritik **üben** (an) (voice criticism of) | kritisieren (criticise) |
+| in Kraft **treten** (come into force) | gültig werden (become valid) |
+| Anwendung **finden** (find application) | angewendet werden (be applied) |
+| zum Abschluss **bringen** (bring to a conclusion) | abschließen (conclude) |
+| in Frage **stellen** (call into question) | bezweifeln (doubt) |
+| Bezug **nehmen** (auf) (make reference to) | sich beziehen (refer to) |
+| zur Diskussion **stellen** (put up for discussion) | diskutieren lassen |
+| unter Beweis **stellen** (demonstrate) | beweisen (prove) |
+| in Erwägung **ziehen** (give consideration to) | erwägen (consider) |
+
+### Why light-verb constructions?
+1. **Formal tone** – typical of administration, law and academia.
+2. **Aspect / nuances**: an FVG can express **beginning**, **duration** or **passive**:
+   - *in Bewegung **setzen*** (set in motion) – *in Bewegung **sein*** (be in motion) – *in Bewegung **kommen*** (start moving)
+   - *zur Sprache **bringen*** (raise – active) – *zur Sprache **kommen*** (be raised – passive-like)
+3. **Fixed collocations** expected in specialist texts.
+
+### Active and passive pairs
+| active (someone causes) | passive-like (something happens) |
+| ---- | ---- |
+| etwas zur Anwendung **bringen** (put into use) | zur Anwendung **kommen** (be used) |
+| etwas zum Abschluss **bringen** (conclude) | zum Abschluss **kommen** (be concluded) |
+| etwas in Gang **setzen** (get going) | in Gang **kommen** (get under way) |
+| jemanden unter Druck **setzen** (put under pressure) | unter Druck **stehen / geraten** (be/come under pressure) |
+
+### Common mistakes
+- ❌ *eine Entscheidung machen* → ✅ *eine Entscheidung **treffen***
+- ❌ *in Betracht nehmen* → ✅ *in Betracht **ziehen***
+- ❌ *Kritik machen* → ✅ *Kritik **üben***
+
+**Examples:**
+- Das neue Verfahren **kommt** ab Januar **zur Anwendung**. (The new procedure will be applied from January.)
+- Wir **ziehen** auch andere Lösungen **in Betracht**. (We are also considering other solutions.)
+- Die Firma **stellt** den Mitarbeitern Laptops **zur Verfügung**. (The company provides employees with laptops.)
+- Das Gesetz **tritt** am 1. Juli **in Kraft**. (The law comes into force on 1 July.)
+- Die Opposition **übte** scharfe **Kritik** an dem Vorschlag. (The opposition sharply criticised the proposal.)`,
+      explanationTr: `## Resmî metinlerde işlev fiilli yapılar
+
+Bir **işlev fiilli yapı** (Funktionsverbgefüge, FVG), bir **isim** (çoğunlukla edatla) ve kendi anlamını büyük ölçüde yitirmiş bir **işlev fiilinden** (*bringen, kommen, stellen, nehmen, ziehen, finden, treffen* …) oluşur. **Anlamı isim** taşır (Türkçedeki „karar vermek", „yürürlüğe girmek" gibi).
+
+| işlev fiilli yapı | basit fiil |
+| ---- | ---- |
+| zur Anwendung **bringen** / **kommen** (uygulamaya koymak / uygulanmak) | anwenden / angewendet werden |
+| in Betracht **ziehen** (göz önünde bulundurmak) | bedenken, erwägen (düşünmek) |
+| eine Entscheidung **treffen** (karar vermek) | entscheiden |
+| zur Verfügung **stellen** (hizmete sunmak) | bereitstellen (sağlamak) |
+| Kritik **üben** (an) (eleştiri yöneltmek) | kritisieren |
+| in Kraft **treten** (yürürlüğe girmek) | gültig werden |
+| Anwendung **finden** (uygulama alanı bulmak) | angewendet werden |
+| zum Abschluss **bringen** (sonuçlandırmak) | abschließen |
+| in Frage **stellen** (sorgulamak) | bezweifeln (şüphe etmek) |
+| Bezug **nehmen** (auf) (atıfta bulunmak) | sich beziehen |
+| zur Diskussion **stellen** (tartışmaya açmak) | diskutieren lassen |
+| unter Beweis **stellen** (kanıtlamak) | beweisen |
+| in Erwägung **ziehen** (değerlendirmeye almak) | erwägen |
+
+### Neden işlev fiilli yapılar?
+1. **Resmî ton** – kamu yönetimi, hukuk ve bilim için tipiktir.
+2. **Eylem görünüşü / incelikler**: FVG **başlangıç**, **süreç** veya **edilgenlik** bildirebilir:
+   - *in Bewegung **setzen*** (harekete geçirmek) – *in Bewegung **sein*** (hareket hâlinde olmak) – *in Bewegung **kommen*** (harekete geçmek)
+   - *zur Sprache **bringen*** (gündeme getirmek – etken) – *zur Sprache **kommen*** (gündeme gelmek – edilgen anlam)
+3. Uzmanlık metinlerinde beklenen **kalıp birleşimler**.
+
+### Etken ve edilgen çiftler
+| etken (biri sağlar) | edilgen anlamlı (bir şey olur) |
+| ---- | ---- |
+| etwas zur Anwendung **bringen** (uygulamaya koymak) | zur Anwendung **kommen** (uygulanmak) |
+| etwas zum Abschluss **bringen** (sonuçlandırmak) | zum Abschluss **kommen** (sonuçlanmak) |
+| etwas in Gang **setzen** (başlatmak) | in Gang **kommen** (başlamak) |
+| jemanden unter Druck **setzen** (baskı altına almak) | unter Druck **stehen / geraten** (baskı altında olmak / kalmak) |
+
+### Sık yapılan hatalar
+- ❌ *eine Entscheidung machen* → ✅ *eine Entscheidung **treffen***
+- ❌ *in Betracht nehmen* → ✅ *in Betracht **ziehen***
+- ❌ *Kritik machen* → ✅ *Kritik **üben***
+
+**Örnekler:**
+- Das neue Verfahren **kommt** ab Januar **zur Anwendung**. (Yeni yöntem ocaktan itibaren uygulanacak.)
+- Wir **ziehen** auch andere Lösungen **in Betracht**. (Başka çözümleri de göz önünde bulunduruyoruz.)
+- Die Firma **stellt** den Mitarbeitern Laptops **zur Verfügung**. (Firma çalışanlara dizüstü bilgisayar sağlıyor.)
+- Das Gesetz **tritt** am 1. Juli **in Kraft**. (Yasa 1 Temmuz'da yürürlüğe giriyor.)
+- Die Opposition **übte** scharfe **Kritik** an dem Vorschlag. (Muhalefet öneriye sert eleştiriler yöneltti.)`,
     },
   })
   await seedExercises({
@@ -35562,12 +36224,131 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit2.id,
       order: 3,
       grammarTopic: 'Genitivketten',
-      explanationDe:
-        'Im gehobenen Nominalstil reihen sich mehrere Genitive aneinander: "die Erhöhung der Effizienz der Produktion des Unternehmens". Das ist formell, aber schwer lesbar in Übermaß.',
-      explanationEn:
-        'Elevated nominal style often chains multiple genitives: "die Erhöhung der Effizienz der Produktion des Unternehmens" (the increase of the efficiency of the production of the company). Formal, but hard to read in excess.',
-      explanationTr:
-        'Üst düzey isim stilinde birden çok tamlayan hali art arda gelir: "die Erhöhung der Effizienz der Produktion des Unternehmens". Resmidir ama aşırı kullanımda okunması zordur.',
+      explanationDe: `## Genitivketten
+
+Im gehobenen Nominalstil werden oft **mehrere Genitivattribute aneinandergereiht**. Jedes Genitivattribut bestimmt das **vorherige Nomen** näher.
+
+> die Erhöhung **der Effizienz** **der Produktion** **des Unternehmens**
+
+**Lesen von hinten nach vorn:** das Unternehmen → seine Produktion → deren Effizienz → deren Erhöhung.
+
+### Aufbau einer Genitivkette
+| Stufe | Nominalgruppe |
+| ---- | ---- |
+| 1 | die Verbesserung |
+| 2 | die Verbesserung **der Qualität** |
+| 3 | die Verbesserung der Qualität **der Ausbildung** |
+| 4 | die Verbesserung der Qualität der Ausbildung **junger Fachkräfte** |
+
+### Wann wird es zu viel?
+Zwei Genitive sind oft gut lesbar, **drei und mehr** werden schnell schwerfällig („Behördendeutsch"). Gute Schreiber **lösen** lange Ketten **auf**.
+
+### Strategien zur Auflösung
+| Strategie | Beispiel |
+| ---- | ---- |
+| **Kompositum** bilden | die Effizienz der Produktion → die **Produktionseffizienz** |
+| **Präposition** statt Genitiv | die Kosten **für** die Sanierung der Schulen |
+| **Adjektiv** statt Genitiv | die Politik der Regierung → die **staatliche** Politik |
+| **Relativsatz** | die Qualität der Ausbildung, **die** junge Fachkräfte erhalten |
+| **Verbalstil** | *Das Unternehmen will **effizienter produzieren**.* |
+
+**Vorher:** *die Erhöhung der Effizienz der Produktion des Unternehmens*
+**Nachher:** *die Steigerung der **Produktionseffizienz** des Unternehmens* oder *Das Unternehmen will **effizienter produzieren**.*
+
+### Genitiv ohne Artikel: „von" als Ersatz
+Wenn kein Artikel/Adjektiv den Genitiv anzeigt, nimmt man **von**:
+- ❌ *der Import Autos* → ✅ *der Import **von** Autos*
+- ✅ *der Import **ausländischer** Autos* (Adjektiv zeigt Genitiv → möglich)
+
+**Beispiele:**
+- *die Bewertung der Ergebnisse der Studie* → *die Bewertung der **Studienergebnisse***
+- *die Analyse der Ursachen des Rückgangs der Geburtenrate* → *die Analyse der Ursachen für die **sinkende Geburtenrate***
+- *der Beginn der Bauarbeiten des neuen Bahnhofs* → *der **Baubeginn** des neuen Bahnhofs*
+- *Die Zahl der Teilnehmer **der** Konferenz* → *die **Teilnehmerzahl** der Konferenz*`,
+      explanationEn: `## Genitive chains
+
+In elevated nominal style, **several genitive attributes are often strung together**. Each genitive attribute specifies the **preceding noun**.
+
+> die Erhöhung **der Effizienz** **der Produktion** **des Unternehmens**
+> (the increase of the efficiency of the production of the company)
+
+**Read from back to front:** the company → its production → that production's efficiency → the increase of that efficiency.
+
+### Building a genitive chain
+| step | noun phrase |
+| ---- | ---- |
+| 1 | die Verbesserung (the improvement) |
+| 2 | die Verbesserung **der Qualität** (… of quality) |
+| 3 | die Verbesserung der Qualität **der Ausbildung** (… of training) |
+| 4 | die Verbesserung der Qualität der Ausbildung **junger Fachkräfte** (… of young skilled workers) |
+
+### When is it too much?
+Two genitives are often easy to read; **three or more** quickly become clumsy ("officialese"). Good writers **break up** long chains.
+
+### Strategies for breaking up chains
+| strategy | example |
+| ---- | ---- |
+| form a **compound** | die Effizienz der Produktion → die **Produktionseffizienz** (production efficiency) |
+| **preposition** instead of genitive | die Kosten **für** die Sanierung der Schulen (the costs for renovating the schools) |
+| **adjective** instead of genitive | die Politik der Regierung → die **staatliche** Politik (government policy) |
+| **relative clause** | die Qualität der Ausbildung, **die** junge Fachkräfte erhalten (the quality of training that young workers receive) |
+| **verbal style** | *Das Unternehmen will **effizienter produzieren**.* (The company wants to produce more efficiently.) |
+
+**Before:** *die Erhöhung der Effizienz der Produktion des Unternehmens*
+**After:** *die Steigerung der **Produktionseffizienz** des Unternehmens* or *Das Unternehmen will **effizienter produzieren**.*
+
+### Genitive without an article: "von" as a substitute
+If no article/adjective marks the genitive, use **von**:
+- ❌ *der Import Autos* → ✅ *der Import **von** Autos* (the import of cars)
+- ✅ *der Import **ausländischer** Autos* (the adjective marks the genitive → possible)
+
+**Examples:**
+- *die Bewertung der Ergebnisse der Studie* → *die Bewertung der **Studienergebnisse*** (the evaluation of the study results)
+- *die Analyse der Ursachen des Rückgangs der Geburtenrate* → *die Analyse der Ursachen für die **sinkende Geburtenrate*** (the analysis of the causes of the falling birth rate)
+- *der Beginn der Bauarbeiten des neuen Bahnhofs* → *der **Baubeginn** des neuen Bahnhofs* (the start of construction of the new station)
+- *die Zahl der Teilnehmer der Konferenz* → *die **Teilnehmerzahl** der Konferenz* (the number of conference participants)`,
+      explanationTr: `## Genitiv zincirleri
+
+Yüksek isim üslubunda çoğu zaman **birden fazla Genitiv tamlaması art arda dizilir**. Her Genitiv tamlaması **bir önceki ismi** niteler.
+
+> die Erhöhung **der Effizienz** **der Produktion** **des Unternehmens**
+> (şirketin üretiminin verimliliğinin artırılması)
+
+**Sondan başa doğru okuyun:** şirket → üretimi → üretimin verimliliği → verimliliğin artırılması. (Türkçede tamlamalar zaten bu sırayla kurulur!)
+
+### Bir Genitiv zinciri kurmak
+| aşama | isim öbeği |
+| ---- | ---- |
+| 1 | die Verbesserung (iyileştirme) |
+| 2 | die Verbesserung **der Qualität** (kalitenin iyileştirilmesi) |
+| 3 | die Verbesserung der Qualität **der Ausbildung** (eğitimin kalitesinin iyileştirilmesi) |
+| 4 | die Verbesserung der Qualität der Ausbildung **junger Fachkräfte** (genç uzmanların eğitiminin kalitesinin iyileştirilmesi) |
+
+### Ne zaman fazla olur?
+İki Genitiv genellikle kolay okunur; **üç ve daha fazlası** çabucak hantallaşır („bürokrat dili"). İyi yazarlar uzun zincirleri **çözer**.
+
+### Zinciri çözme stratejileri
+| strateji | örnek |
+| ---- | ---- |
+| **bileşik isim** kurmak | die Effizienz der Produktion → die **Produktionseffizienz** (üretim verimliliği) |
+| Genitiv yerine **edat** | die Kosten **für** die Sanierung der Schulen (okulların onarımı için maliyetler) |
+| Genitiv yerine **sıfat** | die Politik der Regierung → die **staatliche** Politik (devlet politikası) |
+| **ilgi cümlesi** | die Qualität der Ausbildung, **die** junge Fachkräfte erhalten (genç uzmanların aldığı eğitimin kalitesi) |
+| **fiil üslubu** | *Das Unternehmen will **effizienter produzieren**.* (Şirket daha verimli üretmek istiyor.) |
+
+**Önce:** *die Erhöhung der Effizienz der Produktion des Unternehmens*
+**Sonra:** *die Steigerung der **Produktionseffizienz** des Unternehmens* veya *Das Unternehmen will **effizienter produzieren**.*
+
+### Artikelsiz Genitiv: yerine „von"
+Genitiv'i bir artikel/sıfat göstermiyorsa **von** kullanılır:
+- ❌ *der Import Autos* → ✅ *der Import **von** Autos* (araba ithalatı)
+- ✅ *der Import **ausländischer** Autos* (sıfat Genitiv'i gösteriyor → mümkün)
+
+**Örnekler:**
+- *die Bewertung der Ergebnisse der Studie* → *die Bewertung der **Studienergebnisse*** (çalışma sonuçlarının değerlendirilmesi)
+- *die Analyse der Ursachen des Rückgangs der Geburtenrate* → *die Analyse der Ursachen für die **sinkende Geburtenrate*** (düşen doğum oranının nedenlerinin analizi)
+- *der Beginn der Bauarbeiten des neuen Bahnhofs* → *der **Baubeginn** des neuen Bahnhofs* (yeni garın inşaatının başlaması)
+- *die Zahl der Teilnehmer der Konferenz* → *die **Teilnehmerzahl** der Konferenz* (konferansın katılımcı sayısı)`,
     },
   })
   await seedExercises({
@@ -35596,12 +36377,120 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit2.id,
       order: 4,
       grammarTopic: 'Übung: Nominalstil vs. Verbalstil',
-      explanationDe:
-        'Wiederholung: Verbalstil ist lebendiger und leichter verständlich, Nominalstil klingt formeller und distanzierter. Gute Texte mischen beide bewusst.',
-      explanationEn:
-        'Review: verbal style is livelier and easier to understand; nominal style sounds more formal and detached. Good writing consciously mixes both.',
-      explanationTr:
-        'Tekrar: fiil stili daha canlı ve anlaşılırdır, isim stili daha resmi ve mesafeli görünür. İyi metinler ikisini bilinçli olarak karıştırır.',
+      explanationDe: `## Übung: Nominalstil vs. Verbalstil – Zusammenfassung
+
+Der **Verbalstil** ist **lebendiger und leichter verständlich**, der **Nominalstil** klingt **formeller, sachlicher und distanzierter**. Meisterhafte Texte **mischen beide bewusst** – je nach Funktion des Satzes.
+
+### Wann welcher Stil?
+| Textsorte / Funktion | bevorzugter Stil |
+| ---- | ---- |
+| Gesetz, Vertrag, Bescheid | stark nominal |
+| wissenschaftlicher Aufsatz | nominal, mit verbalen Erklärungen |
+| Zeitungsbericht, Schlagzeile | nominal (Schlagzeile), gemischt (Text) |
+| Essay, Kommentar | gemischt, eher verbal |
+| Erzählung, Rede, E-Mail | verbal |
+
+### Umformungen in beide Richtungen
+| Verbalstil | Nominalstil |
+| ---- | ---- |
+| Weil die Kosten gestiegen sind, … | Aufgrund **gestiegener Kosten** … |
+| Wenn man den Vertrag kündigt, … | Bei **Kündigung** des Vertrags … |
+| Nachdem das Gesetz verabschiedet worden war, … | Nach **Verabschiedung** des Gesetzes … |
+| Damit die Umwelt geschützt wird, … | **Zum Schutz** der Umwelt … |
+| Indem man Energie spart, … | **Durch Energieeinsparung** … |
+| Obwohl man sich sehr bemüht hat, … | **Trotz intensiver Bemühungen** … |
+| Solange die Bauarbeiten dauern, … | **Für die Dauer** der Bauarbeiten … |
+
+### Nominalstil-Werkzeuge im Überblick
+- **-ung / -heit / -keit / -ion / substantivierter Infinitiv**
+- **Genitivattribute** (sparsam!) und **Komposita**
+- **Präpositionen**: *aufgrund, infolge, angesichts, hinsichtlich, zwecks, mittels*
+- **Funktionsverbgefüge**: *in Kraft treten, zur Anwendung kommen*
+- **Partizipialattribute**: *die **zu erwartenden** Kosten*
+
+### Stilregel für gute Texte
+> **So viel Nominalstil wie nötig, so viel Verbalstil wie möglich.**
+
+**Beispiele:**
+- *Die Inbetriebnahme der Anlage erfolgt nach Abschluss der Prüfung.* ↔ *Die Anlage wird in Betrieb genommen, sobald die Prüfung abgeschlossen ist.*
+- *Angesichts der Dringlichkeit …* ↔ *Weil die Sache dringend ist, …*
+- *Zwecks Vermeidung von Missverständnissen …* ↔ *Um Missverständnisse zu vermeiden, …*`,
+      explanationEn: `## Practice: nominal vs. verbal style – summary
+
+**Verbal style** is **livelier and easier to understand**; **nominal style** sounds **more formal, objective and detached**. Masterful texts **mix both deliberately** – depending on the function of the sentence.
+
+### Which style when?
+| text type / function | preferred style |
+| ---- | ---- |
+| law, contract, official notice | strongly nominal |
+| academic paper | nominal, with verbal explanations |
+| news report, headline | nominal (headline), mixed (body) |
+| essay, commentary | mixed, rather verbal |
+| story, speech, e-mail | verbal |
+
+### Conversions in both directions
+| verbal style | nominal style |
+| ---- | ---- |
+| Weil die Kosten gestiegen sind, … (Because costs have risen …) | Aufgrund **gestiegener Kosten** … (Owing to increased costs …) |
+| Wenn man den Vertrag kündigt, … (If you terminate the contract …) | Bei **Kündigung** des Vertrags … (Upon termination of the contract …) |
+| Nachdem das Gesetz verabschiedet worden war, … (After the law had been passed …) | Nach **Verabschiedung** des Gesetzes … (After the passing of the law …) |
+| Damit die Umwelt geschützt wird, … (So that the environment is protected …) | **Zum Schutz** der Umwelt … (For the protection of the environment …) |
+| Indem man Energie spart, … (By saving energy …) | **Durch Energieeinsparung** … (Through energy savings …) |
+| Obwohl man sich sehr bemüht hat, … (Although great efforts were made …) | **Trotz intensiver Bemühungen** … (Despite intensive efforts …) |
+| Solange die Bauarbeiten dauern, … (As long as construction lasts …) | **Für die Dauer** der Bauarbeiten … (For the duration of construction …) |
+
+### Nominal-style tools at a glance
+- **-ung / -heit / -keit / -ion / nominalised infinitive**
+- **genitive attributes** (sparingly!) and **compounds**
+- **prepositions**: *aufgrund, infolge, angesichts, hinsichtlich, zwecks, mittels*
+- **light-verb constructions**: *in Kraft treten, zur Anwendung kommen*
+- **participial attributes**: *die **zu erwartenden** Kosten* (the expected costs)
+
+### Style rule for good texts
+> **As much nominal style as necessary, as much verbal style as possible.**
+
+**Examples:**
+- *Die Inbetriebnahme der Anlage erfolgt nach Abschluss der Prüfung.* ↔ *Die Anlage wird in Betrieb genommen, sobald die Prüfung abgeschlossen ist.* (The plant will be put into operation once the inspection is complete.)
+- *Angesichts der Dringlichkeit …* ↔ *Weil die Sache dringend ist, …* (Given the urgency … / Because the matter is urgent …)
+- *Zwecks Vermeidung von Missverständnissen …* ↔ *Um Missverständnisse zu vermeiden, …* (To avoid misunderstandings …)`,
+      explanationTr: `## Alıştırma: İsim üslubu – fiil üslubu – özet
+
+**Fiil üslubu** **daha canlı ve daha kolay anlaşılır**; **isim üslubu** ise **daha resmî, nesnel ve mesafeli** durur. Usta işi metinler, cümlenin işlevine göre **ikisini bilinçli olarak karıştırır**.
+
+### Hangi üslup ne zaman?
+| metin türü / işlev | tercih edilen üslup |
+| ---- | ---- |
+| yasa, sözleşme, resmî karar | güçlü isim üslubu |
+| bilimsel makale | isim üslubu, fiil üslubunda açıklamalarla |
+| haber, manşet | isim (manşet), karışık (metin) |
+| deneme, yorum | karışık, daha çok fiil |
+| anlatı, konuşma, e-posta | fiil üslubu |
+
+### Her iki yönde dönüşümler
+| fiil üslubu | isim üslubu |
+| ---- | ---- |
+| Weil die Kosten gestiegen sind, … (Maliyetler arttığı için …) | Aufgrund **gestiegener Kosten** … (Artan maliyetler nedeniyle …) |
+| Wenn man den Vertrag kündigt, … (Sözleşme feshedilirse …) | Bei **Kündigung** des Vertrags … (Sözleşmenin feshi hâlinde …) |
+| Nachdem das Gesetz verabschiedet worden war, … (Yasa kabul edildikten sonra …) | Nach **Verabschiedung** des Gesetzes … (Yasanın kabulünden sonra …) |
+| Damit die Umwelt geschützt wird, … (Çevre korunsun diye …) | **Zum Schutz** der Umwelt … (Çevrenin korunması için …) |
+| Indem man Energie spart, … (Enerji tasarrufu yaparak …) | **Durch Energieeinsparung** … (Enerji tasarrufu yoluyla …) |
+| Obwohl man sich sehr bemüht hat, … (Çok çaba gösterilmesine rağmen …) | **Trotz intensiver Bemühungen** … (Yoğun çabalara rağmen …) |
+| Solange die Bauarbeiten dauern, … (İnşaat sürdüğü müddetçe …) | **Für die Dauer** der Bauarbeiten … (İnşaat süresince …) |
+
+### İsim üslubu araçları bir bakışta
+- **-ung / -heit / -keit / -ion / isimleştirilmiş mastar**
+- **Genitiv tamlamaları** (ölçülü!) ve **bileşik isimler**
+- **edatlar**: *aufgrund, infolge, angesichts, hinsichtlich, zwecks, mittels*
+- **işlev fiilli yapılar**: *in Kraft treten, zur Anwendung kommen*
+- **sıfat-fiil öbekleri**: *die **zu erwartenden** Kosten* (beklenen maliyetler)
+
+### İyi metinler için üslup kuralı
+> **Gerektiği kadar isim üslubu, mümkün olduğu kadar fiil üslubu.**
+
+**Örnekler:**
+- *Die Inbetriebnahme der Anlage erfolgt nach Abschluss der Prüfung.* ↔ *Die Anlage wird in Betrieb genommen, sobald die Prüfung abgeschlossen ist.* (Tesis, denetim tamamlanır tamamlanmaz işletmeye alınacak.)
+- *Angesichts der Dringlichkeit …* ↔ *Weil die Sache dringend ist, …* (Aciliyet göz önüne alındığında … / Mesele acil olduğu için …)
+- *Zwecks Vermeidung von Missverständnissen …* ↔ *Um Missverständnisse zu vermeiden, …* (Yanlış anlamaları önlemek için …)`,
     },
   })
   await seedExercises({
@@ -35648,12 +36537,123 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit3.id,
       order: 1,
       grammarTopic: 'Metapher und Vergleich',
-      explanationDe:
-        'Eine Metapher überträgt Bedeutung bildlich, ohne "wie": "Die Zeit ist ein Dieb." Ein Vergleich benutzt "wie": "Er ist schnell wie der Wind."',
-      explanationEn:
-        'A metaphor transfers meaning figuratively without "like/as": "Die Zeit ist ein Dieb" (Time is a thief). A simile uses "wie" (like/as): "Er ist schnell wie der Wind" (He is fast as the wind).',
-      explanationTr:
-        'Metafor, "gibi" olmadan anlamı mecazi olarak aktarır: "Die Zeit ist ein Dieb" (Zaman bir hırsızdır). Benzetme "wie" (gibi) kullanır: "Er ist schnell wie der Wind".',
+      explanationDe: `## Metapher und Vergleich
+
+Beide Stilmittel übertragen eine Vorstellung von einem Bereich auf einen anderen, um etwas **anschaulich** und **einprägsam** zu machen.
+
+| | Vergleich | Metapher |
+| ---- | ---- | ---- |
+| **Form** | mit **wie** / **als ob** / **gleich** | **ohne** Vergleichswort |
+| **Beispiel** | Er ist schnell **wie** der Wind. | Er ist **ein Blitz**. |
+| **Wirkung** | explizit, leicht verständlich | verdichtet, stärker, kreativer |
+
+### Vergleich
+- *Sie schläft **wie ein Murmeltier**.* (sehr tief)
+- *Er ist stark **wie ein Bär**.*
+- *Das Zimmer sah aus, **als ob** eine Bombe eingeschlagen hätte.*
+- *Ihre Augen glänzten **wie** Sterne.*
+
+### Metapher
+Bei der Metapher wird das Vergleichswort weggelassen – das Bild **ersetzt** den Begriff:
+- ***Die Zeit ist ein Dieb.*** (Die Zeit „stiehlt" unser Leben.)
+- *Er hat **ein Herz aus Stein**.* (Er ist gefühllos.)
+- *Wir stehen **am Scheideweg**.* (Wir müssen uns entscheiden.)
+- ***Das Meer der Möglichkeiten*** (sehr viele Möglichkeiten)
+- *Sie ist **die Seele** des Unternehmens.* (die wichtigste Person)
+
+### Alltagsmetaphern – oft nicht mehr bemerkt
+Viele Metaphern sind so üblich, dass wir sie nicht mehr als Bilder wahrnehmen („tote Metaphern"):
+- *der **Flaschenhals*** (Engpass), *das **Tischbein***, *der **Fuß** des Berges*
+- *eine **Flut** von E-Mails*, *ein **Berg** von Arbeit*
+- *die Preise **explodieren***, *die Kurse **stürzen ab***
+
+### Verwandte Mittel
+- **Personifikation**: Dinge/Tiere handeln wie Menschen – *Die Sonne **lacht**. Der Wind **flüstert**.*
+- **Allegorie**: eine ganze Geschichte als Bild – *Justitia mit Waage und Augenbinde* (Gerechtigkeit)
+
+**Beispiele:**
+- *Bildung ist **der Schlüssel** zum Erfolg.* (Metapher)
+- *Er kämpfte **wie ein Löwe**.* (Vergleich)
+- *Die Stadt **schläft** noch.* (Personifikation)
+- *Die Wirtschaft befindet sich **im freien Fall**.* (Metapher)`,
+      explanationEn: `## Metaphor and simile
+
+Both stylistic devices transfer an idea from one area to another to make something **vivid** and **memorable**.
+
+| | simile (Vergleich) | metaphor (Metapher) |
+| ---- | ---- | ---- |
+| **form** | with **wie** / **als ob** / **gleich** (like, as if) | **without** a comparison word |
+| **example** | Er ist schnell **wie** der Wind. (He is as fast as the wind.) | Er ist **ein Blitz**. (He is lightning.) |
+| **effect** | explicit, easy to understand | condensed, stronger, more creative |
+
+### Simile
+- *Sie schläft **wie ein Murmeltier**.* (She sleeps like a marmot = like a log.)
+- *Er ist stark **wie ein Bär**.* (He is as strong as a bear.)
+- *Das Zimmer sah aus, **als ob** eine Bombe eingeschlagen hätte.* (The room looked as if a bomb had hit it.)
+- *Ihre Augen glänzten **wie** Sterne.* (Her eyes shone like stars.)
+
+### Metaphor
+In a metaphor the comparison word is omitted – the image **replaces** the concept:
+- ***Die Zeit ist ein Dieb.*** (Time is a thief – it "steals" our life.)
+- *Er hat **ein Herz aus Stein**.* (He has a heart of stone – he is unfeeling.)
+- *Wir stehen **am Scheideweg**.* (We are at a crossroads – we must decide.)
+- ***Das Meer der Möglichkeiten*** (the sea of possibilities – very many options)
+- *Sie ist **die Seele** des Unternehmens.* (She is the soul of the company – the most important person.)
+
+### Everyday metaphors – often no longer noticed
+Many metaphors are so common that we no longer perceive them as images ("dead metaphors"):
+- *der **Flaschenhals*** (bottleneck), *das **Tischbein*** (table leg), *der **Fuß** des Berges* (foot of the mountain)
+- *eine **Flut** von E-Mails* (a flood of e-mails), *ein **Berg** von Arbeit* (a mountain of work)
+- *die Preise **explodieren*** (prices explode), *die Kurse **stürzen ab*** (share prices crash)
+
+### Related devices
+- **Personification**: things/animals act like people – *Die Sonne **lacht**. Der Wind **flüstert**.* (The sun is smiling. The wind whispers.)
+- **Allegory**: a whole story as an image – *Justitia mit Waage und Augenbinde* (Lady Justice with scales and blindfold = justice)
+
+**Examples:**
+- *Bildung ist **der Schlüssel** zum Erfolg.* (Education is the key to success – metaphor)
+- *Er kämpfte **wie ein Löwe**.* (He fought like a lion – simile)
+- *Die Stadt **schläft** noch.* (The city is still sleeping – personification)
+- *Die Wirtschaft befindet sich **im freien Fall**.* (The economy is in free fall – metaphor)`,
+      explanationTr: `## Metafor ve benzetme
+
+Her iki üslup aracı da bir şeyi **canlı** ve **akılda kalıcı** kılmak için bir alandaki imgeyi başka bir alana aktarır.
+
+| | benzetme (Vergleich) | metafor / istiare (Metapher) |
+| ---- | ---- | ---- |
+| **biçim** | **wie** / **als ob** / **gleich** ile (gibi, sanki) | benzetme edatı **olmadan** |
+| **örnek** | Er ist schnell **wie** der Wind. (Rüzgâr gibi hızlı.) | Er ist **ein Blitz**. (O bir şimşek.) |
+| **etki** | açık, kolay anlaşılır | yoğun, daha güçlü, daha yaratıcı |
+
+### Benzetme
+- *Sie schläft **wie ein Murmeltier**.* (Dağ sıçanı gibi uyuyor = ölü gibi uyuyor.)
+- *Er ist stark **wie ein Bär**.* (Ayı gibi güçlü.)
+- *Das Zimmer sah aus, **als ob** eine Bombe eingeschlagen hätte.* (Oda sanki bomba düşmüş gibi görünüyordu.)
+- *Ihre Augen glänzten **wie** Sterne.* (Gözleri yıldızlar gibi parlıyordu.)
+
+### Metafor
+Metaforda benzetme edatı atlanır – imge kavramın **yerini alır**:
+- ***Die Zeit ist ein Dieb.*** (Zaman bir hırsızdır – hayatımızı „çalar".)
+- *Er hat **ein Herz aus Stein**.* (Taş kalpli – duygusuz.)
+- *Wir stehen **am Scheideweg**.* (Yol ayrımındayız – karar vermeliyiz.)
+- ***Das Meer der Möglichkeiten*** (olanaklar denizi – çok sayıda seçenek)
+- *Sie ist **die Seele** des Unternehmens.* (O şirketin ruhu – en önemli kişi.)
+
+### Günlük metaforlar – çoğu zaman artık fark edilmez
+Birçok metafor o kadar yaygındır ki onları artık imge olarak algılamayız („ölü metaforlar"):
+- *der **Flaschenhals*** (darboğaz), *das **Tischbein*** (masa ayağı), *der **Fuß** des Berges* (dağın eteği)
+- *eine **Flut** von E-Mails* (e-posta seli), *ein **Berg** von Arbeit* (bir yığın iş)
+- *die Preise **explodieren*** (fiyatlar patlıyor), *die Kurse **stürzen ab*** (borsa çöküyor)
+
+### İlgili araçlar
+- **Kişileştirme**: Nesneler/hayvanlar insan gibi davranır – *Die Sonne **lacht**. Der Wind **flüstert**.* (Güneş gülümsüyor. Rüzgâr fısıldıyor.)
+- **Alegori**: bütün bir hikâye imge olarak – *Justitia mit Waage und Augenbinde* (Terazi ve göz bağıyla adalet tanrıçası = adalet)
+
+**Örnekler:**
+- *Bildung ist **der Schlüssel** zum Erfolg.* (Eğitim başarının anahtarıdır – metafor)
+- *Er kämpfte **wie ein Löwe**.* (Aslan gibi savaştı – benzetme)
+- *Die Stadt **schläft** noch.* (Şehir henüz uyuyor – kişileştirme)
+- *Die Wirtschaft befindet sich **im freien Fall**.* (Ekonomi serbest düşüşte – metafor)`,
     },
   })
   await seedExercises({
@@ -35682,12 +36682,102 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit3.id,
       order: 2,
       grammarTopic: 'Anapher und Wiederholung',
-      explanationDe:
-        'Eine Anapher wiederholt ein Wort oder eine Phrase am Anfang aufeinanderfolgender Sätze, um Nachdruck zu erzeugen: "Wir werden kämpfen. Wir werden gewinnen. Wir werden nicht aufgeben."',
-      explanationEn:
-        'An anaphora repeats a word or phrase at the start of successive sentences for emphasis: "Wir werden kämpfen. Wir werden gewinnen. Wir werden nicht aufgeben." (We will fight. We will win. We will not give up.)',
-      explanationTr:
-        'Anafor, vurgu yaratmak için ardışık cümlelerin başında bir kelime veya öbeği tekrarlar: "Wir werden kämpfen. Wir werden gewinnen. Wir werden nicht aufgeben."',
+      explanationDe: `## Anapher und Wiederholung
+
+Die **Anapher** wiederholt ein **Wort oder eine Wortgruppe am Anfang** aufeinanderfolgender Sätze oder Satzteile. Sie erzeugt **Rhythmus, Nachdruck und Eindringlichkeit** – ein Lieblingsmittel politischer Reden.
+
+> ***Wir werden** kämpfen. **Wir werden** gewinnen. **Wir werden** nicht aufgeben.*
+
+### Wirkung
+| Wirkung | Beispiel |
+| ---- | ---- |
+| **Betonung** einer Idee | ***Nie wieder** Krieg, **nie wieder** Hass, **nie wieder** Gewalt!* |
+| **Steigerung** (Klimax) | ***Jeder** Bürger, **jede** Familie, **jede** Stadt ist betroffen.* |
+| **Einprägsamkeit** | ***Wer** arbeitet, soll essen. **Wer** nicht arbeitet, …* |
+| **emotionale Wirkung** | ***Ich** habe gewartet, **ich** habe gehofft, **ich** habe geglaubt.* |
+
+### Verwandte Wiederholungsfiguren
+| Figur | Position der Wiederholung | Beispiel |
+| ---- | ---- | ---- |
+| **Anapher** | am **Anfang** | ***Das** Wasser rauscht, **das** Wasser schwoll.* (Goethe) |
+| **Epipher** | am **Ende** | *Ihr sollt frei sein, ihr wollt **frei sein**, ihr werdet **frei sein**.* |
+| **Parallelismus** | gleicher **Satzbau** | *Heiß ist der Tag, kühl ist die Nacht.* |
+| **Trikolon** | **Dreierfigur** | *Ich kam, ich sah, ich siegte.* |
+| **Klimax** | **Steigerung** | *Er lachte, er jubelte, er tanzte vor Freude.* |
+| **Chiasmus** | **Überkreuzung** (A-B-B-A) | *Die Kunst ist lang, und kurz ist unser Leben.* |
+
+### Anapher vs. stilistischer Fehler
+Eine Wiederholung ist ein **Stilmittel**, wenn sie **bewusst** und **wirkungsvoll** eingesetzt wird. Zufällige Wiederholungen („*Dann … dann … dann …*") sind dagegen ein **Stilfehler**.
+
+**Beispiele:**
+- ***Mit** Mut, **mit** Hoffnung, **mit** Entschlossenheit gehen wir voran.*
+- ***Es geht** um unsere Kinder. **Es geht** um unsere Zukunft. **Es geht** um alles.*
+- ***Jeder** Tag zählt, **jede** Stunde zählt, **jede** Minute zählt.*
+- *Gemeinsam haben wir begonnen, gemeinsam haben wir gekämpft, gemeinsam werden wir es schaffen.*`,
+      explanationEn: `## Anaphora and repetition
+
+**Anaphora** repeats a **word or phrase at the beginning** of successive sentences or clauses. It creates **rhythm, emphasis and urgency** – a favourite device of political speeches.
+
+> ***Wir werden** kämpfen. **Wir werden** gewinnen. **Wir werden** nicht aufgeben.* (We will fight. We will win. We will not give up.)
+
+### Effect
+| effect | example |
+| ---- | ---- |
+| **emphasising** an idea | ***Nie wieder** Krieg, **nie wieder** Hass, **nie wieder** Gewalt!* (Never again war, never again hate, never again violence!) |
+| **intensification** (climax) | ***Jeder** Bürger, **jede** Familie, **jede** Stadt ist betroffen.* (Every citizen, every family, every city is affected.) |
+| **memorability** | ***Wer** arbeitet, soll essen. **Wer** nicht arbeitet, …* (Whoever works shall eat. Whoever does not work …) |
+| **emotional impact** | ***Ich** habe gewartet, **ich** habe gehofft, **ich** habe geglaubt.* (I waited, I hoped, I believed.) |
+
+### Related figures of repetition
+| figure | position of repetition | example |
+| ---- | ---- | ---- |
+| **anaphora** | at the **beginning** | ***Das** Wasser rauscht, **das** Wasser schwoll.* (Goethe) |
+| **epiphora** | at the **end** | *Ihr sollt frei sein, ihr wollt **frei sein**, ihr werdet **frei sein**.* (You shall be free, you want to be free, you will be free.) |
+| **parallelism** | same **structure** | *Heiß ist der Tag, kühl ist die Nacht.* (Hot is the day, cool is the night.) |
+| **tricolon** | **group of three** | *Ich kam, ich sah, ich siegte.* (I came, I saw, I conquered.) |
+| **climax** | **escalation** | *Er lachte, er jubelte, er tanzte vor Freude.* (He laughed, he cheered, he danced for joy.) |
+| **chiasmus** | **crossing** (A-B-B-A) | *Die Kunst ist lang, und kurz ist unser Leben.* (Art is long, and short is our life.) |
+
+### Anaphora vs. stylistic error
+Repetition is a **stylistic device** when used **deliberately** and **effectively**. Accidental repetitions ("*Dann … dann … dann …*" – then … then … then) are a **stylistic error**.
+
+**Examples:**
+- ***Mit** Mut, **mit** Hoffnung, **mit** Entschlossenheit gehen wir voran.* (With courage, with hope, with determination we move forward.)
+- ***Es geht** um unsere Kinder. **Es geht** um unsere Zukunft. **Es geht** um alles.* (It's about our children. It's about our future. It's about everything.)
+- ***Jeder** Tag zählt, **jede** Stunde zählt, **jede** Minute zählt.* (Every day counts, every hour counts, every minute counts.)
+- *Gemeinsam haben wir begonnen, gemeinsam haben wir gekämpft, gemeinsam werden wir es schaffen.* (Together we began, together we fought, together we will succeed.)`,
+      explanationTr: `## Anafor ve tekrar
+
+**Anafor** (söz başı tekrarı), art arda gelen cümlelerin veya cümle parçalarının **başında bir kelimeyi ya da kelime grubunu tekrarlar**. **Ritim, vurgu ve etkileyicilik** yaratır – siyasi konuşmaların en sevilen aracıdır.
+
+> ***Wir werden** kämpfen. **Wir werden** gewinnen. **Wir werden** nicht aufgeben.* (Savaşacağız. Kazanacağız. Pes etmeyeceğiz.)
+
+### Etkisi
+| etki | örnek |
+| ---- | ---- |
+| bir fikri **vurgulamak** | ***Nie wieder** Krieg, **nie wieder** Hass, **nie wieder** Gewalt!* (Bir daha asla savaş, bir daha asla nefret, bir daha asla şiddet!) |
+| **derecelendirme** (klimaks) | ***Jeder** Bürger, **jede** Familie, **jede** Stadt ist betroffen.* (Her vatandaş, her aile, her şehir etkileniyor.) |
+| **akılda kalıcılık** | ***Wer** arbeitet, soll essen. **Wer** nicht arbeitet, …* (Çalışan yesin. Çalışmayan …) |
+| **duygusal etki** | ***Ich** habe gewartet, **ich** habe gehofft, **ich** habe geglaubt.* (Bekledim, umut ettim, inandım.) |
+
+### İlgili tekrar figürleri
+| figür | tekrarın yeri | örnek |
+| ---- | ---- | ---- |
+| **anafor** | **başta** | ***Das** Wasser rauscht, **das** Wasser schwoll.* (Goethe) |
+| **epifor** | **sonda** | *Ihr sollt frei sein, ihr wollt **frei sein**, ihr werdet **frei sein**.* (Özgür olmalısınız, özgür olmak istiyorsunuz, özgür olacaksınız.) |
+| **paralellik** | aynı **cümle yapısı** | *Heiß ist der Tag, kühl ist die Nacht.* (Sıcaktır gündüz, serindir gece.) |
+| **trikolon** | **üçlü yapı** | *Ich kam, ich sah, ich siegte.* (Geldim, gördüm, yendim.) |
+| **klimaks** | **derece derece yükselme** | *Er lachte, er jubelte, er tanzte vor Freude.* (Güldü, sevinç çığlıkları attı, sevinçten dans etti.) |
+| **kiazm** | **çaprazlama** (A-B-B-A) | *Die Kunst ist lang, und kurz ist unser Leben.* (Sanat uzun, kısa ise hayatımız.) |
+
+### Anafor – üslup hatası
+Tekrar, **bilinçli** ve **etkili** kullanıldığında bir **üslup aracıdır**. Rastlantısal tekrarlar („*Dann … dann … dann …*" – sonra … sonra … sonra) ise bir **üslup hatasıdır**.
+
+**Örnekler:**
+- ***Mit** Mut, **mit** Hoffnung, **mit** Entschlossenheit gehen wir voran.* (Cesaretle, umutla, kararlılıkla ilerliyoruz.)
+- ***Es geht** um unsere Kinder. **Es geht** um unsere Zukunft. **Es geht** um alles.* (Söz konusu olan çocuklarımız. Söz konusu olan geleceğimiz. Söz konusu olan her şey.)
+- ***Jeder** Tag zählt, **jede** Stunde zählt, **jede** Minute zählt.* (Her gün önemli, her saat önemli, her dakika önemli.)
+- *Gemeinsam haben wir begonnen, gemeinsam haben wir gekämpft, gemeinsam werden wir es schaffen.* (Birlikte başladık, birlikte mücadele ettik, birlikte başaracağız.)`,
     },
   })
   await seedExercises({
@@ -35716,12 +36806,126 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit3.id,
       order: 3,
       grammarTopic: 'Rhetorische Frage',
-      explanationDe:
-        'Eine rhetorische Frage erwartet keine Antwort, sondern betont eine Aussage: "Ist das nicht offensichtlich?" bedeutet "Das ist offensichtlich."',
-      explanationEn:
-        'A rhetorical question expects no answer; it emphasizes a statement: "Ist das nicht offensichtlich?" (Isn\'t that obvious?) means "That is obvious."',
-      explanationTr:
-        'Retorik soru, cevap beklemez; bir ifadeyi vurgular: "Ist das nicht offensichtlich?" (Bu açık değil mi?) "Bu açıktır" anlamına gelir.',
+      explanationDe: `## Die rhetorische Frage als Stilmittel
+
+Auf C2-Niveau geht es nicht nur ums Erkennen, sondern um den **gezielten Einsatz** der rhetorischen Frage in **Reden, Essays und Kommentaren**. Eine rhetorische Frage erwartet keine Antwort – sie **lenkt das Denken** des Publikums.
+
+> *Ist das nicht offensichtlich?* = Das ist offensichtlich.
+
+### Funktionen in Texten
+| Funktion | Beispiel |
+| ---- | ---- |
+| **Einstieg** ins Thema | *Was wäre unser Leben ohne Musik?* |
+| **Zustimmung erzwingen** | *Wer würde nicht in Frieden leben wollen?* |
+| **Kritik / Empörung** | *Wie lange wollen wir noch zusehen?* |
+| **Übergang** zum nächsten Punkt | *Doch was bedeutet das für die Praxis?* |
+| **Schlusspointe** | *Sollten wir nicht endlich handeln?* |
+
+### Sonderform: Die Frage mit eigener Antwort (Subjektion)
+Der Redner stellt eine Frage und **beantwortet sie selbst** – das hält die Aufmerksamkeit:
+> *Was ist das Problem? **Das Problem ist** der fehlende politische Wille.*
+> *Warum ist das wichtig? **Weil** es uns alle betrifft.*
+
+### Sprachliche Merkmale
+- **Verneinung** + positive Bedeutung: *Ist es **nicht** schön …?* (= Es ist schön.)
+- **Modalpartikeln**: *etwa, denn, schon, wirklich*: *Glaubt **denn** irgendjemand **wirklich** daran?*
+- **Konjunktiv II**: *Wer **hätte** das gedacht?*
+- **Wer / Was / Wie** + allgemeine Aussage: *Wer kennt das nicht?*
+
+### Gezielt einsetzen – aber dosiert
+| ✅ wirkungsvoll | ❌ übertrieben |
+| ---- | ---- |
+| 1–2 rhetorische Fragen pro Essay an Schlüsselstellen | jeder Absatz beginnt mit einer Frage |
+| klare, erkennbare implizite Antwort | Frage mit unklarer Antwort (wirkt unsicher) |
+
+### Achtung im wissenschaftlichen Text
+In streng wissenschaftlichen Texten werden rhetorische Fragen **sparsam** verwendet – dort sind **Forschungsfragen** (echte Fragen) üblicher: *Inwiefern beeinflusst X das Verhalten von Y?*
+
+**Beispiele:**
+- *Können wir es uns leisten, die Warnungen der Wissenschaft zu ignorieren?*
+- *Wer von uns hat nicht schon einmal einen Termin vergessen?*
+- *Brauchen wir wirklich noch mehr Autobahnen?*
+- *Was bleibt also? Die Erkenntnis, dass Veränderung möglich ist.*`,
+      explanationEn: `## The rhetorical question as a stylistic device
+
+At C2 level it's not just about recognising rhetorical questions but about using them **deliberately** in **speeches, essays and commentaries**. A rhetorical question expects no answer – it **steers the audience's thinking**.
+
+> *Ist das nicht offensichtlich?* (Isn't that obvious?) = That is obvious.
+
+### Functions in texts
+| function | example |
+| ---- | ---- |
+| **opening** a topic | *Was wäre unser Leben ohne Musik?* (What would our lives be without music?) |
+| **forcing agreement** | *Wer würde nicht in Frieden leben wollen?* (Who wouldn't want to live in peace?) |
+| **criticism / indignation** | *Wie lange wollen wir noch zusehen?* (How much longer are we going to stand by?) |
+| **transition** to the next point | *Doch was bedeutet das für die Praxis?* (But what does this mean in practice?) |
+| **closing punchline** | *Sollten wir nicht endlich handeln?* (Shouldn't we finally act?) |
+
+### Special form: the question the speaker answers (hypophora)
+The speaker asks a question and **answers it themselves** – this holds attention:
+> *Was ist das Problem? **Das Problem ist** der fehlende politische Wille.* (What is the problem? The problem is the lack of political will.)
+> *Warum ist das wichtig? **Weil** es uns alle betrifft.* (Why is this important? Because it affects us all.)
+
+### Linguistic features
+- **negation** + positive meaning: *Ist es **nicht** schön …?* (Isn't it lovely …? = It's lovely.)
+- **modal particles**: *etwa, denn, schon, wirklich*: *Glaubt **denn** irgendjemand **wirklich** daran?* (Does anyone really believe that?)
+- **Konjunktiv II**: *Wer **hätte** das gedacht?* (Who would have thought?)
+- **Wer / Was / Wie** + general statement: *Wer kennt das nicht?* (Who doesn't know that feeling?)
+
+### Use deliberately – but in moderation
+| ✅ effective | ❌ overdone |
+| ---- | ---- |
+| 1–2 rhetorical questions per essay at key points | every paragraph starts with a question |
+| clear, recognisable implied answer | question with an unclear answer (sounds unsure) |
+
+### Note for academic texts
+In strictly academic texts rhetorical questions are used **sparingly** – **research questions** (genuine questions) are more usual there: *Inwiefern beeinflusst X das Verhalten von Y?* (To what extent does X influence the behaviour of Y?)
+
+**Examples:**
+- *Können wir es uns leisten, die Warnungen der Wissenschaft zu ignorieren?* (Can we afford to ignore the warnings of science?)
+- *Wer von uns hat nicht schon einmal einen Termin vergessen?* (Which of us has never forgotten an appointment?)
+- *Brauchen wir wirklich noch mehr Autobahnen?* (Do we really need even more motorways?)
+- *Was bleibt also? Die Erkenntnis, dass Veränderung möglich ist.* (So what remains? The realisation that change is possible.)`,
+      explanationTr: `## Üslup aracı olarak retorik soru
+
+C2 seviyesinde mesele yalnızca retorik soruları tanımak değil, onları **konuşmalarda, denemelerde ve yorumlarda** **bilinçli olarak** kullanmaktır. Retorik soru cevap beklemez – dinleyicinin **düşüncesini yönlendirir**.
+
+> *Ist das nicht offensichtlich?* (Bu apaçık değil mi?) = Bu apaçık.
+
+### Metinlerdeki işlevleri
+| işlev | örnek |
+| ---- | ---- |
+| konuya **giriş** | *Was wäre unser Leben ohne Musik?* (Müzik olmadan hayatımız ne olurdu?) |
+| **onay almaya zorlamak** | *Wer würde nicht in Frieden leben wollen?* (Kim barış içinde yaşamak istemez ki?) |
+| **eleştiri / öfke** | *Wie lange wollen wir noch zusehen?* (Daha ne kadar seyirci kalacağız?) |
+| sonraki noktaya **geçiş** | *Doch was bedeutet das für die Praxis?* (Peki bu uygulamada ne anlama geliyor?) |
+| **kapanış vurgusu** | *Sollten wir nicht endlich handeln?* (Artık harekete geçmemiz gerekmez mi?) |
+
+### Özel biçim: kendi cevabını veren soru
+Konuşmacı bir soru sorar ve **onu kendisi cevaplar** – bu dikkati canlı tutar:
+> *Was ist das Problem? **Das Problem ist** der fehlende politische Wille.* (Sorun ne? Sorun siyasi irade eksikliği.)
+> *Warum ist das wichtig? **Weil** es uns alle betrifft.* (Bu neden önemli? Çünkü hepimizi ilgilendiriyor.)
+
+### Dilsel özellikler
+- **olumsuzluk** + olumlu anlam: *Ist es **nicht** schön …?* (Güzel değil mi …? = Güzel.)
+- **kip edatları**: *etwa, denn, schon, wirklich*: *Glaubt **denn** irgendjemand **wirklich** daran?* (Buna gerçekten inanan biri var mı ki?)
+- **Konjunktiv II**: *Wer **hätte** das gedacht?* (Kim düşünürdü ki?)
+- **Wer / Was / Wie** + genel ifade: *Wer kennt das nicht?* (Bunu bilmeyen var mı?)
+
+### Bilinçli kullanın – ama ölçülü
+| ✅ etkili | ❌ abartılı |
+| ---- | ---- |
+| denemede kilit noktalarda 1–2 retorik soru | her paragraf bir soruyla başlıyor |
+| açık, anlaşılır örtük cevap | cevabı belirsiz soru (güvensiz görünür) |
+
+### Bilimsel metinlerde dikkat
+Katı bilimsel metinlerde retorik sorular **ölçülü** kullanılır – orada **araştırma soruları** (gerçek sorular) daha yaygındır: *Inwiefern beeinflusst X das Verhalten von Y?* (X, Y'nin davranışını ne ölçüde etkiliyor?)
+
+**Örnekler:**
+- *Können wir es uns leisten, die Warnungen der Wissenschaft zu ignorieren?* (Bilimin uyarılarını görmezden gelmeyi göze alabilir miyiz?)
+- *Wer von uns hat nicht schon einmal einen Termin vergessen?* (Hangimiz bir randevuyu unutmadık ki?)
+- *Brauchen wir wirklich noch mehr Autobahnen?* (Gerçekten daha fazla otoyola ihtiyacımız var mı?)
+- *Was bleibt also? Die Erkenntnis, dass Veränderung möglich ist.* (Peki geriye ne kalıyor? Değişimin mümkün olduğu bilinci.)`,
     },
   })
   await seedExercises({
@@ -35750,12 +36954,110 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit3.id,
       order: 4,
       grammarTopic: 'Übung: Rhetorische Mittel erkennen',
-      explanationDe:
-        'Wiederholung: Metapher, Vergleich, Anapher und rhetorische Frage sind Stilmittel, die Reden und Texte überzeugender und einprägsamer machen.',
-      explanationEn:
-        'Review: metaphor, simile, anaphora, and rhetorical question are stylistic devices that make speeches and texts more persuasive and memorable.',
-      explanationTr:
-        'Tekrar: metafor, benzetme, anafor ve retorik soru, konuşmaları ve metinleri daha ikna edici ve akılda kalıcı yapan üslup araçlarıdır.',
+      explanationDe: `## Übung: Rhetorische Mittel erkennen – Zusammenfassung
+
+Rhetorische Mittel machen Reden und Texte **überzeugender, anschaulicher und einprägsamer**. Wer sie erkennt, kann Texte **kritisch analysieren** – und wer sie beherrscht, kann **wirkungsvoll schreiben und sprechen**.
+
+### Übersicht der wichtigsten Stilmittel
+| Stilmittel | Definition | Beispiel |
+| ---- | ---- | ---- |
+| **Vergleich** | Bild mit *wie* | *stark wie ein Bär* |
+| **Metapher** | Bild ohne *wie* | *Die Zeit ist ein Dieb.* |
+| **Personifikation** | Dinge handeln menschlich | *Die Sonne lacht.* |
+| **Anapher** | Wiederholung am Anfang | *Wir wollen … Wir wollen …* |
+| **Parallelismus** | gleicher Satzbau | *Rein ins Wasser, raus aus dem Alltag.* |
+| **Trikolon** | Dreierreihe | *Wissen, Können, Wollen* |
+| **Klimax** | Steigerung | *Er kam, sah, siegte.* |
+| **Antithese** | Gegensatz | *Der Mensch denkt, Gott lenkt.* |
+| **rhetorische Frage** | Frage ohne Antwort | *Wer will das schon?* |
+| **Hyperbel** | Übertreibung | *Ich habe dir das tausendmal gesagt.* |
+| **Alliteration** | gleicher Anlaut | *Milch macht müde Männer munter.* |
+| **Ironie** | Gegenteil gemeint | *Na, das ist ja großartig!* |
+
+### Analyse einer Redepassage
+*„**Wir** haben die Krise überstanden. **Wir** haben Arbeitsplätze gesichert. **Wir** haben Vertrauen zurückgewonnen. (Anapher, Trikolon) Doch **ist das genug?** (rhetorische Frage) Die Zukunft ist **ein Ozean voller Chancen** (Metapher) – **aber auch voller Stürme**. (Antithese)"*
+
+### So beschreibt man die Wirkung (Redemittel für Analysen)
+- *Durch die Anapher wird die Aussage **verstärkt / hervorgehoben**.*
+- *Die Metapher **veranschaulicht** …*
+- *Mit der rhetorischen Frage **bezieht** der Redner das Publikum **ein**.*
+- *Die Antithese **betont den Gegensatz** zwischen …*
+
+**Beispiele:**
+- *Die Wahrheit ist ein Licht in der Dunkelheit.* (Metapher)
+- *Gestern Hoffnung, heute Enttäuschung.* (Antithese, Ellipse)
+- *Bunt, laut, lebendig – so ist unsere Stadt.* (Trikolon)
+- *Wollen wir das wirklich zulassen?* (rhetorische Frage)`,
+      explanationEn: `## Practice: recognising rhetorical devices – summary
+
+Rhetorical devices make speeches and texts **more persuasive, vivid and memorable**. If you can recognise them, you can **analyse texts critically** – and if you master them, you can **write and speak effectively**.
+
+### Overview of the main devices
+| device | definition | example |
+| ---- | ---- | ---- |
+| **simile** | image with *wie* | *stark wie ein Bär* (strong as a bear) |
+| **metaphor** | image without *wie* | *Die Zeit ist ein Dieb.* (Time is a thief.) |
+| **personification** | things act like humans | *Die Sonne lacht.* (The sun is smiling.) |
+| **anaphora** | repetition at the start | *Wir wollen … Wir wollen …* (We want … We want …) |
+| **parallelism** | same structure | *Rein ins Wasser, raus aus dem Alltag.* (Into the water, out of the daily grind.) |
+| **tricolon** | group of three | *Wissen, Können, Wollen* (knowing, being able, wanting) |
+| **climax** | escalation | *Er kam, sah, siegte.* (He came, saw, conquered.) |
+| **antithesis** | contrast | *Der Mensch denkt, Gott lenkt.* (Man proposes, God disposes.) |
+| **rhetorical question** | question without answer | *Wer will das schon?* (Who wants that?) |
+| **hyperbole** | exaggeration | *Ich habe dir das tausendmal gesagt.* (I've told you a thousand times.) |
+| **alliteration** | same initial sound | *Milch macht müde Männer munter.* (Milk makes tired men lively.) |
+| **irony** | opposite meant | *Na, das ist ja großartig!* (Well, that's just great!) |
+
+### Analysing a passage from a speech
+*„**Wir** haben die Krise überstanden. **Wir** haben Arbeitsplätze gesichert. **Wir** haben Vertrauen zurückgewonnen. (anaphora, tricolon) Doch **ist das genug?** (rhetorical question) Die Zukunft ist **ein Ozean voller Chancen** (metaphor) – **aber auch voller Stürme**. (antithesis)"*
+(We have overcome the crisis. We have secured jobs. We have regained trust. But is that enough? The future is an ocean full of opportunities – but also full of storms.)
+
+### How to describe the effect (phrases for analysis)
+- *Durch die Anapher wird die Aussage **verstärkt / hervorgehoben**.* (The anaphora reinforces / highlights the statement.)
+- *Die Metapher **veranschaulicht** …* (The metaphor illustrates …)
+- *Mit der rhetorischen Frage **bezieht** der Redner das Publikum **ein**.* (With the rhetorical question, the speaker involves the audience.)
+- *Die Antithese **betont den Gegensatz** zwischen …* (The antithesis emphasises the contrast between …)
+
+**Examples:**
+- *Die Wahrheit ist ein Licht in der Dunkelheit.* (Truth is a light in the darkness – metaphor)
+- *Gestern Hoffnung, heute Enttäuschung.* (Yesterday hope, today disappointment – antithesis, ellipsis)
+- *Bunt, laut, lebendig – so ist unsere Stadt.* (Colourful, loud, lively – that's our city – tricolon)
+- *Wollen wir das wirklich zulassen?* (Do we really want to allow this? – rhetorical question)`,
+      explanationTr: `## Alıştırma: Retorik araçları tanımak – özet
+
+Retorik araçlar konuşmaları ve metinleri **daha ikna edici, canlı ve akılda kalıcı** kılar. Onları tanıyan metinleri **eleştirel olarak çözümleyebilir** – onlara hâkim olan ise **etkili yazıp konuşabilir**.
+
+### En önemli üslup araçlarına genel bakış
+| araç | tanım | örnek |
+| ---- | ---- | ---- |
+| **benzetme** | *wie* ile imge | *stark wie ein Bär* (ayı gibi güçlü) |
+| **metafor** | *wie* olmadan imge | *Die Zeit ist ein Dieb.* (Zaman bir hırsızdır.) |
+| **kişileştirme** | nesneler insan gibi davranır | *Die Sonne lacht.* (Güneş gülümsüyor.) |
+| **anafor** | baştaki tekrar | *Wir wollen … Wir wollen …* (İstiyoruz … İstiyoruz …) |
+| **paralellik** | aynı cümle yapısı | *Rein ins Wasser, raus aus dem Alltag.* (Suya gir, gündelik hayattan çık.) |
+| **trikolon** | üçlü dizi | *Wissen, Können, Wollen* (bilmek, yapabilmek, istemek) |
+| **klimaks** | derecelendirme | *Er kam, sah, siegte.* (Geldi, gördü, yendi.) |
+| **antitez** | karşıtlık | *Der Mensch denkt, Gott lenkt.* (Kul tasarlar, Allah takdir eder.) |
+| **retorik soru** | cevapsız soru | *Wer will das schon?* (Bunu kim ister ki?) |
+| **abartma (hiperbol)** | mübalağa | *Ich habe dir das tausendmal gesagt.* (Sana bunu bin kere söyledim.) |
+| **aliterasyon** | aynı ses tekrarı | *Milch macht müde Männer munter.* (Süt yorgun adamları dinçleştirir.) |
+| **ironi** | tersi kastedilir | *Na, das ist ja großartig!* (Vay, bu harika!) |
+
+### Bir konuşma pasajının çözümlenmesi
+*„**Wir** haben die Krise überstanden. **Wir** haben Arbeitsplätze gesichert. **Wir** haben Vertrauen zurückgewonnen. (anafor, trikolon) Doch **ist das genug?** (retorik soru) Die Zukunft ist **ein Ozean voller Chancen** (metafor) – **aber auch voller Stürme**. (antitez)"*
+(Krizi atlattık. İstihdamı güvence altına aldık. Güveni yeniden kazandık. Ama bu yeterli mi? Gelecek fırsatlarla dolu bir okyanus – ama aynı zamanda fırtınalarla dolu.)
+
+### Etkiyi nasıl anlatırız (çözümleme kalıpları)
+- *Durch die Anapher wird die Aussage **verstärkt / hervorgehoben**.* (Anafor sayesinde ifade güçlendiriliyor / öne çıkarılıyor.)
+- *Die Metapher **veranschaulicht** …* (Metafor … somutlaştırıyor.)
+- *Mit der rhetorischen Frage **bezieht** der Redner das Publikum **ein**.* (Retorik soruyla konuşmacı dinleyiciyi sürece dahil ediyor.)
+- *Die Antithese **betont den Gegensatz** zwischen …* (Antitez … arasındaki karşıtlığı vurguluyor.)
+
+**Örnekler:**
+- *Die Wahrheit ist ein Licht in der Dunkelheit.* (Gerçek, karanlıkta bir ışıktır – metafor)
+- *Gestern Hoffnung, heute Enttäuschung.* (Dün umut, bugün hayal kırıklığı – antitez, eksiltme)
+- *Bunt, laut, lebendig – so ist unsere Stadt.* (Renkli, gürültülü, canlı – işte şehrimiz – trikolon)
+- *Wollen wir das wirklich zulassen?* (Buna gerçekten izin mi vereceğiz? – retorik soru)`,
     },
   })
   await seedExercises({
@@ -35811,12 +37113,111 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit4.id,
       order: 1,
       grammarTopic: 'Sarkasmus erkennen',
-      explanationDe:
-        'Sarkasmus sagt das Gegenteil dessen, was gemeint ist, oft mit übertriebener Betonung: "Na toll, jetzt ist der Zug auch noch weg!" (gemeint: das ist ärgerlich).',
-      explanationEn:
-        'Sarcasm says the opposite of what is meant, often with exaggerated emphasis: "Na toll, jetzt ist der Zug auch noch weg!" (Great, now the train is gone too! — meaning: this is annoying).',
-      explanationTr:
-        'Alaycılık, kastedilenin tersini söyler, genellikle abartılı vurguyla: "Na toll, jetzt ist der Zug auch noch weg!" (Harika, şimdi de tren gitti! — anlam: bu can sıkıcı).',
+      explanationDe: `## Sarkasmus erkennen
+
+**Sarkasmus** ist eine **scharfe, bissige Form der Ironie**. Wie bei der Ironie sagt man das Gegenteil dessen, was man meint – aber mit dem Ziel, zu **verspotten, zu kritisieren oder zu verletzen**.
+
+| | Ironie | Sarkasmus |
+| ---- | ---- | ---- |
+| Prinzip | Gegenteil sagen | Gegenteil sagen |
+| Ton | oft humorvoll, leicht | bitter, aggressiv, verletzend |
+| Ziel | Distanz, Humor, Kritik | Spott, Herabsetzung |
+| Beispiel | *Schönes Wetter heute!* (bei Regen) | *Toll, wieder eine Glanzleistung von dir!* (nach einem Fehler) |
+
+### Typische sarkastische Formulierungen
+| Formulierung | gemeint |
+| ---- | ---- |
+| *Na toll, jetzt ist der Zug auch noch weg!* | Das ist äußerst ärgerlich. |
+| *Herzlichen Glückwunsch, das hast du ja super hinbekommen.* | Du hast es vermasselt. |
+| *Wie schön, dass du dich auch mal blicken lässt.* | Du kommst viel zu spät / nie. |
+| *Danke für die Hilfe – ohne dich hätte ich das nie geschafft.* | Du hast überhaupt nicht geholfen. |
+| *Ganz große Klasse!* | Das ist katastrophal. |
+| *Du bist ja ein echtes Genie.* | Das war dumm. |
+
+### Signale für Sarkasmus
+1. **Übertriebenes Lob** in einer negativen Situation.
+2. **Betonung und Tonfall**: gedehnt, spöttisch (*Suuuper!*).
+3. **Partikeln und Floskeln**: *na toll, ja, echt, wirklich, ganz große Klasse, herzlichen Glückwunsch*.
+4. **Kontext**: Die Aussage passt offensichtlich nicht zur Lage.
+
+### Wirkung und Vorsicht
+Sarkasmus kann **verletzend** sein und Beziehungen belasten. In **beruflichen** und **interkulturellen** Kontexten wird er oft **missverstanden** – in E-Mails sollte man ihn vermeiden.
+
+**Beispiele:**
+- (Der Kollege kommt eine Stunde zu spät.) *„Oh, guten Morgen! Schon so früh hier?"*
+- (Das Essen ist angebrannt.) *„Mmh, köstlich – ein echtes Meisterwerk."*
+- (Der Computer stürzt zum dritten Mal ab.) *„Wunderbar, genau das hat mir heute noch gefehlt."*
+- (Jemand stellt eine offensichtliche Frage.) *„Nein, wirklich? Da wäre ich nie draufgekommen."*`,
+      explanationEn: `## Recognising sarcasm
+
+**Sarcasm** is a **sharp, biting form of irony**. As with irony, you say the opposite of what you mean – but with the aim of **mocking, criticising or hurting**.
+
+| | irony | sarcasm |
+| ---- | ---- | ---- |
+| principle | say the opposite | say the opposite |
+| tone | often humorous, light | bitter, aggressive, hurtful |
+| aim | distance, humour, criticism | mockery, belittling |
+| example | *Schönes Wetter heute!* (Nice weather today! – in the rain) | *Toll, wieder eine Glanzleistung von dir!* (Great, another brilliant performance from you! – after a mistake) |
+
+### Typical sarcastic phrases
+| phrase | meant |
+| ---- | ---- |
+| *Na toll, jetzt ist der Zug auch noch weg!* (Oh great, now the train's gone too!) | This is extremely annoying. |
+| *Herzlichen Glückwunsch, das hast du ja super hinbekommen.* (Congratulations, you really nailed that.) | You messed it up. |
+| *Wie schön, dass du dich auch mal blicken lässt.* (How nice of you to show up for once.) | You're far too late / never come. |
+| *Danke für die Hilfe – ohne dich hätte ich das nie geschafft.* (Thanks for the help – I'd never have managed without you.) | You didn't help at all. |
+| *Ganz große Klasse!* (Absolutely first-class!) | This is a disaster. |
+| *Du bist ja ein echtes Genie.* (You're a real genius.) | That was stupid. |
+
+### Signals of sarcasm
+1. **Exaggerated praise** in a negative situation.
+2. **Stress and tone**: drawn out, mocking (*Suuuper!*).
+3. **Particles and stock phrases**: *na toll, ja, echt, wirklich, ganz große Klasse, herzlichen Glückwunsch*.
+4. **Context**: the statement obviously doesn't fit the situation.
+
+### Effect and caution
+Sarcasm can be **hurtful** and strain relationships. In **professional** and **intercultural** contexts it is often **misunderstood** – avoid it in e-mails.
+
+**Examples:**
+- (A colleague arrives an hour late.) *„Oh, guten Morgen! Schon so früh hier?"* (Oh, good morning! Here so early already?)
+- (The food is burnt.) *„Mmh, köstlich – ein echtes Meisterwerk."* (Mmm, delicious – a true masterpiece.)
+- (The computer crashes for the third time.) *„Wunderbar, genau das hat mir heute noch gefehlt."* (Wonderful, that's just what I needed today.)
+- (Someone asks an obvious question.) *„Nein, wirklich? Da wäre ich nie draufgekommen."* (No, really? I'd never have guessed.)`,
+      explanationTr: `## Alayı (sarkazmı) tanımak
+
+**Sarkazm**, ironinin **sert, iğneleyici bir biçimidir**. İronide olduğu gibi kastedilenin tersi söylenir – ama amaç **alay etmek, eleştirmek veya incitmektir**.
+
+| | ironi | sarkazm |
+| ---- | ---- | ---- |
+| ilke | tersini söylemek | tersini söylemek |
+| ton | çoğu zaman esprili, hafif | acı, saldırgan, incitici |
+| amaç | mesafe, mizah, eleştiri | alay, küçümseme |
+| örnek | *Schönes Wetter heute!* (Bugün hava ne güzel! – yağmurda) | *Toll, wieder eine Glanzleistung von dir!* (Harika, yine parlak bir performans! – bir hatadan sonra) |
+
+### Tipik alaycı ifadeler
+| ifade | kastedilen |
+| ---- | ---- |
+| *Na toll, jetzt ist der Zug auch noch weg!* (Harika, bir de tren kaçtı!) | Bu son derece sinir bozucu. |
+| *Herzlichen Glückwunsch, das hast du ja super hinbekommen.* (Tebrikler, ne güzel becerdin.) | Berbat ettin. |
+| *Wie schön, dass du dich auch mal blicken lässt.* (Ne güzel, sonunda teşrif ettin.) | Çok geç kaldın / hiç gelmiyorsun. |
+| *Danke für die Hilfe – ohne dich hätte ich das nie geschafft.* (Yardımın için sağ ol – sen olmasan asla başaramazdım.) | Hiç yardım etmedin. |
+| *Ganz große Klasse!* (Tek kelimeyle mükemmel!) | Bu tam bir felaket. |
+| *Du bist ja ein echtes Genie.* (Sen gerçek bir dâhisin.) | Bu aptalcaydı. |
+
+### Sarkazmın işaretleri
+1. Olumsuz bir durumda **abartılı övgü**.
+2. **Vurgu ve ses tonu**: uzatılmış, alaycı (*Süüüper!*).
+3. **Edatlar ve kalıp sözler**: *na toll, ja, echt, wirklich, ganz große Klasse, herzlichen Glückwunsch*.
+4. **Bağlam**: İfade açıkça duruma uymuyor.
+
+### Etkisi ve dikkat
+Sarkazm **incitici** olabilir ve ilişkileri zedeleyebilir. **İş** ve **kültürlerarası** bağlamlarda çoğu zaman **yanlış anlaşılır** – e-postalarda kaçınılmalıdır.
+
+**Örnekler:**
+- (İş arkadaşı bir saat geç geliyor.) *„Oh, guten Morgen! Schon so früh hier?"* (Oo, günaydın! Bu kadar erken mi geldin?)
+- (Yemek yanmış.) *„Mmh, köstlich – ein echtes Meisterwerk."* (Mmm, enfes – tam bir başyapıt.)
+- (Bilgisayar üçüncü kez çöküyor.) *„Wunderbar, genau das hat mir heute noch gefehlt."* (Harika, bugün bir bu eksikti.)
+- (Biri apaçık bir soru soruyor.) *„Nein, wirklich? Da wäre ich nie draufgekommen."* (Yok artık, gerçekten mi? Hiç aklıma gelmezdi.)`,
     },
   })
   await seedExercises({
@@ -35845,12 +37246,120 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit4.id,
       order: 2,
       grammarTopic: 'Übertreibung (Hyperbel)',
-      explanationDe:
-        'Eine Hyperbel übertreibt bewusst, um Wirkung zu erzielen: "Ich habe dir das schon tausendmal gesagt!" ist nicht wörtlich gemeint.',
-      explanationEn:
-        'A hyperbole deliberately exaggerates for effect: "Ich habe dir das schon tausendmal gesagt!" (I\'ve told you that a thousand times!) is not meant literally.',
-      explanationTr:
-        'Abartma (hiperbol), etki yaratmak için bilinçli olarak abartır: "Ich habe dir das schon tausendmal gesagt!" gerçek anlamda kastedilmez.',
+      explanationDe: `## Übertreibung (Hyperbel)
+
+Die **Hyperbel** ist eine **bewusste, starke Übertreibung**. Sie ist **nicht wörtlich** gemeint, sondern soll **Gefühle, Nachdruck oder Humor** ausdrücken. Im Alltag benutzen wir sie ständig.
+
+| Hyperbel | eigentliche Bedeutung |
+| ---- | ---- |
+| *Ich habe dir das schon **tausendmal** gesagt!* | Ich habe es dir oft gesagt. |
+| *Ich warte hier schon **eine Ewigkeit**.* | Ich warte schon lange. |
+| *Ich **sterbe** vor Hunger.* | Ich bin sehr hungrig. |
+| *Der Koffer wiegt **eine Tonne**.* | Der Koffer ist sehr schwer. |
+| *Ich habe **Berge** von Arbeit.* | Ich habe viel Arbeit. |
+| *Es regnet **in Strömen**.* | Es regnet stark. |
+| *Das kostet **ein Vermögen**.* | Das ist sehr teuer. |
+| *Ich bin **todmüde**.* | Ich bin sehr müde. |
+
+### Sprachliche Mittel der Übertreibung
+1. **Zahlen**: *tausendmal, hundert Jahre, eine Million Fragen*
+2. **Verstärkende Präfixe** (umgangssprachlich): *stein**alt**, tod**müde**, stink**sauer**, blitz**schnell**, riesen**groß**, super**teuer**, sau**kalt***
+3. **Absolute Ausdrücke**: *nie, immer, alle, niemand, das Schlimmste überhaupt*
+4. **Bilder**: *ein Meer von Tränen, ein Berg von Akten*
+
+### Wo begegnet man Hyperbeln?
+| Kontext | Beispiel |
+| ---- | ---- |
+| Alltag | *Ich habe **null** Ahnung.* |
+| Werbung | *Das **beste** Eis **der Welt**!* |
+| Boulevardpresse | ***Jahrhundert**-Sturm verwüstet die Stadt!* |
+| Literatur | *Ein Meer von Blumen.* |
+| Reden | *Dies ist der **wichtigste** Tag **in der Geschichte** unseres Landes.* |
+
+### Hyperbel vs. Lüge
+Eine Hyperbel ist **keine Lüge**: Beide Gesprächspartner wissen, dass sie nicht wörtlich gemeint ist. Im **sachlichen Text** (Bericht, Wissenschaft) sollte man Übertreibungen jedoch **vermeiden**.
+
+**Beispiele:**
+- *Ich habe den ganzen Tag **keine Sekunde** Ruhe gehabt.*
+- *Das Konzert war **der Wahnsinn**!*
+- *Mein Handy ist **uralt**.*
+- *In der Schlange standen **eine Million** Leute.*`,
+      explanationEn: `## Exaggeration (hyperbole)
+
+**Hyperbole** is **deliberate, strong exaggeration**. It is **not meant literally** but expresses **feelings, emphasis or humour**. We use it constantly in everyday life.
+
+| hyperbole | real meaning |
+| ---- | ---- |
+| *Ich habe dir das schon **tausendmal** gesagt!* (I've told you a thousand times!) | I've told you often. |
+| *Ich warte hier schon **eine Ewigkeit**.* (I've been waiting here for an eternity.) | I've been waiting a long time. |
+| *Ich **sterbe** vor Hunger.* (I'm dying of hunger.) | I'm very hungry. |
+| *Der Koffer wiegt **eine Tonne**.* (The suitcase weighs a ton.) | The suitcase is very heavy. |
+| *Ich habe **Berge** von Arbeit.* (I have mountains of work.) | I have a lot of work. |
+| *Es regnet **in Strömen**.* (It's raining in torrents.) | It's raining heavily. |
+| *Das kostet **ein Vermögen**.* (That costs a fortune.) | That's very expensive. |
+| *Ich bin **todmüde**.* (I'm dead tired.) | I'm very tired. |
+
+### Linguistic means of exaggeration
+1. **Numbers**: *tausendmal, hundert Jahre, eine Million Fragen* (a thousand times, a hundred years, a million questions)
+2. **Intensifying prefixes** (colloquial): *stein**alt*** (ancient), *tod**müde*** (dead tired), *stink**sauer*** (furious), *blitz**schnell*** (lightning fast), *riesen**groß*** (huge), *super**teuer*** (super expensive), *sau**kalt*** (freezing)
+3. **Absolute expressions**: *nie, immer, alle, niemand, das Schlimmste überhaupt* (never, always, everyone, nobody, the worst ever)
+4. **Images**: *ein Meer von Tränen* (a sea of tears), *ein Berg von Akten* (a mountain of files)
+
+### Where do you meet hyperbole?
+| context | example |
+| ---- | ---- |
+| everyday | *Ich habe **null** Ahnung.* (I have zero idea.) |
+| advertising | *Das **beste** Eis **der Welt**!* (The best ice cream in the world!) |
+| tabloids | ***Jahrhundert**-Sturm verwüstet die Stadt!* (Storm of the century devastates city!) |
+| literature | *Ein Meer von Blumen.* (A sea of flowers.) |
+| speeches | *Dies ist der **wichtigste** Tag **in der Geschichte** unseres Landes.* (This is the most important day in our country's history.) |
+
+### Hyperbole vs. lying
+Hyperbole is **not a lie**: both speakers know it isn't meant literally. In **factual texts** (reports, academia), however, exaggeration should be **avoided**.
+
+**Examples:**
+- *Ich habe den ganzen Tag **keine Sekunde** Ruhe gehabt.* (I haven't had a second's peace all day.)
+- *Das Konzert war **der Wahnsinn**!* (The concert was insane!)
+- *Mein Handy ist **uralt**.* (My phone is ancient.)
+- *In der Schlange standen **eine Million** Leute.* (There were a million people in the queue.)`,
+      explanationTr: `## Abartma (mübalağa / hiperbol)
+
+**Hiperbol**, **bilinçli ve güçlü bir abartmadır**. **Kelimesi kelimesine** kastedilmez; **duyguları, vurguyu veya mizahı** ifade eder. Günlük hayatta sürekli kullanırız.
+
+| hiperbol | asıl anlamı |
+| ---- | ---- |
+| *Ich habe dir das schon **tausendmal** gesagt!* (Sana bunu bin kere söyledim!) | Sana sık sık söyledim. |
+| *Ich warte hier schon **eine Ewigkeit**.* (Burada bir ömürdür bekliyorum.) | Uzun zamandır bekliyorum. |
+| *Ich **sterbe** vor Hunger.* (Açlıktan ölüyorum.) | Çok açım. |
+| *Der Koffer wiegt **eine Tonne**.* (Bavul bir ton çekiyor.) | Bavul çok ağır. |
+| *Ich habe **Berge** von Arbeit.* (Dağ gibi işim var.) | Çok işim var. |
+| *Es regnet **in Strömen**.* (Bardaktan boşanırcasına yağıyor.) | Çok yağmur yağıyor. |
+| *Das kostet **ein Vermögen**.* (Bu bir servete mal oluyor.) | Bu çok pahalı. |
+| *Ich bin **todmüde**.* (Ölesiye yorgunum.) | Çok yorgunum. |
+
+### Abartmanın dil araçları
+1. **Sayılar**: *tausendmal, hundert Jahre, eine Million Fragen* (bin kere, yüz yıl, bir milyon soru)
+2. **Güçlendirici önekler** (gündelik): *stein**alt*** (çok yaşlı), *tod**müde*** (ölesiye yorgun), *stink**sauer*** (çok kızgın), *blitz**schnell*** (şimşek hızında), *riesen**groß*** (devasa), *super**teuer*** (aşırı pahalı), *sau**kalt*** (buz gibi)
+3. **Mutlak ifadeler**: *nie, immer, alle, niemand, das Schlimmste überhaupt* (asla, her zaman, herkes, hiç kimse, en kötüsü)
+4. **İmgeler**: *ein Meer von Tränen* (gözyaşı denizi), *ein Berg von Akten* (dosya yığını)
+
+### Hiperbol nerede karşımıza çıkar?
+| bağlam | örnek |
+| ---- | ---- |
+| günlük hayat | *Ich habe **null** Ahnung.* (Sıfır fikrim var.) |
+| reklam | *Das **beste** Eis **der Welt**!* (Dünyanın en iyi dondurması!) |
+| magazin basını | ***Jahrhundert**-Sturm verwüstet die Stadt!* (Yüzyılın fırtınası şehri yerle bir etti!) |
+| edebiyat | *Ein Meer von Blumen.* (Bir çiçek denizi.) |
+| konuşmalar | *Dies ist der **wichtigste** Tag **in der Geschichte** unseres Landes.* (Bu, ülkemiz tarihinin en önemli günüdür.) |
+
+### Hiperbol – yalan
+Hiperbol **yalan değildir**: İki taraf da kelimesi kelimesine kastedilmediğini bilir. Ancak **nesnel metinlerde** (rapor, bilim) abartmadan **kaçınılmalıdır**.
+
+**Örnekler:**
+- *Ich habe den ganzen Tag **keine Sekunde** Ruhe gehabt.* (Bütün gün bir saniye bile huzurum olmadı.)
+- *Das Konzert war **der Wahnsinn**!* (Konser çılgıncaydı!)
+- *Mein Handy ist **uralt**.* (Telefonum çok eski.)
+- *In der Schlange standen **eine Million** Leute.* (Kuyrukta bir milyon kişi vardı.)`,
     },
   })
   await seedExercises({
@@ -35879,12 +37388,104 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit4.id,
       order: 3,
       grammarTopic: 'Sarkasmus im Ton erkennen (schriftlich)',
-      explanationDe:
-        'Schriftlich ist Sarkasmus oft schwer zu erkennen; Anführungszeichen um ein Wort oder Ausdrücke wie "wie zu erwarten" können ironische Distanz signalisieren.',
-      explanationEn:
-        'In writing, sarcasm is often hard to detect; quotation marks around a word or phrases like "wie zu erwarten" (as expected) can signal ironic distance.',
-      explanationTr:
-        'Yazıda alaycılığı fark etmek genellikle zordur; bir kelimenin etrafındaki tırnak işaretleri veya "wie zu erwarten" (beklendiği gibi) gibi ifadeler ironik mesafeyi işaret edebilir.',
+      explanationDe: `## Sarkasmus und Ironie im geschriebenen Text erkennen
+
+Im Gespräch verraten **Tonfall und Mimik** die Ironie. Im **geschriebenen Text** fehlen diese Signale – deshalb muss man auf **sprachliche Hinweise** achten. Das ist besonders wichtig bei **Glossen, Kommentaren, Satire** und in **sozialen Medien**.
+
+### Schriftliche Ironiesignale
+| Signal | Beispiel |
+| ---- | ---- |
+| **Anführungszeichen** um ein Wort („Distanzierungszeichen") | *Die „Reform" hat die Lage verschlimmert.* |
+| **„wie zu erwarten" / „wie immer"** | ***Wie zu erwarten**, kam der Bus zu spät.* |
+| **übertriebene positive Adjektive** | *Eine **geniale** Idee, die Steuern kurz vor Weihnachten zu erhöhen.* |
+| **„sogenannt"** | *Die **sogenannten** Experten lagen völlig daneben.* |
+| **Widerspruch Inhalt – Wertung** | *Erfreulicherweise wurde auch dieses Jahr wieder nichts erreicht.* |
+| **Partikeln: ja, natürlich, selbstverständlich** | *Der Zug war **natürlich** wieder verspätet.* |
+| **Emojis / Satzzeichen** (Chat) | *Toll 🙄* / *Super gemacht!!!* |
+
+### „Distanzierungszeichen" vs. echte Anführungszeichen
+- **Zitat**: *Er sagte: „Ich komme morgen."* (wörtliche Rede)
+- **Distanzierung / Ironie**: *Sein „Kompromiss" bestand darin, dass alle nachgeben sollten.* (Es war gar kein echter Kompromiss.)
+- **Im Gespräch** ersetzt man sie oft durch eine Geste („Gänsefüßchen" mit den Fingern) oder durch ***in Anführungszeichen***.
+
+### Textsorten mit viel Ironie
+- **Glosse**: kurzer, pointierter Meinungstext, oft ironisch.
+- **Satire**: übertreibt und verspottet gesellschaftliche Missstände.
+- **Kolumne**: persönlicher Kommentar, häufig humorvoll.
+
+### Ein Beispiel aus einer Glosse
+*Die Deutsche Bahn hat **wieder einmal** bewiesen, wie **zuverlässig** sie ist: **Pünktlich wie immer** erreichte der ICE sein Ziel – mit nur zwei Stunden Verspätung. Für diesen „**Service**" zahlen wir **gern** jedes Jahr mehr.*
+
+**Beispiele:**
+- *Die „schnelle" Internetverbindung brauchte zehn Minuten für eine E-Mail.*
+- *Wie nicht anders zu erwarten, war der Parkplatz voll.*
+- *Herzlichen Dank an die Stadt für die **wunderbare** Baustelle vor meiner Tür – seit drei Jahren.*`,
+      explanationEn: `## Recognising sarcasm and irony in written texts
+
+In conversation, **tone of voice and facial expression** give irony away. In **written texts** these signals are missing – so you must pay attention to **linguistic clues**. This is especially important in **glosses, commentaries, satire** and **social media**.
+
+### Written irony signals
+| signal | example |
+| ---- | ---- |
+| **quotation marks** around a word ("scare quotes") | *Die „Reform" hat die Lage verschlimmert.* (The "reform" made the situation worse.) |
+| **"wie zu erwarten" / "wie immer"** (as expected / as always) | ***Wie zu erwarten**, kam der Bus zu spät.* (As expected, the bus was late.) |
+| **exaggerated positive adjectives** | *Eine **geniale** Idee, die Steuern kurz vor Weihnachten zu erhöhen.* (A brilliant idea to raise taxes just before Christmas.) |
+| **"sogenannt"** (so-called) | *Die **sogenannten** Experten lagen völlig daneben.* (The so-called experts were completely wrong.) |
+| **contradiction between content and evaluation** | *Erfreulicherweise wurde auch dieses Jahr wieder nichts erreicht.* (Happily, once again nothing was achieved this year.) |
+| **particles: ja, natürlich, selbstverständlich** | *Der Zug war **natürlich** wieder verspätet.* (Naturally, the train was late again.) |
+| **emojis / punctuation** (chat) | *Toll 🙄* / *Super gemacht!!!* |
+
+### Scare quotes vs. real quotation marks
+- **Quotation**: *Er sagte: „Ich komme morgen."* (He said: "I'm coming tomorrow." – direct speech)
+- **Distancing / irony**: *Sein „Kompromiss" bestand darin, dass alle nachgeben sollten.* (His "compromise" was that everyone else should give in – it wasn't a real compromise.)
+- **In speech** they are often replaced by a gesture (air quotes) or by saying ***in Anführungszeichen*** ("in quotes").
+
+### Text types with a lot of irony
+- **Glosse**: short, pointed opinion piece, often ironic.
+- **Satire**: exaggerates and mocks social ills.
+- **Column**: personal commentary, often humorous.
+
+### An example from a gloss
+*Die Deutsche Bahn hat **wieder einmal** bewiesen, wie **zuverlässig** sie ist: **Pünktlich wie immer** erreichte der ICE sein Ziel – mit nur zwei Stunden Verspätung. Für diesen „**Service**" zahlen wir **gern** jedes Jahr mehr.*
+(Deutsche Bahn has once again proved how reliable it is: punctual as ever, the ICE reached its destination – only two hours late. We're happy to pay more every year for this "service".)
+
+**Examples:**
+- *Die „schnelle" Internetverbindung brauchte zehn Minuten für eine E-Mail.* (The "fast" internet connection took ten minutes for one e-mail.)
+- *Wie nicht anders zu erwarten, war der Parkplatz voll.* (As was only to be expected, the car park was full.)
+- *Herzlichen Dank an die Stadt für die **wunderbare** Baustelle vor meiner Tür – seit drei Jahren.* (Many thanks to the city for the wonderful building site outside my door – for three years now.)`,
+      explanationTr: `## Yazılı metinde alay ve ironiyi tanımak
+
+Konuşmada **ses tonu ve mimikler** ironiyi ele verir. **Yazılı metinde** bu işaretler yoktur – bu yüzden **dilsel ipuçlarına** dikkat etmek gerekir. Bu özellikle **kısa yorum yazılarında (Glosse), köşe yazılarında, hicivde** ve **sosyal medyada** önemlidir.
+
+### Yazılı ironi işaretleri
+| işaret | örnek |
+| ---- | ---- |
+| bir kelimenin etrafında **tırnak işareti** („mesafe tırnağı") | *Die „Reform" hat die Lage verschlimmert.* („Reform" durumu kötüleştirdi.) |
+| **„wie zu erwarten" / „wie immer"** (beklendiği gibi / her zamanki gibi) | ***Wie zu erwarten**, kam der Bus zu spät.* (Beklendiği gibi otobüs geç geldi.) |
+| **abartılı olumlu sıfatlar** | *Eine **geniale** Idee, die Steuern kurz vor Weihnachten zu erhöhen.* (Noel'den hemen önce vergileri artırmak dâhiyane bir fikir.) |
+| **„sogenannt"** (sözde) | *Die **sogenannten** Experten lagen völlig daneben.* (Sözde uzmanlar tamamen yanıldı.) |
+| **içerik – değerlendirme çelişkisi** | *Erfreulicherweise wurde auch dieses Jahr wieder nichts erreicht.* (Sevindirici bir şekilde bu yıl da yine hiçbir şey başarılamadı.) |
+| **edatlar: ja, natürlich, selbstverständlich** | *Der Zug war **natürlich** wieder verspätet.* (Tren tabii ki yine gecikti.) |
+| **emojiler / noktalama** (sohbet) | *Toll 🙄* / *Super gemacht!!!* |
+
+### Mesafe tırnağı – gerçek tırnak işareti
+- **Alıntı**: *Er sagte: „Ich komme morgen."* („Yarın geliyorum" dedi – doğrudan anlatım)
+- **Mesafe / ironi**: *Sein „Kompromiss" bestand darin, dass alle nachgeben sollten.* (Onun „uzlaşısı" herkesin geri adım atmasıydı – gerçek bir uzlaşı değildi.)
+- **Konuşmada** bunun yerine çoğu zaman bir el hareketi (parmaklarla tırnak işareti) yapılır ya da ***in Anführungszeichen*** („tırnak içinde") denir.
+
+### İroninin bol olduğu metin türleri
+- **Glosse**: kısa, keskin, çoğu zaman ironik görüş yazısı.
+- **Hiciv (Satire)**: toplumsal aksaklıkları abartır ve alaya alır.
+- **Köşe yazısı (Kolumne)**: kişisel yorum, çoğu zaman esprili.
+
+### Bir Glosse'den örnek
+*Die Deutsche Bahn hat **wieder einmal** bewiesen, wie **zuverlässig** sie ist: **Pünktlich wie immer** erreichte der ICE sein Ziel – mit nur zwei Stunden Verspätung. Für diesen „**Service**" zahlen wir **gern** jedes Jahr mehr.*
+(Alman Demiryolları ne kadar güvenilir olduğunu bir kez daha kanıtladı: ICE her zamanki gibi dakik bir şekilde hedefine ulaştı – yalnızca iki saat gecikmeyle. Bu „hizmet" için her yıl seve seve daha fazla ödüyoruz.)
+
+**Örnekler:**
+- *Die „schnelle" Internetverbindung brauchte zehn Minuten für eine E-Mail.* („Hızlı" internet bağlantısı bir e-posta için on dakika harcadı.)
+- *Wie nicht anders zu erwarten, war der Parkplatz voll.* (Başka türlü beklenemezdi zaten, otopark doluydu.)
+- *Herzlichen Dank an die Stadt für die **wunderbare** Baustelle vor meiner Tür – seit drei Jahren.* (Kapımın önündeki harika inşaat alanı için belediyeye çok teşekkürler – üç yıldır.)`,
     },
   })
   await seedExercises({
@@ -35913,12 +37514,102 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit4.id,
       order: 4,
       grammarTopic: 'Übung: Sarkasmus & Übertreibung',
-      explanationDe:
-        'Wiederholung: Sarkasmus meint das Gegenteil, Hyperbel übertreibt bewusst — beide erzeugen rhetorische Wirkung, aber mit unterschiedlicher Funktion.',
-      explanationEn:
-        'Review: sarcasm means the opposite, hyperbole exaggerates deliberately — both create rhetorical effect but serve different functions.',
-      explanationTr:
-        'Tekrar: alaycılık tersini kasteder, abartma bilinçli olarak büyütür — ikisi de retorik etki yaratır ama işlevleri farklıdır.',
+      explanationDe: `## Übung: Sarkasmus & Übertreibung – Zusammenfassung
+
+**Sarkasmus** meint das **Gegenteil** (bissig), die **Hyperbel** **übertreibt** bewusst. Beide erzeugen **rhetorische Wirkung**, haben aber **unterschiedliche Funktionen**.
+
+### Vergleich der Stilmittel
+| Stilmittel | Prinzip | Funktion | Beispiel |
+| ---- | ---- | ---- | ---- |
+| **Ironie** | Gegenteil | Humor, Distanz | *Schönes Wetter!* (bei Sturm) |
+| **Sarkasmus** | Gegenteil, bissig | Spott, Kritik | *Toll gemacht, Einstein!* |
+| **Hyperbel** | Übertreibung | Nachdruck, Gefühl | *Ich warte seit Jahrhunderten!* |
+| **Understatement** | Untertreibung | Bescheidenheit, Coolness | *War nicht schlecht.* |
+| **Zynismus** | Verachtung, Hoffnungslosigkeit | Verbitterung | *Menschenrechte? Die gelten doch nur für Reiche.* |
+
+### Analysefragen
+1. **Stimmt die wörtliche Aussage mit der Situation überein?** Nein → Ironie/Sarkasmus.
+2. **Ist die Aussage unmöglich oder stark übertrieben?** Ja → Hyperbel.
+3. **Will der Sprecher jemanden verletzen?** Ja → eher Sarkasmus.
+4. **Ist die Aussage schwächer als die Realität?** Ja → Understatement.
+
+### Kombinationen
+Oft treten die Mittel **gemeinsam** auf:
+- *„Na super, nur **eine Million** Leute vor mir in der Schlange – **mein Lieblingshobby**."* (Hyperbel + Sarkasmus)
+- *„Das war ja **der beste Tag aller Zeiten**."* (nach einem Unglück: Hyperbel + Ironie)
+
+### Interkulturelle Hinweise
+Deutsche benutzen im Alltag häufig **trockene Ironie**. Wer sie nicht erkennt, nimmt Aussagen **wörtlich** – mit peinlichen Folgen. Umgekehrt sollte man im **Beruf** mit Sarkasmus vorsichtig sein.
+
+**Beispiele:**
+- *Ich habe dir das schon hundertmal erklärt!* (Hyperbel)
+- *Wie aufmerksam von dir, mich nicht einzuladen.* (Sarkasmus)
+- *Der Kuchen ist riesig – der reicht für eine ganze Armee.* (Hyperbel)
+- *Ein „kleiner" Fehler: Die ganze Datenbank ist gelöscht.* (Ironie)`,
+      explanationEn: `## Practice: sarcasm & exaggeration – summary
+
+**Sarcasm** means the **opposite** (bitingly); **hyperbole** deliberately **exaggerates**. Both create **rhetorical effect** but serve **different functions**.
+
+### Comparing the devices
+| device | principle | function | example |
+| ---- | ---- | ---- | ---- |
+| **irony** | opposite | humour, distance | *Schönes Wetter!* (Lovely weather! – in a storm) |
+| **sarcasm** | opposite, biting | mockery, criticism | *Toll gemacht, Einstein!* (Well done, Einstein!) |
+| **hyperbole** | exaggeration | emphasis, feeling | *Ich warte seit Jahrhunderten!* (I've been waiting for centuries!) |
+| **understatement** | playing down | modesty, coolness | *War nicht schlecht.* (Wasn't bad.) |
+| **cynicism** | contempt, hopelessness | bitterness | *Menschenrechte? Die gelten doch nur für Reiche.* (Human rights? They only apply to the rich.) |
+
+### Analysis questions
+1. **Does the literal statement match the situation?** No → irony/sarcasm.
+2. **Is the statement impossible or greatly exaggerated?** Yes → hyperbole.
+3. **Does the speaker want to hurt someone?** Yes → more likely sarcasm.
+4. **Is the statement weaker than reality?** Yes → understatement.
+
+### Combinations
+The devices often appear **together**:
+- *„Na super, nur **eine Million** Leute vor mir in der Schlange – **mein Lieblingshobby**."* (Oh great, only a million people ahead of me in the queue – my favourite hobby. – hyperbole + sarcasm)
+- *„Das war ja **der beste Tag aller Zeiten**."* (That was the best day ever. – after a misfortune: hyperbole + irony)
+
+### Intercultural notes
+Germans often use **dry irony** in everyday life. If you don't recognise it, you take statements **literally** – with embarrassing results. Conversely, be careful with sarcasm **at work**.
+
+**Examples:**
+- *Ich habe dir das schon hundertmal erklärt!* (I've explained this to you a hundred times! – hyperbole)
+- *Wie aufmerksam von dir, mich nicht einzuladen.* (How thoughtful of you not to invite me. – sarcasm)
+- *Der Kuchen ist riesig – der reicht für eine ganze Armee.* (The cake is huge – it would feed an entire army. – hyperbole)
+- *Ein „kleiner" Fehler: Die ganze Datenbank ist gelöscht.* (A "small" mistake: the whole database has been deleted. – irony)`,
+      explanationTr: `## Alıştırma: Alay ve abartma – özet
+
+**Sarkazm** **tersini** kasteder (iğneleyici biçimde), **hiperbol** ise bilerek **abartır**. İkisi de **retorik etki** yaratır, ama **farklı işlevleri** vardır.
+
+### Araçların karşılaştırması
+| araç | ilke | işlev | örnek |
+| ---- | ---- | ---- | ---- |
+| **ironi** | tersi | mizah, mesafe | *Schönes Wetter!* (Ne güzel hava! – fırtınada) |
+| **sarkazm** | tersi, iğneleyici | alay, eleştiri | *Toll gemacht, Einstein!* (Aferin, Einstein!) |
+| **hiperbol** | abartma | vurgu, duygu | *Ich warte seit Jahrhunderten!* (Yüzyıllardır bekliyorum!) |
+| **understatement** | olduğundan az gösterme | alçakgönüllülük, soğukkanlılık | *War nicht schlecht.* (Fena değildi.) |
+| **sinizm** | küçümseme, umutsuzluk | acılık | *Menschenrechte? Die gelten doch nur für Reiche.* (İnsan hakları mı? Onlar sadece zenginler için geçerli.) |
+
+### Çözümleme soruları
+1. **Düz anlam durumla örtüşüyor mu?** Hayır → ironi/sarkazm.
+2. **İfade imkânsız mı ya da çok mu abartılı?** Evet → hiperbol.
+3. **Konuşan birini incitmek mi istiyor?** Evet → büyük ihtimalle sarkazm.
+4. **İfade gerçeklikten daha mı zayıf?** Evet → understatement.
+
+### Birleşimler
+Araçlar çoğu zaman **bir arada** görülür:
+- *„Na super, nur **eine Million** Leute vor mir in der Schlange – **mein Lieblingshobby**."* (Harika, önümde sadece bir milyon kişi var – en sevdiğim hobi. – hiperbol + sarkazm)
+- *„Das war ja **der beste Tag aller Zeiten**."* (Gelmiş geçmiş en güzel gündü. – bir talihsizlikten sonra: hiperbol + ironi)
+
+### Kültürlerarası notlar
+Almanlar günlük hayatta sık sık **kuru ironi** kullanır. Bunu fark etmeyen, sözleri **kelimesi kelimesine** anlar – utandırıcı sonuçlarla. Öte yandan **iş hayatında** sarkazma karşı dikkatli olmak gerekir.
+
+**Örnekler:**
+- *Ich habe dir das schon hundertmal erklärt!* (Sana bunu yüz kere açıkladım! – hiperbol)
+- *Wie aufmerksam von dir, mich nicht einzuladen.* (Beni davet etmemen ne kadar da düşünceli. – sarkazm)
+- *Der Kuchen ist riesig – der reicht für eine ganze Armee.* (Pasta devasa – bütün bir orduyu doyurur. – hiperbol)
+- *Ein „kleiner" Fehler: Die ganze Datenbank ist gelöscht.* („Küçük" bir hata: bütün veritabanı silindi. – ironi)`,
     },
   })
   await seedExercises({
@@ -35973,12 +37664,102 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit5.id,
       order: 1,
       grammarTopic: 'Juristische Fachsprache',
-      explanationDe:
-        'Die Rechtssprache benutzt feste Formulierungen wie "unbeschadet", "im Sinne des Gesetzes", "vorbehaltlich" — oft mit Nominalstil und Passiv.',
-      explanationEn:
-        'Legal language uses fixed formulations like "unbeschadet" (without prejudice to), "im Sinne des Gesetzes" (within the meaning of the law), "vorbehaltlich" (subject to) — often with nominal style and passive voice.',
-      explanationTr:
-        'Hukuk dili "unbeschadet" (zarar vermeksizin), "im Sinne des Gesetzes" (kanun anlamında), "vorbehaltlich" (şartıyla) gibi sabit ifadeler kullanır — genellikle isim stili ve edilgen çatıyla.',
+      explanationDe: `## Juristische Fachsprache
+
+Die **Rechtssprache** muss **präzise, eindeutig und allgemeingültig** sein. Deshalb wirkt sie für Laien oft schwer verständlich. Typisch sind **feste Formeln**, **Nominalstil**, **Passiv** und **Konditionalsätze**.
+
+### Typische Formeln und ihre Bedeutung
+| Formel | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| **unbeschadet** + G | ohne Einfluss auf, unabhängig von | **Unbeschadet** der Rechte Dritter … |
+| **vorbehaltlich** + G | unter dem Vorbehalt, falls nicht | **Vorbehaltlich** der Zustimmung des Rates … |
+| **im Sinne** des Gesetzes | so, wie das Gesetz es definiert | Arbeitnehmer **im Sinne** dieses Gesetzes sind … |
+| **gemäß / nach** § … | entsprechend | **Gemäß** § 3 Abs. 2 … |
+| **sofern / soweit** | falls / in dem Umfang, wie | **Sofern** nichts anderes vereinbart ist, … |
+| **ist berechtigt / verpflichtet** | darf / muss | Der Mieter **ist verpflichtet**, … |
+| **hat zu** + Infinitiv | muss | Der Antrag **ist** schriftlich **zu stellen**. |
+| **Zuwiderhandlungen** | Verstöße | **Zuwiderhandlungen** werden geahndet. |
+
+### Sprachliche Merkmale
+1. **Passiv und „ist zu + Infinitiv"**: *Die Gebühr **ist** innerhalb von 14 Tagen **zu entrichten**.* (= muss bezahlt werden)
+2. **Bedingungsstruktur** (Tatbestand → Rechtsfolge): ***Wer** vorsätzlich einen Menschen tötet, **wird** … **bestraft**.*
+3. **Nominalstil**: *die Inanspruchnahme, die Geltendmachung, die Nichterfüllung*
+4. **Abkürzungen**: *BGB* (Bürgerliches Gesetzbuch), *StGB* (Strafgesetzbuch), *Abs.* (Absatz), *Art.* (Artikel), *i. V. m.* (in Verbindung mit)
+5. **Bedeutungsunterschiede zum Alltag**: *„Besitz"* (tatsächliche Herrschaft) ≠ *„Eigentum"* (rechtliche Zugehörigkeit); *„grundsätzlich"* = in der Regel, **mit Ausnahmen**!
+
+### Achtung: „grundsätzlich"
+Im Alltag: *grundsätzlich* = immer. Im Recht: *grundsätzlich* = **im Prinzip, aber Ausnahmen sind möglich**.
+*Der Mieter darf **grundsätzlich** keine Haustiere halten.* (= Ausnahmen sind möglich, z. B. Kleintiere.)
+
+**Beispiele:**
+- ***Unbeschadet** dieser Regelung bleibt das Recht auf Schadensersatz bestehen.*
+- *Der Vertrag tritt **vorbehaltlich** der Genehmigung durch die Behörde in Kraft.*
+- *Die Kündigung **bedarf der Schriftform**.* (= muss schriftlich erfolgen)
+- *Der Käufer **ist berechtigt**, vom Vertrag **zurückzutreten**.*`,
+      explanationEn: `## Legal language
+
+**Legal language** must be **precise, unambiguous and universally applicable**. That's why laypeople often find it hard to understand. Typical features are **fixed formulas**, **nominal style**, **passive** and **conditional clauses**.
+
+### Typical formulas and their meaning
+| formula | meaning | example |
+| ---- | ---- | ---- |
+| **unbeschadet** + gen. | without prejudice to | **Unbeschadet** der Rechte Dritter … (Without prejudice to third-party rights …) |
+| **vorbehaltlich** + gen. | subject to | **Vorbehaltlich** der Zustimmung des Rates … (Subject to the council's approval …) |
+| **im Sinne** des Gesetzes | within the meaning of the law | Arbeitnehmer **im Sinne** dieses Gesetzes sind … (Employees within the meaning of this Act are …) |
+| **gemäß / nach** § … | pursuant to, in accordance with | **Gemäß** § 3 Abs. 2 … (Pursuant to § 3 (2) …) |
+| **sofern / soweit** | provided that / to the extent that | **Sofern** nichts anderes vereinbart ist, … (Unless otherwise agreed …) |
+| **ist berechtigt / verpflichtet** | is entitled / obliged | Der Mieter **ist verpflichtet**, … (The tenant is obliged to …) |
+| **hat zu** + infinitive | must | Der Antrag **ist** schriftlich **zu stellen**. (The application must be made in writing.) |
+| **Zuwiderhandlungen** | infringements | **Zuwiderhandlungen** werden geahndet. (Infringements will be prosecuted.) |
+
+### Linguistic features
+1. **Passive and "ist zu + infinitive"**: *Die Gebühr **ist** innerhalb von 14 Tagen **zu entrichten**.* (The fee is to be paid within 14 days.)
+2. **Conditional structure** (facts → legal consequence): ***Wer** vorsätzlich einen Menschen tötet, **wird** … **bestraft**.* (Whoever intentionally kills a person shall be punished …)
+3. **Nominal style**: *die Inanspruchnahme, die Geltendmachung, die Nichterfüllung* (use/claiming, assertion, non-performance)
+4. **Abbreviations**: *BGB* (Civil Code), *StGB* (Criminal Code), *Abs.* (subsection), *Art.* (article), *i. V. m.* (in conjunction with)
+5. **Differences from everyday meaning**: *„Besitz"* (actual possession) ≠ *„Eigentum"* (legal ownership); *„grundsätzlich"* = as a rule, **with exceptions**!
+
+### Note: "grundsätzlich"
+In everyday use: *grundsätzlich* = always. In law: *grundsätzlich* = **in principle, but exceptions are possible**.
+*Der Mieter darf **grundsätzlich** keine Haustiere halten.* (In principle the tenant may not keep pets – exceptions such as small animals are possible.)
+
+**Examples:**
+- ***Unbeschadet** dieser Regelung bleibt das Recht auf Schadensersatz bestehen.* (Without prejudice to this provision, the right to damages remains.)
+- *Der Vertrag tritt **vorbehaltlich** der Genehmigung durch die Behörde in Kraft.* (The contract enters into force subject to approval by the authority.)
+- *Die Kündigung **bedarf der Schriftform**.* (Notice of termination must be given in writing.)
+- *Der Käufer **ist berechtigt**, vom Vertrag **zurückzutreten**.* (The buyer is entitled to withdraw from the contract.)`,
+      explanationTr: `## Hukuk dili
+
+**Hukuk dili** **kesin, açık ve genel geçer** olmalıdır. Bu yüzden meslekten olmayanlar çoğu zaman zor anlar. **Kalıp ifadeler**, **isim üslubu**, **edilgen çatı** ve **koşul cümleleri** tipiktir.
+
+### Tipik kalıplar ve anlamları
+| kalıp | anlamı | örnek |
+| ---- | ---- | ---- |
+| **unbeschadet** + G | … saklı kalmak kaydıyla, … etkilemeksizin | **Unbeschadet** der Rechte Dritter … (Üçüncü kişilerin hakları saklı kalmak kaydıyla …) |
+| **vorbehaltlich** + G | … şartıyla, … saklı kalmak üzere | **Vorbehaltlich** der Zustimmung des Rates … (Kurulun onayı şartıyla …) |
+| **im Sinne** des Gesetzes | yasa anlamında | Arbeitnehmer **im Sinne** dieses Gesetzes sind … (Bu yasa anlamında işçi şunlardır …) |
+| **gemäß / nach** § … | … uyarınca | **Gemäß** § 3 Abs. 2 … (Madde 3 fıkra 2 uyarınca …) |
+| **sofern / soweit** | … olması hâlinde / … ölçüde | **Sofern** nichts anderes vereinbart ist, … (Aksi kararlaştırılmadıkça …) |
+| **ist berechtigt / verpflichtet** | yetkilidir / yükümlüdür | Der Mieter **ist verpflichtet**, … (Kiracı … ile yükümlüdür.) |
+| **ist zu** + mastar | … gerekir | Der Antrag **ist** schriftlich **zu stellen**. (Başvuru yazılı olarak yapılmalıdır.) |
+| **Zuwiderhandlungen** | ihlaller | **Zuwiderhandlungen** werden geahndet. (İhlaller cezalandırılır.) |
+
+### Dilsel özellikler
+1. **Edilgen ve „ist zu + mastar"**: *Die Gebühr **ist** innerhalb von 14 Tagen **zu entrichten**.* (Ücret 14 gün içinde ödenmelidir.)
+2. **Koşul yapısı** (olgu → hukuki sonuç): ***Wer** vorsätzlich einen Menschen tötet, **wird** … **bestraft**.* (Bir insanı kasten öldüren … cezalandırılır.)
+3. **İsim üslubu**: *die Inanspruchnahme, die Geltendmachung, die Nichterfüllung* (yararlanma, ileri sürme, ifa etmeme)
+4. **Kısaltmalar**: *BGB* (Medeni Kanun), *StGB* (Ceza Kanunu), *Abs.* (fıkra), *Art.* (madde), *i. V. m.* (… ile bağlantılı olarak)
+5. **Gündelik anlamdan farklar**: *„Besitz"* (zilyetlik, fiilî hâkimiyet) ≠ *„Eigentum"* (mülkiyet); *„grundsätzlich"* = kural olarak, **istisnalarla**!
+
+### Dikkat: „grundsätzlich"
+Günlük dilde: *grundsätzlich* = her zaman. Hukukta: *grundsätzlich* = **ilke olarak, ama istisnalar mümkün**.
+*Der Mieter darf **grundsätzlich** keine Haustiere halten.* (Kiracı ilke olarak evcil hayvan besleyemez – küçük hayvanlar gibi istisnalar mümkün.)
+
+**Örnekler:**
+- ***Unbeschadet** dieser Regelung bleibt das Recht auf Schadensersatz bestehen.* (Bu düzenleme saklı kalmak kaydıyla tazminat hakkı devam eder.)
+- *Der Vertrag tritt **vorbehaltlich** der Genehmigung durch die Behörde in Kraft.* (Sözleşme, kurumun onayı şartıyla yürürlüğe girer.)
+- *Die Kündigung **bedarf der Schriftform**.* (Fesih yazılı şekle tabidir.)
+- *Der Käufer **ist berechtigt**, vom Vertrag **zurückzutreten**.* (Alıcı sözleşmeden dönme hakkına sahiptir.)`,
     },
   })
   await seedExercises({
@@ -36007,12 +37788,135 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit5.id,
       order: 2,
       grammarTopic: 'Medizinische Fachsprache',
-      explanationDe:
-        'Die Medizinsprache benutzt oft griechisch-lateinische Fachbegriffe: "die Diagnose", "die Therapie", "die Symptomatik". Ärzte übersetzen diese oft in Alltagssprache für Patienten.',
-      explanationEn:
-        'Medical language often uses Greek-Latin technical terms: "die Diagnose" (diagnosis), "die Therapie" (therapy), "die Symptomatik" (symptomatology). Doctors often translate these into everyday language for patients.',
-      explanationTr:
-        'Tıp dili genellikle Yunanca-Latince teknik terimler kullanır: "die Diagnose" (tanı), "die Therapie" (tedavi), "die Symptomatik" (semptomlar). Doktorlar bunları hastalar için günlük dile çevirir.',
+      explanationDe: `## Medizinische Fachsprache
+
+Die **Medizinsprache** verwendet viele **griechisch-lateinische Fachbegriffe**. Ärztinnen und Ärzte sprechen untereinander in dieser Fachsprache, müssen sie aber für Patienten in **Alltagssprache übersetzen**.
+
+### Fachbegriff – Alltagssprache
+| Fachbegriff | Alltagssprache |
+| ---- | ---- |
+| die Diagnose | die Feststellung der Krankheit |
+| die Therapie | die Behandlung |
+| die Symptomatik / die Symptome | die Beschwerden / Krankheitszeichen |
+| die Prognose | die Vorhersage des Krankheitsverlaufs |
+| akut ↔ chronisch | plötzlich, kurz ↔ dauerhaft, lang anhaltend |
+| die Indikation | der Grund für eine Behandlung |
+| die Kontraindikation | der Grund **gegen** eine Behandlung |
+| die Anamnese | die Krankengeschichte, das Vorgespräch |
+| benigne ↔ maligne | gutartig ↔ bösartig |
+| der Befund | das Untersuchungsergebnis |
+| die Nebenwirkung | unerwünschte Wirkung eines Medikaments |
+
+### Wortbausteine erkennen
+| Baustein | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| **-itis** | Entzündung | Bronch**itis** (Entzündung der Bronchien), Gastr**itis** (Magen) |
+| **-algie** | Schmerz | Neur**algie** (Nervenschmerz) |
+| **-ektomie** | operative Entfernung | Append**ektomie** (Blinddarmentfernung) |
+| **-logie** | Lehre | Kardio**logie** (Herzheilkunde) |
+| **hyper- / hypo-** | zu viel / zu wenig | **Hyper**tonie (Bluthochdruck), **Hypo**glykämie (Unterzucker) |
+| **kardio-, gastro-, derma-** | Herz, Magen, Haut | **Derma**tologe (Hautarzt) |
+
+### Typische Strukturen in Befunden und Arztbriefen
+- **Nominalstil**: *Nach **Abklingen** der Symptomatik **erfolgte** die **Entlassung**.*
+- **Passiv**: *Der Patient **wurde** stationär **aufgenommen**.*
+- **Vorsichtige Formulierungen**: *Es besteht **Verdacht auf** eine Lungenentzündung.* / *Eine Fraktur **ist nicht auszuschließen**.*
+
+### Arzt-Patienten-Gespräch: Übersetzen
+**Fachsprache:** *Die Anamnese ergab eine chronische Gastritis.*
+**Für den Patienten:** *Sie haben mir erzählt, dass Sie schon lange Magenschmerzen haben – das ist eine dauerhafte Entzündung der Magenschleimhaut.*
+
+**Beispiele:**
+- *Der Arzt stellte die **Diagnose** „akute Bronchitis".*
+- *Die **Therapie** schlägt gut an.* (= Die Behandlung wirkt.)
+- *Die **Prognose** ist günstig.* (= Er wird wahrscheinlich wieder gesund.)
+- *Der **Befund** war unauffällig.* (= Es wurde nichts Krankhaftes gefunden.)`,
+      explanationEn: `## Medical language
+
+**Medical language** uses many **Greek and Latin technical terms**. Doctors speak this technical language among themselves but have to **translate it into everyday language** for patients.
+
+### Technical term – everyday language
+| technical term | everyday language |
+| ---- | ---- |
+| die Diagnose (diagnosis) | die Feststellung der Krankheit (identifying the illness) |
+| die Therapie (therapy) | die Behandlung (treatment) |
+| die Symptomatik / die Symptome (symptoms) | die Beschwerden / Krankheitszeichen (complaints / signs of illness) |
+| die Prognose (prognosis) | die Vorhersage des Krankheitsverlaufs (prediction of the course of illness) |
+| akut ↔ chronisch (acute ↔ chronic) | plötzlich, kurz ↔ dauerhaft, lang anhaltend (sudden, short ↔ lasting) |
+| die Indikation (indication) | der Grund für eine Behandlung (reason for a treatment) |
+| die Kontraindikation (contraindication) | der Grund **gegen** eine Behandlung (reason against a treatment) |
+| die Anamnese (medical history) | die Krankengeschichte, das Vorgespräch |
+| benigne ↔ maligne (benign ↔ malignant) | gutartig ↔ bösartig |
+| der Befund (findings) | das Untersuchungsergebnis (test result) |
+| die Nebenwirkung (side effect) | unerwünschte Wirkung eines Medikaments |
+
+### Recognising word elements
+| element | meaning | example |
+| ---- | ---- | ---- |
+| **-itis** | inflammation | Bronch**itis**, Gastr**itis** (stomach) |
+| **-algie** | pain | Neur**algie** (nerve pain) |
+| **-ektomie** | surgical removal | Append**ektomie** (appendectomy) |
+| **-logie** | study of | Kardio**logie** (cardiology) |
+| **hyper- / hypo-** | too much / too little | **Hyper**tonie (high blood pressure), **Hypo**glykämie (low blood sugar) |
+| **kardio-, gastro-, derma-** | heart, stomach, skin | **Derma**tologe (dermatologist) |
+
+### Typical structures in findings and doctors' letters
+- **Nominal style**: *Nach **Abklingen** der Symptomatik **erfolgte** die **Entlassung**.* (After the symptoms subsided, the patient was discharged.)
+- **Passive**: *Der Patient **wurde** stationär **aufgenommen**.* (The patient was admitted as an in-patient.)
+- **Cautious wording**: *Es besteht **Verdacht auf** eine Lungenentzündung.* (Pneumonia is suspected.) / *Eine Fraktur **ist nicht auszuschließen**.* (A fracture cannot be ruled out.)
+
+### Doctor–patient conversation: translating
+**Technical:** *Die Anamnese ergab eine chronische Gastritis.* (The history revealed chronic gastritis.)
+**For the patient:** *Sie haben mir erzählt, dass Sie schon lange Magenschmerzen haben – das ist eine dauerhafte Entzündung der Magenschleimhaut.* (You told me you've had stomach pain for a long time – that's a long-lasting inflammation of the stomach lining.)
+
+**Examples:**
+- *Der Arzt stellte die **Diagnose** „akute Bronchitis".* (The doctor diagnosed acute bronchitis.)
+- *Die **Therapie** schlägt gut an.* (The treatment is working well.)
+- *Die **Prognose** ist günstig.* (The prognosis is favourable – he'll probably recover.)
+- *Der **Befund** war unauffällig.* (The findings were normal – nothing pathological was found.)`,
+      explanationTr: `## Tıp dili
+
+**Tıp dili** çok sayıda **Yunanca-Latince terim** kullanır. Doktorlar kendi aralarında bu uzmanlık diliyle konuşur, ama hastalar için **günlük dile çevirmeleri** gerekir.
+
+### Terim – günlük dil
+| terim | günlük dil |
+| ---- | ---- |
+| die Diagnose (teşhis) | die Feststellung der Krankheit (hastalığın saptanması) |
+| die Therapie (tedavi) | die Behandlung (tedavi etme) |
+| die Symptomatik / die Symptome (belirtiler) | die Beschwerden / Krankheitszeichen (şikâyetler) |
+| die Prognose (prognoz) | die Vorhersage des Krankheitsverlaufs (hastalığın seyrine dair öngörü) |
+| akut ↔ chronisch (akut ↔ kronik) | plötzlich, kurz ↔ dauerhaft, lang anhaltend (ani, kısa ↔ kalıcı, uzun süren) |
+| die Indikation (endikasyon) | der Grund für eine Behandlung (tedavi gerekçesi) |
+| die Kontraindikation (kontrendikasyon) | der Grund **gegen** eine Behandlung (tedaviye engel durum) |
+| die Anamnese (anamnez) | die Krankengeschichte, das Vorgespräch (hastalık öyküsü) |
+| benigne ↔ maligne (benign ↔ malign) | gutartig ↔ bösartig (iyi huylu ↔ kötü huylu) |
+| der Befund (bulgu) | das Untersuchungsergebnis (muayene sonucu) |
+| die Nebenwirkung (yan etki) | unerwünschte Wirkung eines Medikaments |
+
+### Kelime parçalarını tanımak
+| parça | anlamı | örnek |
+| ---- | ---- | ---- |
+| **-itis** | iltihap | Bronch**itis** (bronşit), Gastr**itis** (gastrit, mide) |
+| **-algie** | ağrı | Neur**algie** (sinir ağrısı) |
+| **-ektomie** | cerrahi çıkarma | Append**ektomie** (apandisit ameliyatı) |
+| **-logie** | bilim dalı | Kardio**logie** (kardiyoloji) |
+| **hyper- / hypo-** | fazla / az | **Hyper**tonie (yüksek tansiyon), **Hypo**glykämie (kan şekeri düşüklüğü) |
+| **kardio-, gastro-, derma-** | kalp, mide, deri | **Derma**tologe (cildiye uzmanı) |
+
+### Raporlarda ve doktor mektuplarında tipik yapılar
+- **İsim üslubu**: *Nach **Abklingen** der Symptomatik **erfolgte** die **Entlassung**.* (Belirtiler hafifledikten sonra taburcu edildi.)
+- **Edilgen**: *Der Patient **wurde** stationär **aufgenommen**.* (Hasta yatarak tedaviye alındı.)
+- **Temkinli ifadeler**: *Es besteht **Verdacht auf** eine Lungenentzündung.* (Zatürre şüphesi var.) / *Eine Fraktur **ist nicht auszuschließen**.* (Kırık olasılığı dışlanamaz.)
+
+### Doktor-hasta görüşmesi: çeviri
+**Uzmanlık dili:** *Die Anamnese ergab eine chronische Gastritis.* (Anamnezde kronik gastrit saptandı.)
+**Hasta için:** *Sie haben mir erzählt, dass Sie schon lange Magenschmerzen haben – das ist eine dauerhafte Entzündung der Magenschleimhaut.* (Uzun zamandır mide ağrınız olduğunu anlattınız – bu, mide zarının kalıcı bir iltihabıdır.)
+
+**Örnekler:**
+- *Der Arzt stellte die **Diagnose** „akute Bronchitis".* (Doktor „akut bronşit" teşhisi koydu.)
+- *Die **Therapie** schlägt gut an.* (Tedavi iyi sonuç veriyor.)
+- *Die **Prognose** ist günstig.* (Prognoz olumlu – büyük ihtimalle iyileşecek.)
+- *Der **Befund** war unauffällig.* (Bulgular normaldi – hastalıklı bir şey bulunmadı.)`,
     },
   })
   await seedExercises({
@@ -36041,12 +37945,120 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit5.id,
       order: 3,
       grammarTopic: 'Bürokratische Fachsprache',
-      explanationDe:
-        'Verwaltungssprache benutzt Formulierungen wie "Antrag auf...", "gemäß §...", "hiermit wird bescheinigt, dass...". Diese sind stark formelhaft und wenig variabel.',
-      explanationEn:
-        'Bureaucratic language uses formulations like "Antrag auf..." (application for...), "gemäß §..." (pursuant to §...), "hiermit wird bescheinigt, dass..." (this certifies that...). These are highly formulaic and rigid.',
-      explanationTr:
-        'Bürokratik dil "Antrag auf..." (başvuru...), "gemäß §..." (madde ...\'e göre), "hiermit wird bescheinigt, dass..." (bununla belgelenmektedir ki...) gibi ifadeler kullanır. Bunlar oldukça kalıplaşmıştır.',
+      explanationDe: `## Bürokratische Fachsprache (Amtsdeutsch)
+
+Die **Verwaltungssprache** („Amtsdeutsch", „Behördendeutsch") ist stark **formelhaft**, **unpersönlich** und **nominal**. Sie soll rechtssicher und neutral sein – wirkt aber oft umständlich.
+
+### Typische Formeln
+| Formel | Bedeutung / Verwendung |
+| ---- | ---- |
+| **Antrag auf** + A | formelle Bitte um etwas: *Antrag auf Elterngeld* |
+| **gemäß** § … | entsprechend dem Paragrafen |
+| **hiermit wird bescheinigt, dass …** | Formel für Bescheinigungen |
+| **Bezug nehmend auf** Ihr Schreiben vom … | wir beziehen uns auf Ihren Brief |
+| **wir weisen darauf hin, dass …** | wir machen Sie aufmerksam |
+| **ist beizufügen / vorzulegen** | muss mitgeschickt / gezeigt werden |
+| **innerhalb einer Frist von** … | in der Zeit von … |
+| **zwecks** + G | um … zu |
+| **im Auftrag (i. A.)** | Unterschrift für eine andere Person |
+| **Rechtsbehelfsbelehrung** | Information, wie man Widerspruch einlegt |
+
+### Merkmale
+1. **Passiv / unpersönlich**: *Es **wird** gebeten, … / Der Antrag **wurde** abgelehnt.*
+2. **„ist zu" + Infinitiv** (= muss / kann): *Der Ausweis **ist** mitzubringen.*
+3. **Lange Komposita**: *Kraftfahrzeughaftpflichtversicherung, Aufenthaltserlaubnis, Personenstandsurkunde*
+4. **Spezieller Wortschatz**: *Bescheid* (offizielle Entscheidung), *Widerspruch* (formelle Beschwerde), *Frist* (Zeitlimit), *Formular*, *Unterlagen*, *Nachweis*
+5. **Abkürzungen**: *z. Hd.* (zu Händen), *Az.* (Aktenzeichen), *i. A.*, *ggf.* (gegebenenfalls), *bzgl.* (bezüglich)
+
+### Amtsdeutsch übersetzen
+| Amtsdeutsch | einfaches Deutsch |
+| ---- | ---- |
+| *Die Antragstellung hat persönlich zu erfolgen.* | Sie müssen den Antrag selbst abgeben. |
+| *Bei Nichteinhaltung der Frist erfolgt eine Ablehnung.* | Wenn Sie zu spät sind, lehnen wir ab. |
+| *Ihrem Antrag kann nicht entsprochen werden.* | Wir lehnen Ihren Antrag ab. |
+| *Die Unterlagen sind vollständig beizubringen.* | Bitte schicken Sie alle Unterlagen. |
+
+**Beispiele:**
+- *Hiermit **wird bescheinigt**, dass Frau Yılmaz an dem Kurs **teilgenommen hat**.*
+- *Dem Antrag **sind** folgende Unterlagen **beizufügen**: …*
+- ***Gegen** diesen Bescheid **kann** innerhalb eines Monats **Widerspruch eingelegt werden**.*
+- *Wir **weisen darauf hin**, dass unvollständige Anträge nicht bearbeitet werden.*`,
+      explanationEn: `## Bureaucratic language (officialese)
+
+**Administrative language** ("Amtsdeutsch", "Behördendeutsch") is highly **formulaic**, **impersonal** and **nominal**. It is meant to be legally sound and neutral – but often seems long-winded.
+
+### Typical formulas
+| formula | meaning / use |
+| ---- | ---- |
+| **Antrag auf** + acc. | formal request for something: *Antrag auf Elterngeld* (application for parental allowance) |
+| **gemäß** § … | in accordance with section … |
+| **hiermit wird bescheinigt, dass …** | formula for certificates: "This is to certify that …" |
+| **Bezug nehmend auf** Ihr Schreiben vom … | with reference to your letter of … |
+| **wir weisen darauf hin, dass …** | please note that … |
+| **ist beizufügen / vorzulegen** | must be enclosed / presented |
+| **innerhalb einer Frist von** … | within a period of … |
+| **zwecks** + gen. | for the purpose of |
+| **im Auftrag (i. A.)** | signed on behalf of |
+| **Rechtsbehelfsbelehrung** | information on how to lodge an appeal |
+
+### Features
+1. **Passive / impersonal**: *Es **wird** gebeten, … / Der Antrag **wurde** abgelehnt.* (You are requested to … / The application was rejected.)
+2. **"ist zu" + infinitive** (= must / can): *Der Ausweis **ist** mitzubringen.* (Identification must be brought.)
+3. **Long compounds**: *Kraftfahrzeughaftpflichtversicherung* (motor vehicle liability insurance), *Aufenthaltserlaubnis* (residence permit), *Personenstandsurkunde* (civil status certificate)
+4. **Special vocabulary**: *Bescheid* (official decision), *Widerspruch* (formal objection), *Frist* (deadline), *Formular* (form), *Unterlagen* (documents), *Nachweis* (proof)
+5. **Abbreviations**: *z. Hd.* (attn.), *Az.* (file reference), *i. A.* (p.p.), *ggf.* (if applicable), *bzgl.* (regarding)
+
+### Translating officialese
+| officialese | plain German |
+| ---- | ---- |
+| *Die Antragstellung hat persönlich zu erfolgen.* (The application must be submitted in person.) | Sie müssen den Antrag selbst abgeben. (You must hand in the application yourself.) |
+| *Bei Nichteinhaltung der Frist erfolgt eine Ablehnung.* (Failure to meet the deadline will result in rejection.) | Wenn Sie zu spät sind, lehnen wir ab. (If you're late, we'll say no.) |
+| *Ihrem Antrag kann nicht entsprochen werden.* (Your application cannot be granted.) | Wir lehnen Ihren Antrag ab. (We're rejecting your application.) |
+| *Die Unterlagen sind vollständig beizubringen.* (The documents are to be submitted in full.) | Bitte schicken Sie alle Unterlagen. (Please send all the documents.) |
+
+**Examples:**
+- *Hiermit **wird bescheinigt**, dass Frau Yılmaz an dem Kurs **teilgenommen hat**.* (This is to certify that Ms Yılmaz attended the course.)
+- *Dem Antrag **sind** folgende Unterlagen **beizufügen**: …* (The following documents must be enclosed with the application: …)
+- ***Gegen** diesen Bescheid **kann** innerhalb eines Monats **Widerspruch eingelegt werden**.* (An objection to this decision may be lodged within one month.)
+- *Wir **weisen darauf hin**, dass unvollständige Anträge nicht bearbeitet werden.* (Please note that incomplete applications will not be processed.)`,
+      explanationTr: `## Bürokratik dil (resmî yazışma dili)
+
+**Kamu yönetimi dili** („Amtsdeutsch", „Behördendeutsch") büyük ölçüde **kalıplaşmış**, **kişisiz** ve **isim üslubuna dayalıdır**. Hukuken sağlam ve tarafsız olması amaçlanır – ama çoğu zaman dolambaçlı görünür.
+
+### Tipik kalıplar
+| kalıp | anlamı / kullanımı |
+| ---- | ---- |
+| **Antrag auf** + A | bir şey için resmî talep: *Antrag auf Elterngeld* (ebeveyn parası başvurusu) |
+| **gemäß** § … | … maddesi uyarınca |
+| **hiermit wird bescheinigt, dass …** | belgeler için kalıp: „… olduğu işbu belgeyle onaylanır" |
+| **Bezug nehmend auf** Ihr Schreiben vom … | … tarihli yazınıza istinaden |
+| **wir weisen darauf hin, dass …** | … hususunu bilgilerinize sunarız |
+| **ist beizufügen / vorzulegen** | eklenmelidir / ibraz edilmelidir |
+| **innerhalb einer Frist von** … | … süre içinde |
+| **zwecks** + G | … amacıyla |
+| **im Auftrag (i. A.)** | başkası adına imza |
+| **Rechtsbehelfsbelehrung** | itiraz yollarına ilişkin bilgilendirme |
+
+### Özellikler
+1. **Edilgen / kişisiz**: *Es **wird** gebeten, … / Der Antrag **wurde** abgelehnt.* (… rica olunur / Başvuru reddedildi.)
+2. **„ist zu" + mastar** (= gerekir / mümkündür): *Der Ausweis **ist** mitzubringen.* (Kimlik getirilmelidir.)
+3. **Uzun bileşik isimler**: *Kraftfahrzeughaftpflichtversicherung* (zorunlu trafik sigortası), *Aufenthaltserlaubnis* (oturma izni), *Personenstandsurkunde* (nüfus kayıt belgesi)
+4. **Özel kelimeler**: *Bescheid* (resmî karar), *Widerspruch* (itiraz), *Frist* (süre), *Formular* (form), *Unterlagen* (belgeler), *Nachweis* (kanıt belgesi)
+5. **Kısaltmalar**: *z. Hd.* (dikkatine), *Az.* (dosya no.), *i. A.* (adına), *ggf.* (gerekirse), *bzgl.* (ilişkin)
+
+### Resmî dili sadeleştirmek
+| resmî dil | sade Almanca |
+| ---- | ---- |
+| *Die Antragstellung hat persönlich zu erfolgen.* (Başvurunun şahsen yapılması gerekir.) | Sie müssen den Antrag selbst abgeben. (Başvuruyu kendiniz teslim etmelisiniz.) |
+| *Bei Nichteinhaltung der Frist erfolgt eine Ablehnung.* (Süreye uyulmaması hâlinde ret kararı verilir.) | Wenn Sie zu spät sind, lehnen wir ab. (Geç kalırsanız reddederiz.) |
+| *Ihrem Antrag kann nicht entsprochen werden.* (Talebiniz karşılanamamaktadır.) | Wir lehnen Ihren Antrag ab. (Başvurunuzu reddediyoruz.) |
+| *Die Unterlagen sind vollständig beizubringen.* (Belgelerin eksiksiz sunulması gerekir.) | Bitte schicken Sie alle Unterlagen. (Lütfen tüm belgeleri gönderin.) |
+
+**Örnekler:**
+- *Hiermit **wird bescheinigt**, dass Frau Yılmaz an dem Kurs **teilgenommen hat**.* (Yılmaz Hanım'ın kursa katıldığı işbu belgeyle onaylanır.)
+- *Dem Antrag **sind** folgende Unterlagen **beizufügen**: …* (Başvuruya aşağıdaki belgeler eklenmelidir: …)
+- ***Gegen** diesen Bescheid **kann** innerhalb eines Monats **Widerspruch eingelegt werden**.* (Bu karara bir ay içinde itiraz edilebilir.)
+- *Wir **weisen darauf hin**, dass unvollständige Anträge nicht bearbeitet werden.* (Eksik başvuruların işleme alınmadığını bilgilerinize sunarız.)`,
     },
   })
   await seedExercises({
@@ -36075,12 +38087,111 @@ ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
       unitId: c2Unit5.id,
       order: 4,
       grammarTopic: 'Übung: Fachsprachen im Vergleich',
-      explanationDe:
-        'Wiederholung: Jede Fachsprache (juristisch, medizinisch, bürokratisch) hat eigene feste Formulierungen und Fachbegriffe, die Laien oft nicht sofort verstehen.',
-      explanationEn:
-        'Review: each specialized register (legal, medical, bureaucratic) has its own fixed formulations and technical terms that laypeople often don\'t immediately understand.',
-      explanationTr:
-        'Tekrar: her uzmanlık dili (hukuki, tıbbi, bürokratik) kendine özgü sabit ifadelere ve teknik terimlere sahiptir; bunları sıradan kişiler genellikle hemen anlamaz.',
+      explanationDe: `## Übung: Fachsprachen im Vergleich – Zusammenfassung
+
+Jede Fachsprache hat **eigene Formeln, Fachbegriffe und Satzstrukturen**, die Laien oft nicht sofort verstehen. Gleichzeitig haben alle Fachsprachen **Gemeinsamkeiten**.
+
+### Gemeinsamkeiten
+- **Nominalstil** (*die Inanspruchnahme, die Durchführung*)
+- **Passiv** und unpersönliche Konstruktionen (*es wird …, man …, ist zu …*)
+- **Präzision**: Ein Begriff = eine Bedeutung
+- **Abkürzungen** und **Komposita**
+
+### Unterschiede
+| | Recht | Medizin | Verwaltung |
+| ---- | ---- | ---- | ---- |
+| **Ziel** | Rechtssicherheit, Allgemeingültigkeit | genaue Beschreibung von Befunden | standardisierte Abläufe |
+| **typische Wörter** | unbeschadet, vorbehaltlich, grundsätzlich | Diagnose, akut, chronisch, Befund | Antrag, Bescheid, Frist, Widerspruch |
+| **Herkunft der Begriffe** | deutsch + lateinisch | griechisch-lateinisch | deutsch (Komposita) |
+| **typische Struktur** | *Wer …, wird …* (Tatbestand → Folge) | *Verdacht auf … / … ist nicht auszuschließen* | *ist beizufügen / hat zu erfolgen* |
+| **Textsorten** | Gesetz, Vertrag, Urteil | Arztbrief, Befund, Beipackzettel | Bescheid, Formular, Merkblatt |
+
+### Fachsprache verständlich machen – Strategien
+1. **Fachbegriff + Erklärung**: *eine Gastritis, also eine Magenschleimhautentzündung*
+2. **Nominal → verbal**: *Bei Nichteinhaltung …* → *Wenn Sie … nicht einhalten, …*
+3. **Passiv → Aktiv mit Akteur**: *Der Antrag ist zu stellen.* → *Sie müssen den Antrag stellen.*
+4. **Abkürzungen ausschreiben**
+
+### Wortschatz-Quiz zum Nachdenken
+- *maligne* → bösartig | *benigne* → gutartig
+- *Bescheid* → offizielle Entscheidung | *Widerspruch* → formelle Beschwerde
+- *vorbehaltlich* → unter der Bedingung | *unbeschadet* → ohne Einfluss auf
+
+**Beispiele:**
+- *Der Vertrag ist **vorbehaltlich** der Finanzierung wirksam.* (Recht)
+- *Es besteht der **Verdacht auf** einen Bandscheibenvorfall.* (Medizin)
+- *Gegen den **Bescheid** legte er fristgerecht **Widerspruch** ein.* (Verwaltung)
+- *Die **Einnahme** des Medikaments **erfolgt** zweimal täglich.* (Beipackzettel)`,
+      explanationEn: `## Practice: comparing specialist languages – summary
+
+Every specialist language has **its own formulas, technical terms and sentence structures** that laypeople often don't immediately understand. At the same time, all specialist languages have **features in common**.
+
+### Common features
+- **nominal style** (*die Inanspruchnahme, die Durchführung*)
+- **passive** and impersonal constructions (*es wird …, man …, ist zu …*)
+- **precision**: one term = one meaning
+- **abbreviations** and **compounds**
+
+### Differences
+| | law | medicine | administration |
+| ---- | ---- | ---- | ---- |
+| **aim** | legal certainty, general validity | precise description of findings | standardised procedures |
+| **typical words** | unbeschadet, vorbehaltlich, grundsätzlich | Diagnose, akut, chronisch, Befund | Antrag, Bescheid, Frist, Widerspruch |
+| **origin of terms** | German + Latin | Greek-Latin | German (compounds) |
+| **typical structure** | *Wer …, wird …* (facts → consequence) | *Verdacht auf … / … ist nicht auszuschließen* (suspected … / cannot be ruled out) | *ist beizufügen / hat zu erfolgen* (must be enclosed / must take place) |
+| **text types** | law, contract, judgment | doctor's letter, findings, package leaflet | official decision, form, information sheet |
+
+### Making specialist language understandable – strategies
+1. **term + explanation**: *eine Gastritis, also eine Magenschleimhautentzündung* (gastritis, i.e. inflammation of the stomach lining)
+2. **nominal → verbal**: *Bei Nichteinhaltung …* → *Wenn Sie … nicht einhalten, …* (In case of non-compliance → If you don't comply …)
+3. **passive → active with agent**: *Der Antrag ist zu stellen.* → *Sie müssen den Antrag stellen.* (The application is to be made → You must apply.)
+4. **write out abbreviations**
+
+### Vocabulary check
+- *maligne* → malignant (bösartig) | *benigne* → benign (gutartig)
+- *Bescheid* → official decision | *Widerspruch* → formal objection
+- *vorbehaltlich* → subject to | *unbeschadet* → without prejudice to
+
+**Examples:**
+- *Der Vertrag ist **vorbehaltlich** der Finanzierung wirksam.* (The contract is effective subject to financing. – law)
+- *Es besteht der **Verdacht auf** einen Bandscheibenvorfall.* (A slipped disc is suspected. – medicine)
+- *Gegen den **Bescheid** legte er fristgerecht **Widerspruch** ein.* (He lodged an objection to the decision within the deadline. – administration)
+- *Die **Einnahme** des Medikaments **erfolgt** zweimal täglich.* (The medicine is to be taken twice daily. – package leaflet)`,
+      explanationTr: `## Alıştırma: Uzmanlık dillerinin karşılaştırılması – özet
+
+Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı **kendine özgü kalıpları, terimleri ve cümle yapıları** vardır. Aynı zamanda tüm uzmanlık dillerinin **ortak noktaları** da vardır.
+
+### Ortak noktalar
+- **İsim üslubu** (*die Inanspruchnahme, die Durchführung*)
+- **Edilgen** ve kişisiz yapılar (*es wird …, man …, ist zu …*)
+- **Kesinlik**: bir terim = bir anlam
+- **Kısaltmalar** ve **bileşik isimler**
+
+### Farklar
+| | hukuk | tıp | kamu yönetimi |
+| ---- | ---- | ---- | ---- |
+| **amaç** | hukuki güvenlik, genel geçerlik | bulguların kesin tanımı | standart işleyiş |
+| **tipik kelimeler** | unbeschadet, vorbehaltlich, grundsätzlich | Diagnose, akut, chronisch, Befund | Antrag, Bescheid, Frist, Widerspruch |
+| **terimlerin kökeni** | Almanca + Latince | Yunanca-Latince | Almanca (bileşik isimler) |
+| **tipik yapı** | *Wer …, wird …* (olgu → sonuç) | *Verdacht auf … / … ist nicht auszuschließen* (… şüphesi / … dışlanamaz) | *ist beizufügen / hat zu erfolgen* (eklenmelidir / yapılmalıdır) |
+| **metin türleri** | yasa, sözleşme, mahkeme kararı | doktor mektubu, bulgu raporu, prospektüs | resmî karar, form, bilgi notu |
+
+### Uzmanlık dilini anlaşılır kılma stratejileri
+1. **Terim + açıklama**: *eine Gastritis, also eine Magenschleimhautentzündung* (gastrit, yani mide zarının iltihabı)
+2. **İsim → fiil**: *Bei Nichteinhaltung …* → *Wenn Sie … nicht einhalten, …* (Uyulmaması hâlinde → … uymazsanız)
+3. **Edilgen → eylemi yapanlı etken**: *Der Antrag ist zu stellen.* → *Sie müssen den Antrag stellen.* (Başvuru yapılmalıdır → Başvuru yapmalısınız.)
+4. **Kısaltmaları açık yazmak**
+
+### Kelime kontrolü
+- *maligne* → kötü huylu | *benigne* → iyi huylu
+- *Bescheid* → resmî karar | *Widerspruch* → resmî itiraz
+- *vorbehaltlich* → … şartıyla | *unbeschadet* → … saklı kalmak kaydıyla
+
+**Örnekler:**
+- *Der Vertrag ist **vorbehaltlich** der Finanzierung wirksam.* (Sözleşme, finansman sağlanması şartıyla geçerlidir. – hukuk)
+- *Es besteht der **Verdacht auf** einen Bandscheibenvorfall.* (Bel fıtığı şüphesi var. – tıp)
+- *Gegen den **Bescheid** legte er fristgerecht **Widerspruch** ein.* (Karara süresi içinde itiraz etti. – kamu yönetimi)
+- *Die **Einnahme** des Medikaments **erfolgt** zweimal täglich.* (İlaç günde iki kez alınır. – prospektüs)`,
     },
   })
   await seedExercises({
