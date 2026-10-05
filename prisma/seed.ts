@@ -27609,9 +27609,126 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit1.id,
       order: 1,
       grammarTopic: 'Konjunktiv I in der indirekten Rede',
-      explanationDe: 'Der Konjunktiv I wird verwendet, um die Aussage einer anderen Person wiederzugeben, z. B. "Er sagt, er sei müde."',
-      explanationEn: 'Konjunktiv I is used to report what someone else said, e.g. "Er sagt, er sei müde" (He says he is tired).',
-      explanationTr: 'Konjunktiv I, başka birinin söylediğini aktarmak için kullanılır, örn. "Er sagt, er sei müde" (Yorgun olduğunu söylüyor).',
+      explanationDe: `## Konjunktiv I in der indirekten Rede
+
+Mit dem **Konjunktiv I** gibt man wieder, was **eine andere Person** gesagt, behauptet oder geschrieben hat. Der Sprecher signalisiert damit: *„Das sage nicht ich – das hat jemand anderes gesagt."* Er übernimmt **keine Verantwortung** für den Wahrheitsgehalt.
+
+| direkte Rede | indirekte Rede (Konjunktiv I) |
+| ---- | ---- |
+| Er sagt: „Ich **bin** müde." | Er sagt, er **sei** müde. |
+| Sie sagt: „Ich **habe** keine Zeit." | Sie sagt, sie **habe** keine Zeit. |
+| Der Arzt sagt: „Sie **muss** sich ausruhen." | Der Arzt sagt, sie **müsse** sich ausruhen. |
+| Tom schreibt: „Ich **komme** morgen." | Tom schreibt, er **komme** morgen. |
+
+### Wo begegnet man dem Konjunktiv I?
+- in **Nachrichten** und **Zeitungsartikeln**: *Der Sprecher erklärte, die Verhandlungen **seien** gescheitert.*
+- in **wissenschaftlichen Texten**: *Müller behauptet, die Theorie **gelte** nicht mehr.*
+- in **Protokollen** und **Berichten**: *Frau Kaya betonte, das Budget **reiche** nicht aus.*
+
+In der gesprochenen Alltagssprache benutzt man dagegen meist den Indikativ oder den Konjunktiv II: *Er hat gesagt, er ist müde / er wäre müde.*
+
+### Was ändert sich in der indirekten Rede?
+1. **Pronomen** passen sich an: *„ich" → er/sie*, *„wir" → sie*, *„mein" → sein/ihr*.
+2. Das Verb steht im **Konjunktiv I**.
+3. Die Rede kann **mit** oder **ohne „dass"** stehen:
+   - *Er sagt, **dass** er müde **sei**.* (Verb am Ende)
+   - *Er sagt, er **sei** müde.* (Verb an Position 2 – im geschriebenen Deutsch häufiger)
+
+### Fragen und Aufforderungen
+- W-Frage: *„Wo **wohnst** du?" → Sie fragt, wo er **wohne**.*
+- Ja/Nein-Frage: *„**Kommst** du mit?" → Er fragt, **ob** sie mitkomme.*
+- Aufforderung (mit *sollen/mögen*): *„**Warte** hier!" → Sie sagt, er **solle** hier warten.*
+
+### Häufige Fehler
+- ❌ *Er sagt, ich sei müde.* → ✅ *Er sagt, **er** sei müde.* (Pronomen anpassen!)
+- ❌ *Er sagt, dass er sei müde.* → ✅ *Er sagt, dass er müde **sei**.* (mit „dass" steht das Verb am Ende)
+
+**Weitere Beispiele:**
+- Die Ministerin erklärt, die Lage **sei** unter Kontrolle.
+- Laut Polizei **gebe** es keine Verletzten.
+- Der Kunde behauptet, er **habe** die Rechnung nie erhalten.
+- Mein Kollege meint, das Projekt **werde** teurer als geplant.
+- Die Studentin fragt, ob die Prüfung schwer **sei**.`,
+      explanationEn: `## Konjunktiv I in reported speech
+
+**Konjunktiv I** is used to report what **someone else** said, claimed or wrote. The speaker signals: *"This isn't my statement – someone else said it."* They take **no responsibility** for whether it is true.
+
+| direct speech | reported speech (Konjunktiv I) |
+| ---- | ---- |
+| Er sagt: „Ich **bin** müde." | Er sagt, er **sei** müde. (He says he is tired.) |
+| Sie sagt: „Ich **habe** keine Zeit." | Sie sagt, sie **habe** keine Zeit. (She says she has no time.) |
+| Der Arzt sagt: „Sie **muss** sich ausruhen." | Der Arzt sagt, sie **müsse** sich ausruhen. (The doctor says she must rest.) |
+| Tom schreibt: „Ich **komme** morgen." | Tom schreibt, er **komme** morgen. (Tom writes that he is coming tomorrow.) |
+
+### Where do you meet Konjunktiv I?
+- in **news** and **newspaper articles**: *Der Sprecher erklärte, die Verhandlungen **seien** gescheitert.* (The spokesman said the negotiations had failed.)
+- in **academic texts**: *Müller behauptet, die Theorie **gelte** nicht mehr.* (Müller claims the theory no longer holds.)
+- in **minutes** and **reports**: *Frau Kaya betonte, das Budget **reiche** nicht aus.* (Ms Kaya stressed that the budget was insufficient.)
+
+In everyday spoken German people usually use the indicative or Konjunktiv II instead: *Er hat gesagt, er ist müde / er wäre müde.*
+
+### What changes in reported speech?
+1. **Pronouns** are adjusted: *"ich" → er/sie*, *"wir" → sie*, *"mein" → sein/ihr*.
+2. The verb is in **Konjunktiv I**.
+3. The clause can be **with** or **without "dass"**:
+   - *Er sagt, **dass** er müde **sei**.* (verb at the end)
+   - *Er sagt, er **sei** müde.* (verb in position 2 – more common in writing)
+
+### Questions and requests
+- W-question: *„Wo **wohnst** du?" → Sie fragt, wo er **wohne**.* (She asks where he lives.)
+- Yes/no question: *„**Kommst** du mit?" → Er fragt, **ob** sie mitkomme.* (He asks whether she is coming along.)
+- Request (with *sollen/mögen*): *„**Warte** hier!" → Sie sagt, er **solle** hier warten.* (She tells him to wait here.)
+
+### Common mistakes
+- ❌ *Er sagt, ich sei müde.* → ✅ *Er sagt, **er** sei müde.* (adjust the pronoun!)
+- ❌ *Er sagt, dass er sei müde.* → ✅ *Er sagt, dass er müde **sei**.* (with "dass" the verb goes to the end)
+
+**More examples:**
+- Die Ministerin erklärt, die Lage **sei** unter Kontrolle. (The minister says the situation is under control.)
+- Laut Polizei **gebe** es keine Verletzten. (According to the police there are no injuries.)
+- Der Kunde behauptet, er **habe** die Rechnung nie erhalten. (The customer claims he never received the invoice.)
+- Mein Kollege meint, das Projekt **werde** teurer als geplant. (My colleague thinks the project will be more expensive than planned.)
+- Die Studentin fragt, ob die Prüfung schwer **sei**. (The student asks whether the exam is difficult.)`,
+      explanationTr: `## Dolaylı anlatımda Konjunktiv I
+
+**Konjunktiv I**, **başka birinin** söylediğini, iddia ettiğini veya yazdığını aktarmak için kullanılır. Konuşan kişi şunu belirtir: *„Bunu ben söylemiyorum – başkası söyledi."* Söylenenin doğruluğu için **sorumluluk üstlenmez** (Türkçedeki „-mış" ekine benzer).
+
+| doğrudan anlatım | dolaylı anlatım (Konjunktiv I) |
+| ---- | ---- |
+| Er sagt: „Ich **bin** müde." | Er sagt, er **sei** müde. (Yorgun olduğunu söylüyor.) |
+| Sie sagt: „Ich **habe** keine Zeit." | Sie sagt, sie **habe** keine Zeit. (Vakti olmadığını söylüyor.) |
+| Der Arzt sagt: „Sie **muss** sich ausruhen." | Der Arzt sagt, sie **müsse** sich ausruhen. (Doktor dinlenmesi gerektiğini söylüyor.) |
+| Tom schreibt: „Ich **komme** morgen." | Tom schreibt, er **komme** morgen. (Tom yarın geleceğini yazıyor.) |
+
+### Konjunktiv I nerede karşımıza çıkar?
+- **Haberlerde** ve **gazete yazılarında**: *Der Sprecher erklärte, die Verhandlungen **seien** gescheitert.* (Sözcü müzakerelerin başarısız olduğunu açıkladı.)
+- **Bilimsel metinlerde**: *Müller behauptet, die Theorie **gelte** nicht mehr.* (Müller teorinin artık geçerli olmadığını iddia ediyor.)
+- **Tutanak** ve **raporlarda**: *Frau Kaya betonte, das Budget **reiche** nicht aus.* (Kaya Hanım bütçenin yetmediğini vurguladı.)
+
+Günlük konuşma dilinde ise çoğunlukla Indikativ veya Konjunktiv II kullanılır: *Er hat gesagt, er ist müde / er wäre müde.*
+
+### Dolaylı anlatımda ne değişir?
+1. **Zamirler** uyarlanır: *„ich" → er/sie*, *„wir" → sie*, *„mein" → sein/ihr*.
+2. Fiil **Konjunktiv I** biçimindedir.
+3. Cümle **„dass" ile** ya da **„dass" olmadan** kurulabilir:
+   - *Er sagt, **dass** er müde **sei**.* (fiil sonda)
+   - *Er sagt, er **sei** müde.* (fiil 2. pozisyonda – yazı dilinde daha yaygın)
+
+### Sorular ve istekler
+- W-sorusu: *„Wo **wohnst** du?" → Sie fragt, wo er **wohne**.* (Nerede oturduğunu soruyor.)
+- Evet/hayır sorusu: *„**Kommst** du mit?" → Er fragt, **ob** sie mitkomme.* (Gelip gelmeyeceğini soruyor.)
+- İstek (*sollen/mögen* ile): *„**Warte** hier!" → Sie sagt, er **solle** hier warten.* (Burada beklemesini söylüyor.)
+
+### Sık yapılan hatalar
+- ❌ *Er sagt, ich sei müde.* → ✅ *Er sagt, **er** sei müde.* (zamiri uyarla!)
+- ❌ *Er sagt, dass er sei müde.* → ✅ *Er sagt, dass er müde **sei**.* („dass" varsa fiil sona gider)
+
+**Daha fazla örnek:**
+- Die Ministerin erklärt, die Lage **sei** unter Kontrolle. (Bakan durumun kontrol altında olduğunu açıklıyor.)
+- Laut Polizei **gebe** es keine Verletzten. (Polise göre yaralı yokmuş.)
+- Der Kunde behauptet, er **habe** die Rechnung nie erhalten. (Müşteri faturayı hiç almadığını iddia ediyor.)
+- Mein Kollege meint, das Projekt **werde** teurer als geplant. (İş arkadaşım projenin planlanandan pahalıya mal olacağını düşünüyor.)
+- Die Studentin fragt, ob die Prüfung schwer **sei**. (Öğrenci sınavın zor olup olmadığını soruyor.)`,
     },
   })
   await seedExercises({
@@ -27646,12 +27763,123 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit1.id,
       order: 2,
       grammarTopic: 'Konjunktiv-I-Formen aller Personen',
-      explanationDe:
-        'Konjunktiv I wird vom Präsensstamm gebildet: ich -e, du -est, er/sie/es -e, wir -en, ihr -et, sie -en. Nur bei "sein" gibt es Sonderformen: ich sei, du seist, er sei.',
-      explanationEn:
-        'Konjunktiv I is formed from the present stem: ich -e, du -est, er/sie/es -e, wir -en, ihr -et, sie -en. Only "sein" has special forms: ich sei, du seist, er sei.',
-      explanationTr:
-        'Konjunktiv I şimdiki zaman kökünden türetilir: ich -e, du -est, er/sie/es -e, wir -en, ihr -et, sie -en. Sadece "sein" özel biçimlere sahiptir: ich sei, du seist, er sei.',
+      explanationDe: `## Konjunktiv-I-Formen aller Personen
+
+Der Konjunktiv I wird vom **Infinitivstamm** (Präsensstamm) gebildet: *komm-en → komm-*, *hab-en → hab-*. An den Stamm treten die Endungen **-e, -est, -e, -en, -et, -en**. Es gibt **keinen Vokalwechsel** (anders als im Indikativ: *du fährst* → Konj. I *du fahrest*).
+
+| Person | kommen | haben | können | werden | wissen |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| ich | komme | habe | könne | werde | wisse |
+| du | kommest | habest | könnest | werdest | wissest |
+| er/sie/es | **komme** | **habe** | **könne** | **werde** | **wisse** |
+| wir | kommen | haben | können | werden | wissen |
+| ihr | kommet | habet | könnet | werdet | wisset |
+| sie/Sie | kommen | haben | können | werden | wissen |
+
+### Sonderfall „sein"
+„sein" ist das einzige Verb mit eigenen Formen in **allen** Personen:
+
+| ich **sei** | du **sei(e)st** | er/sie/es **sei** | wir **seien** | ihr **seiet** | sie/Sie **seien** |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+
+### Welche Formen benutzt man wirklich?
+Die wichtigste Form ist die **3. Person Singular** (*er/sie/es*), denn sie unterscheidet sich **immer** vom Indikativ: *er kommt → er komme*, *sie hat → sie habe*, *es gibt → es gebe*.
+Formen wie *ihr kommet* oder *du kommest* klingen heute sehr altmodisch und werden fast nie benutzt.
+
+### Modalverben im Konjunktiv I
+| dürfen | können | mögen | müssen | sollen | wollen |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| er dürfe | er könne | er möge | er müsse | er solle | er wolle |
+
+### Merke
+- **Kein Umlaut**, kein Vokalwechsel: *er fahre, er laufe, er nehme, er lese*.
+- Endung der 3. Person Singular ist immer **-e**: *er arbeite, sie wisse, es gebe*.
+
+**Beispiele:**
+- Sie sagt, sie **wisse** nichts davon.
+- Der Bericht stellt fest, es **gebe** zu wenige Fachkräfte.
+- Er behauptet, er **könne** das allein schaffen.
+- Die Firma teilt mit, man **arbeite** an einer Lösung.
+- Laut Wetterdienst **werde** es morgen regnen.
+- Der Trainer meint, die Mannschaft **müsse** mehr trainieren.`,
+      explanationEn: `## Konjunktiv I forms for all persons
+
+Konjunktiv I is formed from the **infinitive stem** (present stem): *komm-en → komm-*, *hab-en → hab-*. The endings **-e, -est, -e, -en, -et, -en** are added to the stem. There is **no vowel change** (unlike the indicative: *du fährst* → Konj. I *du fahrest*).
+
+| person | kommen | haben | können | werden | wissen |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| ich | komme | habe | könne | werde | wisse |
+| du | kommest | habest | könnest | werdest | wissest |
+| er/sie/es | **komme** | **habe** | **könne** | **werde** | **wisse** |
+| wir | kommen | haben | können | werden | wissen |
+| ihr | kommet | habet | könnet | werdet | wisset |
+| sie/Sie | kommen | haben | können | werden | wissen |
+
+### Special case "sein"
+"sein" is the only verb with its own forms in **all** persons:
+
+| ich **sei** | du **sei(e)st** | er/sie/es **sei** | wir **seien** | ihr **seiet** | sie/Sie **seien** |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+
+### Which forms are actually used?
+The most important form is the **3rd person singular** (*er/sie/es*), because it **always** differs from the indicative: *er kommt → er komme*, *sie hat → sie habe*, *es gibt → es gebe*.
+Forms like *ihr kommet* or *du kommest* sound very old-fashioned today and are hardly ever used.
+
+### Modal verbs in Konjunktiv I
+| dürfen | können | mögen | müssen | sollen | wollen |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| er dürfe | er könne | er möge | er müsse | er solle | er wolle |
+
+### Note
+- **No umlaut**, no vowel change: *er fahre, er laufe, er nehme, er lese*.
+- The 3rd person singular ending is always **-e**: *er arbeite, sie wisse, es gebe*.
+
+**Examples:**
+- Sie sagt, sie **wisse** nichts davon. (She says she knows nothing about it.)
+- Der Bericht stellt fest, es **gebe** zu wenige Fachkräfte. (The report states there are too few skilled workers.)
+- Er behauptet, er **könne** das allein schaffen. (He claims he can manage it alone.)
+- Die Firma teilt mit, man **arbeite** an einer Lösung. (The company announces that it is working on a solution.)
+- Laut Wetterdienst **werde** es morgen regnen. (According to the weather service it will rain tomorrow.)
+- Der Trainer meint, die Mannschaft **müsse** mehr trainieren. (The coach thinks the team must train more.)`,
+      explanationTr: `## Tüm şahıslarda Konjunktiv I biçimleri
+
+Konjunktiv I, **mastar kökünden** (şimdiki zaman kökü) türetilir: *komm-en → komm-*, *hab-en → hab-*. Köke **-e, -est, -e, -en, -et, -en** ekleri gelir. **Ünlü değişimi yoktur** (Indikativ'den farklı olarak: *du fährst* → Konj. I *du fahrest*).
+
+| şahıs | kommen | haben | können | werden | wissen |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| ich | komme | habe | könne | werde | wisse |
+| du | kommest | habest | könnest | werdest | wissest |
+| er/sie/es | **komme** | **habe** | **könne** | **werde** | **wisse** |
+| wir | kommen | haben | können | werden | wissen |
+| ihr | kommet | habet | könnet | werdet | wisset |
+| sie/Sie | kommen | haben | können | werden | wissen |
+
+### Özel durum: „sein"
+„sein", **tüm** şahıslarda kendine özgü biçimleri olan tek fiildir:
+
+| ich **sei** | du **sei(e)st** | er/sie/es **sei** | wir **seien** | ihr **seiet** | sie/Sie **seien** |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+
+### Gerçekte hangi biçimler kullanılır?
+En önemli biçim **3. tekil şahıstır** (*er/sie/es*), çünkü Indikativ'den **her zaman** farklıdır: *er kommt → er komme*, *sie hat → sie habe*, *es gibt → es gebe*.
+*ihr kommet* veya *du kommest* gibi biçimler bugün çok eski moda gelir ve neredeyse hiç kullanılmaz.
+
+### Modal fiiller Konjunktiv I'de
+| dürfen | können | mögen | müssen | sollen | wollen |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| er dürfe | er könne | er möge | er müsse | er solle | er wolle |
+
+### Unutma
+- **Umlaut yok**, ünlü değişimi yok: *er fahre, er laufe, er nehme, er lese*.
+- 3. tekil şahıs eki her zaman **-e**: *er arbeite, sie wisse, es gebe*.
+
+**Örnekler:**
+- Sie sagt, sie **wisse** nichts davon. (Bundan haberi olmadığını söylüyor.)
+- Der Bericht stellt fest, es **gebe** zu wenige Fachkräfte. (Rapor, çok az nitelikli eleman olduğunu tespit ediyor.)
+- Er behauptet, er **könne** das allein schaffen. (Bunu tek başına başarabileceğini iddia ediyor.)
+- Die Firma teilt mit, man **arbeite** an einer Lösung. (Firma bir çözüm üzerinde çalışıldığını bildiriyor.)
+- Laut Wetterdienst **werde** es morgen regnen. (Meteorolojiye göre yarın yağmur yağacakmış.)
+- Der Trainer meint, die Mannschaft **müsse** mehr trainieren. (Antrenör takımın daha çok çalışması gerektiğini düşünüyor.)`,
     },
   })
   await seedExercises({
@@ -27680,12 +27908,114 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit1.id,
       order: 3,
       grammarTopic: 'Ersatzform mit "würde"',
-      explanationDe:
-        'Wenn der Konjunktiv I mit dem Indikativ identisch ist (z. B. bei "sie sagen" -> "sie sagen"), verwendet man die Ersatzform mit "würde" + Infinitiv: "Sie sagen, sie würden kommen."',
-      explanationEn:
-        'When Konjunktiv I is identical to the indicative (e.g. "sie sagen" -> "sie sagen"), the substitute form with "würde" + infinitive is used instead: "Sie sagen, sie würden kommen" (They say they would come).',
-      explanationTr:
-        'Konjunktiv I, haber kipiyle aynıysa (örn. "sie sagen" -> "sie sagen"), yerine "würde" + Infinitiv ile yapılan ikame biçim kullanılır: "Sie sagen, sie würden kommen".',
+      explanationDe: `## Ersatzformen: Konjunktiv II und „würde"
+
+Problem: In vielen Personen ist der Konjunktiv I **identisch mit dem Indikativ**. Dann erkennt der Leser nicht, dass es sich um indirekte Rede handelt.
+
+| Indikativ | Konjunktiv I | eindeutig? |
+| ---- | ---- | ---- |
+| ich komme | ich komme | ❌ |
+| er kommt | er komme | ✅ |
+| wir kommen | wir kommen | ❌ |
+| sie kommen | sie kommen | ❌ |
+
+### Die Ersatzregel (Schritt für Schritt)
+1. **Konjunktiv I** benutzen, wenn er sich vom Indikativ unterscheidet: *er komme, er habe, sie sei*.
+2. Ist er identisch → **Konjunktiv II** benutzen: *sie kommen → sie **kämen***, *sie haben → sie **hätten***.
+3. Ist auch der Konjunktiv II identisch mit dem Präteritum (bei regelmäßigen Verben) oder klingt er veraltet → **würde + Infinitiv**: *sie arbeiteten (= Präteritum) → sie **würden arbeiten***.
+
+| direkte Rede | Konj. I | Ersatzform |
+| ---- | ---- | ---- |
+| „Wir **haben** Hunger." | wir haben ❌ | Sie sagen, sie **hätten** Hunger. |
+| „Wir **kommen** später." | wir kommen ❌ | Sie sagen, sie **kämen** später / sie **würden** später **kommen**. |
+| „Wir **arbeiten** viel." | wir arbeiten ❌ | Sie sagen, sie **würden** viel **arbeiten**. |
+| „Ich **gehe** nach Hause." | ich gehe ❌ | Er sagte, er **ginge** nach Hause. |
+
+### „würde" in der Praxis
+Bei unregelmäßigen Verben klingen Konjunktiv-II-Formen manchmal altmodisch (*sie flögen, sie hülfen*). Dann ist **würde + Infinitiv** die natürlichere Wahl: *Sie sagen, sie **würden** morgen **fliegen**.*
+
+### Häufige Fehler
+- ❌ *Sie sagen, sie haben keine Zeit.* (Indikativ – im formellen Text nicht als Redewiedergabe erkennbar) → ✅ *Sie sagen, sie **hätten** keine Zeit.*
+- ❌ *Er sagt, er würde müde sein.* → ✅ *Er sagt, er **sei** müde.* (Konj. I ist eindeutig → keine Ersatzform nötig)
+
+**Beispiele:**
+- Die Eltern erklären, sie **hätten** davon nichts gewusst.
+- Die Mitarbeiter berichten, sie **würden** zu viele Überstunden **machen**.
+- Die Schüler meinen, sie **könnten** die Aufgabe nicht lösen. (*können* = Konj. I identisch → *könnten*)
+- Die Nachbarn behaupten, sie **gäben** jedes Jahr ein Fest.
+- Der Chef sagt, er **komme** später. (eindeutig → Konj. I)`,
+      explanationEn: `## Substitute forms: Konjunktiv II and "würde"
+
+Problem: in many persons Konjunktiv I is **identical to the indicative**. The reader then cannot tell that it is reported speech.
+
+| indicative | Konjunktiv I | unambiguous? |
+| ---- | ---- | ---- |
+| ich komme | ich komme | ❌ |
+| er kommt | er komme | ✅ |
+| wir kommen | wir kommen | ❌ |
+| sie kommen | sie kommen | ❌ |
+
+### The substitution rule (step by step)
+1. Use **Konjunktiv I** when it differs from the indicative: *er komme, er habe, sie sei*.
+2. If it is identical → use **Konjunktiv II**: *sie kommen → sie **kämen***, *sie haben → sie **hätten***.
+3. If Konjunktiv II is also identical to the simple past (regular verbs) or sounds old-fashioned → use **würde + infinitive**: *sie arbeiteten (= past tense) → sie **würden arbeiten***.
+
+| direct speech | Konj. I | substitute |
+| ---- | ---- | ---- |
+| „Wir **haben** Hunger." | wir haben ❌ | Sie sagen, sie **hätten** Hunger. (They say they're hungry.) |
+| „Wir **kommen** später." | wir kommen ❌ | Sie sagen, sie **kämen** später / sie **würden** später **kommen**. |
+| „Wir **arbeiten** viel." | wir arbeiten ❌ | Sie sagen, sie **würden** viel **arbeiten**. (They say they work a lot.) |
+| „Ich **gehe** nach Hause." | ich gehe ❌ | Er sagte, er **ginge** nach Hause. |
+
+### "würde" in practice
+With irregular verbs Konjunktiv II forms sometimes sound old-fashioned (*sie flögen, sie hülfen*). Then **würde + infinitive** is the more natural choice: *Sie sagen, sie **würden** morgen **fliegen**.* (They say they're flying tomorrow.)
+
+### Common mistakes
+- ❌ *Sie sagen, sie haben keine Zeit.* (indicative – not recognisable as reported speech in a formal text) → ✅ *Sie sagen, sie **hätten** keine Zeit.*
+- ❌ *Er sagt, er würde müde sein.* → ✅ *Er sagt, er **sei** müde.* (Konj. I is unambiguous → no substitute needed)
+
+**Examples:**
+- Die Eltern erklären, sie **hätten** davon nichts gewusst. (The parents state they knew nothing about it.)
+- Die Mitarbeiter berichten, sie **würden** zu viele Überstunden **machen**. (The staff report that they work too much overtime.)
+- Die Schüler meinen, sie **könnten** die Aufgabe nicht lösen. (The pupils think they can't solve the task – *können* Konj. I is identical → *könnten*.)
+- Die Nachbarn behaupten, sie **gäben** jedes Jahr ein Fest. (The neighbours claim they throw a party every year.)
+- Der Chef sagt, er **komme** später. (The boss says he's coming later – unambiguous → Konj. I.)`,
+      explanationTr: `## İkame biçimler: Konjunktiv II ve „würde"
+
+Sorun: Birçok şahısta Konjunktiv I, **Indikativ ile aynıdır**. Bu durumda okuyucu, cümlenin dolaylı anlatım olduğunu anlayamaz.
+
+| Indikativ | Konjunktiv I | açık mı? |
+| ---- | ---- | ---- |
+| ich komme | ich komme | ❌ |
+| er kommt | er komme | ✅ |
+| wir kommen | wir kommen | ❌ |
+| sie kommen | sie kommen | ❌ |
+
+### İkame kuralı (adım adım)
+1. Indikativ'den farklıysa **Konjunktiv I** kullan: *er komme, er habe, sie sei*.
+2. Aynıysa → **Konjunktiv II** kullan: *sie kommen → sie **kämen***, *sie haben → sie **hätten***.
+3. Konjunktiv II de geçmiş zamanla (düzenli fiillerde) aynıysa veya eski moda geliyorsa → **würde + mastar**: *sie arbeiteten (= Präteritum) → sie **würden arbeiten***.
+
+| doğrudan anlatım | Konj. I | ikame biçim |
+| ---- | ---- | ---- |
+| „Wir **haben** Hunger." | wir haben ❌ | Sie sagen, sie **hätten** Hunger. (Aç olduklarını söylüyorlar.) |
+| „Wir **kommen** später." | wir kommen ❌ | Sie sagen, sie **kämen** später / sie **würden** später **kommen**. |
+| „Wir **arbeiten** viel." | wir arbeiten ❌ | Sie sagen, sie **würden** viel **arbeiten**. (Çok çalıştıklarını söylüyorlar.) |
+| „Ich **gehe** nach Hause." | ich gehe ❌ | Er sagte, er **ginge** nach Hause. |
+
+### Uygulamada „würde"
+Düzensiz fiillerde Konjunktiv II biçimleri bazen eski moda gelir (*sie flögen, sie hülfen*). O zaman **würde + mastar** daha doğal bir seçimdir: *Sie sagen, sie **würden** morgen **fliegen**.* (Yarın uçacaklarını söylüyorlar.)
+
+### Sık yapılan hatalar
+- ❌ *Sie sagen, sie haben keine Zeit.* (Indikativ – resmi metinde dolaylı anlatım olduğu anlaşılmaz) → ✅ *Sie sagen, sie **hätten** keine Zeit.*
+- ❌ *Er sagt, er würde müde sein.* → ✅ *Er sagt, er **sei** müde.* (Konj. I zaten açık → ikameye gerek yok)
+
+**Örnekler:**
+- Die Eltern erklären, sie **hätten** davon nichts gewusst. (Ebeveynler bundan haberleri olmadığını açıklıyor.)
+- Die Mitarbeiter berichten, sie **würden** zu viele Überstunden **machen**. (Çalışanlar çok fazla fazla mesai yaptıklarını bildiriyor.)
+- Die Schüler meinen, sie **könnten** die Aufgabe nicht lösen. (Öğrenciler görevi çözemeyeceklerini düşünüyor – *können* Konj. I aynı → *könnten*.)
+- Die Nachbarn behaupten, sie **gäben** jedes Jahr ein Fest. (Komşular her yıl bir parti verdiklerini iddia ediyor.)
+- Der Chef sagt, er **komme** später. (Şef daha sonra geleceğini söylüyor – açık → Konj. I.)`,
     },
   })
   await seedExercises({
@@ -27714,12 +28044,113 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit1.id,
       order: 4,
       grammarTopic: 'Übung: Konjunktiv I Gegenwart',
-      explanationDe:
-        'Wiederholung: Konjunktiv I in der indirekten Rede zeigt Distanz zur Aussage eines anderen, ohne die eigene Meinung auszudrücken: "Der Minister erklärte, die Lage sei stabil."',
-      explanationEn:
-        'Review: Konjunktiv I in reported speech signals distance from someone else\'s statement without expressing the speaker\'s own opinion: "Der Minister erklärte, die Lage sei stabil" (The minister stated the situation was stable).',
-      explanationTr:
-        'Tekrar: Dolaylı anlatımda Konjunktiv I, konuşmacının kendi görüşünü belirtmeden başkasının ifadesine mesafe koyar: "Der Minister erklärte, die Lage sei stabil".',
+      explanationDe: `## Übung: Konjunktiv I Gegenwart – Zusammenfassung
+
+Der Konjunktiv I zeigt **Distanz**: Der Schreiber gibt eine fremde Aussage **neutral** wieder, ohne sie zu bewerten. Deshalb ist er die Standardform in **Nachrichten, Berichten und wissenschaftlichen Texten**.
+
+### Die wichtigsten Regeln auf einen Blick
+| Regel | Beispiel |
+| ---- | ---- |
+| Stamm + **-e** (3. Pers. Sg.) | er komm**e**, sie hab**e**, es geb**e** |
+| „sein" hat Sonderformen | er **sei**, sie **seien** |
+| Pronomen anpassen | „Ich bin krank." → Er sagt, **er** sei krank. |
+| Konj. I = Indikativ → Konj. II | sie haben → sie **hätten** |
+| Konj. II undeutlich → würde | sie arbeiten → sie **würden arbeiten** |
+| Fragen: *ob* / W-Wort | Er fragt, **ob** sie Zeit habe. |
+| Aufforderung: *sollen / mögen* | Sie bittet, er **möge** warten. |
+
+### Ein Text in direkter und indirekter Rede
+**Direkt:** Der Minister sagte: „Die Lage **ist** stabil. Wir **haben** alles unter Kontrolle. Die Bürger **müssen** sich keine Sorgen machen."
+
+**Indirekt:** Der Minister sagte, die Lage **sei** stabil. Man **habe** alles unter Kontrolle (*sie hätten*). Die Bürger **müssten** sich keine Sorgen machen.
+
+### Redeeinleitende Verben (Abwechslung!)
+Statt immer *sagen* zu benutzen: **erklären, betonen, behaupten, berichten, mitteilen, meinen, versichern, bestreiten, einräumen, hinzufügen, warnen**.
+- *Die Firma **räumte ein**, es **gebe** Probleme.*
+- *Der Zeuge **bestritt**, er **kenne** den Täter.*
+- *Sie **fügte hinzu**, das **gelte** auch für Kinder.*
+
+### Indirekte Rede ohne Redeverb
+In Zeitungstexten wird der Konjunktiv I oft über mehrere Sätze fortgeführt – das Redeverb steht nur am Anfang:
+*Die Sprecherin erklärte, das Museum **bleibe** geschlossen. Die Renovierung **dauere** länger als geplant. Ein neuer Termin **stehe** noch nicht fest.*
+
+**Beispiele:**
+- Laut Experten **sei** die Inflation rückläufig.
+- Der Autor betont, Sprache **verändere** sich ständig.
+- Die Polizei warnt, die Straßen **seien** glatt.
+- Die Bürgermeisterin versichert, niemand **müsse** umziehen.`,
+      explanationEn: `## Practice: Konjunktiv I present – summary
+
+Konjunktiv I shows **distance**: the writer reports someone else's statement **neutrally**, without judging it. That's why it is the standard form in **news, reports and academic texts**.
+
+### The key rules at a glance
+| rule | example |
+| ---- | ---- |
+| stem + **-e** (3rd pers. sg.) | er komm**e**, sie hab**e**, es geb**e** |
+| "sein" has special forms | er **sei**, sie **seien** |
+| adjust pronouns | „Ich bin krank." → Er sagt, **er** sei krank. |
+| Konj. I = indicative → Konj. II | sie haben → sie **hätten** |
+| Konj. II unclear → würde | sie arbeiten → sie **würden arbeiten** |
+| questions: *ob* / W-word | Er fragt, **ob** sie Zeit habe. |
+| requests: *sollen / mögen* | Sie bittet, er **möge** warten. |
+
+### A text in direct and reported speech
+**Direct:** Der Minister sagte: „Die Lage **ist** stabil. Wir **haben** alles unter Kontrolle. Die Bürger **müssen** sich keine Sorgen machen."
+
+**Reported:** Der Minister sagte, die Lage **sei** stabil. Man **habe** alles unter Kontrolle (*sie hätten*). Die Bürger **müssten** sich keine Sorgen machen.
+(The minister said the situation was stable, everything was under control and citizens need not worry.)
+
+### Reporting verbs (vary them!)
+Instead of always using *sagen*: **erklären** (explain/state), **betonen** (stress), **behaupten** (claim), **berichten** (report), **mitteilen** (announce), **meinen** (think), **versichern** (assure), **bestreiten** (deny), **einräumen** (admit), **hinzufügen** (add), **warnen** (warn).
+- *Die Firma **räumte ein**, es **gebe** Probleme.* (The company admitted there were problems.)
+- *Der Zeuge **bestritt**, er **kenne** den Täter.* (The witness denied knowing the culprit.)
+- *Sie **fügte hinzu**, das **gelte** auch für Kinder.* (She added that this also applied to children.)
+
+### Reported speech without a reporting verb
+In newspapers Konjunktiv I often continues over several sentences – the reporting verb appears only at the start:
+*Die Sprecherin erklärte, das Museum **bleibe** geschlossen. Die Renovierung **dauere** länger als geplant. Ein neuer Termin **stehe** noch nicht fest.* (The spokeswoman said the museum would stay closed; the renovation was taking longer than planned; no new date had been set.)
+
+**Examples:**
+- Laut Experten **sei** die Inflation rückläufig. (According to experts, inflation is falling.)
+- Der Autor betont, Sprache **verändere** sich ständig. (The author stresses that language is constantly changing.)
+- Die Polizei warnt, die Straßen **seien** glatt. (The police warn that the roads are slippery.)
+- Die Bürgermeisterin versichert, niemand **müsse** umziehen. (The mayor assures that nobody has to move.)`,
+      explanationTr: `## Alıştırma: Şimdiki zaman Konjunktiv I – özet
+
+Konjunktiv I **mesafe** bildirir: Yazar başkasının sözünü değerlendirmeden, **tarafsız** biçimde aktarır. Bu yüzden **haber, rapor ve bilimsel metinlerde** standart biçimdir.
+
+### Temel kurallar bir bakışta
+| kural | örnek |
+| ---- | ---- |
+| kök + **-e** (3. tekil şahıs) | er komm**e**, sie hab**e**, es geb**e** |
+| „sein"in özel biçimleri var | er **sei**, sie **seien** |
+| zamirleri uyarla | „Ich bin krank." → Er sagt, **er** sei krank. |
+| Konj. I = Indikativ → Konj. II | sie haben → sie **hätten** |
+| Konj. II belirsiz → würde | sie arbeiten → sie **würden arbeiten** |
+| sorular: *ob* / W-kelimesi | Er fragt, **ob** sie Zeit habe. |
+| istekler: *sollen / mögen* | Sie bittet, er **möge** warten. |
+
+### Doğrudan ve dolaylı anlatımda bir metin
+**Doğrudan:** Der Minister sagte: „Die Lage **ist** stabil. Wir **haben** alles unter Kontrolle. Die Bürger **müssen** sich keine Sorgen machen."
+
+**Dolaylı:** Der Minister sagte, die Lage **sei** stabil. Man **habe** alles unter Kontrolle (*sie hätten*). Die Bürger **müssten** sich keine Sorgen machen.
+(Bakan durumun istikrarlı olduğunu, her şeyin kontrol altında olduğunu ve vatandaşların endişelenmesine gerek olmadığını söyledi.)
+
+### Aktarma fiilleri (çeşitlendir!)
+Hep *sagen* yerine: **erklären** (açıklamak), **betonen** (vurgulamak), **behaupten** (iddia etmek), **berichten** (bildirmek), **mitteilen** (duyurmak), **meinen** (düşünmek), **versichern** (temin etmek), **bestreiten** (inkâr etmek), **einräumen** (kabul etmek), **hinzufügen** (eklemek), **warnen** (uyarmak).
+- *Die Firma **räumte ein**, es **gebe** Probleme.* (Firma sorunlar olduğunu kabul etti.)
+- *Der Zeuge **bestritt**, er **kenne** den Täter.* (Tanık faili tanıdığını inkâr etti.)
+- *Sie **fügte hinzu**, das **gelte** auch für Kinder.* (Bunun çocuklar için de geçerli olduğunu ekledi.)
+
+### Aktarma fiili olmadan dolaylı anlatım
+Gazete metinlerinde Konjunktiv I çoğu zaman birkaç cümle boyunca sürer – aktarma fiili yalnızca başta bulunur:
+*Die Sprecherin erklärte, das Museum **bleibe** geschlossen. Die Renovierung **dauere** länger als geplant. Ein neuer Termin **stehe** noch nicht fest.* (Sözcü müzenin kapalı kalacağını, renovasyonun planlanandan uzun süreceğini ve yeni bir tarihin henüz belli olmadığını açıkladı.)
+
+**Örnekler:**
+- Laut Experten **sei** die Inflation rückläufig. (Uzmanlara göre enflasyon düşüyormuş.)
+- Der Autor betont, Sprache **verändere** sich ständig. (Yazar dilin sürekli değiştiğini vurguluyor.)
+- Die Polizei warnt, die Straßen **seien** glatt. (Polis yolların kaygan olduğu konusunda uyarıyor.)
+- Die Bürgermeisterin versichert, niemand **müsse** umziehen. (Belediye başkanı kimsenin taşınmak zorunda olmadığını temin ediyor.)`,
     },
   })
   await seedExercises({
@@ -27769,12 +28200,126 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit2.id,
       order: 1,
       grammarTopic: 'Bildung: habe/sei + Partizip II',
-      explanationDe:
-        'Der Konjunktiv I der Vergangenheit wird mit "habe" oder "sei" + Partizip II gebildet: "Er sagte, er habe das Buch gelesen." / "Sie sagte, sie sei nach Hause gegangen."',
-      explanationEn:
-        'The Konjunktiv I past is formed with "habe" or "sei" + past participle: "Er sagte, er habe das Buch gelesen" (He said he had read the book). / "Sie sagte, sie sei nach Hause gegangen" (She said she had gone home).',
-      explanationTr:
-        'Geçmiş zaman Konjunktiv I, "habe" veya "sei" + Partizip II ile kurulur: "Er sagte, er habe das Buch gelesen." / "Sie sagte, sie sei nach Hause gegangen."',
+      explanationDe: `## Konjunktiv I der Vergangenheit: habe/sei + Partizip II
+
+Wenn man eine Aussage über **Vergangenes** indirekt wiedergibt, benutzt man den Konjunktiv I der Vergangenheit. Er wird wie das Perfekt gebildet – nur steht das Hilfsverb im **Konjunktiv I**:
+
+> **habe / sei** (Konjunktiv I) + **Partizip II**
+
+| Person | mit „haben" (lesen) | mit „sein" (gehen) |
+| ---- | ---- | ---- |
+| ich | habe gelesen | sei gegangen |
+| du | habest gelesen | sei(e)st gegangen |
+| er/sie/es | **habe gelesen** | **sei gegangen** |
+| wir | haben gelesen → *hätten gelesen* | seien gegangen |
+| ihr | habet gelesen | seiet gegangen |
+| sie/Sie | haben gelesen → *hätten gelesen* | seien gegangen |
+
+### haben oder sein?
+Es gelten dieselben Regeln wie im Perfekt:
+- **sein**: Bewegung (*gehen, fahren, fliegen*), Zustandsveränderung (*einschlafen, sterben, wachsen*), *sein, bleiben, passieren*.
+- **haben**: fast alle anderen Verben, auch reflexive (*sich freuen*) und Verben mit Akkusativobjekt.
+
+### Alle Vergangenheitsformen → eine Form
+Ob die direkte Rede im **Präteritum**, **Perfekt** oder **Plusquamperfekt** steht – in der indirekten Rede gibt es nur **eine** Vergangenheitsform:
+
+| direkte Rede | indirekte Rede |
+| ---- | ---- |
+| „Ich **las** das Buch." (Präteritum) | Er sagt, er **habe** das Buch **gelesen**. |
+| „Ich **habe** das Buch **gelesen**." (Perfekt) | Er sagt, er **habe** das Buch **gelesen**. |
+| „Ich **hatte** das Buch **gelesen**." (Plusquamperfekt) | Er sagt, er **habe** das Buch **gelesen**. |
+
+### Modalverben in der Vergangenheit
+*habe* + Infinitiv + Modalverb im Infinitiv (Ersatzinfinitiv):
+- „Ich **musste** arbeiten." → Er sagt, er **habe arbeiten müssen**.
+
+**Beispiele:**
+- Sie sagt, sie **sei** gestern nach Hause **gegangen**.
+- Der Zeuge erklärt, er **habe** nichts **gesehen**.
+- Die Firma teilt mit, der Umsatz **sei** deutlich **gestiegen**.
+- Mein Bruder behauptet, er **habe** die Prüfung **bestanden**.
+- Laut Bericht **sei** das Feuer in der Küche **ausgebrochen**.
+- Er erzählt, er **habe** lange auf den Bus **warten müssen**.`,
+      explanationEn: `## Konjunktiv I past: habe/sei + past participle
+
+When you report a statement about something in the **past**, you use the past form of Konjunktiv I. It is formed like the perfect tense – only the auxiliary is in **Konjunktiv I**:
+
+> **habe / sei** (Konjunktiv I) + **past participle**
+
+| person | with "haben" (lesen) | with "sein" (gehen) |
+| ---- | ---- | ---- |
+| ich | habe gelesen | sei gegangen |
+| du | habest gelesen | sei(e)st gegangen |
+| er/sie/es | **habe gelesen** | **sei gegangen** |
+| wir | haben gelesen → *hätten gelesen* | seien gegangen |
+| ihr | habet gelesen | seiet gegangen |
+| sie/Sie | haben gelesen → *hätten gelesen* | seien gegangen |
+
+### haben or sein?
+The same rules apply as in the perfect tense:
+- **sein**: movement (*gehen, fahren, fliegen*), change of state (*einschlafen, sterben, wachsen*), *sein, bleiben, passieren*.
+- **haben**: almost all other verbs, including reflexive verbs (*sich freuen*) and verbs with an accusative object.
+
+### All past forms → one form
+Whether the direct speech is in the **Präteritum**, **Perfekt** or **Plusquamperfekt** – reported speech has only **one** past form:
+
+| direct speech | reported speech |
+| ---- | ---- |
+| „Ich **las** das Buch." (simple past) | Er sagt, er **habe** das Buch **gelesen**. |
+| „Ich **habe** das Buch **gelesen**." (perfect) | Er sagt, er **habe** das Buch **gelesen**. |
+| „Ich **hatte** das Buch **gelesen**." (pluperfect) | Er sagt, er **habe** das Buch **gelesen**. |
+
+### Modal verbs in the past
+*habe* + infinitive + modal verb in the infinitive (double infinitive):
+- „Ich **musste** arbeiten." → Er sagt, er **habe arbeiten müssen**. (He says he had to work.)
+
+**Examples:**
+- Sie sagt, sie **sei** gestern nach Hause **gegangen**. (She says she went home yesterday.)
+- Der Zeuge erklärt, er **habe** nichts **gesehen**. (The witness states he saw nothing.)
+- Die Firma teilt mit, der Umsatz **sei** deutlich **gestiegen**. (The company announces that sales rose significantly.)
+- Mein Bruder behauptet, er **habe** die Prüfung **bestanden**. (My brother claims he passed the exam.)
+- Laut Bericht **sei** das Feuer in der Küche **ausgebrochen**. (According to the report, the fire broke out in the kitchen.)
+- Er erzählt, er **habe** lange auf den Bus **warten müssen**. (He says he had to wait a long time for the bus.)`,
+      explanationTr: `## Geçmiş zaman Konjunktiv I: habe/sei + Partizip II
+
+**Geçmişteki** bir olayla ilgili bir sözü dolaylı aktarırken geçmiş zaman Konjunktiv I kullanılır. Perfekt gibi kurulur – sadece yardımcı fiil **Konjunktiv I** biçimindedir:
+
+> **habe / sei** (Konjunktiv I) + **Partizip II**
+
+| şahıs | „haben" ile (lesen) | „sein" ile (gehen) |
+| ---- | ---- | ---- |
+| ich | habe gelesen | sei gegangen |
+| du | habest gelesen | sei(e)st gegangen |
+| er/sie/es | **habe gelesen** | **sei gegangen** |
+| wir | haben gelesen → *hätten gelesen* | seien gegangen |
+| ihr | habet gelesen | seiet gegangen |
+| sie/Sie | haben gelesen → *hätten gelesen* | seien gegangen |
+
+### haben mı, sein mı?
+Perfekt'teki kurallar aynen geçerlidir:
+- **sein**: hareket (*gehen, fahren, fliegen*), durum değişikliği (*einschlafen, sterben, wachsen*), *sein, bleiben, passieren*.
+- **haben**: diğer fiillerin neredeyse tamamı, dönüşlü fiiller (*sich freuen*) ve akuzatif nesne alan fiiller dahil.
+
+### Tüm geçmiş biçimleri → tek biçim
+Doğrudan anlatım **Präteritum**, **Perfekt** veya **Plusquamperfekt** olsun – dolaylı anlatımda yalnızca **tek** bir geçmiş biçimi vardır:
+
+| doğrudan anlatım | dolaylı anlatım |
+| ---- | ---- |
+| „Ich **las** das Buch." (Präteritum) | Er sagt, er **habe** das Buch **gelesen**. |
+| „Ich **habe** das Buch **gelesen**." (Perfekt) | Er sagt, er **habe** das Buch **gelesen**. |
+| „Ich **hatte** das Buch **gelesen**." (Plusquamperfekt) | Er sagt, er **habe** das Buch **gelesen**. |
+
+### Geçmişte modal fiiller
+*habe* + mastar + mastar hâlinde modal fiil (çift mastar):
+- „Ich **musste** arbeiten." → Er sagt, er **habe arbeiten müssen**. (Çalışmak zorunda kaldığını söylüyor.)
+
+**Örnekler:**
+- Sie sagt, sie **sei** gestern nach Hause **gegangen**. (Dün eve gittiğini söylüyor.)
+- Der Zeuge erklärt, er **habe** nichts **gesehen**. (Tanık hiçbir şey görmediğini açıklıyor.)
+- Die Firma teilt mit, der Umsatz **sei** deutlich **gestiegen**. (Firma cironun belirgin şekilde arttığını bildiriyor.)
+- Mein Bruder behauptet, er **habe** die Prüfung **bestanden**. (Kardeşim sınavı geçtiğini iddia ediyor.)
+- Laut Bericht **sei** das Feuer in der Küche **ausgebrochen**. (Rapora göre yangın mutfakta çıkmış.)
+- Er erzählt, er **habe** lange auf den Bus **warten müssen**. (Otobüsü uzun süre beklemek zorunda kaldığını anlatıyor.)`,
     },
   })
   await seedExercises({
@@ -27803,12 +28348,132 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit2.id,
       order: 2,
       grammarTopic: 'Indirekte Rede mit Zeitverschiebung',
-      explanationDe:
-        'Bei der Wiedergabe vergangener Aussagen bleibt die Zeitstufe erhalten, aber die Person wechselt: Direkt: "Ich habe gewartet." -> Indirekt: "Er sagte, er habe gewartet."',
-      explanationEn:
-        'When reporting past statements, the time frame stays the same but the person changes: Direct: "Ich habe gewartet" (I waited). -> Indirect: "Er sagte, er habe gewartet" (He said he had waited).',
-      explanationTr:
-        'Geçmiş ifadeler aktarılırken zaman aynı kalır ama şahıs değişir: Doğrudan: "Ich habe gewartet." -> Dolaylı: "Er sagte, er habe gewartet."',
+      explanationDe: `## Indirekte Rede: Zeitstufen richtig wiedergeben
+
+In der indirekten Rede gibt es **drei Zeitstufen**. Entscheidend ist **nicht** die Zeit des Redeverbs (*sagt / sagte*), sondern die Zeit der **ursprünglichen Aussage**.
+
+| Zeitstufe | direkte Rede | indirekte Rede |
+| ---- | ---- | ---- |
+| **Gegenwart** | „Ich **warte**." | Er sagte, er **warte**. |
+| **Vergangenheit** | „Ich **habe gewartet** / **wartete**." | Er sagte, er **habe gewartet**. |
+| **Zukunft** | „Ich **werde warten**." | Er sagte, er **werde warten**. |
+
+### Das Redeverb ändert die Zeit nicht!
+Anders als im Englischen (*He said he was tired*) gibt es im Deutschen **keine Zeitverschiebung** (*backshift*):
+- *Er **sagt**, er **sei** müde.*
+- *Er **sagte**, er **sei** müde.* (nicht: *er wäre gewesen*)
+- *Er **hat gesagt**, er **sei** müde.*
+
+### Was sich ändert: Person, Ort und Zeit
+Die Perspektive wechselt vom ursprünglichen Sprecher zum Berichtenden:
+
+| direkte Rede | indirekte Rede (später berichtet) |
+| ---- | ---- |
+| ich, mein | er/sie, sein/ihr |
+| hier | dort |
+| heute | an diesem Tag / am selben Tag |
+| gestern | am Vortag / am Tag zuvor |
+| morgen | am nächsten Tag / am folgenden Tag |
+| jetzt | damals / in diesem Moment |
+
+**Beispiel:**
+- Direkt (Montag): Anna: „Ich **habe gestern hier** gewartet."
+- Indirekt (eine Woche später): Anna sagte, sie **habe am Vortag dort** gewartet.
+
+### Häufige Fehler
+- ❌ *Er sagte, er wäre müde gewesen.* (wenn er sagte: „Ich bin müde.") → ✅ *Er sagte, er **sei** müde.*
+- ❌ *Sie erzählte, sie ging ins Kino.* → ✅ *Sie erzählte, sie **sei** ins Kino **gegangen**.*
+
+**Beispiele:**
+- Der Trainer sagte, die Mannschaft **habe** gut **gespielt**.
+- Die Lehrerin meinte, wir **würden** die Ergebnisse **am nächsten Tag** bekommen.
+- Er versicherte, er **werde** pünktlich **sein**.
+- Die Zeugin gab an, sie **sei** **an jenem Abend** zu Hause **gewesen**.
+- Der Kollege schrieb, er **habe** die Datei bereits **geschickt**.`,
+      explanationEn: `## Reported speech: rendering time correctly
+
+Reported speech has **three time levels**. What matters is **not** the tense of the reporting verb (*sagt / sagte*) but the time of the **original statement**.
+
+| time level | direct speech | reported speech |
+| ---- | ---- | ---- |
+| **present** | „Ich **warte**." | Er sagte, er **warte**. (He said he was waiting.) |
+| **past** | „Ich **habe gewartet** / **wartete**." | Er sagte, er **habe gewartet**. (He said he had waited.) |
+| **future** | „Ich **werde warten**." | Er sagte, er **werde warten**. (He said he would wait.) |
+
+### The reporting verb doesn't change the tense!
+Unlike English (*He said he was tired*), German has **no backshift**:
+- *Er **sagt**, er **sei** müde.*
+- *Er **sagte**, er **sei** müde.* (not: *er wäre gewesen*)
+- *Er **hat gesagt**, er **sei** müde.*
+
+### What changes: person, place and time
+The perspective shifts from the original speaker to the reporter:
+
+| direct speech | reported speech (reported later) |
+| ---- | ---- |
+| ich, mein | er/sie, sein/ihr |
+| hier | dort |
+| heute | an diesem Tag / am selben Tag |
+| gestern | am Vortag / am Tag zuvor |
+| morgen | am nächsten Tag / am folgenden Tag |
+| jetzt | damals / in diesem Moment |
+
+**Example:**
+- Direct (Monday): Anna: „Ich **habe gestern hier** gewartet." (I waited here yesterday.)
+- Reported (a week later): Anna sagte, sie **habe am Vortag dort** gewartet. (Anna said she had waited there the day before.)
+
+### Common mistakes
+- ❌ *Er sagte, er wäre müde gewesen.* (if he said „Ich bin müde.") → ✅ *Er sagte, er **sei** müde.*
+- ❌ *Sie erzählte, sie ging ins Kino.* → ✅ *Sie erzählte, sie **sei** ins Kino **gegangen**.*
+
+**Examples:**
+- Der Trainer sagte, die Mannschaft **habe** gut **gespielt**. (The coach said the team had played well.)
+- Die Lehrerin meinte, wir **würden** die Ergebnisse **am nächsten Tag** bekommen. (The teacher said we would get the results the next day.)
+- Er versicherte, er **werde** pünktlich **sein**. (He assured us he would be on time.)
+- Die Zeugin gab an, sie **sei** **an jenem Abend** zu Hause **gewesen**. (The witness stated she had been at home that evening.)
+- Der Kollege schrieb, er **habe** die Datei bereits **geschickt**. (The colleague wrote that he had already sent the file.)`,
+      explanationTr: `## Dolaylı anlatım: zamanları doğru aktarmak
+
+Dolaylı anlatımda **üç zaman düzeyi** vardır. Belirleyici olan aktarma fiilinin zamanı (*sagt / sagte*) **değil**, **asıl sözün** zamanıdır.
+
+| zaman düzeyi | doğrudan anlatım | dolaylı anlatım |
+| ---- | ---- | ---- |
+| **şimdi** | „Ich **warte**." | Er sagte, er **warte**. (Beklediğini söyledi.) |
+| **geçmiş** | „Ich **habe gewartet** / **wartete**." | Er sagte, er **habe gewartet**. (Beklemiş olduğunu söyledi.) |
+| **gelecek** | „Ich **werde warten**." | Er sagte, er **werde warten**. (Bekleyeceğini söyledi.) |
+
+### Aktarma fiili zamanı değiştirmez!
+İngilizcenin aksine (*He said he was tired*), Almancada **zaman kaydırma yoktur**:
+- *Er **sagt**, er **sei** müde.*
+- *Er **sagte**, er **sei** müde.* (*er wäre gewesen* değil)
+- *Er **hat gesagt**, er **sei** müde.*
+
+### Değişenler: kişi, yer ve zaman
+Bakış açısı asıl konuşandan aktarana geçer:
+
+| doğrudan anlatım | dolaylı anlatım (sonradan aktarılan) |
+| ---- | ---- |
+| ich, mein | er/sie, sein/ihr |
+| hier | dort |
+| heute | an diesem Tag / am selben Tag |
+| gestern | am Vortag / am Tag zuvor |
+| morgen | am nächsten Tag / am folgenden Tag |
+| jetzt | damals / in diesem Moment |
+
+**Örnek:**
+- Doğrudan (pazartesi): Anna: „Ich **habe gestern hier** gewartet." (Dün burada bekledim.)
+- Dolaylı (bir hafta sonra): Anna sagte, sie **habe am Vortag dort** gewartet. (Anna bir önceki gün orada beklediğini söyledi.)
+
+### Sık yapılan hatalar
+- ❌ *Er sagte, er wäre müde gewesen.* (eğer „Ich bin müde." dediyse) → ✅ *Er sagte, er **sei** müde.*
+- ❌ *Sie erzählte, sie ging ins Kino.* → ✅ *Sie erzählte, sie **sei** ins Kino **gegangen**.*
+
+**Örnekler:**
+- Der Trainer sagte, die Mannschaft **habe** gut **gespielt**. (Antrenör takımın iyi oynadığını söyledi.)
+- Die Lehrerin meinte, wir **würden** die Ergebnisse **am nächsten Tag** bekommen. (Öğretmen sonuçları ertesi gün alacağımızı söyledi.)
+- Er versicherte, er **werde** pünktlich **sein**. (Zamanında orada olacağına dair güvence verdi.)
+- Die Zeugin gab an, sie **sei** **an jenem Abend** zu Hause **gewesen**. (Tanık o akşam evde olduğunu beyan etti.)
+- Der Kollege schrieb, er **habe** die Datei bereits **geschickt**. (İş arkadaşı dosyayı zaten gönderdiğini yazdı.)`,
     },
   })
   await seedExercises({
@@ -27837,12 +28502,114 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit2.id,
       order: 3,
       grammarTopic: 'Konjunktiv II der Vergangenheit als Ersatzform',
-      explanationDe:
-        'Ist der Konjunktiv I der Vergangenheit formgleich mit dem Indikativ (bei "sie"/Plural), nutzt man den Konjunktiv II der Vergangenheit: "Sie sagten, sie hätten gewartet."',
-      explanationEn:
-        'When the Konjunktiv I past is identical to the indicative (with "sie"/plural), the Konjunktiv II past is used instead: "Sie sagten, sie hätten gewartet" (They said they had waited).',
-      explanationTr:
-        'Geçmiş Konjunktiv I, haber kipiyle aynıysa ("sie"/çoğul ile), onun yerine geçmiş Konjunktiv II kullanılır: "Sie sagten, sie hätten gewartet."',
+      explanationDe: `## Konjunktiv II der Vergangenheit als Ersatzform
+
+Auch in der Vergangenheit gilt die Ersatzregel: Ist der Konjunktiv I **gleich dem Indikativ**, wechselt man in den **Konjunktiv II**.
+
+Das betrifft vor allem **„haben"** im Plural und in der 1. Person:
+
+| Person | Konj. I (Indikativ-gleich?) | Ersatzform Konj. II |
+| ---- | ---- | ---- |
+| ich | habe gewartet ❌ | **hätte** gewartet |
+| er/sie/es | habe gewartet ✅ | — (Konj. I bleibt) |
+| wir | haben gewartet ❌ | **hätten** gewartet |
+| sie/Sie | haben gewartet ❌ | **hätten** gewartet |
+
+Mit **„sein"** gibt es dieses Problem nicht – *seien* ist immer eindeutig:
+- *Sie sagten, sie **seien** gekommen.* ✅ (keine Ersatzform nötig)
+
+### Gegenüberstellung
+| direkte Rede | indirekte Rede |
+| ---- | ---- |
+| „Wir **haben** lange **gewartet**." | Sie sagten, sie **hätten** lange **gewartet**. |
+| „Wir **sind** spät **angekommen**." | Sie sagten, sie **seien** spät **angekommen**. |
+| „Ich **habe** nichts **gewusst**." | Ich sagte, ich **hätte** nichts **gewusst**. |
+| „Er **hat** angerufen." | Sie sagt, er **habe** angerufen. |
+
+### Achtung: Bedeutung bleibt gleich
+Die Ersatzform *hätten gewartet* drückt hier **keine Irrealität** aus (wie in *Wenn wir gewartet hätten, …*). Sie ist nur ein **Signal für indirekte Rede**.
+
+### Mit Modalverben
+- „Wir **mussten** absagen." → Sie erklärten, sie **hätten absagen müssen**.
+
+**Beispiele:**
+- Die Studierenden berichteten, sie **hätten** die Aufgabe nicht **verstanden**.
+- Die Anwohner klagten, sie **hätten** die ganze Nacht nicht **geschlafen**.
+- Die Touristen erzählten, sie **seien** mit dem Zug **gefahren**.
+- Die Politiker betonten, sie **hätten** alles **versucht**.
+- Die Kinder behaupteten, sie **hätten** die Vase nicht **zerbrochen**.`,
+      explanationEn: `## Konjunktiv II past as a substitute form
+
+The substitution rule also applies in the past: if Konjunktiv I is **identical to the indicative**, switch to **Konjunktiv II**.
+
+This mainly concerns **"haben"** in the plural and the 1st person:
+
+| person | Konj. I (same as indicative?) | substitute Konj. II |
+| ---- | ---- | ---- |
+| ich | habe gewartet ❌ | **hätte** gewartet |
+| er/sie/es | habe gewartet ✅ | — (keep Konj. I) |
+| wir | haben gewartet ❌ | **hätten** gewartet |
+| sie/Sie | haben gewartet ❌ | **hätten** gewartet |
+
+With **"sein"** this problem doesn't arise – *seien* is always unambiguous:
+- *Sie sagten, sie **seien** gekommen.* ✅ (no substitute needed)
+
+### Comparison
+| direct speech | reported speech |
+| ---- | ---- |
+| „Wir **haben** lange **gewartet**." | Sie sagten, sie **hätten** lange **gewartet**. (They said they had waited a long time.) |
+| „Wir **sind** spät **angekommen**." | Sie sagten, sie **seien** spät **angekommen**. (They said they had arrived late.) |
+| „Ich **habe** nichts **gewusst**." | Ich sagte, ich **hätte** nichts **gewusst**. (I said I hadn't known anything.) |
+| „Er **hat** angerufen." | Sie sagt, er **habe** angerufen. (She says he called.) |
+
+### Note: the meaning stays the same
+The substitute form *hätten gewartet* does **not** express unreality here (as in *Wenn wir gewartet hätten, …*). It is only a **marker of reported speech**.
+
+### With modal verbs
+- „Wir **mussten** absagen." → Sie erklärten, sie **hätten absagen müssen**. (They explained they had had to cancel.)
+
+**Examples:**
+- Die Studierenden berichteten, sie **hätten** die Aufgabe nicht **verstanden**. (The students reported they hadn't understood the task.)
+- Die Anwohner klagten, sie **hätten** die ganze Nacht nicht **geschlafen**. (The residents complained they hadn't slept all night.)
+- Die Touristen erzählten, sie **seien** mit dem Zug **gefahren**. (The tourists said they had travelled by train.)
+- Die Politiker betonten, sie **hätten** alles **versucht**. (The politicians stressed they had tried everything.)
+- Die Kinder behaupteten, sie **hätten** die Vase nicht **zerbrochen**. (The children claimed they hadn't broken the vase.)`,
+      explanationTr: `## İkame biçim olarak geçmiş zaman Konjunktiv II
+
+İkame kuralı geçmiş zamanda da geçerlidir: Konjunktiv I **Indikativ ile aynıysa**, **Konjunktiv II**'ye geçilir.
+
+Bu özellikle çoğul ve 1. şahısta **„haben"** için geçerlidir:
+
+| şahıs | Konj. I (Indikativ ile aynı mı?) | ikame Konj. II |
+| ---- | ---- | ---- |
+| ich | habe gewartet ❌ | **hätte** gewartet |
+| er/sie/es | habe gewartet ✅ | — (Konj. I kalır) |
+| wir | haben gewartet ❌ | **hätten** gewartet |
+| sie/Sie | haben gewartet ❌ | **hätten** gewartet |
+
+**„sein"** ile bu sorun yoktur – *seien* her zaman açıktır:
+- *Sie sagten, sie **seien** gekommen.* ✅ (ikameye gerek yok)
+
+### Karşılaştırma
+| doğrudan anlatım | dolaylı anlatım |
+| ---- | ---- |
+| „Wir **haben** lange **gewartet**." | Sie sagten, sie **hätten** lange **gewartet**. (Uzun süre beklediklerini söylediler.) |
+| „Wir **sind** spät **angekommen**." | Sie sagten, sie **seien** spät **angekommen**. (Geç vardıklarını söylediler.) |
+| „Ich **habe** nichts **gewusst**." | Ich sagte, ich **hätte** nichts **gewusst**. (Hiçbir şey bilmediğimi söyledim.) |
+| „Er **hat** angerufen." | Sie sagt, er **habe** angerufen. (Onun aradığını söylüyor.) |
+
+### Dikkat: anlam değişmez
+Buradaki *hätten gewartet* ikame biçimi **gerçek dışılık** bildirmez (*Wenn wir gewartet hätten, …* cümlesindeki gibi). Yalnızca bir **dolaylı anlatım işaretidir**.
+
+### Modal fiillerle
+- „Wir **mussten** absagen." → Sie erklärten, sie **hätten absagen müssen**. (İptal etmek zorunda kaldıklarını açıkladılar.)
+
+**Örnekler:**
+- Die Studierenden berichteten, sie **hätten** die Aufgabe nicht **verstanden**. (Öğrenciler görevi anlamadıklarını bildirdi.)
+- Die Anwohner klagten, sie **hätten** die ganze Nacht nicht **geschlafen**. (Bölge sakinleri bütün gece uyumadıklarından şikâyet etti.)
+- Die Touristen erzählten, sie **seien** mit dem Zug **gefahren**. (Turistler trenle gittiklerini anlattı.)
+- Die Politiker betonten, sie **hätten** alles **versucht**. (Politikacılar her şeyi denediklerini vurguladı.)
+- Die Kinder behaupteten, sie **hätten** die Vase nicht **zerbrochen**. (Çocuklar vazoyu kırmadıklarını iddia etti.)`,
     },
   })
   await seedExercises({
@@ -27871,12 +28638,98 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit2.id,
       order: 4,
       grammarTopic: 'Übung: Konjunktiv I Vergangenheit',
-      explanationDe:
-        'Wiederholung: In Nachrichtentexten wird die Vergangenheit oft im Konjunktiv I wiedergegeben: "Die Polizei teilte mit, der Verdächtige sei geflohen."',
-      explanationEn:
-        'Review: news reports often use Konjunktiv I to report past events: "Die Polizei teilte mit, der Verdächtige sei geflohen" (The police announced the suspect had fled).',
-      explanationTr:
-        'Tekrar: Haber metinlerinde geçmiş genellikle Konjunktiv I ile aktarılır: "Die Polizei teilte mit, der Verdächtige sei geflohen."',
+      explanationDe: `## Übung: Konjunktiv I Vergangenheit – Zusammenfassung
+
+In **Nachrichtentexten** werden vergangene Ereignisse, die man nicht selbst überprüft hat, fast immer im Konjunktiv I wiedergegeben. So bleibt die Zeitung **neutral** und haftet nicht für die Aussage.
+
+### Übersicht: alle Formen der indirekten Rede
+| Zeit | Konjunktiv I | Ersatz (wenn nötig) |
+| ---- | ---- | ---- |
+| Gegenwart | er **komme** / sie **habe** | sie **kämen** / sie **hätten** |
+| Vergangenheit | er **sei gekommen** / sie **habe gemacht** | sie **hätten gemacht** |
+| Zukunft | er **werde kommen** | sie **würden kommen** |
+
+### Typische Nachrichtenmeldung
+**Direkte Aussagen (Polizei):** „Der Verdächtige **ist** am Montag **geflohen**. Er **hat** ein Auto **gestohlen**. Wir **haben** die Fahndung **eingeleitet**."
+
+**Meldung in der Zeitung:** Die Polizei teilte mit, der Verdächtige **sei** am Montag **geflohen**. Er **habe** ein Auto **gestohlen**. Man **habe** die Fahndung **eingeleitet**.
+
+### Weitere Signale der Distanz
+Neben dem Konjunktiv I zeigen auch diese Ausdrücke, dass es sich um eine fremde Aussage handelt:
+- **laut** + Dativ/Genitiv: *Laut dem Bericht / Laut Polizei …*
+- **zufolge** (nachgestellt, + Dativ): *Dem Sprecher zufolge …*
+- **nach Angaben** + Genitiv: *Nach Angaben des Ministeriums …*
+- **sollen** (Gerücht): *Der Minister **soll** zurückgetreten **sein**.* (= Man sagt, er sei zurückgetreten.)
+- **wollen** (Selbstbehauptung): *Er **will** nichts gesehen **haben**.* (= Er behauptet, er habe nichts gesehen.)
+
+**Beispiele:**
+- Die Polizei teilte mit, der Verdächtige **sei geflohen**.
+- Augenzeugen berichteten, der Fahrer **habe** nicht **gebremst**.
+- Dem Unternehmen zufolge **seien** keine Daten **gestohlen worden**.
+- Die Sängerin erklärte, sie **habe** sich von ihrem Manager **getrennt**.
+- Der Angeklagte **will** zur Tatzeit zu Hause **gewesen sein**.`,
+      explanationEn: `## Practice: Konjunktiv I past – summary
+
+In **news texts**, past events that the writer has not verified personally are almost always reported in Konjunktiv I. This way the newspaper stays **neutral** and is not liable for the statement.
+
+### Overview: all forms of reported speech
+| time | Konjunktiv I | substitute (if needed) |
+| ---- | ---- | ---- |
+| present | er **komme** / sie **habe** | sie **kämen** / sie **hätten** |
+| past | er **sei gekommen** / sie **habe gemacht** | sie **hätten gemacht** |
+| future | er **werde kommen** | sie **würden kommen** |
+
+### A typical news report
+**Direct statements (police):** „Der Verdächtige **ist** am Montag **geflohen**. Er **hat** ein Auto **gestohlen**. Wir **haben** die Fahndung **eingeleitet**."
+
+**Newspaper report:** Die Polizei teilte mit, der Verdächtige **sei** am Montag **geflohen**. Er **habe** ein Auto **gestohlen**. Man **habe** die Fahndung **eingeleitet**.
+(The police announced that the suspect had fled on Monday, had stolen a car, and that a search had been launched.)
+
+### Other signals of distance
+Besides Konjunktiv I, these expressions also show that a statement comes from someone else:
+- **laut** + dative/genitive: *Laut dem Bericht / Laut Polizei …* (according to the report / police)
+- **zufolge** (after the noun, + dative): *Dem Sprecher zufolge …* (according to the spokesman)
+- **nach Angaben** + genitive: *Nach Angaben des Ministeriums …* (according to the ministry)
+- **sollen** (rumour): *Der Minister **soll** zurückgetreten **sein**.* (The minister is said to have resigned.)
+- **wollen** (self-claim): *Er **will** nichts gesehen **haben**.* (He claims to have seen nothing.)
+
+**Examples:**
+- Die Polizei teilte mit, der Verdächtige **sei geflohen**. (The police said the suspect had fled.)
+- Augenzeugen berichteten, der Fahrer **habe** nicht **gebremst**. (Eyewitnesses reported that the driver hadn't braked.)
+- Dem Unternehmen zufolge **seien** keine Daten **gestohlen worden**. (According to the company, no data had been stolen.)
+- Die Sängerin erklärte, sie **habe** sich von ihrem Manager **getrennt**. (The singer stated she had parted ways with her manager.)
+- Der Angeklagte **will** zur Tatzeit zu Hause **gewesen sein**. (The defendant claims to have been at home at the time of the crime.)`,
+      explanationTr: `## Alıştırma: Geçmiş zaman Konjunktiv I – özet
+
+**Haber metinlerinde**, yazarın kendisinin doğrulamadığı geçmiş olaylar neredeyse her zaman Konjunktiv I ile aktarılır. Böylece gazete **tarafsız** kalır ve söylenenden sorumlu tutulmaz.
+
+### Genel bakış: dolaylı anlatımın tüm biçimleri
+| zaman | Konjunktiv I | ikame (gerekirse) |
+| ---- | ---- | ---- |
+| şimdi | er **komme** / sie **habe** | sie **kämen** / sie **hätten** |
+| geçmiş | er **sei gekommen** / sie **habe gemacht** | sie **hätten gemacht** |
+| gelecek | er **werde kommen** | sie **würden kommen** |
+
+### Tipik bir haber
+**Doğrudan ifadeler (polis):** „Der Verdächtige **ist** am Montag **geflohen**. Er **hat** ein Auto **gestohlen**. Wir **haben** die Fahndung **eingeleitet**."
+
+**Gazetedeki haber:** Die Polizei teilte mit, der Verdächtige **sei** am Montag **geflohen**. Er **habe** ein Auto **gestohlen**. Man **habe** die Fahndung **eingeleitet**.
+(Polis, şüphelinin pazartesi günü kaçtığını, bir araba çaldığını ve arama başlatıldığını bildirdi.)
+
+### Mesafenin diğer işaretleri
+Konjunktiv I'in yanı sıra şu ifadeler de söylenenin başkasına ait olduğunu gösterir:
+- **laut** + Dativ/Genitiv: *Laut dem Bericht / Laut Polizei …* (rapora / polise göre)
+- **zufolge** (isimden sonra, + Dativ): *Dem Sprecher zufolge …* (sözcüye göre)
+- **nach Angaben** + Genitiv: *Nach Angaben des Ministeriums …* (bakanlığın verdiği bilgiye göre)
+- **sollen** (söylenti): *Der Minister **soll** zurückgetreten **sein**.* (Bakanın istifa ettiği söyleniyor.)
+- **wollen** (kendi iddiası): *Er **will** nichts gesehen **haben**.* (Hiçbir şey görmediğini iddia ediyor.)
+
+**Örnekler:**
+- Die Polizei teilte mit, der Verdächtige **sei geflohen**. (Polis şüphelinin kaçtığını bildirdi.)
+- Augenzeugen berichteten, der Fahrer **habe** nicht **gebremst**. (Görgü tanıkları sürücünün fren yapmadığını anlattı.)
+- Dem Unternehmen zufolge **seien** keine Daten **gestohlen worden**. (Şirkete göre hiçbir veri çalınmamış.)
+- Die Sängerin erklärte, sie **habe** sich von ihrem Manager **getrennt**. (Şarkıcı menajerinden ayrıldığını açıkladı.)
+- Der Angeklagte **will** zur Tatzeit zu Hause **gewesen sein**. (Sanık olay sırasında evde olduğunu iddia ediyor.)`,
     },
   })
   await seedExercises({
@@ -27928,12 +28781,128 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit3.id,
       order: 1,
       grammarTopic: 'Erweitertes Partizip I als Attribut',
-      explanationDe:
-        'Ein erweitertes Partizip-I-Attribut steht vor dem Nomen und kann durch weitere Wörter ergänzt werden: "der schnell wachsende Markt" (Partizip I "wachsend" + Adverb "schnell").',
-      explanationEn:
-        'An extended Partizip I attribute sits before the noun and can include additional modifying words: "der schnell wachsende Markt" (the rapidly growing market — Partizip I "wachsend" plus the adverb "schnell").',
-      explanationTr:
-        'Genişletilmiş Partizip I sıfatı isimden önce gelir ve ek kelimelerle genişletilebilir: "der schnell wachsende Markt" (hızla büyüyen pazar).',
+      explanationDe: `## Erweitertes Partizip I als Attribut
+
+Das **Partizip I** wird aus dem Infinitiv + **-d** gebildet: *wachsen → wachsen**d***, *lachen → lachen**d***. Vor einem Nomen wird es wie ein **Adjektiv** dekliniert.
+
+Bedeutung: **aktiv** und **gleichzeitig** – etwas passiert **gerade** / **dauernd**.
+- *das schlafende Kind* = das Kind, **das schläft**
+- *die steigenden Preise* = die Preise, **die steigen**
+
+### Erweiterung: Angaben vor das Partizip stellen
+Alles, was im Relativsatz vor dem Verb steht, rückt im Attribut **zwischen Artikel und Partizip**:
+
+> **Artikel** + [Erweiterung] + **Partizip I + Endung** + **Nomen**
+
+| Relativsatz | erweitertes Partizipialattribut |
+| ---- | ---- |
+| der Markt, der schnell wächst | der **schnell wachsende** Markt |
+| die Kinder, die im Garten spielen | die **im Garten spielenden** Kinder |
+| ein Problem, das seit Jahren besteht | ein **seit Jahren bestehendes** Problem |
+| die Zahl der Menschen, die in Armut leben | die Zahl der **in Armut lebenden** Menschen |
+
+### Endungen nicht vergessen!
+Das Partizip bekommt die normale **Adjektivendung**:
+- *der wachsend**e** Markt*, *ein wachsend**er** Markt*, *mit dem wachsend**en** Markt*
+
+### Lesestrategie für lange Attribute
+In Fachtexten können Attribute sehr lang werden. So entschlüsselt man sie:
+1. **Artikel** finden: *die …*
+2. Das dazugehörige **Nomen** suchen (oft weit hinten): *… Studierenden*
+3. **Partizip** davor finden: *… arbeitenden …*
+4. Den Rest als Relativsatz lesen: *die **neben dem Studium in Teilzeit arbeitenden** Studierenden* = die Studierenden, **die neben dem Studium in Teilzeit arbeiten**.
+
+### Sonderform: zu + Partizip I (Notwendigkeit/Möglichkeit)
+*die **zu lösende** Aufgabe* = die Aufgabe, die gelöst werden muss/kann.
+
+**Beispiele:**
+- Die **ständig steigenden** Mieten belasten viele Familien.
+- Wir suchen einen **fließend Deutsch sprechenden** Mitarbeiter.
+- Der **seit Stunden wartende** Patient wurde endlich aufgerufen.
+- Die **im Ausland lebenden** Deutschen dürfen per Brief wählen.
+- Das ist eine **noch zu klärende** Frage.`,
+      explanationEn: `## Extended present participle (Partizip I) as an attribute
+
+The **present participle** is formed from the infinitive + **-d**: *wachsen → wachsen**d***, *lachen → lachen**d***. Before a noun it is declined like an **adjective**.
+
+Meaning: **active** and **simultaneous** – something is happening **right now** / **continuously**.
+- *das schlafende Kind* = the sleeping child (the child **who is sleeping**)
+- *die steigenden Preise* = the rising prices (prices **that are rising**)
+
+### Extension: putting information before the participle
+Everything that stands before the verb in the relative clause moves **between the article and the participle**:
+
+> **article** + [extension] + **Partizip I + ending** + **noun**
+
+| relative clause | extended participial attribute |
+| ---- | ---- |
+| der Markt, der schnell wächst | der **schnell wachsende** Markt (the rapidly growing market) |
+| die Kinder, die im Garten spielen | die **im Garten spielenden** Kinder (the children playing in the garden) |
+| ein Problem, das seit Jahren besteht | ein **seit Jahren bestehendes** Problem (a problem that has existed for years) |
+| die Zahl der Menschen, die in Armut leben | die Zahl der **in Armut lebenden** Menschen (the number of people living in poverty) |
+
+### Don't forget the endings!
+The participle takes the normal **adjective ending**:
+- *der wachsend**e** Markt*, *ein wachsend**er** Markt*, *mit dem wachsend**en** Markt*
+
+### Reading strategy for long attributes
+In specialist texts attributes can become very long. Decode them like this:
+1. Find the **article**: *die …*
+2. Look for the matching **noun** (often far to the right): *… Studierenden*
+3. Find the **participle** in front of it: *… arbeitenden …*
+4. Read the rest as a relative clause: *die **neben dem Studium in Teilzeit arbeitenden** Studierenden* = the students **who work part-time alongside their studies**.
+
+### Special form: zu + Partizip I (necessity/possibility)
+*die **zu lösende** Aufgabe* = the task that has to / can be solved.
+
+**Examples:**
+- Die **ständig steigenden** Mieten belasten viele Familien. (Constantly rising rents are a burden on many families.)
+- Wir suchen einen **fließend Deutsch sprechenden** Mitarbeiter. (We are looking for an employee who speaks fluent German.)
+- Der **seit Stunden wartende** Patient wurde endlich aufgerufen. (The patient who had been waiting for hours was finally called.)
+- Die **im Ausland lebenden** Deutschen dürfen per Brief wählen. (Germans living abroad may vote by post.)
+- Das ist eine **noch zu klärende** Frage. (That is a question still to be clarified.)`,
+      explanationTr: `## Sıfat olarak genişletilmiş Partizip I
+
+**Partizip I**, mastar + **-d** ile oluşturulur: *wachsen → wachsen**d***, *lachen → lachen**d***. Bir ismin önünde **sıfat** gibi çekimlenir.
+
+Anlamı: **etken** ve **eşzamanlı** – bir şey **şu anda** / **sürekli** olmaktadır (Türkçedeki „-en/-an" sıfat-fiiline benzer).
+- *das schlafende Kind* = uyuyan çocuk
+- *die steigenden Preise* = yükselen fiyatlar
+
+### Genişletme: bilgileri ortacın önüne koymak
+İlgi cümlesinde fiilden önce gelen her şey, sıfat yapısında **artikel ile ortaç arasına** geçer:
+
+> **Artikel** + [genişletme] + **Partizip I + ek** + **isim**
+
+| ilgi cümlesi | genişletilmiş sıfat-fiil öbeği |
+| ---- | ---- |
+| der Markt, der schnell wächst | der **schnell wachsende** Markt (hızla büyüyen pazar) |
+| die Kinder, die im Garten spielen | die **im Garten spielenden** Kinder (bahçede oynayan çocuklar) |
+| ein Problem, das seit Jahren besteht | ein **seit Jahren bestehendes** Problem (yıllardır var olan bir sorun) |
+| die Zahl der Menschen, die in Armut leben | die Zahl der **in Armut lebenden** Menschen (yoksulluk içinde yaşayan insanların sayısı) |
+
+İyi haber: Türkçe de aynı mantıkla çalışır – bilgiler ismin **önüne** gelir!
+
+### Ekleri unutma!
+Ortaç normal **sıfat ekini** alır:
+- *der wachsend**e** Markt*, *ein wachsend**er** Markt*, *mit dem wachsend**en** Markt*
+
+### Uzun yapıları okuma stratejisi
+Uzmanlık metinlerinde bu yapılar çok uzayabilir. Şöyle çözülür:
+1. **Artikeli** bul: *die …*
+2. Ait olduğu **ismi** ara (çoğu zaman çok sağda): *… Studierenden*
+3. Önündeki **ortacı** bul: *… arbeitenden …*
+4. Geri kalanı ilgi cümlesi gibi oku: *die **neben dem Studium in Teilzeit arbeitenden** Studierenden* = okulun yanında yarı zamanlı çalışan öğrenciler.
+
+### Özel biçim: zu + Partizip I (gereklilik/olasılık)
+*die **zu lösende** Aufgabe* = çözülmesi gereken / çözülebilecek görev.
+
+**Örnekler:**
+- Die **ständig steigenden** Mieten belasten viele Familien. (Sürekli artan kiralar birçok aileye yük oluyor.)
+- Wir suchen einen **fließend Deutsch sprechenden** Mitarbeiter. (Akıcı Almanca konuşan bir çalışan arıyoruz.)
+- Der **seit Stunden wartende** Patient wurde endlich aufgerufen. (Saatlerdir bekleyen hasta sonunda çağrıldı.)
+- Die **im Ausland lebenden** Deutschen dürfen per Brief wählen. (Yurt dışında yaşayan Almanlar mektupla oy kullanabilir.)
+- Das ist eine **noch zu klärende** Frage. (Bu henüz açıklığa kavuşturulması gereken bir soru.)`,
     },
   })
   await seedExercises({
@@ -27962,12 +28931,111 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit3.id,
       order: 2,
       grammarTopic: 'Erweitertes Partizip II als Attribut',
-      explanationDe:
-        'Auch das Partizip II kann erweitert vor dem Nomen stehen, meist passivisch: "das von der Regierung geplante Gesetz" (das Gesetz, das von der Regierung geplant wird).',
-      explanationEn:
-        'Partizip II can also appear extended before a noun, usually with passive meaning: "das von der Regierung geplante Gesetz" (the law planned by the government).',
-      explanationTr:
-        'Partizip II de genellikle edilgen anlamla isimden önce genişletilmiş biçimde kullanılabilir: "das von der Regierung geplante Gesetz" (hükümet tarafından planlanan yasa).',
+      explanationDe: `## Erweitertes Partizip II als Attribut
+
+Das **Partizip II** (*gemacht, geschrieben, geplant*) kann ebenfalls erweitert vor einem Nomen stehen.
+
+Bedeutung:
+- bei **transitiven** Verben → **passiv** und meist **abgeschlossen**: *das geplante Gesetz* = das Gesetz, **das geplant wird / wurde**
+- bei Verben mit **sein**-Perfekt → **aktiv**, **abgeschlossen**: *der angekommene Zug* = der Zug, **der angekommen ist**
+
+| Relativsatz | Partizipialattribut |
+| ---- | ---- |
+| das Gesetz, das von der Regierung geplant wird | das **von der Regierung geplante** Gesetz |
+| die Briefe, die gestern geschrieben wurden | die **gestern geschriebenen** Briefe |
+| ein Auto, das 2015 gebaut wurde | ein **2015 gebautes** Auto |
+| der Gast, der verspätet angekommen ist | der **verspätet angekommene** Gast |
+| die Waren, die im Ausland hergestellt werden | die **im Ausland hergestellten** Waren |
+
+### Partizip I oder Partizip II?
+| Partizip I (aktiv, gleichzeitig) | Partizip II (passiv / abgeschlossen) |
+| ---- | ---- |
+| der **liebende** Vater (er liebt) | der **geliebte** Vater (er wird geliebt) |
+| die **kochende** Suppe (sie kocht gerade) | die **gekochte** Suppe (sie ist fertig) |
+| ein **überzeugender** Redner (er überzeugt) | ein **überzeugter** Anhänger (er ist überzeugt) |
+| die **steigenden** Kosten | die **gestiegenen** Kosten |
+
+### Typisch: Agens mit „von"
+Wer etwas tut, wird mit **von + Dativ** angegeben (wie im Passiv):
+- *die **vom Ministerium veröffentlichten** Zahlen*
+- *der **von vielen Experten kritisierte** Plan*
+
+**Beispiele:**
+- Das **von der Regierung geplante** Gesetz ist umstritten.
+- Die **im letzten Jahr renovierte** Bibliothek ist wieder geöffnet.
+- Wir haben die **in der Besprechung getroffenen** Entscheidungen protokolliert.
+- Der **aus Rom zurückgekehrte** Botschafter gab eine Pressekonferenz.
+- Bitte senden Sie den **vollständig ausgefüllten** Antrag zurück.`,
+      explanationEn: `## Extended past participle (Partizip II) as an attribute
+
+The **past participle** (*gemacht, geschrieben, geplant*) can also stand extended before a noun.
+
+Meaning:
+- with **transitive** verbs → **passive** and usually **completed**: *das geplante Gesetz* = the planned law (the law **that is / was planned**)
+- with verbs taking **sein** in the perfect → **active**, **completed**: *der angekommene Zug* = the train **that has arrived**
+
+| relative clause | participial attribute |
+| ---- | ---- |
+| das Gesetz, das von der Regierung geplant wird | das **von der Regierung geplante** Gesetz (the law planned by the government) |
+| die Briefe, die gestern geschrieben wurden | die **gestern geschriebenen** Briefe (the letters written yesterday) |
+| ein Auto, das 2015 gebaut wurde | ein **2015 gebautes** Auto (a car built in 2015) |
+| der Gast, der verspätet angekommen ist | der **verspätet angekommene** Gast (the guest who arrived late) |
+| die Waren, die im Ausland hergestellt werden | die **im Ausland hergestellten** Waren (goods produced abroad) |
+
+### Partizip I or Partizip II?
+| Partizip I (active, simultaneous) | Partizip II (passive / completed) |
+| ---- | ---- |
+| der **liebende** Vater (the loving father) | der **geliebte** Vater (the beloved father) |
+| die **kochende** Suppe (the boiling soup) | die **gekochte** Suppe (the cooked soup) |
+| ein **überzeugender** Redner (a convincing speaker) | ein **überzeugter** Anhänger (a convinced supporter) |
+| die **steigenden** Kosten (rising costs) | die **gestiegenen** Kosten (costs that have risen) |
+
+### Typical: the agent with "von"
+The doer is given with **von + dative** (as in the passive):
+- *die **vom Ministerium veröffentlichten** Zahlen* (the figures published by the ministry)
+- *der **von vielen Experten kritisierte** Plan* (the plan criticised by many experts)
+
+**Examples:**
+- Das **von der Regierung geplante** Gesetz ist umstritten. (The law planned by the government is controversial.)
+- Die **im letzten Jahr renovierte** Bibliothek ist wieder geöffnet. (The library renovated last year is open again.)
+- Wir haben die **in der Besprechung getroffenen** Entscheidungen protokolliert. (We recorded the decisions made in the meeting.)
+- Der **aus Rom zurückgekehrte** Botschafter gab eine Pressekonferenz. (The ambassador who had returned from Rome gave a press conference.)
+- Bitte senden Sie den **vollständig ausgefüllten** Antrag zurück. (Please return the fully completed application.)`,
+      explanationTr: `## Sıfat olarak genişletilmiş Partizip II
+
+**Partizip II** (*gemacht, geschrieben, geplant*) de genişletilmiş olarak bir ismin önünde durabilir.
+
+Anlamı:
+- **geçişli** fiillerde → **edilgen** ve çoğunlukla **tamamlanmış**: *das geplante Gesetz* = planlanan / planlanmış yasa
+- Perfekt'i **sein** ile kurulan fiillerde → **etken**, **tamamlanmış**: *der angekommene Zug* = varmış olan tren
+
+| ilgi cümlesi | sıfat-fiil öbeği |
+| ---- | ---- |
+| das Gesetz, das von der Regierung geplant wird | das **von der Regierung geplante** Gesetz (hükümetçe planlanan yasa) |
+| die Briefe, die gestern geschrieben wurden | die **gestern geschriebenen** Briefe (dün yazılan mektuplar) |
+| ein Auto, das 2015 gebaut wurde | ein **2015 gebautes** Auto (2015'te üretilmiş bir araba) |
+| der Gast, der verspätet angekommen ist | der **verspätet angekommene** Gast (geç gelen misafir) |
+| die Waren, die im Ausland hergestellt werden | die **im Ausland hergestellten** Waren (yurt dışında üretilen mallar) |
+
+### Partizip I mi, Partizip II mi?
+| Partizip I (etken, eşzamanlı) | Partizip II (edilgen / tamamlanmış) |
+| ---- | ---- |
+| der **liebende** Vater (seven baba) | der **geliebte** Vater (sevilen baba) |
+| die **kochende** Suppe (kaynayan çorba) | die **gekochte** Suppe (pişmiş çorba) |
+| ein **überzeugender** Redner (ikna edici bir konuşmacı) | ein **überzeugter** Anhänger (inançlı bir taraftar) |
+| die **steigenden** Kosten (artan maliyetler) | die **gestiegenen** Kosten (artmış maliyetler) |
+
+### Tipik: „von" ile eylemi yapan
+Eylemi yapan **von + Dativ** ile belirtilir (edilgen çatıdaki gibi):
+- *die **vom Ministerium veröffentlichten** Zahlen* (bakanlıkça yayımlanan rakamlar)
+- *der **von vielen Experten kritisierte** Plan* (birçok uzmanca eleştirilen plan)
+
+**Örnekler:**
+- Das **von der Regierung geplante** Gesetz ist umstritten. (Hükümetin planladığı yasa tartışmalı.)
+- Die **im letzten Jahr renovierte** Bibliothek ist wieder geöffnet. (Geçen yıl yenilenen kütüphane yeniden açıldı.)
+- Wir haben die **in der Besprechung getroffenen** Entscheidungen protokolliert. (Toplantıda alınan kararları tutanağa geçirdik.)
+- Der **aus Rom zurückgekehrte** Botschafter gab eine Pressekonferenz. (Roma'dan dönen büyükelçi bir basın toplantısı düzenledi.)
+- Bitte senden Sie den **vollständig ausgefüllten** Antrag zurück. (Lütfen eksiksiz doldurulmuş başvuruyu geri gönderin.)`,
     },
   })
   await seedExercises({
@@ -27996,12 +29064,108 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit3.id,
       order: 3,
       grammarTopic: 'Umwandlung Relativsatz <-> Partizipialattribut',
-      explanationDe:
-        'Partizipialattribute ersetzen oft Relativsätze in formellen Texten: "Die Studie, die letztes Jahr veröffentlicht wurde" -> "Die letztes Jahr veröffentlichte Studie."',
-      explanationEn:
-        'Participial attributes often replace relative clauses in formal texts: "Die Studie, die letztes Jahr veröffentlicht wurde" -> "Die letztes Jahr veröffentlichte Studie" (The study published last year).',
-      explanationTr:
-        'Sıfat-fiil yapıları resmi metinlerde sık sık ilgi cümlelerinin yerini alır: "Die Studie, die letztes Jahr veröffentlicht wurde" -> "Die letztes Jahr veröffentlichte Studie."',
+      explanationDe: `## Umwandlung: Relativsatz ↔ Partizipialattribut
+
+In formellen Texten ersetzen Partizipialattribute oft Relativsätze – der Text wird **kompakter**. Beim Sprechen oder für mehr Klarheit wandelt man umgekehrt Attribute in Relativsätze um.
+
+### Relativsatz → Partizipialattribut (4 Schritte)
+*Die Studie, **die letztes Jahr veröffentlicht wurde**, …*
+1. Relativpronomen und Hilfsverb streichen: ~~die~~ letztes Jahr veröffentlicht ~~wurde~~
+2. **Aktiv/gleichzeitig** → Partizip I; **passiv/abgeschlossen** → Partizip II
+3. Erweiterung + Partizip **vor das Nomen** stellen
+4. **Adjektivendung** ergänzen → *die **letztes Jahr veröffentlichte** Studie*
+
+### Welches Partizip?
+| Relativsatz | Typ | Attribut |
+| ---- | ---- | ---- |
+| der Hund, der laut bellt | aktiv, gleichzeitig | der **laut bellende** Hund |
+| das Haus, das 1900 gebaut wurde | Passiv | das **1900 gebaute** Haus |
+| die Frau, die nach Berlin gezogen ist | Perfekt mit *sein* | die **nach Berlin gezogene** Frau |
+| die Probleme, die gelöst werden müssen | Notwendigkeit | die **zu lösenden** Probleme |
+| eine Methode, die man leicht anwenden kann | Möglichkeit | eine **leicht anzuwendende** Methode |
+
+### Partizipialattribut → Relativsatz
+*die **seit Jahren steigenden** Energiepreise* → die Energiepreise, **die seit Jahren steigen**
+*der **vom Gericht verurteilte** Manager* → der Manager, **der vom Gericht verurteilt wurde**
+
+### Wann geht es NICHT?
+- Relativsätze mit **haben**-Perfekt im Aktiv: *der Mann, der das Buch gelesen hat* → ❌ *der das Buch gelesene Mann*
+- Relativsätze mit eigenem Subjekt im Akkusativ/Dativ: *der Mann, dem ich geholfen habe* → kein einfaches Attribut
+
+**Beispiele:**
+- Die Firma, die im Jahr 1950 gegründet wurde → die **im Jahr 1950 gegründete** Firma
+- Die Kinder, die auf der Straße spielen → die **auf der Straße spielenden** Kinder
+- Der Vertrag, der gestern unterschrieben wurde → der **gestern unterschriebene** Vertrag
+- Die Fragen, die noch beantwortet werden müssen → die **noch zu beantwortenden** Fragen
+- Die Touristen, die spät angekommen sind → die **spät angekommenen** Touristen`,
+      explanationEn: `## Conversion: relative clause ↔ participial attribute
+
+In formal texts, participial attributes often replace relative clauses – the text becomes **more compact**. When speaking, or for more clarity, you convert attributes back into relative clauses.
+
+### Relative clause → participial attribute (4 steps)
+*Die Studie, **die letztes Jahr veröffentlicht wurde**, …* (The study that was published last year …)
+1. Delete the relative pronoun and the auxiliary: ~~die~~ letztes Jahr veröffentlicht ~~wurde~~
+2. **Active/simultaneous** → Partizip I; **passive/completed** → Partizip II
+3. Put extension + participle **before the noun**
+4. Add the **adjective ending** → *die **letztes Jahr veröffentlichte** Studie*
+
+### Which participle?
+| relative clause | type | attribute |
+| ---- | ---- | ---- |
+| der Hund, der laut bellt | active, simultaneous | der **laut bellende** Hund (the loudly barking dog) |
+| das Haus, das 1900 gebaut wurde | passive | das **1900 gebaute** Haus (the house built in 1900) |
+| die Frau, die nach Berlin gezogen ist | perfect with *sein* | die **nach Berlin gezogene** Frau (the woman who moved to Berlin) |
+| die Probleme, die gelöst werden müssen | necessity | die **zu lösenden** Probleme (the problems to be solved) |
+| eine Methode, die man leicht anwenden kann | possibility | eine **leicht anzuwendende** Methode (an easy-to-apply method) |
+
+### Participial attribute → relative clause
+*die **seit Jahren steigenden** Energiepreise* → die Energiepreise, **die seit Jahren steigen** (energy prices that have been rising for years)
+*der **vom Gericht verurteilte** Manager* → der Manager, **der vom Gericht verurteilt wurde** (the manager convicted by the court)
+
+### When does it NOT work?
+- Active relative clauses with a **haben** perfect: *der Mann, der das Buch gelesen hat* → ❌ *der das Buch gelesene Mann*
+- Relative clauses where the pronoun is an accusative/dative object: *der Mann, dem ich geholfen habe* → no simple attribute
+
+**Examples:**
+- Die Firma, die im Jahr 1950 gegründet wurde → die **im Jahr 1950 gegründete** Firma (the company founded in 1950)
+- Die Kinder, die auf der Straße spielen → die **auf der Straße spielenden** Kinder (the children playing in the street)
+- Der Vertrag, der gestern unterschrieben wurde → der **gestern unterschriebene** Vertrag (the contract signed yesterday)
+- Die Fragen, die noch beantwortet werden müssen → die **noch zu beantwortenden** Fragen (the questions still to be answered)
+- Die Touristen, die spät angekommen sind → die **spät angekommenen** Touristen (the tourists who arrived late)`,
+      explanationTr: `## Dönüştürme: ilgi cümlesi ↔ sıfat-fiil öbeği
+
+Resmi metinlerde sıfat-fiil öbekleri genellikle ilgi cümlelerinin yerini alır – metin **daha yoğun** hâle gelir. Konuşurken veya daha anlaşılır olmak için tersine, öbekler ilgi cümlesine dönüştürülür.
+
+### İlgi cümlesi → sıfat-fiil öbeği (4 adım)
+*Die Studie, **die letztes Jahr veröffentlicht wurde**, …* (Geçen yıl yayımlanan çalışma …)
+1. İlgi zamirini ve yardımcı fiili sil: ~~die~~ letztes Jahr veröffentlicht ~~wurde~~
+2. **Etken/eşzamanlı** → Partizip I; **edilgen/tamamlanmış** → Partizip II
+3. Genişletme + ortacı **ismin önüne** koy
+4. **Sıfat ekini** ekle → *die **letztes Jahr veröffentlichte** Studie*
+
+### Hangi ortaç?
+| ilgi cümlesi | tür | öbek |
+| ---- | ---- | ---- |
+| der Hund, der laut bellt | etken, eşzamanlı | der **laut bellende** Hund (yüksek sesle havlayan köpek) |
+| das Haus, das 1900 gebaut wurde | edilgen | das **1900 gebaute** Haus (1900'de yapılmış ev) |
+| die Frau, die nach Berlin gezogen ist | *sein* ile Perfekt | die **nach Berlin gezogene** Frau (Berlin'e taşınmış kadın) |
+| die Probleme, die gelöst werden müssen | gereklilik | die **zu lösenden** Probleme (çözülmesi gereken sorunlar) |
+| eine Methode, die man leicht anwenden kann | olasılık | eine **leicht anzuwendende** Methode (kolayca uygulanabilen bir yöntem) |
+
+### Sıfat-fiil öbeği → ilgi cümlesi
+*die **seit Jahren steigenden** Energiepreise* → die Energiepreise, **die seit Jahren steigen** (yıllardır artan enerji fiyatları)
+*der **vom Gericht verurteilte** Manager* → der Manager, **der vom Gericht verurteilt wurde** (mahkemece mahkûm edilen yönetici)
+
+### Ne zaman OLMAZ?
+- **haben**-Perfekt'li etken ilgi cümleleri: *der Mann, der das Buch gelesen hat* → ❌ *der das Buch gelesene Mann*
+- İlgi zamirinin akuzatif/datif nesne olduğu cümleler: *der Mann, dem ich geholfen habe* → basit öbek yapılamaz
+
+**Örnekler:**
+- Die Firma, die im Jahr 1950 gegründet wurde → die **im Jahr 1950 gegründete** Firma (1950'de kurulan firma)
+- Die Kinder, die auf der Straße spielen → die **auf der Straße spielenden** Kinder (sokakta oynayan çocuklar)
+- Der Vertrag, der gestern unterschrieben wurde → der **gestern unterschriebene** Vertrag (dün imzalanan sözleşme)
+- Die Fragen, die noch beantwortet werden müssen → die **noch zu beantwortenden** Fragen (henüz cevaplanması gereken sorular)
+- Die Touristen, die spät angekommen sind → die **spät angekommenen** Touristen (geç gelen turistler)`,
     },
   })
   await seedExercises({
@@ -28033,12 +29197,110 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit3.id,
       order: 4,
       grammarTopic: 'Übung: Partizipialattribute',
-      explanationDe:
-        'Wiederholung: Erweiterte Partizipialattribute sind typisch für Zeitungs- und Fachtexte und ermöglichen kompakte, informationsdichte Sätze.',
-      explanationEn:
-        'Review: extended participial attributes are typical of newspaper and academic texts, allowing compact, information-dense sentences.',
-      explanationTr:
-        'Tekrar: Genişletilmiş sıfat-fiil yapıları gazete ve akademik metinlerde tipiktir; kısa ve bilgi yoğun cümleler kurmayı sağlar.',
+      explanationDe: `## Übung: Partizipialattribute – Zusammenfassung
+
+Erweiterte Partizipialattribute sind typisch für **Zeitungs-, Wissenschafts- und Verwaltungstexte**. Sie packen viele Informationen in eine **Nominalgruppe** und machen Sätze kompakt – aber auch schwerer lesbar.
+
+### Die drei Typen im Überblick
+| Typ | Form | Bedeutung | Beispiel |
+| ---- | ---- | ---- | ---- |
+| Partizip I | Infinitiv + d | aktiv, gleichzeitig | die **lachenden** Kinder |
+| Partizip II | ge…t / ge…en | passiv oder abgeschlossen | das **reparierte** Auto |
+| zu + Partizip I | zu + Infinitiv + d | muss/kann gemacht werden | die **zu erledigenden** Aufgaben |
+
+### Ein Satz – zwei Stile
+**Mit Relativsätzen (leichter):**
+*Die Maßnahmen, **die von der Stadt beschlossen wurden**, sollen die Zahl der Unfälle, **die sich jedes Jahr ereignen**, senken.*
+
+**Mit Partizipialattributen (kompakter):**
+*Die **von der Stadt beschlossenen** Maßnahmen sollen die Zahl der **sich jährlich ereignenden** Unfälle senken.*
+
+### Checkliste
+- ✅ Steht das Partizip **direkt vor dem Nomen**?
+- ✅ Hat es die richtige **Adjektivendung**?
+- ✅ Stimmt die Bedeutung (aktiv → P I, passiv → P II)?
+- ✅ Stehen alle Erweiterungen **zwischen Artikel und Partizip**?
+
+### Häufige Fehler
+- ❌ *der wachsend Markt* → ✅ *der wachsend**e** Markt*
+- ❌ *die gestern geschriebene Briefe* → ✅ *die gestern geschrieben**en** Briefe*
+- ❌ *die veröffentlichte letztes Jahr Studie* → ✅ *die **letztes Jahr** veröffentlichte Studie*
+
+**Beispiele aus Zeitungstexten:**
+- Die **seit Monaten andauernden** Verhandlungen wurden abgebrochen.
+- Der **im Koalitionsvertrag vereinbarte** Mindestlohn tritt im Januar in Kraft.
+- Die Zahl der **an Diabetes erkrankten** Kinder hat zugenommen.
+- Die **bis Ende des Jahres einzureichenden** Unterlagen finden Sie online.`,
+      explanationEn: `## Practice: participial attributes – summary
+
+Extended participial attributes are typical of **newspaper, academic and administrative texts**. They pack a lot of information into one **noun phrase** and make sentences compact – but also harder to read.
+
+### The three types at a glance
+| type | form | meaning | example |
+| ---- | ---- | ---- | ---- |
+| Partizip I | infinitive + d | active, simultaneous | die **lachenden** Kinder (the laughing children) |
+| Partizip II | ge…t / ge…en | passive or completed | das **reparierte** Auto (the repaired car) |
+| zu + Partizip I | zu + infinitive + d | must/can be done | die **zu erledigenden** Aufgaben (the tasks to be done) |
+
+### One sentence – two styles
+**With relative clauses (easier):**
+*Die Maßnahmen, **die von der Stadt beschlossen wurden**, sollen die Zahl der Unfälle, **die sich jedes Jahr ereignen**, senken.*
+
+**With participial attributes (more compact):**
+*Die **von der Stadt beschlossenen** Maßnahmen sollen die Zahl der **sich jährlich ereignenden** Unfälle senken.*
+(The measures adopted by the city are intended to reduce the number of accidents occurring every year.)
+
+### Checklist
+- ✅ Is the participle **directly before the noun**?
+- ✅ Does it have the correct **adjective ending**?
+- ✅ Is the meaning right (active → P I, passive → P II)?
+- ✅ Are all extensions **between the article and the participle**?
+
+### Common mistakes
+- ❌ *der wachsend Markt* → ✅ *der wachsend**e** Markt*
+- ❌ *die gestern geschriebene Briefe* → ✅ *die gestern geschrieben**en** Briefe*
+- ❌ *die veröffentlichte letztes Jahr Studie* → ✅ *die **letztes Jahr** veröffentlichte Studie*
+
+**Examples from newspapers:**
+- Die **seit Monaten andauernden** Verhandlungen wurden abgebrochen. (The negotiations that had been going on for months were broken off.)
+- Der **im Koalitionsvertrag vereinbarte** Mindestlohn tritt im Januar in Kraft. (The minimum wage agreed in the coalition agreement comes into force in January.)
+- Die Zahl der **an Diabetes erkrankten** Kinder hat zugenommen. (The number of children suffering from diabetes has increased.)
+- Die **bis Ende des Jahres einzureichenden** Unterlagen finden Sie online. (You can find the documents to be submitted by the end of the year online.)`,
+      explanationTr: `## Alıştırma: Sıfat-fiil öbekleri – özet
+
+Genişletilmiş sıfat-fiil öbekleri **gazete, bilim ve resmî kurum metinlerine** özgüdür. Birçok bilgiyi tek bir **isim öbeğine** sığdırır, cümleleri kısaltır – ama okumayı da zorlaştırır.
+
+### Üç tür bir bakışta
+| tür | biçim | anlam | örnek |
+| ---- | ---- | ---- | ---- |
+| Partizip I | mastar + d | etken, eşzamanlı | die **lachenden** Kinder (gülen çocuklar) |
+| Partizip II | ge…t / ge…en | edilgen veya tamamlanmış | das **reparierte** Auto (tamir edilmiş araba) |
+| zu + Partizip I | zu + mastar + d | yapılmalı/yapılabilir | die **zu erledigenden** Aufgaben (yapılması gereken işler) |
+
+### Bir cümle – iki üslup
+**İlgi cümleleriyle (daha kolay):**
+*Die Maßnahmen, **die von der Stadt beschlossen wurden**, sollen die Zahl der Unfälle, **die sich jedes Jahr ereignen**, senken.*
+
+**Sıfat-fiil öbekleriyle (daha yoğun):**
+*Die **von der Stadt beschlossenen** Maßnahmen sollen die Zahl der **sich jährlich ereignenden** Unfälle senken.*
+(Belediyenin aldığı önlemler her yıl meydana gelen kazaların sayısını azaltmayı amaçlıyor.)
+
+### Kontrol listesi
+- ✅ Ortaç **ismin hemen önünde** mi?
+- ✅ Doğru **sıfat ekini** almış mı?
+- ✅ Anlam doğru mu (etken → P I, edilgen → P II)?
+- ✅ Tüm genişletmeler **artikel ile ortaç arasında** mı?
+
+### Sık yapılan hatalar
+- ❌ *der wachsend Markt* → ✅ *der wachsend**e** Markt*
+- ❌ *die gestern geschriebene Briefe* → ✅ *die gestern geschrieben**en** Briefe*
+- ❌ *die veröffentlichte letztes Jahr Studie* → ✅ *die **letztes Jahr** veröffentlichte Studie*
+
+**Gazete metinlerinden örnekler:**
+- Die **seit Monaten andauernden** Verhandlungen wurden abgebrochen. (Aylardır süren müzakereler kesildi.)
+- Der **im Koalitionsvertrag vereinbarte** Mindestlohn tritt im Januar in Kraft. (Koalisyon sözleşmesinde kararlaştırılan asgari ücret ocakta yürürlüğe giriyor.)
+- Die Zahl der **an Diabetes erkrankten** Kinder hat zugenommen. (Diyabete yakalanan çocukların sayısı arttı.)
+- Die **bis Ende des Jahres einzureichenden** Unterlagen finden Sie online. (Yıl sonuna kadar teslim edilmesi gereken belgeleri internette bulabilirsiniz.)`,
     },
   })
   await seedExercises({
@@ -28084,12 +29346,117 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit4.id,
       order: 1,
       grammarTopic: 'Was ist Nominalstil?',
-      explanationDe:
-        'Der Nominalstil drückt Handlungen durch Nomen statt Verben aus und wirkt formeller: "die Durchführung der Untersuchung" statt "die Untersuchung durchführen".',
-      explanationEn:
-        'Nominal style expresses actions through nouns rather than verbs and sounds more formal: "die Durchführung der Untersuchung" (the conducting of the investigation) instead of "die Untersuchung durchführen" (to conduct the investigation).',
-      explanationTr:
-        'İsim stili eylemleri fiil yerine isimle ifade eder ve daha resmi görünür: "die Untersuchung durchführen" yerine "die Durchführung der Untersuchung".',
+      explanationDe: `## Was ist Nominalstil?
+
+Beim **Nominalstil** werden Handlungen und Vorgänge vor allem durch **Nomen** ausgedrückt, beim **Verbalstil** durch **Verben** und Nebensätze.
+
+| Verbalstil | Nominalstil |
+| ---- | ---- |
+| Wir **untersuchen** das Problem. | die **Untersuchung** des Problems |
+| **Nachdem** er **angekommen war**, … | **Nach seiner Ankunft** … |
+| **Weil** es stark **regnete**, … | **Wegen** des starken **Regens** … |
+| **Wenn** man die Regeln **beachtet**, … | **Bei Beachtung** der Regeln … |
+| Man muss die Kosten **senken**. | Eine **Senkung** der Kosten ist **notwendig**. |
+
+### Merkmale des Nominalstils
+- viele **Nomen auf -ung, -heit, -keit, -ion** und substantivierte Infinitive
+- **Präpositionen** statt Konjunktionen (*wegen, bei, nach, trotz, zur*)
+- **Genitivattribute**: *die Verbesserung **der Qualität***
+- **Funktionsverbgefüge**: *zur Verfügung stellen, in Kraft treten*
+- **weniger Nebensätze**, dafür lange Nominalgruppen
+
+### Wo findet man Nominalstil?
+- Wissenschaft: *Die **Auswertung** der Daten **erfolgte** mithilfe statistischer Verfahren.*
+- Verwaltung: *Nach **Eingang** Ihres **Antrags** erhalten Sie eine **Bestätigung**.*
+- Zeitung (Schlagzeilen): ***Einigung** im Tarifstreit – **Erhöhung** der Löhne um 5 %*
+- Gebrauchsanweisung: ***Vor Inbetriebnahme** des Geräts Anleitung lesen.*
+
+### Vor- und Nachteile
+| ✅ Vorteile | ❌ Nachteile |
+| ---- | ---- |
+| kompakt, informationsdicht | schwer verständlich |
+| sachlich, unpersönlich | wirkt trocken, „bürokratisch" |
+| präzise Fachsprache | handelnde Person oft unklar |
+
+**Beispiele:**
+- Verbal: *Die Preise **steigen**, deshalb **protestieren** die Bürger.* → Nominal: *Der **Preisanstieg** führt zu **Protesten** der Bürger.*
+- Verbal: *Wenn das Wetter schlecht ist, fällt das Konzert aus.* → Nominal: ***Bei schlechtem Wetter** fällt das Konzert aus.*
+- Verbal: *Bevor Sie operiert werden, …* → Nominal: ***Vor der Operation** …*
+- Verbal: *Um die Umwelt zu schützen, …* → Nominal: ***Zum Schutz der Umwelt** …*`,
+      explanationEn: `## What is nominal style?
+
+In **nominal style** (Nominalstil), actions and processes are expressed mainly through **nouns**; in **verbal style** (Verbalstil) through **verbs** and subordinate clauses.
+
+| verbal style | nominal style |
+| ---- | ---- |
+| Wir **untersuchen** das Problem. (We investigate the problem.) | die **Untersuchung** des Problems (the investigation of the problem) |
+| **Nachdem** er **angekommen war**, … (After he had arrived …) | **Nach seiner Ankunft** … (After his arrival …) |
+| **Weil** es stark **regnete**, … (Because it rained heavily …) | **Wegen** des starken **Regens** … (Because of the heavy rain …) |
+| **Wenn** man die Regeln **beachtet**, … (If you follow the rules …) | **Bei Beachtung** der Regeln … (When observing the rules …) |
+| Man muss die Kosten **senken**. (Costs must be cut.) | Eine **Senkung** der Kosten ist **notwendig**. (A reduction of costs is necessary.) |
+
+### Features of nominal style
+- many **nouns in -ung, -heit, -keit, -ion** and nominalised infinitives
+- **prepositions** instead of conjunctions (*wegen, bei, nach, trotz, zur*)
+- **genitive attributes**: *die Verbesserung **der Qualität*** (the improvement of quality)
+- **light-verb constructions**: *zur Verfügung stellen, in Kraft treten*
+- **fewer subordinate clauses**, but long noun phrases
+
+### Where do you find nominal style?
+- science: *Die **Auswertung** der Daten **erfolgte** mithilfe statistischer Verfahren.* (The data was analysed using statistical methods.)
+- administration: *Nach **Eingang** Ihres **Antrags** erhalten Sie eine **Bestätigung**.* (Once your application is received you'll get a confirmation.)
+- newspaper headlines: ***Einigung** im Tarifstreit – **Erhöhung** der Löhne um 5 %* (Agreement in wage dispute – wages up 5 %)
+- instructions: ***Vor Inbetriebnahme** des Geräts Anleitung lesen.* (Read the instructions before using the device.)
+
+### Pros and cons
+| ✅ pros | ❌ cons |
+| ---- | ---- |
+| compact, dense with information | hard to understand |
+| objective, impersonal | sounds dry, "bureaucratic" |
+| precise technical language | the person acting is often unclear |
+
+**Examples:**
+- Verbal: *Die Preise **steigen**, deshalb **protestieren** die Bürger.* → Nominal: *Der **Preisanstieg** führt zu **Protesten** der Bürger.* (The rise in prices leads to protests by citizens.)
+- Verbal: *Wenn das Wetter schlecht ist, fällt das Konzert aus.* → Nominal: ***Bei schlechtem Wetter** fällt das Konzert aus.* (In bad weather the concert is cancelled.)
+- Verbal: *Bevor Sie operiert werden, …* → Nominal: ***Vor der Operation** …* (Before the operation …)
+- Verbal: *Um die Umwelt zu schützen, …* → Nominal: ***Zum Schutz der Umwelt** …* (To protect the environment …)`,
+      explanationTr: `## İsim üslubu (Nominalstil) nedir?
+
+**İsim üslubunda** eylemler ve süreçler ağırlıklı olarak **isimlerle**, **fiil üslubunda** (Verbalstil) ise **fiiller** ve yan cümlelerle ifade edilir.
+
+| fiil üslubu | isim üslubu |
+| ---- | ---- |
+| Wir **untersuchen** das Problem. (Sorunu inceliyoruz.) | die **Untersuchung** des Problems (sorunun incelenmesi) |
+| **Nachdem** er **angekommen war**, … (O vardıktan sonra …) | **Nach seiner Ankunft** … (Onun varışından sonra …) |
+| **Weil** es stark **regnete**, … (Çok yağmur yağdığı için …) | **Wegen** des starken **Regens** … (Şiddetli yağmur nedeniyle …) |
+| **Wenn** man die Regeln **beachtet**, … (Kurallara uyulursa …) | **Bei Beachtung** der Regeln … (Kurallara uyulması hâlinde …) |
+| Man muss die Kosten **senken**. (Maliyetler düşürülmeli.) | Eine **Senkung** der Kosten ist **notwendig**. (Maliyetlerin düşürülmesi gereklidir.) |
+
+### İsim üslubunun özellikleri
+- **-ung, -heit, -keit, -ion** ile biten çok sayıda isim ve isimleştirilmiş mastarlar
+- bağlaçlar yerine **edatlar** (*wegen, bei, nach, trotz, zur*)
+- **Genitiv tamlamaları**: *die Verbesserung **der Qualität*** (kalitenin iyileştirilmesi)
+- **işlev fiilli yapılar**: *zur Verfügung stellen, in Kraft treten*
+- **daha az yan cümle**, buna karşılık uzun isim öbekleri
+
+### İsim üslubu nerede görülür?
+- Bilim: *Die **Auswertung** der Daten **erfolgte** mithilfe statistischer Verfahren.* (Verilerin değerlendirilmesi istatistiksel yöntemlerle yapıldı.)
+- Resmî kurumlar: *Nach **Eingang** Ihres **Antrags** erhalten Sie eine **Bestätigung**.* (Başvurunuzun ulaşmasından sonra bir onay alırsınız.)
+- Gazete manşetleri: ***Einigung** im Tarifstreit – **Erhöhung** der Löhne um 5 %* (Toplu sözleşmede uzlaşma – ücretlerde %5 artış)
+- Kullanım kılavuzu: ***Vor Inbetriebnahme** des Geräts Anleitung lesen.* (Cihazı çalıştırmadan önce kılavuzu okuyun.)
+
+### Avantajlar ve dezavantajlar
+| ✅ avantajlar | ❌ dezavantajlar |
+| ---- | ---- |
+| yoğun, bilgi dolu | anlaşılması zor |
+| nesnel, kişisel olmayan | kuru, „bürokratik" etkisi |
+| kesin uzmanlık dili | eylemi yapan kişi çoğu zaman belirsiz |
+
+**Örnekler:**
+- Fiil: *Die Preise **steigen**, deshalb **protestieren** die Bürger.* → İsim: *Der **Preisanstieg** führt zu **Protesten** der Bürger.* (Fiyat artışı vatandaşların protestolarına yol açıyor.)
+- Fiil: *Wenn das Wetter schlecht ist, fällt das Konzert aus.* → İsim: ***Bei schlechtem Wetter** fällt das Konzert aus.* (Kötü havada konser iptal edilir.)
+- Fiil: *Bevor Sie operiert werden, …* → İsim: ***Vor der Operation** …* (Ameliyattan önce …)
+- Fiil: *Um die Umwelt zu schützen, …* → İsim: ***Zum Schutz der Umwelt** …* (Çevrenin korunması için …)`,
     },
   })
   await seedExercises({
@@ -28121,12 +29488,117 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit4.id,
       order: 2,
       grammarTopic: 'Nominalisierung von Verben',
-      explanationDe:
-        'Verben werden oft mit den Endungen -ung, -heit, -keit oder als substantivierter Infinitiv nominalisiert: "entscheiden" -> "die Entscheidung", "das Entscheiden".',
-      explanationEn:
-        'Verbs are often nominalized with the endings -ung, -heit, -keit, or as a substantivized infinitive: "entscheiden" (to decide) -> "die Entscheidung" (the decision), "das Entscheiden" (the deciding).',
-      explanationTr:
-        'Fiiller genellikle -ung, -heit, -keit ekleriyle veya isimleşmiş mastar olarak isimleştirilir: "entscheiden" -> "die Entscheidung", "das Entscheiden".',
+      explanationDe: `## Nominalisierung von Verben
+
+Aus Verben (und Adjektiven) kann man auf verschiedene Weise **Nomen** bilden. Die wichtigsten Muster:
+
+| Muster | Genus | Beispiele |
+| ---- | ---- | ---- |
+| Verbstamm + **-ung** | die | entscheiden → **die Entscheidung**, bewerben → **die Bewerbung** |
+| **substantivierter Infinitiv** | das | lesen → **das Lesen**, entscheiden → **das Entscheiden** |
+| **Verbstamm ohne Endung** (oft mit Vokalwechsel) | der | besuchen → **der Besuch**, anfangen → **der Anfang**, schließen → **der Schluss** |
+| **-e** | die | suchen → **die Suche**, helfen → **die Hilfe** |
+| **-t** | die | ankommen → **die Ankunft**, fahren → **die Fahrt**, sehen → **die Sicht** |
+| **-(at)ion** | die | informieren → **die Information**, reagieren → **die Reaktion** |
+| Adjektiv + **-heit / -keit** | die | frei → **die Freiheit**, möglich → **die Möglichkeit** |
+
+### Was passiert mit den Ergänzungen?
+Bei der Nominalisierung verwandeln sich Subjekt und Objekt meist in **Genitivattribute** oder **Präpositionalphrasen**:
+
+| Verbalphrase | Nominalphrase |
+| ---- | ---- |
+| **die Regierung** entscheidet | die Entscheidung **der Regierung** (Subjekt → Genitiv) |
+| man repariert **das Dach** | die Reparatur **des Daches** (Objekt → Genitiv) |
+| die Firma ändert **den Vertrag** | die Änderung **des Vertrags durch die Firma** (Subjekt → *durch*) |
+| sich **für Kunst** interessieren | das Interesse **an** Kunst (Präposition kann sich ändern!) |
+| **schnell** reagieren | eine **schnelle** Reaktion (Adverb → Adjektiv) |
+
+### Achtung: Bedeutungsunterschied
+- *das Entscheiden* betont den **Vorgang** (das Treffen der Entscheidung)
+- *die Entscheidung* bezeichnet meist das **Ergebnis**
+- Substantivierte Infinitive sind **immer neutral** und werden großgeschrieben: *beim **Kochen**, zum **Lernen***
+
+**Beispiele:**
+- verbessern → *Die **Verbesserung** der Arbeitsbedingungen ist unser Ziel.*
+- ankommen → *Nach der **Ankunft** des Zuges …*
+- untersuchen → *Die **Untersuchung** der Proben dauert drei Tage.*
+- abreisen → *Vor der **Abreise** müssen Sie das Zimmer räumen.*
+- schwimmen → *Beim **Schwimmen** habe ich mich verletzt.*
+- zuverlässig → *Ihre **Zuverlässigkeit** wird sehr geschätzt.*`,
+      explanationEn: `## Nominalising verbs
+
+Nouns can be formed from verbs (and adjectives) in several ways. The most important patterns:
+
+| pattern | gender | examples |
+| ---- | ---- | ---- |
+| verb stem + **-ung** | die | entscheiden → **die Entscheidung** (decision), bewerben → **die Bewerbung** (application) |
+| **nominalised infinitive** | das | lesen → **das Lesen** (reading), entscheiden → **das Entscheiden** (deciding) |
+| **bare stem** (often with vowel change) | der | besuchen → **der Besuch** (visit), anfangen → **der Anfang** (beginning), schließen → **der Schluss** (end) |
+| **-e** | die | suchen → **die Suche** (search), helfen → **die Hilfe** (help) |
+| **-t** | die | ankommen → **die Ankunft** (arrival), fahren → **die Fahrt** (journey), sehen → **die Sicht** (view) |
+| **-(at)ion** | die | informieren → **die Information**, reagieren → **die Reaktion** |
+| adjective + **-heit / -keit** | die | frei → **die Freiheit** (freedom), möglich → **die Möglichkeit** (possibility) |
+
+### What happens to the complements?
+When nominalising, subject and object usually become **genitive attributes** or **prepositional phrases**:
+
+| verb phrase | noun phrase |
+| ---- | ---- |
+| **die Regierung** entscheidet | die Entscheidung **der Regierung** (subject → genitive) |
+| man repariert **das Dach** | die Reparatur **des Daches** (object → genitive) |
+| die Firma ändert **den Vertrag** | die Änderung **des Vertrags durch die Firma** (subject → *durch*) |
+| sich **für Kunst** interessieren | das Interesse **an** Kunst (the preposition can change!) |
+| **schnell** reagieren | eine **schnelle** Reaktion (adverb → adjective) |
+
+### Note: difference in meaning
+- *das Entscheiden* stresses the **process** (making the decision)
+- *die Entscheidung* usually denotes the **result**
+- Nominalised infinitives are **always neuter** and capitalised: *beim **Kochen*** (while cooking), *zum **Lernen*** (for learning)
+
+**Examples:**
+- verbessern → *Die **Verbesserung** der Arbeitsbedingungen ist unser Ziel.* (Improving working conditions is our goal.)
+- ankommen → *Nach der **Ankunft** des Zuges …* (After the train's arrival …)
+- untersuchen → *Die **Untersuchung** der Proben dauert drei Tage.* (Examining the samples takes three days.)
+- abreisen → *Vor der **Abreise** müssen Sie das Zimmer räumen.* (Before departure you must vacate the room.)
+- schwimmen → *Beim **Schwimmen** habe ich mich verletzt.* (I hurt myself while swimming.)
+- zuverlässig → *Ihre **Zuverlässigkeit** wird sehr geschätzt.* (Her reliability is highly valued.)`,
+      explanationTr: `## Fiillerin isimleştirilmesi
+
+Fiillerden (ve sıfatlardan) çeşitli yollarla **isim** türetilebilir. En önemli kalıplar:
+
+| kalıp | cinsiyet | örnekler |
+| ---- | ---- | ---- |
+| fiil kökü + **-ung** | die | entscheiden → **die Entscheidung** (karar), bewerben → **die Bewerbung** (başvuru) |
+| **isimleştirilmiş mastar** | das | lesen → **das Lesen** (okuma), entscheiden → **das Entscheiden** (karar verme) |
+| **eksiz kök** (çoğu zaman ünlü değişimiyle) | der | besuchen → **der Besuch** (ziyaret), anfangen → **der Anfang** (başlangıç), schließen → **der Schluss** (son) |
+| **-e** | die | suchen → **die Suche** (arama), helfen → **die Hilfe** (yardım) |
+| **-t** | die | ankommen → **die Ankunft** (varış), fahren → **die Fahrt** (yolculuk), sehen → **die Sicht** (görüş) |
+| **-(at)ion** | die | informieren → **die Information**, reagieren → **die Reaktion** |
+| sıfat + **-heit / -keit** | die | frei → **die Freiheit** (özgürlük), möglich → **die Möglichkeit** (olanak) |
+
+### Tümleçlere ne olur?
+İsimleştirmede özne ve nesne genellikle **Genitiv tamlamasına** veya **edatlı öbeğe** dönüşür:
+
+| fiil öbeği | isim öbeği |
+| ---- | ---- |
+| **die Regierung** entscheidet | die Entscheidung **der Regierung** (özne → Genitiv) |
+| man repariert **das Dach** | die Reparatur **des Daches** (nesne → Genitiv) |
+| die Firma ändert **den Vertrag** | die Änderung **des Vertrags durch die Firma** (özne → *durch*) |
+| sich **für Kunst** interessieren | das Interesse **an** Kunst (edat değişebilir!) |
+| **schnell** reagieren | eine **schnelle** Reaktion (zarf → sıfat) |
+
+### Dikkat: anlam farkı
+- *das Entscheiden* **süreci** vurgular (karar verme eylemi)
+- *die Entscheidung* çoğunlukla **sonucu** belirtir
+- İsimleştirilmiş mastarlar **her zaman nötrdür** ve büyük harfle yazılır: *beim **Kochen*** (yemek yaparken), *zum **Lernen*** (öğrenmek için)
+
+**Örnekler:**
+- verbessern → *Die **Verbesserung** der Arbeitsbedingungen ist unser Ziel.* (Çalışma koşullarının iyileştirilmesi hedefimizdir.)
+- ankommen → *Nach der **Ankunft** des Zuges …* (Trenin varışından sonra …)
+- untersuchen → *Die **Untersuchung** der Proben dauert drei Tage.* (Numunelerin incelenmesi üç gün sürer.)
+- abreisen → *Vor der **Abreise** müssen Sie das Zimmer räumen.* (Ayrılmadan önce odayı boşaltmalısınız.)
+- schwimmen → *Beim **Schwimmen** habe ich mich verletzt.* (Yüzerken yaralandım.)
+- zuverlässig → *Ihre **Zuverlässigkeit** wird sehr geschätzt.* (Güvenilirliği çok takdir ediliyor.)`,
     },
   })
   await seedExercises({
@@ -28161,12 +29633,126 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit4.id,
       order: 3,
       grammarTopic: 'Verbalstil zur Vereinfachung',
-      explanationDe:
-        'Der Verbalstil ist klarer und persönlicher und wird oft für mündliche oder einfache Texte bevorzugt: "die Durchführung der Untersuchung" -> "wir führen die Untersuchung durch".',
-      explanationEn:
-        'Verbal style is clearer and more personal, often preferred for spoken or simpler texts: "die Durchführung der Untersuchung" -> "wir führen die Untersuchung durch" (we conduct the investigation).',
-      explanationTr:
-        'Fiil stili daha açık ve kişiseldir; sözlü veya basit metinlerde tercih edilir: "die Durchführung der Untersuchung" -> "wir führen die Untersuchung durch".',
+      explanationDe: `## Verbalstil zur Vereinfachung
+
+Der **Verbalstil** ist **klarer, lebendiger und persönlicher**. Man nutzt ihn in Gesprächen, E-Mails, Erzählungen – und überall dort, wo ein Text **leicht verständlich** sein soll. Wer C1 erreichen will, muss beide Richtungen beherrschen.
+
+### Nominal → verbal: So geht's
+1. Das **Nomen** wieder in ein **Verb** verwandeln: *die Untersuchung → untersuchen*
+2. Einen **handelnden Akteur** (Subjekt) ergänzen: *wir, man, die Firma …*
+3. **Präposition → Konjunktion** (Nebensatz):
+
+| Präposition (nominal) | Konjunktion (verbal) | Bedeutung |
+| ---- | ---- | ---- |
+| **wegen / aufgrund** | **weil / da** | Grund |
+| **trotz** | **obwohl** | Gegensatz |
+| **bei** | **wenn / als** | Bedingung / Zeit |
+| **nach** | **nachdem** | Zeit (vorher) |
+| **vor** | **bevor** | Zeit (nachher) |
+| **während** | **während** | Gleichzeitigkeit |
+| **zur / zum** | **um … zu / damit** | Zweck |
+| **durch** | **indem** | Mittel |
+| **ohne** | **ohne dass / ohne … zu** | fehlender Umstand |
+
+### Beispiele für Umformungen
+| Nominalstil | Verbalstil |
+| ---- | ---- |
+| die Durchführung der Untersuchung | wir **führen** die Untersuchung **durch** |
+| **Trotz** intensiver **Bemühungen** … | **Obwohl** wir uns intensiv **bemüht haben**, … |
+| **Bei** Nichtbeachtung der Regeln … | **Wenn** man die Regeln nicht **beachtet**, … |
+| **Durch** regelmäßiges **Training** … | **Indem** man regelmäßig **trainiert**, … |
+| **Zur Vermeidung** von Fehlern … | **Um** Fehler **zu vermeiden**, … |
+| **Nach Abschluss** des Studiums … | **Nachdem** sie ihr Studium **abgeschlossen hatte**, … |
+
+### Adjektive werden zu Adverbien
+*eine **schnelle** Entscheidung → man entscheidet **schnell***
+*die **sorgfältige** Prüfung → man prüft **sorgfältig***
+
+**Beispiele:**
+- *Wegen der Erkrankung des Lehrers fällt der Unterricht aus.* → *Weil der Lehrer **krank ist**, fällt der Unterricht aus.*
+- *Vor dem Verlassen des Gebäudes …* → *Bevor Sie das Gebäude **verlassen**, …*
+- *Die Erhöhung der Steuern wurde beschlossen.* → *Man hat **beschlossen**, die Steuern **zu erhöhen**.*
+- *Während des Essens …* → *Während wir **aßen**, …*`,
+      explanationEn: `## Verbal style for simplification
+
+**Verbal style** is **clearer, livelier and more personal**. It is used in conversations, e-mails, stories – and wherever a text should be **easy to understand**. To reach C1 you must master both directions.
+
+### Nominal → verbal: how to do it
+1. Turn the **noun** back into a **verb**: *die Untersuchung → untersuchen*
+2. Add an **acting subject**: *wir, man, die Firma …*
+3. **Preposition → conjunction** (subordinate clause):
+
+| preposition (nominal) | conjunction (verbal) | meaning |
+| ---- | ---- | ---- |
+| **wegen / aufgrund** | **weil / da** | reason |
+| **trotz** | **obwohl** | concession |
+| **bei** | **wenn / als** | condition / time |
+| **nach** | **nachdem** | time (before) |
+| **vor** | **bevor** | time (after) |
+| **während** | **während** | simultaneity |
+| **zur / zum** | **um … zu / damit** | purpose |
+| **durch** | **indem** | means |
+| **ohne** | **ohne dass / ohne … zu** | missing circumstance |
+
+### Sample conversions
+| nominal style | verbal style |
+| ---- | ---- |
+| die Durchführung der Untersuchung | wir **führen** die Untersuchung **durch** (we carry out the investigation) |
+| **Trotz** intensiver **Bemühungen** … | **Obwohl** wir uns intensiv **bemüht haben**, … (although we tried hard …) |
+| **Bei** Nichtbeachtung der Regeln … | **Wenn** man die Regeln nicht **beachtet**, … (if you don't follow the rules …) |
+| **Durch** regelmäßiges **Training** … | **Indem** man regelmäßig **trainiert**, … (by training regularly …) |
+| **Zur Vermeidung** von Fehlern … | **Um** Fehler **zu vermeiden**, … (to avoid mistakes …) |
+| **Nach Abschluss** des Studiums … | **Nachdem** sie ihr Studium **abgeschlossen hatte**, … (after she had finished her degree …) |
+
+### Adjectives become adverbs
+*eine **schnelle** Entscheidung → man entscheidet **schnell*** (a quick decision → one decides quickly)
+*die **sorgfältige** Prüfung → man prüft **sorgfältig*** (the careful check → one checks carefully)
+
+**Examples:**
+- *Wegen der Erkrankung des Lehrers fällt der Unterricht aus.* → *Weil der Lehrer **krank ist**, fällt der Unterricht aus.* (Because the teacher is ill, the lesson is cancelled.)
+- *Vor dem Verlassen des Gebäudes …* → *Bevor Sie das Gebäude **verlassen**, …* (Before you leave the building …)
+- *Die Erhöhung der Steuern wurde beschlossen.* → *Man hat **beschlossen**, die Steuern **zu erhöhen**.* (It was decided to raise taxes.)
+- *Während des Essens …* → *Während wir **aßen**, …* (While we were eating …)`,
+      explanationTr: `## Sadeleştirmek için fiil üslubu
+
+**Fiil üslubu** **daha açık, daha canlı ve daha kişiseldir**. Sohbetlerde, e-postalarda, anlatılarda – kısacası metnin **kolay anlaşılması** gereken her yerde kullanılır. C1'e ulaşmak isteyen her iki yönde de dönüşüm yapabilmelidir.
+
+### İsim → fiil: nasıl yapılır?
+1. **İsmi** yeniden **fiile** çevir: *die Untersuchung → untersuchen*
+2. Eylemi **yapan bir özne** ekle: *wir, man, die Firma …*
+3. **Edat → bağlaç** (yan cümle):
+
+| edat (isim üslubu) | bağlaç (fiil üslubu) | anlam |
+| ---- | ---- | ---- |
+| **wegen / aufgrund** | **weil / da** | neden |
+| **trotz** | **obwohl** | karşıtlık |
+| **bei** | **wenn / als** | koşul / zaman |
+| **nach** | **nachdem** | zaman (önce olan) |
+| **vor** | **bevor** | zaman (sonra olan) |
+| **während** | **während** | eşzamanlılık |
+| **zur / zum** | **um … zu / damit** | amaç |
+| **durch** | **indem** | araç/yöntem |
+| **ohne** | **ohne dass / ohne … zu** | eksik durum |
+
+### Dönüşüm örnekleri
+| isim üslubu | fiil üslubu |
+| ---- | ---- |
+| die Durchführung der Untersuchung | wir **führen** die Untersuchung **durch** (incelemeyi yapıyoruz) |
+| **Trotz** intensiver **Bemühungen** … | **Obwohl** wir uns intensiv **bemüht haben**, … (yoğun çaba göstermemize rağmen …) |
+| **Bei** Nichtbeachtung der Regeln … | **Wenn** man die Regeln nicht **beachtet**, … (kurallara uyulmazsa …) |
+| **Durch** regelmäßiges **Training** … | **Indem** man regelmäßig **trainiert**, … (düzenli antrenman yaparak …) |
+| **Zur Vermeidung** von Fehlern … | **Um** Fehler **zu vermeiden**, … (hatalardan kaçınmak için …) |
+| **Nach Abschluss** des Studiums … | **Nachdem** sie ihr Studium **abgeschlossen hatte**, … (üniversiteyi bitirdikten sonra …) |
+
+### Sıfatlar zarfa dönüşür
+*eine **schnelle** Entscheidung → man entscheidet **schnell*** (hızlı bir karar → hızlı karar verilir)
+*die **sorgfältige** Prüfung → man prüft **sorgfältig*** (dikkatli kontrol → dikkatlice kontrol edilir)
+
+**Örnekler:**
+- *Wegen der Erkrankung des Lehrers fällt der Unterricht aus.* → *Weil der Lehrer **krank ist**, fällt der Unterricht aus.* (Öğretmen hasta olduğu için ders yapılmıyor.)
+- *Vor dem Verlassen des Gebäudes …* → *Bevor Sie das Gebäude **verlassen**, …* (Binadan çıkmadan önce …)
+- *Die Erhöhung der Steuern wurde beschlossen.* → *Man hat **beschlossen**, die Steuern **zu erhöhen**.* (Vergilerin artırılmasına karar verildi.)
+- *Während des Essens …* → *Während wir **aßen**, …* (Yemek yerken …)`,
     },
   })
   await seedExercises({
@@ -28198,12 +29784,119 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit4.id,
       order: 4,
       grammarTopic: 'Übung: Nominalstil vs. Verbalstil',
-      explanationDe:
-        'Wiederholung: Nominalstil dominiert in Verwaltungs-, Wissenschafts- und Zeitungstexten; Verbalstil wirkt lebendiger und wird in Erzählungen und Gesprächen bevorzugt.',
-      explanationEn:
-        'Review: nominal style dominates administrative, academic, and newspaper texts; verbal style feels livelier and is preferred in narratives and conversation.',
-      explanationTr:
-        'Tekrar: İsim stili resmi, akademik ve gazete metinlerinde baskındır; fiil stili daha canlıdır ve anlatı ile konuşmada tercih edilir.',
+      explanationDe: `## Übung: Nominalstil vs. Verbalstil – Zusammenfassung
+
+Gute Schreiber wählen den Stil **bewusst** nach Textsorte und Leser.
+
+| | Nominalstil | Verbalstil |
+| ---- | ---- | ---- |
+| Wirkung | sachlich, distanziert, kompakt | lebendig, klar, persönlich |
+| Textsorten | Wissenschaft, Verwaltung, Recht, Nachrichten | Erzählung, Gespräch, E-Mail, Blog |
+| typische Mittel | -ung-Nomen, Genitiv, Präpositionen | Verben, Nebensätze, Konjunktionen |
+| Gefahr | „Behördendeutsch", schwer lesbar | bei Fachtexten zu umständlich |
+
+### Ein Text in beiden Stilen
+**Nominalstil (Bericht):**
+*Nach **Prüfung** der Unterlagen und **Rücksprache** mit der Abteilung erfolgt die **Bearbeitung** Ihres Antrags. Bei **Unvollständigkeit** der Angaben ist eine **Verzögerung** möglich.*
+
+**Verbalstil (E-Mail):**
+*Sobald wir Ihre Unterlagen **geprüft** und mit der Abteilung **gesprochen haben**, **bearbeiten** wir Ihren Antrag. Wenn Angaben **fehlen**, kann es länger **dauern**.*
+
+### Typische Paare zum Lernen
+| Präposition + Nomen | Konjunktion + Verb |
+| ---- | ---- |
+| bei Regen | wenn es regnet |
+| wegen Krankheit | weil er krank ist |
+| trotz der Kälte | obwohl es kalt ist |
+| nach dem Essen | nachdem wir gegessen haben |
+| vor der Abfahrt | bevor wir abfahren |
+| zur Verbesserung der Qualität | um die Qualität zu verbessern |
+| durch Sparen | indem man spart |
+| seit seinem Umzug | seitdem er umgezogen ist |
+
+### Tipp: die richtige Mischung
+Ein Text wird am besten, wenn man **mischt**: Nominalstil für Fakten und Definitionen, Verbalstil für Erklärungen und Beispiele. Mehr als drei Nomen auf **-ung** in einem Satz sind ein Warnsignal!
+
+**Beispiele:**
+- *Aufgrund der Verspätung des Zuges …* ↔ *Weil der Zug Verspätung hatte, …*
+- *Zur Beantragung eines Visums …* ↔ *Um ein Visum zu beantragen, …*
+- *Ohne Zustimmung der Eltern …* ↔ *Ohne dass die Eltern zustimmen, …*`,
+      explanationEn: `## Practice: nominal vs. verbal style – summary
+
+Good writers choose the style **deliberately**, according to text type and reader.
+
+| | nominal style | verbal style |
+| ---- | ---- | ---- |
+| effect | objective, distant, compact | lively, clear, personal |
+| text types | science, administration, law, news | stories, conversation, e-mail, blogs |
+| typical features | -ung nouns, genitive, prepositions | verbs, subordinate clauses, conjunctions |
+| risk | "officialese", hard to read | too long-winded for technical texts |
+
+### One text in both styles
+**Nominal style (report):**
+*Nach **Prüfung** der Unterlagen und **Rücksprache** mit der Abteilung erfolgt die **Bearbeitung** Ihres Antrags. Bei **Unvollständigkeit** der Angaben ist eine **Verzögerung** möglich.*
+
+**Verbal style (e-mail):**
+*Sobald wir Ihre Unterlagen **geprüft** und mit der Abteilung **gesprochen haben**, **bearbeiten** wir Ihren Antrag. Wenn Angaben **fehlen**, kann es länger **dauern**.*
+(As soon as we've checked your documents and spoken to the department, we'll process your application. If information is missing, it may take longer.)
+
+### Typical pairs to learn
+| preposition + noun | conjunction + verb |
+| ---- | ---- |
+| bei Regen | wenn es regnet (when it rains) |
+| wegen Krankheit | weil er krank ist (because he is ill) |
+| trotz der Kälte | obwohl es kalt ist (although it is cold) |
+| nach dem Essen | nachdem wir gegessen haben (after we've eaten) |
+| vor der Abfahrt | bevor wir abfahren (before we leave) |
+| zur Verbesserung der Qualität | um die Qualität zu verbessern (to improve quality) |
+| durch Sparen | indem man spart (by saving) |
+| seit seinem Umzug | seitdem er umgezogen ist (since he moved) |
+
+### Tip: the right mix
+A text works best when you **mix**: nominal style for facts and definitions, verbal style for explanations and examples. More than three **-ung** nouns in one sentence is a warning sign!
+
+**Examples:**
+- *Aufgrund der Verspätung des Zuges …* ↔ *Weil der Zug Verspätung hatte, …* (Because the train was late …)
+- *Zur Beantragung eines Visums …* ↔ *Um ein Visum zu beantragen, …* (To apply for a visa …)
+- *Ohne Zustimmung der Eltern …* ↔ *Ohne dass die Eltern zustimmen, …* (Without the parents' consent …)`,
+      explanationTr: `## Alıştırma: İsim üslubu – fiil üslubu – özet
+
+İyi yazarlar üslubu metin türüne ve okura göre **bilinçli** olarak seçer.
+
+| | isim üslubu | fiil üslubu |
+| ---- | ---- | ---- |
+| etkisi | nesnel, mesafeli, yoğun | canlı, açık, kişisel |
+| metin türleri | bilim, resmî kurumlar, hukuk, haberler | anlatı, sohbet, e-posta, blog |
+| tipik araçlar | -ung isimleri, Genitiv, edatlar | fiiller, yan cümleler, bağlaçlar |
+| risk | „bürokrat dili", zor okunur | uzmanlık metinlerinde fazla dolambaçlı |
+
+### Bir metin, iki üslup
+**İsim üslubu (rapor):**
+*Nach **Prüfung** der Unterlagen und **Rücksprache** mit der Abteilung erfolgt die **Bearbeitung** Ihres Antrags. Bei **Unvollständigkeit** der Angaben ist eine **Verzögerung** möglich.*
+
+**Fiil üslubu (e-posta):**
+*Sobald wir Ihre Unterlagen **geprüft** und mit der Abteilung **gesprochen haben**, **bearbeiten** wir Ihren Antrag. Wenn Angaben **fehlen**, kann es länger **dauern**.*
+(Belgelerinizi kontrol edip birimle görüşür görüşmez başvurunuzu işleme alacağız. Bilgi eksikse daha uzun sürebilir.)
+
+### Öğrenilecek tipik çiftler
+| edat + isim | bağlaç + fiil |
+| ---- | ---- |
+| bei Regen | wenn es regnet (yağmur yağınca) |
+| wegen Krankheit | weil er krank ist (hasta olduğu için) |
+| trotz der Kälte | obwohl es kalt ist (soğuk olmasına rağmen) |
+| nach dem Essen | nachdem wir gegessen haben (yemek yedikten sonra) |
+| vor der Abfahrt | bevor wir abfahren (yola çıkmadan önce) |
+| zur Verbesserung der Qualität | um die Qualität zu verbessern (kaliteyi iyileştirmek için) |
+| durch Sparen | indem man spart (tasarruf ederek) |
+| seit seinem Umzug | seitdem er umgezogen ist (taşındığından beri) |
+
+### İpucu: doğru karışım
+En iyi metin **karışık** olandır: olgular ve tanımlar için isim üslubu, açıklamalar ve örnekler için fiil üslubu. Bir cümlede üçten fazla **-ung** ismi bir uyarı işaretidir!
+
+**Örnekler:**
+- *Aufgrund der Verspätung des Zuges …* ↔ *Weil der Zug Verspätung hatte, …* (Tren geciktiği için …)
+- *Zur Beantragung eines Visums …* ↔ *Um ein Visum zu beantragen, …* (Vize başvurusu yapmak için …)
+- *Ohne Zustimmung der Eltern …* ↔ *Ohne dass die Eltern zustimmen, …* (Ebeveynlerin onayı olmadan …)`,
     },
   })
   await seedExercises({
@@ -28249,12 +29942,120 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit5.id,
       order: 1,
       grammarTopic: '"zumal" und "insofern"',
-      explanationDe:
-        '"Zumal" begründet zusätzlich (= vor allem weil): "Wir bleiben zu Hause, zumal es regnet." "Insofern" bedeutet "in dieser Hinsicht": "Insofern hat er recht."',
-      explanationEn:
-        '"Zumal" adds an emphasizing reason (= especially because): "Wir bleiben zu Hause, zumal es regnet" (We\'re staying home, especially since it\'s raining). "Insofern" means "in this respect": "Insofern hat er recht" (In that respect, he\'s right).',
-      explanationTr:
-        '"Zumal" ek bir gerekçe vurgular (= özellikle çünkü): "Wir bleiben zu Hause, zumal es regnet." "Insofern" "bu bakımdan" anlamına gelir: "Insofern hat er recht."',
+      explanationDe: `## „zumal" und „insofern"
+
+### zumal – zusätzlicher, besonders wichtiger Grund
+**„zumal"** ist eine **Subjunktion** (Verb am Ende) und bedeutet *„vor allem weil / besonders da"*. Es nennt einen **zusätzlichen Grund**, der das schon Gesagte **verstärkt**.
+
+> Wir bleiben zu Hause, **zumal** es **regnet**.
+> (= Wir bleiben zu Hause – es gibt mehrere Gründe, und besonders: es regnet.)
+
+| Satz | Bedeutung |
+| ---- | ---- |
+| Ich kaufe das Auto nicht, **zumal** es zu teuer **ist**. | … vor allem, weil es zu teuer ist |
+| Sie sollte sich ausruhen, **zumal** sie lange krank **war**. | … besonders da sie lange krank war |
+| Die Reise ist anstrengend, **zumal** die Kinder noch klein **sind**. | … zusätzlich erschwerend: kleine Kinder |
+
+Variante: **„zumal da"** / **„zumal wenn"**: *Das ist gefährlich, zumal wenn es dunkel ist.*
+
+### insofern – „in dieser Hinsicht" / „was das betrifft"
+**1. Als Adverb** (Verb an Position 2, bezieht sich auf das vorher Gesagte):
+> Er hat sich entschuldigt. **Insofern** ist der Streit beendet.
+
+**2. Als Subjunktion „insofern (als)"** – schränkt eine Aussage ein: *„in dem Maße, wie" / „soweit"*:
+> Der Plan ist gut, **insofern (als)** er wenig **kostet**.
+> (= Der Plan ist gut – aber nur in der Hinsicht, dass er wenig kostet.)
+
+**Typische Kombination:** *insofern … als*: *Er hat **insofern** recht, **als** die Kosten tatsächlich gestiegen sind.*
+
+### Verwechslungsgefahr
+| zumal | insofern (als) |
+| ---- | ---- |
+| **verstärkt** (+ noch ein Grund) | **schränkt ein** (nur in dieser Hinsicht) |
+| ≈ vor allem weil | ≈ soweit, in dem Maße wie |
+
+**Beispiele:**
+- Ich nehme das Angebot an, **zumal** das Gehalt sehr gut ist.
+- Wir sollten früh losfahren, **zumal** am Freitag viel Verkehr ist.
+- Die Studie ist **insofern** interessant, **als** sie neue Daten liefert.
+- Der Kunde war zufrieden. **Insofern** war das Projekt ein Erfolg.
+- **Insofern** ich das beurteilen kann, ist alles in Ordnung.`,
+      explanationEn: `## "zumal" and "insofern"
+
+### zumal – an additional, especially important reason
+**"zumal"** is a **subordinating conjunction** (verb at the end) meaning *"especially because / all the more so since"*. It gives an **additional reason** that **reinforces** what was said.
+
+> Wir bleiben zu Hause, **zumal** es **regnet**.
+> (We're staying at home, especially since it's raining.)
+
+| sentence | meaning |
+| ---- | ---- |
+| Ich kaufe das Auto nicht, **zumal** es zu teuer **ist**. | I'm not buying the car, especially as it's too expensive. |
+| Sie sollte sich ausruhen, **zumal** sie lange krank **war**. | She should rest, all the more so since she was ill for a long time. |
+| Die Reise ist anstrengend, **zumal** die Kinder noch klein **sind**. | The trip is tiring, particularly as the children are still small. |
+
+Variant: **"zumal da"** / **"zumal wenn"**: *Das ist gefährlich, zumal wenn es dunkel ist.* (That's dangerous, especially when it's dark.)
+
+### insofern – "in this respect" / "as far as that goes"
+**1. As an adverb** (verb in position 2, refers back to what was said):
+> Er hat sich entschuldigt. **Insofern** ist der Streit beendet. (He apologised. To that extent the dispute is over.)
+
+**2. As a conjunction "insofern (als)"** – restricts a statement: *"insofar as" / "to the extent that"*:
+> Der Plan ist gut, **insofern (als)** er wenig **kostet**.
+> (The plan is good insofar as it costs little – but only in that respect.)
+
+**Typical combination:** *insofern … als*: *Er hat **insofern** recht, **als** die Kosten tatsächlich gestiegen sind.* (He is right insofar as costs really have risen.)
+
+### Don't confuse them
+| zumal | insofern (als) |
+| ---- | ---- |
+| **reinforces** (+ one more reason) | **restricts** (only in this respect) |
+| ≈ especially because | ≈ insofar as, to the extent that |
+
+**Examples:**
+- Ich nehme das Angebot an, **zumal** das Gehalt sehr gut ist. (I'll accept the offer, especially as the salary is very good.)
+- Wir sollten früh losfahren, **zumal** am Freitag viel Verkehr ist. (We should leave early, all the more so as there's a lot of traffic on Fridays.)
+- Die Studie ist **insofern** interessant, **als** sie neue Daten liefert. (The study is interesting insofar as it provides new data.)
+- Der Kunde war zufrieden. **Insofern** war das Projekt ein Erfolg. (The client was satisfied. In that respect the project was a success.)
+- **Insofern** ich das beurteilen kann, ist alles in Ordnung. (As far as I can judge, everything is fine.)`,
+      explanationTr: `## „zumal" ve „insofern"
+
+### zumal – ek ve özellikle önemli bir neden
+**„zumal"** bir **yan cümle bağlacıdır** (fiil sonda) ve *„özellikle … olduğu için / hele ki"* anlamına gelir. Söylenmiş olanı **güçlendiren ek bir neden** belirtir.
+
+> Wir bleiben zu Hause, **zumal** es **regnet**.
+> (Evde kalıyoruz, hele ki yağmur da yağıyor.)
+
+| cümle | anlamı |
+| ---- | ---- |
+| Ich kaufe das Auto nicht, **zumal** es zu teuer **ist**. | Arabayı almıyorum, özellikle de çok pahalı olduğu için. |
+| Sie sollte sich ausruhen, **zumal** sie lange krank **war**. | Dinlenmeli, hele ki uzun süre hastaydı. |
+| Die Reise ist anstrengend, **zumal** die Kinder noch klein **sind**. | Yolculuk yorucu, özellikle çocuklar henüz küçük olduğu için. |
+
+Varyant: **„zumal da"** / **„zumal wenn"**: *Das ist gefährlich, zumal wenn es dunkel ist.* (Bu tehlikeli, hele hava karanlıksa.)
+
+### insofern – „bu bakımdan" / „o açıdan"
+**1. Zarf olarak** (fiil 2. pozisyonda, önce söylenene gönderme yapar):
+> Er hat sich entschuldigt. **Insofern** ist der Streit beendet. (Özür diledi. Bu bakımdan tartışma bitti.)
+
+**2. Bağlaç olarak „insofern (als)"** – bir ifadeyi sınırlar: *„… ölçüde / … olduğu kadarıyla"*:
+> Der Plan ist gut, **insofern (als)** er wenig **kostet**.
+> (Plan, az maliyetli olması bakımından iyi – ama yalnızca bu açıdan.)
+
+**Tipik kalıp:** *insofern … als*: *Er hat **insofern** recht, **als** die Kosten tatsächlich gestiegen sind.* (Maliyetlerin gerçekten arttığı ölçüde haklı.)
+
+### Karıştırma tehlikesi
+| zumal | insofern (als) |
+| ---- | ---- |
+| **güçlendirir** (+ bir neden daha) | **sınırlar** (yalnızca bu açıdan) |
+| ≈ özellikle … olduğu için | ≈ … ölçüde, … kadarıyla |
+
+**Örnekler:**
+- Ich nehme das Angebot an, **zumal** das Gehalt sehr gut ist. (Teklifi kabul ediyorum, hele ki maaş çok iyi.)
+- Wir sollten früh losfahren, **zumal** am Freitag viel Verkehr ist. (Erken yola çıkmalıyız, özellikle cuma günü trafik yoğun olduğu için.)
+- Die Studie ist **insofern** interessant, **als** sie neue Daten liefert. (Çalışma, yeni veriler sunması bakımından ilginç.)
+- Der Kunde war zufrieden. **Insofern** war das Projekt ein Erfolg. (Müşteri memnundu. Bu açıdan proje başarılıydı.)
+- **Insofern** ich das beurteilen kann, ist alles in Ordnung. (Değerlendirebildiğim kadarıyla her şey yolunda.)`,
     },
   })
   await seedExercises({
@@ -28283,12 +30084,120 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit5.id,
       order: 2,
       grammarTopic: '"gleichwohl" und "nichtsdestotrotz"',
-      explanationDe:
-        '"Gleichwohl" und "nichtsdestotrotz" sind gehobene Synonyme für "trotzdem": "Das Wetter war schlecht, gleichwohl fuhren wir los."',
-      explanationEn:
-        '"Gleichwohl" and "nichtsdestotrotz" are elevated synonyms for "trotzdem" (nevertheless): "Das Wetter war schlecht, gleichwohl fuhren wir los" (The weather was bad; nevertheless, we set off).',
-      explanationTr:
-        '"Gleichwohl" ve "nichtsdestotrotz", "trotzdem" (yine de) için yüksek dil eşanlamlılarıdır: "Das Wetter war schlecht, gleichwohl fuhren wir los."',
+      explanationDe: `## „gleichwohl" und „nichtsdestotrotz"
+
+Beide Wörter sind **gehobene Synonyme für „trotzdem"**. Sie drücken einen **Gegensatz** aus: Etwas geschieht, **obwohl** die vorherige Aussage dagegen spricht.
+
+### Stilebenen der Gegensatz-Adverbien
+| neutral / alltäglich | gehoben | sehr formell / schriftlich |
+| ---- | ---- | ---- |
+| trotzdem | dennoch | gleichwohl |
+| | nichtsdestotrotz | nichtsdestoweniger |
+| | allerdings | dessen ungeachtet |
+
+### Satzstellung: Adverb → Verb auf Position 2
+> Das Wetter war schlecht, **gleichwohl fuhren** wir los.
+> Das Wetter war schlecht. **Nichtsdestotrotz fuhren** wir los.
+> Wir **fuhren** **gleichwohl** los. (auch im Mittelfeld möglich)
+
+### Besonderheit: „gleichwohl" als Subjunktion
+In gehobener Sprache kann „gleichwohl" auch wie **„obwohl"** einen Nebensatz einleiten (Verb am Ende):
+> **Gleichwohl** die Risiken bekannt **waren**, wurde das Projekt gestartet.
+> (= Obwohl die Risiken bekannt waren, …)
+
+### Vergleich mit „obwohl" und „trotz"
+| Konnektor | Wortart | Beispiel |
+| ---- | ---- | ---- |
+| obwohl | Subjunktion (Verb am Ende) | **Obwohl** es regnete, gingen wir spazieren. |
+| trotz | Präposition (+ Genitiv) | **Trotz** des Regens gingen wir spazieren. |
+| trotzdem / gleichwohl / nichtsdestotrotz | Adverb (Verb auf Pos. 2) | Es regnete. **Nichtsdestotrotz** gingen wir spazieren. |
+
+### Häufige Fehler
+- ❌ *Gleichwohl wir fuhren los.* → ✅ *Gleichwohl **fuhren wir** los.* (Inversion!)
+- ❌ „nichtsdestotrotz" im Gespräch unter Freunden → wirkt dort leicht ironisch oder gestelzt; lieber „trotzdem".
+
+**Beispiele:**
+- Die Kritik war berechtigt; **gleichwohl** hielt der Minister an seinem Plan fest.
+- Die Bedingungen waren schwierig. **Nichtsdestotrotz** erreichte das Team sein Ziel.
+- Er hatte kaum Erfahrung, **gleichwohl** bekam er die Stelle.
+- Die Studie hat Schwächen. **Nichtsdestoweniger** liefert sie wichtige Erkenntnisse.
+- **Gleichwohl** die Mehrheit dagegen war, wurde der Antrag angenommen.`,
+      explanationEn: `## "gleichwohl" and "nichtsdestotrotz"
+
+Both words are **elevated synonyms of "trotzdem"** (nevertheless). They express **contrast**: something happens **although** the preceding statement suggests otherwise.
+
+### Register levels of contrast adverbs
+| neutral / everyday | elevated | very formal / written |
+| ---- | ---- | ---- |
+| trotzdem | dennoch | gleichwohl |
+| | nichtsdestotrotz | nichtsdestoweniger |
+| | allerdings | dessen ungeachtet |
+
+### Word order: adverb → verb in position 2
+> Das Wetter war schlecht, **gleichwohl fuhren** wir los. (The weather was bad; nevertheless we set off.)
+> Das Wetter war schlecht. **Nichtsdestotrotz fuhren** wir los.
+> Wir **fuhren** **gleichwohl** los. (also possible in mid-sentence)
+
+### Special feature: "gleichwohl" as a conjunction
+In elevated language, "gleichwohl" can also introduce a subordinate clause like **"obwohl"** (verb at the end):
+> **Gleichwohl** die Risiken bekannt **waren**, wurde das Projekt gestartet.
+> (Although the risks were known, the project was launched.)
+
+### Comparison with "obwohl" and "trotz"
+| connector | word class | example |
+| ---- | ---- | ---- |
+| obwohl | conjunction (verb at end) | **Obwohl** es regnete, gingen wir spazieren. (Although it rained, we went for a walk.) |
+| trotz | preposition (+ genitive) | **Trotz** des Regens gingen wir spazieren. (Despite the rain …) |
+| trotzdem / gleichwohl / nichtsdestotrotz | adverb (verb in pos. 2) | Es regnete. **Nichtsdestotrotz** gingen wir spazieren. (It rained. Nevertheless …) |
+
+### Common mistakes
+- ❌ *Gleichwohl wir fuhren los.* → ✅ *Gleichwohl **fuhren wir** los.* (inversion!)
+- ❌ "nichtsdestotrotz" in a chat among friends → sounds slightly ironic or stilted there; "trotzdem" is better.
+
+**Examples:**
+- Die Kritik war berechtigt; **gleichwohl** hielt der Minister an seinem Plan fest. (The criticism was justified; nonetheless the minister stuck to his plan.)
+- Die Bedingungen waren schwierig. **Nichtsdestotrotz** erreichte das Team sein Ziel. (Conditions were difficult. Nevertheless the team reached its goal.)
+- Er hatte kaum Erfahrung, **gleichwohl** bekam er die Stelle. (He had hardly any experience, yet he got the job.)
+- Die Studie hat Schwächen. **Nichtsdestoweniger** liefert sie wichtige Erkenntnisse. (The study has weaknesses. Nonetheless it provides important insights.)
+- **Gleichwohl** die Mehrheit dagegen war, wurde der Antrag angenommen. (Although the majority was against it, the motion was adopted.)`,
+      explanationTr: `## „gleichwohl" ve „nichtsdestotrotz"
+
+Her iki kelime de **„trotzdem"in (yine de) yüksek üsluptaki eş anlamlılarıdır**. **Karşıtlık** bildirirler: önceki ifade aksini düşündürse **de** bir şey gerçekleşir.
+
+### Karşıtlık zarflarının üslup düzeyleri
+| nötr / günlük | yüksek üslup | çok resmî / yazı dili |
+| ---- | ---- | ---- |
+| trotzdem | dennoch | gleichwohl |
+| | nichtsdestotrotz | nichtsdestoweniger |
+| | allerdings | dessen ungeachtet |
+
+### Söz dizimi: zarf → fiil 2. pozisyonda
+> Das Wetter war schlecht, **gleichwohl fuhren** wir los. (Hava kötüydü, buna rağmen yola çıktık.)
+> Das Wetter war schlecht. **Nichtsdestotrotz fuhren** wir los.
+> Wir **fuhren** **gleichwohl** los. (cümle ortasında da olabilir)
+
+### Özel durum: bağlaç olarak „gleichwohl"
+Yüksek üslupta „gleichwohl", **„obwohl"** gibi bir yan cümle de başlatabilir (fiil sonda):
+> **Gleichwohl** die Risiken bekannt **waren**, wurde das Projekt gestartet.
+> (Riskler bilinmesine rağmen proje başlatıldı.)
+
+### „obwohl" ve „trotz" ile karşılaştırma
+| bağlayıcı | sözcük türü | örnek |
+| ---- | ---- | ---- |
+| obwohl | yan cümle bağlacı (fiil sonda) | **Obwohl** es regnete, gingen wir spazieren. (Yağmur yağmasına rağmen yürüyüşe çıktık.) |
+| trotz | edat (+ Genitiv) | **Trotz** des Regens gingen wir spazieren. (Yağmura rağmen …) |
+| trotzdem / gleichwohl / nichtsdestotrotz | zarf (fiil 2. poz.) | Es regnete. **Nichtsdestotrotz** gingen wir spazieren. (Yağmur yağdı. Yine de …) |
+
+### Sık yapılan hatalar
+- ❌ *Gleichwohl wir fuhren los.* → ✅ *Gleichwohl **fuhren wir** los.* (devrik yapı!)
+- ❌ Arkadaşlar arası sohbette „nichtsdestotrotz" → orada biraz ironik veya yapmacık durur; „trotzdem" daha iyidir.
+
+**Örnekler:**
+- Die Kritik war berechtigt; **gleichwohl** hielt der Minister an seinem Plan fest. (Eleştiri haklıydı; buna rağmen bakan planından vazgeçmedi.)
+- Die Bedingungen waren schwierig. **Nichtsdestotrotz** erreichte das Team sein Ziel. (Koşullar zordu. Yine de takım hedefine ulaştı.)
+- Er hatte kaum Erfahrung, **gleichwohl** bekam er die Stelle. (Neredeyse hiç deneyimi yoktu, yine de işi aldı.)
+- Die Studie hat Schwächen. **Nichtsdestoweniger** liefert sie wichtige Erkenntnisse. (Çalışmanın zayıf yönleri var. Bununla birlikte önemli bulgular sunuyor.)
+- **Gleichwohl** die Mehrheit dagegen war, wurde der Antrag angenommen. (Çoğunluk karşı olmasına rağmen önerge kabul edildi.)`,
     },
   })
   await seedExercises({
@@ -28323,12 +30232,122 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit5.id,
       order: 3,
       grammarTopic: 'Konnektoren in Argumentationsketten',
-      explanationDe:
-        'Für Argumentationsketten nutzt man Konnektoren wie "des Weiteren" (außerdem), "nicht zuletzt" (auch, besonders) und "mithin" (folglich): "Nicht zuletzt deshalb ist die Maßnahme sinnvoll."',
-      explanationEn:
-        'Argumentative chains use connectors like "des Weiteren" (furthermore), "nicht zuletzt" (not least, especially), and "mithin" (consequently): "Nicht zuletzt deshalb ist die Maßnahme sinnvoll" (Not least for that reason, the measure makes sense).',
-      explanationTr:
-        'Argüman zincirlerinde "des Weiteren" (ayrıca), "nicht zuletzt" (özellikle) ve "mithin" (dolayısıyla) gibi bağlaçlar kullanılır: "Nicht zuletzt deshalb ist die Maßnahme sinnvoll."',
+      explanationDe: `## Konnektoren in Argumentationsketten
+
+In Erörterungen, Referaten und wissenschaftlichen Texten muss man Argumente **logisch verknüpfen**. Auf C1-Niveau benutzt man dafür präzise, oft gehobene Konnektoren.
+
+### Argumente hinzufügen
+| Konnektor | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| **des Weiteren** | außerdem | **Des Weiteren** sinken die Kosten. |
+| **darüber hinaus** | zusätzlich | **Darüber hinaus** schützt es die Umwelt. |
+| **überdies** (gehoben) | noch dazu | **Überdies** ist das Verfahren schneller. |
+| **nicht zuletzt** | auch, und besonders wichtig | **Nicht zuletzt** spielt der Preis eine Rolle. |
+| **zudem** | außerdem | Das Produkt ist **zudem** umweltfreundlich. |
+
+### Folgerungen ziehen
+| Konnektor | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| **folglich** | also, deshalb | **Folglich** muss das Gesetz geändert werden. |
+| **mithin** (gehoben) | folglich | Die Daten sind unvollständig, **mithin** unzuverlässig. |
+| **somit** | auf diese Weise, also | **Somit** ist die Hypothese bestätigt. |
+| **demnach** | nach dem Gesagten | **Demnach** war der Plan von Anfang an falsch. |
+| **infolgedessen** | als Folge davon | **Infolgedessen** stiegen die Preise. |
+
+### Einschränken und gegenüberstellen
+| Konnektor | Beispiel |
+| ---- | ---- |
+| **allerdings** | Das Konzept ist gut, **allerdings** teuer. |
+| **hingegen / dagegen** | Die Stadt wächst, das Land **hingegen** schrumpft. |
+| **wohingegen** (Nebensatz) | Er liebt Kaffee, **wohingegen** sie Tee bevorzugt. |
+| **einerseits … andererseits** | **Einerseits** spart man Zeit, **andererseits** Geld. |
+
+### Eine Argumentationskette
+*Das Homeoffice bietet viele Vorteile. **Zunächst** sparen Beschäftigte Fahrzeit. **Des Weiteren** können sie ihre Arbeit flexibler einteilen. **Nicht zuletzt** sinken **dadurch** die CO₂-Emissionen. **Allerdings** fehlt der persönliche Kontakt. **Folglich** ist ein Mischmodell sinnvoll.*
+
+**Beispiele:**
+- **Nicht zuletzt deshalb** ist die Maßnahme sinnvoll.
+- Die Ergebnisse widersprechen sich, **mithin** ist weitere Forschung nötig.
+- Die Firma hat investiert; **somit** sichert sie Arbeitsplätze.
+- **Darüber hinaus** sollte man die sozialen Folgen bedenken.`,
+      explanationEn: `## Connectors in chains of argument
+
+In discussions, presentations and academic texts, arguments must be **linked logically**. At C1 level you use precise, often elevated connectors.
+
+### Adding arguments
+| connector | meaning | example |
+| ---- | ---- | ---- |
+| **des Weiteren** | furthermore | **Des Weiteren** sinken die Kosten. (Furthermore, costs fall.) |
+| **darüber hinaus** | in addition | **Darüber hinaus** schützt es die Umwelt. (In addition, it protects the environment.) |
+| **überdies** (elevated) | moreover | **Überdies** ist das Verfahren schneller. (Moreover, the procedure is faster.) |
+| **nicht zuletzt** | not least | **Nicht zuletzt** spielt der Preis eine Rolle. (Not least, price plays a role.) |
+| **zudem** | besides | Das Produkt ist **zudem** umweltfreundlich. (The product is also eco-friendly.) |
+
+### Drawing conclusions
+| connector | meaning | example |
+| ---- | ---- | ---- |
+| **folglich** | consequently | **Folglich** muss das Gesetz geändert werden. (Consequently the law must be changed.) |
+| **mithin** (elevated) | hence | Die Daten sind unvollständig, **mithin** unzuverlässig. (The data is incomplete, hence unreliable.) |
+| **somit** | thus | **Somit** ist die Hypothese bestätigt. (Thus the hypothesis is confirmed.) |
+| **demnach** | accordingly | **Demnach** war der Plan von Anfang an falsch. (Accordingly the plan was wrong from the start.) |
+| **infolgedessen** | as a result | **Infolgedessen** stiegen die Preise. (As a result, prices rose.) |
+
+### Restricting and contrasting
+| connector | example |
+| ---- | ---- |
+| **allerdings** | Das Konzept ist gut, **allerdings** teuer. (The concept is good, though expensive.) |
+| **hingegen / dagegen** | Die Stadt wächst, das Land **hingegen** schrumpft. (The city grows, whereas the countryside shrinks.) |
+| **wohingegen** (subordinate clause) | Er liebt Kaffee, **wohingegen** sie Tee bevorzugt. (He loves coffee, whereas she prefers tea.) |
+| **einerseits … andererseits** | **Einerseits** spart man Zeit, **andererseits** Geld. (On the one hand you save time, on the other money.) |
+
+### A chain of argument
+*Das Homeoffice bietet viele Vorteile. **Zunächst** sparen Beschäftigte Fahrzeit. **Des Weiteren** können sie ihre Arbeit flexibler einteilen. **Nicht zuletzt** sinken **dadurch** die CO₂-Emissionen. **Allerdings** fehlt der persönliche Kontakt. **Folglich** ist ein Mischmodell sinnvoll.*
+(Working from home has many advantages. First, employees save commuting time. Furthermore, they can organise their work more flexibly. Not least, CO₂ emissions fall as a result. However, personal contact is missing. Consequently, a hybrid model makes sense.)
+
+**Examples:**
+- **Nicht zuletzt deshalb** ist die Maßnahme sinnvoll. (Not least for this reason, the measure makes sense.)
+- Die Ergebnisse widersprechen sich, **mithin** ist weitere Forschung nötig. (The results contradict each other; hence further research is needed.)
+- Die Firma hat investiert; **somit** sichert sie Arbeitsplätze. (The company has invested; thus it secures jobs.)
+- **Darüber hinaus** sollte man die sozialen Folgen bedenken. (In addition, one should consider the social consequences.)`,
+      explanationTr: `## Tartışma zincirlerinde bağlayıcılar
+
+Tartışma yazılarında, sunumlarda ve bilimsel metinlerde argümanlar **mantıklı biçimde bağlanmalıdır**. C1 seviyesinde bunun için kesin, çoğu zaman yüksek üsluplu bağlayıcılar kullanılır.
+
+### Argüman eklemek
+| bağlayıcı | anlamı | örnek |
+| ---- | ---- | ---- |
+| **des Weiteren** | ayrıca | **Des Weiteren** sinken die Kosten. (Ayrıca maliyetler düşer.) |
+| **darüber hinaus** | bunun ötesinde | **Darüber hinaus** schützt es die Umwelt. (Bunun ötesinde çevreyi korur.) |
+| **überdies** (yüksek) | üstelik | **Überdies** ist das Verfahren schneller. (Üstelik yöntem daha hızlı.) |
+| **nicht zuletzt** | son olarak ama önemli | **Nicht zuletzt** spielt der Preis eine Rolle. (Son ama önemli olarak fiyat da rol oynar.) |
+| **zudem** | bundan başka | Das Produkt ist **zudem** umweltfreundlich. (Ürün bundan başka çevre dostu.) |
+
+### Sonuç çıkarmak
+| bağlayıcı | anlamı | örnek |
+| ---- | ---- | ---- |
+| **folglich** | dolayısıyla | **Folglich** muss das Gesetz geändert werden. (Dolayısıyla yasa değiştirilmeli.) |
+| **mithin** (yüksek) | binaenaleyh, demek ki | Die Daten sind unvollständig, **mithin** unzuverlässig. (Veriler eksik, dolayısıyla güvenilmez.) |
+| **somit** | böylece | **Somit** ist die Hypothese bestätigt. (Böylece hipotez doğrulanmış olur.) |
+| **demnach** | buna göre | **Demnach** war der Plan von Anfang an falsch. (Buna göre plan baştan yanlıştı.) |
+| **infolgedessen** | bunun sonucunda | **Infolgedessen** stiegen die Preise. (Bunun sonucunda fiyatlar yükseldi.) |
+
+### Sınırlamak ve karşılaştırmak
+| bağlayıcı | örnek |
+| ---- | ---- |
+| **allerdings** | Das Konzept ist gut, **allerdings** teuer. (Konsept iyi, ancak pahalı.) |
+| **hingegen / dagegen** | Die Stadt wächst, das Land **hingegen** schrumpft. (Şehir büyüyor, kırsal ise küçülüyor.) |
+| **wohingegen** (yan cümle) | Er liebt Kaffee, **wohingegen** sie Tee bevorzugt. (O kahveyi sever, oysa kadın çayı tercih eder.) |
+| **einerseits … andererseits** | **Einerseits** spart man Zeit, **andererseits** Geld. (Bir yandan zamandan, öte yandan paradan tasarruf edilir.) |
+
+### Bir tartışma zinciri
+*Das Homeoffice bietet viele Vorteile. **Zunächst** sparen Beschäftigte Fahrzeit. **Des Weiteren** können sie ihre Arbeit flexibler einteilen. **Nicht zuletzt** sinken **dadurch** die CO₂-Emissionen. **Allerdings** fehlt der persönliche Kontakt. **Folglich** ist ein Mischmodell sinnvoll.*
+(Evden çalışmanın birçok avantajı var. Önce çalışanlar yol süresinden tasarruf eder. Ayrıca işlerini daha esnek düzenleyebilirler. Son olarak bu sayede CO₂ salımı düşer. Ancak kişisel temas eksik kalır. Dolayısıyla karma bir model mantıklıdır.)
+
+**Örnekler:**
+- **Nicht zuletzt deshalb** ist die Maßnahme sinnvoll. (Bu önlem en çok da bu yüzden mantıklı.)
+- Die Ergebnisse widersprechen sich, **mithin** ist weitere Forschung nötig. (Sonuçlar çelişiyor, dolayısıyla daha fazla araştırma gerekli.)
+- Die Firma hat investiert; **somit** sichert sie Arbeitsplätze. (Firma yatırım yaptı; böylece istihdamı güvence altına alıyor.)
+- **Darüber hinaus** sollte man die sozialen Folgen bedenken. (Bunun ötesinde toplumsal sonuçlar da düşünülmeli.)`,
     },
   })
   await seedExercises({
@@ -28357,12 +30376,110 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit5.id,
       order: 4,
       grammarTopic: 'Übung: Komplexe Konnektoren',
-      explanationDe:
-        'Wiederholung: Gehobene Konnektoren wie "zumal", "gleichwohl" und "mithin" verleihen Texten wissenschaftlichen und formellen Charakter.',
-      explanationEn:
-        'Review: elevated connectors like "zumal", "gleichwohl", and "mithin" give texts an academic and formal character.',
-      explanationTr:
-        'Tekrar: "Zumal", "gleichwohl" ve "mithin" gibi yüksek düzey bağlaçlar metinlere akademik ve resmi bir hava katar.',
+      explanationDe: `## Übung: Komplexe Konnektoren – Zusammenfassung
+
+Gehobene Konnektoren verleihen Texten einen **wissenschaftlichen und formellen Charakter**. Entscheidend ist, ihre **Bedeutung** und ihre **Satzstellung** genau zu kennen.
+
+### Bedeutung im Überblick
+| Funktion | Konnektoren |
+| ---- | ---- |
+| Grund (verstärkend) | **zumal**, da, weil |
+| Einschränkung | **insofern (als)**, soweit, allerdings |
+| Gegensatz | **gleichwohl**, **nichtsdestotrotz**, dennoch, hingegen, wohingegen |
+| Addition | **des Weiteren**, darüber hinaus, überdies, **nicht zuletzt** |
+| Folge | **mithin**, folglich, somit, demnach, infolgedessen |
+
+### Satzstellung – der wichtigste Prüfpunkt
+| Typ | Konnektoren | Wortstellung |
+| ---- | ---- | ---- |
+| **Subjunktion** | zumal, insofern als, wohingegen, (gleichwohl) | Verb **am Ende** |
+| **Adverb** | gleichwohl, nichtsdestotrotz, mithin, folglich, des Weiteren | Verb auf **Position 2** (Inversion) |
+| **Konjunktion** (Position 0) | aber, denn, und, sondern | **normale** Wortstellung |
+
+**Vergleiche:**
+- *…, **zumal** er keine Zeit **hat**.* (Subjunktion)
+- *…, **folglich hat** er keine Zeit.* (Adverb)
+- *…, **denn** er **hat** keine Zeit.* (Konjunktion)
+
+### Ein Mini-Text mit allen Konnektoren
+*Die Stadt plant eine neue Straßenbahnlinie. Das Projekt ist sinnvoll, **zumal** der Busverkehr überlastet ist. Es ist **insofern** umstritten, **als** einige Anwohner Lärm befürchten. **Gleichwohl** unterstützt die Mehrheit den Plan. **Des Weiteren** würde die Linie neue Stadtteile erschließen. **Mithin** spricht vieles für den Bau.*
+
+**Beispiele:**
+- Das Angebot ist attraktiv, **zumal** die Lieferung kostenlos ist.
+- Die Ergebnisse sind vorläufig. **Nichtsdestotrotz** sind sie vielversprechend.
+- Die Prüfung war schwer; **gleichwohl** haben fast alle bestanden.
+- Er hat **insofern** recht, **als** wir mehr Zeit brauchen.
+- Alle Bedingungen sind erfüllt, **mithin** kann der Vertrag unterzeichnet werden.`,
+      explanationEn: `## Practice: complex connectors – summary
+
+Elevated connectors give texts an **academic and formal character**. What matters is knowing their **meaning** and their **word order** exactly.
+
+### Meaning at a glance
+| function | connectors |
+| ---- | ---- |
+| reason (reinforcing) | **zumal**, da, weil |
+| restriction | **insofern (als)**, soweit, allerdings |
+| contrast | **gleichwohl**, **nichtsdestotrotz**, dennoch, hingegen, wohingegen |
+| addition | **des Weiteren**, darüber hinaus, überdies, **nicht zuletzt** |
+| consequence | **mithin**, folglich, somit, demnach, infolgedessen |
+
+### Word order – the most important check
+| type | connectors | word order |
+| ---- | ---- | ---- |
+| **subordinating conjunction** | zumal, insofern als, wohingegen, (gleichwohl) | verb **at the end** |
+| **adverb** | gleichwohl, nichtsdestotrotz, mithin, folglich, des Weiteren | verb in **position 2** (inversion) |
+| **coordinating conjunction** (position 0) | aber, denn, und, sondern | **normal** word order |
+
+**Compare:**
+- *…, **zumal** er keine Zeit **hat**.* (conjunction – especially as he has no time)
+- *…, **folglich hat** er keine Zeit.* (adverb – consequently he has no time)
+- *…, **denn** er **hat** keine Zeit.* (coordinating – for he has no time)
+
+### A mini text with all connectors
+*Die Stadt plant eine neue Straßenbahnlinie. Das Projekt ist sinnvoll, **zumal** der Busverkehr überlastet ist. Es ist **insofern** umstritten, **als** einige Anwohner Lärm befürchten. **Gleichwohl** unterstützt die Mehrheit den Plan. **Des Weiteren** würde die Linie neue Stadtteile erschließen. **Mithin** spricht vieles für den Bau.*
+(The city is planning a new tram line. The project makes sense, especially as bus services are overloaded. It is controversial insofar as some residents fear noise. Nevertheless the majority supports the plan. Furthermore the line would open up new districts. Hence there is much in favour of building it.)
+
+**Examples:**
+- Das Angebot ist attraktiv, **zumal** die Lieferung kostenlos ist. (The offer is attractive, especially as delivery is free.)
+- Die Ergebnisse sind vorläufig. **Nichtsdestotrotz** sind sie vielversprechend. (The results are preliminary. Nevertheless they are promising.)
+- Die Prüfung war schwer; **gleichwohl** haben fast alle bestanden. (The exam was hard; nonetheless almost everyone passed.)
+- Er hat **insofern** recht, **als** wir mehr Zeit brauchen. (He is right insofar as we need more time.)
+- Alle Bedingungen sind erfüllt, **mithin** kann der Vertrag unterzeichnet werden. (All conditions are met; hence the contract can be signed.)`,
+      explanationTr: `## Alıştırma: Karmaşık bağlayıcılar – özet
+
+Yüksek üsluplu bağlayıcılar metinlere **bilimsel ve resmî bir karakter** kazandırır. Önemli olan, bunların **anlamını** ve **söz dizimini** tam olarak bilmektir.
+
+### Anlamlar bir bakışta
+| işlev | bağlayıcılar |
+| ---- | ---- |
+| neden (güçlendirici) | **zumal**, da, weil |
+| sınırlama | **insofern (als)**, soweit, allerdings |
+| karşıtlık | **gleichwohl**, **nichtsdestotrotz**, dennoch, hingegen, wohingegen |
+| ekleme | **des Weiteren**, darüber hinaus, überdies, **nicht zuletzt** |
+| sonuç | **mithin**, folglich, somit, demnach, infolgedessen |
+
+### Söz dizimi – en önemli kontrol noktası
+| tür | bağlayıcılar | söz dizimi |
+| ---- | ---- | ---- |
+| **yan cümle bağlacı** | zumal, insofern als, wohingegen, (gleichwohl) | fiil **sonda** |
+| **zarf** | gleichwohl, nichtsdestotrotz, mithin, folglich, des Weiteren | fiil **2. pozisyonda** (devrik) |
+| **eşgüdüm bağlacı** (0. pozisyon) | aber, denn, und, sondern | **normal** söz dizimi |
+
+**Karşılaştır:**
+- *…, **zumal** er keine Zeit **hat**.* (yan cümle – hele ki vakti yok)
+- *…, **folglich hat** er keine Zeit.* (zarf – dolayısıyla vakti yok)
+- *…, **denn** er **hat** keine Zeit.* (eşgüdüm – çünkü vakti yok)
+
+### Tüm bağlayıcılarla kısa bir metin
+*Die Stadt plant eine neue Straßenbahnlinie. Das Projekt ist sinnvoll, **zumal** der Busverkehr überlastet ist. Es ist **insofern** umstritten, **als** einige Anwohner Lärm befürchten. **Gleichwohl** unterstützt die Mehrheit den Plan. **Des Weiteren** würde die Linie neue Stadtteile erschließen. **Mithin** spricht vieles für den Bau.*
+(Şehir yeni bir tramvay hattı planlıyor. Proje mantıklı, hele ki otobüs trafiği aşırı yüklü. Bazı sakinlerin gürültüden endişe etmesi bakımından tartışmalı. Yine de çoğunluk planı destekliyor. Ayrıca hat yeni semtlere ulaşım sağlayacak. Dolayısıyla yapımı lehine çok şey var.)
+
+**Örnekler:**
+- Das Angebot ist attraktiv, **zumal** die Lieferung kostenlos ist. (Teklif cazip, hele ki teslimat ücretsiz.)
+- Die Ergebnisse sind vorläufig. **Nichtsdestotrotz** sind sie vielversprechend. (Sonuçlar geçici. Yine de umut verici.)
+- Die Prüfung war schwer; **gleichwohl** haben fast alle bestanden. (Sınav zordu; buna rağmen neredeyse herkes geçti.)
+- Er hat **insofern** recht, **als** wir mehr Zeit brauchen. (Daha fazla zamana ihtiyacımız olduğu ölçüde haklı.)
+- Alle Bedingungen sind erfüllt, **mithin** kann der Vertrag unterzeichnet werden. (Tüm koşullar yerine getirildi, dolayısıyla sözleşme imzalanabilir.)`,
     },
   })
   await seedExercises({
@@ -28408,12 +30525,117 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit6.id,
       order: 1,
       grammarTopic: '"doch" und "ja"',
-      explanationDe:
-        '"Doch" drückt Widerspruch oder Erinnerung aus: "Das weißt du doch!" "Ja" betont Offensichtliches: "Das ist ja klar!"',
-      explanationEn:
-        '"Doch" expresses contradiction or a reminder: "Das weißt du doch!" (You know that, after all!) "Ja" emphasizes something obvious: "Das ist ja klar!" (That\'s obviously clear!)',
-      explanationTr:
-        '"Doch" itiraz veya hatırlatma ifade eder: "Das weißt du doch!" "Ja" bariz bir şeyi vurgular: "Das ist ja klar!"',
+      explanationDe: `## Modalpartikeln „doch" und „ja"
+
+**Modalpartikeln** sind kleine, unbetonte Wörter, die **nicht die Information**, sondern die **Einstellung des Sprechers** ausdrücken: Erstaunen, Ungeduld, Vorwurf, Freundlichkeit … Sie stehen im **Mittelfeld** (meist nach dem Verb und den Pronomen) und werden **nicht betont**.
+
+### „doch"
+| Funktion | Beispiel | Wirkung |
+| ---- | ---- | ---- |
+| **Erinnerung** an Bekanntes (Vorwurf) | Das weißt du **doch**! | „Du solltest das eigentlich wissen." |
+| **Widerspruch** | Das stimmt **doch** nicht! | Der Sprecher widerspricht. |
+| **verstärkte Aufforderung** | Komm **doch** mit! | freundliches Drängen, Ermunterung |
+| **Ungeduld** | Hör **doch** endlich zu! | genervt |
+| **Wunsch** (mit Konj. II) | Wenn er **doch** käme! | sehnsüchtig |
+
+### „ja"
+| Funktion | Beispiel | Wirkung |
+| ---- | ---- | ---- |
+| **Offensichtliches / Bekanntes** | Das ist **ja** klar! | „Das wissen wir beide." |
+| **Erstaunen** | Du bist **ja** ganz nass! | überrascht |
+| **Warnung** (betont: JA) | Mach das **JA** nicht! | Drohung, dringende Warnung |
+
+### Partikel oder normales Wort?
+Viele Partikeln haben auch eine „normale" Funktion – erkennbar an **Betonung** und **Position**:
+- *Kommst du nicht? – **Doch**!* (Antwortpartikel, betont)
+- *Komm **doch** mit!* (Modalpartikel, unbetont)
+- ***Ja**, ich komme.* (Antwort)
+- *Das ist **ja** toll!* (Modalpartikel)
+
+### Kombinationen
+*ja doch*: Das habe ich dir **ja doch** gesagt! (doppelt verstärkt)
+
+**Beispiele:**
+- Wir waren **doch** gestern schon im Kino.
+- Setzen Sie sich **doch**!
+- Das ist **ja** unglaublich!
+- Du hast **ja** einen neuen Haarschnitt!
+- Er ist **doch** kein Kind mehr.
+- Ruf mich **ja** an, wenn du angekommen bist!`,
+      explanationEn: `## Modal particles "doch" and "ja"
+
+**Modal particles** are small, unstressed words that express **not information** but the **speaker's attitude**: surprise, impatience, reproach, friendliness … They stand in the **middle field** (usually after the verb and pronouns) and are **not stressed**. English often expresses these nuances through intonation or tags like "you know", "come on", "after all".
+
+### "doch"
+| function | example | effect |
+| ---- | ---- | ---- |
+| **reminder** of known facts (reproach) | Das weißt du **doch**! | "You know that, surely!" |
+| **contradiction** | Das stimmt **doch** nicht! | "But that's not true!" |
+| **intensified request** | Komm **doch** mit! | friendly encouragement – "Do come along!" |
+| **impatience** | Hör **doch** endlich zu! | annoyed – "Just listen, will you!" |
+| **wish** (with Konj. II) | Wenn er **doch** käme! | longing – "If only he would come!" |
+
+### "ja"
+| function | example | effect |
+| ---- | ---- | ---- |
+| **obvious / known** | Das ist **ja** klar! | "Well, that's obvious!" |
+| **surprise** | Du bist **ja** ganz nass! | "Why, you're soaking wet!" |
+| **warning** (stressed: JA) | Mach das **JA** nicht! | threat – "Don't you dare do that!" |
+
+### Particle or normal word?
+Many particles also have a "normal" function – recognisable by **stress** and **position**:
+- *Kommst du nicht? – **Doch**!* (answer particle "yes I am!", stressed)
+- *Komm **doch** mit!* (modal particle, unstressed)
+- ***Ja**, ich komme.* (answer "yes")
+- *Das ist **ja** toll!* (modal particle)
+
+### Combinations
+*ja doch*: Das habe ich dir **ja doch** gesagt! (doubly reinforced – "But I told you so!")
+
+**Examples:**
+- Wir waren **doch** gestern schon im Kino. (But we went to the cinema yesterday!)
+- Setzen Sie sich **doch**! (Do sit down!)
+- Das ist **ja** unglaublich! (That's just incredible!)
+- Du hast **ja** einen neuen Haarschnitt! (Oh, you've got a new haircut!)
+- Er ist **doch** kein Kind mehr. (He's not a child any more, after all.)
+- Ruf mich **ja** an, wenn du angekommen bist! (Be sure to call me when you arrive!)`,
+      explanationTr: `## Kip edatları „doch" ve „ja"
+
+**Kip edatları** (Modalpartikeln), **bilgiyi değil**, **konuşanın tutumunu** ifade eden küçük, vurgusuz kelimelerdir: şaşkınlık, sabırsızlık, sitem, nezaket … **Cümle ortasında** (genellikle fiilden ve zamirlerden sonra) yer alır ve **vurgulanmazlar**. Türkçede bu incelikleri çoğu zaman „ya", „ki", „hadi", „işte", „canım" gibi kelimeler karşılar.
+
+### „doch"
+| işlev | örnek | etkisi |
+| ---- | ---- | ---- |
+| bilinene **hatırlatma** (sitem) | Das weißt du **doch**! | „Bunu biliyorsun ya!" |
+| **itiraz** | Das stimmt **doch** nicht! | „Ama bu doğru değil ki!" |
+| **güçlendirilmiş istek** | Komm **doch** mit! | samimi teşvik – „Hadi sen de gel!" |
+| **sabırsızlık** | Hör **doch** endlich zu! | sinirli – „Dinlesene artık!" |
+| **dilek** (Konj. II ile) | Wenn er **doch** käme! | özlem – „Keşke gelse!" |
+
+### „ja"
+| işlev | örnek | etkisi |
+| ---- | ---- | ---- |
+| **apaçık / bilinen** | Das ist **ja** klar! | „Bu zaten belli!" |
+| **şaşkınlık** | Du bist **ja** ganz nass! | „Aa, sırılsıklam olmuşsun!" |
+| **uyarı** (vurgulu: JA) | Mach das **JA** nicht! | tehdit – „Sakın bunu yapma!" |
+
+### Edat mı, normal kelime mi?
+Birçok edatın „normal" bir işlevi de vardır – **vurgu** ve **konum**dan anlaşılır:
+- *Kommst du nicht? – **Doch**!* (cevap edatı „gelirim tabii!", vurgulu)
+- *Komm **doch** mit!* (kip edatı, vurgusuz)
+- ***Ja**, ich komme.* (cevap „evet")
+- *Das ist **ja** toll!* (kip edatı)
+
+### Birleşimler
+*ja doch*: Das habe ich dir **ja doch** gesagt! (çifte vurgu – „Ama sana söylemiştim ya!")
+
+**Örnekler:**
+- Wir waren **doch** gestern schon im Kino. (Dün zaten sinemaya gittik ya.)
+- Setzen Sie sich **doch**! (Buyurun, oturun lütfen!)
+- Das ist **ja** unglaublich! (Bu inanılmaz bir şey!)
+- Du hast **ja** einen neuen Haarschnitt! (Aa, saçını kestirmişsin!)
+- Er ist **doch** kein Kind mehr. (O artık çocuk değil ki.)
+- Ruf mich **ja** an, wenn du angekommen bist! (Varınca beni mutlaka ara!)`,
     },
   })
   await seedExercises({
@@ -28442,12 +30664,129 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit6.id,
       order: 2,
       grammarTopic: '"eben" und "halt"',
-      explanationDe:
-        '"Eben" und "halt" (süddeutsch/umgangssprachlich) drücken Resignation oder Unabänderlichkeit aus: "So ist es eben." / "Das ist halt so."',
-      explanationEn:
-        '"Eben" and "halt" (Southern German/colloquial) express resignation or that something can\'t be changed: "So ist es eben" / "Das ist halt so" (That\'s just how it is).',
-      explanationTr:
-        '"Eben" ve "halt" (Güney Almanya/günlük dil) teslimiyet veya değiştirilemezlik ifade eder: "So ist es eben." / "Das ist halt so."',
+      explanationDe: `## Modalpartikeln „eben" und „halt"
+
+**„eben"** und **„halt"** drücken aus, dass etwas **unabänderlich** ist – man muss es **akzeptieren**. Oft schwingt **Resignation** oder **Gelassenheit** mit: *„Da kann man nichts machen."*
+
+| Partikel | Region / Register | Beispiel |
+| ---- | ---- | ---- |
+| **eben** | überregional, eher norddeutsch | So ist das **eben**. |
+| **halt** | süddeutsch, österreichisch, umgangssprachlich | So ist das **halt**. |
+
+Beide sind weitgehend **austauschbar**; *halt* klingt lockerer und alltäglicher.
+
+### Typische Verwendungen
+**1. Resignation / Unabänderlichkeit**
+- *Das Leben ist **eben** nicht immer fair.*
+- *Der Zug ist weg – dann nehmen wir **halt** den nächsten.*
+
+**2. Begründung, die als selbstverständlich gilt**
+- *Warum lernst du so viel? – Die Prüfung ist **eben** schwer.*
+- *Er ist **halt** ein Perfektionist.*
+
+**3. Aufforderung als einzige Lösung** (oft mit *dann*)
+- *Wenn du müde bist, geh **halt** schlafen!*
+- *Dann frag **eben** jemand anderen!*
+
+### Achtung: „eben" hat weitere Bedeutungen!
+| Bedeutung | Beispiel |
+| ---- | ---- |
+| Modalpartikel (unabänderlich) | Das ist **eben** so. |
+| Zeitadverb = gerade eben, vor kurzem | Er ist **eben** gegangen. |
+| Zustimmung = genau! | Das Wetter ist schlecht. – **Eben!** |
+| Adjektiv = flach | eine **ebene** Fläche |
+
+### Stilhinweis
+In **formellen Texten** (Bewerbung, Bericht) sollte man *halt* vermeiden. *Eben* ist etwas neutraler, aber ebenfalls eher mündlich.
+
+**Beispiele:**
+- Ich habe den Termin vergessen. Das passiert **eben** manchmal.
+- Es regnet? Dann bleiben wir **halt** zu Hause.
+- Kinder sind **eben** neugierig.
+- Wenn es dir nicht gefällt, musst du es **halt** nicht essen.
+- Wir haben verloren – der Gegner war **eben** besser.`,
+      explanationEn: `## Modal particles "eben" and "halt"
+
+**"eben"** and **"halt"** express that something is **unchangeable** – you just have to **accept** it. There is often a note of **resignation** or **calm acceptance**: *"There's nothing you can do about it."* English equivalents: "just", "simply", "that's the way it is".
+
+| particle | region / register | example |
+| ---- | ---- | ---- |
+| **eben** | supra-regional, rather northern | So ist das **eben**. (That's just the way it is.) |
+| **halt** | southern German, Austrian, colloquial | So ist das **halt**. |
+
+The two are largely **interchangeable**; *halt* sounds more casual and everyday.
+
+### Typical uses
+**1. Resignation / inevitability**
+- *Das Leben ist **eben** nicht immer fair.* (Life just isn't always fair.)
+- *Der Zug ist weg – dann nehmen wir **halt** den nächsten.* (The train has gone – then we'll just take the next one.)
+
+**2. A reason presented as self-evident**
+- *Warum lernst du so viel? – Die Prüfung ist **eben** schwer.* (Why are you studying so much? – The exam is simply hard.)
+- *Er ist **halt** ein Perfektionist.* (He's just a perfectionist.)
+
+**3. A request as the only solution** (often with *dann*)
+- *Wenn du müde bist, geh **halt** schlafen!* (If you're tired, just go to bed!)
+- *Dann frag **eben** jemand anderen!* (Then just ask someone else!)
+
+### Note: "eben" has other meanings!
+| meaning | example |
+| ---- | ---- |
+| modal particle (unchangeable) | Das ist **eben** so. (That's just how it is.) |
+| time adverb = just now | Er ist **eben** gegangen. (He has just left.) |
+| agreement = exactly! | Das Wetter ist schlecht. – **Eben!** (Exactly!) |
+| adjective = flat | eine **ebene** Fläche (a flat surface) |
+
+### Style note
+Avoid *halt* in **formal texts** (applications, reports). *Eben* is slightly more neutral but also mainly spoken.
+
+**Examples:**
+- Ich habe den Termin vergessen. Das passiert **eben** manchmal. (I forgot the appointment. These things just happen sometimes.)
+- Es regnet? Dann bleiben wir **halt** zu Hause. (It's raining? Then we'll just stay home.)
+- Kinder sind **eben** neugierig. (Children are simply curious.)
+- Wenn es dir nicht gefällt, musst du es **halt** nicht essen. (If you don't like it, you just don't have to eat it.)
+- Wir haben verloren – der Gegner war **eben** besser. (We lost – the opponent was simply better.)`,
+      explanationTr: `## Kip edatları „eben" ve „halt"
+
+**„eben"** ve **„halt"**, bir şeyin **değiştirilemez** olduğunu – onu **kabullenmek** gerektiğini ifade eder. Çoğu zaman bir **teslimiyet** veya **soğukkanlılık** tonu vardır: *„Yapacak bir şey yok."* Türkçede „işte", „ne yapalım", „öyle" gibi ifadelere karşılık gelir.
+
+| edat | bölge / üslup | örnek |
+| ---- | ---- | ---- |
+| **eben** | bölgeler üstü, daha çok kuzey | So ist das **eben**. (Durum işte böyle.) |
+| **halt** | güney Almanya, Avusturya, gündelik dil | So ist das **halt**. |
+
+İkisi büyük ölçüde **birbirinin yerine kullanılabilir**; *halt* daha rahat ve gündelik geliyor.
+
+### Tipik kullanımlar
+**1. Teslimiyet / kaçınılmazlık**
+- *Das Leben ist **eben** nicht immer fair.* (Hayat işte her zaman adil değil.)
+- *Der Zug ist weg – dann nehmen wir **halt** den nächsten.* (Tren kaçtı – o zaman bir sonrakine bineriz artık.)
+
+**2. Apaçık kabul edilen bir gerekçe**
+- *Warum lernst du so viel? – Die Prüfung ist **eben** schwer.* (Neden bu kadar çok çalışıyorsun? – Sınav zor işte.)
+- *Er ist **halt** ein Perfektionist.* (O mükemmeliyetçi biri işte.)
+
+**3. Tek çözüm olarak istek** (çoğu zaman *dann* ile)
+- *Wenn du müde bist, geh **halt** schlafen!* (Yorgunsan yat uyu o zaman!)
+- *Dann frag **eben** jemand anderen!* (O zaman başka birine sor!)
+
+### Dikkat: „eben"in başka anlamları da var!
+| anlam | örnek |
+| ---- | ---- |
+| kip edatı (değiştirilemez) | Das ist **eben** so. (Bu böyle işte.) |
+| zaman zarfı = az önce | Er ist **eben** gegangen. (Az önce gitti.) |
+| onay = aynen! | Das Wetter ist schlecht. – **Eben!** (Aynen öyle!) |
+| sıfat = düz | eine **ebene** Fläche (düz bir yüzey) |
+
+### Üslup notu
+**Resmî metinlerde** (başvuru, rapor) *halt* kullanmaktan kaçının. *Eben* biraz daha nötrdür ama o da çoğunlukla konuşma dilindedir.
+
+**Örnekler:**
+- Ich habe den Termin vergessen. Das passiert **eben** manchmal. (Randevuyu unuttum. Bazen oluyor işte.)
+- Es regnet? Dann bleiben wir **halt** zu Hause. (Yağmur mu yağıyor? O zaman evde kalırız.)
+- Kinder sind **eben** neugierig. (Çocuklar meraklı olur işte.)
+- Wenn es dir nicht gefällt, musst du es **halt** nicht essen. (Beğenmiyorsan yeme o zaman.)
+- Wir haben verloren – der Gegner war **eben** besser. (Kaybettik – rakip daha iyiydi işte.)`,
     },
   })
   await seedExercises({
@@ -28476,12 +30815,132 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit6.id,
       order: 3,
       grammarTopic: '"mal" und "denn"',
-      explanationDe:
-        '"Mal" mildert Aufforderungen: "Komm mal her!" "Denn" macht Fragen freundlicher/interessierter: "Wie geht es dir denn?"',
-      explanationEn:
-        '"Mal" softens a request: "Komm mal her!" (Come here, would you?) "Denn" makes questions sound friendlier/more curious: "Wie geht es dir denn?" (So how are you doing?)',
-      explanationTr:
-        '"Mal" bir talebi yumuşatır: "Komm mal her!" "Denn" soruları daha samimi/ilgili yapar: "Wie geht es dir denn?"',
+      explanationDe: `## Modalpartikeln „mal" und „denn"
+
+### „mal" – macht Aufforderungen weicher
+**„mal"** (von *einmal*) nimmt einer Aufforderung die Härte. Sie klingt **beiläufig, freundlich und unverbindlich**.
+
+| ohne Partikel | mit „mal" |
+| ---- | ---- |
+| Komm her! (streng) | Komm **mal** her! (freundlich) |
+| Hilf mir! | Hilf mir **mal**! |
+| Können Sie das erklären? | Können Sie das **mal** erklären? |
+| Schau! | Schau **mal**! (= sieh dir das an) |
+
+Kombinationen:
+- ***doch mal***: noch freundlicher, ermunternd: *Probier **doch mal** den Kuchen!*
+- ***mal eben / mal kurz***: „nur schnell": *Kannst du **mal eben** das Fenster zumachen?*
+
+### „denn" – macht Fragen interessierter und natürlicher
+In **Fragen** zeigt *denn*, dass der Sprecher **echtes Interesse** hat oder **überrascht** ist. Fragen ohne *denn* können im Gespräch abrupt wirken.
+
+| Funktion | Beispiel |
+| ---- | ---- |
+| freundliches Interesse | Wie geht es dir **denn**? |
+| Überraschung | Was ist **denn** hier los? |
+| leichter Vorwurf / Ungeduld | Wo warst du **denn** so lange? |
+| Zweifel (oft mit *eigentlich*) | Stimmt das **denn** wirklich? |
+
+**Achtung:** *denn* als Modalpartikel steht **nur in Fragen** – nicht zu verwechseln mit der Konjunktion *denn* (= weil):
+- *Wie heißt du **denn**?* (Partikel)
+- *Ich bleibe zu Hause, **denn** ich bin krank.* (Konjunktion)
+
+### Reihenfolge mehrerer Partikeln
+Feste Reihenfolge u. a.: **ja – denn – doch – eben/halt – mal**
+- *Komm **doch mal** her!* (nicht: *mal doch*)
+- *Das ist **ja eben** das Problem.*
+
+**Beispiele:**
+- Gib mir **mal** den Zucker, bitte.
+- Warte **mal** kurz!
+- Was machst du **denn** da?
+- Warum hast du **denn** nichts gesagt?
+- Ruf **doch mal** deine Oma an!
+- Hast du **denn** keinen Hunger?`,
+      explanationEn: `## Modal particles "mal" and "denn"
+
+### "mal" – softens requests
+**"mal"** (from *einmal*) takes the edge off a request. It sounds **casual, friendly and non-committal** – like English "just" or "for a sec".
+
+| without particle | with "mal" |
+| ---- | ---- |
+| Komm her! (strict – Come here!) | Komm **mal** her! (friendly – Come here a sec!) |
+| Hilf mir! (Help me!) | Hilf mir **mal**! (Give me a hand, would you?) |
+| Können Sie das erklären? | Können Sie das **mal** erklären? (Could you just explain that?) |
+| Schau! (Look!) | Schau **mal**! (Have a look!) |
+
+Combinations:
+- ***doch mal***: even friendlier, encouraging: *Probier **doch mal** den Kuchen!* (Go on, try the cake!)
+- ***mal eben / mal kurz***: "just quickly": *Kannst du **mal eben** das Fenster zumachen?* (Could you just quickly close the window?)
+
+### "denn" – makes questions sound interested and natural
+In **questions**, *denn* shows that the speaker is **genuinely interested** or **surprised**. Questions without *denn* can sound abrupt in conversation.
+
+| function | example |
+| ---- | ---- |
+| friendly interest | Wie geht es dir **denn**? (So how are you?) |
+| surprise | Was ist **denn** hier los? (What on earth is going on here?) |
+| mild reproach / impatience | Wo warst du **denn** so lange? (Where have you been all this time?) |
+| doubt (often with *eigentlich*) | Stimmt das **denn** wirklich? (Is that really true, then?) |
+
+**Note:** *denn* as a modal particle appears **only in questions** – don't confuse it with the conjunction *denn* (= because):
+- *Wie heißt du **denn**?* (particle – So what's your name?)
+- *Ich bleibe zu Hause, **denn** ich bin krank.* (conjunction – I'm staying home because I'm ill.)
+
+### Order of several particles
+Fixed order, among others: **ja – denn – doch – eben/halt – mal**
+- *Komm **doch mal** her!* (not: *mal doch*)
+- *Das ist **ja eben** das Problem.* (That's exactly the problem, you see.)
+
+**Examples:**
+- Gib mir **mal** den Zucker, bitte. (Pass me the sugar, please.)
+- Warte **mal** kurz! (Hang on a sec!)
+- Was machst du **denn** da? (What are you doing there?)
+- Warum hast du **denn** nichts gesagt? (Why didn't you say anything?)
+- Ruf **doch mal** deine Oma an! (Why don't you call your grandma!)
+- Hast du **denn** keinen Hunger? (Aren't you hungry, then?)`,
+      explanationTr: `## Kip edatları „mal" ve „denn"
+
+### „mal" – istekleri yumuşatır
+**„mal"** (*einmal*'dan gelir) bir isteğin sertliğini alır. İstek **gelişigüzel, samimi ve bağlayıcı olmayan** bir hâl alır – Türkçedeki „bir", „-sana", „şunu bir" gibi.
+
+| edatsız | „mal" ile |
+| ---- | ---- |
+| Komm her! (sert – Buraya gel!) | Komm **mal** her! (samimi – Bir buraya gelsene!) |
+| Hilf mir! (Yardım et!) | Hilf mir **mal**! (Bana bir yardım etsene!) |
+| Können Sie das erklären? | Können Sie das **mal** erklären? (Bunu bir açıklayabilir misiniz?) |
+| Schau! (Bak!) | Schau **mal**! (Bir baksana!) |
+
+Birleşimler:
+- ***doch mal***: daha da samimi, teşvik edici: *Probier **doch mal** den Kuchen!* (Hadi pastadan bir tat!)
+- ***mal eben / mal kurz***: „hemen bir": *Kannst du **mal eben** das Fenster zumachen?* (Pencereyi hemen bir kapatır mısın?)
+
+### „denn" – soruları daha ilgili ve doğal kılar
+**Sorularda** *denn*, konuşanın **gerçekten ilgilendiğini** veya **şaşırdığını** gösterir. *denn* olmadan sorular konuşmada sert gelebilir.
+
+| işlev | örnek |
+| ---- | ---- |
+| samimi ilgi | Wie geht es dir **denn**? (Eee, nasılsın?) |
+| şaşkınlık | Was ist **denn** hier los? (Burada neler oluyor böyle?) |
+| hafif sitem / sabırsızlık | Wo warst du **denn** so lange? (Bu kadar zamandır neredeydin?) |
+| şüphe (çoğu zaman *eigentlich* ile) | Stimmt das **denn** wirklich? (Bu gerçekten doğru mu ki?) |
+
+**Dikkat:** Kip edatı olarak *denn* **yalnızca sorularda** bulunur – *denn* bağlacıyla (= çünkü) karıştırmayın:
+- *Wie heißt du **denn**?* (edat – Peki adın ne?)
+- *Ich bleibe zu Hause, **denn** ich bin krank.* (bağlaç – Evde kalıyorum, çünkü hastayım.)
+
+### Birden fazla edatın sırası
+Sabit sıra (diğerlerinin yanında): **ja – denn – doch – eben/halt – mal**
+- *Komm **doch mal** her!* (*mal doch* değil)
+- *Das ist **ja eben** das Problem.* (Sorun da tam olarak bu işte.)
+
+**Örnekler:**
+- Gib mir **mal** den Zucker, bitte. (Şekeri bir uzatır mısın lütfen.)
+- Warte **mal** kurz! (Bir dakika bekle!)
+- Was machst du **denn** da? (Orada ne yapıyorsun öyle?)
+- Warum hast du **denn** nichts gesagt? (Peki neden hiçbir şey söylemedin?)
+- Ruf **doch mal** deine Oma an! (Hadi ananneni bir ara!)
+- Hast du **denn** keinen Hunger? (Peki sen aç değil misin?)`,
     },
   })
   await seedExercises({
@@ -28510,12 +30969,114 @@ B2'yi kapatırken yeni zarf cümlelerine genel bakış:
       unitId: c1Unit6.id,
       order: 4,
       grammarTopic: 'Übung: Modalpartikeln',
-      explanationDe:
-        'Wiederholung: Modalpartikeln verändern nicht die Grundbedeutung eines Satzes, sondern die Einstellung/Stimmung des Sprechers. Sie sind typisch für die gesprochene Sprache.',
-      explanationEn:
-        'Review: modal particles don\'t change a sentence\'s core meaning but express the speaker\'s attitude or mood. They\'re typical of spoken German.',
-      explanationTr:
-        'Tekrar: Kip belirteçleri cümlenin temel anlamını değil, konuşmacının tutumunu/ruh halini değiştirir. Konuşma dilinde tipiktirler.',
+      explanationDe: `## Übung: Modalpartikeln – Zusammenfassung
+
+Modalpartikeln **verändern nicht die Grundbedeutung** eines Satzes, sondern seine **Färbung**: die Einstellung und Stimmung des Sprechers. Sie sind typisch für die **gesprochene Sprache** und machen Deutsch natürlich und lebendig. In formellen Texten benutzt man sie kaum.
+
+### Übersicht
+| Partikel | Satzart | Hauptfunktion | Beispiel |
+| ---- | ---- | ---- | ---- |
+| **doch** | Aussage, Aufforderung | Erinnerung, Widerspruch, Ermunterung | Das weißt du **doch**! / Komm **doch**! |
+| **ja** | Aussage | Bekanntes, Erstaunen | Das ist **ja** toll! |
+| **eben / halt** | Aussage, Aufforderung | Unabänderlichkeit, Resignation | So ist es **halt**. |
+| **mal** | Aufforderung, Frage | Abschwächung, Freundlichkeit | Komm **mal** her! |
+| **denn** | Frage | Interesse, Überraschung | Wie geht's **denn**? |
+| **wohl** | Aussage, Frage | Vermutung | Er ist **wohl** krank. (= wahrscheinlich) |
+| **schon** | Aussage | Beruhigung, Einschränkung | Das wird **schon** klappen. |
+| **eigentlich** | Frage | beiläufiges Thema-Wechseln | Wie alt bist du **eigentlich**? |
+
+### Gleicher Satz – andere Stimmung
+| Satz | Wirkung |
+| ---- | ---- |
+| Komm her! | neutraler Befehl |
+| Komm **mal** her! | freundlich, beiläufig |
+| Komm **doch mal** her! | einladend, ermunternd |
+| Komm **doch** endlich her! | ungeduldig |
+| Komm **ja** her! | drohend |
+
+### Grundregeln
+1. Modalpartikeln sind **unbetont**.
+2. Sie stehen im **Mittelfeld**, nie auf Position 1.
+3. Man kann sie **weglassen**, ohne dass sich die Information ändert.
+
+**Beispiele:**
+- Das wird **schon** gut gehen, mach dir keine Sorgen.
+- Wo ist **denn** mein Schlüssel?
+- Er hat **wohl** den Bus verpasst.
+- Ich kann **halt** nicht zaubern.
+- Du bist **ja** schon da!`,
+      explanationEn: `## Practice: modal particles – summary
+
+Modal particles **don't change the basic meaning** of a sentence but its **colouring**: the speaker's attitude and mood. They are typical of **spoken language** and make German sound natural and lively. They are rarely used in formal texts.
+
+### Overview
+| particle | sentence type | main function | example |
+| ---- | ---- | ---- | ---- |
+| **doch** | statement, request | reminder, contradiction, encouragement | Das weißt du **doch**! / Komm **doch**! |
+| **ja** | statement | known fact, surprise | Das ist **ja** toll! (That's great!) |
+| **eben / halt** | statement, request | inevitability, resignation | So ist es **halt**. (That's just how it is.) |
+| **mal** | request, question | softening, friendliness | Komm **mal** her! (Come here a sec!) |
+| **denn** | question | interest, surprise | Wie geht's **denn**? (So how are you?) |
+| **wohl** | statement, question | supposition | Er ist **wohl** krank. (He's probably ill.) |
+| **schon** | statement | reassurance, concession | Das wird **schon** klappen. (It'll work out, don't worry.) |
+| **eigentlich** | question | casually changing topic | Wie alt bist du **eigentlich**? (By the way, how old are you?) |
+
+### Same sentence – different mood
+| sentence | effect |
+| ---- | ---- |
+| Komm her! | neutral command |
+| Komm **mal** her! | friendly, casual |
+| Komm **doch mal** her! | inviting, encouraging |
+| Komm **doch** endlich her! | impatient |
+| Komm **ja** her! | threatening |
+
+### Basic rules
+1. Modal particles are **unstressed**.
+2. They stand in the **middle field**, never in position 1.
+3. They can be **left out** without changing the information.
+
+**Examples:**
+- Das wird **schon** gut gehen, mach dir keine Sorgen. (It'll be fine, don't worry.)
+- Wo ist **denn** mein Schlüssel? (Where on earth is my key?)
+- Er hat **wohl** den Bus verpasst. (He's probably missed the bus.)
+- Ich kann **halt** nicht zaubern. (I simply can't work magic.)
+- Du bist **ja** schon da! (Oh, you're here already!)`,
+      explanationTr: `## Alıştırma: Kip edatları – özet
+
+Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değiştirir: konuşanın tutumunu ve ruh hâlini. **Konuşma diline** özgüdürler ve Almancayı doğal ve canlı kılarlar. Resmî metinlerde pek kullanılmazlar.
+
+### Genel bakış
+| edat | cümle türü | ana işlev | örnek |
+| ---- | ---- | ---- | ---- |
+| **doch** | bildirme, istek | hatırlatma, itiraz, teşvik | Das weißt du **doch**! / Komm **doch**! |
+| **ja** | bildirme | bilinen, şaşkınlık | Das ist **ja** toll! (Bu harika!) |
+| **eben / halt** | bildirme, istek | kaçınılmazlık, teslimiyet | So ist es **halt**. (Durum böyle işte.) |
+| **mal** | istek, soru | yumuşatma, samimiyet | Komm **mal** her! (Bir gelsene!) |
+| **denn** | soru | ilgi, şaşkınlık | Wie geht's **denn**? (Eee, nasılsın?) |
+| **wohl** | bildirme, soru | tahmin | Er ist **wohl** krank. (Galiba hasta.) |
+| **schon** | bildirme | yatıştırma, kabul | Das wird **schon** klappen. (Olur merak etme.) |
+| **eigentlich** | soru | konuyu laf arasında değiştirme | Wie alt bist du **eigentlich**? (Bu arada kaç yaşındasın?) |
+
+### Aynı cümle – farklı ruh hâli
+| cümle | etkisi |
+| ---- | ---- |
+| Komm her! | nötr emir |
+| Komm **mal** her! | samimi, gelişigüzel |
+| Komm **doch mal** her! | davetkâr, teşvik edici |
+| Komm **doch** endlich her! | sabırsız |
+| Komm **ja** her! | tehditkâr |
+
+### Temel kurallar
+1. Kip edatları **vurgusuzdur**.
+2. **Cümle ortasında** bulunurlar, asla 1. pozisyonda değil.
+3. Bilgi değişmeden **çıkarılabilirler**.
+
+**Örnekler:**
+- Das wird **schon** gut gehen, mach dir keine Sorgen. (Her şey yoluna girer, merak etme.)
+- Wo ist **denn** mein Schlüssel? (Anahtarım nerede ya?)
+- Er hat **wohl** den Bus verpasst. (Galiba otobüsü kaçırdı.)
+- Ich kann **halt** nicht zaubern. (Sihirbaz değilim ya.)
+- Du bist **ja** schon da! (Aa, gelmişsin bile!)`,
     },
   })
   await seedExercises({
