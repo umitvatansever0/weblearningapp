@@ -40780,12 +40780,138 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit10.id,
       order: 1,
       grammarTopic: 'Homonyme und Mehrdeutigkeit',
-      explanationDe:
-        'Homonyme klingen gleich, bedeuten aber Verschiedenes: "die Bank" (Sitzmöbel oder Geldinstitut). Solche Wörter werden oft für Wortspiele genutzt.',
-      explanationEn:
-        'Homonyms sound the same but mean different things: "die Bank" (bench or financial bank). Such words are often used for wordplay.',
-      explanationTr:
-        'Eş sesli kelimeler aynı ses ama farklı anlamlara gelir: "die Bank" (oturma sırası veya banka). Bu tür kelimeler sık sık kelime oyunlarında kullanılır.',
+      explanationDe: `## Homonyme und Mehrdeutigkeit
+
+**Homonyme** sind Wörter, die **gleich geschrieben und/oder gleich ausgesprochen** werden, aber **verschiedene Bedeutungen** haben. Sie sind die Grundlage vieler **Missverständnisse** – und vieler **Witze und Wortspiele**.
+
+### Gleiche Form, verschiedene Bedeutung
+| Wort | Bedeutung 1 | Bedeutung 2 |
+| ---- | ---- | ---- |
+| **die Bank** | Sitzmöbel (Pl. *Bänke*) | Geldinstitut (Pl. *Banken*) |
+| **das Schloss** | Gebäude (Burg) | Türschloss |
+| **die Birne** | Obst | Glühbirne / ugs. Kopf |
+| **der Hahn** | männliches Huhn | Wasserhahn |
+| **die Mutter** | Elternteil (Pl. *Mütter*) | Schraubenmutter (Pl. *Muttern*) |
+| **der Strauß** | Blumenstrauß | Vogel |
+| **die Decke** | Bettdecke | Zimmerdecke |
+| **der Kiefer** / **die Kiefer** | Knochen (der) | Baum (die) |
+| **der Leiter** / **die Leiter** | Chef (der) | Gerät zum Steigen (die) |
+| **das Steuer** / **die Steuer** | Lenkrad (das) | Abgabe an den Staat (die) |
+
+**Merke:** Oft unterscheiden sich Homonyme durch **Artikel** oder **Plural** – das hilft beim Verstehen!
+
+### Homophone – gleich ausgesprochen, anders geschrieben
+| Wort 1 | Wort 2 |
+| ---- | ---- |
+| **Lied** (Gesang) | **Lid** (Augenlid) |
+| **Meer** (See) | **mehr** (Komparativ von *viel*) |
+| **Seite** (Buch) | **Saite** (Gitarre) |
+| **Wal** (Tier) | **Wahl** (Abstimmung) |
+| **malen** (Bild) | **mahlen** (Kaffee) |
+| **Lerche** (Vogel) | **Lärche** (Baum) |
+
+### Mehrdeutige Sätze (syntaktische Ambiguität)
+Nicht nur Wörter, auch **Sätze** können mehrdeutig sein:
+- *Er sah den Mann **mit dem Fernglas**.* → Hatte *er* das Fernglas oder *der Mann*?
+- *Die Wahl **des Präsidenten** …* → Er wählt – oder er wird gewählt?
+- *Ich habe **den Hund** **der Nachbarin** **mit dem Hut** gesehen.* → Wer trägt den Hut?
+
+### Kontext klärt
+In der Regel macht der **Kontext** die Bedeutung eindeutig: *Ich setze mich auf die **Bank** im Park.* / *Ich hole Geld von der **Bank**.*
+
+**Beispiele (Wortspiele):**
+- *„Treffen sich zwei Banken. Sagt die eine: ‚Ich bin eine Sparkasse.' Sagt die andere: ‚Ich bin eine Parkbank.'"*
+- *Der **Leiter** stieg auf die **Leiter**.*
+- *Sie hat ein **Schloss** gekauft – leider ohne **Schloss** an der Tür.*
+- *Bei der **Wahl** wurde ein **Wal**-Schützer gewählt.*`,
+      explanationEn: `## Homonyms and ambiguity
+
+**Homonyms** are words that are **spelt and/or pronounced the same** but have **different meanings**. They are the basis of many **misunderstandings** – and many **jokes and puns**.
+
+### Same form, different meaning
+| word | meaning 1 | meaning 2 |
+| ---- | ---- | ---- |
+| **die Bank** | bench (pl. *Bänke*) | bank (pl. *Banken*) |
+| **das Schloss** | castle | lock |
+| **die Birne** | pear | light bulb / colloq. head |
+| **der Hahn** | rooster | tap |
+| **die Mutter** | mother (pl. *Mütter*) | nut (for a bolt; pl. *Muttern*) |
+| **der Strauß** | bouquet | ostrich |
+| **die Decke** | blanket | ceiling |
+| **der Kiefer** / **die Kiefer** | jaw (der) | pine tree (die) |
+| **der Leiter** / **die Leiter** | head, manager (der) | ladder (die) |
+| **das Steuer** / **die Steuer** | steering wheel (das) | tax (die) |
+
+**Note:** homonyms often differ in **article** or **plural** – that helps you understand!
+
+### Homophones – same pronunciation, different spelling
+| word 1 | word 2 |
+| ---- | ---- |
+| **Lied** (song) | **Lid** (eyelid) |
+| **Meer** (sea) | **mehr** (more) |
+| **Seite** (page, side) | **Saite** (string – guitar) |
+| **Wal** (whale) | **Wahl** (election) |
+| **malen** (paint) | **mahlen** (grind – coffee) |
+| **Lerche** (lark) | **Lärche** (larch) |
+
+### Ambiguous sentences (syntactic ambiguity)
+Not only words but also **sentences** can be ambiguous:
+- *Er sah den Mann **mit dem Fernglas**.* (He saw the man with the binoculars.) → Did *he* have the binoculars, or *the man*?
+- *Die Wahl **des Präsidenten** …* (The election of the president …) → Does he elect – or is he elected?
+- *Ich habe **den Hund** **der Nachbarin** **mit dem Hut** gesehen.* (I saw the neighbour's dog with the hat.) → Who is wearing the hat?
+
+### Context clarifies
+As a rule, **context** makes the meaning clear: *Ich setze mich auf die **Bank** im Park.* (I sit on the bench in the park.) / *Ich hole Geld von der **Bank**.* (I get money from the bank.)
+
+**Examples (puns):**
+- *„Treffen sich zwei Banken. Sagt die eine: ‚Ich bin eine Sparkasse.' Sagt die andere: ‚Ich bin eine Parkbank.'"* (Two "banks" meet. One says: "I'm a savings bank." The other: "I'm a park bench.")
+- *Der **Leiter** stieg auf die **Leiter**.* (The manager climbed the ladder.)
+- *Sie hat ein **Schloss** gekauft – leider ohne **Schloss** an der Tür.* (She bought a castle – unfortunately without a lock on the door.)
+- *Bei der **Wahl** wurde ein **Wal**-Schützer gewählt.* (In the election a whale conservationist was elected.)`,
+      explanationTr: `## Eş sesli kelimeler ve çok anlamlılık
+
+**Homonimler** (eş sesli/eş yazımlı kelimeler), **aynı yazılan ve/veya aynı okunan**, ama **farklı anlamlara** sahip kelimelerdir. Birçok **yanlış anlamanın** – ve birçok **espri ile kelime oyununun** – temelidir.
+
+### Aynı biçim, farklı anlam
+| kelime | anlam 1 | anlam 2 |
+| ---- | ---- | ---- |
+| **die Bank** | bank, oturak (çoğ. *Bänke*) | banka (çoğ. *Banken*) |
+| **das Schloss** | şato, saray | kilit |
+| **die Birne** | armut | ampul / gündelik: kafa |
+| **der Hahn** | horoz | musluk |
+| **die Mutter** | anne (çoğ. *Mütter*) | somun (cıvata; çoğ. *Muttern*) |
+| **der Strauß** | çiçek buketi | devekuşu |
+| **die Decke** | battaniye | tavan |
+| **der Kiefer** / **die Kiefer** | çene kemiği (der) | çam ağacı (die) |
+| **der Leiter** / **die Leiter** | yönetici, şef (der) | merdiven (die) |
+| **das Steuer** / **die Steuer** | direksiyon (das) | vergi (die) |
+
+**Unutma:** Homonimler çoğu zaman **artikel** veya **çoğul** biçimiyle ayrılır – bu anlamaya yardımcı olur! (Türkçede de „yüz", „çay", „gül" gibi örnekler vardır.)
+
+### Homofonlar – aynı okunan, farklı yazılan
+| kelime 1 | kelime 2 |
+| ---- | ---- |
+| **Lied** (şarkı) | **Lid** (göz kapağı) |
+| **Meer** (deniz) | **mehr** (daha fazla) |
+| **Seite** (sayfa, taraf) | **Saite** (tel – gitar) |
+| **Wal** (balina) | **Wahl** (seçim) |
+| **malen** (resim yapmak) | **mahlen** (öğütmek – kahve) |
+| **Lerche** (tarla kuşu) | **Lärche** (karaçam) |
+
+### Çok anlamlı cümleler (sözdizimsel belirsizlik)
+Yalnızca kelimeler değil, **cümleler** de çok anlamlı olabilir:
+- *Er sah den Mann **mit dem Fernglas**.* (Adamı dürbünle gördü / dürbünlü adamı gördü.) → Dürbün *onda* mı, *adamda* mı?
+- *Die Wahl **des Präsidenten** …* (Cumhurbaşkanının seçimi …) → O mu seçiyor, o mu seçiliyor?
+- *Ich habe **den Hund** **der Nachbarin** **mit dem Hut** gesehen.* (Komşunun şapkalı köpeğini / şapkalı komşunun köpeğini gördüm.) → Şapkayı kim takıyor?
+
+### Bağlam açıklığa kavuşturur
+Genellikle **bağlam** anlamı netleştirir: *Ich setze mich auf die **Bank** im Park.* (Parktaki banka oturuyorum.) / *Ich hole Geld von der **Bank**.* (Bankadan para çekiyorum.)
+
+**Örnekler (kelime oyunları):**
+- *„Treffen sich zwei Banken. Sagt die eine: ‚Ich bin eine Sparkasse.' Sagt die andere: ‚Ich bin eine Parkbank.'"* (İki „Bank" karşılaşmış. Biri: „Ben bir tasarruf bankasıyım." Diğeri: „Ben bir park bankıyım.")
+- *Der **Leiter** stieg auf die **Leiter**.* (Şef merdivene çıktı.)
+- *Sie hat ein **Schloss** gekauft – leider ohne **Schloss** an der Tür.* (Bir şato satın aldı – ne yazık ki kapısında kilit yok.)
+- *Bei der **Wahl** wurde ein **Wal**-Schützer gewählt.* (Seçimde bir balina koruyucusu seçildi.)`,
     },
   })
   await seedExercises({
@@ -40814,12 +40940,123 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit10.id,
       order: 2,
       grammarTopic: 'Wortspiele in der Werbung',
-      explanationDe:
-        'Werbung nutzt oft Doppeldeutigkeit für einprägsame Slogans, z. B. Wortspiele mit zusammengesetzten Wörtern oder Redewendungen, die neu interpretiert werden.',
-      explanationEn:
-        'Advertising often uses double meanings for memorable slogans, e.g. wordplay with compound words or idioms reinterpreted in a new way.',
-      explanationTr:
-        'Reklamlar akılda kalıcı sloganlar için sık sık çift anlamlılık kullanır, örn. bileşik kelimelerle veya yeniden yorumlanan deyimlerle kelime oyunları.',
+      explanationDe: `## Wortspiele in der Werbung
+
+Werbung muss in **wenigen Sekunden** Aufmerksamkeit erzeugen und im **Gedächtnis bleiben**. Dafür nutzt sie besonders gern **Doppeldeutigkeit** und **Wortspiele**. Wer diese Slogans versteht, beweist ein **sehr feines Sprachgefühl**.
+
+### Techniken der Werbesprache
+| Technik | Prinzip | Beispiel (typisch) |
+| ---- | ---- | ---- |
+| **Doppeldeutigkeit** | ein Wort, zwei Bedeutungen | *„Wir machen den Weg frei."* (Bank: wörtlich + übertragen) |
+| **Redewendung neu interpretiert** | feste Wendung wörtlich genommen | *„Da steckt mehr dahinter."* |
+| **Abwandlung** | bekannter Ausdruck leicht verändert | *„Ich bin doch nicht blöd."* (Elektronikmarkt) |
+| **Reim** | Gleichklang am Ende | *„Haribo macht Kinder froh …"* |
+| **Alliteration** | gleicher Anlaut | *„Milch macht müde Männer munter."* |
+| **Neologismus** | neues Wort | *„unkaputtbar"* (Plastikflasche) |
+| **Anglizismen** | modern, international | *„Come in and find out."* |
+| **Homophone** | gleich klingend | *„Wir lieben Lebensmittel." / „Lebens-Mittel"* |
+
+### Analyse eines Slogans
+**Beispiel:** *„Nichts ist unmöglich."* (Autohersteller)
+- **wörtlich:** Alles ist möglich.
+- **Wirkung:** Optimismus, Innovation, Vertrauen – kurz, rhythmisch, leicht zu merken.
+
+**Beispiel:** *„Bitte ein Bit!"* (Biermarke)
+- **Alliteration** (B-B) + **Abkürzung** des Markennamens + **Reimklang** (*Bitte – Bit*).
+
+### Sprachliche Kreativität: Regeln brechen
+Werbung **bricht bewusst Normen**, um aufzufallen:
+- *„unkaputtbar"* – grammatisch unmöglich (*kaputt* ist ein Adjektiv), aber einprägsam.
+- *„Da werden Sie geholfen."* – grammatisch falsch (*Ihnen wird geholfen*), wurde gerade dadurch berühmt.
+
+### Warum funktioniert das?
+1. Das Gehirn **„stolpert"** über die Doppeldeutigkeit → **Aufmerksamkeit**.
+2. Das Entschlüsseln macht **Spaß** → **positive Gefühle** zur Marke.
+3. Kurze, rhythmische Sätze bleiben **im Gedächtnis**.
+
+**Beispiele (selbst erfundene Slogans):**
+- Für einen Optiker: *„Bei uns sehen Sie **klar**."* (sehen + verstehen)
+- Für eine Bäckerei: *„Unser Brot hat **Biss**."* (knusprig + Charakter)
+- Für ein Fitnessstudio: *„Bei uns kommen Sie **in Form**."* (körperlich fit + gute Verfassung)
+- Für einen Stromanbieter: *„Wir bringen **Energie** in Ihr Leben."* (Strom + Lebenskraft)`,
+      explanationEn: `## Puns in advertising
+
+Advertising has to grab attention in **a few seconds** and **stick in the memory**. To do this it particularly likes to use **ambiguity** and **wordplay**. Understanding these slogans shows a **very fine feel for language**.
+
+### Techniques of advertising language
+| technique | principle | example (typical) |
+| ---- | ---- | ---- |
+| **ambiguity** | one word, two meanings | *„Wir machen den Weg frei."* (We clear the way – a bank: literal + figurative) |
+| **idiom reinterpreted** | fixed phrase taken literally | *„Da steckt mehr dahinter."* (There's more to it / more inside.) |
+| **modification** | well-known expression slightly altered | *„Ich bin doch nicht blöd."* (I'm not stupid – electronics store) |
+| **rhyme** | sound repeated at the end | *„Haribo macht Kinder froh …"* (Haribo makes children happy …) |
+| **alliteration** | same initial sound | *„Milch macht müde Männer munter."* |
+| **neologism** | new word | *„unkaputtbar"* (unbreakable – plastic bottle) |
+| **anglicisms** | modern, international | *„Come in and find out."* |
+| **homophones** | sound the same | *„Wir lieben Lebensmittel." / „Lebens-Mittel"* (food / means of life) |
+
+### Analysing a slogan
+**Example:** *„Nichts ist unmöglich."* (Nothing is impossible – car maker)
+- **literally:** everything is possible.
+- **effect:** optimism, innovation, trust – short, rhythmic, easy to remember.
+
+**Example:** *„Bitte ein Bit!"* (A Bit, please! – beer brand)
+- **alliteration** (B-B) + **abbreviation** of the brand name + **rhyme-like sound** (*Bitte – Bit*).
+
+### Linguistic creativity: breaking the rules
+Advertising **deliberately breaks norms** to stand out:
+- *„unkaputtbar"* – grammatically impossible (*kaputt* is an adjective), but memorable.
+- *„Da werden Sie geholfen."* – grammatically wrong (should be *Ihnen wird geholfen*), and became famous precisely because of it.
+
+### Why does it work?
+1. The brain **"trips"** over the ambiguity → **attention**.
+2. Decoding it is **fun** → **positive feelings** towards the brand.
+3. Short, rhythmic sentences **stick in the memory**.
+
+**Examples (invented slogans):**
+- For an optician: *„Bei uns sehen Sie **klar**."* (With us you see clearly – see + understand)
+- For a bakery: *„Unser Brot hat **Biss**."* (Our bread has bite – crunchy + character)
+- For a gym: *„Bei uns kommen Sie **in Form**."* (With us you get in shape – physically fit + in good form)
+- For an electricity supplier: *„Wir bringen **Energie** in Ihr Leben."* (We bring energy into your life – power + vitality)`,
+      explanationTr: `## Reklamlarda kelime oyunları
+
+Reklam **birkaç saniye içinde** dikkat çekmeli ve **akılda kalmalıdır**. Bunun için özellikle **çift anlamlılık** ve **kelime oyunlarından** yararlanır. Bu sloganları anlayan, **çok ince bir dil duyarlılığına** sahip olduğunu gösterir.
+
+### Reklam dilinin teknikleri
+| teknik | ilke | örnek (tipik) |
+| ---- | ---- | ---- |
+| **çift anlamlılık** | bir kelime, iki anlam | *„Wir machen den Weg frei."* (Yolu açıyoruz – bir banka: düz + mecaz) |
+| **yeniden yorumlanan deyim** | kalıp ifade düz anlamıyla alınır | *„Da steckt mehr dahinter."* (Bunun ardında daha fazlası var.) |
+| **değiştirme** | bilinen bir ifade biraz değiştirilir | *„Ich bin doch nicht blöd."* (Ben aptal değilim ya – elektronik mağazası) |
+| **uyak** | sonda ses benzerliği | *„Haribo macht Kinder froh …"* (Haribo çocukları mutlu eder …) |
+| **aliterasyon** | aynı başlangıç sesi | *„Milch macht müde Männer munter."* |
+| **yeni kelime** | yeni türetilmiş kelime | *„unkaputtbar"* (kırılmaz – plastik şişe) |
+| **İngilizce kökenli kelimeler** | modern, uluslararası | *„Come in and find out."* |
+| **homofonlar** | aynı ses | *„Wir lieben Lebensmittel." / „Lebens-Mittel"* (gıda / hayat aracı) |
+
+### Bir sloganın çözümlenmesi
+**Örnek:** *„Nichts ist unmöglich."* (Hiçbir şey imkânsız değildir – otomobil üreticisi)
+- **düz anlam:** Her şey mümkündür.
+- **etki:** iyimserlik, yenilik, güven – kısa, ritmik, kolay akılda kalır.
+
+**Örnek:** *„Bitte ein Bit!"* (Bir Bit lütfen! – bira markası)
+- **aliterasyon** (B-B) + marka adının **kısaltması** + **uyak benzeri ses** (*Bitte – Bit*).
+
+### Dilsel yaratıcılık: kuralları çiğnemek
+Reklam dikkat çekmek için **normları bilerek çiğner**:
+- *„unkaputtbar"* – dilbilgisi açısından imkânsız (*kaputt* bir sıfattır), ama akılda kalıcı.
+- *„Da werden Sie geholfen."* – dilbilgisi açısından yanlış (doğrusu *Ihnen wird geholfen*), tam da bu sayede ünlendi.
+
+### Neden işe yarıyor?
+1. Beyin çift anlamlılığa **„takılır"** → **dikkat**.
+2. Çözmek **eğlencelidir** → markaya karşı **olumlu duygular**.
+3. Kısa, ritmik cümleler **akılda kalır**.
+
+**Örnekler (uydurma sloganlar):**
+- Bir gözlükçü için: *„Bei uns sehen Sie **klar**."* (Bizde net görürsünüz – görmek + anlamak)
+- Bir fırın için: *„Unser Brot hat **Biss**."* (Ekmeğimizin dişe gelir bir tadı var – çıtır + karakter)
+- Bir spor salonu için: *„Bei uns kommen Sie **in Form**."* (Bizde forma girersiniz – fiziksel + genel durum)
+- Bir elektrik şirketi için: *„Wir bringen **Energie** in Ihr Leben."* (Hayatınıza enerji katıyoruz – elektrik + yaşam enerjisi)`,
     },
   })
   await seedExercises({
@@ -40848,12 +41085,123 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit10.id,
       order: 3,
       grammarTopic: 'Wortspiele mit zusammengesetzten Wörtern',
-      explanationDe:
-        'Deutsche Komposita erlauben kreative Wortspiele: "Frühlingsgefühle" kann wörtlich oder übertragen ("frühlingshafte Verliebtheit") verstanden werden.',
-      explanationEn:
-        'German compound words allow creative wordplay: "Frühlingsgefühle" (spring feelings) can be read literally or figuratively (a springtime feeling of being in love).',
-      explanationTr:
-        'Almanca birleşik kelimeler yaratıcı kelime oyunlarına izin verir: "Frühlingsgefühle" hem gerçek hem mecazi ("bahara özgü aşık olma hissi") anlaşılabilir.',
+      explanationDe: `## Wortspiele mit zusammengesetzten Wörtern
+
+Das Deutsche kann fast unbegrenzt **Komposita** (zusammengesetzte Wörter) bilden. Diese Freiheit ermöglicht **kreative Wortspiele**: Man kann ein Kompositum **wörtlich** oder **übertragen** verstehen, es **neu zerlegen** oder **ungewöhnliche Verbindungen** schaffen.
+
+### Wörtlich vs. übertragen
+| Kompositum | wörtliche Lesart | übertragene / übliche Bedeutung |
+| ---- | ---- | ---- |
+| **Frühlingsgefühle** | Gefühle im Frühling | Verliebtheit |
+| **Ohrwurm** | Wurm im Ohr | Lied, das man nicht aus dem Kopf bekommt |
+| **Kummerspeck** | Speck aus Kummer | Gewicht, das man aus Frust zunimmt |
+| **Torschlusspanik** | Panik, bevor das Tor schließt | Angst, im Leben etwas zu verpassen |
+| **Schattenseite** | Seite im Schatten | Nachteil |
+| **Drahtesel** | Esel aus Draht | Fahrrad (scherzhaft) |
+| **Hamsterkauf** | Kauf von Hamstern | übermäßiger Vorratskauf |
+| **Warmduscher** | jemand, der warm duscht | Weichling (scherzhaft-abwertend) |
+
+### Techniken des Kompositum-Wortspiels
+1. **Neu zerlegen**: *Staubecken* = *Stau-Becken* (Wasserbecken) oder *Staub-Ecken* (schmutzige Ecken)?
+   *Blumentopferde* = *Blumentopf-Erde* oder *Blumen-Topf-Pferde*? 😄
+2. **Wörtlich nehmen**: *„Ich habe **Frühlingsgefühle** – meine Allergie ist zurück."*
+3. **Neubildungen** (Ad-hoc-Komposita): *Montagmorgenmüdigkeit, Kühlschrankleereangst, Homeoffice-Jogginghosen-Look*
+4. **Teile austauschen**: *Schadenfreude → Schadenfreundin*, *Weltschmerz → Welt-Herz*
+
+### Ambiguität durch Zerlegung (berühmte Beispiele)
+| Kompositum | Lesart 1 | Lesart 2 |
+| ---- | ---- | ---- |
+| **Staubecken** | Stau + Becken (Reservoir) | Staub + Ecken |
+| **Wachstube** | Wach + Stube (Wachraum) | Wachs + Tube |
+| **Urinstinkt** | Ur + Instinkt (Urtrieb) | Urin + stinkt |
+| **Druckerzeugnis** | Druck + Erzeugnis (gedrucktes Produkt) | Drucker + Zeugnis |
+
+### Warum ist das typisch deutsch?
+Im Deutschen werden Komposita **zusammengeschrieben** – im Englischen oft getrennt (*flower pot soil*). Dadurch entstehen viele **Mehrdeutigkeiten**, die Deutsche gern für **Humor, Werbung und Literatur** nutzen.
+
+**Beispiele:**
+- *Seit ich das Lied gehört habe, habe ich einen hartnäckigen **Ohrwurm**.*
+- *Nach der Trennung hat er sich etwas **Kummerspeck** angefuttert.*
+- *Mit 35 bekam sie plötzlich **Torschlusspanik**.*
+- *„Wir **hamstern** nicht – wir **kaufen vorausschauend**." (ironisch)*`,
+      explanationEn: `## Puns with compound words
+
+German can form an almost unlimited number of **compounds**. This freedom enables **creative wordplay**: a compound can be understood **literally** or **figuratively**, **split in a new way**, or used to create **unusual combinations**.
+
+### Literal vs. figurative
+| compound | literal reading | figurative / usual meaning |
+| ---- | ---- | ---- |
+| **Frühlingsgefühle** | spring feelings | being in love |
+| **Ohrwurm** | ear worm | a song you can't get out of your head |
+| **Kummerspeck** | grief bacon | weight gained from comfort eating |
+| **Torschlusspanik** | gate-closing panic | fear of missing out in life (e.g. on marriage) |
+| **Schattenseite** | shady side | downside |
+| **Drahtesel** | wire donkey | bicycle (jocular) |
+| **Hamsterkauf** | hamster purchase | panic buying |
+| **Warmduscher** | warm-showerer | wimp (jocular-derogatory) |
+
+### Techniques of compound wordplay
+1. **Re-splitting**: *Staubecken* = *Stau-Becken* (reservoir) or *Staub-Ecken* (dusty corners)?
+   *Blumentopferde* = *Blumentopf-Erde* (flowerpot soil) or *Blumen-Topf-Pferde* (flower-pot horses)? 😄
+2. **Taking literally**: *„Ich habe **Frühlingsgefühle** – meine Allergie ist zurück."* (I've got spring feelings – my allergy is back.)
+3. **New coinages** (ad-hoc compounds): *Montagmorgenmüdigkeit* (Monday-morning tiredness), *Kühlschrankleereangst* (empty-fridge anxiety), *Homeoffice-Jogginghosen-Look* (home-office tracksuit look)
+4. **Swapping parts**: *Schadenfreude → Schadenfreundin*, *Weltschmerz → Welt-Herz*
+
+### Ambiguity through splitting (famous examples)
+| compound | reading 1 | reading 2 |
+| ---- | ---- | ---- |
+| **Staubecken** | Stau + Becken (reservoir) | Staub + Ecken (dusty corners) |
+| **Wachstube** | Wach + Stube (guardroom) | Wachs + Tube (wax tube) |
+| **Urinstinkt** | Ur + Instinkt (primal instinct) | Urin + stinkt (urine stinks) |
+| **Druckerzeugnis** | Druck + Erzeugnis (printed product) | Drucker + Zeugnis (printer's certificate) |
+
+### Why is this typically German?
+In German, compounds are **written as one word** – in English often separately (*flower pot soil*). This creates many **ambiguities** that Germans like to exploit for **humour, advertising and literature**.
+
+**Examples:**
+- *Seit ich das Lied gehört habe, habe ich einen hartnäckigen **Ohrwurm**.* (Since I heard that song, it's been stuck in my head.)
+- *Nach der Trennung hat er sich etwas **Kummerspeck** angefuttert.* (After the break-up he put on some comfort-eating weight.)
+- *Mit 35 bekam sie plötzlich **Torschlusspanik**.* (At 35 she suddenly panicked that time was running out.)
+- *„Wir **hamstern** nicht – wir **kaufen vorausschauend**." (ironisch)* (We're not hoarding – we're buying with foresight. – ironic)`,
+      explanationTr: `## Bileşik kelimelerle kelime oyunları
+
+Almanca neredeyse sınırsız sayıda **bileşik kelime** (Komposita) oluşturabilir. Bu özgürlük **yaratıcı kelime oyunlarına** olanak tanır: Bir bileşik kelime **düz** veya **mecaz** anlamıyla anlaşılabilir, **yeniden bölünebilir** ya da **alışılmadık birleşimler** yaratılabilir.
+
+### Düz anlam – mecaz anlam
+| bileşik kelime | düz okuma | mecaz / alışılmış anlam |
+| ---- | ---- | ---- |
+| **Frühlingsgefühle** | bahar duyguları | âşık olma hâli |
+| **Ohrwurm** | kulak kurdu | kafadan çıkmayan şarkı |
+| **Kummerspeck** | keder yağı | üzüntüden yemekle alınan kilo |
+| **Torschlusspanik** | kapı kapanma paniği | hayatta bir şeyi kaçırma korkusu (örn. evlilik) |
+| **Schattenseite** | gölgeli taraf | dezavantaj |
+| **Drahtesel** | tel eşek | bisiklet (şaka) |
+| **Hamsterkauf** | hamster alımı | aşırı stok alımı |
+| **Warmduscher** | sıcak suyla duş alan | hanım evladı (şaka-küçümseyici) |
+
+### Bileşik kelime oyunlarının teknikleri
+1. **Yeniden bölmek**: *Staubecken* = *Stau-Becken* (baraj havzası) mı, *Staub-Ecken* (tozlu köşeler) mi?
+   *Blumentopferde* = *Blumentopf-Erde* (saksı toprağı) mı, *Blumen-Topf-Pferde* (çiçek-saksı-atları) mı? 😄
+2. **Düz anlamıyla almak**: *„Ich habe **Frühlingsgefühle** – meine Allergie ist zurück."* (Bahar duygularım var – alerjim geri döndü.)
+3. **Yeni türetmeler** (anlık bileşikler): *Montagmorgenmüdigkeit* (pazartesi sabahı yorgunluğu), *Kühlschrankleereangst* (boş buzdolabı korkusu), *Homeoffice-Jogginghosen-Look* (evden çalışma eşofman tarzı)
+4. **Parçaları değiştirmek**: *Schadenfreude → Schadenfreundin*, *Weltschmerz → Welt-Herz*
+
+### Bölmeyle oluşan belirsizlik (ünlü örnekler)
+| bileşik kelime | okuma 1 | okuma 2 |
+| ---- | ---- | ---- |
+| **Staubecken** | Stau + Becken (baraj havzası) | Staub + Ecken (tozlu köşeler) |
+| **Wachstube** | Wach + Stube (nöbet odası) | Wachs + Tube (mum tüpü) |
+| **Urinstinkt** | Ur + Instinkt (ilkel içgüdü) | Urin + stinkt (idrar kokuyor) |
+| **Druckerzeugnis** | Druck + Erzeugnis (basılı ürün) | Drucker + Zeugnis (yazıcı karnesi) |
+
+### Bu neden tipik olarak Almanca?
+Almancada bileşik kelimeler **bitişik yazılır** – İngilizcede çoğu zaman ayrı (*flower pot soil*). Bu da Almanların **mizah, reklam ve edebiyatta** severek kullandığı birçok **belirsizlik** yaratır.
+
+**Örnekler:**
+- *Seit ich das Lied gehört habe, habe ich einen hartnäckigen **Ohrwurm**.* (O şarkıyı duyduğumdan beri kafamdan çıkmıyor.)
+- *Nach der Trennung hat er sich etwas **Kummerspeck** angefuttert.* (Ayrılıktan sonra üzüntüden biraz kilo aldı.)
+- *Mit 35 bekam sie plötzlich **Torschlusspanik**.* (35 yaşında birden „treni kaçırma" paniğine kapıldı.)
+- *„Wir **hamstern** nicht – wir **kaufen vorausschauend**." (ironisch)* (Stok yapmıyoruz – ileriyi görerek alışveriş yapıyoruz. – ironik)`,
     },
   })
   await seedExercises({
@@ -40882,12 +41230,114 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit10.id,
       order: 4,
       grammarTopic: 'Übung: Wortspiel & Mehrdeutigkeit',
-      explanationDe:
-        'Wiederholung: Homonyme, Werbeslogans und Komposita bieten reichlich Material für Wortspiele — ein Zeichen sprachlicher Meisterschaft, sie zu erkennen und selbst zu bilden.',
-      explanationEn:
-        'Review: homonyms, ad slogans, and compound words offer rich material for wordplay — recognizing and creating them is a sign of linguistic mastery.',
-      explanationTr:
-        'Tekrar: eş sesli kelimeler, reklam sloganları ve birleşik kelimeler kelime oyunları için zengin malzeme sunar — bunları tanımak ve üretmek dil ustalığının bir işaretidir.',
+      explanationDe: `## Übung: Wortspiel & Mehrdeutigkeit – Zusammenfassung
+
+Homonyme, Werbeslogans und Komposita bieten reichlich Material für **Wortspiele**. Sie zu **erkennen** und selbst zu **bilden** ist ein Zeichen **sprachlicher Meisterschaft** – denn man muss dafür mehrere Bedeutungsebenen gleichzeitig im Kopf haben.
+
+### Arten von Wortspielen
+| Art | Prinzip | Beispiel |
+| ---- | ---- | ---- |
+| **Homonymie** | gleiche Form, andere Bedeutung | *Bank* (Sitz / Geld) |
+| **Homophonie** | gleicher Klang | *Meer – mehr*, *Wal – Wahl* |
+| **wörtlich nehmen** | Redewendung konkret verstehen | *„Ich verstehe nur Bahnhof." – „Dann fahr doch mit!"* |
+| **Kompositum zerlegen** | neue Grenze im Wort | *Staub-ecken / Stau-becken* |
+| **Neologismus** | neues Wort | *unkaputtbar, Kühlschrankleereangst* |
+| **Paronomasie** | ähnlich klingende Wörter | *„Eile mit Weile."*, *„Wer rastet, der rostet."* |
+| **Kalauer** | einfacher, oft „schlechter" Witz | *„Was ist grün und klopft an die Tür? – Ein Klopfsalat."* |
+
+### Wortspiele in Sprichwörtern
+Viele Sprichwörter leben vom **Klang**:
+- ***Ende gut, alles gut.***
+- ***Wer rastet, der rostet.*** (Reim + Alliteration)
+- ***Eile mit Weile.*** (Reim)
+- ***Trau, schau, wem!***
+
+### Die Kunst des Verstehens
+Um ein Wortspiel zu verstehen, braucht man:
+1. **Wortschatz**: alle Bedeutungen eines Wortes kennen
+2. **Kulturwissen**: Redewendungen, Werbung, Prominente
+3. **Kontextsensibilität**: erkennen, wann etwas **doppeldeutig** gemeint ist
+
+### Achtung: Übersetzbarkeit
+Wortspiele lassen sich **kaum übersetzen** – sie funktionieren nur in **einer** Sprache. Übersetzer müssen oft ein **neues Wortspiel** erfinden.
+
+**Beispiele:**
+- *„Das ist ein **Schloss** mit Aussicht – und ohne Schlüssel."*
+- *„Unsere Kunden sind **Feuer und Flamme**."* (Werbung eines Grillherstellers)
+- *„Wer **Sorgen** hat, hat auch **Likör**."* (Wilhelm Busch – Abwandlung)
+- *„Ich habe einen **Ohrwurm** – zum Glück keinen echten."*`,
+      explanationEn: `## Practice: wordplay & ambiguity – summary
+
+Homonyms, advertising slogans and compounds provide plenty of material for **wordplay**. **Recognising** puns and **making** your own is a sign of **linguistic mastery** – because you have to keep several layers of meaning in mind at once.
+
+### Types of wordplay
+| type | principle | example |
+| ---- | ---- | ---- |
+| **homonymy** | same form, different meaning | *Bank* (bench / bank) |
+| **homophony** | same sound | *Meer – mehr* (sea – more), *Wal – Wahl* (whale – election) |
+| **taking literally** | understanding an idiom concretely | *„Ich verstehe nur Bahnhof." – „Dann fahr doch mit!"* ("I only understand 'station'" = it's all Greek to me. – "Then come along for the ride!") |
+| **splitting a compound** | new boundary in the word | *Staub-ecken / Stau-becken* |
+| **neologism** | new word | *unkaputtbar, Kühlschrankleereangst* |
+| **paronomasia** | similar-sounding words | *„Eile mit Weile."* (More haste, less speed), *„Wer rastet, der rostet."* (If you rest, you rust) |
+| **Kalauer** (groaner) | simple, often "bad" joke | *„Was ist grün und klopft an die Tür? – Ein Klopfsalat."* (What's green and knocks at the door? – A "knock lettuce" – pun on *Kopfsalat*, lettuce.) |
+
+### Wordplay in proverbs
+Many proverbs rely on **sound**:
+- ***Ende gut, alles gut.*** (All's well that ends well.)
+- ***Wer rastet, der rostet.*** (rhyme + alliteration)
+- ***Eile mit Weile.*** (rhyme)
+- ***Trau, schau, wem!*** (Look before you trust.)
+
+### The art of understanding
+To understand a pun you need:
+1. **vocabulary**: knowing all the meanings of a word
+2. **cultural knowledge**: idioms, ads, celebrities
+3. **sensitivity to context**: recognising when something is meant **ambiguously**
+
+### Note: translatability
+Puns can **hardly be translated** – they only work in **one** language. Translators often have to invent a **new pun**.
+
+**Examples:**
+- *„Das ist ein **Schloss** mit Aussicht – und ohne Schlüssel."* (A castle with a view – and no key.)
+- *„Unsere Kunden sind **Feuer und Flamme**."* (Our customers are fire and flame = enthusiastic – a barbecue maker's ad)
+- *„Wer **Sorgen** hat, hat auch **Likör**."* (Who has worries also has liqueur – Wilhelm Busch, playing on a proverb)
+- *„Ich habe einen **Ohrwurm** – zum Glück keinen echten."* (I've got an earworm – luckily not a real one.)`,
+      explanationTr: `## Alıştırma: Kelime oyunu ve çok anlamlılık – özet
+
+Homonimler, reklam sloganları ve bileşik kelimeler **kelime oyunları** için zengin bir malzeme sunar. Onları **tanımak** ve kendin **üretmek**, **dilde ustalığın** göstergesidir – çünkü bunun için birden fazla anlam katmanını aynı anda akılda tutmak gerekir.
+
+### Kelime oyunu türleri
+| tür | ilke | örnek |
+| ---- | ---- | ---- |
+| **eş adlılık (homonimi)** | aynı biçim, farklı anlam | *Bank* (bank / banka) |
+| **eş seslilik (homofoni)** | aynı ses | *Meer – mehr* (deniz – daha), *Wal – Wahl* (balina – seçim) |
+| **düz anlamıyla almak** | deyimi somut anlamak | *„Ich verstehe nur Bahnhof." – „Dann fahr doch mit!"* („Sadece istasyon anlıyorum" = hiçbir şey anlamıyorum. – „O zaman sen de bin trene!") |
+| **bileşik kelimeyi bölmek** | kelime içinde yeni sınır | *Staub-ecken / Stau-becken* |
+| **yeni kelime** | yeni türetme | *unkaputtbar, Kühlschrankleereangst* |
+| **cinas (paronomazi)** | benzer sesli kelimeler | *„Eile mit Weile."* (Acele işe şeytan karışır), *„Wer rastet, der rostet."* (İşleyen demir ışıldar) |
+| **Kalauer** (soğuk espri) | basit, çoğu zaman „kötü" şaka | *„Was ist grün und klopft an die Tür? – Ein Klopfsalat."* (Yeşil olan ve kapıyı çalan şey ne? – „Kapı çalan marul" – *Kopfsalat* (marul) üzerine oyun.) |
+
+### Atasözlerinde kelime oyunu
+Birçok atasözü **sese** dayanır:
+- ***Ende gut, alles gut.*** (Sonu iyi biten her şey iyidir.)
+- ***Wer rastet, der rostet.*** (uyak + aliterasyon)
+- ***Eile mit Weile.*** (uyak)
+- ***Trau, schau, wem!*** (Güvenmeden önce iyi bak!)
+
+### Anlama sanatı
+Bir kelime oyununu anlamak için gerekenler:
+1. **Kelime bilgisi**: bir kelimenin tüm anlamlarını bilmek
+2. **Kültür bilgisi**: deyimler, reklamlar, ünlüler
+3. **Bağlam duyarlılığı**: bir şeyin ne zaman **çift anlamlı** kastedildiğini fark etmek
+
+### Dikkat: çevrilebilirlik
+Kelime oyunları **neredeyse çevrilemez** – yalnızca **tek** bir dilde işler. Çevirmenler çoğu zaman **yeni bir kelime oyunu** icat etmek zorundadır.
+
+**Örnekler:**
+- *„Das ist ein **Schloss** mit Aussicht – und ohne Schlüssel."* (Manzaralı bir şato – ama anahtarsız. / *Schloss* = şato ve kilit)
+- *„Unsere Kunden sind **Feuer und Flamme**."* (Müşterilerimiz ateş ve alev = çok hevesli – bir mangal üreticisinin reklamı)
+- *„Wer **Sorgen** hat, hat auch **Likör**."* (Derdi olanın likörü de vardır – Wilhelm Busch, bir atasözüyle oynuyor)
+- *„Ich habe einen **Ohrwurm** – zum Glück keinen echten."* (Kafamda bir şarkı dönüyor – neyse ki gerçek bir kurt değil.)`,
     },
   })
   await seedExercises({
@@ -40940,12 +41390,132 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit11.id,
       order: 1,
       grammarTopic: "Diskursmarker 'mithin' und 'mithilfe'",
-      explanationDe:
-        '"Mithin" (folglich, also) leitet eine logische Schlussfolgerung ein; "mithilfe" (mit Hilfe von) leitet ein Mittel oder Werkzeug ein.',
-      explanationEn:
-        '"Mithin" (consequently, thus) introduces a logical conclusion; "mithilfe" (by means of) introduces a means or tool.',
-      explanationTr:
-        '"Mithin" (dolayısıyla, bu nedenle) mantıksal bir sonucu başlatır; "mithilfe" (yardımıyla) bir araç veya yöntemi başlatır.',
+      explanationDe: `## Diskursmarker „mithin" und „mithilfe"
+
+Obwohl sie ähnlich aussehen, haben diese beiden Wörter **völlig unterschiedliche Funktionen** – eine klassische Verwechslungsfalle auf C2-Niveau.
+
+| | **mithin** | **mithilfe** (auch: *mit Hilfe*) |
+| ---- | ---- | ---- |
+| Wortart | Konjunktionaladverb | Präposition (+ Genitiv) / Adverb (+ *von*) |
+| Bedeutung | **folglich, also, demnach** | **mit Unterstützung von, durch** |
+| Funktion | leitet eine **Schlussfolgerung** ein | nennt ein **Mittel / Werkzeug** |
+| Beispiel | *Die Daten sind unvollständig, **mithin** unzuverlässig.* | ***Mithilfe** einer Umfrage wurden Daten erhoben.* |
+
+### „mithin" – die logische Folgerung
+„mithin" ist **gehoben und schriftsprachlich**. Es kann am Satzanfang (Verb folgt), im Mittelfeld oder zwischen zwei Satzteilen stehen:
+- *Alle Bedingungen sind erfüllt. **Mithin** **ist** der Vertrag gültig.* (Position 1 → Inversion)
+- *Der Vertrag ist **mithin** gültig.* (Mittelfeld)
+- *Er war nicht anwesend, **mithin** nicht beteiligt.* (verkürzt)
+
+Synonyme nach Register:
+| neutral | gehoben | sehr gehoben |
+| ---- | ---- | ---- |
+| also, deshalb | folglich, somit, demnach | mithin, infolgedessen |
+
+### „mithilfe" – das Mittel
+1. **mithilfe + Genitiv**: *mithilfe **eines** Wörterbuchs, mithilfe **moderner** Technik*
+2. **mithilfe von + Dativ** (wenn kein Artikel den Genitiv zeigt): *mithilfe **von** Computern, mithilfe **von** Freunden*
+3. Schreibweise: **mithilfe** und **mit Hilfe** sind beide korrekt.
+
+| mithilfe | Alternative |
+| ---- | ---- |
+| *mithilfe eines Kredits* | *durch einen Kredit / mittels eines Kredits* |
+| *mithilfe ihrer Kollegen* | *mit Unterstützung ihrer Kollegen* |
+
+### Häufige Fehler
+- ❌ *Mithilfe ist die Hypothese bestätigt.* → ✅ ***Mithin** ist die Hypothese bestätigt.*
+- ❌ *mithin eines Mikroskops* → ✅ ***mithilfe** eines Mikroskops*
+- ❌ *mithilfe Computer* → ✅ *mithilfe **von** Computern*
+
+**Beispiele:**
+- *Die Temperatur stieg über 100 °C; das Wasser kochte **mithin**.*
+- ***Mithilfe** eines Mikroskops konnten die Zellen untersucht werden.*
+- *Die Mehrheit stimmte zu; der Antrag ist **mithin** angenommen.*
+- *Das Problem wurde **mithilfe von** künstlicher Intelligenz gelöst.*`,
+      explanationEn: `## Discourse markers "mithin" and "mithilfe"
+
+Although they look similar, these two words have **completely different functions** – a classic trap at C2 level.
+
+| | **mithin** | **mithilfe** (also: *mit Hilfe*) |
+| ---- | ---- | ---- |
+| word class | conjunctive adverb | preposition (+ genitive) / adverb (+ *von*) |
+| meaning | **consequently, hence, thus** | **with the help of, by means of** |
+| function | introduces a **conclusion** | names a **means / tool** |
+| example | *Die Daten sind unvollständig, **mithin** unzuverlässig.* (The data are incomplete, hence unreliable.) | ***Mithilfe** einer Umfrage wurden Daten erhoben.* (Data were collected by means of a survey.) |
+
+### "mithin" – the logical conclusion
+"mithin" is **elevated and written**. It can stand at the start of the clause (verb follows), in the middle field or between two parts of a sentence:
+- *Alle Bedingungen sind erfüllt. **Mithin** **ist** der Vertrag gültig.* (All conditions are met. Hence the contract is valid. – position 1 → inversion)
+- *Der Vertrag ist **mithin** gültig.* (middle field)
+- *Er war nicht anwesend, **mithin** nicht beteiligt.* (He wasn't present, and thus not involved. – shortened)
+
+Synonyms by register:
+| neutral | elevated | very elevated |
+| ---- | ---- | ---- |
+| also, deshalb (so, therefore) | folglich, somit, demnach (consequently, thus, accordingly) | mithin, infolgedessen (hence, as a result) |
+
+### "mithilfe" – the means
+1. **mithilfe + genitive**: *mithilfe **eines** Wörterbuchs* (with the help of a dictionary), *mithilfe **moderner** Technik* (with modern technology)
+2. **mithilfe von + dative** (if no article marks the genitive): *mithilfe **von** Computern* (with the help of computers), *mithilfe **von** Freunden* (with friends' help)
+3. Spelling: **mithilfe** and **mit Hilfe** are both correct.
+
+| mithilfe | alternative |
+| ---- | ---- |
+| *mithilfe eines Kredits* (with the help of a loan) | *durch einen Kredit / mittels eines Kredits* (through / by means of a loan) |
+| *mithilfe ihrer Kollegen* (with her colleagues' help) | *mit Unterstützung ihrer Kollegen* (with the support of her colleagues) |
+
+### Common mistakes
+- ❌ *Mithilfe ist die Hypothese bestätigt.* → ✅ ***Mithin** ist die Hypothese bestätigt.* (Hence the hypothesis is confirmed.)
+- ❌ *mithin eines Mikroskops* → ✅ ***mithilfe** eines Mikroskops* (with the help of a microscope)
+- ❌ *mithilfe Computer* → ✅ *mithilfe **von** Computern*
+
+**Examples:**
+- *Die Temperatur stieg über 100 °C; das Wasser kochte **mithin**.* (The temperature rose above 100 °C; the water therefore boiled.)
+- ***Mithilfe** eines Mikroskops konnten die Zellen untersucht werden.* (With the help of a microscope the cells could be examined.)
+- *Die Mehrheit stimmte zu; der Antrag ist **mithin** angenommen.* (The majority agreed; the motion is thus carried.)
+- *Das Problem wurde **mithilfe von** künstlicher Intelligenz gelöst.* (The problem was solved with the help of artificial intelligence.)`,
+      explanationTr: `## Söylem belirteçleri „mithin" ve „mithilfe"
+
+Birbirine benzeseler de bu iki kelimenin **tamamen farklı işlevleri** vardır – C2 seviyesinde klasik bir karıştırma tuzağı.
+
+| | **mithin** | **mithilfe** (ayrıca: *mit Hilfe*) |
+| ---- | ---- | ---- |
+| sözcük türü | bağlaç-zarf | edat (+ Genitiv) / zarf (+ *von*) |
+| anlamı | **dolayısıyla, demek ki, buna göre** | **… yardımıyla, … aracılığıyla** |
+| işlevi | bir **sonuç** başlatır | bir **araç / yöntem** belirtir |
+| örnek | *Die Daten sind unvollständig, **mithin** unzuverlässig.* (Veriler eksik, dolayısıyla güvenilmez.) | ***Mithilfe** einer Umfrage wurden Daten erhoben.* (Bir anket aracılığıyla veri toplandı.) |
+
+### „mithin" – mantıksal sonuç
+„mithin" **yüksek üsluplu ve yazı diline özgüdür**. Cümle başında (fiil ardından gelir), cümle ortasında veya iki cümle parçası arasında durabilir:
+- *Alle Bedingungen sind erfüllt. **Mithin** **ist** der Vertrag gültig.* (Tüm koşullar sağlandı. Dolayısıyla sözleşme geçerlidir. – 1. pozisyon → devrik yapı)
+- *Der Vertrag ist **mithin** gültig.* (cümle ortası)
+- *Er war nicht anwesend, **mithin** nicht beteiligt.* (Orada değildi, dolayısıyla dahil değildi. – kısaltılmış)
+
+Üslup düzeyine göre eş anlamlılar:
+| nötr | yüksek | çok yüksek |
+| ---- | ---- | ---- |
+| also, deshalb (yani, bu yüzden) | folglich, somit, demnach (dolayısıyla, böylece, buna göre) | mithin, infolgedessen (binaenaleyh, bunun sonucunda) |
+
+### „mithilfe" – araç
+1. **mithilfe + Genitiv**: *mithilfe **eines** Wörterbuchs* (bir sözlük yardımıyla), *mithilfe **moderner** Technik* (modern teknik sayesinde)
+2. **mithilfe von + Dativ** (Genitiv'i gösteren artikel yoksa): *mithilfe **von** Computern* (bilgisayarlar yardımıyla), *mithilfe **von** Freunden* (arkadaşların yardımıyla)
+3. Yazım: **mithilfe** ve **mit Hilfe** ikisi de doğrudur.
+
+| mithilfe | alternatif |
+| ---- | ---- |
+| *mithilfe eines Kredits* (bir kredi yardımıyla) | *durch einen Kredit / mittels eines Kredits* (bir kredi yoluyla / aracılığıyla) |
+| *mithilfe ihrer Kollegen* (iş arkadaşlarının yardımıyla) | *mit Unterstützung ihrer Kollegen* (iş arkadaşlarının desteğiyle) |
+
+### Sık yapılan hatalar
+- ❌ *Mithilfe ist die Hypothese bestätigt.* → ✅ ***Mithin** ist die Hypothese bestätigt.* (Dolayısıyla hipotez doğrulanmıştır.)
+- ❌ *mithin eines Mikroskops* → ✅ ***mithilfe** eines Mikroskops* (bir mikroskop yardımıyla)
+- ❌ *mithilfe Computer* → ✅ *mithilfe **von** Computern*
+
+**Örnekler:**
+- *Die Temperatur stieg über 100 °C; das Wasser kochte **mithin**.* (Sıcaklık 100 °C'nin üzerine çıktı; dolayısıyla su kaynadı.)
+- ***Mithilfe** eines Mikroskops konnten die Zellen untersucht werden.* (Bir mikroskop yardımıyla hücreler incelenebildi.)
+- *Die Mehrheit stimmte zu; der Antrag ist **mithin** angenommen.* (Çoğunluk onayladı; önerge dolayısıyla kabul edilmiştir.)
+- *Das Problem wurde **mithilfe von** künstlicher Intelligenz gelöst.* (Sorun yapay zekâ yardımıyla çözüldü.)`,
     },
   })
   await seedExercises({
@@ -40974,12 +41544,138 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit11.id,
       order: 2,
       grammarTopic: "Diskursmarker 'diesbezüglich' und 'diesbezüglich'",
-      explanationDe:
-        '"Diesbezüglich" (in dieser Hinsicht, dazu) verweist auf zuvor Gesagtes in formellen Texten: "Diesbezüglich sind weitere Untersuchungen nötig."',
-      explanationEn:
-        '"Diesbezüglich" (in this regard) refers back to something previously mentioned in formal texts: "Diesbezüglich sind weitere Untersuchungen nötig" (In this regard, further investigation is needed).',
-      explanationTr:
-        '"Diesbezüglich" (bu bakımdan) resmi metinlerde daha önce söylenene atıfta bulunur: "Diesbezüglich sind weitere Untersuchungen nötig."',
+      explanationDe: `## Diskursmarker „diesbezüglich" (und verwandte Verweise)
+
+**„diesbezüglich"** bedeutet *„in dieser Hinsicht / was das betrifft / dazu"*. Es **verweist auf zuvor Gesagtes** und verbindet so Sätze und Absätze in **formellen Texten** – Geschäftsbriefen, Berichten, wissenschaftlichen Arbeiten.
+
+> *Die Finanzierung ist noch ungeklärt. **Diesbezüglich** sind weitere Gespräche nötig.*
+> (= Was die Finanzierung betrifft, sind weitere Gespräche nötig.)
+
+### Verwendung
+| Position | Beispiel |
+| ---- | ---- |
+| Satzanfang (Verb folgt) | ***Diesbezüglich** **liegen** uns keine Informationen vor.* |
+| Mittelfeld | *Wir werden Sie **diesbezüglich** informieren.* |
+| als Attribut | *Ihre **diesbezügliche** Anfrage* (= Ihre Anfrage dazu) |
+
+### Verwandte Bezugsausdrücke
+| Ausdruck | Konstruktion | Beispiel |
+| ---- | ---- | ---- |
+| **diesbezüglich** | Adverb (verweist zurück) | *Diesbezüglich gibt es Bedenken.* |
+| **bezüglich** + G | Präposition | ***Bezüglich** Ihrer Anfrage …* |
+| **hinsichtlich** + G | Präposition | ***Hinsichtlich** der Kosten …* |
+| **in Bezug auf** + A | Präpositionalgruppe | ***In Bezug auf** das Projekt …* |
+| **was … betrifft / angeht** | Nebensatz | ***Was** die Kosten **betrifft**, …* |
+| **in dieser Hinsicht** | neutrale Alternative | ***In dieser Hinsicht** stimme ich Ihnen zu.* |
+| **dahingehend** | in diesem Sinne | *Wir haben uns **dahingehend** geeinigt, dass …* |
+
+### Register
+| neutral | formell | sehr formell |
+| ---- | ---- | ---- |
+| dazu, da, was das angeht | in dieser Hinsicht, in Bezug darauf | diesbezüglich, hinsichtlich dessen |
+
+### Typische Wendungen in Geschäftsbriefen
+- *Für **diesbezügliche** Rückfragen stehe ich Ihnen gern zur Verfügung.*
+- ***Diesbezüglich** bitten wir um Ihr Verständnis.*
+- *Wir werden uns **diesbezüglich** umgehend mit Ihnen in Verbindung setzen.*
+
+### Häufige Fehler
+- ❌ *Diesbezüglich der Kosten …* → ✅ ***Bezüglich** der Kosten …* (*diesbezüglich* hat **kein** Objekt!)
+- ❌ *diesbezüglich* im Gespräch unter Freunden → wirkt steif; besser: *da* / *was das angeht*.
+
+**Beispiele:**
+- *Die Lieferung verzögert sich. **Diesbezüglich** möchten wir uns entschuldigen.*
+- *Die Ergebnisse sind widersprüchlich; **diesbezüglich** besteht weiterer Forschungsbedarf.*
+- *Vielen Dank für Ihre **diesbezügliche** E-Mail.*
+- ***Hinsichtlich** des Termins bin ich flexibel.*`,
+      explanationEn: `## The discourse marker "diesbezüglich" (and related references)
+
+**"diesbezüglich"** means *"in this regard / as far as this is concerned / on this matter"*. It **refers back to what was said before** and thus links sentences and paragraphs in **formal texts** – business letters, reports, academic papers.
+
+> *Die Finanzierung ist noch ungeklärt. **Diesbezüglich** sind weitere Gespräche nötig.*
+> (Funding is still unresolved. In this regard, further talks are needed.)
+
+### Use
+| position | example |
+| ---- | ---- |
+| sentence start (verb follows) | ***Diesbezüglich** **liegen** uns keine Informationen vor.* (We have no information in this regard.) |
+| middle field | *Wir werden Sie **diesbezüglich** informieren.* (We will inform you about this.) |
+| as an attribute | *Ihre **diesbezügliche** Anfrage* (your enquiry on this matter) |
+
+### Related reference expressions
+| expression | construction | example |
+| ---- | ---- | ---- |
+| **diesbezüglich** | adverb (refers back) | *Diesbezüglich gibt es Bedenken.* (There are concerns in this regard.) |
+| **bezüglich** + gen. | preposition | ***Bezüglich** Ihrer Anfrage …* (Regarding your enquiry …) |
+| **hinsichtlich** + gen. | preposition | ***Hinsichtlich** der Kosten …* (With regard to costs …) |
+| **in Bezug auf** + acc. | prepositional phrase | ***In Bezug auf** das Projekt …* (In relation to the project …) |
+| **was … betrifft / angeht** | clause | ***Was** die Kosten **betrifft**, …* (As for the costs …) |
+| **in dieser Hinsicht** | neutral alternative | ***In dieser Hinsicht** stimme ich Ihnen zu.* (In this respect I agree with you.) |
+| **dahingehend** | to that effect | *Wir haben uns **dahingehend** geeinigt, dass …* (We agreed to the effect that …) |
+
+### Register
+| neutral | formal | very formal |
+| ---- | ---- | ---- |
+| dazu, da, was das angeht | in dieser Hinsicht, in Bezug darauf | diesbezüglich, hinsichtlich dessen |
+
+### Typical phrases in business letters
+- *Für **diesbezügliche** Rückfragen stehe ich Ihnen gern zur Verfügung.* (I am happy to answer any questions you may have on this matter.)
+- ***Diesbezüglich** bitten wir um Ihr Verständnis.* (We ask for your understanding in this regard.)
+- *Wir werden uns **diesbezüglich** umgehend mit Ihnen in Verbindung setzen.* (We will contact you about this immediately.)
+
+### Common mistakes
+- ❌ *Diesbezüglich der Kosten …* → ✅ ***Bezüglich** der Kosten …* (*diesbezüglich* takes **no** object!)
+- ❌ *diesbezüglich* in a chat among friends → sounds stiff; better: *da* / *was das angeht*.
+
+**Examples:**
+- *Die Lieferung verzögert sich. **Diesbezüglich** möchten wir uns entschuldigen.* (The delivery is delayed. We apologise for this.)
+- *Die Ergebnisse sind widersprüchlich; **diesbezüglich** besteht weiterer Forschungsbedarf.* (The results are contradictory; further research is needed in this regard.)
+- *Vielen Dank für Ihre **diesbezügliche** E-Mail.* (Thank you for your e-mail on this matter.)
+- ***Hinsichtlich** des Termins bin ich flexibel.* (I'm flexible regarding the date.)`,
+      explanationTr: `## Söylem belirteci „diesbezüglich" (ve ilgili gönderimler)
+
+**„diesbezüglich"**, *„bu bakımdan / bununla ilgili olarak / bu konuda"* anlamına gelir. **Daha önce söylenene gönderme yapar** ve böylece **resmî metinlerde** – iş yazışmaları, raporlar, bilimsel çalışmalar – cümleleri ve paragrafları birbirine bağlar.
+
+> *Die Finanzierung ist noch ungeklärt. **Diesbezüglich** sind weitere Gespräche nötig.*
+> (Finansman henüz netleşmedi. Bu konuda başka görüşmeler gerekli.)
+
+### Kullanımı
+| konum | örnek |
+| ---- | ---- |
+| cümle başı (fiil ardından gelir) | ***Diesbezüglich** **liegen** uns keine Informationen vor.* (Bu konuda elimizde bilgi yok.) |
+| cümle ortası | *Wir werden Sie **diesbezüglich** informieren.* (Sizi bu konuda bilgilendireceğiz.) |
+| sıfat olarak | *Ihre **diesbezügliche** Anfrage* (bu konudaki talebiniz) |
+
+### İlgili gönderim ifadeleri
+| ifade | yapı | örnek |
+| ---- | ---- | ---- |
+| **diesbezüglich** | zarf (geriye gönderir) | *Diesbezüglich gibt es Bedenken.* (Bu konuda kaygılar var.) |
+| **bezüglich** + G | edat | ***Bezüglich** Ihrer Anfrage …* (Talebinize ilişkin …) |
+| **hinsichtlich** + G | edat | ***Hinsichtlich** der Kosten …* (Maliyetler bakımından …) |
+| **in Bezug auf** + A | edat öbeği | ***In Bezug auf** das Projekt …* (Projeyle ilgili olarak …) |
+| **was … betrifft / angeht** | yan cümle | ***Was** die Kosten **betrifft**, …* (Maliyetlere gelince …) |
+| **in dieser Hinsicht** | nötr alternatif | ***In dieser Hinsicht** stimme ich Ihnen zu.* (Bu bakımdan size katılıyorum.) |
+| **dahingehend** | bu yönde | *Wir haben uns **dahingehend** geeinigt, dass …* (… yönünde anlaştık.) |
+
+### Dil düzeyi
+| nötr | resmî | çok resmî |
+| ---- | ---- | ---- |
+| dazu, da, was das angeht | in dieser Hinsicht, in Bezug darauf | diesbezüglich, hinsichtlich dessen |
+
+### İş yazışmalarında tipik ifadeler
+- *Für **diesbezügliche** Rückfragen stehe ich Ihnen gern zur Verfügung.* (Bu konudaki sorularınız için memnuniyetle hizmetinizdeyim.)
+- ***Diesbezüglich** bitten wir um Ihr Verständnis.* (Bu konuda anlayışınızı rica ederiz.)
+- *Wir werden uns **diesbezüglich** umgehend mit Ihnen in Verbindung setzen.* (Bu konuda en kısa sürede sizinle iletişime geçeceğiz.)
+
+### Sık yapılan hatalar
+- ❌ *Diesbezüglich der Kosten …* → ✅ ***Bezüglich** der Kosten …* (*diesbezüglich* nesne **almaz**!)
+- ❌ Arkadaşlar arasında *diesbezüglich* → resmî durur; daha iyisi: *da* / *was das angeht*.
+
+**Örnekler:**
+- *Die Lieferung verzögert sich. **Diesbezüglich** möchten wir uns entschuldigen.* (Teslimat gecikiyor. Bu konuda özür dileriz.)
+- *Die Ergebnisse sind widersprüchlich; **diesbezüglich** besteht weiterer Forschungsbedarf.* (Sonuçlar çelişkili; bu konuda daha fazla araştırmaya ihtiyaç var.)
+- *Vielen Dank für Ihre **diesbezügliche** E-Mail.* (Bu konudaki e-postanız için çok teşekkürler.)
+- ***Hinsichtlich** des Termins bin ich flexibel.* (Tarih konusunda esneğim.)`,
     },
   })
   await seedExercises({
@@ -41008,12 +41704,113 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit11.id,
       order: 3,
       grammarTopic: 'Gliederungsmarker: zunächst, des Weiteren, abschließend',
-      explanationDe:
-        'Akademische Texte strukturieren Argumente mit Markern wie "zunächst" (Einleitung), "des Weiteren" (Fortsetzung), "abschließend" (Fazit).',
-      explanationEn:
-        'Academic texts structure arguments with markers like "zunächst" (firstly), "des Weiteren" (furthermore), "abschließend" (finally/in conclusion).',
-      explanationTr:
-        'Akademik metinler argümanları "zunächst" (öncelikle), "des Weiteren" (ayrıca), "abschließend" (sonuç olarak) gibi işaretleyicilerle yapılandırır.',
+      explanationDe: `## Gliederungsmarker: zunächst, des Weiteren, abschließend
+
+Akademische Texte, Referate und Präsentationen brauchen eine **klare Struktur**. **Gliederungsmarker** zeigen dem Leser, **an welcher Stelle der Argumentation** er sich befindet. Auf C2-Niveau geht es um **Vielfalt** und **Präzision**.
+
+### Die drei Phasen
+| Phase | Marker | Beispiel |
+| ---- | ---- | ---- |
+| **Einleitung** | zunächst, eingangs, einleitend, zu Beginn, vorab | ***Zunächst** wird der Forschungsstand dargestellt.* |
+| **Hauptteil (Fortsetzung)** | des Weiteren, ferner, darüber hinaus, außerdem, zudem, überdies | ***Des Weiteren** ist zu berücksichtigen, dass …* |
+| **Hauptteil (Reihung)** | erstens – zweitens – drittens; zum einen – zum anderen | ***Zum einen** fehlen Daten, **zum anderen** ist die Methode umstritten.* |
+| **Hauptteil (Gegenposition)** | demgegenüber, hingegen, andererseits | ***Demgegenüber** steht die Auffassung, dass …* |
+| **Hauptteil (Beispiel)** | beispielsweise, etwa, so | ***So** zeigt eine Studie aus dem Jahr 2020 …* |
+| **Schluss** | abschließend, zusammenfassend, resümierend, schließlich | ***Abschließend** lässt sich festhalten, dass …* |
+
+### Metatextuelle Ausdrücke (Text über den Text)
+- *Im **Folgenden** wird … untersucht.*
+- *Wie **oben** / **bereits** erwähnt, …*
+- *Darauf wird in **Kapitel 4** näher eingegangen.*
+- *Bevor auf … eingegangen wird, soll zunächst …*
+- *Nachdem nun … dargelegt wurde, wende ich mich … zu.*
+
+### Feinheiten
+- **zunächst** = am Anfang, als Erstes ≠ **zuletzt** = am Ende
+- **schließlich** kann „am Ende" **oder** „denn ja" bedeuten: *Wir müssen handeln, wir sind **schließlich** verantwortlich.*
+- **ferner** ist gehobener als *außerdem*.
+- **zum einen … zum anderen** = zwei gleichwertige Punkte (nicht Gegensatz!)
+
+### Musterabsatz (wissenschaftlich)
+***Zunächst** wird in Kapitel 2 der theoretische Rahmen erläutert. **Im Anschluss** werden die Ergebnisse der Befragung vorgestellt. **Dabei** wird **zum einen** auf die Motivation, **zum anderen** auf die Lernstrategien der Teilnehmenden eingegangen. **Des Weiteren** werden mögliche Störfaktoren diskutiert. **Abschließend** werden die Befunde zusammengefasst und ein Ausblick gegeben.*
+
+**Beispiele:**
+- ***Eingangs** sei auf die Bedeutung des Themas hingewiesen.*
+- ***Ferner** wurde untersucht, ob das Alter eine Rolle spielt.*
+- ***Zusammenfassend** lässt sich sagen, dass die Hypothese bestätigt wurde.*
+- ***Resümierend** ist festzuhalten, dass weitere Studien nötig sind.*`,
+      explanationEn: `## Structuring markers: zunächst, des Weiteren, abschließend
+
+Academic texts, presentations and talks need a **clear structure**. **Structuring markers** show the reader **where in the argument** they are. At C2 level it's about **variety** and **precision**.
+
+### The three phases
+| phase | markers | example |
+| ---- | ---- | ---- |
+| **introduction** | zunächst, eingangs, einleitend, zu Beginn, vorab (first, at the outset, by way of introduction, to begin with, beforehand) | ***Zunächst** wird der Forschungsstand dargestellt.* (First, the state of research is presented.) |
+| **main part (continuation)** | des Weiteren, ferner, darüber hinaus, außerdem, zudem, überdies (furthermore, moreover, in addition, besides) | ***Des Weiteren** ist zu berücksichtigen, dass …* (Furthermore, it must be considered that …) |
+| **main part (listing)** | erstens – zweitens – drittens; zum einen – zum anderen (firstly – secondly; on the one hand – on the other) | ***Zum einen** fehlen Daten, **zum anderen** ist die Methode umstritten.* (For one thing data are missing; for another, the method is disputed.) |
+| **main part (counter-position)** | demgegenüber, hingegen, andererseits (by contrast, however, on the other hand) | ***Demgegenüber** steht die Auffassung, dass …* (This is countered by the view that …) |
+| **main part (example)** | beispielsweise, etwa, so (for example, for instance, thus) | ***So** zeigt eine Studie aus dem Jahr 2020 …* (Thus a 2020 study shows …) |
+| **conclusion** | abschließend, zusammenfassend, resümierend, schließlich (finally, in summary, to sum up, lastly) | ***Abschließend** lässt sich festhalten, dass …* (In conclusion, it can be stated that …) |
+
+### Metatextual expressions (text about the text)
+- *Im **Folgenden** wird … untersucht.* (In what follows, … is examined.)
+- *Wie **oben** / **bereits** erwähnt, …* (As mentioned above / already …)
+- *Darauf wird in **Kapitel 4** näher eingegangen.* (This is discussed in more detail in chapter 4.)
+- *Bevor auf … eingegangen wird, soll zunächst …* (Before discussing …, we shall first …)
+- *Nachdem nun … dargelegt wurde, wende ich mich … zu.* (Having now set out …, I turn to …)
+
+### Subtleties
+- **zunächst** = at first, first of all ≠ **zuletzt** = last, at the end
+- **schließlich** can mean "finally" **or** "after all": *Wir müssen handeln, wir sind **schließlich** verantwortlich.* (We must act – we are responsible, after all.)
+- **ferner** is more elevated than *außerdem*.
+- **zum einen … zum anderen** = two equal points (not a contrast!)
+
+### Model paragraph (academic)
+***Zunächst** wird in Kapitel 2 der theoretische Rahmen erläutert. **Im Anschluss** werden die Ergebnisse der Befragung vorgestellt. **Dabei** wird **zum einen** auf die Motivation, **zum anderen** auf die Lernstrategien der Teilnehmenden eingegangen. **Des Weiteren** werden mögliche Störfaktoren diskutiert. **Abschließend** werden die Befunde zusammengefasst und ein Ausblick gegeben.*
+(First, chapter 2 explains the theoretical framework. Then the survey results are presented, addressing on the one hand the participants' motivation and on the other their learning strategies. Furthermore, possible confounding factors are discussed. Finally, the findings are summarised and an outlook is given.)
+
+**Examples:**
+- ***Eingangs** sei auf die Bedeutung des Themas hingewiesen.* (At the outset, the importance of the topic should be pointed out.)
+- ***Ferner** wurde untersucht, ob das Alter eine Rolle spielt.* (Furthermore, it was examined whether age plays a role.)
+- ***Zusammenfassend** lässt sich sagen, dass die Hypothese bestätigt wurde.* (In summary, the hypothesis was confirmed.)
+- ***Resümierend** ist festzuhalten, dass weitere Studien nötig sind.* (To sum up, further studies are needed.)`,
+      explanationTr: `## Yapılandırma belirteçleri: zunächst, des Weiteren, abschließend
+
+Akademik metinler, sunumlar ve konuşmalar **açık bir yapıya** ihtiyaç duyar. **Yapılandırma belirteçleri** okura **tartışmanın neresinde** olduğunu gösterir. C2 seviyesinde mesele **çeşitlilik** ve **kesinliktir**.
+
+### Üç aşama
+| aşama | belirteçler | örnek |
+| ---- | ---- | ---- |
+| **giriş** | zunächst, eingangs, einleitend, zu Beginn, vorab (önce, başta, giriş olarak, başlangıçta, öncelikle) | ***Zunächst** wird der Forschungsstand dargestellt.* (Önce araştırmanın mevcut durumu sunulmaktadır.) |
+| **gelişme (devam)** | des Weiteren, ferner, darüber hinaus, außerdem, zudem, überdies (ayrıca, bundan başka, bunun ötesinde, üstelik) | ***Des Weiteren** ist zu berücksichtigen, dass …* (Ayrıca … dikkate alınmalıdır.) |
+| **gelişme (sıralama)** | erstens – zweitens – drittens; zum einen – zum anderen (birincisi – ikincisi; bir yandan – diğer yandan) | ***Zum einen** fehlen Daten, **zum anderen** ist die Methode umstritten.* (Bir yandan veri eksik, diğer yandan yöntem tartışmalı.) |
+| **gelişme (karşı görüş)** | demgegenüber, hingegen, andererseits (buna karşılık, oysa, öte yandan) | ***Demgegenüber** steht die Auffassung, dass …* (Buna karşılık … görüşü vardır.) |
+| **gelişme (örnek)** | beispielsweise, etwa, so (örneğin, mesela, nitekim) | ***So** zeigt eine Studie aus dem Jahr 2020 …* (Nitekim 2020 tarihli bir çalışma gösteriyor ki …) |
+| **sonuç** | abschließend, zusammenfassend, resümierend, schließlich (son olarak, özetle, toparlarsak, nihayet) | ***Abschließend** lässt sich festhalten, dass …* (Son olarak … tespit edilebilir.) |
+
+### Üst metinsel ifadeler (metin hakkında metin)
+- *Im **Folgenden** wird … untersucht.* (Aşağıda … incelenmektedir.)
+- *Wie **oben** / **bereits** erwähnt, …* (Yukarıda / daha önce belirtildiği gibi …)
+- *Darauf wird in **Kapitel 4** näher eingegangen.* (Buna 4. bölümde ayrıntılı olarak değinilecektir.)
+- *Bevor auf … eingegangen wird, soll zunächst …* (…'e değinmeden önce, öncelikle …)
+- *Nachdem nun … dargelegt wurde, wende ich mich … zu.* (… ortaya konduktan sonra şimdi …'e geçiyorum.)
+
+### İncelikler
+- **zunächst** = önce, ilk olarak ≠ **zuletzt** = en son, sonunda
+- **schließlich** „nihayet" **veya** „ne de olsa" anlamına gelebilir: *Wir müssen handeln, wir sind **schließlich** verantwortlich.* (Harekete geçmeliyiz, ne de olsa sorumluyuz.)
+- **ferner**, *außerdem*'den daha yüksek üsluptur.
+- **zum einen … zum anderen** = iki eşdeğer nokta (karşıtlık değil!)
+
+### Örnek paragraf (bilimsel)
+***Zunächst** wird in Kapitel 2 der theoretische Rahmen erläutert. **Im Anschluss** werden die Ergebnisse der Befragung vorgestellt. **Dabei** wird **zum einen** auf die Motivation, **zum anderen** auf die Lernstrategien der Teilnehmenden eingegangen. **Des Weiteren** werden mögliche Störfaktoren diskutiert. **Abschließend** werden die Befunde zusammengefasst und ein Ausblick gegeben.*
+(Önce 2. bölümde kuramsal çerçeve açıklanmaktadır. Ardından anket sonuçları sunulmakta; bu bağlamda bir yandan katılımcıların motivasyonuna, diğer yandan öğrenme stratejilerine değinilmektedir. Ayrıca olası bozucu etkenler tartışılmaktadır. Son olarak bulgular özetlenmekte ve geleceğe dönük bir değerlendirme yapılmaktadır.)
+
+**Örnekler:**
+- ***Eingangs** sei auf die Bedeutung des Themas hingewiesen.* (Başta konunun önemine dikkat çekmek gerekir.)
+- ***Ferner** wurde untersucht, ob das Alter eine Rolle spielt.* (Bundan başka yaşın bir rol oynayıp oynamadığı incelendi.)
+- ***Zusammenfassend** lässt sich sagen, dass die Hypothese bestätigt wurde.* (Özetle hipotezin doğrulandığı söylenebilir.)
+- ***Resümierend** ist festzuhalten, dass weitere Studien nötig sind.* (Toparlarsak, başka çalışmalara ihtiyaç olduğu tespit edilmelidir.)`,
     },
   })
   await seedExercises({
@@ -41042,12 +41839,113 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit11.id,
       order: 4,
       grammarTopic: 'Übung: Diskursmarker im akademischen Text',
-      explanationDe:
-        'Wiederholung: Diskursmarker wie "mithin", "diesbezüglich", "zunächst" und "abschließend" strukturieren akademische Argumentation klar und präzise.',
-      explanationEn:
-        'Review: discourse markers like "mithin", "diesbezüglich", "zunächst", and "abschließend" structure academic argumentation clearly and precisely.',
-      explanationTr:
-        'Tekrar: "mithin", "diesbezüglich", "zunächst" ve "abschließend" gibi söylem işaretleyicileri akademik argümantasyonu net ve kesin şekilde yapılandırır.',
+      explanationDe: `## Übung: Diskursmarker im akademischen Text – Zusammenfassung
+
+Diskursmarker wie *mithin*, *diesbezüglich*, *zunächst* und *abschließend* strukturieren akademische Argumentation **klar und präzise**. Sie sind die „Verkehrszeichen" eines wissenschaftlichen Textes.
+
+### Diskursmarker nach Funktion
+| Funktion | Marker |
+| ---- | ---- |
+| **Gliederung** | zunächst, eingangs, im Folgenden, des Weiteren, ferner, abschließend, zusammenfassend |
+| **Folgerung** | mithin, folglich, somit, demnach, daraus ergibt sich |
+| **Bezug / Verweis** | diesbezüglich, hinsichtlich, bezüglich, in Bezug auf, wie oben erwähnt |
+| **Mittel** | mithilfe, mittels, anhand, durch |
+| **Gegensatz** | demgegenüber, hingegen, jedoch, gleichwohl |
+| **Beispiel** | beispielsweise, etwa, so, exemplarisch |
+| **Einschränkung** | allerdings, freilich, jedoch, einschränkend ist zu sagen |
+| **Hervorhebung** | insbesondere, vor allem, nicht zuletzt, hervorzuheben ist |
+
+### Verwechslungsgefahr – Übersicht
+| ähnlich | aber verschieden |
+| ---- | ---- |
+| **mithin** (folglich) | **mithilfe** (mit Unterstützung von) |
+| **diesbezüglich** (ohne Objekt) | **bezüglich** + Genitiv |
+| **zunächst** (zuerst) | **zuletzt** (am Ende) |
+| **anhand** + G (auf Grundlage von) | **anstatt** + G (statt) |
+
+### Ein akademischer Absatz mit vielen Markern
+***Im Folgenden** wird untersucht, inwiefern soziale Medien das Leseverhalten beeinflussen. **Zunächst** wurden **mithilfe** eines Fragebogens 500 Studierende befragt. Die Ergebnisse zeigen einen deutlichen Rückgang der Lesezeit. **Diesbezüglich** ist **allerdings** zu beachten, dass nur eine Altersgruppe befragt wurde. **Mithin** lassen sich die Befunde nicht verallgemeinern. **Abschließend** werden Empfehlungen für weitere Studien gegeben.*
+
+### Tipp
+Zu viele Diskursmarker machen einen Text **schwerfällig**. Pro Satz genügt meist **einer**.
+
+**Beispiele:**
+- ***Anhand** zweier Fallbeispiele wird die These veranschaulicht.*
+- *Die Methode ist kostengünstig; **mithin** eignet sie sich für kleine Betriebe.*
+- ***Hervorzuheben ist** insbesondere die hohe Rücklaufquote.*
+- ***Diesbezüglich** verweise ich auf Abschnitt 3.2.*`,
+      explanationEn: `## Practice: discourse markers in academic texts – summary
+
+Discourse markers such as *mithin*, *diesbezüglich*, *zunächst* and *abschließend* structure academic argument **clearly and precisely**. They are the "road signs" of an academic text.
+
+### Discourse markers by function
+| function | markers |
+| ---- | ---- |
+| **structuring** | zunächst, eingangs, im Folgenden, des Weiteren, ferner, abschließend, zusammenfassend |
+| **conclusion** | mithin, folglich, somit, demnach, daraus ergibt sich (it follows that) |
+| **reference** | diesbezüglich, hinsichtlich, bezüglich, in Bezug auf, wie oben erwähnt |
+| **means** | mithilfe, mittels, anhand (on the basis of), durch |
+| **contrast** | demgegenüber, hingegen, jedoch, gleichwohl |
+| **example** | beispielsweise, etwa, so, exemplarisch (by way of example) |
+| **restriction** | allerdings, freilich (admittedly), jedoch, einschränkend ist zu sagen (it must be qualified that) |
+| **emphasis** | insbesondere, vor allem, nicht zuletzt, hervorzuheben ist (particularly noteworthy is) |
+
+### Easily confused – overview
+| similar | but different |
+| ---- | ---- |
+| **mithin** (consequently) | **mithilfe** (with the help of) |
+| **diesbezüglich** (no object) | **bezüglich** + genitive |
+| **zunächst** (first) | **zuletzt** (last) |
+| **anhand** + gen. (on the basis of) | **anstatt** + gen. (instead of) |
+
+### An academic paragraph with many markers
+***Im Folgenden** wird untersucht, inwiefern soziale Medien das Leseverhalten beeinflussen. **Zunächst** wurden **mithilfe** eines Fragebogens 500 Studierende befragt. Die Ergebnisse zeigen einen deutlichen Rückgang der Lesezeit. **Diesbezüglich** ist **allerdings** zu beachten, dass nur eine Altersgruppe befragt wurde. **Mithin** lassen sich die Befunde nicht verallgemeinern. **Abschließend** werden Empfehlungen für weitere Studien gegeben.*
+(In what follows, the extent to which social media influence reading behaviour is examined. First, 500 students were surveyed by means of a questionnaire. The results show a clear decline in reading time. In this regard, however, it should be noted that only one age group was surveyed. Hence the findings cannot be generalised. Finally, recommendations for further studies are given.)
+
+### Tip
+Too many discourse markers make a text **heavy**. One per sentence is usually enough.
+
+**Examples:**
+- ***Anhand** zweier Fallbeispiele wird die These veranschaulicht.* (The thesis is illustrated on the basis of two case studies.)
+- *Die Methode ist kostengünstig; **mithin** eignet sie sich für kleine Betriebe.* (The method is inexpensive; hence it is suitable for small businesses.)
+- ***Hervorzuheben ist** insbesondere die hohe Rücklaufquote.* (Particularly noteworthy is the high response rate.)
+- ***Diesbezüglich** verweise ich auf Abschnitt 3.2.* (In this regard, I refer to section 3.2.)`,
+      explanationTr: `## Alıştırma: Akademik metinde söylem belirteçleri – özet
+
+*mithin*, *diesbezüglich*, *zunächst* ve *abschließend* gibi söylem belirteçleri akademik tartışmayı **açık ve kesin** biçimde yapılandırır. Bunlar bilimsel bir metnin „trafik işaretleridir".
+
+### İşlevlerine göre söylem belirteçleri
+| işlev | belirteçler |
+| ---- | ---- |
+| **yapılandırma** | zunächst, eingangs, im Folgenden, des Weiteren, ferner, abschließend, zusammenfassend |
+| **sonuç çıkarma** | mithin, folglich, somit, demnach, daraus ergibt sich (buradan … çıkar) |
+| **gönderim** | diesbezüglich, hinsichtlich, bezüglich, in Bezug auf, wie oben erwähnt |
+| **araç** | mithilfe, mittels, anhand (… temelinde), durch |
+| **karşıtlık** | demgegenüber, hingegen, jedoch, gleichwohl |
+| **örnek** | beispielsweise, etwa, so, exemplarisch (örnek olarak) |
+| **sınırlama** | allerdings, freilich (gerçi), jedoch, einschränkend ist zu sagen (bir kayıt düşmek gerekirse) |
+| **vurgulama** | insbesondere, vor allem, nicht zuletzt, hervorzuheben ist (özellikle vurgulanmalı ki) |
+
+### Karıştırma tehlikesi – genel bakış
+| benzer | ama farklı |
+| ---- | ---- |
+| **mithin** (dolayısıyla) | **mithilfe** (… yardımıyla) |
+| **diesbezüglich** (nesnesiz) | **bezüglich** + Genitiv |
+| **zunächst** (önce) | **zuletzt** (en son) |
+| **anhand** + G (… temelinde) | **anstatt** + G (… yerine) |
+
+### Çok sayıda belirteç içeren akademik bir paragraf
+***Im Folgenden** wird untersucht, inwiefern soziale Medien das Leseverhalten beeinflussen. **Zunächst** wurden **mithilfe** eines Fragebogens 500 Studierende befragt. Die Ergebnisse zeigen einen deutlichen Rückgang der Lesezeit. **Diesbezüglich** ist **allerdings** zu beachten, dass nur eine Altersgruppe befragt wurde. **Mithin** lassen sich die Befunde nicht verallgemeinern. **Abschließend** werden Empfehlungen für weitere Studien gegeben.*
+(Aşağıda sosyal medyanın okuma davranışını ne ölçüde etkilediği incelenmektedir. Önce bir anket aracılığıyla 500 öğrenciye soru soruldu. Sonuçlar okuma süresinde belirgin bir düşüş gösteriyor. Bu konuda ancak yalnızca bir yaş grubunun sorgulandığı göz önünde bulundurulmalıdır. Dolayısıyla bulgular genellenemez. Son olarak başka çalışmalar için öneriler sunulmaktadır.)
+
+### İpucu
+Çok fazla söylem belirteci metni **ağırlaştırır**. Cümle başına genellikle **bir** tane yeterlidir.
+
+**Örnekler:**
+- ***Anhand** zweier Fallbeispiele wird die These veranschaulicht.* (Tez iki vaka örneği temelinde somutlaştırılmaktadır.)
+- *Die Methode ist kostengünstig; **mithin** eignet sie sich für kleine Betriebe.* (Yöntem düşük maliyetli; dolayısıyla küçük işletmeler için uygun.)
+- ***Hervorzuheben ist** insbesondere die hohe Rücklaufquote.* (Özellikle yüksek geri dönüş oranı vurgulanmalıdır.)
+- ***Diesbezüglich** verweise ich auf Abschnitt 3.2.* (Bu konuda 3.2. bölüme atıfta bulunuyorum.)`,
     },
   })
   await seedExercises({
@@ -41100,12 +41998,147 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit12.id,
       order: 1,
       grammarTopic: "Synonymdifferenzierung: 'sagen' Varianten",
-      explanationDe:
-        'Statt immer "sagen" zu benutzen, differenzieren Muttersprachler: "erklären" (mit Grund), "behaupten" (ohne Beweis), "betonen" (mit Nachdruck).',
-      explanationEn:
-        'Instead of always using "sagen" (to say), native speakers differentiate: "erklären" (to explain, with reasoning), "behaupten" (to claim, without proof), "betonen" (to emphasize).',
-      explanationTr:
-        'Her zaman "sagen" kullanmak yerine anadili konuşanlar ayrım yapar: "erklären" (açıklamak, gerekçeyle), "behaupten" (iddia etmek, kanıtsız), "betonen" (vurgulamak).',
+      explanationDe: `## Synonymdifferenzierung: Varianten von „sagen"
+
+Wer immer nur *sagen* benutzt, schreibt eintönig und ungenau. Muttersprachler auf hohem Niveau wählen ein Verb, das **zugleich die Art des Sprechens** und die **Haltung** ausdrückt.
+
+### Neutral berichten
+| Verb | Nuance | Beispiel |
+| ---- | ---- | ---- |
+| **mitteilen** | informieren (offiziell) | *Die Firma **teilte mit**, dass …* |
+| **erklären** | darlegen, oft mit Begründung | *Sie **erklärte**, warum sie gekündigt hatte.* |
+| **berichten** | über Ereignisse informieren | *Er **berichtete** von seiner Reise.* |
+| **äußern** | eine Meinung aussprechen | *Er **äußerte** Bedenken.* |
+| **angeben** | als Information nennen (Polizei, Formular) | *Der Zeuge **gab an**, nichts gesehen zu haben.* |
+
+### Haltung des Sprechers
+| Verb | Nuance | Beispiel |
+| ---- | ---- | ---- |
+| **behaupten** | etwas ohne Beweis als wahr darstellen | *Er **behauptet**, er sei unschuldig.* |
+| **betonen** | mit Nachdruck sagen | *Sie **betonte**, wie wichtig das sei.* |
+| **versichern** | garantieren, beteuern | *Er **versicherte**, pünktlich zu sein.* |
+| **zugeben / einräumen** | etwas Unangenehmes eingestehen | *Sie **räumte ein**, einen Fehler gemacht zu haben.* |
+| **bestreiten / leugnen** | etwas zurückweisen | *Er **bestritt** die Vorwürfe.* |
+| **andeuten** | indirekt zu verstehen geben | *Sie **deutete an**, dass sie gehen wolle.* |
+| **unterstellen** | jemandem etwas (Negatives) vorwerfen | *Man **unterstellte** ihm Absicht.* |
+| **einwenden** | einen Gegengrund nennen | *Er **wandte ein**, das sei zu teuer.* |
+
+### Art des Sprechens
+| Verb | Nuance |
+| ---- | ---- |
+| **flüstern** | sehr leise |
+| **murmeln** | undeutlich, leise |
+| **rufen / schreien** | laut |
+| **stammeln / stottern** | stockend |
+| **plaudern** | locker, gemütlich |
+| **schimpfen** | verärgert, kritisierend |
+| **seufzen** | traurig, resigniert |
+| **ankündigen** | etwas Zukünftiges bekannt geben |
+
+### Wirkung im Text
+- *Der Minister **sagte**, die Steuern würden nicht steigen.* (neutral, blass)
+- *Der Minister **versicherte**, die Steuern würden nicht steigen.* (er garantiert es)
+- *Der Minister **behauptete**, die Steuern würden nicht steigen.* (Zweifel des Schreibers!)
+
+**Beispiele:**
+- *Die Angeklagte **bestritt** jede Beteiligung.*
+- *„Ich habe Angst", **flüsterte** das Kind.*
+- *Der Trainer **räumte ein**, dass die Mannschaft schlecht gespielt hatte.*
+- *Die Regierung **kündigte** neue Maßnahmen **an**.*`,
+      explanationEn: `## Distinguishing synonyms: variants of "sagen"
+
+If you always use *sagen* (say), your writing is monotonous and imprecise. High-level native speakers choose a verb that expresses **both the manner of speaking** and **the attitude**.
+
+### Neutral reporting
+| verb | nuance | example |
+| ---- | ---- | ---- |
+| **mitteilen** | to inform, announce (officially) | *Die Firma **teilte mit**, dass …* (The company announced that …) |
+| **erklären** | to explain, state, often with reasons | *Sie **erklärte**, warum sie gekündigt hatte.* (She explained why she had resigned.) |
+| **berichten** | to report on events | *Er **berichtete** von seiner Reise.* (He reported on his trip.) |
+| **äußern** | to express an opinion | *Er **äußerte** Bedenken.* (He voiced concerns.) |
+| **angeben** | to state as information (police, form) | *Der Zeuge **gab an**, nichts gesehen zu haben.* (The witness stated he had seen nothing.) |
+
+### Speaker's attitude
+| verb | nuance | example |
+| ---- | ---- | ---- |
+| **behaupten** | to claim without proof | *Er **behauptet**, er sei unschuldig.* (He claims he is innocent.) |
+| **betonen** | to stress | *Sie **betonte**, wie wichtig das sei.* (She stressed how important it was.) |
+| **versichern** | to assure, guarantee | *Er **versicherte**, pünktlich zu sein.* (He assured us he would be on time.) |
+| **zugeben / einräumen** | to admit, concede | *Sie **räumte ein**, einen Fehler gemacht zu haben.* (She admitted making a mistake.) |
+| **bestreiten / leugnen** | to deny | *Er **bestritt** die Vorwürfe.* (He denied the allegations.) |
+| **andeuten** | to hint | *Sie **deutete an**, dass sie gehen wolle.* (She hinted that she wanted to leave.) |
+| **unterstellen** | to insinuate, impute | *Man **unterstellte** ihm Absicht.* (He was accused of doing it on purpose.) |
+| **einwenden** | to object | *Er **wandte ein**, das sei zu teuer.* (He objected that it was too expensive.) |
+
+### Manner of speaking
+| verb | nuance |
+| ---- | ---- |
+| **flüstern** | whisper |
+| **murmeln** | mumble |
+| **rufen / schreien** | call / shout |
+| **stammeln / stottern** | stammer / stutter |
+| **plaudern** | chat |
+| **schimpfen** | grumble, scold |
+| **seufzen** | sigh |
+| **ankündigen** | announce (something in the future) |
+
+### Effect in a text
+- *Der Minister **sagte**, die Steuern würden nicht steigen.* (The minister said taxes wouldn't rise. – neutral, pale)
+- *Der Minister **versicherte**, die Steuern würden nicht steigen.* (… assured – he guarantees it)
+- *Der Minister **behauptete**, die Steuern würden nicht steigen.* (… claimed – the writer doubts it!)
+
+**Examples:**
+- *Die Angeklagte **bestritt** jede Beteiligung.* (The defendant denied any involvement.)
+- *„Ich habe Angst", **flüsterte** das Kind.* ("I'm scared," the child whispered.)
+- *Der Trainer **räumte ein**, dass die Mannschaft schlecht gespielt hatte.* (The coach admitted the team had played badly.)
+- *Die Regierung **kündigte** neue Maßnahmen **an**.* (The government announced new measures.)`,
+      explanationTr: `## Eş anlamlıları ayırt etmek: „sagen"in varyantları
+
+Hep *sagen* (söylemek) kullanan kişi tekdüze ve belirsiz yazar. Üst düzey anadil konuşurları hem **konuşma biçimini** hem de **tutumu** ifade eden bir fiil seçer.
+
+### Tarafsız aktarma
+| fiil | incelik | örnek |
+| ---- | ---- | ---- |
+| **mitteilen** | bildirmek (resmî) | *Die Firma **teilte mit**, dass …* (Firma … bildirdi.) |
+| **erklären** | açıklamak, çoğu zaman gerekçeyle | *Sie **erklärte**, warum sie gekündigt hatte.* (Neden istifa ettiğini açıkladı.) |
+| **berichten** | olaylar hakkında bilgi vermek | *Er **berichtete** von seiner Reise.* (Yolculuğunu anlattı.) |
+| **äußern** | görüş bildirmek | *Er **äußerte** Bedenken.* (Kaygılarını dile getirdi.) |
+| **angeben** | bilgi olarak beyan etmek (polis, form) | *Der Zeuge **gab an**, nichts gesehen zu haben.* (Tanık hiçbir şey görmediğini beyan etti.) |
+
+### Konuşanın tutumu
+| fiil | incelik | örnek |
+| ---- | ---- | ---- |
+| **behaupten** | kanıtsız iddia etmek | *Er **behauptet**, er sei unschuldig.* (Masum olduğunu iddia ediyor.) |
+| **betonen** | vurgulamak | *Sie **betonte**, wie wichtig das sei.* (Bunun ne kadar önemli olduğunu vurguladı.) |
+| **versichern** | temin etmek, güvence vermek | *Er **versicherte**, pünktlich zu sein.* (Zamanında olacağına dair güvence verdi.) |
+| **zugeben / einräumen** | itiraf etmek, kabul etmek | *Sie **räumte ein**, einen Fehler gemacht zu haben.* (Hata yaptığını kabul etti.) |
+| **bestreiten / leugnen** | inkâr etmek | *Er **bestritt** die Vorwürfe.* (Suçlamaları reddetti.) |
+| **andeuten** | ima etmek | *Sie **deutete an**, dass sie gehen wolle.* (Gitmek istediğini ima etti.) |
+| **unterstellen** | (olumsuz bir şey) yakıştırmak | *Man **unterstellte** ihm Absicht.* (Kasıtlı yaptığı ileri sürüldü.) |
+| **einwenden** | itiraz etmek | *Er **wandte ein**, das sei zu teuer.* (Bunun çok pahalı olduğunu öne sürerek itiraz etti.) |
+
+### Konuşma biçimi
+| fiil | incelik |
+| ---- | ---- |
+| **flüstern** | fısıldamak |
+| **murmeln** | mırıldanmak |
+| **rufen / schreien** | seslenmek / bağırmak |
+| **stammeln / stottern** | kekelemek |
+| **plaudern** | sohbet etmek, laflamak |
+| **schimpfen** | söylenmek, azarlamak |
+| **seufzen** | iç geçirmek |
+| **ankündigen** | (gelecekteki bir şeyi) duyurmak |
+
+### Metindeki etkisi
+- *Der Minister **sagte**, die Steuern würden nicht steigen.* (Bakan vergilerin artmayacağını söyledi. – tarafsız, renksiz)
+- *Der Minister **versicherte**, die Steuern würden nicht steigen.* (… güvence verdi – garanti ediyor)
+- *Der Minister **behauptete**, die Steuern würden nicht steigen.* (… iddia etti – yazar şüpheli!)
+
+**Örnekler:**
+- *Die Angeklagte **bestritt** jede Beteiligung.* (Sanık her türlü müdahaleyi inkâr etti.)
+- *„Ich habe Angst", **flüsterte** das Kind.* („Korkuyorum" diye fısıldadı çocuk.)
+- *Der Trainer **räumte ein**, dass die Mannschaft schlecht gespielt hatte.* (Antrenör takımın kötü oynadığını kabul etti.)
+- *Die Regierung **kündigte** neue Maßnahmen **an**.* (Hükümet yeni önlemler açıkladı.)`,
     },
   })
   await seedExercises({
@@ -41134,12 +42167,150 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit12.id,
       order: 2,
       grammarTopic: "Synonymdifferenzierung: 'groß' Varianten",
-      explanationDe:
-        'Statt "groß" gibt es präzisere Wörter: "gewaltig" (sehr groß, beeindruckend), "beträchtlich" (bedeutend, messbar), "immens" (unermesslich groß).',
-      explanationEn:
-        'Instead of "groß" (big), there are more precise words: "gewaltig" (huge, impressive), "beträchtlich" (considerable, measurable), "immens" (immense).',
-      explanationTr:
-        '"Groß" yerine daha kesin kelimeler vardır: "gewaltig" (muazzam, etkileyici), "beträchtlich" (önemli, ölçülebilir), "immens" (ölçülemez büyüklükte).',
+      explanationDe: `## Synonymdifferenzierung: Varianten von „groß"
+
+„groß" ist ein Allerweltswort. Präzise Schreiber wählen Adjektive, die **Art und Grad der Größe** genauer bestimmen – und den **Ton** des Textes treffen.
+
+### Grad der Größe
+| Adjektiv | Nuance | Beispiel |
+| ---- | ---- | ---- |
+| **beträchtlich** | bedeutend, messbar (sachlich) | *ein **beträchtlicher** Gewinn* |
+| **erheblich** | deutlich, ins Gewicht fallend | ***erhebliche** Mängel* |
+| **beachtlich** | bemerkenswert groß (positiv) | *eine **beachtliche** Leistung* |
+| **gewaltig** | sehr groß, beeindruckend, kraftvoll | *ein **gewaltiger** Sturm* |
+| **enorm** | außergewöhnlich groß | ***enorme** Kosten* |
+| **immens** | unermesslich groß | *ein **immenser** Aufwand* |
+| **riesig** | sehr groß (alltäglich) | *ein **riesiges** Haus* |
+| **gigantisch** | extrem groß | *ein **gigantisches** Projekt* |
+
+### Art der Größe
+| Adjektiv | wofür? | Beispiel |
+| ---- | ---- | ---- |
+| **hoch** | Höhe, Zahlen, Preise | *ein **hohes** Gebäude, **hohe** Kosten* |
+| **weit** | Entfernung, Fläche | *ein **weites** Feld* |
+| **geräumig** | Räume (viel Platz) | *eine **geräumige** Wohnung* |
+| **umfangreich** | Menge, Inhalt | *ein **umfangreiches** Programm* |
+| **ausgedehnt** | Fläche, Zeit | ***ausgedehnte** Wälder, ein **ausgedehnter** Spaziergang* |
+| **stattlich** | imposant, ansehnlich | *ein **stattlicher** Mann, eine **stattliche** Summe* |
+| **bedeutend** | Wichtigkeit | *ein **bedeutender** Wissenschaftler* |
+| **schwerwiegend** | Folgen, Probleme | *ein **schwerwiegender** Fehler* |
+
+### Kollokationen – was passt zusammen?
+| ✅ üblich | ❌ unüblich |
+| ---- | ---- |
+| *hohe Kosten* | *große Kosten* |
+| *ein schwerwiegender Fehler* | *ein riesiger Fehler* (umgangssprachlich ok) |
+| *erhebliche Verluste* | *gewaltige Verluste* (möglich, aber emotionaler) |
+| *eine geräumige Küche* | *eine weite Küche* |
+| *eine starke Nachfrage* | *eine große Nachfrage* (auch möglich) |
+
+### Register
+- **sachlich / formell**: beträchtlich, erheblich, umfangreich, bedeutend
+- **emotional / bildhaft**: gewaltig, enorm, immens, gigantisch
+- **alltäglich**: riesig, mega (ugs.), total groß (ugs.)
+
+**Beispiele:**
+- *Das Unternehmen erzielte einen **beträchtlichen** Gewinn.*
+- *Der Bericht weist **erhebliche** Mängel auf.*
+- *Vor uns lag ein **gewaltiges** Gebirge.*
+- *Die Sanierung erfordert einen **immensen** finanziellen Aufwand.*
+- *Das war ein **schwerwiegender** Fehler mit weitreichenden Folgen.*`,
+      explanationEn: `## Distinguishing synonyms: variants of "groß"
+
+"groß" (big, large) is an all-purpose word. Precise writers choose adjectives that specify **the kind and degree of size** more exactly – and hit the right **tone** for the text.
+
+### Degree of size
+| adjective | nuance | example |
+| ---- | ---- | ---- |
+| **beträchtlich** | considerable, measurable (objective) | *ein **beträchtlicher** Gewinn* (a considerable profit) |
+| **erheblich** | significant, substantial | ***erhebliche** Mängel* (substantial defects) |
+| **beachtlich** | remarkable (positive) | *eine **beachtliche** Leistung* (a remarkable achievement) |
+| **gewaltig** | huge, powerful, imposing | *ein **gewaltiger** Sturm* (a tremendous storm) |
+| **enorm** | enormous | ***enorme** Kosten* (enormous costs) |
+| **immens** | immense | *ein **immenser** Aufwand* (an immense effort) |
+| **riesig** | huge (everyday) | *ein **riesiges** Haus* (a huge house) |
+| **gigantisch** | gigantic | *ein **gigantisches** Projekt* (a gigantic project) |
+
+### Kind of size
+| adjective | used for | example |
+| ---- | ---- | ---- |
+| **hoch** | height, numbers, prices | *ein **hohes** Gebäude, **hohe** Kosten* (a tall building, high costs) |
+| **weit** | distance, area | *ein **weites** Feld* (a wide field) |
+| **geräumig** | rooms (lots of space) | *eine **geräumige** Wohnung* (a spacious flat) |
+| **umfangreich** | amount, content | *ein **umfangreiches** Programm* (an extensive programme) |
+| **ausgedehnt** | area, time | ***ausgedehnte** Wälder, ein **ausgedehnter** Spaziergang* (extensive forests, a long walk) |
+| **stattlich** | imposing, sizeable | *ein **stattlicher** Mann, eine **stattliche** Summe* (a fine figure of a man, a tidy sum) |
+| **bedeutend** | importance | *ein **bedeutender** Wissenschaftler* (an eminent scientist) |
+| **schwerwiegend** | consequences, problems | *ein **schwerwiegender** Fehler* (a grave mistake) |
+
+### Collocations – what goes together?
+| ✅ usual | ❌ unusual |
+| ---- | ---- |
+| *hohe Kosten* (high costs) | *große Kosten* |
+| *ein schwerwiegender Fehler* (a serious mistake) | *ein riesiger Fehler* (OK colloquially) |
+| *erhebliche Verluste* (substantial losses) | *gewaltige Verluste* (possible, but more emotional) |
+| *eine geräumige Küche* (a spacious kitchen) | *eine weite Küche* |
+| *eine starke Nachfrage* (strong demand) | *eine große Nachfrage* (also possible) |
+
+### Register
+- **objective / formal**: beträchtlich, erheblich, umfangreich, bedeutend
+- **emotional / figurative**: gewaltig, enorm, immens, gigantisch
+- **everyday**: riesig, mega (colloq.), total groß (colloq.)
+
+**Examples:**
+- *Das Unternehmen erzielte einen **beträchtlichen** Gewinn.* (The company made a considerable profit.)
+- *Der Bericht weist **erhebliche** Mängel auf.* (The report has substantial shortcomings.)
+- *Vor uns lag ein **gewaltiges** Gebirge.* (A mighty mountain range lay before us.)
+- *Die Sanierung erfordert einen **immensen** finanziellen Aufwand.* (The renovation requires immense financial outlay.)
+- *Das war ein **schwerwiegender** Fehler mit weitreichenden Folgen.* (That was a grave mistake with far-reaching consequences.)`,
+      explanationTr: `## Eş anlamlıları ayırt etmek: „groß"un varyantları
+
+„groß" (büyük) her yere uyan bir kelimedir. Özenli yazarlar **büyüklüğün türünü ve derecesini** daha kesin belirten – ve metnin **tonunu** tutturan – sıfatlar seçer.
+
+### Büyüklüğün derecesi
+| sıfat | incelik | örnek |
+| ---- | ---- | ---- |
+| **beträchtlich** | kayda değer, ölçülebilir (nesnel) | *ein **beträchtlicher** Gewinn* (kayda değer bir kâr) |
+| **erheblich** | önemli ölçüde, ciddi | ***erhebliche** Mängel* (ciddi eksiklikler) |
+| **beachtlich** | dikkate değer (olumlu) | *eine **beachtliche** Leistung* (dikkate değer bir başarı) |
+| **gewaltig** | muazzam, güçlü, heybetli | *ein **gewaltiger** Sturm* (muazzam bir fırtına) |
+| **enorm** | olağanüstü büyük | ***enorme** Kosten* (muazzam maliyetler) |
+| **immens** | ölçülemeyecek kadar büyük | *ein **immenser** Aufwand* (devasa bir çaba) |
+| **riesig** | kocaman (gündelik) | *ein **riesiges** Haus* (kocaman bir ev) |
+| **gigantisch** | dev gibi | *ein **gigantisches** Projekt* (devasa bir proje) |
+
+### Büyüklüğün türü
+| sıfat | ne için? | örnek |
+| ---- | ---- | ---- |
+| **hoch** | yükseklik, sayılar, fiyatlar | *ein **hohes** Gebäude, **hohe** Kosten* (yüksek bir bina, yüksek maliyetler) |
+| **weit** | mesafe, alan | *ein **weites** Feld* (geniş bir tarla) |
+| **geräumig** | mekânlar (çok yer) | *eine **geräumige** Wohnung* (ferah bir daire) |
+| **umfangreich** | miktar, içerik | *ein **umfangreiches** Programm* (kapsamlı bir program) |
+| **ausgedehnt** | alan, zaman | ***ausgedehnte** Wälder, ein **ausgedehnter** Spaziergang* (geniş ormanlar, uzun bir yürüyüş) |
+| **stattlich** | heybetli, azımsanmayacak | *ein **stattlicher** Mann, eine **stattliche** Summe* (yapılı bir adam, azımsanmayacak bir meblağ) |
+| **bedeutend** | önem | *ein **bedeutender** Wissenschaftler* (önemli bir bilim insanı) |
+| **schwerwiegend** | sonuçlar, sorunlar | *ein **schwerwiegender** Fehler* (vahim bir hata) |
+
+### Eşdizimler – ne neyle uyumlu?
+| ✅ yaygın | ❌ alışılmadık |
+| ---- | ---- |
+| *hohe Kosten* (yüksek maliyetler) | *große Kosten* |
+| *ein schwerwiegender Fehler* (vahim bir hata) | *ein riesiger Fehler* (gündelik dilde olur) |
+| *erhebliche Verluste* (ciddi kayıplar) | *gewaltige Verluste* (mümkün, ama daha duygusal) |
+| *eine geräumige Küche* (ferah bir mutfak) | *eine weite Küche* |
+| *eine starke Nachfrage* (güçlü talep) | *eine große Nachfrage* (o da olur) |
+
+### Dil düzeyi
+- **nesnel / resmî**: beträchtlich, erheblich, umfangreich, bedeutend
+- **duygusal / imgeli**: gewaltig, enorm, immens, gigantisch
+- **gündelik**: riesig, mega (gündelik), total groß (gündelik)
+
+**Örnekler:**
+- *Das Unternehmen erzielte einen **beträchtlichen** Gewinn.* (Şirket kayda değer bir kâr elde etti.)
+- *Der Bericht weist **erhebliche** Mängel auf.* (Raporda ciddi eksiklikler var.)
+- *Vor uns lag ein **gewaltiges** Gebirge.* (Önümüzde heybetli bir sıradağ uzanıyordu.)
+- *Die Sanierung erfordert einen **immensen** finanziellen Aufwand.* (Restorasyon muazzam bir mali yük gerektiriyor.)
+- *Das war ein **schwerwiegender** Fehler mit weitreichenden Folgen.* (Bu, geniş kapsamlı sonuçları olan vahim bir hataydı.)`,
     },
   })
   await seedExercises({
@@ -41168,12 +42339,138 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit12.id,
       order: 3,
       grammarTopic: 'Präzise Verben statt Allgemeinbegriffe',
-      explanationDe:
-        'Statt "machen" präzisiert man oft: "herstellen" (produzieren), "durchführen" (ein Verfahren ausführen), "erledigen" (eine Aufgabe abschließen).',
-      explanationEn:
-        'Instead of "machen" (to do/make), German often uses more precise verbs: "herstellen" (to manufacture), "durchführen" (to carry out a procedure), "erledigen" (to complete a task).',
-      explanationTr:
-        '"Machen" yerine genellikle daha kesin fiiller kullanılır: "herstellen" (üretmek), "durchführen" (bir prosedürü yürütmek), "erledigen" (bir görevi tamamlamak).',
+      explanationDe: `## Präzise Verben statt Allgemeinbegriffe
+
+Verben wie **machen, tun, geben, haben, gehen, bekommen** sind praktisch, aber **unpräzise**. In anspruchsvollen Texten ersetzt man sie durch **genauere Verben**, die zum Kontext passen.
+
+### „machen" präzisieren
+| allgemein | präzise | Bedeutung |
+| ---- | ---- | ---- |
+| ein Produkt machen | ein Produkt **herstellen / produzieren** | erzeugen |
+| eine Untersuchung machen | eine Untersuchung **durchführen** | ein Verfahren ausführen |
+| eine Aufgabe machen | eine Aufgabe **erledigen** | abschließen |
+| einen Plan machen | einen Plan **entwerfen / erstellen** | konzipieren |
+| einen Fehler machen | einen Fehler **begehen** (formell) | |
+| Fotos machen | Fotos **aufnehmen** | |
+| ein Haus machen | ein Haus **bauen / errichten** | |
+| Essen machen | Essen **zubereiten** | kochen |
+| eine Pause machen | eine Pause **einlegen** | |
+| Musik machen | Musik **komponieren / spielen** | |
+
+### „geben", „haben", „gehen", „bekommen" präzisieren
+| allgemein | präzise |
+| ---- | ---- |
+| *Es gibt Probleme.* | *Es **bestehen / treten** Probleme **auf**.* |
+| *Antwort geben* | *antworten, **erwidern*** |
+| *Er hat einen Preis.* | *Er **erhielt** einen Preis. / Ihm **wurde** ein Preis **verliehen**.* |
+| *Die Firma hat 200 Mitarbeiter.* | *Die Firma **beschäftigt** 200 Mitarbeiter.* |
+| *Der Weg geht durch den Wald.* | *Der Weg **führt** durch den Wald.* |
+| *Die Preise gehen hoch.* | *Die Preise **steigen**.* |
+| *Er bekommt Hilfe.* | *Er **erhält** Unterstützung.* |
+| *Das Buch hat drei Teile.* | *Das Buch **gliedert sich** in drei Teile. / **besteht aus** …* |
+
+### Ein Absatz – vorher und nachher
+**Vorher:** *Wir **haben** eine Umfrage **gemacht**. Es **gab** viele Antworten. Dann **haben** wir die Daten **gemacht** und einen Bericht **gemacht**.*
+
+**Nachher:** *Wir **führten** eine Umfrage **durch** und **erhielten** zahlreiche Antworten. Anschließend **werteten** wir die Daten **aus** und **verfassten** einen Bericht.*
+
+### Tipp
+Fragen Sie sich bei jedem *machen*: **Was genau passiert hier?** Herstellen? Durchführen? Erledigen? Verfassen? – Ein Wörterbuch mit **Kollokationen** (Wortverbindungen) hilft dabei.
+
+**Beispiele:**
+- *Das Unternehmen **stellt** Solarmodule **her**.*
+- *Die Ärzte **führten** eine Operation **durch**.*
+- *Ich habe alle Aufgaben **erledigt**.*
+- *Die Kommission **erarbeitete** einen Lösungsvorschlag.*
+- *Der Autor **verfasste** drei Romane.*`,
+      explanationEn: `## Precise verbs instead of general ones
+
+Verbs like **machen, tun, geben, haben, gehen, bekommen** (make/do, give, have, go, get) are handy but **imprecise**. In sophisticated texts you replace them with **more exact verbs** that fit the context.
+
+### Making "machen" precise
+| general | precise | meaning |
+| ---- | ---- | ---- |
+| ein Produkt machen | ein Produkt **herstellen / produzieren** | manufacture, produce |
+| eine Untersuchung machen | eine Untersuchung **durchführen** | carry out (a procedure) |
+| eine Aufgabe machen | eine Aufgabe **erledigen** | complete, deal with |
+| einen Plan machen | einen Plan **entwerfen / erstellen** | draw up, devise |
+| einen Fehler machen | einen Fehler **begehen** (formal) | commit |
+| Fotos machen | Fotos **aufnehmen** | take |
+| ein Haus machen | ein Haus **bauen / errichten** | build, erect |
+| Essen machen | Essen **zubereiten** | prepare |
+| eine Pause machen | eine Pause **einlegen** | take a break |
+| Musik machen | Musik **komponieren / spielen** | compose / play |
+
+### Making "geben", "haben", "gehen", "bekommen" precise
+| general | precise |
+| ---- | ---- |
+| *Es gibt Probleme.* (There are problems.) | *Es **bestehen / treten** Probleme **auf**.* (Problems exist / arise.) |
+| *Antwort geben* (give an answer) | *antworten, **erwidern*** (reply, retort) |
+| *Er hat einen Preis.* (He has a prize.) | *Er **erhielt** einen Preis. / Ihm **wurde** ein Preis **verliehen**.* (He received / was awarded a prize.) |
+| *Die Firma hat 200 Mitarbeiter.* (The company has 200 staff.) | *Die Firma **beschäftigt** 200 Mitarbeiter.* (The company employs 200 staff.) |
+| *Der Weg geht durch den Wald.* (The path goes through the forest.) | *Der Weg **führt** durch den Wald.* (The path leads through the forest.) |
+| *Die Preise gehen hoch.* (Prices go up.) | *Die Preise **steigen**.* (Prices rise.) |
+| *Er bekommt Hilfe.* (He gets help.) | *Er **erhält** Unterstützung.* (He receives support.) |
+| *Das Buch hat drei Teile.* (The book has three parts.) | *Das Buch **gliedert sich** in drei Teile. / **besteht aus** …* (The book is divided into / consists of three parts.) |
+
+### One paragraph – before and after
+**Before:** *Wir **haben** eine Umfrage **gemacht**. Es **gab** viele Antworten. Dann **haben** wir die Daten **gemacht** und einen Bericht **gemacht**.* (We made a survey. There were many answers. Then we did the data and made a report.)
+
+**After:** *Wir **führten** eine Umfrage **durch** und **erhielten** zahlreiche Antworten. Anschließend **werteten** wir die Daten **aus** und **verfassten** einen Bericht.* (We conducted a survey and received numerous responses. We then analysed the data and wrote a report.)
+
+### Tip
+Every time you write *machen*, ask yourself: **what exactly is happening here?** Manufacturing? Carrying out? Completing? Writing? – A dictionary of **collocations** helps.
+
+**Examples:**
+- *Das Unternehmen **stellt** Solarmodule **her**.* (The company manufactures solar panels.)
+- *Die Ärzte **führten** eine Operation **durch**.* (The doctors performed an operation.)
+- *Ich habe alle Aufgaben **erledigt**.* (I have completed all the tasks.)
+- *Die Kommission **erarbeitete** einen Lösungsvorschlag.* (The commission worked out a proposed solution.)
+- *Der Autor **verfasste** drei Romane.* (The author wrote three novels.)`,
+      explanationTr: `## Genel fiiller yerine kesin fiiller
+
+**machen, tun, geben, haben, gehen, bekommen** gibi fiiller pratiktir ama **belirsizdir**. Nitelikli metinlerde bunların yerine bağlama uyan **daha kesin fiiller** kullanılır.
+
+### „machen"i kesinleştirmek
+| genel | kesin | anlamı |
+| ---- | ---- | ---- |
+| ein Produkt machen | ein Produkt **herstellen / produzieren** | üretmek, imal etmek |
+| eine Untersuchung machen | eine Untersuchung **durchführen** | (bir işlemi) yürütmek, yapmak |
+| eine Aufgabe machen | eine Aufgabe **erledigen** | halletmek, bitirmek |
+| einen Plan machen | einen Plan **entwerfen / erstellen** | tasarlamak, hazırlamak |
+| einen Fehler machen | einen Fehler **begehen** (resmî) | (hata) işlemek |
+| Fotos machen | Fotos **aufnehmen** | fotoğraf çekmek |
+| ein Haus machen | ein Haus **bauen / errichten** | inşa etmek |
+| Essen machen | Essen **zubereiten** | yemek hazırlamak |
+| eine Pause machen | eine Pause **einlegen** | ara vermek |
+| Musik machen | Musik **komponieren / spielen** | beste yapmak / çalmak |
+
+### „geben", „haben", „gehen", „bekommen"i kesinleştirmek
+| genel | kesin |
+| ---- | ---- |
+| *Es gibt Probleme.* (Sorunlar var.) | *Es **bestehen / treten** Probleme **auf**.* (Sorunlar mevcut / ortaya çıkıyor.) |
+| *Antwort geben* (cevap vermek) | *antworten, **erwidern*** (cevaplamak, karşılık vermek) |
+| *Er hat einen Preis.* (Bir ödülü var.) | *Er **erhielt** einen Preis. / Ihm **wurde** ein Preis **verliehen**.* (Bir ödül aldı / kendisine bir ödül verildi.) |
+| *Die Firma hat 200 Mitarbeiter.* (Firmanın 200 çalışanı var.) | *Die Firma **beschäftigt** 200 Mitarbeiter.* (Firma 200 kişi istihdam ediyor.) |
+| *Der Weg geht durch den Wald.* (Yol ormandan geçiyor.) | *Der Weg **führt** durch den Wald.* (Yol ormanın içinden geçer/uzanır.) |
+| *Die Preise gehen hoch.* (Fiyatlar yukarı gidiyor.) | *Die Preise **steigen**.* (Fiyatlar artıyor.) |
+| *Er bekommt Hilfe.* (Yardım alıyor.) | *Er **erhält** Unterstützung.* (Destek görüyor.) |
+| *Das Buch hat drei Teile.* (Kitabın üç bölümü var.) | *Das Buch **gliedert sich** in drei Teile. / **besteht aus** …* (Kitap üç bölüme ayrılıyor / … oluşuyor.) |
+
+### Bir paragraf – önce ve sonra
+**Önce:** *Wir **haben** eine Umfrage **gemacht**. Es **gab** viele Antworten. Dann **haben** wir die Daten **gemacht** und einen Bericht **gemacht**.* (Bir anket yaptık. Birçok cevap vardı. Sonra verileri yaptık ve bir rapor yaptık.)
+
+**Sonra:** *Wir **führten** eine Umfrage **durch** und **erhielten** zahlreiche Antworten. Anschließend **werteten** wir die Daten **aus** und **verfassten** einen Bericht.* (Bir anket yürüttük ve çok sayıda yanıt aldık. Ardından verileri değerlendirdik ve bir rapor kaleme aldık.)
+
+### İpucu
+Her *machen* yazdığınızda kendinize sorun: **Burada tam olarak ne oluyor?** Üretmek mi? Yürütmek mi? Bitirmek mi? Yazmak mı? – **Eşdizim** (kelime birliktelikleri) sözlüğü bu konuda yardımcı olur.
+
+**Örnekler:**
+- *Das Unternehmen **stellt** Solarmodule **her**.* (Şirket güneş panelleri üretiyor.)
+- *Die Ärzte **führten** eine Operation **durch**.* (Doktorlar bir ameliyat gerçekleştirdi.)
+- *Ich habe alle Aufgaben **erledigt**.* (Tüm görevleri hallettim.)
+- *Die Kommission **erarbeitete** einen Lösungsvorschlag.* (Komisyon bir çözüm önerisi hazırladı.)
+- *Der Autor **verfasste** drei Romane.* (Yazar üç roman kaleme aldı.)`,
     },
   })
   await seedExercises({
@@ -41202,12 +42499,108 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit12.id,
       order: 4,
       grammarTopic: 'Übung: Präzision im Ausdruck',
-      explanationDe:
-        'Wiederholung: Präzise Wortwahl (statt "sagen", "groß" oder "machen") macht Texte klarer und wirkt professioneller.',
-      explanationEn:
-        'Review: precise word choice (instead of "sagen", "groß", or "machen") makes texts clearer and more professional.',
-      explanationTr:
-        'Tekrar: kesin kelime seçimi ("sagen", "groß" veya "machen" yerine) metinleri daha net ve profesyonel kılar.',
+      explanationDe: `## Übung: Präzision im Ausdruck – Zusammenfassung
+
+**Präzise Wortwahl** macht Texte **klarer, lebendiger und professioneller**. Statt Allerweltswörtern wie *sagen*, *groß* oder *machen* wählt man das Wort, das **genau** das Gemeinte trifft.
+
+### Allerweltswörter und präzise Alternativen
+| Allerweltswort | präzise Alternativen |
+| ---- | ---- |
+| **sagen** | erklären, behaupten, betonen, einräumen, bestreiten, andeuten, mitteilen, einwenden |
+| **groß** | beträchtlich, erheblich, gewaltig, immens, geräumig, umfangreich, bedeutend, schwerwiegend |
+| **machen** | herstellen, durchführen, erledigen, erstellen, verfassen, zubereiten, einlegen |
+| **gut** | hervorragend, gelungen, zuverlässig, wirksam, vorteilhaft, geeignet |
+| **schlecht** | mangelhaft, ungeeignet, nachteilig, minderwertig, bedenklich |
+| **wichtig** | wesentlich, entscheidend, zentral, maßgeblich, relevant |
+| **zeigen** | belegen, verdeutlichen, veranschaulichen, nachweisen, offenbaren |
+| **Problem** | Schwierigkeit, Hindernis, Mangel, Herausforderung, Konflikt |
+
+### Drei Prinzipien präzisen Schreibens
+1. **Genauigkeit**: Das Wort muss **inhaltlich** stimmen (*behaupten* ≠ *beweisen*).
+2. **Kollokation**: Das Wort muss mit seinen Nachbarn **zusammenpassen** (*hohe Kosten*, nicht *große Kosten*).
+3. **Register**: Das Wort muss zum **Stil** passen (*immens* im Essay, *erheblich* im Bericht, *riesig* im Gespräch).
+
+### Vorher – nachher
+**Vorher:** *Das ist ein **großes Problem**. Viele Leute **sagen**, dass man etwas **machen** muss. Das ist **wichtig**, weil es **schlecht** für die Umwelt ist.*
+
+**Nachher:** *Dies stellt eine **erhebliche Herausforderung** dar. Zahlreiche Experten **betonen**, dass dringend Maßnahmen **ergriffen** werden müssen. Dies ist **von zentraler Bedeutung**, da die Folgen für die Umwelt **gravierend** sind.*
+
+### Achtung: nicht übertreiben!
+Präzision bedeutet **nicht**, möglichst viele schwierige Wörter zu benutzen. Ein klarer, einfacher Satz mit dem **richtigen** Wort ist besser als ein überladener Satz.
+
+**Beispiele:**
+- *Die Studie **belegt** einen **deutlichen** Zusammenhang.*
+- *Der Sprecher **räumte** **gravierende** Versäumnisse **ein**.*
+- *Das Team **erarbeitete** ein **umfassendes** Konzept.*
+- *Diese Entscheidung ist **maßgeblich** für den Erfolg.*`,
+      explanationEn: `## Practice: precision of expression – summary
+
+**Precise word choice** makes texts **clearer, livelier and more professional**. Instead of all-purpose words like *sagen*, *groß* or *machen*, you choose the word that hits **exactly** what you mean.
+
+### All-purpose words and precise alternatives
+| all-purpose word | precise alternatives |
+| ---- | ---- |
+| **sagen** (say) | erklären, behaupten, betonen, einräumen, bestreiten, andeuten, mitteilen, einwenden (explain, claim, stress, admit, deny, hint, announce, object) |
+| **groß** (big) | beträchtlich, erheblich, gewaltig, immens, geräumig, umfangreich, bedeutend, schwerwiegend |
+| **machen** (make/do) | herstellen, durchführen, erledigen, erstellen, verfassen, zubereiten, einlegen |
+| **gut** (good) | hervorragend, gelungen, zuverlässig, wirksam, vorteilhaft, geeignet (excellent, successful, reliable, effective, advantageous, suitable) |
+| **schlecht** (bad) | mangelhaft, ungeeignet, nachteilig, minderwertig, bedenklich (deficient, unsuitable, disadvantageous, inferior, worrying) |
+| **wichtig** (important) | wesentlich, entscheidend, zentral, maßgeblich, relevant (essential, decisive, central, crucial, relevant) |
+| **zeigen** (show) | belegen, verdeutlichen, veranschaulichen, nachweisen, offenbaren (prove, clarify, illustrate, demonstrate, reveal) |
+| **Problem** | Schwierigkeit, Hindernis, Mangel, Herausforderung, Konflikt (difficulty, obstacle, shortcoming, challenge, conflict) |
+
+### Three principles of precise writing
+1. **Accuracy**: the word must be **right in content** (*behaupten* "claim" ≠ *beweisen* "prove").
+2. **Collocation**: the word must **fit** its neighbours (*hohe Kosten*, not *große Kosten*).
+3. **Register**: the word must suit the **style** (*immens* in an essay, *erheblich* in a report, *riesig* in conversation).
+
+### Before – after
+**Before:** *Das ist ein **großes Problem**. Viele Leute **sagen**, dass man etwas **machen** muss. Das ist **wichtig**, weil es **schlecht** für die Umwelt ist.* (That's a big problem. Many people say something must be done. That's important because it's bad for the environment.)
+
+**After:** *Dies stellt eine **erhebliche Herausforderung** dar. Zahlreiche Experten **betonen**, dass dringend Maßnahmen **ergriffen** werden müssen. Dies ist **von zentraler Bedeutung**, da die Folgen für die Umwelt **gravierend** sind.* (This represents a considerable challenge. Numerous experts stress that measures must urgently be taken. This is of central importance, since the consequences for the environment are serious.)
+
+### Note: don't overdo it!
+Precision does **not** mean using as many difficult words as possible. A clear, simple sentence with the **right** word is better than an overloaded one.
+
+**Examples:**
+- *Die Studie **belegt** einen **deutlichen** Zusammenhang.* (The study proves a clear connection.)
+- *Der Sprecher **räumte** **gravierende** Versäumnisse **ein**.* (The spokesman admitted serious failings.)
+- *Das Team **erarbeitete** ein **umfassendes** Konzept.* (The team developed a comprehensive concept.)
+- *Diese Entscheidung ist **maßgeblich** für den Erfolg.* (This decision is crucial for success.)`,
+      explanationTr: `## Alıştırma: İfadede kesinlik – özet
+
+**Kesin kelime seçimi** metinleri **daha açık, canlı ve profesyonel** kılar. *sagen*, *groß* veya *machen* gibi her yere uyan kelimeler yerine kastedileni **tam olarak** karşılayan kelime seçilir.
+
+### Her yere uyan kelimeler ve kesin alternatifleri
+| genel kelime | kesin alternatifler |
+| ---- | ---- |
+| **sagen** (söylemek) | erklären, behaupten, betonen, einräumen, bestreiten, andeuten, mitteilen, einwenden (açıklamak, iddia etmek, vurgulamak, kabul etmek, inkâr etmek, ima etmek, bildirmek, itiraz etmek) |
+| **groß** (büyük) | beträchtlich, erheblich, gewaltig, immens, geräumig, umfangreich, bedeutend, schwerwiegend |
+| **machen** (yapmak) | herstellen, durchführen, erledigen, erstellen, verfassen, zubereiten, einlegen |
+| **gut** (iyi) | hervorragend, gelungen, zuverlässig, wirksam, vorteilhaft, geeignet (mükemmel, başarılı, güvenilir, etkili, avantajlı, uygun) |
+| **schlecht** (kötü) | mangelhaft, ungeeignet, nachteilig, minderwertig, bedenklich (yetersiz, elverişsiz, dezavantajlı, düşük kaliteli, kaygı verici) |
+| **wichtig** (önemli) | wesentlich, entscheidend, zentral, maßgeblich, relevant (esaslı, belirleyici, merkezî, başlıca, ilgili) |
+| **zeigen** (göstermek) | belegen, verdeutlichen, veranschaulichen, nachweisen, offenbaren (kanıtlamak, netleştirmek, somutlaştırmak, ispat etmek, ortaya koymak) |
+| **Problem** (sorun) | Schwierigkeit, Hindernis, Mangel, Herausforderung, Konflikt (güçlük, engel, eksiklik, zorluk, çatışma) |
+
+### Kesin yazmanın üç ilkesi
+1. **Doğruluk**: Kelime **içerik olarak** doğru olmalı (*behaupten* „iddia etmek" ≠ *beweisen* „kanıtlamak").
+2. **Eşdizim**: Kelime komşularıyla **uyumlu** olmalı (*hohe Kosten*, *große Kosten* değil).
+3. **Dil düzeyi**: Kelime **üsluba** uymalı (denemede *immens*, raporda *erheblich*, sohbette *riesig*).
+
+### Önce – sonra
+**Önce:** *Das ist ein **großes Problem**. Viele Leute **sagen**, dass man etwas **machen** muss. Das ist **wichtig**, weil es **schlecht** für die Umwelt ist.* (Bu büyük bir sorun. Birçok insan bir şey yapılması gerektiğini söylüyor. Bu önemli, çünkü çevre için kötü.)
+
+**Sonra:** *Dies stellt eine **erhebliche Herausforderung** dar. Zahlreiche Experten **betonen**, dass dringend Maßnahmen **ergriffen** werden müssen. Dies ist **von zentraler Bedeutung**, da die Folgen für die Umwelt **gravierend** sind.* (Bu ciddi bir zorluk teşkil etmektedir. Çok sayıda uzman acilen önlem alınması gerektiğini vurgulamaktadır. Çevre üzerindeki sonuçlar vahim olduğundan bu, merkezî öneme sahiptir.)
+
+### Dikkat: abartmayın!
+Kesinlik, mümkün olduğunca çok zor kelime kullanmak **demek değildir**. **Doğru** kelimeyle kurulmuş açık, sade bir cümle, aşırı yüklü bir cümleden daha iyidir.
+
+**Örnekler:**
+- *Die Studie **belegt** einen **deutlichen** Zusammenhang.* (Çalışma belirgin bir ilişkiyi kanıtlıyor.)
+- *Der Sprecher **räumte** **gravierende** Versäumnisse **ein**.* (Sözcü ciddi ihmalleri kabul etti.)
+- *Das Team **erarbeitete** ein **umfassendes** Konzept.* (Ekip kapsamlı bir konsept geliştirdi.)
+- *Diese Entscheidung ist **maßgeblich** für den Erfolg.* (Bu karar başarı için belirleyici.)`,
     },
   })
   await seedExercises({
@@ -41260,12 +42653,104 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit13.id,
       order: 1,
       grammarTopic: 'Wiederholung: Stilmittel kombinieren',
-      explanationDe:
-        'Meisterhafte Texte kombinieren Konnektoren, Nominalstil und rhetorische Mittel bewusst, um Wirkung und Klarheit gleichzeitig zu erzielen.',
-      explanationEn:
-        'Masterful texts deliberately combine connectors, nominal style, and rhetorical devices to achieve both impact and clarity.',
-      explanationTr:
-        'Usta metinler, hem etki hem netlik elde etmek için bağlaçları, isim stilini ve retorik araçları bilinçli olarak birleştirir.',
+      explanationDe: `## Wiederholung: Stilmittel kombinieren
+
+Meisterhafte Texte setzen **Konnektoren, Nominalstil und rhetorische Mittel** nicht isoliert ein, sondern **kombinieren** sie bewusst, um **Wirkung und Klarheit** gleichzeitig zu erreichen.
+
+### Die Werkzeuge im Zusammenspiel
+| Werkzeug | Funktion im Text | Beispiel |
+| ---- | ---- | ---- |
+| **gehobene Konnektoren** | logische Struktur | *nichtsdestotrotz, mithin, insofern als* |
+| **Nominalstil** | Sachlichkeit, Dichte | *die Bewältigung der Krise* |
+| **Metapher** | Anschaulichkeit | *ein Sturm der Entrüstung* |
+| **Anapher / Trikolon** | Rhythmus, Nachdruck | *Wir müssen …, wir können …, wir werden …* |
+| **rhetorische Frage** | Leser einbeziehen | *Wer wollte das bestreiten?* |
+| **Antithese** | Kontrast schärfen | *nicht Rückschritt, sondern Fortschritt* |
+| **Konjunktiv II** | Vorsicht, Höflichkeit | *Man könnte einwenden …* |
+
+### Analyse eines meisterhaften Absatzes
+*„Die **Bewältigung** des Klimawandels (Nominalstil) ist **keine Frage der Möglichkeit, sondern des Willens** (Antithese). **Wir haben** das Wissen, **wir haben** die Technik, **wir haben** die Mittel (Anapher, Trikolon). **Was also fehlt?** (rhetorische Frage) **Nichtsdestotrotz** (Konnektor) zögern viele Regierungen – **als stünde** (Konjunktiv II) uns unbegrenzt Zeit zur Verfügung. Doch die Uhr **tickt** (Metapher)."*
+
+### Drei Regeln für die Kombination
+1. **Funktion vor Schmuck**: Jedes Stilmittel muss einen **Zweck** erfüllen.
+2. **Abwechslung**: Sachliche Passagen (Nominalstil) mit lebendigen (Verbalstil, Bilder) **abwechseln**.
+3. **Dosierung**: Ein starkes rhetorisches Mittel pro Absatz wirkt mehr als fünf schwache.
+
+### Typische Kombinationen
+- **Rhetorische Frage + Antwort + Konnektor**: *Ist das gerecht? Kaum. **Mithin** muss das Gesetz geändert werden.*
+- **Antithese + Trikolon**: *Nicht reden, sondern handeln: schnell, entschlossen, gemeinsam.*
+- **Metapher + Nominalstil**: *Die **Talfahrt** der Wirtschaft erfordert eine **Neuausrichtung** der Politik.*
+
+**Beispiele:**
+- *Bildung ist **kein Luxus, sondern** eine **Notwendigkeit** – **gleichwohl** wird an ihr gespart.*
+- *Wer, **wenn nicht wir**? Wann, **wenn nicht jetzt**?*
+- *Die Reform war **insofern** ein **Meilenstein**, **als** sie erstmals alle Beteiligten einbezog.*`,
+      explanationEn: `## Review: combining stylistic devices
+
+Masterful texts don't use **connectors, nominal style and rhetorical devices** in isolation but **combine** them deliberately to achieve **impact and clarity** at the same time.
+
+### The tools working together
+| tool | function in the text | example |
+| ---- | ---- | ---- |
+| **elevated connectors** | logical structure | *nichtsdestotrotz, mithin, insofern als* |
+| **nominal style** | objectivity, density | *die Bewältigung der Krise* (overcoming the crisis) |
+| **metaphor** | vividness | *ein Sturm der Entrüstung* (a storm of indignation) |
+| **anaphora / tricolon** | rhythm, emphasis | *Wir müssen …, wir können …, wir werden …* (We must …, we can …, we will …) |
+| **rhetorical question** | involving the reader | *Wer wollte das bestreiten?* (Who would deny it?) |
+| **antithesis** | sharpening contrast | *nicht Rückschritt, sondern Fortschritt* (not regression but progress) |
+| **Konjunktiv II** | caution, politeness | *Man könnte einwenden …* (One might object …) |
+
+### Analysis of a masterful paragraph
+*„Die **Bewältigung** des Klimawandels (nominal style) ist **keine Frage der Möglichkeit, sondern des Willens** (antithesis). **Wir haben** das Wissen, **wir haben** die Technik, **wir haben** die Mittel (anaphora, tricolon). **Was also fehlt?** (rhetorical question) **Nichtsdestotrotz** (connector) zögern viele Regierungen – **als stünde** (Konjunktiv II) uns unbegrenzt Zeit zur Verfügung. Doch die Uhr **tickt** (metaphor)."*
+(Tackling climate change is not a question of possibility but of will. We have the knowledge, we have the technology, we have the means. So what is missing? Nevertheless many governments hesitate – as if we had unlimited time. But the clock is ticking.)
+
+### Three rules for combining
+1. **Function before decoration**: every device must serve a **purpose**.
+2. **Variety**: **alternate** factual passages (nominal style) with lively ones (verbal style, images).
+3. **Dosage**: one strong rhetorical device per paragraph is more effective than five weak ones.
+
+### Typical combinations
+- **rhetorical question + answer + connector**: *Ist das gerecht? Kaum. **Mithin** muss das Gesetz geändert werden.* (Is that fair? Hardly. Hence the law must be changed.)
+- **antithesis + tricolon**: *Nicht reden, sondern handeln: schnell, entschlossen, gemeinsam.* (Not talk, but action: fast, determined, together.)
+- **metaphor + nominal style**: *Die **Talfahrt** der Wirtschaft erfordert eine **Neuausrichtung** der Politik.* (The economy's downhill slide requires a reorientation of policy.)
+
+**Examples:**
+- *Bildung ist **kein Luxus, sondern** eine **Notwendigkeit** – **gleichwohl** wird an ihr gespart.* (Education is not a luxury but a necessity – nevertheless it is being cut.)
+- *Wer, **wenn nicht wir**? Wann, **wenn nicht jetzt**?* (Who, if not us? When, if not now?)
+- *Die Reform war **insofern** ein **Meilenstein**, **als** sie erstmals alle Beteiligten einbezog.* (The reform was a milestone insofar as it involved all stakeholders for the first time.)`,
+      explanationTr: `## Tekrar: Üslup araçlarını birleştirmek
+
+Usta işi metinler **bağlayıcıları, isim üslubunu ve retorik araçları** tek tek değil, **etki ve açıklığı** aynı anda sağlamak için bilinçli olarak **birleştirerek** kullanır.
+
+### Araçların birlikte çalışması
+| araç | metindeki işlevi | örnek |
+| ---- | ---- | ---- |
+| **yüksek üsluplu bağlayıcılar** | mantıksal yapı | *nichtsdestotrotz, mithin, insofern als* |
+| **isim üslubu** | nesnellik, yoğunluk | *die Bewältigung der Krise* (krizin üstesinden gelinmesi) |
+| **metafor** | canlılık | *ein Sturm der Entrüstung* (bir öfke fırtınası) |
+| **anafor / trikolon** | ritim, vurgu | *Wir müssen …, wir können …, wir werden …* (Yapmalıyız …, yapabiliriz …, yapacağız …) |
+| **retorik soru** | okuru dahil etmek | *Wer wollte das bestreiten?* (Bunu kim inkâr edebilir?) |
+| **antitez** | karşıtlığı keskinleştirmek | *nicht Rückschritt, sondern Fortschritt* (gerileme değil, ilerleme) |
+| **Konjunktiv II** | temkin, nezaket | *Man könnte einwenden …* (… diye itiraz edilebilir) |
+
+### Usta işi bir paragrafın çözümlenmesi
+*„Die **Bewältigung** des Klimawandels (isim üslubu) ist **keine Frage der Möglichkeit, sondern des Willens** (antitez). **Wir haben** das Wissen, **wir haben** die Technik, **wir haben** die Mittel (anafor, trikolon). **Was also fehlt?** (retorik soru) **Nichtsdestotrotz** (bağlayıcı) zögern viele Regierungen – **als stünde** (Konjunktiv II) uns unbegrenzt Zeit zur Verfügung. Doch die Uhr **tickt** (metafor)."*
+(İklim değişikliğiyle başa çıkmak bir olanak değil, bir irade meselesidir. Bilgimiz var, teknolojimiz var, imkânlarımız var. Peki eksik olan ne? Buna rağmen birçok hükümet tereddüt ediyor – sanki sınırsız zamanımız varmış gibi. Oysa saat işliyor.)
+
+### Birleştirmenin üç kuralı
+1. **Süsten önce işlev**: Her araç bir **amaca** hizmet etmeli.
+2. **Çeşitlilik**: Nesnel bölümleri (isim üslubu) canlı bölümlerle (fiil üslubu, imgeler) **dönüşümlü** kullanın.
+3. **Dozaj**: Paragraf başına güçlü bir retorik araç, beş zayıf araçtan daha etkilidir.
+
+### Tipik birleşimler
+- **Retorik soru + cevap + bağlayıcı**: *Ist das gerecht? Kaum. **Mithin** muss das Gesetz geändert werden.* (Bu adil mi? Pek değil. Dolayısıyla yasa değiştirilmeli.)
+- **Antitez + trikolon**: *Nicht reden, sondern handeln: schnell, entschlossen, gemeinsam.* (Konuşmak değil, harekete geçmek: hızlı, kararlı, birlikte.)
+- **Metafor + isim üslubu**: *Die **Talfahrt** der Wirtschaft erfordert eine **Neuausrichtung** der Politik.* (Ekonominin yokuş aşağı gidişi politikanın yeniden yönlendirilmesini gerektiriyor.)
+
+**Örnekler:**
+- *Bildung ist **kein Luxus, sondern** eine **Notwendigkeit** – **gleichwohl** wird an ihr gespart.* (Eğitim bir lüks değil, bir zorunluluktur – buna rağmen eğitimden kısılıyor.)
+- *Wer, **wenn nicht wir**? Wann, **wenn nicht jetzt**?* (Biz değilsek kim? Şimdi değilse ne zaman?)
+- *Die Reform war **insofern** ein **Meilenstein**, **als** sie erstmals alle Beteiligten einbezog.* (Reform, ilk kez tüm tarafları sürece dahil etmesi bakımından bir dönüm noktasıydı.)`,
     },
   })
   await seedExercises({
@@ -41294,12 +42779,138 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit13.id,
       order: 2,
       grammarTopic: 'Wiederholung: Register wechseln',
-      explanationDe:
-        'Meisterschaft zeigt sich im bewussten Wechsel zwischen Registern: formell für Berichte, persönlich für Essays, neutral für Zusammenfassungen.',
-      explanationEn:
-        'Mastery shows in the deliberate switching between registers: formal for reports, personal for essays, neutral for summaries.',
-      explanationTr:
-        'Ustalık, kayıtlar arasında bilinçli geçişte kendini gösterir: raporlar için resmi, denemeler için kişisel, özetler için nötr.',
+      explanationDe: `## Wiederholung: Register wechseln
+
+Meisterschaft zeigt sich im **bewussten Wechsel zwischen Registern**: formell für Berichte, persönlich für Essays, neutral für Zusammenfassungen, locker im Gespräch. Wer das beherrscht, kann **jede Kommunikationssituation** sprachlich angemessen gestalten.
+
+### Ein Inhalt – fünf Register
+**Inhalt:** Das Projekt wird verschoben, weil das Geld fehlt.
+
+| Register | Formulierung |
+| ---- | ---- |
+| **salopp (Chat)** | *Projekt is erstmal auf Eis – keine Kohle. 🙄* |
+| **umgangssprachlich** | *Das Projekt wird verschoben, wir haben einfach kein Geld.* |
+| **neutral (E-Mail an Kollegen)** | *Leider muss das Projekt verschoben werden, da die Finanzierung noch nicht gesichert ist.* |
+| **formell (Brief an Partner)** | *Wir bedauern, Ihnen mitteilen zu müssen, dass sich der Projektbeginn aufgrund ausstehender Finanzierungszusagen verzögert.* |
+| **amtlich / fachsprachlich** | *Infolge der Nichtbewilligung der beantragten Fördermittel erfolgt eine Verschiebung des Projektbeginns auf unbestimmte Zeit.* |
+
+### Stellschrauben beim Registerwechsel
+| Ebene | informell → formell |
+| ---- | ---- |
+| **Wortschatz** | Kohle → Geld → finanzielle Mittel → Fördermittel |
+| **Satzbau** | Ellipse → einfacher Satz → Satzgefüge → Nominalstil |
+| **Modus** | Indikativ → Konjunktiv II (Höflichkeit) |
+| **Perspektive** | ich/wir → man / Passiv |
+| **Emotion** | Emojis, Partikeln → neutrale Wortwahl |
+| **Anrede / Gruß** | Hey / LG → Sehr geehrte … / Mit freundlichen Grüßen |
+
+### Textsortentypische Register
+| Textsorte | Register |
+| ---- | ---- |
+| Bericht, Protokoll | neutral-formell, sachlich |
+| Essay, Kommentar | persönlich, gehoben, rhetorisch |
+| Zusammenfassung | neutral, knapp, Präsens |
+| Geschäftsbrief | formell, höflich |
+| Wissenschaftlicher Text | fachsprachlich, unpersönlich, vorsichtig |
+| Social-Media-Post | locker, emotional |
+
+### Typische Fehler beim Registerwechsel
+- **Registerbruch**: *Sehr geehrter Herr Dr. Braun, das Meeting war echt mega!* ❌
+- **Überformalisierung**: *Ich erlaube mir, Ihnen mitzuteilen, dass ich Hunger habe.* (zu einem Freund) ❌ – wirkt komisch oder ironisch.
+
+**Beispiele:**
+- Neutral: *Die Teilnehmenden waren mit dem Kurs zufrieden.*
+- Formell: *Der Kurs fand bei den Teilnehmenden durchweg positive Resonanz.*
+- Umgangssprachlich: *Der Kurs kam echt gut an.*
+- Essayistisch: *Selten hat ein Kurs so viele Menschen so nachhaltig begeistert.*`,
+      explanationEn: `## Review: switching register
+
+Mastery shows in **deliberately switching between registers**: formal for reports, personal for essays, neutral for summaries, casual in conversation. Whoever masters this can handle **any communicative situation** appropriately.
+
+### One content – five registers
+**Content:** the project is being postponed because there's no money.
+
+| register | wording |
+| ---- | ---- |
+| **slangy (chat)** | *Projekt is erstmal auf Eis – keine Kohle. 🙄* (Project's on ice for now – no cash.) |
+| **colloquial** | *Das Projekt wird verschoben, wir haben einfach kein Geld.* (The project's being postponed, we just don't have the money.) |
+| **neutral (e-mail to colleagues)** | *Leider muss das Projekt verschoben werden, da die Finanzierung noch nicht gesichert ist.* (Unfortunately the project has to be postponed, as funding hasn't been secured yet.) |
+| **formal (letter to a partner)** | *Wir bedauern, Ihnen mitteilen zu müssen, dass sich der Projektbeginn aufgrund ausstehender Finanzierungszusagen verzögert.* (We regret to inform you that the start of the project is delayed owing to outstanding funding commitments.) |
+| **official / technical** | *Infolge der Nichtbewilligung der beantragten Fördermittel erfolgt eine Verschiebung des Projektbeginns auf unbestimmte Zeit.* (As a result of the non-approval of the requested funding, the start of the project is postponed indefinitely.) |
+
+### Adjusting the dials when switching register
+| level | informal → formal |
+| ---- | ---- |
+| **vocabulary** | Kohle → Geld → finanzielle Mittel → Fördermittel (cash → money → financial means → funding) |
+| **syntax** | ellipsis → simple sentence → complex sentence → nominal style |
+| **mood** | indicative → Konjunktiv II (politeness) |
+| **perspective** | ich/wir → man / passive |
+| **emotion** | emojis, particles → neutral word choice |
+| **greeting / sign-off** | Hey / LG → Sehr geehrte … / Mit freundlichen Grüßen |
+
+### Typical registers by text type
+| text type | register |
+| ---- | ---- |
+| report, minutes | neutral-formal, objective |
+| essay, commentary | personal, elevated, rhetorical |
+| summary | neutral, concise, present tense |
+| business letter | formal, polite |
+| academic text | technical, impersonal, cautious |
+| social-media post | casual, emotional |
+
+### Typical mistakes when switching register
+- **register clash**: *Sehr geehrter Herr Dr. Braun, das Meeting war echt mega!* ❌ (Dear Dr Braun, the meeting was totally awesome!)
+- **over-formalising**: *Ich erlaube mir, Ihnen mitzuteilen, dass ich Hunger habe.* (I take the liberty of informing you that I am hungry. – to a friend) ❌ – sounds funny or ironic.
+
+**Examples:**
+- Neutral: *Die Teilnehmenden waren mit dem Kurs zufrieden.* (The participants were satisfied with the course.)
+- Formal: *Der Kurs fand bei den Teilnehmenden durchweg positive Resonanz.* (The course met with a consistently positive response from participants.)
+- Colloquial: *Der Kurs kam echt gut an.* (The course went down really well.)
+- Essayistic: *Selten hat ein Kurs so viele Menschen so nachhaltig begeistert.* (Rarely has a course inspired so many people so lastingly.)`,
+      explanationTr: `## Tekrar: Dil düzeyini değiştirmek
+
+Ustalık, **dil düzeyleri arasında bilinçli geçişte** kendini gösterir: raporlar için resmî, denemeler için kişisel, özetler için nötr, sohbette rahat. Bunu başaran kişi **her iletişim durumunu** dilsel olarak uygun biçimde yönetebilir.
+
+### Bir içerik – beş dil düzeyi
+**İçerik:** Para olmadığı için proje erteleniyor.
+
+| dil düzeyi | ifade |
+| ---- | ---- |
+| **argo (sohbet)** | *Projekt is erstmal auf Eis – keine Kohle. 🙄* (Proje şimdilik buzda – mangır yok.) |
+| **gündelik** | *Das Projekt wird verschoben, wir haben einfach kein Geld.* (Proje erteleniyor, paramız yok işte.) |
+| **nötr (iş arkadaşlarına e-posta)** | *Leider muss das Projekt verschoben werden, da die Finanzierung noch nicht gesichert ist.* (Finansman henüz güvence altında olmadığından proje maalesef ertelenmek zorunda.) |
+| **resmî (ortağa mektup)** | *Wir bedauern, Ihnen mitteilen zu müssen, dass sich der Projektbeginn aufgrund ausstehender Finanzierungszusagen verzögert.* (Bekleyen finansman taahhütleri nedeniyle proje başlangıcının geciktiğini üzülerek bildiririz.) |
+| **resmî kurum / uzmanlık dili** | *Infolge der Nichtbewilligung der beantragten Fördermittel erfolgt eine Verschiebung des Projektbeginns auf unbestimmte Zeit.* (Talep edilen destek fonlarının onaylanmaması sonucunda proje başlangıcı süresiz olarak ertelenmektedir.) |
+
+### Dil düzeyi değiştirirken ayarlanacak noktalar
+| alan | gayriresmî → resmî |
+| ---- | ---- |
+| **kelime dağarcığı** | Kohle → Geld → finanzielle Mittel → Fördermittel (mangır → para → mali imkânlar → destek fonu) |
+| **cümle yapısı** | eksiltme → basit cümle → birleşik cümle → isim üslubu |
+| **kip** | Indikativ → Konjunktiv II (nezaket) |
+| **bakış açısı** | ich/wir → man / edilgen |
+| **duygu** | emojiler, edatlar → nötr kelime seçimi |
+| **hitap / kapanış** | Hey / LG → Sehr geehrte … / Mit freundlichen Grüßen |
+
+### Metin türüne özgü dil düzeyleri
+| metin türü | dil düzeyi |
+| ---- | ---- |
+| rapor, tutanak | nötr-resmî, nesnel |
+| deneme, yorum | kişisel, yüksek, retorik |
+| özet | nötr, kısa, Präsens |
+| iş yazışması | resmî, kibar |
+| bilimsel metin | uzmanlık dili, kişisiz, temkinli |
+| sosyal medya gönderisi | rahat, duygusal |
+
+### Dil düzeyi değiştirirken tipik hatalar
+- **Düzey kırılması**: *Sehr geehrter Herr Dr. Braun, das Meeting war echt mega!* ❌ (Sayın Dr. Braun, toplantı bir harikaydı ya!)
+- **Aşırı resmîleştirme**: *Ich erlaube mir, Ihnen mitzuteilen, dass ich Hunger habe.* (Acıkmış olduğumu size arz etmeye müsaadenizi rica ederim. – bir arkadaşa) ❌ – komik veya ironik durur.
+
+**Örnekler:**
+- Nötr: *Die Teilnehmenden waren mit dem Kurs zufrieden.* (Katılımcılar kurstan memnundu.)
+- Resmî: *Der Kurs fand bei den Teilnehmenden durchweg positive Resonanz.* (Kurs katılımcılardan baştan sona olumlu geri bildirim aldı.)
+- Gündelik: *Der Kurs kam echt gut an.* (Kurs gerçekten çok tuttu.)
+- Deneme üslubu: *Selten hat ein Kurs so viele Menschen so nachhaltig begeistert.* (Bir kurs nadiren bu kadar çok insanı bu kadar kalıcı biçimde heyecanlandırmıştır.)`,
     },
   })
   await seedExercises({
@@ -41328,12 +42939,131 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit13.id,
       order: 3,
       grammarTopic: 'Wiederholung: Konjunktiv, Nominalstil und Präzision im Zusammenspiel',
-      explanationDe:
-        'Ein meisterhafter Satz kann Konjunktiv II (Vorsicht), Nominalstil (Formalität) und präzise Wortwahl gleichzeitig zeigen: "Man könnte die Durchführung des Projekts als beträchtlichen Erfolg werten."',
-      explanationEn:
-        'A masterful sentence can show Konjunktiv II (caution), nominal style (formality), and precise word choice all at once: "Man könnte die Durchführung des Projekts als beträchtlichen Erfolg werten" (One could regard the execution of the project as a considerable success).',
-      explanationTr:
-        'Usta bir cümle Konjunktiv II (temkin), isim stili (resmiyet) ve kesin kelime seçimini aynı anda gösterebilir: "Man könnte die Durchführung des Projekts als beträchtlichen Erfolg werten."',
+      explanationDe: `## Wiederholung: Konjunktiv, Nominalstil und Präzision im Zusammenspiel
+
+Ein **meisterhafter Satz** kann mehrere Ebenen gleichzeitig zeigen: **Konjunktiv II** (Vorsicht), **Nominalstil** (Formalität) und **präzise Wortwahl** (Genauigkeit).
+
+> *Man **könnte** die **Durchführung** des Projekts als **beträchtlichen** Erfolg **werten**.*
+
+| Element | Funktion |
+| ---- | ---- |
+| *könnte* | **Konjunktiv II** → vorsichtige, höfliche Bewertung |
+| *die Durchführung des Projekts* | **Nominalstil** → sachlich, formell |
+| *beträchtlich* | **präzises Adjektiv** statt *groß* |
+| *werten* | **präzises Verb** statt *sehen / sagen* |
+
+### Vom einfachen zum meisterhaften Satz
+| Stufe | Satz |
+| ---- | ---- |
+| 1 – einfach | *Das Projekt war ein großer Erfolg.* |
+| 2 – präziser | *Das Projekt war ein **beträchtlicher** Erfolg.* |
+| 3 – vorsichtig | *Das Projekt **dürfte** ein beträchtlicher Erfolg **gewesen sein**.* |
+| 4 – nominal + vorsichtig + präzise | *Die **Umsetzung** des Projekts **ließe sich** als beträchtlicher Erfolg **werten**.* |
+
+### Weitere Beispiele für das Zusammenspiel
+- *Eine **Verschiebung** des Termins **wäre** unter Umständen **vertretbar**.* (Nominal + Konj. II + präzises Adjektiv)
+- *Es **dürfte** eine **erhebliche** **Herausforderung** darstellen, die **Kosten** zu **senken**.*
+- *Eine **gründliche** **Überprüfung** der Ergebnisse **erschiene** mir **angebracht**.*
+- *Die **Einführung** des Systems **hätte** **gravierende** Folgen **haben können**.*
+
+### Wann ist das angemessen?
+| ✅ passend | ❌ unpassend |
+| ---- | ---- |
+| Gutachten, Stellungnahme, wissenschaftliche Diskussion | Gespräch mit Freunden |
+| diplomatische Kritik im Beruf | einfache Anleitung |
+| Bewertung in einem Bericht | WhatsApp-Nachricht |
+
+### Achtung: Klarheit bleibt oberstes Gebot!
+Ein Satz mit Konjunktiv, Nominalstil **und** Fachwörtern darf nicht **unverständlich** werden. Lesen Sie Ihren Satz laut: **Versteht man ihn beim ersten Lesen?**
+
+**Beispiele:**
+- *Man **könnte** argumentieren, dass die **Einführung** neuer Regeln **unverhältnismäßig** **wäre**.*
+- *Die **Fortsetzung** der Verhandlungen **erscheint** **unumgänglich**.*
+- *Eine **Anpassung** der Strategie **wäre** **zweckmäßig**.*`,
+      explanationEn: `## Review: subjunctive, nominal style and precision working together
+
+A **masterful sentence** can show several levels at once: **Konjunktiv II** (caution), **nominal style** (formality) and **precise word choice** (accuracy).
+
+> *Man **könnte** die **Durchführung** des Projekts als **beträchtlichen** Erfolg **werten**.*
+> (One could regard the implementation of the project as a considerable success.)
+
+| element | function |
+| ---- | ---- |
+| *könnte* | **Konjunktiv II** → cautious, polite evaluation |
+| *die Durchführung des Projekts* | **nominal style** → objective, formal |
+| *beträchtlich* | **precise adjective** instead of *groß* |
+| *werten* | **precise verb** instead of *sehen / sagen* |
+
+### From a simple to a masterful sentence
+| stage | sentence |
+| ---- | ---- |
+| 1 – simple | *Das Projekt war ein großer Erfolg.* (The project was a big success.) |
+| 2 – more precise | *Das Projekt war ein **beträchtlicher** Erfolg.* (… a considerable success.) |
+| 3 – cautious | *Das Projekt **dürfte** ein beträchtlicher Erfolg **gewesen sein**.* (The project was probably a considerable success.) |
+| 4 – nominal + cautious + precise | *Die **Umsetzung** des Projekts **ließe sich** als beträchtlicher Erfolg **werten**.* (The implementation of the project could be regarded as a considerable success.) |
+
+### More examples of the interplay
+- *Eine **Verschiebung** des Termins **wäre** unter Umständen **vertretbar**.* (A postponement of the date might be justifiable under certain circumstances. – nominal + Konj. II + precise adjective)
+- *Es **dürfte** eine **erhebliche** **Herausforderung** darstellen, die **Kosten** zu **senken**.* (Reducing costs is likely to be a considerable challenge.)
+- *Eine **gründliche** **Überprüfung** der Ergebnisse **erschiene** mir **angebracht**.* (A thorough review of the results would seem appropriate to me.)
+- *Die **Einführung** des Systems **hätte** **gravierende** Folgen **haben können**.* (The introduction of the system could have had serious consequences.)
+
+### When is this appropriate?
+| ✅ suitable | ❌ unsuitable |
+| ---- | ---- |
+| expert opinion, position paper, academic discussion | chatting with friends |
+| diplomatic criticism at work | simple instructions |
+| evaluation in a report | WhatsApp message |
+
+### Note: clarity remains the top priority!
+A sentence with subjunctive, nominal style **and** technical terms must not become **incomprehensible**. Read your sentence aloud: **can it be understood on first reading?**
+
+**Examples:**
+- *Man **könnte** argumentieren, dass die **Einführung** neuer Regeln **unverhältnismäßig** **wäre**.* (One could argue that introducing new rules would be disproportionate.)
+- *Die **Fortsetzung** der Verhandlungen **erscheint** **unumgänglich**.* (Continuing the negotiations appears unavoidable.)
+- *Eine **Anpassung** der Strategie **wäre** **zweckmäßig**.* (An adjustment of the strategy would be expedient.)`,
+      explanationTr: `## Tekrar: Konjunktiv, isim üslubu ve kesinlik bir arada
+
+**Usta işi bir cümle** aynı anda birkaç katmanı gösterebilir: **Konjunktiv II** (temkin), **isim üslubu** (resmîlik) ve **kesin kelime seçimi** (doğruluk).
+
+> *Man **könnte** die **Durchführung** des Projekts als **beträchtlichen** Erfolg **werten**.*
+> (Projenin yürütülmesi kayda değer bir başarı olarak değerlendirilebilirdi.)
+
+| öğe | işlevi |
+| ---- | ---- |
+| *könnte* | **Konjunktiv II** → temkinli, kibar değerlendirme |
+| *die Durchführung des Projekts* | **isim üslubu** → nesnel, resmî |
+| *beträchtlich* | *groß* yerine **kesin sıfat** |
+| *werten* | *sehen / sagen* yerine **kesin fiil** |
+
+### Basit cümleden usta işi cümleye
+| aşama | cümle |
+| ---- | ---- |
+| 1 – basit | *Das Projekt war ein großer Erfolg.* (Proje büyük bir başarıydı.) |
+| 2 – daha kesin | *Das Projekt war ein **beträchtlicher** Erfolg.* (… kayda değer bir başarıydı.) |
+| 3 – temkinli | *Das Projekt **dürfte** ein beträchtlicher Erfolg **gewesen sein**.* (Proje muhtemelen kayda değer bir başarıydı.) |
+| 4 – isim üslubu + temkinli + kesin | *Die **Umsetzung** des Projekts **ließe sich** als beträchtlicher Erfolg **werten**.* (Projenin hayata geçirilmesi kayda değer bir başarı olarak değerlendirilebilir.) |
+
+### Bir aradalığa başka örnekler
+- *Eine **Verschiebung** des Termins **wäre** unter Umständen **vertretbar**.* (Tarihin ertelenmesi bazı koşullarda savunulabilir olurdu. – isim üslubu + Konj. II + kesin sıfat)
+- *Es **dürfte** eine **erhebliche** **Herausforderung** darstellen, die **Kosten** zu **senken**.* (Maliyetleri düşürmek muhtemelen ciddi bir zorluk teşkil edecektir.)
+- *Eine **gründliche** **Überprüfung** der Ergebnisse **erschiene** mir **angebracht**.* (Sonuçların kapsamlı bir şekilde gözden geçirilmesi bana yerinde görünürdü.)
+- *Die **Einführung** des Systems **hätte** **gravierende** Folgen **haben können**.* (Sistemin getirilmesi vahim sonuçlar doğurabilirdi.)
+
+### Bu ne zaman uygundur?
+| ✅ uygun | ❌ uygun değil |
+| ---- | ---- |
+| bilirkişi raporu, görüş yazısı, bilimsel tartışma | arkadaşlarla sohbet |
+| iş yerinde diplomatik eleştiri | basit talimatlar |
+| bir rapordaki değerlendirme | WhatsApp mesajı |
+
+### Dikkat: açıklık en önemli kural olarak kalır!
+Konjunktiv, isim üslubu **ve** terimler içeren bir cümle **anlaşılmaz** hâle gelmemelidir. Cümlenizi yüksek sesle okuyun: **İlk okumada anlaşılıyor mu?**
+
+**Örnekler:**
+- *Man **könnte** argumentieren, dass die **Einführung** neuer Regeln **unverhältnismäßig** **wäre**.* (Yeni kuralların getirilmesinin orantısız olacağı öne sürülebilir.)
+- *Die **Fortsetzung** der Verhandlungen **erscheint** **unumgänglich**.* (Müzakerelerin sürdürülmesi kaçınılmaz görünüyor.)
+- *Eine **Anpassung** der Strategie **wäre** **zweckmäßig**.* (Stratejinin uyarlanması amaca uygun olurdu.)`,
     },
   })
   await seedExercises({
@@ -41362,12 +43092,113 @@ Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standa
       unitId: c2Unit13.id,
       order: 4,
       grammarTopic: 'Abschlussübung: Meisterschaft im Ausdruck',
-      explanationDe:
-        'Abschließende Wiederholung des gesamten C2-Kurses: gehobene Konnektoren, Nominalstil, Rhetorik, Register, Sprachvarietäten, Diskursmarker und Präzision bilden zusammen sprachliche Meisterschaft.',
-      explanationEn:
-        'Final review of the whole C2 course: elevated connectors, nominal style, rhetoric, register, language varieties, discourse markers, and precision together constitute linguistic mastery.',
-      explanationTr:
-        'Tüm C2 kursunun son tekrarı: üst düzey bağlaçlar, isim stili, retorik, kayıt, dil çeşitleri, söylem işaretleyicileri ve hassasiyet birlikte dil ustalığını oluşturur.',
+      explanationDe: `## Abschlussübung: Meisterschaft im Ausdruck
+
+Herzlichen Glückwunsch – Sie haben den gesamten C2-Kurs abgeschlossen! Diese Übersicht fasst zusammen, was **sprachliche Meisterschaft** ausmacht: nicht nur **korrekt**, sondern **präzise, stilsicher und wirkungsvoll** zu kommunizieren.
+
+### Die C2-Themen im Überblick
+| Bereich | Kernpunkte | Beispiel |
+| ---- | ---- | ---- |
+| **1. Gehobene Konnektoren** | dennoch, nichtsdestotrotz, insofern als, dessen ungeachtet | *Dessen ungeachtet wurde der Plan umgesetzt.* |
+| **2. Gehobener Nominalstil** | Nominalisierung, Funktionsverbgefüge, Genitivketten | *Die Inbetriebnahme erfolgt nach Abschluss der Prüfung.* |
+| **3. Rhetorische Mittel** | Metapher, Vergleich, Anapher, rhetorische Frage | *Wir werden kämpfen, wir werden siegen.* |
+| **4. Sarkasmus & Hyperbel** | Gegenteil meinen, bewusst übertreiben | *Na toll, wieder Stau!* |
+| **5. Fachsprachen** | Recht, Medizin, Verwaltung | *vorbehaltlich, Diagnose, Bescheid* |
+| **6. Archaismen & gehobenes Vokabular** | vonnöten, ward, erhaben, obsolet | *Geduld ist vonnöten.* |
+| **7. Feinheiten des Konjunktivs** | Distanz, Höflichkeit, Hypothese | *Man könnte annehmen, dass …* |
+| **8. Textsorten** | Essay, Bericht, Rezension | *Ein Muss für alle Krimifans!* |
+| **9. Sprachvarietäten** | Standard, Umgangssprache, Regionalismen, Jugendsprache | *Sackerl, Velo, cringe* |
+| **10. Wortspiel** | Homonyme, Werbung, Komposita | *Staubecken* |
+| **11. Diskursmarker** | mithin, diesbezüglich, zunächst, abschließend | *Mithin ist die These belegt.* |
+| **12. Präzision** | sagen → einräumen, groß → erheblich, machen → durchführen | *Er räumte erhebliche Fehler ein.* |
+
+### Was Meisterschaft ausmacht
+1. **Präzision**: das treffende Wort statt des ungefähren
+2. **Stilsicherheit**: das passende Register für jede Situation
+3. **Nuancierung**: Haltung und Distanz durch Modus und Wortwahl ausdrücken
+4. **Textkompetenz**: Textsorten und ihre Konventionen beherrschen
+5. **Sprachbewusstsein**: Varietäten, Ironie und Wortspiele erkennen
+
+### Ein Abschlusstext, der vieles vereint
+*„Sprache ist **kein starres Regelwerk, sondern ein lebendiger Organismus** (Antithese, Metapher). Wer sie **meisterhaft** beherrscht, **wählt** seine Worte **mit Bedacht**, **wechselt** mühelos zwischen den Registern und **erkennt** die feinen **Zwischentöne**. **Ist** das nicht das eigentliche Ziel allen Sprachenlernens? (rhetorische Frage) Der Weg dorthin **mag** lang sein (Konjunktiv/Modalverb); **nichtsdestotrotz** (Konnektor) **lohnt** er sich – **mithin** (Diskursmarker): Bleiben Sie neugierig!"*
+
+### Wie geht es weiter?
+- **Viel lesen**: Feuilleton, Romane, Fachtexte, Glossen
+- **Bewusst schreiben**: Essays, Rezensionen, Kommentare
+- **Aktiv zuhören**: Podcasts, Debatten, Kabarett (Ironie!)
+- **Sprachvarietäten erleben**: Reisen nach Österreich und in die Schweiz`,
+      explanationEn: `## Final exercise: mastery of expression
+
+Congratulations – you have completed the entire C2 course! This overview summarises what **linguistic mastery** means: communicating not just **correctly**, but **precisely, with stylistic assurance and to good effect**.
+
+### The C2 topics at a glance
+| area | key points | example |
+| ---- | ---- | ---- |
+| **1. Elevated connectors** | dennoch, nichtsdestotrotz, insofern als, dessen ungeachtet | *Dessen ungeachtet wurde der Plan umgesetzt.* (Notwithstanding this, the plan was implemented.) |
+| **2. Elevated nominal style** | nominalisation, light-verb constructions, genitive chains | *Die Inbetriebnahme erfolgt nach Abschluss der Prüfung.* (Commissioning takes place after the inspection.) |
+| **3. Rhetorical devices** | metaphor, simile, anaphora, rhetorical question | *Wir werden kämpfen, wir werden siegen.* (We will fight, we will win.) |
+| **4. Sarcasm & hyperbole** | meaning the opposite, deliberate exaggeration | *Na toll, wieder Stau!* (Oh great, another traffic jam!) |
+| **5. Specialist languages** | law, medicine, administration | *vorbehaltlich, Diagnose, Bescheid* |
+| **6. Archaisms & elevated vocabulary** | vonnöten, ward, erhaben, obsolet | *Geduld ist vonnöten.* (Patience is needed.) |
+| **7. Subtleties of the subjunctive** | distance, politeness, hypothesis | *Man könnte annehmen, dass …* (One might assume that …) |
+| **8. Text types** | essay, report, review | *Ein Muss für alle Krimifans!* (A must for all crime fans!) |
+| **9. Language varieties** | standard, colloquial, regionalisms, youth language | *Sackerl, Velo, cringe* |
+| **10. Wordplay** | homonyms, advertising, compounds | *Staubecken* |
+| **11. Discourse markers** | mithin, diesbezüglich, zunächst, abschließend | *Mithin ist die These belegt.* (Hence the thesis is proven.) |
+| **12. Precision** | sagen → einräumen, groß → erheblich, machen → durchführen | *Er räumte erhebliche Fehler ein.* (He admitted considerable mistakes.) |
+
+### What mastery means
+1. **Precision**: the exact word instead of an approximate one
+2. **Stylistic assurance**: the right register for every situation
+3. **Nuance**: expressing attitude and distance through mood and word choice
+4. **Text competence**: mastering text types and their conventions
+5. **Language awareness**: recognising varieties, irony and wordplay
+
+### A closing text that brings much together
+*„Sprache ist **kein starres Regelwerk, sondern ein lebendiger Organismus** (antithesis, metaphor). Wer sie **meisterhaft** beherrscht, **wählt** seine Worte **mit Bedacht**, **wechselt** mühelos zwischen den Registern und **erkennt** die feinen **Zwischentöne**. **Ist** das nicht das eigentliche Ziel allen Sprachenlernens? (rhetorical question) Der Weg dorthin **mag** lang sein (subjunctive/modal); **nichtsdestotrotz** (connector) **lohnt** er sich – **mithin** (discourse marker): Bleiben Sie neugierig!"*
+(Language is not a rigid set of rules but a living organism. Whoever masters it chooses their words with care, switches effortlessly between registers and picks up the subtle undertones. Isn't that the real aim of all language learning? The road there may be long; nevertheless it is worth it – hence: stay curious!)
+
+### What next?
+- **Read a lot**: arts pages, novels, specialist texts, glosses
+- **Write deliberately**: essays, reviews, commentaries
+- **Listen actively**: podcasts, debates, cabaret (irony!)
+- **Experience language varieties**: travel to Austria and Switzerland`,
+      explanationTr: `## Kapanış alıştırması: İfadede ustalık
+
+Tebrikler – C2 kursunun tamamını bitirdiniz! Bu özet **dilde ustalığın** ne demek olduğunu toparlıyor: yalnızca **doğru** değil, **kesin, üslup bakımından sağlam ve etkili** iletişim kurmak.
+
+### C2 konularına genel bakış
+| alan | temel noktalar | örnek |
+| ---- | ---- | ---- |
+| **1. Yüksek üsluplu bağlayıcılar** | dennoch, nichtsdestotrotz, insofern als, dessen ungeachtet | *Dessen ungeachtet wurde der Plan umgesetzt.* (Buna bakılmaksızın plan uygulandı.) |
+| **2. Yüksek isim üslubu** | isimleştirme, işlev fiilli yapılar, Genitiv zincirleri | *Die Inbetriebnahme erfolgt nach Abschluss der Prüfung.* (İşletmeye alma denetim tamamlandıktan sonra yapılır.) |
+| **3. Retorik araçlar** | metafor, benzetme, anafor, retorik soru | *Wir werden kämpfen, wir werden siegen.* (Savaşacağız, kazanacağız.) |
+| **4. Alay ve abartma** | tersini kastetmek, bilerek abartmak | *Na toll, wieder Stau!* (Harika, yine trafik!) |
+| **5. Uzmanlık dilleri** | hukuk, tıp, kamu yönetimi | *vorbehaltlich, Diagnose, Bescheid* |
+| **6. Arkaizmler ve yüksek üslup** | vonnöten, ward, erhaben, obsolet | *Geduld ist vonnöten.* (Sabır elzemdir.) |
+| **7. Konjunktiv incelikleri** | mesafe, nezaket, hipotez | *Man könnte annehmen, dass …* (… varsayılabilir.) |
+| **8. Metin türleri** | deneme, rapor, eleştiri yazısı | *Ein Muss für alle Krimifans!* (Tüm polisiye severler için mutlaka!) |
+| **9. Dil çeşitleri** | standart, gündelik dil, bölgesel kelimeler, gençlik dili | *Sackerl, Velo, cringe* |
+| **10. Kelime oyunu** | homonimler, reklam, bileşik kelimeler | *Staubecken* |
+| **11. Söylem belirteçleri** | mithin, diesbezüglich, zunächst, abschließend | *Mithin ist die These belegt.* (Dolayısıyla tez kanıtlanmıştır.) |
+| **12. Kesinlik** | sagen → einräumen, groß → erheblich, machen → durchführen | *Er räumte erhebliche Fehler ein.* (Ciddi hatalar yaptığını kabul etti.) |
+
+### Ustalık ne demektir?
+1. **Kesinlik**: yaklaşık kelime yerine tam isabetli kelime
+2. **Üslup sağlamlığı**: her durum için uygun dil düzeyi
+3. **İncelik**: tutumu ve mesafeyi kip ve kelime seçimiyle ifade etmek
+4. **Metin yetkinliği**: metin türlerine ve kurallarına hâkim olmak
+5. **Dil bilinci**: dil çeşitlerini, ironiyi ve kelime oyunlarını tanımak
+
+### Birçok şeyi bir araya getiren kapanış metni
+*„Sprache ist **kein starres Regelwerk, sondern ein lebendiger Organismus** (antitez, metafor). Wer sie **meisterhaft** beherrscht, **wählt** seine Worte **mit Bedacht**, **wechselt** mühelos zwischen den Registern und **erkennt** die feinen **Zwischentöne**. **Ist** das nicht das eigentliche Ziel allen Sprachenlernens? (retorik soru) Der Weg dorthin **mag** lang sein (Konjunktiv/modal fiil); **nichtsdestotrotz** (bağlayıcı) **lohnt** er sich – **mithin** (söylem belirteci): Bleiben Sie neugierig!"*
+(Dil katı bir kurallar bütünü değil, canlı bir organizmadır. Ona ustalıkla hâkim olan, kelimelerini özenle seçer, dil düzeyleri arasında zahmetsizce geçiş yapar ve ince tonları fark eder. Bütün dil öğreniminin asıl amacı bu değil midir? Oraya giden yol uzun olabilir; buna rağmen buna değer – dolayısıyla: Meraklı kalın!)
+
+### Bundan sonra ne olacak?
+- **Çok okuyun**: kültür-sanat sayfaları, romanlar, uzmanlık metinleri, kısa yorum yazıları
+- **Bilinçli yazın**: denemeler, eleştiri yazıları, yorumlar
+- **Etkin dinleyin**: podcast'ler, tartışmalar, kabare (ironi!)
+- **Dil çeşitlerini deneyimleyin**: Avusturya ve İsviçre'ye seyahat edin`,
     },
   })
   await seedExercises({
