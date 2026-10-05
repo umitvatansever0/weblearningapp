@@ -31128,12 +31128,111 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit7.id,
       order: 1,
       grammarTopic: 'Redewendungen mit Körperteilen',
-      explanationDe:
-        'Viele Redewendungen nutzen Körperteile bildlich: "die Nase voll haben" (genervt sein), "jemandem die Daumen drücken" (jemandem Glück wünschen).',
-      explanationEn:
-        'Many idioms use body parts figuratively: "die Nase voll haben" (to have had enough — literally "to have a full nose"), "jemandem die Daumen drücken" (to wish someone luck — literally "to press one\'s thumbs").',
-      explanationTr:
-        'Birçok deyim vücut parçalarını mecazi olarak kullanır: "die Nase voll haben" (bıkmak), "jemandem die Daumen drücken" (birine şans dilemek).',
+      explanationDe: `## Redewendungen mit Körperteilen
+
+Redewendungen (Idiome) sind **feste Ausdrücke**, deren Bedeutung sich **nicht wörtlich** aus den einzelnen Wörtern ergibt. Besonders viele deutsche Redewendungen benutzen **Körperteile** als Bilder.
+
+| Redewendung | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| **die Nase voll haben** (von) | genug haben, genervt sein | Ich habe **die Nase voll** von dem Regen. |
+| **jemandem die Daumen drücken** | jemandem Glück wünschen | Ich **drücke dir die Daumen** für die Prüfung! |
+| **Hals über Kopf** | überstürzt, sehr schnell | Sie sind **Hals über Kopf** abgereist. |
+| **etwas auf dem Herzen haben** | ein Anliegen / Problem haben | Du siehst traurig aus. Hast du **etwas auf dem Herzen**? |
+| **ein Auge zudrücken** | nachsichtig sein | Diesmal **drücke** ich noch **ein Auge zu**. |
+| **sich etwas aus den Fingern saugen** | etwas erfinden | Diese Geschichte hat er **sich aus den Fingern gesogen**. |
+| **jemandem auf die Nerven gehen** | jemanden stören | Der Lärm **geht mir auf die Nerven**. |
+| **die Ohren spitzen** | genau zuhören | Als sein Name fiel, **spitzte** er **die Ohren**. |
+| **kalte Füße bekommen** | Angst bekommen, einen Rückzieher machen | Kurz vor der Hochzeit **bekam** er **kalte Füße**. |
+| **jemandem unter die Arme greifen** | jemandem helfen | Meine Eltern **greifen mir** finanziell **unter die Arme**. |
+| **etwas übers Knie brechen** | etwas überstürzt entscheiden | Wir sollten die Entscheidung nicht **übers Knie brechen**. |
+| **den Kopf verlieren** | in Panik geraten | Bleib ruhig und **verlier** nicht **den Kopf**! |
+
+### Grammatik in Redewendungen
+Redewendungen sind **fest**, aber das **Verb wird konjugiert** und die **Personen angepasst**:
+- *Ich **drücke dir** die Daumen.* / *Wir **haben** dir die Daumen **gedrückt**.*
+- *Sie **hat** die Nase voll.* / *Ich **hatte** die Nase voll.*
+
+Die Wörter selbst darf man **nicht austauschen**: ❌ *den Finger drücken*, ❌ *die Nase ganz haben*.
+
+### Vergleich mit anderen Sprachen
+Manche Bilder gibt es auch im Englischen oder Türkischen (*to keep an eye on* – *göz kulak olmak*), viele aber nicht. **Nie wörtlich übersetzen!** *„Ich drücke dir die Daumen"* heißt auf Englisch *„I'll keep my fingers crossed"*.
+
+**Beispiele:**
+- Ich habe **die Nase** gestrichen **voll** von deinen Ausreden!
+- Morgen hast du dein Vorstellungsgespräch – ich **drücke dir die Daumen**!
+- Sie haben sich **Hals über Kopf** verliebt.
+- Der Lehrer hat **ein Auge zugedrückt** und mich nicht bestraft.
+- Hör auf, mir **auf die Nerven zu gehen**!`,
+      explanationEn: `## Idioms with body parts
+
+Idioms (Redewendungen) are **fixed expressions** whose meaning **cannot be worked out literally** from the individual words. A particularly large number of German idioms use **body parts** as images.
+
+| idiom | meaning | example |
+| ---- | ---- | ---- |
+| **die Nase voll haben** (von) | to be fed up | Ich habe **die Nase voll** von dem Regen. (I'm fed up with the rain.) |
+| **jemandem die Daumen drücken** | to wish someone luck ("keep fingers crossed") | Ich **drücke dir die Daumen** für die Prüfung! |
+| **Hals über Kopf** | headlong, in a rush | Sie sind **Hals über Kopf** abgereist. (They left in a rush.) |
+| **etwas auf dem Herzen haben** | to have something on one's mind | Hast du **etwas auf dem Herzen**? (Is something on your mind?) |
+| **ein Auge zudrücken** | to turn a blind eye | Diesmal **drücke** ich noch **ein Auge zu**. (I'll turn a blind eye this time.) |
+| **sich etwas aus den Fingern saugen** | to make something up | Diese Geschichte hat er **sich aus den Fingern gesogen**. (He made that story up.) |
+| **jemandem auf die Nerven gehen** | to get on someone's nerves | Der Lärm **geht mir auf die Nerven**. |
+| **die Ohren spitzen** | to prick up one's ears | Als sein Name fiel, **spitzte** er **die Ohren**. |
+| **kalte Füße bekommen** | to get cold feet | Kurz vor der Hochzeit **bekam** er **kalte Füße**. |
+| **jemandem unter die Arme greifen** | to help someone out | Meine Eltern **greifen mir** finanziell **unter die Arme**. |
+| **etwas übers Knie brechen** | to rush a decision | Wir sollten die Entscheidung nicht **übers Knie brechen**. |
+| **den Kopf verlieren** | to lose one's head, panic | Bleib ruhig und **verlier** nicht **den Kopf**! |
+
+### Grammar in idioms
+Idioms are **fixed**, but the **verb is conjugated** and **persons are adapted**:
+- *Ich **drücke dir** die Daumen.* / *Wir **haben** dir die Daumen **gedrückt**.*
+- *Sie **hat** die Nase voll.* / *Ich **hatte** die Nase voll.*
+
+You must **not swap** the words: ❌ *den Finger drücken*, ❌ *die Nase ganz haben*.
+
+### Comparison with other languages
+Some images exist in English too (*to keep an eye on*, *to get cold feet*), but many don't. **Never translate literally!** *„Ich drücke dir die Daumen"* ("I press my thumbs for you") means *"I'll keep my fingers crossed"*.
+
+**Examples:**
+- Ich habe **die Nase** gestrichen **voll** von deinen Ausreden! (I'm absolutely fed up with your excuses!)
+- Morgen hast du dein Vorstellungsgespräch – ich **drücke dir die Daumen**! (Your interview is tomorrow – fingers crossed!)
+- Sie haben sich **Hals über Kopf** verliebt. (They fell head over heels in love.)
+- Der Lehrer hat **ein Auge zugedrückt** und mich nicht bestraft. (The teacher turned a blind eye and didn't punish me.)
+- Hör auf, mir **auf die Nerven zu gehen**! (Stop getting on my nerves!)`,
+      explanationTr: `## Vücut bölümleriyle deyimler
+
+Deyimler (Redewendungen), anlamı tek tek kelimelerden **kelimesi kelimesine çıkarılamayan** **kalıplaşmış ifadelerdir**. Almanca deyimlerin özellikle büyük bir kısmı imge olarak **vücut bölümlerini** kullanır.
+
+| deyim | anlamı | örnek |
+| ---- | ---- | ---- |
+| **die Nase voll haben** (von) | bıkmak, gına gelmek | Ich habe **die Nase voll** von dem Regen. (Yağmurdan bıktım.) |
+| **jemandem die Daumen drücken** | birine şans dilemek | Ich **drücke dir die Daumen** für die Prüfung! (Sınavda bol şans!) |
+| **Hals über Kopf** | apar topar, aceleyle | Sie sind **Hals über Kopf** abgereist. (Apar topar yola çıktılar.) |
+| **etwas auf dem Herzen haben** | içinde bir dert olmak | Hast du **etwas auf dem Herzen**? (İçinde bir dert mi var?) |
+| **ein Auge zudrücken** | göz yummak | Diesmal **drücke** ich noch **ein Auge zu**. (Bu sefer göz yumuyorum.) |
+| **sich etwas aus den Fingern saugen** | bir şeyi uydurmak | Diese Geschichte hat er **sich aus den Fingern gesogen**. (Bu hikâyeyi uydurdu.) |
+| **jemandem auf die Nerven gehen** | birinin sinirine dokunmak | Der Lärm **geht mir auf die Nerven**. (Gürültü sinirimi bozuyor.) |
+| **die Ohren spitzen** | kulak kabartmak | Als sein Name fiel, **spitzte** er **die Ohren**. (Adı geçince kulak kabarttı.) |
+| **kalte Füße bekommen** | korkup geri adım atmak | Kurz vor der Hochzeit **bekam** er **kalte Füße**. (Düğünden hemen önce korkup cayacak gibi oldu.) |
+| **jemandem unter die Arme greifen** | birine destek olmak | Meine Eltern **greifen mir** finanziell **unter die Arme**. (Ailem bana maddi destek oluyor.) |
+| **etwas übers Knie brechen** | aceleye getirmek | Wir sollten die Entscheidung nicht **übers Knie brechen**. (Kararı aceleye getirmemeliyiz.) |
+| **den Kopf verlieren** | aklını kaybetmek, paniğe kapılmak | Bleib ruhig und **verlier** nicht **den Kopf**! (Sakin ol, paniğe kapılma!) |
+
+### Deyimlerde dilbilgisi
+Deyimler **kalıplaşmıştır**, ama **fiil çekimlenir** ve **şahıslar uyarlanır**:
+- *Ich **drücke dir** die Daumen.* / *Wir **haben** dir die Daumen **gedrückt**.*
+- *Sie **hat** die Nase voll.* / *Ich **hatte** die Nase voll.*
+
+Kelimelerin kendisi **değiştirilemez**: ❌ *den Finger drücken*, ❌ *die Nase ganz haben*.
+
+### Diğer dillerle karşılaştırma
+Bazı imgeler Türkçede de vardır (*ein Auge zudrücken* – *göz yummak*, *die Ohren spitzen* – *kulak kabartmak*), ama birçoğu yoktur. **Asla kelimesi kelimesine çevirmeyin!** *„Ich drücke dir die Daumen"* („başparmaklarımı senin için sıkıyorum") *„Bol şans!"* demektir.
+
+**Örnekler:**
+- Ich habe **die Nase** gestrichen **voll** von deinen Ausreden! (Bahanelerinden artık iyice bıktım!)
+- Morgen hast du dein Vorstellungsgespräch – ich **drücke dir die Daumen**! (Yarın iş görüşmen var – bol şans!)
+- Sie haben sich **Hals über Kopf** verliebt. (Birbirlerine sırılsıklam âşık oldular.)
+- Der Lehrer hat **ein Auge zugedrückt** und mich nicht bestraft. (Öğretmen göz yumdu ve beni cezalandırmadı.)
+- Hör auf, mir **auf die Nerven zu gehen**! (Sinirimi bozmayı bırak!)`,
     },
   })
   await seedExercises({
@@ -31162,12 +31261,102 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit7.id,
       order: 2,
       grammarTopic: 'Redewendungen mit Tieren',
-      explanationDe:
-        '"Die Katze im Sack kaufen" bedeutet, etwas ungeprüft zu kaufen. "Einen Bärenhunger haben" bedeutet, sehr hungrig zu sein.',
-      explanationEn:
-        '"Die Katze im Sack kaufen" (to buy a cat in a sack) means to buy something without checking it first. "Einen Bärenhunger haben" (to have a bear\'s hunger) means to be very hungry.',
-      explanationTr:
-        '"Die Katze im Sack kaufen" (çuvaldaki kediyi almak) kontrol etmeden bir şey satın almak demektir. "Einen Bärenhunger haben" çok aç olmak demektir.',
+      explanationDe: `## Redewendungen mit Tieren
+
+Tiere stehen in Redewendungen oft für **typische Eigenschaften**: der Bär für Stärke und Hunger, der Hund für ein schweres Leben, das Schwein für Glück.
+
+| Redewendung | Bedeutung |
+| ---- | ---- |
+| **die Katze im Sack kaufen** | etwas ungeprüft kaufen / annehmen |
+| **einen Bärenhunger haben** | sehr hungrig sein |
+| **Schwein haben** | Glück haben |
+| **da liegt der Hund begraben** | das ist der eigentliche Grund / das Problem |
+| **mit jemandem ein Hühnchen zu rupfen haben** | mit jemandem etwas Unangenehmes klären müssen |
+| **zwei Fliegen mit einer Klappe schlagen** | zwei Ziele mit einer Handlung erreichen |
+| **wie ein begossener Pudel** | beschämt, enttäuscht |
+| **den Bock zum Gärtner machen** | die falsche (ungeeignete) Person beauftragen |
+| **die Katze aus dem Sack lassen** | ein Geheimnis verraten |
+| **jemandem einen Bären aufbinden** | jemandem eine Lüge erzählen |
+| **eine Eselsbrücke** | eine Merkhilfe |
+| **auf den Hund kommen** | herunterkommen, verarmen |
+| **Hunde, die bellen, beißen nicht** | wer droht, handelt oft nicht |
+
+### Beispiele im Kontext
+- *Kauf das Auto nicht ohne Probefahrt – sonst **kaufst** du **die Katze im Sack**.*
+- *Nach der Wanderung hatten alle **einen Bärenhunger**.*
+- *Der Zug hatte Verspätung, und ich habe ihn noch erwischt – **Schwein gehabt**!*
+- *Er hat keine Zeit? **Da liegt der Hund begraben**: Er will einfach nicht.*
+- *Wenn ich mit dem Rad zur Arbeit fahre, **schlage** ich **zwei Fliegen mit einer Klappe**: Ich spare Geld und treibe Sport.*
+- *Endlich **ließ** sie **die Katze aus dem Sack**: Sie ist schwanger!*
+- *Du willst mir **einen Bären aufbinden**! Das glaube ich nicht.*
+- *„Nie ohne Seife waschen" ist eine **Eselsbrücke** für die Reihenfolge der Himmelsrichtungen (N-O-S-W).*
+
+### Tipp zum Lernen
+Lernen Sie Redewendungen **mit einem Beispielsatz** und einer **Situation**. Eine Redewendung, die man nur als Liste kennt, benutzt man selten richtig.`,
+      explanationEn: `## Idioms with animals
+
+In idioms, animals often stand for **typical characteristics**: the bear for strength and hunger, the dog for a hard life, the pig for luck.
+
+| idiom | meaning |
+| ---- | ---- |
+| **die Katze im Sack kaufen** | to buy a pig in a poke (buy without checking) |
+| **einen Bärenhunger haben** | to be ravenous ("a bear's hunger") |
+| **Schwein haben** | to be lucky ("to have pig") |
+| **da liegt der Hund begraben** | that's the real reason / the crux of the matter |
+| **mit jemandem ein Hühnchen zu rupfen haben** | to have a bone to pick with someone |
+| **zwei Fliegen mit einer Klappe schlagen** | to kill two birds with one stone ("two flies with one swat") |
+| **wie ein begossener Pudel** | crestfallen, like a dog with its tail between its legs |
+| **den Bock zum Gärtner machen** | to put the fox in charge of the henhouse |
+| **die Katze aus dem Sack lassen** | to let the cat out of the bag |
+| **jemandem einen Bären aufbinden** | to pull someone's leg, tell them a tall story |
+| **eine Eselsbrücke** | a mnemonic ("donkey bridge") |
+| **auf den Hund kommen** | to go to the dogs |
+| **Hunde, die bellen, beißen nicht** | his bark is worse than his bite |
+
+### Examples in context
+- *Kauf das Auto nicht ohne Probefahrt – sonst **kaufst** du **die Katze im Sack**.* (Don't buy the car without a test drive, or you'll be buying a pig in a poke.)
+- *Nach der Wanderung hatten alle **einen Bärenhunger**.* (After the hike everyone was ravenous.)
+- *Der Zug hatte Verspätung, und ich habe ihn noch erwischt – **Schwein gehabt**!* (The train was late and I still caught it – lucky me!)
+- *Er hat keine Zeit? **Da liegt der Hund begraben**: Er will einfach nicht.* (He has no time? That's not the real reason: he simply doesn't want to.)
+- *Wenn ich mit dem Rad zur Arbeit fahre, **schlage** ich **zwei Fliegen mit einer Klappe**: Ich spare Geld und treibe Sport.* (Cycling to work kills two birds with one stone: I save money and get exercise.)
+- *Endlich **ließ** sie **die Katze aus dem Sack**: Sie ist schwanger!* (Finally she let the cat out of the bag: she's pregnant!)
+- *Du willst mir **einen Bären aufbinden**! Das glaube ich nicht.* (You're pulling my leg! I don't believe it.)
+- *„Nie ohne Seife waschen" ist eine **Eselsbrücke** für die Reihenfolge der Himmelsrichtungen (N-O-S-W).* ("Never wash without soap" is a mnemonic for the compass points.)
+
+### Learning tip
+Learn idioms **with an example sentence** and a **situation**. An idiom you only know from a list is rarely used correctly.`,
+      explanationTr: `## Hayvanlarla deyimler
+
+Deyimlerde hayvanlar çoğu zaman **tipik özellikleri** temsil eder: ayı güç ve açlığı, köpek zor bir hayatı, domuz ise şansı.
+
+| deyim | anlamı |
+| ---- | ---- |
+| **die Katze im Sack kaufen** | çuvaldaki kediyi almak = bir şeyi görmeden/kontrol etmeden almak |
+| **einen Bärenhunger haben** | kurt gibi aç olmak („ayı açlığı") |
+| **Schwein haben** | şanslı olmak („domuzu olmak") |
+| **da liegt der Hund begraben** | işin aslı / sorunun özü bu |
+| **mit jemandem ein Hühnchen zu rupfen haben** | biriyle görülecek bir hesabı olmak |
+| **zwei Fliegen mit einer Klappe schlagen** | bir taşla iki kuş vurmak („bir şaplakla iki sinek") |
+| **wie ein begossener Pudel** | süt dökmüş kedi gibi, mahcup |
+| **den Bock zum Gärtner machen** | kediye ciğer emanet etmek |
+| **die Katze aus dem Sack lassen** | baklayı ağzından çıkarmak |
+| **jemandem einen Bären aufbinden** | birine masal okumak, kafaya almak |
+| **eine Eselsbrücke** | akılda tutma tekniği („eşek köprüsü") |
+| **auf den Hund kommen** | sefil düşmek, perişan olmak |
+| **Hunde, die bellen, beißen nicht** | havlayan köpek ısırmaz |
+
+### Bağlam içinde örnekler
+- *Kauf das Auto nicht ohne Probefahrt – sonst **kaufst** du **die Katze im Sack**.* (Arabayı test sürüşü yapmadan alma – yoksa çuvaldaki kediyi almış olursun.)
+- *Nach der Wanderung hatten alle **einen Bärenhunger**.* (Yürüyüşten sonra herkes kurt gibi acıkmıştı.)
+- *Der Zug hatte Verspätung, und ich habe ihn noch erwischt – **Schwein gehabt**!* (Tren gecikmişti ve yetiştim – şansım varmış!)
+- *Er hat keine Zeit? **Da liegt der Hund begraben**: Er will einfach nicht.* (Vakti mi yok? İşin aslı şu: basitçe istemiyor.)
+- *Wenn ich mit dem Rad zur Arbeit fahre, **schlage** ich **zwei Fliegen mit einer Klappe**: Ich spare Geld und treibe Sport.* (İşe bisikletle gidersem bir taşla iki kuş vururum: hem para biriktiririm hem spor yaparım.)
+- *Endlich **ließ** sie **die Katze aus dem Sack**: Sie ist schwanger!* (Sonunda baklayı ağzından çıkardı: hamile!)
+- *Du willst mir **einen Bären aufbinden**! Das glaube ich nicht.* (Bana masal okuyorsun! İnanmıyorum.)
+- *„Nie ohne Seife waschen" ist eine **Eselsbrücke** für die Reihenfolge der Himmelsrichtungen (N-O-S-W).* („Asla sabunsuz yıkanma", yönlerin sırası için bir hafıza tekniğidir.)
+
+### Öğrenme ipucu
+Deyimleri **bir örnek cümle** ve bir **durumla** birlikte öğrenin. Yalnızca listeden bilinen bir deyim nadiren doğru kullanılır.`,
     },
   })
   await seedExercises({
@@ -31196,12 +31385,87 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit7.id,
       order: 3,
       grammarTopic: 'Feste Wendungen im Geschäftsleben',
-      explanationDe:
-        '"Etwas auf die lange Bank schieben" bedeutet, etwas zu verzögern. "Den Nagel auf den Kopf treffen" bedeutet, genau richtig zu urteilen.',
-      explanationEn:
-        '"Etwas auf die lange Bank schieben" (to push something onto the long bench) means to postpone something. "Den Nagel auf den Kopf treffen" (to hit the nail on the head) means to judge something exactly right.',
-      explanationTr:
-        '"Etwas auf die lange Bank schieben" bir şeyi ertelemek demektir. "Den Nagel auf den Kopf treffen" tam isabetli bir yargıda bulunmak demektir.',
+      explanationDe: `## Feste Wendungen im Geschäftsleben
+
+Auch im Berufsalltag – in Meetings, E-Mails und Verhandlungen – benutzt man viele feste Wendungen. Sie wirken **kompetent und idiomatisch**, wenn man sie richtig einsetzt.
+
+| Wendung | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| **etwas auf die lange Bank schieben** | etwas verzögern, aufschieben | Wir dürfen das Problem nicht **auf die lange Bank schieben**. |
+| **den Nagel auf den Kopf treffen** | genau das Richtige sagen | Mit dieser Analyse hast du **den Nagel auf den Kopf getroffen**. |
+| **an einem Strang ziehen** | gemeinsam für ein Ziel arbeiten | Wenn alle **an einem Strang ziehen**, schaffen wir es. |
+| **unter Dach und Fach sein** | erfolgreich abgeschlossen sein | Der Vertrag ist endlich **unter Dach und Fach**. |
+| **etwas in die Wege leiten** | etwas veranlassen, beginnen | Ich werde alles Nötige **in die Wege leiten**. |
+| **mit offenen Karten spielen** | ehrlich sein, nichts verbergen | Lassen Sie uns **mit offenen Karten spielen**. |
+| **grünes Licht geben** | etwas erlauben | Die Geschäftsleitung hat **grünes Licht gegeben**. |
+| **ins Fettnäpfchen treten** | einen peinlichen Fehler machen | Mit der Bemerkung bin ich **ins Fettnäpfchen getreten**. |
+| **auf der Strecke bleiben** | scheitern, nicht berücksichtigt werden | Bei so viel Stress **bleibt** die Qualität **auf der Strecke**. |
+| **etwas unter den Teppich kehren** | etwas verheimlichen | Die Fehler wurden **unter den Teppich gekehrt**. |
+| **das Ruder herumreißen** | eine Situation entscheidend ändern | Der neue Chef hat **das Ruder herumgerissen**. |
+| **Nägel mit Köpfen machen** | etwas konsequent und richtig tun | Jetzt **machen** wir **Nägel mit Köpfen** und unterschreiben. |
+
+### Register beachten
+Manche Wendungen sind **neutral** (*in die Wege leiten, grünes Licht geben*) und passen auch in formelle E-Mails. Andere sind eher **umgangssprachlich** (*ins Fettnäpfchen treten*) und gehören ins Gespräch.
+
+**Weitere Beispiele:**
+- Die Entscheidung wurde zu lange **auf die lange Bank geschoben**.
+- Sobald alles **unter Dach und Fach** ist, informieren wir Sie.
+- Wir müssen jetzt **an einem Strang ziehen**, sonst verlieren wir den Kunden.
+- Der Vorstand hat für das Projekt **grünes Licht gegeben**.`,
+      explanationEn: `## Fixed expressions in business
+
+In working life too – in meetings, e-mails and negotiations – many fixed expressions are used. They sound **competent and idiomatic** when used correctly.
+
+| expression | meaning | example |
+| ---- | ---- | ---- |
+| **etwas auf die lange Bank schieben** | to put something off ("push onto the long bench") | Wir dürfen das Problem nicht **auf die lange Bank schieben**. (We mustn't put the problem off.) |
+| **den Nagel auf den Kopf treffen** | to hit the nail on the head | Mit dieser Analyse hast du **den Nagel auf den Kopf getroffen**. |
+| **an einem Strang ziehen** | to pull together | Wenn alle **an einem Strang ziehen**, schaffen wir es. (If everyone pulls together, we'll make it.) |
+| **unter Dach und Fach sein** | to be signed and sealed | Der Vertrag ist endlich **unter Dach und Fach**. (The contract is finally signed and sealed.) |
+| **etwas in die Wege leiten** | to set something in motion | Ich werde alles Nötige **in die Wege leiten**. (I'll arrange everything necessary.) |
+| **mit offenen Karten spielen** | to put one's cards on the table | Lassen Sie uns **mit offenen Karten spielen**. (Let's be open with each other.) |
+| **grünes Licht geben** | to give the green light | Die Geschäftsleitung hat **grünes Licht gegeben**. |
+| **ins Fettnäpfchen treten** | to put one's foot in it | Mit der Bemerkung bin ich **ins Fettnäpfchen getreten**. (I put my foot in it with that remark.) |
+| **auf der Strecke bleiben** | to fall by the wayside | Bei so viel Stress **bleibt** die Qualität **auf der Strecke**. (With so much stress, quality falls by the wayside.) |
+| **etwas unter den Teppich kehren** | to sweep something under the carpet | Die Fehler wurden **unter den Teppich gekehrt**. |
+| **das Ruder herumreißen** | to turn things around | Der neue Chef hat **das Ruder herumgerissen**. (The new boss turned things around.) |
+| **Nägel mit Köpfen machen** | to do the job properly, commit fully | Jetzt **machen** wir **Nägel mit Köpfen** und unterschreiben. (Let's do it properly and sign.) |
+
+### Mind the register
+Some expressions are **neutral** (*in die Wege leiten, grünes Licht geben*) and also fit formal e-mails. Others are rather **colloquial** (*ins Fettnäpfchen treten*) and belong in conversation.
+
+**More examples:**
+- Die Entscheidung wurde zu lange **auf die lange Bank geschoben**. (The decision was put off for too long.)
+- Sobald alles **unter Dach und Fach** ist, informieren wir Sie. (As soon as everything is finalised, we'll inform you.)
+- Wir müssen jetzt **an einem Strang ziehen**, sonst verlieren wir den Kunden. (We have to pull together now or we'll lose the client.)
+- Der Vorstand hat für das Projekt **grünes Licht gegeben**. (The board gave the project the green light.)`,
+      explanationTr: `## İş hayatında kalıp ifadeler
+
+İş hayatında da – toplantılarda, e-postalarda ve müzakerelerde – birçok kalıp ifade kullanılır. Doğru kullanıldıklarında **yetkin ve doğal** bir izlenim bırakırlar.
+
+| ifade | anlamı | örnek |
+| ---- | ---- | ---- |
+| **etwas auf die lange Bank schieben** | bir şeyi ertelemek, sürüncemede bırakmak | Wir dürfen das Problem nicht **auf die lange Bank schieben**. (Sorunu sürüncemede bırakmamalıyız.) |
+| **den Nagel auf den Kopf treffen** | taşı gediğine koymak, tam isabet | Mit dieser Analyse hast du **den Nagel auf den Kopf getroffen**. (Bu analizle tam üstüne bastın.) |
+| **an einem Strang ziehen** | el birliği yapmak | Wenn alle **an einem Strang ziehen**, schaffen wir es. (Herkes el birliği yaparsa başarırız.) |
+| **unter Dach und Fach sein** | işin bağlanmış olması | Der Vertrag ist endlich **unter Dach und Fach**. (Sözleşme sonunda bağlandı.) |
+| **etwas in die Wege leiten** | bir işi başlatmak, yoluna koymak | Ich werde alles Nötige **in die Wege leiten**. (Gerekli her şeyi başlatacağım.) |
+| **mit offenen Karten spielen** | açık oynamak, dürüst olmak | Lassen Sie uns **mit offenen Karten spielen**. (Açık konuşalım.) |
+| **grünes Licht geben** | yeşil ışık yakmak, onay vermek | Die Geschäftsleitung hat **grünes Licht gegeben**. (Yönetim onay verdi.) |
+| **ins Fettnäpfchen treten** | pot kırmak | Mit der Bemerkung bin ich **ins Fettnäpfchen getreten**. (O sözle pot kırdım.) |
+| **auf der Strecke bleiben** | yolda kalmak, ihmal edilmek | Bei so viel Stress **bleibt** die Qualität **auf der Strecke**. (Bu kadar stresle kalite yolda kalıyor.) |
+| **etwas unter den Teppich kehren** | bir şeyi halının altına süpürmek | Die Fehler wurden **unter den Teppich gekehrt**. (Hatalar halının altına süpürüldü.) |
+| **das Ruder herumreißen** | gidişatı tersine çevirmek | Der neue Chef hat **das Ruder herumgerissen**. (Yeni şef gidişatı tersine çevirdi.) |
+| **Nägel mit Köpfen machen** | işi sağlam ve kesin yapmak | Jetzt **machen** wir **Nägel mit Köpfen** und unterschreiben. (Şimdi işi bağlayıp imzalıyoruz.) |
+
+### Üslup düzeyine dikkat
+Bazı ifadeler **nötrdür** (*in die Wege leiten, grünes Licht geben*) ve resmî e-postalara da uyar. Diğerleri daha **gündeliktir** (*ins Fettnäpfchen treten*) ve sohbete aittir.
+
+**Daha fazla örnek:**
+- Die Entscheidung wurde zu lange **auf die lange Bank geschoben**. (Karar çok uzun süre ertelendi.)
+- Sobald alles **unter Dach und Fach** ist, informieren wir Sie. (Her şey bağlanır bağlanmaz sizi bilgilendireceğiz.)
+- Wir müssen jetzt **an einem Strang ziehen**, sonst verlieren wir den Kunden. (Şimdi el birliği yapmalıyız, yoksa müşteriyi kaybederiz.)
+- Der Vorstand hat für das Projekt **grünes Licht gegeben**. (Yönetim kurulu projeye yeşil ışık yaktı.)`,
     },
   })
   await seedExercises({
@@ -31230,12 +31494,111 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit7.id,
       order: 4,
       grammarTopic: 'Übung: Idiomatische Wendungen',
-      explanationDe:
-        'Wiederholung: Redewendungen sind fest und dürfen nicht wörtlich übersetzt werden. Der Kontext hilft oft, die Bedeutung zu erschließen.',
-      explanationEn:
-        'Review: idioms are fixed expressions and shouldn\'t be translated literally. Context often helps you infer their meaning.',
-      explanationTr:
-        'Tekrar: Deyimler sabit ifadelerdir ve kelimesi kelimesine çevrilmemelidir. Bağlam genellikle anlamı çıkarmaya yardımcı olur.',
+      explanationDe: `## Übung: Idiomatische Wendungen – Zusammenfassung
+
+Redewendungen sind **feste Einheiten**. Man darf sie **nicht wörtlich übersetzen** und ihre Wörter **nicht austauschen**. Der **Kontext** hilft oft, die Bedeutung zu erschließen.
+
+### Strategien zum Verstehen unbekannter Redewendungen
+1. **Kontext lesen**: Ist die Situation positiv oder negativ?
+2. **Bild vorstellen**: *etwas unter den Teppich kehren* → Schmutz verstecken → etwas verheimlichen.
+3. **Wörtliche Bedeutung prüfen**: Ergibt der Satz wörtlich keinen Sinn? → Wahrscheinlich eine Redewendung.
+
+### Wiederholung nach Themen
+| Thema | Redewendungen |
+| ---- | ---- |
+| Genervtsein | die Nase voll haben, auf die Nerven gehen |
+| Glück | Schwein haben, die Daumen drücken |
+| Hilfe | unter die Arme greifen, an einem Strang ziehen |
+| Ehrlichkeit / Lüge | mit offenen Karten spielen, einen Bären aufbinden, aus den Fingern saugen |
+| Geheimnis | die Katze aus dem Sack lassen, unter den Teppich kehren |
+| Eile / Verzögerung | Hals über Kopf, übers Knie brechen, auf die lange Bank schieben |
+| Erfolg | unter Dach und Fach, den Nagel auf den Kopf treffen, Nägel mit Köpfen machen |
+| Fehler | ins Fettnäpfchen treten, den Bock zum Gärtner machen |
+
+### Häufige Fehler
+- ❌ *Ich drücke dir die Finger.* → ✅ *Ich drücke dir **die Daumen**.*
+- ❌ *Ich habe Glück wie ein Schwein.* → ✅ *Ich habe **Schwein gehabt**.*
+- ❌ *Er hat einen Bären-Appetit.* → ✅ *Er hat einen **Bärenhunger**.*
+
+### Ein kleiner Dialog
+– *Na, wie lief die Präsentation?*
+– *Zuerst bin ich **ins Fettnäpfchen getreten**, weil ich den Namen des Kunden falsch gesagt habe. Aber dann habe ich mit meiner Analyse **den Nagel auf den Kopf getroffen**. Der Chef hat **grünes Licht gegeben**!*
+– *Da hast du aber **Schwein gehabt**!*
+
+**Beispiele:**
+- Ich habe **die Nase voll** von den ständigen Meetings.
+- Mit dem Umzug **schlagen** wir **zwei Fliegen mit einer Klappe**.
+- Er stand da **wie ein begossener Pudel**.`,
+      explanationEn: `## Practice: idiomatic expressions – summary
+
+Idioms are **fixed units**. You must **not translate them literally** or **swap their words**. **Context** often helps you work out the meaning.
+
+### Strategies for understanding unknown idioms
+1. **Read the context**: is the situation positive or negative?
+2. **Picture the image**: *etwas unter den Teppich kehren* → hiding dirt → hiding something.
+3. **Check the literal meaning**: does the sentence make no sense literally? → It's probably an idiom.
+
+### Review by topic
+| topic | idioms |
+| ---- | ---- |
+| being annoyed | die Nase voll haben, auf die Nerven gehen |
+| luck | Schwein haben, die Daumen drücken |
+| help | unter die Arme greifen, an einem Strang ziehen |
+| honesty / lies | mit offenen Karten spielen, einen Bären aufbinden, aus den Fingern saugen |
+| secrets | die Katze aus dem Sack lassen, unter den Teppich kehren |
+| haste / delay | Hals über Kopf, übers Knie brechen, auf die lange Bank schieben |
+| success | unter Dach und Fach, den Nagel auf den Kopf treffen, Nägel mit Köpfen machen |
+| mistakes | ins Fettnäpfchen treten, den Bock zum Gärtner machen |
+
+### Common mistakes
+- ❌ *Ich drücke dir die Finger.* → ✅ *Ich drücke dir **die Daumen**.*
+- ❌ *Ich habe Glück wie ein Schwein.* → ✅ *Ich habe **Schwein gehabt**.*
+- ❌ *Er hat einen Bären-Appetit.* → ✅ *Er hat einen **Bärenhunger**.*
+
+### A short dialogue
+– *Na, wie lief die Präsentation?* (So, how did the presentation go?)
+– *Zuerst bin ich **ins Fettnäpfchen getreten**, weil ich den Namen des Kunden falsch gesagt habe. Aber dann habe ich mit meiner Analyse **den Nagel auf den Kopf getroffen**. Der Chef hat **grünes Licht gegeben**!* (First I put my foot in it by getting the client's name wrong. But then my analysis hit the nail on the head. The boss gave the green light!)
+– *Da hast du aber **Schwein gehabt**!* (You were lucky there!)
+
+**Examples:**
+- Ich habe **die Nase voll** von den ständigen Meetings. (I'm fed up with the constant meetings.)
+- Mit dem Umzug **schlagen** wir **zwei Fliegen mit einer Klappe**. (With the move we kill two birds with one stone.)
+- Er stand da **wie ein begossener Pudel**. (He stood there looking crestfallen.)`,
+      explanationTr: `## Alıştırma: Deyimler – özet
+
+Deyimler **kalıplaşmış bütünlerdir**. **Kelimesi kelimesine çevrilemez** ve **kelimeleri değiştirilemez**. **Bağlam** çoğu zaman anlamı çıkarmaya yardımcı olur.
+
+### Bilinmeyen deyimleri anlama stratejileri
+1. **Bağlamı oku**: Durum olumlu mu, olumsuz mu?
+2. **İmgeyi canlandır**: *etwas unter den Teppich kehren* → kiri saklamak → bir şeyi gizlemek.
+3. **Düz anlamı kontrol et**: Cümle düz anlamıyla bir şey ifade etmiyor mu? → Büyük ihtimalle bir deyim.
+
+### Konulara göre tekrar
+| konu | deyimler |
+| ---- | ---- |
+| bıkkınlık | die Nase voll haben, auf die Nerven gehen |
+| şans | Schwein haben, die Daumen drücken |
+| yardım | unter die Arme greifen, an einem Strang ziehen |
+| dürüstlük / yalan | mit offenen Karten spielen, einen Bären aufbinden, aus den Fingern saugen |
+| sır | die Katze aus dem Sack lassen, unter den Teppich kehren |
+| acele / erteleme | Hals über Kopf, übers Knie brechen, auf die lange Bank schieben |
+| başarı | unter Dach und Fach, den Nagel auf den Kopf treffen, Nägel mit Köpfen machen |
+| hata | ins Fettnäpfchen treten, den Bock zum Gärtner machen |
+
+### Sık yapılan hatalar
+- ❌ *Ich drücke dir die Finger.* → ✅ *Ich drücke dir **die Daumen**.*
+- ❌ *Ich habe Glück wie ein Schwein.* → ✅ *Ich habe **Schwein gehabt**.*
+- ❌ *Er hat einen Bären-Appetit.* → ✅ *Er hat einen **Bärenhunger**.*
+
+### Kısa bir diyalog
+– *Na, wie lief die Präsentation?* (Eee, sunum nasıl geçti?)
+– *Zuerst bin ich **ins Fettnäpfchen getreten**, weil ich den Namen des Kunden falsch gesagt habe. Aber dann habe ich mit meiner Analyse **den Nagel auf den Kopf getroffen**. Der Chef hat **grünes Licht gegeben**!* (Önce müşterinin adını yanlış söyleyerek pot kırdım. Ama sonra analizimle tam üstüne bastım. Şef yeşil ışık yaktı!)
+– *Da hast du aber **Schwein gehabt**!* (Şansın varmış!)
+
+**Örnekler:**
+- Ich habe **die Nase voll** von den ständigen Meetings. (Sürekli toplantılardan bıktım.)
+- Mit dem Umzug **schlagen** wir **zwei Fliegen mit einer Klappe**. (Taşınmayla bir taşla iki kuş vuruyoruz.)
+- Er stand da **wie ein begossener Pudel**. (Orada süt dökmüş kedi gibi duruyordu.)`,
     },
   })
   await seedExercises({
@@ -31290,12 +31653,111 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit8.id,
       order: 1,
       grammarTopic: 'Anaphorische Verweise',
-      explanationDe:
-        'Anaphern verweisen auf bereits Genanntes und vermeiden Wiederholungen: Pronomen ("dieser", "jener"), Synonyme oder Oberbegriffe ("das Tier" für "der Hund").',
-      explanationEn:
-        'Anaphoric references point back to something already mentioned, avoiding repetition: pronouns ("dieser", "jener"), synonyms, or hypernyms ("das Tier" for "der Hund" — "the animal" for "the dog").',
-      explanationTr:
-        'Anaforlar daha önce belirtilen bir şeye işaret eder ve tekrarı önler: zamirler ("dieser", "jener"), eşanlamlılar veya üst kavramlar ("das Tier", "der Hund" yerine).',
+      explanationDe: `## Anaphorische Verweise
+
+Ein Text ist **kohärent**, wenn die Sätze inhaltlich zusammenhängen. Ein wichtiges Mittel dafür sind **anaphorische Verweise**: Wörter, die auf **bereits Genanntes zurückverweisen**. So vermeidet man **Wiederholungen** und verbindet die Sätze.
+
+### Arten von Rückverweisen
+| Mittel | Beispiel |
+| ---- | ---- |
+| **Personalpronomen** | *Der Minister* kam spät. **Er** entschuldigte sich. |
+| **Demonstrativpronomen** (*dieser, jener, der*) | Ich traf *Anna und Lisa*. **Diese** war fröhlich, **jene** müde. |
+| **Synonym** | *Das Auto* … **Der Wagen** … **Das Fahrzeug** … |
+| **Oberbegriff** | *Der Dackel* bellte. **Der Hund** … / **Das Tier** … |
+| **Umschreibung** | *Angela Merkel* … **die ehemalige Bundeskanzlerin** … |
+| **Pronominaladverb** | Wir sprachen *über den Plan*. **Darüber** gab es Streit. |
+| **„dies" / „das"** für ganze Sätze | *Die Preise steigen.* **Dies** führt zu Protesten. |
+
+### dieser vs. jener
+Bei zwei Personen/Dingen verweist **„dieser"** auf das **zuletzt Genannte** (nähere), **„jener"** auf das **zuerst Genannte** (fernere):
+> Peter und Thomas sind Brüder. **Dieser** (= Thomas) studiert Medizin, **jener** (= Peter) Jura.
+
+Im Alltag sagt man eher: *der eine … der andere* oder *Letzterer / Ersterer*.
+
+### Beispieltext: ohne und mit Verweisen
+❌ *Berlin ist die Hauptstadt Deutschlands. Berlin hat 3,7 Millionen Einwohner. Berlin ist bekannt für Berlins Kultur.*
+✅ *Berlin ist die Hauptstadt Deutschlands. **Die Metropole** hat 3,7 Millionen Einwohner. **Sie** ist bekannt für **ihre** Kultur.*
+
+### Achtung: eindeutige Bezüge
+Ein Pronomen muss **klar** auf ein Wort zurückverweisen:
+- ❌ *Der Vater sprach mit dem Sohn. **Er** war wütend.* (Wer? Vater oder Sohn?)
+- ✅ *Der Vater sprach mit dem Sohn. **Dieser** war wütend.* (= der Sohn)
+
+**Beispiele:**
+- Die Firma stellte *ein neues Smartphone* vor. **Das Gerät** soll im Herbst erscheinen.
+- *Goethe* wurde 1749 geboren. **Der Dichter** gilt als bedeutendster deutscher Schriftsteller.
+- Viele Menschen *arbeiten von zu Hause*. **Dies** hat Vor- und Nachteile.
+- Ich habe *einen Vorschlag*. **Darüber** sollten wir reden.`,
+      explanationEn: `## Anaphoric references
+
+A text is **coherent** when its sentences are connected in content. An important means of achieving this are **anaphoric references**: words that **refer back to something already mentioned**. This avoids **repetition** and links the sentences.
+
+### Types of back-reference
+| device | example |
+| ---- | ---- |
+| **personal pronoun** | *Der Minister* kam spät. **Er** entschuldigte sich. (The minister came late. He apologised.) |
+| **demonstrative** (*dieser, jener, der*) | Ich traf *Anna und Lisa*. **Diese** war fröhlich, **jene** müde. (I met Anna and Lisa. The latter was cheerful, the former tired.) |
+| **synonym** | *Das Auto* … **Der Wagen** … **Das Fahrzeug** … (the car … the vehicle …) |
+| **hypernym** (general term) | *Der Dackel* bellte. **Der Hund** … / **Das Tier** … (The dachshund barked. The dog … / The animal …) |
+| **paraphrase** | *Angela Merkel* … **die ehemalige Bundeskanzlerin** … (the former chancellor) |
+| **pronominal adverb** | Wir sprachen *über den Plan*. **Darüber** gab es Streit. (We talked about the plan. There was an argument about it.) |
+| **"dies" / "das"** for whole sentences | *Die Preise steigen.* **Dies** führt zu Protesten. (Prices are rising. This leads to protests.) |
+
+### dieser vs. jener
+With two persons/things, **"dieser"** refers to the **last-mentioned** (nearer) one, **"jener"** to the **first-mentioned** (more distant) one – like English "the latter / the former":
+> Peter und Thomas sind Brüder. **Dieser** (= Thomas) studiert Medizin, **jener** (= Peter) Jura.
+
+In everyday speech people tend to say: *der eine … der andere* or *Letzterer / Ersterer*.
+
+### Sample text: without and with references
+❌ *Berlin ist die Hauptstadt Deutschlands. Berlin hat 3,7 Millionen Einwohner. Berlin ist bekannt für Berlins Kultur.*
+✅ *Berlin ist die Hauptstadt Deutschlands. **Die Metropole** hat 3,7 Millionen Einwohner. **Sie** ist bekannt für **ihre** Kultur.*
+
+### Note: unambiguous reference
+A pronoun must refer **clearly** to one word:
+- ❌ *Der Vater sprach mit dem Sohn. **Er** war wütend.* (Who? Father or son?)
+- ✅ *Der Vater sprach mit dem Sohn. **Dieser** war wütend.* (= the son)
+
+**Examples:**
+- Die Firma stellte *ein neues Smartphone* vor. **Das Gerät** soll im Herbst erscheinen. (The company presented a new smartphone. The device is due out in autumn.)
+- *Goethe* wurde 1749 geboren. **Der Dichter** gilt als bedeutendster deutscher Schriftsteller. (Goethe was born in 1749. The poet is considered the most important German writer.)
+- Viele Menschen *arbeiten von zu Hause*. **Dies** hat Vor- und Nachteile. (Many people work from home. This has pros and cons.)
+- Ich habe *einen Vorschlag*. **Darüber** sollten wir reden. (I have a suggestion. We should talk about it.)`,
+      explanationTr: `## Geriye gönderimler (anaforlar)
+
+Cümleler içerik bakımından birbirine bağlıysa bir metin **tutarlıdır** (kohärent). Bunun önemli bir aracı **geriye gönderimlerdir**: **daha önce söylenmiş olana geri dönen** kelimeler. Böylece **tekrarlardan** kaçınılır ve cümleler birbirine bağlanır.
+
+### Geriye gönderim türleri
+| araç | örnek |
+| ---- | ---- |
+| **şahıs zamiri** | *Der Minister* kam spät. **Er** entschuldigte sich. (Bakan geç geldi. Özür diledi.) |
+| **işaret zamiri** (*dieser, jener, der*) | Ich traf *Anna und Lisa*. **Diese** war fröhlich, **jene** müde. (Anna ve Lisa ile karşılaştım. İkincisi neşeliydi, birincisi yorgun.) |
+| **eş anlamlı** | *Das Auto* … **Der Wagen** … **Das Fahrzeug** … (araba … araç …) |
+| **üst kavram** | *Der Dackel* bellte. **Der Hund** … / **Das Tier** … (Dakhund havladı. Köpek … / Hayvan …) |
+| **dolaylı adlandırma** | *Angela Merkel* … **die ehemalige Bundeskanzlerin** … (eski başbakan) |
+| **zamir-zarf** | Wir sprachen *über den Plan*. **Darüber** gab es Streit. (Plan hakkında konuştuk. Bu konuda tartışma çıktı.) |
+| bütün cümleler için **„dies" / „das"** | *Die Preise steigen.* **Dies** führt zu Protesten. (Fiyatlar artıyor. Bu, protestolara yol açıyor.) |
+
+### dieser – jener
+İki kişi/şeyden söz edilirken **„dieser"** **en son anılana** (yakın olana), **„jener"** **ilk anılana** (uzak olana) gönderme yapar – Türkçedeki „ikincisi / birincisi" gibi:
+> Peter und Thomas sind Brüder. **Dieser** (= Thomas) studiert Medizin, **jener** (= Peter) Jura.
+
+Günlük dilde daha çok *der eine … der andere* veya *Letzterer / Ersterer* denir.
+
+### Örnek metin: gönderimsiz ve gönderimli
+❌ *Berlin ist die Hauptstadt Deutschlands. Berlin hat 3,7 Millionen Einwohner. Berlin ist bekannt für Berlins Kultur.*
+✅ *Berlin ist die Hauptstadt Deutschlands. **Die Metropole** hat 3,7 Millionen Einwohner. **Sie** ist bekannt für **ihre** Kultur.*
+
+### Dikkat: açık gönderim
+Bir zamir **açıkça** tek bir kelimeye gönderme yapmalıdır:
+- ❌ *Der Vater sprach mit dem Sohn. **Er** war wütend.* (Kim? Baba mı, oğul mu?)
+- ✅ *Der Vater sprach mit dem Sohn. **Dieser** war wütend.* (= oğul)
+
+**Örnekler:**
+- Die Firma stellte *ein neues Smartphone* vor. **Das Gerät** soll im Herbst erscheinen. (Firma yeni bir akıllı telefon tanıttı. Cihazın sonbaharda çıkması bekleniyor.)
+- *Goethe* wurde 1749 geboren. **Der Dichter** gilt als bedeutendster deutscher Schriftsteller. (Goethe 1749'da doğdu. Şair en önemli Alman yazar sayılır.)
+- Viele Menschen *arbeiten von zu Hause*. **Dies** hat Vor- und Nachteile. (Birçok insan evden çalışıyor. Bunun avantajları ve dezavantajları var.)
+- Ich habe *einen Vorschlag*. **Darüber** sollten wir reden. (Bir önerim var. Bunu konuşmalıyız.)`,
     },
   })
   await seedExercises({
@@ -31327,12 +31789,122 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit8.id,
       order: 2,
       grammarTopic: 'Konnektoren für Textstruktur',
-      explanationDe:
-        'Strukturierende Konnektoren gliedern Texte: "zunächst", "im Folgenden", "abschließend" markieren Anfang, Mitte und Ende einer Argumentation.',
-      explanationEn:
-        'Structuring connectors organize texts: "zunächst" (first), "im Folgenden" (in what follows), "abschließend" (in conclusion) mark the beginning, middle, and end of an argument.',
-      explanationTr:
-        'Yapılandırıcı bağlaçlar metni düzenler: "zunächst" (önce), "im Folgenden" (aşağıda), "abschließend" (sonuç olarak) bir argümanın başını, ortasını ve sonunu işaretler.',
+      explanationDe: `## Konnektoren für die Textstruktur
+
+Strukturierende Konnektoren funktionieren wie **Wegweiser**: Sie zeigen dem Leser, **wo** er sich im Text befindet – am Anfang, in der Mitte oder am Ende – und wie die Teile zusammenhängen.
+
+### Einleitung
+| Ausdruck | Beispiel |
+| ---- | ---- |
+| **zunächst** / **zuerst** | **Zunächst** möchte ich das Problem beschreiben. |
+| **zu Beginn** | **Zu Beginn** ein paar Zahlen. |
+| **einleitend** | **Einleitend** sei gesagt, dass … |
+| **im Folgenden** | **Im Folgenden** werden drei Lösungen vorgestellt. |
+
+### Hauptteil: Reihenfolge und Ergänzung
+| Ausdruck | Beispiel |
+| ---- | ---- |
+| **erstens, zweitens, drittens** | **Erstens** ist es billiger, **zweitens** schneller. |
+| **anschließend** / **danach** | **Anschließend** betrachten wir die Kosten. |
+| **des Weiteren** / **außerdem** | **Des Weiteren** ist die Sicherheit wichtig. |
+| **ein weiterer Aspekt ist** | **Ein weiterer Aspekt ist** der Umweltschutz. |
+| **im Gegensatz dazu** | **Im Gegensatz dazu** steht die Meinung der Gegner. |
+| **beispielsweise** / **zum Beispiel** | **Beispielsweise** nutzen 60 % das Rad. |
+
+### Schluss
+| Ausdruck | Beispiel |
+| ---- | ---- |
+| **abschließend** | **Abschließend** lässt sich sagen, dass … |
+| **zusammenfassend** | **Zusammenfassend** kann man feststellen, … |
+| **schließlich** / **zuletzt** | **Schließlich** möchte ich eine Empfehlung geben. |
+| **alles in allem** | **Alles in allem** überwiegen die Vorteile. |
+| **daraus folgt** | **Daraus folgt**, dass wir handeln müssen. |
+
+### Satzstellung
+Alle diese Ausdrücke stehen auf **Position 1** → das **Verb folgt direkt**:
+- ✅ ***Zunächst möchte** ich …*  ❌ *Zunächst ich möchte …*
+- ✅ ***Abschließend lässt** sich sagen …*
+
+### Beispieltext
+*In diesem Referat geht es um das Thema Tourismus. **Zunächst** stelle ich die Entwicklung der letzten Jahre dar. **Anschließend** gehe ich auf die Vorteile ein: **Erstens** schafft Tourismus Arbeitsplätze, **zweitens** fördert er den kulturellen Austausch. **Im Gegensatz dazu** stehen die Belastungen für die Umwelt. **Abschließend** möchte ich einige Lösungsvorschläge machen.*`,
+      explanationEn: `## Connectors for text structure
+
+Structuring connectors work like **signposts**: they show readers **where** they are in the text – beginning, middle or end – and how the parts fit together.
+
+### Introduction
+| expression | example |
+| ---- | ---- |
+| **zunächst** / **zuerst** (first) | **Zunächst** möchte ich das Problem beschreiben. (First I'd like to describe the problem.) |
+| **zu Beginn** (at the start) | **Zu Beginn** ein paar Zahlen. (To begin with, a few figures.) |
+| **einleitend** (by way of introduction) | **Einleitend** sei gesagt, dass … (By way of introduction, let it be said that …) |
+| **im Folgenden** (below / in what follows) | **Im Folgenden** werden drei Lösungen vorgestellt. (Three solutions are presented below.) |
+
+### Main part: sequence and addition
+| expression | example |
+| ---- | ---- |
+| **erstens, zweitens, drittens** | **Erstens** ist es billiger, **zweitens** schneller. (Firstly it's cheaper, secondly faster.) |
+| **anschließend** / **danach** (then, next) | **Anschließend** betrachten wir die Kosten. (Next we look at the costs.) |
+| **des Weiteren** / **außerdem** (furthermore) | **Des Weiteren** ist die Sicherheit wichtig. (Furthermore, safety is important.) |
+| **ein weiterer Aspekt ist** (another aspect is) | **Ein weiterer Aspekt ist** der Umweltschutz. |
+| **im Gegensatz dazu** (in contrast) | **Im Gegensatz dazu** steht die Meinung der Gegner. (In contrast, there is the opponents' view.) |
+| **beispielsweise** / **zum Beispiel** | **Beispielsweise** nutzen 60 % das Rad. (For example, 60 % use bicycles.) |
+
+### Conclusion
+| expression | example |
+| ---- | ---- |
+| **abschließend** (finally, to conclude) | **Abschließend** lässt sich sagen, dass … (To conclude, it can be said that …) |
+| **zusammenfassend** (in summary) | **Zusammenfassend** kann man feststellen, … (In summary, one can state …) |
+| **schließlich** / **zuletzt** (finally / lastly) | **Schließlich** möchte ich eine Empfehlung geben. (Finally I'd like to make a recommendation.) |
+| **alles in allem** (all in all) | **Alles in allem** überwiegen die Vorteile. (All in all, the advantages outweigh.) |
+| **daraus folgt** (it follows that) | **Daraus folgt**, dass wir handeln müssen. |
+
+### Word order
+All these expressions stand in **position 1** → the **verb follows directly**:
+- ✅ ***Zunächst möchte** ich …*  ❌ *Zunächst ich möchte …*
+- ✅ ***Abschließend lässt** sich sagen …*
+
+### Sample text
+*In diesem Referat geht es um das Thema Tourismus. **Zunächst** stelle ich die Entwicklung der letzten Jahre dar. **Anschließend** gehe ich auf die Vorteile ein: **Erstens** schafft Tourismus Arbeitsplätze, **zweitens** fördert er den kulturellen Austausch. **Im Gegensatz dazu** stehen die Belastungen für die Umwelt. **Abschließend** möchte ich einige Lösungsvorschläge machen.*
+(This presentation is about tourism. First I outline developments in recent years. Then I discuss the advantages: firstly, tourism creates jobs; secondly, it promotes cultural exchange. In contrast, there is the burden on the environment. Finally I'd like to suggest some solutions.)`,
+      explanationTr: `## Metin yapısı için bağlayıcılar
+
+Yapılandırıcı bağlayıcılar **yol tabelası** gibi çalışır: okura metnin **neresinde** olduğunu – başta, ortada veya sonda – ve bölümlerin nasıl bağlandığını gösterir.
+
+### Giriş
+| ifade | örnek |
+| ---- | ---- |
+| **zunächst** / **zuerst** (önce) | **Zunächst** möchte ich das Problem beschreiben. (Önce sorunu tanımlamak istiyorum.) |
+| **zu Beginn** (başlangıçta) | **Zu Beginn** ein paar Zahlen. (Başlangıçta birkaç rakam.) |
+| **einleitend** (giriş olarak) | **Einleitend** sei gesagt, dass … (Giriş olarak şunu belirtelim ki …) |
+| **im Folgenden** (aşağıda / bundan sonra) | **Im Folgenden** werden drei Lösungen vorgestellt. (Aşağıda üç çözüm sunulmaktadır.) |
+
+### Gelişme: sıralama ve ekleme
+| ifade | örnek |
+| ---- | ---- |
+| **erstens, zweitens, drittens** | **Erstens** ist es billiger, **zweitens** schneller. (Birincisi daha ucuz, ikincisi daha hızlı.) |
+| **anschließend** / **danach** (ardından) | **Anschließend** betrachten wir die Kosten. (Ardından maliyetlere bakıyoruz.) |
+| **des Weiteren** / **außerdem** (ayrıca) | **Des Weiteren** ist die Sicherheit wichtig. (Ayrıca güvenlik önemlidir.) |
+| **ein weiterer Aspekt ist** (bir başka yön) | **Ein weiterer Aspekt ist** der Umweltschutz. (Bir başka yön de çevre korumasıdır.) |
+| **im Gegensatz dazu** (buna karşılık) | **Im Gegensatz dazu** steht die Meinung der Gegner. (Buna karşılık karşı tarafın görüşü var.) |
+| **beispielsweise** / **zum Beispiel** | **Beispielsweise** nutzen 60 % das Rad. (Örneğin %60'ı bisiklet kullanıyor.) |
+
+### Sonuç
+| ifade | örnek |
+| ---- | ---- |
+| **abschließend** (son olarak) | **Abschließend** lässt sich sagen, dass … (Son olarak şu söylenebilir ki …) |
+| **zusammenfassend** (özetle) | **Zusammenfassend** kann man feststellen, … (Özetle şu tespit edilebilir …) |
+| **schließlich** / **zuletzt** (nihayet / en son) | **Schließlich** möchte ich eine Empfehlung geben. (Son olarak bir öneride bulunmak istiyorum.) |
+| **alles in allem** (sonuç olarak) | **Alles in allem** überwiegen die Vorteile. (Sonuç olarak avantajlar ağır basıyor.) |
+| **daraus folgt** (buradan çıkan sonuç) | **Daraus folgt**, dass wir handeln müssen. (Buradan harekete geçmemiz gerektiği sonucu çıkıyor.) |
+
+### Söz dizimi
+Tüm bu ifadeler **1. pozisyonda** durur → **fiil hemen ardından gelir**:
+- ✅ ***Zunächst möchte** ich …*  ❌ *Zunächst ich möchte …*
+- ✅ ***Abschließend lässt** sich sagen …*
+
+### Örnek metin
+*In diesem Referat geht es um das Thema Tourismus. **Zunächst** stelle ich die Entwicklung der letzten Jahre dar. **Anschließend** gehe ich auf die Vorteile ein: **Erstens** schafft Tourismus Arbeitsplätze, **zweitens** fördert er den kulturellen Austausch. **Im Gegensatz dazu** stehen die Belastungen für die Umwelt. **Abschließend** möchte ich einige Lösungsvorschläge machen.*
+(Bu sunum turizm konusunu ele alıyor. Önce son yılların gelişimini anlatıyorum. Ardından avantajlara değiniyorum: Birincisi turizm istihdam yaratır, ikincisi kültürel alışverişi teşvik eder. Buna karşılık çevreye olan yük var. Son olarak bazı çözüm önerileri sunmak istiyorum.)`,
     },
   })
   await seedExercises({
@@ -31367,12 +31939,123 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit8.id,
       order: 3,
       grammarTopic: 'Kohäsionsmittel: Ellipse und Substitution',
-      explanationDe:
-        'Ellipsen lassen Wiederholtes weg ("Er kam später, sie [kam] früher."), Substitution ersetzt es durch ein anderes Wort ("Ich nehme den roten Wagen; den blauen [Wagen] nicht.").',
-      explanationEn:
-        'Ellipsis omits a repeated element ("Er kam später, sie [kam] früher" — He came later, she [came] earlier), substitution replaces it with another word ("Ich nehme den roten Wagen; den blauen [Wagen] nicht" — I\'ll take the red car; not the blue [one]).',
-      explanationTr:
-        'Eksiltme (ellipse) tekrarlanan bir öğeyi atlar ("Er kam später, sie [kam] früher."), yerine koyma (substitution) onu başka bir kelimeyle değiştirir ("Ich nehme den roten Wagen; den blauen [Wagen] nicht.").',
+      explanationDe: `## Kohäsionsmittel: Ellipse und Substitution
+
+Neben Pronomen und Konnektoren gibt es zwei weitere Mittel, um Wiederholungen zu vermeiden und Texte flüssig zu machen: **Ellipse** (Weglassen) und **Substitution** (Ersetzen).
+
+### Ellipse – Wiederholtes weglassen
+Teile, die aus dem Kontext klar sind, werden **weggelassen**:
+
+| vollständig | mit Ellipse |
+| ---- | ---- |
+| Er kam später, sie **kam** früher. | Er kam später, sie früher. |
+| Ich trinke Kaffee, und mein Mann **trinkt** Tee. | Ich trinke Kaffee, mein Mann Tee. |
+| Anna hat das Buch gelesen, und Tom **hat das Buch** auch **gelesen**. | Anna hat das Buch gelesen, Tom auch. |
+| Kommst du mit? – Ja, ich **komme mit**. | Kommst du mit? – Ja, gern. |
+| Wir haben **es** versucht, aber **wir haben es** nicht **geschafft**. | Wir haben es versucht, aber nicht geschafft. |
+
+**Ellipsen in Alltag und Medien:**
+- Kurze Antworten: *Wann? – Morgen.* / *Wer war das? – Keine Ahnung.*
+- Schlagzeilen: *Kanzlerin in Paris* (= Die Kanzlerin ist in Paris.)
+- Anweisungen: *Bitte nicht rauchen!*
+
+### Substitution – durch ein anderes Wort ersetzen
+Ein Wort oder Satzteil wird durch ein **kürzeres Ersatzwort** ersetzt:
+
+| Ersatzwort | Beispiel |
+| ---- | ---- |
+| **Artikelwort / Pronomen** + Adjektiv | Ich nehme den roten Wagen, nicht **den blauen**. |
+| **einer / eine / eins / welche** | Hast du einen Stift? – Ja, ich habe **einen**. / Gibt es noch Äpfel? – Ja, hier sind **welche**. |
+| **es / das** (ganzer Satz) | Er hat den Job bekommen. Ich habe **es** gewusst. |
+| **so / auch** | Sie arbeitet hart, und ihr Bruder tut **es auch** / **das ebenfalls**. |
+| **tun** (Ersatzverb) | Er wollte anrufen, hat **es** aber nicht **getan**. |
+
+### Achtung
+Ellipsen dürfen den Text **nicht unverständlich** machen. In formellen Texten sind vollständige Sätze oft sicherer; in der gesprochenen Sprache sind Ellipsen dagegen völlig natürlich.
+
+**Beispiele:**
+- Mein Bruder spielt Gitarre, meine Schwester Klavier.
+- Möchtest du ein Glas Wasser? – Danke, ich habe schon **eins**.
+- Die alten Schuhe sind kaputt, die **neuen** passen nicht.
+- Sie wollte das Projekt allein machen und hat **es** auch **getan**.`,
+      explanationEn: `## Cohesive devices: ellipsis and substitution
+
+Besides pronouns and connectors, there are two more ways of avoiding repetition and making texts flow: **ellipsis** (leaving out) and **substitution** (replacing).
+
+### Ellipsis – leaving out repeated elements
+Parts that are clear from the context are **omitted**:
+
+| full | with ellipsis |
+| ---- | ---- |
+| Er kam später, sie **kam** früher. | Er kam später, sie früher. (He came later, she earlier.) |
+| Ich trinke Kaffee, und mein Mann **trinkt** Tee. | Ich trinke Kaffee, mein Mann Tee. (I drink coffee, my husband tea.) |
+| Anna hat das Buch gelesen, und Tom **hat das Buch** auch **gelesen**. | Anna hat das Buch gelesen, Tom auch. (Anna read the book, Tom too.) |
+| Kommst du mit? – Ja, ich **komme mit**. | Kommst du mit? – Ja, gern. (Are you coming? – Yes, gladly.) |
+| Wir haben **es** versucht, aber **wir haben es** nicht **geschafft**. | Wir haben es versucht, aber nicht geschafft. (We tried but didn't manage.) |
+
+**Ellipsis in everyday life and the media:**
+- Short answers: *Wann? – Morgen.* (When? – Tomorrow.) / *Wer war das? – Keine Ahnung.* (Who was that? – No idea.)
+- Headlines: *Kanzlerin in Paris* (= The chancellor is in Paris.)
+- Instructions: *Bitte nicht rauchen!* (No smoking, please!)
+
+### Substitution – replacing with another word
+A word or phrase is replaced by a **shorter substitute**:
+
+| substitute | example |
+| ---- | ---- |
+| **article / pronoun** + adjective | Ich nehme den roten Wagen, nicht **den blauen**. (I'll take the red car, not the blue one.) |
+| **einer / eine / eins / welche** | Hast du einen Stift? – Ja, ich habe **einen**. (Do you have a pen? – Yes, I have one.) / Gibt es noch Äpfel? – Ja, hier sind **welche**. (Are there any apples left? – Yes, here are some.) |
+| **es / das** (whole sentence) | Er hat den Job bekommen. Ich habe **es** gewusst. (He got the job. I knew it.) |
+| **so / auch** | Sie arbeitet hart, und ihr Bruder tut **es auch** / **das ebenfalls**. (She works hard and so does her brother.) |
+| **tun** (substitute verb) | Er wollte anrufen, hat **es** aber nicht **getan**. (He wanted to call but didn't do it.) |
+
+### Note
+Ellipsis must **not make the text incomprehensible**. In formal texts full sentences are often safer; in spoken language, on the other hand, ellipsis is completely natural.
+
+**Examples:**
+- Mein Bruder spielt Gitarre, meine Schwester Klavier. (My brother plays guitar, my sister piano.)
+- Möchtest du ein Glas Wasser? – Danke, ich habe schon **eins**. (Would you like a glass of water? – Thanks, I already have one.)
+- Die alten Schuhe sind kaputt, die **neuen** passen nicht. (The old shoes are broken, the new ones don't fit.)
+- Sie wollte das Projekt allein machen und hat **es** auch **getan**. (She wanted to do the project alone and she did.)`,
+      explanationTr: `## Bağdaşıklık araçları: eksiltme ve ikame
+
+Zamirler ve bağlayıcıların yanı sıra tekrarlardan kaçınmanın ve metni akıcı kılmanın iki yolu daha vardır: **eksiltme** (Ellipse – atlamak) ve **ikame** (Substitution – yerine koymak).
+
+### Eksiltme – tekrar edileni atlamak
+Bağlamdan anlaşılan öğeler **atlanır**:
+
+| tam | eksiltmeli |
+| ---- | ---- |
+| Er kam später, sie **kam** früher. | Er kam später, sie früher. (O sonra geldi, kadın daha erken.) |
+| Ich trinke Kaffee, und mein Mann **trinkt** Tee. | Ich trinke Kaffee, mein Mann Tee. (Ben kahve içiyorum, eşim çay.) |
+| Anna hat das Buch gelesen, und Tom **hat das Buch** auch **gelesen**. | Anna hat das Buch gelesen, Tom auch. (Anna kitabı okudu, Tom da.) |
+| Kommst du mit? – Ja, ich **komme mit**. | Kommst du mit? – Ja, gern. (Geliyor musun? – Evet, memnuniyetle.) |
+| Wir haben **es** versucht, aber **wir haben es** nicht **geschafft**. | Wir haben es versucht, aber nicht geschafft. (Denedik ama başaramadık.) |
+
+**Günlük hayatta ve medyada eksiltme:**
+- Kısa cevaplar: *Wann? – Morgen.* (Ne zaman? – Yarın.) / *Wer war das? – Keine Ahnung.* (Kimdi o? – Hiçbir fikrim yok.)
+- Manşetler: *Kanzlerin in Paris* (= Başbakan Paris'te.)
+- Talimatlar: *Bitte nicht rauchen!* (Lütfen sigara içmeyin!)
+
+### İkame – başka bir kelimeyle değiştirmek
+Bir kelime veya öbek **daha kısa bir karşılıkla** değiştirilir:
+
+| ikame kelime | örnek |
+| ---- | ---- |
+| **artikel / zamir** + sıfat | Ich nehme den roten Wagen, nicht **den blauen**. (Kırmızı arabayı alıyorum, maviyi değil.) |
+| **einer / eine / eins / welche** | Hast du einen Stift? – Ja, ich habe **einen**. (Kalemin var mı? – Evet, bir tane var.) / Gibt es noch Äpfel? – Ja, hier sind **welche**. (Hâlâ elma var mı? – Evet, burada biraz var.) |
+| **es / das** (bütün cümle) | Er hat den Job bekommen. Ich habe **es** gewusst. (İşi aldı. Biliyordum.) |
+| **so / auch** | Sie arbeitet hart, und ihr Bruder tut **es auch** / **das ebenfalls**. (Çok çalışıyor, kardeşi de öyle.) |
+| **tun** (ikame fiil) | Er wollte anrufen, hat **es** aber nicht **getan**. (Aramak istedi ama yapmadı.) |
+
+### Dikkat
+Eksiltme metni **anlaşılmaz hâle getirmemelidir**. Resmî metinlerde tam cümleler çoğu zaman daha güvenlidir; konuşma dilinde ise eksiltme tamamen doğaldır.
+
+**Örnekler:**
+- Mein Bruder spielt Gitarre, meine Schwester Klavier. (Erkek kardeşim gitar çalıyor, kız kardeşim piyano.)
+- Möchtest du ein Glas Wasser? – Danke, ich habe schon **eins**. (Bir bardak su ister misin? – Teşekkürler, zaten bir tane var.)
+- Die alten Schuhe sind kaputt, die **neuen** passen nicht. (Eski ayakkabılar yırtık, yeniler olmuyor.)
+- Sie wollte das Projekt allein machen und hat **es** auch **getan**. (Projeyi tek başına yapmak istedi ve yaptı da.)`,
     },
   })
   await seedExercises({
@@ -31401,12 +32084,95 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit8.id,
       order: 4,
       grammarTopic: 'Übung: Textkohärenz',
-      explanationDe:
-        'Wiederholung: Kohärente Texte nutzen Anaphern, Strukturkonnektoren und Kohäsionsmittel, um Sätze logisch und flüssig zu verbinden.',
-      explanationEn:
-        'Review: coherent texts use anaphora, structuring connectors, and cohesive devices to link sentences logically and smoothly.',
-      explanationTr:
-        'Tekrar: Tutarlı metinler cümleleri mantıklı ve akıcı bağlamak için anafor, yapı bağlaçları ve bağdaşıklık araçları kullanır.',
+      explanationDe: `## Übung: Textkohärenz – Zusammenfassung
+
+Ein **kohärenter Text** liest sich wie eine Einheit: Jeder Satz knüpft an den vorherigen an. Dafür kombiniert man mehrere Mittel.
+
+### Werkzeugkasten für kohärente Texte
+| Mittel | Funktion | Beispiel |
+| ---- | ---- | ---- |
+| Pronomen | zurückverweisen | *Die Studie … **Sie** zeigt …* |
+| Synonym / Oberbegriff | Variation | *Der Laptop … **Das Gerät** …* |
+| Demonstrativa | betonter Verweis | ***Dieser** Ansatz …* |
+| Pronominaladverbien | Verweis auf Sachen | ***Dafür** spricht …* |
+| Strukturkonnektoren | Gliederung | *zunächst – anschließend – abschließend* |
+| logische Konnektoren | Beziehung | *deshalb, trotzdem, außerdem* |
+| Ellipse | Wiederholung weglassen | *Er kam um 8, sie um 9.* |
+| Substitution | Ersatzwort | *… nicht den alten, sondern **den neuen**.* |
+
+### Thema-Rhema-Prinzip
+Gute Texte bauen oft so auf: Die **bekannte Information (Thema)** steht am Satzanfang, die **neue (Rhema)** am Ende. Das Rhema eines Satzes wird zum Thema des nächsten:
+> *Ich habe mir **ein Fahrrad** gekauft. **Das Rad** hat **24 Gänge**. **Diese** sind sehr leicht zu schalten.*
+
+### Vorher – nachher
+**Unverbunden:** *Die Stadt baut eine Brücke. Die Brücke kostet 20 Millionen Euro. Die Bürger kritisieren die Brücke. Die Brücke soll 2028 fertig sein.*
+
+**Kohärent:** *Die Stadt baut eine neue Brücke. **Das Bauwerk** kostet 20 Millionen Euro. **Deshalb** wird **es** von vielen Bürgern kritisiert. **Dennoch** soll **die Brücke** bereits 2028 fertig sein.*
+
+**Beispiele:**
+- **Zunächst** wurde ein Fragebogen erstellt. **Dieser** wurde **anschließend** an 500 Personen verschickt.
+- Die Regierung senkt die Steuern. **Dadurch** sollen Familien entlastet werden.
+- Viele Studierende jobben neben dem Studium, **manche** sogar Vollzeit.`,
+      explanationEn: `## Practice: text coherence – summary
+
+A **coherent text** reads as a whole: each sentence links to the previous one. To achieve this you combine several devices.
+
+### Toolbox for coherent texts
+| device | function | example |
+| ---- | ---- | ---- |
+| pronouns | refer back | *Die Studie … **Sie** zeigt …* (The study … It shows …) |
+| synonym / hypernym | variation | *Der Laptop … **Das Gerät** …* (The laptop … The device …) |
+| demonstratives | emphatic reference | ***Dieser** Ansatz …* (This approach …) |
+| pronominal adverbs | refer to things | ***Dafür** spricht …* (In favour of this is …) |
+| structuring connectors | organisation | *zunächst – anschließend – abschließend* |
+| logical connectors | relationship | *deshalb, trotzdem, außerdem* |
+| ellipsis | omit repetition | *Er kam um 8, sie um 9.* (He came at 8, she at 9.) |
+| substitution | substitute word | *… nicht den alten, sondern **den neuen**.* (… not the old one but the new one.) |
+
+### Theme–rheme principle
+Good texts are often built like this: **known information (theme)** at the start of the sentence, **new information (rheme)** at the end. The rheme of one sentence becomes the theme of the next:
+> *Ich habe mir **ein Fahrrad** gekauft. **Das Rad** hat **24 Gänge**. **Diese** sind sehr leicht zu schalten.* (I bought a bike. The bike has 24 gears. They are very easy to shift.)
+
+### Before – after
+**Disconnected:** *Die Stadt baut eine Brücke. Die Brücke kostet 20 Millionen Euro. Die Bürger kritisieren die Brücke. Die Brücke soll 2028 fertig sein.*
+
+**Coherent:** *Die Stadt baut eine neue Brücke. **Das Bauwerk** kostet 20 Millionen Euro. **Deshalb** wird **es** von vielen Bürgern kritisiert. **Dennoch** soll **die Brücke** bereits 2028 fertig sein.*
+(The city is building a new bridge. The structure costs 20 million euros. That's why it is criticised by many citizens. Nevertheless the bridge is to be finished as early as 2028.)
+
+**Examples:**
+- **Zunächst** wurde ein Fragebogen erstellt. **Dieser** wurde **anschließend** an 500 Personen verschickt. (First a questionnaire was created. It was then sent to 500 people.)
+- Die Regierung senkt die Steuern. **Dadurch** sollen Familien entlastet werden. (The government is cutting taxes. This is intended to relieve families.)
+- Viele Studierende jobben neben dem Studium, **manche** sogar Vollzeit. (Many students work alongside their studies, some even full-time.)`,
+      explanationTr: `## Alıştırma: Metin tutarlılığı – özet
+
+**Tutarlı bir metin** bir bütün gibi okunur: Her cümle bir öncekine bağlanır. Bunun için birkaç araç bir arada kullanılır.
+
+### Tutarlı metinler için araç kutusu
+| araç | işlev | örnek |
+| ---- | ---- | ---- |
+| zamirler | geriye gönderim | *Die Studie … **Sie** zeigt …* (Çalışma … Gösteriyor ki …) |
+| eş anlamlı / üst kavram | çeşitlilik | *Der Laptop … **Das Gerät** …* (Dizüstü bilgisayar … Cihaz …) |
+| işaret zamirleri | vurgulu gönderim | ***Dieser** Ansatz …* (Bu yaklaşım …) |
+| zamir-zarflar | nesnelere gönderim | ***Dafür** spricht …* (Bunun lehine olan …) |
+| yapılandırıcı bağlayıcılar | düzen | *zunächst – anschließend – abschließend* |
+| mantıksal bağlayıcılar | ilişki | *deshalb, trotzdem, außerdem* |
+| eksiltme | tekrarı atlamak | *Er kam um 8, sie um 9.* (O 8'de geldi, kadın 9'da.) |
+| ikame | yerine kelime | *… nicht den alten, sondern **den neuen**.* (… eskisini değil, yenisini.) |
+
+### Tema–rema ilkesi
+İyi metinler çoğu zaman şöyle kurulur: **Bilinen bilgi (tema)** cümle başında, **yeni bilgi (rema)** sonda. Bir cümlenin reması bir sonrakinin teması olur:
+> *Ich habe mir **ein Fahrrad** gekauft. **Das Rad** hat **24 Gänge**. **Diese** sind sehr leicht zu schalten.* (Bir bisiklet aldım. Bisikletin 24 vitesi var. Bunlar çok kolay değiştiriliyor.)
+
+### Önce – sonra
+**Bağlantısız:** *Die Stadt baut eine Brücke. Die Brücke kostet 20 Millionen Euro. Die Bürger kritisieren die Brücke. Die Brücke soll 2028 fertig sein.*
+
+**Tutarlı:** *Die Stadt baut eine neue Brücke. **Das Bauwerk** kostet 20 Millionen Euro. **Deshalb** wird **es** von vielen Bürgern kritisiert. **Dennoch** soll **die Brücke** bereits 2028 fertig sein.*
+(Şehir yeni bir köprü inşa ediyor. Yapı 20 milyon avroya mal oluyor. Bu yüzden birçok vatandaş tarafından eleştiriliyor. Yine de köprünün 2028'de bitmesi planlanıyor.)
+
+**Örnekler:**
+- **Zunächst** wurde ein Fragebogen erstellt. **Dieser** wurde **anschließend** an 500 Personen verschickt. (Önce bir anket hazırlandı. Bu anket ardından 500 kişiye gönderildi.)
+- Die Regierung senkt die Steuern. **Dadurch** sollen Familien entlastet werden. (Hükümet vergileri düşürüyor. Böylece ailelerin yükünün hafiflemesi amaçlanıyor.)
+- Viele Studierende jobben neben dem Studium, **manche** sogar Vollzeit. (Birçok öğrenci okulun yanında çalışıyor, bazıları tam zamanlı bile.)`,
     },
   })
   await seedExercises({
@@ -31452,12 +32218,132 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit9.id,
       order: 1,
       grammarTopic: 'Konjunktiv II der Vergangenheit in wenn-Sätzen',
-      explanationDe:
-        'Irreale Bedingungen in der Vergangenheit nutzen Konjunktiv II der Vergangenheit (hätte/wäre + Partizip II): "Wenn ich das gewusst hätte, wäre ich nicht gekommen."',
-      explanationEn:
-        'Unreal past conditions use the past Konjunktiv II (hätte/wäre + past participle): "Wenn ich das gewusst hätte, wäre ich nicht gekommen" (If I had known that, I wouldn\'t have come).',
-      explanationTr:
-        'Geçmişteki gerçek dışı koşullar geçmiş Konjunktiv II ile kurulur (hätte/wäre + Partizip II): "Wenn ich das gewusst hätte, wäre ich nicht gekommen."',
+      explanationDe: `## Konjunktiv II der Vergangenheit in wenn-Sätzen
+
+Mit irrealen Bedingungssätzen der Vergangenheit spricht man über Situationen, die **nicht eingetreten** sind – und darüber, was **dann passiert wäre**. Oft drücken sie **Bedauern**, **Erleichterung** oder **Spekulation** aus.
+
+### Bildung
+> **hätte / wäre** (Konjunktiv II) + **Partizip II**
+
+| | Bedingung (wenn-Satz) | Folge (Hauptsatz) |
+| ---- | ---- | ---- |
+| Form | wenn … Partizip II + **hätte/wäre** | **hätte/wäre** … Partizip II |
+| Beispiel | Wenn ich das **gewusst hätte**, | **wäre** ich nicht **gekommen**. |
+
+Die Wahl von *hätte* oder *wäre* folgt der **Perfekt-Regel**: *gewusst → haben → hätte gewusst*, *gekommen → sein → wäre gekommen*.
+
+### Realität vs. Irrealität
+| Realität | irreale Vergangenheit |
+| ---- | ---- |
+| Ich hatte keine Zeit, deshalb bin ich nicht gekommen. | Wenn ich Zeit **gehabt hätte**, **wäre** ich **gekommen**. |
+| Es hat geregnet, deshalb sind wir zu Hause geblieben. | Wenn es nicht **geregnet hätte**, **wären** wir **ausgegangen**. |
+| Er hat nicht gelernt und ist durchgefallen. | Wenn er **gelernt hätte**, **hätte** er **bestanden**. |
+
+### Mit Modalverben: doppelter Infinitiv
+> **hätte** + Infinitiv + **Modalverb im Infinitiv**
+- *Wenn ich **hätte kommen können**, **wäre** ich **gekommen**.*
+- *Du **hättest** früher **anrufen sollen**.* (Vorwurf)
+
+Im **Nebensatz** steht *hätte* **vor** dem doppelten Infinitiv: *…, wenn ich **hätte** kommen **können**.*
+
+### Gemischte Zeiten
+Eine Bedingung in der Vergangenheit kann eine Folge in der **Gegenwart** haben:
+- *Wenn ich Medizin **studiert hätte**, **wäre** ich jetzt Ärztin.*
+- *Wenn wir das Haus damals **gekauft hätten**, **würden** wir heute viel Miete **sparen**.*
+
+### Häufige Fehler
+- ❌ *Wenn ich das wusste, wäre ich gekommen.* → ✅ *Wenn ich das **gewusst hätte**, …*
+- ❌ *Wenn ich das gewusst würde, …* → ✅ *Wenn ich das **gewusst hätte**, …* (kein *würde* in der Vergangenheit!)
+
+**Beispiele:**
+- Wenn du mich **gefragt hättest**, **hätte** ich dir **geholfen**.
+- Wenn der Wecker **geklingelt hätte**, **wäre** ich nicht zu spät **gekommen**.
+- Wenn wir den Zug nicht **verpasst hätten**, **wären** wir pünktlich **gewesen**.
+- Wenn sie nicht so schnell **gefahren wäre**, **hätte** sie keinen Unfall **gehabt**.`,
+      explanationEn: `## Konjunktiv II past in if-clauses
+
+Unreal conditional sentences in the past talk about situations that **did not happen** – and what **would have happened** then. They often express **regret**, **relief** or **speculation** (English "third conditional").
+
+### Formation
+> **hätte / wäre** (Konjunktiv II) + **past participle**
+
+| | condition (if-clause) | consequence (main clause) |
+| ---- | ---- | ---- |
+| form | wenn … participle + **hätte/wäre** | **hätte/wäre** … participle |
+| example | Wenn ich das **gewusst hätte**, (If I had known that,) | **wäre** ich nicht **gekommen**. (I wouldn't have come.) |
+
+The choice of *hätte* or *wäre* follows the **perfect-tense rule**: *gewusst → haben → hätte gewusst*, *gekommen → sein → wäre gekommen*.
+
+### Reality vs. unreality
+| reality | unreal past |
+| ---- | ---- |
+| Ich hatte keine Zeit, deshalb bin ich nicht gekommen. | Wenn ich Zeit **gehabt hätte**, **wäre** ich **gekommen**. (If I had had time, I would have come.) |
+| Es hat geregnet, deshalb sind wir zu Hause geblieben. | Wenn es nicht **geregnet hätte**, **wären** wir **ausgegangen**. (If it hadn't rained, we would have gone out.) |
+| Er hat nicht gelernt und ist durchgefallen. | Wenn er **gelernt hätte**, **hätte** er **bestanden**. (If he had studied, he would have passed.) |
+
+### With modal verbs: double infinitive
+> **hätte** + infinitive + **modal in the infinitive**
+- *Wenn ich **hätte kommen können**, **wäre** ich **gekommen**.* (If I had been able to come, I would have come.)
+- *Du **hättest** früher **anrufen sollen**.* (You should have called earlier – reproach.)
+
+In the **subordinate clause**, *hätte* comes **before** the double infinitive: *…, wenn ich **hätte** kommen **können**.*
+
+### Mixed times
+A past condition can have a consequence in the **present**:
+- *Wenn ich Medizin **studiert hätte**, **wäre** ich jetzt Ärztin.* (If I had studied medicine, I would be a doctor now.)
+- *Wenn wir das Haus damals **gekauft hätten**, **würden** wir heute viel Miete **sparen**.* (If we had bought the house back then, we'd be saving a lot of rent today.)
+
+### Common mistakes
+- ❌ *Wenn ich das wusste, wäre ich gekommen.* → ✅ *Wenn ich das **gewusst hätte**, …*
+- ❌ *Wenn ich das gewusst würde, …* → ✅ *Wenn ich das **gewusst hätte**, …* (no *würde* in the past!)
+
+**Examples:**
+- Wenn du mich **gefragt hättest**, **hätte** ich dir **geholfen**. (If you had asked me, I would have helped you.)
+- Wenn der Wecker **geklingelt hätte**, **wäre** ich nicht zu spät **gekommen**. (If the alarm had gone off, I wouldn't have been late.)
+- Wenn wir den Zug nicht **verpasst hätten**, **wären** wir pünktlich **gewesen**. (If we hadn't missed the train, we would have been on time.)
+- Wenn sie nicht so schnell **gefahren wäre**, **hätte** sie keinen Unfall **gehabt**. (If she hadn't driven so fast, she wouldn't have had an accident.)`,
+      explanationTr: `## wenn cümlelerinde geçmiş zaman Konjunktiv II
+
+Geçmişe dair gerçek dışı koşul cümleleriyle **gerçekleşmemiş** durumlardan – ve o zaman **ne olacağından** – söz edilir. Çoğu zaman **pişmanlık**, **rahatlama** veya **tahmin** bildirir (Türkçede „-seydi, … -ırdı").
+
+### Yapısı
+> **hätte / wäre** (Konjunktiv II) + **Partizip II**
+
+| | koşul (wenn cümlesi) | sonuç (ana cümle) |
+| ---- | ---- | ---- |
+| biçim | wenn … Partizip II + **hätte/wäre** | **hätte/wäre** … Partizip II |
+| örnek | Wenn ich das **gewusst hätte**, (Bunu bilseydim,) | **wäre** ich nicht **gekommen**. (gelmezdim.) |
+
+*hätte* veya *wäre* seçimi **Perfekt kuralına** göre yapılır: *gewusst → haben → hätte gewusst*, *gekommen → sein → wäre gekommen*.
+
+### Gerçek – gerçek dışı
+| gerçek | gerçek dışı geçmiş |
+| ---- | ---- |
+| Ich hatte keine Zeit, deshalb bin ich nicht gekommen. | Wenn ich Zeit **gehabt hätte**, **wäre** ich **gekommen**. (Vaktim olsaydı gelirdim.) |
+| Es hat geregnet, deshalb sind wir zu Hause geblieben. | Wenn es nicht **geregnet hätte**, **wären** wir **ausgegangen**. (Yağmur yağmasaydı dışarı çıkardık.) |
+| Er hat nicht gelernt und ist durchgefallen. | Wenn er **gelernt hätte**, **hätte** er **bestanden**. (Çalışsaydı geçerdi.) |
+
+### Modal fiillerle: çift mastar
+> **hätte** + mastar + **mastar hâlinde modal fiil**
+- *Wenn ich **hätte kommen können**, **wäre** ich **gekommen**.* (Gelebilseydim gelirdim.)
+- *Du **hättest** früher **anrufen sollen**.* (Daha önce araman gerekirdi – sitem.)
+
+**Yan cümlede** *hätte*, çift mastardan **önce** gelir: *…, wenn ich **hätte** kommen **können**.*
+
+### Karışık zamanlar
+Geçmişteki bir koşulun **şimdiki zamanda** bir sonucu olabilir:
+- *Wenn ich Medizin **studiert hätte**, **wäre** ich jetzt Ärztin.* (Tıp okusaydım şimdi doktor olurdum.)
+- *Wenn wir das Haus damals **gekauft hätten**, **würden** wir heute viel Miete **sparen**.* (Evi o zaman alsaydık bugün çok kira tasarrufu yapardık.)
+
+### Sık yapılan hatalar
+- ❌ *Wenn ich das wusste, wäre ich gekommen.* → ✅ *Wenn ich das **gewusst hätte**, …*
+- ❌ *Wenn ich das gewusst würde, …* → ✅ *Wenn ich das **gewusst hätte**, …* (geçmişte *würde* yok!)
+
+**Örnekler:**
+- Wenn du mich **gefragt hättest**, **hätte** ich dir **geholfen**. (Bana sorsaydın sana yardım ederdim.)
+- Wenn der Wecker **geklingelt hätte**, **wäre** ich nicht zu spät **gekommen**. (Çalar saat çalsaydı geç kalmazdım.)
+- Wenn wir den Zug nicht **verpasst hätten**, **wären** wir pünktlich **gewesen**. (Treni kaçırmasaydık zamanında orada olurduk.)
+- Wenn sie nicht so schnell **gefahren wäre**, **hätte** sie keinen Unfall **gehabt**. (O kadar hızlı sürmeseydi kaza yapmazdı.)`,
     },
   })
   await seedExercises({
@@ -31486,12 +32372,114 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit9.id,
       order: 2,
       grammarTopic: 'Uneingeleitete Bedingungssätze',
-      explanationDe:
-        'Ohne "wenn" beginnt der Bedingungssatz mit dem Verb: "Wäre er hier, würde er helfen." (= "Wenn er hier wäre, würde er helfen.")',
-      explanationEn:
-        'Without "wenn", the conditional clause starts with the verb: "Wäre er hier, würde er helfen" (Were he here, he would help — = "Wenn er hier wäre, würde er helfen").',
-      explanationTr:
-        '"Wenn" olmadan koşul cümlesi fiille başlar: "Wäre er hier, würde er helfen." (= "Wenn er hier wäre, würde er helfen.")',
+      explanationDe: `## Uneingeleitete Bedingungssätze
+
+Bedingungssätze können **ohne „wenn"** gebildet werden. Dann steht das **konjugierte Verb auf Position 1** des Nebensatzes. Diese Form wirkt **eleganter und schriftsprachlicher**.
+
+| mit „wenn" | ohne „wenn" (Verb an Position 1) |
+| ---- | ---- |
+| **Wenn** er hier **wäre**, würde er helfen. | **Wäre** er hier, würde er helfen. |
+| **Wenn** ich mehr Zeit **hätte**, würde ich reisen. | **Hätte** ich mehr Zeit, würde ich reisen. |
+| **Wenn** ich das **gewusst hätte**, … | **Hätte** ich das **gewusst**, … |
+| **Wenn** du früher **gekommen wärst**, … | **Wärst** du früher **gekommen**, … |
+| **Wenn** wir **hätten** bleiben **können**, … | **Hätten** wir bleiben **können**, … |
+
+### Der Hauptsatz danach
+Nach dem uneingeleiteten Bedingungssatz folgt der Hauptsatz – oft mit **„so"** oder **„dann"**, besonders in gehobener Sprache:
+- *Hätte ich das gewusst, **so wäre** ich nicht gekommen.*
+- *Wäre das Wetter besser, **dann** könnten wir draußen essen.*
+
+### Auch im Indikativ möglich (reale Bedingung)
+Besonders in formellen Texten, Anleitungen und Verträgen:
+- ***Sollte*** es Probleme geben, rufen Sie uns an. (= Falls es Probleme gibt, …)
+- ***Ist*** der Antrag unvollständig, wird er abgelehnt. (= Wenn der Antrag …)
+- ***Hat*** man einmal angefangen, kann man nicht mehr aufhören.
+
+### Verwechslungsgefahr: Frage oder Bedingung?
+- *Hätte er das gewusst?* → **Frage** (Fragezeichen, kein zweiter Satz)
+- *Hätte er das gewusst, wäre er gekommen.* → **Bedingung** (Komma + Hauptsatz)
+
+### Häufige Fehler
+- ❌ *Hätte ich das gewusst, ich wäre gekommen.* → ✅ *Hätte ich das gewusst, **wäre ich** gekommen.* (Der Nebensatz steht auf Position 1 → Verb im Hauptsatz direkt danach)
+
+**Beispiele:**
+- **Wäre** ich reich, würde ich ein Haus am Meer kaufen.
+- **Hätten** wir mehr Personal, könnten wir schneller arbeiten.
+- **Hätte** sie den Bus genommen, wäre sie pünktlich gewesen.
+- **Sollten** Sie Fragen haben, stehe ich gern zur Verfügung.
+- **Wäre** er nicht krank geworden, hätte er am Marathon teilgenommen.`,
+      explanationEn: `## Conditional clauses without "wenn"
+
+Conditional clauses can be formed **without "wenn"**. The **conjugated verb then stands in position 1** of the clause. This form sounds **more elegant and written** – like English "Had I known …", "Were he here …".
+
+| with "wenn" | without "wenn" (verb in position 1) |
+| ---- | ---- |
+| **Wenn** er hier **wäre**, würde er helfen. | **Wäre** er hier, würde er helfen. (Were he here, he would help.) |
+| **Wenn** ich mehr Zeit **hätte**, würde ich reisen. | **Hätte** ich mehr Zeit, würde ich reisen. (Had I more time, I'd travel.) |
+| **Wenn** ich das **gewusst hätte**, … | **Hätte** ich das **gewusst**, … (Had I known that, …) |
+| **Wenn** du früher **gekommen wärst**, … | **Wärst** du früher **gekommen**, … (Had you come earlier, …) |
+| **Wenn** wir **hätten** bleiben **können**, … | **Hätten** wir bleiben **können**, … (Had we been able to stay, …) |
+
+### The main clause that follows
+After the wenn-less condition comes the main clause – often with **"so"** or **"dann"**, especially in elevated language:
+- *Hätte ich das gewusst, **so wäre** ich nicht gekommen.* (Had I known that, I would not have come.)
+- *Wäre das Wetter besser, **dann** könnten wir draußen essen.* (If the weather were better, we could eat outside.)
+
+### Also possible in the indicative (real condition)
+Especially in formal texts, instructions and contracts:
+- ***Sollte*** es Probleme geben, rufen Sie uns an. (Should there be any problems, call us.)
+- ***Ist*** der Antrag unvollständig, wird er abgelehnt. (If the application is incomplete, it will be rejected.)
+- ***Hat*** man einmal angefangen, kann man nicht mehr aufhören. (Once you've started, you can't stop.)
+
+### Risk of confusion: question or condition?
+- *Hätte er das gewusst?* → **question** (question mark, no second clause) – "Would he have known that?"
+- *Hätte er das gewusst, wäre er gekommen.* → **condition** (comma + main clause)
+
+### Common mistakes
+- ❌ *Hätte ich das gewusst, ich wäre gekommen.* → ✅ *Hätte ich das gewusst, **wäre ich** gekommen.* (The subordinate clause occupies position 1 → the main-clause verb comes directly after it)
+
+**Examples:**
+- **Wäre** ich reich, würde ich ein Haus am Meer kaufen. (If I were rich, I'd buy a house by the sea.)
+- **Hätten** wir mehr Personal, könnten wir schneller arbeiten. (If we had more staff, we could work faster.)
+- **Hätte** sie den Bus genommen, wäre sie pünktlich gewesen. (Had she taken the bus, she would have been on time.)
+- **Sollten** Sie Fragen haben, stehe ich gern zur Verfügung. (Should you have any questions, I'm happy to help.)
+- **Wäre** er nicht krank geworden, hätte er am Marathon teilgenommen. (Had he not fallen ill, he would have taken part in the marathon.)`,
+      explanationTr: `## „wenn"siz koşul cümleleri
+
+Koşul cümleleri **„wenn" olmadan** da kurulabilir. Bu durumda **çekimli fiil yan cümlenin 1. pozisyonuna** geçer. Bu biçim **daha zarif ve yazı diline özgüdür**.
+
+| „wenn" ile | „wenn" olmadan (fiil 1. pozisyonda) |
+| ---- | ---- |
+| **Wenn** er hier **wäre**, würde er helfen. | **Wäre** er hier, würde er helfen. (Burada olsaydı yardım ederdi.) |
+| **Wenn** ich mehr Zeit **hätte**, würde ich reisen. | **Hätte** ich mehr Zeit, würde ich reisen. (Daha çok vaktim olsa seyahat ederdim.) |
+| **Wenn** ich das **gewusst hätte**, … | **Hätte** ich das **gewusst**, … (Bunu bilseydim, …) |
+| **Wenn** du früher **gekommen wärst**, … | **Wärst** du früher **gekommen**, … (Daha erken gelseydin, …) |
+| **Wenn** wir **hätten** bleiben **können**, … | **Hätten** wir bleiben **können**, … (Kalabilseydik, …) |
+
+### Ardından gelen ana cümle
+„wenn"siz koşuldan sonra ana cümle gelir – özellikle yüksek üslupta çoğu zaman **„so"** veya **„dann"** ile:
+- *Hätte ich das gewusst, **so wäre** ich nicht gekommen.* (Bunu bilseydim gelmezdim.)
+- *Wäre das Wetter besser, **dann** könnten wir draußen essen.* (Hava daha iyi olsa dışarıda yiyebilirdik.)
+
+### Indikativ'de de mümkün (gerçek koşul)
+Özellikle resmî metinlerde, talimatlarda ve sözleşmelerde:
+- ***Sollte*** es Probleme geben, rufen Sie uns an. (Bir sorun olursa bizi arayın.)
+- ***Ist*** der Antrag unvollständig, wird er abgelehnt. (Başvuru eksikse reddedilir.)
+- ***Hat*** man einmal angefangen, kann man nicht mehr aufhören. (Bir kez başladın mı artık duramazsın.)
+
+### Karıştırma tehlikesi: soru mu, koşul mu?
+- *Hätte er das gewusst?* → **soru** (soru işareti, ikinci cümle yok) – „Bunu bilir miydi?"
+- *Hätte er das gewusst, wäre er gekommen.* → **koşul** (virgül + ana cümle)
+
+### Sık yapılan hatalar
+- ❌ *Hätte ich das gewusst, ich wäre gekommen.* → ✅ *Hätte ich das gewusst, **wäre ich** gekommen.* (Yan cümle 1. pozisyonu doldurur → ana cümlenin fiili hemen ardından gelir)
+
+**Örnekler:**
+- **Wäre** ich reich, würde ich ein Haus am Meer kaufen. (Zengin olsam deniz kenarında bir ev alırdım.)
+- **Hätten** wir mehr Personal, könnten wir schneller arbeiten. (Daha fazla personelimiz olsa daha hızlı çalışabilirdik.)
+- **Hätte** sie den Bus genommen, wäre sie pünktlich gewesen. (Otobüse binseydi zamanında orada olurdu.)
+- **Sollten** Sie Fragen haben, stehe ich gern zur Verfügung. (Sorularınız olursa memnuniyetle yardımcı olurum.)
+- **Wäre** er nicht krank geworden, hätte er am Marathon teilgenommen. (Hastalanmasaydı maratona katılırdı.)`,
     },
   })
   await seedExercises({
@@ -31520,12 +32508,117 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit9.id,
       order: 3,
       grammarTopic: 'Irreale Wunschsätze',
-      explanationDe:
-        'Irreale Wünsche mit "wenn nur" oder "hätte ich nur" drücken Bedauern aus: "Wenn ich nur mehr Zeit hätte!" "Hätte ich das nur gewusst!"',
-      explanationEn:
-        'Unreal wishes with "wenn nur" or "hätte ich nur" express regret: "Wenn ich nur mehr Zeit hätte!" (If only I had more time!) "Hätte ich das nur gewusst!" (If only I had known that!)',
-      explanationTr:
-        '"Wenn nur" veya "hätte ich nur" ile kurulan gerçek dışı dilekler pişmanlık ifade eder: "Wenn ich nur mehr Zeit hätte!" "Hätte ich das nur gewusst!"',
+      explanationDe: `## Irreale Wunschsätze
+
+Mit irrealen Wunschsätzen drückt man aus, dass man sich etwas **anders wünscht, als es ist** (Gegenwart) oder **als es war** (Vergangenheit). Sie stehen **allein** – ohne Hauptsatz – und enden meist mit **Ausrufezeichen**. Die Partikeln **nur**, **doch** oder **bloß** sind obligatorisch.
+
+### Zwei Formen
+| Form | Gegenwart | Vergangenheit |
+| ---- | ---- | ---- |
+| mit **wenn** (Verb am Ende) | Wenn ich **nur** mehr Zeit **hätte**! | Wenn ich das **doch** **gewusst hätte**! |
+| ohne **wenn** (Verb an Pos. 1) | **Hätte** ich **nur** mehr Zeit! | **Hätte** ich das **bloß** **gewusst**! |
+
+### Gegenwart: Wunsch nach einer anderen Situation
+- *Wenn es **doch** endlich Sommer **wäre**!* (Es ist aber Winter.)
+- ***Wäre** ich **nur** nicht so müde!*
+- *Wenn er **bloß** anrufen **würde**!*
+- ***Könnte** ich **doch** besser singen!*
+
+### Vergangenheit: Bedauern
+- *Wenn ich **nur** nicht so viel **gegessen hätte**!* (Jetzt ist mir schlecht.)
+- ***Hätte** ich **doch** auf dich **gehört**!*
+- *Wenn wir **bloß** früher **losgefahren wären**!*
+- ***Wäre** ich **nur** zu Hause **geblieben**!*
+
+### Alternative: „ich wünschte, …" / „ich wollte, …"
+- *Ich **wünschte**, ich **hätte** mehr Zeit.*
+- *Ich **wünschte**, ich **wäre** nicht **gegangen**.*
+- *Ich **wollte**, es **wäre** schon Freitag.* (gehoben)
+
+### Häufige Fehler
+- ❌ *Wenn ich mehr Zeit habe!* → ✅ *Wenn ich **nur** mehr Zeit **hätte**!* (Konjunktiv II + Partikel)
+- ❌ *Ich wünsche, ich hätte …* → ✅ *Ich **wünschte**, ich hätte …* (Konjunktiv II von *wünschen*)
+
+**Beispiele:**
+- Wenn ich **doch** fließend Deutsch **sprechen könnte**!
+- **Hätte** ich **bloß** den Schirm **mitgenommen**!
+- Wenn der Bus **nur** endlich **käme**!
+- **Wäre** ich **doch** nur ein paar Jahre jünger!
+- Ich wünschte, ich **hätte** mehr Geduld **gehabt**.`,
+      explanationEn: `## Unreal wishes
+
+Unreal wish sentences express that you wish something were **different from how it is** (present) or **was** (past). They stand **on their own** – without a main clause – and usually end with an **exclamation mark**. The particles **nur**, **doch** or **bloß** are obligatory ("if only …").
+
+### Two forms
+| form | present | past |
+| ---- | ---- | ---- |
+| with **wenn** (verb at end) | Wenn ich **nur** mehr Zeit **hätte**! (If only I had more time!) | Wenn ich das **doch** **gewusst hätte**! (If only I had known that!) |
+| without **wenn** (verb in pos. 1) | **Hätte** ich **nur** mehr Zeit! | **Hätte** ich das **bloß** **gewusst**! |
+
+### Present: wishing for a different situation
+- *Wenn es **doch** endlich Sommer **wäre**!* (If only it were summer at last! – but it's winter.)
+- ***Wäre** ich **nur** nicht so müde!* (If only I weren't so tired!)
+- *Wenn er **bloß** anrufen **würde**!* (If only he would call!)
+- ***Könnte** ich **doch** besser singen!* (If only I could sing better!)
+
+### Past: regret
+- *Wenn ich **nur** nicht so viel **gegessen hätte**!* (If only I hadn't eaten so much! – now I feel sick.)
+- ***Hätte** ich **doch** auf dich **gehört**!* (If only I had listened to you!)
+- *Wenn wir **bloß** früher **losgefahren wären**!* (If only we had left earlier!)
+- ***Wäre** ich **nur** zu Hause **geblieben**!* (If only I had stayed at home!)
+
+### Alternative: "ich wünschte, …" / "ich wollte, …"
+- *Ich **wünschte**, ich **hätte** mehr Zeit.* (I wish I had more time.)
+- *Ich **wünschte**, ich **wäre** nicht **gegangen**.* (I wish I hadn't gone.)
+- *Ich **wollte**, es **wäre** schon Freitag.* (I wish it were Friday already – elevated.)
+
+### Common mistakes
+- ❌ *Wenn ich mehr Zeit habe!* → ✅ *Wenn ich **nur** mehr Zeit **hätte**!* (Konjunktiv II + particle)
+- ❌ *Ich wünsche, ich hätte …* → ✅ *Ich **wünschte**, ich hätte …* (Konjunktiv II of *wünschen*)
+
+**Examples:**
+- Wenn ich **doch** fließend Deutsch **sprechen könnte**! (If only I could speak fluent German!)
+- **Hätte** ich **bloß** den Schirm **mitgenommen**! (If only I had taken my umbrella!)
+- Wenn der Bus **nur** endlich **käme**! (If only the bus would finally come!)
+- **Wäre** ich **doch** nur ein paar Jahre jünger! (If only I were a few years younger!)
+- Ich wünschte, ich **hätte** mehr Geduld **gehabt**. (I wish I had been more patient.)`,
+      explanationTr: `## Gerçek dışı dilek cümleleri
+
+Gerçek dışı dilek cümleleriyle bir şeyin **şu anki** (şimdi) ya da **o zamanki** (geçmiş) durumundan **farklı olmasını dilediğinizi** ifade edersiniz. **Tek başına** – ana cümle olmadan – dururlar ve çoğunlukla **ünlem işaretiyle** biterler. **nur**, **doch** veya **bloß** edatları zorunludur (Türkçede „keşke …").
+
+### İki biçim
+| biçim | şimdi | geçmiş |
+| ---- | ---- | ---- |
+| **wenn** ile (fiil sonda) | Wenn ich **nur** mehr Zeit **hätte**! (Keşke daha çok vaktim olsa!) | Wenn ich das **doch** **gewusst hätte**! (Keşke bunu bilseydim!) |
+| **wenn** olmadan (fiil 1. poz.) | **Hätte** ich **nur** mehr Zeit! | **Hätte** ich das **bloß** **gewusst**! |
+
+### Şimdi: farklı bir durum dilemek
+- *Wenn es **doch** endlich Sommer **wäre**!* (Keşke sonunda yaz olsa! – ama kış.)
+- ***Wäre** ich **nur** nicht so müde!* (Keşke bu kadar yorgun olmasam!)
+- *Wenn er **bloß** anrufen **würde**!* (Keşke arasa!)
+- ***Könnte** ich **doch** besser singen!* (Keşke daha iyi şarkı söyleyebilsem!)
+
+### Geçmiş: pişmanlık
+- *Wenn ich **nur** nicht so viel **gegessen hätte**!* (Keşke bu kadar çok yemeseydim! – şimdi midem bulanıyor.)
+- ***Hätte** ich **doch** auf dich **gehört**!* (Keşke seni dinleseydim!)
+- *Wenn wir **bloß** früher **losgefahren wären**!* (Keşke daha erken yola çıksaydık!)
+- ***Wäre** ich **nur** zu Hause **geblieben**!* (Keşke evde kalsaydım!)
+
+### Alternatif: „ich wünschte, …" / „ich wollte, …"
+- *Ich **wünschte**, ich **hätte** mehr Zeit.* (Keşke daha çok vaktim olsaydı.)
+- *Ich **wünschte**, ich **wäre** nicht **gegangen**.* (Keşke gitmeseydim.)
+- *Ich **wollte**, es **wäre** schon Freitag.* (Keşke şimdiden cuma olsa – yüksek üslup.)
+
+### Sık yapılan hatalar
+- ❌ *Wenn ich mehr Zeit habe!* → ✅ *Wenn ich **nur** mehr Zeit **hätte**!* (Konjunktiv II + edat)
+- ❌ *Ich wünsche, ich hätte …* → ✅ *Ich **wünschte**, ich hätte …* (*wünschen*'in Konjunktiv II'si)
+
+**Örnekler:**
+- Wenn ich **doch** fließend Deutsch **sprechen könnte**! (Keşke akıcı Almanca konuşabilsem!)
+- **Hätte** ich **bloß** den Schirm **mitgenommen**! (Keşke şemsiyeyi yanıma alsaydım!)
+- Wenn der Bus **nur** endlich **käme**! (Keşke otobüs sonunda gelse!)
+- **Wäre** ich **doch** nur ein paar Jahre jünger! (Keşke birkaç yaş daha genç olsam!)
+- Ich wünschte, ich **hätte** mehr Geduld **gehabt**. (Keşke daha sabırlı olsaydım.)`,
     },
   })
   await seedExercises({
@@ -31554,12 +32647,102 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit9.id,
       order: 4,
       grammarTopic: 'Übung: Irreale Bedingungssätze',
-      explanationDe:
-        'Wiederholung: Irreale Bedingungssätze der Vergangenheit beschreiben Situationen, die nicht eingetreten sind, oft mit Bedauern oder Spekulation verbunden.',
-      explanationEn:
-        'Review: unreal past conditionals describe situations that didn\'t happen, often connected to regret or speculation.',
-      explanationTr:
-        'Tekrar: Geçmişe yönelik gerçek dışı koşul cümleleri gerçekleşmemiş durumları anlatır, genellikle pişmanlık veya tahminle bağlantılıdır.',
+      explanationDe: `## Übung: Irreale Bedingungssätze – Zusammenfassung
+
+Irreale Bedingungssätze beschreiben Situationen, die **nicht real** sind – in der Gegenwart (hypothetisch) oder in der Vergangenheit (nicht eingetreten). Damit verbunden sind oft **Bedauern**, **Vorwürfe**, **Erleichterung** oder **Spekulation**.
+
+### Übersicht
+| Zeit | wenn-Satz | Hauptsatz | Beispiel |
+| ---- | ---- | ---- | ---- |
+| Gegenwart | Konj. II (*wäre, hätte, käme*) | *würde* + Inf. / Konj. II | Wenn ich Zeit **hätte**, **würde** ich **kommen**. |
+| Vergangenheit | *hätte/wäre* + P II | *hätte/wäre* + P II | Wenn ich Zeit **gehabt hätte**, **wäre** ich **gekommen**. |
+| gemischt | *hätte/wäre* + P II | Konj. II Gegenwart | Wenn ich **aufgepasst hätte**, **wüsste** ich es jetzt. |
+| mit Modalverb | *hätte* + Inf. + Modalverb | | Wenn ich **hätte helfen können**, … |
+
+### Varianten
+| Variante | Beispiel |
+| ---- | ---- |
+| ohne *wenn* | **Hätte** ich Zeit gehabt, wäre ich gekommen. |
+| Wunschsatz | **Hätte** ich **doch** Zeit gehabt! |
+| Vorwurf | Du **hättest** mich anrufen **sollen**! |
+| Erleichterung (*fast*) | Ich **wäre** **fast** zu spät **gekommen**! (= Aber ich war pünktlich.) |
+| Vergleich (*als ob*) | Er tut so, **als ob** er nichts **gesehen hätte**. |
+
+### Typische Situationen
+- **Bedauern:** *Wenn ich nur mehr gelernt hätte!*
+- **Spekulation über Geschichte:** *Wenn das Internet nicht erfunden worden wäre, würden wir heute noch Briefe schreiben.*
+- **Erleichterung:** *Wenn du nicht gebremst hättest, wäre etwas Schlimmes passiert.*
+
+**Beispiele:**
+- Wenn ich den Job angenommen hätte, würde ich jetzt in München wohnen.
+- Hätten wir das Ticket früher gebucht, wäre es billiger gewesen.
+- Du hättest mir die Wahrheit sagen müssen!
+- Ich wäre beinahe gestürzt.
+- Sie sieht aus, als ob sie die ganze Nacht nicht geschlafen hätte.`,
+      explanationEn: `## Practice: unreal conditionals – summary
+
+Unreal conditional sentences describe situations that are **not real** – in the present (hypothetical) or in the past (didn't happen). They often come with **regret**, **reproach**, **relief** or **speculation**.
+
+### Overview
+| time | if-clause | main clause | example |
+| ---- | ---- | ---- | ---- |
+| present | Konj. II (*wäre, hätte, käme*) | *würde* + inf. / Konj. II | Wenn ich Zeit **hätte**, **würde** ich **kommen**. (If I had time, I would come.) |
+| past | *hätte/wäre* + participle | *hätte/wäre* + participle | Wenn ich Zeit **gehabt hätte**, **wäre** ich **gekommen**. (If I had had time, I would have come.) |
+| mixed | *hätte/wäre* + participle | Konj. II present | Wenn ich **aufgepasst hätte**, **wüsste** ich es jetzt. (If I had paid attention, I would know now.) |
+| with modal | *hätte* + inf. + modal | | Wenn ich **hätte helfen können**, … (If I had been able to help …) |
+
+### Variants
+| variant | example |
+| ---- | ---- |
+| without *wenn* | **Hätte** ich Zeit gehabt, wäre ich gekommen. (Had I had time, I would have come.) |
+| wish | **Hätte** ich **doch** Zeit gehabt! (If only I had had time!) |
+| reproach | Du **hättest** mich anrufen **sollen**! (You should have called me!) |
+| relief (*fast*) | Ich **wäre** **fast** zu spät **gekommen**! (I was almost late! – but I was on time.) |
+| comparison (*als ob*) | Er tut so, **als ob** er nichts **gesehen hätte**. (He acts as if he hadn't seen anything.) |
+
+### Typical situations
+- **Regret:** *Wenn ich nur mehr gelernt hätte!* (If only I had studied more!)
+- **Speculating about history:** *Wenn das Internet nicht erfunden worden wäre, würden wir heute noch Briefe schreiben.* (If the internet hadn't been invented, we'd still be writing letters today.)
+- **Relief:** *Wenn du nicht gebremst hättest, wäre etwas Schlimmes passiert.* (If you hadn't braked, something terrible would have happened.)
+
+**Examples:**
+- Wenn ich den Job angenommen hätte, würde ich jetzt in München wohnen. (If I had taken the job, I would be living in Munich now.)
+- Hätten wir das Ticket früher gebucht, wäre es billiger gewesen. (Had we booked the ticket earlier, it would have been cheaper.)
+- Du hättest mir die Wahrheit sagen müssen! (You should have told me the truth!)
+- Ich wäre beinahe gestürzt. (I nearly fell.)
+- Sie sieht aus, als ob sie die ganze Nacht nicht geschlafen hätte. (She looks as if she hadn't slept all night.)`,
+      explanationTr: `## Alıştırma: Gerçek dışı koşul cümleleri – özet
+
+Gerçek dışı koşul cümleleri **gerçek olmayan** durumları anlatır – şimdide (varsayımsal) veya geçmişte (gerçekleşmemiş). Bunlara çoğu zaman **pişmanlık**, **sitem**, **rahatlama** veya **tahmin** eşlik eder.
+
+### Genel bakış
+| zaman | wenn cümlesi | ana cümle | örnek |
+| ---- | ---- | ---- | ---- |
+| şimdi | Konj. II (*wäre, hätte, käme*) | *würde* + mastar / Konj. II | Wenn ich Zeit **hätte**, **würde** ich **kommen**. (Vaktim olsa gelirdim.) |
+| geçmiş | *hätte/wäre* + P II | *hätte/wäre* + P II | Wenn ich Zeit **gehabt hätte**, **wäre** ich **gekommen**. (Vaktim olsaydı gelirdim.) |
+| karışık | *hätte/wäre* + P II | şimdiki Konj. II | Wenn ich **aufgepasst hätte**, **wüsste** ich es jetzt. (Dikkat etseydim şimdi bilirdim.) |
+| modal fiille | *hätte* + mastar + modal | | Wenn ich **hätte helfen können**, … (Yardım edebilseydim …) |
+
+### Varyantlar
+| varyant | örnek |
+| ---- | ---- |
+| *wenn* olmadan | **Hätte** ich Zeit gehabt, wäre ich gekommen. (Vaktim olsaydı gelirdim.) |
+| dilek | **Hätte** ich **doch** Zeit gehabt! (Keşke vaktim olsaydı!) |
+| sitem | Du **hättest** mich anrufen **sollen**! (Beni araman gerekirdi!) |
+| rahatlama (*fast*) | Ich **wäre** **fast** zu spät **gekommen**! (Az kalsın geç kalıyordum! – ama zamanında geldim.) |
+| benzetme (*als ob*) | Er tut so, **als ob** er nichts **gesehen hätte**. (Hiçbir şey görmemiş gibi davranıyor.) |
+
+### Tipik durumlar
+- **Pişmanlık:** *Wenn ich nur mehr gelernt hätte!* (Keşke daha çok çalışsaydım!)
+- **Tarih üzerine tahmin:** *Wenn das Internet nicht erfunden worden wäre, würden wir heute noch Briefe schreiben.* (İnternet icat edilmeseydi bugün hâlâ mektup yazıyor olurduk.)
+- **Rahatlama:** *Wenn du nicht gebremst hättest, wäre etwas Schlimmes passiert.* (Fren yapmasaydın kötü bir şey olurdu.)
+
+**Örnekler:**
+- Wenn ich den Job angenommen hätte, würde ich jetzt in München wohnen. (İşi kabul etseydim şimdi Münih'te yaşıyor olurdum.)
+- Hätten wir das Ticket früher gebucht, wäre es billiger gewesen. (Bileti daha önce alsaydık daha ucuz olurdu.)
+- Du hättest mir die Wahrheit sagen müssen! (Bana gerçeği söylemeliydin!)
+- Ich wäre beinahe gestürzt. (Az kalsın düşüyordum.)
+- Sie sieht aus, als ob sie die ganze Nacht nicht geschlafen hätte. (Bütün gece uyumamış gibi görünüyor.)`,
     },
   })
   await seedExercises({
@@ -31611,12 +32794,135 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit10.id,
       order: 1,
       grammarTopic: 'Verben mit "auf" und "über"',
-      explanationDe:
-        'Viele Verben verlangen feste Präpositionen: "sich freuen auf" (Zukünftiges), "sich freuen über" (Geschehenes), "sich ärgern über".',
-      explanationEn:
-        'Many verbs require fixed prepositions: "sich freuen auf" (to look forward to something future), "sich freuen über" (to be happy about something that happened), "sich ärgern über" (to be annoyed about).',
-      explanationTr:
-        'Birçok fiil sabit edat gerektirir: "sich freuen auf" (gelecekle ilgili), "sich freuen über" (olmuş bir şeyle ilgili), "sich ärgern über".',
+      explanationDe: `## Verben mit „auf" und „über"
+
+Viele deutsche Verben verlangen eine **feste Präposition**. Diese Präposition hat oft **keine räumliche Bedeutung** mehr und bestimmt den **Kasus** des Objekts. Bei **auf** und **über** (Wechselpräpositionen) steht nach Verben fast immer der **Akkusativ**.
+
+### Verben mit „auf" + Akkusativ
+| Verb | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| sich freuen **auf** | Vorfreude (Zukunft) | Ich freue mich **auf den** Urlaub. |
+| warten **auf** | | Wir warten **auf den** Bus. |
+| sich verlassen **auf** | vertrauen | Du kannst dich **auf mich** verlassen. |
+| sich konzentrieren **auf** | | Konzentrier dich **auf die** Aufgabe! |
+| achten **auf** | aufpassen | Achten Sie **auf Ihr** Gepäck. |
+| hinweisen **auf** | aufmerksam machen | Ich möchte **auf einen** Fehler hinweisen. |
+| verzichten **auf** | nicht nehmen | Er verzichtet **auf** Zucker. |
+| sich beziehen **auf** | | Ich beziehe mich **auf Ihr** Schreiben. |
+| antworten **auf** | | Sie hat **auf meine** E-Mail geantwortet. |
+
+### Verben mit „über" + Akkusativ
+| Verb | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| sich freuen **über** | Freude (Gegenwart/Vergangenheit) | Ich freue mich **über das** Geschenk. |
+| sich ärgern **über** | | Er ärgert sich **über den** Stau. |
+| sprechen / reden **über** | | Wir sprechen **über die** Politik. |
+| nachdenken **über** | | Ich denke **über dein** Angebot nach. |
+| sich beschweren **über** | | Gäste beschweren sich **über den** Lärm. |
+| sich informieren **über** | | Informieren Sie sich **über die** Kurse. |
+| sich wundern **über** | erstaunt sein | Ich wundere mich **über seine** Reaktion. |
+| verfügen **über** | haben, besitzen | Sie verfügt **über** viel Erfahrung. |
+
+### Wichtigster Kontrast: sich freuen auf / über
+| sich freuen **auf** | sich freuen **über** |
+| ---- | ---- |
+| etwas **Zukünftiges** | etwas, das **schon da ist / passiert ist** |
+| Ich freue mich **auf** deinen Besuch. (nächste Woche) | Ich freue mich **über** deinen Besuch. (du bist jetzt hier) |
+
+Ähnlich: **sich ärgern über** (Ärger) – **sich beschweren über** (Ärger äußern).
+
+**Beispiele:**
+- Die Kinder freuen sich schon **auf** Weihnachten.
+- Wir haben uns sehr **über** eure Karte gefreut.
+- Ich kann mich nicht **auf** das Buch konzentrieren.
+- Die Mieter beschweren sich **über** die hohen Nebenkosten.
+- Das Hotel verfügt **über** 120 Zimmer.`,
+      explanationEn: `## Verbs with "auf" and "über"
+
+Many German verbs require a **fixed preposition**. This preposition often has **no spatial meaning** any more and determines the **case** of the object. With **auf** and **über** (two-way prepositions), verbs are almost always followed by the **accusative**.
+
+### Verbs with "auf" + accusative
+| verb | meaning | example |
+| ---- | ---- | ---- |
+| sich freuen **auf** | to look forward to (future) | Ich freue mich **auf den** Urlaub. (I'm looking forward to the holiday.) |
+| warten **auf** | to wait for | Wir warten **auf den** Bus. |
+| sich verlassen **auf** | to rely on | Du kannst dich **auf mich** verlassen. |
+| sich konzentrieren **auf** | to concentrate on | Konzentrier dich **auf die** Aufgabe! |
+| achten **auf** | to pay attention to | Achten Sie **auf Ihr** Gepäck. (Mind your luggage.) |
+| hinweisen **auf** | to point out | Ich möchte **auf einen** Fehler hinweisen. |
+| verzichten **auf** | to do without | Er verzichtet **auf** Zucker. (He does without sugar.) |
+| sich beziehen **auf** | to refer to | Ich beziehe mich **auf Ihr** Schreiben. (I refer to your letter.) |
+| antworten **auf** | to reply to | Sie hat **auf meine** E-Mail geantwortet. |
+
+### Verbs with "über" + accusative
+| verb | meaning | example |
+| ---- | ---- | ---- |
+| sich freuen **über** | to be pleased about (present/past) | Ich freue mich **über das** Geschenk. (I'm pleased with the present.) |
+| sich ärgern **über** | to be annoyed about | Er ärgert sich **über den** Stau. |
+| sprechen / reden **über** | to talk about | Wir sprechen **über die** Politik. |
+| nachdenken **über** | to think about | Ich denke **über dein** Angebot nach. |
+| sich beschweren **über** | to complain about | Gäste beschweren sich **über den** Lärm. |
+| sich informieren **über** | to find out about | Informieren Sie sich **über die** Kurse. |
+| sich wundern **über** | to be surprised at | Ich wundere mich **über seine** Reaktion. |
+| verfügen **über** | to have at one's disposal | Sie verfügt **über** viel Erfahrung. (She has a lot of experience.) |
+
+### Key contrast: sich freuen auf / über
+| sich freuen **auf** | sich freuen **über** |
+| ---- | ---- |
+| something **in the future** | something that is **already here / has happened** |
+| Ich freue mich **auf** deinen Besuch. (I'm looking forward to your visit – next week) | Ich freue mich **über** deinen Besuch. (I'm glad you're visiting – you're here now) |
+
+Similarly: **sich ärgern über** (being annoyed) – **sich beschweren über** (voicing annoyance).
+
+**Examples:**
+- Die Kinder freuen sich schon **auf** Weihnachten. (The children are already looking forward to Christmas.)
+- Wir haben uns sehr **über** eure Karte gefreut. (We were very pleased about your card.)
+- Ich kann mich nicht **auf** das Buch konzentrieren. (I can't concentrate on the book.)
+- Die Mieter beschweren sich **über** die hohen Nebenkosten. (The tenants complain about the high service charges.)
+- Das Hotel verfügt **über** 120 Zimmer. (The hotel has 120 rooms.)`,
+      explanationTr: `## „auf" ve „über" alan fiiller
+
+Birçok Almanca fiil **sabit bir edat** gerektirir. Bu edatın çoğu zaman artık **mekânsal bir anlamı yoktur** ve nesnenin **halini** belirler. **auf** ve **über** (iki yönlü edatlar) fiillerden sonra neredeyse her zaman **Akkusativ** alır.
+
+### „auf" + Akkusativ alan fiiller
+| fiil | anlamı | örnek |
+| ---- | ---- | ---- |
+| sich freuen **auf** | dört gözle beklemek (gelecek) | Ich freue mich **auf den** Urlaub. (Tatili dört gözle bekliyorum.) |
+| warten **auf** | beklemek | Wir warten **auf den** Bus. (Otobüsü bekliyoruz.) |
+| sich verlassen **auf** | güvenmek | Du kannst dich **auf mich** verlassen. (Bana güvenebilirsin.) |
+| sich konzentrieren **auf** | odaklanmak | Konzentrier dich **auf die** Aufgabe! (Göreve odaklan!) |
+| achten **auf** | dikkat etmek | Achten Sie **auf Ihr** Gepäck. (Bagajınıza dikkat edin.) |
+| hinweisen **auf** | dikkat çekmek | Ich möchte **auf einen** Fehler hinweisen. (Bir hataya dikkat çekmek istiyorum.) |
+| verzichten **auf** | vazgeçmek | Er verzichtet **auf** Zucker. (Şekerden vazgeçiyor.) |
+| sich beziehen **auf** | atıfta bulunmak | Ich beziehe mich **auf Ihr** Schreiben. (Yazınıza atıfta bulunuyorum.) |
+| antworten **auf** | cevap vermek | Sie hat **auf meine** E-Mail geantwortet. (E-postama cevap verdi.) |
+
+### „über" + Akkusativ alan fiiller
+| fiil | anlamı | örnek |
+| ---- | ---- | ---- |
+| sich freuen **über** | sevinmek (şimdi/geçmiş) | Ich freue mich **über das** Geschenk. (Hediyeye sevindim.) |
+| sich ärgern **über** | kızmak | Er ärgert sich **über den** Stau. (Trafik sıkışıklığına kızıyor.) |
+| sprechen / reden **über** | hakkında konuşmak | Wir sprechen **über die** Politik. (Siyaset hakkında konuşuyoruz.) |
+| nachdenken **über** | üzerinde düşünmek | Ich denke **über dein** Angebot nach. (Teklifin üzerinde düşünüyorum.) |
+| sich beschweren **über** | şikâyet etmek | Gäste beschweren sich **über den** Lärm. (Misafirler gürültüden şikâyet ediyor.) |
+| sich informieren **über** | bilgi edinmek | Informieren Sie sich **über die** Kurse. (Kurslar hakkında bilgi edinin.) |
+| sich wundern **über** | şaşırmak | Ich wundere mich **über seine** Reaktion. (Tepkisine şaşırıyorum.) |
+| verfügen **über** | sahip olmak | Sie verfügt **über** viel Erfahrung. (Çok deneyime sahip.) |
+
+### En önemli karşıtlık: sich freuen auf / über
+| sich freuen **auf** | sich freuen **über** |
+| ---- | ---- |
+| **gelecekteki** bir şey | **zaten var olan / olmuş** bir şey |
+| Ich freue mich **auf** deinen Besuch. (Ziyaretini dört gözle bekliyorum – gelecek hafta) | Ich freue mich **über** deinen Besuch. (Ziyaretine sevindim – şu an buradasın) |
+
+Benzer şekilde: **sich ärgern über** (kızmak) – **sich beschweren über** (kızgınlığı dile getirmek).
+
+**Örnekler:**
+- Die Kinder freuen sich schon **auf** Weihnachten. (Çocuklar şimdiden Noel'i dört gözle bekliyor.)
+- Wir haben uns sehr **über** eure Karte gefreut. (Kartınıza çok sevindik.)
+- Ich kann mich nicht **auf** das Buch konzentrieren. (Kitaba odaklanamıyorum.)
+- Die Mieter beschweren sich **über** die hohen Nebenkosten. (Kiracılar yüksek aidatlardan şikâyet ediyor.)
+- Das Hotel verfügt **über** 120 Zimmer. (Otelde 120 oda var.)`,
     },
   })
   await seedExercises({
@@ -31645,12 +32951,147 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit10.id,
       order: 2,
       grammarTopic: 'Verben mit "an" und "nach"',
-      explanationDe:
-        '"Denken an" (Akkusativ) bedeutet, an jemanden/etwas zu denken. "Sich sehnen nach" (Dativ) drückt Sehnsucht aus.',
-      explanationEn:
-        '"Denken an" (+ accusative) means to think about someone/something. "Sich sehnen nach" (+ dative) expresses longing for something.',
-      explanationTr:
-        '"Denken an" (-i hali) birini/bir şeyi düşünmek demektir. "Sich sehnen nach" (-e hali) özlem ifade eder.',
+      explanationDe: `## Verben mit „an" und „nach"
+
+### Verben mit „an"
+Bei **an** hängt der Kasus vom Verb ab – man muss ihn **mitlernen**!
+
+**an + Akkusativ**
+| Verb | Beispiel |
+| ---- | ---- |
+| denken **an** | Ich denke oft **an meine** Kindheit. |
+| sich erinnern **an** | Erinnerst du dich **an den** Urlaub in Italien? |
+| sich gewöhnen **an** | Ich habe mich **an das** kalte Wetter gewöhnt. |
+| glauben **an** | Sie glaubt **an das** Gute im Menschen. |
+| sich wenden **an** | Wenden Sie sich bitte **an den** Kundenservice. |
+| sich halten **an** | Halten Sie sich **an die** Regeln! |
+
+**an + Dativ**
+| Verb | Beispiel |
+| ---- | ---- |
+| teilnehmen **an** | Ich nehme **an dem** Kurs teil. |
+| arbeiten **an** | Wir arbeiten **an einem** neuen Projekt. |
+| zweifeln **an** | Er zweifelt **an seiner** Entscheidung. |
+| leiden **an** | Sie leidet **an einer** Allergie. (Krankheit) |
+| sterben **an** | Er starb **an einem** Herzinfarkt. |
+| es fehlt **an** | Es fehlt **an** Lehrern. |
+| hängen **an** | Sie hängt sehr **an ihrer** Familie. |
+| Interesse haben **an** | Ich habe Interesse **an dem** Job. |
+
+### Verben mit „nach" (immer Dativ)
+| Verb | Bedeutung | Beispiel |
+| ---- | ---- | ---- |
+| sich sehnen **nach** | Sehnsucht haben | Ich sehne mich **nach dem** Meer. |
+| fragen **nach** | | Er fragt **nach dem** Weg. |
+| suchen **nach** | | Wir suchen **nach einer** Lösung. |
+| sich erkundigen **nach** | sich informieren | Sie erkundigt sich **nach den** Preisen. |
+| riechen / schmecken **nach** | | Es riecht **nach** frischem Brot. |
+| streben **nach** | anstreben | Er strebt **nach** Erfolg. |
+| sich richten **nach** | sich anpassen | Wir richten uns **nach dem** Wetter. |
+
+### Lerntipp
+Lernen Sie Verben **immer als Einheit** mit Präposition und Kasus: **denken an + A**, **teilnehmen an + D**, **sich sehnen nach + D**. Eine Karteikarte mit Beispielsatz hilft mehr als eine Liste.
+
+**Beispiele:**
+- Denk bitte **an den** Termin morgen!
+- Nach dem Umzug musste ich mich erst **an die** neue Stadt gewöhnen.
+- Über 200 Personen haben **an der** Konferenz teilgenommen.
+- Viele Auswanderer sehnen sich **nach ihrer** Heimat.
+- Die Polizei sucht **nach dem** Täter.`,
+      explanationEn: `## Verbs with "an" and "nach"
+
+### Verbs with "an"
+With **an** the case depends on the verb – you must **learn it with the verb**!
+
+**an + accusative**
+| verb | example |
+| ---- | ---- |
+| denken **an** (to think of) | Ich denke oft **an meine** Kindheit. (I often think of my childhood.) |
+| sich erinnern **an** (to remember) | Erinnerst du dich **an den** Urlaub in Italien? |
+| sich gewöhnen **an** (to get used to) | Ich habe mich **an das** kalte Wetter gewöhnt. |
+| glauben **an** (to believe in) | Sie glaubt **an das** Gute im Menschen. |
+| sich wenden **an** (to turn to, contact) | Wenden Sie sich bitte **an den** Kundenservice. |
+| sich halten **an** (to stick to) | Halten Sie sich **an die** Regeln! |
+
+**an + dative**
+| verb | example |
+| ---- | ---- |
+| teilnehmen **an** (to take part in) | Ich nehme **an dem** Kurs teil. |
+| arbeiten **an** (to work on) | Wir arbeiten **an einem** neuen Projekt. |
+| zweifeln **an** (to doubt) | Er zweifelt **an seiner** Entscheidung. |
+| leiden **an** (to suffer from – illness) | Sie leidet **an einer** Allergie. |
+| sterben **an** (to die of) | Er starb **an einem** Herzinfarkt. |
+| es fehlt **an** (there is a lack of) | Es fehlt **an** Lehrern. (There is a shortage of teachers.) |
+| hängen **an** (to be attached to) | Sie hängt sehr **an ihrer** Familie. |
+| Interesse haben **an** (to be interested in) | Ich habe Interesse **an dem** Job. |
+
+### Verbs with "nach" (always dative)
+| verb | meaning | example |
+| ---- | ---- | ---- |
+| sich sehnen **nach** | to long for | Ich sehne mich **nach dem** Meer. (I long for the sea.) |
+| fragen **nach** | to ask about/for | Er fragt **nach dem** Weg. (He asks the way.) |
+| suchen **nach** | to search for | Wir suchen **nach einer** Lösung. |
+| sich erkundigen **nach** | to enquire about | Sie erkundigt sich **nach den** Preisen. |
+| riechen / schmecken **nach** | to smell / taste of | Es riecht **nach** frischem Brot. |
+| streben **nach** | to strive for | Er strebt **nach** Erfolg. |
+| sich richten **nach** | to go by, adapt to | Wir richten uns **nach dem** Wetter. (We'll go by the weather.) |
+
+### Learning tip
+Always learn verbs **as a unit** with preposition and case: **denken an + acc.**, **teilnehmen an + dat.**, **sich sehnen nach + dat.** A flashcard with an example sentence helps more than a list.
+
+**Examples:**
+- Denk bitte **an den** Termin morgen! (Please remember the appointment tomorrow!)
+- Nach dem Umzug musste ich mich erst **an die** neue Stadt gewöhnen. (After moving I first had to get used to the new city.)
+- Über 200 Personen haben **an der** Konferenz teilgenommen. (Over 200 people took part in the conference.)
+- Viele Auswanderer sehnen sich **nach ihrer** Heimat. (Many emigrants long for their homeland.)
+- Die Polizei sucht **nach dem** Täter. (The police are searching for the culprit.)`,
+      explanationTr: `## „an" ve „nach" alan fiiller
+
+### „an" alan fiiller
+**an** ile hâl fiile bağlıdır – onu **fiille birlikte öğrenmek** gerekir!
+
+**an + Akkusativ**
+| fiil | örnek |
+| ---- | ---- |
+| denken **an** (düşünmek) | Ich denke oft **an meine** Kindheit. (Sık sık çocukluğumu düşünürüm.) |
+| sich erinnern **an** (hatırlamak) | Erinnerst du dich **an den** Urlaub in Italien? (İtalya tatilini hatırlıyor musun?) |
+| sich gewöhnen **an** (alışmak) | Ich habe mich **an das** kalte Wetter gewöhnt. (Soğuk havaya alıştım.) |
+| glauben **an** (inanmak) | Sie glaubt **an das** Gute im Menschen. (İnsandaki iyiliğe inanıyor.) |
+| sich wenden **an** (başvurmak) | Wenden Sie sich bitte **an den** Kundenservice. (Lütfen müşteri hizmetlerine başvurun.) |
+| sich halten **an** (uymak) | Halten Sie sich **an die** Regeln! (Kurallara uyun!) |
+
+**an + Dativ**
+| fiil | örnek |
+| ---- | ---- |
+| teilnehmen **an** (katılmak) | Ich nehme **an dem** Kurs teil. (Kursa katılıyorum.) |
+| arbeiten **an** (üzerinde çalışmak) | Wir arbeiten **an einem** neuen Projekt. (Yeni bir proje üzerinde çalışıyoruz.) |
+| zweifeln **an** (şüphe etmek) | Er zweifelt **an seiner** Entscheidung. (Kararından şüphe ediyor.) |
+| leiden **an** (bir hastalıktan muzdarip olmak) | Sie leidet **an einer** Allergie. (Bir alerjisi var.) |
+| sterben **an** (… nedeniyle ölmek) | Er starb **an einem** Herzinfarkt. (Kalp krizinden öldü.) |
+| es fehlt **an** (… eksikliği var) | Es fehlt **an** Lehrern. (Öğretmen eksikliği var.) |
+| hängen **an** (bağlı olmak) | Sie hängt sehr **an ihrer** Familie. (Ailesine çok bağlı.) |
+| Interesse haben **an** (ilgi duymak) | Ich habe Interesse **an dem** Job. (Bu işle ilgileniyorum.) |
+
+### „nach" alan fiiller (her zaman Dativ)
+| fiil | anlamı | örnek |
+| ---- | ---- | ---- |
+| sich sehnen **nach** | özlemek | Ich sehne mich **nach dem** Meer. (Denizi özlüyorum.) |
+| fragen **nach** | sormak | Er fragt **nach dem** Weg. (Yolu soruyor.) |
+| suchen **nach** | aramak | Wir suchen **nach einer** Lösung. (Bir çözüm arıyoruz.) |
+| sich erkundigen **nach** | bilgi almak | Sie erkundigt sich **nach den** Preisen. (Fiyatları soruşturuyor.) |
+| riechen / schmecken **nach** | … kokmak / … tadında olmak | Es riecht **nach** frischem Brot. (Taze ekmek kokuyor.) |
+| streben **nach** | peşinde olmak | Er strebt **nach** Erfolg. (Başarının peşinde.) |
+| sich richten **nach** | göre ayarlamak | Wir richten uns **nach dem** Wetter. (Havaya göre hareket edeceğiz.) |
+
+### Öğrenme ipucu
+Fiilleri **her zaman** edatı ve hâliyle **bir bütün olarak** öğrenin: **denken an + A**, **teilnehmen an + D**, **sich sehnen nach + D**. Örnek cümleli bir kart, bir listeden daha çok işe yarar.
+
+**Örnekler:**
+- Denk bitte **an den** Termin morgen! (Lütfen yarınki randevuyu unutma!)
+- Nach dem Umzug musste ich mich erst **an die** neue Stadt gewöhnen. (Taşındıktan sonra önce yeni şehre alışmam gerekti.)
+- Über 200 Personen haben **an der** Konferenz teilgenommen. (Konferansa 200'den fazla kişi katıldı.)
+- Viele Auswanderer sehnen sich **nach ihrer** Heimat. (Birçok göçmen vatanını özlüyor.)
+- Die Polizei sucht **nach dem** Täter. (Polis faili arıyor.)`,
     },
   })
   await seedExercises({
@@ -31679,12 +33120,156 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit10.id,
       order: 3,
       grammarTopic: 'Pronominaladverbien: da(r)- und wo(r)-',
-      explanationDe:
-        'Bei Sachen (nicht Personen) bildet man Pronominaladverbien: "sich freuen auf" -> "sich darauf freuen"; Frage: "Worauf freust du dich?"',
-      explanationEn:
-        'For things (not people), pronominal adverbs are formed: "sich freuen auf" -> "sich darauf freuen" (to look forward to it); question: "Worauf freust du dich?" (What are you looking forward to?)',
-      explanationTr:
-        'Nesneler için (kişiler değil) zamirsi zarflar kullanılır: "sich freuen auf" -> "sich darauf freuen"; soru: "Worauf freust du dich?"',
+      explanationDe: `## Pronominaladverbien: da(r)- und wo(r)-
+
+Wenn man ein **Präpositionalobjekt** durch ein Pronomen ersetzen oder danach fragen will, gilt eine wichtige Unterscheidung: **Sache oder Person?**
+
+### Bildung
+> **da-** / **wo-** + Präposition
+> Beginnt die Präposition mit einem **Vokal**, wird ein **-r-** eingefügt: **dar-** / **wor-**
+
+| Präposition | da(r)- | wo(r)- |
+| ---- | ---- | ---- |
+| mit | **damit** | **womit** |
+| für | **dafür** | **wofür** |
+| von | **davon** | **wovon** |
+| auf | **darauf** | **worauf** |
+| über | **darüber** | **worüber** |
+| an | **daran** | **woran** |
+| nach | **danach** | **wonach** |
+| um | **darum** | **worum** |
+| in | **darin** | **worin** |
+
+### Sachen vs. Personen
+| | Sache | Person |
+| ---- | ---- | ---- |
+| **Antwort** | Ich freue mich **darauf**. | Ich freue mich **auf ihn**. |
+| **Frage** | **Worauf** freust du dich? | **Auf wen** freust du dich? |
+| **Antwort** | Ich denke **daran**. | Ich denke **an sie**. |
+| **Frage** | **Woran** denkst du? | **An wen** denkst du? |
+
+### Vorausweisende Pronominaladverbien (Korrelat)
+Oft weist das Pronominaladverb auf einen folgenden **dass-Satz** oder **Infinitiv mit zu** voraus:
+- *Ich freue mich **darauf**, **dass** du kommst.*
+- *Er hat sich **darüber** geärgert, **dass** niemand geholfen hat.*
+- *Wir denken **daran**, ein Haus **zu** kaufen.*
+- *Es kommt **darauf** an, **ob** wir genug Geld haben.*
+
+### Indirekte Fragen
+- *Ich weiß nicht, **worüber** er spricht.*
+- *Sag mir, **wofür** du das Geld brauchst.*
+
+### Häufige Fehler
+- ❌ *Ich freue mich auf es.* → ✅ *Ich freue mich **darauf**.*
+- ❌ *Über was sprecht ihr?* (umgangssprachlich) → ✅ ***Worüber** sprecht ihr?* (Standard)
+- ❌ *Ich warte darauf ihn.* → ✅ *Ich warte **auf ihn**.* (Person!)
+
+**Beispiele:**
+- Hast du an die Milch gedacht? – Ja, ich habe **daran** gedacht.
+- **Wofür** interessierst du dich? – Für Musik.
+- **Womit** fährst du zur Arbeit? – Mit dem Fahrrad.
+- Ich habe keine Lust **dazu**, heute zu kochen.
+- **Worum** geht es in dem Film?`,
+      explanationEn: `## Pronominal adverbs: da(r)- and wo(r)-
+
+When you want to replace a **prepositional object** with a pronoun, or ask about it, one distinction matters: **thing or person?**
+
+### Formation
+> **da-** / **wo-** + preposition
+> If the preposition begins with a **vowel**, an **-r-** is inserted: **dar-** / **wor-**
+
+| preposition | da(r)- | wo(r)- |
+| ---- | ---- | ---- |
+| mit | **damit** (with it) | **womit** (with what) |
+| für | **dafür** (for it) | **wofür** (for what) |
+| von | **davon** (of/from it) | **wovon** (of what) |
+| auf | **darauf** (on/for it) | **worauf** (on/for what) |
+| über | **darüber** (about it) | **worüber** (about what) |
+| an | **daran** (of/at it) | **woran** (of what) |
+| nach | **danach** (after/for it) | **wonach** (for what) |
+| um | **darum** (about it) | **worum** (about what) |
+| in | **darin** (in it) | **worin** (in what) |
+
+### Things vs. people
+| | thing | person |
+| ---- | ---- | ---- |
+| **answer** | Ich freue mich **darauf**. (I'm looking forward to it.) | Ich freue mich **auf ihn**. (… to seeing him.) |
+| **question** | **Worauf** freust du dich? (What are you looking forward to?) | **Auf wen** freust du dich? (Who …?) |
+| **answer** | Ich denke **daran**. (I'm thinking of it.) | Ich denke **an sie**. (… of her.) |
+| **question** | **Woran** denkst du? (What are you thinking of?) | **An wen** denkst du? (Who …?) |
+
+### Anticipatory pronominal adverbs (correlates)
+The pronominal adverb often points forward to a following **dass-clause** or **zu-infinitive**:
+- *Ich freue mich **darauf**, **dass** du kommst.* (I'm looking forward to your coming.)
+- *Er hat sich **darüber** geärgert, **dass** niemand geholfen hat.* (He was annoyed that nobody helped.)
+- *Wir denken **daran**, ein Haus **zu** kaufen.* (We're thinking of buying a house.)
+- *Es kommt **darauf** an, **ob** wir genug Geld haben.* (It depends on whether we have enough money.)
+
+### Indirect questions
+- *Ich weiß nicht, **worüber** er spricht.* (I don't know what he's talking about.)
+- *Sag mir, **wofür** du das Geld brauchst.* (Tell me what you need the money for.)
+
+### Common mistakes
+- ❌ *Ich freue mich auf es.* → ✅ *Ich freue mich **darauf**.*
+- ❌ *Über was sprecht ihr?* (colloquial) → ✅ ***Worüber** sprecht ihr?* (standard)
+- ❌ *Ich warte darauf ihn.* → ✅ *Ich warte **auf ihn**.* (person!)
+
+**Examples:**
+- Hast du an die Milch gedacht? – Ja, ich habe **daran** gedacht. (Did you remember the milk? – Yes, I remembered it.)
+- **Wofür** interessierst du dich? – Für Musik. (What are you interested in? – Music.)
+- **Womit** fährst du zur Arbeit? – Mit dem Fahrrad. (How do you get to work? – By bike.)
+- Ich habe keine Lust **dazu**, heute zu kochen. (I don't feel like cooking today.)
+- **Worum** geht es in dem Film? (What is the film about?)`,
+      explanationTr: `## Zamir-zarflar: da(r)- ve wo(r)-
+
+Bir **edatlı nesneyi** zamirle değiştirmek ya da onu sormak istediğinizde önemli bir ayrım vardır: **nesne mi, kişi mi?**
+
+### Yapısı
+> **da-** / **wo-** + edat
+> Edat **ünlüyle** başlıyorsa araya **-r-** girer: **dar-** / **wor-**
+
+| edat | da(r)- | wo(r)- |
+| ---- | ---- | ---- |
+| mit | **damit** (onunla) | **womit** (neyle) |
+| für | **dafür** (onun için) | **wofür** (ne için) |
+| von | **davon** (ondan) | **wovon** (neyden) |
+| auf | **darauf** (ona / onu) | **worauf** (neye / neyi) |
+| über | **darüber** (onun hakkında) | **worüber** (ne hakkında) |
+| an | **daran** (onu) | **woran** (neyi) |
+| nach | **danach** (ondan sonra / onu) | **wonach** (neyi) |
+| um | **darum** (onunla ilgili) | **worum** (ne ile ilgili) |
+| in | **darin** (içinde) | **worin** (neyin içinde) |
+
+### Nesneler – kişiler
+| | nesne | kişi |
+| ---- | ---- | ---- |
+| **cevap** | Ich freue mich **darauf**. (Onu dört gözle bekliyorum.) | Ich freue mich **auf ihn**. (Onu görmeyi dört gözle bekliyorum.) |
+| **soru** | **Worauf** freust du dich? (Neyi dört gözle bekliyorsun?) | **Auf wen** freust du dich? (Kimi …?) |
+| **cevap** | Ich denke **daran**. (Onu düşünüyorum.) | Ich denke **an sie**. (Onu – kadını – düşünüyorum.) |
+| **soru** | **Woran** denkst du? (Neyi düşünüyorsun?) | **An wen** denkst du? (Kimi düşünüyorsun?) |
+
+### İleriye işaret eden zamir-zarflar (karşılık öğe)
+Zamir-zarf çoğu zaman ardından gelen bir **dass cümlesine** veya **zu'lu mastara** işaret eder:
+- *Ich freue mich **darauf**, **dass** du kommst.* (Gelmeni dört gözle bekliyorum.)
+- *Er hat sich **darüber** geärgert, **dass** niemand geholfen hat.* (Kimsenin yardım etmemesine kızdı.)
+- *Wir denken **daran**, ein Haus **zu** kaufen.* (Ev almayı düşünüyoruz.)
+- *Es kommt **darauf** an, **ob** wir genug Geld haben.* (Yeterli paramız olup olmamasına bağlı.)
+
+### Dolaylı sorular
+- *Ich weiß nicht, **worüber** er spricht.* (Ne hakkında konuştuğunu bilmiyorum.)
+- *Sag mir, **wofür** du das Geld brauchst.* (Paraya ne için ihtiyacın olduğunu söyle.)
+
+### Sık yapılan hatalar
+- ❌ *Ich freue mich auf es.* → ✅ *Ich freue mich **darauf**.*
+- ❌ *Über was sprecht ihr?* (gündelik) → ✅ ***Worüber** sprecht ihr?* (standart)
+- ❌ *Ich warte darauf ihn.* → ✅ *Ich warte **auf ihn**.* (kişi!)
+
+**Örnekler:**
+- Hast du an die Milch gedacht? – Ja, ich habe **daran** gedacht. (Sütü unutmadın mı? – Evet, unutmadım.)
+- **Wofür** interessierst du dich? – Für Musik. (Neyle ilgileniyorsun? – Müzikle.)
+- **Womit** fährst du zur Arbeit? – Mit dem Fahrrad. (İşe neyle gidiyorsun? – Bisikletle.)
+- Ich habe keine Lust **dazu**, heute zu kochen. (Bugün yemek yapmaya hiç hevesim yok.)
+- **Worum** geht es in dem Film? (Film ne hakkında?)`,
     },
   })
   await seedExercises({
@@ -31713,12 +33298,135 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit10.id,
       order: 4,
       grammarTopic: 'Übung: Feste Präpositionalphrasen',
-      explanationDe:
-        'Wiederholung: Feste Verb-Präposition-Kombinationen müssen mit dem jeweiligen Verb zusammen gelernt werden, da sie nicht logisch ableitbar sind.',
-      explanationEn:
-        'Review: fixed verb-preposition combinations must be learned together with the verb, since they can\'t always be logically deduced.',
-      explanationTr:
-        'Tekrar: Sabit fiil-edat kombinasyonları mantıksal olarak çıkarılamayabileceğinden fiille birlikte ezberlenmelidir.',
+      explanationDe: `## Übung: Feste Präpositionalphrasen – Zusammenfassung
+
+Feste Verb-Präposition-Kombinationen sind **nicht logisch ableitbar** – man muss sie mit dem Verb zusammen lernen. Auf C1-Niveau kommen auch viele **Nomen** und **Adjektive** mit festen Präpositionen dazu.
+
+### Verben – Wiederholung
+| + Akkusativ | + Dativ |
+| ---- | ---- |
+| sich freuen auf/über, warten auf, achten auf | teilnehmen an, arbeiten an, zweifeln an |
+| denken an, sich erinnern an, sich gewöhnen an | sich sehnen nach, fragen nach, suchen nach |
+| sprechen über, sich ärgern über | gehören zu, passen zu, einladen zu |
+| sich interessieren für, sich entscheiden für | sich fürchten vor, warnen vor, schützen vor |
+| sich kümmern um, sich bewerben um, bitten um | abhängen von, träumen von, sich erholen von |
+
+### Nomen mit festen Präpositionen
+| Nomen | Beispiel |
+| ---- | ---- |
+| die Angst **vor** + D | die Angst **vor** der Prüfung |
+| das Interesse **an** + D | das Interesse **an** Kunst |
+| die Freude **über** / **auf** + A | die Freude **über** den Erfolg |
+| die Erinnerung **an** + A | die Erinnerung **an** die Kindheit |
+| der Wunsch **nach** + D | der Wunsch **nach** Ruhe |
+| die Bitte **um** + A | die Bitte **um** Hilfe |
+| die Teilnahme **an** + D | die Teilnahme **am** Seminar |
+
+### Adjektive mit festen Präpositionen
+| Adjektiv | Beispiel |
+| ---- | ---- |
+| stolz **auf** + A | Sie ist stolz **auf** ihren Sohn. |
+| zufrieden **mit** + D | Ich bin zufrieden **mit** dem Ergebnis. |
+| abhängig **von** + D | Das ist abhängig **vom** Wetter. |
+| verantwortlich **für** + A | Wer ist verantwortlich **für** den Fehler? |
+| interessiert **an** + D | Wir sind interessiert **an** einer Zusammenarbeit. |
+| bekannt **für** + A | Die Stadt ist bekannt **für** ihr Bier. |
+| neidisch **auf** + A | Er ist neidisch **auf** seinen Bruder. |
+
+### Fragen und Pronomen – Kurzregel
+**Sache:** *worauf? – darauf* **Person:** *auf wen? – auf ihn*
+
+**Beispiele:**
+- **Woran** liegt das Problem? – Es liegt **daran**, dass die Software veraltet ist.
+- Sie hat sich **um** die Stelle beworben und **darauf** lange gewartet.
+- Ich bin sehr stolz **darauf**, dass ich die Prüfung bestanden habe.
+- Die Angst **vor** Veränderungen ist weit verbreitet.`,
+      explanationEn: `## Practice: fixed prepositional phrases – summary
+
+Fixed verb–preposition combinations are **not logically predictable** – you have to learn them together with the verb. At C1 level many **nouns** and **adjectives** with fixed prepositions are added too.
+
+### Verbs – review
+| + accusative | + dative |
+| ---- | ---- |
+| sich freuen auf/über, warten auf, achten auf | teilnehmen an, arbeiten an, zweifeln an |
+| denken an, sich erinnern an, sich gewöhnen an | sich sehnen nach, fragen nach, suchen nach |
+| sprechen über, sich ärgern über | gehören zu, passen zu, einladen zu |
+| sich interessieren für, sich entscheiden für | sich fürchten vor, warnen vor, schützen vor |
+| sich kümmern um, sich bewerben um, bitten um | abhängen von, träumen von, sich erholen von |
+
+### Nouns with fixed prepositions
+| noun | example |
+| ---- | ---- |
+| die Angst **vor** + dat. | die Angst **vor** der Prüfung (fear of the exam) |
+| das Interesse **an** + dat. | das Interesse **an** Kunst (interest in art) |
+| die Freude **über** / **auf** + acc. | die Freude **über** den Erfolg (joy at the success) |
+| die Erinnerung **an** + acc. | die Erinnerung **an** die Kindheit (memory of childhood) |
+| der Wunsch **nach** + dat. | der Wunsch **nach** Ruhe (desire for peace) |
+| die Bitte **um** + acc. | die Bitte **um** Hilfe (request for help) |
+| die Teilnahme **an** + dat. | die Teilnahme **am** Seminar (participation in the seminar) |
+
+### Adjectives with fixed prepositions
+| adjective | example |
+| ---- | ---- |
+| stolz **auf** + acc. | Sie ist stolz **auf** ihren Sohn. (She's proud of her son.) |
+| zufrieden **mit** + dat. | Ich bin zufrieden **mit** dem Ergebnis. (I'm satisfied with the result.) |
+| abhängig **von** + dat. | Das ist abhängig **vom** Wetter. (That depends on the weather.) |
+| verantwortlich **für** + acc. | Wer ist verantwortlich **für** den Fehler? (Who is responsible for the mistake?) |
+| interessiert **an** + dat. | Wir sind interessiert **an** einer Zusammenarbeit. (We're interested in working together.) |
+| bekannt **für** + acc. | Die Stadt ist bekannt **für** ihr Bier. (The city is known for its beer.) |
+| neidisch **auf** + acc. | Er ist neidisch **auf** seinen Bruder. (He's envious of his brother.) |
+
+### Questions and pronouns – short rule
+**Thing:** *worauf? – darauf* **Person:** *auf wen? – auf ihn*
+
+**Examples:**
+- **Woran** liegt das Problem? – Es liegt **daran**, dass die Software veraltet ist. (What's causing the problem? – It's because the software is outdated.)
+- Sie hat sich **um** die Stelle beworben und **darauf** lange gewartet. (She applied for the job and waited a long time for it.)
+- Ich bin sehr stolz **darauf**, dass ich die Prüfung bestanden habe. (I'm very proud that I passed the exam.)
+- Die Angst **vor** Veränderungen ist weit verbreitet. (Fear of change is widespread.)`,
+      explanationTr: `## Alıştırma: Sabit edatlı öbekler – özet
+
+Fiil–edat birleşimleri **mantıkla çıkarılamaz** – fiille birlikte öğrenilmeleri gerekir. C1 seviyesinde sabit edat alan birçok **isim** ve **sıfat** da eklenir.
+
+### Fiiller – tekrar
+| + Akkusativ | + Dativ |
+| ---- | ---- |
+| sich freuen auf/über, warten auf, achten auf | teilnehmen an, arbeiten an, zweifeln an |
+| denken an, sich erinnern an, sich gewöhnen an | sich sehnen nach, fragen nach, suchen nach |
+| sprechen über, sich ärgern über | gehören zu, passen zu, einladen zu |
+| sich interessieren für, sich entscheiden für | sich fürchten vor, warnen vor, schützen vor |
+| sich kümmern um, sich bewerben um, bitten um | abhängen von, träumen von, sich erholen von |
+
+### Sabit edat alan isimler
+| isim | örnek |
+| ---- | ---- |
+| die Angst **vor** + D | die Angst **vor** der Prüfung (sınav korkusu) |
+| das Interesse **an** + D | das Interesse **an** Kunst (sanata ilgi) |
+| die Freude **über** / **auf** + A | die Freude **über** den Erfolg (başarı sevinci) |
+| die Erinnerung **an** + A | die Erinnerung **an** die Kindheit (çocukluk anısı) |
+| der Wunsch **nach** + D | der Wunsch **nach** Ruhe (huzur isteği) |
+| die Bitte **um** + A | die Bitte **um** Hilfe (yardım ricası) |
+| die Teilnahme **an** + D | die Teilnahme **am** Seminar (seminere katılım) |
+
+### Sabit edat alan sıfatlar
+| sıfat | örnek |
+| ---- | ---- |
+| stolz **auf** + A | Sie ist stolz **auf** ihren Sohn. (Oğluyla gurur duyuyor.) |
+| zufrieden **mit** + D | Ich bin zufrieden **mit** dem Ergebnis. (Sonuçtan memnunum.) |
+| abhängig **von** + D | Das ist abhängig **vom** Wetter. (Bu havaya bağlı.) |
+| verantwortlich **für** + A | Wer ist verantwortlich **für** den Fehler? (Hatadan kim sorumlu?) |
+| interessiert **an** + D | Wir sind interessiert **an** einer Zusammenarbeit. (Bir iş birliğiyle ilgileniyoruz.) |
+| bekannt **für** + A | Die Stadt ist bekannt **für** ihr Bier. (Şehir birasıyla tanınır.) |
+| neidisch **auf** + A | Er ist neidisch **auf** seinen Bruder. (Kardeşini kıskanıyor.) |
+
+### Sorular ve zamirler – kısa kural
+**Nesne:** *worauf? – darauf* **Kişi:** *auf wen? – auf ihn*
+
+**Örnekler:**
+- **Woran** liegt das Problem? – Es liegt **daran**, dass die Software veraltet ist. (Sorun neden kaynaklanıyor? – Yazılımın eski olmasından.)
+- Sie hat sich **um** die Stelle beworben und **darauf** lange gewartet. (O pozisyona başvurdu ve uzun süre bekledi.)
+- Ich bin sehr stolz **darauf**, dass ich die Prüfung bestanden habe. (Sınavı geçtiğim için çok gururluyum.)
+- Die Angst **vor** Veränderungen ist weit verbreitet. (Değişim korkusu çok yaygındır.)`,
     },
   })
   await seedExercises({
@@ -31770,12 +33478,105 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit11.id,
       order: 1,
       grammarTopic: 'Ironie erkennen',
-      explanationDe:
-        'Ironie sagt das Gegenteil dessen, was gemeint ist, oft mit besonderem Tonfall: "Toller Regen heute!" (bei schlechtem Wetter, eigentlich negativ gemeint).',
-      explanationEn:
-        'Irony says the opposite of what\'s meant, often with a particular tone: "Toller Regen heute!" (Great rain today! — said sarcastically about bad weather, actually meant negatively).',
-      explanationTr:
-        'İroni, kastedilenin tersini söyler, genellikle özel bir tonlamayla: "Toller Regen heute!" (kötü hava için söylenir, aslında olumsuz anlamdadır).',
+      explanationDe: `## Ironie erkennen
+
+**Ironie** bedeutet: Man sagt **das Gegenteil** dessen, was man meint – und erwartet, dass der Hörer das versteht. Die wörtliche Aussage ist meist **positiv**, gemeint ist etwas **Negatives** (selten umgekehrt).
+
+| ironische Aussage | Situation | eigentliche Bedeutung |
+| ---- | ---- | ---- |
+| *Toller Regen heute!* | Es schüttet seit Stunden. | Das Wetter ist schrecklich. |
+| *Na, das hast du ja super hingekriegt!* | Jemand hat Kaffee auf den Laptop geschüttet. | Das war ein großer Fehler. |
+| *Wie pünktlich du heute bist!* | Er kommt 40 Minuten zu spät. | Du bist viel zu spät. |
+| *Ich liebe Montage.* | Alles geht schief. | Ich hasse Montage. |
+| *Das ist ja eine schöne Bescherung!* | Die Küche ist überschwemmt. | Das ist ein Desaster. |
+
+### Woran erkennt man Ironie?
+1. **Widerspruch zur Situation**: Die Aussage passt offensichtlich nicht zu dem, was passiert.
+2. **Tonfall**: übertriebene Betonung, langgezogene Wörter (*Suuuper!*), spöttische Stimme.
+3. **Mimik und Gestik**: Augenrollen, schiefes Lächeln.
+4. **Signalwörter und Partikeln**: *na toll, ja, wirklich, natürlich, wie schön, herzlichen Glückwunsch*.
+5. **Übertreibung**: *Das war ja der **beste** Tag **meines Lebens**.*
+
+### Ironie in schriftlichen Texten
+Ohne Stimme ist Ironie schwerer zu erkennen. Signale sind dann:
+- **Anführungszeichen**: *Die „Reform" hat alles schlimmer gemacht.*
+- **übertriebene Formulierungen**: *Eine wahrhaft **geniale** Idee, die Bahn im Winter zu reparieren.*
+- **Emojis** in Chats: 🙄 😏
+
+### Ironie ist kulturabhängig
+Im Deutschen wird Ironie häufig benutzt, aber **nicht in jeder Situation** – in formellen Kontexten (Behörde, Bewerbung) sollte man sie vermeiden, weil sie leicht **missverstanden** wird.
+
+**Beispiele:**
+- (Der Drucker ist wieder kaputt.) *„Na wunderbar, genau das, was ich heute gebraucht habe!"*
+- (Der Kollege hat nichts gemacht.) *„Danke für deine großartige Unterstützung."*
+- (Es ist eiskalt.) *„Herrliches Badewetter!"*
+- (Die Rechnung ist sehr hoch.) *„Ein echtes Schnäppchen."*`,
+      explanationEn: `## Recognising irony
+
+**Irony** means saying **the opposite** of what you mean – and expecting the listener to understand. The literal statement is usually **positive**; what's meant is **negative** (rarely the other way round).
+
+| ironic statement | situation | real meaning |
+| ---- | ---- | ---- |
+| *Toller Regen heute!* (Lovely rain today!) | It has been pouring for hours. | The weather is awful. |
+| *Na, das hast du ja super hingekriegt!* (Well, you did a great job there!) | Someone spilled coffee on the laptop. | That was a big mistake. |
+| *Wie pünktlich du heute bist!* (How punctual you are today!) | He arrives 40 minutes late. | You're far too late. |
+| *Ich liebe Montage.* (I love Mondays.) | Everything is going wrong. | I hate Mondays. |
+| *Das ist ja eine schöne Bescherung!* (Well, this is a nice mess!) | The kitchen is flooded. | This is a disaster. |
+
+### How do you recognise irony?
+1. **Contradiction with the situation**: the statement obviously doesn't fit what is happening.
+2. **Tone of voice**: exaggerated stress, drawn-out words (*Suuuper!*), mocking voice.
+3. **Facial expression and gestures**: eye-rolling, a crooked smile.
+4. **Signal words and particles**: *na toll, ja, wirklich, natürlich, wie schön, herzlichen Glückwunsch* (great, really, of course, how nice, congratulations).
+5. **Exaggeration**: *Das war ja der **beste** Tag **meines Lebens**.* (That was the best day of my life.)
+
+### Irony in written texts
+Without a voice, irony is harder to spot. Signals are then:
+- **quotation marks**: *Die „Reform" hat alles schlimmer gemacht.* (The "reform" made everything worse.)
+- **exaggerated wording**: *Eine wahrhaft **geniale** Idee, die Bahn im Winter zu reparieren.* (A truly brilliant idea to repair the railway in winter.)
+- **emojis** in chats: 🙄 😏
+
+### Irony depends on culture
+German uses irony a lot, but **not in every situation** – avoid it in formal contexts (authorities, job applications) because it is easily **misunderstood**.
+
+**Examples:**
+- (The printer is broken again.) *„Na wunderbar, genau das, was ich heute gebraucht habe!"* (Oh wonderful, just what I needed today!)
+- (The colleague did nothing.) *„Danke für deine großartige Unterstützung."* (Thanks for your terrific support.)
+- (It's freezing.) *„Herrliches Badewetter!"* (Glorious swimming weather!)
+- (The bill is very high.) *„Ein echtes Schnäppchen."* (A real bargain.)`,
+      explanationTr: `## İroniyi tanımak
+
+**İroni**, kastedilenin **tam tersini** söylemek – ve dinleyicinin bunu anlamasını beklemek demektir. Sözün düz anlamı çoğunlukla **olumlu**, kastedilen ise **olumsuzdur** (nadiren tersi).
+
+| ironik söz | durum | asıl anlamı |
+| ---- | ---- | ---- |
+| *Toller Regen heute!* (Bugün harika bir yağmur var!) | Saatlerdir sağanak yağıyor. | Hava berbat. |
+| *Na, das hast du ja super hingekriegt!* (Aferin, ne güzel becerdin!) | Biri dizüstü bilgisayara kahve döktü. | Bu büyük bir hataydı. |
+| *Wie pünktlich du heute bist!* (Bugün ne kadar dakiksin!) | 40 dakika geç geliyor. | Çok geç kaldın. |
+| *Ich liebe Montage.* (Pazartesileri severim.) | Her şey ters gidiyor. | Pazartesilerden nefret ederim. |
+| *Das ist ja eine schöne Bescherung!* (Al işte, ne güzel bir sürpriz!) | Mutfağı su basmış. | Bu bir felaket. |
+
+### İroni nasıl anlaşılır?
+1. **Durumla çelişki**: Söz, olan bitene açıkça uymuyor.
+2. **Ses tonu**: abartılı vurgu, uzatılmış kelimeler (*Süüüper!*), alaycı ses.
+3. **Mimik ve jestler**: göz devirme, çarpık gülümseme.
+4. **İşaret kelimeler ve edatlar**: *na toll, ja, wirklich, natürlich, wie schön, herzlichen Glückwunsch* (ne güzel, gerçekten, tabii, tebrikler).
+5. **Abartma**: *Das war ja der **beste** Tag **meines Lebens**.* (Hayatımın en güzel günüydü (!))
+
+### Yazılı metinlerde ironi
+Ses olmadan ironiyi fark etmek daha zordur. O zaman işaretler şunlardır:
+- **Tırnak işaretleri**: *Die „Reform" hat alles schlimmer gemacht.* („Reform" her şeyi daha kötü yaptı.)
+- **abartılı ifadeler**: *Eine wahrhaft **geniale** Idee, die Bahn im Winter zu reparieren.* (Demiryolunu kışın tamir etmek gerçekten dâhiyane bir fikir.)
+- Sohbetlerde **emojiler**: 🙄 😏
+
+### İroni kültüre bağlıdır
+Almancada ironi sık kullanılır, ama **her durumda değil** – resmî bağlamlarda (resmî daire, iş başvurusu) kolayca **yanlış anlaşılabileceği** için kaçınılmalıdır.
+
+**Örnekler:**
+- (Yazıcı yine bozuk.) *„Na wunderbar, genau das, was ich heute gebraucht habe!"* (Harika, bugün tam da buna ihtiyacım vardı!)
+- (İş arkadaşı hiçbir şey yapmadı.) *„Danke für deine großartige Unterstützung."* (Muhteşem desteğin için teşekkürler.)
+- (Hava buz gibi.) *„Herrliches Badewetter!"* (Tam denize girmelik hava!)
+- (Hesap çok yüksek.) *„Ein echtes Schnäppchen."* (Tam bir kelepir.)`,
     },
   })
   await seedExercises({
@@ -31804,12 +33605,117 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit11.id,
       order: 2,
       grammarTopic: 'Understatement (Untertreibung)',
-      explanationDe:
-        'Understatement untertreibt bewusst: "Das war nicht schlecht" (für etwas sehr Gutes) oder "ein kleines Problem" (für eine Katastrophe).',
-      explanationEn:
-        'Understatement deliberately downplays something: "Das war nicht schlecht" (That wasn\'t bad — for something very good) or "ein kleines Problem" (a small problem — for a disaster).',
-      explanationTr:
-        'Az söyleme (understatement) bilinçli olarak küçümser: "Das war nicht schlecht" (çok iyi bir şey için) veya "ein kleines Problem" (bir felaket için).',
+      explanationDe: `## Understatement (Untertreibung)
+
+**Understatement** ist das Gegenteil der Übertreibung: Man beschreibt etwas **bewusst schwächer**, als es ist. Das wirkt **bescheiden, cool, humorvoll** oder **höflich**.
+
+| Understatement | eigentliche Bedeutung |
+| ---- | ---- |
+| *Das war **nicht schlecht**.* | Das war sehr gut / ausgezeichnet. |
+| *Wir haben **ein kleines Problem**.* | Wir haben ein großes Problem / eine Katastrophe. |
+| *Er ist **nicht gerade** der Schnellste.* | Er ist sehr langsam. |
+| *Das Essen war **ganz okay**.* | Das Essen war hervorragend (bescheiden gesagt). |
+| *Ich spreche **ein bisschen** Deutsch.* | (von jemandem, der fließend spricht) |
+| *Es ist **etwas frisch** heute.* | Es ist eiskalt. |
+| *Die Prüfung war **kein Spaziergang**.* | Die Prüfung war sehr schwer. |
+
+### Typische sprachliche Mittel
+1. **Litotes** – doppelte Verneinung / Verneinung des Gegenteils:
+   - *nicht schlecht* (= gut), *nicht unbedingt klug* (= dumm), *nicht ohne* (= beachtlich), *nicht unwichtig* (= sehr wichtig)
+2. **Abschwächende Wörter**: *etwas, ein bisschen, leicht, ziemlich, ein wenig, eher*
+3. **„nicht gerade" / „nicht ganz"**: *Er ist **nicht gerade** fleißig.* (= faul)
+
+### Funktionen des Understatements
+| Funktion | Beispiel |
+| ---- | ---- |
+| **Bescheidenheit** | *Ich habe ein bisschen Klavier gespielt.* (Er ist Konzertpianist.) |
+| **Humor** | *Wir haben uns ein klein wenig verfahren.* (Sie sind 200 km in die falsche Richtung gefahren.) |
+| **Höflichkeit / Kritik abschwächen** | *Ihr Bericht ist **nicht ganz** vollständig.* (Es fehlt die Hälfte.) |
+| **Beruhigung** | *Das ist nur ein Kratzer.* (Es ist eine tiefe Wunde.) |
+
+### Achtung: Litotes richtig verstehen
+*„Das ist **nicht ohne**"* bedeutet: Das ist **ziemlich schwierig / beeindruckend**.
+*„Er hat **nicht wenig** verdient"* bedeutet: Er hat **viel** verdient.
+
+**Beispiele:**
+- Nach dem Marathon sagte sie: *„Ich bin **etwas müde**."*
+- Der Sturm hat das halbe Dach abgedeckt. *„Da ist **ein bisschen was** kaputt."*
+- *„Seine Präsentation war **nicht übel**"* – ein großes Kompliment!
+- Die Aufgabe ist **nicht ganz einfach**. (= ziemlich schwer)`,
+      explanationEn: `## Understatement
+
+**Understatement** is the opposite of exaggeration: you deliberately describe something as **weaker** than it really is. It comes across as **modest, cool, humorous** or **polite**.
+
+| understatement | real meaning |
+| ---- | ---- |
+| *Das war **nicht schlecht**.* (That wasn't bad.) | That was very good / excellent. |
+| *Wir haben **ein kleines Problem**.* (We have a small problem.) | We have a big problem / a disaster. |
+| *Er ist **nicht gerade** der Schnellste.* (He's not exactly the fastest.) | He is very slow. |
+| *Das Essen war **ganz okay**.* (The food was quite OK.) | The food was excellent (put modestly). |
+| *Ich spreche **ein bisschen** Deutsch.* (I speak a little German.) | (said by someone fluent) |
+| *Es ist **etwas frisch** heute.* (It's a bit chilly today.) | It's freezing. |
+| *Die Prüfung war **kein Spaziergang**.* (The exam was no walk in the park.) | The exam was very hard. |
+
+### Typical linguistic devices
+1. **Litotes** – double negation / negating the opposite:
+   - *nicht schlecht* (= good), *nicht unbedingt klug* (= stupid), *nicht ohne* (= considerable), *nicht unwichtig* (= very important)
+2. **Softening words**: *etwas, ein bisschen, leicht, ziemlich, ein wenig, eher* (somewhat, a bit, slightly, rather)
+3. **"nicht gerade" / "nicht ganz"**: *Er ist **nicht gerade** fleißig.* (He's not exactly hard-working = lazy)
+
+### Functions of understatement
+| function | example |
+| ---- | ---- |
+| **modesty** | *Ich habe ein bisschen Klavier gespielt.* (I played a bit of piano – he's a concert pianist.) |
+| **humour** | *Wir haben uns ein klein wenig verfahren.* (We got slightly lost – they drove 200 km the wrong way.) |
+| **politeness / softening criticism** | *Ihr Bericht ist **nicht ganz** vollständig.* (Your report isn't quite complete – half is missing.) |
+| **reassurance** | *Das ist nur ein Kratzer.* (It's just a scratch – it's a deep wound.) |
+
+### Note: understanding litotes correctly
+*„Das ist **nicht ohne**"* means: that is **quite difficult / impressive**.
+*„Er hat **nicht wenig** verdient"* means: he earned **a lot**.
+
+**Examples:**
+- Nach dem Marathon sagte sie: *„Ich bin **etwas müde**."* (After the marathon she said: "I'm a bit tired.")
+- Der Sturm hat das halbe Dach abgedeckt. *„Da ist **ein bisschen was** kaputt."* (The storm took off half the roof. "A little something's broken.")
+- *„Seine Präsentation war **nicht übel**"* – ein großes Kompliment! ("His presentation wasn't bad" – a big compliment!)
+- Die Aufgabe ist **nicht ganz einfach**. (The task isn't entirely easy = quite hard.)`,
+      explanationTr: `## Understatement (olduğundan az gösterme)
+
+**Understatement** abartmanın tersidir: Bir şeyi **bilerek olduğundan daha zayıf** anlatırsınız. Bu **alçakgönüllü, soğukkanlı, esprili** veya **kibar** bir etki yaratır.
+
+| understatement | asıl anlamı |
+| ---- | ---- |
+| *Das war **nicht schlecht**.* (Fena değildi.) | Çok iyiydi / mükemmeldi. |
+| *Wir haben **ein kleines Problem**.* (Küçük bir sorunumuz var.) | Büyük bir sorunumuz / felaketimiz var. |
+| *Er ist **nicht gerade** der Schnellste.* (Pek de en hızlısı sayılmaz.) | Çok yavaş. |
+| *Das Essen war **ganz okay**.* (Yemek fena değildi.) | Yemek harikaydı (alçakgönüllüce söylenmiş). |
+| *Ich spreche **ein bisschen** Deutsch.* (Biraz Almanca konuşurum.) | (akıcı konuşan birinin ağzından) |
+| *Es ist **etwas frisch** heute.* (Bugün hava biraz serin.) | Hava buz gibi. |
+| *Die Prüfung war **kein Spaziergang**.* (Sınav çocuk oyuncağı değildi.) | Sınav çok zordu. |
+
+### Tipik dil araçları
+1. **Litotes** – çift olumsuzluk / zıttın olumsuzlanması:
+   - *nicht schlecht* (= iyi), *nicht unbedingt klug* (= aptal), *nicht ohne* (= kayda değer), *nicht unwichtig* (= çok önemli)
+2. **Yumuşatıcı kelimeler**: *etwas, ein bisschen, leicht, ziemlich, ein wenig, eher* (biraz, hafifçe, oldukça, daha çok)
+3. **„nicht gerade" / „nicht ganz"**: *Er ist **nicht gerade** fleißig.* (Pek çalışkan sayılmaz = tembel)
+
+### Understatement'ın işlevleri
+| işlev | örnek |
+| ---- | ---- |
+| **alçakgönüllülük** | *Ich habe ein bisschen Klavier gespielt.* (Biraz piyano çaldım – oysa konser piyanisti.) |
+| **mizah** | *Wir haben uns ein klein wenig verfahren.* (Azıcık yolu şaşırdık – 200 km ters yöne gitmişler.) |
+| **nezaket / eleştiriyi yumuşatma** | *Ihr Bericht ist **nicht ganz** vollständig.* (Raporunuz tam olarak eksiksiz değil – yarısı eksik.) |
+| **yatıştırma** | *Das ist nur ein Kratzer.* (Sadece bir çizik – derin bir yara.) |
+
+### Dikkat: litotesi doğru anlamak
+*„Das ist **nicht ohne**"* şu demektir: Bu **epey zor / etkileyici**.
+*„Er hat **nicht wenig** verdient"* şu demektir: **Çok** kazandı.
+
+**Örnekler:**
+- Nach dem Marathon sagte sie: *„Ich bin **etwas müde**."* (Maratondan sonra „Biraz yorgunum" dedi.)
+- Der Sturm hat das halbe Dach abgedeckt. *„Da ist **ein bisschen was** kaputt."* (Fırtına çatının yarısını uçurdu. „Bir şeyler biraz bozulmuş.")
+- *„Seine Präsentation war **nicht übel**"* – ein großes Kompliment! („Sunumu fena değildi" – büyük bir iltifat!)
+- Die Aufgabe ist **nicht ganz einfach**. (Görev pek kolay sayılmaz = epey zor.)`,
     },
   })
   await seedExercises({
@@ -31838,12 +33744,120 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit11.id,
       order: 3,
       grammarTopic: 'Rhetorische Fragen',
-      explanationDe:
-        'Rhetorische Fragen erwarten keine Antwort, sondern betonen eine Aussage: "Ist das nicht offensichtlich?" (= Das ist offensichtlich.)',
-      explanationEn:
-        'Rhetorical questions don\'t expect an answer; they emphasize a statement: "Ist das nicht offensichtlich?" (Isn\'t that obvious? — = That is obvious.)',
-      explanationTr:
-        'Retorik sorular cevap beklemez, bir ifadeyi vurgular: "Ist das nicht offensichtlich?" (= Bu bariz.)',
+      explanationDe: `## Rhetorische Fragen
+
+Eine **rhetorische Frage** hat die Form einer Frage, erwartet aber **keine Antwort**. Die Antwort ist für Sprecher und Hörer **offensichtlich**. Sie dient dazu, eine Aussage zu **betonen**, den Hörer **einzubeziehen** oder **Kritik** zu üben.
+
+### Grundregel: Die Antwort ist „eingebaut"
+| rhetorische Frage | gemeinte Aussage |
+| ---- | ---- |
+| *Ist das **nicht** offensichtlich?* | Das ist offensichtlich. |
+| *Wer will schon gerne Steuern zahlen?* | Niemand zahlt gerne Steuern. |
+| *Habe ich es dir **nicht** gesagt?* | Ich habe es dir gesagt! |
+| *Wie oft soll ich das noch erklären?* | Ich habe es schon zu oft erklärt. |
+| *Was soll man da machen?* | Man kann nichts machen. |
+| *Bin ich dein Diener?* | Ich bin nicht dein Diener. |
+
+**Merke:** Eine **verneinte** rhetorische Frage bedeutet eine **positive** Aussage – und umgekehrt.
+
+### Typische Formen
+- mit **nicht** / **etwa**: *Ist das **etwa** meine Schuld?* (= Das ist nicht meine Schuld.)
+- mit **denn** / **schon**: *Wer glaubt **denn schon** so etwas?* (= Niemand glaubt das.)
+- mit **wohl**: *Soll ich **wohl** alles allein machen?*
+- **W-Fragen** mit Modalverb: *Warum **sollte** ich lügen?* (= Ich habe keinen Grund zu lügen.)
+
+### Wo benutzt man rhetorische Fragen?
+| Kontext | Beispiel |
+| ---- | ---- |
+| **politische Reden** | *Können wir es uns leisten, nichts zu tun? Nein!* |
+| **Werbung** | *Wer möchte nicht weniger für Strom bezahlen?* |
+| **Erörterungen / Essays** | *Brauchen wir wirklich jedes Jahr ein neues Handy?* |
+| **Alltag (Vorwurf)** | *Hast du keine Augen im Kopf?* |
+
+### Achtung
+Im Essay oder in einer Rede sind rhetorische Fragen **wirkungsvoll** – aber **sparsam** einsetzen! Zu viele wirken aufdringlich oder manipulativ.
+
+**Beispiele:**
+- *Wer hätte das gedacht?* (= Niemand hätte das erwartet.)
+- *Ist es nicht schön, wenn alle zusammen sind?*
+- *Muss das denn sein?* (= Das ist unnötig.)
+- *Was gibt es Schöneres als einen Sonntag am See?*`,
+      explanationEn: `## Rhetorical questions
+
+A **rhetorical question** has the form of a question but expects **no answer**. The answer is **obvious** to both speaker and listener. It serves to **emphasise** a statement, **involve** the listener or express **criticism**.
+
+### Basic rule: the answer is "built in"
+| rhetorical question | intended statement |
+| ---- | ---- |
+| *Ist das **nicht** offensichtlich?* (Isn't that obvious?) | That is obvious. |
+| *Wer will schon gerne Steuern zahlen?* (Who likes paying taxes?) | Nobody likes paying taxes. |
+| *Habe ich es dir **nicht** gesagt?* (Didn't I tell you?) | I told you so! |
+| *Wie oft soll ich das noch erklären?* (How many more times do I have to explain?) | I've explained it too often already. |
+| *Was soll man da machen?* (What can you do?) | There's nothing you can do. |
+| *Bin ich dein Diener?* (Am I your servant?) | I'm not your servant. |
+
+**Note:** a **negated** rhetorical question means a **positive** statement – and vice versa.
+
+### Typical forms
+- with **nicht** / **etwa**: *Ist das **etwa** meine Schuld?* (Is that my fault, then? = It's not my fault.)
+- with **denn** / **schon**: *Wer glaubt **denn schon** so etwas?* (Who'd believe that? = Nobody.)
+- with **wohl**: *Soll ich **wohl** alles allein machen?* (Am I supposed to do everything myself?)
+- **W-questions** with modal: *Warum **sollte** ich lügen?* (Why would I lie? = I have no reason to lie.)
+
+### Where are rhetorical questions used?
+| context | example |
+| ---- | ---- |
+| **political speeches** | *Können wir es uns leisten, nichts zu tun? Nein!* (Can we afford to do nothing? No!) |
+| **advertising** | *Wer möchte nicht weniger für Strom bezahlen?* (Who wouldn't like to pay less for electricity?) |
+| **essays** | *Brauchen wir wirklich jedes Jahr ein neues Handy?* (Do we really need a new phone every year?) |
+| **everyday (reproach)** | *Hast du keine Augen im Kopf?* (Are you blind?) |
+
+### Note
+In an essay or speech rhetorical questions are **effective** – but use them **sparingly**! Too many seem pushy or manipulative.
+
+**Examples:**
+- *Wer hätte das gedacht?* (Who would have thought? = Nobody expected that.)
+- *Ist es nicht schön, wenn alle zusammen sind?* (Isn't it lovely when everyone is together?)
+- *Muss das denn sein?* (Is that really necessary? = It's unnecessary.)
+- *Was gibt es Schöneres als einen Sonntag am See?* (What could be nicer than a Sunday by the lake?)`,
+      explanationTr: `## Retorik sorular
+
+**Retorik soru** soru biçimindedir ama **cevap beklemez**. Cevap konuşan ve dinleyen için **apaçıktır**. Bir ifadeyi **vurgulamaya**, dinleyiciyi **dahil etmeye** veya **eleştiri** yapmaya yarar.
+
+### Temel kural: Cevap „içinde gizli"
+| retorik soru | kastedilen ifade |
+| ---- | ---- |
+| *Ist das **nicht** offensichtlich?* (Bu apaçık değil mi?) | Bu apaçık. |
+| *Wer will schon gerne Steuern zahlen?* (Kim seve seve vergi öder ki?) | Kimse seve seve vergi ödemez. |
+| *Habe ich es dir **nicht** gesagt?* (Sana söylemedim mi?) | Sana söylemiştim! |
+| *Wie oft soll ich das noch erklären?* (Bunu daha kaç kere açıklayacağım?) | Zaten çok kez açıkladım. |
+| *Was soll man da machen?* (Ne yapılabilir ki?) | Yapacak bir şey yok. |
+| *Bin ich dein Diener?* (Ben senin uşağın mıyım?) | Ben senin uşağın değilim. |
+
+**Unutma:** **Olumsuz** bir retorik soru **olumlu** bir ifade demektir – tersi de geçerli.
+
+### Tipik biçimler
+- **nicht** / **etwa** ile: *Ist das **etwa** meine Schuld?* (Yoksa bu benim suçum mu? = Benim suçum değil.)
+- **denn** / **schon** ile: *Wer glaubt **denn schon** so etwas?* (Kim inanır ki buna? = Kimse.)
+- **wohl** ile: *Soll ich **wohl** alles allein machen?* (Her şeyi tek başıma mı yapacağım yani?)
+- Modal fiilli **W-soruları**: *Warum **sollte** ich lügen?* (Neden yalan söyleyeyim ki? = Yalan söylemek için bir nedenim yok.)
+
+### Retorik sorular nerede kullanılır?
+| bağlam | örnek |
+| ---- | ---- |
+| **siyasi konuşmalar** | *Können wir es uns leisten, nichts zu tun? Nein!* (Hiçbir şey yapmamayı göze alabilir miyiz? Hayır!) |
+| **reklam** | *Wer möchte nicht weniger für Strom bezahlen?* (Kim elektriğe daha az ödemek istemez ki?) |
+| **deneme / tartışma yazısı** | *Brauchen wir wirklich jedes Jahr ein neues Handy?* (Gerçekten her yıl yeni bir telefona ihtiyacımız var mı?) |
+| **günlük hayat (sitem)** | *Hast du keine Augen im Kopf?* (Gözün yok mu senin?) |
+
+### Dikkat
+Denemede veya konuşmada retorik sorular **etkilidir** – ama **ölçülü** kullanın! Fazlası ısrarcı veya manipülatif görünür.
+
+**Örnekler:**
+- *Wer hätte das gedacht?* (Kim düşünürdü ki? = Kimse beklemezdi.)
+- *Ist es nicht schön, wenn alle zusammen sind?* (Herkesin bir arada olması güzel değil mi?)
+- *Muss das denn sein?* (Bu şart mı yani? = Gereksiz.)
+- *Was gibt es Schöneres als einen Sonntag am See?* (Göl kenarında bir pazar gününden daha güzel ne olabilir?)`,
     },
   })
   await seedExercises({
@@ -31872,12 +33886,99 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit11.id,
       order: 4,
       grammarTopic: 'Übung: Ironie & Understatement',
-      explanationDe:
-        'Wiederholung: Ironie, Understatement und rhetorische Fragen sind stilistische Mittel, die Bedeutung indirekt und oft mit Humor vermitteln.',
-      explanationEn:
-        'Review: irony, understatement, and rhetorical questions are stylistic devices that convey meaning indirectly, often with humor.',
-      explanationTr:
-        'Tekrar: İroni, az söyleme ve retorik sorular anlamı dolaylı ve çoğunlukla mizahi biçimde ileten üslup araçlarıdır.',
+      explanationDe: `## Übung: Ironie & Understatement – Zusammenfassung
+
+Ironie, Understatement und rhetorische Fragen sind **stilistische Mittel**, die Bedeutung **indirekt** vermitteln – oft mit **Humor**, manchmal mit **Kritik**. Wer sie versteht, versteht auch die „Zwischentöne" der deutschen Sprache.
+
+### Die drei Mittel im Vergleich
+| Mittel | Prinzip | Beispiel | gemeint |
+| ---- | ---- | ---- | ---- |
+| **Ironie** | Gegenteil sagen | *Na super, schon wieder Stau!* | Das ist ärgerlich. |
+| **Understatement** | schwächer sagen | *Das war nicht schlecht.* | Das war sehr gut. |
+| **Hyperbel** (Gegensatz) | stärker sagen | *Ich habe tausend Mails bekommen.* | Ich habe viele Mails bekommen. |
+| **rhetorische Frage** | als Frage sagen | *Wer will schon verlieren?* | Niemand will verlieren. |
+
+### Woran erkenne ich, was gemeint ist?
+1. **Situation** prüfen: Passt die wörtliche Aussage?
+2. **Signale** suchen: Partikeln (*ja, na, etwa, schon*), Betonung, Anführungszeichen.
+3. **Sprecher** beachten: Ist er bescheiden, verärgert, humorvoll?
+
+### Ein Gespräch mit allen Mitteln
+– *Wie war dein erster Arbeitstag?*
+– *Na ja, **nicht ganz unproblematisch**.* (Understatement) *Erst kam ich zu spät, dann ist der Computer abgestürzt. **Ein perfekter Start, oder?*** (Ironie)
+– *Oh je. Und dein Chef?*
+– ***Was soll ich sagen?*** (rhetorische Frage) *Er war **nicht gerade begeistert**.* (Understatement)
+
+### Tipp für die Praxis
+Ironie und Understatement wirken **im Gespräch** natürlich. In **formellen Schreiben** ist Understatement (höfliche Abschwächung) nützlich, Ironie dagegen riskant.
+
+**Beispiele:**
+- *Toll, dass du mal wieder pünktlich bist.* (Ironie)
+- *Der Film war ganz nett.* (Understatement – vielleicht war er großartig)
+- *Wollen wir nicht alle in Frieden leben?* (rhetorische Frage)
+- *Sein Deutsch ist nicht ganz fehlerfrei.* (höfliche Kritik)`,
+      explanationEn: `## Practice: irony & understatement – summary
+
+Irony, understatement and rhetorical questions are **stylistic devices** that convey meaning **indirectly** – often with **humour**, sometimes with **criticism**. Understanding them means understanding the "undertones" of German.
+
+### The three devices compared
+| device | principle | example | meant |
+| ---- | ---- | ---- | ---- |
+| **irony** | say the opposite | *Na super, schon wieder Stau!* (Oh great, another traffic jam!) | That's annoying. |
+| **understatement** | say it weaker | *Das war nicht schlecht.* (That wasn't bad.) | That was very good. |
+| **hyperbole** (contrast) | say it stronger | *Ich habe tausend Mails bekommen.* (I got a thousand e-mails.) | I got a lot of e-mails. |
+| **rhetorical question** | say it as a question | *Wer will schon verlieren?* (Who wants to lose?) | Nobody wants to lose. |
+
+### How do I know what's meant?
+1. Check the **situation**: does the literal statement fit?
+2. Look for **signals**: particles (*ja, na, etwa, schon*), stress, quotation marks.
+3. Consider the **speaker**: modest, annoyed, humorous?
+
+### A conversation using all devices
+– *Wie war dein erster Arbeitstag?* (How was your first day at work?)
+– *Na ja, **nicht ganz unproblematisch**.* (understatement – "not entirely without problems") *Erst kam ich zu spät, dann ist der Computer abgestürzt. **Ein perfekter Start, oder?*** (irony – "A perfect start, eh?")
+– *Oh je. Und dein Chef?* (Oh dear. And your boss?)
+– ***Was soll ich sagen?*** (rhetorical question – "What can I say?") *Er war **nicht gerade begeistert**.* (understatement – "not exactly thrilled")
+
+### Practical tip
+Irony and understatement feel natural **in conversation**. In **formal writing**, understatement (polite softening) is useful, but irony is risky.
+
+**Examples:**
+- *Toll, dass du mal wieder pünktlich bist.* (Great that you're on time for once – irony)
+- *Der Film war ganz nett.* (The film was quite nice – understatement; maybe it was brilliant)
+- *Wollen wir nicht alle in Frieden leben?* (Don't we all want to live in peace? – rhetorical question)
+- *Sein Deutsch ist nicht ganz fehlerfrei.* (His German isn't entirely error-free – polite criticism)`,
+      explanationTr: `## Alıştırma: İroni ve understatement – özet
+
+İroni, understatement ve retorik sorular anlamı **dolaylı** aktaran **üslup araçlarıdır** – çoğu zaman **mizahla**, bazen **eleştiriyle**. Bunları anlayan, Almancanın „ince tonlarını" da anlar.
+
+### Üç araç karşılaştırmalı
+| araç | ilke | örnek | kastedilen |
+| ---- | ---- | ---- | ---- |
+| **ironi** | tersini söylemek | *Na super, schon wieder Stau!* (Harika, yine trafik!) | Bu sinir bozucu. |
+| **understatement** | daha zayıf söylemek | *Das war nicht schlecht.* (Fena değildi.) | Çok iyiydi. |
+| **abartma** (karşıtı) | daha güçlü söylemek | *Ich habe tausend Mails bekommen.* (Bin tane e-posta aldım.) | Çok e-posta aldım. |
+| **retorik soru** | soru olarak söylemek | *Wer will schon verlieren?* (Kim kaybetmek ister ki?) | Kimse kaybetmek istemez. |
+
+### Ne kastedildiğini nasıl anlarım?
+1. **Durumu** kontrol et: Düz anlam uyuyor mu?
+2. **İşaretleri** ara: edatlar (*ja, na, etwa, schon*), vurgu, tırnak işaretleri.
+3. **Konuşana** dikkat et: alçakgönüllü mü, kızgın mı, esprili mi?
+
+### Tüm araçların kullanıldığı bir konuşma
+– *Wie war dein erster Arbeitstag?* (İlk iş günün nasıl geçti?)
+– *Na ja, **nicht ganz unproblematisch**.* (understatement – „pek sorunsuz sayılmaz") *Erst kam ich zu spät, dann ist der Computer abgestürzt. **Ein perfekter Start, oder?*** (ironi – „Mükemmel bir başlangıç, değil mi?")
+– *Oh je. Und dein Chef?* (Eyvah. Ya şefin?)
+– ***Was soll ich sagen?*** (retorik soru – „Ne diyeyim?") *Er war **nicht gerade begeistert**.* (understatement – „pek memnun sayılmazdı")
+
+### Uygulama ipucu
+İroni ve understatement **konuşmada** doğal durur. **Resmî yazılarda** understatement (kibar yumuşatma) işe yarar, ironi ise risklidir.
+
+**Örnekler:**
+- *Toll, dass du mal wieder pünktlich bist.* (Bir kez olsun zamanında gelmen harika – ironi)
+- *Der Film war ganz nett.* (Film fena değildi – understatement; belki harikaydı)
+- *Wollen wir nicht alle in Frieden leben?* (Hepimiz barış içinde yaşamak istemiyor muyuz? – retorik soru)
+- *Sein Deutsch ist nicht ganz fehlerfrei.* (Almancası pek hatasız sayılmaz – kibar eleştiri)`,
     },
   })
   await seedExercises({
@@ -31929,12 +34030,129 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit12.id,
       order: 1,
       grammarTopic: 'Register erkennen: formell vs. informell',
-      explanationDe:
-        'Register beschreibt die Sprachebene: formell ("Ich bitte um Ihre Rückmeldung") vs. informell ("Meld dich mal!"). Wortwahl, Satzbau und Anrede unterscheiden sich.',
-      explanationEn:
-        'Register describes the level of formality: formal ("Ich bitte um Ihre Rückmeldung" — I kindly request your response) vs. informal ("Meld dich mal!" — Get in touch!). Word choice, sentence structure, and address forms differ.',
-      explanationTr:
-        'Dil düzeyi (register), resmiyet seviyesini tanımlar: resmi ("Ich bitte um Ihre Rückmeldung") ile gayriresmi ("Meld dich mal!"). Kelime seçimi, cümle yapısı ve hitap farklılık gösterir.',
+      explanationDe: `## Register erkennen: formell vs. informell
+
+Das **Register** ist die **Sprachebene**, die man je nach Situation, Gesprächspartner und Medium wählt. Dieselbe Information kann ganz unterschiedlich klingen:
+
+| informell | neutral | formell |
+| ---- | ---- | ---- |
+| Meld dich mal! | Bitte melde dich. | Ich bitte um Ihre Rückmeldung. |
+| Kannst du mir helfen? | Könntest du mir helfen? | Wären Sie so freundlich, mir zu helfen? |
+| Hab keinen Bock. | Ich habe keine Lust. | Ich bin leider nicht daran interessiert. |
+| Das ist echt mies. | Das ist schlecht. | Das ist bedauerlich / unbefriedigend. |
+| Tschüss! / Bis dann! | Auf Wiedersehen! | Mit freundlichen Grüßen |
+| Sorry! | Entschuldigung! | Ich bitte vielmals um Entschuldigung. |
+
+### Merkmale der Register
+| Bereich | informell | formell |
+| ---- | ---- | ---- |
+| **Anrede** | du, ihr, Vorname | Sie, Herr/Frau + Nachname |
+| **Wortschatz** | Umgangssprache (*Kohle, kriegen, toll*) | Standard / gehoben (*Geld, erhalten, ausgezeichnet*) |
+| **Satzbau** | kurze Sätze, Ellipsen, Verkürzungen (*hab, gibt's*) | vollständige Sätze, Nebensätze, Nominalstil |
+| **Modus** | Indikativ, Imperativ | Konjunktiv II (Höflichkeit), Passiv |
+| **Partikeln** | viele (*mal, halt, eben*) | wenige |
+| **Gruß** | Hi, Hallo, Liebe Grüße (LG) | Sehr geehrte/r …, Mit freundlichen Grüßen |
+
+### Typische Wortpaare (informell → formell)
+- kriegen → **erhalten / bekommen**
+- kaputt → **defekt**
+- checken → **überprüfen / verstehen**
+- klar → **selbstverständlich**
+- super → **ausgezeichnet / hervorragend**
+- Job → **Stelle / Position**
+- Chef → **Vorgesetzte(r)**
+
+### Häufige Fehler
+- ❌ *Hallo Herr Müller, kannst du mir die Unterlagen schicken?* (Mischung du/Herr)
+- ✅ *Sehr geehrter Herr Müller, könnten Sie mir bitte die Unterlagen zusenden?*
+
+**Beispiele:**
+- informell: *Hey, hast du morgen Zeit? Lass uns 'nen Kaffee trinken!*
+- formell: *Hätten Sie morgen Zeit für ein kurzes Gespräch?*
+- informell: *Ich krieg das nicht hin.*
+- formell: *Es ist mir leider nicht möglich, die Aufgabe fristgerecht zu erledigen.*`,
+      explanationEn: `## Recognising register: formal vs. informal
+
+**Register** is the **level of language** you choose depending on the situation, the person you are talking to and the medium. The same information can sound very different:
+
+| informal | neutral | formal |
+| ---- | ---- | ---- |
+| Meld dich mal! (Get in touch!) | Bitte melde dich. (Please get in touch.) | Ich bitte um Ihre Rückmeldung. (I would appreciate your reply.) |
+| Kannst du mir helfen? (Can you help me?) | Könntest du mir helfen? (Could you help me?) | Wären Sie so freundlich, mir zu helfen? (Would you be so kind as to help me?) |
+| Hab keinen Bock. (Can't be bothered.) | Ich habe keine Lust. (I don't feel like it.) | Ich bin leider nicht daran interessiert. (Unfortunately I'm not interested.) |
+| Das ist echt mies. (That's really lousy.) | Das ist schlecht. (That's bad.) | Das ist bedauerlich / unbefriedigend. (That's regrettable / unsatisfactory.) |
+| Tschüss! / Bis dann! (Bye! / See you!) | Auf Wiedersehen! (Goodbye!) | Mit freundlichen Grüßen (Yours sincerely) |
+| Sorry! | Entschuldigung! (Excuse me!) | Ich bitte vielmals um Entschuldigung. (I sincerely apologise.) |
+
+### Features of the registers
+| area | informal | formal |
+| ---- | ---- | ---- |
+| **address** | du, ihr, first name | Sie, Herr/Frau + surname |
+| **vocabulary** | colloquial (*Kohle, kriegen, toll*) | standard / elevated (*Geld, erhalten, ausgezeichnet*) |
+| **sentence structure** | short sentences, ellipsis, contractions (*hab, gibt's*) | complete sentences, subordinate clauses, nominal style |
+| **mood** | indicative, imperative | Konjunktiv II (politeness), passive |
+| **particles** | many (*mal, halt, eben*) | few |
+| **greeting** | Hi, Hallo, Liebe Grüße (LG) | Sehr geehrte/r …, Mit freundlichen Grüßen |
+
+### Typical word pairs (informal → formal)
+- kriegen (get) → **erhalten / bekommen** (receive)
+- kaputt (broken) → **defekt** (defective)
+- checken (check / get it) → **überprüfen / verstehen** (verify / understand)
+- klar (sure) → **selbstverständlich** (of course)
+- super (great) → **ausgezeichnet / hervorragend** (excellent)
+- Job → **Stelle / Position** (position)
+- Chef (boss) → **Vorgesetzte(r)** (superior)
+
+### Common mistakes
+- ❌ *Hallo Herr Müller, kannst du mir die Unterlagen schicken?* (mixing du/Herr)
+- ✅ *Sehr geehrter Herr Müller, könnten Sie mir bitte die Unterlagen zusenden?* (Dear Mr Müller, could you please send me the documents?)
+
+**Examples:**
+- informal: *Hey, hast du morgen Zeit? Lass uns 'nen Kaffee trinken!* (Hey, free tomorrow? Let's grab a coffee!)
+- formal: *Hätten Sie morgen Zeit für ein kurzes Gespräch?* (Would you have time for a short meeting tomorrow?)
+- informal: *Ich krieg das nicht hin.* (I can't manage it.)
+- formal: *Es ist mir leider nicht möglich, die Aufgabe fristgerecht zu erledigen.* (Unfortunately I am unable to complete the task on time.)`,
+      explanationTr: `## Dil düzeyini tanımak: resmî – gayriresmî
+
+**Register** (dil düzeyi), duruma, konuşulan kişiye ve araca göre seçilen **dil katmanıdır**. Aynı bilgi çok farklı duyulabilir:
+
+| gayriresmî | nötr | resmî |
+| ---- | ---- | ---- |
+| Meld dich mal! (Bir haber ver!) | Bitte melde dich. (Lütfen haber ver.) | Ich bitte um Ihre Rückmeldung. (Geri dönüşünüzü rica ederim.) |
+| Kannst du mir helfen? (Yardım eder misin?) | Könntest du mir helfen? (Yardım edebilir misin?) | Wären Sie so freundlich, mir zu helfen? (Bana yardım etme nezaketini gösterir misiniz?) |
+| Hab keinen Bock. (Hiç canım istemiyor.) | Ich habe keine Lust. (İstemiyorum.) | Ich bin leider nicht daran interessiert. (Maalesef ilgilenmiyorum.) |
+| Das ist echt mies. (Bu gerçekten berbat.) | Das ist schlecht. (Bu kötü.) | Das ist bedauerlich / unbefriedigend. (Bu üzücü / tatmin edici değil.) |
+| Tschüss! / Bis dann! (Hadi bay! / Görüşürüz!) | Auf Wiedersehen! (Hoşça kalın!) | Mit freundlichen Grüßen (Saygılarımla) |
+| Sorry! | Entschuldigung! (Pardon!) | Ich bitte vielmals um Entschuldigung. (Özürlerimi sunarım.) |
+
+### Dil düzeylerinin özellikleri
+| alan | gayriresmî | resmî |
+| ---- | ---- | ---- |
+| **hitap** | du, ihr, ön ad | Sie, Herr/Frau + soyadı |
+| **kelime dağarcığı** | gündelik dil (*Kohle, kriegen, toll*) | standart / yüksek (*Geld, erhalten, ausgezeichnet*) |
+| **cümle yapısı** | kısa cümleler, eksiltmeler, kısaltmalar (*hab, gibt's*) | tam cümleler, yan cümleler, isim üslubu |
+| **kip** | Indikativ, emir kipi | Konjunktiv II (nezaket), edilgen |
+| **edatlar** | çok (*mal, halt, eben*) | az |
+| **selamlama** | Hi, Hallo, Liebe Grüße (LG) | Sehr geehrte/r …, Mit freundlichen Grüßen |
+
+### Tipik kelime çiftleri (gayriresmî → resmî)
+- kriegen (almak) → **erhalten / bekommen** (teslim almak)
+- kaputt (bozuk) → **defekt** (arızalı)
+- checken (kontrol etmek / anlamak) → **überprüfen / verstehen**
+- klar (tabii) → **selbstverständlich** (elbette)
+- super (süper) → **ausgezeichnet / hervorragend** (mükemmel)
+- Job (iş) → **Stelle / Position** (pozisyon)
+- Chef (patron) → **Vorgesetzte(r)** (amir)
+
+### Sık yapılan hatalar
+- ❌ *Hallo Herr Müller, kannst du mir die Unterlagen schicken?* (du/Herr karışımı)
+- ✅ *Sehr geehrter Herr Müller, könnten Sie mir bitte die Unterlagen zusenden?* (Sayın Müller Bey, belgeleri bana gönderebilir misiniz lütfen?)
+
+**Örnekler:**
+- gayriresmî: *Hey, hast du morgen Zeit? Lass uns 'nen Kaffee trinken!* (Selam, yarın boş musun? Bir kahve içelim!)
+- resmî: *Hätten Sie morgen Zeit für ein kurzes Gespräch?* (Yarın kısa bir görüşme için vaktiniz olur mu?)
+- gayriresmî: *Ich krieg das nicht hin.* (Bunu beceremiyorum.)
+- resmî: *Es ist mir leider nicht möglich, die Aufgabe fristgerecht zu erledigen.* (Görevi süresi içinde tamamlamam maalesef mümkün değil.)`,
     },
   })
   await seedExercises({
@@ -31963,12 +34181,141 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit12.id,
       order: 2,
       grammarTopic: 'Fachsprache der Wissenschaft',
-      explanationDe:
-        'Wissenschaftliche Fachsprache nutzt Nominalstil, Passiv und Fachbegriffe: "Die Hypothese wurde anhand empirischer Daten überprüft."',
-      explanationEn:
-        'Academic technical language uses nominal style, passive voice, and technical terms: "Die Hypothese wurde anhand empirischer Daten überprüft" (The hypothesis was tested using empirical data).',
-      explanationTr:
-        'Bilimsel uzmanlık dili isim stili, edilgen çatı ve teknik terimler kullanır: "Die Hypothese wurde anhand empirischer Daten überprüft."',
+      explanationDe: `## Fachsprache der Wissenschaft
+
+Wissenschaftliche Texte (Hausarbeiten, Artikel, Abschlussarbeiten) folgen festen sprachlichen Konventionen. Ziel ist **Sachlichkeit, Präzision und Überprüfbarkeit**.
+
+### Typische Merkmale
+| Merkmal | Beispiel |
+| ---- | ---- |
+| **Nominalstil** | *Die **Überprüfung** der **Hypothese** erfolgte anhand empirischer Daten.* |
+| **Passiv / unpersönlich** | *Es **wurde** festgestellt, dass … / **Man** kann davon ausgehen, dass …* |
+| **Fachbegriffe** (oft lateinisch/griechisch) | *Hypothese, Variable, Korrelation, signifikant, empirisch, Methodik* |
+| **Konjunktiv I** für fremde Positionen | *Müller (2020) **zufolge** **sei** der Effekt gering.* |
+| **vorsichtige Formulierungen** | *Die Ergebnisse **deuten darauf hin**, dass … / Es **ist anzunehmen**, dass …* |
+| **Verweise und Zitate** | *vgl. Schmidt 2019, S. 45 / wie bereits erwähnt / siehe Abschnitt 3* |
+
+### Wichtige Redemittel
+**Ziel und Aufbau:**
+- *Die vorliegende Arbeit **untersucht** / **befasst sich mit** …*
+- *Ziel dieser Studie **ist es**, … zu analysieren.*
+- *Im ersten Teil **wird** … **dargestellt**.*
+
+**Ergebnisse darstellen:**
+- *Die Ergebnisse **zeigen** / **belegen**, dass …*
+- *Es **lässt sich** ein deutlicher Zusammenhang **feststellen**.*
+- *Die Daten **legen nahe**, dass …*
+
+**Einschränken und diskutieren:**
+- *Dabei **ist zu berücksichtigen**, dass …*
+- *Einschränkend **muss** **erwähnt werden**, dass die Stichprobe klein war.*
+- *Diese Annahme **ist** jedoch **kritisch zu hinterfragen**.*
+
+### Wortschatz: Alltag → Wissenschaft
+| Alltag | Wissenschaft |
+| ---- | ---- |
+| zeigen | belegen, nachweisen, aufzeigen |
+| meinen | die Auffassung vertreten, postulieren |
+| benutzen | verwenden, heranziehen, einsetzen |
+| untersuchen | analysieren, erforschen, überprüfen |
+| wichtig | relevant, bedeutsam, zentral |
+| Grund | Ursache, Faktor |
+
+**Beispiele:**
+- *Die Hypothese wurde **anhand** empirischer Daten **überprüft**.*
+- *Die Befragung **ergab**, dass 70 % der Teilnehmenden zufrieden sind.*
+- *Es **ist davon auszugehen**, dass weitere Faktoren eine Rolle spielen.*
+- *Wie Becker (2018) **zeigt**, **sei** dieser Effekt langfristig stabil.*`,
+      explanationEn: `## The language of science
+
+Academic texts (term papers, articles, theses) follow fixed linguistic conventions. The goal is **objectivity, precision and verifiability**.
+
+### Typical features
+| feature | example |
+| ---- | ---- |
+| **nominal style** | *Die **Überprüfung** der **Hypothese** erfolgte anhand empirischer Daten.* (The hypothesis was tested using empirical data.) |
+| **passive / impersonal** | *Es **wurde** festgestellt, dass … / **Man** kann davon ausgehen, dass …* (It was found that … / It can be assumed that …) |
+| **technical terms** (often Latin/Greek) | *Hypothese, Variable, Korrelation, signifikant, empirisch, Methodik* |
+| **Konjunktiv I** for others' positions | *Müller (2020) **zufolge** **sei** der Effekt gering.* (According to Müller (2020), the effect is small.) |
+| **cautious wording** | *Die Ergebnisse **deuten darauf hin**, dass … / Es **ist anzunehmen**, dass …* (The results suggest that … / It may be assumed that …) |
+| **references and citations** | *vgl. Schmidt 2019, S. 45 / wie bereits erwähnt / siehe Abschnitt 3* (cf. … / as already mentioned / see section 3) |
+
+### Key phrases
+**Aim and structure:**
+- *Die vorliegende Arbeit **untersucht** / **befasst sich mit** …* (This paper examines / deals with …)
+- *Ziel dieser Studie **ist es**, … zu analysieren.* (The aim of this study is to analyse …)
+- *Im ersten Teil **wird** … **dargestellt**.* (The first part presents …)
+
+**Presenting results:**
+- *Die Ergebnisse **zeigen** / **belegen**, dass …* (The results show / prove that …)
+- *Es **lässt sich** ein deutlicher Zusammenhang **feststellen**.* (A clear connection can be identified.)
+- *Die Daten **legen nahe**, dass …* (The data suggest that …)
+
+**Qualifying and discussing:**
+- *Dabei **ist zu berücksichtigen**, dass …* (It must be taken into account that …)
+- *Einschränkend **muss** **erwähnt werden**, dass die Stichprobe klein war.* (As a limitation it must be mentioned that the sample was small.)
+- *Diese Annahme **ist** jedoch **kritisch zu hinterfragen**.* (This assumption, however, needs to be critically questioned.)
+
+### Vocabulary: everyday → academic
+| everyday | academic |
+| ---- | ---- |
+| zeigen (show) | belegen, nachweisen, aufzeigen (prove, demonstrate) |
+| meinen (think) | die Auffassung vertreten, postulieren (hold the view, postulate) |
+| benutzen (use) | verwenden, heranziehen, einsetzen (employ, draw on) |
+| untersuchen (look into) | analysieren, erforschen, überprüfen (analyse, investigate, test) |
+| wichtig (important) | relevant, bedeutsam, zentral (relevant, significant, central) |
+| Grund (reason) | Ursache, Faktor (cause, factor) |
+
+**Examples:**
+- *Die Hypothese wurde **anhand** empirischer Daten **überprüft**.* (The hypothesis was tested on the basis of empirical data.)
+- *Die Befragung **ergab**, dass 70 % der Teilnehmenden zufrieden sind.* (The survey revealed that 70 % of participants are satisfied.)
+- *Es **ist davon auszugehen**, dass weitere Faktoren eine Rolle spielen.* (It can be assumed that other factors play a role.)
+- *Wie Becker (2018) **zeigt**, **sei** dieser Effekt langfristig stabil.* (As Becker (2018) shows, this effect is stable in the long term.)`,
+      explanationTr: `## Bilim dili
+
+Bilimsel metinler (ödevler, makaleler, tezler) belirli dil kurallarına uyar. Amaç **nesnellik, kesinlik ve doğrulanabilirliktir**.
+
+### Tipik özellikler
+| özellik | örnek |
+| ---- | ---- |
+| **isim üslubu** | *Die **Überprüfung** der **Hypothese** erfolgte anhand empirischer Daten.* (Hipotezin sınanması ampirik verilerle yapıldı.) |
+| **edilgen / kişisiz** | *Es **wurde** festgestellt, dass … / **Man** kann davon ausgehen, dass …* (… olduğu tespit edildi / … varsayılabilir.) |
+| **terimler** (çoğu Latince/Yunanca) | *Hypothese, Variable, Korrelation, signifikant, empirisch, Methodik* |
+| başkalarının görüşleri için **Konjunktiv I** | *Müller (2020) **zufolge** **sei** der Effekt gering.* (Müller'e (2020) göre etki küçükmüş.) |
+| **temkinli ifadeler** | *Die Ergebnisse **deuten darauf hin**, dass … / Es **ist anzunehmen**, dass …* (Sonuçlar … olduğuna işaret ediyor / … varsayılabilir.) |
+| **atıflar ve alıntılar** | *vgl. Schmidt 2019, S. 45 / wie bereits erwähnt / siehe Abschnitt 3* (krş. … / daha önce belirtildiği gibi / bkz. bölüm 3) |
+
+### Önemli kalıplar
+**Amaç ve yapı:**
+- *Die vorliegende Arbeit **untersucht** / **befasst sich mit** …* (Bu çalışma … incelemektedir / … ele almaktadır.)
+- *Ziel dieser Studie **ist es**, … zu analysieren.* (Bu çalışmanın amacı …'yı analiz etmektir.)
+- *Im ersten Teil **wird** … **dargestellt**.* (Birinci bölümde … sunulmaktadır.)
+
+**Sonuçları sunmak:**
+- *Die Ergebnisse **zeigen** / **belegen**, dass …* (Sonuçlar … olduğunu gösteriyor / kanıtlıyor.)
+- *Es **lässt sich** ein deutlicher Zusammenhang **feststellen**.* (Belirgin bir ilişki saptanabilir.)
+- *Die Daten **legen nahe**, dass …* (Veriler … olduğunu düşündürüyor.)
+
+**Sınırlamak ve tartışmak:**
+- *Dabei **ist zu berücksichtigen**, dass …* (Bu bağlamda … dikkate alınmalıdır.)
+- *Einschränkend **muss** **erwähnt werden**, dass die Stichprobe klein war.* (Bir sınırlılık olarak örneklemin küçük olduğu belirtilmelidir.)
+- *Diese Annahme **ist** jedoch **kritisch zu hinterfragen**.* (Ancak bu varsayım eleştirel biçimde sorgulanmalıdır.)
+
+### Kelime dağarcığı: günlük → bilimsel
+| günlük | bilimsel |
+| ---- | ---- |
+| zeigen (göstermek) | belegen, nachweisen, aufzeigen (kanıtlamak, ortaya koymak) |
+| meinen (düşünmek) | die Auffassung vertreten, postulieren (görüşünü savunmak, öne sürmek) |
+| benutzen (kullanmak) | verwenden, heranziehen, einsetzen (yararlanmak, başvurmak) |
+| untersuchen (incelemek) | analysieren, erforschen, überprüfen (analiz etmek, araştırmak, sınamak) |
+| wichtig (önemli) | relevant, bedeutsam, zentral (ilgili, anlamlı, merkezî) |
+| Grund (neden) | Ursache, Faktor (sebep, etken) |
+
+**Örnekler:**
+- *Die Hypothese wurde **anhand** empirischer Daten **überprüft**.* (Hipotez ampirik veriler temelinde sınandı.)
+- *Die Befragung **ergab**, dass 70 % der Teilnehmenden zufrieden sind.* (Anket, katılımcıların %70'inin memnun olduğunu ortaya koydu.)
+- *Es **ist davon auszugehen**, dass weitere Faktoren eine Rolle spielen.* (Başka etkenlerin de rol oynadığı varsayılabilir.)
+- *Wie Becker (2018) **zeigt**, **sei** dieser Effekt langfristig stabil.* (Becker'in (2018) gösterdiği gibi bu etki uzun vadede istikrarlıymış.)`,
     },
   })
   await seedExercises({
@@ -31997,12 +34344,114 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit12.id,
       order: 3,
       grammarTopic: 'Register wechseln',
-      explanationDe:
-        'Guter Sprachgebrauch passt das Register an die Situation an: eine E-Mail an den Chef ist formell, eine Nachricht an Freunde informell.',
-      explanationEn:
-        'Good language use adapts register to the situation: an email to your boss is formal, a message to friends is informal.',
-      explanationTr:
-        'İyi bir dil kullanımı, dil düzeyini duruma göre ayarlar: patrona e-posta resmi, arkadaşlara mesaj gayriresmidir.',
+      explanationDe: `## Register wechseln
+
+Sprachkompetenz auf C1-Niveau zeigt sich darin, dass man **dieselbe Information** in **verschiedenen Registern** ausdrücken kann – passend zu Situation, Person und Medium.
+
+### Eine Nachricht – drei Register
+**Situation:** Sie sind krank und können morgen nicht zur Arbeit / zum Treffen kommen.
+
+**An Freunde (WhatsApp, informell):**
+*Hey Leute, bin leider krank 🤒 Schaff's morgen nicht. Sorry! Holen wir's nächste Woche nach?*
+
+**An Kolleg*innen (E-Mail, neutral):**
+*Hallo zusammen, leider bin ich krank und kann morgen nicht ins Büro kommen. Könnte jemand bitte die Besprechung um 10 Uhr übernehmen? Danke und viele Grüße, Lena*
+
+**An die Vorgesetzte (E-Mail, formell):**
+*Sehr geehrte Frau Dr. Weber, leider muss ich Ihnen mitteilen, dass ich erkrankt bin und morgen nicht zur Arbeit erscheinen kann. Die ärztliche Bescheinigung reiche ich umgehend nach. Für Rückfragen stehe ich telefonisch zur Verfügung. Mit freundlichen Grüßen, Lena Schmidt*
+
+### Wie wechselt man das Register?
+| Schritt | informell | formell |
+| ---- | ---- | ---- |
+| Anrede anpassen | Hey, Hi, Liebe/r … | Sehr geehrte/r …, Guten Tag Frau/Herr … |
+| Pronomen | du / ihr | Sie |
+| Wörter ersetzen | kriegen, Bescheid sagen | erhalten, mitteilen / informieren |
+| Bitten höflicher machen | Schick mir … | Könnten Sie mir bitte … zusenden? |
+| Sätze vervollständigen | Schaff's nicht. | Es ist mir leider nicht möglich, … |
+| Partikeln / Emojis weglassen | mal, halt, 😊 | — |
+| Schluss | LG, Bis dann! | Mit freundlichen Grüßen |
+
+### Zwischenstufen beachten
+Zwischen „sehr formell" und „locker" gibt es viele Stufen. Unter Kollegen im Büro (*„Hallo Frau Kaya, …"*), in der Uni (*„Liebe Frau Professorin …"*) oder im Kundenservice gelten jeweils eigene Normen. Im Zweifel: **eher formeller** beginnen und sich anpassen, wenn der andere lockerer schreibt.
+
+**Beispiele für Umformungen:**
+- *Kannst du mal checken, ob das passt?* → *Könnten Sie bitte überprüfen, ob dies zutrifft?*
+- *Hab die Mail gekriegt, danke!* → *Vielen Dank für Ihre E-Mail, die ich erhalten habe.*
+- *Wir müssen das Meeting verschieben.* → *Leider sehen wir uns gezwungen, den Termin zu verschieben.*`,
+      explanationEn: `## Switching register
+
+Language competence at C1 level shows in being able to express **the same information** in **different registers** – appropriate to situation, person and medium.
+
+### One message – three registers
+**Situation:** you are ill and can't come to work / the meeting tomorrow.
+
+**To friends (WhatsApp, informal):**
+*Hey Leute, bin leider krank 🤒 Schaff's morgen nicht. Sorry! Holen wir's nächste Woche nach?*
+(Hey guys, sick unfortunately 🤒 Won't make it tomorrow. Sorry! Shall we do it next week?)
+
+**To colleagues (e-mail, neutral):**
+*Hallo zusammen, leider bin ich krank und kann morgen nicht ins Büro kommen. Könnte jemand bitte die Besprechung um 10 Uhr übernehmen? Danke und viele Grüße, Lena*
+(Hi everyone, unfortunately I'm ill and can't come to the office tomorrow. Could someone please take over the 10 o'clock meeting? Thanks and best wishes, Lena)
+
+**To the manager (e-mail, formal):**
+*Sehr geehrte Frau Dr. Weber, leider muss ich Ihnen mitteilen, dass ich erkrankt bin und morgen nicht zur Arbeit erscheinen kann. Die ärztliche Bescheinigung reiche ich umgehend nach. Für Rückfragen stehe ich telefonisch zur Verfügung. Mit freundlichen Grüßen, Lena Schmidt*
+(Dear Dr Weber, I regret to inform you that I have fallen ill and will be unable to come to work tomorrow. I will submit the doctor's certificate promptly. I am available by phone for any questions. Yours sincerely, Lena Schmidt)
+
+### How do you switch register?
+| step | informal | formal |
+| ---- | ---- | ---- |
+| adjust greeting | Hey, Hi, Liebe/r … | Sehr geehrte/r …, Guten Tag Frau/Herr … |
+| pronoun | du / ihr | Sie |
+| replace words | kriegen, Bescheid sagen | erhalten, mitteilen / informieren |
+| make requests politer | Schick mir … (Send me …) | Könnten Sie mir bitte … zusenden? (Could you please send me …?) |
+| complete sentences | Schaff's nicht. (Can't make it.) | Es ist mir leider nicht möglich, … (Unfortunately I am unable to …) |
+| drop particles / emojis | mal, halt, 😊 | — |
+| sign-off | LG, Bis dann! | Mit freundlichen Grüßen |
+
+### Mind the intermediate levels
+Between "very formal" and "casual" there are many shades. Among office colleagues (*„Hallo Frau Kaya, …"*), at university (*„Liebe Frau Professorin …"*) or in customer service, different norms apply. When in doubt: start **more formally** and adapt if the other person writes more casually.
+
+**Sample conversions:**
+- *Kannst du mal checken, ob das passt?* → *Könnten Sie bitte überprüfen, ob dies zutrifft?* (Could you please check whether this is correct?)
+- *Hab die Mail gekriegt, danke!* → *Vielen Dank für Ihre E-Mail, die ich erhalten habe.* (Thank you for your e-mail, which I have received.)
+- *Wir müssen das Meeting verschieben.* → *Leider sehen wir uns gezwungen, den Termin zu verschieben.* (Unfortunately we are obliged to postpone the meeting.)`,
+      explanationTr: `## Dil düzeyini değiştirmek
+
+C1 seviyesinde dil yetkinliği, **aynı bilgiyi** duruma, kişiye ve araca uygun olarak **farklı dil düzeylerinde** ifade edebilmekle kendini gösterir.
+
+### Bir mesaj – üç dil düzeyi
+**Durum:** Hastasınız ve yarın işe / buluşmaya gelemiyorsunuz.
+
+**Arkadaşlara (WhatsApp, gayriresmî):**
+*Hey Leute, bin leider krank 🤒 Schaff's morgen nicht. Sorry! Holen wir's nächste Woche nach?*
+(Selam millet, maalesef hastayım 🤒 Yarın yetişemeyeceğim. Kusura bakmayın! Gelecek hafta telafi edelim mi?)
+
+**İş arkadaşlarına (e-posta, nötr):**
+*Hallo zusammen, leider bin ich krank und kann morgen nicht ins Büro kommen. Könnte jemand bitte die Besprechung um 10 Uhr übernehmen? Danke und viele Grüße, Lena*
+(Herkese merhaba, maalesef hastayım ve yarın ofise gelemiyorum. Biri saat 10'daki toplantıyı devralabilir mi lütfen? Teşekkürler, selamlar, Lena)
+
+**Amire (e-posta, resmî):**
+*Sehr geehrte Frau Dr. Weber, leider muss ich Ihnen mitteilen, dass ich erkrankt bin und morgen nicht zur Arbeit erscheinen kann. Die ärztliche Bescheinigung reiche ich umgehend nach. Für Rückfragen stehe ich telefonisch zur Verfügung. Mit freundlichen Grüßen, Lena Schmidt*
+(Sayın Dr. Weber, hastalandığımı ve yarın işe gelemeyeceğimi maalesef bildirmek zorundayım. Doktor raporunu en kısa sürede ileteceğim. Sorularınız için telefonla ulaşılabilirim. Saygılarımla, Lena Schmidt)
+
+### Dil düzeyi nasıl değiştirilir?
+| adım | gayriresmî | resmî |
+| ---- | ---- | ---- |
+| hitabı uyarla | Hey, Hi, Liebe/r … | Sehr geehrte/r …, Guten Tag Frau/Herr … |
+| zamir | du / ihr | Sie |
+| kelimeleri değiştir | kriegen, Bescheid sagen | erhalten, mitteilen / informieren |
+| ricaları kibarlaştır | Schick mir … (Bana … gönder) | Könnten Sie mir bitte … zusenden? (Bana … gönderebilir misiniz lütfen?) |
+| cümleleri tamamla | Schaff's nicht. (Yetişemem.) | Es ist mir leider nicht möglich, … (Maalesef … mümkün değil) |
+| edatları / emojileri çıkar | mal, halt, 😊 | — |
+| kapanış | LG, Bis dann! | Mit freundlichen Grüßen |
+
+### Ara düzeylere dikkat
+„Çok resmî" ile „rahat" arasında birçok ara düzey vardır. Ofiste iş arkadaşları arasında (*„Hallo Frau Kaya, …"*), üniversitede (*„Liebe Frau Professorin …"*) veya müşteri hizmetlerinde her birinin kendi normları vardır. Emin değilseniz: **daha resmî** başlayın ve karşı taraf daha rahat yazarsa ona uyun.
+
+**Dönüşüm örnekleri:**
+- *Kannst du mal checken, ob das passt?* → *Könnten Sie bitte überprüfen, ob dies zutrifft?* (Bunun doğru olup olmadığını kontrol edebilir misiniz lütfen?)
+- *Hab die Mail gekriegt, danke!* → *Vielen Dank für Ihre E-Mail, die ich erhalten habe.* (Aldığım e-postanız için çok teşekkür ederim.)
+- *Wir müssen das Meeting verschieben.* → *Leider sehen wir uns gezwungen, den Termin zu verschieben.* (Maalesef toplantıyı ertelemek zorunda kalıyoruz.)`,
     },
   })
   await seedExercises({
@@ -32031,12 +34480,111 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit12.id,
       order: 4,
       grammarTopic: 'Übung: Fachsprache & Register',
-      explanationDe:
-        'Wiederholung: Die Wahl des richtigen Registers zeigt Sprachgefühl und ist entscheidend für angemessene Kommunikation in unterschiedlichen Kontexten.',
-      explanationEn:
-        'Review: choosing the right register shows language proficiency and is crucial for appropriate communication in different contexts.',
-      explanationTr:
-        'Tekrar: Doğru dil düzeyini seçmek dil becerisini gösterir ve farklı bağlamlarda uygun iletişim için önemlidir.',
+      explanationDe: `## Übung: Fachsprache & Register – Zusammenfassung
+
+Die Wahl des richtigen Registers zeigt **Sprachgefühl** und ist entscheidend für **angemessene Kommunikation**. Ein grammatisch korrekter Text im falschen Register kann unhöflich, lächerlich oder unprofessionell wirken.
+
+### Registerskala
+| Register | Situation | Beispiel |
+| ---- | ---- | ---- |
+| **salopp / Jugendsprache** | Freunde, Chat | *Krass, voll cool!* |
+| **umgangssprachlich** | Familie, Alltag | *Das ist ja super!* |
+| **neutral / standard** | Kollegen, Medien | *Das ist sehr gut.* |
+| **formell** | Behörden, Geschäftsbriefe | *Das Ergebnis ist ausgezeichnet.* |
+| **fachsprachlich** | Wissenschaft, Recht, Medizin | *Die Ergebnisse sind statistisch signifikant.* |
+| **gehoben / literarisch** | Literatur, Festreden | *Ein vortreffliches Resultat.* |
+
+### Fachsprachen haben eigene Merkmale
+| Fachgebiet | typische Merkmale | Beispiel |
+| ---- | ---- | ---- |
+| Wissenschaft | Nominalstil, Passiv, Konj. I | *Die Daten wurden ausgewertet.* |
+| Recht | feste Formeln, Paragraphen | *gemäß § 5 BGB* |
+| Medizin | Fachwörter (lat./griech.) | *akute Entzündung* |
+| Wirtschaft | Anglizismen, Kennzahlen | *Der Umsatz stieg um 3 %.* |
+| Technik | Komposita, Imperativ/Infinitiv | *Schraube lösen, Deckel abnehmen.* |
+
+### Checkliste vor dem Absenden einer E-Mail
+- ✅ Kenne ich den Empfänger? → **du** oder **Sie**?
+- ✅ Passt die **Anrede** und der **Gruß**?
+- ✅ Sind **umgangssprachliche Wörter** ersetzt?
+- ✅ Sind Bitten **höflich** (Konjunktiv II)?
+- ✅ Ist der Text **klar strukturiert**?
+
+**Beispiele:**
+- *Bitte um Rückmeldung bis Freitag.* (formell, knapp)
+- *Gib mir bis Freitag Bescheid, ja?* (informell)
+- *Wir bedanken uns für Ihr Vertrauen.* (formell, Geschäftsbrief)
+- *Die Probanden wurden randomisiert zwei Gruppen zugeteilt.* (Fachsprache)`,
+      explanationEn: `## Practice: technical language & register – summary
+
+Choosing the right register shows a **feel for language** and is crucial for **appropriate communication**. A grammatically correct text in the wrong register can seem rude, ridiculous or unprofessional.
+
+### Register scale
+| register | situation | example |
+| ---- | ---- | ---- |
+| **slang / youth language** | friends, chat | *Krass, voll cool!* (Wow, totally cool!) |
+| **colloquial** | family, everyday | *Das ist ja super!* (That's great!) |
+| **neutral / standard** | colleagues, media | *Das ist sehr gut.* (That's very good.) |
+| **formal** | authorities, business letters | *Das Ergebnis ist ausgezeichnet.* (The result is excellent.) |
+| **technical** | science, law, medicine | *Die Ergebnisse sind statistisch signifikant.* (The results are statistically significant.) |
+| **elevated / literary** | literature, ceremonial speeches | *Ein vortreffliches Resultat.* (A splendid result.) |
+
+### Technical languages have their own features
+| field | typical features | example |
+| ---- | ---- | ---- |
+| science | nominal style, passive, Konj. I | *Die Daten wurden ausgewertet.* (The data was analysed.) |
+| law | fixed formulas, sections | *gemäß § 5 BGB* (pursuant to § 5 of the Civil Code) |
+| medicine | technical terms (Lat./Gk.) | *akute Entzündung* (acute inflammation) |
+| business | anglicisms, key figures | *Der Umsatz stieg um 3 %.* (Revenue rose by 3 %.) |
+| engineering | compounds, imperative/infinitive | *Schraube lösen, Deckel abnehmen.* (Loosen screw, remove cover.) |
+
+### Checklist before sending an e-mail
+- ✅ Do I know the recipient? → **du** or **Sie**?
+- ✅ Do the **greeting** and **sign-off** fit?
+- ✅ Have **colloquial words** been replaced?
+- ✅ Are requests **polite** (Konjunktiv II)?
+- ✅ Is the text **clearly structured**?
+
+**Examples:**
+- *Bitte um Rückmeldung bis Freitag.* (Please reply by Friday – formal, concise)
+- *Gib mir bis Freitag Bescheid, ja?* (Let me know by Friday, OK? – informal)
+- *Wir bedanken uns für Ihr Vertrauen.* (We thank you for your trust – formal, business letter)
+- *Die Probanden wurden randomisiert zwei Gruppen zugeteilt.* (The subjects were randomly assigned to two groups – technical)`,
+      explanationTr: `## Alıştırma: Uzmanlık dili ve dil düzeyi – özet
+
+Doğru dil düzeyini seçmek **dil duyarlılığını** gösterir ve **uygun iletişim** için belirleyicidir. Dilbilgisi açısından doğru ama yanlış düzeyde yazılmış bir metin kaba, gülünç veya profesyonellikten uzak görünebilir.
+
+### Dil düzeyi ölçeği
+| düzey | durum | örnek |
+| ---- | ---- | ---- |
+| **argo / gençlik dili** | arkadaşlar, sohbet | *Krass, voll cool!* (Vay, çok havalı!) |
+| **gündelik** | aile, günlük hayat | *Das ist ja super!* (Bu süper!) |
+| **nötr / standart** | iş arkadaşları, medya | *Das ist sehr gut.* (Bu çok iyi.) |
+| **resmî** | resmî daireler, iş yazışmaları | *Das Ergebnis ist ausgezeichnet.* (Sonuç mükemmel.) |
+| **uzmanlık dili** | bilim, hukuk, tıp | *Die Ergebnisse sind statistisch signifikant.* (Sonuçlar istatistiksel olarak anlamlı.) |
+| **yüksek / edebî** | edebiyat, tören konuşmaları | *Ein vortreffliches Resultat.* (Kusursuz bir sonuç.) |
+
+### Uzmanlık dillerinin kendine özgü özellikleri
+| alan | tipik özellikler | örnek |
+| ---- | ---- | ---- |
+| bilim | isim üslubu, edilgen, Konj. I | *Die Daten wurden ausgewertet.* (Veriler değerlendirildi.) |
+| hukuk | kalıp ifadeler, maddeler | *gemäß § 5 BGB* (Medeni Kanun md. 5 uyarınca) |
+| tıp | terimler (Lat./Yun.) | *akute Entzündung* (akut iltihap) |
+| ekonomi | İngilizce kökenli kelimeler, göstergeler | *Der Umsatz stieg um 3 %.* (Ciro %3 arttı.) |
+| teknik | bileşik isimler, emir/mastar | *Schraube lösen, Deckel abnehmen.* (Vidayı gevşetin, kapağı çıkarın.) |
+
+### E-posta göndermeden önce kontrol listesi
+- ✅ Alıcıyı tanıyor muyum? → **du** mu, **Sie** mi?
+- ✅ **Hitap** ve **kapanış** uygun mu?
+- ✅ **Gündelik kelimeler** değiştirildi mi?
+- ✅ Ricalar **kibar** mı (Konjunktiv II)?
+- ✅ Metin **açıkça yapılandırılmış** mı?
+
+**Örnekler:**
+- *Bitte um Rückmeldung bis Freitag.* (Cuma gününe kadar geri dönüş rica ederim – resmî, kısa)
+- *Gib mir bis Freitag Bescheid, ja?* (Cumaya kadar haber ver, tamam mı? – gayriresmî)
+- *Wir bedanken uns für Ihr Vertrauen.* (Güveniniz için teşekkür ederiz – resmî, iş yazışması)
+- *Die Probanden wurden randomisiert zwei Gruppen zugeteilt.* (Denekler rastgele iki gruba ayrıldı – uzmanlık dili)`,
     },
   })
   await seedExercises({
@@ -32088,12 +34636,119 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit13.id,
       order: 1,
       grammarTopic: 'Wiederholung: Konjunktiv I in Fachtexten',
-      explanationDe:
-        'In wissenschaftlichen Diskussionen wird oft Konjunktiv I verwendet, um fremde Thesen neutral wiederzugeben: "Der Autor argumentiert, die Studie sei nicht repräsentativ."',
-      explanationEn:
-        'Academic discussions often use Konjunktiv I to neutrally report others\' theses: "Der Autor argumentiert, die Studie sei nicht repräsentativ" (The author argues the study is not representative).',
-      explanationTr:
-        'Bilimsel tartışmalarda başkalarının tezlerini tarafsızca aktarmak için genellikle Konjunktiv I kullanılır: "Der Autor argumentiert, die Studie sei nicht repräsentativ."',
+      explanationDe: `## Wiederholung: Konjunktiv I in Fachtexten
+
+In wissenschaftlichen Diskussionen muss man **fremde Positionen** wiedergeben, ohne sie sich zu eigen zu machen. Der **Konjunktiv I** ist dafür das wichtigste Mittel: Er zeigt, dass eine Aussage von **einer anderen Person** stammt.
+
+> *Der Autor argumentiert, die Studie **sei** nicht repräsentativ.*
+> (= Das ist die Meinung des Autors, nicht unbedingt meine.)
+
+### Redemittel zur Wiedergabe fremder Positionen
+| Redemittel | Beispiel |
+| ---- | ---- |
+| X **behauptet / argumentiert / vertritt die These**, … | Schulz vertritt die These, Bildung **sei** der Schlüssel zum Erfolg. |
+| **Laut / Nach** X … | Laut einer aktuellen Studie **gebe** es keinen Zusammenhang. |
+| X **zufolge** … | Den Autoren zufolge **habe** sich die Lage verbessert. |
+| **Wie** X **betont**, … | Wie Meyer betont, **müsse** man die Daten vorsichtig interpretieren. |
+| X **geht davon aus**, dass … | Sie geht davon aus, dass der Effekt langfristig **sei**. |
+| **In X' Augen / Aus Sicht von X** … | Aus Sicht der Kritiker **fehle** eine Kontrollgruppe. |
+
+### Eigene Position vs. fremde Position
+| fremde Position (Konjunktiv I) | eigene Position (Indikativ) |
+| ---- | ---- |
+| Müller behauptet, die Methode **sei** veraltet. | Die Methode **ist** jedoch nach wie vor verbreitet. |
+| Laut Studie **habe** die Maßnahme gewirkt. | Diese Schlussfolgerung **halte** ich für voreilig. |
+
+### Distanz signalisieren
+Wer **Zweifel** an einer fremden Aussage hat, kann neben dem Konjunktiv I auch diese Mittel verwenden:
+- **angeblich / vermeintlich**: *Die angeblich neue Methode …*
+- **sollen** (fremde Behauptung): *Die Studie **soll** gefälscht worden **sein**.*
+- **wollen** (Selbstbehauptung): *Der Forscher **will** den Effekt als Erster entdeckt **haben**.*
+
+### Ein typischer Absatz aus einer Hausarbeit
+*Schneider (2021) **vertritt die Auffassung**, soziale Medien **beeinträchtigten** die Konzentrationsfähigkeit Jugendlicher. Die Nutzung **führe** zu einer Fragmentierung der Aufmerksamkeit. Kritiker **wenden** dagegen **ein**, die Studie **berücksichtige** keine Langzeitdaten. Meines Erachtens **sind** beide Positionen teilweise berechtigt.*
+
+**Beispiele:**
+- Die Forscher stellen fest, der Meeresspiegel **steige** schneller als erwartet.
+- Dem Bericht zufolge **seien** 40 % der Befragten unzufrieden.
+- Kritiker wenden ein, die Stichprobe **sei** zu klein gewesen.
+- Der Verfasser betont, er **habe** alle Daten selbst erhoben.`,
+      explanationEn: `## Review: Konjunktiv I in academic texts
+
+In academic discussions you must report **other people's positions** without adopting them. **Konjunktiv I** is the main tool for this: it shows that a statement comes from **someone else**.
+
+> *Der Autor argumentiert, die Studie **sei** nicht repräsentativ.*
+> (The author argues that the study is not representative – that is the author's view, not necessarily mine.)
+
+### Phrases for reporting others' positions
+| phrase | example |
+| ---- | ---- |
+| X **behauptet / argumentiert / vertritt die These**, … (claims / argues / holds that) | Schulz vertritt die These, Bildung **sei** der Schlüssel zum Erfolg. (Schulz holds that education is the key to success.) |
+| **Laut / Nach** X … (according to) | Laut einer aktuellen Studie **gebe** es keinen Zusammenhang. (According to a recent study, there is no connection.) |
+| X **zufolge** … (according to) | Den Autoren zufolge **habe** sich die Lage verbessert. (According to the authors, the situation has improved.) |
+| **Wie** X **betont**, … (as X stresses) | Wie Meyer betont, **müsse** man die Daten vorsichtig interpretieren. (As Meyer stresses, the data must be interpreted carefully.) |
+| X **geht davon aus**, dass … (assumes that) | Sie geht davon aus, dass der Effekt langfristig **sei**. |
+| **Aus Sicht von** X … (from X's point of view) | Aus Sicht der Kritiker **fehle** eine Kontrollgruppe. (In the critics' view, a control group is missing.) |
+
+### Others' position vs. your own
+| others' position (Konjunktiv I) | own position (indicative) |
+| ---- | ---- |
+| Müller behauptet, die Methode **sei** veraltet. (Müller claims the method is outdated.) | Die Methode **ist** jedoch nach wie vor verbreitet. (However, the method is still widespread.) |
+| Laut Studie **habe** die Maßnahme gewirkt. (According to the study, the measure worked.) | Diese Schlussfolgerung **halte** ich für voreilig. (I consider this conclusion premature.) |
+
+### Signalling distance
+If you **doubt** someone else's statement, you can also use these devices besides Konjunktiv I:
+- **angeblich / vermeintlich** (allegedly / supposedly): *Die angeblich neue Methode …*
+- **sollen** (others' claim): *Die Studie **soll** gefälscht worden **sein**.* (The study is said to have been falsified.)
+- **wollen** (self-claim): *Der Forscher **will** den Effekt als Erster entdeckt **haben**.* (The researcher claims to have been the first to discover the effect.)
+
+### A typical paragraph from a term paper
+*Schneider (2021) **vertritt die Auffassung**, soziale Medien **beeinträchtigten** die Konzentrationsfähigkeit Jugendlicher. Die Nutzung **führe** zu einer Fragmentierung der Aufmerksamkeit. Kritiker **wenden** dagegen **ein**, die Studie **berücksichtige** keine Langzeitdaten. Meines Erachtens **sind** beide Positionen teilweise berechtigt.*
+(Schneider (2021) holds that social media impair young people's ability to concentrate; use leads to fragmented attention. Critics object that the study does not take long-term data into account. In my view, both positions are partly justified.)
+
+**Examples:**
+- Die Forscher stellen fest, der Meeresspiegel **steige** schneller als erwartet. (The researchers find that sea levels are rising faster than expected.)
+- Dem Bericht zufolge **seien** 40 % der Befragten unzufrieden. (According to the report, 40 % of respondents are dissatisfied.)
+- Kritiker wenden ein, die Stichprobe **sei** zu klein gewesen. (Critics object that the sample was too small.)
+- Der Verfasser betont, er **habe** alle Daten selbst erhoben. (The author stresses that he collected all the data himself.)`,
+      explanationTr: `## Tekrar: Uzmanlık metinlerinde Konjunktiv I
+
+Bilimsel tartışmalarda **başkalarının görüşlerini**, onları sahiplenmeden aktarmak gerekir. Bunun en önemli aracı **Konjunktiv I**'dir: Bir ifadenin **başka birine** ait olduğunu gösterir.
+
+> *Der Autor argumentiert, die Studie **sei** nicht repräsentativ.*
+> (Yazar çalışmanın temsil edici olmadığını savunuyor – bu yazarın görüşü, benimki olmak zorunda değil.)
+
+### Başkalarının görüşlerini aktarmak için kalıplar
+| kalıp | örnek |
+| ---- | ---- |
+| X **behauptet / argumentiert / vertritt die These**, … (iddia ediyor / savunuyor / tezini ileri sürüyor) | Schulz vertritt die These, Bildung **sei** der Schlüssel zum Erfolg. (Schulz, eğitimin başarının anahtarı olduğu tezini savunuyor.) |
+| **Laut / Nach** X … (…'e göre) | Laut einer aktuellen Studie **gebe** es keinen Zusammenhang. (Güncel bir çalışmaya göre bir bağlantı yokmuş.) |
+| X **zufolge** … (…'e göre) | Den Autoren zufolge **habe** sich die Lage verbessert. (Yazarlara göre durum iyileşmiş.) |
+| **Wie** X **betont**, … (X'in vurguladığı gibi) | Wie Meyer betont, **müsse** man die Daten vorsichtig interpretieren. (Meyer'in vurguladığı gibi verileri dikkatle yorumlamak gerekirmiş.) |
+| X **geht davon aus**, dass … (… varsayıyor) | Sie geht davon aus, dass der Effekt langfristig **sei**. (Etkinin uzun vadeli olduğunu varsayıyor.) |
+| **Aus Sicht von** X … (X'in bakış açısından) | Aus Sicht der Kritiker **fehle** eine Kontrollgruppe. (Eleştirmenlere göre bir kontrol grubu eksikmiş.) |
+
+### Başkasının görüşü – kendi görüşün
+| başkasının görüşü (Konjunktiv I) | kendi görüşün (Indikativ) |
+| ---- | ---- |
+| Müller behauptet, die Methode **sei** veraltet. (Müller yöntemin eskimiş olduğunu iddia ediyor.) | Die Methode **ist** jedoch nach wie vor verbreitet. (Ancak yöntem hâlâ yaygın.) |
+| Laut Studie **habe** die Maßnahme gewirkt. (Çalışmaya göre önlem işe yaramış.) | Diese Schlussfolgerung **halte** ich für voreilig. (Bu sonucu aceleci buluyorum.) |
+
+### Mesafe bildirmek
+Başkasının sözünden **şüphe ediyorsanız**, Konjunktiv I'in yanı sıra şu araçları da kullanabilirsiniz:
+- **angeblich / vermeintlich** (güya / sözde): *Die angeblich neue Methode …* (Güya yeni olan yöntem …)
+- **sollen** (başkasının iddiası): *Die Studie **soll** gefälscht worden **sein**.* (Çalışmanın sahte olduğu söyleniyor.)
+- **wollen** (kendi iddiası): *Der Forscher **will** den Effekt als Erster entdeckt **haben**.* (Araştırmacı etkiyi ilk kendisinin keşfettiğini iddia ediyor.)
+
+### Bir dönem ödevinden tipik bir paragraf
+*Schneider (2021) **vertritt die Auffassung**, soziale Medien **beeinträchtigten** die Konzentrationsfähigkeit Jugendlicher. Die Nutzung **führe** zu einer Fragmentierung der Aufmerksamkeit. Kritiker **wenden** dagegen **ein**, die Studie **berücksichtige** keine Langzeitdaten. Meines Erachtens **sind** beide Positionen teilweise berechtigt.*
+(Schneider (2021), sosyal medyanın gençlerin konsantrasyon yeteneğini bozduğu görüşünde; kullanımın dikkatin parçalanmasına yol açtığını söylüyor. Eleştirmenler ise çalışmanın uzun vadeli verileri dikkate almadığını öne sürüyor. Bence her iki görüş de kısmen haklı.)
+
+**Örnekler:**
+- Die Forscher stellen fest, der Meeresspiegel **steige** schneller als erwartet. (Araştırmacılar deniz seviyesinin beklenenden hızlı yükseldiğini tespit ediyor.)
+- Dem Bericht zufolge **seien** 40 % der Befragten unzufrieden. (Rapora göre katılımcıların %40'ı memnun değilmiş.)
+- Kritiker wenden ein, die Stichprobe **sei** zu klein gewesen. (Eleştirmenler örneklemin çok küçük olduğunu öne sürüyor.)
+- Der Verfasser betont, er **habe** alle Daten selbst erhoben. (Yazar tüm verileri kendisinin topladığını vurguluyor.)`,
     },
   })
   await seedExercises({
@@ -32122,12 +34777,117 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit13.id,
       order: 2,
       grammarTopic: 'Wiederholung: Nominalstil in Diskussionsbeiträgen',
-      explanationDe:
-        'Diskussionsbeiträge nutzen oft Nominalstil für Präzision: "Die Durchführung weiterer Untersuchungen ist notwendig" statt "Man muss weiter untersuchen."',
-      explanationEn:
-        'Discussion contributions often use nominal style for precision: "Die Durchführung weiterer Untersuchungen ist notwendig" (Conducting further investigations is necessary) instead of "Man muss weiter untersuchen" (One must investigate further).',
-      explanationTr:
-        'Tartışma katkıları genellikle hassasiyet için isim stili kullanır: "Man muss weiter untersuchen" yerine "Die Durchführung weiterer Untersuchungen ist notwendig".',
+      explanationDe: `## Wiederholung: Nominalstil in Diskussionsbeiträgen
+
+In Diskussionen, Referaten und schriftlichen Stellungnahmen sorgt der **Nominalstil** für **Präzision und Sachlichkeit**. Er verlagert den Fokus von der handelnden Person auf die **Sache**.
+
+| Verbalstil (persönlich) | Nominalstil (sachlich) |
+| ---- | ---- |
+| Man muss weiter untersuchen. | Die **Durchführung** weiterer **Untersuchungen** ist notwendig. |
+| Wir sollten die Kosten senken. | Eine **Senkung** der Kosten ist anzustreben. |
+| Wenn wir das Gesetz einführen, … | Mit **Einführung** des Gesetzes … |
+| Weil viele Menschen in die Städte ziehen, … | Aufgrund der zunehmenden **Urbanisierung** … |
+| Ich schlage vor, dass wir zusammenarbeiten. | Mein **Vorschlag** ist eine engere **Zusammenarbeit**. |
+
+### Typische Strukturen in Diskussionsbeiträgen
+| Struktur | Beispiel |
+| ---- | ---- |
+| **Nomen + ist erforderlich / notwendig / sinnvoll** | Eine **Reform** des Systems ist **erforderlich**. |
+| **es bedarf** + Genitiv | **Es bedarf** einer gründlichen **Prüfung**. |
+| **zur / zum** + Nomen (Zweck) | **Zur Verbesserung** der Lage … |
+| **im Hinblick auf / in Bezug auf** | **Im Hinblick auf** die **Finanzierung** … |
+| **Funktionsverbgefüge** | Das Thema **zur Sprache bringen** / eine Frage **in Betracht ziehen** |
+
+### Redemittel für Diskussionen (mit Nominalstil)
+- **Meinung äußern:** *Meiner **Einschätzung** nach …* / *Nach meiner **Auffassung** …*
+- **Zustimmen:** *Ich schließe mich der **Ansicht** von Herrn X an.*
+- **Widersprechen:** *Diese **Argumentation** überzeugt mich nicht.*
+- **Einschränken:** *Unter **Berücksichtigung** der Kosten …*
+- **Fazit:** *Als **Schlussfolgerung** ergibt sich …*
+
+### Achtung: Nicht übertreiben!
+❌ *Die Vornahme einer Überprüfung der Einhaltung der Vorschriften zur Vermeidung von Unfällen ist erforderlich.*
+✅ *Es muss geprüft werden, ob die Vorschriften zur Unfallvermeidung eingehalten werden.*
+
+**Beispiele:**
+- **Die Förderung** erneuerbarer Energien ist ein zentrales Anliegen.
+- **Es bedarf** einer **Klärung** der rechtlichen Fragen.
+- **Zur Lösung** des Problems schlage ich drei Maßnahmen vor.
+- **Unter Berücksichtigung** aller Faktoren halte ich den Plan für sinnvoll.`,
+      explanationEn: `## Review: nominal style in discussion contributions
+
+In discussions, presentations and written statements, **nominal style** ensures **precision and objectivity**. It shifts the focus from the person acting to the **issue**.
+
+| verbal style (personal) | nominal style (objective) |
+| ---- | ---- |
+| Man muss weiter untersuchen. (We must investigate further.) | Die **Durchführung** weiterer **Untersuchungen** ist notwendig. (Carrying out further investigations is necessary.) |
+| Wir sollten die Kosten senken. (We should cut costs.) | Eine **Senkung** der Kosten ist anzustreben. (A reduction in costs should be sought.) |
+| Wenn wir das Gesetz einführen, … (If we introduce the law …) | Mit **Einführung** des Gesetzes … (With the introduction of the law …) |
+| Weil viele Menschen in die Städte ziehen, … (Because many people move to cities …) | Aufgrund der zunehmenden **Urbanisierung** … (Due to increasing urbanisation …) |
+| Ich schlage vor, dass wir zusammenarbeiten. (I suggest we work together.) | Mein **Vorschlag** ist eine engere **Zusammenarbeit**. (My proposal is closer cooperation.) |
+
+### Typical structures in discussion contributions
+| structure | example |
+| ---- | ---- |
+| **noun + ist erforderlich / notwendig / sinnvoll** | Eine **Reform** des Systems ist **erforderlich**. (A reform of the system is required.) |
+| **es bedarf** + genitive | **Es bedarf** einer gründlichen **Prüfung**. (A thorough examination is needed.) |
+| **zur / zum** + noun (purpose) | **Zur Verbesserung** der Lage … (To improve the situation …) |
+| **im Hinblick auf / in Bezug auf** | **Im Hinblick auf** die **Finanzierung** … (With regard to funding …) |
+| **light-verb constructions** | Das Thema **zur Sprache bringen** (raise the issue) / eine Frage **in Betracht ziehen** (consider a question) |
+
+### Phrases for discussions (in nominal style)
+- **Giving an opinion:** *Meiner **Einschätzung** nach …* (In my assessment …) / *Nach meiner **Auffassung** …* (In my view …)
+- **Agreeing:** *Ich schließe mich der **Ansicht** von Herrn X an.* (I share Mr X's view.)
+- **Disagreeing:** *Diese **Argumentation** überzeugt mich nicht.* (This argument doesn't convince me.)
+- **Qualifying:** *Unter **Berücksichtigung** der Kosten …* (Taking the costs into account …)
+- **Conclusion:** *Als **Schlussfolgerung** ergibt sich …* (The conclusion is …)
+
+### Note: don't overdo it!
+❌ *Die Vornahme einer Überprüfung der Einhaltung der Vorschriften zur Vermeidung von Unfällen ist erforderlich.* (The undertaking of a review of compliance with regulations for the avoidance of accidents is required.)
+✅ *Es muss geprüft werden, ob die Vorschriften zur Unfallvermeidung eingehalten werden.* (It must be checked whether the accident-prevention rules are being followed.)
+
+**Examples:**
+- **Die Förderung** erneuerbarer Energien ist ein zentrales Anliegen. (Promoting renewable energy is a central concern.)
+- **Es bedarf** einer **Klärung** der rechtlichen Fragen. (The legal questions need to be clarified.)
+- **Zur Lösung** des Problems schlage ich drei Maßnahmen vor. (To solve the problem, I propose three measures.)
+- **Unter Berücksichtigung** aller Faktoren halte ich den Plan für sinnvoll. (Taking all factors into account, I consider the plan sensible.)`,
+      explanationTr: `## Tekrar: Tartışma katkılarında isim üslubu
+
+Tartışmalarda, sunumlarda ve yazılı görüş bildirimlerinde **isim üslubu** **kesinlik ve nesnellik** sağlar. Odağı eylemi yapan kişiden **konunun kendisine** kaydırır.
+
+| fiil üslubu (kişisel) | isim üslubu (nesnel) |
+| ---- | ---- |
+| Man muss weiter untersuchen. (Daha fazla incelemek gerekiyor.) | Die **Durchführung** weiterer **Untersuchungen** ist notwendig. (Daha fazla inceleme yapılması gereklidir.) |
+| Wir sollten die Kosten senken. (Maliyetleri düşürmeliyiz.) | Eine **Senkung** der Kosten ist anzustreben. (Maliyetlerin düşürülmesi hedeflenmelidir.) |
+| Wenn wir das Gesetz einführen, … (Yasayı yürürlüğe koyarsak …) | Mit **Einführung** des Gesetzes … (Yasanın yürürlüğe girmesiyle …) |
+| Weil viele Menschen in die Städte ziehen, … (Birçok insan şehirlere taşındığı için …) | Aufgrund der zunehmenden **Urbanisierung** … (Artan kentleşme nedeniyle …) |
+| Ich schlage vor, dass wir zusammenarbeiten. (Birlikte çalışmamızı öneriyorum.) | Mein **Vorschlag** ist eine engere **Zusammenarbeit**. (Önerim daha yakın bir iş birliğidir.) |
+
+### Tartışma katkılarında tipik yapılar
+| yapı | örnek |
+| ---- | ---- |
+| **isim + ist erforderlich / notwendig / sinnvoll** | Eine **Reform** des Systems ist **erforderlich**. (Sistemde bir reform gereklidir.) |
+| **es bedarf** + Genitiv | **Es bedarf** einer gründlichen **Prüfung**. (Kapsamlı bir incelemeye ihtiyaç vardır.) |
+| **zur / zum** + isim (amaç) | **Zur Verbesserung** der Lage … (Durumun iyileştirilmesi için …) |
+| **im Hinblick auf / in Bezug auf** | **Im Hinblick auf** die **Finanzierung** … (Finansman açısından …) |
+| **işlev fiilli yapılar** | Das Thema **zur Sprache bringen** (konuyu gündeme getirmek) / eine Frage **in Betracht ziehen** (bir soruyu göz önünde bulundurmak) |
+
+### Tartışma için kalıplar (isim üslubuyla)
+- **Görüş bildirmek:** *Meiner **Einschätzung** nach …* (Benim değerlendirmeme göre …) / *Nach meiner **Auffassung** …* (Kanaatimce …)
+- **Katılmak:** *Ich schließe mich der **Ansicht** von Herrn X an.* (X Bey'in görüşüne katılıyorum.)
+- **Karşı çıkmak:** *Diese **Argumentation** überzeugt mich nicht.* (Bu argüman beni ikna etmiyor.)
+- **Sınırlamak:** *Unter **Berücksichtigung** der Kosten …* (Maliyetler dikkate alındığında …)
+- **Sonuç:** *Als **Schlussfolgerung** ergibt sich …* (Sonuç olarak şu ortaya çıkıyor …)
+
+### Dikkat: abartmayın!
+❌ *Die Vornahme einer Überprüfung der Einhaltung der Vorschriften zur Vermeidung von Unfällen ist erforderlich.* (Kazaların önlenmesine ilişkin kurallara uyulmasının denetiminin yapılması gereklidir.)
+✅ *Es muss geprüft werden, ob die Vorschriften zur Unfallvermeidung eingehalten werden.* (Kaza önleme kurallarına uyulup uyulmadığı kontrol edilmeli.)
+
+**Örnekler:**
+- **Die Förderung** erneuerbarer Energien ist ein zentrales Anliegen. (Yenilenebilir enerjilerin teşvik edilmesi temel bir meseledir.)
+- **Es bedarf** einer **Klärung** der rechtlichen Fragen. (Hukuki soruların açıklığa kavuşturulması gerekiyor.)
+- **Zur Lösung** des Problems schlage ich drei Maßnahmen vor. (Sorunun çözümü için üç önlem öneriyorum.)
+- **Unter Berücksichtigung** aller Faktoren halte ich den Plan für sinnvoll. (Tüm etkenler göz önüne alındığında planı mantıklı buluyorum.)`,
     },
   })
   await seedExercises({
@@ -32159,12 +34919,118 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit13.id,
       order: 3,
       grammarTopic: 'Wiederholung: Komplexe Konnektoren in Argumenten',
-      explanationDe:
-        'Für eine überzeugende Argumentation kombiniert man Konnektoren: "Zumal die Datenlage unklar ist, sollte man, gleichwohl der Zeitdruck besteht, weitere Studien abwarten."',
-      explanationEn:
-        'A convincing argument combines connectors: "Zumal die Datenlage unklar ist, sollte man, gleichwohl der Zeitdruck besteht, weitere Studien abwarten" (Especially since the data situation is unclear, one should wait for further studies, even though there is time pressure).',
-      explanationTr:
-        'İkna edici bir argüman bağlaçları birleştirir: "Zumal die Datenlage unklar ist, sollte man, gleichwohl der Zeitdruck besteht, weitere Studien abwarten."',
+      explanationDe: `## Wiederholung: Komplexe Konnektoren in Argumenten
+
+Eine überzeugende Argumentation verbindet **These, Begründung, Gegenargument und Fazit** logisch miteinander. Gehobene Konnektoren machen die Beziehungen zwischen den Gedanken **präzise** sichtbar.
+
+### Bausteine einer Argumentation
+| Baustein | Konnektoren | Beispiel |
+| ---- | ---- | ---- |
+| **These** | zunächst, grundsätzlich | *Grundsätzlich ist Homeoffice sinnvoll.* |
+| **Begründung** | da, zumal, denn, insofern als | *…, **zumal** die Fahrzeiten entfallen.* |
+| **Ergänzung** | des Weiteren, darüber hinaus, nicht zuletzt | ***Darüber hinaus** steigt die Zufriedenheit.* |
+| **Gegenargument** | allerdings, gleichwohl, wohingegen | ***Allerdings** leidet die Teamarbeit.* |
+| **Einräumung** | zwar … aber, obgleich | *Es gibt **zwar** Nachteile, **aber** …* |
+| **Folgerung / Fazit** | folglich, mithin, somit, demnach | ***Mithin** ist ein Mischmodell zu empfehlen.* |
+
+### Komplexe Satzgefüge
+Auf C1-Niveau kombiniert man mehrere Konnektoren in **einem Satz**:
+> ***Zumal** die Datenlage unklar ist, sollte man, **gleichwohl** Zeitdruck besteht, weitere Studien abwarten.*
+
+Aufbau: [Begründung mit *zumal*] + Hauptsatz + [Einschub mit *gleichwohl* = obwohl].
+
+Weitere Beispiele:
+- *Die Maßnahme ist **zwar** teuer, **mithin** aber langfristig wirtschaftlich, **da** sie Folgekosten vermeidet.*
+- ***Obgleich** die Kritik berechtigt ist, überwiegen die Vorteile, **zumal** die Kosten gering sind.*
+
+### „zwar … aber" – die klassische Einräumung
+Man **gibt** ein Gegenargument **zu** und **entkräftet** es anschließend:
+- *Elektroautos sind **zwar** teurer in der Anschaffung, **aber** im Unterhalt günstiger.*
+- ***Zwar** gibt es Risiken, **doch** die Chancen überwiegen.*
+
+### Ein argumentativer Absatz
+*Ein generelles Tempolimit auf Autobahnen ist sinnvoll, **zumal** es die Zahl schwerer Unfälle senkt. **Darüber hinaus** würde es die CO₂-Emissionen reduzieren. **Zwar** befürchten manche eine Einschränkung ihrer Freiheit, **gleichwohl** überwiegt der Nutzen für die Allgemeinheit. **Mithin** spricht vieles für eine Einführung.*
+
+**Beispiele:**
+- **Da** die Ressourcen begrenzt sind, müssen wir Prioritäten setzen.
+- Die Idee ist gut, **wohingegen** die Umsetzung schwierig ist.
+- **Nicht zuletzt** aus ökologischen Gründen ist das Projekt zu begrüßen.`,
+      explanationEn: `## Review: complex connectors in arguments
+
+A convincing argument links **thesis, reasoning, counter-argument and conclusion** logically. Elevated connectors make the relations between ideas **precisely** visible.
+
+### Building blocks of an argument
+| building block | connectors | example |
+| ---- | ---- | ---- |
+| **thesis** | zunächst, grundsätzlich | *Grundsätzlich ist Homeoffice sinnvoll.* (In principle, working from home makes sense.) |
+| **reasoning** | da, zumal, denn, insofern als | *…, **zumal** die Fahrzeiten entfallen.* (… especially as commuting is eliminated.) |
+| **addition** | des Weiteren, darüber hinaus, nicht zuletzt | ***Darüber hinaus** steigt die Zufriedenheit.* (In addition, satisfaction increases.) |
+| **counter-argument** | allerdings, gleichwohl, wohingegen | ***Allerdings** leidet die Teamarbeit.* (However, teamwork suffers.) |
+| **concession** | zwar … aber, obgleich | *Es gibt **zwar** Nachteile, **aber** …* (There are admittedly disadvantages, but …) |
+| **conclusion** | folglich, mithin, somit, demnach | ***Mithin** ist ein Mischmodell zu empfehlen.* (Hence a hybrid model is recommended.) |
+
+### Complex sentences
+At C1 level several connectors are combined in **one sentence**:
+> ***Zumal** die Datenlage unklar ist, sollte man, **gleichwohl** Zeitdruck besteht, weitere Studien abwarten.*
+> (Especially as the data are unclear, one should – although there is time pressure – wait for further studies.)
+
+Structure: [reason with *zumal*] + main clause + [insertion with *gleichwohl* = although].
+
+More examples:
+- *Die Maßnahme ist **zwar** teuer, **mithin** aber langfristig wirtschaftlich, **da** sie Folgekosten vermeidet.* (The measure is expensive, admittedly, but hence economical in the long term, since it avoids follow-up costs.)
+- ***Obgleich** die Kritik berechtigt ist, überwiegen die Vorteile, **zumal** die Kosten gering sind.* (Although the criticism is justified, the advantages outweigh it, especially as the costs are low.)
+
+### "zwar … aber" – the classic concession
+You **concede** a counter-argument and then **refute** it:
+- *Elektroautos sind **zwar** teurer in der Anschaffung, **aber** im Unterhalt günstiger.* (Electric cars are admittedly more expensive to buy, but cheaper to run.)
+- ***Zwar** gibt es Risiken, **doch** die Chancen überwiegen.* (There are risks, it's true, but the opportunities outweigh them.)
+
+### An argumentative paragraph
+*Ein generelles Tempolimit auf Autobahnen ist sinnvoll, **zumal** es die Zahl schwerer Unfälle senkt. **Darüber hinaus** würde es die CO₂-Emissionen reduzieren. **Zwar** befürchten manche eine Einschränkung ihrer Freiheit, **gleichwohl** überwiegt der Nutzen für die Allgemeinheit. **Mithin** spricht vieles für eine Einführung.*
+(A general speed limit on motorways makes sense, especially as it reduces the number of serious accidents. In addition, it would cut CO₂ emissions. Some fear a restriction of their freedom, admittedly; nevertheless the benefit to the public outweighs this. Hence there is much in favour of introducing it.)
+
+**Examples:**
+- **Da** die Ressourcen begrenzt sind, müssen wir Prioritäten setzen. (Since resources are limited, we must set priorities.)
+- Die Idee ist gut, **wohingegen** die Umsetzung schwierig ist. (The idea is good, whereas implementation is difficult.)
+- **Nicht zuletzt** aus ökologischen Gründen ist das Projekt zu begrüßen. (Not least for ecological reasons, the project is to be welcomed.)`,
+      explanationTr: `## Tekrar: Argümanlarda karmaşık bağlayıcılar
+
+İkna edici bir argüman **tez, gerekçe, karşı argüman ve sonucu** mantıklı biçimde birbirine bağlar. Yüksek üsluplu bağlayıcılar düşünceler arasındaki ilişkileri **kesin** biçimde görünür kılar.
+
+### Bir argümanın yapı taşları
+| yapı taşı | bağlayıcılar | örnek |
+| ---- | ---- | ---- |
+| **tez** | zunächst, grundsätzlich | *Grundsätzlich ist Homeoffice sinnvoll.* (Temelde evden çalışma mantıklıdır.) |
+| **gerekçe** | da, zumal, denn, insofern als | *…, **zumal** die Fahrzeiten entfallen.* (… hele ki yol süresi ortadan kalkıyor.) |
+| **ekleme** | des Weiteren, darüber hinaus, nicht zuletzt | ***Darüber hinaus** steigt die Zufriedenheit.* (Bunun ötesinde memnuniyet artıyor.) |
+| **karşı argüman** | allerdings, gleichwohl, wohingegen | ***Allerdings** leidet die Teamarbeit.* (Ancak ekip çalışması zarar görüyor.) |
+| **kabul etme** | zwar … aber, obgleich | *Es gibt **zwar** Nachteile, **aber** …* (Gerçi dezavantajlar var, ama …) |
+| **sonuç** | folglich, mithin, somit, demnach | ***Mithin** ist ein Mischmodell zu empfehlen.* (Dolayısıyla karma bir model önerilir.) |
+
+### Karmaşık cümle yapıları
+C1 seviyesinde birkaç bağlayıcı **tek bir cümlede** birleştirilir:
+> ***Zumal** die Datenlage unklar ist, sollte man, **gleichwohl** Zeitdruck besteht, weitere Studien abwarten.*
+> (Hele ki veriler belirsizken, zaman baskısı olsa da, başka çalışmaları beklemek gerekir.)
+
+Yapı: [*zumal* ile gerekçe] + ana cümle + [*gleichwohl* = obwohl ile ara cümle].
+
+Başka örnekler:
+- *Die Maßnahme ist **zwar** teuer, **mithin** aber langfristig wirtschaftlich, **da** sie Folgekosten vermeidet.* (Önlem gerçi pahalı, ama sonraki maliyetleri önlediği için uzun vadede ekonomik.)
+- ***Obgleich** die Kritik berechtigt ist, überwiegen die Vorteile, **zumal** die Kosten gering sind.* (Eleştiri haklı olsa da avantajlar ağır basıyor, hele ki maliyetler düşük.)
+
+### „zwar … aber" – klasik kabul etme
+Bir karşı argümanı **kabul eder**, ardından onu **çürütürsünüz**:
+- *Elektroautos sind **zwar** teurer in der Anschaffung, **aber** im Unterhalt günstiger.* (Elektrikli arabaların alımı gerçi daha pahalı, ama bakımı daha ucuz.)
+- ***Zwar** gibt es Risiken, **doch** die Chancen überwiegen.* (Riskler var, doğru, ama fırsatlar ağır basıyor.)
+
+### Tartışmacı bir paragraf
+*Ein generelles Tempolimit auf Autobahnen ist sinnvoll, **zumal** es die Zahl schwerer Unfälle senkt. **Darüber hinaus** würde es die CO₂-Emissionen reduzieren. **Zwar** befürchten manche eine Einschränkung ihrer Freiheit, **gleichwohl** überwiegt der Nutzen für die Allgemeinheit. **Mithin** spricht vieles für eine Einführung.*
+(Otoyollarda genel bir hız sınırı mantıklıdır, hele ki ağır kazaların sayısını azaltıyor. Bunun ötesinde CO₂ salımını düşürecektir. Gerçi bazıları özgürlüklerinin kısıtlanmasından endişe ediyor, yine de toplumun yararı ağır basıyor. Dolayısıyla getirilmesi lehine çok şey var.)
+
+**Örnekler:**
+- **Da** die Ressourcen begrenzt sind, müssen wir Prioritäten setzen. (Kaynaklar sınırlı olduğundan öncelik belirlemeliyiz.)
+- Die Idee ist gut, **wohingegen** die Umsetzung schwierig ist. (Fikir iyi, oysa uygulaması zor.)
+- **Nicht zuletzt** aus ökologischen Gründen ist das Projekt zu begrüßen. (Proje özellikle ekolojik nedenlerle memnuniyetle karşılanmalı.)`,
     },
   })
   await seedExercises({
@@ -32193,12 +35059,137 @@ Kip edatları bir cümlenin **temel anlamını değiştirmez**, **rengini** değ
       unitId: c1Unit13.id,
       order: 4,
       grammarTopic: 'Abschlusswiederholung C1',
-      explanationDe:
-        'Gesamtwiederholung: Konjunktiv I/II, Partizipialattribute, Nominalstil, komplexe Konnektoren und Modalpartikeln bilden zusammen die Grundlage für kompetente wissenschaftliche und formelle Kommunikation auf C1-Niveau.',
-      explanationEn:
-        'Overall review: Konjunktiv I/II, participial attributes, nominal style, complex connectors, and modal particles together form the foundation for competent academic and formal communication at C1 level.',
-      explanationTr:
-        'Genel tekrar: Konjunktiv I/II, sıfat-fiil yapıları, isim stili, karmaşık bağlaçlar ve kip belirteçleri, C1 düzeyinde yetkin bilimsel ve resmi iletişimin temelini oluşturur.',
+      explanationDe: `## Abschlusswiederholung C1
+
+Herzlichen Glückwunsch – Sie haben den C1-Kurs durchgearbeitet! Diese Übersicht fasst die wichtigsten Themen zusammen. Zusammen bilden sie die Grundlage für **kompetente wissenschaftliche, berufliche und formelle Kommunikation**.
+
+### 1. Konjunktiv I und indirekte Rede
+| Zeit | Form | Beispiel |
+| ---- | ---- | ---- |
+| Gegenwart | Stamm + e | Er sagt, er **sei** müde / er **habe** keine Zeit. |
+| Vergangenheit | habe/sei + P II | Sie sagt, sie **sei gekommen** / **habe gearbeitet**. |
+| Zukunft | werde + Inf. | Er sagt, er **werde kommen**. |
+| Ersatz | Konj. II / würde | Sie sagen, sie **hätten** keine Zeit. |
+
+### 2. Partizipialattribute
+- Partizip I (aktiv): *die **ständig steigenden** Preise*
+- Partizip II (passiv): *das **von der Regierung geplante** Gesetz*
+- zu + Partizip I: *die **noch zu lösenden** Probleme*
+
+### 3. Nominal- und Verbalstil
+*Nach **Abschluss** des Studiums* ↔ *Nachdem sie das Studium **abgeschlossen hatte***
+
+### 4. Komplexe Konnektoren
+*zumal, insofern (als), gleichwohl, nichtsdestotrotz, des Weiteren, nicht zuletzt, mithin*
+
+### 5. Modalpartikeln
+*doch, ja, eben, halt, mal, denn, wohl, schon* – färben die Aussage, ändern nicht die Information.
+
+### 6. Redewendungen
+*die Nase voll haben, Schwein haben, auf die lange Bank schieben, den Nagel auf den Kopf treffen*
+
+### 7. Textkohärenz
+Pronomen, Synonyme, Pronominaladverbien, Strukturkonnektoren, Ellipse, Substitution
+
+### 8. Irreale Bedingungs- und Wunschsätze
+*Hätte ich das gewusst, wäre ich gekommen.* / *Wenn ich doch mehr Zeit hätte!*
+
+### 9. Feste Präpositionen
+*sich freuen auf/über, denken an + A, teilnehmen an + D* – *darauf / worauf* (Sachen), *auf ihn / auf wen* (Personen)
+
+### 10. Stilmittel und Register
+Ironie, Understatement, rhetorische Fragen; formell ↔ informell; Fachsprache
+
+### Ein Satz, der fast alles vereint
+*Der **von der Kommission vorgelegte** Bericht **komme**, so der Sprecher, zu dem Schluss, dass eine **Reform** des Systems erforderlich **sei** – **zumal** die bisherigen Maßnahmen, **gleichwohl** sie teuer waren, **nicht gerade** erfolgreich gewesen seien.*`,
+      explanationEn: `## Final review C1
+
+Congratulations – you have worked through the C1 course! This overview summarises the most important topics. Together they form the basis for **competent academic, professional and formal communication**.
+
+### 1. Konjunktiv I and reported speech
+| time | form | example |
+| ---- | ---- | ---- |
+| present | stem + e | Er sagt, er **sei** müde / er **habe** keine Zeit. (He says he is tired / has no time.) |
+| past | habe/sei + participle | Sie sagt, sie **sei gekommen** / **habe gearbeitet**. (She says she came / worked.) |
+| future | werde + inf. | Er sagt, er **werde kommen**. (He says he will come.) |
+| substitute | Konj. II / würde | Sie sagen, sie **hätten** keine Zeit. (They say they have no time.) |
+
+### 2. Participial attributes
+- Partizip I (active): *die **ständig steigenden** Preise* (constantly rising prices)
+- Partizip II (passive): *das **von der Regierung geplante** Gesetz* (the law planned by the government)
+- zu + Partizip I: *die **noch zu lösenden** Probleme* (the problems still to be solved)
+
+### 3. Nominal and verbal style
+*Nach **Abschluss** des Studiums* ↔ *Nachdem sie das Studium **abgeschlossen hatte*** (after completing her degree)
+
+### 4. Complex connectors
+*zumal, insofern (als), gleichwohl, nichtsdestotrotz, des Weiteren, nicht zuletzt, mithin*
+
+### 5. Modal particles
+*doch, ja, eben, halt, mal, denn, wohl, schon* – they colour the statement without changing the information.
+
+### 6. Idioms
+*die Nase voll haben, Schwein haben, auf die lange Bank schieben, den Nagel auf den Kopf treffen*
+
+### 7. Text coherence
+pronouns, synonyms, pronominal adverbs, structuring connectors, ellipsis, substitution
+
+### 8. Unreal conditionals and wishes
+*Hätte ich das gewusst, wäre ich gekommen.* (Had I known, I would have come.) / *Wenn ich doch mehr Zeit hätte!* (If only I had more time!)
+
+### 9. Fixed prepositions
+*sich freuen auf/über, denken an + acc., teilnehmen an + dat.* – *darauf / worauf* (things), *auf ihn / auf wen* (people)
+
+### 10. Stylistic devices and register
+irony, understatement, rhetorical questions; formal ↔ informal; technical language
+
+### A sentence that combines almost everything
+*Der **von der Kommission vorgelegte** Bericht **komme**, so der Sprecher, zu dem Schluss, dass eine **Reform** des Systems erforderlich **sei** – **zumal** die bisherigen Maßnahmen, **gleichwohl** sie teuer waren, **nicht gerade** erfolgreich gewesen seien.*
+(According to the spokesman, the report presented by the commission concludes that a reform of the system is necessary – especially as previous measures, although expensive, had not exactly been successful.)`,
+      explanationTr: `## C1 genel tekrarı
+
+Tebrikler – C1 kursunu tamamladınız! Bu özet en önemli konuları bir araya getiriyor. Hep birlikte **yetkin bilimsel, mesleki ve resmî iletişimin** temelini oluşturuyorlar.
+
+### 1. Konjunktiv I ve dolaylı anlatım
+| zaman | biçim | örnek |
+| ---- | ---- | ---- |
+| şimdi | kök + e | Er sagt, er **sei** müde / er **habe** keine Zeit. (Yorgun olduğunu / vakti olmadığını söylüyor.) |
+| geçmiş | habe/sei + P II | Sie sagt, sie **sei gekommen** / **habe gearbeitet**. (Geldiğini / çalıştığını söylüyor.) |
+| gelecek | werde + mastar | Er sagt, er **werde kommen**. (Geleceğini söylüyor.) |
+| ikame | Konj. II / würde | Sie sagen, sie **hätten** keine Zeit. (Vakitleri olmadığını söylüyorlar.) |
+
+### 2. Sıfat-fiil öbekleri
+- Partizip I (etken): *die **ständig steigenden** Preise* (sürekli artan fiyatlar)
+- Partizip II (edilgen): *das **von der Regierung geplante** Gesetz* (hükümetin planladığı yasa)
+- zu + Partizip I: *die **noch zu lösenden** Probleme* (henüz çözülmesi gereken sorunlar)
+
+### 3. İsim ve fiil üslubu
+*Nach **Abschluss** des Studiums* ↔ *Nachdem sie das Studium **abgeschlossen hatte*** (üniversiteyi bitirdikten sonra)
+
+### 4. Karmaşık bağlayıcılar
+*zumal, insofern (als), gleichwohl, nichtsdestotrotz, des Weiteren, nicht zuletzt, mithin*
+
+### 5. Kip edatları
+*doch, ja, eben, halt, mal, denn, wohl, schon* – ifadeye renk katar, bilgiyi değiştirmez.
+
+### 6. Deyimler
+*die Nase voll haben, Schwein haben, auf die lange Bank schieben, den Nagel auf den Kopf treffen*
+
+### 7. Metin tutarlılığı
+zamirler, eş anlamlılar, zamir-zarflar, yapılandırıcı bağlayıcılar, eksiltme, ikame
+
+### 8. Gerçek dışı koşul ve dilek cümleleri
+*Hätte ich das gewusst, wäre ich gekommen.* (Bunu bilseydim gelirdim.) / *Wenn ich doch mehr Zeit hätte!* (Keşke daha çok vaktim olsa!)
+
+### 9. Sabit edatlar
+*sich freuen auf/über, denken an + A, teilnehmen an + D* – *darauf / worauf* (nesneler), *auf ihn / auf wen* (kişiler)
+
+### 10. Üslup araçları ve dil düzeyi
+ironi, understatement, retorik sorular; resmî ↔ gayriresmî; uzmanlık dili
+
+### Neredeyse her şeyi birleştiren bir cümle
+*Der **von der Kommission vorgelegte** Bericht **komme**, so der Sprecher, zu dem Schluss, dass eine **Reform** des Systems erforderlich **sei** – **zumal** die bisherigen Maßnahmen, **gleichwohl** sie teuer waren, **nicht gerade** erfolgreich gewesen seien.*
+(Sözcüye göre komisyonun sunduğu rapor, sistemde bir reformun gerekli olduğu sonucuna varıyormuş – hele ki şimdiye kadarki önlemler pahalı olmalarına rağmen pek de başarılı olmamış.)`,
     },
   })
   await seedExercises({
