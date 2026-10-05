@@ -149,7 +149,7 @@ export function metaDescriptionFromMarkdown(markdown: string, maxLength = 155): 
   return `${(lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated).trim()}…`
 }
 
-export type SeoLevel = 'A1' | 'A2' | 'B1' | 'B2'
+export type SeoLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2'
 
 interface LevelCopy {
   title: string
@@ -261,6 +261,58 @@ const LEVEL_COPY: Record<SeoLevel, Record<string, LevelCopy>> = {
       h1: 'Almanca B2 – Üst Orta Seviye Dilbilgisi ve Pratik',
       intro:
         'Almanca B2, edilgen çatı, Konjunktiv II, ilgi cümleleri, ortaç yapıları ve ileri bağlaçları kapsayan üst orta seviyedir. Her ders dilbilgisini ayrıntılı anlatır ve alıştırmalar sunar.',
+    },
+  },
+  C1: {
+    en: {
+      title: 'German C1 – Advanced German Grammar, Style & Practice',
+      description:
+        'Learn German at C1 level: Konjunktiv I and reported speech, extended participial attributes, nominal style, modal particles and idioms – with detailed explanations, many examples and exercises.',
+      h1: 'German C1 – Advanced German Grammar & Style',
+      intro:
+        'German C1 is the advanced level for learners who want to understand demanding texts and express themselves fluently and precisely. The lessons cover Konjunktiv I and reported speech, extended participial attributes, nominal versus verbal style, complex connectors, modal particles, idioms, text cohesion and academic register – each with in-depth explanations, many example sentences and exercises.',
+    },
+    de: {
+      title: 'Deutsch C1 – Fortgeschrittene Grammatik, Stil & Übungen',
+      description:
+        'Lerne Deutsch auf C1-Niveau: Konjunktiv I und indirekte Rede, erweiterte Partizipialattribute, Nominalstil, Modalpartikeln und Redewendungen – mit ausführlichen Erklärungen, vielen Beispielen und Übungen.',
+      h1: 'Deutsch C1 – Fortgeschrittene Grammatik & Stil',
+      intro:
+        'Deutsch C1 ist die Stufe für Fortgeschrittene, die anspruchsvolle Texte verstehen und sich flüssig und präzise ausdrücken möchten. Die Lektionen behandeln Konjunktiv I und indirekte Rede, erweiterte Partizipialattribute, Nominal- und Verbalstil, komplexe Konnektoren, Modalpartikeln, Redewendungen, Textkohärenz und Fachsprache – jeweils mit ausführlichen Erklärungen, vielen Beispielsätzen und Übungen.',
+    },
+    tr: {
+      title: 'Almanca C1 – İleri Seviye Dilbilgisi, Üslup ve Pratik',
+      description:
+        'C1 seviyesinde Almanca öğrenin: Konjunktiv I ve dolaylı anlatım, genişletilmiş sıfat-fiil öbekleri, isim üslubu, kip edatları ve deyimler – ayrıntılı anlatımlar, bol örnek ve alıştırmalarla.',
+      h1: 'Almanca C1 – İleri Seviye Dilbilgisi ve Üslup',
+      intro:
+        'Almanca C1, zorlu metinleri anlamak ve kendini akıcı ve kesin biçimde ifade etmek isteyenler için ileri seviyedir. Dersler Konjunktiv I ve dolaylı anlatımı, genişletilmiş sıfat-fiil öbeklerini, isim ve fiil üslubunu, karmaşık bağlaçları, kip edatlarını, deyimleri, metin bütünlüğünü ve akademik dil düzeyini kapsar – her biri ayrıntılı anlatım, bol örnek cümle ve alıştırmalarla.',
+    },
+  },
+  C2: {
+    en: {
+      title: 'German C2 – Mastery-Level German Grammar & Style',
+      description:
+        'Learn German at C2 level: elevated nominal style, rhetorical devices, irony and nuance, specialist registers, subtleties of the subjunctive and precise academic expression – with detailed explanations and many examples.',
+      h1: 'German C2 – Mastery-Level German Grammar & Style',
+      intro:
+        'German C2 is the highest CEFR level, close to an educated native speaker. The lessons focus on elevated nominal style, rhetorical devices, sarcasm and exaggeration, specialist and elevated vocabulary, the finer points of the subjunctive, text-type-specific styles, language varieties, wordplay, academic discourse markers and precise expression – each with in-depth explanations, many example sentences and exercises.',
+    },
+    de: {
+      title: 'Deutsch C2 – Grammatik & Stil auf muttersprachlichem Niveau',
+      description:
+        'Lerne Deutsch auf C2-Niveau: gehobener Nominalstil, rhetorische Mittel, Ironie und Nuancen, Fachsprachen, Feinheiten des Konjunktivs und präziser wissenschaftlicher Ausdruck – mit ausführlichen Erklärungen und vielen Beispielen.',
+      h1: 'Deutsch C2 – Kompetente Sprachbeherrschung: Grammatik & Stil',
+      intro:
+        'Deutsch C2 ist die höchste CEFR-Stufe und entspricht annähernd dem Niveau gebildeter Muttersprachler. Die Lektionen behandeln gehobenen Nominalstil, rhetorische Mittel, Sarkasmus und Übertreibung, Fach- und gehobenen Wortschatz, Feinheiten des Konjunktivs, textsortenspezifische Stile, Sprachvarietäten, Wortspiele, akademische Diskursmarker und präzisen Ausdruck – jeweils mit ausführlichen Erklärungen, vielen Beispielsätzen und Übungen.',
+    },
+    tr: {
+      title: 'Almanca C2 – Ustalık Seviyesi Dilbilgisi ve Üslup',
+      description:
+        'C2 seviyesinde Almanca öğrenin: yüksek isim üslubu, retorik araçlar, ironi ve anlam incelikleri, uzmanlık dilleri, Konjunktiv incelikleri ve kesin akademik ifade – ayrıntılı anlatımlar ve bol örneklerle.',
+      h1: 'Almanca C2 – Ustalık Seviyesi Dilbilgisi ve Üslup',
+      intro:
+        'Almanca C2, eğitimli bir anadil konuşurunun düzeyine yakın en yüksek CEFR seviyesidir. Dersler yüksek isim üslubunu, retorik araçları, alay ve abartıyı, uzmanlık ve yüksek üslup kelime dağarcığını, Konjunktiv inceliklerini, metin türüne özgü üslupları, dil çeşitlerini, kelime oyunlarını, akademik söylem belirteçlerini ve kesin ifadeyi kapsar – her biri ayrıntılı anlatım, bol örnek cümle ve alıştırmalarla.',
     },
   },
 }

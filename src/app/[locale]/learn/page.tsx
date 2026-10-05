@@ -7,15 +7,15 @@ import { JsonLd } from '@/components/JsonLd'
 import { buildPublicMetadata, breadcrumbJsonLd, getLevelCopy } from '@/lib/seo'
 
 const TITLE: Record<string, string> = {
-  en: 'German Lessons – A1 to B2 Grammar, Vocabulary & Exercises',
-  de: 'Deutschlektionen – A1 bis B2 Grammatik, Wortschatz & Übungen',
-  tr: 'Almanca Dersleri – A1’den B2’ye Dilbilgisi, Kelime ve Alıştırmalar',
+  en: 'German Lessons – A1 to C2 Grammar, Vocabulary & Exercises',
+  de: 'Deutschlektionen – A1 bis C2 Grammatik, Wortschatz & Übungen',
+  tr: 'Almanca Dersleri – A1’den C2’ye Dilbilgisi, Kelime ve Alıştırmalar',
 }
 
 const DESCRIPTION: Record<string, string> = {
-  en: 'Browse all German lessons from A1 to B2: grammar explanations, vocabulary and interactive exercises, organised by CEFR level.',
-  de: 'Durchsuche alle Deutschlektionen von A1 bis B2: Grammatikerklärungen, Wortschatz und interaktive Übungen, nach CEFR-Niveau geordnet.',
-  tr: 'A1’den B2’ye tüm Almanca derslerine göz atın: dilbilgisi anlatımları, kelime ve interaktif alıştırmalar, CEFR seviyesine göre düzenlenmiş.',
+  en: 'Browse all German lessons from A1 to C2: grammar explanations, vocabulary and interactive exercises, organised by CEFR level.',
+  de: 'Durchsuche alle Deutschlektionen von A1 bis C2: Grammatikerklärungen, Wortschatz und interaktive Übungen, nach CEFR-Niveau geordnet.',
+  tr: 'A1’den C2’ye tüm Almanca derslerine göz atın: dilbilgisi anlatımları, kelime ve interaktif alıştırmalar, CEFR seviyesine göre düzenlenmiş.',
 }
 
 export async function generateMetadata({

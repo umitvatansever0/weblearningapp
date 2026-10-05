@@ -10,8 +10,8 @@
   },
   "home": {
     "heroTitle": "DeutschStep ile Online Almanca Öğren",
-    "heroSubtitle": "Ücretsiz, yapılandırılmış A1–B2 dilbilgisi dersleri, interaktif alıştırmalar ve aralıklı tekrar yöntemiyle kelime pratiği.",
-    "intro": "DeutschStep, başlangıç seviyesinden (A1) üst orta seviyeye (B2) kadar Almanca öğrenmek için ücretsiz bir çevrim içi platformdur. Her seviye, açık dilbilgisi anlatımlarını, interaktif alıştırmaları ve kelime pratiğini bir araya getirir; böylece ister sıfırdan başlayın ister ileri becerilerinizi geliştirin, kendi hızınızda çalışabilirsiniz.",
+    "heroSubtitle": "Ücretsiz, yapılandırılmış A1–C2 dilbilgisi dersleri, interaktif alıştırmalar ve aralıklı tekrar yöntemiyle kelime pratiği.",
+    "intro": "DeutschStep, başlangıç seviyesinden (A1) ustalık seviyesine (C2) kadar Almanca öğrenmek için ücretsiz bir çevrim içi platformdur. Her seviye, açık dilbilgisi anlatımlarını, interaktif alıştırmaları ve kelime pratiğini bir araya getirir; böylece ister sıfırdan başlayın ister ileri becerilerinizi geliştirin, kendi hızınızda çalışabilirsiniz.",
     "ctaRegister": "Ücretsiz başla",
     "ctaLogin": "Giriş yap",
     "levelsTitle": "Seviyeni seç",
@@ -22,6 +22,8 @@
     "levelA2Desc": "Temel: Perfekt zamanı, modal fiiller ve datif edatlar.",
     "levelB1Desc": "Orta: yan cümleler, bağlaçlar ve genitif durumu.",
     "levelB2Desc": "Üst orta: edilgen çatı, Konjunktiv II ve ilgi cümleleri.",
+    "levelC1Desc": "İleri: Konjunktiv I ve dolaylı anlatım, sıfat-fiil öbekleri, isim üslubu ve kip edatları.",
+    "levelC2Desc": "Ustalık: yüksek üslup, retorik araçlar, anlam incelikleri, dil düzeyleri ve kesin akademik ifade.",
     "viewAllLessons": "Tüm Almanca derslerine göz at",
     "featuresTitle": "Almanca öğrenmek için ihtiyacın olan her şey",
     "featureGrammarTitle": "Dilbilgisi dersleri",
@@ -33,7 +35,7 @@
     "featureSrsTitle": "Aralıklı tekrar",
     "featureSrsBody": "Aralıklı tekrar sistemi, kelime tekrarlarını en uygun zamanda planlar; böylece kelimeler uzun süreli hafızaya yerleşir.",
     "audienceTitle": "DeutschStep kimler için?",
-    "audienceBody": "DeutschStep; kendi kendine öğrenenler, öğrenciler ve Almanca sınavlarına hazırlanan, A1'den B2'ye yapılandırılmış ve ücretsiz bir yol arayan herkes içindir."
+    "audienceBody": "DeutschStep; kendi kendine öğrenenler, öğrenciler ve Almanca sınavlarına hazırlanan, A1'den C2'ye yapılandırılmış ve ücretsiz bir yol arayan herkes içindir."
   },
   "notFound": {
     "title": "Sayfa bulunamadı",

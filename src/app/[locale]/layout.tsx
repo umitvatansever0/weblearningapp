@@ -24,15 +24,15 @@ export function generateStaticParams() {
 }
 
 const DEFAULT_TITLE: Record<string, string> = {
-  en: 'Learn German Online – A1 to B2 Grammar & Vocabulary | DeutschStep',
-  de: 'Deutsch lernen online – A1 bis B2 Grammatik & Wortschatz | DeutschStep',
-  tr: 'Online Almanca Öğren – A1’den B2’ye Dilbilgisi ve Kelime | DeutschStep',
+  en: 'Learn German Online – A1 to C2 Grammar & Vocabulary | DeutschStep',
+  de: 'Deutsch lernen online – A1 bis C2 Grammatik & Wortschatz | DeutschStep',
+  tr: 'Online Almanca Öğren – A1’den C2’ye Dilbilgisi ve Kelime | DeutschStep',
 }
 
 const DEFAULT_DESCRIPTION: Record<string, string> = {
-  en: 'Learn German online with free A1–B2 grammar lessons, exercises and vocabulary practice. Improve your German with structured lessons and spaced repetition.',
-  de: 'Lerne Deutsch online mit kostenlosen A1–B2 Grammatiklektionen, Übungen und Wortschatztraining. Verbessere dein Deutsch mit strukturierten Lektionen und Spaced Repetition.',
-  tr: 'Ücretsiz A1–B2 dilbilgisi dersleri, alıştırmalar ve kelime pratiğiyle online Almanca öğren. Yapılandırılmış dersler ve aralıklı tekrar ile Almancanı geliştir.',
+  en: 'Learn German online with free A1–C2 grammar lessons, exercises and vocabulary practice. Improve your German with structured lessons and spaced repetition.',
+  de: 'Lerne Deutsch online mit kostenlosen A1–C2 Grammatiklektionen, Übungen und Wortschatztraining. Verbessere dein Deutsch mit strukturierten Lektionen und Spaced Repetition.',
+  tr: 'Ücretsiz A1–C2 dilbilgisi dersleri, alıştırmalar ve kelime pratiğiyle online Almanca öğren. Yapılandırılmış dersler ve aralıklı tekrar ile Almancanı geliştir.',
 }
 
 export async function generateMetadata({

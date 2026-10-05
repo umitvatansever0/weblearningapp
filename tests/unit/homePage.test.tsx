@@ -30,7 +30,7 @@ describe('HomePage', () => {
 
   it('links every CEFR level to its lessons page with a real href', () => {
     renderHome()
-    for (const level of ['A1', 'A2', 'B1', 'B2'] as const) {
+    for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const) {
       expect(screen.getByRole('link', { name: new RegExp(`German ${level}`) })).toHaveAttribute(
         'href',
         `/learn/${level}`

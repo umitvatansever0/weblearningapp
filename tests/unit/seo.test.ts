@@ -68,11 +68,13 @@ describe('seo helpers', () => {
     expect(desc.length).toBeLessThanOrEqual(61)
   })
 
-  it('provides per-level copy for A1–B2 and falls back to English', () => {
+  it('provides per-level copy for A1–C2 and falls back to English', () => {
     expect(getLevelCopy('A1', 'en')?.title).toContain('German A1')
     expect(getLevelCopy('B2', 'de')?.h1).toContain('B2')
     expect(getLevelCopy('A1', 'xx')?.title).toContain('German A1') // unknown locale -> en
-    expect(getLevelCopy('C1', 'en')).toBeNull()
+    expect(getLevelCopy('C1', 'en')?.title).toContain('German C1')
+    expect(getLevelCopy('C2', 'tr')?.h1).toContain('C2')
+    expect(getLevelCopy('D1', 'en')).toBeNull()
   })
 
   it('builds valid JSON-LD graphs', () => {

@@ -10,8 +10,8 @@
   },
   "home": {
     "heroTitle": "Deutsch online lernen mit DeutschStep",
-    "heroSubtitle": "Kostenlose, strukturierte A1–B2 Grammatiklektionen, interaktive Übungen und Vokabeltraining mit Spaced Repetition.",
-    "intro": "DeutschStep ist eine kostenlose Online-Plattform zum Deutschlernen vom Anfänger (A1) bis zur oberen Mittelstufe (B2). Jede Stufe verbindet klare Grammatikerklärungen, interaktive Übungen und Vokabeltraining, damit du in deinem eigenen Tempo lernen kannst – ob als Einsteiger oder zum Auffrischen fortgeschrittener Kenntnisse.",
+    "heroSubtitle": "Kostenlose, strukturierte A1–C2 Grammatiklektionen, interaktive Übungen und Vokabeltraining mit Spaced Repetition.",
+    "intro": "DeutschStep ist eine kostenlose Online-Plattform zum Deutschlernen vom Anfänger (A1) bis zur kompetenten Sprachbeherrschung (C2). Jede Stufe verbindet klare Grammatikerklärungen, interaktive Übungen und Vokabeltraining, damit du in deinem eigenen Tempo lernen kannst – ob als Einsteiger oder zum Auffrischen fortgeschrittener Kenntnisse.",
     "ctaRegister": "Kostenlos starten",
     "ctaLogin": "Anmelden",
     "levelsTitle": "Wähle dein Niveau",
@@ -22,6 +22,8 @@
     "levelA2Desc": "Grundstufe: Perfekt, Modalverben und Dativpräpositionen.",
     "levelB1Desc": "Mittelstufe: Nebensätze, Konnektoren und der Genitiv.",
     "levelB2Desc": "Obere Mittelstufe: Passiv, Konjunktiv II und Relativsätze.",
+    "levelC1Desc": "Fortgeschritten: Konjunktiv I und indirekte Rede, Partizipialattribute, Nominalstil und Modalpartikeln.",
+    "levelC2Desc": "Kompetente Sprachbeherrschung: gehobener Stil, rhetorische Mittel, Nuancen, Register und präziser wissenschaftlicher Ausdruck.",
     "viewAllLessons": "Alle Deutschlektionen durchsuchen",
     "featuresTitle": "Alles, was du zum Deutschlernen brauchst",
     "featureGrammarTitle": "Grammatiklektionen",
@@ -33,7 +35,7 @@
     "featureSrsTitle": "Spaced Repetition",
     "featureSrsBody": "Ein Spaced-Repetition-System plant Vokabelwiederholungen zum optimalen Zeitpunkt, damit Wörter ins Langzeitgedächtnis gelangen.",
     "audienceTitle": "Für wen ist DeutschStep?",
-    "audienceBody": "DeutschStep ist für Selbstlernende, Studierende und alle, die sich auf Deutschprüfungen vorbereiten und einen strukturierten, kostenlosen Weg von A1 bis B2 suchen."
+    "audienceBody": "DeutschStep ist für Selbstlernende, Studierende und alle, die sich auf Deutschprüfungen vorbereiten und einen strukturierten, kostenlosen Weg von A1 bis C2 suchen."
   },
   "notFound": {
     "title": "Seite nicht gefunden",

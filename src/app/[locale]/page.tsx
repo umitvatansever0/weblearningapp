@@ -4,7 +4,7 @@ import { Link } from '@/i18n/navigation'
 import { AdSlot } from '@/components/AdSlot'
 import { buildAlternates, localizedUrl, SITE_NAME, OG_IMAGE, OG_LOCALE } from '@/lib/seo'
 
-const LEVELS = ['A1', 'A2', 'B1', 'B2'] as const
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const
 
 export async function generateMetadata({
   params,
