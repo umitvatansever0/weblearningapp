@@ -38247,12 +38247,144 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit6.id,
       order: 1,
       grammarTopic: 'Archaische Wörter erkennen',
-      explanationDe:
-        'Archaismen sind veraltete Wörter, die noch in Literatur oder feierlichen Texten vorkommen: "vonnöten" (statt "nötig"), "alsdann" (statt "dann").',
-      explanationEn:
-        'Archaisms are outdated words still found in literature or ceremonial texts: "vonnöten" (instead of "nötig" = necessary), "alsdann" (instead of "dann" = then).',
-      explanationTr:
-        'Arkaizmler, hâlâ edebiyatta veya törensel metinlerde bulunan eski kelimelerdir: "vonnöten" ("nötig" = gerekli yerine), "alsdann" ("dann" = sonra yerine).',
+      explanationDe: `## Archaische Wörter erkennen
+
+**Archaismen** sind **veraltete Wörter oder Formen**, die im modernen Alltag kaum noch benutzt werden. Man findet sie in **Literatur, Märchen, Bibelübersetzungen, Gedichten, feierlichen Reden** – und manchmal **ironisch** im modernen Sprachgebrauch.
+
+| Archaismus | heutiges Wort |
+| ---- | ---- |
+| vonnöten | nötig |
+| alsdann | dann, danach |
+| fürwahr | wirklich, tatsächlich |
+| gar (= sehr) | sehr (*gar schön*) |
+| ehedem / einst | früher |
+| alsbald | bald, sofort |
+| sintemal | weil (sehr veraltet) |
+| das Weib | die Frau (heute oft abwertend!) |
+| der Jüngling | der junge Mann |
+| die Maid | das Mädchen |
+| das Antlitz | das Gesicht |
+| das Gemach | das Zimmer |
+| der Odem | der Atem |
+| gülden | golden |
+| hernach | nachher |
+
+### Wo begegnet man Archaismen heute?
+- **Märchen**: *Es war **einmal** ein König, der hatte eine **gar** schöne Tochter.*
+- **Feste Wendungen**: *Das ist **vonnöten**.* / *mit **Fug und Recht*** / *mit **Kind und Kegel*** (Kegel = uneheliches Kind)
+- **Ironisch / scherzhaft**: *Holde **Maid**, darf ich Ihnen helfen?* / *Was begehrt **Ihr**, edler Herr?*
+- **Kirchensprache**: *Und Gott sprach: Es **werde** Licht!*
+
+### Bedeutungswandel – Vorsicht!
+Manche Wörter existieren noch, haben aber ihre Bedeutung **verändert**:
+| Wort | früher | heute |
+| ---- | ---- | ---- |
+| **Weib** | neutral: Frau | abwertend |
+| **geil** | fröhlich, üppig | umgangssprachlich: toll / sexuell erregt |
+| **billig** | angemessen, gerecht | preiswert / minderwertig |
+| **Dirne** | Mädchen | Prostituierte |
+
+### Merke
+Archaismen **aktiv** zu benutzen ist nur in besonderen Kontexten angemessen (Literatur, Humor). Sie **passiv zu verstehen** ist aber für das Lesen literarischer Texte auf C2-Niveau unverzichtbar.
+
+**Beispiele:**
+- *Zur Lösung des Problems ist Geduld **vonnöten**.*
+- ***Alsdann** begab er sich zur Ruhe.*
+- *Sie war **fürwahr** eine kluge Frau.*
+- ***Einst** stand hier eine Burg.*
+- *Ihr **Antlitz** strahlte vor Freude.*`,
+      explanationEn: `## Recognising archaic words
+
+**Archaisms** are **obsolete words or forms** that are hardly used in modern everyday life. You find them in **literature, fairy tales, Bible translations, poems, ceremonial speeches** – and sometimes used **ironically** in modern language.
+
+| archaism | modern word |
+| ---- | ---- |
+| vonnöten (needful) | nötig (necessary) |
+| alsdann (thereupon) | dann, danach (then) |
+| fürwahr (forsooth, verily) | wirklich, tatsächlich (really) |
+| gar (= very) | sehr (*gar schön* – very beautiful) |
+| ehedem / einst (erstwhile / once) | früher (formerly) |
+| alsbald (forthwith) | bald, sofort (soon, at once) |
+| sintemal (forasmuch as) | weil (because – very archaic) |
+| das Weib (wife, woman) | die Frau (today often derogatory!) |
+| der Jüngling (youth) | der junge Mann (young man) |
+| die Maid (maiden) | das Mädchen (girl) |
+| das Antlitz (countenance) | das Gesicht (face) |
+| das Gemach (chamber) | das Zimmer (room) |
+| der Odem (breath – poetic) | der Atem |
+| gülden (golden – poetic) | golden |
+| hernach (hereafter) | nachher (afterwards) |
+
+### Where do you meet archaisms today?
+- **Fairy tales**: *Es war **einmal** ein König, der hatte eine **gar** schöne Tochter.* (Once upon a time there was a king who had a most beautiful daughter.)
+- **Fixed phrases**: *Das ist **vonnöten**.* (That is needed.) / *mit **Fug und Recht*** (with every justification) / *mit **Kind und Kegel*** (with the whole family; Kegel = illegitimate child)
+- **Ironic / jocular**: *Holde **Maid**, darf ich Ihnen helfen?* (Fair maiden, may I help you?) / *Was begehrt **Ihr**, edler Herr?* (What do you desire, noble sir?)
+- **Church language**: *Und Gott sprach: Es **werde** Licht!* (And God said: Let there be light!)
+
+### Shifts in meaning – careful!
+Some words still exist but have **changed** their meaning:
+| word | formerly | today |
+| ---- | ---- | ---- |
+| **Weib** | neutral: woman | derogatory |
+| **geil** | merry, lush | colloquial: awesome / sexually aroused |
+| **billig** | fair, just | cheap / inferior |
+| **Dirne** | girl | prostitute |
+
+### Note
+Using archaisms **actively** is only appropriate in special contexts (literature, humour). But **understanding them passively** is essential for reading literary texts at C2 level.
+
+**Examples:**
+- *Zur Lösung des Problems ist Geduld **vonnöten**.* (Patience is needed to solve the problem.)
+- ***Alsdann** begab er sich zur Ruhe.* (Thereupon he retired to bed.)
+- *Sie war **fürwahr** eine kluge Frau.* (She was truly a clever woman.)
+- ***Einst** stand hier eine Burg.* (Once a castle stood here.)
+- *Ihr **Antlitz** strahlte vor Freude.* (Her countenance shone with joy.)`,
+      explanationTr: `## Eski kelimeleri (arkaizmleri) tanımak
+
+**Arkaizmler**, modern gündelik hayatta neredeyse hiç kullanılmayan **eskimiş kelimeler veya biçimlerdir**. **Edebiyatta, masallarda, kutsal kitap çevirilerinde, şiirlerde, tören konuşmalarında** – ve bazen modern dilde **ironik** olarak karşımıza çıkarlar.
+
+| arkaizm | bugünkü kelime |
+| ---- | ---- |
+| vonnöten (elzem) | nötig (gerekli) |
+| alsdann (akabinde) | dann, danach (sonra) |
+| fürwahr (hakikaten) | wirklich, tatsächlich (gerçekten) |
+| gar (= pek) | sehr (*gar schön* – pek güzel) |
+| ehedem / einst (eskiden / bir zamanlar) | früher |
+| alsbald (derhâl) | bald, sofort (yakında, hemen) |
+| sintemal (zira) | weil (çünkü – çok eski) |
+| das Weib (avrat) | die Frau (kadın – bugün çoğu zaman aşağılayıcı!) |
+| der Jüngling (delikanlı) | der junge Mann (genç adam) |
+| die Maid (genç kız, dilber) | das Mädchen (kız) |
+| das Antlitz (sima, çehre) | das Gesicht (yüz) |
+| das Gemach (oda, hücre) | das Zimmer |
+| der Odem (nefes – şiirsel) | der Atem |
+| gülden (altın – şiirsel) | golden |
+| hernach (badehu, sonra) | nachher |
+
+### Arkaizmler bugün nerede görülür?
+- **Masallar**: *Es war **einmal** ein König, der hatte eine **gar** schöne Tochter.* (Bir varmış bir yokmuş, pek güzel bir kızı olan bir kral varmış.)
+- **Kalıp ifadeler**: *Das ist **vonnöten**.* (Bu elzemdir.) / *mit **Fug und Recht*** (haklı olarak) / *mit **Kind und Kegel*** (çoluk çocuk; Kegel = gayrimeşru çocuk)
+- **İronik / şakacı**: *Holde **Maid**, darf ich Ihnen helfen?* (Güzel dilber, size yardım edebilir miyim?) / *Was begehrt **Ihr**, edler Herr?* (Ne arzu buyurursunuz, soylu efendim?)
+- **Kilise dili**: *Und Gott sprach: Es **werde** Licht!* (Ve Tanrı dedi ki: Işık olsun!)
+
+### Anlam değişimi – dikkat!
+Bazı kelimeler hâlâ vardır, ama anlamları **değişmiştir**:
+| kelime | eskiden | bugün |
+| ---- | ---- | ---- |
+| **Weib** | nötr: kadın | aşağılayıcı |
+| **geil** | neşeli, gür | gündelik: süper / cinsel olarak uyarılmış |
+| **billig** | uygun, adil | ucuz / değersiz |
+| **Dirne** | kız | fahişe |
+
+### Unutma
+Arkaizmleri **etkin olarak** kullanmak yalnızca özel bağlamlarda (edebiyat, mizah) uygundur. Ama onları **edilgin olarak anlamak**, C2 seviyesinde edebî metin okumak için vazgeçilmezdir.
+
+**Örnekler:**
+- *Zur Lösung des Problems ist Geduld **vonnöten**.* (Sorunun çözümü için sabır elzemdir.)
+- ***Alsdann** begab er sich zur Ruhe.* (Akabinde istirahate çekildi.)
+- *Sie war **fürwahr** eine kluge Frau.* (Hakikaten akıllı bir kadındı.)
+- ***Einst** stand hier eine Burg.* (Bir zamanlar burada bir kale vardı.)
+- *Ihr **Antlitz** strahlte vor Freude.* (Çehresi sevinçle parlıyordu.)`,
     },
   })
   await seedExercises({
@@ -38281,12 +38413,138 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit6.id,
       order: 2,
       grammarTopic: 'Gehobenes Vokabular im Alltag',
-      explanationDe:
-        'Gehobene Wörter wie "erhaben" (statt "toll"), "vortrefflich" (statt "sehr gut"), "obsolet" (statt "veraltet") verleihen Texten einen literarischen Ton.',
-      explanationEn:
-        'Elevated words like "erhaben" (sublime, instead of "toll" = great), "vortrefflich" (excellent, instead of "sehr gut"), "obsolet" (obsolete, instead of "veraltet") lend texts a literary tone.',
-      explanationTr:
-        '"Erhaben" (yüce, "toll" = harika yerine), "vortrefflich" (mükemmel, "sehr gut" yerine), "obsolet" (eskimiş, "veraltet" yerine) gibi üst düzey kelimeler metinlere edebi bir ton katar.',
+      explanationDe: `## Gehobenes Vokabular
+
+**Gehobene Wörter** sind nicht veraltet, gehören aber zu einem **höheren Stilregister**. Sie verleihen Texten einen **literarischen, feierlichen oder bildungssprachlichen** Ton. Auf C2-Niveau sollte man sie **verstehen** und gezielt **einsetzen** können.
+
+| neutral / alltäglich | gehoben |
+| ---- | ---- |
+| toll, großartig | **erhaben, grandios** |
+| sehr gut | **vortrefflich, vorzüglich, exzellent** |
+| veraltet | **obsolet, überholt** |
+| schön | **anmutig, lieblich, prächtig** |
+| traurig | **betrübt, schwermütig, wehmütig** |
+| sterben | **verscheiden, entschlafen, dahinscheiden** |
+| essen | **speisen, tafeln** |
+| gehen | **schreiten, sich begeben** |
+| bekommen | **erhalten, empfangen** |
+| sagen | **äußern, bemerken, verlauten lassen** |
+| wollen | **beabsichtigen, begehren** |
+| anfangen | **beginnen, in Angriff nehmen** |
+| Haus | **Anwesen, Domizil, Residenz** |
+| Geld | **Mittel, Vermögen** |
+
+### Bildungssprache (Fremdwörter)
+Gebildete Texte verwenden oft **Fremdwörter** aus dem Lateinischen, Griechischen oder Französischen:
+- *ambivalent* (zwiespältig), *eloquent* (redegewandt), *evident* (offensichtlich), *marginal* (geringfügig), *opportun* (passend), *prekär* (heikel, unsicher), *subtil* (fein, hintergründig), *obsolet* (überflüssig, veraltet), *Diskrepanz* (Widerspruch), *Paradigma* (Denkmuster)
+
+### Register richtig wählen
+Gehobenes Vokabular im **falschen Kontext** wirkt **gestelzt** oder **ironisch**:
+- ❌ *Ich begebe mich nun zum Supermarkt, um Brot zu erwerben.* (im Alltag komisch)
+- ✅ *Der Präsident begab sich anschließend zum Empfang.* (Nachrichten – passend)
+
+### Nuancen beachten
+| Wort | Nuance |
+| ---- | ---- |
+| *wehmütig* | traurig, mit Sehnsucht nach Vergangenem |
+| *schwermütig* | tief und dauerhaft traurig |
+| *anmutig* | schön **in der Bewegung** (Tänzerin) |
+| *prächtig* | schön **und reich ausgestattet** (Palast) |
+
+**Beispiele:**
+- *Das Konzert war ein **erhabenes** Erlebnis.*
+- *Der Wein ist **vorzüglich**.*
+- *Diese Technik ist inzwischen **obsolet**.*
+- *Er blickte **wehmütig** auf seine Jugend zurück.*
+- *Die Ministerin **äußerte** sich nicht zu den Vorwürfen.*`,
+      explanationEn: `## Elevated vocabulary
+
+**Elevated words** are not obsolete but belong to a **higher stylistic register**. They give texts a **literary, ceremonial or educated** tone. At C2 level you should be able to **understand** them and use them **deliberately**.
+
+| neutral / everyday | elevated |
+| ---- | ---- |
+| toll, großartig (great) | **erhaben, grandios** (sublime, magnificent) |
+| sehr gut (very good) | **vortrefflich, vorzüglich, exzellent** (splendid, exquisite, excellent) |
+| veraltet (outdated) | **obsolet, überholt** (obsolete, superseded) |
+| schön (beautiful) | **anmutig, lieblich, prächtig** (graceful, lovely, splendid) |
+| traurig (sad) | **betrübt, schwermütig, wehmütig** (grieved, melancholy, wistful) |
+| sterben (die) | **verscheiden, entschlafen, dahinscheiden** (pass away) |
+| essen (eat) | **speisen, tafeln** (dine, feast) |
+| gehen (go) | **schreiten, sich begeben** (stride, proceed) |
+| bekommen (get) | **erhalten, empfangen** (receive) |
+| sagen (say) | **äußern, bemerken, verlauten lassen** (express, remark, announce) |
+| wollen (want) | **beabsichtigen, begehren** (intend, desire) |
+| anfangen (start) | **beginnen, in Angriff nehmen** (commence, tackle) |
+| Haus (house) | **Anwesen, Domizil, Residenz** (estate, domicile, residence) |
+| Geld (money) | **Mittel, Vermögen** (means, assets) |
+
+### Educated vocabulary (foreign words)
+Educated texts often use **foreign words** from Latin, Greek or French:
+- *ambivalent*, *eloquent*, *evident* (obvious), *marginal* (negligible), *opportun* (opportune), *prekär* (precarious), *subtil* (subtle), *obsolet* (obsolete), *Diskrepanz* (discrepancy), *Paradigma* (paradigm)
+
+### Choosing the right register
+Elevated vocabulary in the **wrong context** sounds **stilted** or **ironic**:
+- ❌ *Ich begebe mich nun zum Supermarkt, um Brot zu erwerben.* (I shall now proceed to the supermarket to acquire bread. – odd in everyday life)
+- ✅ *Der Präsident begab sich anschließend zum Empfang.* (The president then proceeded to the reception. – news, appropriate)
+
+### Mind the nuances
+| word | nuance |
+| ---- | ---- |
+| *wehmütig* | sad, with longing for the past (wistful) |
+| *schwermütig* | deeply and lastingly sad (melancholic) |
+| *anmutig* | beautiful **in movement** (a dancer – graceful) |
+| *prächtig* | beautiful **and richly furnished** (a palace – splendid) |
+
+**Examples:**
+- *Das Konzert war ein **erhabenes** Erlebnis.* (The concert was a sublime experience.)
+- *Der Wein ist **vorzüglich**.* (The wine is exquisite.)
+- *Diese Technik ist inzwischen **obsolet**.* (This technology is now obsolete.)
+- *Er blickte **wehmütig** auf seine Jugend zurück.* (He looked back wistfully on his youth.)
+- *Die Ministerin **äußerte** sich nicht zu den Vorwürfen.* (The minister did not comment on the allegations.)`,
+      explanationTr: `## Yüksek üsluplu kelime dağarcığı
+
+**Yüksek üsluplu kelimeler** eskimiş değildir, ama **daha yüksek bir üslup düzeyine** aittir. Metinlere **edebî, törensel veya aydın dili** havası katar. C2 seviyesinde bunları **anlayabilmeli** ve bilinçli olarak **kullanabilmelisiniz**.
+
+| nötr / gündelik | yüksek üslup |
+| ---- | ---- |
+| toll, großartig (harika) | **erhaben, grandios** (yüce, görkemli) |
+| sehr gut (çok iyi) | **vortrefflich, vorzüglich, exzellent** (fevkalade, nefis, mükemmel) |
+| veraltet (eskimiş) | **obsolet, überholt** (demode, miadını doldurmuş) |
+| schön (güzel) | **anmutig, lieblich, prächtig** (zarif, sevimli, görkemli) |
+| traurig (üzgün) | **betrübt, schwermütig, wehmütig** (kederli, melankolik, hüzünlü) |
+| sterben (ölmek) | **verscheiden, entschlafen, dahinscheiden** (vefat etmek, ebediyete intikal etmek) |
+| essen (yemek) | **speisen, tafeln** (yemek yemek, ziyafet çekmek) |
+| gehen (gitmek) | **schreiten, sich begeben** (adımlamak, teşrif etmek) |
+| bekommen (almak) | **erhalten, empfangen** (teslim almak, kabul etmek) |
+| sagen (söylemek) | **äußern, bemerken, verlauten lassen** (dile getirmek, belirtmek, beyan etmek) |
+| wollen (istemek) | **beabsichtigen, begehren** (niyet etmek, arzulamak) |
+| anfangen (başlamak) | **beginnen, in Angriff nehmen** (başlamak, ele almak) |
+| Haus (ev) | **Anwesen, Domizil, Residenz** (malikâne, ikametgâh, konut) |
+| Geld (para) | **Mittel, Vermögen** (imkânlar, servet) |
+
+### Aydın dili (yabancı kökenli kelimeler)
+Eğitimli metinler sıklıkla Latince, Yunanca veya Fransızca kökenli **yabancı kelimeler** kullanır:
+- *ambivalent* (ikircikli), *eloquent* (belagatli), *evident* (apaçık), *marginal* (önemsiz), *opportun* (yerinde), *prekär* (nazik, güvencesiz), *subtil* (ince), *obsolet* (gereksiz, demode), *Diskrepanz* (tutarsızlık), *Paradigma* (paradigma)
+
+### Doğru düzeyi seçmek
+**Yanlış bağlamda** yüksek üsluplu kelimeler **yapmacık** veya **ironik** durur:
+- ❌ *Ich begebe mich nun zum Supermarkt, um Brot zu erwerben.* (Şimdi ekmek temin etmek üzere süpermarkete teşrif ediyorum. – günlük hayatta komik)
+- ✅ *Der Präsident begab sich anschließend zum Empfang.* (Cumhurbaşkanı ardından resepsiyona geçti. – haber, uygun)
+
+### İnceliklere dikkat
+| kelime | incelik |
+| ---- | ---- |
+| *wehmütig* | geçmişe özlemle hüzünlü |
+| *schwermütig* | derin ve kalıcı biçimde hüzünlü (melankolik) |
+| *anmutig* | **hareket hâlinde** güzel (dansçı – zarif) |
+| *prächtig* | güzel **ve zengin döşenmiş** (saray – görkemli) |
+
+**Örnekler:**
+- *Das Konzert war ein **erhabenes** Erlebnis.* (Konser yüce bir deneyimdi.)
+- *Der Wein ist **vorzüglich**.* (Şarap nefis.)
+- *Diese Technik ist inzwischen **obsolet**.* (Bu teknik artık demode.)
+- *Er blickte **wehmütig** auf seine Jugend zurück.* (Gençliğine hüzünle baktı.)
+- *Die Ministerin **äußerte** sich nicht zu den Vorwürfen.* (Bakan iddialar hakkında açıklama yapmadı.)`,
     },
   })
   await seedExercises({
@@ -38315,12 +38573,126 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit6.id,
       order: 3,
       grammarTopic: 'Archaische Verbformen',
-      explanationDe:
-        'In älteren Texten findet man Formen wie "ward" (statt "wurde") oder "spricht er" in Inversion ohne "dass". Diese wirken heute poetisch oder feierlich.',
-      explanationEn:
-        'Older texts contain forms like "ward" (instead of "wurde" = became) or inverted "spricht er" without "dass". These sound poetic or solemn today.',
-      explanationTr:
-        'Eski metinlerde "ward" ("wurde" = oldu yerine) veya "dass" olmadan devrik "spricht er" gibi biçimler bulunur. Bunlar bugün şiirsel veya törensel görünür.',
+      explanationDe: `## Archaische Verbformen und Satzstrukturen
+
+In älteren Texten – von Goethe bis zu Märchen und Kirchenliedern – finden sich **Verbformen und Satzmuster**, die heute **poetisch, feierlich oder altertümlich** wirken.
+
+### Veraltete Verbformen
+| archaisch | heute | Beispiel |
+| ---- | ---- | ---- |
+| **ward** | wurde | *Und es **ward** Licht.* |
+| **frug** | fragte | *Er **frug** nach dem Weg.* |
+| **buk** | backte | *Sie **buk** einen Kuchen.* |
+| **gülte** | gälte | *Wenn das noch **gülte** …* |
+| **stund** | stand | *Da **stund** ein Baum.* |
+| **ich hab'** / **sah'n** | ich habe / sahen | (poetische Verkürzung) |
+| **-e** im Dativ | ohne -e | *dem Manne, im Hause, zu Grabe* |
+
+### Dativ-e – lebt in festen Wendungen weiter
+- *nach Hause*, *zu Hause*, *im Grunde*, *zu Grabe tragen*, *auf dem Lande*, *im Jahre 1900*, *in diesem Sinne*
+
+### Archaische Satzmuster
+1. **Verbstellung ohne „wenn"/„dass"** in Bedingungen und Wünschen:
+   - *„**Spricht er** die Wahrheit, so soll er frei sein."* (= Wenn er die Wahrheit spricht, …)
+   - *„**Möge** Gott dich schützen!"* (Wunsch)
+2. **Nachgestelltes Adjektiv/Possessiv** (poetisch):
+   - *Röslein **rot*** (Goethe) = rotes Röslein; *Vater **unser*** = unser Vater
+3. **Genitiv vor dem Nomen**:
+   - *des Königs Tochter* (= die Tochter des Königs), *des Lebens Sinn*
+4. **„tun" + Infinitiv** (heute umgangssprachlich, früher literarisch): *Sie **tat** ihm die Hand **reichen**.*
+5. **Konjunktiv I im Wunsch / Aufforderung**: *Es **lebe** die Freiheit!* / *Man **nehme** 200 g Mehl.* (Kochrezept – heute noch üblich!)
+
+### Wo lebt das heute noch?
+- **Rezepte**: *Man **nehme** drei Eier …*
+- **Feierliche Formeln**: *Hoch **lebe** das Brautpaar!* / *Gott **sei** Dank!*
+- **Werbung & Titel** (nostalgischer Effekt): *„Des Kaisers neue Kleider"*
+
+**Beispiele:**
+- *Und Gott sprach: Es **werde** Licht. Und es **ward** Licht.*
+- ***Des Pudels Kern*** (Goethe, Faust) = der eigentliche Kern der Sache
+- ***Möge** die Macht mit dir sein!*
+- *Man **nehme** einen Liter Milch und erhitze ihn langsam.*
+- ***Ist** das Werk vollendet, **so** ruht der Meister.*`,
+      explanationEn: `## Archaic verb forms and sentence structures
+
+In older texts – from Goethe to fairy tales and hymns – there are **verb forms and sentence patterns** that seem **poetic, solemn or old-fashioned** today.
+
+### Obsolete verb forms
+| archaic | modern | example |
+| ---- | ---- | ---- |
+| **ward** | wurde (became / was) | *Und es **ward** Licht.* (And there was light.) |
+| **frug** | fragte (asked) | *Er **frug** nach dem Weg.* (He asked the way.) |
+| **buk** | backte (baked) | *Sie **buk** einen Kuchen.* (She baked a cake.) |
+| **gülte** | gälte (would apply) | *Wenn das noch **gülte** …* (If that still applied …) |
+| **stund** | stand (stood) | *Da **stund** ein Baum.* (There stood a tree.) |
+| **ich hab'** / **sah'n** | ich habe / sahen | (poetic contraction) |
+| **-e** in the dative | without -e | *dem Manne, im Hause, zu Grabe* |
+
+### The dative -e – lives on in fixed phrases
+- *nach Hause* (home), *zu Hause* (at home), *im Grunde* (basically), *zu Grabe tragen* (lay to rest), *auf dem Lande* (in the country), *im Jahre 1900* (in the year 1900), *in diesem Sinne* (in this spirit)
+
+### Archaic sentence patterns
+1. **Verb-first order without "wenn"/"dass"** in conditions and wishes:
+   - *„**Spricht er** die Wahrheit, so soll er frei sein."* (Speak he the truth, he shall be free. = If he speaks the truth …)
+   - *„**Möge** Gott dich schützen!"* (May God protect you!)
+2. **Postposed adjective/possessive** (poetic):
+   - *Röslein **rot*** (Goethe) = little red rose; *Vater **unser*** = Our Father
+3. **Genitive before the noun**:
+   - *des Königs Tochter* (the king's daughter), *des Lebens Sinn* (life's meaning)
+4. **"tun" + infinitive** (colloquial today, formerly literary): *Sie **tat** ihm die Hand **reichen**.* (She did give him her hand.)
+5. **Konjunktiv I in wishes / instructions**: *Es **lebe** die Freiheit!* (Long live freedom!) / *Man **nehme** 200 g Mehl.* (Take 200 g of flour. – still common in recipes!)
+
+### Where does this survive today?
+- **Recipes**: *Man **nehme** drei Eier …* (Take three eggs …)
+- **Ceremonial formulas**: *Hoch **lebe** das Brautpaar!* (Long live the bride and groom!) / *Gott **sei** Dank!* (Thank God!)
+- **Advertising & titles** (nostalgic effect): *„Des Kaisers neue Kleider"* (The Emperor's New Clothes)
+
+**Examples:**
+- *Und Gott sprach: Es **werde** Licht. Und es **ward** Licht.* (And God said: Let there be light. And there was light.)
+- ***Des Pudels Kern*** (Goethe, Faust) = the heart of the matter
+- ***Möge** die Macht mit dir sein!* (May the Force be with you!)
+- *Man **nehme** einen Liter Milch und erhitze ihn langsam.* (Take a litre of milk and heat it slowly.)
+- ***Ist** das Werk vollendet, **so** ruht der Meister.* (When the work is complete, the master rests.)`,
+      explanationTr: `## Eski fiil biçimleri ve cümle yapıları
+
+Eski metinlerde – Goethe'den masallara ve kilise ilahilerine kadar – bugün **şiirsel, törensel veya eski** görünen **fiil biçimleri ve cümle kalıpları** bulunur.
+
+### Eskimiş fiil biçimleri
+| eski | bugün | örnek |
+| ---- | ---- | ---- |
+| **ward** | wurde (oldu) | *Und es **ward** Licht.* (Ve ışık oldu.) |
+| **frug** | fragte (sordu) | *Er **frug** nach dem Weg.* (Yolu sordu.) |
+| **buk** | backte (pişirdi) | *Sie **buk** einen Kuchen.* (Bir pasta pişirdi.) |
+| **gülte** | gälte (geçerli olsaydı) | *Wenn das noch **gülte** …* (Bu hâlâ geçerli olsaydı …) |
+| **stund** | stand (duruyordu) | *Da **stund** ein Baum.* (Orada bir ağaç duruyordu.) |
+| **ich hab'** / **sah'n** | ich habe / sahen | (şiirsel kısaltma) |
+| Dativ'de **-e** | -e'siz | *dem Manne, im Hause, zu Grabe* |
+
+### Dativ -e'si – kalıp ifadelerde yaşıyor
+- *nach Hause* (eve), *zu Hause* (evde), *im Grunde* (aslında), *zu Grabe tragen* (toprağa vermek), *auf dem Lande* (taşrada), *im Jahre 1900* (1900 yılında), *in diesem Sinne* (bu anlamda)
+
+### Eski cümle kalıpları
+1. Koşul ve dileklerde **„wenn"/„dass" olmadan fiille başlama**:
+   - *„**Spricht er** die Wahrheit, so soll er frei sein."* (Doğruyu söylerse özgür olsun.)
+   - *„**Möge** Gott dich schützen!"* (Tanrı seni korusun!)
+2. **Sonra gelen sıfat/iyelik** (şiirsel):
+   - *Röslein **rot*** (Goethe) = kırmızı gülcük; *Vater **unser*** = Babamız (dua)
+3. **İsmin önünde Genitiv**:
+   - *des Königs Tochter* (kralın kızı), *des Lebens Sinn* (hayatın anlamı)
+4. **„tun" + mastar** (bugün gündelik, eskiden edebî): *Sie **tat** ihm die Hand **reichen**.* (Ona elini uzattı.)
+5. **Dilek / talimatta Konjunktiv I**: *Es **lebe** die Freiheit!* (Yaşasın özgürlük!) / *Man **nehme** 200 g Mehl.* (200 g un alınır. – yemek tariflerinde hâlâ yaygın!)
+
+### Bugün nerede yaşıyor?
+- **Yemek tarifleri**: *Man **nehme** drei Eier …* (Üç yumurta alınır …)
+- **Törensel kalıplar**: *Hoch **lebe** das Brautpaar!* (Yaşasın gelin ve damat!) / *Gott **sei** Dank!* (Allah'a şükür!)
+- **Reklam ve başlıklar** (nostaljik etki): *„Des Kaisers neue Kleider"* (Kralın Yeni Giysileri)
+
+**Örnekler:**
+- *Und Gott sprach: Es **werde** Licht. Und es **ward** Licht.* (Ve Tanrı dedi ki: Işık olsun. Ve ışık oldu.)
+- ***Des Pudels Kern*** (Goethe, Faust) = işin özü
+- ***Möge** die Macht mit dir sein!* (Güç seninle olsun!)
+- *Man **nehme** einen Liter Milch und erhitze ihn langsam.* (Bir litre süt alınır ve yavaşça ısıtılır.)
+- ***Ist** das Werk vollendet, **so** ruht der Meister.* (Eser tamamlanınca usta dinlenir.)`,
     },
   })
   await seedExercises({
@@ -38349,12 +38721,114 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit6.id,
       order: 4,
       grammarTopic: 'Übung: Archaismen & gehobenes Vokabular',
-      explanationDe:
-        'Wiederholung: Archaismen und gehobenes Vokabular verleihen Texten literarischen oder feierlichen Charakter, sind aber im Alltag unüblich.',
-      explanationEn:
-        'Review: archaisms and elevated vocabulary give texts a literary or solemn character but are unusual in everyday speech.',
-      explanationTr:
-        'Tekrar: arkaizmler ve üst düzey kelimeler metinlere edebi veya törensel bir karakter katar, ancak günlük konuşmada alışılmadıktır.',
+      explanationDe: `## Übung: Archaismen & gehobenes Vokabular – Zusammenfassung
+
+Archaismen und gehobenes Vokabular verleihen Texten einen **literarischen, feierlichen oder ironischen** Charakter. Im Alltag sind sie **unüblich** – wer sie aber versteht, kann **Literatur, Reden und gehobenen Journalismus** voll erfassen.
+
+### Drei Stilschichten
+| Schicht | Beispiel | Wirkung |
+| ---- | ---- | ---- |
+| **archaisch** | *Alsdann **ward** das Gemach erleuchtet.* | altertümlich, märchenhaft |
+| **gehoben** | *Anschließend **wurde** der Saal **prächtig** erleuchtet.* | feierlich, literarisch |
+| **neutral** | *Dann wurde das Zimmer hell gemacht.* | sachlich, alltäglich |
+
+### Überblick
+| Kategorie | Beispiele |
+| ---- | ---- |
+| archaische Wörter | vonnöten, alsdann, fürwahr, einst, Antlitz, Gemach, Maid |
+| archaische Formen | ward, frug, buk, dem Manne, Röslein rot, des Königs Tochter |
+| gehobene Wörter | erhaben, vortrefflich, obsolet, wehmütig, speisen, sich begeben |
+| Bildungswörter | eloquent, ambivalent, prekär, subtil, evident |
+| feste Reste im Alltag | nach Hause, im Grunde, Gott sei Dank, man nehme |
+
+### Funktionen
+1. **Literarische Atmosphäre** (historische Romane, Fantasy)
+2. **Feierlichkeit** (Trauerreden, Hochzeitsreden, Jubiläen)
+3. **Humor und Ironie**: *Was **begehrt** der **edle Herr** zum Frühstück?*
+4. **Bildungssignal** in Essay und Feuilleton
+
+### Häufige Fehler
+- ❌ Archaismen in sachlichen E-Mails → wirkt komisch oder arrogant.
+- ❌ *Weib* als neutrales Wort → heute **abwertend**!
+- ❌ Fremdwörter ohne genaue Kenntnis der Bedeutung → peinliche Fehler (*evident* ≠ *eventuell*!).
+
+**Beispiele:**
+- *Zu diesem Anlass ist festliche Kleidung **vonnöten**.*
+- *Der Redner sprach **eloquent** und **subtil**.*
+- *Sie **entschlief** friedlich im Kreise ihrer Familie.* (Traueranzeige)
+- *„Holde **Maid**", scherzte er, „darf ich Ihren Koffer tragen?"*`,
+      explanationEn: `## Practice: archaisms & elevated vocabulary – summary
+
+Archaisms and elevated vocabulary give texts a **literary, solemn or ironic** character. They are **unusual** in everyday life – but understanding them lets you fully grasp **literature, speeches and quality journalism**.
+
+### Three stylistic layers
+| layer | example | effect |
+| ---- | ---- | ---- |
+| **archaic** | *Alsdann **ward** das Gemach erleuchtet.* (Thereupon the chamber was illuminated.) | old-fashioned, fairy-tale-like |
+| **elevated** | *Anschließend **wurde** der Saal **prächtig** erleuchtet.* (Then the hall was splendidly lit.) | solemn, literary |
+| **neutral** | *Dann wurde das Zimmer hell gemacht.* (Then the room was lit up.) | factual, everyday |
+
+### Overview
+| category | examples |
+| ---- | ---- |
+| archaic words | vonnöten, alsdann, fürwahr, einst, Antlitz, Gemach, Maid |
+| archaic forms | ward, frug, buk, dem Manne, Röslein rot, des Königs Tochter |
+| elevated words | erhaben, vortrefflich, obsolet, wehmütig, speisen, sich begeben |
+| educated vocabulary | eloquent, ambivalent, prekär, subtil, evident |
+| fixed remnants in everyday use | nach Hause, im Grunde, Gott sei Dank, man nehme |
+
+### Functions
+1. **Literary atmosphere** (historical novels, fantasy)
+2. **Solemnity** (eulogies, wedding speeches, anniversaries)
+3. **Humour and irony**: *Was **begehrt** der **edle Herr** zum Frühstück?* (What does the noble gentleman desire for breakfast?)
+4. **Signal of education** in essays and arts pages
+
+### Common mistakes
+- ❌ Archaisms in factual e-mails → sound funny or arrogant.
+- ❌ *Weib* as a neutral word → **derogatory** today!
+- ❌ Foreign words without knowing their exact meaning → embarrassing errors (*evident* "obvious" ≠ *eventuell* "possibly"!).
+
+**Examples:**
+- *Zu diesem Anlass ist festliche Kleidung **vonnöten**.* (Formal dress is required for this occasion.)
+- *Der Redner sprach **eloquent** und **subtil**.* (The speaker spoke eloquently and subtly.)
+- *Sie **entschlief** friedlich im Kreise ihrer Familie.* (She passed away peacefully surrounded by her family. – obituary)
+- *„Holde **Maid**", scherzte er, „darf ich Ihren Koffer tragen?"* ("Fair maiden," he joked, "may I carry your suitcase?")`,
+      explanationTr: `## Alıştırma: Arkaizmler ve yüksek üslup – özet
+
+Arkaizmler ve yüksek üsluplu kelimeler metinlere **edebî, törensel veya ironik** bir karakter kazandırır. Günlük hayatta **alışılmadıktır** – ama onları anlayan **edebiyatı, konuşmaları ve nitelikli gazeteciliği** tam olarak kavrayabilir.
+
+### Üç üslup katmanı
+| katman | örnek | etkisi |
+| ---- | ---- | ---- |
+| **eski (arkaik)** | *Alsdann **ward** das Gemach erleuchtet.* (Akabinde hücre aydınlatıldı.) | eski, masalsı |
+| **yüksek** | *Anschließend **wurde** der Saal **prächtig** erleuchtet.* (Ardından salon görkemli biçimde aydınlatıldı.) | törensel, edebî |
+| **nötr** | *Dann wurde das Zimmer hell gemacht.* (Sonra oda aydınlatıldı.) | nesnel, gündelik |
+
+### Genel bakış
+| kategori | örnekler |
+| ---- | ---- |
+| eski kelimeler | vonnöten, alsdann, fürwahr, einst, Antlitz, Gemach, Maid |
+| eski biçimler | ward, frug, buk, dem Manne, Röslein rot, des Königs Tochter |
+| yüksek üsluplu kelimeler | erhaben, vortrefflich, obsolet, wehmütig, speisen, sich begeben |
+| aydın dili kelimeleri | eloquent, ambivalent, prekär, subtil, evident |
+| günlük dilde kalan izler | nach Hause, im Grunde, Gott sei Dank, man nehme |
+
+### İşlevleri
+1. **Edebî atmosfer** (tarihî romanlar, fantastik edebiyat)
+2. **Törensellik** (cenaze konuşmaları, düğün konuşmaları, yıl dönümleri)
+3. **Mizah ve ironi**: *Was **begehrt** der **edle Herr** zum Frühstück?* (Soylu efendimiz kahvaltıda ne arzu ederler?)
+4. Denemede ve kültür-sanat sayfalarında **eğitim göstergesi**
+
+### Sık yapılan hatalar
+- ❌ Nesnel e-postalarda arkaizmler → komik veya kibirli durur.
+- ❌ *Weib*'i nötr kelime olarak kullanmak → bugün **aşağılayıcı**!
+- ❌ Anlamını tam bilmeden yabancı kelime kullanmak → utandırıcı hatalar (*evident* „apaçık" ≠ *eventuell* „belki"!).
+
+**Örnekler:**
+- *Zu diesem Anlass ist festliche Kleidung **vonnöten**.* (Bu vesileyle resmî kıyafet elzemdir.)
+- *Der Redner sprach **eloquent** und **subtil**.* (Konuşmacı belagatli ve ince bir dille konuştu.)
+- *Sie **entschlief** friedlich im Kreise ihrer Familie.* (Ailesinin arasında huzur içinde hayata gözlerini yumdu. – vefat ilanı)
+- *„Holde **Maid**", scherzte er, „darf ich Ihren Koffer tragen?"* („Güzel dilber", diye şaka yaptı, „bavulunuzu taşıyabilir miyim?")`,
     },
   })
   await seedExercises({
@@ -38407,12 +38881,126 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit7.id,
       order: 1,
       grammarTopic: 'Konjunktiv I vs. Konjunktiv II in der indirekten Rede',
-      explanationDe:
-        'In sorgfältiger Schriftsprache markiert Konjunktiv I neutrale Redewiedergabe ("er sagt, er komme"), während Konjunktiv II oft Zweifel des Sprechers an der Aussage andeutet ("er sagt, er käme" klingt skeptischer).',
-      explanationEn:
-        'In careful written German, Konjunktiv I marks neutral reported speech ("er sagt, er komme"), while Konjunktiv II often hints at the speaker\'s doubt about the claim ("er sagt, er käme" sounds more skeptical).',
-      explanationTr:
-        'Özenli yazı dilinde Konjunktiv I nötr aktarımı işaretler ("er sagt, er komme"), Konjunktiv II ise genellikle konuşmacının iddiaya şüpheyle yaklaştığını ima eder ("er sagt, er käme" daha şüpheci gelir).',
+      explanationDe: `## Konjunktiv I vs. Konjunktiv II in der indirekten Rede
+
+In sorgfältiger Schriftsprache ist die Wahl zwischen Konjunktiv I und II **nicht nur grammatisch**, sondern kann auch eine **Haltung** ausdrücken.
+
+| Form | Wirkung | Beispiel |
+| ---- | ---- | ---- |
+| **Indikativ** | Sprecher hält Aussage für **wahr** oder ist neutral-umgangssprachlich | *Er sagt, er **kommt** morgen.* |
+| **Konjunktiv I** | **neutrale**, distanzierte Wiedergabe | *Er sagt, er **komme** morgen.* |
+| **Konjunktiv II** (statt eindeutigem Konj. I) | oft **Zweifel / Skepsis** des Berichtenden | *Er sagt, er **käme** morgen.* (klingt skeptischer) |
+
+### Die Grundregel (normativ)
+Konjunktiv II ist in der indirekten Rede eigentlich nur **Ersatzform**, wenn Konjunktiv I und Indikativ gleich sind:
+- *Sie sagen, sie **haben** Zeit.* → Konj. I = Indikativ → *Sie sagen, sie **hätten** Zeit.* (neutral, korrekt)
+
+### Die stilistische Nuance
+Wenn der Konjunktiv I **eindeutig** wäre, der Schreiber aber **trotzdem** Konjunktiv II wählt, kann das **Distanz oder Zweifel** signalisieren:
+- *Der Minister erklärt, die Renten **seien** sicher.* (neutral berichtet)
+- *Der Minister erklärt, die Renten **wären** sicher.* (Unterton: Das glaube ich nicht ganz.)
+
+**Achtung:** Im **gesprochenen Deutsch** benutzen viele Menschen Konjunktiv II ganz ohne diese Nuance – einfach, weil er geläufiger ist. Die Zweifel-Lesart gilt vor allem für **sorgfältige Schriftsprache**.
+
+### Weitere Mittel, um Zweifel auszudrücken
+| Mittel | Beispiel |
+| ---- | ---- |
+| **angeblich** | *Er ist **angeblich** krank.* |
+| **sollen** | *Er **soll** krank sein.* (= man sagt) |
+| **wollen** | *Er **will** krank gewesen sein.* (= er behauptet) |
+| **vorgeben / behaupten** | *Er **gibt vor**, krank zu sein.* |
+| **Anführungszeichen** | *Seine „Krankheit" …* |
+
+### Vergleich in einem Zeitungstext
+- *Der Firmenchef betonte, das Unternehmen **sei** gesund.* (neutral)
+- *Der Firmenchef betonte, das Unternehmen **wäre** gesund – die Zahlen sprechen eine andere Sprache.* (skeptisch)
+- *Der Firmenchef **will** von den Problemen nichts **gewusst haben**.* (deutlich zweifelnd)
+
+**Beispiele:**
+- *Sie behauptet, sie **habe** das Geld zurückgezahlt.* (neutral)
+- *Sie behauptet, sie **hätte** das Geld zurückgezahlt.* (leicht zweifelnd)
+- *Der Verdächtige **will** zur Tatzeit im Kino **gewesen sein**.*
+- *Der Politiker **soll** Bestechungsgeld angenommen **haben**.*`,
+      explanationEn: `## Konjunktiv I vs. Konjunktiv II in reported speech
+
+In careful written German, the choice between Konjunktiv I and II is **not only grammatical** but can also express an **attitude**.
+
+| form | effect | example |
+| ---- | ---- | ---- |
+| **indicative** | speaker considers the statement **true**, or is neutral-colloquial | *Er sagt, er **kommt** morgen.* (He says he's coming tomorrow.) |
+| **Konjunktiv I** | **neutral**, detached reporting | *Er sagt, er **komme** morgen.* |
+| **Konjunktiv II** (instead of an unambiguous Konj. I) | often **doubt / scepticism** on the reporter's part | *Er sagt, er **käme** morgen.* (sounds more sceptical) |
+
+### The basic rule (prescriptive)
+In reported speech, Konjunktiv II is really only a **substitute** when Konjunktiv I and the indicative are identical:
+- *Sie sagen, sie **haben** Zeit.* → Konj. I = indicative → *Sie sagen, sie **hätten** Zeit.* (neutral, correct – They say they have time.)
+
+### The stylistic nuance
+If Konjunktiv I would be **unambiguous** but the writer **still** chooses Konjunktiv II, this can signal **distance or doubt**:
+- *Der Minister erklärt, die Renten **seien** sicher.* (The minister states pensions are safe – neutral report)
+- *Der Minister erklärt, die Renten **wären** sicher.* (undertone: I don't quite believe it.)
+
+**Note:** in **spoken German**, many people use Konjunktiv II without this nuance at all – simply because it's more familiar. The "doubt" reading applies mainly to **careful written language**.
+
+### Other ways of expressing doubt
+| device | example |
+| ---- | ---- |
+| **angeblich** (allegedly) | *Er ist **angeblich** krank.* (He's supposedly ill.) |
+| **sollen** | *Er **soll** krank sein.* (He is said to be ill.) |
+| **wollen** | *Er **will** krank gewesen sein.* (He claims to have been ill.) |
+| **vorgeben / behaupten** (pretend / claim) | *Er **gibt vor**, krank zu sein.* (He pretends to be ill.) |
+| **quotation marks** | *Seine „Krankheit" …* (His "illness" …) |
+
+### Comparison in a newspaper text
+- *Der Firmenchef betonte, das Unternehmen **sei** gesund.* (The CEO stressed the company was healthy. – neutral)
+- *Der Firmenchef betonte, das Unternehmen **wäre** gesund – die Zahlen sprechen eine andere Sprache.* (… was healthy – the figures tell a different story. – sceptical)
+- *Der Firmenchef **will** von den Problemen nichts **gewusst haben**.* (The CEO claims to have known nothing about the problems. – clearly doubtful)
+
+**Examples:**
+- *Sie behauptet, sie **habe** das Geld zurückgezahlt.* (She claims she paid the money back. – neutral)
+- *Sie behauptet, sie **hätte** das Geld zurückgezahlt.* (She claims she paid it back. – slightly doubtful)
+- *Der Verdächtige **will** zur Tatzeit im Kino **gewesen sein**.* (The suspect claims to have been at the cinema at the time of the crime.)
+- *Der Politiker **soll** Bestechungsgeld angenommen **haben**.* (The politician is alleged to have accepted bribes.)`,
+      explanationTr: `## Dolaylı anlatımda Konjunktiv I – Konjunktiv II
+
+Özenli yazı dilinde Konjunktiv I ile II arasındaki seçim **yalnızca dilbilgisel değildir**; bir **tutumu** da ifade edebilir.
+
+| biçim | etkisi | örnek |
+| ---- | ---- | ---- |
+| **Indikativ** | konuşan ifadeyi **doğru** kabul ediyor veya nötr-gündelik konuşuyor | *Er sagt, er **kommt** morgen.* (Yarın geleceğini söylüyor.) |
+| **Konjunktiv I** | **tarafsız**, mesafeli aktarım | *Er sagt, er **komme** morgen.* |
+| **Konjunktiv II** (açık bir Konj. I yerine) | çoğu zaman aktaranın **şüphesi / kuşkuculuğu** | *Er sagt, er **käme** morgen.* (daha kuşkulu duyulur) |
+
+### Temel kural (normatif)
+Dolaylı anlatımda Konjunktiv II aslında yalnızca Konjunktiv I ile Indikativ aynı olduğunda **ikame biçimdir**:
+- *Sie sagen, sie **haben** Zeit.* → Konj. I = Indikativ → *Sie sagen, sie **hätten** Zeit.* (tarafsız, doğru – Vakitleri olduğunu söylüyorlar.)
+
+### Üslup inceliği
+Konjunktiv I **açık** olacakken yazar **yine de** Konjunktiv II'yi seçerse, bu **mesafe veya şüphe** işareti olabilir:
+- *Der Minister erklärt, die Renten **seien** sicher.* (Bakan emekli maaşlarının güvende olduğunu açıklıyor – tarafsız aktarım)
+- *Der Minister erklärt, die Renten **wären** sicher.* (alt anlam: Buna pek inanmıyorum.)
+
+**Dikkat:** **Konuşma dilinde** birçok kişi Konjunktiv II'yi bu incelik olmadan kullanır – yalnızca daha alışılmış olduğu için. Şüphe okuması özellikle **özenli yazı dili** için geçerlidir.
+
+### Şüphe bildirmenin diğer yolları
+| araç | örnek |
+| ---- | ---- |
+| **angeblich** (güya) | *Er ist **angeblich** krank.* (Güya hastaymış.) |
+| **sollen** | *Er **soll** krank sein.* (Hasta olduğu söyleniyor.) |
+| **wollen** | *Er **will** krank gewesen sein.* (Hasta olduğunu iddia ediyor.) |
+| **vorgeben / behaupten** (… numarası yapmak / iddia etmek) | *Er **gibt vor**, krank zu sein.* (Hasta numarası yapıyor.) |
+| **tırnak işareti** | *Seine „Krankheit" …* (Onun „hastalığı" …) |
+
+### Bir gazete metninde karşılaştırma
+- *Der Firmenchef betonte, das Unternehmen **sei** gesund.* (Şirket yöneticisi şirketin sağlıklı olduğunu vurguladı. – tarafsız)
+- *Der Firmenchef betonte, das Unternehmen **wäre** gesund – die Zahlen sprechen eine andere Sprache.* (… sağlıklıymış – rakamlar başka bir şey söylüyor. – kuşkulu)
+- *Der Firmenchef **will** von den Problemen nichts **gewusst haben**.* (Şirket yöneticisi sorunlardan haberi olmadığını iddia ediyor. – açıkça şüpheli)
+
+**Örnekler:**
+- *Sie behauptet, sie **habe** das Geld zurückgezahlt.* (Parayı geri ödediğini iddia ediyor. – tarafsız)
+- *Sie behauptet, sie **hätte** das Geld zurückgezahlt.* (Parayı geri ödediğini iddia ediyor. – hafif şüpheli)
+- *Der Verdächtige **will** zur Tatzeit im Kino **gewesen sein**.* (Şüpheli, olay sırasında sinemada olduğunu iddia ediyor.)
+- *Der Politiker **soll** Bestechungsgeld angenommen **haben**.* (Politikacının rüşvet aldığı iddia ediliyor.)`,
     },
   })
   await seedExercises({
@@ -38441,12 +39029,126 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit7.id,
       order: 2,
       grammarTopic: 'Konjunktiv in höflichen Formulierungen',
-      explanationDe:
-        'Konjunktiv II macht Bitten und Vorschläge höflicher: "Könnten Sie mir helfen?" statt "Können Sie mir helfen?" klingt distanzierter und formeller.',
-      explanationEn:
-        'Konjunktiv II makes requests and suggestions more polite: "Könnten Sie mir helfen?" (Could you help me?) instead of "Können Sie mir helfen?" (Can you help me?) sounds more formal and reserved.',
-      explanationTr:
-        'Konjunktiv II, rica ve önerileri daha kibar yapar: "Können Sie mir helfen?" yerine "Könnten Sie mir helfen?" daha mesafeli ve resmi gelir.',
+      explanationDe: `## Konjunktiv II in höflichen Formulierungen
+
+Der **Konjunktiv II** macht Bitten, Fragen, Vorschläge und Kritik **höflicher, vorsichtiger und distanzierter**. Auf C2-Niveau geht es darum, die **feinen Abstufungen** zu beherrschen.
+
+### Höflichkeitsstufen einer Bitte
+| Stufe | Beispiel |
+| ---- | ---- |
+| direkt (Imperativ) | *Helfen Sie mir!* |
+| neutral (Indikativ) | *Können Sie mir helfen?* |
+| höflich (Konj. II) | ***Könnten** Sie mir helfen?* |
+| sehr höflich | ***Könnten** Sie mir **vielleicht** helfen?* |
+| äußerst höflich / formell | ***Wären** Sie so freundlich, mir zu helfen?* |
+| distanziert-formell | *Ich **wäre** Ihnen sehr verbunden, wenn Sie mir helfen **könnten**.* |
+
+### Typische Formen
+| Funktion | Formulierung |
+| ---- | ---- |
+| **Bitte** | *Würden Sie bitte …? / Hätten Sie kurz Zeit? / Dürfte ich Sie bitten, …?* |
+| **Wunsch** | *Ich hätte gern … / Ich würde gern … / Ich möchte …* |
+| **Vorschlag** | *Wir könnten … / Wie wäre es, wenn …? / Man sollte vielleicht …* |
+| **Rat** | *An Ihrer Stelle würde ich … / Sie sollten …* |
+| **vorsichtige Meinung** | *Ich würde sagen, … / Ich hätte gedacht, dass …* |
+| **Kritik abschwächen** | *Es wäre schön, wenn … / Wäre es nicht besser, …?* |
+| **Ablehnung abschwächen** | *Das würde ich so nicht sagen. / Da wäre ich vorsichtig.* |
+
+### Konjunktiv II der Vergangenheit für Höflichkeit
+Besonders vorsichtig – man tut so, als sei die Bitte bereits Vergangenheit:
+- *Ich **hätte** da noch eine Frage.* (= Ich habe eine Frage.)
+- *Ich **wollte** Sie fragen, ob …* (Präteritum als Höflichkeitsform)
+- *Das **wäre** dann alles.* (beim Bezahlen)
+
+### Interkulturell wichtig
+Im Deutschen gelten zu direkte Bitten (*Geben Sie mir …*) im Service oder Büro schnell als **unhöflich**. Konjunktiv II + **bitte** + **vielleicht / mal / kurz** ist die sichere Wahl.
+
+**Beispiele:**
+- ***Könnten** Sie mir bitte das Salz reichen?*
+- ***Hätten** Sie morgen um 10 Uhr Zeit für ein kurzes Gespräch?*
+- ***Wäre** es möglich, den Termin zu verschieben?*
+- *Ich **würde** vorschlagen, dass wir eine Pause machen.*
+- *Es **wäre** schön, wenn Sie das nächste Mal pünktlich **kämen**.* (höfliche Kritik)`,
+      explanationEn: `## Konjunktiv II in polite phrases
+
+**Konjunktiv II** makes requests, questions, suggestions and criticism **more polite, cautious and distant**. At C2 level the point is to master the **fine gradations**.
+
+### Politeness levels of a request
+| level | example |
+| ---- | ---- |
+| direct (imperative) | *Helfen Sie mir!* (Help me!) |
+| neutral (indicative) | *Können Sie mir helfen?* (Can you help me?) |
+| polite (Konj. II) | ***Könnten** Sie mir helfen?* (Could you help me?) |
+| very polite | ***Könnten** Sie mir **vielleicht** helfen?* (Could you perhaps help me?) |
+| extremely polite / formal | ***Wären** Sie so freundlich, mir zu helfen?* (Would you be so kind as to help me?) |
+| distant-formal | *Ich **wäre** Ihnen sehr verbunden, wenn Sie mir helfen **könnten**.* (I would be much obliged if you could help me.) |
+
+### Typical forms
+| function | phrasing |
+| ---- | ---- |
+| **request** | *Würden Sie bitte …? / Hätten Sie kurz Zeit? / Dürfte ich Sie bitten, …?* (Would you please …? / Would you have a moment? / Might I ask you to …?) |
+| **wish** | *Ich hätte gern … / Ich würde gern … / Ich möchte …* (I'd like …) |
+| **suggestion** | *Wir könnten … / Wie wäre es, wenn …? / Man sollte vielleicht …* (We could … / How about …? / Perhaps one should …) |
+| **advice** | *An Ihrer Stelle würde ich … / Sie sollten …* (If I were you I'd … / You should …) |
+| **cautious opinion** | *Ich würde sagen, … / Ich hätte gedacht, dass …* (I'd say … / I would have thought that …) |
+| **softening criticism** | *Es wäre schön, wenn … / Wäre es nicht besser, …?* (It would be nice if … / Wouldn't it be better to …?) |
+| **softening refusal** | *Das würde ich so nicht sagen. / Da wäre ich vorsichtig.* (I wouldn't put it like that. / I'd be careful there.) |
+
+### Past Konjunktiv II for politeness
+Especially cautious – as if the request were already in the past:
+- *Ich **hätte** da noch eine Frage.* (I'd have one more question. = I have a question.)
+- *Ich **wollte** Sie fragen, ob …* (I wanted to ask you whether … – simple past as a politeness form)
+- *Das **wäre** dann alles.* (That would be all. – when paying)
+
+### Interculturally important
+In German, overly direct requests (*Geben Sie mir …* – Give me …) quickly sound **rude** in shops or offices. Konjunktiv II + **bitte** + **vielleicht / mal / kurz** is the safe choice.
+
+**Examples:**
+- ***Könnten** Sie mir bitte das Salz reichen?* (Could you pass me the salt, please?)
+- ***Hätten** Sie morgen um 10 Uhr Zeit für ein kurzes Gespräch?* (Would you have time for a short meeting tomorrow at 10?)
+- ***Wäre** es möglich, den Termin zu verschieben?* (Would it be possible to postpone the appointment?)
+- *Ich **würde** vorschlagen, dass wir eine Pause machen.* (I would suggest we take a break.)
+- *Es **wäre** schön, wenn Sie das nächste Mal pünktlich **kämen**.* (It would be nice if you came on time next time. – polite criticism)`,
+      explanationTr: `## Kibar ifadelerde Konjunktiv II
+
+**Konjunktiv II** ricaları, soruları, önerileri ve eleştirileri **daha kibar, temkinli ve mesafeli** kılar. C2 seviyesinde amaç **ince dereceleri** kavramaktır.
+
+### Bir ricanın nezaket dereceleri
+| derece | örnek |
+| ---- | ---- |
+| doğrudan (emir) | *Helfen Sie mir!* (Yardım edin!) |
+| nötr (Indikativ) | *Können Sie mir helfen?* (Yardım edebilir misiniz?) |
+| kibar (Konj. II) | ***Könnten** Sie mir helfen?* (Yardım edebilir miydiniz?) |
+| çok kibar | ***Könnten** Sie mir **vielleicht** helfen?* (Acaba bana yardım edebilir miydiniz?) |
+| son derece kibar / resmî | ***Wären** Sie so freundlich, mir zu helfen?* (Bana yardım etme nezaketini gösterir miydiniz?) |
+| mesafeli-resmî | *Ich **wäre** Ihnen sehr verbunden, wenn Sie mir helfen **könnten**.* (Bana yardım edebilirseniz size minnettar kalırım.) |
+
+### Tipik biçimler
+| işlev | ifade |
+| ---- | ---- |
+| **rica** | *Würden Sie bitte …? / Hätten Sie kurz Zeit? / Dürfte ich Sie bitten, …?* (Lütfen … eder miydiniz? / Bir dakikanız var mıydı? / … rica edebilir miyim?) |
+| **istek** | *Ich hätte gern … / Ich würde gern … / Ich möchte …* (… isterdim) |
+| **öneri** | *Wir könnten … / Wie wäre es, wenn …? / Man sollte vielleicht …* (… yapabilirdik / … olsa nasıl olur? / Belki … gerekir) |
+| **tavsiye** | *An Ihrer Stelle würde ich … / Sie sollten …* (Yerinizde olsam … / … yapmalısınız) |
+| **temkinli görüş** | *Ich würde sagen, … / Ich hätte gedacht, dass …* (… derdim / … sanırdım) |
+| **eleştiriyi yumuşatma** | *Es wäre schön, wenn … / Wäre es nicht besser, …?* (… olsa güzel olurdu / … daha iyi olmaz mıydı?) |
+| **reddi yumuşatma** | *Das würde ich so nicht sagen. / Da wäre ich vorsichtig.* (Ben öyle demezdim. / Orada dikkatli olurdum.) |
+
+### Nezaket için geçmiş zaman Konjunktiv II
+Özellikle temkinli – rica sanki geçmişte kalmış gibi:
+- *Ich **hätte** da noch eine Frage.* (Bir sorum daha olacaktı. = Bir sorum var.)
+- *Ich **wollte** Sie fragen, ob …* (Size … diye soracaktım – nezaket biçimi olarak Präteritum)
+- *Das **wäre** dann alles.* (Hepsi bu kadar olacak. – ödeme yaparken)
+
+### Kültürlerarası önemli
+Almancada çok doğrudan ricalar (*Geben Sie mir …* – Bana … verin) mağazada veya ofiste çabucak **kaba** algılanır. Konjunktiv II + **bitte** + **vielleicht / mal / kurz** güvenli seçimdir.
+
+**Örnekler:**
+- ***Könnten** Sie mir bitte das Salz reichen?* (Tuzu uzatabilir miydiniz lütfen?)
+- ***Hätten** Sie morgen um 10 Uhr Zeit für ein kurzes Gespräch?* (Yarın saat 10'da kısa bir görüşme için vaktiniz olur muydu?)
+- ***Wäre** es möglich, den Termin zu verschieben?* (Randevuyu ertelemek mümkün olur muydu?)
+- *Ich **würde** vorschlagen, dass wir eine Pause machen.* (Bir ara vermemizi önerirdim.)
+- *Es **wäre** schön, wenn Sie das nächste Mal pünktlich **kämen**.* (Bir dahaki sefere zamanında gelseniz güzel olurdu. – kibar eleştiri)`,
     },
   })
   await seedExercises({
@@ -38475,12 +39177,117 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit7.id,
       order: 3,
       grammarTopic: 'Konjunktiv in hypothetischen wissenschaftlichen Aussagen',
-      explanationDe:
-        'In wissenschaftlichen Texten drückt Konjunktiv II Vorsicht bei Hypothesen aus: "Man könnte annehmen, dass..." klingt zurückhaltender als "Man nimmt an, dass...".',
-      explanationEn:
-        'In academic texts, Konjunktiv II expresses caution about hypotheses: "Man könnte annehmen, dass..." (One could assume that...) sounds more tentative than "Man nimmt an, dass..." (One assumes that...).',
-      explanationTr:
-        'Akademik metinlerde Konjunktiv II hipotezlerde temkinliliği ifade eder: "Man könnte annehmen, dass..." ifadesi "Man nimmt an, dass..." ifadesine göre daha çekingen gelir.',
+      explanationDe: `## Konjunktiv in hypothetischen wissenschaftlichen Aussagen
+
+In wissenschaftlichen Texten ist **Vorsicht** eine Tugend: Man formuliert Hypothesen, Interpretationen und Schlussfolgerungen **zurückhaltend** (engl. *hedging*). Der **Konjunktiv II** ist dafür ein zentrales Mittel.
+
+### Vom Behaupten zum vorsichtigen Formulieren
+| sehr direkt | vorsichtig (Konj. II / Modalverben) |
+| ---- | ---- |
+| *Man nimmt an, dass …* | *Man **könnte** annehmen, dass …* |
+| *Das beweist, dass …* | *Das **könnte** darauf hindeuten, dass …* |
+| *Der Grund ist …* | *Ein möglicher Grund **wäre** …* |
+| *Wir müssen das ändern.* | *Es **wäre** zu überlegen, ob man das ändert.* |
+| *Die Theorie ist falsch.* | *Die Theorie **dürfte** in diesem Punkt nicht zutreffen.* |
+
+### Wichtige Mittel des „Hedging"
+1. **Konjunktiv II**: *Es **wäre** denkbar, dass … / Man **könnte** einwenden, dass …*
+2. **Modalverben der Vermutung**: *Das **dürfte** / **könnte** / **mag** stimmen.*
+   - *dürfte* = ziemlich wahrscheinlich; *könnte* = möglich; *mag* = zugegeben
+3. **Adverbien**: *möglicherweise, vermutlich, wahrscheinlich, offenbar, tendenziell*
+4. **Verben**: *scheinen, deuten auf, nahelegen, vermuten lassen*
+   - *Die Daten **legen nahe**, dass … / Die Ergebnisse **lassen vermuten**, dass …*
+5. **Einschränkende Ausdrücke**: *unter Umständen, in gewissem Maße, soweit bekannt*
+
+### Hypothesen formulieren
+- *Wäre diese Hypothese zutreffend, **müsste** sich ein Anstieg der Werte zeigen.*
+- *Ließe sich der Effekt replizieren, **so wäre** dies ein starkes Argument für …*
+- *Angenommen, die Annahme **wäre** richtig, dann **würde** …*
+
+### Warum so vorsichtig?
+- Wissenschaftliche Ergebnisse sind **vorläufig** und **widerlegbar**.
+- Vorsichtige Formulierungen zeigen **Seriosität** und **Respekt** vor anderen Positionen.
+- Zu viel Hedging wirkt aber **unsicher** – die Balance ist entscheidend!
+
+**Beispiele:**
+- *Man **könnte** argumentieren, dass die Stichprobe zu klein war.*
+- *Dieses Ergebnis **dürfte** auf methodische Unterschiede zurückzuführen sein.*
+- *Es **wäre** wünschenswert, die Studie mit mehr Teilnehmenden zu wiederholen.*
+- *Die Befunde **legen** **nahe**, dass Schlafmangel die Konzentration beeinträchtigt.*`,
+      explanationEn: `## Konjunktiv in hypothetical academic statements
+
+In academic texts **caution** is a virtue: hypotheses, interpretations and conclusions are phrased **with restraint** (*hedging*). **Konjunktiv II** is a central tool for this.
+
+### From asserting to cautious phrasing
+| very direct | cautious (Konj. II / modals) |
+| ---- | ---- |
+| *Man nimmt an, dass …* (It is assumed that …) | *Man **könnte** annehmen, dass …* (One could assume that …) |
+| *Das beweist, dass …* (This proves that …) | *Das **könnte** darauf hindeuten, dass …* (This could indicate that …) |
+| *Der Grund ist …* (The reason is …) | *Ein möglicher Grund **wäre** …* (A possible reason would be …) |
+| *Wir müssen das ändern.* (We must change this.) | *Es **wäre** zu überlegen, ob man das ändert.* (It would be worth considering whether to change this.) |
+| *Die Theorie ist falsch.* (The theory is wrong.) | *Die Theorie **dürfte** in diesem Punkt nicht zutreffen.* (The theory probably doesn't hold on this point.) |
+
+### Key hedging devices
+1. **Konjunktiv II**: *Es **wäre** denkbar, dass … / Man **könnte** einwenden, dass …* (It would be conceivable that … / One could object that …)
+2. **Modal verbs of supposition**: *Das **dürfte** / **könnte** / **mag** stimmen.*
+   - *dürfte* = quite likely; *könnte* = possible; *mag* = admittedly
+3. **Adverbs**: *möglicherweise, vermutlich, wahrscheinlich, offenbar, tendenziell* (possibly, presumably, probably, apparently, tendentially)
+4. **Verbs**: *scheinen, deuten auf, nahelegen, vermuten lassen* (seem, point to, suggest, give reason to suppose)
+   - *Die Daten **legen nahe**, dass … / Die Ergebnisse **lassen vermuten**, dass …* (The data suggest … / The results suggest …)
+5. **Limiting expressions**: *unter Umständen, in gewissem Maße, soweit bekannt* (under certain circumstances, to some extent, as far as is known)
+
+### Formulating hypotheses
+- *Wäre diese Hypothese zutreffend, **müsste** sich ein Anstieg der Werte zeigen.* (Were this hypothesis correct, an increase in values would have to appear.)
+- *Ließe sich der Effekt replizieren, **so wäre** dies ein starkes Argument für …* (If the effect could be replicated, this would be a strong argument for …)
+- *Angenommen, die Annahme **wäre** richtig, dann **würde** …* (Supposing the assumption were correct, then …)
+
+### Why so cautious?
+- Scientific results are **provisional** and **refutable**.
+- Cautious phrasing shows **seriousness** and **respect** for other positions.
+- Too much hedging sounds **unsure**, though – balance is crucial!
+
+**Examples:**
+- *Man **könnte** argumentieren, dass die Stichprobe zu klein war.* (One could argue that the sample was too small.)
+- *Dieses Ergebnis **dürfte** auf methodische Unterschiede zurückzuführen sein.* (This result is probably due to methodological differences.)
+- *Es **wäre** wünschenswert, die Studie mit mehr Teilnehmenden zu wiederholen.* (It would be desirable to repeat the study with more participants.)
+- *Die Befunde **legen** **nahe**, dass Schlafmangel die Konzentration beeinträchtigt.* (The findings suggest that lack of sleep impairs concentration.)`,
+      explanationTr: `## Varsayımsal bilimsel ifadelerde Konjunktiv
+
+Bilimsel metinlerde **temkin** bir erdemdir: Hipotezler, yorumlar ve sonuçlar **ölçülü** biçimde ifade edilir (İng. *hedging*). **Konjunktiv II** bunun için temel bir araçtır.
+
+### İddia etmekten temkinli ifadeye
+| çok doğrudan | temkinli (Konj. II / modal fiiller) |
+| ---- | ---- |
+| *Man nimmt an, dass …* (… varsayılıyor.) | *Man **könnte** annehmen, dass …* (… varsayılabilirdi.) |
+| *Das beweist, dass …* (Bu … olduğunu kanıtlıyor.) | *Das **könnte** darauf hindeuten, dass …* (Bu … olduğuna işaret edebilir.) |
+| *Der Grund ist …* (Neden şudur …) | *Ein möglicher Grund **wäre** …* (Olası bir neden … olabilir.) |
+| *Wir müssen das ändern.* (Bunu değiştirmeliyiz.) | *Es **wäre** zu überlegen, ob man das ändert.* (Bunun değiştirilip değiştirilmeyeceği düşünülebilir.) |
+| *Die Theorie ist falsch.* (Teori yanlış.) | *Die Theorie **dürfte** in diesem Punkt nicht zutreffen.* (Teori bu noktada muhtemelen geçerli değil.) |
+
+### Temkinli ifadenin önemli araçları
+1. **Konjunktiv II**: *Es **wäre** denkbar, dass … / Man **könnte** einwenden, dass …* (… düşünülebilir / … diye itiraz edilebilir)
+2. **Tahmin bildiren modal fiiller**: *Das **dürfte** / **könnte** / **mag** stimmen.*
+   - *dürfte* = oldukça muhtemel; *könnte* = mümkün; *mag* = kabul edelim ki
+3. **Zarflar**: *möglicherweise, vermutlich, wahrscheinlich, offenbar, tendenziell* (muhtemelen, tahminen, büyük olasılıkla, görünüşe göre, eğilim olarak)
+4. **Fiiller**: *scheinen, deuten auf, nahelegen, vermuten lassen* (görünmek, işaret etmek, düşündürmek, tahmin ettirmek)
+   - *Die Daten **legen nahe**, dass … / Die Ergebnisse **lassen vermuten**, dass …* (Veriler … olduğunu düşündürüyor / Sonuçlar … olduğunu tahmin ettiriyor)
+5. **Sınırlayıcı ifadeler**: *unter Umständen, in gewissem Maße, soweit bekannt* (bazı koşullarda, belli ölçüde, bilindiği kadarıyla)
+
+### Hipotez kurmak
+- *Wäre diese Hypothese zutreffend, **müsste** sich ein Anstieg der Werte zeigen.* (Bu hipotez doğru olsaydı değerlerde bir artış görülmesi gerekirdi.)
+- *Ließe sich der Effekt replizieren, **so wäre** dies ein starkes Argument für …* (Etki tekrarlanabilseydi bu … için güçlü bir argüman olurdu.)
+- *Angenommen, die Annahme **wäre** richtig, dann **würde** …* (Varsayımın doğru olduğunu kabul edelim, o zaman …)
+
+### Neden bu kadar temkinli?
+- Bilimsel sonuçlar **geçicidir** ve **çürütülebilir**.
+- Temkinli ifadeler **ciddiyet** ve diğer görüşlere **saygı** gösterir.
+- Ama fazla temkin **güvensiz** görünür – denge belirleyicidir!
+
+**Örnekler:**
+- *Man **könnte** argumentieren, dass die Stichprobe zu klein war.* (Örneklemin çok küçük olduğu öne sürülebilir.)
+- *Dieses Ergebnis **dürfte** auf methodische Unterschiede zurückzuführen sein.* (Bu sonuç muhtemelen yöntem farklılıklarından kaynaklanıyor.)
+- *Es **wäre** wünschenswert, die Studie mit mehr Teilnehmenden zu wiederholen.* (Çalışmanın daha fazla katılımcıyla tekrarlanması arzu edilir.)
+- *Die Befunde **legen** **nahe**, dass Schlafmangel die Konzentration beeinträchtigt.* (Bulgular uykusuzluğun konsantrasyonu bozduğunu düşündürüyor.)`,
     },
   })
   await seedExercises({
@@ -38509,12 +39316,120 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit7.id,
       order: 4,
       grammarTopic: 'Übung: Feinheiten des Konjunktivs',
-      explanationDe:
-        'Wiederholung: Konjunktiv I für neutrale Redewiedergabe, Konjunktiv II für Höflichkeit, Zweifel oder vorsichtige Hypothesen — die Wahl beeinflusst den Ton stark.',
-      explanationEn:
-        'Review: Konjunktiv I for neutral reported speech, Konjunktiv II for politeness, doubt, or cautious hypotheses — the choice strongly affects tone.',
-      explanationTr:
-        'Tekrar: nötr aktarım için Konjunktiv I, kibarlık, şüphe veya temkinli hipotezler için Konjunktiv II — seçim tonu güçlü şekilde etkiler.',
+      explanationDe: `## Übung: Feinheiten des Konjunktivs – Zusammenfassung
+
+Die Wahl zwischen **Indikativ, Konjunktiv I und Konjunktiv II** beeinflusst den **Ton** eines Textes stark. Auf C2-Niveau setzt man den Konjunktiv **bewusst** als Stilmittel ein.
+
+### Funktionen im Überblick
+| Modus | Hauptfunktion | Beispiel |
+| ---- | ---- | ---- |
+| **Indikativ** | Tatsachen, eigene Überzeugung | *Die Erde **ist** rund.* |
+| **Konjunktiv I** | neutrale Redewiedergabe | *Er sagt, er **sei** krank.* |
+| **Konjunktiv I** | Wunsch / Anweisung (formelhaft) | *Es **lebe** der König! / Man **nehme** …* |
+| **Konjunktiv II** | Irrealität | *Wenn ich Zeit **hätte**, …* |
+| **Konjunktiv II** | Höflichkeit | ***Könnten** Sie …?* |
+| **Konjunktiv II** | Zweifel bei Redewiedergabe | *Er sagt, er **wäre** krank.* |
+| **Konjunktiv II** | vorsichtige Hypothese | *Das **könnte** bedeuten, dass …* |
+| **Konjunktiv II** | irrealer Vergleich | *Er tut so, **als ob** er nichts **wüsste**.* |
+
+### Irreale Vergleichssätze – noch eine Feinheit
+| Form | Beispiel |
+| ---- | ---- |
+| *als ob* + Verb am Ende | *Er tut so, **als ob** er krank **wäre**.* |
+| *als wenn* + Verb am Ende | *Er tut so, **als wenn** er krank **wäre**.* |
+| *als* + Verb direkt danach | *Er tut so, **als wäre** er krank.* (eleganter) |
+
+Auch mit Konjunktiv I möglich (gehoben): *Er tut so, als **sei** er krank.*
+
+### Ein Satz – viele Nuancen
+- *Er **ist** zuverlässig.* (Fakt)
+- *Man sagt, er **sei** zuverlässig.* (neutral wiedergegeben)
+- *Man sagt, er **wäre** zuverlässig.* (Zweifel möglich)
+- *Er **soll** zuverlässig sein.* (Gerücht)
+- *Er **dürfte** zuverlässig sein.* (Vermutung)
+- *Er **wäre** zuverlässig, wenn er pünktlicher **wäre**.* (irreal)
+
+**Beispiele:**
+- *Würden Sie mir bitte den Bericht bis Freitag schicken?* (Höflichkeit)
+- *Die Sprecherin teilte mit, der Flug **falle** aus.* (neutrale Redewiedergabe)
+- *Es **wäre** denkbar, dass die Ergebnisse verzerrt sind.* (Hypothese)
+- *Sie redet, **als wüsste** sie alles.* (irrealer Vergleich)`,
+      explanationEn: `## Practice: subtleties of the subjunctive – summary
+
+The choice between **indicative, Konjunktiv I and Konjunktiv II** strongly affects a text's **tone**. At C2 level the subjunctive is used **deliberately** as a stylistic device.
+
+### Functions at a glance
+| mood | main function | example |
+| ---- | ---- | ---- |
+| **indicative** | facts, own conviction | *Die Erde **ist** rund.* (The earth is round.) |
+| **Konjunktiv I** | neutral reported speech | *Er sagt, er **sei** krank.* (He says he is ill.) |
+| **Konjunktiv I** | wish / instruction (formulaic) | *Es **lebe** der König! / Man **nehme** …* (Long live the king! / Take …) |
+| **Konjunktiv II** | unreality | *Wenn ich Zeit **hätte**, …* (If I had time …) |
+| **Konjunktiv II** | politeness | ***Könnten** Sie …?* (Could you …?) |
+| **Konjunktiv II** | doubt in reported speech | *Er sagt, er **wäre** krank.* (He says he's ill – doubtful) |
+| **Konjunktiv II** | cautious hypothesis | *Das **könnte** bedeuten, dass …* (That could mean that …) |
+| **Konjunktiv II** | unreal comparison | *Er tut so, **als ob** er nichts **wüsste**.* (He acts as if he knew nothing.) |
+
+### Unreal comparison clauses – another subtlety
+| form | example |
+| ---- | ---- |
+| *als ob* + verb at the end | *Er tut so, **als ob** er krank **wäre**.* (He acts as if he were ill.) |
+| *als wenn* + verb at the end | *Er tut so, **als wenn** er krank **wäre**.* |
+| *als* + verb directly after | *Er tut so, **als wäre** er krank.* (more elegant) |
+
+Also possible with Konjunktiv I (elevated): *Er tut so, als **sei** er krank.*
+
+### One sentence – many nuances
+- *Er **ist** zuverlässig.* (He is reliable. – fact)
+- *Man sagt, er **sei** zuverlässig.* (People say he is reliable. – neutral report)
+- *Man sagt, er **wäre** zuverlässig.* (People say he's reliable. – doubt possible)
+- *Er **soll** zuverlässig sein.* (He's said to be reliable. – rumour)
+- *Er **dürfte** zuverlässig sein.* (He's probably reliable. – supposition)
+- *Er **wäre** zuverlässig, wenn er pünktlicher **wäre**.* (He'd be reliable if he were more punctual. – unreal)
+
+**Examples:**
+- *Würden Sie mir bitte den Bericht bis Freitag schicken?* (Would you please send me the report by Friday? – politeness)
+- *Die Sprecherin teilte mit, der Flug **falle** aus.* (The spokeswoman announced that the flight was cancelled. – neutral report)
+- *Es **wäre** denkbar, dass die Ergebnisse verzerrt sind.* (It is conceivable that the results are biased. – hypothesis)
+- *Sie redet, **als wüsste** sie alles.* (She talks as if she knew everything. – unreal comparison)`,
+      explanationTr: `## Alıştırma: Konjunktiv incelikleri – özet
+
+**Indikativ, Konjunktiv I ve Konjunktiv II** arasındaki seçim bir metnin **tonunu** güçlü biçimde etkiler. C2 seviyesinde Konjunktiv bir üslup aracı olarak **bilinçli** kullanılır.
+
+### İşlevler bir bakışta
+| kip | ana işlev | örnek |
+| ---- | ---- | ---- |
+| **Indikativ** | olgular, kendi kanaatin | *Die Erde **ist** rund.* (Dünya yuvarlaktır.) |
+| **Konjunktiv I** | tarafsız aktarım | *Er sagt, er **sei** krank.* (Hasta olduğunu söylüyor.) |
+| **Konjunktiv I** | dilek / talimat (kalıp) | *Es **lebe** der König! / Man **nehme** …* (Yaşasın kral! / … alınır) |
+| **Konjunktiv II** | gerçek dışılık | *Wenn ich Zeit **hätte**, …* (Vaktim olsa …) |
+| **Konjunktiv II** | nezaket | ***Könnten** Sie …?* (… edebilir miydiniz?) |
+| **Konjunktiv II** | aktarımda şüphe | *Er sagt, er **wäre** krank.* (Hasta olduğunu söylüyor – şüpheli) |
+| **Konjunktiv II** | temkinli hipotez | *Das **könnte** bedeuten, dass …* (Bu … anlamına gelebilir) |
+| **Konjunktiv II** | gerçek dışı benzetme | *Er tut so, **als ob** er nichts **wüsste**.* (Hiçbir şey bilmiyormuş gibi davranıyor.) |
+
+### Gerçek dışı benzetme cümleleri – bir incelik daha
+| biçim | örnek |
+| ---- | ---- |
+| *als ob* + fiil sonda | *Er tut so, **als ob** er krank **wäre**.* (Hastaymış gibi davranıyor.) |
+| *als wenn* + fiil sonda | *Er tut so, **als wenn** er krank **wäre**.* |
+| *als* + hemen ardından fiil | *Er tut so, **als wäre** er krank.* (daha zarif) |
+
+Konjunktiv I ile de mümkün (yüksek üslup): *Er tut so, als **sei** er krank.*
+
+### Bir cümle – birçok incelik
+- *Er **ist** zuverlässig.* (Güvenilirdir. – olgu)
+- *Man sagt, er **sei** zuverlässig.* (Güvenilir olduğu söyleniyor. – tarafsız aktarım)
+- *Man sagt, er **wäre** zuverlässig.* (Güvenilir olduğu söyleniyor. – şüphe olası)
+- *Er **soll** zuverlässig sein.* (Güvenilir biri olduğu söyleniyor. – söylenti)
+- *Er **dürfte** zuverlässig sein.* (Muhtemelen güvenilirdir. – tahmin)
+- *Er **wäre** zuverlässig, wenn er pünktlicher **wäre**.* (Daha dakik olsa güvenilir olurdu. – gerçek dışı)
+
+**Örnekler:**
+- *Würden Sie mir bitte den Bericht bis Freitag schicken?* (Raporu cumaya kadar bana gönderir miydiniz lütfen? – nezaket)
+- *Die Sprecherin teilte mit, der Flug **falle** aus.* (Sözcü uçuşun iptal edildiğini bildirdi. – tarafsız aktarım)
+- *Es **wäre** denkbar, dass die Ergebnisse verzerrt sind.* (Sonuçların çarpık olması düşünülebilir. – hipotez)
+- *Sie redet, **als wüsste** sie alles.* (Her şeyi biliyormuş gibi konuşuyor. – gerçek dışı benzetme)`,
     },
   })
   await seedExercises({
@@ -38570,12 +39485,131 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit8.id,
       order: 1,
       grammarTopic: 'Der Essay',
-      explanationDe:
-        'Ein Essay argumentiert persönlich und reflektierend, oft in der Ich-Form, mit rhetorischen Fragen und pointierten Formulierungen.',
-      explanationEn:
-        'An essay argues in a personal, reflective way, often in first person, using rhetorical questions and pointed phrasing.',
-      explanationTr:
-        'Bir deneme kişisel ve düşünsel şekilde tartışır, genellikle birinci tekil şahısla, retorik sorular ve keskin ifadelerle.',
+      explanationDe: `## Der Essay
+
+Der **Essay** (von frz. *essai* = Versuch) ist eine **freie, persönliche und reflektierende** Textform. Der Autor denkt über ein Thema nach, **wägt ab**, stellt **Fragen** und entwickelt eine **eigene Position** – ohne den Anspruch auf Vollständigkeit einer wissenschaftlichen Arbeit.
+
+### Merkmale
+| Merkmal | Beschreibung |
+| ---- | ---- |
+| **Perspektive** | oft **Ich-Form**: *Ich frage mich, ob …* |
+| **Haltung** | subjektiv, aber argumentativ begründet |
+| **Aufbau** | frei, assoziativ, „kreisend" um eine Leitfrage |
+| **Stil** | anspruchsvoll, pointiert, bildhaft |
+| **rhetorische Mittel** | rhetorische Fragen, Metaphern, Antithesen, Zitate, Beispiele |
+| **Ziel** | zum Nachdenken anregen, nicht endgültig beweisen |
+
+### Typische Formulierungen
+**Einstieg:**
+- *Wer hätte gedacht, dass …?*
+- *„…", schrieb einst Goethe. Doch gilt das heute noch?*
+- *Es gibt Fragen, die man sich erst stellt, wenn …*
+
+**Reflektieren und abwägen:**
+- *Man könnte einwenden, dass …*
+- *Auf den ersten Blick scheint …, bei genauerem Hinsehen jedoch …*
+- *Ist es nicht vielmehr so, dass …?*
+- *Mir scheint, dass …*
+
+**Pointierter Schluss:**
+- *Vielleicht liegt die Antwort gerade darin, dass …*
+- *Am Ende bleibt die Frage: …*
+- *Es wäre an der Zeit, …*
+
+### Essay vs. Erörterung
+| Essay | Erörterung |
+| ---- | ---- |
+| subjektiv, ich-bezogen | sachlich, eher unpersönlich |
+| freier Aufbau | feste Struktur (Pro – Contra – Fazit) |
+| stilistisch kreativ | nüchtern, klar |
+| darf offene Fragen lassen | endet mit klarem Urteil |
+
+**Beispielabsatz:**
+*Wir leben im Zeitalter der Vernetzung – und doch fühlen sich viele Menschen einsamer denn je. **Ist das nicht paradox?** **Ich** glaube, das Problem liegt nicht in der Technik selbst, sondern in **unserem** Umgang mit ihr. Wir sammeln Kontakte **wie Briefmarken**, doch echte Begegnungen werden seltener. **Vielleicht** sollten wir das Smartphone öfter einmal beiseitelegen.*`,
+      explanationEn: `## The essay
+
+The **essay** (from French *essai* = attempt) is a **free, personal and reflective** form of writing. The author reflects on a topic, **weighs things up**, asks **questions** and develops **their own position** – without claiming the completeness of an academic paper.
+
+### Features
+| feature | description |
+| ---- | ---- |
+| **perspective** | often **first person**: *Ich frage mich, ob …* (I wonder whether …) |
+| **stance** | subjective, but argued |
+| **structure** | free, associative, "circling" around a guiding question |
+| **style** | sophisticated, pointed, figurative |
+| **rhetorical devices** | rhetorical questions, metaphors, antitheses, quotations, examples |
+| **aim** | to stimulate thought, not to prove conclusively |
+
+### Typical phrases
+**Opening:**
+- *Wer hätte gedacht, dass …?* (Who would have thought that …?)
+- *„…", schrieb einst Goethe. Doch gilt das heute noch?* ("…", Goethe once wrote. But is that still true today?)
+- *Es gibt Fragen, die man sich erst stellt, wenn …* (There are questions you only ask yourself when …)
+
+**Reflecting and weighing up:**
+- *Man könnte einwenden, dass …* (One might object that …)
+- *Auf den ersten Blick scheint …, bei genauerem Hinsehen jedoch …* (At first glance … seems …, but on closer inspection …)
+- *Ist es nicht vielmehr so, dass …?* (Isn't it rather the case that …?)
+- *Mir scheint, dass …* (It seems to me that …)
+
+**Pointed conclusion:**
+- *Vielleicht liegt die Antwort gerade darin, dass …* (Perhaps the answer lies precisely in …)
+- *Am Ende bleibt die Frage: …* (In the end the question remains: …)
+- *Es wäre an der Zeit, …* (It's high time …)
+
+### Essay vs. argumentative essay (Erörterung)
+| essay | Erörterung |
+| ---- | ---- |
+| subjective, first-person | objective, rather impersonal |
+| free structure | fixed structure (pro – con – conclusion) |
+| stylistically creative | sober, clear |
+| may leave questions open | ends with a clear verdict |
+
+**Sample paragraph:**
+*Wir leben im Zeitalter der Vernetzung – und doch fühlen sich viele Menschen einsamer denn je. **Ist das nicht paradox?** **Ich** glaube, das Problem liegt nicht in der Technik selbst, sondern in **unserem** Umgang mit ihr. Wir sammeln Kontakte **wie Briefmarken**, doch echte Begegnungen werden seltener. **Vielleicht** sollten wir das Smartphone öfter einmal beiseitelegen.*
+(We live in the age of connectivity – and yet many people feel lonelier than ever. Isn't that paradoxical? I believe the problem lies not in technology itself but in how we use it. We collect contacts like stamps, yet real encounters are becoming rarer. Perhaps we should put our smartphones aside more often.)`,
+      explanationTr: `## Deneme (Essay)
+
+**Deneme** (Fr. *essai* = deneme, girişim), **serbest, kişisel ve düşünsel** bir metin türüdür. Yazar bir konu üzerine düşünür, **tartar**, **sorular** sorar ve **kendi görüşünü** geliştirir – bilimsel bir çalışmanın eksiksizlik iddiası olmadan.
+
+### Özellikler
+| özellik | açıklama |
+| ---- | ---- |
+| **bakış açısı** | çoğu zaman **birinci tekil şahıs**: *Ich frage mich, ob …* (Acaba … diye kendime soruyorum) |
+| **tutum** | öznel, ama gerekçelendirilmiş |
+| **yapı** | serbest, çağrışımsal, bir ana soru etrafında „dönen" |
+| **üslup** | seçkin, keskin, imgeli |
+| **retorik araçlar** | retorik sorular, metaforlar, antitezler, alıntılar, örnekler |
+| **amaç** | düşündürmek, kesin olarak kanıtlamak değil |
+
+### Tipik ifadeler
+**Giriş:**
+- *Wer hätte gedacht, dass …?* (Kim düşünürdü ki …?)
+- *„…", schrieb einst Goethe. Doch gilt das heute noch?* („…" diye yazmıştı bir zamanlar Goethe. Ama bu bugün hâlâ geçerli mi?)
+- *Es gibt Fragen, die man sich erst stellt, wenn …* (İnsanın ancak … olunca kendine sorduğu sorular vardır.)
+
+**Düşünmek ve tartmak:**
+- *Man könnte einwenden, dass …* (… diye itiraz edilebilir.)
+- *Auf den ersten Blick scheint …, bei genauerem Hinsehen jedoch …* (İlk bakışta … gibi görünüyor, ama daha yakından bakınca …)
+- *Ist es nicht vielmehr so, dass …?* (Asıl mesele … değil midir?)
+- *Mir scheint, dass …* (Bana öyle geliyor ki …)
+
+**Keskin bir sonuç:**
+- *Vielleicht liegt die Antwort gerade darin, dass …* (Belki de cevap tam da … yatıyor.)
+- *Am Ende bleibt die Frage: …* (Sonunda şu soru kalıyor: …)
+- *Es wäre an der Zeit, …* (Artık … zamanı gelmiştir.)
+
+### Deneme – tartışma yazısı (Erörterung)
+| deneme | tartışma yazısı |
+| ---- | ---- |
+| öznel, ben merkezli | nesnel, daha çok kişisiz |
+| serbest yapı | sabit yapı (lehte – aleyhte – sonuç) |
+| üslup bakımından yaratıcı | yalın, açık |
+| soruları açık bırakabilir | açık bir yargıyla biter |
+
+**Örnek paragraf:**
+*Wir leben im Zeitalter der Vernetzung – und doch fühlen sich viele Menschen einsamer denn je. **Ist das nicht paradox?** **Ich** glaube, das Problem liegt nicht in der Technik selbst, sondern in **unserem** Umgang mit ihr. Wir sammeln Kontakte **wie Briefmarken**, doch echte Begegnungen werden seltener. **Vielleicht** sollten wir das Smartphone öfter einmal beiseitelegen.*
+(Ağ çağında yaşıyoruz – ama yine de birçok insan kendini her zamankinden daha yalnız hissediyor. Bu bir paradoks değil mi? Bence sorun teknolojinin kendisinde değil, onu nasıl kullandığımızda. Kişileri pul gibi biriktiriyoruz, ama gerçek karşılaşmalar giderek azalıyor. Belki de akıllı telefonu daha sık bir kenara koymalıyız.)`,
     },
   })
   await seedExercises({
@@ -38604,12 +39638,116 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit8.id,
       order: 2,
       grammarTopic: 'Der Bericht',
-      explanationDe:
-        'Ein Bericht ist sachlich, chronologisch und unpersönlich, oft im Passiv oder mit "man": "Zunächst wurde... Anschließend wurde...".',
-      explanationEn:
-        'A report is factual, chronological, and impersonal, often in passive voice or with "man": "Zunächst wurde... Anschließend wurde..." (First... was... Then... was...).',
-      explanationTr:
-        'Bir rapor nesnel, kronolojik ve kişisiz olur, genellikle edilgen çatı veya "man" ile: "Zunächst wurde... Anschließend wurde...".',
+      explanationDe: `## Der Bericht
+
+Ein **Bericht** informiert **sachlich, genau und vollständig** über ein Ereignis oder einen Vorgang. Der Verfasser bleibt **neutral** – eigene Meinungen und Gefühle gehören nicht hinein.
+
+### Merkmale
+| Merkmal | Beschreibung |
+| ---- | ---- |
+| **Inhalt** | Antworten auf die **W-Fragen**: Wer? Was? Wann? Wo? Wie? Warum? Welche Folgen? |
+| **Reihenfolge** | **chronologisch** (oder nach Wichtigkeit: Nachrichtenbericht) |
+| **Zeitform** | **Präteritum** (abgeschlossene Ereignisse) |
+| **Perspektive** | **unpersönlich**: Passiv, *man*, 3. Person |
+| **Stil** | sachlich, präzise, keine wertenden Adjektive |
+| **Redewiedergabe** | indirekte Rede mit **Konjunktiv I** |
+
+### Typische Formulierungen
+- **Chronologie**: *Zunächst … – Anschließend … – Daraufhin … – Im weiteren Verlauf … – Abschließend …*
+- **Passiv**: *Die Feuerwehr **wurde** um 14:30 Uhr **alarmiert**.*
+- **Nominalstil**: *Nach **Eintreffen** der Polizei **erfolgte** die **Sperrung** der Straße.*
+- **Präzise Angaben**: *gegen 15 Uhr, in der Hauptstraße 12, zwei Leichtverletzte*
+
+### Was gehört NICHT in einen Bericht?
+| ❌ nicht sachlich | ✅ sachlich |
+| ---- | ---- |
+| *Es war ein **schrecklicher** Unfall.* | *Bei dem Unfall wurden zwei Personen verletzt.* |
+| *Der Fahrer war **total verrückt**.* | *Der Fahrer überschritt die Geschwindigkeit um 40 km/h.* |
+| *Ich glaube, dass …* | *Laut Polizei …* |
+| Spannung, wörtliche Rede | Fakten, indirekte Rede |
+
+### Arten von Berichten
+- **Unfallbericht** / **Polizeibericht**
+- **Praktikumsbericht** (*Während meines Praktikums wurde ich in folgenden Bereichen eingesetzt: …*)
+- **Protokoll** (Ergebnisprotokoll einer Sitzung)
+- **Zeitungsbericht** (Wichtigstes zuerst!)
+
+**Beispielbericht:**
+*Am Montag, dem 3. März, **ereignete** sich gegen 8:15 Uhr auf der Kreuzung Bahnhofstraße/Ringstraße ein Verkehrsunfall. Ein Pkw **missachtete** die rote Ampel und **stieß** mit einem Linienbus **zusammen**. **Dabei wurden** drei Fahrgäste leicht **verletzt**. Die Polizei **sperrte** die Kreuzung für zwei Stunden. Der Sachschaden **wird** auf rund 20.000 Euro **geschätzt**. Der Fahrer gab an, er **habe** die Ampel übersehen.*`,
+      explanationEn: `## The report
+
+A **report** informs **objectively, accurately and completely** about an event or process. The writer remains **neutral** – personal opinions and feelings don't belong in it.
+
+### Features
+| feature | description |
+| ---- | ---- |
+| **content** | answers to the **W-questions**: who? what? when? where? how? why? what consequences? |
+| **order** | **chronological** (or by importance: news report) |
+| **tense** | **simple past** (completed events) |
+| **perspective** | **impersonal**: passive, *man*, 3rd person |
+| **style** | objective, precise, no evaluative adjectives |
+| **reported speech** | indirect speech with **Konjunktiv I** |
+
+### Typical phrases
+- **Chronology**: *Zunächst … – Anschließend … – Daraufhin … – Im weiteren Verlauf … – Abschließend …* (First … – Then … – Thereupon … – Subsequently … – Finally …)
+- **Passive**: *Die Feuerwehr **wurde** um 14:30 Uhr **alarmiert**.* (The fire brigade was alerted at 2.30 p.m.)
+- **Nominal style**: *Nach **Eintreffen** der Polizei **erfolgte** die **Sperrung** der Straße.* (After the police arrived, the road was closed.)
+- **Precise details**: *gegen 15 Uhr, in der Hauptstraße 12, zwei Leichtverletzte* (around 3 p.m., at Hauptstraße 12, two people slightly injured)
+
+### What does NOT belong in a report?
+| ❌ not objective | ✅ objective |
+| ---- | ---- |
+| *Es war ein **schrecklicher** Unfall.* (It was a terrible accident.) | *Bei dem Unfall wurden zwei Personen verletzt.* (Two people were injured in the accident.) |
+| *Der Fahrer war **total verrückt**.* (The driver was totally crazy.) | *Der Fahrer überschritt die Geschwindigkeit um 40 km/h.* (The driver exceeded the speed limit by 40 km/h.) |
+| *Ich glaube, dass …* (I think that …) | *Laut Polizei …* (According to the police …) |
+| suspense, direct speech | facts, reported speech |
+
+### Types of report
+- **accident report** / **police report**
+- **internship report** (*Während meines Praktikums wurde ich in folgenden Bereichen eingesetzt: …* – During my internship I worked in the following areas: …)
+- **minutes** (record of the results of a meeting)
+- **newspaper report** (most important first!)
+
+**Sample report:**
+*Am Montag, dem 3. März, **ereignete** sich gegen 8:15 Uhr auf der Kreuzung Bahnhofstraße/Ringstraße ein Verkehrsunfall. Ein Pkw **missachtete** die rote Ampel und **stieß** mit einem Linienbus **zusammen**. **Dabei wurden** drei Fahrgäste leicht **verletzt**. Die Polizei **sperrte** die Kreuzung für zwei Stunden. Der Sachschaden **wird** auf rund 20.000 Euro **geschätzt**. Der Fahrer gab an, er **habe** die Ampel übersehen.*
+(On Monday, 3 March, at around 8.15 a.m., a traffic accident occurred at the Bahnhofstraße/Ringstraße junction. A car ignored the red light and collided with a bus. Three passengers were slightly injured. The police closed the junction for two hours. Damage is estimated at around 20,000 euros. The driver stated that he had overlooked the traffic light.)`,
+      explanationTr: `## Rapor (Bericht)
+
+**Rapor**, bir olay veya süreç hakkında **nesnel, kesin ve eksiksiz** bilgi verir. Yazar **tarafsız** kalır – kişisel görüşler ve duygular rapora girmez.
+
+### Özellikler
+| özellik | açıklama |
+| ---- | ---- |
+| **içerik** | **W-sorularına** cevaplar: Kim? Ne? Ne zaman? Nerede? Nasıl? Neden? Sonuçları ne? |
+| **sıra** | **kronolojik** (veya önem sırasına göre: haber) |
+| **zaman** | **Präteritum** (tamamlanmış olaylar) |
+| **bakış açısı** | **kişisiz**: edilgen, *man*, 3. şahıs |
+| **üslup** | nesnel, kesin, değer yargılı sıfatlar yok |
+| **söz aktarımı** | **Konjunktiv I** ile dolaylı anlatım |
+
+### Tipik ifadeler
+- **Kronoloji**: *Zunächst … – Anschließend … – Daraufhin … – Im weiteren Verlauf … – Abschließend …* (Önce … – Ardından … – Bunun üzerine … – Devamında … – Son olarak …)
+- **Edilgen**: *Die Feuerwehr **wurde** um 14:30 Uhr **alarmiert**.* (İtfaiyeye saat 14.30'da haber verildi.)
+- **İsim üslubu**: *Nach **Eintreffen** der Polizei **erfolgte** die **Sperrung** der Straße.* (Polisin gelmesinin ardından yol trafiğe kapatıldı.)
+- **Kesin bilgiler**: *gegen 15 Uhr, in der Hauptstraße 12, zwei Leichtverletzte* (saat 15 sularında, Hauptstraße 12'de, iki hafif yaralı)
+
+### Rapora NE girmez?
+| ❌ nesnel değil | ✅ nesnel |
+| ---- | ---- |
+| *Es war ein **schrecklicher** Unfall.* (Korkunç bir kazaydı.) | *Bei dem Unfall wurden zwei Personen verletzt.* (Kazada iki kişi yaralandı.) |
+| *Der Fahrer war **total verrückt**.* (Sürücü tamamen deliydi.) | *Der Fahrer überschritt die Geschwindigkeit um 40 km/h.* (Sürücü hız sınırını 40 km/s aştı.) |
+| *Ich glaube, dass …* (Bence …) | *Laut Polizei …* (Polise göre …) |
+| gerilim, doğrudan anlatım | olgular, dolaylı anlatım |
+
+### Rapor türleri
+- **Kaza raporu** / **polis raporu**
+- **Staj raporu** (*Während meines Praktikums wurde ich in folgenden Bereichen eingesetzt: …* – Stajım sırasında şu alanlarda görevlendirildim: …)
+- **Tutanak** (bir toplantının karar tutanağı)
+- **Gazete haberi** (en önemlisi önce!)
+
+**Örnek rapor:**
+*Am Montag, dem 3. März, **ereignete** sich gegen 8:15 Uhr auf der Kreuzung Bahnhofstraße/Ringstraße ein Verkehrsunfall. Ein Pkw **missachtete** die rote Ampel und **stieß** mit einem Linienbus **zusammen**. **Dabei wurden** drei Fahrgäste leicht **verletzt**. Die Polizei **sperrte** die Kreuzung für zwei Stunden. Der Sachschaden **wird** auf rund 20.000 Euro **geschätzt**. Der Fahrer gab an, er **habe** die Ampel übersehen.*
+(3 Mart pazartesi günü saat 8.15 sularında Bahnhofstraße/Ringstraße kavşağında bir trafik kazası meydana geldi. Bir otomobil kırmızı ışığı ihlal ederek bir belediye otobüsüyle çarpıştı. Kazada üç yolcu hafif yaralandı. Polis kavşağı iki saat trafiğe kapattı. Maddi hasarın yaklaşık 20.000 avro olduğu tahmin ediliyor. Sürücü trafik ışığını görmediğini beyan etti.)`,
     },
   })
   await seedExercises({
@@ -38638,12 +39776,152 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit8.id,
       order: 3,
       grammarTopic: 'Die Rezension',
-      explanationDe:
-        'Eine Rezension bewertet ein Werk (Buch, Film) mit Argumenten und einer klaren Stellungnahme, oft mit einer abschließenden Empfehlung.',
-      explanationEn:
-        'A review evaluates a work (book, film) with arguments and a clear stance, often ending with a recommendation.',
-      explanationTr:
-        'Bir eleştiri, bir eseri (kitap, film) argümanlarla ve net bir tavırla değerlendirir, genellikle bir öneriyle sona erer.',
+      explanationDe: `## Die Rezension
+
+Eine **Rezension** (auch: Kritik, Besprechung) **bewertet** ein Werk – ein Buch, einen Film, ein Theaterstück, eine Ausstellung, ein Album oder ein Produkt. Sie verbindet **Information** mit einer **begründeten Meinung**.
+
+### Aufbau einer Rezension
+| Teil | Inhalt |
+| ---- | ---- |
+| **1. Einleitung** | Titel, Autor/Regisseur, Erscheinungsjahr, Genre; ein origineller Einstieg |
+| **2. Inhaltsangabe** | kurze Zusammenfassung (im **Präsens**!), **ohne** das Ende zu verraten |
+| **3. Analyse** | Figuren, Sprache/Stil, Aufbau, Musik, Bilder, Schauspieler … |
+| **4. Bewertung** | Stärken und Schwächen mit **Begründung** und Beispielen |
+| **5. Fazit / Empfehlung** | Gesamturteil, Zielgruppe: *für wen lohnt es sich?* |
+
+### Wertender Wortschatz
+| positiv | negativ |
+| ---- | ---- |
+| fesselnd, packend, mitreißend | langatmig, zäh, ermüdend |
+| überzeugend, gelungen | misslungen, enttäuschend |
+| einfühlsam, vielschichtig | oberflächlich, klischeehaft |
+| originell, innovativ | vorhersehbar, abgedroschen |
+| brillant gespielt | hölzern gespielt |
+| ein Meisterwerk | ein Flop |
+
+### Typische Redemittel
+**Einschätzen:**
+- *Besonders **gelungen** ist …*
+- *Der Roman **besticht durch** seine präzise Sprache.*
+- *Leider **wirkt** die Handlung im zweiten Teil **konstruiert**.*
+- *Was **fehlt**, ist …*
+
+**Abwägen:**
+- *Trotz kleiner Schwächen **überzeugt** der Film insgesamt.*
+- *So stark der Anfang ist, so **enttäuschend** ist das Ende.*
+
+**Empfehlen:**
+- *Ein **Muss** für alle Krimi-Fans!*
+- *Wer … mag, **kommt** hier **voll auf seine Kosten**.*
+- *Leider **keine Empfehlung**.*
+
+### Rezension vs. Bericht
+| Rezension | Bericht |
+| ---- | ---- |
+| subjektiv-bewertend, aber begründet | objektiv, neutral |
+| Inhaltsangabe im Präsens | Präteritum |
+| wertende Adjektive erwünscht | wertende Adjektive vermeiden |
+
+**Beispielfazit:**
+*„Die Stille nach dem Sturm" ist ein **leiser, aber eindringlicher** Roman, der **noch lange nachwirkt**. Zwar **gerät** die Handlung in der Mitte **etwas ins Stocken**, doch die **einfühlsame** Figurenzeichnung **entschädigt** dafür. **Eine klare Empfehlung** für alle, die anspruchsvolle Literatur schätzen.*`,
+      explanationEn: `## The review
+
+A **review** (also: Kritik, Besprechung) **evaluates** a work – a book, film, play, exhibition, album or product. It combines **information** with a **reasoned opinion**.
+
+### Structure of a review
+| part | content |
+| ---- | ---- |
+| **1. Introduction** | title, author/director, year of release, genre; an original opening |
+| **2. Summary** | brief summary (in the **present tense**!), **without** giving away the ending |
+| **3. Analysis** | characters, language/style, structure, music, images, actors … |
+| **4. Evaluation** | strengths and weaknesses with **reasons** and examples |
+| **5. Conclusion / recommendation** | overall verdict, target audience: *who is it worth it for?* |
+
+### Evaluative vocabulary
+| positive | negative |
+| ---- | ---- |
+| fesselnd, packend, mitreißend (gripping, compelling, rousing) | langatmig, zäh, ermüdend (long-winded, sluggish, tiring) |
+| überzeugend, gelungen (convincing, successful) | misslungen, enttäuschend (failed, disappointing) |
+| einfühlsam, vielschichtig (sensitive, multi-layered) | oberflächlich, klischeehaft (superficial, clichéd) |
+| originell, innovativ (original, innovative) | vorhersehbar, abgedroschen (predictable, hackneyed) |
+| brillant gespielt (brilliantly acted) | hölzern gespielt (woodenly acted) |
+| ein Meisterwerk (a masterpiece) | ein Flop (a flop) |
+
+### Typical phrases
+**Assessing:**
+- *Besonders **gelungen** ist …* (Particularly successful is …)
+- *Der Roman **besticht durch** seine präzise Sprache.* (The novel impresses with its precise language.)
+- *Leider **wirkt** die Handlung im zweiten Teil **konstruiert**.* (Unfortunately the plot seems contrived in the second part.)
+- *Was **fehlt**, ist …* (What's missing is …)
+
+**Weighing up:**
+- *Trotz kleiner Schwächen **überzeugt** der Film insgesamt.* (Despite minor weaknesses, the film convinces overall.)
+- *So stark der Anfang ist, so **enttäuschend** ist das Ende.* (As strong as the beginning is, the ending is equally disappointing.)
+
+**Recommending:**
+- *Ein **Muss** für alle Krimi-Fans!* (A must for all crime fans!)
+- *Wer … mag, **kommt** hier **voll auf seine Kosten**.* (Anyone who likes … will get their money's worth here.)
+- *Leider **keine Empfehlung**.* (Unfortunately, not recommended.)
+
+### Review vs. report
+| review | report |
+| ---- | ---- |
+| subjective-evaluative, but reasoned | objective, neutral |
+| summary in the present tense | simple past |
+| evaluative adjectives welcome | avoid evaluative adjectives |
+
+**Sample conclusion:**
+*„Die Stille nach dem Sturm" ist ein **leiser, aber eindringlicher** Roman, der **noch lange nachwirkt**. Zwar **gerät** die Handlung in der Mitte **etwas ins Stocken**, doch die **einfühlsame** Figurenzeichnung **entschädigt** dafür. **Eine klare Empfehlung** für alle, die anspruchsvolle Literatur schätzen.*
+("The Calm after the Storm" is a quiet but haunting novel that lingers long afterwards. Admittedly the plot stalls a little in the middle, but the sensitive characterisation makes up for it. A clear recommendation for anyone who appreciates sophisticated literature.)`,
+      explanationTr: `## Eleştiri yazısı (Rezension)
+
+**Rezension** (eleştiri, tanıtım yazısı) bir eseri – kitap, film, tiyatro oyunu, sergi, albüm veya ürün – **değerlendirir**. **Bilgiyi** **gerekçeli bir görüşle** birleştirir.
+
+### Bir eleştiri yazısının yapısı
+| bölüm | içerik |
+| ---- | ---- |
+| **1. Giriş** | başlık, yazar/yönetmen, yayın yılı, tür; özgün bir başlangıç |
+| **2. İçerik özeti** | kısa özet (**Präsens** ile!), sonunu **söylemeden** |
+| **3. Çözümleme** | karakterler, dil/üslup, yapı, müzik, görüntüler, oyuncular … |
+| **4. Değerlendirme** | **gerekçe** ve örneklerle güçlü ve zayıf yanlar |
+| **5. Sonuç / öneri** | genel yargı, hedef kitle: *kimler için değer?* |
+
+### Değerlendirme kelimeleri
+| olumlu | olumsuz |
+| ---- | ---- |
+| fesselnd, packend, mitreißend (sürükleyici, etkileyici, coşturucu) | langatmig, zäh, ermüdend (uzun soluklu, ağır, yorucu) |
+| überzeugend, gelungen (ikna edici, başarılı) | misslungen, enttäuschend (başarısız, hayal kırıklığı yaratan) |
+| einfühlsam, vielschichtig (duyarlı, çok katmanlı) | oberflächlich, klischeehaft (yüzeysel, klişe) |
+| originell, innovativ (özgün, yenilikçi) | vorhersehbar, abgedroschen (tahmin edilebilir, basmakalıp) |
+| brillant gespielt (parlak oynanmış) | hölzern gespielt (tahta gibi oynanmış) |
+| ein Meisterwerk (bir başyapıt) | ein Flop (bir fiyasko) |
+
+### Tipik kalıplar
+**Değerlendirmek:**
+- *Besonders **gelungen** ist …* (Özellikle başarılı olan …)
+- *Der Roman **besticht durch** seine präzise Sprache.* (Roman kesin diliyle göz dolduruyor.)
+- *Leider **wirkt** die Handlung im zweiten Teil **konstruiert**.* (Ne yazık ki ikinci bölümde olay örgüsü yapay görünüyor.)
+- *Was **fehlt**, ist …* (Eksik olan …)
+
+**Tartmak:**
+- *Trotz kleiner Schwächen **überzeugt** der Film insgesamt.* (Küçük kusurlarına rağmen film genel olarak ikna edici.)
+- *So stark der Anfang ist, so **enttäuschend** ist das Ende.* (Başlangıç ne kadar güçlüyse son da o kadar hayal kırıklığı yaratıyor.)
+
+**Önermek:**
+- *Ein **Muss** für alle Krimi-Fans!* (Tüm polisiye severler için mutlaka!)
+- *Wer … mag, **kommt** hier **voll auf seine Kosten**.* (… sevenler burada fazlasıyla tatmin olacak.)
+- *Leider **keine Empfehlung**.* (Ne yazık ki tavsiye edilmez.)
+
+### Eleştiri yazısı – rapor
+| eleştiri | rapor |
+| ---- | ---- |
+| öznel-değerlendirici, ama gerekçeli | nesnel, tarafsız |
+| özet Präsens ile | Präteritum |
+| değer yargılı sıfatlar istenir | değer yargılı sıfatlardan kaçınılır |
+
+**Örnek sonuç:**
+*„Die Stille nach dem Sturm" ist ein **leiser, aber eindringlicher** Roman, der **noch lange nachwirkt**. Zwar **gerät** die Handlung in der Mitte **etwas ins Stocken**, doch die **einfühlsame** Figurenzeichnung **entschädigt** dafür. **Eine klare Empfehlung** für alle, die anspruchsvolle Literatur schätzen.*
+(„Fırtınadan Sonraki Sessizlik", uzun süre etkisini sürdüren sessiz ama etkileyici bir roman. Gerçi olay örgüsü ortalarda biraz aksıyor, ama duyarlı karakter çizimi bunu telafi ediyor. Nitelikli edebiyatı sevenler için kesinlikle tavsiye edilir.)`,
     },
   })
   await seedExercises({
@@ -38672,12 +39950,114 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit8.id,
       order: 4,
       grammarTopic: 'Übung: Textsorten im Vergleich',
-      explanationDe:
-        'Wiederholung: Essay (persönlich), Bericht (sachlich-chronologisch) und Rezension (bewertend) verlangen jeweils einen anderen Stil und Ton.',
-      explanationEn:
-        'Review: essay (personal), report (factual-chronological), and review (evaluative) each require a different style and tone.',
-      explanationTr:
-        'Tekrar: deneme (kişisel), rapor (nesnel-kronolojik) ve eleştiri (değerlendirici) her biri farklı bir üslup ve ton gerektirir.',
+      explanationDe: `## Übung: Textsorten im Vergleich – Zusammenfassung
+
+**Essay** (persönlich), **Bericht** (sachlich-chronologisch) und **Rezension** (bewertend) verlangen jeweils einen **anderen Stil und Ton**. Textsortenkompetenz bedeutet, den Stil **gezielt** an Zweck und Leser anzupassen.
+
+### Vergleich
+| | Essay | Bericht | Rezension |
+| ---- | ---- | ---- | ---- |
+| **Ziel** | zum Nachdenken anregen | informieren | bewerten, empfehlen |
+| **Perspektive** | Ich-Form, subjektiv | unpersönlich, neutral | subjektiv, aber begründet |
+| **Zeitform** | Präsens | Präteritum | Präsens (Inhalt) |
+| **Aufbau** | frei, assoziativ | chronologisch | Einleitung – Inhalt – Analyse – Urteil |
+| **Sprache** | bildhaft, rhetorisch | sachlich, präzise, Passiv | wertend, anschaulich |
+| **typische Mittel** | rhetorische Fragen, Metaphern | Nominalstil, Konj. I | wertende Adjektive, Vergleiche |
+
+### Dasselbe Ereignis – drei Textsorten
+**Thema:** Ein neues Kunstmuseum wird eröffnet.
+
+**Bericht:** *Am Samstag **wurde** in der Altstadt das neue Kunstmuseum **eröffnet**. Rund 3.000 Besucher **kamen** am ersten Tag. Die Baukosten **beliefen sich** auf 45 Millionen Euro.*
+
+**Rezension:** *Das neue Museum **besticht durch** seine **lichtdurchflutete** Architektur. Die Eröffnungsausstellung **ist** allerdings **etwas überladen**. Dennoch: **Ein Besuch lohnt sich!***
+
+**Essay:** *Brauchen wir in Zeiten digitaler Bilderfluten überhaupt noch Museen? **Ich meine: mehr denn je.** Denn ein Museum ist **ein Ort der Stille** – und Stille ist das kostbarste Gut unserer Zeit.*
+
+### Weitere Textsorten auf C2-Niveau
+- **Kommentar**: Meinung zu einem aktuellen Thema (Zeitung)
+- **Glosse**: kurz, pointiert, ironisch
+- **Leserbrief**: Reaktion auf einen Artikel
+- **Protokoll**: Verlauf oder Ergebnisse einer Sitzung
+- **Zusammenfassung**: Kerninformationen eines Textes, sachlich, im Präsens
+
+**Beispiele:**
+- *Ist Fortschritt immer ein Gewinn?* (Essay-Einstieg)
+- *Gegen 22 Uhr wurde der Brand gelöscht.* (Bericht)
+- *Die Hauptdarstellerin spielt **mit beeindruckender Intensität**.* (Rezension)`,
+      explanationEn: `## Practice: comparing text types – summary
+
+**Essay** (personal), **report** (factual-chronological) and **review** (evaluative) each require a **different style and tone**. Text-type competence means adapting your style **deliberately** to purpose and reader.
+
+### Comparison
+| | essay | report | review |
+| ---- | ---- | ---- | ---- |
+| **aim** | stimulate thought | inform | evaluate, recommend |
+| **perspective** | first person, subjective | impersonal, neutral | subjective but reasoned |
+| **tense** | present | simple past | present (content) |
+| **structure** | free, associative | chronological | intro – content – analysis – verdict |
+| **language** | figurative, rhetorical | factual, precise, passive | evaluative, vivid |
+| **typical devices** | rhetorical questions, metaphors | nominal style, Konj. I | evaluative adjectives, comparisons |
+
+### The same event – three text types
+**Topic:** a new art museum opens.
+
+**Report:** *Am Samstag **wurde** in der Altstadt das neue Kunstmuseum **eröffnet**. Rund 3.000 Besucher **kamen** am ersten Tag. Die Baukosten **beliefen sich** auf 45 Millionen Euro.*
+(On Saturday the new art museum in the old town was opened. Around 3,000 visitors came on the first day. Construction costs amounted to 45 million euros.)
+
+**Review:** *Das neue Museum **besticht durch** seine **lichtdurchflutete** Architektur. Die Eröffnungsausstellung **ist** allerdings **etwas überladen**. Dennoch: **Ein Besuch lohnt sich!***
+(The new museum impresses with its light-flooded architecture. The opening exhibition is somewhat overloaded, though. Nevertheless: well worth a visit!)
+
+**Essay:** *Brauchen wir in Zeiten digitaler Bilderfluten überhaupt noch Museen? **Ich meine: mehr denn je.** Denn ein Museum ist **ein Ort der Stille** – und Stille ist das kostbarste Gut unserer Zeit.*
+(In an age of floods of digital images, do we still need museums at all? I say: more than ever. For a museum is a place of silence – and silence is the most precious commodity of our time.)
+
+### Other text types at C2 level
+- **commentary**: opinion on a current issue (newspaper)
+- **gloss (Glosse)**: short, pointed, ironic
+- **letter to the editor**: reaction to an article
+- **minutes**: course or results of a meeting
+- **summary**: core information of a text, factual, in the present tense
+
+**Examples:**
+- *Ist Fortschritt immer ein Gewinn?* (Is progress always a gain? – essay opening)
+- *Gegen 22 Uhr wurde der Brand gelöscht.* (The fire was extinguished at around 10 p.m. – report)
+- *Die Hauptdarstellerin spielt **mit beeindruckender Intensität**.* (The lead actress plays with impressive intensity. – review)`,
+      explanationTr: `## Alıştırma: Metin türlerinin karşılaştırması – özet
+
+**Deneme** (kişisel), **rapor** (nesnel-kronolojik) ve **eleştiri yazısı** (değerlendirici) her biri **farklı bir üslup ve ton** gerektirir. Metin türü yetkinliği, üslubu amaca ve okura göre **bilinçli olarak** uyarlamak demektir.
+
+### Karşılaştırma
+| | deneme | rapor | eleştiri yazısı |
+| ---- | ---- | ---- | ---- |
+| **amaç** | düşündürmek | bilgilendirmek | değerlendirmek, önermek |
+| **bakış açısı** | birinci şahıs, öznel | kişisiz, tarafsız | öznel ama gerekçeli |
+| **zaman** | Präsens | Präteritum | Präsens (içerik) |
+| **yapı** | serbest, çağrışımsal | kronolojik | giriş – içerik – çözümleme – yargı |
+| **dil** | imgeli, retorik | nesnel, kesin, edilgen | değerlendirici, canlı |
+| **tipik araçlar** | retorik sorular, metaforlar | isim üslubu, Konj. I | değer yargılı sıfatlar, karşılaştırmalar |
+
+### Aynı olay – üç metin türü
+**Konu:** Yeni bir sanat müzesi açılıyor.
+
+**Rapor:** *Am Samstag **wurde** in der Altstadt das neue Kunstmuseum **eröffnet**. Rund 3.000 Besucher **kamen** am ersten Tag. Die Baukosten **beliefen sich** auf 45 Millionen Euro.*
+(Cumartesi günü eski şehirde yeni sanat müzesi açıldı. İlk gün yaklaşık 3.000 ziyaretçi geldi. İnşaat maliyeti 45 milyon avroyu buldu.)
+
+**Eleştiri yazısı:** *Das neue Museum **besticht durch** seine **lichtdurchflutete** Architektur. Die Eröffnungsausstellung **ist** allerdings **etwas überladen**. Dennoch: **Ein Besuch lohnt sich!***
+(Yeni müze ışıkla dolu mimarisiyle göz dolduruyor. Açılış sergisi ise biraz fazla yüklü. Yine de ziyaret etmeye değer!)
+
+**Deneme:** *Brauchen wir in Zeiten digitaler Bilderfluten überhaupt noch Museen? **Ich meine: mehr denn je.** Denn ein Museum ist **ein Ort der Stille** – und Stille ist das kostbarste Gut unserer Zeit.*
+(Dijital görüntü selinin yaşandığı bir çağda müzelere hâlâ ihtiyacımız var mı? Bence: her zamankinden daha çok. Çünkü müze bir sessizlik mekânıdır – ve sessizlik çağımızın en değerli hazinesidir.)
+
+### C2 seviyesinde diğer metin türleri
+- **Yorum (Kommentar)**: güncel bir konuda görüş (gazete)
+- **Glosse**: kısa, keskin, ironik
+- **Okur mektubu**: bir makaleye tepki
+- **Tutanak**: bir toplantının seyri veya sonuçları
+- **Özet**: bir metnin temel bilgileri, nesnel, Präsens ile
+
+**Örnekler:**
+- *Ist Fortschritt immer ein Gewinn?* (İlerleme her zaman bir kazanç mıdır? – deneme girişi)
+- *Gegen 22 Uhr wurde der Brand gelöscht.* (Yangın saat 22 sularında söndürüldü. – rapor)
+- *Die Hauptdarstellerin spielt **mit beeindruckender Intensität**.* (Başrol oyuncusu etkileyici bir yoğunlukla oynuyor. – eleştiri yazısı)`,
     },
   })
   await seedExercises({
@@ -38730,12 +40110,147 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit9.id,
       order: 1,
       grammarTopic: 'Standarddeutsch vs. Umgangssprache',
-      explanationDe:
-        'Standarddeutsch folgt den Regeln der Hochsprache, Umgangssprache erlaubt Verkürzungen wie "haste" (hast du) oder "isses" (ist es).',
-      explanationEn:
-        'Standard German follows the rules of the standard language; colloquial speech allows contractions like "haste" (hast du = do you have) or "isses" (ist es = is it).',
-      explanationTr:
-        'Standart Almanca, standart dilin kurallarını izler; günlük dil "haste" (hast du) veya "isses" (ist es) gibi kısaltmalara izin verir.',
+      explanationDe: `## Standarddeutsch vs. Umgangssprache
+
+**Standarddeutsch** (Hochdeutsch) ist die überregionale, normierte Sprache in Schule, Medien, Verwaltung und Schrift. Die **Umgangssprache** ist die Alltagssprache im Gespräch – lockerer, verkürzt und regional gefärbt.
+
+### Typische Merkmale der Umgangssprache
+| Merkmal | Standard | umgangssprachlich |
+| ---- | ---- | ---- |
+| **Verschmelzung** von Verb + Pronomen | hast du, ist es, gibt es | **haste**, **isses**, **gibt's** |
+| **Endungen weglassen** | ich habe, ich gehe | ich **hab'**, ich **geh'** |
+| **Artikel verkürzen** | ein, eine, einen | **'n**, **'ne**, **'nen** |
+| **„nicht" / „etwas"** | nicht, etwas | **nich'**, **was** |
+| **Perfekt statt Präteritum** | Ich ging ins Kino. | Ich **bin** ins Kino **gegangen**. |
+| **„tun" + Infinitiv** | Er arbeitet gerade. | Er **tut** gerade **arbeiten**. (regional) |
+| **Dativ statt Genitiv** | wegen des Regens | wegen **dem** Regen |
+| **„weil" mit Verb an Position 2** | …, weil ich müde **bin**. | …, weil ich **bin** müde. |
+| **„am" + Infinitiv (Verlaufsform)** | Ich lese gerade. | Ich bin **am Lesen**. |
+
+### Umgangssprachlicher Wortschatz
+| umgangssprachlich | Standard |
+| ---- | ---- |
+| die Kohle, die Knete | das Geld |
+| kriegen | bekommen |
+| quatschen | reden |
+| pennen | schlafen |
+| der Typ | der Mann |
+| kapieren / checken | verstehen |
+| futtern | essen |
+| klauen | stehlen |
+| abhauen | weggehen |
+| echt, voll | wirklich, sehr |
+
+### Wann ist was angemessen?
+| Situation | Register |
+| ---- | ---- |
+| Gespräch mit Freunden, Familie | Umgangssprache ✅ |
+| WhatsApp, Chat | Umgangssprache ✅ |
+| Prüfung, Bewerbung, E-Mail an Behörde | Standard ✅ |
+| Referat, Präsentation | Standard (evtl. leicht locker) |
+
+**Wichtig für C2:** Man sollte Umgangssprache **verstehen** (Filme, Gespräche, Social Media) und **gezielt** einsetzen können – aber in formellen Texten **vermeiden**.
+
+**Beispiele:**
+- *„**Haste** mal **'nen** Euro?"* = Hast du einen Euro?
+- *„Ich **hab'** keine **Kohle** mehr."* = Ich habe kein Geld mehr.
+- *„**Kapierst** du das?"* = Verstehst du das?
+- *„Wir sind gerade **am Essen**."* = Wir essen gerade.
+- *„Wegen **dem** Stau bin ich zu spät."* (umgangssprachlich) – *Wegen **des** Staus …* (Standard)`,
+      explanationEn: `## Standard German vs. colloquial language
+
+**Standard German** (Hochdeutsch) is the supra-regional, standardised language of school, media, administration and writing. **Colloquial language** (Umgangssprache) is everyday spoken language – more relaxed, shortened and regionally coloured.
+
+### Typical features of colloquial German
+| feature | standard | colloquial |
+| ---- | ---- | ---- |
+| **merging** verb + pronoun | hast du, ist es, gibt es | **haste**, **isses**, **gibt's** |
+| **dropping endings** | ich habe, ich gehe | ich **hab'**, ich **geh'** |
+| **shortened articles** | ein, eine, einen | **'n**, **'ne**, **'nen** |
+| **"nicht" / "etwas"** | nicht, etwas | **nich'**, **was** |
+| **perfect instead of simple past** | Ich ging ins Kino. | Ich **bin** ins Kino **gegangen**. (I went to the cinema.) |
+| **"tun" + infinitive** | Er arbeitet gerade. | Er **tut** gerade **arbeiten**. (regional – He's working.) |
+| **dative instead of genitive** | wegen des Regens | wegen **dem** Regen (because of the rain) |
+| **"weil" with verb in position 2** | …, weil ich müde **bin**. | …, weil ich **bin** müde. (… because I'm tired.) |
+| **"am" + infinitive (progressive)** | Ich lese gerade. | Ich bin **am Lesen**. (I'm reading.) |
+
+### Colloquial vocabulary
+| colloquial | standard |
+| ---- | ---- |
+| die Kohle, die Knete (dough, cash) | das Geld (money) |
+| kriegen (get) | bekommen |
+| quatschen (chat, natter) | reden (talk) |
+| pennen (kip, crash) | schlafen (sleep) |
+| der Typ (guy) | der Mann (man) |
+| kapieren / checken (get it) | verstehen (understand) |
+| futtern (scoff) | essen (eat) |
+| klauen (nick, swipe) | stehlen (steal) |
+| abhauen (clear off) | weggehen (leave) |
+| echt, voll (really, totally) | wirklich, sehr |
+
+### When is what appropriate?
+| situation | register |
+| ---- | ---- |
+| chatting with friends, family | colloquial ✅ |
+| WhatsApp, chat | colloquial ✅ |
+| exam, job application, e-mail to an authority | standard ✅ |
+| presentation | standard (perhaps slightly relaxed) |
+
+**Important for C2:** you should **understand** colloquial German (films, conversations, social media) and be able to use it **deliberately** – but **avoid** it in formal texts.
+
+**Examples:**
+- *„**Haste** mal **'nen** Euro?"* = Hast du einen Euro? (Got a euro?)
+- *„Ich **hab'** keine **Kohle** mehr."* = Ich habe kein Geld mehr. (I'm out of cash.)
+- *„**Kapierst** du das?"* = Verstehst du das? (Get it?)
+- *„Wir sind gerade **am Essen**."* = Wir essen gerade. (We're eating right now.)
+- *„Wegen **dem** Stau bin ich zu spät."* (colloquial) – *Wegen **des** Staus …* (standard) (Because of the traffic jam I'm late.)`,
+      explanationTr: `## Standart Almanca – günlük konuşma dili
+
+**Standart Almanca** (Hochdeutsch) okulda, medyada, kamu yönetiminde ve yazıda kullanılan bölgeler üstü, kurallaşmış dildir. **Günlük konuşma dili** (Umgangssprache) ise sohbetteki gündelik dildir – daha rahat, kısaltılmış ve bölgesel renkli.
+
+### Günlük konuşma dilinin tipik özellikleri
+| özellik | standart | gündelik |
+| ---- | ---- | ---- |
+| fiil + zamirin **kaynaşması** | hast du, ist es, gibt es | **haste**, **isses**, **gibt's** |
+| **ekleri düşürmek** | ich habe, ich gehe | ich **hab'**, ich **geh'** |
+| **artikelleri kısaltmak** | ein, eine, einen | **'n**, **'ne**, **'nen** |
+| **„nicht" / „etwas"** | nicht, etwas | **nich'**, **was** |
+| **Präteritum yerine Perfekt** | Ich ging ins Kino. | Ich **bin** ins Kino **gegangen**. (Sinemaya gittim.) |
+| **„tun" + mastar** | Er arbeitet gerade. | Er **tut** gerade **arbeiten**. (bölgesel – Şu an çalışıyor.) |
+| **Genitiv yerine Dativ** | wegen des Regens | wegen **dem** Regen (yağmur yüzünden) |
+| **fiili 2. pozisyonda „weil"** | …, weil ich müde **bin**. | …, weil ich **bin** müde. (… çünkü yorgunum.) |
+| **„am" + mastar (süreklilik)** | Ich lese gerade. | Ich bin **am Lesen**. (Okuyorum.) |
+
+### Gündelik kelimeler
+| gündelik | standart |
+| ---- | ---- |
+| die Kohle, die Knete (mangır, para) | das Geld (para) |
+| kriegen (almak) | bekommen |
+| quatschen (laklak etmek) | reden (konuşmak) |
+| pennen (kestirmek) | schlafen (uyumak) |
+| der Typ (herif, adam) | der Mann (adam) |
+| kapieren / checken (çakmak, anlamak) | verstehen (anlamak) |
+| futtern (tıkınmak) | essen (yemek) |
+| klauen (aşırmak) | stehlen (çalmak) |
+| abhauen (sıvışmak) | weggehen (gitmek) |
+| echt, voll (gerçekten, çok) | wirklich, sehr |
+
+### Ne zaman ne uygun?
+| durum | dil düzeyi |
+| ---- | ---- |
+| arkadaşlar, aileyle sohbet | gündelik dil ✅ |
+| WhatsApp, sohbet | gündelik dil ✅ |
+| sınav, iş başvurusu, resmî daireye e-posta | standart ✅ |
+| sunum | standart (belki biraz rahat) |
+
+**C2 için önemli:** Gündelik dili **anlayabilmeli** (filmler, sohbetler, sosyal medya) ve **bilinçli** kullanabilmelisiniz – ama resmî metinlerde **kaçınmalısınız**.
+
+**Örnekler:**
+- *„**Haste** mal **'nen** Euro?"* = Hast du einen Euro? (Bir avron var mı?)
+- *„Ich **hab'** keine **Kohle** mehr."* = Ich habe kein Geld mehr. (Hiç mangırım kalmadı.)
+- *„**Kapierst** du das?"* = Verstehst du das? (Çaktın mı?)
+- *„Wir sind gerade **am Essen**."* = Wir essen gerade. (Şu an yemek yiyoruz.)
+- *„Wegen **dem** Stau bin ich zu spät."* (gündelik) – *Wegen **des** Staus …* (standart) (Trafik yüzünden geç kaldım.)`,
     },
   })
   await seedExercises({
@@ -38764,12 +40279,162 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit9.id,
       order: 2,
       grammarTopic: 'Regionale Varianten (Überblick)',
-      explanationDe:
-        'Deutschsprachige Länder haben regionale Varianten: "Sonnabend" (norddeutsch) vs. "Samstag" (süddeutsch), "Sackerl" (österreichisch) für "Tüte".',
-      explanationEn:
-        'German-speaking countries have regional variants: "Sonnabend" (Northern German) vs. "Samstag" (Southern German) for Saturday, "Sackerl" (Austrian) for "Tüte" (bag).',
-      explanationTr:
-        'Almanca konuşulan ülkelerde bölgesel farklılıklar vardır: "Sonnabend" (kuzey Almanya) - "Samstag" (güney Almanya) "cumartesi" için, "Sackerl" (Avusturya) "Tüte" (torba) için.',
+      explanationDe: `## Regionale Varianten: Deutschland, Österreich, Schweiz
+
+Deutsch ist eine **plurizentrische Sprache**: Es gibt **drei gleichberechtigte Standardvarietäten** – das deutsche, das österreichische und das schweizerische Hochdeutsch. Dazu kommen innerhalb Deutschlands **regionale Unterschiede** zwischen Nord und Süd.
+
+### Nord – Süd in Deutschland
+| Norddeutschland | Süddeutschland | Bedeutung |
+| ---- | ---- | ---- |
+| Sonnabend | Samstag | Samstag |
+| Brötchen | Semmel / Weckle / Weck | Brötchen |
+| Moin! | Grüß Gott! / Servus! | Hallo |
+| Tschüss | Ade / Servus / Pfiat di | Auf Wiedersehen |
+| Junge / Mädchen | Bub / Mädle, Madl | Junge / Mädchen |
+| Viertel nach drei | Viertel vier | 15:15 Uhr |
+| ich **habe** gesessen | ich **bin** gesessen | Perfekt von *sitzen, stehen, liegen* |
+
+### Österreich (Austriazismen)
+| Österreich | Deutschland |
+| ---- | ---- |
+| das Sackerl | die Tüte |
+| der Paradeiser | die Tomate |
+| der Erdapfel | die Kartoffel |
+| die Marille | die Aprikose |
+| das Obers | die Sahne |
+| der Jänner | der Januar |
+| die Matura | das Abitur |
+| der Topfen | der Quark |
+| heuer | dieses Jahr |
+| leiwand | toll (umgangssprachlich) |
+
+### Schweiz (Helvetismen)
+| Schweiz | Deutschland |
+| ---- | ---- |
+| das Velo | das Fahrrad |
+| das Natel | das Handy |
+| der Rahm | die Sahne |
+| parkieren | parken |
+| grillieren | grillen |
+| merci | danke |
+| Grüezi! | Guten Tag! |
+| das Trottoir | der Bürgersteig |
+
+**Besonderheit Schweiz:** In der Schweiz gibt es **kein ß** – man schreibt immer **ss**: *Strasse, gross, Fuss*.
+
+### Wichtig
+Alle drei Varianten sind **korrekt**! Ein Österreicher, der *Jänner* sagt, macht keinen Fehler. Für Deutschlernende gilt: **verstehen** können, **eine** Variante konsequent benutzen.
+
+**Beispiele:**
+- *Ich hätte gern ein **Sackerl**.* (Österreich) = *eine Tüte* (Deutschland)
+- *Fährst du mit dem **Velo** zur Arbeit?* (Schweiz) = *mit dem Fahrrad*
+- *Am **Sonnabend** gehen wir auf den Markt.* (Norddeutschland)
+- *Ich **bin** lange vor dem Haus **gestanden**.* (Süddeutschland/Österreich) = *ich habe gestanden*
+- ***Heuer** fahren wir nach Italien.* (Österreich/Bayern) = *dieses Jahr*`,
+      explanationEn: `## Regional variants: Germany, Austria, Switzerland
+
+German is a **pluricentric language**: there are **three equally valid standard varieties** – German, Austrian and Swiss Standard German. In addition, within Germany there are **regional differences** between north and south.
+
+### North – south in Germany
+| northern Germany | southern Germany | meaning |
+| ---- | ---- | ---- |
+| Sonnabend | Samstag | Saturday |
+| Brötchen | Semmel / Weckle / Weck | bread roll |
+| Moin! | Grüß Gott! / Servus! | hello |
+| Tschüss | Ade / Servus / Pfiat di | goodbye |
+| Junge / Mädchen | Bub / Mädle, Madl | boy / girl |
+| Viertel nach drei | Viertel vier | 3.15 |
+| ich **habe** gesessen | ich **bin** gesessen | perfect of *sitzen, stehen, liegen* (sit, stand, lie) |
+
+### Austria (Austriacisms)
+| Austria | Germany | English |
+| ---- | ---- | ---- |
+| das Sackerl | die Tüte | bag |
+| der Paradeiser | die Tomate | tomato |
+| der Erdapfel | die Kartoffel | potato |
+| die Marille | die Aprikose | apricot |
+| das Obers | die Sahne | cream |
+| der Jänner | der Januar | January |
+| die Matura | das Abitur | school-leaving exam |
+| der Topfen | der Quark | quark (curd cheese) |
+| heuer | dieses Jahr | this year |
+| leiwand | toll (colloquial) | great |
+
+### Switzerland (Helvetisms)
+| Switzerland | Germany | English |
+| ---- | ---- | ---- |
+| das Velo | das Fahrrad | bicycle |
+| das Natel | das Handy | mobile phone |
+| der Rahm | die Sahne | cream |
+| parkieren | parken | to park |
+| grillieren | grillen | to grill |
+| merci | danke | thank you |
+| Grüezi! | Guten Tag! | hello |
+| das Trottoir | der Bürgersteig | pavement |
+
+**Swiss peculiarity:** Switzerland has **no ß** – it's always written **ss**: *Strasse, gross, Fuss*.
+
+### Important
+All three variants are **correct**! An Austrian who says *Jänner* is not making a mistake. For learners: be able to **understand** them, and use **one** variant consistently.
+
+**Examples:**
+- *Ich hätte gern ein **Sackerl**.* (Austria) = *eine Tüte* (Germany) (I'd like a bag.)
+- *Fährst du mit dem **Velo** zur Arbeit?* (Switzerland) = *mit dem Fahrrad* (Do you cycle to work?)
+- *Am **Sonnabend** gehen wir auf den Markt.* (northern Germany) (On Saturday we go to the market.)
+- *Ich **bin** lange vor dem Haus **gestanden**.* (southern Germany/Austria) = *ich habe gestanden* (I stood in front of the house for a long time.)
+- ***Heuer** fahren wir nach Italien.* (Austria/Bavaria) = *dieses Jahr* (This year we're going to Italy.)`,
+      explanationTr: `## Bölgesel varyantlar: Almanya, Avusturya, İsviçre
+
+Almanca **çok merkezli bir dildir**: **eşit değerde üç standart varyant** vardır – Almanya, Avusturya ve İsviçre standart Almancası. Buna Almanya içinde kuzey ile güney arasındaki **bölgesel farklar** da eklenir.
+
+### Almanya'da kuzey – güney
+| Kuzey Almanya | Güney Almanya | anlamı |
+| ---- | ---- | ---- |
+| Sonnabend | Samstag | cumartesi |
+| Brötchen | Semmel / Weckle / Weck | küçük ekmek |
+| Moin! | Grüß Gott! / Servus! | merhaba |
+| Tschüss | Ade / Servus / Pfiat di | hoşça kal |
+| Junge / Mädchen | Bub / Mädle, Madl | oğlan / kız |
+| Viertel nach drei | Viertel vier | 15.15 |
+| ich **habe** gesessen | ich **bin** gesessen | *sitzen, stehen, liegen* fiillerinin Perfekt'i |
+
+### Avusturya (Avusturya'ya özgü kelimeler)
+| Avusturya | Almanya | Türkçe |
+| ---- | ---- | ---- |
+| das Sackerl | die Tüte | poşet |
+| der Paradeiser | die Tomate | domates |
+| der Erdapfel | die Kartoffel | patates |
+| die Marille | die Aprikose | kayısı |
+| das Obers | die Sahne | krema |
+| der Jänner | der Januar | ocak |
+| die Matura | das Abitur | lise bitirme sınavı |
+| der Topfen | der Quark | lor peyniri |
+| heuer | dieses Jahr | bu yıl |
+| leiwand | toll (gündelik) | harika |
+
+### İsviçre (İsviçre'ye özgü kelimeler)
+| İsviçre | Almanya | Türkçe |
+| ---- | ---- | ---- |
+| das Velo | das Fahrrad | bisiklet |
+| das Natel | das Handy | cep telefonu |
+| der Rahm | die Sahne | krema |
+| parkieren | parken | park etmek |
+| grillieren | grillen | ızgara yapmak |
+| merci | danke | teşekkürler |
+| Grüezi! | Guten Tag! | merhaba |
+| das Trottoir | der Bürgersteig | kaldırım |
+
+**İsviçre'ye özgü:** İsviçre'de **ß yoktur** – her zaman **ss** yazılır: *Strasse, gross, Fuss*.
+
+### Önemli
+Üç varyantın hepsi de **doğrudur**! *Jänner* diyen bir Avusturyalı hata yapmıyor. Almanca öğrenenler için: hepsini **anlayabilmek**, **birini** tutarlı biçimde kullanmak.
+
+**Örnekler:**
+- *Ich hätte gern ein **Sackerl**.* (Avusturya) = *eine Tüte* (Almanya) (Bir poşet alabilir miyim?)
+- *Fährst du mit dem **Velo** zur Arbeit?* (İsviçre) = *mit dem Fahrrad* (İşe bisikletle mi gidiyorsun?)
+- *Am **Sonnabend** gehen wir auf den Markt.* (Kuzey Almanya) (Cumartesi pazara gidiyoruz.)
+- *Ich **bin** lange vor dem Haus **gestanden**.* (Güney Almanya/Avusturya) = *ich habe gestanden* (Evin önünde uzun süre durdum.)
+- ***Heuer** fahren wir nach Italien.* (Avusturya/Bavyera) = *dieses Jahr* (Bu yıl İtalya'ya gidiyoruz.)`,
     },
   })
   await seedExercises({
@@ -38798,12 +40463,141 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit9.id,
       order: 3,
       grammarTopic: 'Soziolekte und Jugendsprache',
-      explanationDe:
-        'Soziolekte sind gruppenspezifische Sprachformen; Jugendsprache verändert sich schnell und benutzt oft Anglizismen wie "cringe" oder "flexen".',
-      explanationEn:
-        'Sociolects are group-specific language forms; youth slang changes quickly and often borrows English words like "cringe" or "flexen" (to show off).',
-      explanationTr:
-        'Sosyolektler gruba özgü dil biçimleridir; gençlik dili hızla değişir ve "cringe" veya "flexen" gibi İngilizce kökenli kelimeleri sık kullanır.',
+      explanationDe: `## Soziolekte und Jugendsprache
+
+**Soziolekte** sind Sprachformen, die von bestimmten **sozialen Gruppen** benutzt werden – z. B. Berufsgruppen, Altersgruppen oder Szenen. Die bekannteste ist die **Jugendsprache**, die sich besonders **schnell verändert**.
+
+### Merkmale der Jugendsprache
+| Merkmal | Beispiele |
+| ---- | ---- |
+| **Anglizismen** | *cringe* (peinlich), *flexen* (angeben), *chillen* (entspannen), *lost* (ahnungslos), *random* (zufällig, seltsam), *sus* (verdächtig) |
+| **Verstärker** | *voll, mega, krass, übelst, hart* |
+| **Abkürzungen** | *LOL, OMG, digga, ka* (keine Ahnung), *vllt* (vielleicht) |
+| **neue Bedeutungen** | *Ehrenmann/Ehrenfrau* (jemand, der sich vorbildlich verhält), *Lauch* (schwacher, unsportlicher Typ) |
+| **verkürzte Sätze** | *Gehen wir Kino?* (= Gehen wir ins Kino?) |
+| **Einflüsse aus Migrantensprachen** | *Digga / Diggi* (Kumpel), *Wallah* (ich schwöre), *yalla* (los, schnell) |
+
+### Jugendwörter im Überblick
+| Wort | Bedeutung |
+| ---- | ---- |
+| **cringe** | peinlich, fremdschämend |
+| **flexen** | angeben, prahlen |
+| **lost** | ahnungslos, verwirrt |
+| **sheesh** | Ausdruck des Staunens |
+| **Digga** | Kumpel, Freund |
+| **chillen** | sich entspannen |
+| **wild** | verrückt, unglaublich |
+| **Ehrenmann** | ein toller, hilfsbereiter Mensch |
+| **gönn dir!** | Lass es dir gut gehen! / Mach ruhig! |
+
+### Andere Soziolekte
+- **Fachjargon** (Berufsgruppen): Mediziner (*„Der Patient ist stabil"*), IT (*„den Server neu aufsetzen"*, *„deployen"*)
+- **Szenesprachen**: Gamer (*„noob", „leveln", „GG"*), Sportler, Musikszenen
+- **Behördenjargon** (siehe Fachsprachen)
+
+### Funktion von Soziolekten
+- **Gruppenzugehörigkeit** zeigen („Wir gehören zusammen")
+- **Abgrenzung** von anderen (z. B. von Erwachsenen)
+- **Effizienz** (Fachjargon)
+
+### Achtung beim Benutzen
+Jugendsprache wirkt aus dem Mund von Erwachsenen oft **unfreiwillig komisch** („cringe"!). Für Lernende ist das **Verstehen** wichtiger als das aktive Benutzen.
+
+**Beispiele:**
+- *„Das Video ist voll **cringe**."* = Das Video ist sehr peinlich.
+- *„Er **flext** mit seinem neuen Handy."* = Er gibt mit seinem neuen Handy an.
+- *„Ich bin total **lost** in Mathe."* = Ich verstehe in Mathe gar nichts.
+- *„**Digga**, was geht?"* = Hallo, Kumpel, wie geht's?`,
+      explanationEn: `## Sociolects and youth language
+
+**Sociolects** are forms of language used by particular **social groups** – e.g. professions, age groups or scenes. The best known is **youth language**, which **changes especially quickly**.
+
+### Features of youth language
+| feature | examples |
+| ---- | ---- |
+| **anglicisms** | *cringe* (embarrassing), *flexen* (show off), *chillen* (relax), *lost* (clueless), *random* (random, weird), *sus* (suspicious) |
+| **intensifiers** | *voll, mega, krass, übelst, hart* (totally, mega, crazy, seriously, hard) |
+| **abbreviations** | *LOL, OMG, digga, ka* (keine Ahnung – no idea), *vllt* (vielleicht – maybe) |
+| **new meanings** | *Ehrenmann/Ehrenfrau* (someone who behaves admirably – a legend), *Lauch* ("leek" = weak, unathletic guy) |
+| **shortened sentences** | *Gehen wir Kino?* (= Gehen wir ins Kino? – Shall we go cinema?) |
+| **influences from migrant languages** | *Digga / Diggi* (mate), *Wallah* (I swear), *yalla* (come on, quick) |
+
+### Youth words at a glance
+| word | meaning |
+| ---- | ---- |
+| **cringe** | embarrassing, second-hand embarrassment |
+| **flexen** | to show off, brag |
+| **lost** | clueless, confused |
+| **sheesh** | expression of amazement |
+| **Digga** | mate, buddy |
+| **chillen** | to chill, relax |
+| **wild** | crazy, unbelievable |
+| **Ehrenmann** | a great, helpful person |
+| **gönn dir!** | treat yourself! / go for it! |
+
+### Other sociolects
+- **professional jargon**: doctors (*„Der Patient ist stabil"* – the patient is stable), IT (*„den Server neu aufsetzen"* – set the server up again, *„deployen"* – deploy)
+- **scene languages**: gamers (*„noob", „leveln", „GG"*), athletes, music scenes
+- **officialese** (see specialist languages)
+
+### Functions of sociolects
+- showing **group membership** ("we belong together")
+- **setting oneself apart** from others (e.g. from adults)
+- **efficiency** (professional jargon)
+
+### Caution when using
+Youth language from the mouths of adults often sounds **unintentionally comic** ("cringe"!). For learners, **understanding** matters more than active use.
+
+**Examples:**
+- *„Das Video ist voll **cringe**."* = Das Video ist sehr peinlich. (That video is so cringe.)
+- *„Er **flext** mit seinem neuen Handy."* = Er gibt mit seinem neuen Handy an. (He's flexing his new phone.)
+- *„Ich bin total **lost** in Mathe."* = Ich verstehe in Mathe gar nichts. (I'm totally lost in maths.)
+- *„**Digga**, was geht?"* = Hallo, Kumpel, wie geht's? (Hey mate, what's up?)`,
+      explanationTr: `## Sosyolektler ve gençlik dili
+
+**Sosyolektler**, belirli **toplumsal grupların** – örneğin meslek grupları, yaş grupları veya topluluklar – kullandığı dil biçimleridir. En bilineni, özellikle **hızlı değişen** **gençlik dilidir**.
+
+### Gençlik dilinin özellikleri
+| özellik | örnekler |
+| ---- | ---- |
+| **İngilizce kökenli kelimeler** | *cringe* (utanç verici), *flexen* (hava atmak), *chillen* (takılmak, rahatlamak), *lost* (bihaber), *random* (rastgele, tuhaf), *sus* (şüpheli) |
+| **güçlendiriciler** | *voll, mega, krass, übelst, hart* (fena, mega, acayip, aşırı, sert) |
+| **kısaltmalar** | *LOL, OMG, digga, ka* (keine Ahnung – hiçbir fikrim yok), *vllt* (vielleicht – belki) |
+| **yeni anlamlar** | *Ehrenmann/Ehrenfrau* (örnek davranan kişi – adam gibi adam), *Lauch* („pırasa" = cılız, sporsuz tip) |
+| **kısaltılmış cümleler** | *Gehen wir Kino?* (= Gehen wir ins Kino? – Sinemaya gidelim mi?) |
+| **göçmen dillerinden etkiler** | *Digga / Diggi* (kanka), *Wallah* (vallahi), *yalla* (hadi, çabuk) |
+
+### Gençlik kelimeleri bir bakışta
+| kelime | anlamı |
+| ---- | ---- |
+| **cringe** | utanç verici, başkası adına utanma |
+| **flexen** | hava atmak, böbürlenmek |
+| **lost** | bihaber, kafası karışık |
+| **sheesh** | hayranlık/şaşkınlık ünlemi |
+| **Digga** | kanka, dostum |
+| **chillen** | takılmak, rahatlamak |
+| **wild** | çılgın, inanılmaz |
+| **Ehrenmann** | harika, yardımsever biri |
+| **gönn dir!** | keyfine bak! / yap gitsin! |
+
+### Diğer sosyolektler
+- **Meslek jargonu**: hekimler (*„Der Patient ist stabil"* – hasta stabil), bilişim (*„den Server neu aufsetzen"* – sunucuyu yeniden kurmak, *„deployen"* – yayına almak)
+- **Topluluk dilleri**: oyuncular (*„noob", „leveln", „GG"*), sporcular, müzik toplulukları
+- **Resmî daire jargonu** (bkz. uzmanlık dilleri)
+
+### Sosyolektlerin işlevi
+- **Gruba aidiyeti** göstermek („Biz bir aradayız")
+- Diğerlerinden **ayrışmak** (örn. yetişkinlerden)
+- **Verimlilik** (meslek jargonu)
+
+### Kullanırken dikkat
+Gençlik dili yetişkinlerin ağzında çoğu zaman **istemeden komik** durur („cringe"!). Öğrenenler için **anlamak**, etkin olarak kullanmaktan daha önemlidir.
+
+**Örnekler:**
+- *„Das Video ist voll **cringe**."* = Das Video ist sehr peinlich. (Video fena cringe.)
+- *„Er **flext** mit seinem neuen Handy."* = Er gibt mit seinem neuen Handy an. (Yeni telefonuyla hava atıyor.)
+- *„Ich bin total **lost** in Mathe."* = Ich verstehe in Mathe gar nichts. (Matematikte tamamen kayboldum.)
+- *„**Digga**, was geht?"* = Hallo, Kumpel, wie geht's? (Kanka, naber?)`,
     },
   })
   await seedExercises({
@@ -38832,12 +40626,108 @@ Her uzmanlık dilinin, meslekten olmayanların çoğu zaman hemen anlamadığı 
       unitId: c2Unit9.id,
       order: 4,
       grammarTopic: 'Übung: Sprachvarietäten',
-      explanationDe:
-        'Wiederholung: Standardsprache, Umgangssprache, regionale Varianten und Soziolekte existieren nebeneinander und werden je nach Situation gewählt.',
-      explanationEn:
-        'Review: standard language, colloquial speech, regional variants, and sociolects coexist and are chosen depending on the situation.',
-      explanationTr:
-        'Tekrar: standart dil, günlük dil, bölgesel çeşitler ve sosyolektler bir arada var olur ve duruma göre seçilir.',
+      explanationDe: `## Übung: Sprachvarietäten – Zusammenfassung
+
+Deutsch ist keine einheitliche Sprache, sondern ein **Bündel von Varietäten**, die **nebeneinander existieren**. Sprachkompetenz auf C2-Niveau bedeutet, sie zu **erkennen**, zu **verstehen** und je nach Situation **angemessen zu wählen**.
+
+### Die Dimensionen der Variation
+| Dimension | Varietät | Beispiel |
+| ---- | ---- | ---- |
+| **Region** | Dialekte, regionale Umgangssprache | *Moin* (Norden), *Grüß Gott* (Süden) |
+| **Staat** | deutsches / österreichisches / Schweizer Standarddeutsch | *Tüte – Sackerl*, *Fahrrad – Velo* |
+| **Situation** | Standard – Umgangssprache | *Hast du – haste* |
+| **soziale Gruppe** | Soziolekte, Jugendsprache, Fachjargon | *cringe, flexen*; *deployen* |
+| **Medium** | gesprochen – geschrieben | Ellipsen vs. vollständige Sätze |
+
+### Dialekt – Regiolekt – Standard
+| Stufe | Beispiel (*Ich habe nichts gemacht.*) |
+| ---- | ---- |
+| **Dialekt** (Bairisch) | *I hob nix gmacht.* |
+| **regionale Umgangssprache** | *Ich hab nix gemacht.* |
+| **Standard** | *Ich habe nichts gemacht.* |
+
+### Code-Switching
+Viele Menschen **wechseln** je nach Situation zwischen Varietäten: Im Büro sprechen sie Standard, zu Hause Dialekt, mit Freunden Umgangssprache. Diese Fähigkeit nennt man **Code-Switching** – sie ist ein Zeichen hoher Sprachkompetenz.
+
+### Einstellungen zu Varietäten
+- Dialekte gelten heute oft als **sympathisch** und **heimatverbunden**.
+- In formellen Situationen wird meist **Standard** erwartet.
+- Österreichisches und Schweizer Standarddeutsch sind **keine Fehler**, sondern **gleichwertig**.
+
+**Beispiele:**
+- *„Grüezi mitenand!"* (Schweiz) = Guten Tag zusammen!
+- *„Des is ma wurscht."* (Bairisch) = Das ist mir egal.
+- *„Ich hab heute **voll** viel zu tun."* (Umgangssprache)
+- *„Ich habe heute **sehr** viel zu tun."* (Standard)
+- *„Der Paradeisersalat schmeckt **leiwand**."* (Österreich) = Der Tomatensalat schmeckt toll.`,
+      explanationEn: `## Practice: language varieties – summary
+
+German is not a single uniform language but a **bundle of varieties** that **coexist**. Language competence at C2 level means being able to **recognise** and **understand** them and to **choose appropriately** depending on the situation.
+
+### Dimensions of variation
+| dimension | variety | example |
+| ---- | ---- | ---- |
+| **region** | dialects, regional colloquial | *Moin* (north), *Grüß Gott* (south) |
+| **country** | German / Austrian / Swiss Standard German | *Tüte – Sackerl* (bag), *Fahrrad – Velo* (bike) |
+| **situation** | standard – colloquial | *Hast du – haste* |
+| **social group** | sociolects, youth language, jargon | *cringe, flexen*; *deployen* |
+| **medium** | spoken – written | ellipsis vs. full sentences |
+
+### Dialect – regiolect – standard
+| level | example (*Ich habe nichts gemacht.* – I didn't do anything.) |
+| ---- | ---- |
+| **dialect** (Bavarian) | *I hob nix gmacht.* |
+| **regional colloquial** | *Ich hab nix gemacht.* |
+| **standard** | *Ich habe nichts gemacht.* |
+
+### Code-switching
+Many people **switch** between varieties depending on the situation: standard at the office, dialect at home, colloquial with friends. This ability is called **code-switching** – a sign of high language competence.
+
+### Attitudes to varieties
+- Dialects are often regarded today as **likeable** and **rooted in a region**.
+- In formal situations **standard** German is usually expected.
+- Austrian and Swiss Standard German are **not mistakes** but **equally valid**.
+
+**Examples:**
+- *„Grüezi mitenand!"* (Switzerland) = Guten Tag zusammen! (Hello everyone!)
+- *„Des is ma wurscht."* (Bavarian) = Das ist mir egal. (I couldn't care less.)
+- *„Ich hab heute **voll** viel zu tun."* (colloquial – I've got loads to do today.)
+- *„Ich habe heute **sehr** viel zu tun."* (standard – I have a great deal to do today.)
+- *„Der Paradeisersalat schmeckt **leiwand**."* (Austria) = Der Tomatensalat schmeckt toll. (The tomato salad tastes great.)`,
+      explanationTr: `## Alıştırma: Dil çeşitleri – özet
+
+Almanca tek tip bir dil değil, **yan yana var olan** bir **çeşitler demetidir**. C2 seviyesinde dil yetkinliği, bunları **tanımak**, **anlamak** ve duruma göre **uygun olanı seçmek** demektir.
+
+### Çeşitlenmenin boyutları
+| boyut | çeşit | örnek |
+| ---- | ---- | ---- |
+| **bölge** | lehçeler, bölgesel konuşma dili | *Moin* (kuzey), *Grüß Gott* (güney) |
+| **ülke** | Almanya / Avusturya / İsviçre standart Almancası | *Tüte – Sackerl* (poşet), *Fahrrad – Velo* (bisiklet) |
+| **durum** | standart – gündelik | *Hast du – haste* |
+| **toplumsal grup** | sosyolektler, gençlik dili, jargon | *cringe, flexen*; *deployen* |
+| **araç** | konuşma – yazı | eksiltme – tam cümleler |
+
+### Lehçe – bölgesel dil – standart
+| düzey | örnek (*Ich habe nichts gemacht.* – Hiçbir şey yapmadım.) |
+| ---- | ---- |
+| **lehçe** (Bavyera) | *I hob nix gmacht.* |
+| **bölgesel konuşma dili** | *Ich hab nix gemacht.* |
+| **standart** | *Ich habe nichts gemacht.* |
+
+### Kod değiştirme (Code-Switching)
+Birçok insan duruma göre çeşitler arasında **geçiş yapar**: ofiste standart, evde lehçe, arkadaşlarla gündelik dil konuşur. Bu yeteneğe **kod değiştirme** denir – yüksek dil yetkinliğinin göstergesidir.
+
+### Dil çeşitlerine yönelik tutumlar
+- Lehçeler bugün çoğu zaman **sempatik** ve **memleketine bağlı** olarak görülür.
+- Resmî durumlarda genellikle **standart** beklenir.
+- Avusturya ve İsviçre standart Almancası **hata değil**, **eşdeğerdir**.
+
+**Örnekler:**
+- *„Grüezi mitenand!"* (İsviçre) = Guten Tag zusammen! (Herkese merhaba!)
+- *„Des is ma wurscht."* (Bavyera) = Das ist mir egal. (Umurumda değil.)
+- *„Ich hab heute **voll** viel zu tun."* (gündelik – Bugün bir sürü işim var.)
+- *„Ich habe heute **sehr** viel zu tun."* (standart – Bugün çok işim var.)
+- *„Der Paradeisersalat schmeckt **leiwand**."* (Avusturya) = Der Tomatensalat schmeckt toll. (Domates salatası harika olmuş.)`,
     },
   })
   await seedExercises({
