@@ -1,7 +1,33 @@
 import { PrismaClient } from '@prisma/client'
 import { uniqueSlug } from '../src/lib/slug'
 
-const prisma = new PrismaClient()
+// The seed issues thousands of sequential upserts against a remote database;
+// a single dropped connection (P1017 "server has closed the connection",
+// P1001 "can't reach database") would otherwise abort the whole run. Every
+// write here is an idempotent upsert, so retrying the failed query is safe —
+// Prisma reconnects transparently on the next attempt.
+const TRANSIENT_CODES = new Set(['P1001', 'P1002', 'P1008', 'P1017'])
+const MAX_ATTEMPTS = 6
+
+const prisma = new PrismaClient().$extends({
+  query: {
+    async $allOperations({ args, query }) {
+      for (let attempt = 1; ; attempt++) {
+        try {
+          return await query(args)
+        } catch (error) {
+          const code = (error as { code?: string; errorCode?: string }).code ??
+            (error as { errorCode?: string }).errorCode
+          const transient =
+            (code !== undefined && TRANSIENT_CODES.has(code)) ||
+            (error instanceof Error && /closed the connection|Can't reach database/i.test(error.message))
+          if (!transient || attempt >= MAX_ATTEMPTS) throw error
+          await new Promise((resolve) => setTimeout(resolve, attempt * 2000))
+        }
+      }
+    },
+  },
+})
 
 async function main() {
   // This seed is non-destructive: content is upserted under deterministic IDs
