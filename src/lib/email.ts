@@ -207,3 +207,76 @@ export async function sendPlacementResultEmail(
   }
   return true
 }
+
+const WELCOME_COPY: Record<
+  string,
+  {
+    subject: string
+    greeting: (name: string) => string
+    intro: string
+    steps: (links: { placement: string; learn: string; blog: string }) => string
+    outro: string
+  }
+> = {
+  en: {
+    subject: 'Welcome to DeutschStep!',
+    greeting: (name) => `Hello ${name},`,
+    intro: 'welcome to DeutschStep! Your account is ready – you can start learning German right away, from A1 all the way to C2.',
+    steps: ({ placement, learn, blog }) =>
+      `<ul>` +
+      `<li><strong>Find your level:</strong> take the free 50-question <a href="${placement}">placement test</a> and see where to start.</li>` +
+      `<li><strong>Start learning:</strong> grammar lessons with clear explanations, exercises and vocabulary review in the <a href="${learn}">lessons</a>.</li>` +
+      `<li><strong>Ask questions:</strong> share your questions with other learners in the <a href="${blog}">community blog</a>.</li>` +
+      `</ul>`,
+    outro: 'Viel Erfolg – good luck with your German!<br>The DeutschStep team',
+  },
+  de: {
+    subject: 'Willkommen bei DeutschStep!',
+    greeting: (name) => `Hallo ${name},`,
+    intro: 'willkommen bei DeutschStep! Dein Konto ist bereit – du kannst sofort mit dem Deutschlernen beginnen, von A1 bis C2.',
+    steps: ({ placement, learn, blog }) =>
+      `<ul>` +
+      `<li><strong>Finde dein Niveau:</strong> Mach den kostenlosen <a href="${placement}">Einstufungstest</a> mit 50 Fragen und sieh, wo du anfangen solltest.</li>` +
+      `<li><strong>Leg los:</strong> Grammatiklektionen mit klaren Erklärungen, Übungen und Wortschatztraining findest du bei den <a href="${learn}">Lektionen</a>.</li>` +
+      `<li><strong>Stell Fragen:</strong> Teile deine Fragen mit anderen Lernenden im <a href="${blog}">Community-Blog</a>.</li>` +
+      `</ul>`,
+    outro: 'Viel Erfolg beim Deutschlernen!<br>Dein DeutschStep-Team',
+  },
+  tr: {
+    subject: "DeutschStep'e hoş geldin!",
+    greeting: (name) => `Merhaba ${name},`,
+    intro: "DeutschStep'e hoş geldin! Hesabın hazır – A1'den C2'ye kadar Almanca öğrenmeye hemen başlayabilirsin.",
+    steps: ({ placement, learn, blog }) =>
+      `<ul>` +
+      `<li><strong>Seviyeni öğren:</strong> 50 soruluk ücretsiz <a href="${placement}">seviye tespit sınavını</a> çöz ve nereden başlaman gerektiğini gör.</li>` +
+      `<li><strong>Öğrenmeye başla:</strong> Açık anlatımlı dilbilgisi dersleri, alıştırmalar ve kelime tekrarı <a href="${learn}">dersler</a> sayfasında.</li>` +
+      `<li><strong>Soru sor:</strong> Sorularını <a href="${blog}">topluluk blogunda</a> diğer öğrencilerle paylaş.</li>` +
+      `</ul>`,
+    outro: 'Viel Erfolg – Almanca yolculuğunda başarılar!<br>DeutschStep ekibi',
+  },
+}
+
+/** Sent once after a new account has been created. */
+export async function sendWelcomeEmail(to: string, name: string, locale: string, siteUrl: string): Promise<void> {
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) {
+    console.warn('RESEND_API_KEY is not set; skipping welcome email send.')
+    return
+  }
+
+  const lang = WELCOME_COPY[locale] ? locale : 'en'
+  const copy = WELCOME_COPY[lang]
+  const base = `${siteUrl}/${lang}`
+  const html =
+    `<p>${copy.greeting(escapeHtml(name))}</p>` +
+    `<p>${copy.intro}</p>` +
+    copy.steps({ placement: `${base}/placement-test`, learn: `${base}/learn`, blog: `${base}/blog` }) +
+    `<p>${copy.outro}</p>`
+
+  const resend = new Resend(apiKey)
+  const { error } = await resend.emails.send({ from: sender(), to, subject: copy.subject, html })
+
+  if (error) {
+    console.error('Failed to send welcome email:', error)
+  }
+}

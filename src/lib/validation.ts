@@ -25,6 +25,8 @@ export const registerSchema = z.object({
     .min(1, 'Name is required')
     .max(50, 'Name must be at most 50 characters')
     .refine((name) => !isReservedName(name), { message: 'This name is not allowed' }),
+  // Site language at sign-up; sets the account language for e-mails.
+  locale: z.enum(['tr', 'en', 'de']).optional(),
 })
 
 export type RegisterInput = z.infer<typeof registerSchema>

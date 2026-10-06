@@ -1,12 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { useRouter } from '@/i18n/navigation'
 
 export default function RegisterPage() {
   const t = useTranslations('auth')
   const router = useRouter()
+  const locale = useLocale()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [name, setName] = useState('')
@@ -21,7 +22,7 @@ export default function RegisterPage() {
     const res = await fetch('/api/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password, name }),
+      body: JSON.stringify({ email, password, name, locale }),
     })
 
     setSubmitting(false)

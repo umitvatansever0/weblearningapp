@@ -4,13 +4,15 @@ import { prisma } from '@/lib/prisma'
 import { hashPassword } from '@/lib/password'
 import { registerSchema } from '@/lib/validation'
 import { clientIp, consume } from '@/lib/rateLimit'
-import { sendAccountExistsEmail } from '@/lib/email'
+import { sendAccountExistsEmail, sendWelcomeEmail } from '@/lib/email'
 import { getSiteUrl } from '@/lib/seo'
 import { runAfterResponse } from '@/lib/afterResponse'
 
 // Identical for new and already-registered addresses, so the sign-up form
 // cannot be used to find out which e-mail addresses have an account.
 const ACCEPTED = { message: 'Registration received.' }
+
+const UI_LANGUAGE = { tr: 'TR', en: 'EN', de: 'DE' } as const
 
 export async function POST(request: Request) {
   // Mass account creation (spam/bot sign-ups) is capped per IP.
@@ -30,13 +32,15 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: parsed.error.issues[0].message }, { status: 400 })
   }
 
-  const { email, password, name } = parsed.data
+  const { email, password, name, locale = 'en' } = parsed.data
 
   // Always hash first and always attempt the insert: both outcomes then take
   // about the same time, so response timing doesn't leak existence either.
   const passwordHash = await hashPassword(password)
   try {
-    await prisma.user.create({ data: { email, passwordHash, name } })
+    await prisma.user.create({
+      data: { email, passwordHash, name, uiLanguage: UI_LANGUAGE[locale] },
+    })
   } catch (error) {
     // The unique constraint on email is the single source of truth for
     // "already registered" (also covers concurrent duplicate sign-ups).
@@ -47,6 +51,7 @@ export async function POST(request: Request) {
     throw error
   }
 
+  runAfterResponse(() => sendWelcomeEmail(email, name, locale, getSiteUrl()), 'welcome')
   return NextResponse.json(ACCEPTED, { status: 201 })
 }
 

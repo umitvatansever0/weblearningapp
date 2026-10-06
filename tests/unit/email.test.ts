@@ -102,3 +102,35 @@ describe('sendPlacementResultEmail', () => {
     expect(sent).toBe(false)
   })
 })
+
+describe('sendWelcomeEmail', () => {
+  const originalKey = process.env.RESEND_API_KEY
+
+  afterEach(() => {
+    process.env.RESEND_API_KEY = originalKey
+    vi.restoreAllMocks()
+    vi.resetModules()
+  })
+
+  it('sends a localized welcome with site links and escapes the name', async () => {
+    process.env.RESEND_API_KEY = 'test-key'
+    vi.resetModules()
+    const sendMock = vi.fn().mockResolvedValue({ error: null })
+    vi.doMock('resend', () => ({
+      Resend: vi.fn().mockImplementation(function () {
+        return { emails: { send: sendMock } }
+      }),
+    }))
+
+    const { sendWelcomeEmail } = await import('@/lib/email')
+    await sendWelcomeEmail('new@example.com', '<b>Ali</b>', 'de', 'https://www.deutschstep.com')
+
+    const message = sendMock.mock.calls[0][0]
+    expect(message.to).toBe('new@example.com')
+    expect(message.subject).toBe('Willkommen bei DeutschStep!')
+    expect(message.html).toContain('https://www.deutschstep.com/de/placement-test')
+    expect(message.html).toContain('https://www.deutschstep.com/de/learn')
+    expect(message.html).toContain('&lt;b&gt;Ali&lt;/b&gt;')
+    expect(message.html).not.toContain('<b>Ali</b>')
+  })
+})
