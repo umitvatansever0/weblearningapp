@@ -4,6 +4,8 @@ import { forgotPasswordSchema } from '@/lib/validation'
 import { generateResetToken } from '@/lib/passwordResetToken'
 import { sendPasswordResetEmail } from '@/lib/email'
 import { clientIp, consume } from '@/lib/rateLimit'
+import { runAfterResponse } from '@/lib/afterResponse'
+import { getSiteUrl } from '@/lib/seo'
 
 const GENERIC_MESSAGE = 'If that email is registered, a reset link has been sent.'
 
@@ -36,16 +38,15 @@ export async function POST(request: Request) {
       data: { userId: user.id, tokenHash, expiresAt },
     })
 
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
+    const siteUrl = getSiteUrl()
     const locale = user.uiLanguage.toLowerCase()
     const resetUrl = `${siteUrl}/${locale}/reset-password?token=${token}`
-    // Fire-and-forget: awaiting the Resend round-trip here would make the
-    // response time measurably longer for existing users than for
+    // Sent after the response: awaiting the Resend round-trip here would make
+    // the response time measurably longer for existing users than for
     // nonexistent ones, reopening the account-enumeration channel this
     // endpoint is designed to close.
-    void sendPasswordResetEmail(user.email, resetUrl).catch((err) => {
-      console.error('Failed to send password reset email:', err)
-    })
+    const email = user.email
+    runAfterResponse(() => sendPasswordResetEmail(email, resetUrl), 'password-reset')
   }
 
   return NextResponse.json({ message: GENERIC_MESSAGE }, { status: 200 })

@@ -6,6 +6,7 @@ import { registerSchema } from '@/lib/validation'
 import { clientIp, consume } from '@/lib/rateLimit'
 import { sendAccountExistsEmail } from '@/lib/email'
 import { getSiteUrl } from '@/lib/seo'
+import { runAfterResponse } from '@/lib/afterResponse'
 
 // Identical for new and already-registered addresses, so the sign-up form
 // cannot be used to find out which e-mail addresses have an account.
@@ -51,14 +52,12 @@ export async function POST(request: Request) {
 
 /**
  * Tell the real owner that someone tried to sign up with their address. Capped
- * per address so the form cannot be used to flood an inbox; fire-and-forget so
- * the e-mail round-trip doesn't make this path measurably slower.
+ * per address so the form cannot be used to flood an inbox; sent after the response
+ * so the e-mail round-trip doesn't make this path measurably slower.
  */
 async function notifyExistingAccount(email: string): Promise<void> {
   if (await consume('accountExistsEmail', email)) return
   const owner = await prisma.user.findUnique({ where: { email }, select: { uiLanguage: true } })
   const locale = owner?.uiLanguage.toLowerCase() ?? 'en'
-  void sendAccountExistsEmail(email, locale, getSiteUrl()).catch((err) => {
-    console.error('Failed to send account-exists email:', err)
-  })
+  runAfterResponse(() => sendAccountExistsEmail(email, locale, getSiteUrl()), 'account-exists')
 }
