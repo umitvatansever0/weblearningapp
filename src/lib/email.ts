@@ -11,7 +11,7 @@ export async function sendPasswordResetEmail(to: string, resetUrl: string): Prom
   const { error } = await resend.emails.send({
     from: 'onboarding@resend.dev',
     to,
-    subject: 'Reset your DeutschLernen password',
+    subject: 'Reset your DeutschStep password',
     html: `<p>Click the link below to reset your password. This link expires in 1 hour.</p><p><a href="${resetUrl}">${resetUrl}</a></p><p>If you didn't request this, you can ignore this email.</p>`,
   })
 

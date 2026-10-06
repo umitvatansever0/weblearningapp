@@ -168,14 +168,14 @@
   },
   "legal": {
     "privacyTitle": "Datenschutzerklärung",
-    "privacyIntro": "Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre personenbezogenen Daten zu schützen. Diese Datenschutzerklärung erläutert, welche Informationen wir erheben, wie wir sie verwenden und wie Cookies und Werbedienste von Drittanbietern auf DeutschLernen eingesetzt werden können.",
+    "privacyIntro": "Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre personenbezogenen Daten zu schützen. Diese Datenschutzerklärung erläutert, welche Informationen wir erheben, wie wir sie verwenden und wie Cookies und Werbedienste von Drittanbietern auf DeutschStep eingesetzt werden können.",
     "privacySections": [
       {
         "heading": "Informationen, die wir erheben",
         "paragraphs": [
           "Wenn Sie ein Konto erstellen, können wir Informationen erheben, die Sie uns direkt zur Verfügung stellen, einschließlich Ihrer E-Mail-Adresse, Ihres Namens und Ihres Passworts.",
-          "Während Sie DeutschLernen nutzen, können wir außerdem lernbezogene Informationen erheben, darunter Lektionsfortschritt, XP, Serien (Streaks), Abzeichen, Vokabelwiederholungsverlauf und weitere Informationen im Zusammenhang mit Ihrer Nutzung des Dienstes.",
-          "Diese Informationen werden auf unseren Servern gespeichert und dienen dazu, den DeutschLernen-Dienst bereitzustellen, aufrechtzuerhalten, zu personalisieren und zu verbessern."
+          "Während Sie DeutschStep nutzen, können wir außerdem lernbezogene Informationen erheben, darunter Lektionsfortschritt, XP, Serien (Streaks), Abzeichen, Vokabelwiederholungsverlauf und weitere Informationen im Zusammenhang mit Ihrer Nutzung des Dienstes.",
+          "Diese Informationen werden auf unseren Servern gespeichert und dienen dazu, den DeutschStep-Dienst bereitzustellen, aufrechtzuerhalten, zu personalisieren und zu verbessern."
         ]
       },
       {
@@ -190,7 +190,7 @@
       {
         "heading": "Cookies und ähnliche Technologien",
         "paragraphs": [
-          "DeutschLernen verwendet Cookies und ähnliche Technologien, um wesentliche Funktionen der Website bereitzustellen und – sofern Sie Ihre Zustimmung erteilen – Analyse und Werbung zu unterstützen.",
+          "DeutschStep verwendet Cookies und ähnliche Technologien, um wesentliche Funktionen der Website bereitzustellen und – sofern Sie Ihre Zustimmung erteilen – Analyse und Werbung zu unterstützen.",
           "Wir verwenden einen Cookie-Consent-Banner, um vor dem Laden nicht notwendiger Cookies oder Drittanbieterdienste Ihre Zustimmung einzuholen.",
           "Wenn Sie die entsprechenden Cookies über unseren Zustimmungsmechanismus akzeptieren, können wir Drittanbieterdienste wie Google AdSense und Google Analytics verwenden.",
           "Wenn Sie nicht notwendige Cookies ablehnen, werden diese Drittanbieterdienste nicht über unsere Website geladen, und wir verwenden nur unbedingt notwendige Technologien, die für wesentliche Funktionen erforderlich sind, wie etwa die Aufrechterhaltung Ihrer Anmeldesitzung."
@@ -199,7 +199,7 @@
       {
         "heading": "Google AdSense und Werbung von Drittanbietern",
         "paragraphs": [
-          "Wir können Google AdSense, einen von Google LLC bereitgestellten Werbedienst, verwenden, um Werbung auf DeutschLernen anzuzeigen.",
+          "Wir können Google AdSense, einen von Google LLC bereitgestellten Werbedienst, verwenden, um Werbung auf DeutschStep anzuzeigen.",
           "Google und seine Werbepartner können Cookies, Web Beacons, Geräteinformationen, IP-Adressen und ähnliche Technologien verwenden, um Werbung auszuliefern, zu messen und zu personalisieren, vorbehaltlich der geltenden Gesetze und – sofern erforderlich – der Zustimmung des Nutzers.",
           "Drittanbieter, einschließlich Google, können Cookies verwenden, um Werbung auf Grundlage früherer Besuche eines Nutzers auf dieser oder anderen Websites auszuliefern.",
           "Abhängig von der Zustimmung des Nutzers und den geltenden Gesetzen kann über Google AdSense angezeigte Werbung auf Grundlage von Informationen wie den Interessen des Nutzers, seinem Surfverhalten oder seinen Interaktionen mit Werbung personalisiert werden.",
@@ -210,7 +210,7 @@
       {
         "heading": "Google Analytics",
         "paragraphs": [
-          "Wenn Sie die entsprechende Zustimmung erteilen, können wir Google Analytics verwenden, um zu verstehen, wie Besucher DeutschLernen nutzen, und um die Website und das Lernerlebnis zu verbessern.",
+          "Wenn Sie die entsprechende Zustimmung erteilen, können wir Google Analytics verwenden, um zu verstehen, wie Besucher DeutschStep nutzen, und um die Website und das Lernerlebnis zu verbessern.",
           "Google Analytics kann Informationen wie besuchte Seiten, Interaktionen mit der Website, Geräteinformationen, ungefähren Standort und andere Nutzungsinformationen erheben.",
           "Google Analytics wird nur geladen, wenn die entsprechende Zustimmung über unseren Cookie-Consent-Mechanismus erteilt wird, sofern eine Zustimmung gesetzlich erforderlich ist."
         ]
@@ -253,7 +253,7 @@
     ],
     "termsTitle": "Nutzungsbedingungen",
     "termsParagraphs": [
-      "Mit der Erstellung eines Kontos bei DeutschLernen erklären Sie sich damit einverstanden, den Dienst ausschließlich für private, nicht-kommerzielle Sprachlernzwecke zu nutzen.",
+      "Mit der Erstellung eines Kontos bei DeutschStep erklären Sie sich damit einverstanden, den Dienst ausschließlich für private, nicht-kommerzielle Sprachlernzwecke zu nutzen.",
       "Sie sind dafür verantwortlich, Ihre Zugangsdaten vertraulich zu behandeln, sowie für alle Aktivitäten, die unter Ihrem Konto stattfinden.",
       "Inhalte auf dieser Plattform (Grammatikerklärungen, Übungen, Vokabeln) dienen Bildungszwecken und können jederzeit ohne Vorankündigung aktualisiert oder korrigiert werden.",
       "Für die Texte, die du im Community-Blog veröffentlichst, und die Dateien, die du hochlädst, bist du selbst verantwortlich. Lade nur Inhalte hoch, die du teilen darfst; Spam, Werbung, Beleidigungen, personenbezogene Daten anderer und rechtswidrige Inhalte sind verboten. Du erlaubst, dass deine Inhalte auf der Plattform angezeigt werden; regelwidrige Inhalte können ohne Vorankündigung ausgeblendet oder gelöscht werden.",
@@ -262,7 +262,7 @@
   },
   "contact": {
     "title": "Kontakt & Impressum",
-    "intro": "Diese Seite weist den Betreiber von DeutschLernen gemäß gesetzlicher Vorgaben aus und erklärt, wie Sie uns für Support- oder Datenschutzanfragen erreichen.",
+    "intro": "Diese Seite weist den Betreiber von DeutschStep gemäß gesetzlicher Vorgaben aus und erklärt, wie Sie uns für Support- oder Datenschutzanfragen erreichen.",
     "fields": [
       {
         "label": "Betreiber",

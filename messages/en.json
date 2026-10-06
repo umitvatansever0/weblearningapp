@@ -168,14 +168,14 @@
   },
   "legal": {
     "privacyTitle": "Privacy Policy",
-    "privacyIntro": "We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what information we collect, how we use it, and how cookies and third-party advertising services may be used on DeutschLernen.",
+    "privacyIntro": "We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what information we collect, how we use it, and how cookies and third-party advertising services may be used on DeutschStep.",
     "privacySections": [
       {
         "heading": "Information We Collect",
         "paragraphs": [
           "When you create an account, we may collect information that you provide directly to us, including your email address, name, and password.",
-          "While you use DeutschLernen, we may also collect learning-related information, including lesson progress, XP, streaks, badges, vocabulary review history, and other information related to your use of the service.",
-          "This information is stored on our servers and is used to provide, maintain, personalize, and improve the DeutschLernen service."
+          "While you use DeutschStep, we may also collect learning-related information, including lesson progress, XP, streaks, badges, vocabulary review history, and other information related to your use of the service.",
+          "This information is stored on our servers and is used to provide, maintain, personalize, and improve the DeutschStep service."
         ]
       },
       {
@@ -190,7 +190,7 @@
       {
         "heading": "Cookies and Similar Technologies",
         "paragraphs": [
-          "DeutschLernen uses cookies and similar technologies to provide essential website functionality and, where you give consent, to support analytics and advertising.",
+          "DeutschStep uses cookies and similar technologies to provide essential website functionality and, where you give consent, to support analytics and advertising.",
           "We use a cookie consent banner to request your permission before loading non-essential cookies or third-party services.",
           "If you accept the relevant cookies through our consent mechanism, we may use third-party services such as Google AdSense and Google Analytics.",
           "If you decline non-essential cookies, these third-party services will not be loaded through our website, and we will only use strictly necessary technologies required for essential functions, such as maintaining your login session."
@@ -199,7 +199,7 @@
       {
         "heading": "Google AdSense and Third-Party Advertising",
         "paragraphs": [
-          "We may use Google AdSense, an advertising service provided by Google LLC, to display advertisements on DeutschLernen.",
+          "We may use Google AdSense, an advertising service provided by Google LLC, to display advertisements on DeutschStep.",
           "Google and its advertising partners may use cookies, web beacons, device information, IP address, and similar technologies to serve, measure, and personalize advertisements, subject to applicable laws and the user's consent where required.",
           "Third-party vendors, including Google, may use cookies to serve advertisements based on a user's previous visits to this website or other websites.",
           "Depending on the user's consent and applicable laws, advertisements displayed through Google AdSense may be personalized based on information such as the user's interests, browsing activity, or interactions with advertisements.",
@@ -210,7 +210,7 @@
       {
         "heading": "Google Analytics",
         "paragraphs": [
-          "If you provide the appropriate consent, we may use Google Analytics to understand how visitors use DeutschLernen and to improve the website and learning experience.",
+          "If you provide the appropriate consent, we may use Google Analytics to understand how visitors use DeutschStep and to improve the website and learning experience.",
           "Google Analytics may collect information such as pages visited, interactions with the website, device information, approximate location, and other usage information.",
           "Google Analytics is only loaded when the applicable consent is provided through our cookie consent mechanism, where consent is required by law."
         ]
@@ -253,7 +253,7 @@
     ],
     "termsTitle": "Terms of Service",
     "termsParagraphs": [
-      "By creating an account on DeutschLernen you agree to use the service for personal, non-commercial language learning purposes only.",
+      "By creating an account on DeutschStep you agree to use the service for personal, non-commercial language learning purposes only.",
       "You are responsible for keeping your account credentials confidential and for all activity that occurs under your account.",
       "Content on this platform (grammar explanations, exercises, vocabulary) is provided for educational purposes and may be updated or corrected at any time without notice.",
       "You are responsible for the texts you post and the files you upload in the community blog. Only upload content you have the right to share; spam, advertising, insults, other people's personal data and illegal content are prohibited. You allow your content to be displayed on the platform; content that violates these rules may be hidden or deleted without notice.",
@@ -262,7 +262,7 @@
   },
   "contact": {
     "title": "Contact & Legal Notice (Impressum)",
-    "intro": "This page identifies the operator of DeutschLernen, as required by law, and explains how to reach us for support or data-protection requests.",
+    "intro": "This page identifies the operator of DeutschStep, as required by law, and explains how to reach us for support or data-protection requests.",
     "fields": [
       {
         "label": "Operator",

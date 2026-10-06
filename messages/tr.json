@@ -168,14 +168,14 @@
   },
   "legal": {
     "privacyTitle": "Gizlilik Politikası",
-    "privacyIntro": "Gizliliğinize saygı duyuyor ve kişisel bilgilerinizi korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, hangi bilgileri topladığımızı, bunları nasıl kullandığımızı ve DeutschLernen üzerinde çerezlerin ve üçüncü taraf reklam hizmetlerinin nasıl kullanılabileceğini açıklar.",
+    "privacyIntro": "Gizliliğinize saygı duyuyor ve kişisel bilgilerinizi korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, hangi bilgileri topladığımızı, bunları nasıl kullandığımızı ve DeutschStep üzerinde çerezlerin ve üçüncü taraf reklam hizmetlerinin nasıl kullanılabileceğini açıklar.",
     "privacySections": [
       {
         "heading": "Topladığımız Bilgiler",
         "paragraphs": [
           "Bir hesap oluşturduğunuzda, doğrudan bize sağladığınız e-posta adresi, ad ve şifre gibi bilgileri toplayabiliriz.",
-          "DeutschLernen'i kullanırken, ders ilerlemesi, XP, seriler (streak), rozetler, kelime tekrar geçmişi ve hizmeti kullanımınıza ilişkin diğer bilgiler dahil olmak üzere öğrenmeyle ilgili bilgileri de toplayabiliriz.",
-          "Bu bilgiler sunucularımızda saklanır ve DeutschLernen hizmetini sunmak, sürdürmek, kişiselleştirmek ve geliştirmek için kullanılır."
+          "DeutschStep'i kullanırken, ders ilerlemesi, XP, seriler (streak), rozetler, kelime tekrar geçmişi ve hizmeti kullanımınıza ilişkin diğer bilgiler dahil olmak üzere öğrenmeyle ilgili bilgileri de toplayabiliriz.",
+          "Bu bilgiler sunucularımızda saklanır ve DeutschStep hizmetini sunmak, sürdürmek, kişiselleştirmek ve geliştirmek için kullanılır."
         ]
       },
       {
@@ -190,7 +190,7 @@
       {
         "heading": "Çerezler ve Benzeri Teknolojiler",
         "paragraphs": [
-          "DeutschLernen, temel web sitesi işlevselliğini sağlamak ve onay verdiğiniz durumlarda analiz ve reklamcılığı desteklemek için çerezler ve benzeri teknolojiler kullanır.",
+          "DeutschStep, temel web sitesi işlevselliğini sağlamak ve onay verdiğiniz durumlarda analiz ve reklamcılığı desteklemek için çerezler ve benzeri teknolojiler kullanır.",
           "Gerekli olmayan çerezleri veya üçüncü taraf hizmetleri yüklemeden önce izninizi istemek için bir çerez onay banner'ı kullanıyoruz.",
           "Onay mekanizmamız aracılığıyla ilgili çerezleri kabul ederseniz, Google AdSense ve Google Analytics gibi üçüncü taraf hizmetleri kullanabiliriz.",
           "Gerekli olmayan çerezleri reddederseniz, bu üçüncü taraf hizmetleri web sitemiz aracılığıyla yüklenmez ve yalnızca oturumunuzu sürdürmek gibi temel işlevler için kesinlikle gerekli teknolojileri kullanırız."
@@ -199,7 +199,7 @@
       {
         "heading": "Google AdSense ve Üçüncü Taraf Reklamcılık",
         "paragraphs": [
-          "DeutschLernen üzerinde reklam göstermek için Google LLC tarafından sağlanan bir reklam hizmeti olan Google AdSense'i kullanabiliriz.",
+          "DeutschStep üzerinde reklam göstermek için Google LLC tarafından sağlanan bir reklam hizmeti olan Google AdSense'i kullanabiliriz.",
           "Google ve reklam ortakları; geçerli yasalara ve gerektiğinde kullanıcının onayına tabi olarak, reklamları sunmak, ölçmek ve kişiselleştirmek için çerezler, web işaretçileri, cihaz bilgileri, IP adresi ve benzeri teknolojileri kullanabilir.",
           "Google dahil üçüncü taraf tedarikçiler, bir kullanıcının bu web sitesine veya diğer web sitelerine yaptığı önceki ziyaretlere dayalı olarak reklam sunmak için çerezler kullanabilir.",
           "Kullanıcının onayına ve geçerli yasalara bağlı olarak, Google AdSense aracılığıyla gösterilen reklamlar; kullanıcının ilgi alanları, gezinme etkinliği veya reklamlarla etkileşimleri gibi bilgilere göre kişiselleştirilebilir.",
@@ -210,7 +210,7 @@
       {
         "heading": "Google Analytics",
         "paragraphs": [
-          "Uygun onayı vermeniz halinde, ziyaretçilerin DeutschLernen'i nasıl kullandığını anlamak ve web sitesini ve öğrenme deneyimini geliştirmek için Google Analytics'i kullanabiliriz.",
+          "Uygun onayı vermeniz halinde, ziyaretçilerin DeutschStep'i nasıl kullandığını anlamak ve web sitesini ve öğrenme deneyimini geliştirmek için Google Analytics'i kullanabiliriz.",
           "Google Analytics; ziyaret edilen sayfalar, web sitesiyle etkileşimler, cihaz bilgileri, yaklaşık konum ve diğer kullanım bilgileri gibi bilgileri toplayabilir.",
           "Google Analytics yalnızca, yasal olarak onay gerektiği durumlarda çerez onay mekanizmamız aracılığıyla ilgili onay verildiğinde yüklenir."
         ]
@@ -253,7 +253,7 @@
     ],
     "termsTitle": "Kullanım Şartları",
     "termsParagraphs": [
-      "DeutschLernen'de bir hesap oluşturarak hizmeti yalnızca kişisel, ticari olmayan dil öğrenimi amacıyla kullanmayı kabul etmiş olursunuz.",
+      "DeutschStep'te bir hesap oluşturarak hizmeti yalnızca kişisel, ticari olmayan dil öğrenimi amacıyla kullanmayı kabul etmiş olursunuz.",
       "Hesap bilgilerinizi gizli tutmaktan ve hesabınız altında gerçekleşen tüm etkinliklerden siz sorumlusunuz.",
       "Bu platformdaki içerikler (gramer açıklamaları, alıştırmalar, kelimeler) eğitim amaçlıdır ve önceden haber verilmeksizin herhangi bir zamanda güncellenebilir veya düzeltilebilir.",
       "Topluluk blogunda paylaştığınız metinlerden ve yüklediğiniz dosyalardan siz sorumlusunuz. Yalnızca paylaşma hakkına sahip olduğunuz içerikleri yükleyin; spam, reklam, hakaret, başkalarının kişisel verileri ve yasa dışı içerikler yasaktır. Paylaştığınız içeriklerin platformda görüntülenmesine izin vermiş olursunuz; kurallara aykırı içerikler önceden haber verilmeksizin gizlenebilir veya silinebilir.",
@@ -262,7 +262,7 @@
   },
   "contact": {
     "title": "İletişim ve Yasal Bildirim (Impressum)",
-    "intro": "Bu sayfa, yasal gereklilikler doğrultusunda DeutschLernen'in işletmecisini tanımlar ve destek veya veri koruma talepleri için bize nasıl ulaşabileceğinizi açıklar.",
+    "intro": "Bu sayfa, yasal gereklilikler doğrultusunda DeutschStep'in işletmecisini tanımlar ve destek veya veri koruma talepleri için bize nasıl ulaşabileceğinizi açıklar.",
     "fields": [
       {
         "label": "İşletmeci",

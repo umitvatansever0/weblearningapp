@@ -1,4 +1,4 @@
-# DeutschLernen
+# DeutschStep
 
 A German-learning web app (Next.js App Router + Prisma/Postgres) covering all six CEFR levels (A1–C2), with grammar lessons, exercises, gamification (XP/streaks/badges), and spaced-repetition vocab review.
 
