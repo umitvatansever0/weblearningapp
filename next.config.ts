@@ -42,6 +42,11 @@ const securityHeaders = [
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
   { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+  // Isolate the browsing context from cross-origin windows (popups opened by
+  // ads/Google sign-in flows keep working) and forbid legacy Flash/PDF
+  // cross-domain policy files.
+  { key: 'Cross-Origin-Opener-Policy', value: 'same-origin-allow-popups' },
+  { key: 'X-Permitted-Cross-Domain-Policies', value: 'none' },
 ]
 
 const nextConfig: NextConfig = {

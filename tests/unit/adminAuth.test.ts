@@ -5,6 +5,9 @@ import type { Session } from 'next-auth'
 
 vi.mock('next-auth', () => ({ getServerSession: vi.fn() }))
 
+const findUnique = vi.hoisted(() => vi.fn())
+vi.mock('@/lib/prisma', () => ({ prisma: { user: { findUnique } } }))
+
 function sessionWithRole(role: string): Session {
   return { user: { id: 'u1', role }, expires: '2099-01-01' } as Session
 }
@@ -41,8 +44,25 @@ describe('requireAdminApi', () => {
   it('returns the session when the user is an admin', async () => {
     const session = sessionWithRole('ADMIN')
     vi.mocked(getServerSession).mockResolvedValue(session as never)
+    findUnique.mockResolvedValue({ role: 'ADMIN' })
     const result = await requireAdminApi()
     expect('session' in result).toBe(true)
     if ('session' in result) expect(result.session).toEqual(session)
+  })
+
+  it('rejects a session whose JWT still says ADMIN after the role was removed', async () => {
+    vi.mocked(getServerSession).mockResolvedValue(sessionWithRole('ADMIN') as never)
+    findUnique.mockResolvedValue({ role: 'USER' })
+    const result = await requireAdminApi()
+    expect('error' in result).toBe(true)
+    if ('error' in result) expect(result.error.status).toBe(403)
+  })
+
+  it('rejects a session of a deleted account', async () => {
+    vi.mocked(getServerSession).mockResolvedValue(sessionWithRole('ADMIN') as never)
+    findUnique.mockResolvedValue(null)
+    const result = await requireAdminApi()
+    expect('error' in result).toBe(true)
+    if ('error' in result) expect(result.error.status).toBe(403)
   })
 })

@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterAll } from 'vitest'
+import { beforeAll, describe, it, expect, beforeEach, afterAll } from 'vitest'
 import { prisma } from '@/lib/prisma'
 import { hashPassword, verifyPassword } from '@/lib/password'
 import { generateResetToken, hashResetToken } from '@/lib/passwordResetToken'
@@ -12,6 +12,14 @@ function makeRequest(body: unknown) {
 }
 
 describe('POST /api/password-reset/confirm', () => {
+  beforeAll(async () => {
+    // Rate-limit counters left by earlier runs (no IP header → "unknown",
+    // test e-mails @example.com) must not throttle this run.
+    await prisma.rateLimitHit.deleteMany({
+      where: { OR: [{ key: { endsWith: ':unknown' } }, { key: { contains: '@example.com' } }] },
+    })
+  })
+
   const email = 'reset-confirm-test@example.com'
   let userId: string
 

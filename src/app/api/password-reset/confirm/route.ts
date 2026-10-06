@@ -3,10 +3,15 @@ import { prisma } from '@/lib/prisma'
 import { resetPasswordSchema } from '@/lib/validation'
 import { hashResetToken } from '@/lib/passwordResetToken'
 import { hashPassword } from '@/lib/password'
+import { clientIp, consume } from '@/lib/rateLimit'
 
 const GENERIC_ERROR = 'This reset link is invalid or has expired.'
 
 export async function POST(request: Request) {
+  if (await consume('resetConfirmIp', clientIp(request.headers))) {
+    return NextResponse.json({ error: 'Too many requests, please try again later' }, { status: 429 })
+  }
+
   let body: unknown
   try {
     body = await request.json()
@@ -45,6 +50,12 @@ export async function POST(request: Request) {
       }
 
       await tx.user.update({ where: { id: record.userId }, data: { passwordHash } })
+
+      // Any other outstanding reset links for this account stop working.
+      await tx.passwordResetToken.updateMany({
+        where: { userId: record.userId, usedAt: null },
+        data: { usedAt: new Date() },
+      })
     })
   } catch (err) {
     if (err === TOKEN_ALREADY_USED) {

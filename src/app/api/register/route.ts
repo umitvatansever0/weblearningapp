@@ -3,8 +3,14 @@ import { Prisma } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 import { hashPassword } from '@/lib/password'
 import { registerSchema } from '@/lib/validation'
+import { clientIp, consume } from '@/lib/rateLimit'
 
 export async function POST(request: Request) {
+  // Mass account creation (spam/bot sign-ups) is capped per IP.
+  if (await consume('registerIp', clientIp(request.headers))) {
+    return NextResponse.json({ error: 'Too many requests, please try again later' }, { status: 429 })
+  }
+
   let body: unknown
   try {
     body = await request.json()

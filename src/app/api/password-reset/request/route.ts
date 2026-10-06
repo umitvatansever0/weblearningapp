@@ -3,10 +3,15 @@ import { prisma } from '@/lib/prisma'
 import { forgotPasswordSchema } from '@/lib/validation'
 import { generateResetToken } from '@/lib/passwordResetToken'
 import { sendPasswordResetEmail } from '@/lib/email'
+import { clientIp, consume } from '@/lib/rateLimit'
 
 const GENERIC_MESSAGE = 'If that email is registered, a reset link has been sent.'
 
 export async function POST(request: Request) {
+  if (await consume('resetIp', clientIp(request.headers))) {
+    return NextResponse.json({ error: 'Too many requests, please try again later' }, { status: 429 })
+  }
+
   let body: unknown
   try {
     body = await request.json()
@@ -19,7 +24,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: parsed.error.issues[0].message }, { status: 400 })
   }
 
-  const user = await prisma.user.findUnique({ where: { email: parsed.data.email } })
+  // Cap reset e-mails per address so nobody can mail-bomb a victim. The
+  // response stays the same generic message, so this reveals nothing about
+  // whether the address is registered.
+  const emailLimited = await consume('resetEmail', parsed.data.email)
+  const user = emailLimited ? null : await prisma.user.findUnique({ where: { email: parsed.data.email } })
 
   if (user) {
     const { token, tokenHash, expiresAt } = generateResetToken()

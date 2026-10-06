@@ -15,6 +15,14 @@ function makeRequest(body: unknown) {
 }
 
 describe('POST /api/password-reset/request', () => {
+  beforeAll(async () => {
+    // Rate-limit counters left by earlier runs (no IP header → "unknown",
+    // test e-mails @example.com) must not throttle this run.
+    await prisma.rateLimitHit.deleteMany({
+      where: { OR: [{ key: { endsWith: ':unknown' } }, { key: { contains: '@example.com' } }] },
+    })
+  })
+
   const email = 'reset-request-test@example.com'
 
   beforeAll(async () => {

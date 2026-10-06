@@ -6,6 +6,8 @@ vi.mock('@/lib/blogCleanup', async (importOriginal) => {
   return { ...actual, cleanupOrphanedBlogUploads: cleanup }
 })
 
+vi.mock('@/lib/rateLimit', () => ({ pruneRateLimitHits: vi.fn().mockResolvedValue(4) }))
+
 import { ORPHAN_MIN_AGE_MS, selectOrphans } from '@/lib/blogCleanup'
 import { GET } from '@/app/api/cron/blog-cleanup/route'
 
@@ -63,7 +65,7 @@ describe('GET /api/cron/blog-cleanup', () => {
     process.env.CRON_SECRET = 'test-secret'
     const res = await GET(request('Bearer test-secret'))
     expect(res.status).toBe(200)
-    expect(await res.json()).toEqual({ scanned: 3, deleted: 1 })
+    expect(await res.json()).toEqual({ scanned: 3, deleted: 1, prunedRateLimitHits: 4 })
     expect(cleanup).toHaveBeenCalledOnce()
   })
 })

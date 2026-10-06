@@ -5,6 +5,14 @@ import { prisma } from '@/lib/prisma'
 
 describe('authorizeUser', () => {
   beforeAll(async () => {
+    // Rate-limit counters left by earlier runs (no IP header → "unknown",
+    // test e-mails @example.com) must not throttle this run.
+    await prisma.rateLimitHit.deleteMany({
+      where: { OR: [{ key: { endsWith: ':unknown' } }, { key: { contains: '@example.com' } }] },
+    })
+  })
+
+  beforeAll(async () => {
     await prisma.user.create({
       data: {
         email: 'auth-test@example.com',

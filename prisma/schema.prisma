@@ -248,3 +248,17 @@ model BlogReport {
   @@unique([reporterId, answerId])
   @@index([resolvedAt])
 }
+
+// --- Abuse protection -------------------------------------------------------
+// One row per counted attempt (failed login, registration, password-reset
+// request, ...). Keys look like "login:email:<email>" or "register:ip:<ip>".
+// Stored in the database because serverless instances share no memory.
+// Rows older than a day are pruned by the monthly cleanup cron.
+model RateLimitHit {
+  id        String   @id @default(cuid())
+  key       String
+  createdAt DateTime @default(now())
+
+  @@index([key, createdAt])
+  @@index([createdAt])
+}

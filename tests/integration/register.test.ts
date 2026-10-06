@@ -1,4 +1,4 @@
-import { describe, it, expect, afterAll } from 'vitest'
+import { beforeAll, describe, it, expect, afterAll } from 'vitest'
 import { POST } from '@/app/api/register/route'
 import { prisma } from '@/lib/prisma'
 
@@ -11,6 +11,14 @@ function makeRequest(body: unknown) {
 }
 
 describe('POST /api/register', () => {
+  beforeAll(async () => {
+    // Rate-limit counters left by earlier runs (no IP header → "unknown",
+    // test e-mails @example.com) must not throttle this run.
+    await prisma.rateLimitHit.deleteMany({
+      where: { OR: [{ key: { endsWith: ':unknown' } }, { key: { contains: '@example.com' } }] },
+    })
+  })
+
   afterAll(async () => {
     await prisma.user.deleteMany({ where: { email: 'register-test@example.com' } })
     await prisma.$disconnect()

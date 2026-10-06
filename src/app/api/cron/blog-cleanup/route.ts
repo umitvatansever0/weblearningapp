@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server'
 import { cleanupOrphanedBlogUploads } from '@/lib/blogCleanup'
+import { pruneRateLimitHits } from '@/lib/rateLimit'
 
-// Monthly Vercel Cron job (see vercel.json). Vercel sends
+// Monthly Vercel Cron job (see vercel.json): removes orphaned blog uploads and
+// old rate-limit counters. Vercel sends
 // `Authorization: Bearer <CRON_SECRET>`; without a configured secret the job
 // refuses to run so the endpoint can never be triggered anonymously.
 export async function GET(request: Request) {
@@ -13,7 +15,9 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const result = await cleanupOrphanedBlogUploads()
-  console.log('[cron] blog upload cleanup:', result)
+  const uploads = await cleanupOrphanedBlogUploads()
+  const prunedRateLimitHits = await pruneRateLimitHits()
+  const result = { ...uploads, prunedRateLimitHits }
+  console.log('[cron] monthly cleanup:', result)
   return NextResponse.json(result)
 }
