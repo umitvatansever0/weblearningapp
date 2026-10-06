@@ -40,6 +40,9 @@ model User {
   blogPosts        BlogPost[]
   blogAnswers      BlogAnswer[]
   blogReports      BlogReport[]
+  courseSections   CourseSectionProgress[]
+  topicMastery     TopicMastery[]
+  courseMistakes   CourseMistake[]
 }
 
 model PasswordResetToken {
@@ -264,4 +267,61 @@ model RateLimitHit {
 
   @@index([key, createdAt])
   @@index([createdAt])
+}
+
+// --- Structured course (A1) -------------------------------------------------
+// Course content lives in src/course as typed data; these tables only hold a
+// learner's progress against it, keyed by the stable content keys
+// (unit slug, section key, `${unitSlug}:${exerciseId}`).
+
+/// A completed section of a course unit (Learn, Practice, Reading, …).
+model CourseSectionProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  level       String
+  unitSlug    String
+  sectionKey  String
+  completedAt DateTime @default(now())
+
+  @@unique([userId, level, unitSlug, sectionKey])
+}
+
+/// Mastery per grammar topic ("articles") and per skill ("skill:listening"):
+/// an exponential moving average of recent answers, 0–100.
+model TopicMastery {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  level     String
+  topic     String
+  score     Float    @default(0)
+  attempts  Int      @default(0)
+  correct   Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, level, topic])
+}
+
+/// Mistake bank with spaced repetition: a wrong answer is due again after
+/// 1 day, then 3 and 5 more days; answered right at the last stage it is
+/// resolved. Reviews use a variation of the same concept, not the same item.
+model CourseMistake {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  level       String
+  exerciseKey String
+  topic       String
+  concept     String
+  wrongAnswer String
+  stage       Int       @default(0)
+  lapses      Int       @default(1)
+  dueAt       DateTime
+  resolvedAt  DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([userId, exerciseKey])
+  @@index([userId, resolvedAt, dueAt])
 }

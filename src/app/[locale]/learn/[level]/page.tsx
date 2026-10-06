@@ -16,6 +16,7 @@ import {
   localizedUrl,
 } from '@/lib/seo'
 import type { LevelCode } from '@prisma/client'
+import { isCourseLevel } from '@/course/registry'
 
 const VALID_LEVELS: LevelCode[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
@@ -50,6 +51,7 @@ export default async function LevelUnitsPage({
   // their per-lesson completion ticks, otherwise none are shown.
   const session = await getServerSession(authOptions)
   const t = await getTranslations('learn')
+  const tCourse = await getTranslations('course')
   const tNav = await getTranslations('nav')
   const units = await getUnitsForLevel(level as LevelCode, session?.user?.id)
   const copy = getLevelCopy(level, locale)
@@ -79,6 +81,19 @@ export default async function LevelUnitsPage({
         <h1 className="text-2xl font-bold">{copy?.h1 ?? `German ${level}`}</h1>
         {copy ? <p className="text-gray-600">{copy.intro}</p> : null}
       </header>
+
+      {isCourseLevel(level) && (
+        <aside className="rounded-2xl border-2 border-gray-900 dark:border-gray-100 p-5 flex flex-col gap-2">
+          <p className="font-semibold">{tCourse('learnBannerTitle')}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">{tCourse('learnBannerBody')}</p>
+          <Link
+            href={`/course/${level}`}
+            className="self-start rounded-full bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 px-5 py-2 text-sm font-medium"
+          >
+            {tCourse('learnBannerCta')} →
+          </Link>
+        </aside>
+      )}
 
       {units.map((unit) => (
         <section key={unit.id}>

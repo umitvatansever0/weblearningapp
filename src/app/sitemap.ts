@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
 import { prisma } from '@/lib/prisma'
 import { absoluteUrl } from '@/lib/seo'
+import { COURSE_LEVELS, getUnits } from '@/course/registry'
 
 // Revalidate hourly so lessons added/removed via the admin panel are picked up
 // without a redeploy (unpublished/deleted lessons drop out of the sitemap).
@@ -85,7 +86,12 @@ async function blogPaths(): Promise<string[]> {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date()
-  const paths = [...STATIC_PATHS, ...(await lessonPaths()), ...(await blogPaths())]
+  // Structured course: overview + units that have content (static data, no DB).
+  const coursePaths = COURSE_LEVELS.flatMap((level) => [
+    `/course/${level}`,
+    ...getUnits(level).map((unit) => `/course/${level}/${unit.slug}`),
+  ])
+  const paths = [...STATIC_PATHS, ...coursePaths, ...(await lessonPaths()), ...(await blogPaths())]
   // De-duplicate (e.g. a level page could appear via both static and dynamic).
   const uniquePaths = Array.from(new Set(paths))
 
