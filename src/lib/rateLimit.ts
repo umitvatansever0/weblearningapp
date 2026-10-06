@@ -19,6 +19,8 @@ export const LIMITS = {
   resetEmail: { max: 3, windowMs: 60 * MINUTE },
   /** Reset requests per IP. */
   resetIp: { max: 10, windowMs: 60 * MINUTE },
+  /** "Someone tried to sign up with your address" e-mails per address. */
+  accountExistsEmail: { max: 2, windowMs: 60 * MINUTE },
   /** Reset confirmations per IP. */
   resetConfirmIp: { max: 20, windowMs: 60 * MINUTE },
   /** Community blog, per member. Counted attempts survive deleting content. */

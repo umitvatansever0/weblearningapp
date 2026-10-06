@@ -1,4 +1,5 @@
 import type { NextAuthOptions } from 'next-auth'
+import type { JWT } from 'next-auth/jwt'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import { prisma } from '@/lib/prisma'
 import { verifyPassword } from '@/lib/password'
@@ -13,10 +14,6 @@ if (!process.env.NEXTAUTH_SECRET) {
 // nonexistent account takes about as long as one for a real account with a
 // wrong password — otherwise response timing leaks which emails are
 // registered.
-// How often a signed-in session re-reads the user's role from the database,
-// so role changes (e.g. removing admin rights) reach existing sessions.
-const ROLE_REFRESH_MS = 5 * 60 * 1000
-
 const DUMMY_HASH = '$2a$10$CwTycUXWue0Thq9StjUM0uJ8n7YKPMWXVDoMQ8xTWKk2FdMHKQdTG'
 
 export async function authorizeUser(email: string, password: string, ip = 'unknown') {
@@ -39,7 +36,32 @@ export async function authorizeUser(email: string, password: string, ip = 'unkno
     return null
   }
 
-  return { id: user.id, email: user.email, name: user.name, role: user.role }
+  return { id: user.id, email: user.email, name: user.name, role: user.role, sessionVersion: user.sessionVersion }
+}
+
+export class SessionRevokedError extends Error {
+  constructor() {
+    super('Session revoked')
+  }
+}
+
+/**
+ * Re-validate a session token against the database on every request:
+ * - the account must still exist,
+ * - its sessionVersion must match the one the token was issued with
+ *   (a password reset bumps it, which logs out every device at once),
+ * - the role is refreshed, so removed admin rights take effect immediately.
+ * Throwing makes next-auth treat the session as invalid and clear its cookie.
+ */
+export async function refreshSessionToken(token: JWT): Promise<JWT> {
+  if (!token.id) return token
+  const fresh = await prisma.user.findUnique({
+    where: { id: token.id },
+    select: { role: true, sessionVersion: true },
+  })
+  if (!fresh || fresh.sessionVersion !== (token.sv ?? 0)) throw new SessionRevokedError()
+  token.role = fresh.role
+  return token
 }
 
 export const authOptions: NextAuthOptions = {
@@ -61,18 +83,13 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
-        token.id = user.id
-        token.role = (user as { role: string }).role
-        token.roleCheckedAt = Date.now()
+        const signedIn = user as { id: string; role: string; sessionVersion?: number }
+        token.id = signedIn.id
+        token.role = signedIn.role
+        token.sv = signedIn.sessionVersion ?? 0
         return token
       }
-      if (token.id && Date.now() - (token.roleCheckedAt ?? 0) > ROLE_REFRESH_MS) {
-        const fresh = await prisma.user.findUnique({ where: { id: token.id }, select: { role: true } })
-        // A deleted account keeps no privileges.
-        token.role = fresh?.role ?? 'USER'
-        token.roleCheckedAt = Date.now()
-      }
-      return token
+      return refreshSessionToken(token)
     },
     async session({ session, token }) {
       if (session.user) {

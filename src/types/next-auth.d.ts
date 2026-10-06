@@ -17,6 +17,7 @@ declare module 'next-auth/jwt' {
   interface JWT {
     id: string
     role: string
-    roleCheckedAt?: number
+    /** User.sessionVersion at sign-in; tokens from older versions are rejected. */
+    sv?: number
   }
 }

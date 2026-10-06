@@ -66,7 +66,8 @@
     "loginSubmit": "Giriş yap",
     "registerError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
     "loginError": "Geçersiz e-posta veya şifre.",
-    "forgotPasswordLink": "Şifremi unuttum"
+    "forgotPasswordLink": "Şifremi unuttum",
+    "registeredNotice": "Kayıt tamamlandı – şimdi giriş yapabilirsin. Bu e-posta adresiyle zaten bir hesabın varsa sana bilgilendirme e-postası gönderdik."
   },
   "forgotPassword": {
     "title": "Şifreni sıfırla",

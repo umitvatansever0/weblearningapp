@@ -49,7 +49,12 @@ export async function POST(request: Request) {
         throw TOKEN_ALREADY_USED
       }
 
-      await tx.user.update({ where: { id: record.userId }, data: { passwordHash } })
+      // Bumping sessionVersion signs the account out on every device, so an
+      // attacker who had a session loses it the moment the password changes.
+      await tx.user.update({
+        where: { id: record.userId },
+        data: { passwordHash, sessionVersion: { increment: 1 } },
+      })
 
       // Any other outstanding reset links for this account stop working.
       await tx.passwordResetToken.updateMany({

@@ -1,12 +1,23 @@
-import { beforeAll, describe, it, expect, afterAll } from 'vitest'
+import { beforeAll, describe, it, expect, afterAll, vi } from 'vitest'
 import { POST } from '@/app/api/register/route'
 import { prisma } from '@/lib/prisma'
+import { sendAccountExistsEmail } from '@/lib/email'
+
+vi.mock('@/lib/email', () => ({ sendAccountExistsEmail: vi.fn().mockResolvedValue(undefined) }))
+
+// Each request comes from its own IP so the per-IP sign-up limit (tested in
+// rateLimit.test.ts) doesn't interfere with these functional checks.
+let requestCount = 0
+const RUN = Date.now().toString(36)
+function testIp() {
+  return `192.0.2.${++requestCount}-${RUN}`
+}
 
 function makeRequest(body: unknown) {
   return new Request('http://localhost/api/register', {
     method: 'POST',
     body: JSON.stringify(body),
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', 'x-forwarded-for': testIp() },
   })
 }
 
@@ -20,7 +31,8 @@ describe('POST /api/register', () => {
   })
 
   afterAll(async () => {
-    await prisma.user.deleteMany({ where: { email: 'register-test@example.com' } })
+    await prisma.user.deleteMany({ where: { email: { in: ['register-test@example.com', 'register-other-new@example.com'] } } })
+    await prisma.rateLimitHit.deleteMany({ where: { key: { contains: RUN } } })
     await prisma.$disconnect()
   })
 
@@ -32,18 +44,28 @@ describe('POST /api/register', () => {
     }))
 
     expect(res.status).toBe(201)
-    const json = await res.json()
-    expect(json.email).toBe('register-test@example.com')
+    expect(await prisma.user.count({ where: { email: 'register-test@example.com' } })).toBe(1)
   })
 
-  it('rejects a duplicate email with 409', async () => {
-    const res = await POST(makeRequest({
-      email: 'register-test@example.com',
+  it('answers a duplicate email exactly like a new sign-up and e-mails the owner instead', async () => {
+    const fresh = await POST(makeRequest({
+      email: 'register-other-new@example.com',
       password: 'Sup3rSecret!',
-      name: 'Register Test',
+      name: 'Another New',
+    }))
+    const duplicate = await POST(makeRequest({
+      email: 'register-test@example.com',
+      password: 'Different1!',
+      name: 'Imposter',
     }))
 
-    expect(res.status).toBe(409)
+    // Same status and same body – nothing reveals that the address exists.
+    expect(duplicate.status).toBe(fresh.status)
+    expect(await duplicate.json()).toEqual(await fresh.json())
+
+    // No second account, the original password is untouched, the owner is told.
+    expect(await prisma.user.count({ where: { email: 'register-test@example.com' } })).toBe(1)
+    expect(vi.mocked(sendAccountExistsEmail)).toHaveBeenCalledWith('register-test@example.com', 'en', expect.any(String))
   })
 
   it('rejects a short password with 400', async () => {
@@ -56,14 +78,15 @@ describe('POST /api/register', () => {
     expect(res.status).toBe(400)
   })
 
-  it('rejects a duplicate email that differs only in casing with 409', async () => {
+  it('treats a duplicate email that differs only in casing as the same address', async () => {
     const res = await POST(makeRequest({
       email: 'Register-Test@Example.com',
       password: 'Sup3rSecret!',
       name: 'Register Test',
     }))
 
-    expect(res.status).toBe(409)
+    expect(res.status).toBe(201)
+    expect(await prisma.user.count({ where: { email: 'register-test@example.com' } })).toBe(1)
   })
 
   it('rejects a malformed JSON body with 400', async () => {
@@ -71,7 +94,7 @@ describe('POST /api/register', () => {
       new Request('http://localhost/api/register', {
         method: 'POST',
         body: '{not valid json',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'x-forwarded-for': testIp() },
       })
     )
 
