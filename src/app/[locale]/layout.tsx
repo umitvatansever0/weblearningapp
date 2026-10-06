@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { AskQuestionCta } from '@/components/blog/AskQuestionCta'
 import { CookieConsentBanner } from '@/components/CookieConsentBanner'
 import { Analytics } from '@/components/Analytics'
 import { Providers } from '@/components/Providers'
@@ -94,6 +95,7 @@ export default async function LocaleLayout({
           <Providers>
             <Header />
             {children}
+            <AskQuestionCta />
             <Footer />
             <CookieConsentBanner />
             <Analytics />

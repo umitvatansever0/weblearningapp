@@ -16,12 +16,17 @@ const GOOGLE_AD_ANALYTICS_SOURCES = [
   'https://*.gstatic.com',
 ]
 
+// Community blog uploads: the browser PUTs files to the Vercel Blob API and
+// the resulting public blobs are displayed from the store's subdomain.
+const BLOB_UPLOAD_SOURCES = ['https://vercel.com', 'https://*.blob.vercel-storage.com']
+const BLOB_IMAGE_SOURCES = ['https://*.public.blob.vercel-storage.com']
+
 const contentSecurityPolicy = [
   `default-src 'self'`,
   `script-src 'self' 'unsafe-inline' ${GOOGLE_AD_ANALYTICS_SOURCES.join(' ')}`,
   `style-src 'self' 'unsafe-inline'`,
-  `img-src 'self' data: ${GOOGLE_AD_ANALYTICS_SOURCES.join(' ')}`,
-  `connect-src 'self' ${GOOGLE_AD_ANALYTICS_SOURCES.join(' ')}`,
+  `img-src 'self' data: ${GOOGLE_AD_ANALYTICS_SOURCES.join(' ')} ${BLOB_IMAGE_SOURCES.join(' ')}`,
+  `connect-src 'self' ${GOOGLE_AD_ANALYTICS_SOURCES.join(' ')} ${BLOB_UPLOAD_SOURCES.join(' ')}`,
   `frame-src 'self' ${GOOGLE_AD_ANALYTICS_SOURCES.join(' ')}`,
   `font-src 'self' data:`,
   `object-src 'none'`,

@@ -6,7 +6,8 @@
     "register": "Kayıt Ol",
     "logout": "Çıkış Yap",
     "admin": "Yönetim",
-    "languageSwitcherLabel": "Dil"
+    "languageSwitcherLabel": "Dil",
+    "blog": "Blog"
   },
   "home": {
     "heroTitle": "DeutschStep ile Online Almanca Öğren",
@@ -35,7 +36,10 @@
     "featureSrsTitle": "Aralıklı tekrar",
     "featureSrsBody": "Aralıklı tekrar sistemi, kelime tekrarlarını en uygun zamanda planlar; böylece kelimeler uzun süreli hafızaya yerleşir.",
     "audienceTitle": "DeutschStep kimler için?",
-    "audienceBody": "DeutschStep; kendi kendine öğrenenler, öğrenciler ve Almanca sınavlarına hazırlanan, A1'den C2'ye yapılandırılmış ve ücretsiz bir yol arayan herkes içindir."
+    "audienceBody": "DeutschStep; kendi kendine öğrenenler, öğrenciler ve Almanca sınavlarına hazırlanan, A1'den C2'ye yapılandırılmış ve ücretsiz bir yol arayan herkes içindir.",
+    "blogTitle": "Topluluk blogu: sor, paylaş, birlikte öğren",
+    "blogBody": "Bir dilbilgisi kuralında mı takıldın ya da öğrenme ipuçlarını paylaşmak mı istiyorsun? Sorunu DeutschStep blogunda paylaş, resim veya dosya yükle ve diğer öğrencilerden cevap al.",
+    "blogButton": "Bloga git"
   },
   "notFound": {
     "title": "Sayfa bulunamadı",
@@ -159,7 +163,8 @@
     "exampleSentenceLabel": "Örnek cümle",
     "invalidJson": "Geçersiz JSON",
     "saveError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
-    "accessDenied": "Bu sayfaya erişiminiz yok."
+    "accessDenied": "Bu sayfaya erişiminiz yok.",
+    "navBlog": "Blog moderasyonu"
   },
   "legal": {
     "privacyTitle": "Gizlilik Politikası",
@@ -249,12 +254,91 @@
     "title": "İletişim ve Yasal Bildirim (Impressum)",
     "intro": "Bu sayfa, yasal gereklilikler doğrultusunda DeutschLernen'in işletmecisini tanımlar ve destek veya veri koruma talepleri için bize nasıl ulaşabileceğinizi açıklar.",
     "fields": [
-      { "label": "İşletmeci", "value": "Yumit Vatansever" },
-      { "label": "Adres", "value": "Charlottenweg 9, Neuhausen, İsviçre" },
-      { "label": "E-posta", "value": "umitvatansever0@gmail.com" },
-      { "label": "Telefon", "value": "+41 77 280 66 82" },
-      { "label": "Vergi Kimlik No.", "value": "Yok (n/a)" }
+      {
+        "label": "İşletmeci",
+        "value": "Yumit Vatansever"
+      },
+      {
+        "label": "Adres",
+        "value": "Charlottenweg 9, Neuhausen, İsviçre"
+      },
+      {
+        "label": "E-posta",
+        "value": "umitvatansever0@gmail.com"
+      },
+      {
+        "label": "Telefon",
+        "value": "+41 77 280 66 82"
+      },
+      {
+        "label": "Vergi Kimlik No.",
+        "value": "Yok (n/a)"
+      }
     ],
     "note": "Kişisel verilerinize erişim, düzeltme veya silme talepleri için lütfen yukarıdaki e-posta adresini kullanın."
+  },
+  "blog": {
+    "title": "Topluluk Blogu",
+    "metaDescription": "Almanca öğrenmeyle ilgili sorular sor, ipuçları, resimler ve dosyalar paylaş, diğer DeutschStep öğrencilerinden cevap al.",
+    "intro": "Almanca dilbilgisi, kelime veya sınavlarla ilgili sorular sor, ipuçlarını ve materyallerini paylaş, diğer öğrencilere yardım et.",
+    "askButton": "Soru sor / paylaşım yap",
+    "empty": "Henüz paylaşım yok. İlk soruyu sen sor!",
+    "answersCount": "{count, plural, =0 {Cevap yok} other {# cevap}}",
+    "by": "{name} tarafından",
+    "attachments": "Ekler",
+    "hasAttachments": "ekli",
+    "loginToPost": "Soru sormak veya paylaşım yapmak için giriş yap ya da üye ol.",
+    "loginToAnswer": "Cevap yazmak için giriş yap.",
+    "login": "Giriş yap",
+    "register": "Üye ol",
+    "newTitle": "Yeni paylaşım",
+    "titleLabel": "Başlık",
+    "titlePlaceholder": "ör. Dativ ne zaman kullanılır?",
+    "bodyLabel": "Sorun veya paylaşımın",
+    "bodyPlaceholder": "Sorunu olabildiğince ayrıntılı anlat…",
+    "filesLabel": "Resimler ve dosyalar (isteğe bağlı)",
+    "filesHint": "Resimler (JPG, PNG, WebP, GIF) en fazla 5 MB, belgeler (PDF, TXT, DOC, DOCX) en fazla 10 MB, en çok {max} dosya.",
+    "uploading": "{name} yükleniyor… %{percent}",
+    "removeFile": "Kaldır",
+    "submit": "Yayınla",
+    "submitting": "Yayınlanıyor…",
+    "guidelines": "Nazik ve saygılı ol. Spam, reklam, başkalarının kişisel verileri ve yasa dışı içerik yasaktır. Paylaşımlar şikayet edilip kaldırılabilir.",
+    "errorGeneric": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+    "errorFileType": "{name}: bu dosya türüne izin verilmiyor.",
+    "errorFileSize": "{name}: dosya çok büyük.",
+    "errorTooManyFiles": "En fazla {max} dosya ekleyebilirsin.",
+    "errorUpload": "{name} yüklenemedi.",
+    "answersTitle": "Cevaplar",
+    "answerPlaceholder": "Cevabını yaz…",
+    "answerSubmit": "Cevabı gönder",
+    "noAnswers": "Henüz cevap yok. Yardım edebilir misin?",
+    "report": "Şikayet et",
+    "reportPrompt": "Neden şikayet ediyorsun? (ör. spam, hakaret)",
+    "reported": "Şikayet edildi – teşekkürler!",
+    "delete": "Sil",
+    "deleteConfirm": "Bunu gerçekten silmek istiyor musun?",
+    "backToBlog": "← Bloga dön",
+    "previous": "← Daha yeni",
+    "next": "Daha eski →",
+    "ctaTitle": "Bir sorun mu var?",
+    "ctaText": "Blogumuzda topluluğa sor – sorunu paylaş, resim veya dosya yükle ve cevap al.",
+    "ctaButton": "Blogda soru sor"
+  },
+  "adminBlog": {
+    "title": "Blog moderasyonu",
+    "openReports": "Açık şikayetler",
+    "noReports": "Açık şikayet yok.",
+    "reportedPost": "Paylaşım",
+    "reportedAnswer": "Cevap",
+    "reason": "Sebep",
+    "reportedBy": "Şikayet eden",
+    "hide": "Gizle",
+    "unhide": "Tekrar göster",
+    "dismiss": "Şikayeti kapat",
+    "delete": "Sil",
+    "deleteConfirm": "Kalıcı olarak silinsin mi?",
+    "recentPosts": "Son paylaşımlar",
+    "hiddenLabel": "gizli",
+    "view": "Aç"
   }
 }

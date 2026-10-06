@@ -49,6 +49,9 @@ export default async function AdminPage({ params }: { params: Promise<{ locale: 
         <Link href="/admin/content" className="underline">
           {t('navContent')}
         </Link>
+        <Link href="/admin/blog" className="underline">
+          {t('navBlog')}
+        </Link>
       </nav>
     </main>
   )

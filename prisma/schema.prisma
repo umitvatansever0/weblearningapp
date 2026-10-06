@@ -34,6 +34,9 @@ model User {
   vocabCards       UserVocabCard[]
   badges           UserBadge[]
   resetTokens      PasswordResetToken[]
+  blogPosts        BlogPost[]
+  blogAnswers      BlogAnswer[]
+  blogReports      BlogReport[]
 }
 
 model PasswordResetToken {
@@ -171,4 +174,77 @@ model UserBadge {
   earnedAt DateTime @default(now())
 
   @@unique([userId, badgeId])
+}
+
+// --- Community blog (Q&A) ---------------------------------------------------
+// Members post questions/sharings (optionally with uploaded images/files) and
+// answer each other. Content is published immediately; visitors can report it
+// and admins hide or delete it from /admin/blog. Hidden content is excluded
+// from every public query.
+
+model BlogPost {
+  id          String           @id @default(cuid())
+  authorId    String
+  author      User             @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  title       String
+  body        String
+  hidden      Boolean          @default(false)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  answers     BlogAnswer[]
+  attachments BlogAttachment[]
+  reports     BlogReport[]
+
+  @@index([hidden, createdAt])
+  @@index([authorId, createdAt])
+}
+
+model BlogAnswer {
+  id        String       @id @default(cuid())
+  postId    String
+  post      BlogPost     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  authorId  String
+  author    User         @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  body      String
+  hidden    Boolean      @default(false)
+  createdAt DateTime     @default(now())
+  reports   BlogReport[]
+
+  @@index([postId, createdAt])
+  @@index([authorId, createdAt])
+}
+
+// A file in Vercel Blob that belongs to a post. `url` is the public blob URL;
+// `pathname` is kept so the blob can be deleted together with its post.
+model BlogAttachment {
+  id          String   @id @default(cuid())
+  postId      String
+  post        BlogPost @relation(fields: [postId], references: [id], onDelete: Cascade)
+  url         String   @unique
+  pathname    String
+  contentType String
+  size        Int
+  fileName    String
+  createdAt   DateTime @default(now())
+
+  @@index([postId])
+}
+
+// Exactly one of postId / answerId is set. A member can report the same item
+// only once (NULLs are distinct in Postgres unique indexes).
+model BlogReport {
+  id         String      @id @default(cuid())
+  reporterId String
+  reporter   User        @relation(fields: [reporterId], references: [id], onDelete: Cascade)
+  postId     String?
+  post       BlogPost?   @relation(fields: [postId], references: [id], onDelete: Cascade)
+  answerId   String?
+  answer     BlogAnswer? @relation(fields: [answerId], references: [id], onDelete: Cascade)
+  reason     String
+  createdAt  DateTime    @default(now())
+  resolvedAt DateTime?
+
+  @@unique([reporterId, postId])
+  @@unique([reporterId, answerId])
+  @@index([resolvedAt])
 }

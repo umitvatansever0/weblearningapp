@@ -6,7 +6,8 @@
     "register": "Sign up",
     "logout": "Log out",
     "admin": "Admin",
-    "languageSwitcherLabel": "Language"
+    "languageSwitcherLabel": "Language",
+    "blog": "Blog"
   },
   "home": {
     "heroTitle": "Learn German Online with DeutschStep",
@@ -35,7 +36,10 @@
     "featureSrsTitle": "Spaced repetition",
     "featureSrsBody": "A spaced-repetition system schedules vocabulary reviews at the optimal time so words move into long-term memory.",
     "audienceTitle": "Who is DeutschStep for?",
-    "audienceBody": "DeutschStep is for self-learners, students and anyone preparing for German exams who wants a structured, free path from A1 to C2."
+    "audienceBody": "DeutschStep is for self-learners, students and anyone preparing for German exams who wants a structured, free path from A1 to C2.",
+    "blogTitle": "Community blog: ask, share, learn together",
+    "blogBody": "Stuck on a grammar rule or want to share your learning tips? Post your question in the DeutschStep blog, upload a picture or a file and get answers from other learners.",
+    "blogButton": "Go to the blog"
   },
   "notFound": {
     "title": "Page not found",
@@ -159,7 +163,8 @@
     "exampleSentenceLabel": "Example sentence",
     "invalidJson": "Invalid JSON",
     "saveError": "Something went wrong. Please try again.",
-    "accessDenied": "You don't have access to this page."
+    "accessDenied": "You don't have access to this page.",
+    "navBlog": "Blog moderation"
   },
   "legal": {
     "privacyTitle": "Privacy Policy",
@@ -249,12 +254,91 @@
     "title": "Contact & Legal Notice (Impressum)",
     "intro": "This page identifies the operator of DeutschLernen, as required by law, and explains how to reach us for support or data-protection requests.",
     "fields": [
-      { "label": "Operator", "value": "Yumit Vatansever" },
-      { "label": "Address", "value": "Charlottenweg 9, Neuhausen, Switzerland" },
-      { "label": "Email", "value": "umitvatansever0@gmail.com" },
-      { "label": "Phone", "value": "+41 77 280 66 82" },
-      { "label": "VAT ID", "value": "N/A" }
+      {
+        "label": "Operator",
+        "value": "Yumit Vatansever"
+      },
+      {
+        "label": "Address",
+        "value": "Charlottenweg 9, Neuhausen, Switzerland"
+      },
+      {
+        "label": "Email",
+        "value": "umitvatansever0@gmail.com"
+      },
+      {
+        "label": "Phone",
+        "value": "+41 77 280 66 82"
+      },
+      {
+        "label": "VAT ID",
+        "value": "N/A"
+      }
     ],
     "note": "For requests regarding access to, correction of, or deletion of your personal data, please use the email address above."
+  },
+  "blog": {
+    "title": "Community Blog",
+    "metaDescription": "Ask questions about learning German, share tips, pictures and files, and get answers from other DeutschStep learners.",
+    "intro": "Ask questions about German grammar, vocabulary or exams, share your tips and materials, and help other learners.",
+    "askButton": "Ask a question / share",
+    "empty": "No posts yet. Be the first to ask a question!",
+    "answersCount": "{count, plural, =0 {No answers} one {# answer} other {# answers}}",
+    "by": "by {name}",
+    "attachments": "Attachments",
+    "hasAttachments": "with attachments",
+    "loginToPost": "Log in or sign up to ask a question or share a post.",
+    "loginToAnswer": "Log in to write an answer.",
+    "login": "Log in",
+    "register": "Sign up",
+    "newTitle": "New post",
+    "titleLabel": "Title",
+    "titlePlaceholder": "e.g. When do I use the dative?",
+    "bodyLabel": "Your question or post",
+    "bodyPlaceholder": "Describe your question in as much detail as possible…",
+    "filesLabel": "Pictures and files (optional)",
+    "filesHint": "Images (JPG, PNG, WebP, GIF) up to 5 MB, documents (PDF, TXT, DOC, DOCX) up to 10 MB, at most {max} files.",
+    "uploading": "Uploading {name}… {percent}%",
+    "removeFile": "Remove",
+    "submit": "Publish",
+    "submitting": "Publishing…",
+    "guidelines": "Be friendly and respectful. No spam, advertising, personal data of others or illegal content. Posts can be reported and removed.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorFileType": "{name}: this file type is not allowed.",
+    "errorFileSize": "{name}: the file is too large.",
+    "errorTooManyFiles": "You can attach at most {max} files.",
+    "errorUpload": "{name} could not be uploaded.",
+    "answersTitle": "Answers",
+    "answerPlaceholder": "Write your answer…",
+    "answerSubmit": "Send answer",
+    "noAnswers": "No answers yet. Can you help?",
+    "report": "Report",
+    "reportPrompt": "Why are you reporting this? (e.g. spam, insult)",
+    "reported": "Reported – thank you!",
+    "delete": "Delete",
+    "deleteConfirm": "Do you really want to delete this?",
+    "backToBlog": "← Back to the blog",
+    "previous": "← Newer",
+    "next": "Older →",
+    "ctaTitle": "Do you have a question?",
+    "ctaText": "Ask the community in our blog – share your question, upload a picture or a file and get answers.",
+    "ctaButton": "Ask a question in the blog"
+  },
+  "adminBlog": {
+    "title": "Blog moderation",
+    "openReports": "Open reports",
+    "noReports": "No open reports.",
+    "reportedPost": "Post",
+    "reportedAnswer": "Answer",
+    "reason": "Reason",
+    "reportedBy": "Reported by",
+    "hide": "Hide",
+    "unhide": "Show again",
+    "dismiss": "Dismiss report",
+    "delete": "Delete",
+    "deleteConfirm": "Delete permanently?",
+    "recentPosts": "Latest posts",
+    "hiddenLabel": "hidden",
+    "view": "Open"
   }
 }

@@ -38,6 +38,12 @@ describe('HomePage', () => {
     }
   })
 
+  it('has a blog section linking to the community blog', () => {
+    renderHome()
+    expect(screen.getByRole('heading', { level: 2, name: en.home.blogTitle })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: en.home.blogButton })).toHaveAttribute('href', '/blog')
+  })
+
   it('links to the all-lessons index and the register CTA', () => {
     renderHome()
     expect(screen.getByRole('link', { name: en.home.viewAllLessons })).toHaveAttribute('href', '/learn')

@@ -6,7 +6,8 @@
     "register": "Registrieren",
     "logout": "Abmelden",
     "admin": "Admin",
-    "languageSwitcherLabel": "Sprache"
+    "languageSwitcherLabel": "Sprache",
+    "blog": "Blog"
   },
   "home": {
     "heroTitle": "Deutsch online lernen mit DeutschStep",
@@ -35,7 +36,10 @@
     "featureSrsTitle": "Spaced Repetition",
     "featureSrsBody": "Ein Spaced-Repetition-System plant Vokabelwiederholungen zum optimalen Zeitpunkt, damit Wörter ins Langzeitgedächtnis gelangen.",
     "audienceTitle": "Für wen ist DeutschStep?",
-    "audienceBody": "DeutschStep ist für Selbstlernende, Studierende und alle, die sich auf Deutschprüfungen vorbereiten und einen strukturierten, kostenlosen Weg von A1 bis C2 suchen."
+    "audienceBody": "DeutschStep ist für Selbstlernende, Studierende und alle, die sich auf Deutschprüfungen vorbereiten und einen strukturierten, kostenlosen Weg von A1 bis C2 suchen.",
+    "blogTitle": "Community-Blog: fragen, teilen, gemeinsam lernen",
+    "blogBody": "Du hängst bei einer Grammatikregel fest oder möchtest deine Lerntipps teilen? Stelle deine Frage im DeutschStep-Blog, lade ein Bild oder eine Datei hoch und erhalte Antworten von anderen Lernenden.",
+    "blogButton": "Zum Blog"
   },
   "notFound": {
     "title": "Seite nicht gefunden",
@@ -159,7 +163,8 @@
     "exampleSentenceLabel": "Beispielsatz",
     "invalidJson": "Ungültiges JSON",
     "saveError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
-    "accessDenied": "Du hast keinen Zugriff auf diese Seite."
+    "accessDenied": "Du hast keinen Zugriff auf diese Seite.",
+    "navBlog": "Blog-Moderation"
   },
   "legal": {
     "privacyTitle": "Datenschutzerklärung",
@@ -249,12 +254,91 @@
     "title": "Kontakt & Impressum",
     "intro": "Diese Seite weist den Betreiber von DeutschLernen gemäß gesetzlicher Vorgaben aus und erklärt, wie Sie uns für Support- oder Datenschutzanfragen erreichen.",
     "fields": [
-      { "label": "Betreiber", "value": "Yumit Vatansever" },
-      { "label": "Anschrift", "value": "Charlottenweg 9, Neuhausen, Schweiz" },
-      { "label": "E-Mail", "value": "umitvatansever0@gmail.com" },
-      { "label": "Telefon", "value": "+41 77 280 66 82" },
-      { "label": "USt-IdNr.", "value": "N/A" }
+      {
+        "label": "Betreiber",
+        "value": "Yumit Vatansever"
+      },
+      {
+        "label": "Anschrift",
+        "value": "Charlottenweg 9, Neuhausen, Schweiz"
+      },
+      {
+        "label": "E-Mail",
+        "value": "umitvatansever0@gmail.com"
+      },
+      {
+        "label": "Telefon",
+        "value": "+41 77 280 66 82"
+      },
+      {
+        "label": "USt-IdNr.",
+        "value": "N/A"
+      }
     ],
     "note": "Für Anfragen zu Zugriff auf, Berichtigung oder Löschung Ihrer personenbezogenen Daten nutzen Sie bitte die oben genannte E-Mail-Adresse."
+  },
+  "blog": {
+    "title": "Community-Blog",
+    "metaDescription": "Stelle Fragen zum Deutschlernen, teile Tipps, Bilder und Dateien und erhalte Antworten von anderen DeutschStep-Lernenden.",
+    "intro": "Stelle Fragen zu Grammatik, Wortschatz oder Prüfungen, teile Tipps und Materialien und hilf anderen Lernenden.",
+    "askButton": "Frage stellen / Beitrag teilen",
+    "empty": "Noch keine Beiträge. Stelle als Erste:r eine Frage!",
+    "answersCount": "{count, plural, =0 {Keine Antworten} one {# Antwort} other {# Antworten}}",
+    "by": "von {name}",
+    "attachments": "Anhänge",
+    "hasAttachments": "mit Anhängen",
+    "loginToPost": "Melde dich an oder registriere dich, um eine Frage zu stellen oder etwas zu teilen.",
+    "loginToAnswer": "Melde dich an, um eine Antwort zu schreiben.",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "newTitle": "Neuer Beitrag",
+    "titleLabel": "Titel",
+    "titlePlaceholder": "z. B. Wann benutze ich den Dativ?",
+    "bodyLabel": "Deine Frage oder dein Beitrag",
+    "bodyPlaceholder": "Beschreibe deine Frage möglichst genau…",
+    "filesLabel": "Bilder und Dateien (optional)",
+    "filesHint": "Bilder (JPG, PNG, WebP, GIF) bis 5 MB, Dokumente (PDF, TXT, DOC, DOCX) bis 10 MB, höchstens {max} Dateien.",
+    "uploading": "{name} wird hochgeladen… {percent} %",
+    "removeFile": "Entfernen",
+    "submit": "Veröffentlichen",
+    "submitting": "Wird veröffentlicht…",
+    "guidelines": "Sei freundlich und respektvoll. Kein Spam, keine Werbung, keine persönlichen Daten anderer und keine rechtswidrigen Inhalte. Beiträge können gemeldet und entfernt werden.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "errorFileType": "{name}: Dieser Dateityp ist nicht erlaubt.",
+    "errorFileSize": "{name}: Die Datei ist zu groß.",
+    "errorTooManyFiles": "Du kannst höchstens {max} Dateien anhängen.",
+    "errorUpload": "{name} konnte nicht hochgeladen werden.",
+    "answersTitle": "Antworten",
+    "answerPlaceholder": "Schreibe deine Antwort…",
+    "answerSubmit": "Antwort senden",
+    "noAnswers": "Noch keine Antworten. Kannst du helfen?",
+    "report": "Melden",
+    "reportPrompt": "Warum meldest du das? (z. B. Spam, Beleidigung)",
+    "reported": "Gemeldet – danke!",
+    "delete": "Löschen",
+    "deleteConfirm": "Möchtest du das wirklich löschen?",
+    "backToBlog": "← Zurück zum Blog",
+    "previous": "← Neuere",
+    "next": "Ältere →",
+    "ctaTitle": "Hast du eine Frage?",
+    "ctaText": "Frag die Community in unserem Blog – teile deine Frage, lade ein Bild oder eine Datei hoch und erhalte Antworten.",
+    "ctaButton": "Im Blog eine Frage stellen"
+  },
+  "adminBlog": {
+    "title": "Blog-Moderation",
+    "openReports": "Offene Meldungen",
+    "noReports": "Keine offenen Meldungen.",
+    "reportedPost": "Beitrag",
+    "reportedAnswer": "Antwort",
+    "reason": "Grund",
+    "reportedBy": "Gemeldet von",
+    "hide": "Ausblenden",
+    "unhide": "Wieder anzeigen",
+    "dismiss": "Meldung verwerfen",
+    "delete": "Löschen",
+    "deleteConfirm": "Endgültig löschen?",
+    "recentPosts": "Neueste Beiträge",
+    "hiddenLabel": "ausgeblendet",
+    "view": "Öffnen"
   }
 }

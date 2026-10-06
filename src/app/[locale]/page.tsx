@@ -63,6 +63,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="border rounded p-6 flex flex-col gap-3 bg-gray-50">
+        <h2 className="text-xl font-semibold">{t('blogTitle')}</h2>
+        <p className="text-sm text-gray-600">{t('blogBody')}</p>
+        <div>
+          <Link href="/blog" className="inline-block bg-gray-900 text-white rounded px-5 py-2 text-sm">
+            {t('blogButton')}
+          </Link>
+        </div>
+      </section>
+
       <section>
         <h2 className="text-xl font-semibold mb-4">{t('featuresTitle')}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

@@ -8,7 +8,7 @@ import { absoluteUrl } from '@/lib/seo'
 export const revalidate = 3600
 
 // Locale-agnostic public paths that always exist.
-const STATIC_PATHS = ['', '/learn', '/privacy', '/terms', '/contact']
+const STATIC_PATHS = ['', '/learn', '/blog', '/privacy', '/terms', '/contact']
 
 /** Build the hreflang alternates map for a locale-agnostic path. */
 function languagesFor(path: string): Record<string, string> {
@@ -67,9 +67,25 @@ async function lessonPaths(): Promise<string[]> {
   }
 }
 
+/** Visible community blog posts (hidden/moderated posts are excluded). */
+async function blogPaths(): Promise<string[]> {
+  try {
+    const posts = await prisma.blogPost.findMany({
+      where: { hidden: false },
+      orderBy: { createdAt: 'desc' },
+      take: 5000,
+      select: { id: true },
+    })
+    return posts.map((post) => `/blog/${post.id}`)
+  } catch (error) {
+    console.error('[sitemap] failed to load blog posts from the database:', error)
+    return []
+  }
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date()
-  const paths = [...STATIC_PATHS, ...(await lessonPaths())]
+  const paths = [...STATIC_PATHS, ...(await lessonPaths()), ...(await blogPaths())]
   // De-duplicate (e.g. a level page could appear via both static and dynamic).
   const uniquePaths = Array.from(new Set(paths))
 
