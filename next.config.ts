@@ -50,6 +50,8 @@ const securityHeaders = [
 ]
 
 const nextConfig: NextConfig = {
+  // Don't advertise the framework/version to scanners.
+  poweredByHeader: false,
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
   },

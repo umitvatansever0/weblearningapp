@@ -1,12 +1,30 @@
 import { z } from 'zod'
 
+// Display names that would let a member pose as the site or its staff in the
+// community blog. Compared after lowercasing and dropping non-letters, so
+// "A.d-m_i n" or "DeutschStep Team" are caught too.
+const RESERVED_NAME_PARTS = ['admin', 'moderator', 'deutschstep', 'support', 'yonetici', 'yönetici', 'administrator']
+
+export function isReservedName(name: string): boolean {
+  const letters = name.toLowerCase().replace(/[^a-zçğıöşüäß]/g, '')
+  return RESERVED_NAME_PARTS.some((part) => letters.includes(part))
+}
+
 export const registerSchema = z.object({
   email: z
     .string()
+    .max(254)
     .email()
     .transform((email) => email.toLowerCase()),
-  password: z.string().min(8, 'Password must be at least 8 characters'),
-  name: z.string().min(1, 'Name is required'),
+  // Upper bound keeps bcrypt input within its 72-byte window in practice and
+  // stops oversized payloads.
+  password: z.string().min(8, 'Password must be at least 8 characters').max(128, 'Password is too long'),
+  name: z
+    .string()
+    .trim()
+    .min(1, 'Name is required')
+    .max(50, 'Name must be at most 50 characters')
+    .refine((name) => !isReservedName(name), { message: 'This name is not allowed' }),
 })
 
 export type RegisterInput = z.infer<typeof registerSchema>
@@ -20,7 +38,7 @@ export const forgotPasswordSchema = z.object({
 
 export const resetPasswordSchema = z.object({
   token: z.string().min(1, 'Token is required'),
-  password: z.string().min(8, 'Password must be at least 8 characters'),
+  password: z.string().min(8, 'Password must be at least 8 characters').max(128, 'Password is too long'),
 })
 
 export const userRoleUpdateSchema = z.object({

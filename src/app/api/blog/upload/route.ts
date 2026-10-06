@@ -3,6 +3,7 @@ import { getServerSession } from 'next-auth'
 import { handleUpload, type HandleUploadBody } from '@vercel/blob/client'
 import { authOptions } from '@/lib/auth'
 import { ALLOWED_CONTENT_TYPES, MAX_UPLOAD_BYTES, uploadPrefixFor } from '@/lib/blog'
+import { consume } from '@/lib/rateLimit'
 
 // Issues short-lived client tokens so the browser uploads files straight to
 // Vercel Blob (bypassing the 4.5 MB function body limit). A token is only
@@ -28,6 +29,9 @@ export async function POST(request: Request) {
         if (!pathname.startsWith(prefix) || pathname.includes('..')) {
           throw new Error('Invalid upload path')
         }
+        // Each token allows one file; cap tokens per member so nobody can
+        // fill the storage quota with junk uploads.
+        if (await consume('blogUpload', session.user.id)) throw new Error('Too many uploads')
         return {
           allowedContentTypes: [...ALLOWED_CONTENT_TYPES],
           maximumSizeInBytes: MAX_UPLOAD_BYTES,
@@ -38,7 +42,7 @@ export async function POST(request: Request) {
     return NextResponse.json(result)
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Upload failed'
-    const status = message === 'Unauthorized' ? 401 : 400
+    const status = message === 'Unauthorized' ? 401 : message === 'Too many uploads' ? 429 : 400
     return NextResponse.json({ error: message }, { status })
   }
 }

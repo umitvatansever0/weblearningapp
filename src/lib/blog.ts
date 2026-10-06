@@ -89,17 +89,6 @@ export function isOwnBlobUpload(url: string, pathname: string, userId: string): 
   return decodeURIComponent(parsed.pathname) === `/${pathname}`
 }
 
-/** Per-member write limits within a rolling window (anti-spam). */
-export const RATE_LIMITS = {
-  post: { max: 5, windowMs: 60 * 60 * 1000 },
-  answer: { max: 30, windowMs: 60 * 60 * 1000 },
-  report: { max: 20, windowMs: 60 * 60 * 1000 },
-} as const
-
-export function rateLimitSince(kind: keyof typeof RATE_LIMITS, now = new Date()): Date {
-  return new Date(now.getTime() - RATE_LIMITS[kind].windowMs)
-}
-
 export function formatBytes(bytes: number): string {
   if (bytes < 1024) return `${bytes} B`
   if (bytes < MB) return `${Math.round(bytes / 1024)} KB`

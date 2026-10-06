@@ -17,7 +17,22 @@ export async function POST(
     return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 })
   }
 
-  const score = typeof (body as { score?: unknown })?.score === 'number' ? (body as { score: number }).score : 0
+  // The score (number of correct exercises) comes from the browser, so it is
+  // clamped to what the lesson can actually yield: an integer between 0 and
+  // the lesson's exercise count. Otherwise a crafted request could award
+  // arbitrary XP or overflow the database integer.
+  const lesson = await prisma.lesson.findUnique({
+    where: { id: lessonId },
+    select: { _count: { select: { exercises: true } } },
+  })
+  if (!lesson) {
+    return NextResponse.json({ error: 'Lesson not found' }, { status: 404 })
+  }
+  const rawScore = (body as { score?: unknown })?.score
+  const score =
+    typeof rawScore === 'number' && Number.isFinite(rawScore)
+      ? Math.min(Math.max(Math.trunc(rawScore), 0), lesson._count.exercises)
+      : 0
 
   // Content is public: anonymous visitors can finish a lesson, but there is no
   // account to attach progress to, so we acknowledge completion without saving.

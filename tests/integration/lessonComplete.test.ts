@@ -46,6 +46,17 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
       },
     })
     lessonId = lesson.id
+    // The completion score is clamped to the lesson's exercise count.
+    await prisma.exercise.createMany({
+      data: Array.from({ length: 10 }, (_, i) => ({
+        lessonId: lesson.id,
+        order: i + 1,
+        type: 'SHORT_ANSWER' as const,
+        data: { prompt: `Q${i}` },
+        correctAnswer: { accepted: ['a'] },
+        explanation: 'Test',
+      })),
+    })
   })
 
   afterAll(async () => {
@@ -60,6 +71,7 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
       await prisma.userBadge.deleteMany({ where: { userId } })
       await prisma.userVocabCard.deleteMany({ where: { userId } })
       await prisma.userProgress.deleteMany({ where: { userId } })
+      await prisma.exercise.deleteMany({ where: { lessonId } })
       await prisma.lesson.deleteMany({ where: { id: lessonId } })
       await prisma.unit.deleteMany({ where: { id: unitId } })
       await prisma.user.deleteMany({ where: { id: userId } })
@@ -69,10 +81,10 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
 
   it('acknowledges completion for anonymous visitors without saving progress', async () => {
     vi.mocked(getServerSession).mockResolvedValue(null)
-    const res = await POST(makeRequest({ score: 100 }), { params: Promise.resolve({ lessonId }) })
+    const res = await POST(makeRequest({ score: 7 }), { params: Promise.resolve({ lessonId }) })
     expect(res.status).toBe(200)
     const json = await res.json()
-    expect(json).toEqual({ completed: true, score: 100, saved: false })
+    expect(json).toEqual({ completed: true, score: 7, saved: false })
 
     // No account, so nothing is written to userProgress.
     const stored = await prisma.userProgress.findFirst({ where: { lessonId } })
@@ -81,16 +93,16 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
 
   it('upserts progress for an authenticated user', async () => {
     vi.mocked(getServerSession).mockResolvedValue({ user: { id: userId } } as never)
-    const res = await POST(makeRequest({ score: 80 }), { params: Promise.resolve({ lessonId }) })
+    const res = await POST(makeRequest({ score: 8 }), { params: Promise.resolve({ lessonId }) })
     expect(res.status).toBe(200)
     const json = await res.json()
-    expect(json).toEqual({ completed: true, score: 80 })
+    expect(json).toEqual({ completed: true, score: 8 })
 
     const stored = await prisma.userProgress.findUnique({
       where: { userId_lessonId: { userId, lessonId } },
     })
     expect(stored?.completed).toBe(true)
-    expect(stored?.score).toBe(80)
+    expect(stored?.score).toBe(8)
   })
 
   it('awards XP as a side effect of the first completion', async () => {
@@ -108,6 +120,25 @@ describe('POST /api/lessons/[lessonId]/complete', () => {
 
     const after = await prisma.user.findUniqueOrThrow({ where: { id: userId } })
     expect(after.xp).toBe(before.xp)
+  })
+
+  it('clamps a forged score to the lesson’s exercise count', async () => {
+    vi.mocked(getServerSession).mockResolvedValue(null)
+    for (const [sent, expected] of [
+      [999999999, 10],
+      [-50, 0],
+      [3.9, 3],
+      ['10', 0],
+    ] as const) {
+      const res = await POST(makeRequest({ score: sent }), { params: Promise.resolve({ lessonId }) })
+      expect((await res.json()).score).toBe(expected)
+    }
+  })
+
+  it('returns 404 for an unknown lesson', async () => {
+    vi.mocked(getServerSession).mockResolvedValue({ user: { id: userId } } as never)
+    const res = await POST(makeRequest({ score: 1 }), { params: Promise.resolve({ lessonId: 'does-not-exist' }) })
+    expect(res.status).toBe(404)
   })
 
   it('returns 400 for malformed JSON body', async () => {

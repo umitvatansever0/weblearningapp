@@ -21,6 +21,12 @@ export const LIMITS = {
   resetIp: { max: 10, windowMs: 60 * MINUTE },
   /** Reset confirmations per IP. */
   resetConfirmIp: { max: 20, windowMs: 60 * MINUTE },
+  /** Community blog, per member. Counted attempts survive deleting content. */
+  blogPost: { max: 5, windowMs: 60 * MINUTE },
+  blogAnswer: { max: 30, windowMs: 60 * MINUTE },
+  blogReport: { max: 20, windowMs: 60 * MINUTE },
+  /** Upload tokens per member – protects Blob storage quota and costs. */
+  blogUpload: { max: 30, windowMs: 60 * MINUTE },
 } as const
 
 export type LimitName = keyof typeof LIMITS

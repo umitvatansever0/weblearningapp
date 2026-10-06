@@ -4,8 +4,7 @@ import type { Session } from 'next-auth'
 import { del } from '@vercel/blob'
 import { authOptions } from '@/lib/auth'
 import { isAdmin } from '@/lib/adminAuth'
-import { prisma } from '@/lib/prisma'
-import { RATE_LIMITS, rateLimitSince } from '@/lib/blog'
+import { consume } from '@/lib/rateLimit'
 
 /** Any signed-in member; 401 otherwise. */
 export async function requireUserApi(): Promise<{ session: Session } | { error: NextResponse }> {
@@ -21,20 +20,18 @@ export function canDelete(session: Session, authorId: string): boolean {
   return session.user.id === authorId || isAdmin(session)
 }
 
-/** Returns a 429 response when the member exceeded the write limit, else null. */
+const BLOG_LIMIT = { post: 'blogPost', answer: 'blogAnswer', report: 'blogReport' } as const
+
+/**
+ * Returns a 429 response when the member exceeded the write limit, else null.
+ * Attempts are counted in RateLimitHit, so deleting content does not reset
+ * the quota.
+ */
 export async function checkRateLimit(
-  kind: keyof typeof RATE_LIMITS,
+  kind: keyof typeof BLOG_LIMIT,
   userId: string
 ): Promise<NextResponse | null> {
-  const since = rateLimitSince(kind)
-  const where = { createdAt: { gte: since } }
-  const count =
-    kind === 'post'
-      ? await prisma.blogPost.count({ where: { ...where, authorId: userId } })
-      : kind === 'answer'
-        ? await prisma.blogAnswer.count({ where: { ...where, authorId: userId } })
-        : await prisma.blogReport.count({ where: { ...where, reporterId: userId } })
-  if (count >= RATE_LIMITS[kind].max) {
+  if (await consume(BLOG_LIMIT[kind], userId)) {
     return NextResponse.json({ error: 'Too many requests, please try again later' }, { status: 429 })
   }
   return null
