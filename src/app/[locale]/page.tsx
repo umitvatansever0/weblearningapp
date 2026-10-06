@@ -63,6 +63,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="border rounded p-6 flex flex-col gap-3">
+        <h2 className="text-xl font-semibold">{t('placementTitle')}</h2>
+        <p className="text-sm text-gray-600">{t('placementBody')}</p>
+        <div>
+          <Link href="/placement-test" className="inline-block bg-gray-900 text-white rounded px-5 py-2 text-sm">
+            {t('placementButton')}
+          </Link>
+        </div>
+      </section>
+
       <section className="border rounded p-6 flex flex-col gap-3 bg-gray-50">
         <h2 className="text-xl font-semibold">{t('blogTitle')}</h2>
         <p className="text-sm text-gray-600">{t('blogBody')}</p>

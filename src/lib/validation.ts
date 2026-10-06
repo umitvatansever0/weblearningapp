@@ -119,3 +119,9 @@ export const blogReportInputSchema = z
 export const blogModerationSchema = z.object({
   hidden: z.boolean(),
 })
+
+export const placementSubmissionSchema = z.object({
+  // One entry per question: chosen option index, or -1 when skipped.
+  answers: z.array(z.number().int().min(-1).max(3)),
+  locale: z.enum(['tr', 'en', 'de']),
+})

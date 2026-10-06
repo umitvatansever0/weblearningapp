@@ -7,7 +7,8 @@
     "logout": "Çıkış Yap",
     "admin": "Yönetim",
     "languageSwitcherLabel": "Dil",
-    "blog": "Blog"
+    "blog": "Blog",
+    "placementTest": "Seviye Testi"
   },
   "home": {
     "heroTitle": "DeutschStep ile Online Almanca Öğren",
@@ -39,7 +40,10 @@
     "audienceBody": "DeutschStep; kendi kendine öğrenenler, öğrenciler ve Almanca sınavlarına hazırlanan, A1'den C2'ye yapılandırılmış ve ücretsiz bir yol arayan herkes içindir.",
     "blogTitle": "Topluluk blogu: sor, paylaş, birlikte öğren",
     "blogBody": "Bir dilbilgisi kuralında mı takıldın ya da öğrenme ipuçlarını paylaşmak mı istiyorsun? Sorunu DeutschStep blogunda paylaş, resim veya dosya yükle ve diğer öğrencilerden cevap al.",
-    "blogButton": "Bloga git"
+    "blogButton": "Bloga git",
+    "placementTitle": "Almanca seviyeni öğren",
+    "placementBody": "50 soruluk ücretsiz seviye tespit sınavıyla A1–C2 arasında hangi seviyede olduğunu öğren. Sonucun e-posta adresine de gönderilir.",
+    "placementButton": "Seviye testine başla"
   },
   "notFound": {
     "title": "Sayfa bulunamadı",
@@ -186,6 +190,12 @@
           "Yüklediğiniz resim ve dosyalar, Vercel Inc. tarafından sağlanan Vercel Blob depolama hizmetinde (Amerika Birleşik Devletleri) saklanır ve herkese açık bir bağlantı üzerinden erişilebilir. Resim dosyaları, konum gibi meta veriler (EXIF) içerebilir; bu bilgileri yüklemeden önce kaldırmanızı öneririz.",
           "Bir içeriği şikayet ettiğinizde, şikayet nedeni ve hesabınız kaydedilir. Bu bilgileri yalnızca yöneticiler görebilir ve yalnızca topluluk kurallarını uygulamak için kullanılır.",
           "Kendi paylaşımlarınızı ve cevaplarınızı istediğiniz zaman silebilirsiniz; bir paylaşım silindiğinde ekli dosyaları da depolama alanından silinir. Kurallara aykırı içerikler yöneticiler tarafından gizlenebilir veya silinebilir. Yüklenip hiçbir paylaşıma eklenmeyen dosyalar ayda bir otomatik olarak silinir. Hesabınızın silinmesini talep ederseniz, blog paylaşımlarınız, cevaplarınız ve dosyalarınız da silinir."
+        ]
+      },
+      {
+        "heading": "Seviye Tespit Sınavı",
+        "paragraphs": [
+          "Seviye tespit sınavını çözdüğünüzde cevaplarınız yalnızca puanlama için işlenir ve saklanmaz. Sonucunuz, e-posta hizmet sağlayıcımız Resend (Amerika Birleşik Devletleri) aracılığıyla hesabınıza kayıtlı e-posta adresine gönderilir."
         ]
       },
       {
@@ -351,5 +361,36 @@
     "recentPosts": "Son paylaşımlar",
     "hiddenLabel": "gizli",
     "view": "Aç"
+  },
+  "placement": {
+    "title": "Almanca Seviye Tespit Sınavı",
+    "metaDescription": "Ücretsiz 50 soruluk Almanca seviye tespit sınavı: A1, A2, B1, B2, C1 veya C2 seviyesinde olduğunu öğren, sonucunu e-postayla al.",
+    "intro": "Bu sınav {count} çoktan seçmeli sorudan oluşur ve Almanca seviyeni (A1–C2) belirler. Sorular kolaydan zora doğru ilerler.",
+    "ruleLevels": "Bir seviyenin sorularının en az %60’ını doğru cevapladığında o seviyeye ulaşmış sayılırsın.",
+    "ruleSkip": "Bilmediğin soruları boş geçebilirsin; tahmin etmek yerine boş bırakmak daha doğru sonuç verir.",
+    "ruleTime": "Sınav yaklaşık 15–20 dakika sürer.",
+    "loginRequired": "Sınava girmek ve sonucunu e-postayla almak için giriş yapmalısın.",
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "emailNotice": "Sınav sonucun hesabına kayıtlı {email} adresine gönderilecek.",
+    "start": "Sınavı başlat",
+    "progress": "Soru {current} / {total}",
+    "previous": "Geri",
+    "next": "İleri",
+    "skip": "Boş geç",
+    "finish": "Sınavı bitir ({answered}/{total} cevaplandı)",
+    "submitting": "Değerlendiriliyor…",
+    "errorTooMany": "Çok fazla deneme yaptın. Lütfen bir süre sonra tekrar dene.",
+    "errorGeneric": "Bir hata oluştu. Lütfen tekrar dene.",
+    "resultTitle": "Sonucun",
+    "beginner": "Başlangıç (A1 ile başla)",
+    "score": "{total} sorudan {correct} doğru",
+    "levelColumn": "Seviye",
+    "correctColumn": "Doğru",
+    "recommendation": "{level} dersleriyle devam etmeni öneriyoruz.",
+    "emailSent": "Sonucun {email} adresine gönderildi.",
+    "emailFailed": "Sonucun e-postayla gönderilemedi, ancak yukarıda görebilirsin.",
+    "goToLessons": "{level} derslerine git",
+    "retake": "Sınavı tekrar çöz"
   }
 }

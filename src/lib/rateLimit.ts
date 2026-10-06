@@ -29,6 +29,8 @@ export const LIMITS = {
   blogReport: { max: 20, windowMs: 60 * MINUTE },
   /** Upload tokens per member – protects Blob storage quota and costs. */
   blogUpload: { max: 30, windowMs: 60 * MINUTE },
+  /** Placement test submissions per member – each one sends an e-mail. */
+  placementTest: { max: 5, windowMs: 60 * MINUTE },
 } as const
 
 export type LimitName = keyof typeof LIMITS

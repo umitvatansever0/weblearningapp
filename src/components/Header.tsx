@@ -16,6 +16,7 @@ export function Header() {
       </Link>
       <nav className="flex items-center gap-4">
         <Link href="/learn">{t('learn')}</Link>
+        <Link href="/placement-test">{t('placementTest')}</Link>
         <Link href="/blog">{t('blog')}</Link>
         {status === 'authenticated' ? (
           <>

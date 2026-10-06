@@ -8,7 +8,7 @@ import { absoluteUrl } from '@/lib/seo'
 export const revalidate = 3600
 
 // Locale-agnostic public paths that always exist.
-const STATIC_PATHS = ['', '/learn', '/blog', '/privacy', '/terms', '/contact']
+const STATIC_PATHS = ['', '/learn', '/blog', '/placement-test', '/privacy', '/terms', '/contact']
 
 /** Build the hreflang alternates map for a locale-agnostic path. */
 function languagesFor(path: string): Record<string, string> {

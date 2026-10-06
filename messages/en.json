@@ -7,7 +7,8 @@
     "logout": "Log out",
     "admin": "Admin",
     "languageSwitcherLabel": "Language",
-    "blog": "Blog"
+    "blog": "Blog",
+    "placementTest": "Placement Test"
   },
   "home": {
     "heroTitle": "Learn German Online with DeutschStep",
@@ -39,7 +40,10 @@
     "audienceBody": "DeutschStep is for self-learners, students and anyone preparing for German exams who wants a structured, free path from A1 to C2.",
     "blogTitle": "Community blog: ask, share, learn together",
     "blogBody": "Stuck on a grammar rule or want to share your learning tips? Post your question in the DeutschStep blog, upload a picture or a file and get answers from other learners.",
-    "blogButton": "Go to the blog"
+    "blogButton": "Go to the blog",
+    "placementTitle": "Find out your German level",
+    "placementBody": "Take the free 50-question placement test to see where you stand between A1 and C2. Your result is also sent to your e-mail address.",
+    "placementButton": "Start the placement test"
   },
   "notFound": {
     "title": "Page not found",
@@ -186,6 +190,12 @@
           "Images and files you upload are stored with Vercel Blob, a storage service provided by Vercel Inc. (United States), and are accessible via a public link. Image files can contain metadata such as location (EXIF); we recommend removing it before uploading.",
           "When you report content, the reason and your account are recorded. This information is visible only to administrators and is used only to enforce the community rules.",
           "You can delete your own posts and answers at any time; when a post is deleted, its attached files are also removed from storage. Content that violates the rules may be hidden or deleted by administrators. Files that were uploaded but never attached to a post are deleted automatically once a month. If you request the deletion of your account, your blog posts, answers and files are deleted as well."
+        ]
+      },
+      {
+        "heading": "Placement Test",
+        "paragraphs": [
+          "When you take the placement test, your answers are processed only to calculate your score and are not stored. Your result is sent to the e-mail address registered with your account via our e-mail provider Resend (United States)."
         ]
       },
       {
@@ -351,5 +361,36 @@
     "recentPosts": "Latest posts",
     "hiddenLabel": "hidden",
     "view": "Open"
+  },
+  "placement": {
+    "title": "German Placement Test",
+    "metaDescription": "Free 50-question German placement test: find out whether you are at A1, A2, B1, B2, C1 or C2 and get your result by e-mail.",
+    "intro": "This test has {count} multiple-choice questions and determines your German level (A1–C2). The questions get harder as you go.",
+    "ruleLevels": "You reach a level when you answer at least 60% of its questions correctly.",
+    "ruleSkip": "You can skip questions you don’t know – leaving them blank gives a more accurate result than guessing.",
+    "ruleTime": "The test takes about 15–20 minutes.",
+    "loginRequired": "Please log in to take the test and receive your result by e-mail.",
+    "login": "Log in",
+    "register": "Sign up",
+    "emailNotice": "Your result will be sent to {email}, the address registered with your account.",
+    "start": "Start the test",
+    "progress": "Question {current} / {total}",
+    "previous": "Back",
+    "next": "Next",
+    "skip": "Skip",
+    "finish": "Finish the test ({answered}/{total} answered)",
+    "submitting": "Scoring…",
+    "errorTooMany": "Too many attempts. Please try again later.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "resultTitle": "Your result",
+    "beginner": "Beginner (start with A1)",
+    "score": "{correct} of {total} correct",
+    "levelColumn": "Level",
+    "correctColumn": "Correct",
+    "recommendation": "We recommend continuing with the {level} lessons.",
+    "emailSent": "Your result has been sent to {email}.",
+    "emailFailed": "We couldn’t e-mail your result, but you can see it above.",
+    "goToLessons": "Go to the {level} lessons",
+    "retake": "Take the test again"
   }
 }

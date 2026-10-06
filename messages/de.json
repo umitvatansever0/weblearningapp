@@ -7,7 +7,8 @@
     "logout": "Abmelden",
     "admin": "Admin",
     "languageSwitcherLabel": "Sprache",
-    "blog": "Blog"
+    "blog": "Blog",
+    "placementTest": "Einstufungstest"
   },
   "home": {
     "heroTitle": "Deutsch online lernen mit DeutschStep",
@@ -39,7 +40,10 @@
     "audienceBody": "DeutschStep ist für Selbstlernende, Studierende und alle, die sich auf Deutschprüfungen vorbereiten und einen strukturierten, kostenlosen Weg von A1 bis C2 suchen.",
     "blogTitle": "Community-Blog: fragen, teilen, gemeinsam lernen",
     "blogBody": "Du hängst bei einer Grammatikregel fest oder möchtest deine Lerntipps teilen? Stelle deine Frage im DeutschStep-Blog, lade ein Bild oder eine Datei hoch und erhalte Antworten von anderen Lernenden.",
-    "blogButton": "Zum Blog"
+    "blogButton": "Zum Blog",
+    "placementTitle": "Finde dein Deutschniveau heraus",
+    "placementBody": "Mach den kostenlosen Einstufungstest mit 50 Fragen und finde heraus, wo du zwischen A1 und C2 stehst. Dein Ergebnis bekommst du auch per E-Mail.",
+    "placementButton": "Einstufungstest starten"
   },
   "notFound": {
     "title": "Seite nicht gefunden",
@@ -186,6 +190,12 @@
           "Hochgeladene Bilder und Dateien werden bei Vercel Blob, einem Speicherdienst der Vercel Inc. (Vereinigte Staaten), gespeichert und sind über einen öffentlichen Link abrufbar. Bilddateien können Metadaten wie den Aufnahmeort (EXIF) enthalten; wir empfehlen, diese vor dem Hochladen zu entfernen.",
           "Wenn du einen Inhalt meldest, werden der Grund und dein Konto gespeichert. Diese Angaben sind nur für Administratoren sichtbar und werden ausschließlich zur Durchsetzung der Community-Regeln verwendet.",
           "Du kannst deine eigenen Beiträge und Antworten jederzeit löschen; wird ein Beitrag gelöscht, werden auch die angehängten Dateien aus dem Speicher entfernt. Regelwidrige Inhalte können von Administratoren ausgeblendet oder gelöscht werden. Hochgeladene Dateien, die nie an einen Beitrag angehängt wurden, werden einmal im Monat automatisch gelöscht. Wenn du die Löschung deines Kontos beantragst, werden auch deine Blogbeiträge, Antworten und Dateien gelöscht."
+        ]
+      },
+      {
+        "heading": "Einstufungstest",
+        "paragraphs": [
+          "Wenn du den Einstufungstest machst, werden deine Antworten nur zur Auswertung verarbeitet und nicht gespeichert. Dein Ergebnis wird über unseren E-Mail-Dienstleister Resend (USA) an die in deinem Konto hinterlegte E-Mail-Adresse gesendet."
         ]
       },
       {
@@ -351,5 +361,36 @@
     "recentPosts": "Neueste Beiträge",
     "hiddenLabel": "ausgeblendet",
     "view": "Öffnen"
+  },
+  "placement": {
+    "title": "Deutsch-Einstufungstest",
+    "metaDescription": "Kostenloser Deutsch-Einstufungstest mit 50 Fragen: Finde heraus, ob du auf A1, A2, B1, B2, C1 oder C2 bist, und erhalte dein Ergebnis per E-Mail.",
+    "intro": "Dieser Test besteht aus {count} Multiple-Choice-Fragen und bestimmt dein Deutschniveau (A1–C2). Die Fragen werden nach und nach schwieriger.",
+    "ruleLevels": "Ein Niveau hast du erreicht, wenn du mindestens 60 % seiner Fragen richtig beantwortest.",
+    "ruleSkip": "Fragen, die du nicht weißt, kannst du überspringen – das ergibt ein genaueres Ergebnis als Raten.",
+    "ruleTime": "Der Test dauert etwa 15–20 Minuten.",
+    "loginRequired": "Bitte melde dich an, um den Test zu machen und dein Ergebnis per E-Mail zu erhalten.",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "emailNotice": "Dein Ergebnis wird an {email} gesendet, die Adresse deines Kontos.",
+    "start": "Test starten",
+    "progress": "Frage {current} / {total}",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "skip": "Überspringen",
+    "finish": "Test beenden ({answered}/{total} beantwortet)",
+    "submitting": "Wird ausgewertet…",
+    "errorTooMany": "Zu viele Versuche. Bitte versuche es später erneut.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "resultTitle": "Dein Ergebnis",
+    "beginner": "Anfänger (starte mit A1)",
+    "score": "{correct} von {total} richtig",
+    "levelColumn": "Niveau",
+    "correctColumn": "Richtig",
+    "recommendation": "Wir empfehlen dir, mit den {level}-Lektionen weiterzumachen.",
+    "emailSent": "Dein Ergebnis wurde an {email} gesendet.",
+    "emailFailed": "Wir konnten dein Ergebnis nicht per E-Mail senden, du siehst es aber oben.",
+    "goToLessons": "Zu den {level}-Lektionen",
+    "retake": "Test wiederholen"
   }
 }
