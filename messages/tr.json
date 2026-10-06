@@ -179,6 +179,15 @@
         ]
       },
       {
+        "heading": "Topluluk Blogu ve Yüklenen Dosyalar",
+        "paragraphs": [
+          "Topluluk blogunda bir paylaşım veya cevap yayınladığınızda; başlık, metin, yüklediğiniz resim ve dosyalar, adınız ve yayın tarihi herkese açık olarak görüntülenir ve arama motorları tarafından dizine eklenebilir. Lütfen paylaşımlarınızda kendinize veya başkalarına ait hassas kişisel verilere yer vermeyin.",
+          "Yüklediğiniz resim ve dosyalar, Vercel Inc. tarafından sağlanan Vercel Blob depolama hizmetinde (Amerika Birleşik Devletleri) saklanır ve herkese açık bir bağlantı üzerinden erişilebilir. Resim dosyaları, konum gibi meta veriler (EXIF) içerebilir; bu bilgileri yüklemeden önce kaldırmanızı öneririz.",
+          "Bir içeriği şikayet ettiğinizde, şikayet nedeni ve hesabınız kaydedilir. Bu bilgileri yalnızca yöneticiler görebilir ve yalnızca topluluk kurallarını uygulamak için kullanılır.",
+          "Kendi paylaşımlarınızı ve cevaplarınızı istediğiniz zaman silebilirsiniz; bir paylaşım silindiğinde ekli dosyaları da depolama alanından silinir. Kurallara aykırı içerikler yöneticiler tarafından gizlenebilir veya silinebilir. Yüklenip hiçbir paylaşıma eklenmeyen dosyalar ayda bir otomatik olarak silinir. Hesabınızın silinmesini talep ederseniz, blog paylaşımlarınız, cevaplarınız ve dosyalarınız da silinir."
+        ]
+      },
+      {
         "heading": "Çerezler ve Benzeri Teknolojiler",
         "paragraphs": [
           "DeutschLernen, temel web sitesi işlevselliğini sağlamak ve onay verdiğiniz durumlarda analiz ve reklamcılığı desteklemek için çerezler ve benzeri teknolojiler kullanır.",
@@ -247,6 +256,7 @@
       "DeutschLernen'de bir hesap oluşturarak hizmeti yalnızca kişisel, ticari olmayan dil öğrenimi amacıyla kullanmayı kabul etmiş olursunuz.",
       "Hesap bilgilerinizi gizli tutmaktan ve hesabınız altında gerçekleşen tüm etkinliklerden siz sorumlusunuz.",
       "Bu platformdaki içerikler (gramer açıklamaları, alıştırmalar, kelimeler) eğitim amaçlıdır ve önceden haber verilmeksizin herhangi bir zamanda güncellenebilir veya düzeltilebilir.",
+      "Topluluk blogunda paylaştığınız metinlerden ve yüklediğiniz dosyalardan siz sorumlusunuz. Yalnızca paylaşma hakkına sahip olduğunuz içerikleri yükleyin; spam, reklam, hakaret, başkalarının kişisel verileri ve yasa dışı içerikler yasaktır. Paylaştığınız içeriklerin platformda görüntülenmesine izin vermiş olursunuz; kurallara aykırı içerikler önceden haber verilmeksizin gizlenebilir veya silinebilir.",
       "Bu şartları ihlal eden, hizmeti kötüye kullanan veya işleyişini bozmaya çalışan hesapları askıya alabilir veya sonlandırabiliriz. Bu şartları değiştirme hakkımızı saklı tutarız; değişikliklerden sonra hizmeti kullanmaya devam etmek, güncellenmiş şartların kabulü anlamına gelir."
     ]
   },

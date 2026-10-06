@@ -179,6 +179,15 @@
         ]
       },
       {
+        "heading": "Community Blog and Uploaded Files",
+        "paragraphs": [
+          "When you publish a post or an answer in the community blog, its title, text, the images and files you upload, your name and the publication date are publicly visible and may be indexed by search engines. Please do not include sensitive personal data about yourself or others in your posts.",
+          "Images and files you upload are stored with Vercel Blob, a storage service provided by Vercel Inc. (United States), and are accessible via a public link. Image files can contain metadata such as location (EXIF); we recommend removing it before uploading.",
+          "When you report content, the reason and your account are recorded. This information is visible only to administrators and is used only to enforce the community rules.",
+          "You can delete your own posts and answers at any time; when a post is deleted, its attached files are also removed from storage. Content that violates the rules may be hidden or deleted by administrators. Files that were uploaded but never attached to a post are deleted automatically once a month. If you request the deletion of your account, your blog posts, answers and files are deleted as well."
+        ]
+      },
+      {
         "heading": "Cookies and Similar Technologies",
         "paragraphs": [
           "DeutschLernen uses cookies and similar technologies to provide essential website functionality and, where you give consent, to support analytics and advertising.",
@@ -247,6 +256,7 @@
       "By creating an account on DeutschLernen you agree to use the service for personal, non-commercial language learning purposes only.",
       "You are responsible for keeping your account credentials confidential and for all activity that occurs under your account.",
       "Content on this platform (grammar explanations, exercises, vocabulary) is provided for educational purposes and may be updated or corrected at any time without notice.",
+      "You are responsible for the texts you post and the files you upload in the community blog. Only upload content you have the right to share; spam, advertising, insults, other people's personal data and illegal content are prohibited. You allow your content to be displayed on the platform; content that violates these rules may be hidden or deleted without notice.",
       "We may suspend or terminate accounts that violate these terms, abuse the service, or attempt to disrupt its operation. We reserve the right to modify these terms; continued use of the service after changes constitutes acceptance of the updated terms."
     ]
   },

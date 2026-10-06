@@ -179,6 +179,15 @@
         ]
       },
       {
+        "heading": "Community-Blog und hochgeladene Dateien",
+        "paragraphs": [
+          "Wenn du im Community-Blog einen Beitrag oder eine Antwort veröffentlichst, sind Titel, Text, die von dir hochgeladenen Bilder und Dateien, dein Name und das Veröffentlichungsdatum öffentlich sichtbar und können von Suchmaschinen indexiert werden. Bitte veröffentliche keine sensiblen personenbezogenen Daten über dich oder andere.",
+          "Hochgeladene Bilder und Dateien werden bei Vercel Blob, einem Speicherdienst der Vercel Inc. (Vereinigte Staaten), gespeichert und sind über einen öffentlichen Link abrufbar. Bilddateien können Metadaten wie den Aufnahmeort (EXIF) enthalten; wir empfehlen, diese vor dem Hochladen zu entfernen.",
+          "Wenn du einen Inhalt meldest, werden der Grund und dein Konto gespeichert. Diese Angaben sind nur für Administratoren sichtbar und werden ausschließlich zur Durchsetzung der Community-Regeln verwendet.",
+          "Du kannst deine eigenen Beiträge und Antworten jederzeit löschen; wird ein Beitrag gelöscht, werden auch die angehängten Dateien aus dem Speicher entfernt. Regelwidrige Inhalte können von Administratoren ausgeblendet oder gelöscht werden. Hochgeladene Dateien, die nie an einen Beitrag angehängt wurden, werden einmal im Monat automatisch gelöscht. Wenn du die Löschung deines Kontos beantragst, werden auch deine Blogbeiträge, Antworten und Dateien gelöscht."
+        ]
+      },
+      {
         "heading": "Cookies und ähnliche Technologien",
         "paragraphs": [
           "DeutschLernen verwendet Cookies und ähnliche Technologien, um wesentliche Funktionen der Website bereitzustellen und – sofern Sie Ihre Zustimmung erteilen – Analyse und Werbung zu unterstützen.",
@@ -247,6 +256,7 @@
       "Mit der Erstellung eines Kontos bei DeutschLernen erklären Sie sich damit einverstanden, den Dienst ausschließlich für private, nicht-kommerzielle Sprachlernzwecke zu nutzen.",
       "Sie sind dafür verantwortlich, Ihre Zugangsdaten vertraulich zu behandeln, sowie für alle Aktivitäten, die unter Ihrem Konto stattfinden.",
       "Inhalte auf dieser Plattform (Grammatikerklärungen, Übungen, Vokabeln) dienen Bildungszwecken und können jederzeit ohne Vorankündigung aktualisiert oder korrigiert werden.",
+      "Für die Texte, die du im Community-Blog veröffentlichst, und die Dateien, die du hochlädst, bist du selbst verantwortlich. Lade nur Inhalte hoch, die du teilen darfst; Spam, Werbung, Beleidigungen, personenbezogene Daten anderer und rechtswidrige Inhalte sind verboten. Du erlaubst, dass deine Inhalte auf der Plattform angezeigt werden; regelwidrige Inhalte können ohne Vorankündigung ausgeblendet oder gelöscht werden.",
       "Wir können Konten sperren oder löschen, die gegen diese Bedingungen verstoßen, den Dienst missbrauchen oder dessen Betrieb stören. Wir behalten uns das Recht vor, diese Bedingungen zu ändern; die weitere Nutzung des Dienstes nach einer Änderung gilt als Zustimmung zu den aktualisierten Bedingungen."
     ]
   },

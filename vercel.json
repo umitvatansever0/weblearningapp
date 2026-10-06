@@ -1,4 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "prisma migrate deploy && npx tsx prisma/backfill-slugs.ts && next build"
+  "buildCommand": "prisma migrate deploy && npx tsx prisma/backfill-slugs.ts && next build",
+  "crons": [
+    {
+      "path": "/api/cron/blog-cleanup",
+      "schedule": "0 3 1 * *"
+    }
+  ]
 }
