@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { A1_OUTLINE } from '@/course/a1/curriculum'
 import { getUnits, trackableSections } from '@/course/registry'
 import { checkExercise } from '@/course/check'
+import { analyseWriting } from '@/course/writing'
 import type { Exercise } from '@/course/types'
 
 /** The answer an exercise expects, in the shape the UI submits. */
@@ -102,10 +103,24 @@ describe.each(getUnits('A1').map((unit) => [unit.slug, unit] as const))('course 
     }
   })
 
-  it('compiles every writing check', () => {
+  it('compiles every writing check, and the model answer passes all of them', () => {
     for (const section of unit.sections) {
       if (section.kind !== 'writing') continue
       for (const check of section.checks) expect(() => new RegExp(check.pattern, 'u')).not.toThrow()
+      const feedback = analyseWriting(section.model.join(' '), {
+        minSentences: section.minSentences,
+        checks: section.checks,
+        vocabulary: unit.vocabulary,
+      })
+      expect(feedback.checks.filter((c) => !c.passed).map((c) => c.label.en)).toEqual([])
+      expect(feedback.enoughSentences).toBe(true)
+      expect(feedback.issues).toEqual([])
     }
+  })
+
+  it('uses only known topics and every topic has exercises', () => {
+    const known = new Set([...unit.topics.map((t) => t.key), 'reading'])
+    for (const exercise of unit.exercises) expect(known.has(exercise.topic), `${exercise.id}: ${exercise.topic}`).toBe(true)
+    for (const topic of unit.topics) expect(unit.exercises.some((e) => e.topic === topic.key), topic.key).toBe(true)
   })
 })

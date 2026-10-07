@@ -146,7 +146,7 @@ export function checkExercise(exercise: Exercise, answer: unknown, locale = 'en'
       const correct =
         order.length === exercise.chips.length &&
         exercise.answers.some((a) => normalizeSentence(a.join(' ')) === normalizeSentence(sentence))
-      return { correct, given: sentence, expected: `${exercise.answers[0].join(' ')}.` }
+      return { correct, given: sentence, expected: `${exercise.answers[0].join(' ')}${exercise.end ?? '.'}` }
     }
   }
 }

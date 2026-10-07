@@ -412,7 +412,7 @@ function SentenceBuilderInput({
             {exercise.chips[chip]}
           </button>
         ))}
-        {built.length > 0 && <span className="font-medium">.</span>}
+        {built.length > 0 && <span className="font-medium">{exercise.end ?? '.'}</span>}
       </div>
       <div className="flex flex-wrap gap-2">
         {exercise.chips.map((chip, i) =>

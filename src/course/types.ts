@@ -123,6 +123,8 @@ export interface SentenceBuilderExercise extends ExerciseBase {
   /** Correct sentence(s) as chip sequences. */
   answers: string[][]
   translation?: L10n
+  /** Final punctuation shown after the sentence (default "."). */
+  end?: '.' | '?' | '!'
 }
 
 export interface ImageChoiceExercise extends ExerciseBase {

@@ -70,9 +70,11 @@ export function DiscoverSection({ cards, locale }: { cards: VocabItem[]; locale:
           <p className="text-2xl font-semibold" lang="de">
             <VocabLabel item={item} />
           </p>
-          <p className="text-sm">
-            <span className="text-gray-500 dark:text-gray-400">{t('plural')}:</span> <span lang="de">{item.plural ?? '–'}</span>
-          </p>
+          {item.plural && (
+            <p className="text-sm">
+              <span className="text-gray-500 dark:text-gray-400">{t('plural')}:</span> <span lang="de">{item.plural}</span>
+            </p>
+          )}
           <p className="text-sm">
             <span className="text-gray-500 dark:text-gray-400">{t('meaning')}:</span> {pick(item.translation, locale === 'de' ? 'en' : locale)}
           </p>
