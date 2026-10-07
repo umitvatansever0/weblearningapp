@@ -41,7 +41,8 @@ const GERN: [string, string, string][] = [
 function gernDrills(): Exercise[] {
   return GERN.map(([subject, verb, object], i) => {
     const right = `${subject} ${verb} gern ${object}.`
-    const options = [right, `${subject} gern ${verb} ${object}.`, `Gern ${subject.toLowerCase().startsWith('mein') || subject.startsWith('Die') ? subject : subject.toLowerCase()} ${verb} ${object}.`]
+    const lowerFirst = subject[0].toLowerCase() + subject.slice(1)
+    const options = [right, `${subject} gern ${verb} ${object}.`, `Gern ${lowerFirst} ${verb} ${object}.`]
     const rotation = i % 3
     const ordered = [...options.slice(rotation), ...options.slice(0, rotation)]
     return {
