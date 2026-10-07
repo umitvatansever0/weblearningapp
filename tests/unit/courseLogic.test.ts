@@ -9,6 +9,7 @@ import { pickVariation } from '@/course/review'
 import { allExercises, findExercise, getUnit } from '@/course/registry'
 import type { Exercise } from '@/course/types'
 import { numberToGerman } from '@/course/a1/unit03-zahlen-zeit'
+import { conjugate } from '@/course/a1/unit07-alltag-verben'
 
 const unit = getUnit('A1', 'articles')!
 const byId = (id: string) => unit.exercises.find((e) => e.id === id) as Exercise
@@ -138,5 +139,16 @@ describe('numberToGerman', () => {
     ]
     for (const [n, word] of cases) expect(numberToGerman(n), String(n)).toBe(word)
     expect(() => numberToGerman(101)).toThrow()
+  })
+})
+
+describe('conjugate', () => {
+  it('conjugates regular verbs, adding -e- after -t/-d stems', () => {
+    expect(['ich', 'du', 'er', 'wir', 'ihr', 'sie'].map((p) => conjugate('lernen', p as 'ich'))).toEqual([
+      'lerne', 'lernst', 'lernt', 'lernen', 'lernt', 'lernen',
+    ])
+    expect(['ich', 'du', 'er', 'wir', 'ihr', 'sie'].map((p) => conjugate('arbeiten', p as 'ich'))).toEqual([
+      'arbeite', 'arbeitest', 'arbeitet', 'arbeiten', 'arbeitet', 'arbeiten',
+    ])
   })
 })
