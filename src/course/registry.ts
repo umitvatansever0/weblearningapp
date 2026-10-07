@@ -16,12 +16,13 @@ import { UNIT13_IM_CAFE } from './a1/unit13-im-cafe'
 import { UNIT14_MODALVERBEN } from './a1/unit14-modalverben'
 import { UNIT15_TAGESABLAUF } from './a1/unit15-tagesablauf'
 import { UNIT16_FREIZEIT } from './a1/unit16-freizeit'
+import { UNIT17_STADT_ORTE } from './a1/unit17-stadt-orte'
 
 export const COURSE_LEVELS = ['A1'] as const
 export type CourseLevel = (typeof COURSE_LEVELS)[number]
 
 /** Units that already have full content. The rest of the outline is "in preparation". */
-const UNITS: CourseUnit[] = [UNIT01_HALLO, UNIT02_WER_BIST_DU, UNIT03_ZAHLEN_ZEIT, UNIT04_FAMILIE, UNIT05_ARTICLES, UNIT06_PLURAL, UNIT07_ALLTAG_VERBEN, UNIT08_SATZBAU, UNIT09_FRAGEN, UNIT10_HABEN_SEIN, UNIT11_AKKUSATIV, UNIT12_ESSEN_TRINKEN, UNIT13_IM_CAFE, UNIT14_MODALVERBEN, UNIT15_TAGESABLAUF, UNIT16_FREIZEIT]
+const UNITS: CourseUnit[] = [UNIT01_HALLO, UNIT02_WER_BIST_DU, UNIT03_ZAHLEN_ZEIT, UNIT04_FAMILIE, UNIT05_ARTICLES, UNIT06_PLURAL, UNIT07_ALLTAG_VERBEN, UNIT08_SATZBAU, UNIT09_FRAGEN, UNIT10_HABEN_SEIN, UNIT11_AKKUSATIV, UNIT12_ESSEN_TRINKEN, UNIT13_IM_CAFE, UNIT14_MODALVERBEN, UNIT15_TAGESABLAUF, UNIT16_FREIZEIT, UNIT17_STADT_ORTE]
 
 export function isCourseLevel(level: string): level is CourseLevel {
   return (COURSE_LEVELS as readonly string[]).includes(level)
