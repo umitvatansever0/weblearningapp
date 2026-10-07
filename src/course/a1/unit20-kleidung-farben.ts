@@ -13,7 +13,7 @@ const VOCAB: VocabItem[] = [
   { word: 'Socke', gender: 'f', plural: 'die Socken', emoji: '🧦', translation: l('sock', 'çorap', 'Socke'), example: 'Die Socken sind grün.' },
   { word: 'Mütze', gender: 'f', plural: 'die Mützen', emoji: '🧢', translation: l('cap, woolly hat', 'bere, kep', 'Mütze'), example: 'Die Mütze ist schwarz.' },
   { word: 'Pullover', gender: 'm', plural: 'die Pullover', emoji: '🧶', translation: l('jumper, sweater', 'kazak', 'Pullover'), example: 'Der Pullover ist grau.' },
-  { word: 'Rock', gender: 'm', plural: 'die Röcke', emoji: '🩳', translation: l('skirt', 'etek', 'Rock'), example: 'Der Rock ist kurz.' },
+  { word: 'Handschuh', gender: 'm', plural: 'die Handschuhe', emoji: '🧤', translation: l('glove', 'eldiven', 'Handschuh'), example: 'Im Winter trage ich Handschuhe.' },
 ]
 
 const COLORS: [string, string, ReturnType<typeof l>][] = [
@@ -31,6 +31,7 @@ const COLORS: [string, string, ReturnType<typeof l>][] = [
 const MORE_VOCAB: VocabItem[] = [
   ...COLORS.map(([word, emoji, translation]) => ({ word, emoji, translation })),
   { word: 'grau', translation: l('grey', 'gri', 'grau') },
+  { word: 'Rock', gender: 'm', plural: 'die Röcke', translation: l('skirt', 'etek', 'Rock') },
   { word: 'tragen', translation: l('to wear', 'giymek (üzerinde olmak)', 'tragen') },
   { word: 'gefallen', translation: l('to please – „Das gefällt mir“ = I like it', 'hoşa gitmek – „Das gefällt mir“ = beğendim', 'gefallen') },
   { word: 'zu groß / zu klein', translation: l('too big / too small', 'çok büyük / çok küçük', 'zu groß / zu klein') },
