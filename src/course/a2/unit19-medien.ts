@@ -38,9 +38,10 @@ const IMPERATIVES: [string, string, string, string, string][] = [
 ]
 
 function imperativeDrills(): Exercise[] {
-  return IMPERATIVES.map(([inf, du, , , rest], i) => {
-    const wrongA = inf === 'sein' ? 'Bist' : inf === 'fahren' ? 'Fährst' : `${du}st`.replace(/kst$/, 'kst')
-    const wrongB = inf === 'lesen' ? 'Les' : inf === 'nehmen' ? 'Nehm' : inf === 'geben' ? 'Geb' : inf === 'sein' ? 'Sein' : inf === 'fahren' ? 'Fähr' : `${inf[0].toUpperCase()}${inf.slice(1)}`
+  return IMPERATIVES.map(([inf, du, ihr, , rest], i) => {
+    const duForm: Record<string, string> = { lesen: 'Liest', sein: 'Bist', fahren: 'Fährst' }
+    const wrongA = duForm[inf] ?? `${du}st`
+    const wrongB = inf === 'lesen' ? 'Les' : inf === 'nehmen' ? 'Nehm' : inf === 'geben' ? 'Geb' : inf === 'fahren' ? 'Fähr' : ihr
     const options = [du, wrongA, wrongB]
     const rotation = i % 3
     const ordered = [...options.slice(rotation), ...options.slice(0, rotation)]
