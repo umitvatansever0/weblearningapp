@@ -42,7 +42,7 @@ const LASSEN_WRONG: Record<string, [string, string]> = {
   er: ['lasst', 'lasse'],
   wir: ['lässt', 'lasst'],
   ihr: ['Lässt', 'Lassen'],
-  perfekt: ['gelassen', 'lässt'],
+  perfekt: ['liegt', 'lässt'],
 }
 
 function lassenDrills(): Exercise[] {
@@ -62,7 +62,7 @@ function lassenDrills(): Exercise[] {
       answer: ordered.indexOf(right),
       explanation:
         id === 'perfekt'
-          ? l('Perfekt with another infinitive: habe … liegen lassen (not gelassen).', 'Başka bir mastarla Perfekt: habe … liegen lassen (gelassen değil).', 'liegen lassen.')
+          ? l('Perfekt: habe … liegen lassen (also possible: liegen gelassen).', 'Perfekt: habe … liegen lassen (liegen gelassen de mümkün).', 'liegen lassen.')
           : l(`lassen: ich lasse, du lässt, er lässt, wir lassen, ihr lasst, sie lassen → ${right}.`, `lassen: ich lasse, du lässt, er lässt, wir lassen, ihr lasst, sie lassen → ${right}.`, `${right}.`),
       examples: [sentence.replace('___', `**${right}**`)],
     }
@@ -664,7 +664,7 @@ export const UNIT_B1_15_LASSEN: CourseUnit = {
       { wrong: 'Ich lasse mein Auto zu reparieren.', right: 'Ich lasse mein Auto reparieren.', note: l('No zu.', 'zu yok.', 'ohne zu.') },
       { wrong: 'Er lasst …', right: 'Er lässt …', note: l('Umlaut.', 'Umlaut.', 'lässt.') },
       { wrong: 'Ich lasse mich die Haare schneiden.', right: 'Ich lasse mir die Haare schneiden.', note: l('Dativ.', 'Dativ.', 'mir.') },
-      { wrong: 'Ich habe mein Handy liegen gelassen.', right: 'Ich habe mein Handy liegen lassen.', note: l('Two infinitives (gelassen is also heard).', 'İki mastar (gelassen da duyulur).', 'liegen lassen.') },
+      { wrong: 'Ich habe das Auto reparieren gelassen.', right: 'Ich habe das Auto reparieren lassen.', note: l('Two infinitives.', 'İki mastar.', 'reparieren lassen.') },
     ],
   },
 }
