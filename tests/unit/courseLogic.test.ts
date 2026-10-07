@@ -10,6 +10,7 @@ import { allExercises, findExercise, getUnit } from '@/course/registry'
 import type { Exercise } from '@/course/types'
 import { numberToGerman } from '@/course/a1/unit03-zahlen-zeit'
 import { conjugate } from '@/course/a1/unit07-alltag-verben'
+import { regularParticiple } from '@/course/a1/unit24-perfekt'
 
 const unit = getUnit('A1', 'articles')!
 const byId = (id: string) => unit.exercises.find((e) => e.id === id) as Exercise
@@ -149,6 +150,14 @@ describe('conjugate', () => {
     ])
     expect(['ich', 'du', 'er', 'wir', 'ihr', 'sie'].map((p) => conjugate('arbeiten', p as 'ich'))).toEqual([
       'arbeite', 'arbeitest', 'arbeitet', 'arbeiten', 'arbeitet', 'arbeiten',
+    ])
+  })
+})
+
+describe('regularParticiple', () => {
+  it('builds ge- … -t and ge- … -et after -t/-d stems', () => {
+    expect(['machen', 'kaufen', 'lernen', 'arbeiten', 'hören'].map(regularParticiple)).toEqual([
+      'gemacht', 'gekauft', 'gelernt', 'gearbeitet', 'gehört',
     ])
   })
 })
