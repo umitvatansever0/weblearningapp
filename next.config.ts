@@ -14,6 +14,8 @@ const GOOGLE_AD_ANALYTICS_SOURCES = [
   'https://*.google-analytics.com',
   'https://*.doubleclick.net',
   'https://*.gstatic.com',
+  'https://*.googleadservices.com',
+  'https://*.adtrafficquality.google',
 ]
 
 // Community blog uploads: the browser PUTs files to the Vercel Blob API and
