@@ -8,6 +8,7 @@ import { nextMastery, scheduleReview, FINAL_STAGE } from '@/course/progress'
 import { pickVariation } from '@/course/review'
 import { allExercises, findExercise, getUnit } from '@/course/registry'
 import type { Exercise } from '@/course/types'
+import { numberToGerman } from '@/course/a1/unit03-zahlen-zeit'
 
 const unit = getUnit('A1', 'articles')!
 const byId = (id: string) => unit.exercises.find((e) => e.id === id) as Exercise
@@ -125,5 +126,17 @@ describe('review variations', () => {
     expect(findExercise('articles:mc-hund')?.exercise.id).toBe('mc-hund')
     expect(findExercise('articles:nope')).toBeUndefined()
     expect(findExercise('nope')).toBeUndefined()
+  })
+})
+
+describe('numberToGerman', () => {
+  it('spells German numbers 0–100', () => {
+    const cases: [number, string][] = [
+      [0, 'null'], [1, 'eins'], [12, 'zwölf'], [16, 'sechzehn'], [17, 'siebzehn'], [20, 'zwanzig'],
+      [21, 'einundzwanzig'], [30, 'dreißig'], [34, 'vierunddreißig'], [46, 'sechsundvierzig'],
+      [67, 'siebenundsechzig'], [71, 'einundsiebzig'], [99, 'neunundneunzig'], [100, 'hundert'],
+    ]
+    for (const [n, word] of cases) expect(numberToGerman(n), String(n)).toBe(word)
+    expect(() => numberToGerman(101)).toThrow()
   })
 })
