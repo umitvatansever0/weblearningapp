@@ -1,13 +1,14 @@
 import type { CourseUnit, Exercise, UnitOutline } from './types'
 import { A1_OUTLINE } from './a1/curriculum'
 import { UNIT01_HALLO } from './a1/unit01-hallo'
+import { UNIT02_WER_BIST_DU } from './a1/unit02-wer-bist-du'
 import { UNIT05_ARTICLES } from './a1/unit05-articles'
 
 export const COURSE_LEVELS = ['A1'] as const
 export type CourseLevel = (typeof COURSE_LEVELS)[number]
 
 /** Units that already have full content. The rest of the outline is "in preparation". */
-const UNITS: CourseUnit[] = [UNIT01_HALLO, UNIT05_ARTICLES]
+const UNITS: CourseUnit[] = [UNIT01_HALLO, UNIT02_WER_BIST_DU, UNIT05_ARTICLES]
 
 export function isCourseLevel(level: string): level is CourseLevel {
   return (COURSE_LEVELS as readonly string[]).includes(level)
