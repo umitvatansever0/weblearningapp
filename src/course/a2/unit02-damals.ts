@@ -34,7 +34,7 @@ const ENDINGS: Record<Person, string> = { ich: '', du: 'st', er: '', wir: 'n', i
 /** Präteritum of sein/haben/modal verbs: stem + ending (ich/er have no ending). */
 export function preterite(stem: string, person: Person): string {
   if (stem === 'war') return { ich: 'war', du: 'warst', er: 'war', wir: 'waren', ihr: 'wart', sie: 'waren' }[person]
-  return `${stem}${stem.endsWith('e') ? ENDINGS[person] : ENDINGS[person]}`
+  return `${stem}${ENDINGS[person]}`
 }
 
 /** [id, sentence with ___, infinitive, stem, person] */
@@ -55,7 +55,7 @@ const WRONG: Record<string, (p: Person) => string[]> = {
   hatte: (p) => (p === 'er' ? ['hat', 'hattet'] : ['haben', 'hattet']),
   konnte: () => ['kann', 'könnte'],
   musste: () => ['musst', 'müsstest'],
-  wollte: () => ['wollen', 'wollten sie'],
+  wollte: () => ['wollen', 'wolltet'],
   durfte: () => ['dürft', 'durften'],
 }
 
