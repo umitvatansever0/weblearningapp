@@ -3,13 +3,16 @@
 import { useEffect, useSyncExternalStore } from 'react'
 import { getStoredConsent, subscribeToConsent } from '@/lib/cookieConsent'
 
+/** Public GA4 ID of deutschstep.com; an env value overrides it (e.g. for staging). */
+const DEFAULT_GA_MEASUREMENT_ID = 'G-55D87THF1M'
+
 function getServerSnapshot() {
   return null
 }
 
 export function Analytics() {
   const consent = useSyncExternalStore(subscribeToConsent, getStoredConsent, getServerSnapshot)
-  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || DEFAULT_GA_MEASUREMENT_ID
   const enabled = consent === 'accepted' && Boolean(measurementId)
 
   useEffect(() => {

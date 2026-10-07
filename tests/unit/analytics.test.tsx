@@ -18,11 +18,12 @@ describe('Analytics', () => {
     expect(document.querySelectorAll('script[data-ga-script]').length).toBe(0)
   })
 
-  it('injects nothing when the measurement id is missing, even with consent', () => {
+  it('falls back to the site’s default measurement id when the env value is missing', () => {
     vi.stubEnv('NEXT_PUBLIC_GA_MEASUREMENT_ID', '')
     window.localStorage.setItem('cookie-consent', 'accepted')
     render(<Analytics />)
-    expect(document.querySelectorAll('script[data-ga-script]').length).toBe(0)
+    const loader = document.querySelector('script[src*="googletagmanager.com/gtag/js"]')
+    expect(loader?.getAttribute('src')).toContain('G-55D87THF1M')
   })
 
   it('injects the gtag loader and inline config script when consent is accepted and the id is set', () => {
