@@ -1,7 +1,7 @@
 import type { Gender, VocabItem, WritingCheck } from './types'
 
 /**
- * Rule-based feedback for short A1–A2 writing tasks. Deliberately honest: it only
+ * Rule-based feedback for short A1–B1 writing tasks. Deliberately honest: it only
  * reports what it can check reliably (sentence count, required structures,
  * article/gender of the unit's known nouns, noun capitalisation) and never
  * pretends to grade free text like a teacher.
