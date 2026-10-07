@@ -1,5 +1,5 @@
 /**
- * Content model for the structured course (A1, A2, B1).
+ * Content model for the structured course (A1–B2).
  *
  * Course → Level → Unit → Section → Exercise. Units are plain typed data so
  * lessons are authored as content, not hard-coded into components. German
@@ -245,7 +245,7 @@ export interface CommonMistake {
 }
 
 export interface CourseUnit {
-  level: 'A1' | 'A2' | 'B1'
+  level: 'A1' | 'A2' | 'B1' | 'B2'
   number: number
   slug: string
   titleDe: string
