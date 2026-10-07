@@ -27,20 +27,100 @@ const MORE_VOCAB: VocabItem[] = [
   { word: 'Zeit', gender: 'f', plural: 'die Zeiten', translation: l('time', 'zaman', 'Zeit') },
 ]
 
-/** [id, sentence with gap, right, wrong] – mixed B1 grammar */
-const MIX: [string, string, string, [string, string]][] = [
-  ['relativ', 'Das ist der Kollege, ___ ich das Buch geliehen habe.', 'dem', ['den', 'der']],
-  ['passiv', 'Die Brücke ___ letztes Jahr renoviert.', 'wurde', ['wird', 'hat']],
-  ['konj', 'Wenn ich mehr Geld ___, würde ich ein Auto kaufen.', 'hätte', ['habe', 'hatte']],
-  ['damit', 'Ich spreche langsam, ___ alle mich verstehen.', 'damit', ['um', 'weil']],
-  ['trotzdem', 'Es war kalt. ___ sind wir schwimmen gegangen.', 'Trotzdem', ['Obwohl', 'Weil']],
-  ['genitiv', 'Wegen ___ Regens fällt das Spiel aus.', 'des', ['dem', 'den']],
-  ['nachdem', 'Nachdem er die Prüfung bestanden ___, feierte er.', 'hatte', ['hat', 'war']],
-  ['desto', 'Je länger ich in Deutschland lebe, ___ besser verstehe ich die Kultur.', 'desto', ['als', 'so dass']],
+/** [id, sentence with gap, right, wrong, why] – mixed B1 grammar */
+const MIX: [string, string, string, [string, string], ReturnType<typeof l>][] = [
+  [
+    'relativ',
+    'Das ist der Kollege, ___ ich das Buch geliehen habe.',
+    'dem',
+    ['den', 'der'],
+    l(
+      'Relative pronoun: gender from the noun (der Kollege → masculine), case from the relative clause. jemandem etwas leihen → the person is dative → dem. „den“ would be accusative, „der“ is nominative.',
+      'İlgi zamiri: cinsiyet isimden (der Kollege → eril), hâl ise yan cümleden gelir. jemandem etwas leihen → kişi Dativ’dir → dem. „den“ Akkusativ, „der“ Nominativ olurdu.',
+      'Relativpronomen: Genus vom Nomen (der Kollege), Kasus aus dem Relativsatz (jemandem leihen → Dativ) → dem.'
+    ),
+  ],
+  [
+    'passiv',
+    'Die Brücke ___ letztes Jahr renoviert.',
+    'wurde',
+    ['wird', 'hat'],
+    l(
+      'Passive = werden + participle. „letztes Jahr“ is past → Präteritum of werden: wurde. „wird“ is present; „hat … renoviert“ would be active and needs a subject who does it.',
+      'Edilgen = werden + ortaç. „letztes Jahr“ geçmiş zaman → werden’in Präteritum’u: wurde. „wird“ şimdiki zamandır; „hat … renoviert“ etken olur ve işi yapan bir özne ister.',
+      'Passiv Präteritum: wurde + Partizip II (letztes Jahr = Vergangenheit).'
+    ),
+  ],
+  [
+    'konj',
+    'Wenn ich mehr Geld ___, würde ich ein Auto kaufen.',
+    'hätte',
+    ['habe', 'hatte'],
+    l(
+      'Unreal condition (I don’t have more money) → Konjunktiv II in both parts: wenn ich … hätte, würde ich … „habe“ is a real present, „hatte“ is just the past tense (without umlaut!).',
+      'Gerçek dışı koşul (daha fazla param yok) → iki kısımda da Konjunktiv II: wenn ich … hätte, würde ich … „habe“ gerçek şimdiki zaman, „hatte“ ise sadece geçmiş zamandır (umlaut yok!).',
+      'Irreale Bedingung → Konjunktiv II: hätte (mit Umlaut), nicht hatte.'
+    ),
+  ],
+  [
+    'damit',
+    'Ich spreche langsam, ___ alle mich verstehen.',
+    'damit',
+    ['um', 'weil'],
+    l(
+      'A goal with two different subjects (ich spreche – alle verstehen) → damit + verb at the end. „um … zu“ only works with the same subject. „weil“ gives a reason, not a goal.',
+      'İki farklı özneli amaç (ich spreche – alle verstehen) → damit + fiil sonda. „um … zu“ sadece aynı özneyle kullanılır. „weil“ amaç değil sebep bildirir.',
+      'Ziel mit verschiedenen Subjekten → damit (nicht um … zu).'
+    ),
+  ],
+  [
+    'trotzdem',
+    'Es war kalt. ___ sind wir schwimmen gegangen.',
+    'Trotzdem',
+    ['Obwohl', 'Weil'],
+    l(
+      'Look at the word order: the verb (sind) comes straight after the gap → we need an adverb in position 1: Trotzdem. „Obwohl“ and „weil“ start a subordinate clause with the verb at the end.',
+      'Kelime dizimine bak: boşluktan hemen sonra fiil (sind) geliyor → 1. konumda bir zarf gerekiyor: Trotzdem. „Obwohl“ ve „weil“ fiili sonda olan bir yan cümle başlatır.',
+      'Verb direkt danach → Adverb auf Position 1: Trotzdem.'
+    ),
+  ],
+  [
+    'genitiv',
+    'Wegen ___ Regens fällt das Spiel aus.',
+    'des',
+    ['dem', 'den'],
+    l(
+      'wegen + genitive. der Regen → des Regens (masculine nouns also get -s). „wegen dem Regen“ is common in speech, but in writing and in the exam use the genitive.',
+      'wegen + Genitiv. der Regen → des Regens (eril isimler de -s alır). Konuşmada „wegen dem Regen“ yaygındır, ama yazıda ve sınavda Genitiv kullan.',
+      'wegen + Genitiv: des Regens.'
+    ),
+  ],
+  [
+    'nachdem',
+    'Nachdem er die Prüfung bestanden ___, feierte er.',
+    'hatte',
+    ['hat', 'war'],
+    l(
+      'nachdem: the earlier action is one step further in the past. Main clause in Präteritum (feierte) → nachdem clause in Plusquamperfekt: hatte + participle. bestehen takes haben, so not „war“.',
+      'nachdem: önceki eylem bir adım daha geçmiştedir. Ana cümle Präteritum’da (feierte) → nachdem cümlesi Plusquamperfekt’te: hatte + ortaç. bestehen haben ile çekilir, bu yüzden „war“ olmaz.',
+      'nachdem + Plusquamperfekt: hatte bestanden (bestehen → haben).'
+    ),
+  ],
+  [
+    'desto',
+    'Je länger ich in Deutschland lebe, ___ besser verstehe ich die Kultur.',
+    'desto',
+    ['als', 'so dass'],
+    l(
+      'je + comparative … desto (or umso) + comparative. The je part has the verb at the end, the desto part has the verb right after the comparative: desto besser verstehe ich.',
+      'je + karşılaştırma … desto (veya umso) + karşılaştırma. je kısmında fiil sonda, desto kısmında fiil karşılaştırmadan hemen sonra gelir: desto besser verstehe ich.',
+      'je + Komparativ …, desto + Komparativ + Verb.'
+    ),
+  ],
 ]
 
 function mixDrills(): Exercise[] {
-  return MIX.map(([id, sentence, right, wrong], i) => {
+  return MIX.map(([id, sentence, right, wrong, why], i) => {
     const options = [right, ...wrong]
     const rotation = i % 3
     const ordered = [...options.slice(rotation), ...options.slice(0, rotation)]
@@ -54,7 +134,7 @@ function mixDrills(): Exercise[] {
       prompt: sentence,
       options: ordered,
       answer: ordered.indexOf(right),
-      explanation: l(`→ ${right}`, `→ ${right}`, `→ ${right}`),
+      explanation: why,
       examples: [sentence.replace('___', `**${right}**`)],
     }
   })
