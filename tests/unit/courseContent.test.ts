@@ -104,6 +104,8 @@ describe.each(COURSE_LEVELS.flatMap((level) => getUnits(level)).map((unit) => [u
         for (const answer of exercise.answers) {
           expect([...answer].sort(), exercise.id).toEqual([...exercise.chips].sort())
         }
+        // The UI appends the final punctuation itself.
+        for (const chip of exercise.chips) expect(chip, exercise.id).not.toMatch(/[.!?]$/)
       }
       if (exercise.type === 'fill_blank') {
         expect(exercise.sentence.split('___'), exercise.id).toHaveLength(2)
