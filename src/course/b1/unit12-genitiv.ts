@@ -511,7 +511,7 @@ export const UNIT_B1_12_GENITIV: CourseUnit = {
         { speaker: 'Sprecherin', de: '„Die Sicherheit **der Besucher** ist uns wichtig“, erklärte der Bürgermeister **der Stadt**.', translation: l('“The safety of the visitors is important to us,” explained the city’s mayor.', '„Ziyaretçilerin güvenliği bizim için önemli“ dedi şehrin belediye başkanı.', '') },
         { speaker: 'Sprecherin', de: 'Der Preis **der Tickets** wird **innerhalb einer Woche** zurückgezahlt.', translation: l('The price of the tickets will be refunded within a week.', 'Biletlerin ücreti bir hafta içinde iade edilecek.', '') },
         { speaker: 'Sprecherin', de: 'Das Fest findet nun am Ende **des Monats** statt.', translation: l('The festival will now take place at the end of the month.', 'Festival şimdi ayın sonunda yapılacak.', '') },
-        { speaker: 'Hörer (anruf)', de: 'Schade! Aber **trotz des Wetters** war die Stimmung heute schon super!', translation: l('Pity! But despite the weather, the mood was already great today!', 'Yazık! Ama havaya rağmen bugün ortam zaten harikaydı!', '') },
+        { speaker: 'Hörer am Telefon', de: 'Schade! Aber **trotz des Wetters** war die Stimmung heute schon super!', translation: l('Pity! But despite the weather, the mood was already great today!', 'Yazık! Ama havaya rağmen bugün ortam zaten harikaydı!', '') },
       ],
       examples: [
         { de: 'Das ist das Auto **meines Vaters**.', translation: l('That is my father’s car.', 'Bu babamın arabası.', '') },
