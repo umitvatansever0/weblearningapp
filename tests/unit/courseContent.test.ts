@@ -83,6 +83,10 @@ describe.each(getUnits('A1').map((unit) => [unit.slug, unit] as const))('course 
         expect(new Set(labels).size, exercise.id).toBe(labels.length)
       }
       // Choice questions need real alternatives (two-way choices are deliberate: mein/meine, Singular/Plural, du/Sie).
+      if (exercise.type === 'multiple_choice') {
+        // The UI renders and fills exactly one gap.
+        expect(exercise.prompt.split('___').length, exercise.id).toBeLessThanOrEqual(2)
+      }
       if (exercise.type === 'multiple_choice' || exercise.type === 'listening_choice' || exercise.type === 'dialogue') {
         expect(exercise.options.length, exercise.id).toBeGreaterThanOrEqual(2)
         if (exercise.id.startsWith('pl-')) expect(exercise.options.length, exercise.id).toBe(3)
