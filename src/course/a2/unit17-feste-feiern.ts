@@ -54,7 +54,7 @@ function dateDrills(): Exercise[] {
   return DATES.map(([day, month], i) => {
     const right = `${ordinalStem(day)}en`
     const wrongA = day < 20 ? `${ordinalStem(day).replace(/t$/, '')}sten` : `${ordinalStem(day).replace(/st$/, '')}ten`
-    const wrongB = day === 1 ? 'einsten' : day === 3 ? 'dreiten' : day === 7 ? 'siebenten' : `${ordinalStem(day)}e`
+    const wrongB = day === 1 ? 'einsten' : day === 3 ? 'dreiten' : day === 7 ? 'siebnten' : `${ordinalStem(day)}e`
     const options = [...new Set([right, wrongA, wrongB])]
     const rotation = i % options.length
     const ordered = [...options.slice(rotation), ...options.slice(0, rotation)]
