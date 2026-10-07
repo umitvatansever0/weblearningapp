@@ -34,7 +34,7 @@ const WERDEN_DRILLS: [string, string, keyof typeof WERDEN][] = [
   ['er', 'Mein Bruder ___ im Sommer heiraten.', 'er'],
   ['wir', 'Wir ___ bald in eine größere Wohnung ziehen.', 'wir'],
   ['ihr', '___ ihr in den Ferien verreisen?', 'ihr'],
-  ['Sie', 'Es ___ morgen wahrscheinlich regnen.', 'er'],
+  ['es', 'Es ___ morgen wahrscheinlich regnen.', 'er'],
 ]
 
 const WERDEN_WRONG: Record<string, [string, string]> = {
@@ -572,7 +572,7 @@ export const UNIT_A2_21_ZUKUNFT: CourseUnit = {
         'dialog-mut',
         'futur-wir',
         'futur-ihr',
-        'futur-Sie',
+        'futur-es',
       ],
     },
     {
