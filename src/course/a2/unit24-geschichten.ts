@@ -492,14 +492,14 @@ export const UNIT_A2_24_GESCHICHTEN: CourseUnit = {
           ),
           table: {
             head: [l('Infinitive', 'Mastar', 'Infinitiv'), l('Präteritum', 'Präteritum', 'Präteritum'), l('Perfekt', 'Perfekt', 'Perfekt')],
-            rows: PRAET.map(([inf, form]) => [inf, form, '…']).slice(0, 0).concat([
+            rows: [
               ['gehen', 'ging', 'ist gegangen'],
               ['kommen', 'kam', 'ist gekommen'],
               ['sehen', 'sah', 'hat gesehen'],
               ['finden', 'fand', 'hat gefunden'],
               ['fahren', 'fuhr', 'ist gefahren'],
               ['machen', 'machte', 'hat gemacht'],
-            ]),
+            ],
           },
         },
         {
