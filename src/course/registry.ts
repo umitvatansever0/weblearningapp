@@ -10,12 +10,13 @@ import { UNIT07_ALLTAG_VERBEN } from './a1/unit07-alltag-verben'
 import { UNIT08_SATZBAU } from './a1/unit08-satzbau'
 import { UNIT09_FRAGEN } from './a1/unit09-fragen'
 import { UNIT10_HABEN_SEIN } from './a1/unit10-haben-sein'
+import { UNIT11_AKKUSATIV } from './a1/unit11-akkusativ'
 
 export const COURSE_LEVELS = ['A1'] as const
 export type CourseLevel = (typeof COURSE_LEVELS)[number]
 
 /** Units that already have full content. The rest of the outline is "in preparation". */
-const UNITS: CourseUnit[] = [UNIT01_HALLO, UNIT02_WER_BIST_DU, UNIT03_ZAHLEN_ZEIT, UNIT04_FAMILIE, UNIT05_ARTICLES, UNIT06_PLURAL, UNIT07_ALLTAG_VERBEN, UNIT08_SATZBAU, UNIT09_FRAGEN, UNIT10_HABEN_SEIN]
+const UNITS: CourseUnit[] = [UNIT01_HALLO, UNIT02_WER_BIST_DU, UNIT03_ZAHLEN_ZEIT, UNIT04_FAMILIE, UNIT05_ARTICLES, UNIT06_PLURAL, UNIT07_ALLTAG_VERBEN, UNIT08_SATZBAU, UNIT09_FRAGEN, UNIT10_HABEN_SEIN, UNIT11_AKKUSATIV]
 
 export function isCourseLevel(level: string): level is CourseLevel {
   return (COURSE_LEVELS as readonly string[]).includes(level)
