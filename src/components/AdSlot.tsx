@@ -2,6 +2,7 @@
 
 import { useEffect, useSyncExternalStore } from 'react'
 import { getStoredConsent, subscribeToConsent } from '@/lib/cookieConsent'
+import { getAdSenseClientId, loadAdSenseScript } from '@/lib/adsense'
 
 export type AdPlacement = 'home' | 'lessonList' | 'exerciseResult' | 'sidebar' | 'vocabReview'
 
@@ -11,18 +12,12 @@ function getServerSnapshot() {
 
 export function AdSlot({ placement }: { placement: AdPlacement }) {
   const consent = useSyncExternalStore(subscribeToConsent, getStoredConsent, getServerSnapshot)
-  const clientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID
+  const clientId = getAdSenseClientId()
   const slotId = process.env.NEXT_PUBLIC_ADSENSE_SLOT_ID
   const enabled = consent === 'accepted' && Boolean(clientId) && Boolean(slotId)
 
   useEffect(() => {
-    if (!enabled) return
-    if (document.querySelector('script[src*="adsbygoogle.js"]')) return
-    const script = document.createElement('script')
-    script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${clientId}`
-    script.async = true
-    script.crossOrigin = 'anonymous'
-    document.head.appendChild(script)
+    if (enabled) loadAdSenseScript(clientId)
   }, [enabled, clientId])
 
   useEffect(() => {

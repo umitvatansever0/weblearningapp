@@ -25,11 +25,18 @@ describe('AdSlot', () => {
     expect(screen.queryByTestId('ad-slot-home')).not.toBeInTheDocument()
   })
 
-  it('renders nothing when consent is accepted but the AdSense client id is missing', () => {
-    vi.stubEnv('NEXT_PUBLIC_ADSENSE_CLIENT_ID', '')
+  it('renders no ad unit without a slot id, but still loads the script for Auto ads', () => {
+    vi.stubEnv('NEXT_PUBLIC_ADSENSE_SLOT_ID', '')
     window.localStorage.setItem('cookie-consent', 'accepted')
     render(<AdSlot placement="home" />)
     expect(screen.queryByTestId('ad-slot-home')).not.toBeInTheDocument()
+  })
+
+  it('falls back to the site’s publisher id when the env value is missing', () => {
+    vi.stubEnv('NEXT_PUBLIC_ADSENSE_CLIENT_ID', '')
+    window.localStorage.setItem('cookie-consent', 'accepted')
+    render(<AdSlot placement="home" />)
+    expect(screen.getByTestId('ad-slot-home')).toHaveAttribute('data-ad-client', 'ca-pub-1871274232514582')
   })
 
   it('renders the ad unit with the placement-specific test id when consent is accepted and env vars are set', () => {

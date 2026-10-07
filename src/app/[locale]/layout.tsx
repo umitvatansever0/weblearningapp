@@ -8,6 +8,7 @@ import { Footer } from '@/components/Footer'
 import { AskQuestionCta } from '@/components/blog/AskQuestionCta'
 import { CookieConsentBanner } from '@/components/CookieConsentBanner'
 import { Analytics } from '@/components/Analytics'
+import { AdSenseLoader } from '@/components/AdSenseLoader'
 import { Providers } from '@/components/Providers'
 import { JsonLd } from '@/components/JsonLd'
 import {
@@ -99,6 +100,7 @@ export default async function LocaleLayout({
             <Footer />
             <CookieConsentBanner />
             <Analytics />
+            <AdSenseLoader />
           </Providers>
         </NextIntlClientProvider>
       </body>
