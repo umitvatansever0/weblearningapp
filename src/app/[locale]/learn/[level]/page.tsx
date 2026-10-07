@@ -84,13 +84,13 @@ export default async function LevelUnitsPage({
 
       {isCourseLevel(level) && (
         <aside className="rounded-2xl border-2 border-gray-900 dark:border-gray-100 p-5 flex flex-col gap-2">
-          <p className="font-semibold">{tCourse('learnBannerTitle')}</p>
+          <p className="font-semibold">{tCourse('learnBannerTitle', { level })}</p>
           <p className="text-sm text-gray-600 dark:text-gray-400">{tCourse('learnBannerBody')}</p>
           <Link
             href={`/course/${level}`}
             className="self-start rounded-full bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 px-5 py-2 text-sm font-medium"
           >
-            {tCourse('learnBannerCta')} →
+            {tCourse('learnBannerCta', { level })} →
           </Link>
         </aside>
       )}

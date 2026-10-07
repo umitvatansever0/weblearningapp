@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { A1_OUTLINE } from '@/course/a1/curriculum'
-import { getUnits, trackableSections } from '@/course/registry'
+import { COURSE_LEVELS, getOutline, getUnits, trackableSections } from '@/course/registry'
 import { checkExercise } from '@/course/check'
 import { analyseWriting } from '@/course/writing'
 import type { Exercise } from '@/course/types'
@@ -31,21 +30,31 @@ function correctAnswer(exercise: Exercise): unknown {
   }
 }
 
-describe('A1 curriculum outline', () => {
+describe.each(COURSE_LEVELS.map((level) => [level] as const))('%s curriculum outline', (level) => {
+  const outline = getOutline(level)
+
   it('has 25 units with unique slugs in order', () => {
-    expect(A1_OUTLINE).toHaveLength(25)
-    expect(new Set(A1_OUTLINE.map((u) => u.slug)).size).toBe(25)
-    expect(A1_OUTLINE.map((u) => u.number)).toEqual(Array.from({ length: 25 }, (_, i) => i + 1))
+    expect(outline).toHaveLength(25)
+    expect(new Set(outline.map((u) => u.slug)).size).toBe(25)
+    expect(outline.map((u) => u.number)).toEqual(Array.from({ length: 25 }, (_, i) => i + 1))
   })
 
   it('lists every built unit in the outline under the same number', () => {
-    for (const unit of getUnits('A1')) {
-      expect(A1_OUTLINE.find((o) => o.slug === unit.slug)?.number).toBe(unit.number)
+    for (const unit of getUnits(level)) {
+      expect(unit.level).toBe(level)
+      expect(outline.find((o) => o.slug === unit.slug)?.number).toBe(unit.number)
     }
   })
 })
 
-describe.each(getUnits('A1').map((unit) => [unit.slug, unit] as const))('course unit %s', (_slug, unit) => {
+describe('course slugs', () => {
+  it('are unique across levels (exercise keys are slug:id)', () => {
+    const slugs = COURSE_LEVELS.flatMap((level) => getOutline(level).map((u) => u.slug))
+    expect(new Set(slugs).size).toBe(slugs.length)
+  })
+})
+
+describe.each(COURSE_LEVELS.flatMap((level) => getUnits(level)).map((unit) => [unit.slug, unit] as const))('course unit %s', (_slug, unit) => {
   const ids = unit.exercises.map((e) => e.id)
   const byId = new Map(unit.exercises.map((e) => [e.id, e]))
 

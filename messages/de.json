@@ -567,9 +567,9 @@
     "fromMistakeBank": "Aus deiner Fehlerbank",
     "previouslyWrong": "Früher hast du geantwortet",
     "navCourse": "A1-Kurs",
-    "learnBannerTitle": "Neu: der strukturierte A1-Kurs",
+    "learnBannerTitle": "Neu: der strukturierte {level}-Kurs",
     "learnBannerBody": "Lerne Schritt für Schritt mit Erklärungen, Beispielen, abwechslungsreichen Übungen, Hören und Wiederholung.",
-    "learnBannerCta": "Zum A1-Kurs",
+    "learnBannerCta": "Zum {level}-Kurs",
     "yourOrder": "Deine Reihenfolge",
     "orderingEmpty": "Tippe die Elemente in der richtigen Reihenfolge an …"
   }

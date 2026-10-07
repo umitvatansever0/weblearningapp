@@ -567,9 +567,9 @@
     "fromMistakeBank": "From your mistake bank",
     "previouslyWrong": "Earlier you answered",
     "navCourse": "A1 Course",
-    "learnBannerTitle": "New: the structured A1 course",
+    "learnBannerTitle": "New: the structured {level} course",
     "learnBannerBody": "Learn step by step with explanations, examples, varied exercises, listening and spaced review.",
-    "learnBannerCta": "Open the A1 course",
+    "learnBannerCta": "Open the {level} course",
     "yourOrder": "Your order",
     "orderingEmpty": "Tap the items in the right order …"
   }

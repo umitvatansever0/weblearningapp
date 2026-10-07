@@ -1,5 +1,6 @@
 import type { CourseUnit, Exercise, UnitOutline } from './types'
 import { A1_OUTLINE } from './a1/curriculum'
+import { A2_OUTLINE } from './a2/curriculum'
 import { UNIT01_HALLO } from './a1/unit01-hallo'
 import { UNIT02_WER_BIST_DU } from './a1/unit02-wer-bist-du'
 import { UNIT03_ZAHLEN_ZEIT } from './a1/unit03-zahlen-zeit'
@@ -26,7 +27,7 @@ import { UNIT23_GESUNDHEIT } from './a1/unit23-gesundheit'
 import { UNIT24_PERFEKT } from './a1/unit24-perfekt'
 import { UNIT25_A1_REVIEW } from './a1/unit25-a1-review'
 
-export const COURSE_LEVELS = ['A1'] as const
+export const COURSE_LEVELS = ['A1', 'A2'] as const
 export type CourseLevel = (typeof COURSE_LEVELS)[number]
 
 /** Units that already have full content. The rest of the outline is "in preparation". */
@@ -37,7 +38,7 @@ export function isCourseLevel(level: string): level is CourseLevel {
 }
 
 export function getOutline(level: CourseLevel): UnitOutline[] {
-  return level === 'A1' ? A1_OUTLINE : []
+  return level === 'A1' ? A1_OUTLINE : A2_OUTLINE
 }
 
 export function getUnit(level: string, slug: string): CourseUnit | undefined {

@@ -567,9 +567,9 @@
     "fromMistakeBank": "Hata bankandan",
     "previouslyWrong": "Daha önceki cevabın",
     "navCourse": "A1 Kursu",
-    "learnBannerTitle": "Yeni: yapılandırılmış A1 kursu",
+    "learnBannerTitle": "Yeni: yapılandırılmış {level} kursu",
     "learnBannerBody": "Açıklamalar, örnekler, farklı alıştırmalar, dinleme ve aralıklı tekrarla adım adım öğren.",
-    "learnBannerCta": "A1 kursunu aç",
+    "learnBannerCta": "{level} kursunu aç",
     "yourOrder": "Senin sıralaman",
     "orderingEmpty": "Öğelere doğru sırayla dokun …"
   }
