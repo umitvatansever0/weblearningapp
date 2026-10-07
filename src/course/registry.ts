@@ -3,13 +3,14 @@ import { A1_OUTLINE } from './a1/curriculum'
 import { UNIT01_HALLO } from './a1/unit01-hallo'
 import { UNIT02_WER_BIST_DU } from './a1/unit02-wer-bist-du'
 import { UNIT03_ZAHLEN_ZEIT } from './a1/unit03-zahlen-zeit'
+import { UNIT04_FAMILIE } from './a1/unit04-familie'
 import { UNIT05_ARTICLES } from './a1/unit05-articles'
 
 export const COURSE_LEVELS = ['A1'] as const
 export type CourseLevel = (typeof COURSE_LEVELS)[number]
 
 /** Units that already have full content. The rest of the outline is "in preparation". */
-const UNITS: CourseUnit[] = [UNIT01_HALLO, UNIT02_WER_BIST_DU, UNIT03_ZAHLEN_ZEIT, UNIT05_ARTICLES]
+const UNITS: CourseUnit[] = [UNIT01_HALLO, UNIT02_WER_BIST_DU, UNIT03_ZAHLEN_ZEIT, UNIT04_FAMILIE, UNIT05_ARTICLES]
 
 export function isCourseLevel(level: string): level is CourseLevel {
   return (COURSE_LEVELS as readonly string[]).includes(level)
