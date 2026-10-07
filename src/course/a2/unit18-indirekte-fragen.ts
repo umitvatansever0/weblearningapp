@@ -28,7 +28,7 @@ const MORE_VOCAB: VocabItem[] = [
 /** [id, direct question, indirect intro, indirect clause (verb at the end)] */
 const INDIRECT: [string, string, string, string][] = [
   ['bahnhof', 'Wo ist der Bahnhof?', 'Wissen Sie,', 'wo der Bahnhof ist?'],
-  ['bus', 'Wann kommt der Bus?', 'Können Sie mir sagen,', 'wann der Bus kommt?'],
+  ['wohnt', 'Wo wohnt Frau Klein?', 'Können Sie mir sagen,', 'wo Frau Klein wohnt?'],
   ['kosten', 'Wie viel kostet das Ticket?', 'Darf ich fragen,', 'wie viel das Ticket kostet?'],
   ['offen', 'Ist das Museum heute offen?', 'Wissen Sie,', 'ob das Museum heute offen ist?'],
   ['kommt', 'Kommt Lisa morgen?', 'Weißt du,', 'ob Lisa morgen kommt?'],
@@ -86,7 +86,7 @@ const EXERCISES: Exercise[] = [
       { text: 'Wie lange dauert die Führung?', category: 1 },
     ],
     explanation: l('Yes/no questions → ob. W-questions → keep the W-word.', 'Evet/hayır soruları → ob. W-soruları → W-kelimesi kalır.', 'Ja/Nein → ob; W-Frage → W-Wort.'),
-    practice: ['indirekt-offen', 'indirekt-bus'],
+    practice: ['indirekt-offen', 'indirekt-wohnt'],
   },
   {
     id: 'mc-verb-ende',
@@ -538,7 +538,7 @@ export const UNIT_A2_18_INDIREKTE_FRAGEN: CourseUnit = {
       kind: 'practice',
       title: l('Practice 1 · Recognise', 'Pratik 1 · Tanı', 'Übung 1 · Erkennen'),
       intro: l('ob or W-word? And where is the verb?', 'ob mu W-kelimesi mi? Fiil nerede?', 'ob oder W-Wort?'),
-      exercises: ['sort-ob-w', 'mc-verb-ende', 'indirekt-bahnhof', 'indirekt-offen', 'match-direkt', 'tf-hoeflich', 'select-richtig', 'image-auskunft', 'indirekt-bus'],
+      exercises: ['sort-ob-w', 'mc-verb-ende', 'indirekt-bahnhof', 'indirekt-offen', 'match-direkt', 'tf-hoeflich', 'select-richtig', 'image-auskunft', 'indirekt-wohnt'],
     },
     {
       key: 'practice-use',
