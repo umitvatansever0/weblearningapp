@@ -44,6 +44,8 @@ export function isReady(exercise: Exercise, value: InputValue): boolean {
       return Array.isArray(value) && value.length === exercise.items.length && value.every((v) => typeof v === 'number')
     case 'sentence_builder':
       return Array.isArray(value) && value.length === exercise.chips.length
+    case 'ordering':
+      return Array.isArray(value) && value.length === exercise.items.length
   }
 }
 
@@ -437,6 +439,58 @@ function SentenceBuilderInput({
   )
 }
 
+/** Put items in order: tap them in sequence; tap a placed item to take it back. */
+function OrderingInput({ exercise, value, onChange, locked, correct }: InputProps<Extract<Exercise, { type: 'ordering' }>>) {
+  const t = useTranslations('course')
+  const placed: number[] = Array.isArray(value) ? (value as number[]) : []
+  return (
+    <div className="grid sm:grid-cols-2 gap-4">
+      <ol
+        aria-label={t('yourOrder')}
+        className={`rounded-xl border-2 p-3 flex flex-col gap-2 min-h-32 ${
+          locked
+            ? correct
+              ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950'
+              : 'border-rose-400 bg-rose-50 dark:bg-rose-950'
+            : 'border-dashed border-gray-300 dark:border-neutral-700'
+        }`}
+      >
+        {placed.length === 0 && <li className="text-sm text-gray-400">{t('orderingEmpty')}</li>}
+        {placed.map((item, position) => (
+          <li key={item}>
+            <button
+              type="button"
+              disabled={locked}
+              onClick={() => onChange(placed.filter((p) => p !== item))}
+              className="w-full text-left rounded-lg border border-gray-900 dark:border-gray-100 bg-white dark:bg-neutral-900 px-3 py-2 flex gap-3"
+              aria-label={t('removeWord', { word: exercise.items[item] })}
+            >
+              <span className="font-bold tabular-nums text-gray-400">{position + 1}.</span>
+              <span lang="de">{exercise.items[item]}</span>
+            </button>
+          </li>
+        ))}
+      </ol>
+      <div className="flex flex-col gap-2">
+        {exercise.items.map((item, i) =>
+          placed.includes(i) ? null : (
+            <button
+              key={i}
+              type="button"
+              disabled={locked}
+              onClick={() => onChange([...placed, i])}
+              className="text-left rounded-lg border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 px-3 py-2 shadow-sm hover:border-gray-900 dark:hover:border-gray-100"
+              lang="de"
+            >
+              {item}
+            </button>
+          )
+        )}
+      </div>
+    </div>
+  )
+}
+
 function ListeningPlayer({ text }: { text: string }) {
   const t = useTranslations('course')
   const { supported, speak } = useSpeech()
@@ -555,5 +609,7 @@ export function ExerciseInput(props: InputProps<Exercise>) {
       return <CategorizeInput {...props} exercise={exercise} />
     case 'sentence_builder':
       return <SentenceBuilderInput {...props} exercise={exercise} />
+    case 'ordering':
+      return <OrderingInput {...props} exercise={exercise} />
   }
 }

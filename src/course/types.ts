@@ -73,6 +73,8 @@ interface ExerciseBase {
   /** "Try one more": ids of similar exercises offered after the answer. */
   practice?: string[]
   tags?: string[]
+  /** Optional emoji scene shown above the task (rows of space-separated cells, "." = empty), e.g. a street map. */
+  visual?: string[]
 }
 
 export interface MultipleChoiceExercise extends ExerciseBase {
@@ -155,6 +157,15 @@ export interface TranslationExercise extends ExerciseBase {
   accepted: string[]
 }
 
+export interface OrderingExercise extends ExerciseBase {
+  type: 'ordering'
+  promptL10n?: L10n
+  /** Items in the (scrambled) order they are offered. */
+  items: string[]
+  /** The same items in the correct order. */
+  answer: string[]
+}
+
 export interface DialogueExercise extends ExerciseBase {
   type: 'dialogue'
   lines: { speaker: string; de: string }[]
@@ -174,6 +185,7 @@ export type Exercise =
   | ListeningChoiceExercise
   | ErrorCorrectionExercise
   | TranslationExercise
+  | OrderingExercise
   | DialogueExercise
 
 export type ExerciseType = Exercise['type']

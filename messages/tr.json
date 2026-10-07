@@ -460,7 +460,8 @@
       "listening_choice": "Dinle ve seç.",
       "error_correction": "Cümleyi düzelt.",
       "translation": "Almancaya çevir.",
-      "dialogue": "Diyaloğu tamamla."
+      "dialogue": "Diyaloğu tamamla.",
+      "ordering": "Adımları doğru sıraya koy."
     },
     "check": "Kontrol et",
     "showHint": "İpucunu göster",
@@ -568,6 +569,8 @@
     "navCourse": "A1 Kursu",
     "learnBannerTitle": "Yeni: yapılandırılmış A1 kursu",
     "learnBannerBody": "Açıklamalar, örnekler, farklı alıştırmalar, dinleme ve aralıklı tekrarla adım adım öğren.",
-    "learnBannerCta": "A1 kursunu aç"
+    "learnBannerCta": "A1 kursunu aç",
+    "yourOrder": "Senin sıralaman",
+    "orderingEmpty": "Öğelere doğru sırayla dokun …"
   }
 }

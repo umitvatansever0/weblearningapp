@@ -460,7 +460,8 @@
       "listening_choice": "Hör zu und wähle.",
       "error_correction": "Korrigiere den Satz.",
       "translation": "Übersetze ins Deutsche.",
-      "dialogue": "Ergänze den Dialog."
+      "dialogue": "Ergänze den Dialog.",
+      "ordering": "Bring die Schritte in die richtige Reihenfolge."
     },
     "check": "Prüfen",
     "showHint": "Tipp anzeigen",
@@ -568,6 +569,8 @@
     "navCourse": "A1-Kurs",
     "learnBannerTitle": "Neu: der strukturierte A1-Kurs",
     "learnBannerBody": "Lerne Schritt für Schritt mit Erklärungen, Beispielen, abwechslungsreichen Übungen, Hören und Wiederholung.",
-    "learnBannerCta": "Zum A1-Kurs"
+    "learnBannerCta": "Zum A1-Kurs",
+    "yourOrder": "Deine Reihenfolge",
+    "orderingEmpty": "Tippe die Elemente in der richtigen Reihenfolge an …"
   }
 }

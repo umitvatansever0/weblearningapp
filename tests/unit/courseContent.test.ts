@@ -26,6 +26,8 @@ function correctAnswer(exercise: Exercise): unknown {
       return exercise.items.map((item) => item.category)
     case 'sentence_builder':
       return exercise.answers[0].map((word) => exercise.chips.indexOf(word))
+    case 'ordering':
+      return exercise.answer.map((item) => exercise.items.indexOf(item))
   }
 }
 
@@ -79,6 +81,11 @@ describe.each(getUnits('A1').map((unit) => [unit.slug, unit] as const))('course 
       if ('options' in exercise) {
         const labels = exercise.options.map((o) => (typeof o === 'string' ? o : o.label))
         expect(new Set(labels).size, exercise.id).toBe(labels.length)
+      }
+      // Choice questions need real alternatives (two-way choices are deliberate: mein/meine, Singular/Plural, du/Sie).
+      if (exercise.type === 'multiple_choice' || exercise.type === 'listening_choice' || exercise.type === 'dialogue') {
+        expect(exercise.options.length, exercise.id).toBeGreaterThanOrEqual(2)
+        if (exercise.id.startsWith('pl-')) expect(exercise.options.length, exercise.id).toBe(3)
       }
       if (exercise.type === 'sentence_builder') {
         for (const answer of exercise.answers) {

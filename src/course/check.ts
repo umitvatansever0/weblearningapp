@@ -139,6 +139,15 @@ export function checkExercise(exercise: Exercise, answer: unknown, locale = 'en'
           .join(' · '),
       }
     }
+    case 'ordering': {
+      const order = isIndexArray(answer) ? answer : []
+      const given = order.map((i) => exercise.items[i] ?? '?')
+      return {
+        correct: given.length === exercise.answer.length && given.every((item, i) => item === exercise.answer[i]),
+        given: given.join(' → '),
+        expected: exercise.answer.join(' → '),
+      }
+    }
     case 'sentence_builder': {
       const order = isIndexArray(answer) ? answer : []
       const words = order.map((i) => exercise.chips[i] ?? '')
@@ -173,5 +182,7 @@ export function isValidAnswer(exercise: Exercise, answer: unknown): answer is Ex
       return isIndexArray(answer) && answer.length === exercise.items.length
     case 'sentence_builder':
       return isIndexArray(answer) && answer.length <= exercise.chips.length
+    case 'ordering':
+      return isIndexArray(answer) && answer.length <= exercise.items.length
   }
 }

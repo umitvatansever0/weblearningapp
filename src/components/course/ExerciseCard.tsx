@@ -108,10 +108,33 @@ function Prompt({ exercise, locale }: { exercise: Exercise; locale: string }) {
       return exercise.translation ? (
         <p className="text-lg text-gray-600 dark:text-gray-400">„{pick(exercise.translation, locale === 'de' ? 'en' : locale)}“</p>
       ) : null
+    case 'ordering':
+      return exercise.promptL10n ? <p className="text-xl font-semibold">{pick(exercise.promptL10n, locale)}</p> : null
     case 'matching':
     case 'categorize':
       return null
   }
+}
+
+/** Emoji scene (map, floor plan, timeline) shown above a task. */
+function Visual({ rows }: { rows: string[] }) {
+  return (
+    <div
+      role="img"
+      aria-hidden="true"
+      className="self-start rounded-2xl border border-gray-200 dark:border-neutral-700 bg-gray-50 dark:bg-neutral-900 p-3 flex flex-col gap-1"
+    >
+      {rows.map((row, r) => (
+        <div key={r} className="flex gap-1">
+          {row.split(' ').map((cell, c) => (
+            <span key={c} className="w-11 h-11 flex items-center justify-center text-2xl">
+              {cell === '.' ? '' : cell}
+            </span>
+          ))}
+        </div>
+      ))}
+    </div>
+  )
 }
 
 /**
@@ -159,6 +182,7 @@ export function ExerciseCard({
     <div className="flex flex-col gap-5">
       <div className="flex flex-col gap-3">
         <p className="text-sm font-medium text-gray-500 dark:text-gray-400">{instructions}</p>
+        {exercise.visual && <Visual rows={exercise.visual} />}
         <Prompt exercise={exercise} locale={locale} />
       </div>
 

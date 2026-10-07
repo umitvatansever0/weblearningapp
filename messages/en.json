@@ -460,7 +460,8 @@
       "listening_choice": "Listen and choose.",
       "error_correction": "Correct the sentence.",
       "translation": "Translate into German.",
-      "dialogue": "Complete the dialogue."
+      "dialogue": "Complete the dialogue.",
+      "ordering": "Put the steps in the right order."
     },
     "check": "Check",
     "showHint": "Show hint",
@@ -568,6 +569,8 @@
     "navCourse": "A1 Course",
     "learnBannerTitle": "New: the structured A1 course",
     "learnBannerBody": "Learn step by step with explanations, examples, varied exercises, listening and spaced review.",
-    "learnBannerCta": "Open the A1 course"
+    "learnBannerCta": "Open the A1 course",
+    "yourOrder": "Your order",
+    "orderingEmpty": "Tap the items in the right order …"
   }
 }
