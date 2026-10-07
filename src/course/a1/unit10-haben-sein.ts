@@ -255,7 +255,7 @@ const EXERCISES: Exercise[] = [
     skill: 'grammar',
     difficulty: 1,
     chips: ['müde', 'sind', 'Wir', 'heute'],
-    answers: [['Wir', 'sind', 'heute', 'müde'], ['Heute', 'sind', 'wir', 'müde']],
+    answers: [['Wir', 'sind', 'heute', 'müde']],
     translation: l('We are tired today.', 'Bugün yorgunuz.', 'Wir sind heute müde.'),
     explanation: l('Wir + sind + heute + müde.', 'Wir + sind + heute + müde.', 'Wir + sind + heute + müde.'),
     examples: ['Wir **sind** heute müde.'],
