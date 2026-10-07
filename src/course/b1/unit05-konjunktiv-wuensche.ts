@@ -30,7 +30,7 @@ const MORE_VOCAB: VocabItem[] = [
 const K2: [string, string, string, string, string, string][] = [
   ['waere-ich', 'Wenn ich reich ___, würde ich eine Weltreise machen.', 'wäre', 'war', 'bin', 'sein → wäre'],
   ['haette-ich', 'Wenn ich mehr Zeit ___, würde ich mehr lesen.', 'hätte', 'hatte', 'habe', 'haben → hätte'],
-  ['wuerde-du', 'Was ___ du mit einer Million Euro machen?', 'würdest', 'wurdest', 'wirst', 'würde + du → würdest'],
+  ['wuerde-du', 'Was ___ du mit einer Million Euro machen?', 'würdest', 'wurdest', 'würdet', 'würde + du → würdest'],
   ['koennte-wir', 'Wenn wir fliegen ___, wären wir in einer Stunde in Rom.', 'könnten', 'konnten', 'können', 'können → könnten'],
   ['waere-es', 'Ich wünschte, es ___ schon Wochenende.', 'wäre', 'ist', 'war', 'Wunsch → wäre'],
   ['haette-er', 'Wenn er ein Auto ___, müsste er nicht mit dem Bus fahren.', 'hätte', 'hat', 'hattet', 'haben → hätte'],
