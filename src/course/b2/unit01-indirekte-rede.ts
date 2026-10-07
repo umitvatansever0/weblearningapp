@@ -53,9 +53,9 @@ function formDrills(): Exercise[] {
       options: ordered,
       answer: ordered.indexOf(right),
       explanation: l(
-        `Konjunktiv I = infinitive stem + -e: ${right}. „sei“ is the only irregular form.`,
-        `Konjunktiv I = mastar kökü + -e: ${right}. Tek düzensiz biçim „sei“dir.`,
-        `Konjunktiv I: Stamm + -e → ${right}.`
+        `Konjunktiv I: infinitive stem + -e (er komme, sie habe). Only „sein“ is irregular: er sei. → ${right}`,
+        `Konjunktiv I: mastar kökü + -e (er komme, sie habe). Tek düzensiz fiil „sein“dir: er sei. → ${right}`,
+        `Konjunktiv I: Stamm + -e (er komme), aber sein → er sei. → ${right}`
       ),
     }
   })
