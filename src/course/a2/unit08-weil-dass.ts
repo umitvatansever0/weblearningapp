@@ -56,8 +56,8 @@ function clauseDrills(): Exercise[] {
       options: ordered,
       answer: ordered.indexOf(right),
       explanation: l(
-        `After „${conj}“ the conjugated verb goes to the very end: … ${conj} ${subject} ${middle} **${verb}**.`,
-        `„${conj}“tan sonra çekimli fiil en sona gider: … ${conj} ${subject} ${middle} **${verb}**.`,
+        `After „${conj}“ the conjugated verb goes to the very end: … ${conj} ${subject} ${middle} ${verb}.`,
+        `„${conj}“tan sonra çekimli fiil en sona gider: … ${conj} ${subject} ${middle} ${verb}.`,
         `Nach „${conj}“ steht das Verb am Ende.`
       ),
       examples: [`${main} **${conj}** ${subject} ${middle} **${verb}**.`],
