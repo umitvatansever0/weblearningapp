@@ -70,7 +70,7 @@ export const C1_OUTLINE: UnitOutline[] = [
   },
   {
     number: 10,
-    slug: 'register-stil',
+    slug: 'stilebenen',
     titleDe: 'Umgangssprache, Standard, gehoben',
     title: { en: 'Colloquial, standard, elevated', tr: 'Günlük, standart, yüksek üslup', de: 'Umgangssprache, Standard, gehoben' },
     focus: ['Stilebenen unterscheiden', 'Synonyme mit unterschiedlichem Register', 'angemessen formulieren'],

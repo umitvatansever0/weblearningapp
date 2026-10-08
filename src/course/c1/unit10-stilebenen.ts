@@ -437,10 +437,10 @@ const EXERCISES: Exercise[] = [
   ...stDrills(),
 ]
 
-export const UNIT_C1_10_REGISTER_STIL: CourseUnit = {
+export const UNIT_C1_10_STILEBENEN: CourseUnit = {
   level: 'C1',
   number: 10,
-  slug: 'register-stil',
+  slug: 'stilebenen',
   titleDe: 'Umgangssprache, Standard, gehoben',
   title: l('Colloquial, standard, elevated', 'Günlük, standart, yüksek üslup', 'Umgangssprache, Standard, gehoben'),
   goal: l(
