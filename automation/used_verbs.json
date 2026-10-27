@@ -1,0 +1,9 @@
+{
+  "note": "Every verb already used in a DeutschStep video. New videos must not repeat any of these. Append after each run.",
+  "videos": [
+    {"date": "2026-10-25", "slot": "manual", "level": "A1", "verbs": ["machen", "fahren"]},
+    {"date": "2026-10-26", "slot": "manual", "level": "B1", "verbs": ["überzeugen", "sich beschweren", "umtauschen", "kündigen", "sich erholen"]},
+    {"date": "2026-10-26", "slot": "manual", "level": "B1", "verbs": ["bereuen", "bestehen", "erreichen", "sich erinnern an", "sich vorbereiten auf", "unterstützen", "vergleichen", "verpassen", "verschlafen", "vertrauen"]},
+    {"date": "2026-10-27", "slot": "manual", "level": "B1", "verbs": ["aufwachsen", "entdecken", "erfinden", "gründen", "herstellen", "sich engagieren", "sich verbessern", "sparen", "zusammenfassen", "überprüfen"]}
+  ]
+}
