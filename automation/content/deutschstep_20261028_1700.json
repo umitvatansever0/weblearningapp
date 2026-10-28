@@ -1,0 +1,8 @@
+{"level": "B1", "seed": 202610281700, "hook": "5 B1 verbs you'll use every day",
+ "verbs": [
+  {"verb": "schützen", "en": "to protect", "tag": "regular · hat geschützt", "example": "Bäume *schützen* das Klima.", "translation": "Trees protect the climate."},
+  {"verb": "verbreiten", "en": "to spread", "tag": "inseparable · hat verbreitet", "example": "Er *verbreitet* Falschmeldungen online.", "translation": "He spreads fake news online."},
+  {"verb": "einziehen", "en": "to move in", "tag": "separable · ist eingezogen", "example": "Wir *ziehen* im Mai *ein*.", "translation": "We're moving in in May."},
+  {"verb": "sich interessieren für", "en": "to be interested in", "tag": "reflexive · für + Akk", "example": "Ich *interessiere mich* für Politik.", "translation": "I'm interested in politics."},
+  {"verb": "zustimmen", "en": "to agree", "tag": "separable · + Dativ", "example": "Ich *stimme* dir völlig *zu*.", "translation": "I completely agree with you."}
+ ]}

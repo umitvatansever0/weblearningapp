@@ -79,6 +79,18 @@
         "sich kümmern um",
         "ausprobieren"
       ]
+    },
+    {
+      "date": "2026-10-28",
+      "slot": "1700",
+      "level": "B1",
+      "verbs": [
+        "schützen",
+        "verbreiten",
+        "einziehen",
+        "sich interessieren für",
+        "zustimmen"
+      ]
     }
   ]
 }
