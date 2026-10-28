@@ -1,0 +1,8 @@
+{"level": "B1", "seed": 202610280900, "hook": "5 B1 verbs for flats, jobs & opinions",
+ "verbs": [
+  {"verb": "besichtigen", "en": "to view (a flat)", "tag": "inseparable · hat besichtigt", "example": "Wir *besichtigen* morgen die Wohnung.", "translation": "We're viewing the flat tomorrow."},
+  {"verb": "sich bewerben um", "en": "to apply for", "tag": "reflexive · um + Akk", "example": "Sie *bewirbt sich* um die Stelle.", "translation": "She is applying for the job."},
+  {"verb": "vorschlagen", "en": "to suggest", "tag": "separable · hat vorgeschlagen", "example": "Ich *schlage* einen Kompromiss *vor*.", "translation": "I suggest a compromise."},
+  {"verb": "widersprechen", "en": "to contradict", "tag": "inseparable · + Dativ", "example": "Da muss ich dir *widersprechen*.", "translation": "I have to disagree with you there."},
+  {"verb": "trennen", "en": "to separate", "tag": "regular · hat getrennt", "example": "Wir *trennen* den Müll.", "translation": "We separate the rubbish."}
+ ]}
