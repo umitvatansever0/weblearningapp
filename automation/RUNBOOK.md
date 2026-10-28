@@ -45,19 +45,28 @@ leaves and butterflies plus a row of swaying tulips decorate the background. All
 
 1. **Branch.** Work in a clone of `umitvatansever0/weblearningapp`, branch `social-media-assets`
    (orphan branch, not the website code). Pull first.
-2. **Pick exactly 5 verbs** at the level for the slot (default **B1**):
-   - Not in `automation/used_verbs.json` (check every entry, case-insensitive, including `sich …` forms).
+2. **Pick exactly 5 items**, following the owner's content order (move to the next stage only when the current one
+   has no clearly-fitting unused items left; mention every stage change in the report):
+   1. **B1 verbs** — `"kind": "verbs"`, `"level": "B1"` (current stage).
+   2. **B1 verbs with fixed prepositions** (the owner calls them "phrasal verbs"), e.g. *warten auf*, *sich freuen
+      über*, *teilnehmen an*, *abhängen von* — `"kind": "prep_verbs"`, `"level": "B1"`. `tag` shows the
+      preposition + case, e.g. `auf + Akk · hat gewartet`.
+   3. **A2 verbs** — `"kind": "verbs"`, `"level": "A2"`.
+   4. **Nouns, everyday objects and adjectives** — `"kind": "nouns"` (always with article: `"verb": "der Schlüssel"`,
+      `tag` = `der · die Schlüssel`) or `"kind": "adjectives"` (`tag` e.g. `opposite: kalt`). Keep one kind per
+      video. Start at A2, then B1.
+   The JSON field is still called `verbs` for every kind. Rules for all kinds:
+   - Not in `automation/used_verbs.json` (check every entry, case-insensitive, including `sich …` forms; a
+     verb + preposition counts as new only if that combination was never shown). Log nouns/adjectives there too.
    - Prefer verbs from the site's own curriculum: `git show origin/master:src/course/<level>/…` (folders
      `src/course/a1 … c2`), then the Goethe/telc word list for that level.
-   - 15 new verbs a day is a lot. When no clearly-B1 unused verbs are left, move to **B2** (set `"level": "B2"`)
-     rather than repeating or using doubtful-level verbs, and mention it in the report.
    - Mix types (regular, separable, inseparable, reflexive, with preposition). Avoid near-synonyms in one video
      (the quiz options must be clearly distinct in meaning).
    - Everything must be correct German. Example sentences: short (≤ 7 words ideal), natural, everyday. Mark the verb
      forms to highlight with `*…*`. Give an accurate English translation.
    - `tag`: short grammar note, e.g. `separable · hat hergestellt`, `reflexive · für + Akk`, `ist gefahren`.
 3. **Write** `automation/content/deutschstep_YYYYMMDD_HHMM.json` (HHMM = publish time, e.g. 1000). The 3 videos of a day must use 15 different verbs:
-   `{"level": "B1", "seed": YYYYMMDDHHMM as int, "hook": "<optional one-line hook>", "verbs": [5 × {verb, en, tag, example, translation}]}`.
+   `{"level": "B1", "kind": "verbs", "seed": YYYYMMDDHHMM as int, "hook": "<optional one-line hook>", "verbs": [5 × {verb, en, tag, example, translation}]}`.
    Vary the `hook` between runs (e.g. "5 B1 verbs every German learner needs", "Can you remember all 5?").
    Keep `en` short (≤ 22 characters) so it fits on one line.
 4. **Render:** `automation/make_video.sh automation/content/<name>.json` (~2 min). Needs ffmpeg, Pillow, numpy and

@@ -45,6 +45,11 @@ def load_content(path):
     return c.get("level", "B1"), V, QZ
 
 LEVEL, V, QZ = "B1", [], []
+# content "kind" -> (plural shown on screen, question word). Default: verbs.
+KINDS = {"verbs": ("verbs", "verb"), "prep_verbs": ("verbs + prepositions", "verb"),
+         "nouns": ("nouns", "word"), "adjectives": ("adjectives", "word"), "words": ("words", "word")}
+KIND = "verbs"
+def kind_words(): return KINDS.get(KIND, KINDS["verbs"])
 LET = "ABCD"
 
 T_INTRO, LEARN, QINTRO, THINK, SHOW = 3.0, 7.0, 2.6, 5.0, 2.0
@@ -220,13 +225,13 @@ def intro(cv, t):
     def draw(d):
         y = (1 - a) * 50
         chip(d, L, 400 + y, f"LEVEL {LEVEL}", GOLD, BG_TOP, F("ExtraBold", 30))
-        d.text((L, 500 + y), f"Learn {NV} verbs.", font=F("Black", 100), fill=WHITE)
+        d.text((L, 500 + y), f"Learn {NV} {kind_words()[0] if KIND != 'prep_verbs' else 'verbs'}.", font=F("Black", 100), fill=WHITE)
         d.text((L, 615 + y), "Then take", font=F("Black", 100), fill=WHITE)
         d.text((L, 730 + y), "the quiz.", font=F("Black", 100), fill=GOLD)
     cv.layer(draw, a * out)
     b = ease((t - 0.7) / 0.5)
     def draw2(d):
-        rows = [("1", f"Learn: {NV} {LEVEL} verbs + examples"), ("2", "Quiz: 5 seconds per question"), ("3", "Comment your score")]
+        rows = [("1", f"Learn: {NV} {LEVEL} {kind_words()[0]}"), ("2", "Quiz: 5 seconds per question"), ("3", "Comment your score")]
         for i, (k, v) in enumerate(rows):
             y = 940 + i * 110
             d.rounded_rectangle([L, y, L + 80, y + 80], 22, fill=CARD, outline=LINE, width=2)
@@ -277,7 +282,7 @@ def quiz_intro(cv, t):
     pulse = 1 + 0.03 * math.sin(t * 8)
     def draw(d):
         d.text((W / 2, 650), "QUIZ TIME", font=F("Black", int(140 * pulse)), fill=GOLD, anchor="mm")
-        d.text((W / 2, 790), "Which verb means…?", font=F("SemiBold", 56), fill=WHITE, anchor="mm")
+        d.text((W / 2, 790), f"Which {kind_words()[1]} means…?", font=F("SemiBold", 56), fill=WHITE, anchor="mm")
         d.text((W / 2, 880), "5 seconds per question", font=F("Medium", 44), fill=GRAY, anchor="mm")
     cv.layer(draw, a * out)
 
@@ -293,7 +298,7 @@ def question(cv, i, t):
     cv.layer(lambda d: bar(d, len(QZ), i, min(1, t / SEG), "", GOLD))
     def top(d):
         d.text((L, 236 + dy), f"QUESTION {i + 1:02d} / {len(QZ)}", font=F("Bold", 32), fill=GOLD)
-        d.text((L, 300 + dy), "Which verb means…", font=F("Medium", 46), fill=GRAY)
+        d.text((L, 300 + dy), f"Which {kind_words()[1]} means…", font=F("Medium", 46), fill=GRAY)
         size = 92
         while d.textlength(f"“{en}”", font=F("Black", size)) > R - L - 160: size -= 6
         d.text((L, 370 + dy), f"“{en}”", font=F("Black", size), fill=WHITE)
@@ -370,6 +375,7 @@ if __name__ == "__main__":
         _, V, QZ = load_content(sys.argv[2]); set_timing(len(V))
         print(json.dumps(dict(end=END, quiz_start=T_QUIZ, seg=SEG, think=THINK, n=len(V)))); sys.exit()
     LEVEL, V, QZ = load_content(sys.argv[1]); set_timing(len(V))
+    KIND = json.load(open(sys.argv[1], encoding="utf-8")).get("kind", "verbs")
     OUT, MUSIC = sys.argv[2], sys.argv[3]
     n = int(END * FPS)
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",

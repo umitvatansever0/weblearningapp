@@ -3,9 +3,14 @@ import json, sys
 
 c = json.load(open(sys.argv[1], encoding="utf-8"))
 lvl = c.get("level", "B1")
-hook = c.get("hook", f"Learn {len(c['verbs'])} {lvl} German verbs, then take the quiz")
-tags_tt = f"#learngerman #germanquiz #german{lvl.lower()} #deutschlernen #germanverbs #{lvl.lower()}deutsch #studygerman #languagelearning #deutschstep #fyp"
-tags_ig = f"#learngerman #germanquiz #german{lvl.lower()} #deutschlernen #germanverbs #{lvl.lower()}deutsch #studygerman #germangrammar #deutschstep #reels"
+kind = c.get("kind", "verbs")
+noun = {"verbs": "verbs", "prep_verbs": "verbs with prepositions", "nouns": "nouns",
+        "adjectives": "adjectives", "words": "words"}.get(kind, "verbs")
+tag_kind = {"verbs": "#germanverbs", "prep_verbs": "#germanverbs", "nouns": "#germanvocabulary",
+            "adjectives": "#germanvocabulary", "words": "#germanvocabulary"}.get(kind, "#germanverbs")
+hook = c.get("hook", f"Learn {len(c['verbs'])} {lvl} German {noun}, then take the quiz")
+tags_tt = f"#learngerman #germanquiz #german{lvl.lower()} #deutschlernen {tag_kind} #{lvl.lower()}deutsch #studygerman #languagelearning #deutschstep #fyp"
+tags_ig = f"#learngerman #germanquiz #german{lvl.lower()} #deutschlernen {tag_kind} #{lvl.lower()}deutsch #studygerman #germangrammar #deutschstep #reels"
 lines = "\n".join(f"{i + 1}. {v['verb']}: {v['en']}" for i, v in enumerate(c["verbs"]))
 
 out = {
