@@ -67,6 +67,18 @@
         "widersprechen",
         "trennen"
       ]
+    },
+    {
+      "date": "2026-10-28",
+      "slot": "1430",
+      "level": "B1",
+      "verbs": [
+        "verbieten",
+        "zunehmen",
+        "beraten",
+        "sich kümmern um",
+        "ausprobieren"
+      ]
     }
   ]
 }

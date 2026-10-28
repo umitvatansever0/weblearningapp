@@ -1,0 +1,8 @@
+{"level": "B1", "seed": 202610281430, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "verbieten", "en": "to ban", "tag": "inseparable · hat verboten", "example": "Die Stadt *verbietet* Plastiktüten.", "translation": "The city bans plastic bags."},
+  {"verb": "zunehmen", "en": "to increase", "tag": "separable · hat zugenommen", "example": "Der Verkehr *nimmt* stark *zu*.", "translation": "Traffic is increasing sharply."},
+  {"verb": "beraten", "en": "to advise", "tag": "inseparable · hat beraten", "example": "Die Ärztin *berät* mich gut.", "translation": "The doctor advises me well."},
+  {"verb": "sich kümmern um", "en": "to take care of", "tag": "reflexive · um + Akk", "example": "Ich *kümmere mich* um die Kinder.", "translation": "I take care of the children."},
+  {"verb": "ausprobieren", "en": "to try out", "tag": "separable · hat ausprobiert", "example": "Ich *probiere* das Rezept *aus*.", "translation": "I'm trying out the recipe."}
+ ]}
