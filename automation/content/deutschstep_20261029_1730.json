@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610291730, "hook": "Learn 5 B1 verbs, then take the quiz",
+ "verbs": [
+  {"verb": "sich entschuldigen", "en": "to apologize", "tag": "reflexive · für + Akk", "example": "Ich *entschuldige mich* für die Verspätung.", "translation": "I apologize for the delay."},
+  {"verb": "zurückgeben", "en": "to give back", "tag": "separable · hat zurückgegeben", "example": "*Gib* mir das Buch *zurück*!", "translation": "Give me the book back!"},
+  {"verb": "verletzen", "en": "to injure", "tag": "inseparable · hat verletzt", "example": "Er hat sich das Knie *verletzt*.", "translation": "He injured his knee."},
+  {"verb": "empfehlen", "en": "to recommend", "tag": "irregular · hat empfohlen", "example": "Kannst du ein Café *empfehlen*?", "translation": "Can you recommend a café?"},
+  {"verb": "ablehnen", "en": "to decline", "tag": "separable · hat abgelehnt", "example": "Sie *lehnt* das Angebot *ab*.", "translation": "She declines the offer."}
+ ]}

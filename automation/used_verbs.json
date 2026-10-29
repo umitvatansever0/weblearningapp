@@ -1,96 +1,135 @@
 {
-  "note": "Every verb already used in a DeutschStep video. New videos must not repeat any of these. Append after each run.",
-  "videos": [
-    {
-      "date": "2026-10-25",
-      "slot": "manual",
-      "level": "A1",
-      "verbs": [
-        "machen",
-        "fahren"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "slot": "manual",
-      "level": "B1",
-      "verbs": [
-        "überzeugen",
-        "sich beschweren",
-        "umtauschen",
-        "kündigen",
-        "sich erholen"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "slot": "manual",
-      "level": "B1",
-      "verbs": [
-        "bereuen",
-        "bestehen",
-        "erreichen",
-        "sich erinnern an",
-        "sich vorbereiten auf",
-        "unterstützen",
-        "vergleichen",
-        "verpassen",
-        "verschlafen",
-        "vertrauen"
-      ]
-    },
-    {
-      "date": "2026-10-27",
-      "slot": "manual",
-      "level": "B1",
-      "verbs": [
-        "aufwachsen",
-        "entdecken",
-        "erfinden",
-        "gründen",
-        "herstellen",
-        "sich engagieren",
-        "sich verbessern",
-        "sparen",
-        "zusammenfassen",
-        "überprüfen"
-      ]
-    },
-    {
-      "date": "2026-10-28",
-      "slot": "0900",
-      "level": "B1",
-      "verbs": [
-        "besichtigen",
-        "sich bewerben um",
-        "vorschlagen",
-        "widersprechen",
-        "trennen"
-      ]
-    },
-    {
-      "date": "2026-10-28",
-      "slot": "1430",
-      "level": "B1",
-      "verbs": [
-        "verbieten",
-        "zunehmen",
-        "beraten",
-        "sich kümmern um",
-        "ausprobieren"
-      ]
-    },
-    {
-      "date": "2026-10-28",
-      "slot": "1700",
-      "level": "B1",
-      "verbs": [
-        "schützen",
-        "verbreiten",
-        "einziehen",
-        "sich interessieren für",
-        "zustimmen"
-      ]
-    }
-  ]
+ "note": "Every verb already used in a DeutschStep video. New videos must not repeat any of these. Append after each run.",
+ "videos": [
+  {
+   "date": "2026-10-25",
+   "slot": "manual",
+   "level": "A1",
+   "verbs": [
+    "machen",
+    "fahren"
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "slot": "manual",
+   "level": "B1",
+   "verbs": [
+    "überzeugen",
+    "sich beschweren",
+    "umtauschen",
+    "kündigen",
+    "sich erholen"
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "slot": "manual",
+   "level": "B1",
+   "verbs": [
+    "bereuen",
+    "bestehen",
+    "erreichen",
+    "sich erinnern an",
+    "sich vorbereiten auf",
+    "unterstützen",
+    "vergleichen",
+    "verpassen",
+    "verschlafen",
+    "vertrauen"
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "slot": "manual",
+   "level": "B1",
+   "verbs": [
+    "aufwachsen",
+    "entdecken",
+    "erfinden",
+    "gründen",
+    "herstellen",
+    "sich engagieren",
+    "sich verbessern",
+    "sparen",
+    "zusammenfassen",
+    "überprüfen"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "slot": "0900",
+   "level": "B1",
+   "verbs": [
+    "besichtigen",
+    "sich bewerben um",
+    "vorschlagen",
+    "widersprechen",
+    "trennen"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "slot": "1430",
+   "level": "B1",
+   "verbs": [
+    "verbieten",
+    "zunehmen",
+    "beraten",
+    "sich kümmern um",
+    "ausprobieren"
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "slot": "1700",
+   "level": "B1",
+   "verbs": [
+    "schützen",
+    "verbreiten",
+    "einziehen",
+    "sich interessieren für",
+    "zustimmen"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "slot": "1000",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "verschieben",
+    "abschließen",
+    "sich gewöhnen an",
+    "erwähnen",
+    "sich beeilen"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "slot": "1330",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "beantragen",
+    "ausgeben",
+    "sich verabreden",
+    "verlängern",
+    "teilen"
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "slot": "1730",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "sich entschuldigen",
+    "zurückgeben",
+    "verletzen",
+    "empfehlen",
+    "ablehnen"
+   ]
+  }
+ ]
 }

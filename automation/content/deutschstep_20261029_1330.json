@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610291330, "hook": "5 B1 verbs for everyday life in Germany",
+ "verbs": [
+  {"verb": "beantragen", "en": "to apply for", "tag": "inseparable · hat beantragt", "example": "Sie *beantragt* ein Visum.", "translation": "She is applying for a visa."},
+  {"verb": "ausgeben", "en": "to spend (money)", "tag": "separable · hat ausgegeben", "example": "Ich *gebe* zu viel Geld *aus*.", "translation": "I spend too much money."},
+  {"verb": "sich verabreden", "en": "to arrange to meet", "tag": "reflexive · mit + Dativ", "example": "Wir *verabreden uns* für Freitag.", "translation": "We're arranging to meet on Friday."},
+  {"verb": "verlängern", "en": "to extend", "tag": "inseparable · hat verlängert", "example": "Ich *verlängere* meinen Vertrag.", "translation": "I'm extending my contract."},
+  {"verb": "teilen", "en": "to share", "tag": "regular · hat geteilt", "example": "Wir *teilen* die Kosten.", "translation": "We share the costs."}
+ ]}

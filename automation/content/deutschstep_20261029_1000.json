@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610291000, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "verschieben", "en": "to postpone", "tag": "inseparable · hat verschoben", "example": "Wir *verschieben* das Meeting.", "translation": "We're postponing the meeting."},
+  {"verb": "abschließen", "en": "to lock", "tag": "separable · hat abgeschlossen", "example": "Ich *schließe* die Tür *ab*.", "translation": "I lock the door."},
+  {"verb": "sich gewöhnen an", "en": "to get used to", "tag": "reflexive · an + Akk", "example": "Ich *gewöhne mich* an das Wetter.", "translation": "I'm getting used to the weather."},
+  {"verb": "erwähnen", "en": "to mention", "tag": "inseparable · hat erwähnt", "example": "Er hat das nicht *erwähnt*.", "translation": "He didn't mention that."},
+  {"verb": "sich beeilen", "en": "to hurry", "tag": "reflexive · hat sich beeilt", "example": "Wir müssen *uns beeilen*!", "translation": "We have to hurry!"}
+ ]}
