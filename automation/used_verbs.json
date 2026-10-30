@@ -130,6 +130,45 @@
     "empfehlen",
     "ablehnen"
    ]
+  },
+  {
+   "date": "2026-10-30",
+   "slot": "1100",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "mieten",
+    "aufräumen",
+    "sich entscheiden",
+    "erledigen",
+    "wegwerfen"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "slot": "1200",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "verdienen",
+    "ausfüllen",
+    "sich ärgern",
+    "vermeiden",
+    "unterschreiben"
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "slot": "1830",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "verschwenden",
+    "überweisen",
+    "sich unterhalten",
+    "aufhören",
+    "behaupten"
+   ]
   }
  ]
 }

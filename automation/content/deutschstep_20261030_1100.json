@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610301100, "hook": "5 B1 verbs for everyday life",
+ "verbs": [
+  {"verb": "mieten", "en": "to rent", "tag": "regular · hat gemietet", "example": "Wir *mieten* eine Wohnung in Bern.", "translation": "We are renting a flat in Bern."},
+  {"verb": "aufräumen", "en": "to tidy up", "tag": "separable · hat aufgeräumt", "example": "Ich *räume* heute mein Zimmer *auf*.", "translation": "I'm tidying my room today."},
+  {"verb": "sich entscheiden", "en": "to decide", "tag": "reflexive · für + Akk", "example": "Ich *habe mich* für Rot *entschieden*.", "translation": "I decided on red."},
+  {"verb": "erledigen", "en": "to get done", "tag": "inseparable · hat erledigt", "example": "Ich *erledige* das morgen.", "translation": "I'll get it done tomorrow."},
+  {"verb": "wegwerfen", "en": "to throw away", "tag": "separable · hat weggeworfen", "example": "*Wirf* das Brot nicht *weg*!", "translation": "Don't throw the bread away!"}
+ ]}

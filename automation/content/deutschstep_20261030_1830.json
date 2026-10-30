@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610301830, "hook": "5 B1 verbs, then a quick quiz",
+ "verbs": [
+  {"verb": "verschwenden", "en": "to waste", "tag": "inseparable · hat verschwendet", "example": "Wir *verschwenden* zu viel Wasser.", "translation": "We waste too much water."},
+  {"verb": "überweisen", "en": "to transfer (money)", "tag": "inseparable · hat überwiesen", "example": "Ich *überweise* dir das Geld morgen.", "translation": "I'll transfer you the money tomorrow."},
+  {"verb": "sich unterhalten", "en": "to chat", "tag": "reflexive · mit + Dat", "example": "Wir *haben uns* lange *unterhalten*.", "translation": "We chatted for a long time."},
+  {"verb": "aufhören", "en": "to stop", "tag": "separable · hat aufgehört", "example": "Er *hört* mit dem Rauchen *auf*.", "translation": "He is quitting smoking."},
+  {"verb": "behaupten", "en": "to claim", "tag": "inseparable · hat behauptet", "example": "Er *behauptet*, alles zu wissen.", "translation": "He claims to know everything."}
+ ]}

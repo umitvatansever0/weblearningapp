@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610301200, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "verdienen", "en": "to earn", "tag": "inseparable · hat verdient", "example": "Sie *verdient* gut als Ärztin.", "translation": "She earns well as a doctor."},
+  {"verb": "ausfüllen", "en": "to fill in", "tag": "separable · hat ausgefüllt", "example": "Bitte *füllen* Sie das Formular *aus*.", "translation": "Please fill in the form."},
+  {"verb": "sich ärgern", "en": "to be annoyed", "tag": "reflexive · über + Akk", "example": "Er *ärgert sich* über den Stau.", "translation": "He is annoyed about the traffic jam."},
+  {"verb": "vermeiden", "en": "to avoid", "tag": "irregular · hat vermieden", "example": "Ich *vermeide* Zucker am Abend.", "translation": "I avoid sugar in the evening."},
+  {"verb": "unterschreiben", "en": "to sign", "tag": "inseparable · hat unterschrieben", "example": "*Unterschreiben* Sie bitte hier.", "translation": "Please sign here."}
+ ]}
