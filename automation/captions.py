@@ -19,5 +19,10 @@ out = {
     "instagram_text": f"{hook} 🇩🇪\n\n{lines}\n\n5 seconds per question. What's your score? Comment below 👇\nSave this for later 📌\n\nFree A1–C2 lessons + placement test: deutschstep.com (link in bio)\n\n{tags_ig}",
     "instagram_first_comment": "What's your score? Comment it 👇 Free German lessons: deutschstep.com",
 }
+# Higgsfield TikTok publishing sends only the title (max 150 chars): keep the site and as many hashtags as fit
+hf = f"{hook} 🇩🇪 What's your score? 👇 deutschstep.com"
+for t in ["#learngerman", "#deutschlernen", tag_kind, f"#german{lvl.lower()}", "#studygerman", "#fyp"]:
+    if len(hf) + 1 + len(t) <= 150: hf += " " + t
+out["tiktok_hf_title"] = hf
 json.dump(out, open(sys.argv[2], "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 print(json.dumps(out, ensure_ascii=False, indent=2))

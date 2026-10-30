@@ -1,37 +1,33 @@
 # DeutschStep daily video runbook
 
-Owner: Ümit (deutschstep.com). Every day **three videos** are published to **TikTok @deutschstep.com** and
-**Instagram @deutschstepcom** through Metricool (brand / blogId **7639950**, timezone **Europe/Zurich**).
+Owner: Ümit (deutschstep.com). **Since 2026-10-30 videos go to TikTok only (@deutschstep.com), through the
+Higgsfield TikTok connector (connector_id `af429de6-3648-4b8b-88df-2d7b1b4d8ce1`). Do NOT post through Metricool**
+(its free plan allows only 20 posts a month and was used up) and do not post to Instagram.
 
-## Publish times (posting-time experiment, 2026-10-29 → 2026-11-27)
-The owner wants to learn which times get the most views and engagement, then post at those times for good.
-- **Today's 3 times:** if today's date is in `experiment/plan.json` → use `days[<date>]` (one morning, one midday,
-  one evening slot, rotated over 12 candidate times). Otherwise use `schedule.json` → `final_times`; if that is
-  still null, use `default_times`.
-- **One producer run per day (05:40)** makes all three videos and schedules all six posts (3 × TikTok + 3 ×
-  Instagram) at exactly those times. Video `slot` HHMM = the publish time, e.g. `deutschstep_20261029_1000`.
-- After scheduling, append one line per video to `experiment/posts.csv`
-  (`date,slot,band,video,tiktok_post_id,instagram_post_id,verbs` — verbs joined with `;`).
-- Never change `experiment/plan.json`. Times that were already in the past are skipped (do not post them late,
-  that would spoil the comparison) — note it in the report.
+TikTok requires the owner to approve every post in Higgsfield's publish form, so posting is split:
 
-### Daily metrics snapshot (23:20)
-1. Metricool `getAnalyticsDataByMetrics` (brandId 7639950), from = experiment start (2026-10-29T00:00:00+01:00), to = now:
-   - TikTok → save the raw JSON output to `/tmp/tt.json`, metrics
-     `["TKPO02","TKPO03","TKPO07","TKPO11","TKPO08","TKPO09","TKPO10"]`
-   - Instagram → `/tmp/ig.json`, metrics `["IGRE02","IGRE06","IGRE23","IGRE11","IGRE10","IGRE07","IGRE21","IGRE12"]`
-   (write the tool output to the files exactly as returned, `{"rows": [...]}`).
-2. `python3 automation/experiment/ingest.py /tmp/tt.json /tmp/ig.json` → appends to `experiment/metrics.csv` and
-   refreshes `experiment/LOG.md`.
-3. Commit + push (`metrics.csv`, `LOG.md`). Report the current leaders from LOG.md in two lines.
+### A. Producer run (05:40) — make today's 3 videos, do not post
+- Times for the 3 videos: `schedule.json` → `daily_times` (currently 09:00, 14:30, 17:00).
+- For each time make one video (steps below), commit + push.
+- After pushing, get the commit SHA (`git rev-parse HEAD`) and import each video into Higgsfield with
+  `media_import_url` using the jsDelivr URL
+  `https://cdn.jsdelivr.net/gh/umitvatansever0/weblearningapp@<SHA>/videos/<name>.mp4` (type video).
+  (raw.githubusercontent.com does NOT work — it is served as octet-stream.)
+- Append one line per video to `automation/tiktok_queue.csv`:
+  `date,time,video,media_id,hf_url,title,status` with `hf_url` =
+  `https://d2ol7oe51mr4n9.cloudfront.net/user_3EzqnDmRRXCjAWhzkDsHCYXphAb/<media_id>.mp4`,
+  `title` = `tiktok_hf_title` from the captions JSON, `status` = `ready`. Commit + push.
 
-### Final decision (once, 2026-11-30)
-1. Take a last snapshot exactly as above.
-2. `python3 automation/experiment/analyze.py --apply` → writes `experiment/REPORT.md` and sets
-   `schedule.json` → `final_times` (3 best times, ≥ 2 h apart, each with ≥ 6 data points).
-3. Commit + push. From the next day on, the producer uses `final_times` every day.
-4. Report the chosen times and the score table in plain words (Turkish is fine in the report message,
-   but never in videos or captions).
+### B. Posting runs (09:00, 14:30, 17:00) — open the TikTok form
+- Pull, find today's row in `tiktok_queue.csv` for this time with status `ready`.
+- Call `tiktok_prepare_publish` (connector above, mode DIRECT_POST, media_type VIDEO, video_url = hf_url,
+  title = title). Do not prefill privacy or other choices; the owner fills the form. Never call tiktok_publish.
+- Set the row's status to `form_opened`, commit + push. Tell the owner in one short Turkish line that the form
+  is ready and he only needs to press Post.
+- If the row is missing (producer failed), say so; do not make a video in this run.
+
+The posting-time experiment and Metricool analytics are paused (posting time now depends on when the owner
+approves, so times cannot be compared fairly).
 
 Video format (do not change without the owner asking): learn **5** German verbs (7 s each — the owner wants viewers
 to have time to read: meaning, grammar tag, example sentence + English translation appear one after another) →
@@ -41,7 +37,7 @@ the bottom with a gentle shine, "More examples → deutschstep.com" on every lea
 leaves and butterflies plus a row of swaying tulips decorate the background. All on-screen text is English/German,
 **never Turkish**. Music is original and varies with the seed. Total length ≈ 80 s.
 
-## Steps for one video (repeat 3 times in the producer run)
+## Steps for one video (repeat 3 times in the producer run A)
 
 1. **Branch.** Work in a clone of `umitvatansever0/weblearningapp`, branch `social-media-assets`
    (orphan branch, not the website code). Pull first.
@@ -76,16 +72,10 @@ leaves and butterflies plus a row of swaying tulips decorate the background. All
 6. **Commit and push** `videos/<name>.mp4`, the content JSON and the updated `used_verbs.json`
    (append `{date, slot, level, verbs}`). Do **not** commit `automation/out/`. Verify the raw URL returns HTTP 200:
    `https://raw.githubusercontent.com/umitvatansever0/weblearningapp/social-media-assets/videos/<name>.mp4`
-7. **Publish** with Metricool `createScheduledPost` — two posts per video, both at that video's publish time
-   (skip a time that is already past during the experiment; outside the experiment use now + 3 minutes):
-   - TikTok: providers `[{"network":"tiktok"}]`, `text` = `tiktok_text`, `tiktokData.title` = `tiktok_title`,
-     PUBLIC_TO_EVERYONE, comments/duet/stitch enabled, `autoAddMusic` false, `isAigc` false.
-   - Instagram: providers `[{"network":"instagram"}]`, `text` = `instagram_text`,
-     `firstCommentText` = `instagram_first_comment`, `instagramData` = `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":false}`.
-   - Captions come from `automation/out/<name>.captions.json`. `media` = [raw URL].
-8. **Record + report:** append to `experiment/posts.csv` (during the experiment), commit + push, then report in one short message: per video the time, the 5 verbs and both post ids, plus any problem.
+7. **Do not publish here.** Posting happens in the posting runs (section B).
+8. **Report:** per video the time, the 5 items and the Higgsfield media_id, plus any problem.
 
 ## If something fails
-- Metricool tools unavailable / not authorised → render and push the video anyway, do **not** post anywhere else,
-  and report that Metricool needs re-authorising in claude.ai connector settings.
+- Higgsfield tools unavailable → render and push the videos anyway and say Higgsfield needs reconnecting in
+  claude.ai connector settings. TikTok account in `error` state → say it needs `tiktok_reconnect`.
 - Never post Turkish text, never delete earlier posts, never touch the `master` branch.

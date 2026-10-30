@@ -1,5 +1,14 @@
 {
-  "note": "Daily publish times (Europe/Zurich). During the experiment the day's times come from experiment/plan.json. After it, final_times is used. default_times only if neither applies.",
-  "default_times": ["09:00", "14:30", "17:00"],
-  "final_times": null
+  "note": "Since 2026-10-30: TikTok only via Higgsfield, owner approves each post. daily_times = when the 3 forms open.",
+  "default_times": [
+    "09:00",
+    "14:30",
+    "17:00"
+  ],
+  "final_times": null,
+  "daily_times": [
+    "09:00",
+    "14:30",
+    "17:00"
+  ]
 }
