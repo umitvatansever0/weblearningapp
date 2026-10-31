@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610310900, "hook": "5 B1 verbs you'll use every week",
+ "verbs": [
+  {"verb": "sich bedanken", "en": "to say thank you", "tag": "reflexive · für + Akk", "example": "Ich *bedanke mich* für die Hilfe.", "translation": "Thank you for the help."},
+  {"verb": "verhindern", "en": "to prevent", "tag": "inseparable · hat verhindert", "example": "Er *hat* den Unfall *verhindert*.", "translation": "He prevented the accident."},
+  {"verb": "nachdenken", "en": "to think about", "tag": "separable · über + Akk", "example": "Ich *denke* darüber *nach*.", "translation": "I'm thinking about it."},
+  {"verb": "beweisen", "en": "to prove", "tag": "inseparable · hat bewiesen", "example": "Kannst du das *beweisen*?", "translation": "Can you prove that?"},
+  {"verb": "abnehmen", "en": "to lose weight", "tag": "separable · hat abgenommen", "example": "Sie *hat* fünf Kilo *abgenommen*.", "translation": "She lost five kilos."}
+ ]}

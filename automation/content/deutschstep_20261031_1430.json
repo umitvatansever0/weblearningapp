@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610311430, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "erlauben", "en": "to allow", "tag": "inseparable · hat erlaubt", "example": "Rauchen ist hier nicht *erlaubt*.", "translation": "Smoking is not allowed here."},
+  {"verb": "sich verlieben", "en": "to fall in love", "tag": "reflexive · in + Akk", "example": "Er *hat sich* in sie *verliebt*.", "translation": "He fell in love with her."},
+  {"verb": "umziehen", "en": "to move (house)", "tag": "separable · ist umgezogen", "example": "Wir *ziehen* nächste Woche *um*.", "translation": "We're moving next week."},
+  {"verb": "vermissen", "en": "to miss (someone)", "tag": "inseparable · hat vermisst", "example": "Ich *vermisse* meine Familie.", "translation": "I miss my family."},
+  {"verb": "anbieten", "en": "to offer", "tag": "separable · hat angeboten", "example": "Darf ich dir Kaffee *anbieten*?", "translation": "May I offer you coffee?"}
+ ]}

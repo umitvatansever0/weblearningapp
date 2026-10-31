@@ -169,6 +169,45 @@
     "aufhören",
     "behaupten"
    ]
+  },
+  {
+   "date": "2026-10-31",
+   "slot": "0900",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "sich bedanken",
+    "verhindern",
+    "nachdenken",
+    "beweisen",
+    "abnehmen"
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "slot": "1430",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "erlauben",
+    "sich verlieben",
+    "umziehen",
+    "vermissen",
+    "anbieten"
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "slot": "1700",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "sich verspäten",
+    "verlangen",
+    "aufpassen",
+    "übersetzen",
+    "sich streiten"
+   ]
   }
  ]
 }

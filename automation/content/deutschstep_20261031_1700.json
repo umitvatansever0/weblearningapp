@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202610311700, "hook": "Level up your German: 5 B1 verbs",
+ "verbs": [
+  {"verb": "sich verspäten", "en": "to be late", "tag": "reflexive · hat sich verspätet", "example": "Der Zug *verspätet sich* heute.", "translation": "The train is late today."},
+  {"verb": "verlangen", "en": "to demand", "tag": "inseparable · hat verlangt", "example": "Er *verlangt* sein Geld zurück.", "translation": "He demands his money back."},
+  {"verb": "aufpassen", "en": "to watch out", "tag": "separable · auf + Akk", "example": "*Pass auf*, die Straße ist glatt!", "translation": "Watch out, the road is slippery!"},
+  {"verb": "übersetzen", "en": "to translate", "tag": "inseparable · hat übersetzt", "example": "Kannst du den Satz *übersetzen*?", "translation": "Can you translate the sentence?"},
+  {"verb": "sich streiten", "en": "to argue", "tag": "reflexive · hat sich gestritten", "example": "Die Kinder *streiten sich* oft.", "translation": "The children often argue."}
+ ]}
