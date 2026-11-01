@@ -1,22 +1,19 @@
 # DeutschStep daily video runbook
 
-Owner: Ümit (deutschstep.com). **Since 2026-11-01: ONE video per day, published automatically through Metricool
-(brand / blogId 7639950, timezone Europe/Zurich) to TikTok @deutschstep.com AND Instagram @deutschstepcom at 18:00.**
+Owner: Ümit (deutschstep.com). **Since 2026-11-02: ONE video per day, published automatically through Metricool
+(brand / blogId 7639950, timezone Europe/Zurich) to TikTok @deutschstep.com ONLY, at 08:00. Do NOT post to Instagram.**
 The owner does not want to be asked anything — no Higgsfield forms, no approvals.
 
-Note: Metricool's free plan publishes 20 posts per calendar month (each network counts), so 1 video = 2 posts and
-the limit is reached after ~10 days; it resets on the 1st. Still schedule every day; if Metricool reports
+Note: Metricool's free plan publishes 20 posts per calendar month; with TikTok only that is ~20 days; it resets on the 1st. Still schedule every day; if Metricool reports
 "account limit", just report it in one line — do not try other platforms.
 
-### Daily run (17:20)
-- Pull. Make ONE video for slot 1800 (steps below), commit + push.
-- Schedule two posts with Metricool `createScheduledPost` at today 18:00 (if already past, now + 3 min):
+### Daily run (07:20)
+- Pull. Make ONE video for slot 0800 (steps below), commit + push.
+- Schedule ONE TikTok post with Metricool `createScheduledPost` at today 08:00 (if already past, now + 3 min):
   - TikTok: providers `[{"network":"tiktok"}]`, `text` = `tiktok_text`, `tiktokData.title` = `tiktok_title`,
     PUBLIC_TO_EVERYONE, comments/duet/stitch enabled, `autoAddMusic` false, `isAigc` false.
-  - Instagram: providers `[{"network":"instagram"}]`, `text` = `instagram_text`,
-    `firstCommentText` = `instagram_first_comment`, `instagramData` = `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":false}`.
   - Captions from `automation/out/<name>.captions.json`; `media` = [raw.githubusercontent.com URL of the video].
-- Report: the 5 items and the two Metricool post ids (or the error).
+- Report: the 5 items and the Metricool post id (or the error).
 
 Video format (do not change without the owner asking): learn **5** German verbs (7 s each — the owner wants viewers
 to have time to read: meaning, grammar tag, example sentence + English translation appear one after another) →
