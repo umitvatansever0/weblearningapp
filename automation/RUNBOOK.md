@@ -1,33 +1,22 @@
 # DeutschStep daily video runbook
 
-Owner: Ümit (deutschstep.com). **Since 2026-10-30 videos go to TikTok only (@deutschstep.com), through the
-Higgsfield TikTok connector (connector_id `af429de6-3648-4b8b-88df-2d7b1b4d8ce1`). Do NOT post through Metricool**
-(its free plan allows only 20 posts a month and was used up) and do not post to Instagram.
+Owner: Ümit (deutschstep.com). **Since 2026-11-01: ONE video per day, published automatically through Metricool
+(brand / blogId 7639950, timezone Europe/Zurich) to TikTok @deutschstep.com AND Instagram @deutschstepcom at 18:00.**
+The owner does not want to be asked anything — no Higgsfield forms, no approvals.
 
-TikTok requires the owner to approve every post in Higgsfield's publish form, so posting is split:
+Note: Metricool's free plan publishes 20 posts per calendar month (each network counts), so 1 video = 2 posts and
+the limit is reached after ~10 days; it resets on the 1st. Still schedule every day; if Metricool reports
+"account limit", just report it in one line — do not try other platforms.
 
-### A. Producer run (05:40) — make today's 3 videos, do not post
-- Times for the 3 videos: `schedule.json` → `daily_times` (currently 09:00, 14:30, 17:00).
-- For each time make one video (steps below), commit + push.
-- After pushing, get the commit SHA (`git rev-parse HEAD`) and import each video into Higgsfield with
-  `media_import_url` using the jsDelivr URL
-  `https://cdn.jsdelivr.net/gh/umitvatansever0/weblearningapp@<SHA>/videos/<name>.mp4` (type video).
-  (raw.githubusercontent.com does NOT work — it is served as octet-stream.)
-- Append one line per video to `automation/tiktok_queue.csv`:
-  `date,time,video,media_id,hf_url,title,status` with `hf_url` =
-  `https://d2ol7oe51mr4n9.cloudfront.net/user_3EzqnDmRRXCjAWhzkDsHCYXphAb/<media_id>.mp4`,
-  `title` = `tiktok_hf_title` from the captions JSON, `status` = `ready`. Commit + push.
-
-### B. Posting runs (09:00, 14:30, 17:00) — open the TikTok form
-- Pull, find today's row in `tiktok_queue.csv` for this time with status `ready`.
-- Call `tiktok_prepare_publish` (connector above, mode DIRECT_POST, media_type VIDEO, video_url = hf_url,
-  title = title). Do not prefill privacy or other choices; the owner fills the form. Never call tiktok_publish.
-- Set the row's status to `form_opened`, commit + push. Tell the owner in one short Turkish line that the form
-  is ready and he only needs to press Post.
-- If the row is missing (producer failed), say so; do not make a video in this run.
-
-The posting-time experiment and Metricool analytics are paused (posting time now depends on when the owner
-approves, so times cannot be compared fairly).
+### Daily run (17:20)
+- Pull. Make ONE video for slot 1800 (steps below), commit + push.
+- Schedule two posts with Metricool `createScheduledPost` at today 18:00 (if already past, now + 3 min):
+  - TikTok: providers `[{"network":"tiktok"}]`, `text` = `tiktok_text`, `tiktokData.title` = `tiktok_title`,
+    PUBLIC_TO_EVERYONE, comments/duet/stitch enabled, `autoAddMusic` false, `isAigc` false.
+  - Instagram: providers `[{"network":"instagram"}]`, `text` = `instagram_text`,
+    `firstCommentText` = `instagram_first_comment`, `instagramData` = `{"type":"REEL","showReelOnFeed":true,"isAiGenerated":false}`.
+  - Captions from `automation/out/<name>.captions.json`; `media` = [raw.githubusercontent.com URL of the video].
+- Report: the 5 items and the two Metricool post ids (or the error).
 
 Video format (do not change without the owner asking): learn **5** German verbs (7 s each — the owner wants viewers
 to have time to read: meaning, grammar tag, example sentence + English translation appear one after another) →
@@ -37,7 +26,7 @@ the bottom with a gentle shine, "More examples → deutschstep.com" on every lea
 leaves and butterflies plus a row of swaying tulips decorate the background. All on-screen text is English/German,
 **never Turkish**. Music is original and varies with the seed. Total length ≈ 80 s.
 
-## Steps for one video (repeat 3 times in the producer run A)
+## Steps for one video
 
 1. **Branch.** Work in a clone of `umitvatansever0/weblearningapp`, branch `social-media-assets`
    (orphan branch, not the website code). Pull first.
@@ -61,7 +50,7 @@ leaves and butterflies plus a row of swaying tulips decorate the background. All
    - Everything must be correct German. Example sentences: short (≤ 7 words ideal), natural, everyday. Mark the verb
      forms to highlight with `*…*`. Give an accurate English translation.
    - `tag`: short grammar note, e.g. `separable · hat hergestellt`, `reflexive · für + Akk`, `ist gefahren`.
-3. **Write** `automation/content/deutschstep_YYYYMMDD_HHMM.json` (HHMM = publish time, e.g. 1000). The 3 videos of a day must use 15 different verbs:
+3. **Write** `automation/content/deutschstep_YYYYMMDD_HHMM.json` (HHMM = publish time, e.g. 1000). 
    `{"level": "B1", "kind": "verbs", "seed": YYYYMMDDHHMM as int, "hook": "<optional one-line hook>", "verbs": [5 × {verb, en, tag, example, translation}]}`.
    Vary the `hook` between runs (e.g. "5 B1 verbs every German learner needs", "Can you remember all 5?").
    Keep `en` short (≤ 22 characters) so it fits on one line.
@@ -72,10 +61,9 @@ leaves and butterflies plus a row of swaying tulips decorate the background. All
 6. **Commit and push** `videos/<name>.mp4`, the content JSON and the updated `used_verbs.json`
    (append `{date, slot, level, verbs}`). Do **not** commit `automation/out/`. Verify the raw URL returns HTTP 200:
    `https://raw.githubusercontent.com/umitvatansever0/weblearningapp/social-media-assets/videos/<name>.mp4`
-7. **Do not publish here.** Posting happens in the posting runs (section B).
-8. **Report:** per video the time, the 5 items and the Higgsfield media_id, plus any problem.
+7. **Publish** as described in "Daily run".
 
 ## If something fails
-- Higgsfield tools unavailable → render and push the videos anyway and say Higgsfield needs reconnecting in
-  claude.ai connector settings. TikTok account in `error` state → say it needs `tiktok_reconnect`.
+- Metricool tools unavailable / not authorised → render and push the video anyway, do not post anywhere else,
+  and report that Metricool needs re-authorising in claude.ai connector settings.
 - Never post Turkish text, never delete earlier posts, never touch the `master` branch.
