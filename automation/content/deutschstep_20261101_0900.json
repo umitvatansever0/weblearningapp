@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202611010900, "hook": "5 B1 verbs to start your week",
+ "verbs": [
+  {"verb": "verbrauchen", "en": "to consume", "tag": "inseparable · hat verbraucht", "example": "Das Auto *verbraucht* viel Benzin.", "translation": "The car uses a lot of fuel."},
+  {"verb": "sich anmelden", "en": "to register", "tag": "reflexive · separable", "example": "Ich *melde mich* online *an*.", "translation": "I register online."},
+  {"verb": "beschädigen", "en": "to damage", "tag": "inseparable · hat beschädigt", "example": "Der Sturm *hat* das Dach *beschädigt*.", "translation": "The storm damaged the roof."},
+  {"verb": "sich verlassen auf", "en": "to rely on", "tag": "reflexive · auf + Akk", "example": "Du kannst *dich* auf mich *verlassen*.", "translation": "You can rely on me."},
+  {"verb": "wiederholen", "en": "to repeat", "tag": "inseparable · hat wiederholt", "example": "Können Sie das bitte *wiederholen*?", "translation": "Can you repeat that, please?"}
+ ]}

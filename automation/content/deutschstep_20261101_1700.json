@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202611011700, "hook": "Can you guess all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "sich langweilen", "en": "to be bored", "tag": "reflexive · hat sich gelangweilt", "example": "Im Unterricht *langweilt* er *sich*.", "translation": "He is bored in class."},
+  {"verb": "verraten", "en": "to reveal", "tag": "inseparable · hat verraten", "example": "Ich *verrate* dir ein Geheimnis.", "translation": "I'll tell you a secret."},
+  {"verb": "sich anstrengen", "en": "to make an effort", "tag": "reflexive · separable", "example": "Du musst *dich* mehr *anstrengen*.", "translation": "You have to try harder."},
+  {"verb": "erhöhen", "en": "to raise", "tag": "inseparable · hat erhöht", "example": "Die Firma *erhöht* die Preise.", "translation": "The company is raising prices."},
+  {"verb": "befürchten", "en": "to fear", "tag": "inseparable · hat befürchtet", "example": "Ich *befürchte*, es regnet morgen.", "translation": "I'm afraid it'll rain tomorrow."}
+ ]}

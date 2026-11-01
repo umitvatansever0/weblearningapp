@@ -1,0 +1,8 @@
+{"level": "B1", "kind": "verbs", "seed": 202611011430, "hook": "Quiz time: 5 useful B1 verbs",
+ "verbs": [
+  {"verb": "leihen", "en": "to lend", "tag": "irregular · hat geliehen", "example": "Kannst du mir dein Rad *leihen*?", "translation": "Can you lend me your bike?"},
+  {"verb": "einschalten", "en": "to switch on", "tag": "separable · hat eingeschaltet", "example": "*Schalt* bitte das Licht *ein*.", "translation": "Please switch on the light."},
+  {"verb": "sich verabschieden", "en": "to say goodbye", "tag": "reflexive · von + Dat", "example": "Er *verabschiedet sich* von allen.", "translation": "He says goodbye to everyone."},
+  {"verb": "verhandeln", "en": "to negotiate", "tag": "über + Akk · hat verhandelt", "example": "Wir *verhandeln* über den Preis.", "translation": "We are negotiating the price."},
+  {"verb": "zweifeln an", "en": "to doubt", "tag": "an + Dat · hat gezweifelt", "example": "Ich *zweifle* nicht an dir.", "translation": "I don't doubt you."}
+ ]}
