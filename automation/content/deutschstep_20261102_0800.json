@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611020800, "hook": "5 B1 verbs you will need in Germany",
+ "verbs": [
+  {"verb": "verwenden", "en": "to use", "emoji": "🧰", "tag": "hat verwendet", "example": "Ich *verwende* das Wörterbuch.", "translation": "I use the dictionary."},
+  {"verb": "vereinbaren", "en": "to arrange", "emoji": "📅", "tag": "inseparable · hat vereinbart", "example": "Wir *vereinbaren* einen Termin.", "translation": "We arrange an appointment."},
+  {"verb": "auswandern", "en": "to emigrate", "emoji": "✈️", "tag": "separable · ist ausgewandert", "example": "Sie *ist* nach Kanada *ausgewandert*.", "translation": "She emigrated to Canada."},
+  {"verb": "erziehen", "en": "to raise (a child)", "emoji": "👨‍👧", "tag": "hat erzogen", "example": "Sie *erziehen* ihre Kinder zweisprachig.", "translation": "They raise their children bilingually."},
+  {"verb": "sich erkundigen", "en": "to inquire", "emoji": "❓", "tag": "reflexive · nach + Dat", "example": "Ich *erkundige mich* nach dem Preis.", "translation": "I inquire about the price."}]}

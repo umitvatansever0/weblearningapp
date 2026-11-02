@@ -15,13 +15,17 @@ Note: Metricool's free plan publishes 20 posts per calendar month; with TikTok o
   - Captions from `automation/out/<name>.captions.json`; `media` = [raw.githubusercontent.com URL of the video].
 - Report: the 5 items and the Metricool post id (or the error).
 
-Video format (do not change without the owner asking): learn **5** German verbs (7 s each — the owner wants viewers
-to have time to read: meaning, grammar tag, example sentence + English translation appear one after another) →
-"QUIZ TIME" → 5 multiple-choice questions "Which verb means …?" (5 s countdown with ticks, then 2 s answer reveal) →
-score + deutschstep.com call to action. deutschstep.com is always visible (gold header link, framed brand label at
-the bottom with a gentle shine, "More examples → deutschstep.com" on every learn card). Faint drifting flowers,
-leaves and butterflies plus a row of swaying tulips decorate the background. All on-screen text is English/German,
-**never Turkish**. Music is original German-style (polka, schlager, volksmusik or Berlin electronic — rotates daily via automation/music.py; never use copyrighted songs). Total length ≈ 80 s.
+Video design (since 2026-11-02, owner's reference image; do not change without the owner asking): sunny **Alpine
+landscape** background (mountains, lake, chalet, meadow flowers, drifting clouds, butterflies), **wooden sign boards**
+with brass nails, navy text with **red highlights**, a **round white sticker with an icon** for every word (Twemoji,
+from the item's `emoji`), big **"deutschstep.com"** header (".com" red) over a German-flag brush stroke, and a flag
+brush banner **"Lerne Deutsch mit deutschstep.com!"** at the bottom. Flow: intro board listing the 5 words with icons →
+learn 5 words (7 s each: icon + word, meaning, grammar tag, example + English translation appear one after another)
+→ "QUIZ TIME!" → 5 multiple-choice questions "Which verb means …?" (5 s countdown, then 2 s answer reveal with the
+translation) → score + deutschstep.com call to action. All on-screen text is English/German, **never Turkish**.
+Music is original German-style (polka, schlager, volksmusik or Berlin electronic — rotates daily via
+automation/music.py; never use copyrighted songs). Total length ≈ 82 s. The old dark design is kept in
+`automation/render_dark_v1.py` for reference only.
 
 ## Steps for one video
 
@@ -48,7 +52,9 @@ leaves and butterflies plus a row of swaying tulips decorate the background. All
      forms to highlight with `*…*`. Give an accurate English translation.
    - `tag`: short grammar note, e.g. `separable · hat hergestellt`, `reflexive · für + Akk`, `ist gefahren`.
 3. **Write** `automation/content/deutschstep_YYYYMMDD_HHMM.json` (HHMM = publish time, e.g. 1000). 
-   `{"level": "B1", "kind": "verbs", "seed": YYYYMMDDHHMM as int, "hook": "<optional one-line hook>", "verbs": [5 × {verb, en, tag, example, translation}]}`.
+   `{"level": "B1", "kind": "verbs", "seed": YYYYMMDDHHMM as int, "hook": "<optional one-line hook>", "verbs": [5 × {verb, en, emoji, tag, example, translation}]}`.
+   `emoji`: ONE emoji that clearly pictures the word (e.g. 🛒 einkaufen, 📅 vereinbaren, ✈️ auswandern). The render prints
+   "WARNING: no icon for …" if an emoji has no Twemoji file — then pick another emoji and re-render.
    Vary the `hook` between runs (e.g. "5 B1 verbs every German learner needs", "Can you remember all 5?").
    Keep `en` short (≤ 22 characters) so it fits on one line.
 4. **Render:** `automation/make_video.sh automation/content/<name>.json` (~2 min). Needs ffmpeg, Pillow, numpy and

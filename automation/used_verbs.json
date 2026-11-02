@@ -247,6 +247,19 @@
         "erhöhen",
         "befürchten"
       ]
+    },
+    {
+      "date": "2026-11-02",
+      "slot": "0800",
+      "level": "B1",
+      "kind": "verbs",
+      "verbs": [
+        "verwenden",
+        "vereinbaren",
+        "auswandern",
+        "erziehen",
+        "sich erkundigen"
+      ]
     }
   ]
 }
