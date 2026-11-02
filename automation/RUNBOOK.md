@@ -21,7 +21,7 @@ to have time to read: meaning, grammar tag, example sentence + English translati
 score + deutschstep.com call to action. deutschstep.com is always visible (gold header link, framed brand label at
 the bottom with a gentle shine, "More examples → deutschstep.com" on every learn card). Faint drifting flowers,
 leaves and butterflies plus a row of swaying tulips decorate the background. All on-screen text is English/German,
-**never Turkish**. Music is original and varies with the seed. Total length ≈ 80 s.
+**never Turkish**. Music is original German-style (polka, schlager, volksmusik or Berlin electronic — rotates daily via automation/music.py; never use copyrighted songs). Total length ≈ 80 s.
 
 ## Steps for one video
 
