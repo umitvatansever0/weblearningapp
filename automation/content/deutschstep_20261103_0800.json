@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611030800, "hook": "5 B1 verbs for real life in Germany",
+ "verbs": [
+  {"verb": "zerstören", "en": "to destroy", "emoji": "💥", "tag": "inseparable · hat zerstört", "example": "Der Sturm *zerstört* das Dach.", "translation": "The storm destroys the roof."},
+  {"verb": "mitteilen", "en": "to inform", "emoji": "📢", "tag": "separable · hat mitgeteilt", "example": "Ich *teile* dir das Ergebnis *mit*.", "translation": "I'll let you know the result."},
+  {"verb": "sich verhalten", "en": "to behave", "emoji": "😇", "tag": "reflexive · hat sich verhalten", "example": "Er *verhält sich* sehr höflich.", "translation": "He behaves very politely."},
+  {"verb": "pflegen", "en": "to care for, to nurse", "emoji": "🩺", "tag": "hat gepflegt", "example": "Sie *pflegt* ihre kranke Mutter.", "translation": "She cares for her sick mother."},
+  {"verb": "reduzieren", "en": "to reduce", "emoji": "📉", "tag": "hat reduziert", "example": "Wir *reduzieren* unseren Müll.", "translation": "We reduce our waste."}]}

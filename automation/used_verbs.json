@@ -260,6 +260,19 @@
         "erziehen",
         "sich erkundigen"
       ]
+    },
+    {
+      "date": "2026-11-03",
+      "slot": "0800",
+      "level": "B1",
+      "kind": "verbs",
+      "verbs": [
+        "zerstören",
+        "mitteilen",
+        "sich verhalten",
+        "pflegen",
+        "reduzieren"
+      ]
     }
   ]
 }
