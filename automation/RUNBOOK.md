@@ -12,7 +12,7 @@ Note: Metricool's free plan publishes 20 posts per calendar month; with TikTok o
 - Schedule ONE TikTok post with Metricool `createScheduledPost` at today 08:00 (if already past, now + 3 min):
   - TikTok: providers `[{"network":"tiktok"}]`, `text` = `tiktok_text`, `tiktokData.title` = `tiktok_title`,
     PUBLIC_TO_EVERYONE, comments/duet/stitch enabled, `autoAddMusic` false, `isAigc` false.
-  - Captions from `automation/out/<name>.captions.json`; `media` = [raw.githubusercontent.com URL of the video].
+  - Captions from `automation/out/<name>.captions.json` (captions.py rotates 8 emotional, comment-driving descriptions by date — do not rewrite them by hand); `media` = [raw.githubusercontent.com URL of the video].
 - Report: the 5 items and the Metricool post id (or the error).
 
 Video design (since 2026-11-02, owner's reference image; do not change without the owner asking): sunny **Alpine
