@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611040800, "hook": "5 B1 verbs you'll hear every week",
+ "verbs": [
+  {"verb": "entwickeln", "en": "to develop", "emoji": "📱", "tag": "hat entwickelt", "example": "Sie *entwickelt* eine neue App.", "translation": "She is developing a new app."},
+  {"verb": "ankündigen", "en": "to announce", "emoji": "📣", "tag": "separable · hat angekündigt", "example": "Der Chef *kündigt* eine Änderung *an*.", "translation": "The boss announces a change."},
+  {"verb": "sich aufregen", "en": "to get upset", "emoji": "😤", "tag": "reflexive · hat sich aufgeregt", "example": "Er *regt sich* über den Stau *auf*.", "translation": "He gets upset about the traffic jam."},
+  {"verb": "retten", "en": "to rescue, to save", "emoji": "🚒", "tag": "hat gerettet", "example": "Die Feuerwehr *rettet* die Katze.", "translation": "The fire brigade rescues the cat."},
+  {"verb": "bestätigen", "en": "to confirm", "emoji": "✅", "tag": "inseparable · hat bestätigt", "example": "Bitte *bestätigen* Sie den Termin.", "translation": "Please confirm the appointment."}]}

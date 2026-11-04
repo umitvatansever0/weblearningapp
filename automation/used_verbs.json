@@ -273,6 +273,19 @@
         "pflegen",
         "reduzieren"
       ]
+    },
+    {
+      "date": "2026-11-04",
+      "slot": "0800",
+      "level": "B1",
+      "kind": "verbs",
+      "verbs": [
+        "entwickeln",
+        "ankündigen",
+        "sich aufregen",
+        "retten",
+        "bestätigen"
+      ]
     }
   ]
 }
