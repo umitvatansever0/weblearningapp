@@ -286,6 +286,19 @@
         "retten",
         "bestätigen"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "slot": "0800",
+      "level": "B1",
+      "kind": "verbs",
+      "verbs": [
+        "liefern",
+        "aufladen",
+        "sich verlaufen",
+        "schweigen",
+        "begleiten"
+      ]
     }
   ]
 }

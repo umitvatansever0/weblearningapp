@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611050800, "hook": "5 B1 verbs for real life in Germany",
+ "verbs": [
+  {"verb": "liefern", "en": "to deliver", "emoji": "🚚", "tag": "hat geliefert", "example": "Die Firma *liefert* das Sofa morgen.", "translation": "The company delivers the sofa tomorrow."},
+  {"verb": "aufladen", "en": "to charge (a battery)", "emoji": "🔋", "tag": "separable · hat aufgeladen", "example": "Ich *lade* mein Handy *auf*.", "translation": "I'm charging my phone."},
+  {"verb": "sich verlaufen", "en": "to get lost", "emoji": "🧭", "tag": "reflexive · hat sich verlaufen", "example": "Wir haben *uns* im Wald *verlaufen*.", "translation": "We got lost in the forest."},
+  {"verb": "schweigen", "en": "to stay silent", "emoji": "🤫", "tag": "hat geschwiegen", "example": "Alle *schweigen* im Aufzug.", "translation": "Everyone stays silent in the elevator."},
+  {"verb": "begleiten", "en": "to accompany", "emoji": "🚶", "tag": "inseparable · hat begleitet", "example": "Ich *begleite* dich zum Bahnhof.", "translation": "I'll accompany you to the station."}]}
