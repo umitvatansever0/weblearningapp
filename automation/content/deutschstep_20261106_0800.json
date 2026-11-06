@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611060800, "hook": "5 B1 verbs for your daily routine",
+ "verbs": [
+  {"verb": "pendeln", "en": "to commute", "emoji": "🚆", "tag": "ist gependelt", "example": "Ich *pendle* täglich nach Bern.", "translation": "I commute to Bern every day."},
+  {"verb": "ausdrucken", "en": "to print out", "emoji": "🖨️", "tag": "separable · hat ausgedruckt", "example": "Ich *drucke* das Ticket *aus*.", "translation": "I'm printing out the ticket."},
+  {"verb": "sich wundern", "en": "to be surprised", "emoji": "😲", "tag": "reflexive · über + Akk", "example": "Ich *wundere mich* über den Preis.", "translation": "I'm surprised by the price."},
+  {"verb": "vermieten", "en": "to rent out", "emoji": "🔑", "tag": "inseparable · hat vermietet", "example": "Wir *vermieten* unsere Wohnung.", "translation": "We're renting out our apartment."},
+  {"verb": "recherchieren", "en": "to research", "emoji": "🔎", "tag": "hat recherchiert", "example": "Sie *recherchiert* im Internet.", "translation": "She is researching online."}]}

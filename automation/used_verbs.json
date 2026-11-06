@@ -299,6 +299,19 @@
         "schweigen",
         "begleiten"
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "slot": "0800",
+      "level": "B1",
+      "kind": "verbs",
+      "verbs": [
+        "pendeln",
+        "ausdrucken",
+        "sich wundern",
+        "vermieten",
+        "recherchieren"
+      ]
     }
   ]
 }
