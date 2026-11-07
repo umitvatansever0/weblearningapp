@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611070800, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "verreisen", "en": "to go on a trip", "emoji": "🧳", "tag": "inseparable · ist verreist", "example": "Wir *verreisen* im Sommer.", "translation": "We're going on a trip in summer."},
+  {"verb": "aufwärmen", "en": "to reheat", "emoji": "🍲", "tag": "separable · hat aufgewärmt", "example": "Ich *wärme* die Suppe *auf*.", "translation": "I'm reheating the soup."},
+  {"verb": "gießen", "en": "to water (plants)", "emoji": "🪴", "tag": "hat gegossen", "example": "Ich *gieße* die Blumen.", "translation": "I'm watering the flowers."},
+  {"verb": "zögern", "en": "to hesitate", "emoji": "🤔", "tag": "hat gezögert", "example": "Er *zögert* kurz.", "translation": "He hesitates for a moment."},
+  {"verb": "abstimmen", "en": "to vote", "emoji": "🗳️", "tag": "separable · hat abgestimmt", "example": "Wir *stimmen* morgen *ab*.", "translation": "We're voting tomorrow."}]}
