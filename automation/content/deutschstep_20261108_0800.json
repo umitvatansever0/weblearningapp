@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611080800, "hook": "5 B1 verbs you'll actually use",
+ "verbs": [
+  {"verb": "beobachten", "en": "to observe", "emoji": "🔭", "tag": "inseparable · hat beobachtet", "example": "Ich *beobachte* die Vögel.", "translation": "I'm watching the birds."},
+  {"verb": "verschenken", "en": "to give away", "emoji": "🎁", "tag": "inseparable · hat verschenkt", "example": "Sie *verschenkt* ihre alten Bücher.", "translation": "She's giving away her old books."},
+  {"verb": "anstoßen", "en": "to clink glasses", "emoji": "🥂", "tag": "separable · auf + Akk", "example": "Wir *stoßen* auf dich *an*!", "translation": "Let's drink a toast to you!"},
+  {"verb": "erschrecken", "en": "to get a fright", "emoji": "😱", "tag": "er erschrickt · ist erschrocken", "example": "Das Kind *erschrickt*.", "translation": "The child gets a fright."},
+  {"verb": "sich verkleiden", "en": "to dress up", "emoji": "🎭", "tag": "reflexive · hat sich verkleidet", "example": "Wir *verkleiden* uns an Karneval.", "translation": "We dress up for carnival."}]}

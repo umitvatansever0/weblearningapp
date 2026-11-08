@@ -325,6 +325,19 @@
     "zögern",
     "abstimmen"
    ]
+  },
+  {
+   "date": "2026-11-08",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "beobachten",
+    "verschenken",
+    "anstoßen",
+    "erschrecken",
+    "sich verkleiden"
+   ]
   }
  ]
 }
