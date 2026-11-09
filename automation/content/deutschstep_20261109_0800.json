@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611090800, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "sich ausruhen", "en": "to rest", "emoji": "🛋️", "tag": "separable · hat sich ausgeruht", "example": "Ich *ruhe* mich kurz *aus*.", "translation": "I'm having a short rest."},
+  {"verb": "verschütten", "en": "to spill", "emoji": "☕", "tag": "inseparable · hat verschüttet", "example": "Er *verschüttet* seinen Kaffee.", "translation": "He spills his coffee."},
+  {"verb": "renovieren", "en": "to renovate", "emoji": "🔨", "tag": "hat renoviert", "example": "Wir *renovieren* unsere Küche.", "translation": "We're renovating our kitchen."},
+  {"verb": "schmücken", "en": "to decorate", "emoji": "🎄", "tag": "regular · hat geschmückt", "example": "Wir *schmücken* den Weihnachtsbaum.", "translation": "We're decorating the Christmas tree."},
+  {"verb": "einpacken", "en": "to pack", "emoji": "🧳", "tag": "separable · hat eingepackt", "example": "Hast du alles *eingepackt*?", "translation": "Have you packed everything?"}]}

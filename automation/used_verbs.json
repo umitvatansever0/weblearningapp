@@ -338,6 +338,19 @@
     "erschrecken",
     "sich verkleiden"
    ]
+  },
+  {
+   "date": "2026-11-09",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "sich ausruhen",
+    "verschütten",
+    "renovieren",
+    "schmücken",
+    "einpacken"
+   ]
   }
  ]
 }
