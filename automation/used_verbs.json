@@ -351,6 +351,19 @@
     "schmücken",
     "einpacken"
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "abholen",
+    "bügeln",
+    "sich beruhigen",
+    "anzünden",
+    "ersetzen"
+   ]
   }
  ]
 }

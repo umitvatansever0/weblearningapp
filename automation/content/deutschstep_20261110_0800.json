@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611100800, "hook": "5 B1 verbs for everyday life",
+ "verbs": [
+  {"verb": "abholen", "en": "to pick up", "emoji": "🚉", "tag": "separable · hat abgeholt", "example": "Ich *hole* dich vom Bahnhof *ab*.", "translation": "I'll pick you up from the station."},
+  {"verb": "bügeln", "en": "to iron", "emoji": "👔", "tag": "regular · hat gebügelt", "example": "Er *bügelt* sein Hemd.", "translation": "He's ironing his shirt."},
+  {"verb": "sich beruhigen", "en": "to calm down", "emoji": "😌", "tag": "reflexive · hat sich beruhigt", "example": "*Beruhig* dich doch!", "translation": "Calm down!"},
+  {"verb": "anzünden", "en": "to light", "emoji": "🕯️", "tag": "separable · hat angezündet", "example": "Sie *zündet* eine Kerze *an*.", "translation": "She lights a candle."},
+  {"verb": "ersetzen", "en": "to replace", "emoji": "🔄", "tag": "inseparable · hat ersetzt", "example": "Wir *ersetzen* die alte Lampe.", "translation": "We're replacing the old lamp."}]}
