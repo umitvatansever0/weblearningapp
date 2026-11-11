@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611110800, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "aufwecken", "en": "to wake (sb) up", "emoji": "⏰", "tag": "separable · hat aufgeweckt", "example": "Bitte *weck* mich um sieben *auf*.", "translation": "Please wake me up at seven."},
+  {"verb": "überraschen", "en": "to surprise", "emoji": "🎁", "tag": "inseparable · hat überrascht", "example": "Wir *überraschen* sie mit Blumen.", "translation": "We're surprising her with flowers."},
+  {"verb": "begrüßen", "en": "to greet", "emoji": "👋", "tag": "inseparable · hat begrüßt", "example": "Er *begrüßt* die Gäste.", "translation": "He greets the guests."},
+  {"verb": "füttern", "en": "to feed", "emoji": "🐈", "tag": "regular · hat gefüttert", "example": "Sie *füttert* die Katze.", "translation": "She feeds the cat."},
+  {"verb": "verwechseln", "en": "to mix up", "emoji": "🔀", "tag": "inseparable · hat verwechselt", "example": "Ich *verwechsle* oft die Namen.", "translation": "I often mix up the names."}]}

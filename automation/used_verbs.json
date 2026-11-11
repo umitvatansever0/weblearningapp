@@ -364,6 +364,19 @@
     "anzünden",
     "ersetzen"
    ]
+  },
+  {
+   "date": "2026-11-11",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "aufwecken",
+    "überraschen",
+    "begrüßen",
+    "füttern",
+    "verwechseln"
+   ]
   }
  ]
 }
