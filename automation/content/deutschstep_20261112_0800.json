@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611120800, "hook": "5 B1 verbs for your everyday German",
+ "verbs": [
+  {"verb": "auspacken", "en": "to unpack", "emoji": "📦", "tag": "separable · hat ausgepackt", "example": "Sie *packt* das Geschenk *aus.*", "translation": "She unpacks the present."},
+  {"verb": "streichen", "en": "to paint (a wall)", "emoji": "🖌️", "tag": "irregular · hat gestrichen", "example": "Wir *streichen* die Wand weiß.", "translation": "We're painting the wall white."},
+  {"verb": "sich verstecken", "en": "to hide", "emoji": "🙈", "tag": "reflexive · hat sich versteckt", "example": "Die Katze *versteckt sich* unterm Bett.", "translation": "The cat hides under the bed."},
+  {"verb": "schwitzen", "en": "to sweat", "emoji": "🥵", "tag": "regular · hat geschwitzt", "example": "Im Sommer *schwitze* ich viel.", "translation": "In summer I sweat a lot."},
+  {"verb": "ausschlafen", "en": "to sleep in", "emoji": "😴", "tag": "separable · hat ausgeschlafen", "example": "Am Sonntag *schlafe* ich *aus.*", "translation": "On Sunday I sleep in."}]}

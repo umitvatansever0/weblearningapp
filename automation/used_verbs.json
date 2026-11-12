@@ -377,6 +377,19 @@
     "füttern",
     "verwechseln"
    ]
+  },
+  {
+   "date": "2026-11-12",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "auspacken",
+    "streichen",
+    "sich verstecken",
+    "schwitzen",
+    "ausschlafen"
+   ]
   }
  ]
 }
