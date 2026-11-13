@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611130800, "hook": "Can you remember all 5 German verbs?",
+ "verbs": [
+  {"verb": "abtrocknen", "en": "to dry (dishes)", "emoji": "🍽️", "tag": "separable · hat abgetrocknet", "example": "Ich *trockne* das Geschirr *ab.*", "translation": "I dry the dishes."},
+  {"verb": "reparieren", "en": "to repair", "emoji": "🔧", "tag": "regular · hat repariert", "example": "Er *repariert* sein Fahrrad.", "translation": "He repairs his bike."},
+  {"verb": "frieren", "en": "to feel cold", "emoji": "🥶", "tag": "irregular · hat gefroren", "example": "Im Winter *friere* ich oft.", "translation": "In winter I often feel cold."},
+  {"verb": "sich sonnen", "en": "to sunbathe", "emoji": "😎", "tag": "reflexive · hat sich gesonnt", "example": "Wir *sonnen uns* am See.", "translation": "We sunbathe by the lake."},
+  {"verb": "klingeln", "en": "to ring (a bell)", "emoji": "🔔", "tag": "regular · hat geklingelt", "example": "Es *klingelt* an der Tür.", "translation": "The doorbell is ringing."}]}

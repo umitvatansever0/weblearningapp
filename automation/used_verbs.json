@@ -390,6 +390,19 @@
     "schwitzen",
     "ausschlafen"
    ]
+  },
+  {
+   "date": "2026-11-13",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "abtrocknen",
+    "reparieren",
+    "frieren",
+    "sich sonnen",
+    "klingeln"
+   ]
   }
  ]
 }
