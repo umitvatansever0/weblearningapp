@@ -403,6 +403,19 @@
     "sich sonnen",
     "klingeln"
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "zelten",
+    "sich ernähren",
+    "ausrutschen",
+    "verschwinden",
+    "wiegen"
+   ]
   }
  ]
 }

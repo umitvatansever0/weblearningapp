@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611140800, "hook": "5 B1 verbs for your next adventure",
+ "verbs": [
+  {"verb": "zelten", "en": "to camp", "emoji": "⛺", "tag": "regular · hat gezeltet", "example": "Im Sommer *zelten* wir am See.", "translation": "In summer we camp by the lake."},
+  {"verb": "sich ernähren", "en": "to nourish oneself", "emoji": "🥗", "tag": "reflexive · hat sich ernährt", "example": "Sie *ernährt sich* sehr gesund.", "translation": "She eats very healthily."},
+  {"verb": "ausrutschen", "en": "to slip", "emoji": "🍌", "tag": "separable · ist ausgerutscht", "example": "Er *ist* auf dem Eis *ausgerutscht.*", "translation": "He slipped on the ice."},
+  {"verb": "verschwinden", "en": "to disappear", "emoji": "💨", "tag": "irregular · ist verschwunden", "example": "Meine Brille *ist verschwunden.*", "translation": "My glasses have disappeared."},
+  {"verb": "wiegen", "en": "to weigh", "emoji": "⚖️", "tag": "irregular · hat gewogen", "example": "Der Koffer *wiegt* zwanzig Kilo.", "translation": "The suitcase weighs twenty kilos."}]}
