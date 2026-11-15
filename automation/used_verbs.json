@@ -416,6 +416,19 @@
     "verschwinden",
     "wiegen"
    ]
+  },
+  {
+   "date": "2026-11-15",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "genießen",
+    "aufgeben",
+    "stehlen",
+    "sich beteiligen",
+    "schnarchen"
+   ]
   }
  ]
 }
