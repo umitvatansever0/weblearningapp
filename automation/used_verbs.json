@@ -429,6 +429,19 @@
     "sich beteiligen",
     "schnarchen"
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "einschlafen",
+    "überholen",
+    "sich schminken",
+    "zubereiten",
+    "erben"
+   ]
   }
  ]
 }

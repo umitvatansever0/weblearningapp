@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611160800, "hook": "Can you guess all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "einschlafen", "en": "to fall asleep", "emoji": "🛌", "tag": "separable · ist eingeschlafen", "example": "Ich *schlafe* beim Film *ein*.", "translation": "I fall asleep during the film."},
+  {"verb": "überholen", "en": "to overtake", "emoji": "🏎️", "tag": "inseparable · hat überholt", "example": "Der Bus *überholt* das Fahrrad.", "translation": "The bus overtakes the bike."},
+  {"verb": "sich schminken", "en": "to put on make-up", "emoji": "💄", "tag": "reflexive · hat sich geschminkt", "example": "Sie *schminkt sich* im Bad.", "translation": "She puts on make-up in the bathroom."},
+  {"verb": "zubereiten", "en": "to prepare (food)", "emoji": "🍳", "tag": "separable · hat zubereitet", "example": "Er *bereitet* das Frühstück *zu*.", "translation": "He prepares breakfast."},
+  {"verb": "erben", "en": "to inherit", "emoji": "💰", "tag": "regular · hat geerbt", "example": "Sie *hat* ein Haus *geerbt*.", "translation": "She inherited a house."}]}
