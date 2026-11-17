@@ -442,6 +442,19 @@
     "zubereiten",
     "erben"
    ]
+  },
+  {
+   "date": "2026-11-17",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "flüstern",
+    "sich erkälten",
+    "abbiegen",
+    "versprechen",
+    "tanken"
+   ]
   }
  ]
 }
