@@ -455,6 +455,19 @@
     "versprechen",
     "tanken"
    ]
+  },
+  {
+   "date": "2026-11-18",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "bremsen",
+    "gähnen",
+    "einsteigen",
+    "sich verbrennen",
+    "überqueren"
+   ]
   }
  ]
 }

@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611180800, "hook": "5 B1 verbs for your daily commute",
+ "verbs": [
+  {"verb": "bremsen", "en": "to brake", "emoji": "🛑", "tag": "regular · hat gebremst", "example": "Der Fahrer *bremst* plötzlich.", "translation": "The driver brakes suddenly."},
+  {"verb": "gähnen", "en": "to yawn", "emoji": "🥱", "tag": "regular · hat gegähnt", "example": "Er *gähnt* im Unterricht.", "translation": "He yawns in class."},
+  {"verb": "einsteigen", "en": "to get on (a train)", "emoji": "🚆", "tag": "separable · ist eingestiegen", "example": "Bitte *steigen* Sie jetzt *ein*.", "translation": "Please get on now."},
+  {"verb": "sich verbrennen", "en": "to burn oneself", "emoji": "🔥", "tag": "reflexive · hat sich verbrannt", "example": "Ich *habe mich verbrannt*.", "translation": "I have burned myself."},
+  {"verb": "überqueren", "en": "to cross", "emoji": "🚸", "tag": "inseparable · hat überquert", "example": "Wir *überqueren* die Straße.", "translation": "We cross the street."}]}
