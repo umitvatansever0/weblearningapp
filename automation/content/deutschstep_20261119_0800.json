@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611190800, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "abwaschen", "en": "to do the dishes", "emoji": "🧽", "tag": "separable · hat abgewaschen", "example": "Ich *wasche* heute *ab*.", "translation": "I'm doing the dishes today."},
+  {"verb": "wählen", "en": "to vote", "emoji": "🗳️", "tag": "regular · hat gewählt", "example": "Wir *wählen* am Sonntag.", "translation": "We vote on Sunday."},
+  {"verb": "begegnen", "en": "to run into", "emoji": "🤝", "tag": "inseparable · ist begegnet (+ Dat)", "example": "Ich *bin* ihm gestern *begegnet*.", "translation": "I ran into him yesterday."},
+  {"verb": "verzeihen", "en": "to forgive", "emoji": "🙏", "tag": "irregular · hat verziehen", "example": "Bitte *verzeih* mir!", "translation": "Please forgive me!"},
+  {"verb": "sich irren", "en": "to be mistaken", "emoji": "🤔", "tag": "reflexive · hat sich geirrt", "example": "Da *irrst* du *dich*.", "translation": "You're wrong there."}]}
