@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611200800, "hook": "5 B1 verbs you'll use every week",
+ "verbs": [
+  {"verb": "aufnehmen", "en": "to record", "emoji": "🎙️", "tag": "separable · hat aufgenommen", "example": "Ich *nehme* das Konzert *auf*.", "translation": "I'm recording the concert."},
+  {"verb": "umsteigen", "en": "to change trains", "emoji": "🚉", "tag": "separable · ist umgestiegen", "example": "Wir *steigen* in Köln *um*.", "translation": "We change trains in Cologne."},
+  {"verb": "sich trauen", "en": "to dare", "emoji": "😬", "tag": "reflexive · hat sich getraut", "example": "Ich *traue mich* nicht.", "translation": "I don't dare."},
+  {"verb": "erkennen", "en": "to recognise", "emoji": "👀", "tag": "irregular · hat erkannt", "example": "Ich *habe* dich nicht *erkannt*!", "translation": "I didn't recognise you!"},
+  {"verb": "klettern", "en": "to climb", "emoji": "🧗", "tag": "regular · ist geklettert", "example": "Wir *klettern* auf den Berg.", "translation": "We climb up the mountain."}]}

@@ -481,6 +481,19 @@
     "verzeihen",
     "sich irren"
    ]
+  },
+  {
+   "date": "2026-11-20",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "aufnehmen",
+    "umsteigen",
+    "sich trauen",
+    "erkennen",
+    "klettern"
+   ]
   }
  ]
 }
