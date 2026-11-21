@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611210800, "hook": "5 B1 verbs for your weekend",
+ "verbs": [
+  {"verb": "aufbauen", "en": "to set up", "emoji": "⛺", "tag": "separable · hat aufgebaut", "example": "Wir *bauen* das Zelt *auf*.", "translation": "We're setting up the tent."},
+  {"verb": "erfahren", "en": "to find out", "emoji": "📰", "tag": "irregular · hat erfahren", "example": "Ich *habe* es gestern *erfahren*.", "translation": "I found out yesterday."},
+  {"verb": "sich rasieren", "en": "to shave", "emoji": "🪒", "tag": "reflexive · hat sich rasiert", "example": "Er *rasiert sich* jeden Morgen.", "translation": "He shaves every morning."},
+  {"verb": "loben", "en": "to praise", "emoji": "👏", "tag": "regular · hat gelobt", "example": "Die Lehrerin *lobt* uns.", "translation": "The teacher praises us."},
+  {"verb": "stricken", "en": "to knit", "emoji": "🧶", "tag": "regular · hat gestrickt", "example": "Oma *strickt* einen Schal.", "translation": "Grandma is knitting a scarf."}]}

@@ -494,6 +494,19 @@
     "erkennen",
     "klettern"
    ]
+  },
+  {
+   "date": "2026-11-21",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "aufbauen",
+    "erfahren",
+    "sich rasieren",
+    "loben",
+    "stricken"
+   ]
   }
  ]
 }
