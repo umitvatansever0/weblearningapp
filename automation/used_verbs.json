@@ -507,6 +507,19 @@
     "loben",
     "stricken"
    ]
+  },
+  {
+   "date": "2026-11-22",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "aufhängen",
+    "schimpfen",
+    "sich entspannen",
+    "abschreiben",
+    "anfassen"
+   ]
   }
  ]
 }

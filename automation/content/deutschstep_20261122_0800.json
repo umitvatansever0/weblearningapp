@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611220800, "hook": "5 B1 verbs for a lazy Sunday",
+ "verbs": [
+  {"verb": "aufhängen", "en": "to hang up", "emoji": "🧺", "tag": "separable · hat aufgehängt", "example": "Ich *hänge* die Wäsche *auf*.", "translation": "I'm hanging up the laundry."},
+  {"verb": "schimpfen", "en": "to scold", "emoji": "😠", "tag": "mit + Dat · hat geschimpft", "example": "Mama *schimpft* mit dem Hund.", "translation": "Mom is scolding the dog."},
+  {"verb": "sich entspannen", "en": "to relax", "emoji": "🧘", "tag": "reflexive · hat sich entspannt", "example": "Sonntags *entspanne* ich *mich*.", "translation": "On Sundays I relax."},
+  {"verb": "abschreiben", "en": "to copy (write)", "emoji": "📝", "tag": "separable · hat abgeschrieben", "example": "Er *hat* alles *abgeschrieben*.", "translation": "He copied everything."},
+  {"verb": "anfassen", "en": "to touch", "emoji": "🖐️", "tag": "separable · hat angefasst", "example": "Bitte nichts *anfassen*!", "translation": "Please don't touch anything!"}]}
