@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611230800, "hook": "5 B1 verbs to start your Monday",
+ "verbs": [
+  {"verb": "umarmen", "en": "to hug", "emoji": "🤗", "tag": "inseparable · hat umarmt", "example": "Sie *umarmt* ihre Oma.", "translation": "She hugs her grandma."},
+  {"verb": "niesen", "en": "to sneeze", "emoji": "🤧", "tag": "regular · hat geniest", "example": "Er *niest* ständig.", "translation": "He sneezes all the time."},
+  {"verb": "abstürzen", "en": "to crash (computer)", "emoji": "💻", "tag": "separable · ist abgestürzt", "example": "Mein Laptop *ist abgestürzt*.", "translation": "My laptop crashed."},
+  {"verb": "sich bewegen", "en": "to move, exercise", "emoji": "🏃", "tag": "reflexive · hat sich bewegt", "example": "Du musst *dich* mehr *bewegen*.", "translation": "You need to move more."},
+  {"verb": "schälen", "en": "to peel", "emoji": "🥔", "tag": "regular · hat geschält", "example": "Ich *schäle* die Kartoffeln.", "translation": "I'm peeling the potatoes."}]}

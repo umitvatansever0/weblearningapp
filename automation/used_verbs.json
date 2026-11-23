@@ -520,6 +520,19 @@
     "abschreiben",
     "anfassen"
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "umarmen",
+    "niesen",
+    "abstürzen",
+    "sich bewegen",
+    "schälen"
+   ]
   }
  ]
 }
