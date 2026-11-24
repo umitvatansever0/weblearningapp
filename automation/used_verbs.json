@@ -533,6 +533,19 @@
     "sich bewegen",
     "schälen"
    ]
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "0800",
+   "level": "B1",
+   "kind": "verbs",
+   "verbs": [
+    "recyceln",
+    "einrichten",
+    "berichten",
+    "schmelzen",
+    "staubsaugen"
+   ]
   }
  ]
 }

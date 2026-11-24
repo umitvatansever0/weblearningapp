@@ -1,0 +1,7 @@
+{"level": "B1", "kind": "verbs", "seed": 202611240800, "hook": "Can you remember all 5 B1 verbs?",
+ "verbs": [
+  {"verb": "recyceln", "en": "to recycle", "emoji": "♻️", "tag": "regular · hat recycelt", "example": "Wir *recyceln* alte Flaschen.", "translation": "We recycle old bottles."},
+  {"verb": "einrichten", "en": "to furnish (a flat)", "emoji": "🛋️", "tag": "separable · hat eingerichtet", "example": "Sie *richtet* ihre Wohnung *ein*.", "translation": "She's furnishing her flat."},
+  {"verb": "berichten", "en": "to report", "emoji": "📰", "tag": "über + Akk · hat berichtet", "example": "Die Zeitung *berichtet* über den Unfall.", "translation": "The newspaper reports on the accident."},
+  {"verb": "schmelzen", "en": "to melt", "emoji": "🧊", "tag": "irregular · ist geschmolzen", "example": "Der Schnee *schmilzt* schon.", "translation": "The snow is already melting."},
+  {"verb": "staubsaugen", "en": "to vacuum", "emoji": "🧹", "tag": "regular · hat gestaubsaugt", "example": "Ich *staubsauge* jeden Samstag.", "translation": "I vacuum every Saturday."}]}
